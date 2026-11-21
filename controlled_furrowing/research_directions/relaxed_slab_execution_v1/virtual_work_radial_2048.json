@@ -1,0 +1,81 @@
+{
+  "status": "PASS_STRICT_NONZERO_RELAXED_VIRTUAL_WORK",
+  "source_sha256": "42eec8b07945f5766284d6f6aabbdbc960c0a75e8d910c039143c6db103fdf45",
+  "input_sha256": {
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/preparation/protocol.json": "754da64bb96cd8a19707181315e6c3e3f014e8d37a898b83c1693342c82c9850",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/target_manifest.json": "cb25fbeaef753cea700c187cd8b377b7dcf4aa1fe2b0b246ed17134a07a89bc3",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/loading_affine_identity_v1/READBACK.md": "61e1a3a9362c8ce066588719c002cd6b66cba75840c8412b8fd5f9b3188f2b28",
+    "scripts/exact_fe_target_safe.py": "889b61cfa794d432021fbd4670b781169033d4b8451554b18e7f7a569d9d3954",
+    "scripts/exact_cohort_integrator.py": "092dc51161e708cdba3791ec47a7f8e843dd0e1afc866b6f65f286b8657d1745",
+    "scripts/quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/os_exit_observation.json": "aa3c90101c64ccefe1403af2c296bcb22cafad3b2e35d73539aa7e3c5227f281",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/terminal.json": "561a6271c27b2e5b394bbf058fbe8f5214e1db1b2e385d1ab2a9646c5f767f92",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/receipt.json": "e73ea05a4703256235a46ce7b914298d3f8258e9fef029f4dbe952b04bb9798a",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_16.json": "277e44690660400b559978c76621b73bf8f62627e2203bf366d630ff70d34fda",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/all_four_readback.json": "859f507ad3762cfef44d53672bbe15a43592ce54d6e08ba8828bf50a925ec340",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/os_exit_observation.json": "149ed5718bb5563dd0b59358025044ec89bd8d43b0dc121a77c1b04e808f791d",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/terminal.json": "cbbe45e8dc12aac6903ec184395122ee95f239cc8e1be017c7d552010d384a40",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/receipt.json": "665fab8f7b5c822eb0846c39d1f50f67aa151090dffc0ddf4be5abcf77b06b98",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_targets_v1/preparation/max_negative_contrast_change_small_16/model_contract.json": "c8765c04148c42d9d96d022bdb26030286d36edeea201ced0387c844a5d4f879",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/preparation/enlarged_trial_boxes/max_negative_contrast_change_small_16.json": "a109fc74f1cfa36e4d905e10fa7cda94acde1038aea5ed69041a317dab34179b",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_targets_v1/preparation/max_negative_contrast_change_small_16/row.json": "e70fa9b0cc82dd624a1b3bad8259f07dd0e02623d2496639d8e761e1cfdf7d1e",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/remaining_cached_30_v1/recenter_v1/actual/max_negative_contrast_change_small_16/recentered_cache_packet.json": "c7ef4cb944fb73ec0b498f97dbebf3727d4a7e5773957a1b573a57a8b77b6549",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/model_observation_contract.json": "3188680f8eba5f9e21127e06253761beff647125140f58040956c993c4c131a4",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/coordinate_box_1.json": "ce62dae21b181aa059518440311c5b9e699ccc22f1015a2c91ec5c1da493debe",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/row.json": "339b4500b699ff3e698984cfa928c3660d57c31dbcbbc57d764b7dc7c60b48d8",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/cached_pilots_v1/actual/max_negative_contrast_change_small_17/cache_packet.json": "7c94b3f989cab5fb31d979851b3ee94a155b96e2251a34092f1cab2b6a0c96a3",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/active_energy.py": "072ed83a30565be34bd5fe7dde559526e089a070df0ad95f0e61611db9e9e76d",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/protocol.json": "06dd35434358ad7dcb993349281ed6bf8a84fd0a34f7ca2d4932ec0792842361",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_16.json": "a991e1e3431c09886361a1be0d6617f20d551423d5e110567fc2bbcc63a6d952",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/independent_actual/replay/max_negative_contrast_change_small_17_box_1.json": "723e71ba60138282a934a76579bd50b02e11888edd7547d4a24cd2f4d8759bf9",
+    "runs/nonaxisymmetric_adequacy_audit_v1/surface_stress.py": "f33aaf277eea10fd364a529f95d369551c99b73747f7856cee3af4318b60b3a3"
+  },
+  "precision_bits": 160,
+  "method": "Arb interval range quadrature with the full certified nodal box; positive-part law includes transitions.",
+  "rows": [
+    {
+      "case": "max_negative_contrast_change_small_16",
+      "face": "apical",
+      "ordered_edge": 10,
+      "node": 323,
+      "dof": 646,
+      "component": "radial",
+      "direction": "unit P2 midpoint basis; zero at all other nodes",
+      "reduced_virtual_work_exact": [
+        "-422138629820749171992295511941197764067261651615/374144419156711147060143317175368453031918731001856",
+        "-366060142796215740033273950447981840261268085407/374144419156711147060143317175368453031918731001856"
+      ],
+      "decimal_display_only": [
+        -0.0011282772325515713,
+        -0.0009783926314370353
+      ],
+      "strict_nonzero": true,
+      "subdivisions": 2048,
+      "possible_compression_crossing_cells": 0,
+      "scope": "S/(2 pi) DE_rel[v] at the certified old finite-dimensional root; no continuum or biological equilibrium claim."
+    },
+    {
+      "case": "max_negative_contrast_change_small_17",
+      "face": "apical",
+      "ordered_edge": 10,
+      "node": 323,
+      "dof": 646,
+      "component": "radial",
+      "direction": "unit P2 midpoint basis; zero at all other nodes",
+      "reduced_virtual_work_exact": [
+        "-882376061521963125266130673797214404972297395505/748288838313422294120286634350736906063837462003712",
+        "-769674029983209640536081186632090499674564271409/748288838313422294120286634350736906063837462003712"
+      ],
+      "decimal_display_only": [
+        -0.0011791917991330215,
+        -0.0010285787928067825
+      ],
+      "strict_nonzero": true,
+      "subdivisions": 2048,
+      "possible_compression_crossing_cells": 0,
+      "scope": "S/(2 pi) DE_rel[v] at the certified old finite-dimensional root; no continuum or biological equilibrium claim."
+    }
+  ],
+  "new_equilibrium_solved": false,
+  "novelty_claim": false
+}

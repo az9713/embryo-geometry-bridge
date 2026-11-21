@@ -1,0 +1,17 @@
+{
+  "status": "EXPLICIT_IMAGE_RUNTIME_SECURITY_MIGRATION",
+  "historical_requirements_sha256": "be29e6717d3f54dd6d053731f767a1c8d10490484b8408571b4e9e4450fe7d6f",
+  "historical_requirements_record": "reproducibility/environment-before-pillow13.record",
+  "historical_git_revision": "f374a9e71f120036d3f23f41f5e13311f2606924",
+  "active_requirements": "controlled_furrowing/requirements.txt",
+  "only_dependency_change": {
+    "Pillow": [
+      "11.0.0",
+      "13.0.0"
+    ]
+  },
+  "scientific_implementations_and_numerical_targets_changed": false,
+  "torch_version_unchanged": "2.11.0+cu128",
+  "torch_security_alert_not_addressed": true,
+  "policy": "Historical runtime is a non-installable record; active image processing requires Pillow 13 or newer. Local verification uses an isolated override; global historical interpreter was preserved."
+}

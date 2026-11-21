@@ -1,0 +1,10 @@
+{
+  "status": "PASS_SHAPE_PLAN_RELEASE_IDENTITIES",
+  "plan_bundle_files": 10,
+  "guide_build_files": 15,
+  "retained_scientific_inputs": 37,
+  "main_theorem_proved": false,
+  "novelty_confirmed": false,
+  "scope": "Saved bundle identities and retained input hashes. Does not rerun historical integrations or prove the proposed continuum theorem.",
+  "verifier_sha256": "2d3c01c2209adfc61defb4f6374ad55db784969b2faf5ec96bb20eaf17d1f5a9"
+}

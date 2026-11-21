@@ -21,6 +21,9 @@ def email(data):
     return any(EMAIL.search(data[max(0,m.start()-254):m.start()+255]) for m in re.finditer(b'@',data))
 def main():
     cli=argparse.ArgumentParser();cli.add_argument('--output',type=Path,required=True);args=cli.parse_args()
+    from importlib.metadata import version
+    if int(version('Pillow').split('.')[0])<13:
+        raise SystemExit('Pillow >= 13.0.0 is required before opening images. Use the isolated environment from the active requirements.')
     bad=[];count=Counter()
     for p in ROOT.rglob('*'):
         if not p.is_file() or '.git' in p.relative_to(ROOT).parts or p.suffix.lower() not in EXT:continue

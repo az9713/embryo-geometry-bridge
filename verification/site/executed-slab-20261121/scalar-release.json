@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXECUTED_RELEASE_IDENTITIES_AND_STRICT_INEQUALITIES",
+  "source_bindings_checked": 53,
+  "strict_virtual_work_cases": 2,
+  "arithmetic_implementations": 2,
+  "slab_angle_checks": 4,
+  "slab_bound_rows": 7,
+  "only_dependency_pin_changed": "Pillow 11.0.0 to 13.0.0",
+  "scope": "Evidence identities and exact signed scalar conclusions; written proof assessment and external peer review are distinct.",
+  "full_cylinder_or_biological_theorem_proved": false,
+  "sharp_rate_or_novelty_claim": false,
+  "verifier_sha256": "809c654eb030890b9831bb0cc8ac279286e4006b5be2d7621210ecc54d05030f"
+}

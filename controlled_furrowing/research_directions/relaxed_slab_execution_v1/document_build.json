@@ -1,0 +1,20 @@
+{
+  "status": "PASS_STRICT_EXECUTED_REPORT_MATH",
+  "rows": [
+    {
+      "source": "REPORT.md",
+      "source_sha256": "8a3c4bbf645bdb0fb883a347bfb8530af228fdb888b510794ccc9c80f10e3a05",
+      "html": "REPORT.html",
+      "html_sha256": "a04cf55a3306de517bda05a970cd840ae1f4b22147761a47857cf5349a879706",
+      "strict_math_expressions": 21
+    },
+    {
+      "source": "THEOREM.md",
+      "source_sha256": "e18d32ae019bb15e443c9cd10c891fc6865cc42cab471344d1e4c67f1cf059ae",
+      "html": "THEOREM.html",
+      "html_sha256": "8abc87757a9082473aa2af186b3fb09777612fd2272dc87dc85c79f9cbd7f1c6",
+      "strict_math_expressions": 121
+    }
+  ],
+  "source_sha256": "09728ad04157512205597f15f3e5343ab3bec89227b8e888c7870fe2fc42ae45"
+}

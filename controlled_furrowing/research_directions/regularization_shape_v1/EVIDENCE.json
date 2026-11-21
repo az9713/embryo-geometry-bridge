@@ -107,9 +107,9 @@
   },
   "scientific_sources_modified": false,
   "file_sha256": {
-    "PLAN.md": "3881beca1695fc33e1180e8bcb47715f6b28cd2d326a783d625239111bb3419a",
-    "PLAN.html": "dc0e501ca15bbc617b9d3331a38aa2f725d06ddf1f0e484ae3d9a43200268f55",
-    "surface-relaxation.svg": "703be4c97fc64f37df4c966e1da430f1027311c6d58e4c148a5d96fbe745c9d9",
+    "PLAN.md": "a9c49ff14d3b9e6054087f29b13e72c2872203085bec33007e5a1113ea144736",
+    "PLAN.html": "73b4a01f6bbf401d42be480047ac5d6b100fc719575f191e71bc98041e02b70f",
+    "surface-relaxation.svg": "ee3d3b203ac18ccebac2aba5b9b1317803be6f13b4f46531aaad1dcfe5e231d8",
     "illustration.csv": "b02df5be9b30ffbd50af528454d4a7fe86513261dfaf4cf1e5ccbb717224f1fa",
     "LITERATURE-AUDIT.json": "9ba39110305b1e87b15aacaf400bc27de521c64290313d1d429708c399bc2d45",
     "check_and_build.py": "ad271681841b86098128afdad1d422b6182dce4a38d47199e4eb5162a8a525c3"

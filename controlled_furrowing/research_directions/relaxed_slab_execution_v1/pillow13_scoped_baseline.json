@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ROOT_OBSERVED_PATCHED_RUNTIME_BASELINE",
+  "observed_exit_code": 0,
+  "terminal_chunk": "e5c86c",
+  "baseline_publication_commit": "f374a9e71f120036d3f23f41f5e13311f2606924",
+  "manifest_files_checked": 1711,
+  "html_pages": 125,
+  "local_links_and_assets": 1857,
+  "scalar_replay": {
+    "root_selfmaps": 4,
+    "observer_rows": 64,
+    "stress_windows": 672,
+    "geometry_slots": 6
+  },
+  "scope": "Root observation of the existing scoped verifier under the isolated Pillow 13 interpreter, before active manifest migration; not full historical raw integration replay."
+}

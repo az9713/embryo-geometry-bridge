@@ -1,0 +1,13 @@
+# Executed steps: provenance and verification limits
+
+The current [report](../controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html) and [slab proof](../controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html) distinguish a source-specific validated force diagnostic, a written periodic affine-slab construction and runtime compatibility checks. They claim no new biological prediction, full cylinder limit or confirmed originality.
+
+The original frozen scientific implementations and numerical targets are unchanged. One active dependency pin changes from Pillow 11.0.0 to 13.0.0, with exact previous requirements bytes preserved under `reproducibility/environment-before-pillow13.record`. The publication manifest explicitly records this authorized environment migration; it is not an unreported change to the model or an upgrade of Torch.
+
+The K/L input identities are `optoGEF2_small_col_K` and `optoGEF2_small_col_L`, small-patch calibration fields. The old proposal's large-region label for that stress scan was incorrect. The complete original eleven-file proposal bundle is retained in `reproducibility/plan-proposal-before-scope-correction.zip`, including its original manifest and receipts. Its live source is revised only for scope correction and shape-guide/executed-result links, and rebuilt with new presentation receipts. Earlier source-copy receipts identify their original checkpoint and are historical after this revision.
+
+The virtual-work producer bounds the whole certified nodal box with Arb range integration. A separate integer fixed-point implementation confirms the strict sign. It shares the frozen input-authentication loader, not the producer's integration code. The two unsuccessful direct-basis enclosure attempts are retained. Arithmetic replay is not independent external proof review.
+
+The slab theorem supplies an explicit upper recovery construction for fixed positive height, positive diagonal affine base and affine-periodic lateral conditions. It permits compressibility, preserves global injectivity and admits one or two free faces with disjoint collars. It does not prove a lower bound, sharp exponent, full Gamma limit, selected equilibrium or biological validity. Symbolic identities and independent high-precision constant checks support, but do not replace, assessment of the written argument.
+
+Private installation logs and execution-state records were excluded from publication. Trusted saved/generated images were used for compatibility checks; no malicious exploit files or author contacts were used. Current site rendering, privacy, manifests and deployment checks have their own receipts, separate from these mathematical and historical records.

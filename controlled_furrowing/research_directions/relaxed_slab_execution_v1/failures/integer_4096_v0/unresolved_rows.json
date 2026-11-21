@@ -1,0 +1,39 @@
+{
+  "status": "UNRESOLVED_COARSE_DIRECT_BASIS_BOUND",
+  "rows": [
+    {
+      "case": "max_negative_contrast_change_small_16",
+      "reduced_virtual_work_exact": [
+        "-455158164281362391749761565/39614081257132168796771975168",
+        "800244206042904211627919959/79228162514264337593543950336"
+      ],
+      "strict_negative": false,
+      "decimal_display_only": [
+        -0.011489807407799346,
+        0.010100501900430004
+      ],
+      "subdivisions": 4096,
+      "fixed_point_bits": 96,
+      "node": 323,
+      "component": "radial"
+    },
+    {
+      "case": "max_negative_contrast_change_small_17",
+      "reduced_virtual_work_exact": [
+        "-926915893756958890850484881/79228162514264337593543950336",
+        "203175799115703639290236921/19807040628566084398385987584"
+      ],
+      "strict_negative": false,
+      "decimal_display_only": [
+        -0.011699323376205724,
+        0.01025775646780265
+      ],
+      "subdivisions": 4096,
+      "fixed_point_bits": 96,
+      "node": 323,
+      "component": "radial"
+    }
+  ],
+  "terminal_chunk": "0a6339",
+  "exit_code": 1
+}

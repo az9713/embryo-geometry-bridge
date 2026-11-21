@@ -1,5 +1,7 @@
 # Shape guide and next-step plan: publication provenance
 
+**Historical checkpoint:** this describes the earlier shape-guide/plan publication. The later [executed-steps update](EXECUTION-UPDATE-20261121.md) supersedes the unchanged-plan and dependency statements below. It records the archived original bundle, the K/L small-patch scope correction, the image-runtime migration and the newly proved periodic-slab result.
+
 This update publishes explanatory mathematics, analytic teaching figures, a prospective research plan and scoped verification receipts. It adds no solved continuum model, biological validation, confirmed novelty or new exact-equilibrium certificate. No authors were contacted.
 
 The canonical [shape guide](SHAPE-DESCRIPTION.html), its source, figure generators and data outputs and the original guide receipts were copied byte for byte from the authoring workspace. The public [next-step plan](../controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html) and its complete eleven-file authoring bundle are also unchanged copies. The original evidence, manifest and browser receipts describe those authoring checks. `MANIFEST.json` records all ten other files in that plan bundle. Its original `published_or_pushed: false` field is historical metadata from plan creation, not the status of this release.

@@ -1,0 +1,4333 @@
+{
+  "status": "PASS_ALL_HTML_BROWSER",
+  "scope": "Every HTML file at two widths, with the declared JavaScript mode.",
+  "source_sha256": "c6621f02d8dfa5c3ebafb1a9241845b9efc34c1b7b5d8d07bee717597591b3c9",
+  "browser": "Microsoft Edge headless",
+  "version": "158.0.4370.33",
+  "javascript_disabled": true,
+  "html_files": 127,
+  "view_count": 254,
+  "math_expressions_per_width": 3303,
+  "base_url": "local static server",
+  "views": [
+    {
+      "path": "controlled_furrowing/docs/ACTIVATED-MESH-STUDY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2a321c01f878dd79a5b9d5d4fdf52eb17afa35ca68e2c2224a7c18df057de549",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 17,
+        "rendered": 17,
+        "accessible": 17,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ACTIVATED-QUADRATURE.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c7390287f97ae53d01fa02118b8e8bac04dd025d4c00ae494f97600f13cad1fc",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 25,
+        "rendered": 25,
+        "accessible": 25,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ACTUAL-M-CELL-EXCLUSION.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "72ce77240489bb6d6abf6d2bfcc60341dbc7c4c7aaac75627768548422da561f",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 11,
+        "rendered": 11,
+        "accessible": 11,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-CERTIFICATION-PATH.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "46b03038a8d6f9890050021a7616932b9345c045879cef468fe8c3afb26e5ac5",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 59,
+        "rendered": 59,
+        "accessible": 59,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-INDEPENDENT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8efb950cd58b5acc025326548c937fbfcd5549feb1b5185abdcd5fd773c57b82",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 42,
+        "rendered": 42,
+        "accessible": 42,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-OBSERVER-ERROR.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "5e97fb989240b865c7769bb5bb38776cc3c9d4a33d57113e8bc912638d4ff768",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 27,
+        "rendered": 27,
+        "accessible": 27,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ANNULUS-OBSERVER.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b960583d5bb4a04cb42bb408ce68696e9d3d6624fb5bbdd5c5bf2284e5c45f6c",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 42,
+        "rendered": 42,
+        "accessible": 42,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/AXISYMMETRIC-MODEL.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "fca35d096fb8e210d41e378c1e05a55937de3039a6ef807bb0400e40e46098dc",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 65,
+        "rendered": 65,
+        "accessible": 65,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/BASELINE-TENSION.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8917cb9a3cb4831f5437e0111a40c76346dcb883f85b4bd9aeb1d30bbe6487ab",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 33,
+        "rendered": 33,
+        "accessible": 33,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/BOUNDED-AFFINE-MINIMAX-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "d6558e9b6615e84e9d733364efacd9c114c372b148fc95dc10d1215225ecca0e",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 19,
+        "rendered": 19,
+        "accessible": 19,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/BOUNDED-AFFINE-MINIMAX.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "441d89f81caf9c3476e8e97bd0ff31f5bf9232acf8f0370e13b177720315f25c",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 12,
+        "rendered": 12,
+        "accessible": 12,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/CALIBRATION-EXCEPTION-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7d08823219ea2f66126b87b508e7fc2aa713b702bae31351fda199b22ddbae9b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 9,
+        "rendered": 9,
+        "accessible": 9,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/CALIBRATION-UNCERTAINTY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b1cd356e2941017f31d0fbf8ea7d52a7f814ef8437d9464fa0325796fdd8b6b9",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 54,
+        "rendered": 54,
+        "accessible": 54,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-BOUND-DIAGNOSTICS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2dafe0143621ce4fb86386fffbb798b1fecb48e90ca98a409f5b5ece6c981a40",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 30,
+        "rendered": 30,
+        "accessible": 30,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-ENERGY-STABILITY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "13c9a1ad0ba56081eb41b29e519d345c2391a52946fcd53485f235b1da994ce8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 61,
+        "rendered": 61,
+        "accessible": 61,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-INFERENCE-CHECKPOINT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "9909eeb70e82c3a372cb20aee538c420ed4ca041b19b5c348d438efdef80289a",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 36,
+        "rendered": 36,
+        "accessible": 36,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-INTEGRATION-L.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "62f2709c4e632902ea08279e6b7d1f105995429f717c7c83a6e4ece2a94441c0",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 62,
+        "rendered": 62,
+        "accessible": 62,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-RECENTERED-ROOTS-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7022877ccbc155f551445ada22d15e6fb34cf4102b1bf77458e76ef9bdd4a75a",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 28,
+        "rendered": 28,
+        "accessible": 28,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-STATIC-APPLICATION-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "19b492f33e49562e8f8aed1c3ee56e5927240fc03c7a6d38f6c2d138cd673845",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 19,
+        "rendered": 19,
+        "accessible": 19,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-STATIC-OBSERVERS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b5ac14cbd6c4f1688f774611bc76815a8623c8aead15e09040cbf3ea9044acf8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 38,
+        "rendered": 38,
+        "accessible": 38,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-UNIFORM-ROOTS-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f25572fa61734fcc1a244d20f85e2383d484c78115a8da4ff7d11001a983da07",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 28,
+        "rendered": 28,
+        "accessible": 28,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-UNIFORM-ROOTS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "ae10b6f3df2c44390b5abde103e2c9b4e935152e09d236c407922c8531043a9d",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 49,
+        "rendered": 49,
+        "accessible": 49,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COMPLETION-AUDIT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c7c8f43c8d38f7ab72b780e48eb7de781a270e618e36fd2cb1fae9124e241d93",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/CURRENT-FIVE-GATE-AUDIT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f43a11086d5402f285258a62a6695e34fa24a4817ea37db497ad1bb684b45f56",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 7,
+        "rendered": 7,
+        "accessible": 7,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/CURRENT-FIVE-GATE-AUDIT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "9d835c263f63b42aeecbbbcb89e1f05d9f8e47143a7d53381a2f53691c5c3836",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/DATA.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "99b071788280de8312400305877c7cbd7f268231b146c36cf107e5cd5f25f6c1",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/DISCRETE-GEOMETRY-CERTIFICATE.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "6c1ddfbc161f950f37b8bceebd08c967061b90f96c18dda4b749569426e31957",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENDPOINT-MESH-FUNCTIONALS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "04abd3a59cedc3898a7b2bff94ddff32d9becfcd88eb95b180f0be5d59ac9488",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 33,
+        "rendered": 33,
+        "accessible": 33,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENDPOINT-OBSERVER-INDEPENDENT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b077b17e576a1106c2a2d53e28c6250718d7a5e415dd52d98dee1f0594170386",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 22,
+        "rendered": 22,
+        "accessible": 22,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-CELL-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2112ad1fcc36075ccc15878424578c65e16101e8389eed16932fa7da1259437f",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 11,
+        "rendered": 11,
+        "accessible": 11,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-CELL.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7b02723387134130a9f6a253d02214e3dfb9081faff690d969b96fefd3c2804e",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 48,
+        "rendered": 48,
+        "accessible": 48,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-GEOMETRY-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "821a8776eb36e8ef2b661ba0e33ff6034ac58a197239ec72c0d58aa59e0305b8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-GEOMETRY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "557379ac82f10e424dd21d41bbcfc3d9c0622f559d84ed9327bd0c0c70b3c5e0",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 11,
+        "rendered": 11,
+        "accessible": 11,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/EXACT-INTEGRAL-ROOT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "49cc06e3cc0c26349be85a3e87df1a2f45a06ba0f34ce783fb6e91f660400d19",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 45,
+        "rendered": 45,
+        "accessible": 45,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/EXACT-INTEGRATION-BRIDGE.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "cecdbc5d84ee4524be6cedf6d5845eb7a8ccd871c4b1da3d97e5fc79bf2df594",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 53,
+        "rendered": 53,
+        "accessible": 53,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/GAIN-SURROGATE-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a521412ca406ba31edcec31213a2de651a5fba261ead03dab8d78a44a669171a",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 9,
+        "rendered": 9,
+        "accessible": 9,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/GAIN-SURROGATE-V2-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b91f9a8416dbdd77faef2b6c5f3678a19464327b92f499232b40583d17cadcc8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 1,
+        "rendered": 1,
+        "accessible": 1,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/index.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f564752244d20063c417b77f107bc40b37673ced1805abc48189853f17991f8b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-CALIBRATION-CONSTRAINTS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "1cd0cd5d421ac8558b5432280f8a8610df4fb6de18b7c65c85f82d202d14b855",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 18,
+        "rendered": 18,
+        "accessible": 18,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-CONSTRAINT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7525add78385528ef8e452e9c2ba55189e274dfbd730c9b986a13736d3c09f56",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 10,
+        "rendered": 10,
+        "accessible": 10,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-DIRECT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f76c2712cd7972476e9f45ec0b34e9e0247e4cf13948d73813fbcb8abf286df8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-GAIN-CALIBRATION.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "ad3aa3ae5e2fd5d380f4128c0ff3dd6b3c3f79949fda5183c0310a3e3dcc7ebb",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-INFERENCE-PROGRESS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f55ac4efc732fd569e9790e69e63a2a27aa16204be72ec6fd510b9e195fc4443",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 17,
+        "rendered": 17,
+        "accessible": 17,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-OBSERVATION-CONTRACT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "aa9b09c7ff0b1895dd0b7ad37a85e8fff3c9bd080faf4c9850ad097ba1d5afcf",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 55,
+        "rendered": 55,
+        "accessible": 55,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-REFINEMENT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "85ba98c86dc90c68145099e08cae00da2223f3985496ffe678a1c21728a40530",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/L-CENTERED-ROOT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "14cd293522d76a1837867531dd574509c45a80710c79c5c3c15a3423fb680b0b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 91,
+        "rendered": 91,
+        "accessible": 91,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/LOCAL-INFERENCE.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c767e12cc9f24ceec5ca3c8c7fc097f6a3a118651085c1ff859a727cc92f0d24",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 18,
+        "rendered": 18,
+        "accessible": 18,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DESCENT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "4d58343c377172072150d962e1807efb758dd6c3c80ab18ab6645f18fe4c2afe",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 7,
+        "rendered": 7,
+        "accessible": 7,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DESCENT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7a8ee0f26a8dce31258dd412bbf7ccb7405360ead0e1168aded73b5f6883bad5",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 29,
+        "rendered": 29,
+        "accessible": 29,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DIRECT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "ab9dfb0469af351455a79b399e9ddf71ccce56552c74ae58ca578226a0f0d12b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 3,
+        "rendered": 3,
+        "accessible": 3,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DIRECT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "aa8e757206be729fbebac4cf18e0a50f1407b73fc8a7d92a0ebe2c2156a38441",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 19,
+        "rendered": 19,
+        "accessible": 19,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-INPUTS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "6697edb33829a8d31b023136fe04729ec7e6a838d786ba82ba0a99854214769d",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 4,
+        "rendered": 4,
+        "accessible": 4,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-TANGENT-INFERENCE.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0ad827bb866de485517be280788ac4f1fae8e1073a476dd76cbcfe8de3cfd44e",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 22,
+        "rendered": 22,
+        "accessible": 22,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-TANGENT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "9a4fd591a865f93b909c86fd4679c394f047b2b888e2739c912747d42963c700",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 10,
+        "rendered": 10,
+        "accessible": 10,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MIXED-GEOMETRY-PROOF.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "010225d927145519f5bc68ba5dd2efbfaf73950331735e67e20c84f2ccae744d",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 55,
+        "rendered": 55,
+        "accessible": 55,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MIXED-MECHANICS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b46850aa1b18e1e051188858dd111debe88562ec038068edce69d8d1852a650e",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 68,
+        "rendered": 68,
+        "accessible": 68,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MODEL-CANDIDATES.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8e0d1ea226d95e728f32a95e28d9f67a36bea2524f1e219dc97f81b203dcd4b1",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 54,
+        "rendered": 54,
+        "accessible": 54,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MOVIE-GEOMETRY-FEASIBILITY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "314346735017c69f2e16b79d60b09dffa2a8a6f07e7a83ac274ae2f87a1fe368",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 4,
+        "rendered": 4,
+        "accessible": 4,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/NODAL-OBSERVER-ERROR-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8ce7d30298f133a3b6b67194ea87d95e74cb16eedb4dd6e2a2c53cf80e469756",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 12,
+        "rendered": 12,
+        "accessible": 12,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/NODAL-OBSERVER-ERROR-TRANSFER.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "576ab87dd5dee9a7ac435f2f1a23579b14e7b0e7fb19a898d60fb890e5d58de8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 20,
+        "rendered": 20,
+        "accessible": 20,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/NUMERICAL-ACCURACY-PATH.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "9668783dd8f9ac7a892e1c968f3d6fac0f34b246c078f44c49d07f4a7d21909f",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 60,
+        "rendered": 60,
+        "accessible": 60,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ORIGINALITY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "945511f2c01966df8cacf8a93ee9e7f71d06588bd02b50a76cfc9547842ccd1b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 4,
+        "rendered": 4,
+        "accessible": 4,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/OUTLIER-SENSITIVITY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "10ed1b8a5c4388c463f434df689821a5922f76d53b047e43c0046f34fa60ca59",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 15,
+        "rendered": 15,
+        "accessible": 15,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETER-INFERENCE-CHECKPOINT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "19fcb985d45950b30227576853dbf74ee552e08dcae82bdf0f4c5bdc8f3f8707",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 7,
+        "rendered": 7,
+        "accessible": 7,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETER-INFERENCE-CHECKPOINT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "818e7c78a5702d8686d3800ca9819a29422900fc045d0f83f319fa1f66b3e1e8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 12,
+        "rendered": 12,
+        "accessible": 12,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-ACTUAL-M-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "270a8a06159eb6a18c04b5135193e8bb86e9f48270cdb3ccfaa22820dd3ae608",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 28,
+        "rendered": 28,
+        "accessible": 28,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-NORM-FEASIBILITY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a025eb35f4b83120a3d6150afca36af141405a7d9c91b54c949f5bd1ceda85b8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 72,
+        "rendered": 72,
+        "accessible": 72,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-ROOT-CELLS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "473f368b31075e6af7b9f50c858290fefff688ea5547c41f2b5161449fb28d9c",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 43,
+        "rendered": 43,
+        "accessible": 43,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-DOMAIN-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "3334a9bd8abd1f886a70ebf88c2e89ab1f5c29574954da5e640b6204325fd13b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 43,
+        "rendered": 43,
+        "accessible": 43,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-INFERENCE-READINESS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7a9950523c1378e0524ba2e6c6296f763f034126cd4dae1710f82992f9b43866",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 24,
+        "rendered": 24,
+        "accessible": 24,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-PARAMETER-DOMAIN.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b7c812bad420d97c35d331d93f56e92327f55eec4c237df9d0a0e5b972f26ac6",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 46,
+        "rendered": 46,
+        "accessible": 46,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PROTOCOL-ERRATA.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f3eef21285aed800c7e23ae47c1feb2717bfe213379f1072bb4f74e228f8224b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 4,
+        "rendered": 4,
+        "accessible": 4,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PUBLIC-SUPPLEMENT-AUDIT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "13f5f2005a8c42837e1cf5dc686bc09ff02f7edfa5dc7598b3833f32d3764491",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-ACCURACY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c0738683c642bd1a2fa4faa06e970316c8ca9fcdc8981b4baba39818d880df0b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 46,
+        "rendered": 46,
+        "accessible": 46,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-ENDPOINT-OBSERVER.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "636a2ec6193237f44ae2496d76feffa9cdefe7157742101f2caae3a90133c836",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 43,
+        "rendered": 43,
+        "accessible": 43,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-FITTED-LOAD-READINESS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "14cb7f2b4144eb321fc7fe2fecd3bc0a246269ae286cbcccf8fa0bd98e939f7f",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 29,
+        "rendered": 29,
+        "accessible": 29,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-INDEPENDENT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "58f3e90b399dd36abce869f7389cfa41d127d7176de458a5ea1bcde0b50c7572",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 57,
+        "rendered": 57,
+        "accessible": 57,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-MEAN-DERIVATIVES.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "eaa35dea5c0dc0bd8178897347b690fe64d0b5adde661c61d417fda5b48f9560",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 23,
+        "rendered": 23,
+        "accessible": 23,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-SOLVE-POLICY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b5ed4453bef8cfca8490a112e1eac064da36c97c9d7f8befd3ff30177cd55749",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 14,
+        "rendered": 14,
+        "accessible": 14,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/RAW-DATA-REQUIREMENTS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7c131d0f6f6b9f6a6142d779db235ba640fc6a7a3e3991a26f6fe7650785e681",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/READINESS-CHECKPOINT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "6cea5b7405ed4d704b4bd1e8a0a2ce522da380f920e2fce200798370e2e07790",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/READINESS-CONTRACT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "5e98f568e85be358b186942914e8bb9d559f02f27d95d75c022076c928d352e1",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 1,
+        "rendered": 1,
+        "accessible": 1,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/RECENTERED-OBSERVERS-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c0b88fdc35d5cc3fd9d5dc293dc25078f0959f7240b37a880272d4307d9bcb3c",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-BODY-GEOMETRY-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "dd6896ab35ea3e9a518c09eb1a180b6b4b9f3a91f61229140769e9366e2a09f7",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 18,
+        "rendered": 18,
+        "accessible": 18,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-BODY-GEOMETRY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "46e313dfb9f18af1077532db522e145f00f33a05b6eac40c1b61f8145526fa52",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 28,
+        "rendered": 28,
+        "accessible": 28,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-OBSERVER-APPLICATION-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "629445e3aad6369e84ca56cb200458bf5ac1df88fc1b099e439a8ef884ea33da",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 20,
+        "rendered": 20,
+        "accessible": 20,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SAFE-INTEGRATION-REPLAY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "472fa92e5b3cbf8a2fc9ad7fa973dfe508a582bc3a4b00a9f5800b2f1dc2edd1",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 27,
+        "rendered": 27,
+        "accessible": 27,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SCALAR-MATH.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f585b10c8851b6d2bd1a6780d702c19433dff522ff5daa95fbb569965b46792b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 36,
+        "rendered": 36,
+        "accessible": 36,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SCIENCE-OVERVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "e3741c658fb312cced28e9c8682f9d8a29f933521d270fc680af4df1472827d1",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 1,
+        "rendered": 1,
+        "accessible": 1,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SHARED-CELL-COHORT-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c29e77eba2ab8df1e49525841f62d6f4f43240130715523935a438d9957894c2",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 18,
+        "rendered": 18,
+        "accessible": 18,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SHARED-CELL-COHORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "3e0609ad77a52110e3a540b1659334e00a56770c17df5b9e625490b84f3de608",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 54,
+        "rendered": 54,
+        "accessible": 54,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SLICE-OBSERVER.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0f464c2f85d4b45fbbeb08814490964ce12d19b9540bdabd7c2fc44c5b7d8cbc",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 16,
+        "rendered": 16,
+        "accessible": 16,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPARSE-NEWTON.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "dc2babe7e5574b3c6b87c5ce54de4b52e96096ba8c19fed201f23ae96dbeb417",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 22,
+        "rendered": 22,
+        "accessible": 22,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPARSE24-GAIN1-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2c0cd3c6849c7c307c299238935745461044671535adf8d5342c80a92655ba27",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 7,
+        "rendered": 7,
+        "accessible": 7,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-CALIBRATION.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "059e626cc6bd9ca21614c25804f41e9508a70f0549213c3ec457f363ad309763",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 5,
+        "rendered": 5,
+        "accessible": 5,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-V1-RESULTS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a56752674f20416d7517cfcf5f07e7226190ecca9d6bb97d70c8a90581fd164a",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 5,
+        "rendered": 5,
+        "accessible": 5,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-V1-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a3db24d532393a1447f819b1b3c2a561d225fc31c117906b404e1c5a69929e5e",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 2,
+        "rendered": 2,
+        "accessible": 2,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-VALIDATION-CONTRACT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "407808f95d7793452edef6616206dcbe7f8da59384fc5554f9019798d364907c",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 37,
+        "rendered": 37,
+        "accessible": 37,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/STATIC-MEAN-COMPATIBILITY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "661403be699b0d83d13b04a73dead64e7439ef7c28562bf1dafee693c235b6e9",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 76,
+        "rendered": 76,
+        "accessible": 76,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/STATIC-MEAN-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "3ead192322abb1626da2329689d0587592356d0e646c776df39332eb2ec2bb0b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 60,
+        "rendered": 60,
+        "accessible": 60,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-MEAN-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "5ecf8bd887cc1cee34c2d62cd3ac61838962f3ff157f1caabf52f4952346c865",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 25,
+        "rendered": 25,
+        "accessible": 25,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-MEAN-WITNESS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "82b17876b98085d18675e710b78b77ca74732efcd62d778ce264251a072d95f4",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 33,
+        "rendered": 33,
+        "accessible": 33,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-ORDER-ROBUST-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "737d77219c1c3f4f00e1dfda4e81ed03fd95781241727f5466e6f6cc58a2c30b",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 23,
+        "rendered": 23,
+        "accessible": 23,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-ORDER-ROBUST-WITNESS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0da0f136ad17edb513796add36ab29c9f62fd70eeacff129fcca5c0e6b1d25e7",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 69,
+        "rendered": 69,
+        "accessible": 69,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TENSION-CALIBRATION.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "19f1f55892d594ba57b0e7821b71fdb87b33852ad8e5aa5328c661ced4504f53",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 6,
+        "rendered": 6,
+        "accessible": 6,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TRANSFER-CLAIM-AUDIT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0f91b608f92fc2d3098911d064d12d128055c7a7c714f5e064040b6f75316fc5",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 26,
+        "rendered": 26,
+        "accessible": 26,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TRANSFER-PAIR-PILOT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8c60efe571fe9cbd8a0301ac8a492c29a5f873b79ea7734c978b158ccd90e5ec",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 27,
+        "rendered": 27,
+        "accessible": 27,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET-REVIEW.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "64ed3d41026a947ce62c2591eae0c1ce0a929a2497f2094a40b893b7e29534e9",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "04ce75a3f840d5792ed4ea4cb4fc0e99817883793751fbed48ac5c9b5056e625",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 29,
+        "rendered": 29,
+        "accessible": 29,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "73b4a01f6bbf401d42be480047ac5d6b100fc719575f191e71bc98041e02b70f",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 50,
+        "rendered": 50,
+        "accessible": 50,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a04cf55a3306de517bda05a970cd840ae1f4b22147761a47857cf5349a879706",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8abc87757a9082473aa2af186b3fb09777612fd2272dc87dc85c79f9cbd7f1c6",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 121,
+        "rendered": 121,
+        "accessible": 121,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/all36_cached_minimum_application_v1/checkpoint_v1/MINIMA.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a5f565524045ac24f5845358bc9897a9f7a0ad10c21fbf966b45ba9d87d34be9",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/four_spatial_checkpoint_v1/SPATIAL.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "adeb905e73d1082805c4fc89013f4e78999a0eef1fa1635ebcf4e2d6ed81c3e4",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 27,
+        "rendered": 27,
+        "accessible": 27,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_checkpoint_v1/REPORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "cc051240b5af2cd27f72ce255890dd620b28289d81eae642838b37535b7d9600",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 15,
+        "rendered": 15,
+        "accessible": 15,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/layout_revision_0/REPORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "40966b3dfe5058932e67d7b7e68df947d0a8a9113440371830a4aa44a4eec100",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 16,
+        "rendered": 16,
+        "accessible": 16,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/REPORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7c4dc4772c15bcf7a45cab36246ff937ab214095aeb2a926d4c00c26ae4b7341",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 16,
+        "rendered": 16,
+        "accessible": 16,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0169608d940dd146adb0aa2525b84931bf41df3dfa8f47904b227cb7736a7461",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 24,
+        "rendered": 24,
+        "accessible": 24,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/observer_checkpoint_v1/OBSERVERS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "dc7e2aa40c2511944f4ba0e226da1da844d866c85cf436c165ffa0e6a78ae557",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/REPORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "88653d522f46167b319f40b1afdcceb7f37b94a49d4099303c0093f105241f87",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 34,
+        "rendered": 34,
+        "accessible": 34,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/ALL-PAGES.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "106badb5080078028c7124b4a080d94e63824c97d53f74bddd42117b13af54b2",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/ARCHIVED-AVIAN-FINDINGS.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c233e498e9aed5229b70abdbca1f1d6ee8ae33f06a646d0a0c0d1be75a346e1e",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/DEVELOPMENT-JOURNEY.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "70c59ed407f27c33b848e0b868df0b0dfe53b47e2f705f7093679a52bff8f247",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 13,
+        "rendered": 13,
+        "accessible": 13,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/index.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a57c455d1c9a32e0e56cbb8491e0bf9ac170ddeede3ddd1ef67f952636ce5bce",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/SHAPE-DESCRIPTION.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "4b1ab64c8bdb0bbae119cc105a684907848a1e7665608c094a802108cfe2cfe1",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 100,
+        "rendered": 100,
+        "accessible": 100,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "index.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2037d6198fd9cf2bad56f8cb05c0de487060bcbdd6cc2afb52f45a8d375a4cf8",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "OMITTED.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a7335c001dc0e548a39330fe857903f6b9fe3a5cc9883685b4c5a4e69389b58c",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ACTIVATED-MESH-STUDY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2a321c01f878dd79a5b9d5d4fdf52eb17afa35ca68e2c2224a7c18df057de549",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 17,
+        "rendered": 17,
+        "accessible": 17,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ACTIVATED-QUADRATURE.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c7390287f97ae53d01fa02118b8e8bac04dd025d4c00ae494f97600f13cad1fc",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 25,
+        "rendered": 25,
+        "accessible": 25,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ACTUAL-M-CELL-EXCLUSION.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "72ce77240489bb6d6abf6d2bfcc60341dbc7c4c7aaac75627768548422da561f",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 11,
+        "rendered": 11,
+        "accessible": 11,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-CERTIFICATION-PATH.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "46b03038a8d6f9890050021a7616932b9345c045879cef468fe8c3afb26e5ac5",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 59,
+        "rendered": 59,
+        "accessible": 59,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-INDEPENDENT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8efb950cd58b5acc025326548c937fbfcd5549feb1b5185abdcd5fd773c57b82",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 42,
+        "rendered": 42,
+        "accessible": 42,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-OBSERVER-ERROR.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "5e97fb989240b865c7769bb5bb38776cc3c9d4a33d57113e8bc912638d4ff768",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 27,
+        "rendered": 27,
+        "accessible": 27,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ANNULUS-OBSERVER.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b960583d5bb4a04cb42bb408ce68696e9d3d6624fb5bbdd5c5bf2284e5c45f6c",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 42,
+        "rendered": 42,
+        "accessible": 42,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/AXISYMMETRIC-MODEL.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "fca35d096fb8e210d41e378c1e05a55937de3039a6ef807bb0400e40e46098dc",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 65,
+        "rendered": 65,
+        "accessible": 65,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/BASELINE-TENSION.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8917cb9a3cb4831f5437e0111a40c76346dcb883f85b4bd9aeb1d30bbe6487ab",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 33,
+        "rendered": 33,
+        "accessible": 33,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/BOUNDED-AFFINE-MINIMAX-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "d6558e9b6615e84e9d733364efacd9c114c372b148fc95dc10d1215225ecca0e",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 19,
+        "rendered": 19,
+        "accessible": 19,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/BOUNDED-AFFINE-MINIMAX.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "441d89f81caf9c3476e8e97bd0ff31f5bf9232acf8f0370e13b177720315f25c",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 12,
+        "rendered": 12,
+        "accessible": 12,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/CALIBRATION-EXCEPTION-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7d08823219ea2f66126b87b508e7fc2aa713b702bae31351fda199b22ddbae9b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 9,
+        "rendered": 9,
+        "accessible": 9,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/CALIBRATION-UNCERTAINTY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b1cd356e2941017f31d0fbf8ea7d52a7f814ef8437d9464fa0325796fdd8b6b9",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 54,
+        "rendered": 54,
+        "accessible": 54,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-BOUND-DIAGNOSTICS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2dafe0143621ce4fb86386fffbb798b1fecb48e90ca98a409f5b5ece6c981a40",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 30,
+        "rendered": 30,
+        "accessible": 30,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-ENERGY-STABILITY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "13c9a1ad0ba56081eb41b29e519d345c2391a52946fcd53485f235b1da994ce8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 61,
+        "rendered": 61,
+        "accessible": 61,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-INFERENCE-CHECKPOINT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "9909eeb70e82c3a372cb20aee538c420ed4ca041b19b5c348d438efdef80289a",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 36,
+        "rendered": 36,
+        "accessible": 36,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-INTEGRATION-L.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "62f2709c4e632902ea08279e6b7d1f105995429f717c7c83a6e4ece2a94441c0",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 62,
+        "rendered": 62,
+        "accessible": 62,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-RECENTERED-ROOTS-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7022877ccbc155f551445ada22d15e6fb34cf4102b1bf77458e76ef9bdd4a75a",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 28,
+        "rendered": 28,
+        "accessible": 28,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-STATIC-APPLICATION-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "19b492f33e49562e8f8aed1c3ee56e5927240fc03c7a6d38f6c2d138cd673845",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 19,
+        "rendered": 19,
+        "accessible": 19,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-STATIC-OBSERVERS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b5ac14cbd6c4f1688f774611bc76815a8623c8aead15e09040cbf3ea9044acf8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 38,
+        "rendered": 38,
+        "accessible": 38,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-UNIFORM-ROOTS-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f25572fa61734fcc1a244d20f85e2383d484c78115a8da4ff7d11001a983da07",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 28,
+        "rendered": 28,
+        "accessible": 28,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-UNIFORM-ROOTS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "ae10b6f3df2c44390b5abde103e2c9b4e935152e09d236c407922c8531043a9d",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 49,
+        "rendered": 49,
+        "accessible": 49,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/COMPLETION-AUDIT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c7c8f43c8d38f7ab72b780e48eb7de781a270e618e36fd2cb1fae9124e241d93",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/CURRENT-FIVE-GATE-AUDIT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f43a11086d5402f285258a62a6695e34fa24a4817ea37db497ad1bb684b45f56",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 7,
+        "rendered": 7,
+        "accessible": 7,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/CURRENT-FIVE-GATE-AUDIT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "9d835c263f63b42aeecbbbcb89e1f05d9f8e47143a7d53381a2f53691c5c3836",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/DATA.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "99b071788280de8312400305877c7cbd7f268231b146c36cf107e5cd5f25f6c1",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/DISCRETE-GEOMETRY-CERTIFICATE.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "6c1ddfbc161f950f37b8bceebd08c967061b90f96c18dda4b749569426e31957",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENDPOINT-MESH-FUNCTIONALS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "04abd3a59cedc3898a7b2bff94ddff32d9becfcd88eb95b180f0be5d59ac9488",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 33,
+        "rendered": 33,
+        "accessible": 33,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENDPOINT-OBSERVER-INDEPENDENT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b077b17e576a1106c2a2d53e28c6250718d7a5e415dd52d98dee1f0594170386",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 22,
+        "rendered": 22,
+        "accessible": 22,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-CELL-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2112ad1fcc36075ccc15878424578c65e16101e8389eed16932fa7da1259437f",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 11,
+        "rendered": 11,
+        "accessible": 11,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-CELL.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7b02723387134130a9f6a253d02214e3dfb9081faff690d969b96fefd3c2804e",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 48,
+        "rendered": 48,
+        "accessible": 48,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-GEOMETRY-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "821a8776eb36e8ef2b661ba0e33ff6034ac58a197239ec72c0d58aa59e0305b8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-GEOMETRY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "557379ac82f10e424dd21d41bbcfc3d9c0622f559d84ed9327bd0c0c70b3c5e0",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 11,
+        "rendered": 11,
+        "accessible": 11,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/EXACT-INTEGRAL-ROOT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "49cc06e3cc0c26349be85a3e87df1a2f45a06ba0f34ce783fb6e91f660400d19",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 45,
+        "rendered": 45,
+        "accessible": 45,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/EXACT-INTEGRATION-BRIDGE.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "cecdbc5d84ee4524be6cedf6d5845eb7a8ccd871c4b1da3d97e5fc79bf2df594",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 53,
+        "rendered": 53,
+        "accessible": 53,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/GAIN-SURROGATE-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a521412ca406ba31edcec31213a2de651a5fba261ead03dab8d78a44a669171a",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 9,
+        "rendered": 9,
+        "accessible": 9,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/GAIN-SURROGATE-V2-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b91f9a8416dbdd77faef2b6c5f3678a19464327b92f499232b40583d17cadcc8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 1,
+        "rendered": 1,
+        "accessible": 1,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/index.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f564752244d20063c417b77f107bc40b37673ced1805abc48189853f17991f8b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-CALIBRATION-CONSTRAINTS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "1cd0cd5d421ac8558b5432280f8a8610df4fb6de18b7c65c85f82d202d14b855",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 18,
+        "rendered": 18,
+        "accessible": 18,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-CONSTRAINT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7525add78385528ef8e452e9c2ba55189e274dfbd730c9b986a13736d3c09f56",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 10,
+        "rendered": 10,
+        "accessible": 10,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-DIRECT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f76c2712cd7972476e9f45ec0b34e9e0247e4cf13948d73813fbcb8abf286df8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-GAIN-CALIBRATION.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "ad3aa3ae5e2fd5d380f4128c0ff3dd6b3c3f79949fda5183c0310a3e3dcc7ebb",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-INFERENCE-PROGRESS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f55ac4efc732fd569e9790e69e63a2a27aa16204be72ec6fd510b9e195fc4443",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 17,
+        "rendered": 17,
+        "accessible": 17,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-OBSERVATION-CONTRACT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "aa9b09c7ff0b1895dd0b7ad37a85e8fff3c9bd080faf4c9850ad097ba1d5afcf",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 55,
+        "rendered": 55,
+        "accessible": 55,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-REFINEMENT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "85ba98c86dc90c68145099e08cae00da2223f3985496ffe678a1c21728a40530",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/L-CENTERED-ROOT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "14cd293522d76a1837867531dd574509c45a80710c79c5c3c15a3423fb680b0b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 91,
+        "rendered": 91,
+        "accessible": 91,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/LOCAL-INFERENCE.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c767e12cc9f24ceec5ca3c8c7fc097f6a3a118651085c1ff859a727cc92f0d24",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 18,
+        "rendered": 18,
+        "accessible": 18,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DESCENT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "4d58343c377172072150d962e1807efb758dd6c3c80ab18ab6645f18fe4c2afe",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 7,
+        "rendered": 7,
+        "accessible": 7,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DESCENT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7a8ee0f26a8dce31258dd412bbf7ccb7405360ead0e1168aded73b5f6883bad5",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 29,
+        "rendered": 29,
+        "accessible": 29,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DIRECT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "ab9dfb0469af351455a79b399e9ddf71ccce56552c74ae58ca578226a0f0d12b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 3,
+        "rendered": 3,
+        "accessible": 3,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DIRECT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "aa8e757206be729fbebac4cf18e0a50f1407b73fc8a7d92a0ebe2c2156a38441",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 19,
+        "rendered": 19,
+        "accessible": 19,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-INPUTS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "6697edb33829a8d31b023136fe04729ec7e6a838d786ba82ba0a99854214769d",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 4,
+        "rendered": 4,
+        "accessible": 4,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-TANGENT-INFERENCE.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0ad827bb866de485517be280788ac4f1fae8e1073a476dd76cbcfe8de3cfd44e",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 22,
+        "rendered": 22,
+        "accessible": 22,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-TANGENT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "9a4fd591a865f93b909c86fd4679c394f047b2b888e2739c912747d42963c700",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 10,
+        "rendered": 10,
+        "accessible": 10,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MIXED-GEOMETRY-PROOF.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "010225d927145519f5bc68ba5dd2efbfaf73950331735e67e20c84f2ccae744d",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 55,
+        "rendered": 55,
+        "accessible": 55,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MIXED-MECHANICS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b46850aa1b18e1e051188858dd111debe88562ec038068edce69d8d1852a650e",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 68,
+        "rendered": 68,
+        "accessible": 68,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MODEL-CANDIDATES.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8e0d1ea226d95e728f32a95e28d9f67a36bea2524f1e219dc97f81b203dcd4b1",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 54,
+        "rendered": 54,
+        "accessible": 54,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/MOVIE-GEOMETRY-FEASIBILITY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "314346735017c69f2e16b79d60b09dffa2a8a6f07e7a83ac274ae2f87a1fe368",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 4,
+        "rendered": 4,
+        "accessible": 4,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/NODAL-OBSERVER-ERROR-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8ce7d30298f133a3b6b67194ea87d95e74cb16eedb4dd6e2a2c53cf80e469756",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 12,
+        "rendered": 12,
+        "accessible": 12,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/NODAL-OBSERVER-ERROR-TRANSFER.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "576ab87dd5dee9a7ac435f2f1a23579b14e7b0e7fb19a898d60fb890e5d58de8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 20,
+        "rendered": 20,
+        "accessible": 20,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/NUMERICAL-ACCURACY-PATH.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "9668783dd8f9ac7a892e1c968f3d6fac0f34b246c078f44c49d07f4a7d21909f",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 60,
+        "rendered": 60,
+        "accessible": 60,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ORIGINALITY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "945511f2c01966df8cacf8a93ee9e7f71d06588bd02b50a76cfc9547842ccd1b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 4,
+        "rendered": 4,
+        "accessible": 4,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/OUTLIER-SENSITIVITY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "10ed1b8a5c4388c463f434df689821a5922f76d53b047e43c0046f34fa60ca59",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 15,
+        "rendered": 15,
+        "accessible": 15,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETER-INFERENCE-CHECKPOINT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "19fcb985d45950b30227576853dbf74ee552e08dcae82bdf0f4c5bdc8f3f8707",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 7,
+        "rendered": 7,
+        "accessible": 7,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETER-INFERENCE-CHECKPOINT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "818e7c78a5702d8686d3800ca9819a29422900fc045d0f83f319fa1f66b3e1e8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 12,
+        "rendered": 12,
+        "accessible": 12,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-ACTUAL-M-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "270a8a06159eb6a18c04b5135193e8bb86e9f48270cdb3ccfaa22820dd3ae608",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 28,
+        "rendered": 28,
+        "accessible": 28,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-NORM-FEASIBILITY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a025eb35f4b83120a3d6150afca36af141405a7d9c91b54c949f5bd1ceda85b8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 72,
+        "rendered": 72,
+        "accessible": 72,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-ROOT-CELLS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "473f368b31075e6af7b9f50c858290fefff688ea5547c41f2b5161449fb28d9c",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 43,
+        "rendered": 43,
+        "accessible": 43,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-DOMAIN-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "3334a9bd8abd1f886a70ebf88c2e89ab1f5c29574954da5e640b6204325fd13b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 43,
+        "rendered": 43,
+        "accessible": 43,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-INFERENCE-READINESS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7a9950523c1378e0524ba2e6c6296f763f034126cd4dae1710f82992f9b43866",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 24,
+        "rendered": 24,
+        "accessible": 24,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-PARAMETER-DOMAIN.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b7c812bad420d97c35d331d93f56e92327f55eec4c237df9d0a0e5b972f26ac6",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 46,
+        "rendered": 46,
+        "accessible": 46,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PROTOCOL-ERRATA.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f3eef21285aed800c7e23ae47c1feb2717bfe213379f1072bb4f74e228f8224b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 4,
+        "rendered": 4,
+        "accessible": 4,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/PUBLIC-SUPPLEMENT-AUDIT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "13f5f2005a8c42837e1cf5dc686bc09ff02f7edfa5dc7598b3833f32d3764491",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-ACCURACY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c0738683c642bd1a2fa4faa06e970316c8ca9fcdc8981b4baba39818d880df0b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 46,
+        "rendered": 46,
+        "accessible": 46,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-ENDPOINT-OBSERVER.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "636a2ec6193237f44ae2496d76feffa9cdefe7157742101f2caae3a90133c836",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 43,
+        "rendered": 43,
+        "accessible": 43,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-FITTED-LOAD-READINESS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "14cb7f2b4144eb321fc7fe2fecd3bc0a246269ae286cbcccf8fa0bd98e939f7f",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 29,
+        "rendered": 29,
+        "accessible": 29,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-INDEPENDENT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "58f3e90b399dd36abce869f7389cfa41d127d7176de458a5ea1bcde0b50c7572",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 57,
+        "rendered": 57,
+        "accessible": 57,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-MEAN-DERIVATIVES.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "eaa35dea5c0dc0bd8178897347b690fe64d0b5adde661c61d417fda5b48f9560",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 23,
+        "rendered": 23,
+        "accessible": 23,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-SOLVE-POLICY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "b5ed4453bef8cfca8490a112e1eac064da36c97c9d7f8befd3ff30177cd55749",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 14,
+        "rendered": 14,
+        "accessible": 14,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/RAW-DATA-REQUIREMENTS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7c131d0f6f6b9f6a6142d779db235ba640fc6a7a3e3991a26f6fe7650785e681",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/READINESS-CHECKPOINT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "6cea5b7405ed4d704b4bd1e8a0a2ce522da380f920e2fce200798370e2e07790",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/READINESS-CONTRACT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "5e98f568e85be358b186942914e8bb9d559f02f27d95d75c022076c928d352e1",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 1,
+        "rendered": 1,
+        "accessible": 1,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/RECENTERED-OBSERVERS-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c0b88fdc35d5cc3fd9d5dc293dc25078f0959f7240b37a880272d4307d9bcb3c",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-BODY-GEOMETRY-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "dd6896ab35ea3e9a518c09eb1a180b6b4b9f3a91f61229140769e9366e2a09f7",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 18,
+        "rendered": 18,
+        "accessible": 18,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-BODY-GEOMETRY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "46e313dfb9f18af1077532db522e145f00f33a05b6eac40c1b61f8145526fa52",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 28,
+        "rendered": 28,
+        "accessible": 28,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-OBSERVER-APPLICATION-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "629445e3aad6369e84ca56cb200458bf5ac1df88fc1b099e439a8ef884ea33da",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 20,
+        "rendered": 20,
+        "accessible": 20,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SAFE-INTEGRATION-REPLAY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "472fa92e5b3cbf8a2fc9ad7fa973dfe508a582bc3a4b00a9f5800b2f1dc2edd1",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 27,
+        "rendered": 27,
+        "accessible": 27,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SCALAR-MATH.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "f585b10c8851b6d2bd1a6780d702c19433dff522ff5daa95fbb569965b46792b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 36,
+        "rendered": 36,
+        "accessible": 36,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SCIENCE-OVERVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "e3741c658fb312cced28e9c8682f9d8a29f933521d270fc680af4df1472827d1",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 1,
+        "rendered": 1,
+        "accessible": 1,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SHARED-CELL-COHORT-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c29e77eba2ab8df1e49525841f62d6f4f43240130715523935a438d9957894c2",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 18,
+        "rendered": 18,
+        "accessible": 18,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SHARED-CELL-COHORT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "3e0609ad77a52110e3a540b1659334e00a56770c17df5b9e625490b84f3de608",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 54,
+        "rendered": 54,
+        "accessible": 54,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SLICE-OBSERVER.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0f464c2f85d4b45fbbeb08814490964ce12d19b9540bdabd7c2fc44c5b7d8cbc",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 16,
+        "rendered": 16,
+        "accessible": 16,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPARSE-NEWTON.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "dc2babe7e5574b3c6b87c5ce54de4b52e96096ba8c19fed201f23ae96dbeb417",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 22,
+        "rendered": 22,
+        "accessible": 22,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPARSE24-GAIN1-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2c0cd3c6849c7c307c299238935745461044671535adf8d5342c80a92655ba27",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 7,
+        "rendered": 7,
+        "accessible": 7,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-CALIBRATION.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "059e626cc6bd9ca21614c25804f41e9508a70f0549213c3ec457f363ad309763",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 5,
+        "rendered": 5,
+        "accessible": 5,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-V1-RESULTS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a56752674f20416d7517cfcf5f07e7226190ecca9d6bb97d70c8a90581fd164a",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 5,
+        "rendered": 5,
+        "accessible": 5,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-V1-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a3db24d532393a1447f819b1b3c2a561d225fc31c117906b404e1c5a69929e5e",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 2,
+        "rendered": 2,
+        "accessible": 2,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-VALIDATION-CONTRACT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "407808f95d7793452edef6616206dcbe7f8da59384fc5554f9019798d364907c",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 37,
+        "rendered": 37,
+        "accessible": 37,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/STATIC-MEAN-COMPATIBILITY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "661403be699b0d83d13b04a73dead64e7439ef7c28562bf1dafee693c235b6e9",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 76,
+        "rendered": 76,
+        "accessible": 76,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/STATIC-MEAN-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "3ead192322abb1626da2329689d0587592356d0e646c776df39332eb2ec2bb0b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 60,
+        "rendered": 60,
+        "accessible": 60,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-MEAN-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "5ecf8bd887cc1cee34c2d62cd3ac61838962f3ff157f1caabf52f4952346c865",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 25,
+        "rendered": 25,
+        "accessible": 25,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-MEAN-WITNESS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "82b17876b98085d18675e710b78b77ca74732efcd62d778ce264251a072d95f4",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 33,
+        "rendered": 33,
+        "accessible": 33,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-ORDER-ROBUST-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "737d77219c1c3f4f00e1dfda4e81ed03fd95781241727f5466e6f6cc58a2c30b",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 23,
+        "rendered": 23,
+        "accessible": 23,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-ORDER-ROBUST-WITNESS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0da0f136ad17edb513796add36ab29c9f62fd70eeacff129fcca5c0e6b1d25e7",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 69,
+        "rendered": 69,
+        "accessible": 69,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TENSION-CALIBRATION.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "19f1f55892d594ba57b0e7821b71fdb87b33852ad8e5aa5328c661ced4504f53",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 6,
+        "rendered": 6,
+        "accessible": 6,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TRANSFER-CLAIM-AUDIT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0f91b608f92fc2d3098911d064d12d128055c7a7c714f5e064040b6f75316fc5",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 26,
+        "rendered": 26,
+        "accessible": 26,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/TRANSFER-PAIR-PILOT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8c60efe571fe9cbd8a0301ac8a492c29a5f873b79ea7734c978b158ccd90e5ec",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 27,
+        "rendered": 27,
+        "accessible": 27,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET-REVIEW.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "64ed3d41026a947ce62c2591eae0c1ce0a929a2497f2094a40b893b7e29534e9",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 8,
+        "rendered": 8,
+        "accessible": 8,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "04ce75a3f840d5792ed4ea4cb4fc0e99817883793751fbed48ac5c9b5056e625",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 29,
+        "rendered": 29,
+        "accessible": 29,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "73b4a01f6bbf401d42be480047ac5d6b100fc719575f191e71bc98041e02b70f",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 50,
+        "rendered": 50,
+        "accessible": 50,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a04cf55a3306de517bda05a970cd840ae1f4b22147761a47857cf5349a879706",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8abc87757a9082473aa2af186b3fb09777612fd2272dc87dc85c79f9cbd7f1c6",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 121,
+        "rendered": 121,
+        "accessible": 121,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/all36_cached_minimum_application_v1/checkpoint_v1/MINIMA.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a5f565524045ac24f5845358bc9897a9f7a0ad10c21fbf966b45ba9d87d34be9",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/four_spatial_checkpoint_v1/SPATIAL.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "adeb905e73d1082805c4fc89013f4e78999a0eef1fa1635ebcf4e2d6ed81c3e4",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 27,
+        "rendered": 27,
+        "accessible": 27,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_checkpoint_v1/REPORT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "cc051240b5af2cd27f72ce255890dd620b28289d81eae642838b37535b7d9600",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 15,
+        "rendered": 15,
+        "accessible": 15,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/layout_revision_0/REPORT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "40966b3dfe5058932e67d7b7e68df947d0a8a9113440371830a4aa44a4eec100",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 16,
+        "rendered": 16,
+        "accessible": 16,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/REPORT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "7c4dc4772c15bcf7a45cab36246ff937ab214095aeb2a926d4c00c26ae4b7341",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 16,
+        "rendered": 16,
+        "accessible": 16,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "0169608d940dd146adb0aa2525b84931bf41df3dfa8f47904b227cb7736a7461",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 24,
+        "rendered": 24,
+        "accessible": 24,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/observer_checkpoint_v1/OBSERVERS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "dc7e2aa40c2511944f4ba0e226da1da844d866c85cf436c165ffa0e6a78ae557",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/REPORT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "88653d522f46167b319f40b1afdcceb7f37b94a49d4099303c0093f105241f87",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 34,
+        "rendered": 34,
+        "accessible": 34,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/ALL-PAGES.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "106badb5080078028c7124b4a080d94e63824c97d53f74bddd42117b13af54b2",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/ARCHIVED-AVIAN-FINDINGS.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "c233e498e9aed5229b70abdbca1f1d6ee8ae33f06a646d0a0c0d1be75a346e1e",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/DEVELOPMENT-JOURNEY.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "70c59ed407f27c33b848e0b868df0b0dfe53b47e2f705f7093679a52bff8f247",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 13,
+        "rendered": 13,
+        "accessible": 13,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/index.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a57c455d1c9a32e0e56cbb8491e0bf9ac170ddeede3ddd1ef67f952636ce5bce",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "docs/SHAPE-DESCRIPTION.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "4b1ab64c8bdb0bbae119cc105a684907848a1e7665608c094a802108cfe2cfe1",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 100,
+        "rendered": 100,
+        "accessible": 100,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "index.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "2037d6198fd9cf2bad56f8cb05c0de487060bcbdd6cc2afb52f45a8d375a4cf8",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "OMITTED.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a7335c001dc0e548a39330fe857903f6b9fe3a5cc9883685b4c5a4e69389b58c",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    }
+  ],
+  "failures": []
+}

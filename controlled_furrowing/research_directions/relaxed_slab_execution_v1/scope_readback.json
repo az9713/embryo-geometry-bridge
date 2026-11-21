@@ -1,0 +1,26 @@
+{
+  "status": "PASS_FROZEN_INPUT_SCOPE_READBACK",
+  "rows": [
+    {
+      "case": "max_negative_contrast_change_small_16",
+      "physical_source_record_id": "optoGEF2_small_col_K",
+      "optical_dose_display": 1.28898317,
+      "material_geometry": {
+        "height": 1.0,
+        "outer_radius": 3.0,
+        "patch_radius": 0.2792573244776119
+      }
+    },
+    {
+      "case": "max_negative_contrast_change_small_17",
+      "physical_source_record_id": "optoGEF2_small_col_L",
+      "optical_dose_display": 1.51057344,
+      "material_geometry": {
+        "height": 1.0,
+        "outer_radius": 3.0,
+        "patch_radius": 0.2792573244776119
+      }
+    }
+  ],
+  "correction": "K/L are small-patch calibration fields, not large-patch transferred fields."
+}

@@ -1,5 +1,5 @@
 {
-  "status": "PASS_RESEARCH_PLAN_BUNDLE",
+  "status": "PASS_SCOPE_CORRECTED_PROPOSAL_BUNDLE",
   "observed_utc": "2026-11-21T19:40:53.127912+00:00",
   "scope": "A proposed research direction, retained source comparison, elementary derivations, analytic illustration and verified local presentation. Main research targets remain unproved.",
   "main_theorem_proved": false,
@@ -10,25 +10,23 @@
   "browser_views": 2,
   "exact_laminate_examples": 9,
   "terminal_evidence": {
-    "build_and_source_checks": {
-      "chunk": "58ae0e",
-      "exit_code": 0
-    },
-    "browser": {
-      "chunk": "a9d872",
+    "scoped_rebuild": {
+      "chunk": "af5ccf",
       "exit_code": 0
     }
   },
   "files": {
-    "BROWSER-RECEIPT.json": "348a32da6079a97451740970579ff8318ef123c57df869b8e7c858f8db57cbe7",
+    "BROWSER-RECEIPT.json": "ee5eb686a2532e68b4ba4dd985219d5ceab78f5203ea5e0b109873de51ccba7c",
     "check_and_build.py": "ad271681841b86098128afdad1d422b6182dce4a38d47199e4eb5162a8a525c3",
-    "EVIDENCE.json": "ef26b8451aa3c7299e720b67aff6a2286db3889c627b6a3b6dbd5c0b7cea9dc6",
+    "EVIDENCE.json": "93130f018d814df2808031305f57df1e3adde5d758c242e1548da1dfdde588e1",
     "illustration.csv": "b02df5be9b30ffbd50af528454d4a7fe86513261dfaf4cf1e5ccbb717224f1fa",
     "LITERATURE-AUDIT.json": "9ba39110305b1e87b15aacaf400bc27de521c64290313d1d429708c399bc2d45",
-    "PLAN.html": "dc0e501ca15bbc617b9d3331a38aa2f725d06ddf1f0e484ae3d9a43200268f55",
-    "PLAN.md": "3881beca1695fc33e1180e8bcb47715f6b28cd2d326a783d625239111bb3419a",
-    "preview-1440.png": "83a85766813e187ba2bda21c15c523cf0056c9286e30d090291c08c629415526",
-    "preview-390.png": "6ea3dcc56875edd1dbafe9f34ff606926a4dd9cab88faed4ab35fbe916b6a4b4",
-    "surface-relaxation.svg": "703be4c97fc64f37df4c966e1da430f1027311c6d58e4c148a5d96fbe745c9d9"
-  }
+    "PLAN.html": "73b4a01f6bbf401d42be480047ac5d6b100fc719575f191e71bc98041e02b70f",
+    "PLAN.md": "a9c49ff14d3b9e6054087f29b13e72c2872203085bec33007e5a1113ea144736",
+    "preview-1440.png": "dc2b103e7f3ffae540f328d8d48f590c7cf297efd0cc9130305cbca4f9bb2cc2",
+    "preview-390.png": "d463ed8ff9df6cb5faa16e76ac8cd74e7cf3e2ce239c45b31dd26bfa99c40c91",
+    "surface-relaxation.svg": "ee3d3b203ac18ccebac2aba5b9b1317803be6f13b4f46531aaad1dcfe5e231d8"
+  },
+  "publication_scope": "Updated proposal source after K/L scope erratum and executed-result links; current deployment is recorded separately.",
+  "historical_original_bundle": "reproducibility/plan-proposal-before-scope-correction.zip"
 }

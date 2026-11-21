@@ -1,0 +1,15 @@
+{
+  "status": "PASS_PILLOW13_ISOLATION_AND_PIXEL_REGRESSION",
+  "matching_saved_raster_files": 45,
+  "matplotlib_rgba_identical": true,
+  "old_interpreter_version": "11.0.0",
+  "isolated_interpreter_version": "13.0.0",
+  "global_interpreter_unchanged": true,
+  "formats": [
+    "PNG",
+    "TIFF",
+    "JPEG",
+    "GIF"
+  ],
+  "scope": "Trusted asset compatibility and interpreter isolation; historical runtime preserved; Torch alert not addressed."
+}

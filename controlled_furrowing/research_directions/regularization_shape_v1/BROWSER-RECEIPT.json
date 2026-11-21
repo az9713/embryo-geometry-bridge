@@ -1,13 +1,9 @@
 {
-  "status": "PASS_LOCAL_PLAN_BROWSER",
-  "browser": "Microsoft Edge headless",
-  "version": "158.0.4370.33",
-  "javascript_disabled": true,
-  "html_sha256": "dc0e501ca15bbc617b9d3331a38aa2f725d06ddf1f0e484ae3d9a43200268f55",
-  "local_links_checked": 8,
+  "status": "PASS_UPDATED_PROPOSAL_BROWSER",
   "views": [
     {
-      "viewport_width": 1440,
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html",
+      "width": 1440,
       "status": "PASS",
       "geometry_and_math": {
         "math": 50,
@@ -15,14 +11,13 @@
         "accessible": 50,
         "scroll": 1440,
         "width": 1440,
-        "images": 1,
-        "missingImages": 0,
-        "errors": 0
+        "missingImages": 0
       },
-      "page_errors": []
+      "source_sha256": "73b4a01f6bbf401d42be480047ac5d6b100fc719575f191e71bc98041e02b70f"
     },
     {
-      "viewport_width": 390,
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html",
+      "width": 390,
       "status": "PASS",
       "geometry_and_math": {
         "math": 50,
@@ -30,12 +25,10 @@
         "accessible": 50,
         "scroll": 390,
         "width": 390,
-        "images": 1,
-        "missingImages": 0,
-        "errors": 0
+        "missingImages": 0
       },
-      "page_errors": []
+      "source_sha256": "73b4a01f6bbf401d42be480047ac5d6b100fc719575f191e71bc98041e02b70f"
     }
   ],
-  "scope": "Documentation rendering and local paths, not proof of the proposed research."
+  "scope": "Current proposal presentation after explicit scope correction; historical bundle remains archived."
 }

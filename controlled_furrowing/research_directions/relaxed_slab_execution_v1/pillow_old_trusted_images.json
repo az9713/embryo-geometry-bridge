@@ -1,0 +1,401 @@
+{
+  "status": "PASS_TRUSTED_IMAGE_COMPATIBILITY",
+  "pillow": "11.0.0",
+  "pillow_loaded_inside_selected_venv": true,
+  "base_interpreter_unchanged_by_test": true,
+  "raster_files": 45,
+  "images": [
+    {
+      "path": "controlled_furrowing/docs/assets/algebraic_root_certificate.png",
+      "size": [
+        1360,
+        768
+      ],
+      "rgba_pixel_sha256": "868596943fec1d967585354be8927f58ec47ca1695dd9cb7bdcada22695d8657"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/calibration_exceptions.png",
+      "size": [
+        1530,
+        816
+      ],
+      "rgba_pixel_sha256": "d84ecc923d9a67ef65ef67c3fbe5a97a7c4363bc387d08aec2af07f5d34cea17"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/endpoint_counterexample.png",
+      "size": [
+        2703,
+        791
+      ],
+      "rgba_pixel_sha256": "05740e1f29baf87d5c729d5e08f5bfed90d0e6698aa28e32cc3fdfad18313957"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/energy_gain_cell_validation.png",
+      "size": [
+        2528,
+        791
+      ],
+      "rgba_pixel_sha256": "85c9e6f1a56d008242582f71f1a847e6373f495c12805062aff50d2e9e75fd18"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/local_identifiability.png",
+      "size": [
+        2006,
+        816
+      ],
+      "rgba_pixel_sha256": "59774f8aba3a31cbdb5a11602db9e0f7727a95f09cb5448e63c0e27458c837d3"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/root_body_geometry.png",
+      "size": [
+        2193,
+        791
+      ],
+      "rgba_pixel_sha256": "abb76e13edf54718ac47833aa75cdb93861d68b46be9ad86f11d8f06b4928ec5"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/scalar_reproduction.png",
+      "size": [
+        2040,
+        833
+      ],
+      "rgba_pixel_sha256": "bb16b938061301c364b2e9417dd0200de7894eb5bcd92dd2e517c0d8688884d1"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/slice_observer.png",
+      "size": [
+        2006,
+        731
+      ],
+      "rgba_pixel_sha256": "6c63622b58da9e2c3b6d4f70d90ec84533dda958f628cfbb1ebaa77e8244bd30"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/spatial_transfer.png",
+      "size": [
+        2040,
+        816
+      ],
+      "rgba_pixel_sha256": "bf4e12e585aa1c9e3eabed32af00dd520f5b5122eb50545c7e7b16f05bad53df"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/static_mean_compatibility.png",
+      "size": [
+        2873,
+        841
+      ],
+      "rgba_pixel_sha256": "d68b40aa40c00f4082efac9118adbc0ad21289df169305ad26f1cddb4a95c828"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/temporal_mean_witness.png",
+      "size": [
+        2193,
+        791
+      ],
+      "rgba_pixel_sha256": "823a8f1a49f49238971f7ae0928c85a0b576008c2f24cf3e0cacceb9dbaec2ac"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/temporal_order_robust_witness.png",
+      "size": [
+        2533,
+        753
+      ],
+      "rgba_pixel_sha256": "2e684b6139e961306a72acd38a48e38a0eae5aea2178a7457242a2b09a1e8f4a"
+    },
+    {
+      "path": "controlled_furrowing/docs/assets/tension_calibration.png",
+      "size": [
+        2414,
+        816
+      ],
+      "rgba_pixel_sha256": "d0d81e32982f8ec0d06ba9ee6512b64f131eec640f72618af28f729d21d34644"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/preview-1440.png",
+      "size": [
+        1440,
+        1000
+      ],
+      "rgba_pixel_sha256": "5664ced8f3623377f9490d8354d26eebba4f57625c03e17ce40dc85cad1ddda9"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/preview-390.png",
+      "size": [
+        390,
+        1000
+      ],
+      "rgba_pixel_sha256": "e3c597ff62b46c75832e9a2c519529cfe174f438a5a9ea4176f0e95585d9fdd6"
+    },
+    {
+      "path": "controlled_furrowing/runs/calibration_uncertainty/compatibility_envelopes.png",
+      "size": [
+        1870,
+        1360
+      ],
+      "rgba_pixel_sha256": "295f16409eb11d4da5c193c56b0456bd9f3b2241068796d72b09cf1e60ad7623"
+    },
+    {
+      "path": "controlled_furrowing/runs/joint_refinement/joint-refinement.png",
+      "size": [
+        2380,
+        714
+      ],
+      "rgba_pixel_sha256": "cc4fd2db80df1d2f753cf393d61174b26ac3448a13f79274f191913a6b8c7b49"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/all36_cached_minimum_application_v1/checkpoint_v1/cached_minima.png",
+      "size": [
+        1826,
+        1344
+      ],
+      "rgba_pixel_sha256": "b8f3c369cfbaa9f84fdd622a8c01fc56ec0ea02647dc02719f7646dbc06a9afc"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_checkpoint_v1/first_wave_bounds.png",
+      "size": [
+        1721,
+        1302
+      ],
+      "rgba_pixel_sha256": "a022d126b8e79803dd97240914708451c7b1e38ef07768f67916b03b927870dd"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/browser_readback/wave02_1440_full.png",
+      "size": [
+        1440,
+        3054
+      ],
+      "rgba_pixel_sha256": "1a2bb5286944d5c37c99f5291961aa0098e805d969f3f0e5567b13ca82284d58"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/browser_readback/wave02_1440_top.png",
+      "size": [
+        1440,
+        960
+      ],
+      "rgba_pixel_sha256": "fbdf7cfd3ca51e3d457ff6cc955438edab096562b9b2baa427800ec0b99140b5"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/browser_readback/wave02_390_full.png",
+      "size": [
+        390,
+        3280
+      ],
+      "rgba_pixel_sha256": "f8252a26ab24d1077536cf41e4d4fe0f7fae1f9f63c629acf77f36d35ad2759a"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/browser_readback/wave02_390_top.png",
+      "size": [
+        390,
+        960
+      ],
+      "rgba_pixel_sha256": "fb7c22f3d5ca48881cea960d295fe3b3d7a504a4b029b3338e3148be47edb75f"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/layout_revision_0/observer_failures_wave02.png",
+      "size": [
+        1404,
+        639
+      ],
+      "rgba_pixel_sha256": "f7cf34322ad3927666e15af2f22b018e1a13a85193ab083489ad26c74e9a7461"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/layout_revision_0/selfmap_wave02.png",
+      "size": [
+        1404,
+        621
+      ],
+      "rgba_pixel_sha256": "fa45f36acab398bcdc983704248c22effbca710db1773195151ada4b18708e58"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/observer_failures_wave02.png",
+      "size": [
+        1404,
+        639
+      ],
+      "rgba_pixel_sha256": "0de51cfd4b2b662b1fc56ce4de94a1b57ed64f0e9aca97d0f96b8267eacd67d7"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/selfmap_wave02.png",
+      "size": [
+        1404,
+        621
+      ],
+      "rgba_pixel_sha256": "fa45f36acab398bcdc983704248c22effbca710db1773195151ada4b18708e58"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/browser_readback/wave03_1440_full.png",
+      "size": [
+        1440,
+        4447
+      ],
+      "rgba_pixel_sha256": "dc1cf450217a5fd6e5c11d158071b108aea68b97241b50e036b1d9c49b5deb2c"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/browser_readback/wave03_1440_top.png",
+      "size": [
+        1440,
+        960
+      ],
+      "rgba_pixel_sha256": "7fb6d566f22d24b92beed382450c26bab8ace93b15de41d0d88f71aff13e09ed"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/browser_readback/wave03_390_full.png",
+      "size": [
+        390,
+        5472
+      ],
+      "rgba_pixel_sha256": "36f1d1e2314b587e268f7e882aab2cebc43edb3fc956004a7a715f2215f06e33"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/browser_readback/wave03_390_top.png",
+      "size": [
+        390,
+        960
+      ],
+      "rgba_pixel_sha256": "e6bb4a3ffd3c59dbceb1d52ec6138ead44df79a69b3f9df138598acdfa507569"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/selfmap.png",
+      "size": [
+        1441,
+        578
+      ],
+      "rgba_pixel_sha256": "b3307648125e3cd99ef295be8f4c2ded8994a161d640bf841024a5be18b2f4a7"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/slab_guards.png",
+      "size": [
+        1441,
+        685
+      ],
+      "rgba_pixel_sha256": "58a5896c539f3fd9b37cbdc3a90b01ed12f2d3050953504b8addec3a9f1cc38f"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/transverse_windows.png",
+      "size": [
+        1530,
+        601
+      ],
+      "rgba_pixel_sha256": "8f02ac738bebdf6cedee77d26cc1c46c597417f734fe931db12ddaa370fea22b"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/observer_checkpoint_v1/large_contrast.png",
+      "size": [
+        1332,
+        477
+      ],
+      "rgba_pixel_sha256": "ced1cdec61eb130178ad0472e0e6dd745565eea6163b783001a13cf42c19ce98"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/favicon.png",
+      "size": [
+        32,
+        32
+      ],
+      "rgba_pixel_sha256": "54072b83d5f36b3cb2e5e0adf14474fdc6456743eff94537155d7682a0399f77"
+    },
+    {
+      "path": "docs/assets/dossier-preview.png",
+      "size": [
+        1440,
+        1000
+      ],
+      "rgba_pixel_sha256": "8d15a228795b7c6f8ab40df6c06f65e6bfb3ff2af06149bd176f4c3a040b35c6"
+    },
+    {
+      "path": "docs/assets/journey-preview.png",
+      "size": [
+        1440,
+        1000
+      ],
+      "rgba_pixel_sha256": "6b0a29a3e45f8a81e09357c02f5a4f8836c4242b40410ce795096a3c42956e89"
+    },
+    {
+      "path": "docs/assets/shape-features-concrete.png",
+      "size": [
+        2414,
+        765
+      ],
+      "rgba_pixel_sha256": "6875c04a32e253bd77f790d4e8ed2f1a9a7ca3888d4513323c3cd392740cf553"
+    },
+    {
+      "path": "docs/assets/shape-maps-concrete.png",
+      "size": [
+        2550,
+        866
+      ],
+      "rgba_pixel_sha256": "a0047a2e2a52232b1ec08c5ccca84529c6eba5e8aefb439ed3b0715e14fdcb1b"
+    },
+    {
+      "path": "docs/assets/shape-metric-versus-curvature.png",
+      "size": [
+        1938,
+        781
+      ],
+      "rgba_pixel_sha256": "e1ac0c3e58432ffe8cb90b96864aafd984a08ae02934d04c60fa396f7019f5bb"
+    },
+    {
+      "path": "verification/browser/landing_1440.png",
+      "size": [
+        1440,
+        1000
+      ],
+      "rgba_pixel_sha256": "bf506092bb9b584dcc70922a97cc747fb285c4d8504c557794858203f1bb2c6c"
+    },
+    {
+      "path": "verification/browser/landing_390.png",
+      "size": [
+        390,
+        1000
+      ],
+      "rgba_pixel_sha256": "3c41063ec1efe65df12c2a675052ab3bae247db3e8707975c144782c41e7669e"
+    },
+    {
+      "path": "verification/browser/report_1440.png",
+      "size": [
+        1440,
+        4447
+      ],
+      "rgba_pixel_sha256": "dc1cf450217a5fd6e5c11d158071b108aea68b97241b50e036b1d9c49b5deb2c"
+    },
+    {
+      "path": "verification/browser/report_390.png",
+      "size": [
+        390,
+        5472
+      ],
+      "rgba_pixel_sha256": "36f1d1e2314b587e268f7e882aab2cebc43edb3fc956004a7a715f2215f06e33"
+    }
+  ],
+  "trusted_format_roundtrips": {
+    "PNG": {
+      "decoded": true,
+      "size": [
+        120,
+        80
+      ]
+    },
+    "TIFF": {
+      "decoded": true,
+      "size": [
+        120,
+        80
+      ]
+    },
+    "JPEG": {
+      "decoded": true,
+      "size": [
+        120,
+        80
+      ]
+    },
+    "GIF": {
+      "decoded": true,
+      "size": [
+        120,
+        80
+      ]
+    }
+  },
+  "matplotlib_rgba_sha256": "d61deb178f554a7d205687929ad672d20d1de8b13a3bf89a4331c61d76cd6ee6",
+  "scope": "Trusted saved assets and generated format tests; not an exploit test or proof of absence of security defects."
+}

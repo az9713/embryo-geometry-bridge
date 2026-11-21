@@ -1,0 +1,6 @@
+{
+  "status": "PASS_UNPATCHED_IMAGE_RUNTIME_REJECTED",
+  "observed_exit_code": 1,
+  "message": "Pillow >= 13.0.0 is required before opening images. Use the isolated environment from the active requirements.",
+  "no_images_opened": true
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS_EXECUTED_DOCUMENT_BROWSER",
+  "views": [
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "73b4a01f6bbf401d42be480047ac5d6b100fc719575f191e71bc98041e02b70f",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 50,
+        "rendered": 50,
+        "accessible": 50,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a04cf55a3306de517bda05a970cd840ae1f4b22147761a47857cf5349a879706",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html",
+      "width": 1440,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8abc87757a9082473aa2af186b3fb09777612fd2272dc87dc85c79f9cbd7f1c6",
+      "geometry_and_math": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 121,
+        "rendered": 121,
+        "accessible": 121,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "73b4a01f6bbf401d42be480047ac5d6b100fc719575f191e71bc98041e02b70f",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 50,
+        "rendered": 50,
+        "accessible": 50,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "a04cf55a3306de517bda05a970cd840ae1f4b22147761a47857cf5349a879706",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 21,
+        "rendered": 21,
+        "accessible": 21,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    },
+    {
+      "path": "controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html",
+      "width": 390,
+      "status": "PASS",
+      "http_status": 200,
+      "source_sha256": "8abc87757a9082473aa2af186b3fb09777612fd2272dc87dc85c79f9cbd7f1c6",
+      "geometry_and_math": {
+        "width": 390,
+        "scroll": 390,
+        "math": 121,
+        "rendered": 121,
+        "accessible": 121,
+        "failures": 0,
+        "missingImages": []
+      },
+      "page_errors": []
+    }
+  ],
+  "browser": "Microsoft Edge headless",
+  "version": "158.0.4370.33",
+  "javascript_disabled": true,
+  "parent_receipt": "verification/site/executed-slab-20261121/static/receipt.json",
+  "parent_receipt_sha256": "f8787c23a4df1b93cda058baa2564267898f5e1997a347bb2ca49b03934c76f7",
+  "scope": "Current report, theorem and corrected proposal selected from the complete site browser sweep; not external mathematical peer review."
+}

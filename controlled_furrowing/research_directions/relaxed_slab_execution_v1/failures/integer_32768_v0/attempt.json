@@ -1,0 +1,7 @@
+{
+  "status": "UNRESOLVED_DIRECT_BASIS_RANGE_ENCLOSURE",
+  "subdivisions": 32768,
+  "observed_exit_code": 1,
+  "terminal_chunk": "6c5ac7",
+  "interpretation": "Loose interval enclosure, not a counterexample to the producer sign. No passing result claimed."
+}

@@ -8,14 +8,18 @@ Tsimerman's remarks about the boundaries between scientific disciplines motivate
 
 ## Shape description and next research step
 
+**Executed follow-up:** [results and retained verification](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html) and [the full finite-slab proof](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html) complete the first three scoped steps. Pillow 13 passes saved-pixel and runtime checks. Two K/L **small-patch calibration fields** are not stationary under the candidate relaxed surface density. A constructive affine-periodic slab result proves global injectivity, positive determinant and a cube-root recovery upper bound. This does not determine a new equilibrium shape, prove the rate optimal, establish the full cylinder limit or validate embryonic predictions. [Active runtime](RUNTIME.md) · [release provenance](docs/EXECUTION-UPDATE-20261121.md).
+
 [The illustrated shape guide](https://az9713.github.io/embryo-geometry-bridge/docs/SHAPE-DESCRIPTION.html) explains how deformation maps produce folds, areas and curvatures. Its explicit circular and asymmetric teaching maps have the same annular height contrast, showing why a single observable does not determine the full shape. The figures are analytic illustrations, not experimental fits or force-balanced model predictions. The guide also states which symmetries, topologies, contact events and cellular processes the current formulation excludes. [Guide evidence](docs/SHAPE-DESCRIPTION-RECEIPT.json).
 
-[The next-step research plan](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html) prioritizes rigorous fixed-height bulk-boundary relaxation and a quantitative bound on a coarse fold observable. A physically admissible counterexample is an explicit alternative if robustness fails. **The main continuum theorem and useful observable-growth bound remain unproved; originality is unconfirmed.** Classical tension-field relaxation, bending regularization and prediction-focused inference are prior art. [Bounded originality audit](controlled_furrowing/research_directions/regularization_shape_v1/LITERATURE-AUDIT.json) · [Plan evidence and scope](controlled_furrowing/research_directions/regularization_shape_v1/EVIDENCE.json).
+[The research plan](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html) prioritizes rigorous fixed-height bulk-boundary relaxation and a quantitative bound on a coarse fold observable. Its historical proposal now links the executed steps and corrects the former large-region label for the K/L scan. **The full curved-cylinder theorem and useful observable-growth bound remain unproved; originality is unconfirmed.** Classical tension-field relaxation, bending regularization and prediction-focused inference are prior art. [Bounded originality audit](controlled_furrowing/research_directions/regularization_shape_v1/LITERATURE-AUDIT.json) · [Plan evidence and scope](controlled_furrowing/research_directions/regularization_shape_v1/EVIDENCE.json).
 
 Future scientific shape documents must explain their representation or prominently refer to the guide. See [project documentation instructions](AGENTS.md). [Publication provenance and replay limits](docs/PUBLICATION-UPDATE-20261121.md).
 
 <!-- live-pages:start -->
-[**Shape guide, concrete examples and limitations**](https://az9713.github.io/embryo-geometry-bridge/docs/SHAPE-DESCRIPTION.html) · [**Next-step research plan**](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html)
+[**Executed results and verification**](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html) · [**Full finite-slab proof**](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html)
+
+[**Shape guide, concrete examples and limitations**](https://az9713.github.io/embryo-geometry-bridge/docs/SHAPE-DESCRIPTION.html) · [**Research plan and scope correction**](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html)
 
 [**Development journey: beginning with Tsimerman's video**](https://az9713.github.io/embryo-geometry-bridge/docs/DEVELOPMENT-JOURNEY.html) · [**Every HTML page**](https://az9713.github.io/embryo-geometry-bridge/docs/ALL-PAGES.html)
 
@@ -26,7 +30,7 @@ Future scientific shape documents must explain their representation or prominent
 GitHub displays clickable image previews here. Follow them to the fully rendered GitHub Pages documents.
 
 <details>
-<summary>Direct webpage links to all 125 HTML files</summary>
+<summary>Direct webpage links to all 127 HTML files</summary>
 
 - [ACTIVATED-MESH-STUDY](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ACTIVATED-MESH-STUDY.html)
 - [ACTIVATED-QUADRATURE](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ACTIVATED-QUADRATURE.html)
@@ -138,6 +142,8 @@ GitHub displays clickable image previews here. Follow them to the fully rendered
 - [VALIDATED-IDENTIFIED-SET-REVIEW](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET-REVIEW.html)
 - [VALIDATED-IDENTIFIED-SET](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET.html)
 - [Next theorem target: coarse shape beyond unresolved wrinkles](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html)
+- [Relaxed force balance and finite-height surface recovery](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html)
+- [Constructive fixed-height periodic slab theorem](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html)
 - [36 strict minima of the cached-quadrature energies](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/all36_cached_minimum_application_v1/checkpoint_v1/MINIMA.html)
 - [Four exact-spatial finite-element minima](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/four_spatial_checkpoint_v1/SPATIAL.html)
 - [Exact spatial mechanics in the first new wave](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_checkpoint_v1/REPORT.html)

@@ -1,0 +1,55 @@
+{
+  "status": "PASS_SEPARATE_SLAB_CONSTANT_REPLAY",
+  "source_sha256": "d93cd8cb07121b96f19d62709e4a6dc80b5daa285cf0e5a23d92da20c33e75ff",
+  "producer_receipt_sha256": "1232ab1ab34245ddadb56e3c0a10de49dbd896daf3d90f2321ba56e86a766b09",
+  "precision_bits": 320,
+  "angle_checks": [
+    {
+      "compression_ratio": "1/5",
+      "both_mean_signs_and_tangent_guard": true
+    },
+    {
+      "compression_ratio": "1/2",
+      "both_mean_signs_and_tangent_guard": true
+    },
+    {
+      "compression_ratio": "4/5",
+      "both_mean_signs_and_tangent_guard": true
+    },
+    {
+      "compression_ratio": "19/20",
+      "both_mean_signs_and_tangent_guard": true
+    }
+  ],
+  "bound_checks": [
+    {
+      "N": 64,
+      "energy_and_position_upper_bounds_confirmed": true
+    },
+    {
+      "N": 128,
+      "energy_and_position_upper_bounds_confirmed": true
+    },
+    {
+      "N": 256,
+      "energy_and_position_upper_bounds_confirmed": true
+    },
+    {
+      "N": 512,
+      "energy_and_position_upper_bounds_confirmed": true
+    },
+    {
+      "N": 1024,
+      "energy_and_position_upper_bounds_confirmed": true
+    },
+    {
+      "N": 2048,
+      "energy_and_position_upper_bounds_confirmed": true
+    },
+    {
+      "N": 4096,
+      "energy_and_position_upper_bounds_confirmed": true
+    }
+  ],
+  "scope": "Separate constant/sign arithmetic; written analytic proof still requires mathematical assessment. Not an external peer review."
+}
