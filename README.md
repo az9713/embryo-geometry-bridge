@@ -8,6 +8,8 @@ Tsimerman's remarks about the boundaries between scientific disciplines motivate
 
 ## Shape description and next research step
 
+[**What the results mean for embryonic shape, their originality, and the strongest next theorem**](https://az9713.github.io/embryo-geometry-bridge/docs/RESULTS-AND-NEXT-THEOREM.html): the new law changes force balance, but no fold-depth change has been established. Fine folds can change area without a comparable position change. The next target is a certified coarse-observable bound, or an admissible counterexample, with calibration rechecked under the new mechanics. Includes a bounded primary-source audit and a conditional energy-exclusion proof; no confirmed new general concept is claimed.
+
 **Executed follow-up:** [results and retained verification](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/relaxed_slab_execution_v1/REPORT.html) and [the full finite-slab proof](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/relaxed_slab_execution_v1/THEOREM.html) complete the first three scoped steps. Pillow 13 passes saved-pixel and runtime checks. Two K/L **small-patch calibration fields** are not stationary under the candidate relaxed surface density. A constructive affine-periodic slab result proves global injectivity, positive determinant and a cube-root recovery upper bound. This does not determine a new equilibrium shape, prove the rate optimal, establish the full cylinder limit or validate embryonic predictions. [Active runtime](RUNTIME.md) · [release provenance](docs/EXECUTION-UPDATE-20261121.md).
 
 [The illustrated shape guide](https://az9713.github.io/embryo-geometry-bridge/docs/SHAPE-DESCRIPTION.html) explains how deformation maps produce folds, areas and curvatures. Its explicit circular and asymmetric teaching maps have the same annular height contrast, showing why a single observable does not determine the full shape. The figures are analytic illustrations, not experimental fits or force-balanced model predictions. The guide also states which symmetries, topologies, contact events and cellular processes the current formulation excludes. [Guide evidence](docs/SHAPE-DESCRIPTION-RECEIPT.json).
@@ -30,7 +32,7 @@ Future scientific shape documents must explain their representation or prominent
 GitHub displays clickable image previews here. Follow them to the fully rendered GitHub Pages documents.
 
 <details>
-<summary>Direct webpage links to all 127 HTML files</summary>
+<summary>Direct webpage links to all 128 HTML files</summary>
 
 - [ACTIVATED-MESH-STUDY](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ACTIVATED-MESH-STUDY.html)
 - [ACTIVATED-QUADRATURE](https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ACTIVATED-QUADRATURE.html)
@@ -156,6 +158,7 @@ GitHub displays clickable image previews here. Follow them to the fully rendered
 - [Archived findings: earlier avian branch](https://az9713.github.io/embryo-geometry-bridge/docs/ARCHIVED-AVIAN-FINDINGS.html)
 - [Development journey: Tsimerman to tissue geometry](https://az9713.github.io/embryo-geometry-bridge/docs/DEVELOPMENT-JOURNEY.html)
 - [Embryo Geometry Bridge: scientific dossier](https://az9713.github.io/embryo-geometry-bridge/docs/index.html)
+- [Embryonic shape: conclusions, originality and the next theorem](https://az9713.github.io/embryo-geometry-bridge/docs/RESULTS-AND-NEXT-THEOREM.html)
 - [How we describe tissue shape mathematically](https://az9713.github.io/embryo-geometry-bridge/docs/SHAPE-DESCRIPTION.html)
 - [Embryo Geometry Bridge](https://az9713.github.io/embryo-geometry-bridge/index.html)
 - [Artifact omitted from this snapshot](https://az9713.github.io/embryo-geometry-bridge/OMITTED.html)

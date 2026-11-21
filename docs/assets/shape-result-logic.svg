@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="540" viewBox="0 0 1080 540" role="img" aria-labelledby="title desc">
+<title id="title">From certified mechanics to an unresolved coarse shape prediction</title>
+<desc id="desc">Two proved model statements feed into an open equilibrium and calibration problem. The proposed next certificate compares an energy upper bound with a lower bound for excluded coarse shapes. This is a logical roadmap, not measured data.</desc>
+<rect width="1080" height="540" rx="18" fill="#102237"/>
+<g font-family="system-ui,sans-serif" fill="#e9f0fa">
+<text x="35" y="43" font-size="25" font-weight="700">What follows from the results?</text>
+<rect x="35" y="72" width="485" height="141" rx="12" fill="#1d3c4e" stroke="#91d8d1"/>
+<text x="56" y="106" font-size="20" font-weight="700">Certified: the old force balance changes</text>
+<text x="56" y="139" font-size="18">Both K/L small-patch fields admit relaxed descent.</text>
+<text x="56" y="173" font-size="17">This does not determine a new fold depth.</text>
+<rect x="555" y="72" width="490" height="141" rx="12" fill="#1d3c4e" stroke="#91d8d1"/>
+<text x="575" y="106" font-size="20" font-weight="700">Proved: fine folds can fit a finite slab</text>
+<text x="575" y="139" font-size="18">Small position error; fixed surface-area change.</text>
+<text x="575" y="173" font-size="17">The constructed maps are not selected equilibria.</text>
+<path d="M280 214 L280 241 L540 241 L540 268 M800 214 L800 241 L540 241" fill="none" stroke="#92dce2" stroke-width="3"/>
+<path d="M532 258 L540 270 L548 258" fill="none" stroke="#92dce2" stroke-width="3"/>
+<rect x="156" y="274" width="768" height="98" rx="12" fill="#2c3041" stroke="#e8bb72" stroke-dasharray="8 5"/>
+<text x="180" y="310" font-size="21" font-weight="700">Open: what do admissible, recalibrated equilibria predict?</text>
+<text x="180" y="345" font-size="18">State the observer, wall conditions, physical scale range and selection rule.</text>
+<path d="M540 373 L540 402 M532 392 L540 404 L548 392" fill="none" stroke="#92dce2" stroke-width="3"/>
+<rect x="156" y="410" width="768" height="86" rx="12" fill="#20364c" stroke="#a7bfd8" stroke-dasharray="8 5"/>
+<text x="180" y="443" font-size="20" font-weight="700">Target: an energy exclusion certificate for coarse shape</text>
+<text x="180" y="474" font-size="18">Wrong-shape lower bound &gt; trial upper bound + optimization error.</text>
+<text x="35" y="525" font-size="14" fill="#c2d1e3">Solid boxes: established model results. Dashed boxes: research targets. No biological or novelty claim.</text>
+</g></svg>

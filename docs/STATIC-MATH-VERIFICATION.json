@@ -1,7 +1,7 @@
 {
   "status": "PASS_STRICT_STATIC_MATH_COMPILATION",
-  "newly_compiled_expressions": 13,
-  "pages_compiled": 1,
+  "newly_compiled_expressions": 57,
+  "pages_compiled": 2,
   "math_source_retained_except_logged_unit_typography": true,
   "unit_typography_normalizations": [],
   "throw_on_error": true,

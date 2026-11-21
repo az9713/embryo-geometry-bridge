@@ -1,0 +1,12 @@
+{
+  "status": "PASS_RECOGNIZED_PRIVACY_SCREEN",
+  "source_sha256": "3e41de96a29c19e787b3fa162aac4531e783048d8a20df32aa568ff21b39ae0f",
+  "counts": {
+    "text_files": 1694,
+    "text_bytes": 170199082,
+    "raster_files": 48
+  },
+  "flagged_paths_and_categories": [],
+  "matching_values_printed": false,
+  "scope": "Recognized user paths, private workspace URLs, emails and credential patterns; inspected common raster metadata. Not a universal secrecy guarantee."
+}

@@ -1,12 +1,12 @@
 {
-  "status": "PASS_EXECUTED_SLAB_PREDEPLOYMENT",
+  "status": "PASS_SHAPE_INTERPRETATION_PREDEPLOYMENT",
   "date": "2026-11-21",
   "verification": {
     "status": "PASS_PUBLICATION_SNAPSHOT_SCOPE",
     "scope": "Manifest hashes, static local links, and selected scalar summaries. No raw integrations or historical process reproduction.",
-    "included_hashes": 1758,
-    "html_pages": 127,
-    "local_links_and_assets": 1903,
+    "included_hashes": 1768,
+    "html_pages": 128,
+    "local_links_and_assets": 1929,
     "selected_scalar_replay": {
       "Wave03_selfmaps": 4,
       "Wave03_observer_rows": 64,
@@ -15,18 +15,18 @@
       "passed_four_slab_geometry_only": true
     }
   },
-  "manifest_sha256": "26873ebcf5cdbb18dbf4dad0f8d9a63f60e74349811efa994d13389828f75871",
-  "included_data_files": 1758,
-  "included_data_bytes": 177529360,
+  "manifest_sha256": "54439d588eb2caf0868828e459f2033d4ec85af9aa933c55b6535c52589110f4",
+  "included_data_files": 1768,
+  "included_data_bytes": 177974305,
   "live_repository": "https://github.com/az9713/embryo-geometry-bridge",
   "pages_url": "https://az9713.github.io/embryo-geometry-bridge/",
-  "site_html_files": 127,
-  "math_expressions_per_viewport": 3303,
-  "browser_views_passed": 508,
-  "privacy_receipt": "verification/site/executed-slab-20261121/privacy.json",
+  "site_html_files": 128,
+  "math_expressions_per_viewport": 3347,
+  "browser_views_passed": 512,
+  "privacy_receipt": "verification/site/shape-interpretation-20261121/privacy.json",
   "recognized_privacy_flags": 0,
-  "current_static_browser_receipt": "verification/site/executed-slab-20261121/static/receipt.json",
-  "current_javascript_browser_receipt": "verification/site/executed-slab-20261121/javascript/receipt.json",
+  "current_static_browser_receipt": "verification/site/shape-interpretation-20261121/static/receipt.json",
+  "current_javascript_browser_receipt": "verification/site/shape-interpretation-20261121/javascript/receipt.json",
   "bundle_identity_receipt": "verification/site/executed-slab-20261121/scalar-release.json",
   "scoped_steps_complete": true,
   "no_author_contact": true,
@@ -34,5 +34,7 @@
   "periodic_affine_slab_construction_proved": true,
   "full_cylinder_limit_proved": false,
   "novelty_confirmed": false,
-  "publication_timing": "Precommit evidence; exact commit, Pages build, archive and live checks retained separately after deployment."
+  "publication_timing": "Precommit interpretation update; exact commit, Pages and live checks retained separately after deployment.",
+  "interpretation_receipt": "verification/site/shape-interpretation-20261121/assessment.json",
+  "new_scientific_equilibrium_certificates": 0
 }

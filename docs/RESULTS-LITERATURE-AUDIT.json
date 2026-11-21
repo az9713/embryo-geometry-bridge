@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-21",
+  "status": "BOUNDED_PRIMARY_SOURCE_REFRESH_ORIGINALITY_UNCONFIRMED",
+  "claim_audited": "Whether fine-fold relaxation, observable-specific error control or the present injective periodic affine-slab construction establishes a new general concept; assess a cylinder-specific coarse-observable exclusion theorem as the next target.",
+  "queries": [
+    "Conti DeSimone Muller 2005 energy minimizing deformation thin elastic sheets boundary conditions wrinkling relaxation",
+    "Binysh Wilks Souslov 2022 active elastocapillarity negative surface tension shape morphing",
+    "surface energy relaxation finite elasticity orientation preserving injectivity boundary quasiconvexity surface wrinkling",
+    "goal oriented error estimation nonlinear elasticity quantities of interest dual weighted residual Becker Rannacher 2001",
+    "bulk surface relaxation injectivity elasticity wrinkles",
+    "2210.11883 epithelial wrinkles",
+    "prediction profile likelihood Kreutz Raue Timmer 2012"
+  ],
+  "sources": [
+    {
+      "authors": "Conti, DeSimone and Muller",
+      "year": 2005,
+      "title": "Self-similar folding patterns and energy scaling in compressed elastic sheets",
+      "url": "https://people.sissa.it/~desimone/Publications/CDM2005.pdf",
+      "inspection": "Abstract, introduction and Section 3.1, Energy relaxation by one-dimensional folds and a boundary layer.",
+      "finding": "Fine oscillatory folds, boundary matching and energy scaling are established methods.",
+      "unresolved_comparison": "No complete reduction of our fixed-height three-dimensional injective slab construction or proposed cylinder observable bound to the paper's hypotheses was established."
+    },
+    {
+      "authors": "Binysh, Wilks and Souslov",
+      "year": 2022,
+      "preprint_version_year": 2021,
+      "title": "Active elastocapillarity in soft solids with negative surface tension",
+      "url": "https://arxiv.org/html/2101.04006v2",
+      "inspection": "Abstract, continuum theory and Methods passages on surface bending, bulk dispersion and active solids.",
+      "finding": "Negative active surface stress, bulk-surface competition and stabilization by bending or bulk dispersion are existing concepts.",
+      "unresolved_comparison": "Different surface law and geometry are not sufficient grounds for a priority claim. A complete nonlinear limit/observable theorem comparison remains open."
+    },
+    {
+      "authors": "Andrensek, Ziherl and Krajnc",
+      "year": 2023,
+      "title": "Wrinkling instability in unsupported epithelial sheets",
+      "url": "https://arxiv.org/abs/2210.11883",
+      "inspection": "Primary abstract and publication/version metadata only.",
+      "finding": "Cell-based epithelial elasticity and differential apico-basal-tension-driven wrinkles have precedent.",
+      "unresolved_comparison": "Full theory and supplemental material were not compared theorem by theorem in this refresh."
+    },
+    {
+      "authors": "Kruzik and Mainini",
+      "year": 2025,
+      "title": "Linearization of Finite Elasticity with Surface Tension",
+      "url": "https://doi.org/10.1007/s00332-025-10156-5",
+      "inspection": "Primary full-text abstract, introduction, second-gradient functional discussion and main-results description for Theorems 2.1 and 2.2.",
+      "finding": "Rigorous bulk-surface Gamma-convergence/linearization results already exist in a nonsimple-material setting.",
+      "unresolved_comparison": "Small-strain/second-gradient hypotheses differ from the proposed fixed-strain first-gradient vanishing-surface-bending problem. Interfacial quasiconvexity and surface relaxation references remain further audit leads; exact target priority is not cleared."
+    },
+    {
+      "authors": "Becker and Rannacher",
+      "year": 2001,
+      "title": "An optimal control approach to a posteriori error estimation in finite element methods",
+      "url": "https://www.cambridge.org/core/journals/acta-numerica/article/abs/an-optimal-control-approach-to-a-posteriori-error-estimation-in-finite-element-methods/5C67A03F528C6FA69F37A97DF5C3BE19",
+      "inspection": "Publisher abstract and publication metadata only.",
+      "finding": "Observable-specific dual-weighted-residual error analysis is an established method.",
+      "unresolved_comparison": "A verified application to our nonsmooth constitutive continuation and admissibility constraints needs its own proof."
+    },
+    {
+      "authors": "Kreutz, Raue and Timmer",
+      "year": 2012,
+      "preprint_version_year": 2011,
+      "title": "Likelihood based observability analysis and confidence intervals for predictions of dynamic models",
+      "url": "https://arxiv.org/abs/1107.0013",
+      "inspection": "Primary abstract and publication/version metadata only.",
+      "finding": "Prediction-focused uncertainty is distinct from parameter identifiability and is established in systems biology.",
+      "unresolved_comparison": "The proposed deterministic energy exclusion certificate is not the statistical method in this paper; generic prediction-profile novelty is ruled out."
+    }
+  ],
+  "conclusion": "No confirmed new general concept or publication priority. The next candidate requires a useful, mechanics-specific observable theorem or admissible counterexample and a complete closest-theorem audit.",
+  "exhaustive_search": false,
+  "exact_prior_art_equivalence_established": false,
+  "exact_prior_art_equivalence_disproved": false,
+  "novelty_confirmed": false,
+  "author_contact": false
+}
