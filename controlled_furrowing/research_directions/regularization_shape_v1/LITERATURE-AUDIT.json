@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-21",
+  "status": "BOUNDED_ORIGINALITY_AUDIT_UNCONFIRMED",
+  "candidate_claim": "Quantitative fixed-positive-height bulk-boundary relaxation with orientation preservation and injectivity, followed by a computable coarse-shape observable bound uniform over a predeclared regularization class.",
+  "sources": [
+    {
+      "work": "Pipkin (1986)",
+      "url": "https://doi.org/10.1093/imamat/36.1.85",
+      "inspection": "Publisher abstract",
+      "comparison": "Classical relaxed membrane density; full theorem comparison outstanding."
+    },
+    {
+      "work": "Conti, DeSimone and Müller (2005)",
+      "url": "https://people.sissa.it/~desimone/Publications/CDM2005.pdf",
+      "inspection": "Abstract; Sections 2–3 including 3.1",
+      "comparison": "Relaxation, boundary matching, smooth oscillations and energy scaling in thin sheets; fixed-thickness bulk-boundary comparison outstanding."
+    },
+    {
+      "work": "Binysh, Wilks and Souslov (2022)",
+      "url": "https://arxiv.org/html/2101.04006v2",
+      "inspection": "Continuum theory; bending and bulk-dispersion Methods; spherical and half-space discussion",
+      "comparison": "Rules out novelty for negative surface stress, bending regularization and generic shape selection."
+    },
+    {
+      "work": "Andrenšek, Ziherl and Krajnc (2023)",
+      "url": "https://arxiv.org/abs/2210.11883",
+      "inspection": "arXiv abstract",
+      "comparison": "Rules out generic novelty for differential-tension epithelial wrinkling; full-theorem comparison not done."
+    },
+    {
+      "work": "Andrenšek and Krajnc (2025 preprint)",
+      "url": "https://arxiv.org/html/2504.15673v1",
+      "inspection": "Abstract, introduction, vertex-model and bending/stroma terms",
+      "comparison": "Cell-derived elasticity and substrate coupling are substantive prior art; local file dates differ from arXiv submission date, so cited as a 2025 preprint."
+    },
+    {
+      "work": "Countryman et al. (2025)",
+      "url": "https://www.nature.com/articles/s41467-025-62483-6.pdf",
+      "inspection": "Publisher search excerpt; earlier retained project full-paper comparison",
+      "comparison": "Dose, size and basal-mechanics furrowing already established. Main publisher HTML redirected to inaccessible identity endpoint in this refresh."
+    },
+    {
+      "work": "Kumar et al. (2024)",
+      "url": "https://www.nature.com/articles/s41540-024-00375-z.pdf",
+      "inspection": "Earlier retained project full-paper comparison; fresh publisher search excerpt",
+      "comparison": "Epithelial inverse inference and distinct fitting parameters already established. HTML redirected in this refresh."
+    },
+    {
+      "work": "Kreutz, Raue and Timmer (2012)",
+      "url": "https://arxiv.org/abs/1107.0013",
+      "inspection": "arXiv abstract; earlier retained project comparison of prediction profiles",
+      "comparison": "Prediction-focused inference is established; not priority for a new inference principle."
+    },
+    {
+      "work": "Yavari (2026)",
+      "url": "https://doi.org/10.1007/s00332-026-10246-y",
+      "inspection": "Author-hosted publisher PDF abstract and introduction pp.1–4",
+      "comparison": "Finite-strain geometric bulk-surface elasticity is established; p.3 footnote explicitly excludes curvature-dependent surface constitutive energy."
+    }
+  ],
+  "search_families": [
+    "epithelial folding, bending, nonaxisymmetric instability and inverse identifiability",
+    "negative surface tension and bending regularization",
+    "quasiconvex membrane relaxation and tension-field theory",
+    "fixed-height elastic bulk with a wrinkling free surface",
+    "bulk-boundary relaxation, injective recovery sequences and vanishing bending",
+    "observable growth, prediction profiles and shape error estimates",
+    "Gurtin-Murdoch and Steigmann-Ogden surface elasticity"
+  ],
+  "known_not_novel": [
+    "Generic negative-tension instability",
+    "Adding bending to control short wavelengths",
+    "Relaxing membrane compression via tension-field theory",
+    "Inverse equifinality and prediction uncertainty",
+    "Generic energy-gap plus quadratic-growth error inequalities"
+  ],
+  "not_cleared": [
+    "Full membrane-relaxation theorem comparison",
+    "Fixed-thickness coupled boundary relaxation with the exact constraints",
+    "Uniform quantitative rates and physically constrained counterexamples",
+    "Observable-specific coercivity and accessible-branch selection"
+  ],
+  "access_limits": [
+    "A Le Dret–Raoult author preprint URL timed out; do not infer its detailed theorem from that failed access.",
+    "Publisher HTML identity redirects blocked two fresh full-text fetches; prior project comparisons were distinguished from new reading.",
+    "Many broad bulk-surface search hits concern crack/jump interfaces; they were not treated as proofs for a material free surface."
+  ],
+  "novelty_claim": false,
+  "external_contact": false
+}

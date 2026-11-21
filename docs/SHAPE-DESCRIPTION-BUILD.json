@@ -1,0 +1,23 @@
+{
+  "status": "PASS_STRICT_SHAPE_GUIDE_BUILD",
+  "scope": "Source expression coverage and strict static TeX compilation; explanatory mathematics, not a research certificate.",
+  "math_expressions": 100,
+  "javascript_required": false,
+  "sha256": {
+    "docs/SHAPE-DESCRIPTION.md": "b994f16e398b338ab3e11538177cca5f32ba9ad9680eef5193457078b9ccb308",
+    "docs/SHAPE-DESCRIPTION.html": "4b1ab64c8bdb0bbae119cc105a684907848a1e7665608c094a802108cfe2cfe1",
+    "docs/assets/shape-description-chain.svg": "212bc4cd0963496a75de431c7e93dd3a9f407eb03a9b7842070cdb51a1171246",
+    "AGENTS.md": "67b918c838643e831d2057afe422640ec2f716a86244f5e103e33f81821c54b8",
+    "scripts/build_shape_description.py": "8adef3e159ad0376b603ea9fba6e133f6c1d81021d0fd0586a04c1bf2cc4e9ed",
+    "scripts/build_shape_visuals.py": "5c15599c81ec65408646e48814490869e45eed66808e68b912e4d4f18e37d688",
+    "docs/SHAPE-VISUALS-RECEIPT.json": "1434c9d22b663b3870a78b55aed30eccecd74e5ac47d435b6780c5ef7eeaecd4",
+    "docs/assets/shape-maps-concrete.png": "6b55885af1e1207433b42d50b509bdaf0a019f49ec1d696faef420316310893f",
+    "docs/assets/shape-maps-concrete.svg": "665e0d7a1fef58941a1202a73f51d3273389b129c9f5b3cca0b7f37d2f25ac69",
+    "docs/assets/shape-features-concrete.png": "5810dccd87c472b2b6910165f40f3f0dc829c24c08683a22987644a4c0986a56",
+    "docs/assets/shape-features-concrete.svg": "22f879da66eabd3c8f7740688c62f8d7f13cc879e083305054ee3fb8bbe92c1b",
+    "docs/assets/shape-metric-versus-curvature.png": "8857c0e53efc487f716e928aad98bc0c54beb48039dba88ad77acff7478bb5d4",
+    "docs/assets/shape-metric-versus-curvature.svg": "b228417a1b2f198073f608d9c32faa7a3741c078ddbe066b607eb387ec349268",
+    "docs/assets/shape-features-concrete.csv": "9a49a96838cc7fa2ca2e506b2afda27286d93a787bc71f06b0ffd8c489d897e5",
+    "docs/assets/shape-maps-concrete-data.npz": "0ab1796b4f16074e48627dd409b8afb796196f57b99f370c3e6e19e21cd6a8e1"
+  }
+}

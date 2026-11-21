@@ -438,6 +438,10 @@
       "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET.html"
     },
     {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html"
+    },
+    {
       "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/all36_cached_minimum_application_v1/checkpoint_v1/MINIMA.html",
       "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/all36_cached_minimum_application_v1/checkpoint_v1/MINIMA.html"
     },
@@ -484,6 +488,10 @@
     {
       "path": "docs/index.html",
       "url": "https://az9713.github.io/embryo-geometry-bridge/docs/index.html"
+    },
+    {
+      "path": "docs/SHAPE-DESCRIPTION.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/docs/SHAPE-DESCRIPTION.html"
     },
     {
       "path": "index.html",

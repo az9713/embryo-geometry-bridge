@@ -1,0 +1,117 @@
+{
+  "status": "PASS_PLAN_DOCUMENT_AND_SCOPED_CHECKS",
+  "scope": "Strict math compilation, existing input identity and exact laminate examples; not a proof of the proposed continuum theorem.",
+  "source_receipt": "controlled_furrowing/runs/nonaxisymmetric_surface_sign_preparation_v1/independent_actual_readback.json",
+  "source_receipt_sha256": "bf20e708826c08ed674c183e8c7364048748340501645885a12aa035f68d794e",
+  "prior_linked_hashes_checked": 37,
+  "stress_counts_readback": [
+    {
+      "case": "max_negative_contrast_change_small_16",
+      "windows": 336,
+      "counts": {
+        "NONNEGATIVE_ON_WINDOW": 276,
+        "UNRESOLVED": 2,
+        "STRICT_NEGATIVE_PATCH": 58
+      }
+    },
+    {
+      "case": "max_negative_contrast_change_small_17",
+      "windows": 336,
+      "counts": {
+        "NONNEGATIVE_ON_WINDOW": 276,
+        "UNRESOLVED": 2,
+        "STRICT_NEGATIVE_PATCH": 58
+      }
+    }
+  ],
+  "exact_laminate_examples": [
+    {
+      "K": "1",
+      "T": "0",
+      "J": "3/5",
+      "J_star": "1",
+      "normal_slope": "4/5",
+      "energy_drop": "2/25"
+    },
+    {
+      "K": "1",
+      "T": "0",
+      "J": "5/13",
+      "J_star": "1",
+      "normal_slope": "12/13",
+      "energy_drop": "32/169"
+    },
+    {
+      "K": "1",
+      "T": "0",
+      "J": "8/17",
+      "J_star": "1",
+      "normal_slope": "15/17",
+      "energy_drop": "81/578"
+    },
+    {
+      "K": "5",
+      "T": "1",
+      "J": "12/25",
+      "J_star": "4/5",
+      "normal_slope": "16/25",
+      "energy_drop": "32/125"
+    },
+    {
+      "K": "5",
+      "T": "1",
+      "J": "4/13",
+      "J_star": "4/5",
+      "normal_slope": "48/65",
+      "energy_drop": "512/845"
+    },
+    {
+      "K": "5",
+      "T": "1",
+      "J": "32/85",
+      "J_star": "4/5",
+      "normal_slope": "12/17",
+      "energy_drop": "648/1445"
+    },
+    {
+      "K": "7",
+      "T": "2",
+      "J": "3/7",
+      "J_star": "5/7",
+      "normal_slope": "4/7",
+      "energy_drop": "2/7"
+    },
+    {
+      "K": "7",
+      "T": "2",
+      "J": "25/91",
+      "J_star": "5/7",
+      "normal_slope": "60/91",
+      "energy_drop": "800/1183"
+    },
+    {
+      "K": "7",
+      "T": "2",
+      "J": "40/119",
+      "J_star": "5/7",
+      "normal_slope": "75/119",
+      "energy_drop": "2025/4046"
+    }
+  ],
+  "strictly_compiled_math_expressions": 50,
+  "written_proof_status": {
+    "isolated_surface_cell": "DERIVATION_STANDARD_NOT_NOVEL",
+    "conditional_observable_error": "ELEMENTARY_CONDITIONAL_LEMMA",
+    "bulk_boundary_relaxation": "UNPROVED_RESEARCH_TARGET",
+    "useful_observable_growth_constant": "UNPROVED_RESEARCH_TARGET"
+  },
+  "scientific_sources_modified": false,
+  "file_sha256": {
+    "PLAN.md": "3881beca1695fc33e1180e8bcb47715f6b28cd2d326a783d625239111bb3419a",
+    "PLAN.html": "dc0e501ca15bbc617b9d3331a38aa2f725d06ddf1f0e484ae3d9a43200268f55",
+    "surface-relaxation.svg": "703be4c97fc64f37df4c966e1da430f1027311c6d58e4c148a5d96fbe745c9d9",
+    "illustration.csv": "b02df5be9b30ffbd50af528454d4a7fe86513261dfaf4cf1e5ccbb717224f1fa",
+    "LITERATURE-AUDIT.json": "9ba39110305b1e87b15aacaf400bc27de521c64290313d1d429708c399bc2d45",
+    "check_and_build.py": "ad271681841b86098128afdad1d422b6182dce4a38d47199e4eb5162a8a525c3"
+  }
+}

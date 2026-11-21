@@ -1,0 +1,36 @@
+{
+  "status": "PASS_ANALYTIC_TEACHING_FIGURES",
+  "scope": "Explicit analytic maps and elementary exact checks. No force solve, experimental fit or new research result.",
+  "parameters": {
+    "H": 1,
+    "L": 2,
+    "A": "7/20",
+    "asymmetric_beta": 4
+  },
+  "exact_checks": {
+    "mean_phi_center": "721/768",
+    "mean_phi_ring": "49/768",
+    "height_contrast_over_A": "-7/8",
+    "axisymmetric_body_J_lower_bound": "3/10",
+    "asymmetric_body_J_lower_bound": "41/216"
+  },
+  "sampling_checks": {
+    "area_ratio_min": 1.0,
+    "max_slope": 0.2694300984375,
+    "center_curvatures_times_H": [
+      0.35,
+      0.35
+    ]
+  },
+  "files": {
+    "shape-features-concrete.csv": "9a49a96838cc7fa2ca2e506b2afda27286d93a787bc71f06b0ffd8c489d897e5",
+    "shape-features-concrete.png": "5810dccd87c472b2b6910165f40f3f0dc829c24c08683a22987644a4c0986a56",
+    "shape-features-concrete.svg": "22f879da66eabd3c8f7740688c62f8d7f13cc879e083305054ee3fb8bbe92c1b",
+    "shape-maps-concrete-data.npz": "0ab1796b4f16074e48627dd409b8afb796196f57b99f370c3e6e19e21cd6a8e1",
+    "shape-maps-concrete.png": "6b55885af1e1207433b42d50b509bdaf0a019f49ec1d696faef420316310893f",
+    "shape-maps-concrete.svg": "665e0d7a1fef58941a1202a73f51d3273389b129c9f5b3cca0b7f37d2f25ac69",
+    "shape-metric-versus-curvature.png": "8857c0e53efc487f716e928aad98bc0c54beb48039dba88ad77acff7478bb5d4",
+    "shape-metric-versus-curvature.svg": "b228417a1b2f198073f608d9c32faa7a3741c078ddbe066b607eb387ec349268"
+  },
+  "generator_sha256": "5c15599c81ec65408646e48814490869e45eed66808e68b912e4d4f18e37d688"
+}

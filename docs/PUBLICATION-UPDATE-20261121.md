@@ -1,0 +1,11 @@
+# Shape guide and next-step plan: publication provenance
+
+This update publishes explanatory mathematics, analytic teaching figures, a prospective research plan and scoped verification receipts. It adds no solved continuum model, biological validation, confirmed novelty or new exact-equilibrium certificate. No authors were contacted.
+
+The canonical [shape guide](SHAPE-DESCRIPTION.html), its source, figure generators and data outputs and the original guide receipts were copied byte for byte from the authoring workspace. The public [next-step plan](../controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html) and its complete eleven-file authoring bundle are also unchanged copies. The original evidence, manifest and browser receipts describe those authoring checks. `MANIFEST.json` records all ten other files in that plan bundle. Its original `published_or_pushed: false` field is historical metadata from plan creation, not the status of this release.
+
+The plan's `check_and_build.py` checks 37 retained scientific-input hashes, exact laminate examples and documentation compilation. All 37 linked files are present and their identities are checked for this release. This does not replay their historical raw integrations or independently prove the proposed main theorems. Rebuilding figures or screenshots can create new output bytes; original receipts identify the saved release rather than promising environment-independent screenshot hashes.
+
+The README, dossier landing, all-page catalog and development journey add public links and clearly label unresolved research. Existing numerical scientific files are guarded against alteration by the publication manifest refresh. The site-wide browser receipts for this update are under `verification/site/shape-plan-20261121/`; earlier receipts remain historical.
+
+The local guide/plan receipts and the current site-wide checks have different scopes. The former retain original authoring evidence; the latter verify the current public presentation of every HTML page at desktop/mobile sizes. Exact deployed-file and post-deployment browser receipts are retained separately after GitHub Pages builds the published commit. Rendering and file-integrity checks do not establish originality or biological correctness.

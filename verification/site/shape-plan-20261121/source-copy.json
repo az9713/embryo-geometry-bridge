@@ -1,0 +1,157 @@
+{
+  "status": "PASS_EXACT_WHITELIST_COPY",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "source_sha256": "67b918c838643e831d2057afe422640ec2f716a86244f5e103e33f81821c54b8",
+      "publication_sha256": "67b918c838643e831d2057afe422640ec2f716a86244f5e103e33f81821c54b8"
+    },
+    {
+      "path": "docs/SHAPE-DESCRIPTION.md",
+      "source_sha256": "b994f16e398b338ab3e11538177cca5f32ba9ad9680eef5193457078b9ccb308",
+      "publication_sha256": "b994f16e398b338ab3e11538177cca5f32ba9ad9680eef5193457078b9ccb308"
+    },
+    {
+      "path": "docs/SHAPE-DESCRIPTION.html",
+      "source_sha256": "4b1ab64c8bdb0bbae119cc105a684907848a1e7665608c094a802108cfe2cfe1",
+      "publication_sha256": "4b1ab64c8bdb0bbae119cc105a684907848a1e7665608c094a802108cfe2cfe1"
+    },
+    {
+      "path": "docs/SHAPE-DESCRIPTION-BUILD.json",
+      "source_sha256": "10cc7df087a656cdfb09f0b91a79be21335014be16c3f845eeae15ef30b986ff",
+      "publication_sha256": "10cc7df087a656cdfb09f0b91a79be21335014be16c3f845eeae15ef30b986ff"
+    },
+    {
+      "path": "docs/SHAPE-DESCRIPTION-BROWSER.json",
+      "source_sha256": "cf68c9caf77e0a1a9280d81b2269b442acb496ae71f1c1482a9497d3b0bff45e",
+      "publication_sha256": "cf68c9caf77e0a1a9280d81b2269b442acb496ae71f1c1482a9497d3b0bff45e"
+    },
+    {
+      "path": "docs/SHAPE-DESCRIPTION-RECEIPT.json",
+      "source_sha256": "dce8646f184658e468f1212ea5f153dfd1490fed69a00801688ab31652ba327b",
+      "publication_sha256": "dce8646f184658e468f1212ea5f153dfd1490fed69a00801688ab31652ba327b"
+    },
+    {
+      "path": "docs/SHAPE-VISUALS-RECEIPT.json",
+      "source_sha256": "1434c9d22b663b3870a78b55aed30eccecd74e5ac47d435b6780c5ef7eeaecd4",
+      "publication_sha256": "1434c9d22b663b3870a78b55aed30eccecd74e5ac47d435b6780c5ef7eeaecd4"
+    },
+    {
+      "path": "docs/assets/shape-description-chain.svg",
+      "source_sha256": "212bc4cd0963496a75de431c7e93dd3a9f407eb03a9b7842070cdb51a1171246",
+      "publication_sha256": "212bc4cd0963496a75de431c7e93dd3a9f407eb03a9b7842070cdb51a1171246"
+    },
+    {
+      "path": "scripts/build_shape_description.py",
+      "source_sha256": "8adef3e159ad0376b603ea9fba6e133f6c1d81021d0fd0586a04c1bf2cc4e9ed",
+      "publication_sha256": "8adef3e159ad0376b603ea9fba6e133f6c1d81021d0fd0586a04c1bf2cc4e9ed"
+    },
+    {
+      "path": "scripts/build_shape_visuals.py",
+      "source_sha256": "5c15599c81ec65408646e48814490869e45eed66808e68b912e4d4f18e37d688",
+      "publication_sha256": "5c15599c81ec65408646e48814490869e45eed66808e68b912e4d4f18e37d688"
+    },
+    {
+      "path": "scripts/verify_shape_description.py",
+      "source_sha256": "88458be9ae487a43e55b897e51b28a901258c87a9a11a09b88f09291a56d983f",
+      "publication_sha256": "88458be9ae487a43e55b897e51b28a901258c87a9a11a09b88f09291a56d983f"
+    },
+    {
+      "path": "docs/assets/shape-maps-concrete.png",
+      "source_sha256": "6b55885af1e1207433b42d50b509bdaf0a019f49ec1d696faef420316310893f",
+      "publication_sha256": "6b55885af1e1207433b42d50b509bdaf0a019f49ec1d696faef420316310893f"
+    },
+    {
+      "path": "docs/assets/shape-maps-concrete.svg",
+      "source_sha256": "665e0d7a1fef58941a1202a73f51d3273389b129c9f5b3cca0b7f37d2f25ac69",
+      "publication_sha256": "665e0d7a1fef58941a1202a73f51d3273389b129c9f5b3cca0b7f37d2f25ac69"
+    },
+    {
+      "path": "docs/assets/shape-features-concrete.png",
+      "source_sha256": "5810dccd87c472b2b6910165f40f3f0dc829c24c08683a22987644a4c0986a56",
+      "publication_sha256": "5810dccd87c472b2b6910165f40f3f0dc829c24c08683a22987644a4c0986a56"
+    },
+    {
+      "path": "docs/assets/shape-features-concrete.svg",
+      "source_sha256": "22f879da66eabd3c8f7740688c62f8d7f13cc879e083305054ee3fb8bbe92c1b",
+      "publication_sha256": "22f879da66eabd3c8f7740688c62f8d7f13cc879e083305054ee3fb8bbe92c1b"
+    },
+    {
+      "path": "docs/assets/shape-metric-versus-curvature.png",
+      "source_sha256": "8857c0e53efc487f716e928aad98bc0c54beb48039dba88ad77acff7478bb5d4",
+      "publication_sha256": "8857c0e53efc487f716e928aad98bc0c54beb48039dba88ad77acff7478bb5d4"
+    },
+    {
+      "path": "docs/assets/shape-metric-versus-curvature.svg",
+      "source_sha256": "b228417a1b2f198073f608d9c32faa7a3741c078ddbe066b607eb387ec349268",
+      "publication_sha256": "b228417a1b2f198073f608d9c32faa7a3741c078ddbe066b607eb387ec349268"
+    },
+    {
+      "path": "docs/assets/shape-features-concrete.csv",
+      "source_sha256": "9a49a96838cc7fa2ca2e506b2afda27286d93a787bc71f06b0ffd8c489d897e5",
+      "publication_sha256": "9a49a96838cc7fa2ca2e506b2afda27286d93a787bc71f06b0ffd8c489d897e5"
+    },
+    {
+      "path": "docs/assets/shape-maps-concrete-data.npz",
+      "source_sha256": "0ab1796b4f16074e48627dd409b8afb796196f57b99f370c3e6e19e21cd6a8e1",
+      "publication_sha256": "0ab1796b4f16074e48627dd409b8afb796196f57b99f370c3e6e19e21cd6a8e1"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/BROWSER-RECEIPT.json",
+      "source_sha256": "348a32da6079a97451740970579ff8318ef123c57df869b8e7c858f8db57cbe7",
+      "publication_sha256": "348a32da6079a97451740970579ff8318ef123c57df869b8e7c858f8db57cbe7"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/check_and_build.py",
+      "source_sha256": "ad271681841b86098128afdad1d422b6182dce4a38d47199e4eb5162a8a525c3",
+      "publication_sha256": "ad271681841b86098128afdad1d422b6182dce4a38d47199e4eb5162a8a525c3"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/EVIDENCE.json",
+      "source_sha256": "ef26b8451aa3c7299e720b67aff6a2286db3889c627b6a3b6dbd5c0b7cea9dc6",
+      "publication_sha256": "ef26b8451aa3c7299e720b67aff6a2286db3889c627b6a3b6dbd5c0b7cea9dc6"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/illustration.csv",
+      "source_sha256": "b02df5be9b30ffbd50af528454d4a7fe86513261dfaf4cf1e5ccbb717224f1fa",
+      "publication_sha256": "b02df5be9b30ffbd50af528454d4a7fe86513261dfaf4cf1e5ccbb717224f1fa"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/LITERATURE-AUDIT.json",
+      "source_sha256": "9ba39110305b1e87b15aacaf400bc27de521c64290313d1d429708c399bc2d45",
+      "publication_sha256": "9ba39110305b1e87b15aacaf400bc27de521c64290313d1d429708c399bc2d45"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/MANIFEST.json",
+      "source_sha256": "e8d40ea16d76404909fca019362f0ffd96dc3ea85590b8b17c5618ab2f86a056",
+      "publication_sha256": "e8d40ea16d76404909fca019362f0ffd96dc3ea85590b8b17c5618ab2f86a056"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html",
+      "source_sha256": "dc0e501ca15bbc617b9d3331a38aa2f725d06ddf1f0e484ae3d9a43200268f55",
+      "publication_sha256": "dc0e501ca15bbc617b9d3331a38aa2f725d06ddf1f0e484ae3d9a43200268f55"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.md",
+      "source_sha256": "3881beca1695fc33e1180e8bcb47715f6b28cd2d326a783d625239111bb3419a",
+      "publication_sha256": "3881beca1695fc33e1180e8bcb47715f6b28cd2d326a783d625239111bb3419a"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/preview-1440.png",
+      "source_sha256": "83a85766813e187ba2bda21c15c523cf0056c9286e30d090291c08c629415526",
+      "publication_sha256": "83a85766813e187ba2bda21c15c523cf0056c9286e30d090291c08c629415526"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/preview-390.png",
+      "source_sha256": "6ea3dcc56875edd1dbafe9f34ff606926a4dd9cab88faed4ab35fbe916b6a4b4",
+      "publication_sha256": "6ea3dcc56875edd1dbafe9f34ff606926a4dd9cab88faed4ab35fbe916b6a4b4"
+    },
+    {
+      "path": "controlled_furrowing/research_directions/regularization_shape_v1/surface-relaxation.svg",
+      "source_sha256": "703be4c97fc64f37df4c966e1da430f1027311c6d58e4c148a5d96fbe745c9d9",
+      "publication_sha256": "703be4c97fc64f37df4c966e1da430f1027311c6d58e4c148a5d96fbe745c9d9"
+    }
+  ],
+  "personal_workflow_files_copied": false,
+  "source_readme_or_history_copied": false
+}

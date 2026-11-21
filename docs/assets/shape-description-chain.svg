@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 510" role="img" aria-labelledby="title desc">
+<title id="title">From material coordinates to shape measurements</title><desc id="desc">Five linked levels: reference material, three-dimensional deformation, tissue surfaces, geometric quantities and declared observations.</desc>
+<rect width="720" height="510" rx="14" fill="#102035"/>
+<g font-family="system-ui,sans-serif" text-anchor="middle" fill="#eaf3ff">
+<text x="360" y="33" font-size="21" font-weight="700">One shape, several mathematical descriptions</text>
+<g stroke="#58778f" fill="#18324a"><rect x="55" y="53" width="610" height="64" rx="9"/><rect x="55" y="143" width="610" height="64" rx="9"/><rect x="55" y="233" width="610" height="64" rx="9"/><rect x="55" y="323" width="610" height="64" rx="9"/><rect x="55" y="413" width="610" height="64" rx="9"/></g>
+<g fill="#89e0dd" font-size="21"><text x="360" y="80">Reference material body</text><text x="360" y="170">Deformation map</text><text x="360" y="260">Apical and basal surfaces</text><text x="360" y="350">Metric, area and curvature</text><text x="360" y="440">Declared shape observable</text></g>
+<g font-size="16"><text x="360" y="104">Labels identify the original tissue points</text><text x="360" y="194">Each label receives a current 3D position</text><text x="360" y="284">Embeddings describe boundaries of the body</text><text x="360" y="374">Local geometry enters the mechanical energy</text><text x="360" y="464">A specified measurement summarizes selected features</text></g>
+<g stroke="#efc778" stroke-width="3" fill="none"><path d="M360 119v19m-6-6 6 6 6-6M360 209v19m-6-6 6 6 6-6M360 299v19m-6-6 6 6 6-6M360 389v19m-6-6 6 6 6-6"/></g>
+<text x="360" y="497" font-size="13" fill="#becddd">Representation and notation; no experimental data or new result shown</text></g></svg>

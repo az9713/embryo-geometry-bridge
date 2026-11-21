@@ -1,0 +1,43 @@
+{
+  "status": "PASS_SHAPE_GUIDE_BROWSER",
+  "browser": "Microsoft Edge headless",
+  "version": "158.0.4370.33",
+  "javascript_disabled": true,
+  "html_sha256": "4b1ab64c8bdb0bbae119cc105a684907848a1e7665608c094a802108cfe2cfe1",
+  "verifier_sha256": "88458be9ae487a43e55b897e51b28a901258c87a9a11a09b88f09291a56d983f",
+  "retained_hashes_checked": 15,
+  "local_links_checked": 11,
+  "views": [
+    {
+      "viewport_width": 1440,
+      "status": "PASS",
+      "rendering": {
+        "math": 100,
+        "katex": 100,
+        "accessible": 100,
+        "scroll": 1440,
+        "width": 1440,
+        "images": 4,
+        "missingImages": 0,
+        "errors": 0
+      },
+      "page_errors": []
+    },
+    {
+      "viewport_width": 390,
+      "status": "PASS",
+      "rendering": {
+        "math": 100,
+        "katex": 100,
+        "accessible": 100,
+        "scroll": 390,
+        "width": 390,
+        "images": 4,
+        "missingImages": 0,
+        "errors": 0
+      },
+      "page_errors": []
+    }
+  ],
+  "scope": "Local explanatory-document rendering and file identity. No new research theorem or live-site deployment."
+}

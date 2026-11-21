@@ -1,0 +1,37 @@
+{
+  "status": "PASS_SHAPE_PLAN_PREDEPLOYMENT_BROWSER",
+  "html_files": 125,
+  "desktop_mobile_views": 500,
+  "math_expressions_per_width": 3161,
+  "javascript_modes": [
+    "disabled",
+    "enabled"
+  ],
+  "new_documents": [
+    "docs/SHAPE-DESCRIPTION.html",
+    "controlled_furrowing/research_directions/regularization_shape_v1/PLAN.html"
+  ],
+  "public_browser_receipts": [
+    "verification/site/shape-plan-20261121/static/receipt.json",
+    "verification/site/shape-plan-20261121/javascript/receipt.json"
+  ],
+  "scope": "Presentation, saved evidence and scientific-input identity. Main research targets remain unproved. Live deployment checked separately after commit.",
+  "terminal_evidence": {
+    "static_browser": {
+      "chunk": "ce2386",
+      "exit_code": 0
+    },
+    "javascript_browser": {
+      "chunk": "a53e39",
+      "exit_code": 0
+    },
+    "bundle_identities": {
+      "chunk": "8713ab",
+      "exit_code": 0
+    },
+    "prior_source_and_readme": {
+      "chunk": "693b0c",
+      "exit_code": 0
+    }
+  }
+}

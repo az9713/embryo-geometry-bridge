@@ -1,0 +1,43 @@
+{
+  "status": "PASS_CANONICAL_SHAPE_GUIDE_VISUAL_EXAMPLES_AND_LIMITATIONS",
+  "canonical_source": "docs/SHAPE-DESCRIPTION.md",
+  "canonical_html": "docs/SHAPE-DESCRIPTION.html",
+  "future_document_rule": "AGENTS.md",
+  "math_expressions": 100,
+  "browser_views": 2,
+  "figures": 4,
+  "scope": "Explicit teaching maps, analytic feature derivations, representation limitations and verified local documentation. No new force-balanced equilibrium, biological fit, novelty result or live deployment.",
+  "terminal_evidence": {
+    "analytic_visuals": {
+      "chunk": "650b7a",
+      "exit_code": 0
+    },
+    "strict_build": {
+      "chunk": "b1815c",
+      "exit_code": 0
+    },
+    "browser": {
+      "chunk": "6a4ec7",
+      "exit_code": 0
+    }
+  },
+  "verified_analytic_checks": {
+    "mean_phi_center": "721/768",
+    "mean_phi_ring": "49/768",
+    "height_contrast_over_A": "-7/8",
+    "axisymmetric_body_J_lower_bound": "3/10",
+    "asymmetric_body_J_lower_bound": "41/216"
+  },
+  "sha256": {
+    "AGENTS.md": "67b918c838643e831d2057afe422640ec2f716a86244f5e103e33f81821c54b8",
+    "README.md": "505e909c5f1e810f4daa6417283b4d316c5818feac797c8cf7c044ea36735fb5",
+    "docs/SHAPE-DESCRIPTION.md": "b994f16e398b338ab3e11538177cca5f32ba9ad9680eef5193457078b9ccb308",
+    "docs/SHAPE-DESCRIPTION.html": "4b1ab64c8bdb0bbae119cc105a684907848a1e7665608c094a802108cfe2cfe1",
+    "scripts/build_shape_description.py": "8adef3e159ad0376b603ea9fba6e133f6c1d81021d0fd0586a04c1bf2cc4e9ed",
+    "scripts/build_shape_visuals.py": "5c15599c81ec65408646e48814490869e45eed66808e68b912e4d4f18e37d688",
+    "scripts/verify_shape_description.py": "88458be9ae487a43e55b897e51b28a901258c87a9a11a09b88f09291a56d983f",
+    "docs/SHAPE-DESCRIPTION-BUILD.json": "10cc7df087a656cdfb09f0b91a79be21335014be16c3f845eeae15ef30b986ff",
+    "docs/SHAPE-DESCRIPTION-BROWSER.json": "cf68c9caf77e0a1a9280d81b2269b442acb496ae71f1c1482a9497d3b0bff45e",
+    "docs/SHAPE-VISUALS-RECEIPT.json": "1434c9d22b663b3870a78b55aed30eccecd74e5ac47d435b6780c5ef7eeaecd4"
+  }
+}
