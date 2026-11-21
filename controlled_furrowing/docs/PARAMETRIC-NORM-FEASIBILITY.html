@@ -1,0 +1,238 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PARAMETRIC-NORM-FEASIBILITY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>A concrete energy norm for parameter-cell validation</h1>
+<p><strong>A norm change alone does not certify useful material cells.</strong> This investigation does prove something narrower: the Hessian of the one archived weak-load, finite-quadrature model is positive throughout a displacement-coordinate cube of radius <span class="math" data-tex="10^{-8}"></span>. Preserving the volumetric rank structure also makes a 0.1% gain predictor tube plausible. That tube is still a feasibility result: its complete residual, self-map and directed-rounding gates have not passed here.</p>
+<p>The <a href="../evidence/parametric_norm_feasibility.json">retained receipt</a> separates the initial failed bounds, floating global feasibility screens, and an actual Arb certificate. The <a href="../scripts/parametric_norm_feasibility.py">read-only script</a> performs no equilibrium optimization and changes no physical model. The target is the original 611-free-coordinate, 12×6, strength-one field used by the <a href="ALGEBRAIC-ROOT-CERTIFICATION-PATH.html">root certificate</a>, with <span class="math" data-tex="\mu=1"></span> and finite volumetric coefficient <span class="math" data-tex="\kappa=5000"></span>. No result here covers the seventeen revised-material fields or an unbounded material domain.</p>
+<h2>1. What was making the old bound fail</h2>
+<p>Let <span class="math" data-tex="H_0"></span> be the exact Hessian at the frozen center. The old componentwise estimate first takes absolute values of local Hessian changes, assembles row sums, then multiplies by <span class="math" data-tex="&#124;R&#124;"></span>, where <span class="math" data-tex="R"></span> approximates <span class="math" data-tex="H_0^{-1}"></span>. This discards cancellations associated with finite-element compatibility and the stiff volumetric term. At nodal radius <span class="math" data-tex="10^{-8}"></span>, the comparable floating bound is 33.5451, so it cannot prove a contraction.</p>
+<p>Choose a binary matrix <span class="math" data-tex="W"></span> by numerically computing an inverse-transpose Cholesky factor of the archived Hessian. <strong>Its numerical construction is not its proof.</strong> Thereafter every entry of <span class="math" data-tex="W"></span> is treated as an exact binary constant, and define</p>
+<div class="math display" data-tex="
+ \&#124;x\&#124;_G=\&#124;W^{-1}x\&#124;_2,
+ \qquad G=W^{-T}W^{-1}.
+"></div>
+
+<p>The retained <span class="math" data-tex="W"></span> is triangular with nonzero diagonal, so this is a genuine norm. Independently assembled Arb matrices verify the stronger useful condition</p>
+<div class="math display" data-tex="
+ \&#124;W^T H_0W-I\&#124;_2
+ \le \&#124;W^T H_0W-I\&#124;_\infty
+ \le 1.312203388023\times10^{-10}.
+"></div>
+
+<p>The norm inequality applies because the exact transformed matrix is symmetric. Thus positive definiteness is established by interval arithmetic, rather than assumed from a successful floating Cholesky factorization.</p>
+<h2>2. A validated positive Hessian on a whole displacement cube</h2>
+<p>At quadrature term <span class="math" data-tex="q"></span>, let <span class="math" data-tex="B_q"></span> be the exact linear map from free coordinates to its local deformation variables, <span class="math" data-tex="w_q&gt;0"></span> its normalized weight, and <span class="math" data-tex="h_q"></span> its small local Hessian. Arb encloses <span class="math" data-tex="\Delta h_q=h_q(u)-h_q(u_0)"></span> throughout</p>
+<div class="math display" data-tex="
+ \&#124;u-u_0\&#124;_\infty\le10^{-8}.
+"></div>
+
+<p>Let <span class="math" data-tex="m_{ij}"></span> bound both <span class="math" data-tex="&#124;\Delta h_{ij}&#124;"></span> and <span class="math" data-tex="&#124;\Delta h_{ji}&#124;"></span>, and set <span class="math" data-tex="D_{ii}=\sum_jm_{ij}"></span>. Symmetric diagonal dominance gives</p>
+<div class="math display" data-tex="
+ -D_q\preceq\Delta h_q\preceq D_q,
+ \qquad
+ -M\preceq H(u)-H_0\preceq M,
+ \qquad M=\sum_q w_qB_q^TD_qB_q.
+"></div>
+
+<p>All 9,504 terms are included. Full Arb matrix multiplication, with the frozen binary <span class="math" data-tex="W"></span>, proves</p>
+<div class="math display" data-tex="
+ \&#124;W^TMW\&#124;_2\le\&#124;W^TMW\&#124;_\infty
+ \le0.072649381762270.
+"></div>
+
+<p>Consequently, everywhere in that cube,</p>
+<div class="math display" data-tex="
+ W^TH(u)W\succeq0.927350618106510\,I.
+"></div>
+
+<p>These displayed decimal constants are safe rounded summaries; the receipt retains exact rational interval endpoints. The earlier root certificate places its unique local stationary point strictly inside this cube. The energy is therefore strictly convex on the cube, and that stationary point is a <strong>strict local energy minimum of this frozen finite-quadrature potential</strong>. This is stronger than stationarity alone. It does not establish physical dynamical stability, a global minimum, branch uniqueness outside the cube, or continuum accuracy.</p>
+<table>
+<thead>
+<tr>
+<th>Bound on the same <span class="math" data-tex="10^{-8}"></span> nodal cube</th>
+<th style="text-align: right;">Value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Absolute-value inverse/row majorant</td>
+<td style="text-align: right;">33.5451</td>
+<td>Floating screen; fails</td>
+</tr>
+<tr>
+<td>Generalized eigenvalue of assembled PSD majorant</td>
+<td style="text-align: right;">0.0208433</td>
+<td>Floating screen</td>
+</tr>
+<tr>
+<td>Transformed majorant maximum absolute row sum</td>
+<td style="text-align: right;">0.072649381762270</td>
+<td>Arb validated</td>
+</tr>
+<tr>
+<td>Center defect plus transformed majorant</td>
+<td style="text-align: right;">0.072649381893490</td>
+<td>Arb validated; below one</td>
+</tr>
+</tbody>
+</table>
+<p>The smaller generalized eigenvalue is not used as a certified number.</p>
+<h2>3. Why naive energy balls still fail</h2>
+<p>A metric ball <span class="math" data-tex="\&#124;W^{-1}e\&#124;_2\le\rho"></span> gives local widths</p>
+<div class="math display" data-tex="
+ &#124;(B_qe)_i&#124;\le\rho\,\&#124;(B_qW)_{i,:}\&#124;_2.
+"></div>
+
+<p>The maximum nodal conversion constant is approximately 14.05555: <span class="math" data-tex="\&#124;e\&#124;_\infty\le14.05555\rho"></span>. This is a floating diagnostic until its norms are enclosed outward. A metric radius <span class="math" data-tex="10^{-4}"></span>, processed with the same diagonal local majorant, has generalized majorant bound about 120.84. Thus a favorable result on a small nodal cube cannot be promoted to an arbitrary larger energy ball.</p>
+<p>Likewise, a 0.1% gain predictor tube of metric radius <span class="math" data-tex="10^{-7}"></span>, treated without volumetric structure, has generalized bound 1.9116 and fails. Those failures are retained.</p>
+<h2>4. Preserve the actual volumetric structure</h2>
+<p>For the five local bulk variables, write <span class="math" data-tex="\ell=\log J"></span>, <span class="math" data-tex="v=\nabla\ell"></span>, and <span class="math" data-tex="Q=\nabla^2\ell"></span>. The local bulk Hessian is</p>
+<div class="math display" data-tex="
+ h=\mu I+gD+\kappa vv^T+(\kappa\ell-\mu)Q,
+ \qquad D=\operatorname{diag}(0,1,0,1,0),
+"></div>
+
+<p>with the local illuminated drive included in <span class="math" data-tex="g"></span>. Its gain Hessian is constant and positive semidefinite; interval subtraction of two full volumetric Hessians is unnecessary for that contribution.</p>
+<p>For a displacement predictor <span class="math" data-tex="\widehat u=u_0+S\delta"></span>, first compute <span class="math" data-tex="B_qS"></span> and contractions with <span class="math" data-tex="v_0,Q_0"></span>, <strong>then</strong> take absolute values. In particular,</p>
+<div class="math display" data-tex="
+ &#124;\ell(q_0+d)-\ell(q_0)&#124;
+ \le &#124;v_0^Td&#124;+
+ \tfrac12 &#124;d&#124;^T\,\overline{&#124;Q&#124;}\,&#124;d&#124;.
+"></div>
+
+<p>The first term preserves the nearly volume-preserving predictor direction. Replacing it with <span class="math" data-tex="&#124;v_0&#124;^T&#124;d&#124;"></span> loses that information. Similarly,</p>
+<div class="math display" data-tex="
+ &#124;v(q_0+d)-v_0&#124;
+ \le &#124;Q_0d&#124;+\overline{&#124;Q-Q_0&#124;}\,&#124;d&#124;.
+"></div>
+
+<p>For all bulk points, stack the weighted rows <span class="math" data-tex="\sqrt{w_q\kappa}\,v_0^TB_q"></span> into <span class="math" data-tex="A"></span>, and their variations into <span class="math" data-tex="D_*"></span>. Then the volumetric outer-product variation satisfies</p>
+<div class="math display" data-tex="
+ \&#124;W^T\Delta H_{\rm rank}W\&#124;_2
+ \le2\&#124;AW\&#124;_2\&#124;D_*W\&#124;_2+\&#124;D_*W\&#124;_2^2.
+"></div>
+
+<p>If local gradient changes obey <span class="math" data-tex="&#124;\delta v_i&#124;\le d_i"></span>, a PSD majorant for the squared variation is obtained from</p>
+<div class="math display" data-tex="
+ (\delta v^Ty)^2\le
+ \left(\sum_i d_i\right)\left(\sum_i d_i y_i^2\right).
+"></div>
+
+<p>The remaining bulk change is bounded separately using</p>
+<div class="math display" data-tex="
+ &#124;\Delta[(\kappa\ell-\mu)Q]&#124;
+ \le &#124;\kappa\ell_0-\mu&#124;\,\overline{&#124;Q-Q_0&#124;}
+ +\kappa\,\overline{&#124;\ell-\ell_0&#124;}\,\overline{&#124;Q&#124;}.
+"></div>
+
+<p>Surface terms retain their exact local interval Hessian majorants. This decomposition avoids imposing a full <span class="math" data-tex="\kappa"></span>-scale diagonal perturbation on every soft shear direction.</p>
+<h2>5. Concrete predictor feasibility, with the unpassed gates exposed</h2>
+<p>The predictor uses the archived gain tangent. Its metric norm is approximately 0.0173654, compared with nodal infinity norm 0.0451285. The following are <strong>floating global norm screens using Arb local derivative enclosures</strong>, not validated material cells:</p>
+<table>
+<thead>
+<tr>
+<th>Relative gain half-width</th>
+<th style="text-align: right;">Metric tube radius</th>
+<th style="text-align: right;">Naive generalized bound</th>
+<th style="text-align: right;">Rank-aware generalized bound</th>
+<th style="text-align: right;">Rank-aware absolute-row bound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1%</td>
+<td style="text-align: right;"><span class="math" data-tex="10^{-7}"></span></td>
+<td style="text-align: right;">1.9116</td>
+<td style="text-align: right;">0.0196733</td>
+<td style="text-align: right;">0.0692105</td>
+</tr>
+<tr>
+<td>1%</td>
+<td style="text-align: right;"><span class="math" data-tex="10^{-5}"></span></td>
+<td style="text-align: right;">24.4061</td>
+<td style="text-align: right;">0.491516</td>
+<td style="text-align: right;">1.60627</td>
+</tr>
+</tbody>
+</table>
+<p>The first row supports a specific next implementation, rather than the generic advice to change norms. The second row still fails the cheaper absolute-row acceptance test. A floating eigenvalue below one cannot repair that failure.</p>
+<p>For a genuine uniform cell, freeze binary <span class="math" data-tex="W,S"></span> and enclose every contraction and norm outward. In transformed coordinates the map is</p>
+<div class="math display" data-tex="
+ T_\theta(z)=z-W^TF(\widehat u(\theta)+Wz,\theta).
+"></div>
+
+<p>One must prove, uniformly over the declared coefficient cell,</p>
+<div class="math display" data-tex="
+ \eta\ge\sup_\theta\&#124;W^TF(\widehat u(\theta),\theta)\&#124;_2,
+ \quad Z\ge\sup_{\theta,\&#124;z\&#124;_2\le\rho}
+ \&#124;I-W^TH(\widehat u(\theta)+Wz,\theta)W\&#124;_2,
+ \quad \eta+Z\rho&lt;\rho.
+"></div>
+
+<p>Neither a derivative screen <span class="math" data-tex="Z&lt;1"></span> nor the old one-point root certificate supplies the missing predictor residual <span class="math" data-tex="\eta"></span>. The archived tangent solves the linear system only numerically, so its exact defect must also be retained. For gain half-width <span class="math" data-tex="h"></span>, with gain-force derivative <span class="math" data-tex="b_g"></span> and constant gain Hessian <span class="math" data-tex="H_g"></span>, a useful residual inequality is</p>
+<div class="math display" data-tex="
+ \eta\le\&#124;W^TF_0\&#124;_2+
+ h\&#124;W^T(H_0S_g+b_g)\&#124;_2+
+ h\&#124;W^{-1}S_g\&#124;_2\int_0^1 K_{\rm geom}(th)\,dt+
+ h^2\&#124;W^TH_gS_g\&#124;_2.
+"></div>
+
+<p>Here <span class="math" data-tex="K_{\rm geom}(th)"></span> bounds the geometry-only transformed Hessian change along the predictor segment; it excludes the separately handled gain contribution. Subdividing that one-dimensional integral can sharpen the remainder. This inequality is proved by integrating the gradient along the predictor and using the exact affine dependence on gain. Its inputs have <strong>not</strong> all been validated in this investigation, so no useful-width cell is claimed.</p>
+<p>A final screen makes the remaining obstruction quantitative. At gain half-width <span class="math" data-tex="h=0.001"></span>, the rank-aware absolute-row bound along the predictor alone is 0.0622008; adding a metric error tube <span class="math" data-tex="\rho=10^{-6}"></span> gives 0.155995. Bounding the whole Taylor integral by its endpoint bound yields nonlinear residual about <span class="math" data-tex="1.08014\times10^{-6}"></span>, hence</p>
+<div class="math display" data-tex="
+ \eta_{\rm remainder}+Z\rho\approx1.23614\times10^{-6}&gt;\rho.
+"></div>
+
+<p>That conservative screen <strong>fails</strong>, even before adding the small center residual and tangent defect. The receipt retains the failure. It identifies a specific next computation: validated subdivision of the one-dimensional remainder integral, or a sharper validated symmetric norm bound. The floating spectral estimates alone would be more favorable, but are not used to declare a cell.</p>
+<p>The archived columns named <code>log_*</code> are derivatives at the center. They also equal derivatives with respect to a <em>relative linear coefficient change</em> there. The linear predictor above uses that latter coordinate. A uniform logarithmic parameter box must instead enclose the exponential conversion, not silently identify a finite log change with a relative linear change. The zero apical-tension coordinate is additive and physically one-sided.</p>
+<h2>6. Fixed-center coefficient information and the force-scale quotient</h2>
+<p>At a fixed geometry the Hessian is affine in the mechanical coefficients. The floating generalized absolute norms of its center-scaled coefficient derivatives are:</p>
+<table>
+<thead>
+<tr>
+<th>Coordinate</th>
+<th style="text-align: right;">Relative Hessian norm</th>
+<th style="text-align: right;">Predictor metric norm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Relative <span class="math" data-tex="\kappa"></span></td>
+<td style="text-align: right;">0.999757</td>
+<td style="text-align: right;">0.00414478</td>
+</tr>
+<tr>
+<td>Relative apical area modulus</td>
+<td style="text-align: right;">0.422269</td>
+<td style="text-align: right;">0.000680994</td>
+</tr>
+<tr>
+<td>Relative basal area modulus</td>
+<td style="text-align: right;">0.829751</td>
+<td style="text-align: right;">0.00142934</td>
+</tr>
+<tr>
+<td>Additive apical tension</td>
+<td style="text-align: right;">14.8063</td>
+<td style="text-align: right;">0.0261157</td>
+</tr>
+<tr>
+<td>Relative basal tension</td>
+<td style="text-align: right;">0.960989</td>
+<td style="text-align: right;">0.00358246</td>
+</tr>
+<tr>
+<td>Relative common gain</td>
+<td style="text-align: right;">0.136952</td>
+<td style="text-align: right;">0.0173654</td>
+</tr>
+</tbody>
+</table>
+<p>These are numerical diagnostics for this center, not global Lipschitz constants. The additive apical tension is particularly consequential in these coordinates.</p>
+<p>Common positive scaling of every force/energy coefficient leaves an unnormalized equilibrium equation unchanged up to a scalar. Fixing <span class="math" data-tex="\mu=1"></span> therefore removes that gauge and leaves dimensionless ratios; it does not remove the potentially large ratio <span class="math" data-tex="\kappa/\mu"></span>, or bound the remaining ratios. An energy-norm calculation at numerical <span class="math" data-tex="\kappa=5000"></span> is not a result for an independently measured physiological compressibility and is not a uniform incompressible limit.</p>
+<h2>7. Actionable outcome</h2>
+<p>The validated positive-Hessian cube supplies a real local stability prerequisite. The rank-aware inequalities identify a concrete route to parameter-dependent tubes: validate the 0.1% gain case first, including its residual; then add coefficient directions with their exact affine derivatives, all failed boxes retained. A fixed-center nodal box and a parameter-dependent predictor tube are different sets and need separate proofs.</p>
+<p>There is no justification for declaring that a finite set of local cells covers the full unbounded material domain. That requires either a defensible compact physical domain or proved asymptotic exclusions and a covering argument. No bounded material prior, continuum error bound, experiment-to-observer identification, cross-size validation, or novelty claim is supplied by this norm analysis.</p>
+<p>The completed Arb calculation can be replayed without overwriting its receipt:</p>
+<pre><code class="language-powershell">$env:OPENBLAS_NUM_THREADS='1'
+python -B controlled_furrowing/scripts/parametric_norm_feasibility.py --replay-nodal
+</code></pre>
+<p>Replay recomputes the local interval enclosures and full transformed matrices, then compares the exact stored bounds and frozen metric checksum.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

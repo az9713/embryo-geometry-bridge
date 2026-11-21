@@ -1,0 +1,50 @@
+{
+  "status": "PASS official metadata MD5 for all six selected original attachments",
+  "original_checks": [
+    {
+      "file": "41467_2025_62483_MOESM15_ESM.pdf",
+      "bytes": 99028,
+      "sha256": "c763858c27d4383f02547dd4bf2ca2d8730575a95143144c47fd2340f3d5ab0d",
+      "md5": "30d1f3d62c0f196a74ac9bc3c8195d1e",
+      "official_metadata_md5_match": true
+    },
+    {
+      "file": "41467_2025_62483_MOESM16_ESM.xlsx",
+      "bytes": 256659,
+      "sha256": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d",
+      "md5": "58a3e0065682eb50a2e5bcc00dee5562",
+      "official_metadata_md5_match": true
+    },
+    {
+      "file": "41467_2025_62483_MOESM1_ESM.pdf",
+      "bytes": 16859162,
+      "sha256": "b3639ea26a0bcb8c822b517a00e7954b046640a7c24d5e791df40aacac62d656",
+      "md5": "f061ad04a057acd275a927d87e1567b0",
+      "official_metadata_md5_match": true
+    },
+    {
+      "file": "41467_2025_62483_MOESM3_ESM.pdf",
+      "bytes": 145053,
+      "sha256": "455fb6555c4e9a42c6670f2cd1e3af27e8fcdf9d04c865c7bcfe92ee63ce9020",
+      "md5": "cbc9ad89c0a56283e78498f9713cefed",
+      "official_metadata_md5_match": true
+    },
+    {
+      "file": "41467_2025_62483_MOESM4_ESM.xlsx",
+      "bytes": 11438,
+      "sha256": "6c97e2046808a9e02d0958eff947f983d51437caaae361a31b83bfa8fdf3ddd7",
+      "md5": "99a3ec83bcca5c3e00a2a50aa41398fc",
+      "official_metadata_md5_match": true
+    },
+    {
+      "file": "41467_2025_62483_MOESM7_ESM.avi",
+      "bytes": 4547582,
+      "sha256": "260555e647c56a74b157ef624fe263568cc47fbda553d3e8aa7fe0ad05e14be7",
+      "md5": "5fd7caaf133c37705ef40dd8319f054c",
+      "official_metadata_md5_match": true
+    }
+  ],
+  "primary_xml_sha256": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7",
+  "official_metadata_sha256": "aa97b3d107feadaae032c7414c474c713e2b81d6e3ce484e633968977ea6b4f0",
+  "note": "Multipart S3 ETags are not MD5. Official per-object metadata supplies original MD5 for those files."
+}

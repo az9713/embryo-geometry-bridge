@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOVIE-GEOMETRY-FEASIBILITY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>What the published movie can measure</h1>
+<p><strong>Supplementary Movie 3 verifies a qualitative bending example and supports its correspondence with Fig 4c/d. It does not provide a calibrated, uncensored initial-to-peak apical/basal geometry, or certified plug/void area bounds.</strong> This is an audit of one published example, not a substitute for the 31 larger-region records, a material identified set, or raw-volume validation.</p>
+<p>The source is Countryman et al., <em>Endogenous OptoRhoGEFs reveal biophysical principles of epithelial tissue furrowing</em>, Nature Communications 16, 7665 (2025), <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12361397/">article</a>, <a href="https://doi.org/10.1038/s41467-025-62483-6">DOI</a>. Relevant locators are Results Sec 7, Fig 4c/d/f, Methods Sec 14–15 and 17, and the <a href="https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM3_ESM.pdf">Supplementary Movie 3 description</a>. The <a href="https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM7_ESM.avi">original movie</a> remains unchanged locally. No author contact or model fit was performed.</p>
+<h2>Verification record</h2>
+<p>The replayable <a href="../runs/movie_geometry/audit_movie.py">audit script</a> independently reads all 26 frames, checks source checksums against official NCBI metadata, records decoded-frame hashes, checks the displayed scale bar at four thresholds, compares published image fields, and verifies that all source hashes are unchanged afterward. The <a href="../evidence/movie_geometry_audit.json">receipt</a> retains results, source locators, software versions, exact crops and the distinction between automated checks and visual judgments.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Verified observation</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Original movie</td>
+<td>4,547,582 bytes; SHA256 <code>260555e647c56a74b157ef624fe263568cc47fbda553d3e8aa7fe0ad05e14be7</code>; official MD5 agrees</td>
+<td>Published composite movie, not microscopy stack</td>
+</tr>
+<tr>
+<td>Decoding</td>
+<td>26 frames, 1908 × 826 pixels, 4 playback fps; ffmpeg decodes without error</td>
+<td>4 fps is playback, not acquisition time</td>
+</tr>
+<tr>
+<td>Biological labels</td>
+<td>All 26 burned-in times transcribed: 0, 21, 43, …, 540 seconds; exactly floor(21.6 i) for frame i</td>
+<td>Methods gives nominal 22 s/frame; no raw timestamp or exact activation-origin record</td>
+</tr>
+<tr>
+<td>Horizontal scale</td>
+<td>Caption 20 µm; white bar 160 × 15 display pixels at thresholds 128, 200, 230, 250</td>
+<td>Does not establish every panel's physical transformation</td>
+</tr>
+<tr>
+<td>Transverse crop</td>
+<td>Half-open source-pixel rectangle x [20, 576), y [170, 538)</td>
+<td>Upper rectangular edge clips lateral membrane structures; it is not an apical contour</td>
+</tr>
+<tr>
+<td>Source correspondence</td>
+<td>Fig 4d 2 min best matches Movie 3 frame 5; grayscale NCC 0.915119, high-pass NCC 0.682942</td>
+<td>Evidence for the same published field; not an acquisition/specimen-ID crosswalk</td>
+</tr>
+</tbody>
+</table>
+<p>The exact timestamp list is in the receipt. Frame 5 displays 01:48, frame 13 displays 04:40, and frame 25 displays 09:00. Nominal figure labels such as 2 min are not precise acquisition timestamps. Fig 4d's nominal 0 min crop best matches movie frame 1 (00:21); this is another reason not to equate a displayed zero with a precisely registered preactivation state.</p>
+<h2>Which optical plane is shown?</h2>
+<p>The Movie 3 description identifies a DV transverse view, a horizontal section 2 µm below the apical surface, and a horizontal section 30 µm below it. It does <strong>not</strong> specify whether the horizontal reference follows the initial apical location, a current global reference, or another registered stack convention. Sec 15 describes correction of tissue motion using PIVlab, but does not supply the actual transformations or a general z-plane tracking rule for this movie. Sec 17 describes following an apical myosin-intensity peak for a separate myosin-spreading analysis; transferring that rule to Movie 3 would be an unsupported inference.</p>
+<p>A horizontal optical plane through a bent tissue is not the same object as a surface that remains 2 µm below every local apical point. The latter would generally be curved. A model comparison therefore needs an explicitly declared horizontal-plane observation operator and an unresolved plane reference, rather than silently treating the movie as a local surface-following slice.</p>
+<h2>What is calibrated, and what is only consistent?</h2>
+<p>The displayed bar gives a nominal horizontal scale</p>
+<div class="math display" data-tex="
+s_x=\frac{20}{160}=0.125\;\mu\mathrm m/\text{display pixel}.
+"></div>
+
+<p>Allowing each raster endpoint an assumed one-pixel uncertainty yields a width interval [158, 162] and the conditional scale interval</p>
+<div class="math display" data-tex="
+s_x\in\left[\frac{20}{162},\frac{20}{158}\right]
+=[0.12345679,0.12658228]\;\mu\mathrm m/\text{display pixel}.
+"></div>
+
+<p>This is a <strong>digitization sensitivity allowance</strong>, not a confidence interval or a complete physical calibration error bound. The movie container reports square display samples (SAR 1:1), but that does not establish biological x/z isotropy after transverse reslicing. No per-panel resampling, crop or registration matrix is supplied. Rotation and square-pixel reslicing are plausible for the horizontal panels, but remain explicit assumptions.</p>
+<p>For consistency only, the transverse crop is 368 pixels tall, giving 46 µm if the same scale applies in z. The Methods 44 µm stack at 2 µm plane spacing would have 23 plane centers; 23 pixel-bin edge widths would span 46 µm. The agreement supports a plausible reslicing convention; it is not an independent calibration of that convention. The 0.12 µm spacing in Sec 14 describes the activation scan and must not silently replace the published display scale.</p>
+<h2>Apical censoring prevents a height reconstruction</h2>
+<p>At movie frames 0 and 13, bright lateral membrane structures intersect the upper border of the transverse image rectangle. A continuous apical tissue boundary is not visible there. The lower bright band is compatible with the basal membrane region, but heterogeneous signal and adjacent structures prevent a validated anatomical contour/error envelope from being assigned by a brightest-pixel rule. The primary Methods themselves used manual basal segmentation because of poor signal.</p>
+<p>Consequently, neither tracing the top crop edge nor treating the 32–35 µm protocol height as an observed per-embryo boundary is justified. No peak profile is extracted: an image at an illustrative late time is not independently established as the time of maximum shortening, and the missing apical contour persists.</p>
+<p>An elementary censoring calculation makes the limit precise. Let image y increase downwards, let the crop start at y_c, and suppose an independently annotated basal ordinate satisfies b∈[b_0−δ,b_0+δ], while the apical ordinate is a≤y_c. If a calibrated positive z-scale satisfies s_z≥s_min, then</p>
+<div class="math display" data-tex="
+H=s_z(b-a)\ge s_{\min}(b_0-\delta-y_c)
+"></div>
+
+<p>when the right side is positive. No finite upper bound follows from this crop alone. Here neither the basal anatomical error δ nor a physical z-scale interval is independently validated, so the formula does <strong>not</strong> produce a rigorous biological bound in micrometers from the present movie.</p>
+<p>More formally, the ideal operator that retains only boundary segments inside the crop has the same output for two distinct smooth apical curves lying entirely above it and one fixed visible basal curve. Their heights differ. This is nonidentifiability for that boundary-cropping operator, not a theorem about every possible microscopy measurement or a new scientific concept. A prior mechanical model could supply an extrapolation, but would no longer be an independent observed geometry.</p>
+<p>The <a href="../../OMITTED.html?path=controlled_furrowing/runs/movie_geometry/censoring_nonidentifiability_schematic.png">independently generated schematic</a> illustrates this argument. It contains no traced or adapted source frames.</p>
+<h2>Can the central plug and dark moat supply areas?</h2>
+<p>The source defines its bending phenotype using a central tissue plug surrounded by acellular perivitelline space (Sec 7). The horizontal movie slice visibly supports that qualitative example. The published raster does not, by itself, establish solid occupancy from fluorescence intensity: dim cell membranes cross parts of the apparent gap, the central plug boundary is not one sharply resolved continuous contour, and no PSF, raw-volume segmentation, independent annotation, or anatomical error bound accompanies these frames. Cell interiors are dark even when cells are present.</p>
+<p>We therefore do <strong>not</strong> report certified inner/outer plug-void areas or fabricate a ±pixel envelope as if it were ground truth. A future explicitly exploratory annotation/segmentation study could report how image proxies vary across declared thresholds, operators and annotators. Such variation is a sensitivity analysis, not a validated anatomical uncertainty interval. Black polygonal display corners must also be masked rather than counted as perivitelline space.</p>
+<p>If validated masks become available, let A_i be the plug area and A_o the area enclosed by the outer void boundary; the gap area is A_o−A_i. The area-equivalent radii</p>
+<div class="math display" data-tex="
+r_i=\sqrt{A_i/\pi},\qquad r_o=\sqrt{A_o/\pi}
+"></div>
+
+<p>are invariant under translation and avoid choosing a future-output-derived activation center. They do not imply that a noncircular observed contour is a circle. Converting pixel areas to physical area requires the horizontal transformation determinant; under an assumed shared isotropic scale, areas multiply by s_x² and radii by s_x. The ratio A_i/A_o cancels a shared constant area scale, but not the missing semantic mask validity or plane/time ambiguity.</p>
+<p>A horizontal-plane annulus test on an axisymmetric model can thus be a useful <strong>conditional necessary check</strong> once observational masks and plane uncertainty are supplied. It cannot currently be claimed as a scored, certified biological prediction from this movie.</p>
+<h2>What is known about specimen identity?</h2>
+<p>Sec 7 discusses Fig 4c together with Movie 3; the Fig 4 caption explicitly makes Fig 4d the in-plane view of the embryo in Fig 4c and gives rounded activation magnitude 1.02. Image correspondence provides an additional, independent check on this association. Direct resizing of the movie middle panel to the Fig 4d 2 min rectangle produces NCC 0.915119 at frame 5; a high-pass comparison, which suppresses shared low-frequency shading, gives 0.682942. The same high-pass template compared with the movie's distinct 30 µm panel remains below 0.1 in all 26 frames. The exact algorithm and all values are retained; no feature-based warp was optimized against the figure.</p>
+<p>The canonical 50 µm numerical table has exactly one dose rounding to 1.02: 1.02397148, row locator <code>optoGEF2_large_col_F</code>, source Fig 4h!F8/F9. The same dose appears in Fig 4f with diameter 49.8939753 µm. This is a <strong>unique rounded-dose association</strong>, not a verified biological specimen ID. The movie and worksheets do not provide an acquisition-ID crosswalk. The observed geometry is not used to choose material parameters or refit the model.</p>
+<h2>Completion consequence</h2>
+<p>This audit exhausts the specified public example's support without converting publication-display assumptions into measurements. It improves the source correspondence and makes the observation gaps specific: unclipped apical boundaries, physical z/per-panel transformations, time/plane reference, independently validated masks/errors and a specimen crosswalk. It supplies neither the missing 31-record shape cohort nor a full coupled identified-set prediction. Those requirements remain distinct from the completed provenance/display audit.</p>
+<p>Local source-image contact sheets and the downloaded unmodified article figure are retained only as inspection records in <code>runs/movie_geometry/</code>. They must not be embedded as adapted figures in the public Space/site. The source license is CC BY-NC-ND 4.0; publication of this project's original schematic does not imply permission to redistribute adapted source images.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

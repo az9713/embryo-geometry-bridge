@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ROOT_OBSERVED_KL_LOADING_GEOMETRY_EXIT",
+  "pid": 18484,
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "595f86",
+  "result_sha256": "c20b56435795ead2cc7bdc9de9b34c2c2b1baa155f326b531f9177cb4b95c3de",
+  "terminal_sha256": "4f8c3c0ea196e83d2a96bbf8988499a3619f387c85c391f66129f3c3df396188",
+  "body_sha256": "916a11f13efee23570ed15ff5ea069efce0646e677ba176d1f49f3221598bbea",
+  "mathematical_status": "UNRESOLVED_KL_WHOLE_ENVELOPE_BODY_OR_RADIAL_BOUND",
+  "loading_path_certified": false
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+  "edit": {
+    "new_sequence": 5,
+    "through_sequence": 5,
+    "operation_results": [
+      {
+        "operation_index": 0,
+        "preceding_block_id": "56dfc3bb-d9ed-4920-b2ee-4d43ba0d3056",
+        "created_block_ids": [
+          "8abb3b5b-d82b-43e1-a808-22f4fe51cd72",
+          "698e26f7-a5c8-4cc0-aa64-d5993e5ad471",
+          "d3c66256-1c1d-464e-9b11-48d6ca1e5be4",
+          "56dfc3bb-d9ed-4920-b2ee-4d43ba0d3056",
+          "66b000e5-39df-4356-baf2-2893518134ab"
+        ],
+        "continuation_position": {
+          "block_id": "66b000e5-39df-4356-baf2-2893518134ab",
+          "relative_position_base64": "AO7NzNsD/wxB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "8abb3b5b-d82b-43e1-a808-22f4fe51cd72",
+            "hash": "80a4e2fe0096e78c8244c25afca90abc54612d61d96824f743429a625d0ac0fb"
+          },
+          {
+            "block_id": "698e26f7-a5c8-4cc0-aa64-d5993e5ad471",
+            "hash": "6b725b2d58378a581fc67f7f62cae2bc0b1201081bb2712af224ab89958223c0"
+          },
+          {
+            "block_id": "d3c66256-1c1d-464e-9b11-48d6ca1e5be4",
+            "hash": "40bb49a6d3dad248a4f8568c2d045cca7af2d3d6e84550eabe2eb7f9d3e9735f"
+          },
+          {
+            "block_id": "56dfc3bb-d9ed-4920-b2ee-4d43ba0d3056",
+            "hash": "b51e3024fe92159d8529a5f8ce0dae3e692ab14b036105310db8a9a625c68bcb"
+          },
+          {
+            "block_id": "66b000e5-39df-4356-baf2-2893518134ab",
+            "hash": "2b20df93aa9a0bae166719312d1db696f996005e4d3773c066285571953e4ab5"
+          }
+        ]
+      }
+    ]
+  },
+  "readback_checks": {
+    "gain1_review_present": true,
+    "jacobian_bound": true,
+    "mesh_difference": true,
+    "remaining_targets_unfinished": true,
+    "audit_not_novelty": true,
+    "full_goal_incomplete": true
+  },
+  "scope": "Readback verification of the strength1 checkpoint, not completion of later targets or five gates."
+}

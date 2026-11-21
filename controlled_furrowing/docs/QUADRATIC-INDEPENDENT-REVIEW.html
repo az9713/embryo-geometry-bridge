@@ -1,0 +1,260 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QUADRATIC-INDEPENDENT-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the forced quadratic mechanical benchmark</h1>
+<p><strong>Result:</strong> the frozen P2 pointwise-penalty implementation and all nine saved <strong>forced solutions</strong> pass 94 independent checks. This is stronger evidence than checking interpolation of a known map. It remains numerical verification on a synthetic problem, not a certified continuum-error estimate or biological validation. The newer exact correlated Bernstein check additionally proves that all six saved solutions on meshes 8×4 and 12×6 have less than 1% local volume distortion everywhere in their discrete bodies.</p>
+<p>Primary receipt: <code>evidence/quadratic_independent_review.json</code>. It contains source hashes, every state hash, the replay program, independent norm evaluations, exact coefficient certificates and strong-monotonicity certificates. Solver source SHA256:</p>
+<pre><code class="language-text">5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410
+</code></pre>
+<p>No biological response files, labels or fits were read for this review.</p>
+<h2>1. Independently derived exact nonlinear solution</h2>
+<p>Let material cylindrical coordinates be <span class="math" data-tex="(r,\theta,z)"></span>, and choose <span class="math" data-tex="\epsilon=0.2"></span>. Define</p>
+<div class="math display" data-tex="
+ A=e^{\epsilon z},\qquad B=e^{-2\epsilon z},\qquad
+ R=rA,\quad\Theta=\theta,\quad Z=\frac{1-B}{2\epsilon}.
+"></div>
+
+<p>In orthonormal cylindrical bases ordered <span class="math" data-tex="(r,\theta,z)"></span>,</p>
+<div class="math display" data-tex="
+ F=\begin{pmatrix}A&amp;0&amp;\epsilon rA\\0&amp;A&amp;0\\0&amp;0&amp;B\end{pmatrix},
+ \qquad J=A^2B=1.
+"></div>
+
+<p>The original pointwise material law is</p>
+<div class="math display" data-tex="
+ W=\frac\mu2(I_1-3-2\log J)+\frac\lambda2(\log J)^2,
+ \qquad P=\mu(F-F^{-T})+\lambda\log J\,F^{-T}.
+"></div>
+
+<p>Since this map has <span class="math" data-tex="\log J=0"></span>, its stress and required body force are independent of <span class="math" data-tex="\lambda"></span>. Its nonzero first Piola components are</p>
+<div class="math display" data-tex="
+ P_{rr}=P_{\theta\theta}=\mu(A-A^{-1}),\quad
+ P_{rz}=\mu\epsilon rA,\quad
+ P_{zr}=\mu\epsilon r/B,\quad
+ P_{zz}=\mu(B-B^{-1}).
+"></div>
+
+<p>The reference cylindrical divergence includes geometric terms:</p>
+<div class="math display" data-tex="
+ (\operatorname{Div}P)_r=\partial_rP_{rr}+\partial_zP_{rz}
+                         +(P_{rr}-P_{\theta\theta})/r,
+ \quad
+ (\operatorname{Div}P)_z=\partial_rP_{zr}+\partial_zP_{zz}+P_{zr}/r.
+"></div>
+
+<p>Substitution gives the independent force</p>
+<div class="math display" data-tex="
+ f=-\operatorname{Div}P
+ =\left(-\mu\epsilon^2r e^{\epsilon z},\quad
+          2\mu\epsilon e^{-2\epsilon z}\right),
+"></div>
+
+<p>exactly matching <code>ManufacturedModel</code>. Symbolic computation verifies <span class="math" data-tex="J=1"></span> and both force components. This is an exact stationary solution of the continuum bulk-energy-plus-body-force problem under its own Dirichlet trace, for every finite positive <span class="math" data-tex="\lambda"></span>. No claim of unique global nonlinear energy minimization is needed or established.</p>
+<h2>2. What is actually solved</h2>
+<p><code>scripts/axisymmetric_quadratic.py</code> contains a real forced finite-element problem. Both components of every boundary displacement node—including the axis—are set to the analytic map. Interior displacement degrees of freedom are optimized against the bulk material energy and body-force potential, with no activation or surface energy. This stronger-than-biological boundary constraint is appropriate to this manufactured benchmark.</p>
+<p>The potential is <span class="math" data-tex="-\int f\cdot y\,dV_0"></span>. Replacing <span class="math" data-tex="y"></span> by displacement <span class="math" data-tex="u=y-x"></span> changes it by the reference constant <span class="math" data-tex="-\int f\cdot x\,dV_0"></span>, so the implemented force sign is correct. Each saved field was reconstructed independently from its free vector and prescribed boundary and compared to saved current nodes. All boundary nodes match the prescribed map; all interior solutions differ from their initial analytic interpolants. Replay of the force residual confirms actual forced stationarity for all nine states.</p>
+<p>The exact Dirichlet trace is nonpolynomial. P2 boundary edges interpolate its nodal values and therefore approximate its continuous trace. The numerical PDE has this boundary interpolation and degree-four volume quadrature. These approximation errors belong in the numerical accuracy discussion; exact nodal boundary agreement does not remove them.</p>
+<h2>3. Why restoring the pointwise penalty matters</h2>
+<p>Let <span class="math" data-tex="g=\log J"></span> evaluated at positive-weight quadrature points, let <span class="math" data-tex="W_q"></span> be the quadrature weight matrix, and let <span class="math" data-tex="N"></span> interpolate the continuous P1 pressure basis. Set</p>
+<div class="math display" data-tex="
+ M=N^TW_qN,\quad b=N^TW_qg,\quad
+ \Pi g=NM^{-1}b.
+"></div>
+
+<p>The earlier condensed mixed volumetric term was <span class="math" data-tex="\lambda b^TM^{-1}b/2"></span>. Orthogonality in the <strong>same quadrature inner product</strong> gives</p>
+<div class="math display" data-tex="
+ \frac\lambda2g^TW_qg
+ =\frac\lambda2b^TM^{-1}b
+ +\frac\lambda2(g-\Pi g)^TW_q(g-\Pi g).
+"></div>
+
+<p>The final nonnegative term is precisely what a pressure projection does not penalize. A very small projected pressure residual does not bound local <span class="math" data-tex="J"></span>. The new subclass adds this unresolved term back, restoring the original pointwise logarithmic-volume penalty at quadrature points. Our independent assembly of <span class="math" data-tex="M,b"></span>, full energy, projected energy and remainder verifies this identity on all nine saved fields. This algebra is a finite-quadrature identity; it is not a proof of exact incompressibility.</p>
+<h2>4. Independent reconstruction of three-dimensional errors</h2>
+<p>The reviewer reconstructs the six-node P2 field from its polynomial coefficients, rather than calling the implementation's error routine. With <span class="math" data-tex="dV_0=2\pi r\,dr\,dz"></span>, its normalized displacement and gradient errors are</p>
+<div class="math display" data-tex="
+ E_0^2=\frac1{V_0}\int&#124;y_h-y_*&#124;^2dV_0,
+ \qquad
+ E_1^2=\frac1{V_0}\int
+ \left(&#124;F_{m,h}-F_{m,*}&#124;_F^2+
+        &#124;R_h/r-A&#124;^2\right)dV_0.
+"></div>
+
+<p>The hoop term is required for the full three-dimensional gradient norm. The label H1 RMS in the receipts denotes this gradient <strong>seminorm</strong>, without adding the displacement term. We also recompute <span class="math" data-tex="E_J^2=V_0^{-1}\int(J_h-1)^2dV_0"></span>.</p>
+<p>Independent degree-four quadrature reproduces the recorded norms to rounding error. Higher 8×8 and 12×12 tensor-Gauss/Duffy quadrature evaluates the same saved fields more densely. It changes H1 RMS very little, but the original degree-four displacement L2 RMS can underestimate its higher-quadrature value by approximately 1–16%. Sampling-based maximum <span class="math" data-tex="&#124;J-1&#124;"></span> also increases when more points are evaluated, as expected; it was never an upper bound.</p>
+<p>Using the independently computed 12×12 quadrature:</p>
+<table>
+<thead>
+<tr>
+<th>Mesh</th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda/\mu"></span></th>
+<th style="text-align: right;">Displacement RMS</th>
+<th style="text-align: right;">Gradient H1 RMS</th>
+<th style="text-align: right;"><span class="math" data-tex="J-1"></span> RMS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6×3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2.01278e−4</td>
+<td style="text-align: right;">2.21985e−3</td>
+<td style="text-align: right;">1.83490e−3</td>
+</tr>
+<tr>
+<td>8×4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2.81636e−5</td>
+<td style="text-align: right;">6.51380e−4</td>
+<td style="text-align: right;">4.90860e−4</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8.10214e−6</td>
+<td style="text-align: right;">2.82097e−4</td>
+<td style="text-align: right;">2.20581e−4</td>
+</tr>
+<tr>
+<td>6×3</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">2.34459e−4</td>
+<td style="text-align: right;">2.90729e−3</td>
+<td style="text-align: right;">1.79511e−3</td>
+</tr>
+<tr>
+<td>8×4</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3.19749e−5</td>
+<td style="text-align: right;">7.48476e−4</td>
+<td style="text-align: right;">4.85378e−4</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">8.96501e−6</td>
+<td style="text-align: right;">3.13402e−4</td>
+<td style="text-align: right;">2.18925e−4</td>
+</tr>
+<tr>
+<td>6×3</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">5.91889e−4</td>
+<td style="text-align: right;">8.26070e−3</td>
+<td style="text-align: right;">1.70937e−3</td>
+</tr>
+<tr>
+<td>8×4</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">8.58371e−5</td>
+<td style="text-align: right;">1.76046e−3</td>
+<td style="text-align: right;">4.72260e−4</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">2.51634e−5</td>
+<td style="text-align: right;">8.00613e−4</td>
+<td style="text-align: right;">2.13342e−4</td>
+</tr>
+</tbody>
+</table>
+<p>These values improve with refinement for every tested <span class="math" data-tex="\lambda"></span>. Higher <span class="math" data-tex="\lambda"></span> causes larger displacement and gradient errors even though the exact solution is unchanged. That is evidence of remaining parameter sensitivity, not a locking-free result. Three nonuniform mesh configurations and sampled norms do not establish a formal convergence order, uniform-in-<span class="math" data-tex="\lambda"></span> stability theorem or a posteriori PDE-error certificate.</p>
+<h2>5. Exact correlated Bernstein bounds for local volume</h2>
+<p>The original geometry verifier bounded the product <span class="math" data-tex="J=\det F_m\,(R/r)"></span> by separate factor bounds. This loses correlations between the factors. The new independent helper <code>scripts/mixed_geometry_certificate_v2.py</code> leaves that verifier unchanged and combines the numerator first.</p>
+<p>Let <span class="math" data-tex="d=\sum_{&#124;\alpha&#124;=2}d_\alpha B_\alpha^2"></span> be the meridional determinant, and <span class="math" data-tex="R=\sum_{&#124;\beta&#124;=2}a_\beta B_\beta^2"></span>. Their product has degree-four coefficients</p>
+<div class="math display" data-tex="
+ n_\gamma=\sum_{\alpha+\beta=\gamma}
+ \frac{\binom2\alpha\binom2\beta}{\binom4\gamma}
+ d_\alpha a_\beta.
+"></div>
+
+<p>The affine reference radius elevated to degree four has coefficient
+<span class="math" data-tex="c_\gamma=(\gamma_0r_0+\gamma_1r_1+\gamma_2r_2)/4\ge0"></span>.
+Require <span class="math" data-tex="n_\gamma=0"></span> wherever <span class="math" data-tex="c_\gamma=0"></span>. Nonnegative Bernstein weights then prove, for <span class="math" data-tex="r&gt;0"></span> and its axis limits,</p>
+<div class="math display" data-tex="
+ \min_{c_\gamma&gt;0}\frac{n_\gamma}{c_\gamma}
+ \le J=\frac{\sum n_\gamma B_\gamma^4}{\sum c_\gamma B_\gamma^4}
+ \le\max_{c_\gamma&gt;0}\frac{n_\gamma}{c_\gamma}.
+"></div>
+
+<p>All arithmetic is exact rational arithmetic on saved binary64 node values. The retained coefficients establish the following whole-body <strong>discrete</strong> intervals; displayed decimals are approximations of exact rational receipt bounds:</p>
+<table>
+<thead>
+<tr>
+<th>Mesh</th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda/\mu"></span></th>
+<th style="text-align: right;">Certified lower <span class="math" data-tex="J"></span></th>
+<th style="text-align: right;">Certified upper <span class="math" data-tex="J"></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6×3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.97781355</td>
+<td style="text-align: right;">1.00781698</td>
+</tr>
+<tr>
+<td>6×3</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0.97205401</td>
+<td style="text-align: right;">1.00782806</td>
+</tr>
+<tr>
+<td>6×3</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">0.97099587</td>
+<td style="text-align: right;">1.00822198</td>
+</tr>
+<tr>
+<td>8×4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.99529826</td>
+<td style="text-align: right;">1.00204807</td>
+</tr>
+<tr>
+<td>8×4</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0.99404499</td>
+<td style="text-align: right;">1.00195240</td>
+</tr>
+<tr>
+<td>8×4</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">0.99311832</td>
+<td style="text-align: right;">1.00187583</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.99803254</td>
+<td style="text-align: right;">1.00088647</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0.99751008</td>
+<td style="text-align: right;">1.00083211</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">0.99693388</td>
+<td style="text-align: right;">1.00077150</td>
+</tr>
+</tbody>
+</table>
+<p>For example, the 12×6, <span class="math" data-tex="\lambda=500"></span> separate-product interval was approximately [0.95673,1.04311]; the correlated interval is [0.996934,1.000772]. This sharpening is an improvement in certification, not a change in the solved field. The stronger bounds do not extend to the unknown continuum solution or to a different activated biological scenario. Rational Bernstein bounding is an established technique, not a new conceptual discovery; see the source discussion in <code>MIXED-GEOMETRY-PROOF.md</code>.</p>
+<h2>6. Exact global injectivity for this manufactured family</h2>
+<p>The manufactured rim is curved, so the prior vertical-rim Jordan-boundary routine does not apply. Instead, we verify a sufficient strong-monotonicity condition. On each affine reference triangle, <span class="math" data-tex="F_{m,h}"></span> is affine. Its symmetric part <span class="math" data-tex="S_h"></span> is therefore an affine combination of its vertex values. At each vertex we verify exactly</p>
+<div class="math display" data-tex="
+ S_{11}&gt;0,\qquad\det S&gt;0.
+"></div>
+
+<p>These are Sylvester's conditions for a positive definite symmetric 2×2 matrix. Moreover, <span class="math" data-tex="\lambda_{\min}(S)\ge\det(S)/\operatorname{tr}(S)&gt;0"></span>. Take the minimum of those exact rational lower bounds over all element vertices. Convexity of the positive-definite cone yields <span class="math" data-tex="S_h\ge mI"></span> everywhere for one <span class="math" data-tex="m&gt;0"></span>. Shared P2 edge nodes verify continuity of the complete quadratic traces; disk topology and the rectangular reference boundary are checked separately.</p>
+<p>The reference meridian is convex. Integrating along the segment from <span class="math" data-tex="x"></span> to <span class="math" data-tex="x&#x27;"></span>, across finitely many element pieces, gives</p>
+<div class="math display" data-tex="
+ (y_h(x&#x27;)-y_h(x))\cdot(x&#x27;-x)\ge m&#124;x&#x27;-x&#124;^2.
+"></div>
+
+<p>Thus distinct reference points have distinct images. All nine discrete maps pass this exact sufficient global meridional injectivity check, preserve the axis, and have positive certified axisymmetric <span class="math" data-tex="J"></span>; their revolutions are injective bodies. The condition is sufficient and restrictive. Failure would be <code>UNCERTIFIED</code>, not proof of self-intersection.</p>
+<h2>7. What has and has not been established</h2>
+<p>We have verified correct forcing, genuine discrete forced equilibrium, correct three-dimensional error definitions, empirical refinement improvement, exact whole-element orientation/volume bounds, and global injectivity for nine saved synthetic bodies. The helper's separate exact synthetic suite passes 45 checks, including independent analytic product identities and a constant-J affine case; see <code>evidence/mixed_geometry_v2_synthetic.json</code>.</p>
+<p>We have not proved that the solver is locking-free, that the active large-deformation biological experiment is converged, or that any fitted geometry is accurate. The manufactured map is smooth, externally forced and boundary prescribed. Returning to active furrowing still requires matched-load/mesh/quadrature checks and local-volume control on those actual activated states. No new biological finding or novel general mechanics theorem follows from this benchmark.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

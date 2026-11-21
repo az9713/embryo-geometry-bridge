@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checks": {
+    "tilted_graph_exact_bound": true,
+    "flat_graph_exact_bound": true,
+    "height_bound_is_sum_of_components": true,
+    "do_not_assume_fixed_ROI_coverage": true,
+    "sufficient_interior_ROI_coverage": true,
+    "radial_margin_failure_unresolved": true,
+    "zero_error_is_exact": true,
+    "different_default_surface_ROIs_unresolved": true,
+    "sharp_value_constant": true,
+    "sharp_derivative_constant": true,
+    "invalid_input_0": true,
+    "invalid_input_1": true,
+    "invalid_input_2": true
+  },
+  "tilted_example": {
+    "status": "CONDITIONAL_EXACT_ERROR_TRANSFER",
+    "nodal_coordinate_error_um_exact": "1/1000",
+    "parametric_coordinate_error_um_exact": "1/800",
+    "radial_derivative_margin_exact": "124/125",
+    "base_graph_Lipschitz_upper_exact": "4",
+    "Eulerian_vertical_error_um_exact": "1/160",
+    "fixed_radial_endpoints_assumed": true,
+    "ROI_um_exact": [
+      "0",
+      "1"
+    ],
+    "preconditions": [
+      "Corresponding conforming P2 nodes each differ by at most epsilon in BOTH coordinates.",
+      "Only the stated fixed ROI, normalized nonnegative weights and unchanged reference profiles are compared.",
+      "Fixed endpoint radii, if selected, require independent verification; they are not inferred from this function."
+    ],
+    "scope": "Exact transfer of an input error bound; not proof that any mechanical root/PDE/experiment satisfies that input."
+  },
+  "two_surface_example": {
+    "status": "CONDITIONAL_EXACT_ERROR_TRANSFER",
+    "apical": {
+      "status": "CONDITIONAL_EXACT_ERROR_TRANSFER",
+      "nodal_coordinate_error_um_exact": "1/1000",
+      "parametric_coordinate_error_um_exact": "1/800",
+      "radial_derivative_margin_exact": "124/125",
+      "base_graph_Lipschitz_upper_exact": "4",
+      "Eulerian_vertical_error_um_exact": "1/160",
+      "fixed_radial_endpoints_assumed": true,
+      "ROI_um_exact": [
+        "0",
+        "1"
+      ],
+      "preconditions": [
+        "Corresponding conforming P2 nodes each differ by at most epsilon in BOTH coordinates.",
+        "Only the stated fixed ROI, normalized nonnegative weights and unchanged reference profiles are compared.",
+        "Fixed endpoint radii, if selected, require independent verification; they are not inferred from this function."
+      ],
+      "scope": "Exact transfer of an input error bound; not proof that any mechanical root/PDE/experiment satisfies that input."
+    },
+    "basal": {
+      "status": "CONDITIONAL_EXACT_ERROR_TRANSFER",
+      "nodal_coordinate_error_um_exact": "1/1000",
+      "parametric_coordinate_error_um_exact": "1/800",
+      "radial_derivative_margin_exact": "124/125",
+      "base_graph_Lipschitz_upper_exact": "2",
+      "Eulerian_vertical_error_um_exact": "3/800",
+      "fixed_radial_endpoints_assumed": true,
+      "ROI_um_exact": [
+        "0",
+        "1"
+      ],
+      "preconditions": [
+        "Corresponding conforming P2 nodes each differ by at most epsilon in BOTH coordinates.",
+        "Only the stated fixed ROI, normalized nonnegative weights and unchanged reference profiles are compared.",
+        "Fixed endpoint radii, if selected, require independent verification; they are not inferred from this function."
+      ],
+      "scope": "Exact transfer of an input error bound; not proof that any mechanical root/PDE/experiment satisfies that input."
+    },
+    "endpoint_error_um_exact": {
+      "maximum_shortening_um": "1/100",
+      "region_averaged_shortening_um": "1/100",
+      "apical_max_shortening_um": "1/160",
+      "basal_max_shortening_um": "3/800"
+    },
+    "scope": "Both line/disk means and spatial-max components at ONE static state. No time-supremum or changing-mask/reference bound."
+  },
+  "script_sha256": "001769f23ba386fe6bde4530c12e011f72f8733bb1a4a2923182796e54da35de",
+  "annulus_dependency_sha256": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9",
+  "scope": "Analytical exact synthetic checks of conditional error-transfer formulas; no actual root/PDE error radius supplied."
+}

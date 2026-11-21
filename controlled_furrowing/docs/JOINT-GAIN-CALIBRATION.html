@@ -1,0 +1,228 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JOINT-GAIN-CALIBRATION</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Joint calibration candidate using all four small-region endpoints</h1>
+<p>This is a <strong>conditional candidate study in one fixed mechanical scenario</strong>, not a completed physical identified-set calculation. It uses all 17 source-column records and all four recorded endpoints—68 numbers—with four explicitly retained observation conventions. The same observations are analysed four ways; this is not four independent data sets.</p>
+<p>The first response-table surrogate selected its computational gain cap for every convention. That boundary value is not reported as an inferred biological gain. A separately versioned extension to strength 20 has now produced four interior <strong>surrogate candidates</strong>. Their independent 22-check certificate audit passes. The sole 68-target direct nonlinear replay has now finished successfully. Its four candidate discrepancy requirements are approximately 5.38–6.25 µm. These are substantial residuals in this fixed scenario, not a successful reconstruction or a globally optimal physical fit.</p>
+<p>The implementation is <code>scripts/joint_gain_extension.py</code>, with protocol, states and progress retained under <code>runs/joint_gain_extension_v2</code>. Parent preparation under <code>runs/joint_gain_calibration</code> remains unchanged. No held-out larger-region response file enters this study, and no 24×12 job is launched or duplicated here.</p>
+<h2>1. Fixed model and explicit observation choices</h2>
+<p>The mechanical scenario is the existing 12×6 higher-quadrature P2 model: height scale 33.5 µm, small-patch diameter 18.71024074 µm, activation 5–25 µm below the apical surface, shear scale one, logarithmic-volume coefficient 5000, basal/apical area moduli 2/0.2 and basal/apical tensions 2/0. Its actual integration is Duffy8/surface12; each new accepted state is also checked with Duffy12/surface16. Material, geometry and numerical policies are unchanged.</p>
+<p>The observer supplies current-radius vertical height, independently maximized or regional-mean component motions, and line/disk regional means. Its source ambiguities and mathematical certificates are documented in <code>QUADRATIC-ENDPOINT-OBSERVER.md</code> and <code>JOINT-OBSERVATION-CONTRACT.md</code>. All four conventions remain:</p>
+<ul>
+<li>current-disk mean with spatial-maximum component endpoints;</li>
+<li>current-line mean with spatial-maximum component endpoints;</li>
+<li>current-disk mean with regional-mean component endpoints;</li>
+<li>current-line mean with regional-mean component endpoints.</li>
+</ul>
+<p>Every convention additionally assumes a static endpoint represents the measured peak, a flat initial reference with component heights H/0, a registered current-radius ROI equal to the initial patch radius, and canonical source-column pairing. These are declared candidate assumptions, not newly established facts about the experiment. Temporal coverage, source counterfactual growth and component reference splitting remain unresolved.</p>
+<h2>2. The defined exact surrogate problem</h2>
+<p>For dose <span class="math" data-tex="I_i"></span>, four observed endpoints <span class="math" data-tex="y_{ik}"></span>, and observation convention <span class="math" data-tex="v"></span>, let <span class="math" data-tex="\widetilde r_{vk}(f)"></span> be piecewise-linear interpolation of <strong>interval-midpoint</strong> response-table values. The candidate gain minimizes</p>
+<div class="math display" data-tex="
+ L_v(g)=\max_{i=1,\ldots,17;\,k=1,\ldots,4}
+ \left&#124;\widetilde r_{vk}(gI_i)-y_{ik}\right&#124;.
+"></div>
+
+<p>All channels receive the same micrometre minimax loss. This is a declared discrepancy objective, not a likelihood or estimated error distribution.</p>
+<p>On gain cells separated by <span class="math" data-tex="f_j/I_i"></span>, every residual is affine in gain, so the loss is the upper envelope of its positive and negative affine forms and zero. <code>piecewise_gain_minimax.py</code> uses a floating LP only to suggest candidate locations, then verifies an exact rational optimality condition for every cell: an interior zero subgradient, or the appropriate one-sided boundary derivative. All cells are covered and their certified minima compared. The resulting certificate is global for this <strong>defined finite response-table surrogate and gain interval only</strong>.</p>
+<p>It does not enclose physical nonlinear interpolation errors, determine the nonlinear globally optimal gain, or cover the full material/geometry domain. An observer interval midpoint is a defined surrogate number, not an exact unknown physical endpoint.</p>
+<h2>3. Why the original cap must be extended</h2>
+<p>The original verified strength nodes were 0, 1, 5 and 10. Forbidding table extrapolation imposed</p>
+<div class="math display" data-tex="
+ 0\le g\le\frac{10}{\max_i I_i}
+ =\frac{15625000}{2360271}\approx6.62000253.
+"></div>
+
+<p>All four exact surrogate optima hit that cap. The spatial-component variants had loss approximately 5.9381 µm; the disk-regional-mean and line-regional-mean component variants had losses approximately 7.2714 and 6.7823 µm. These are truncated-surrogate results, not evidence that the cap is physiological or that the gain is identified.</p>
+<p>Version 2 freezes a support schedule <strong>before new computation</strong>: add strength 20, then 40 and 80 only if at least one retained convention still selects a declared gain boundary. These limits are computational support limits, not physical priors. Every expansion refits all four conventions without extrapolation. Reaching an interior optimum only removes the visible boundary-selection problem on that expanded surrogate; it does not prove that still larger support or the true nonlinear response cannot change the optimum.</p>
+<p>The first extension starts from the verified strength-10 higher-rule field. Adaptive continuation must reuse only the last verified state, retain every failed trial and pass force, higher-rule cross-force, exact geometry and observer-resolution gates before a node enters the table. A target that cannot be reached or observed is retained as unresolved, not silently dropped or converted into a response value.</p>
+<h2>4. Independent candidate gate and direct replay</h2>
+<p>When all four expanded-surrogate candidates are interior, an independent audit must bind the exact candidate, response-table, protocol and optimizer-source hashes. It reconstructs all gain cuts, all 68 residual affine forms per cell, every signed subgradient/boundary certificate and the global cell minimum. Direct replay cannot start on an unmatched or incomplete review receipt.</p>
+<p>The direct stage then forms the union of all distinct exact strengths <span class="math" data-tex="g_vI_i"></span>, orders them increasingly, and starts from the separately verified zero state. At most 68 distinct target strengths are needed. Coincident targets are reused while retaining each convention/record association. The solver receives binary64 strengths; the requested exact value, actual binary64 value and their rational difference are recorded separately.</p>
+<p>Each completed target retains its full field, failed and accepted continuation attempts, state hash, higher-rule force evaluation, exact discrete geometry and all four observation alternatives. Every convention must receive all 17 records and all four endpoints. No high-residual record is skipped. A failed target prevents a complete-candidate claim.</p>
+<p>For each convention, the final report must include:</p>
+<ul>
+<li>all 68 direct residual intervals;</li>
+<li>the uniform discrepancy requirement at this candidate, with observer interval uncertainty;</li>
+<li>all 68 surrogate-to-direct error intervals at the actual requested strengths;</li>
+<li>the largest sampled surrogate error and complete source/field provenance.</li>
+</ul>
+<p>These discrepancy requirements are not estimated biological noise. Surrogate-to-direct checks at selected strengths are not a uniform nonlinear interpolation bound. A direct replay validates candidate predictions at those inputs; it does not make the selected surrogate gain a nonlinear global optimum or compute <span class="math" data-tex="\Theta_\delta"></span>.</p>
+<p>Ascending continuation is a declared numerical branch-selection convention, not evidence that the separate experiments followed that loading path. The seed table and direct replay can also differ in nonlinear initialization history. Reported surrogate-to-direct discrepancies may contain interpolation and branch/solver-path effects; they do not isolate either contribution without an additional comparison.</p>
+<h2>5. Retained status and reproducibility</h2>
+<p>The frozen version-2 source is</p>
+<pre><code class="language-text">b54b46251fc4df0c057765c55dcc64305e359645b97fbda34fd54ecaaff99e37
+</code></pre>
+<p>and its pre-computation protocol hash is</p>
+<pre><code class="language-text">3b72bcf4583c0b136d01c420028a20a9324dc9c0b3b4ef212b14ec76a62e2031
+</code></pre>
+<p>Six pre-launch guard tests pass, including exact linear surrogate interpolation, no extrapolation, output-path resolution and preservation of the original unrun direct stage. An earlier preparation revision is retained under <code>pre_launch_revision_0</code>; no mechanical extension preceded that source-hardening revision.</p>
+<p>The strength-20 support node was reached in one accepted increment from the verified strength-10 field, with no rejected attempts. Its Q8 force residual is approximately 5.515e−12 and Q12 cross residual 5.452e−11. Exact discrete geometry passes; its correlated whole-body J interval is contained in [0.950008, 1.031191], which is a positive-orientation certificate rather than an exact incompressibility claim. The original fields remain intact.</p>
+<p>All four candidates became interior after this extension, so strengths 40 and 80 were <strong>not</strong> computed:</p>
+<table>
+<thead>
+<tr>
+<th>Observation convention</th>
+<th style="text-align: right;">Exact-surrogate gain, displayed</th>
+<th style="text-align: right;">Exact-surrogate minimax loss, displayed µm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk / spatial-max components</td>
+<td style="text-align: right;">8.06297202</td>
+<td style="text-align: right;">5.24685117</td>
+</tr>
+<tr>
+<td>Disk / regional-mean components</td>
+<td style="text-align: right;">9.50995731</td>
+<td style="text-align: right;">6.02462625</td>
+</tr>
+<tr>
+<td>Line / spatial-max components</td>
+<td style="text-align: right;">7.32715933</td>
+<td style="text-align: right;">5.59934156</td>
+</tr>
+<tr>
+<td>Line / regional-mean components</td>
+<td style="text-align: right;">8.16024598</td>
+<td style="text-align: right;">6.07629139</td>
+</tr>
+</tbody>
+</table>
+<p>These numbers are exact optima only of the defined midpoint-table surrogate on its expanded computational interval. Eight numerical-support/provenance checks pass in <code>evidence/joint_gain_extension_support.json</code>. They do not replace the independent LP audit, direct forward checks or physical inference.</p>
+<p>Current extension status is recorded in <code>runs/joint_gain_extension_v2/extension_job.json</code>, with node progress in <code>extension_progress.json</code>. The independent LP audit <code>evidence/piecewise_gain_minimax_v2_independent_review.json</code> passes all 22 checks, reconstructing 43 gain breakpoints, 168 cell certificates and 23,016 affine coefficients. It binds all candidate/table/protocol/optimizer hashes and preserves the original truncated v1 record.</p>
+<p>The direct stage has a separate immutable <code>direct_protocol.json</code> and live <code>direct_job.json</code>. It contains 68 distinct targets, ranging from approximately 1.084496 to 14.365489 in normalized strength, all inside the verified table support. The original v1 direct stage was never run. The sole direct session exited successfully, and <code>direct_job.json</code> records <code>FINISHED</code> with all 68 targets verified. Final fields, residuals and hashes are retained in <code>direct_results.json</code>; the completed results follow below.</p>
+<pre><code class="language-powershell">python -X utf8 controlled_furrowing/scripts/joint_gain_extension.py prepare
+python -X utf8 controlled_furrowing/scripts/joint_gain_extension.py extend
+python -X utf8 controlled_furrowing/scripts/joint_gain_extension.py direct --review controlled_furrowing/evidence/piecewise_gain_minimax_v2_independent_review.json
+</code></pre>
+<p>Existing preparation/job records prevent accidental duplication. Inspect the current live handle and terminal record before invoking a stage. This conditional single-scenario exercise does not complete the original numerical, source-observation or full-parameter inference gates and establishes no confirmed novelty.</p>
+<h2>6. Completed direct nonlinear replay</h2>
+<p>All <strong>68 distinct target strengths</strong> were reached in the one ascending continuation job. This required 68 accepted attempts and no rejected attempts. Every field retains its full nodal deformation, source/parameter information, continuation record, Q8 evaluation, Q12 cross-evaluation and exact discrete geometry certificate. Every convention receives all 17 source records and four endpoints; the final result contains 272 residual entries, reflecting four analyses of the same 68 observations.</p>
+<table>
+<thead>
+<tr>
+<th>Retained observation convention</th>
+<th style="text-align: right;">Surrogate-selected gain</th>
+<th style="text-align: right;">Defined surrogate loss, µm</th>
+<th style="text-align: right;">Actual candidate discrepancy requirement, µm</th>
+<th style="text-align: right;">Largest sampled surrogate/direct difference, µm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk / spatial-max components</td>
+<td style="text-align: right;">8.06297202</td>
+<td style="text-align: right;">5.24685117</td>
+<td style="text-align: right;">5.37983567</td>
+<td style="text-align: right;">0.43354056</td>
+</tr>
+<tr>
+<td>Disk / regional-mean components</td>
+<td style="text-align: right;">9.50995731</td>
+<td style="text-align: right;">6.02462625</td>
+<td style="text-align: right;">6.18013536</td>
+<td style="text-align: right;">0.43295265</td>
+</tr>
+<tr>
+<td>Line / spatial-max components</td>
+<td style="text-align: right;">7.32715933</td>
+<td style="text-align: right;">5.59934156</td>
+<td style="text-align: right;">5.69666515</td>
+<td style="text-align: right;">0.41749944</td>
+</tr>
+<tr>
+<td>Line / regional-mean components</td>
+<td style="text-align: right;">8.16024598</td>
+<td style="text-align: right;">6.07629139</td>
+<td style="text-align: right;">6.24513544</td>
+<td style="text-align: right;">0.43462117</td>
+</tr>
+</tbody>
+</table>
+<p>The direct evaluation therefore changes the surrogate predictions measurably. The displayed direct discrepancy endpoints agree at this precision; exact rational lower and upper bounds are retained in the JSON. Agreement of displayed endpoints must not be interpreted as exact physical knowledge. The largest endpoint-observer interval width over all four candidate replays is approximately <span class="math" data-tex="1.55\times10^{-6}"></span> µm, conditional on the stored finite-dimensional fields. This small observer uncertainty does not bound mechanical discretization error, experimental uncertainty or source-operator ambiguity.</p>
+<h3>What the discrepancy interval proves</h3>
+<p>For one observed endpoint <span class="math" data-tex="y"></span> and a certified stored-field prediction interval <span class="math" data-tex="[a,b]"></span>, the sharp interval-wise residual bounds are</p>
+<div class="math display" data-tex="
+ d^-=\max(a-y,y-b,0),\qquad
+ d^+=\max(&#124;a-y&#124;,&#124;b-y&#124;).
+"></div>
+
+<p>For all 68 endpoint constraints in one convention,</p>
+<div class="math display" data-tex="
+ \delta^-=\max_{i,k}d^-_{ik}
+ \ \le\ \max_{i,k}&#124;p_{ik}-y_{ik}&#124;
+ \ \le\ \delta^+=\max_{i,k}d^+_{ik}.
+"></div>
+
+<p>Thus any common tolerance smaller than <span class="math" data-tex="\delta^-"></span> excludes this <strong>specific candidate</strong> under its declared observation contract; a tolerance at least <span class="math" data-tex="\delta^+"></span> covers every point in the supplied intervals. These inequalities are direct consequences of the minimum and maximum of absolute distance on a closed interval. They neither assign a probability distribution to error nor prove that another gain or mechanical parameter choice cannot perform better.</p>
+<p>The worst discrepancy in all four replays is regional-mean shortening. The per-channel maximum absolute requirements are:</p>
+<table>
+<thead>
+<tr>
+<th>Convention</th>
+<th style="text-align: right;">Maximum height, µm</th>
+<th style="text-align: right;">Regional mean, µm</th>
+<th style="text-align: right;">Apical endpoint, µm</th>
+<th style="text-align: right;">Basal endpoint, µm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk / spatial-max</td>
+<td style="text-align: right;">4.45327</td>
+<td style="text-align: right;">5.37984</td>
+<td style="text-align: right;">5.11462</td>
+<td style="text-align: right;">3.13650</td>
+</tr>
+<tr>
+<td>Disk / regional-mean</td>
+<td style="text-align: right;">5.14141</td>
+<td style="text-align: right;">6.18014</td>
+<td style="text-align: right;">5.89431</td>
+<td style="text-align: right;">3.32252</td>
+</tr>
+<tr>
+<td>Line / spatial-max</td>
+<td style="text-align: right;">4.36937</td>
+<td style="text-align: right;">5.69667</td>
+<td style="text-align: right;">5.50916</td>
+<td style="text-align: right;">3.19809</td>
+</tr>
+<tr>
+<td>Line / regional-mean</td>
+<td style="text-align: right;">4.50176</td>
+<td style="text-align: right;">6.24514</td>
+<td style="text-align: right;">5.95470</td>
+<td style="text-align: right;">3.31484</td>
+</tr>
+</tbody>
+</table>
+<p>The maximum-height, mean-height and component observations therefore constrain different features. Fitting one scalar height response would conceal the mean and component discrepancies exposed here. At the tested candidates, the model tends to predict regional means above many recorded means and basal motions below many recorded basal endpoints. This is evidence against interpreting these particular fixed-scenario candidates as quantitatively adequate descriptions of all four observables. It does not falsify the full material family or establish which missing mechanism or observation assumption causes the mismatch.</p>
+<h2>7. Visual evidence</h2>
+<p>The plots are generated exclusively from the completed direct receipt and the small-region calibration CSV. Lines joining directly solved strengths are display guides; they do not add intermediate solved states or continuous-response certificates. The source-column ordering and four retained operator conventions remain visible.</p>
+<p><img alt="Four directly replayed endpoint responses" src="../../omitted-asset.svg" /></p>
+<p><img alt="All 68 residuals for each observation convention" src="../../omitted-asset.svg" /></p>
+<p><img alt="Surrogate and direct candidate discrepancy requirements" src="../../omitted-asset.svg" /></p>
+<p>The figure hashes and generator/input hashes are retained in <code>evidence/joint_gain_extension_visuals.json</code>. All three exported figures were opened and visually inspected after generation.</p>
+<h2>8. Numerical and provenance receipts</h2>
+<p>The completed direct result has SHA256</p>
+<pre><code>78c779112966adaa6819778637d3abf573afbc5af61ee74ea1ec28b8b5967dea
+</code></pre>
+<p><code>evidence/joint_gain_extension_verification.json</code> records <strong>34 passing aggregate checks</strong>, together with per-state receipt checks. It verifies frozen sources and protocols, unchanged parent/seed artifacts, every common gain–dose association, actual binary64 input rounding, every field/verification hash and the last-verified-only continuation vector chain. Its all-state summary is:</p>
+<ul>
+<li>68 verified stationary discrete fields, 68 accepted increments and zero rejected attempts;</li>
+<li>144 triangles per field, hence <strong>9,792 exact stored-map triangle certificates</strong>;</li>
+<li>maximum scaled Q8 force residual <span class="math" data-tex="1.86408\times10^{-10}"></span>;</li>
+<li>maximum scaled Q12 cross-force residual <span class="math" data-tex="1.86416\times10^{-10}"></span>, against the declared <span class="math" data-tex="10^{-7}"></span> threshold;</li>
+<li>exact rational whole-field Jacobian enclosures jointly contained in approximately <span class="math" data-tex="[0.955378588,1.026141882]"></span>;</li>
+<li>positive local orientation and certified global embedding of every stored field.</li>
+</ul>
+<p>The Jacobian interval is a conservative enclosure of the stored P2 maps, not a claim that either endpoint is attained. It certifies positive orientation, <strong>not</strong> exact incompressibility or a one-percent volume-error guarantee. Small stationarity residuals also do not establish uniqueness, energy-global optimality, stability or a PDE error bound. Existing higher-mesh comparisons already show appreciable shape sensitivity.</p>
+<p>The independent all-cell surrogate audit is <code>evidence/piecewise_gain_minimax_v2_independent_review.json</code>; the separate independent full direct replay is documented in <code>JOINT-DIRECT-REVIEW.md</code> and <code>evidence/joint_direct_independent_review.json</code>. The independent direct review passes all <strong>16 final checks</strong>: every actual field is replayed under Q8/Q12, exact geometry and the endpoint observer, and all 272 residuals plus all 272 sampled surrogate/direct errors are reconstructed. It binds the final direct-result hash above. Its receipt SHA256 is <code>c37960e959b55e001b87ec2b5683d087b8419bc957436931399a93152f7efc41</code>. This is a distinct review, not replaced by the producer’s bookkeeping.</p>
+<p>Reproducible final postprocessing, which refuses partial runs:</p>
+<pre><code>python -X utf8 controlled_furrowing/runs/joint_gain_extension_v2/final_verify.py
+python -X utf8 controlled_furrowing/runs/joint_gain_extension_v2/make_visual.py
+</code></pre>
+<h2>9. What has and has not advanced</h2>
+<p>This step completes an actual all-observable candidate replay rather than another single-height calibration. It replaces a visibly truncated gain selection with an independently certified interior <strong>surrogate</strong> selection and checks every selected input by a fresh stationary nonlinear solve. It also measures, rather than assumes away, the surrogate/direct disagreement.</p>
+<p>The result does not establish a satisfactory biological fit. A single deterministic mechanical scenario with one common gain and the retained static observation proxies still requires roughly 5.4–6.3 µm of uniform discrepancy. The discrepancy may combine biological heterogeneity, missing dynamics, incorrect material/geometry assumptions, observation-reference or aggregation mismatch, and remaining numerical error. This experiment does not identify their separate contributions.</p>
+<p>The next defensible inference step is to resolve the source observation contract and obtain numerical response enclosures across a declared parameter family, then characterize which parameters satisfy externally justified endpoint tolerances. Uniform nonlinear response/error control would be needed to upgrade the surrogate gain certificate into a physical gain-optimality result. Simply rerunning the same optimization on a denser table does not provide that proof.</p>
+<p>No held-out larger-region outcomes were used to pick a convention or fit a parameter. No out-of-sample geometry-transfer claim, full <span class="math" data-tex="\Theta_\delta"></span>, continuum-accuracy certificate or novel general scientific principle is established here. The original physical and observation-alignment gates remain open.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

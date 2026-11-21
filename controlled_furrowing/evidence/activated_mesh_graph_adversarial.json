@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "case_count": 12,
+  "rows": [
+    {
+      "case": 1,
+      "true_exact_supremum": "6",
+      "lower": "6",
+      "upper": "6",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 2,
+      "true_exact_supremum": "3",
+      "lower": "3",
+      "upper": "3",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 3,
+      "true_exact_supremum": "1",
+      "lower": "1",
+      "upper": "129/128",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 4,
+      "true_exact_supremum": "6",
+      "lower": "6",
+      "upper": "6",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 5,
+      "true_exact_supremum": "4",
+      "lower": "4",
+      "upper": "4",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 6,
+      "true_exact_supremum": "5/4",
+      "lower": "5/4",
+      "upper": "20543/16384",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 7,
+      "true_exact_supremum": "6",
+      "lower": "6",
+      "upper": "6",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 8,
+      "true_exact_supremum": "11/4",
+      "lower": "11/4",
+      "upper": "45183/16384",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 9,
+      "true_exact_supremum": "1",
+      "lower": "1",
+      "upper": "16385/16384",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 10,
+      "true_exact_supremum": "6",
+      "lower": "6",
+      "upper": "6",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 11,
+      "true_exact_supremum": "4",
+      "lower": "4",
+      "upper": "4",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    },
+    {
+      "case": 12,
+      "true_exact_supremum": "5/4",
+      "lower": "5/4",
+      "upper": "10303/8192",
+      "contains_known_truth": true,
+      "achieved_requested_width": true
+    }
+  ],
+  "source_sha256": "78295655c236d465a4c4ac9d324c9d810d23359855e7d54761496535ffe0d8a2",
+  "scope": "Independent closedform maxima of quadratic graph differences vs interval-cell algorithm; no mechanical/data inputs."
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "Original figures of saved static discrete fields; no biological calibration or PDE error bars.",
+  "source_sha256": "d7682b81d5c7cdedc9c33944c52385c318b8391cc48b2f2193cea7cef8f2342f",
+  "results_sha256": "62fb665612b460ddc5b453f64e01d76c0a7799e639115979c75c60508aa2d018",
+  "images": {
+    "runs\\endpoint_mesh_functionals\\endpoint_mesh_values.png": "51bbe5a6e3535ecd75513e24bb62fe4b7b4cd7618fc7173fd8a1449fc86d1050",
+    "runs\\endpoint_mesh_functionals\\endpoint_mesh_sensitivity.png": "1d57acfbbdf218c69744ece80d7852a58df90f8680b366e32819569e48f9f82f"
+  }
+}

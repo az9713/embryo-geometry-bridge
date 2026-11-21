@@ -1,0 +1,9 @@
+{
+  "file": "runs\\activated_mesh\\activated_mesh_comparison.png",
+  "sha256": "ea5fc9a3a2d84fcff10e5519a424a6e950d5d767d43de28d2af85c2080bbd32a",
+  "inputs": {
+    "evidence\\activated_mesh_comparison.json": "0a2ad5372484b8ca3c8d68b10bd5288b73c3ae3e351ce1f0eaf14f1a040ed8aa",
+    "evidence\\activated_mesh_results.json": "e1b99d9d0460cffe1776cb0d396b1fb8b36013ce1af2bf60439575494d822644"
+  },
+  "scope": "All6matchedtargetfreenumericalcases; Eulerianfull-domaincurvedifferences; errorbarsarediscretegeometryenclosures, notPDEerrorboundsorconfidenceintervals."
+}

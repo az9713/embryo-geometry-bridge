@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "width": 390,
+      "pass": true,
+      "errors": [],
+      "mathError": "",
+      "allImages": true,
+      "overflow": false,
+      "jointLink": true,
+      "currentText": true
+    },
+    {
+      "width": 1440,
+      "pass": true,
+      "errors": [],
+      "mathError": "",
+      "allImages": true,
+      "overflow": false,
+      "jointLink": true,
+      "currentText": true
+    }
+  ],
+  "page_sha256": "247c06aa4ecb57320f92b14eb92ef794abc3a1c0c6524c0ff25d513d2fa78a06",
+  "builder_sha256": "59c5ee907f4cf0ddaf2d64e7f968c2796e08f767e638cddd7a903973dc1513e5",
+  "scope": "Updated parent landing page only in headless Edge/file view; not the unchanged parent scientific pages, public deployment or research completion."
+}

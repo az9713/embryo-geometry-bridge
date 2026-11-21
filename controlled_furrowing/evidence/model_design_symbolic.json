@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "Exact symbolic model-design identities, not fitted or validated biological mechanics",
+  "checks": {
+    "resting_gradient_zero": true,
+    "frustum_hessian_matches": true,
+    "asymmetry_response_ratio_matches": true,
+    "column_convexity_formula": true,
+    "volume_constraint_exact": true
+  },
+  "frustum_hessian": [
+    [
+      "6*sqrt(3)*(K + 3*T)",
+      "-6*sqrt(3)*K"
+    ],
+    [
+      "-6*sqrt(3)*K",
+      "2*sqrt(3)*(3*K*h**2 + T*h**2 + 9*T)/h**2"
+    ]
+  ],
+  "asymmetry_response_ratio": "3*K*h**2/(3*K*h**2 + T*h**2 + 9*T)",
+  "column_second_derivative": "K/A0 + 3*sqrt(pi)*Sl*V/(2*A**(5/2))",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "controlled_furrowing/docs/MODEL-CANDIDATES.md": "edcc074c597b4b41659de89098305fa5ee6fb16969fd32b0958c292653bf5b38",
+    "controlled_furrowing/data/raw/primary.xml": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7",
+    "controlled_furrowing/data/raw/41467_2025_62483_MOESM1_ESM.pdf": "b3639ea26a0bcb8c822b517a00e7954b046640a7c24d5e791df40aacac62d656"
+  },
+  "novelty": "No claim: standard convexity/invariance; finite-height exact frustum candidate compared with PRXLife2:013004(2024).",
+  "numerical_experiments_performed": false
+}

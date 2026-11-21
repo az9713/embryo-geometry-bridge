@@ -1,0 +1,25 @@
+{
+  "successful_route": "Official public NCBI pmc-oa-opendata S3 object listing and individual objects",
+  "primary_xml_route": "EuropePMC fullTextXML HTTP200,199537bytes",
+  "initial_failures": [
+    {
+      "route": "EuropePMC supplementaryFiles HEAD",
+      "timeout_seconds": 40,
+      "result": "read timeout; observed execution trace"
+    },
+    {
+      "route": "EuropePMC supplementaryFiles GET",
+      "timeout_seconds": 15,
+      "result": "read timeout; observed execution trace"
+    }
+  ],
+  "retained_attempt_receipts": [
+    "data_direct_access.json",
+    "data_alternate_access.json",
+    "data_oa_access.json",
+    "data_archive_access.json",
+    "data_s3_access.json"
+  ],
+  "probe_caveat": "data_s3_access.json includes a bounded50000-byte supplementaryFiles?file=... probe decoded with replacement and truncated for inspection; it is not a complete ZIP or a scientific input. The clean full S3 XML listing is data/raw/oa_object_listing.xml.",
+  "conclusion": "Failed access routes are not evidence of absent published data; numerical workbooks were subsequently downloaded and independently inspected."
+}

@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SPATIAL-CALIBRATION</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent small-region spatial adequacy check</h1>
+<p><strong>This check uses the 17 small-region records only.</strong> It reads no larger-region response or bending label, changes no model parameter and introduces no numerical threshold chosen from outcomes. It is a secondary calibration-data adequacy check, not held-out validation.</p>
+<h2>Separate observation operators</h2>
+<p>The nonlinear model was fitted to maximum vertical material-column shortening. Its source counterpart is a maximum over space and time relative to a cellularization reference. The source additionally provides separate apical and basal maxima. Those maxima need not occur at the same location or time, so their sum is not constrained to equal the maximum cell-height loss.</p>
+<p>For each stored equilibrium, coordinates increase apically/outward. Within the initially activated material radius, the independent calculations are</p>
+<div class="math display" data-tex="
+A_{\rm pred}=\max_R[-u_{z,a}(R)],\qquad
+B_{\rm pred}=\max_R[u_{z,b}(R)].
+"></div>
+
+<p>Values are converted from thickness-one coordinates to micrometres using the locked height 33.5 micrometres. The numerical profiles are static; comparison to separate experimental time maxima is consequently descriptive and conditional. No sum-of-maxima assertion is used.</p>
+<h2>What the fitted models actually predict</h2>
+<p>All 51 stored equilibria—17 records in each of three basal-area-modulus scenarios—are converged and locally orientation-preserving. Yet every scenario predicts a larger basal-up maximum than apical-down maximum in every record. The source maxima show the opposite ordering in 16 of 17 records.</p>
+<table>
+<thead>
+<tr>
+<th>Basal area modulus / (shear modulus × height)</th>
+<th style="text-align: right;">Height-proxy training RMSE (µm)</th>
+<th style="text-align: right;">Apical-component descriptive RMSE (µm)</th>
+<th style="text-align: right;">Basal-component descriptive RMSE (µm)</th>
+<th style="text-align: right;">Records with predicted apical dominance</th>
+<th style="text-align: right;">Records with source apical dominance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.2</td>
+<td style="text-align: right;">2.2472</td>
+<td style="text-align: right;">5.6414</td>
+<td style="text-align: right;">3.7962</td>
+<td style="text-align: right;">0 / 17</td>
+<td style="text-align: right;">16 / 17</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: right;">2.2558</td>
+<td style="text-align: right;">5.5707</td>
+<td style="text-align: right;">3.7209</td>
+<td style="text-align: right;">0 / 17</td>
+<td style="text-align: right;">16 / 17</td>
+</tr>
+<tr>
+<td>20</td>
+<td style="text-align: right;">2.2694</td>
+<td style="text-align: right;">5.2535</td>
+<td style="text-align: right;">3.3550</td>
+<td style="text-align: right;">0 / 17</td>
+<td style="text-align: right;">16 / 17</td>
+</tr>
+</tbody>
+</table>
+<p>The strict ordering comparison uses no amplitude cutoff. It agrees with the source order for only one record in each scenario. These records are source-column identifiers, not independently verified biological specimen IDs; no sampling-independence or significance claim is made.</p>
+<p>This is a concrete warning that a maximum-height calibration can hide an incorrect partition of apical and basal motion. It does not show that every finite-height model, every basal modulus, or every dynamic observation operator fails. The three scenarios are a finite declared family, not a complete identified set. The results should not be upgraded into a universal negative theorem or a novel biological principle.</p>
+<h2>Why area stiffness is not automatically basal normal support</h2>
+<p>For a flat surface with purely transverse graph displacement <span class="math" data-tex="w(r)"></span> and no tangential displacement, its area stretch is</p>
+<div class="math display" data-tex="
+J_s=\sqrt{1+(\partial_r w)^2}
+=1+\tfrac12(\partial_r w)^2+O((\partial_r w)^4).
+"></div>
+
+<p>Hence a stress-free area-elastic term has leading transverse energy</p>
+<div class="math display" data-tex="
+\frac{K_b}{2}(J_s-1)^2
+=\frac{K_b}{8}(\partial_r w)^4+O((\partial_r w)^6).
+"></div>
+
+<p>It has no quadratic normal stiffness in this particular motion. In contrast, a pre-existing tension term gives</p>
+<div class="math display" data-tex="
+T_b(J_s-1)=\frac{T_b}{2}(\partial_r w)^2+O((\partial_r w)^4).
+"></div>
+
+<p>This is standard geometric stiffness, not a new result. It explains why raising a stress-free area modulus is not equivalent to adding prestress, a transverse clamp or a real basal load-bearing network. It does not prove that any one missing ingredient will fix the observed discrepancy. Prestress, initial curvature, tissue surroundings, contact and dynamic mapping remain distinct hypotheses.</p>
+<h2>Decision boundary</h2>
+<p>The declared family has not demonstrated the source small-region apical/basal morphology under its static maximum proxy. Larger-region simulations can still be retained as conditional diagnostics or negative controls, but should not be advertised as an already validated geometric forecast. Any constitutive or observation-model revision must preserve the current results, use only the small-region information for fitting, declare new assumptions and freeze new predictions before larger-region scoring.</p>
+<p>The machine-readable receipt <code>evidence/spatial_calibration_adequacy.json</code> retains all 51 source-file hashes, record IDs, direct profile-derived values and summary metrics. No larger outcomes were used in this check.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

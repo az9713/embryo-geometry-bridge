@@ -1,0 +1,82 @@
+{
+  "status": "PASS_INDEPENDENT_SPARSE_REVIEW",
+  "checks": {
+    "sparse_source_matches_frozen_verification": true,
+    "physical_energy_method_inherited": true,
+    "physical_objective_method_inherited": true,
+    "independent_pattern_cliques_match": true,
+    "independent_row_color_collision_free": true,
+    "dense_entries_outside_pattern_zero": true,
+    "complete_sparse_H_matches_dense": true,
+    "raw_recovery_symmetric": true,
+    "energy_gradient_bit_identical_strong_parameter_case": true,
+    "independent_Hv_AD_0": true,
+    "independent_Hv_FD_0": true,
+    "independent_Hv_AD_1": true,
+    "independent_Hv_FD_1": true,
+    "independent_Hv_AD_2": true,
+    "independent_Hv_FD_2": true
+  },
+  "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+  "entire_H_relative_difference": 7.931587169545892e-17,
+  "entire_H_absolute_difference": 3.637978807091713e-12,
+  "offpattern_exactly_zero": 0.0,
+  "Hessian_vector_checks": [
+    {
+      "AD_relative": 2.3580829499548357e-16,
+      "FD_relative": 4.3046456419094415e-10
+    },
+    {
+      "AD_relative": 1.639669942959995e-16,
+      "FD_relative": 2.8051390410898123e-10
+    },
+    {
+      "AD_relative": 2.0440222987644725e-16,
+      "FD_relative": 2.9898936166237863e-10
+    }
+  ],
+  "pattern": {
+    "free_DOF": 161,
+    "structural_nonzeros": 3045,
+    "colors": 42,
+    "seed_chunk": 4,
+    "row_color_collision_free": true,
+    "pattern_symmetric": true,
+    "pattern_color_sha256": "c5bca26243f22dce090c182dc79c84eb96772fff617f39228266a1822af9c4ff",
+    "dense_matrix_bytes": 207368,
+    "sparse_values_and_int64_indices_bytes": 50016,
+    "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+  },
+  "parameters": {
+    "nr": 6,
+    "nz": 3,
+    "height": 1.0,
+    "outer_radius": 3.0,
+    "patch_radius": 0.2792573244776119,
+    "activation_z_min": 0.2537313432835821,
+    "activation_z_max": 0.8507462686567164,
+    "mu": 1.0,
+    "bulk": 5000.0,
+    "basal_area_modulus": 2.0,
+    "apical_area_modulus": 0.2,
+    "reference_curvature": 0.0,
+    "quadrature": 4,
+    "surface_quadrature": 8,
+    "radial_inner_cells": 0,
+    "basal_surface_tension": 2.0,
+    "apical_surface_tension": 0.0
+  },
+  "gain": 10.0,
+  "artifact_sha256": "0dba30f629560fa80456e01a4864c1d6af340a8b9c0722f26a98142d6795a26a",
+  "verification_program": "from pathlib import Path\nimport sys,json,hashlib\nimport numpy as np\nimport torch\nroot=Path('controlled_furrowing').resolve();sys.path.insert(0,str(root/'scripts'))\nfrom sparse_quadratic import AxisymmetricModel,Parameters,SparsePolicy\nfrom quadratic_quadrature_study import AxisymmetricModel as HighModel,IntegrationPolicy\ntorch.set_num_threads(1);program=globals().get('program','Replay code retained in original receipt.')\nsource=root/'scripts/sparse_quadratic.py'\nexpected='d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9'\np=Parameters(nr=6,nz=3,bulk=5000.,patch_radius=9.35512037/33.5,activation_z_min=8.5/33.5,activation_z_max=28.5/33.5,basal_area_modulus=2.,apical_area_modulus=.2,basal_surface_tension=2.,apical_surface_tension=0.)\nm=AxisymmetricModel(p);parent=HighModel(p);rng=np.random.default_rng(1192026);v=rng.normal(size=len(m.free))*1e-5;gain=10.\nH,meta=m.recover_hessian(v,gain);u=torch.tensor(v,dtype=torch.float64,requires_grad=True)\ndense=torch.autograd.functional.hessian(lambda x:m.energy_components(m.coordinates(x),gain)['total']/m.energy_scale,u,vectorize=True).detach().numpy()\nmapping={int(g):i for i,g in enumerate(m.free)};rows=[{i} for i in range(len(m.free))]\nfor nodes in list(m.triangles)+list(m.top_edges)+list(m.bottom_edges):\n    local=[mapping[2*int(n)+k] for n in nodes for k in (0,1) if 2*int(n)+k in mapping]\n    for i in local:rows[i].update(local)\nmask=np.zeros(dense.shape,bool)\nfor i,row in enumerate(rows):mask[i,list(row)]=True\nmanual={(i,j) for i,row in enumerate(rows) for j in row};pattern=set(zip(map(int,m.pattern_rows),map(int,m.pattern_cols)))\nerr=float(np.max(abs(H.toarray()-dense)));scale=max(1.,float(np.max(abs(dense))))\nchecks={'sparse_source_matches_frozen_verification':hashlib.sha256(source.read_bytes()).hexdigest()==expected,\n        'physical_energy_method_inherited':AxisymmetricModel.energy_components is HighModel.energy_components,\n        'physical_objective_method_inherited':AxisymmetricModel.objective is HighModel.objective,\n        'independent_pattern_cliques_match':manual==pattern,\n        'independent_row_color_collision_free':all(len({int(m.colors[j]) for j in row})==len(row) for row in rows),\n        'dense_entries_outside_pattern_zero':float(np.max(abs(dense[~mask])))==0.,\n        'complete_sparse_H_matches_dense':err/scale<1e-11,\n        'raw_recovery_symmetric':meta['raw_asymmetry_linf']<1e-10}\ne,g=m.objective(v,gain);ee,gg=parent.objective(v,gain)\nchecks['energy_gradient_bit_identical_strong_parameter_case']=e==ee and np.array_equal(g,gg)\nhvs=[]\nfor k in range(3):\n    d=rng.normal(size=len(v));d/=np.linalg.norm(d);uu=torch.tensor(v,dtype=torch.float64,requires_grad=True)\n    E=m.energy_components(m.coordinates(uu),gain)['total']/m.energy_scale\n    gradient=torch.autograd.grad(E,uu,create_graph=True)[0]\n    direct=torch.autograd.grad(gradient,uu,grad_outputs=torch.tensor(d,dtype=torch.float64))[0].detach().numpy()\n    hv=H@d;h=1e-6;fd=(m.objective(v+h*d,gain)[1]-m.objective(v-h*d,gain)[1])/(2*h)\n    ae=float(np.max(abs(hv-direct)))/max(1.,float(np.max(abs(direct))))\n    fe=float(np.max(abs(hv-fd)))/max(1.,float(np.max(abs(fd))))\n    checks[f'independent_Hv_AD_{k}']=ae<1e-11;checks[f'independent_Hv_FD_{k}']=fe<2e-5\n    hvs.append({'AD_relative':ae,'FD_relative':fe})\nchecks={k:bool(x) for k,x in checks.items()}\nout=root/'runs/joint_refinement';out.mkdir(parents=True,exist_ok=True)\nnp.savez_compressed(out/'independent_sparse_Hessian.npz',dense=dense,sparse=H.toarray(),free_vector=v,pattern_rows=m.pattern_rows,pattern_cols=m.pattern_cols,colors=m.colors)\nreceipt={'status':'PASS_INDEPENDENT_SPARSE_REVIEW' if all(checks.values()) else 'FAIL','checks':checks,'source_sha256':expected,'entire_H_relative_difference':err/scale,'entire_H_absolute_difference':err,\n         'offpattern_exactly_zero':float(np.max(abs(dense[~mask]))),'Hessian_vector_checks':hvs,'pattern':m.pattern_receipt,\n         'parameters':{k:getattr(p,k) for k in p.__dataclass_fields__},'gain':gain,\n         'artifact_sha256':hashlib.sha256((out/'independent_sparse_Hessian.npz').read_bytes()).hexdigest(),'verification_program':program,\n         'algorithm_review':['Every physical volume/surface term is local; detached projected-pressure diagnostics do not couple the physical Hessian','Shared-row column color uniqueness makes compressed HS entry recovery exact algebraically','Sparse linear solves require finite descent direction, Armijo and positive-geometry acceptance','Numerical regularization/step cap differ from dense policy; identical optimizer trajectories are not claimed'],\n         'limitations':['Finite test cases supplement but do not replace locality/coloring proof','Hessian correctness does not prove nonlinear global minimum or continuum accuracy']}\n(root/'evidence/joint_refinement_sparse_review.json').write_text(json.dumps(receipt,indent=2)+'\\n')\nprint(json.dumps({'status':receipt['status'],'checks':len(checks),'all_pass':all(checks.values()),'H_relative':err/scale,'offpattern':receipt['offpattern_exactly_zero'],'Hvs':hvs},indent=2))\nassert all(checks.values())\n",
+  "algorithm_review": [
+    "Every physical volume/surface term is local; detached projected-pressure diagnostics do not couple the physical Hessian",
+    "Shared-row column color uniqueness makes compressed HS entry recovery exact algebraically",
+    "Sparse linear solves require finite descent direction, Armijo and positive-geometry acceptance",
+    "Numerical regularization/step cap differ from dense policy; identical optimizer trajectories are not claimed"
+  ],
+  "limitations": [
+    "Finite test cases supplement but do not replace locality/coloring proof",
+    "Hessian correctness does not prove nonlinear global minimum or continuum accuracy"
+  ]
+}

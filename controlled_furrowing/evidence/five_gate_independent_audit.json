@@ -1,0 +1,326 @@
+{
+  "audit_status": "COMPLETE snapshot audit; original research contract remains INCOMPLETE",
+  "created_utc": "2026-11-19T09:46:44.870184+00:00",
+  "goal_achieved": false,
+  "original_contract_complete": false,
+  "iterative_improvement_active": true,
+  "controlling_plan_sha256": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+  "scope": "Original coupled no-refit deformation objective, not scalar-only substitution",
+  "direct_answer": "A completed conditional v1 failed/limited candidate experiment is legitimate; it does not complete the original five-gate contract while explicit inference/observation/validation operations remain missing.",
+  "negative_result_rule": "Success and novelty are not prerequisites for completion. Missing promised operations/evidence must remain incomplete; negative executed results are not mislabeled unperformed.",
+  "requirements": [
+    {
+      "gate": 1,
+      "requirement": "Exact primary-source claim/equation/input/output comparison",
+      "execution": "EXECUTED",
+      "scientific_outcome": "No novel mechanism established; scalar-only novelty rejected",
+      "evidence": [
+        "docs/ORIGINALITY.md",
+        "evidence/originality_verdict.json"
+      ]
+    },
+    {
+      "gate": 2,
+      "requirement": "Actual source retrieval, units, identities/absence, inputs/geometry/timing/operator feasibility",
+      "execution": "EXECUTED_INVENTORY",
+      "scientific_outcome": "Scalar cohorts available; full individual spatial acquisition mapping insufficient",
+      "evidence": [
+        "evidence/data_workbook_audit.json",
+        "evidence/data_observation_operator_review.json"
+      ]
+    },
+    {
+      "gate": 3,
+      "requirement": "Finite-height coupled model with declared validity assumptions",
+      "execution": "IMPLEMENTED_CONDITIONALLY",
+      "scientific_outcome": "Real discrete models and verification; biological adequacy not established",
+      "evidence": [
+        "docs/AXISYMMETRIC-MODEL.md",
+        "docs/BASELINE-TENSION.md"
+      ]
+    },
+    {
+      "gate": 3,
+      "requirement": "Infer observable parameter combinations from calibration alone",
+      "execution": "PARTIAL",
+      "scientific_outcome": "Scenario-conditional gains fitted; full coupled material/geometry combinations not identified",
+      "evidence": [
+        "evidence/spatial_v1_independent_review.json",
+        "evidence/tension_calibration_adequacy.json",
+        "docs/LOCAL-INFERENCE.md"
+      ]
+    },
+    {
+      "gate": 3,
+      "requirement": "Carry unresolved parameter sets into prediction",
+      "execution": "INCOMPLETE_ORIGINAL_SCOPE",
+      "scientific_outcome": "Exploratory finite scenarios retained; not full admissible calibration set",
+      "evidence": [
+        "docs/MATERIAL-INPUTS.md",
+        "SPATIAL-TENSION-PROTOCOL.json"
+      ]
+    },
+    {
+      "gate": 3,
+      "requirement": "Adequacy appropriate to biological deformation claim",
+      "execution": "PARTIAL_WITH_NEGATIVE_CANDIDATE_RESULTS",
+      "scientific_outcome": "V1 partition failure; v2 majority partition improvement; local compression/observation/numerical accuracy unresolved",
+      "evidence": [
+        "evidence/tension_calibration_adequacy.json",
+        "evidence/discrete_geometry_certificate.json"
+      ]
+    },
+    {
+      "gate": 4,
+      "requirement": "Freeze actual larger fields before computational scoring",
+      "execution": "EXECUTED_FOR_CONDITIONAL_V1",
+      "scientific_outcome": "93 actual coupled fields verified; source/call-path audit, not biological blindness",
+      "evidence": [
+        "evidence/spatial_v1_independent_review.json"
+      ]
+    },
+    {
+      "gate": 4,
+      "requirement": "Propagated parameter uncertainty and source-compatible deformation scoring",
+      "execution": "INCOMPLETE_ORIGINAL_SCOPE",
+      "scientific_outcome": "All v1 label sets{0,1}; uninformative operator result executed, full target correspondence missing",
+      "evidence": [
+        "evidence/spatial_v1_independent_review.json",
+        "evidence/data_observation_operator_review.json"
+      ]
+    },
+    {
+      "gate": 4,
+      "requirement": "Execute revised tension-family larger prediction",
+      "execution": "NOT_YET_PERFORMED",
+      "scientific_outcome": "68 small profiles complete; all4 larger frozen manifests absent at snapshot",
+      "evidence": [
+        "evidence/tension_calibration_adequacy.json"
+      ]
+    },
+    {
+      "gate": 5,
+      "requirement": "Compare simpler models, limitations, sensitivities and nearest literature",
+      "execution": "EXECUTED_FOR_V1;FULL_STUDY_PARTIAL",
+      "scientific_outcome": "V1 no predictive increment/novel concept; revised original-scope assessment pending",
+      "evidence": [
+        "evidence/spatial_v1_independent_review.json",
+        "docs/ORIGINALITY.md"
+      ]
+    }
+  ],
+  "completed_verified_coverage": {
+    "v1_frozen_prediction_hashes": 93,
+    "v1_direct_calibration_states": 51,
+    "exact_P1_discrete_embedding_states": 144,
+    "v2_direct_small_profiles": 68,
+    "v2_free_coordinate_derivatives": 10948
+  },
+  "exact_P1_review": {
+    "state_hashes_and_positive_rational_flags_replayed": true,
+    "proof_scope": "Saved binary64-coordinate P1 bodies: exact localJ, rational volume and global discrete embedding",
+    "checker_reimplemented_by_this_audit": false,
+    "earlier_generic_injectivity_caveat_superseded_for_covered_states": true,
+    "covers_tension68_states": false,
+    "continuum_or_biology_certified": false
+  },
+  "tension_larger_frozen_manifests_present": {
+    "0": false,
+    "0.2": false,
+    "2": false,
+    "20": false
+  },
+  "completed_component_snapshots": {
+    "mixed_verification.json": {
+      "status": "PASS_SYNTHETIC_COMPONENT",
+      "complete": null,
+      "rows": 0,
+      "sha256": "6c9a1b8e09aa061dd99c3b3ca1666e938eb479873af184877d761796edcc9d9d"
+    },
+    "mixed_manufactured.json": {
+      "status": "PASS_CONSISTENCY_COMPONENT",
+      "complete": null,
+      "rows": 4,
+      "sha256": "fd7bb6ea003874540acd7743a805a14b508cef220307d3f5149be7116436eb13"
+    },
+    "quadratic_verification.json": {
+      "status": "PASS_SYNTHETIC_COMPONENT",
+      "complete": null,
+      "rows": 0,
+      "sha256": "e2ba4be5d2390ffe6c7de17ee4fb20fd33f5a7f47f91608c7de8646329ed8db4"
+    },
+    "quadratic_manufactured.json": {
+      "status": "COMPLETED_FORCED_NUMERICAL_BENCHMARK",
+      "complete": true,
+      "rows": 9,
+      "sha256": "bfd9649f3cfb876c7e3380cf27b496c86a91d7389a8251f89d8cfedd32530a9d"
+    },
+    "mixed_fixed10.json": {
+      "status": "COMPLETED_NUMERICAL_SENSITIVITY_NOT_CONTINUUM_CERTIFICATE",
+      "complete": true,
+      "rows": 9,
+      "sha256": "d3ca3d3b34bed60644355e66c47003d7cb625abc0c42778915b8a159478a14aa"
+    },
+    "mixed_geometry_synthetic.json": {
+      "status": "PASS_EXACT_RATIONAL_SYNTHETIC_CERTIFICATE",
+      "complete": null,
+      "rows": 0,
+      "sha256": "ab903230dc2adb0dd2a916aefaf59c5a9fd2d75586c9afcf19740d3a208387d0"
+    },
+    "mixed_geometry_zero.json": {
+      "status": "CERTIFIED_DISCRETE_EMBEDDING",
+      "complete": null,
+      "rows": 0,
+      "sha256": "b01f389c9f8b3c8e051a752d7493c3c7175a7eca4e4fb3ff219664a4a448f358"
+    },
+    "mixed_geometry_activated.json": {
+      "status": "CERTIFIED_DISCRETE_EMBEDDING",
+      "complete": null,
+      "rows": 0,
+      "sha256": "1637fc96ecbc2395fc2b83f9381cc5bc8315d1be305a699832d566d632decb6e"
+    },
+    "mixed_geometry_scaled.json": {
+      "status": "CERTIFIED_DISCRETE_EMBEDDING",
+      "complete": null,
+      "rows": 0,
+      "sha256": "a74d6209c50981531c4cdf212482b1522c5f39cd3fe44a74cd8bd0c9a33d8b12"
+    }
+  },
+  "missing_work": [
+    {
+      "id": "I1",
+      "work": "Declare small-data uncertainty/admissible parameter class and infer or propagate all unresolved relevant combinations",
+      "dependency": "Small-region observations/constitutive class and measurement assumptions",
+      "status": "UNPERFORMED beyond exploratory scenarios/local formula"
+    },
+    {
+      "id": "I2",
+      "work": "Establish informative source-compatible spatial observation or prove scoped insufficiency",
+      "dependency": "Slice/time/geometry provenance or rigorous partial-observation argument",
+      "status": "PARTIAL; current all-label sets valid but uninformative"
+    },
+    {
+      "id": "N1",
+      "work": "Numerical accuracy appropriate to fitted-load claim",
+      "dependency": "Completed solver checks, matched refinement/quadrature/locking and surface-error budget",
+      "status": "PARTIAL; component tests/exact discrete embedding do not give continuum enclosure"
+    },
+    {
+      "id": "P1",
+      "work": "Freeze and evaluate all4 tension larger-region scenarios",
+      "dependency": "Retained calibration/assumptions/operator and suitable numerical scope",
+      "status": "NOT_EXECUTED at snapshot"
+    },
+    {
+      "id": "A1",
+      "work": "Final original-contract assessment of revised results or rigorous insufficiency",
+      "dependency": "Previous inference/observation/prediction work",
+      "status": "PENDING; v1 assessment already executed"
+    }
+  ],
+  "not_required_for_completion": [
+    "A favorable biological effect",
+    "A novelty claim",
+    "External contact or new wet-lab experiments without authorization"
+  ],
+  "excluded_pending_work": "Additional mixed manufactured work is not awaited or counted complete by this audit.",
+  "snapshot_files": {
+    "PLAN.md": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+    "docs/ORIGINALITY.md": "3c7d229f3b8820ce8d0097ab1588eaf413753f615caa77856f0b27a327604bb6",
+    "evidence/originality_verdict.json": "bb0e79a7b67441ff7b4e36c6d4607e4b842044f629e8bf27c7e49f2155bbdbcf",
+    "docs/DATA.md": "37eea4aae6d4912b8608acf409529cb0babdcf2d879a8fe7c1b5934c5d667805",
+    "evidence/data_workbook_audit.json": "2d84e99b2e2b4f87d0aeab7d320f2ac1c909b9f3f776f04389483391f1cbf8ae",
+    "evidence/data_observation_operator_review.json": "123d572b6552c54ef811faf073dc9cfe35f696a7f086e18305077a9b21fd5320",
+    "docs/MATERIAL-INPUTS.md": "b05cbe09c454eabb8ce32c6928398a0230e37d378b182d50e289f603e53e5438",
+    "evidence/material_input_audit.json": "7c79959b91388cf0a102bb3eeb2b08c218c5161b23883b9ea0920238c4ca41cc",
+    "docs/MODEL-CANDIDATES.md": "edcc074c597b4b41659de89098305fa5ee6fb16969fd32b0958c292653bf5b38",
+    "docs/LOCAL-INFERENCE.md": "bff255d31c837b1c9f89cb830f3aa1d1ee035f20123cfa2abb64b3c745ed4478",
+    "docs/AXISYMMETRIC-MODEL.md": "1258219433890cdf225abb300c690c3f0a16521250a0328b3ac172829beaa5ed",
+    "docs/BASELINE-TENSION.md": "24bcb3be9ce8874c8456bb16bcfca576589c874d462416a9a7b00b809680e470",
+    "docs/PROTOCOL-ERRATA.md": "8ca9d823b460342412597ba100b7dd507eeb9020c4b7e7006153a1b4c66af92e",
+    "evidence/discrete_geometry_certificate.json": "6325270304febc2a286f529b7062dab3d3642583d650331ef1e412ab606866dc",
+    "docs/DISCRETE-GEOMETRY-CERTIFICATE.md": "89868813ddb69b14da1adc47bb25a3155e0ea685b58fcf4587616d3644ef63be",
+    "evidence/spatial_v1_independent_review.json": "6de94692251477d6b66d7ef060354f700afe32fb744696b131a3e6d1bba74cc1",
+    "evidence/tension_calibration_adequacy.json": "91fbbe7aa1d15baa8082e6d0913f6549b5dca05d4d4e289a98a5afd452ef2ba0",
+    "SPATIAL-TENSION-PROTOCOL.json": "df1a5a890f101ef8262490ae784611fcd3cf430f5cf721ef35452582fd6fc9cb"
+  },
+  "current_audit_document_sha256": "1dc82b850e56ff1b89df443dbcbe0f987c7ac5c3c47c26d80ee2ff4716bc459d",
+  "audit_history": [
+    {
+      "receipt": {
+        "audit_kind": "INTERIM independent completion audit against original five-gate contract",
+        "created_utc": "2026-11-19T09:01:32.116057+00:00",
+        "final": false,
+        "review_independence": "Internal AI audit independent of model implementation; auditor authored data extraction, whose parser was independently crosschecked. No external expert review.",
+        "contract": "Original full coupled small-to-large deformation objective; not replaced by scalar reproduction.",
+        "hashes": {
+          "PLAN.md": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+          "docs/DATA.md": "37eea4aae6d4912b8608acf409529cb0babdcf2d879a8fe7c1b5934c5d667805",
+          "docs/MODEL-CANDIDATES.md": "edcc074c597b4b41659de89098305fa5ee6fb16969fd32b0958c292653bf5b38",
+          "docs/ORIGINALITY.md": "3c7d229f3b8820ce8d0097ab1588eaf413753f615caa77856f0b27a327604bb6",
+          "evidence/data_workbook_audit.json": "2d84e99b2e2b4f87d0aeab7d320f2ac1c909b9f3f776f04389483391f1cbf8ae",
+          "evidence/data_observation_operator_review.json": "123d572b6552c54ef811faf073dc9cfe35f696a7f086e18305077a9b21fd5320"
+        },
+        "gates": [
+          {
+            "gate": 1,
+            "status": "EXECUTED bounded originality audit; no novelty established"
+          },
+          {
+            "gate": 2,
+            "status": "EXECUTED actual data inventory; scalar/label feasibility established, specimen-resolved shape coverage limited"
+          },
+          {
+            "gate": 3,
+            "status": "IN PROGRESS: local model derivations available; coupled solver currently being implemented, final assessment pending"
+          },
+          {
+            "gate": 4,
+            "status": "IN PROGRESS: scalar auxiliary lock is not a full-shape lock; coupled predictions pending"
+          },
+          {
+            "gate": 5,
+            "status": "PENDING coupled prediction, validation and contribution assessment"
+          }
+        ],
+        "coverage": {
+          "small_maximum_shortening_records": 17,
+          "large_maximum_shortening_records": 9,
+          "larger_bending_records": 31,
+          "all_bending_records_including_repeated_small": 48,
+          "example_trace_count": 3,
+          "example_trace_timepoints": 63,
+          "public_movies_listed": 10,
+          "movies_decoded_by_this_auditor": 1,
+          "listed_raw_volumetric_or_mesh_objects": 0,
+          "explicit_biological_ids_in_key_tables": 0,
+          "whole_cohort_shape_time_series_in_source_workbooks": 0
+        },
+        "missing_requirements": [
+          "Specimen-associated preactivation surfaces/curvature or explicit conditional geometry assumptions",
+          "Spatial observation operator matching the actual plug/moat label, with slice/time/resolution assumptions",
+          "Mechanically coupled finite-height implementation and physical/numerical verification",
+          "Small-only parameter inference and explicit propagation of unresolved bending-controlling combinations",
+          "Frozen coupled predictions before held-out computational scoring"
+        ],
+        "conditional_feasibility": "A coupled hypothesis can be implemented with declared ideal geometry and parameter sets; absent raw volumes does not prove mathematical impossibility. Conditional simulation is not specimen-resolved validation.",
+        "operator_caveat": "SourceSec7/Par28 centralplug/moat classification is not automatically equivalent to positive incremental crest-minus-groove; see retained geometric counterexample.",
+        "finalization_requires": [
+          "Current scalar prediction/score receipts",
+          "Completed coupled model code/tests",
+          "Coupled calibration/prediction lock",
+          "Observation operator contract and comparative scores"
+        ],
+        "audit_document_sha256": "014b882cf54e4159bc960529cbf50836f047c5f3a03b072544ee9a0cca6b78be",
+        "key_source_workbook_metadata_check": {
+          "hidden_sheets": 0,
+          "defined_names": 0,
+          "comments": 0,
+          "comment_external_or_customxml_parts": 0,
+          "method": "Read-only openpyxl metadata and ZIP-part inventory; no hidden biological-ID map located."
+        }
+      },
+      "document_text": "# Independent five-gate completion audit \u2014 interim\n\n**This is a working snapshot, not a final completion judgment.** The original objective remains a coupled finite-height mechanical prediction of larger-region deformation after small-region calibration. The scalar reproduction does not replace that objective. A coupled model and source-compatible observation operator are now being implemented; this audit will be updated after their calibration, predictions and verification receipts exist.\n\nThe audit is internal AI review independent of mechanical implementation. This auditor also performed the source-data extraction, which used two independent workbook parsers; it is not external peer review or an independently acquired biological dataset.\n\n| Original gate | Current evidence | Interim status |\n|---|---|---|\n| 1. Exact originality audit | Primary papers, equation comparisons and explicit claim restrictions retained | Bounded audit executed; no novelty established |\n| 2. Actual data feasibility | Both workbooks retrieved; all4786nonempty cells crosschecked; distinct17small/9large scalar records and31larger bending records | Inventory executed; full specimen-resolved shape coverage remains limited |\n| 3. Adequate coupled model and identifiability | Local finite-height null and asymmetric-cell derivations; coupled solver in development | In progress; local mathematics alone does not pass the coupled prediction requirement |\n| 4. Frozen prediction | Auxiliary scalar protocol/lock branch; coupled lock pending | In progress; scalar lock alone cannot pass the shape target |\n| 5. Contribution assessment | Closest research and limitations documented; coupled results pending | Pending full model/observation/numerical comparison |\n\n## What is available and what it can support\n\nThe inspected numerical package supplies17small-region maximum-shortening records,9large-region maximum-shortening records,31larger-region bending labels, and63apical/basal position samples across3illustrative traces. Repeated small records in multiple source panels count once. Key tables supply no explicit biological specimen IDs. Ten public movies are listed; one50-\u00b5m example was actually decoded and inspected by this auditor. The official object inventory lists no raw volumetric acquisition or mesh-format objects. The paper directs raw-microscopy requests to the authors; no contact was made.\n\nThose observations permit scalar transfer tests and conditional comparisons against a coarse bending phenotype. They do not provide whole-cohort initial surfaces, individually mapped height/curvature fields, or final3Dsurface trajectories. A force scale is not always necessary for shape prediction: common scaling of mechanical coefficients can cancel. What matters is determining or honestly propagating the dimensionless ratios, initial/boundary assumptions and observation rules that control the predicted shape.\n\nMissing raw volumes do **not** make every genuine coupled model impossible. An idealized finite-thickness patch can be implemented, with geometry and material assumptions fixed in advance, and its parameter-set predictions compared against the published labels. Such a test remains conditional on those assumptions. It must not be described as a specimen-resolved geometry validation or a uniquely identified biological mechanism unless additional evidence supports that stronger interpretation.\n\n## Source bending label versus a mechanical proxy\n\nCountryman2025Sec7/Par28 describes the source classification by a central tissue plug surrounded by perivitelline space in apical slices. It also emphasizes a continuous morphology rather than a physically binary transition. Movie3 shows continuous near-apical tissue at00:00, a plug/moat appearance at04:40, and substantial recovery by09:00. Thus one late final-frame shape need not capture the source's transient phenotype.\n\nFor an axisymmetric body with basal and apical graphs, a closer conditional operator considers the radial tissue section\n\n\\[\nS(z_*)=\\{r:\\ z_b(r)\\le z_*\\le z_a(r)\\}.\n\\]\n\nCentral and outer tissue separated by a radial interval outside this set produce an annular void on revolution. This uses total surfaces, slice plane and time. Positive incremental crest-minus-groove alone is insufficient: with initial apical height0, basal height\u221233.5\u00b5m, slice\u22122\u00b5m, and final centre/ring/far apical heights[+1,\u22121,0]\u00b5m, crest prominence is2\u00b5m but the entire radial tissue intersects the slice. This is a geometric counterexample, not a biological or novelty claim.\n\nThe source does not tabulate per-record slice-reference rules, classification timing, numerical detection thresholds or observer errors. Movie3's2-\u00b5m depth descriptor cannot silently become a calibrated classifier threshold for every record. See [the retained operator review](../evidence/data_observation_operator_review.json).\n\n## What final review must check\n\nBefore a five-gate completion claim, inspect the actual coupled code, physical and numerical tests, small-only calibration, treatment of unidentified parameters, frozen spatial outputs and source-compatible scoring. A positive scalar fit, an untested coupled design or a newly chosen threshold cannot substitute for those artifacts. Conversely a completed, verified test may reject its model or produce a broad conditional prediction set; scientific failure and unfinished implementation are different states.\n\nThe timestamp and original-contract/source hashes for this interim snapshot are retained in [the audit receipt](../evidence/five_gate_independent_audit.json). Final status remains pending the ongoing coupled work.\n"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "status": "PRE-CALIBRATION separate prestress revision; v1 retained unchanged",
+  "target": "Finite-height circular-patch deformation under one unchanged material law, calibrated only on small-region maximum shortening",
+  "retrospective": "Published shapes/labels and source outcomes were seen during audit; computational withholding only",
+  "units": {
+    "height_um": 33.5,
+    "shear_modulus_scale": 1.0,
+    "absolute_force_calibration": null
+  },
+  "discretization": {
+    "nr": 12,
+    "nz": 6,
+    "quadrature": 2,
+    "torch_threads": 1,
+    "scope": "Declared discrete mechanical experiment; mesh sensitivity remains an unpassed continuum-accuracy requirement"
+  },
+  "geometry": {
+    "reference": "Flat stress-free idealization, not an observed embryo geometry",
+    "outer_radius_over_height": 3.0,
+    "small_diameter_um": 18.71024074,
+    "activation_depth_below_apical_um": [
+      5.0,
+      25.0
+    ],
+    "boundary": "Axis regularity and clamped outer meridional boundary; apical/basal free except elastic membrane forces",
+    "sensitivity_required": [
+      "mesh",
+      "quadrature",
+      "outer boundary",
+      "initial curvature",
+      "near-incompressibility"
+    ]
+  },
+  "material_scenarios": {
+    "mu": 1.0,
+    "logJ_penalty_coefficient_over_mu": 50.0,
+    "apical_area_modulus_over_mu_height": 0.2,
+    "basal_area_modulus_over_mu_height": 2.0,
+    "scope": "Exploratory fixed area moduli and basal prestress scenarios; no measured/exhaustive parameter bounds. All retained. Strong compression and mesh sensitivity remain unpassed adequacy requirements.",
+    "basal_surface_tension_over_mu_height": [
+      0.0,
+      0.2,
+      2.0,
+      20.0
+    ],
+    "apical_surface_tension_over_mu_height": 0.0
+  },
+  "activation": "Prescribed quadratic material-fibre contraction potential, strength=(one common fitted gain)*published recruitment; parameter work for this chosen potential gauge is externally prescribed, with NO calibrated optical/chemical energy expenditure",
+  "calibration": {
+    "input": "data/derived/calibration_small_18um.csv",
+    "endpoint": "maximum vertical material-column shortening within activation patch, used as an explicit peak-quasiequilibrium proxy",
+    "gain_grid": {
+      "minimum": 0.0,
+      "maximum": 40.0,
+      "step": 0.05
+    },
+    "initial_response_strength_nodes": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5,
+      10.0,
+      10.5,
+      11.0,
+      11.5,
+      12.0,
+      12.5,
+      13.0,
+      13.5,
+      14.0,
+      14.5,
+      15.0,
+      15.5,
+      16.0,
+      18.0,
+      20.0,
+      22.0,
+      24.0,
+      26.0,
+      28.0,
+      30.0,
+      32.0,
+      34.0,
+      36.0,
+      38.0,
+      40.0,
+      42.0,
+      44.0,
+      46.0,
+      48.0,
+      50.0,
+      52.0,
+      54.0,
+      56.0,
+      58.0,
+      60.0,
+      62.0,
+      64.0
+    ],
+    "selection": "Calibration-only squared-error minimization using tabulated nonlinear responses; selected candidate rechecked against direct solves. Report interpolation error and finite-grid/boundary limitations.",
+    "direct_response_surrogate_tolerance_um": 0.05,
+    "failure": "Failed or nonphysical solves are retained and cannot be silently treated as predictions or removed to choose a favorable branch. Boundary gain estimates are reported; any extension is a retained calibration-only protocol revision.",
+    "secondary_check": "Report separate small-region apical/basal component maxima and directionality; never substitute their sum for maximum height change. Static-versus-transient observation mismatch remains explicit."
+  },
+  "prediction": {
+    "inputs": "Larger diameter and measured optical recruitment only; response fields removed before model execution",
+    "outputs": [
+      "signed central apical/basal displacements",
+      "full deformed apical/basal radial profiles",
+      "vertical and material-fibre heights",
+      "possible plug-slice height interval",
+      "force/J/volume/monotonicity diagnostics"
+    ],
+    "branch_rule": "Report every retained material scenario; no selection using larger-region outcomes",
+    "slice_operator": "scripts/spatial_observer.py; missing acquisition slice height yields set-valued possible labels, never a forced positive prediction",
+    "time_limit": "Static equilibria are not transient peak/recovery predictions. Any comparison to experimental transient labels is conditional on an unverified peak-quasiequilibrium approximation."
+  },
+  "verification": {
+    "scaled_force_linf": 1e-07,
+    "positive_J": true,
+    "volume": "Report local J range and global volume change; penalty compressibility is not exact incompressibility",
+    "energy": "Verify passive positivity, supplied activation work and energy reduction during relaxation",
+    "numerics": "Mesh/quadrature differences are empirical sensitivity, NOT rigorous continuum-error certificates"
+  },
+  "original_scope_gaps": [
+    "Unknown specimen geometry, material scale/prestress/contact and source slice/time acquisition prevent unconditional specimen-resolved validation.",
+    "The finite scenario grid does not characterize the complete physically admissible calibration identified set.",
+    "No ellipse/orientation prediction follows from an axisymmetric model.",
+    "The five-gate objective is not complete merely because this conditional experiment executes.",
+    "V1 local J reached about0.8 under fitted loads; prestress does not itself fix compressibility, locking or continuum error. V2 must report them."
+  ],
+  "revision_reason": "Small-region-only audit: all three v1 area-stiffness scenarios predict basal-dominant motion in 17/17 records, source apical-dominant 16/17. Baseline membrane tension supplies missing quadratic normal stiffness. No v2 larger-region outcomes have been calculated or used to choose this family."
+}

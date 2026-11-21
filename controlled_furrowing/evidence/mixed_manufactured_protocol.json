@@ -1,0 +1,24 @@
+{
+  "map": "R=r exp(e z), Z=(1-exp(-2e z))/(2e), exact J=1",
+  "epsilon": 0.2,
+  "grids": [
+    [
+      6,
+      3
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      16,
+      8
+    ]
+  ],
+  "scope": "Interpolation/energy consistency, not forced PDE convergence or validation; map need not satisfy clamped-rim boundary condition",
+  "nonisochoric_affine_tolerance": 1e-10
+}

@@ -1,0 +1,183 @@
+{
+  "status": "CANDIDATE_DYADIC_KL_BODY_LOG_COVERAGE_AWAITS_READBACK",
+  "source_sha256": "9fe45835838d6da98569f32983a304a4569e86663a2794668e99c0f62f12ff69",
+  "protocol_sha256": "8f44cb76e48d4d14832292642372a7e8c8836dbf654f3626c3daffe7e40ac0dc",
+  "pid": 17504,
+  "prior_full_scope_geometry_readback_os_sha256": "d33e301a76decc888c803227a88058fab7aa1714c373536f49acd36750c340a0",
+  "exact_original_closed_interval": [
+    "128898317/100000000",
+    "2360271/1562500"
+  ],
+  "constant_corrector_radius_exact": "1/4096",
+  "first_complete_tested_dyadic_level": 4,
+  "levels": [
+    {
+      "slabs": 2,
+      "checks": [
+        {
+          "slot": 0,
+          "exact_dose_subinterval": [
+            "128898317/100000000",
+            "279955661/200000000"
+          ],
+          "passes_body_J_monotonicity_log_rho_and_radial_bound": false,
+          "J_enclosure_exact": [
+            "163815572713560721636030581408778573581917913443/4354854149624737195685380878741743968333920089088",
+            "23246754036604540430097769938869689227964556859907/11612944398999299188494349009977983915557120237568"
+          ],
+          "minimum_monotonicity_exact": null,
+          "maximum_bulk_log_rho_exact": null,
+          "radial_nodal_margin_exact": "643995820387853733/18446744073709551616",
+          "insufficient_J_slots": [],
+          "insufficient_monotonicity_slots": [
+            3,
+            4,
+            5,
+            10,
+            11,
+            16,
+            17,
+            23,
+            75,
+            76,
+            77,
+            81,
+            82,
+            83,
+            87,
+            88,
+            89,
+            93,
+            94,
+            95
+          ],
+          "insufficient_bulk_log_rho_slots": [
+            5
+          ]
+        },
+        {
+          "slot": 1,
+          "exact_dose_subinterval": [
+            "279955661/200000000",
+            "2360271/1562500"
+          ],
+          "passes_body_J_monotonicity_log_rho_and_radial_bound": false,
+          "J_enclosure_exact": [
+            "189027777805272866907619835975978914188333919223/6797821111609345866435716493645649121301728919552",
+            "140091691631397098414837321549754016735436869420927/69677666393995795130966094059867903493342721425408"
+          ],
+          "minimum_monotonicity_exact": null,
+          "maximum_bulk_log_rho_exact": null,
+          "radial_nodal_margin_exact": "1289063233818438451/36893488147419103232",
+          "insufficient_J_slots": [],
+          "insufficient_monotonicity_slots": [
+            3,
+            4,
+            5,
+            10,
+            11,
+            16,
+            17,
+            23,
+            75,
+            76,
+            77,
+            81,
+            82,
+            83,
+            87,
+            88,
+            89,
+            93,
+            94,
+            95
+          ],
+          "insufficient_bulk_log_rho_slots": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "slabs": 4,
+      "checks": [
+        {
+          "slot": 0,
+          "exact_dose_subinterval": [
+            "128898317/100000000",
+            "107550459/80000000"
+          ],
+          "passes_body_J_monotonicity_log_rho_and_radial_bound": true,
+          "J_enclosure_exact": [
+            "2829126032933949547768083173089664681423528893839/5806472199499649594247174504988991957778560118784",
+            "17729101945532402991778931452809555972991790866447/11612944398999299188494349009977983915557120237568"
+          ],
+          "minimum_monotonicity_exact": "24883614516330546803351688869444527726015091317647062189843679959/639683898465171679343044408554983893368970729497750196046852259840",
+          "maximum_bulk_log_rho_exact": "148243653273451/281474976710656",
+          "radial_nodal_margin_exact": "643995820387853733/18446744073709551616",
+          "insufficient_J_slots": [],
+          "insufficient_monotonicity_slots": [],
+          "insufficient_bulk_log_rho_slots": []
+        },
+        {
+          "slot": 1,
+          "exact_dose_subinterval": [
+            "107550459/80000000",
+            "279955661/200000000"
+          ],
+          "passes_body_J_monotonicity_log_rho_and_radial_bound": true,
+          "J_enclosure_exact": [
+            "360177146321968484588168154228109993260647994535821/743228441535955148063638336638590970595655695204352",
+            "21851311782535192624478246572305306089039938184965/14292854644922214385839198781511364819147224907776"
+          ],
+          "minimum_monotonicity_exact": "1503901349694694445014849986302733734815657685750372711116892277/52956328579631513240410797477867331916043299251408969122998763520",
+          "maximum_bulk_log_rho_exact": "148851758422797/281474976710656",
+          "radial_nodal_margin_exact": "2577054874594145917/73786976294838206464",
+          "insufficient_J_slots": [],
+          "insufficient_monotonicity_slots": [],
+          "insufficient_bulk_log_rho_slots": []
+        },
+        {
+          "slot": 2,
+          "exact_dose_subinterval": [
+            "279955661/200000000",
+            "582070349/400000000"
+          ],
+          "passes_body_J_monotonicity_log_rho_and_radial_bound": true,
+          "J_enclosure_exact": [
+            "252010342595768807571207373638830900319287067439/522909316277641989725824345665049932407825301504",
+            "13876177550126688118521903439410399972715830118485/9063761482145794488580955324860865495068971892736"
+          ],
+          "minimum_monotonicity_exact": "11188472781773608276088198267949243536784711610090100916649206239/631267987445984638426814730913832072616068452536065062905118064640",
+          "maximum_bulk_log_rho_exact": "149449508719445/281474976710656",
+          "radial_nodal_margin_exact": "1289063233818438451/36893488147419103232",
+          "insufficient_J_slots": [],
+          "insufficient_monotonicity_slots": [],
+          "insufficient_bulk_log_rho_slots": []
+        },
+        {
+          "slot": 3,
+          "exact_dose_subinterval": [
+            "582070349/400000000",
+            "2360271/1562500"
+          ],
+          "passes_body_J_monotonicity_log_rho_and_radial_bound": true,
+          "J_enclosure_exact": [
+            "27397587540778088192537280765721980627761720107995/57171418579688857543356795126045459276588899631104",
+            "71212337982616617617573726192650369714283316174093/46451777595997196753977396039911935662228480950272"
+          ],
+          "minimum_monotonicity_exact": "262975114297019751652934824608999260437350430963375692113231/38272707027367621946331780523270029433570392703565826192276060",
+          "maximum_bulk_log_rho_exact": "37509211266261/70368744177664",
+          "radial_nodal_margin_exact": "2579198060679607887/73786976294838206464",
+          "insufficient_J_slots": [],
+          "insufficient_monotonicity_slots": [],
+          "insufficient_bulk_log_rho_slots": []
+        }
+      ]
+    }
+  ],
+  "tested_domain_scope": "body monotonicity determinant axis and bulk exact-spatial log expansion only",
+  "surface_and_cached_domains_certified": false,
+  "root_or_loading_branch_proved": false,
+  "force_H_AD_solve_moment_or_spatial_integration_jobs": 0
+}

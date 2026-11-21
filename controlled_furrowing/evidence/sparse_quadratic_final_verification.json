@@ -1,0 +1,32 @@
+{
+  "status": "PASS_SCOPED_DISCRETE_REFINEMENT_COMPONENT",
+  "checks": {
+    "frozen_sparse_source_unchanged": true,
+    "all_targets_completed": true,
+    "all_11_path_checks_pass": true,
+    "crossquadrature_and_geometry_pass": true,
+    "stability_diagnostic_complete": true,
+    "document_no_dead_local_links": true,
+    "document_display_delimiters_balanced": true,
+    "utf8_no_replacement_characters": true
+  },
+  "file_sha256": {
+    "scripts/sparse_quadratic.py": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+    "docs/SPARSE-NEWTON.md": "1079a3bb76c1ecb59c0643c2e0641423a63e6bb0c16a2a2551972d1455b6e768",
+    "evidence/sparse_quadratic_verification.json": "0179016bf02a4e0992c26c7749962045cc3e8545a103b8dc4a91d3bbf3641b15",
+    "evidence/joint_refinement_sparse_review.json": "7aaa5d51c95fcce6c6b44b4227930b6a0ebedecc187ab352b0b718e431ff6342",
+    "evidence/sparse_quadratic_24_verification.json": "3deede0813983cbd432eece1d01d8b0a1d3844d43d669da0c08ed4bc80df6371",
+    "evidence/sparse_quadratic_24_crosscheck.json": "985813063db95b27fa6698858405ff2de73c93d13877a0c5a0cb2379fd03d115",
+    "evidence/sparse_quadratic_24_final_geometry.json": "1dac0b508c58b743f945c7046d3a8803e58e7ccdcc7c9f8097731f2bbed406e8",
+    "evidence/sparse_equilibrium_stability_diagnostic.json": "b76453131c0edeacc2cbb250723c142f86d7f7e14b95a402f81407fbc9d2f58f",
+    "evidence/sparse_quadratic_24_comparison.json": "1010ff60600ae8c4ca88d76b1982b0fde5445f8ea60262a838d443a74f4b5fae",
+    "runs/sparse_quadratic/24_vs16_highQ.png": "eb85bfcf6f7574d26f23fad4cd4106b67dcfa1c823d3d52893e6e445ec08aa59",
+    "runs/sparse_quadratic/final_crosscheck.py": "882fb03caa4ed61b636954a532c95b5631bf5c0e4ed235c1507e1fc3e802e1ed",
+    "runs/sparse_quadratic/stability_diagnostic.py": "5fb113f91692689aa35083806520452bf7daa33e1e9dcaecf4915b25610aeefd",
+    "runs/sparse_quadratic/replot24.py": "c4e760c711ad7354a31e86854c1c1a7f95d6037824ecef7bdf7a974de4c3fc25",
+    "runs/sparse_quadratic/verify24.py": "b21ac064ae1f1ca4b0667301d85352f0243fde11f433e61b322e1f654f066bf8"
+  },
+  "visual_inspection": "Final corrected24_vs16_highQ.png inspected: all titles/axes visible, both full profiles and differences shown. Initial clipped image retained.",
+  "limits": "Mesh/PDE accuracy unresolved; stationarity/geometry/curvature checks do not establish global minimum, branch uniqueness, measured parameters or biological prediction. No originality claim.",
+  "dead_local_links": []
+}

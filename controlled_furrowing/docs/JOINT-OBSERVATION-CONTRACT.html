@@ -1,0 +1,149 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JOINT-OBSERVATION-CONTRACT</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>The four small-region observations: source definitions and model contract</h1>
+<p><strong>The public source supports four distinct mechanical summaries, but does not completely specify one reproducible four-output operator.</strong> Maximum shortening has a clear spatial-and-temporal definition. The ordering of averaging and temporal maximization, component-reference construction, spatial weights and ROI transport require explicit assumptions or alternatives. A model can implement these alternatives precisely; numerical precision does not by itself establish equivalence to the original analysis.</p>
+<p>This is a source/observation audit, not a fit or a choice of discrepancy allowances. It reads no held-out response values and changes no frozen protocol. The <a href="../evidence/joint_observation_contract_audit.json">audit receipt</a> retains exact locators, source hashes, small-block workbook checks, illustrative trace comparisons and the distinctions below.</p>
+<h2>What is being imaged?</h2>
+<p>Countryman et al., <a href="https://doi.org/10.1038/s41467-025-62483-6">Nature Communications 16, 7665 (2025)</a>, activate lateral membranes in a small region of the dorsal Drosophila embryonic epithelium. “Apical” is the outer surface near the embryo's envelope; “basal” is the inner cellular boundary. During cellularization, cells continue extending basally, so height may increase even without activation. A response relative to the initial image therefore differs from shortening relative to an unactivated counterfactual.</p>
+<p>Primary locators are Methods Sec15, <strong>Furrow segmentation and tracking</strong>; Sec16, <strong>Furrow quantification</strong>; Sec17, <strong>Activation quantification</strong>; Results Sec5; and Fig2a–e. Sec15 specifies automated apical segmentation, manual confirmation/correction, manual basal segmentation and PIVlab motion correction. Sec16 restricts height measurements to coverslip-adjacent tissue to reduce curvature artifacts. These facts do not provide the actual segmentation masks, registration fields or source-analysis code.</p>
+<h2>Definitions established by the source</h2>
+<p>Use a registered image coordinate <span class="math" data-tex="x"></span> and time <span class="math" data-tex="t"></span>. With the upward/apical-positive z convention shown in Fig2b, write the apical and basal surface heights as <span class="math" data-tex="z_a(x,t)"></span> and <span class="math" data-tex="z_b(x,t)"></span>. The source-compatible vertical height is</p>
+<div class="math display" data-tex="
+H(x,t)=z_a(x,t)-z_b(x,t).
+"></div>
+
+<p>This is a difference in z-position. It is not a surface-normal thickness, a curved cell-fiber length, or the distance between unrelated material points. Let <span class="math" data-tex="H_{\rm ref}(x,t)"></span> denote the embryo-specific no-activation reference height, constructed using cellularization in nonactivated tissue. Positive shortening is</p>
+<div class="math display" data-tex="
+s(x,t)=H_{\rm ref}(x,t)-H(x,t).
+"></div>
+
+<p>The article describes an embryo-specific reference <strong>curve</strong> and cellularization rate, rather than publishing a full spatial reference field; the <span class="math" data-tex="x"></span>-dependence above permits a declared spatial implementation. A spatially uniform curve is one possible convention, not an additional measured height map.</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Source-supported content</th>
+<th>Remaining implementation detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum shortening <span class="math" data-tex="M"></span></td>
+<td>Sec16 maximizes shortening over both time and position within the tracked activation region. Fig2d contrasts this with region-averaged shortening.</td>
+<td>Exact masks, discrete/interpolated time treatment, ROI transport, treatment of missing boundary pixels and the reference-growth fit.</td>
+</tr>
+<tr>
+<td>Region-averaged shortening <span class="math" data-tex="V"></span></td>
+<td>Sec16 describes a temporally maximal shortening summary averaged over points in the activation region; Fig2c/d and the workbook explicitly label it region-averaged.</td>
+<td>The prose does not unambiguously order maximum and averaging. It does not give area-versus-section weights or a full ROI sampling rule.</td>
+</tr>
+<tr>
+<td>Apical shortening <span class="math" data-tex="A"></span></td>
+<td>Fig2e caption calls it maximum shortening of the apical surface. Fig2b explicitly plots <strong>regional mean</strong> surface positions over time.</td>
+<td>Whether Fig2e takes a temporal maximum of the mean motion or a pointwise spatial/temporal maximum; exact apical reference and any drift/growth treatment.</td>
+</tr>
+<tr>
+<td>Basal shortening <span class="math" data-tex="B"></span></td>
+<td>Fig2e gives the basal counterpart; Sec16 recognizes ongoing basal extension and uses a reference-height correction.</td>
+<td>Its component-specific counterfactual, aggregation and timing; the height reference alone does not specify these.</td>
+</tr>
+</tbody>
+</table>
+<p>For a specified tracked ROI <span class="math" data-tex="D(t)"></span>, the clearest total-maximum operator is</p>
+<div class="math display" data-tex="
+M=\sup_{t\in\mathcal T}\ \sup_{x\in D(t)}s(x,t).
+"></div>
+
+<p>The experimental window is finite: Fig2a indicates preactivation acquisition, a 40 s activation step and approximately 5 min response imaging; Sec5 describes stopping before later developmental compression. These schematic labels do not define one exact common end time. The published weak, moderate and strong example traces span respectively −44.3 to 402.6 s, −71.7 to 517.9 s and −44.5 to 321 s. Per-record cohort windows and reference fits are not tabulated. An equilibrium at one selected load is not automatically this temporal maximum.</p>
+<h2>The averaging ambiguity is mathematically consequential</h2>
+<p>For a fixed registered domain and normalized nonnegative spatial weight <span class="math" data-tex="w"></span>, two possible readings are</p>
+<div class="math display" data-tex="
+V_1=\sup_t\int_Ds(x,t)w(x)\,dx,
+\qquad
+V_2=\int_D\sup_ts(x,t)w(x)\,dx.
+"></div>
+
+<p>In general <span class="math" data-tex="V_1\le V_2\le M"></span>, not <span class="math" data-tex="V_1=V_2"></span>. For two equally weighted locations, suppose shortening is <span class="math" data-tex="(2,0)"></span> at one time and <span class="math" data-tex="(0,2)"></span> at another. Then <span class="math" data-tex="V_1=1"></span>, <span class="math" data-tex="V_2=2"></span>, and <span class="math" data-tex="M=2"></span>. This exact counterexample shows why a wording ambiguity cannot be resolved by swapping the operations. Moving domains require an explicit registration/material chart before <span class="math" data-tex="V_2"></span> can even be defined consistently across time.</p>
+<p>The public table alone does not distinguish these cases. A static-state observer has no temporal ordering, so both reduce to the same spatial mean at that state. Taking the maximum of static-state means over a supplied path implements <span class="math" data-tex="V_1"></span>, not necessarily <span class="math" data-tex="V_2"></span>.</p>
+<h2>Component references and aggregation</h2>
+<p>If component reference surfaces <span class="math" data-tex="z_{a,\rm ref}"></span>, <span class="math" data-tex="z_{b,\rm ref}"></span> are declared with difference <span class="math" data-tex="H_{\rm ref}"></span>, define signed motions</p>
+<div class="math display" data-tex="
+a=z_{a,\rm ref}-z_a,\qquad b=z_b-z_{b,\rm ref},\qquad s=a+b.
+"></div>
+
+<p>Apical inward/downward motion and basal outward/upward motion then contribute positively to shortening. Local values may be negative; the source does not justify silently clipping every local displacement or shortening to its positive part.</p>
+<p>The height reference alone does not determine the component references: adding a common function <span class="math" data-tex="c(x,t)"></span> to both references leaves <span class="math" data-tex="H_{\rm ref}"></span> and <span class="math" data-tex="s"></span> unchanged, while changing <span class="math" data-tex="a"></span> and <span class="math" data-tex="b"></span> oppositely. This is a statement about the information in a height difference, <strong>not</strong> evidence that the authors failed to register their images. The published Fig2b coordinate frame and preactivation traces provide meaningful anchors. A fixed preactivation apical reference with the growth correction allocated basally is a plausible model convention, but its exact use in Fig2e is not stated in the inspected methods/caption/workbook. The audit does not assume that <span class="math" data-tex="c"></span> is constant in time.</p>
+<p>Two component-aggregation alternatives must be distinguished:</p>
+<div class="math display" data-tex="
+A_{\rm point}=\sup_{t,x}a(x,t),\quad B_{\rm point}=\sup_{t,x}b(x,t),
+"></div>
+
+<div class="math display" data-tex="
+A_{\rm mean}=\sup_t\int_Da(x,t)w(x)\,dx,\quad
+B_{\rm mean}=\sup_t\int_Db(x,t)w(x)\,dx.
+"></div>
+
+<p>They are generally different. Under the pointwise convention, <span class="math" data-tex="M\le A_{\rm point}+B_{\rm point}"></span>, but equality need not hold because the extrema can occur at different places/times. Nor may one assume <span class="math" data-tex="M\ge A_{\rm point}"></span>: the basal contribution at the apical maximum can be negative. Under the regional-mean convention the appropriate sum bounds <span class="math" data-tex="V_1"></span>, not necessarily the spatial maximum <span class="math" data-tex="M"></span>.</p>
+<p>There is a useful but limited source clue. The published weak/moderate/strong Fig2b <strong>regional-mean apical traces</strong> have max-minus-min excursions 3, 6, 13 µm. These match Fig2e entries in source columns B,F,K; the trace captions' rounded doses 0.15, 0.46, 1.29 also match those columns' doses. This supports investigating a regional-mean component interpretation. It does not prove specimen identity or the exact reference/aggregation rule. In particular, max-minus-min of a trace is not generally the same as change from its chosen preactivation reference.</p>
+<h2>What the workbook verifies—and what its column order assumes</h2>
+<p>Only the small-region blocks were read in this audit:</p>
+<table>
+<thead>
+<tr>
+<th>Sheet/block</th>
+<th>Source rows and columns</th>
+<th>Verified content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fig2c</td>
+<td>A4 dose label; A5 regional-mean label; B:R observations</td>
+<td>17 dose/mean pairs.</td>
+</tr>
+<tr>
+<td>Fig2d</td>
+<td>A4 maximum label; A5 regional-mean label; B:R</td>
+<td>The same 17 regional means, exactly, with paired maximum shortening.</td>
+</tr>
+<tr>
+<td>Fig2e</td>
+<td>A4 apical label; A5 basal label; B:R</td>
+<td>17 paired apical/basal entries. No dose or specimen-ID crosskey is provided in this block.</td>
+</tr>
+<tr>
+<td>Fig4h, small block only</td>
+<td>A3 identifies 18 µm region; A4 dose; A5 shortening; B:R</td>
+<td>Dose/max entries exactly duplicate the small Fig2c/d data. Rows containing larger-region responses were not read.</td>
+</tr>
+</tbody>
+</table>
+<p>Fig2c and 2d link through the same 17 unique regional-mean values; Fig4h's small block independently repeats the dose/maximum arrays. Fig2e's component pairs have no such dose/mean/maximum key. Their linkage to the other panels relies on the author's common B:R ordering. The canonical source-column table retains that assumption; it is not upgraded to a verified biological-ID crosswalk.</p>
+<p>The apical/basal pairing <strong>within</strong> each Fig2e column is author-supported: it is one paired coordinate of that panel's scatter plot. Preserving the common B:R ordering across panels is a reasonable documented default. A conservative identity-sensitivity alternative is one unknown permutation of the 17 <strong>paired</strong> component columns relative to the verified dose/mean/maximum records. This does not permit apical and basal values to be shuffled independently or claim the authors' ordering was wrong. Under that alternative, exact bipartite matching can test whether one cohort-wide permutation satisfies both component constraints. A perfect matching using guaranteed-compatible interval edges certifies existence; a Hall-deficient set even in the possible-compatible graph certifies impossibility. Intermediate cases remain unresolved. This is standard matching used to represent missing identity information, not a new inference principle or a selected fitting convention.</p>
+<p>All 17 records satisfy mean≤maximum and maximum≤apical+basal in the canonical table. Four component sums equal the maximum; the others are strictly larger. These checks establish consistency with the pointwise convention, but do not prove it over other aggregation/reference choices. The four summaries are also not four statistically independent measurements: they share images, registration and reference calculations.</p>
+<h2>A precise conditional static observer for the current model</h2>
+<p>Let an axisymmetric deformation produce radially single-valued apical/basal graphs <span class="math" data-tex="Z_a(r),Z_b(r)"></span> over a common <strong>current physical radius</strong>. Let <span class="math" data-tex="Z_a^0(r),Z_b^0(r)"></span> be declared reference graphs. For a declared current-radius ROI <span class="math" data-tex="0\le r\le R"></span>, define</p>
+<div class="math display" data-tex="
+a(r)=Z_a^0(r)-Z_a(r),\quad
+b(r)=Z_b(r)-Z_b^0(r),\quad
+s(r)=a(r)+b(r).
+"></div>
+
+<p>For the present flat static reference, choosing <span class="math" data-tex="Z_a^0=H"></span>, <span class="math" data-tex="Z_b^0=0"></span> means no cellularization growth and no added reference drift. That is an explicit idealization. Compute <span class="math" data-tex="M=\max_rs(r)"></span>, and choose a declared spatial mean:</p>
+<div class="math display" data-tex="
+\langle s\rangle_{\rm line}=\frac1R\int_0^Rs(r)\,dr,
+\qquad
+\langle s\rangle_{\rm disk}=\frac2{R^2}\int_0^Rr\,s(r)\,dr.
+"></div>
+
+<p>The first is the mean along a symmetric diameter section; the second is the projected-area mean over a disk. Neither is automatically the source's sampling weight. Averaging over actual curved surface area is a third, different convention and is not supplied by the phrase region-averaged. Component outputs can similarly be either maxima or regional means. One observer variant therefore consists of an explicit ROI convention, spatial weighting, component aggregation and reference convention.</p>
+<p>The old <code>maximum_activated_column_shortening</code> pairs top and bottom material nodes sharing an <strong>initial</strong> radial label. Their current radii can differ. It is not generally the difference between the two graphs at one current radius. Likewise, <code>central_apical_displacement</code> and <code>central_basal_displacement</code> measure axis motion, not extrema or regional means. Even an old maximum over initial-radius boundary nodes remains a conditional material-node proxy. The current observer must invert the separate radial surface maps and evaluate both boundaries at the same current radius. Sampled piecewise-linear interpolation of a quadratic boundary is not its exact geometry.</p>
+<h2>Quasistatic peak extension and limits</h2>
+<p>For a declared common branch indexed by activation amplitude <span class="math" data-tex="\alpha\in[0,gI]"></span>, a conditional peak operator replaces experimental time maximization with maximization over that branch. For example,</p>
+<div class="math display" data-tex="
+M_{\rm qs}(I)=\sup_{0\le\alpha\le gI}\max_rs(r;\alpha),\qquad
+V_{1,\rm qs}(I)=\sup_{0\le\alpha\le gI}\langle s(\cdot;\alpha)\rangle.
+"></div>
+
+<p>Regional-mean components require separate maxima over <span class="math" data-tex="\alpha"></span> of their means; pointwise components require separate maxima over radius and <span class="math" data-tex="\alpha"></span>. Summing those separately maximized components does not reconstruct <span class="math" data-tex="M_{\rm qs}"></span>. A local-peak-then-average variant needs a shared radial chart across states.</p>
+<p>If only a finite set of saved states is supplied, the output is a maximum over that <strong>finite set</strong>. It does not certify the continuous-branch supremum or experimental time-window coverage. Dynamics, pulse history, relaxation, growing reference heights, branches and specimen geometry can change the actual temporal response. None is established by renaming a static state a peak.</p>
+<p>For joint inference, freeze one cohort-wide operator or explicitly carry a family of alternatives. “Compatible under at least one common operator variant” and “compatible under every allowed variant” have different quantifiers. Selecting a different convenient operator for each observation after seeing its residual would not be the same contract. This audit chooses no fitting tolerance, noise law, favored variant or parameter set; it supplies the definitions and unresolved source limits needed to make that subsequent calculation assessable.</p>
+<p>The unmodified Fig2 source image already retained at <code>literature/material_constraints_countryman_fig2.jpg</code> was inspected locally and checked against the official checksum. No source pixels are embedded here or authorized for adapted public publication.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

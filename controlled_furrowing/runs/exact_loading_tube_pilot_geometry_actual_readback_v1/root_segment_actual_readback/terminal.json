@@ -1,0 +1,8 @@
+{
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 19784,
+  "source_sha256": "63eeda982845aafbbe5c39b3fb6ac8e76561cb783063e61e035184e43c934f4d",
+  "producer_receipt_sha256": "97953457778f39011d96cc071070d2d5d342eb362f7e8e904d28d7947fd6e214",
+  "receipt_sha256": "3e3cbe88a83aa3e8723b4c2ebfbf28809944ee5734850f0206c3b97269b74513"
+}

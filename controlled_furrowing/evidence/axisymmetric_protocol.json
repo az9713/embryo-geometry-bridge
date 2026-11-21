@@ -1,0 +1,30 @@
+{
+  "scope": "Synthetic idealized axisymmetric mechanics, no biological fit",
+  "base": {
+    "nr": 8,
+    "nz": 4,
+    "height": 1.0,
+    "outer_radius": 3.0,
+    "patch_radius": 0.28,
+    "activation_z_min": 0.22,
+    "activation_z_max": 0.84,
+    "mu": 1.0,
+    "bulk": 50.0,
+    "basal_area_modulus": 2.0,
+    "apical_area_modulus": 0.2,
+    "reference_curvature": 0.0,
+    "quadrature": 2,
+    "surface_quadrature": 3,
+    "radial_inner_cells": 0
+  },
+  "activation_strength": 0.2,
+  "thresholds": {
+    "zero_displacement": 1e-08,
+    "affine_J_and_volume_error": 1e-12,
+    "affine_energy_relative_error": 1e-11,
+    "directional_derivative_relative_error": 2e-05,
+    "scaled_gradient_linf": 1e-07,
+    "material_scale_displacement": 2e-05
+  },
+  "sensitivity_rule": "Report mesh/quadrature/domain/surface/reference-curvature changes; no empirical differences relabeled rigorous error bounds."
+}

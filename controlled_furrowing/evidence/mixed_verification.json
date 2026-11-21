@@ -1,0 +1,41 @@
+{
+  "status": "PASS_SYNTHETIC_COMPONENT",
+  "checks": {
+    "zero_reference_stationary": true,
+    "reference_positive_Bernstein": true,
+    "pressure_mass_positive_definite": true,
+    "isochoric_affine_J": true,
+    "isochoric_affine_volume": true,
+    "isochoric_affine_energy": true,
+    "affine_orientation_certificate": true,
+    "AD_vs_FD": true,
+    "activated_stationarity_positive_cert": true,
+    "projected_pressure_constraint": true,
+    "material_scaling": true
+  },
+  "affine_energy_relative_error": 1.8197071974553294e-16,
+  "AD_relative_error": 6.780656071144596e-08,
+  "scaling_displacement_difference": 2.6369471051168603e-09,
+  "active_summary": {
+    "converged": true,
+    "scaled_free_force_linf": 3.5536759390267e-10,
+    "minimum_J": 0.9371047556464253,
+    "maximum_J": 1.0830772944561862,
+    "sampled_minimum_J": 0.9621392849444116,
+    "sampled_maximum_J": 1.0682914270422201,
+    "pressure_constraint_linf": 2.710505431213761e-20,
+    "relative_volume_change": -2.149671650064633e-05
+  },
+  "seconds": 1.713343100011116,
+  "source_sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+  "parent_sources": {
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41"
+  },
+  "limitations": [
+    "Projected logJ does not imply pointwise J close to1",
+    "Bernstein floating-point sufficiency, not validated interval bound",
+    "No mesh-convergence or biology claim",
+    "Quadratic surfaces require an appropriate observer"
+  ]
+}

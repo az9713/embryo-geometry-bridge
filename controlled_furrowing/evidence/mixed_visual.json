@@ -1,0 +1,9 @@
+{
+  "file": "controlled_furrowing\\runs\\mixed_checks\\mixed_summary.png",
+  "sha256": "7ffe31e8240f143296eef012ce19fb5ab222d3f63e829b7103ea71a69c1138b0",
+  "inputs": {
+    "controlled_furrowing\\evidence\\mixed_fixed10.json": "d3ca3d3b34bed60644355e66c47003d7cb625abc0c42778915b8a159478a14aa",
+    "controlled_furrowing\\evidence\\mixed_kernel_audit.json": "877287fdde60c7298009ea259191a18df178c9d7c675a1c6d39b321e0acc8b6b"
+  },
+  "scope": "Synthetic fixedgain10; plottedJvaluesareactualquadrature, notBernsteinbounds; overallcontinuationfailuresretained"
+}

@@ -1,0 +1,38 @@
+# Recentring the unresolved negative-contrast K cached root
+
+The unresolved state is **\(\mathrm K_-\)**, `max_negative_contrast_change_small_16` in wave 03, source record `optoGEF2_small_col_K`. The frozen dose is \(128898317/100000000\). The target drive is that exact dose times the saved exact gain for the negative-contrast material. The cached binary preconditioner, energy normalization, reference configuration, site maps and weights are all identified in the receipt. The preceding independent run recorded three successful wave cases and kept this case unresolved. [Wave 03 independent receipt](../independent_actual_preparation/actual_replay/wave_03/receipt.json) · [Exact \(\mathrm K_-\) case](../independent_actual_preparation/actual_replay/wave_03/max_negative_contrast_change_small_16.json)
+
+## What another radius would need
+
+Write \(u_0\) for the original saved free vector, \(F_Q\) for the exact-real binary \(Q8/S12\) cached force and \(R\) for the original binary preconditioner. The 611 independently enclosed signed rows give \(\|RF_Q(u_0)\|_\infty \simeq 6.29013363362\times10^{-11}\). This value is tightly enclosed at the archived point. The center derivative defect bound is \(Z_0\simeq 1.43601704357\times10^{-6}\). At radius \(2^{-36}\), the independently recomputed whole-cube variation is approximately \(0.07358305808\). With the archived upper residual bound \(\eta\), the strict sufficient test \(\eta+zr<r\) fails at that radius. Its left-hand side is about \(6.39721\times10^{-11}\) against \(r\simeq1.45519\times10^{-11}\).
+
+| Radius | Required whole-cube \(z< 1-\eta/r\) | Existing evidence |
+|:--|--:|:--|
+| \(2^{-36}\) | \(-3.3225469\) | Independent \(z\le 0.0735844941\). No strict pass with this center residual. |
+| \(2^{-35}\) | \(-1.1612735\) | Even a zero derivative defect would leave this sufficient test unclosed. |
+| \(2^{-34}\) | \(-0.0806367\) | Producer \(z\le 0.2786711837\). The center residual alone exhausts the radius. |
+| \(2^{-33}\) | \(0.4596816\) | Untested. Fresh whole-cube variation would need to be below \(0.4596801991\) at the archived center bound. |
+| \(2^{-32}\) | \(0.7298408\) | Producer \(z\le 1.1147836345\), insufficient at this radius or by direct restriction to \(2^{-33}\). |
+
+The table uses the independent signed residual upper bound. The signed residual lower bound itself already exceeds \(2^{-34}\), so tightening only that residual enclosure cannot make any radius at or below \(2^{-34}\) pass the same centered test. The \(2^{-34}\) derivative enclosure covers a smaller domain than \(2^{-33}\) and cannot be extended to it. An actual \(2^{-33}\) attempt would need fresh reviewed analytic margins and a whole-cube variation enclosure. A linear scaling of the independent small-radius bound would give \(z\simeq0.588666\) at \(2^{-33}\). The corresponding continuous radius diagnostic leaves at most \(4.94403\times10^{-11}\) in \(r(1-z)\), below the center residual. This scaling is a diagnostic of the observed enclosure sizes. It gives no bound at a different radius and no exclusion of a root. [Retained producer radius attempts](../actual/wave_03/max_negative_contrast_change_small_16/results.json) · [Exact scalar readback](receipt.json)
+
+## Advance the same operator by changing its numerical center
+
+Prepare one explicit recenter attempt. Once admitted, use the saved independent signed \(RF_Q(u_0)\) rows to propose a single new binary64 vector:
+
+\[
+u_{1,i}=\operatorname{round}_{64}\!\left(
+  \operatorname{exact}(u_{0,i})-\frac{\underline{(RF_Q)}_i+\overline{(RF_Q)}_i}{2}\right).
+\]
+
+Evaluate the rational subtraction first, then round once to the nearest binary64 coordinate. The stored binary values define the new exact dyadic center. This step just chooses a seed. A frozen seed carries no force, derivative, domain or root certificate. The infinity norm of the **unrounded nominal correction** is about \(6.29013\times10^{-11}\), or \(2.10719\times10^{-9}\) µm at the frozen 33.5 µm length scale. The original dimensionless observer error goal is \(0.0036736383467030134\), equivalent to \(0.1230668846\) µm before observer-map amplification. The nominal correction is about \(1.71224\times10^{-8}\) of that dimensionless goal. The actual binary shift and post-proof root error must be computed separately.
+
+1. **Verify the new cache represents the same potential.** Decode the admitted old cache with its full tensor-key, type, shape and canonical raw-byte identity. Save an exclusive new cache archive whose only numerical tensor change is `u`. Compare *every* other tensor's shape, dtype and C-order binary hash with the independently retained per-tensor SHA-256s. This includes `reference`, `free`, connectivity, interpolation and gradient tensors, `active`, all bulk/site and face quadrature weights and reference metrics, `energy_scale`, and the original binary `preconditioner`. Bind both the cache header and old/new payload SHA-256s. The exact dose, candidate material, singleton cell, gain and unrounded requested drive stay bound to the original case. The changed payload digest reflects a different evaluation center for the same \(F_Q\).
+2. **Reassemble fresh certified data at \(u_1\).** Use the reviewed independent cached AD at the exact drive to rebuild all 9,216 bulk and 288 surface sites at the new center. Recompute \(F_Q(u_1)\), the signed \(RF_Q(u_1)\), the point \(Z_{0,1}=\|I-RH_Q(u_1)\|_\infty\) enclosure and point analytic margins. Reuse \(R\) only after exact identity checks. Freshly bound variation and positive cached analytic domains over the entire \(u_1\)-centered trial cube. Start with radius \(r_1=2^{-36}\). Require \(z_1<1\) and \(\eta_1+z_1r_1<r_1\). Retain any failure. A whole-body spatial domain, if later needed, requires a separate geometry check around the new center.
+3. **Apply the original observer budget from the original saved field.** Compute \(\sigma=\|u_1-u_0\|_\infty\) from the *two exact decoded binary vectors*. If the strict root test passes, the new posterior error is \(e_1=\eta_1/(1-z_1)\). With the original exact binary addition gap \(\xi_0\), the bound for transferring the unchanged observer is \(33.5(\sigma+e_1+\xi_0)\) µm per coordinate. The independent original goal \(e_{\rm goal}\) already reserves \(\xi_0\). Enforce \(\sigma+e_1<e_{\rm goal}\), equivalently \(\sigma+e_1+\xi_0<e_{\rm goal}+\xi_0\). Keep the original field, saved observer intervals, residuals, frozen predictions and scores as the comparison authority. Any later accepted observer envelope must use the same frozen variant, reference and ROI.
+
+## Next admitted work
+
+Prepare one case-specific source and independent audit with exclusive outputs for the recentered trial. Use exact, synthetic rejection fixtures for a wrong K branch, changed exact drive or singleton cell, any changed tensor other than `u`, silently rounded weights or \(R\), copied point/cube AD metadata from \(u_0\), contraction equality, and a shift-inclusive posterior that reaches or exceeds the original observer goal. Include a test where posterior alone passes the observer goal but posterior plus shift fails. The actual trial requires independent source admission followed by independently reproduced fresh point and whole-cube bounds, exact tensor identity and observed process termination. The original unresolved attempt remains part of the record.
+
+This design reads existing records and computes exact scalar diagnostics. It does not construct \(u_1\), generate a cache, assemble a model, run AD or solve for any equilibrium. Its scientific scope is one frozen cached-quadrature operator and its original observer budget.

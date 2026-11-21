@@ -1,0 +1,2132 @@
+{
+  "status": "PASS_INDEPENDENT_STATIC_KINEMATIC_REVIEW",
+  "checks": {
+    "exact_canonical_floor_matches": true,
+    "canonical_floor_3p47510056": true,
+    "source_has17_records": true,
+    "optoGEF2_small_col_B_LP_optimum": true,
+    "optoGEF2_small_col_B_constructive_Linf_exact": true,
+    "optoGEF2_small_col_B_mean_identity_exact": true,
+    "optoGEF2_small_col_B_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_B_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_B_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_C_LP_optimum": true,
+    "optoGEF2_small_col_C_constructive_Linf_exact": true,
+    "optoGEF2_small_col_C_mean_identity_exact": true,
+    "optoGEF2_small_col_C_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_C_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_C_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_D_LP_optimum": true,
+    "optoGEF2_small_col_D_constructive_Linf_exact": true,
+    "optoGEF2_small_col_D_mean_identity_exact": true,
+    "optoGEF2_small_col_D_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_D_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_D_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_E_LP_optimum": true,
+    "optoGEF2_small_col_E_constructive_Linf_exact": true,
+    "optoGEF2_small_col_E_mean_identity_exact": true,
+    "optoGEF2_small_col_E_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_E_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_E_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_F_LP_optimum": true,
+    "optoGEF2_small_col_F_constructive_Linf_exact": true,
+    "optoGEF2_small_col_F_mean_identity_exact": true,
+    "optoGEF2_small_col_F_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_F_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_F_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_G_LP_optimum": true,
+    "optoGEF2_small_col_G_constructive_Linf_exact": true,
+    "optoGEF2_small_col_G_mean_identity_exact": true,
+    "optoGEF2_small_col_G_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_G_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_G_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_H_LP_optimum": true,
+    "optoGEF2_small_col_H_constructive_Linf_exact": true,
+    "optoGEF2_small_col_H_mean_identity_exact": true,
+    "optoGEF2_small_col_H_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_H_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_H_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_I_LP_optimum": true,
+    "optoGEF2_small_col_I_constructive_Linf_exact": true,
+    "optoGEF2_small_col_I_mean_identity_exact": true,
+    "optoGEF2_small_col_I_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_I_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_I_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_J_LP_optimum": true,
+    "optoGEF2_small_col_J_constructive_Linf_exact": true,
+    "optoGEF2_small_col_J_mean_identity_exact": true,
+    "optoGEF2_small_col_J_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_J_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_J_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_K_LP_optimum": true,
+    "optoGEF2_small_col_K_constructive_Linf_exact": true,
+    "optoGEF2_small_col_K_mean_identity_exact": true,
+    "optoGEF2_small_col_K_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_K_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_K_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_L_LP_optimum": true,
+    "optoGEF2_small_col_L_constructive_Linf_exact": true,
+    "optoGEF2_small_col_L_mean_identity_exact": true,
+    "optoGEF2_small_col_L_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_L_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_L_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_M_LP_optimum": true,
+    "optoGEF2_small_col_M_constructive_Linf_exact": true,
+    "optoGEF2_small_col_M_mean_identity_exact": true,
+    "optoGEF2_small_col_M_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_M_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_M_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_N_LP_optimum": true,
+    "optoGEF2_small_col_N_constructive_Linf_exact": true,
+    "optoGEF2_small_col_N_mean_identity_exact": true,
+    "optoGEF2_small_col_N_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_N_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_N_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_O_LP_optimum": true,
+    "optoGEF2_small_col_O_constructive_Linf_exact": true,
+    "optoGEF2_small_col_O_mean_identity_exact": true,
+    "optoGEF2_small_col_O_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_O_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_O_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_P_LP_optimum": true,
+    "optoGEF2_small_col_P_constructive_Linf_exact": true,
+    "optoGEF2_small_col_P_mean_identity_exact": true,
+    "optoGEF2_small_col_P_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_P_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_P_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_Q_LP_optimum": true,
+    "optoGEF2_small_col_Q_constructive_Linf_exact": true,
+    "optoGEF2_small_col_Q_mean_identity_exact": true,
+    "optoGEF2_small_col_Q_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_Q_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_Q_disk_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_R_LP_optimum": true,
+    "optoGEF2_small_col_R_constructive_Linf_exact": true,
+    "optoGEF2_small_col_R_mean_identity_exact": true,
+    "optoGEF2_small_col_R_V_leq_M_and_M_belowH": true,
+    "optoGEF2_small_col_R_line_positive_thickness_and_moments": true,
+    "optoGEF2_small_col_R_disk_positive_thickness_and_moments": true,
+    "own_HopcroftKarp_first_perfect_threshold_matches": true,
+    "permutation_exact895512391_over300000000": true,
+    "all_lower_critical_thresholds_infeasible": true,
+    "independent_sorted_bottleneck_matches": true,
+    "Hall_witness_neighbors_exact": true,
+    "Hall_witness_strict_deficiency": true,
+    "predecessor_is_largest_lower_critical_cost": true,
+    "optoGEF2_small_col_O_permutation_constructive_primal": true,
+    "optoGEF2_small_col_I_permutation_constructive_primal": true,
+    "optoGEF2_small_col_B_permutation_constructive_primal": true,
+    "optoGEF2_small_col_C_permutation_constructive_primal": true,
+    "optoGEF2_small_col_Q_permutation_constructive_primal": true,
+    "optoGEF2_small_col_F_permutation_constructive_primal": true,
+    "optoGEF2_small_col_P_permutation_constructive_primal": true,
+    "optoGEF2_small_col_N_permutation_constructive_primal": true,
+    "optoGEF2_small_col_M_permutation_constructive_primal": true,
+    "optoGEF2_small_col_L_permutation_constructive_primal": true,
+    "optoGEF2_small_col_D_permutation_constructive_primal": true,
+    "optoGEF2_small_col_J_permutation_constructive_primal": true,
+    "optoGEF2_small_col_R_permutation_constructive_primal": true,
+    "optoGEF2_small_col_G_permutation_constructive_primal": true,
+    "optoGEF2_small_col_E_permutation_constructive_primal": true,
+    "optoGEF2_small_col_H_permutation_constructive_primal": true,
+    "optoGEF2_small_col_K_permutation_constructive_primal": true,
+    "sorted_uncrossing_fixture_2_0": true,
+    "sorted_uncrossing_fixture_2_1": true,
+    "sorted_uncrossing_fixture_2_2": true,
+    "sorted_uncrossing_fixture_2_3": true,
+    "sorted_uncrossing_fixture_3_0": true,
+    "sorted_uncrossing_fixture_3_1": true,
+    "sorted_uncrossing_fixture_3_2": true,
+    "sorted_uncrossing_fixture_3_3": true,
+    "sorted_uncrossing_fixture_4_0": true,
+    "sorted_uncrossing_fixture_4_1": true,
+    "sorted_uncrossing_fixture_4_2": true,
+    "sorted_uncrossing_fixture_4_3": true,
+    "sorted_uncrossing_fixture_5_0": true,
+    "sorted_uncrossing_fixture_5_1": true,
+    "sorted_uncrossing_fixture_5_2": true,
+    "sorted_uncrossing_fixture_5_3": true,
+    "sorted_uncrossing_fixture_6_0": true,
+    "sorted_uncrossing_fixture_6_1": true,
+    "sorted_uncrossing_fixture_6_2": true,
+    "sorted_uncrossing_fixture_6_3": true
+  },
+  "independent_exact_canonical_floor": "43438757/12500000",
+  "independent_canonical_witnesses": [
+    "optoGEF2_small_col_G"
+  ],
+  "independent_permutation_floor": "895512391/300000000",
+  "all17_LP_and_exact_primal_rows": [
+    {
+      "record": "optoGEF2_small_col_B",
+      "data_M_V_A_B": [
+        "77722063/25000000",
+        "60944403/100000000",
+        "3",
+        "24355301/50000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "77722063/25000000",
+        "29412463/18750000",
+        "612233801/300000000",
+        "-141634393/300000000"
+      ],
+      "own_per_row_floor": "287766199/300000000",
+      "LP_success": true,
+      "LP_optimal_delta": 0.9592206633333332,
+      "LP_solution_M_V_A_B_delta": [
+        4.068103183333333,
+        1.5686646933333332,
+        2.0407793366666667,
+        -0.47211464333333325,
+        0.9592206633333332
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "77722063/25000000",
+            "0",
+            "-115516337/25000000"
+          ],
+          "mean_S": "29412463/18750000",
+          "mean_B": "-141634393/300000000",
+          "J_lower_bound": "759777937/837500000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "77722063/25000000",
+            "0",
+            "-115516337/37500000"
+          ],
+          "mean_S": "29412463/18750000",
+          "mean_B": "-141634393/300000000",
+          "J_lower_bound": "759777937/837500000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "data_M_V_A_B": [
+        "121538093/25000000",
+        "13129681/10000000",
+        "4",
+        "21538093/25000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "121538093/25000000",
+        "93593249/37500000",
+        "422572219/150000000",
+        "-48199223/150000000"
+      ],
+      "own_per_row_floor": "177427781/150000000",
+      "LP_success": true,
+      "LP_optimal_delta": 1.1828518733333335,
+      "LP_solution_M_V_A_B_delta": [
+        6.044375593333333,
+        2.4958199733333335,
+        2.8171481266666665,
+        -0.32132815333333353,
+        1.1828518733333335
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "121538093/25000000",
+            "0",
+            "-177427781/25000000"
+          ],
+          "mean_S": "93593249/37500000",
+          "mean_B": "-48199223/150000000",
+          "J_lower_bound": "715961907/837500000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "121538093/25000000",
+            "0",
+            "-177427781/37500000"
+          ],
+          "mean_S": "93593249/37500000",
+          "mean_B": "-48199223/150000000",
+          "J_lower_bound": "715961907/837500000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "data_M_V_A_B": [
+        "831533939/100000000",
+        "207297287/50000000",
+        "6",
+        "231533939/100000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "831533939/100000000",
+        "1660723087/300000000",
+        "276612127/60000000",
+        "69415613/75000000"
+      ],
+      "own_per_row_floor": "83387873/60000000",
+      "LP_success": true,
+      "LP_optimal_delta": 1.3897978833333342,
+      "LP_solution_M_V_A_B_delta": [
+        9.705137273333335,
+        5.535743623333334,
+        4.610202116666666,
+        0.9255415066666659,
+        1.3897978833333342
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "831533939/100000000",
+            "0",
+            "-83387873/10000000"
+          ],
+          "mean_S": "1660723087/300000000",
+          "mean_B": "69415613/75000000",
+          "J_lower_bound": "2518466061/3350000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "831533939/100000000",
+            "0",
+            "-83387873/15000000"
+          ],
+          "mean_S": "1660723087/300000000",
+          "mean_B": "69415613/75000000",
+          "J_lower_bound": "2518466061/3350000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "data_M_V_A_B": [
+        "14418011/1562500",
+        "344582899/50000000",
+        "8",
+        "1420587/390625"
+      ],
+      "own_correction_M_V_A_B": [
+        "14418011/1562500",
+        "211833489/25000000",
+        "320915921/50000000",
+        "102751057/50000000"
+      ],
+      "own_per_row_floor": "79084079/50000000",
+      "LP_success": true,
+      "LP_optimal_delta": 1.5816815799999997,
+      "LP_solution_M_V_A_B_delta": [
+        10.80920862,
+        8.47333956,
+        6.41831842,
+        2.0550211400000005,
+        1.5816815799999997
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "14418011/1562500",
+            "0",
+            "-56564061/25000000"
+          ],
+          "mean_S": "211833489/25000000",
+          "mean_B": "102751057/50000000",
+          "J_lower_bound": "37925739/52343750"
+        },
+        "disk": {
+          "S_coefficients": [
+            "14418011/1562500",
+            "0",
+            "-18854687/12500000"
+          ],
+          "mean_S": "211833489/25000000",
+          "mean_B": "102751057/50000000",
+          "J_lower_bound": "37925739/52343750"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "data_M_V_A_B": [
+        "382404181/50000000",
+        "16539897/6250000",
+        "6",
+        "182404181/50000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "382404181/50000000",
+        "747042533/150000000",
+        "109982999/30000000",
+        "98563769/75000000"
+      ],
+      "own_per_row_floor": "70017001/30000000",
+      "LP_success": true,
+      "LP_optimal_delta": 2.333900033333333,
+      "LP_solution_M_V_A_B_delta": [
+        9.981983653333334,
+        4.980283553333333,
+        3.666099966666667,
+        1.3141835866666671,
+        2.333900033333333
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "382404181/50000000",
+            "0",
+            "-40017001/5000000"
+          ],
+          "mean_S": "747042533/150000000",
+          "mean_B": "98563769/75000000",
+          "J_lower_bound": "1292595819/1675000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "382404181/50000000",
+            "0",
+            "-40017001/7500000"
+          ],
+          "mean_S": "747042533/150000000",
+          "mean_B": "98563769/75000000",
+          "J_lower_bound": "1292595819/1675000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "data_M_V_A_B": [
+        "636662153/50000000",
+        "151029611/25000000",
+        "13",
+        "86662153/25000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "636662153/50000000",
+        "1903257/200000",
+        "119061243/12500000",
+        "-215361/25000000"
+      ],
+      "own_per_row_floor": "43438757/12500000",
+      "LP_success": true,
+      "LP_optimal_delta": 3.4751005599999996,
+      "LP_solution_M_V_A_B_delta": [
+        16.20834362,
+        9.516285,
+        9.52489944,
+        -0.008614439999999668,
+        3.4751005599999996
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "636662153/50000000",
+            "0",
+            "-482543709/50000000"
+          ],
+          "mean_S": "1903257/200000",
+          "mean_B": "-215361/25000000",
+          "J_lower_bound": "1038337847/1675000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "636662153/50000000",
+            "0",
+            "-160847903/25000000"
+          ],
+          "mean_S": "1903257/200000",
+          "mean_B": "-215361/25000000",
+          "J_lower_bound": "1038337847/1675000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "data_M_V_A_B": [
+        "1049577729/100000000",
+        "138155819/20000000",
+        "9",
+        "436972161/100000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "1049577729/100000000",
+        "2718530351/300000000",
+        "1026903467/150000000",
+        "664723417/300000000"
+      ],
+      "own_per_row_floor": "323096533/150000000",
+      "LP_success": true,
+      "LP_optimal_delta": 2.1539768866666664,
+      "LP_solution_M_V_A_B_delta": [
+        12.649754176666665,
+        9.061767836666666,
+        6.846023113333334,
+        2.2157447233333336,
+        2.1539768866666664
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "1049577729/100000000",
+            "0",
+            "-107550709/25000000"
+          ],
+          "mean_S": "2718530351/300000000",
+          "mean_B": "664723417/300000000",
+          "J_lower_bound": "2300422271/3350000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "1049577729/100000000",
+            "0",
+            "-107550709/37500000"
+          ],
+          "mean_S": "2718530351/300000000",
+          "mean_B": "664723417/300000000",
+          "J_lower_bound": "2300422271/3350000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "data_M_V_A_B": [
+        "138419619/100000000",
+        "46946903/100000000",
+        "0",
+        "138419619/100000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "138419619/100000000",
+        "9292537/12000000",
+        "-22868179/75000000",
+        "323786141/300000000"
+      ],
+      "own_per_row_floor": "22868179/75000000",
+      "LP_success": true,
+      "LP_optimal_delta": 0.30490905333333324,
+      "LP_solution_M_V_A_B_delta": [
+        1.6891052433333331,
+        0.7743780833333332,
+        -0.30490905333333324,
+        1.0792871366666668,
+        0.30490905333333324
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "138419619/100000000",
+            "0",
+            "-22868179/12500000"
+          ],
+          "mean_S": "9292537/12000000",
+          "mean_B": "323786141/300000000",
+          "J_lower_bound": "3211580381/3350000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "138419619/100000000",
+            "0",
+            "-22868179/18750000"
+          ],
+          "mean_S": "9292537/12000000",
+          "mean_B": "323786141/300000000",
+          "J_lower_bound": "3211580381/3350000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "data_M_V_A_B": [
+        "772032047/100000000",
+        "431605203/100000000",
+        "8",
+        "272032047/100000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "772032047/100000000",
+        "1935242453/300000000",
+        "439893289/75000000",
+        "175669297/300000000"
+      ],
+      "own_per_row_floor": "160106711/75000000",
+      "LP_success": true,
+      "LP_optimal_delta": 2.1347561466666667,
+      "LP_solution_M_V_A_B_delta": [
+        9.855076616666667,
+        6.4508081766666665,
+        5.865243853333333,
+        0.5855643233333332,
+        2.1347561466666667
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "772032047/100000000",
+            "0",
+            "-47606711/12500000"
+          ],
+          "mean_S": "1935242453/300000000",
+          "mean_B": "175669297/300000000",
+          "J_lower_bound": "2577967953/3350000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "772032047/100000000",
+            "0",
+            "-47606711/18750000"
+          ],
+          "mean_S": "1935242453/300000000",
+          "mean_B": "175669297/300000000",
+          "J_lower_bound": "2577967953/3350000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "data_M_V_A_B": [
+        "631048581/50000000",
+        "209579799/25000000",
+        "13",
+        "143145743/50000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "631048581/50000000",
+        "1631464939/150000000",
+        "315202771/30000000",
+        "13862771/37500000"
+      ],
+      "own_per_row_floor": "74797229/30000000",
+      "LP_success": true,
+      "LP_optimal_delta": 2.493240966666667,
+      "LP_solution_M_V_A_B_delta": [
+        15.114212586666667,
+        10.876432926666666,
+        10.506759033333333,
+        0.3696738933333332,
+        2.493240966666667
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "631048581/50000000",
+            "0",
+            "-65420201/12500000"
+          ],
+          "mean_S": "1631464939/150000000",
+          "mean_B": "13862771/37500000",
+          "J_lower_bound": "1043951419/1675000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "631048581/50000000",
+            "0",
+            "-65420201/18750000"
+          ],
+          "mean_S": "1631464939/150000000",
+          "mean_B": "13862771/37500000",
+          "J_lower_bound": "1043951419/1675000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "data_M_V_A_B": [
+        "972802387/100000000",
+        "78522659/20000000",
+        "7",
+        "191783337/50000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "972802387/100000000",
+        "38933193/6250000",
+        "469682207/100000000",
+        "153248881/100000000"
+      ],
+      "own_per_row_floor": "230317793/100000000",
+      "LP_success": true,
+      "LP_optimal_delta": 2.30317793,
+      "LP_solution_M_V_A_B_delta": [
+        12.0312018,
+        6.22931088,
+        4.69682207,
+        1.5324888100000003,
+        2.30317793
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "972802387/100000000",
+            "0",
+            "-1049613897/100000000"
+          ],
+          "mean_S": "38933193/6250000",
+          "mean_B": "153248881/100000000",
+          "J_lower_bound": "2377197613/3350000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "972802387/100000000",
+            "0",
+            "-349871299/50000000"
+          ],
+          "mean_S": "38933193/6250000",
+          "mean_B": "153248881/100000000",
+          "J_lower_bound": "2377197613/3350000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "data_M_V_A_B": [
+        "12",
+        "49035501/12500000",
+        "12",
+        "56849631/25000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "12",
+        "36866109/5000000",
+        "213740457/25000000",
+        "-3676239/3125000"
+      ],
+      "own_per_row_floor": "86259543/25000000",
+      "LP_success": true,
+      "LP_optimal_delta": 3.4503817199999998,
+      "LP_solution_M_V_A_B_delta": [
+        15.45038172,
+        7.3732218,
+        8.54961828,
+        -1.1763964799999997,
+        3.4503817199999998
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "12",
+            "0",
+            "-69401673/5000000"
+          ],
+          "mean_S": "36866109/5000000",
+          "mean_B": "-3676239/3125000",
+          "J_lower_bound": "43/67"
+        },
+        "disk": {
+          "S_coefficients": [
+            "12",
+            "0",
+            "-23133891/2500000"
+          ],
+          "mean_S": "36866109/5000000",
+          "mean_B": "-3676239/3125000",
+          "J_lower_bound": "43/67"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "data_M_V_A_B": [
+        "335013163/50000000",
+        "70862683/25000000",
+        "8",
+        "140052651/100000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "335013163/50000000",
+        "301390823/60000000",
+        "1743398081/300000000",
+        "-118221983/150000000"
+      ],
+      "own_per_row_floor": "656601919/300000000",
+      "LP_success": true,
+      "LP_optimal_delta": 2.188673063333334,
+      "LP_solution_M_V_A_B_delta": [
+        8.888936323333333,
+        5.023180383333334,
+        5.811326936666666,
+        -0.7881465533333338,
+        2.188673063333334
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "335013163/50000000",
+            "0",
+            "-503124863/100000000"
+          ],
+          "mean_S": "301390823/60000000",
+          "mean_B": "-118221983/150000000",
+          "J_lower_bound": "1339986837/1675000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "335013163/50000000",
+            "0",
+            "-503124863/150000000"
+          ],
+          "mean_S": "301390823/60000000",
+          "mean_B": "-118221983/150000000",
+          "J_lower_bound": "1339986837/1675000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "data_M_V_A_B": [
+        "120752823/50000000",
+        "0",
+        "2",
+        "20752823/50000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "120752823/50000000",
+        "40250941/50000000",
+        "59749059/50000000",
+        "-9749059/25000000"
+      ],
+      "own_per_row_floor": "40250941/50000000",
+      "LP_success": true,
+      "LP_optimal_delta": 0.80501882,
+      "LP_solution_M_V_A_B_delta": [
+        3.22007528,
+        0.80501882,
+        1.19498118,
+        -0.38996236,
+        0.80501882
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "120752823/50000000",
+            "0",
+            "-120752823/25000000"
+          ],
+          "mean_S": "40250941/50000000",
+          "mean_B": "-9749059/25000000",
+          "J_lower_bound": "1554247177/1675000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "120752823/50000000",
+            "0",
+            "-40250941/12500000"
+          ],
+          "mean_S": "40250941/50000000",
+          "mean_B": "-9749059/25000000",
+          "J_lower_bound": "1554247177/1675000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "data_M_V_A_B": [
+        "583168051/100000000",
+        "279789867/100000000",
+        "6",
+        "6184669/3125000"
+      ],
+      "own_correction_M_V_A_B": [
+        "583168051/100000000",
+        "678744571/150000000",
+        "1281880459/300000000",
+        "75608683/300000000"
+      ],
+      "own_per_row_floor": "518119541/300000000",
+      "LP_success": true,
+      "LP_optimal_delta": 1.7270651366666665,
+      "LP_solution_M_V_A_B_delta": [
+        7.558745646666667,
+        4.524963806666666,
+        4.272934863333333,
+        0.2520289433333336,
+        1.7270651366666665
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "583168051/100000000",
+            "0",
+            "-392015011/100000000"
+          ],
+          "mean_S": "678744571/150000000",
+          "mean_B": "75608683/300000000",
+          "J_lower_bound": "2766831949/3350000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "583168051/100000000",
+            "0",
+            "-392015011/150000000"
+          ],
+          "mean_S": "678744571/150000000",
+          "mean_B": "75608683/300000000",
+          "J_lower_bound": "2766831949/3350000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "data_M_V_A_B": [
+        "49233871/10000000",
+        "151460771/100000000",
+        "4",
+        "58266129/50000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "49233871/10000000",
+        "4097269/1500000",
+        "834928513/300000000",
+        "-15474713/300000000"
+      ],
+      "own_per_row_floor": "365071487/300000000",
+      "LP_success": true,
+      "LP_optimal_delta": 1.2169049566666668,
+      "LP_solution_M_V_A_B_delta": [
+        6.1402920566666666,
+        2.7315126666666667,
+        2.7830950433333332,
+        -0.05158237666666676,
+        1.2169049566666668
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "49233871/10000000",
+            "0",
+            "-65756233/10000000"
+          ],
+          "mean_S": "4097269/1500000",
+          "mean_B": "-15474713/300000000",
+          "J_lower_bound": "285766129/335000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "49233871/10000000",
+            "0",
+            "-65756233/15000000"
+          ],
+          "mean_S": "4097269/1500000",
+          "mean_B": "-15474713/300000000",
+          "J_lower_bound": "285766129/335000000"
+        }
+      }
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "data_M_V_A_B": [
+        "259169279/25000000",
+        "243760223/50000000",
+        "9",
+        "84169279/25000000"
+      ],
+      "own_correction_M_V_A_B": [
+        "259169279/25000000",
+        "92154917/12500000",
+        "65028111/10000000",
+        "43479113/50000000"
+      ],
+      "own_per_row_floor": "24971889/10000000",
+      "LP_success": true,
+      "LP_optimal_delta": 2.4971888999999994,
+      "LP_solution_M_V_A_B_delta": [
+        12.86396006,
+        7.372393359999999,
+        6.502811100000001,
+        0.8695822600000005,
+        2.4971888999999994
+      ],
+      "variants": {
+        "line": {
+          "S_coefficients": [
+            "259169279/25000000",
+            "0",
+            "-44915667/5000000"
+          ],
+          "mean_S": "92154917/12500000",
+          "mean_B": "43479113/50000000",
+          "J_lower_bound": "578330721/837500000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "259169279/25000000",
+            "0",
+            "-14971889/2500000"
+          ],
+          "mean_S": "92154917/12500000",
+          "mean_B": "43479113/50000000",
+          "J_lower_bound": "578330721/837500000"
+        }
+      }
+    }
+  ],
+  "HopcroftKarp_critical_threshold_scan": [
+    {
+      "threshold": "0",
+      "matching_size": 0
+    },
+    {
+      "threshold": "684037/150000000",
+      "matching_size": 1
+    },
+    {
+      "threshold": "6785257/300000000",
+      "matching_size": 2
+    },
+    {
+      "threshold": "7122809/300000000",
+      "matching_size": 3
+    },
+    {
+      "threshold": "50942/1171875",
+      "matching_size": 3
+    },
+    {
+      "threshold": "3855451/50000000",
+      "matching_size": 4
+    },
+    {
+      "threshold": "2417651/25000000",
+      "matching_size": 4
+    },
+    {
+      "threshold": "12761407/100000000",
+      "matching_size": 4
+    },
+    {
+      "threshold": "10102447/75000000",
+      "matching_size": 4
+    },
+    {
+      "threshold": "20972543/150000000",
+      "matching_size": 4
+    },
+    {
+      "threshold": "21786703/150000000",
+      "matching_size": 5
+    },
+    {
+      "threshold": "14634231/100000000",
+      "matching_size": 5
+    },
+    {
+      "threshold": "54547169/300000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "2175329/10000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "5490331/25000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "13784147/60000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "35778899/150000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "1614067/6250000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "82894601/300000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "336289/1200000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "16985411/60000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "43793093/150000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "720359/2400000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "22868179/75000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "93539077/300000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "23467091/75000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "20346691/60000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "8494807/25000000",
+      "matching_size": 6
+    },
+    {
+      "threshold": "107130313/300000000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "3624787/10000000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "27552209/75000000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "4915253/12500000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "41306321/100000000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "496993/1200000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "42072911/100000000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "63244583/150000000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "46139873/100000000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "11567487/25000000",
+      "matching_size": 7
+    },
+    {
+      "threshold": "35188711/75000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "5890427/12500000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "47456047/100000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "145031113/300000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "25129727/50000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "151107649/300000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "8631677/15000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "5409029/9375000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "58082279/100000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "60187081/100000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "63366519/100000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "16149247/25000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "194558743/300000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "197249831/300000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "5067541/7500000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "33835571/50000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "204626723/300000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "41272501/60000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "2264727/3125000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "11075701/15000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "15161033/20000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "38846921/50000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "233712851/300000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "236742391/300000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "40250941/50000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "122623739/150000000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "615037/750000",
+      "matching_size": 8
+    },
+    {
+      "threshold": "62318389/75000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "83628951/100000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "125946953/150000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "84621463/100000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "63548419/75000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "127703921/150000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "91343089/100000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "68910641/75000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "55234991/60000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "287766199/300000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "6108033/6250000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "301763699/300000000",
+      "matching_size": 9
+    },
+    {
+      "threshold": "155194481/150000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "160893469/150000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "81337769/75000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "111563867/100000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "111978069/100000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "85113799/75000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "114022831/100000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "344013493/300000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "174355301/150000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "349100827/300000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "44020853/37500000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "177427781/150000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "180344959/150000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "181306399/150000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "365071487/300000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "73260841/60000000",
+      "matching_size": 10
+    },
+    {
+      "threshold": "47656619/37500000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "127622083/100000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "191657417/150000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "16051477/12500000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "130929193/100000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "98600219/75000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "2489737/1875000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "12497773/9375000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "405296113/300000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "2028127/1500000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "83387873/60000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "425207969/300000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "109730161/75000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "146401823/100000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "439249931/300000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "55957519/37500000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "449273449/300000000",
+      "matching_size": 11
+    },
+    {
+      "threshold": "90506441/60000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "91117571/60000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "18627953/12000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "155971201/100000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "93917071/60000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "472891177/300000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "79084079/50000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "39773993/25000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "47944823/30000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "121538093/75000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "244804297/150000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "33243531/20000000",
+      "matching_size": 12
+    },
+    {
+      "threshold": "63555931/37500000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "128614669/75000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "258266129/150000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "518119541/300000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "525458077/300000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "533203159/300000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "33329441/18750000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "181966007/100000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "136859839/75000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "273755659/150000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "547768643/300000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "548083207/300000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "45851149/25000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "550746179/300000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "68968009/37500000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "138089869/75000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "46629319/25000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "566895587/300000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "190731689/100000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "286262177/150000000",
+      "matching_size": 13
+    },
+    {
+      "threshold": "584511601/300000000",
+      "matching_size": 14
+    },
+    {
+      "threshold": "6136243/3125000",
+      "matching_size": 14
+    },
+    {
+      "threshold": "49670519/25000000",
+      "matching_size": 14
+    },
+    {
+      "threshold": "3978757/2000000",
+      "matching_size": 14
+    },
+    {
+      "threshold": "39534917/18750000",
+      "matching_size": 14
+    },
+    {
+      "threshold": "160106711/75000000",
+      "matching_size": 14
+    },
+    {
+      "threshold": "323096533/150000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "215482879/100000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "647806363/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "651961471/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "656601919/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "657437473/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "5158303/2343750",
+      "matching_size": 15
+    },
+    {
+      "threshold": "333306299/150000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "2229907/1000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "675414299/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "338074913/150000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "5307959/2343750",
+      "matching_size": 15
+    },
+    {
+      "threshold": "679748039/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "14168191/6250000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "22711921/10000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "137003699/60000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "230317793/100000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "345641333/150000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "233299859/100000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "70017001/30000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "700237129/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "732065069/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "732853717/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "736619429/300000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "147393001/60000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "369116363/150000000",
+      "matching_size": 15
+    },
+    {
+      "threshold": "74797229/30000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "374537849/150000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "24971889/10000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "50064167/20000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "24080923/9375000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "771056977/300000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "96423283/37500000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "65382253/25000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "157716263/60000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "6571599/2500000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "39612109/15000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "24934669/9375000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "133352657/50000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "803776807/300000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "805071913/300000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "161478739/60000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "101041177/37500000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "808755841/300000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "813347591/300000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "409464161/150000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "137013757/50000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "10291001/3750000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "831533939/300000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "2170603/781250",
+      "matching_size": 16
+    },
+    {
+      "threshold": "281354607/100000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "211098277/75000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "169890343/60000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "109888531/37500000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "44010977/15000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "176776081/60000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "74425479/25000000",
+      "matching_size": 16
+    },
+    {
+      "threshold": "895512391/300000000",
+      "matching_size": 17
+    }
+  ],
+  "direct_Hall_witness_verification": {
+    "left_size": 16,
+    "neighbor_size": 15,
+    "previous_threshold": "74425479/25000000"
+  },
+  "brute_force_sorted_matching_fixtures": [
+    {
+      "n": 2,
+      "x": [
+        "30/7",
+        "3/7"
+      ],
+      "y": [
+        "-2/11",
+        "1"
+      ],
+      "brute_and_sorted_optimum": "23/7"
+    },
+    {
+      "n": 2,
+      "x": [
+        "-3/7",
+        "2"
+      ],
+      "y": [
+        "-5/11",
+        "-7/11"
+      ],
+      "brute_and_sorted_optimum": "27/11"
+    },
+    {
+      "n": 2,
+      "x": [
+        "22/7",
+        "-2/7"
+      ],
+      "y": [
+        "10/11",
+        "1"
+      ],
+      "brute_and_sorted_optimum": "15/7"
+    },
+    {
+      "n": 2,
+      "x": [
+        "31/7",
+        "30/7"
+      ],
+      "y": [
+        "14/11",
+        "32/11"
+      ],
+      "brute_and_sorted_optimum": "232/77"
+    },
+    {
+      "n": 3,
+      "x": [
+        "-5/7",
+        "-17/7",
+        "-10/7"
+      ],
+      "y": [
+        "17/11",
+        "-15/11",
+        "3/11"
+      ],
+      "brute_and_sorted_optimum": "174/77"
+    },
+    {
+      "n": 3,
+      "x": [
+        "27/7",
+        "1",
+        "31/7"
+      ],
+      "y": [
+        "-10/11",
+        "8/11",
+        "24/11"
+      ],
+      "brute_and_sorted_optimum": "241/77"
+    },
+    {
+      "n": 3,
+      "x": [
+        "13/7",
+        "29/7",
+        "16/7"
+      ],
+      "y": [
+        "2",
+        "10/11",
+        "16/11"
+      ],
+      "brute_and_sorted_optimum": "15/7"
+    },
+    {
+      "n": 3,
+      "x": [
+        "11/7",
+        "-10/7",
+        "-16/7"
+      ],
+      "y": [
+        "-12/11",
+        "-17/11",
+        "-4/11"
+      ],
+      "brute_and_sorted_optimum": "149/77"
+    },
+    {
+      "n": 4,
+      "x": [
+        "10/7",
+        "9/7",
+        "18/7",
+        "-5/7"
+      ],
+      "y": [
+        "-8/11",
+        "-1",
+        "-15/11",
+        "-14/11"
+      ],
+      "brute_and_sorted_optimum": "254/77"
+    },
+    {
+      "n": 4,
+      "x": [
+        "-13/7",
+        "29/7",
+        "34/7",
+        "24/7"
+      ],
+      "y": [
+        "15/11",
+        "30/11",
+        "-9/11",
+        "10/11"
+      ],
+      "brute_and_sorted_optimum": "214/77"
+    },
+    {
+      "n": 4,
+      "x": [
+        "38/7",
+        "-11/7",
+        "-5/7",
+        "-18/7"
+      ],
+      "y": [
+        "4/11",
+        "-13/11",
+        "-6/11",
+        "3"
+      ],
+      "brute_and_sorted_optimum": "17/7"
+    },
+    {
+      "n": 4,
+      "x": [
+        "-8/7",
+        "31/7",
+        "13/7",
+        "13/7"
+      ],
+      "y": [
+        "18/11",
+        "15/11",
+        "-14/11",
+        "1/11"
+      ],
+      "brute_and_sorted_optimum": "215/77"
+    },
+    {
+      "n": 5,
+      "x": [
+        "36/7",
+        "5",
+        "37/7",
+        "-6/7",
+        "-5/7"
+      ],
+      "y": [
+        "1/11",
+        "28/11",
+        "13/11",
+        "-3/11",
+        "9/11"
+      ],
+      "brute_and_sorted_optimum": "46/11"
+    },
+    {
+      "n": 5,
+      "x": [
+        "4",
+        "17/7",
+        "-1",
+        "4/7",
+        "-12/7"
+      ],
+      "y": [
+        "-15/11",
+        "18/11",
+        "-13/11",
+        "37/11",
+        "-18/11"
+      ],
+      "brute_and_sorted_optimum": "135/77"
+    },
+    {
+      "n": 5,
+      "x": [
+        "15/7",
+        "-16/7",
+        "-9/7",
+        "5/7",
+        "2/7"
+      ],
+      "y": [
+        "16/11",
+        "7/11",
+        "2",
+        "-7/11",
+        "38/11"
+      ],
+      "brute_and_sorted_optimum": "148/77"
+    },
+    {
+      "n": 5,
+      "x": [
+        "0",
+        "-1",
+        "1/7",
+        "2/7",
+        "-4/7"
+      ],
+      "y": [
+        "23/11",
+        "13/11",
+        "-18/11",
+        "-14/11",
+        "2"
+      ],
+      "brute_and_sorted_optimum": "13/7"
+    },
+    {
+      "n": 6,
+      "x": [
+        "-1",
+        "27/7",
+        "-1",
+        "16/7",
+        "-6/7",
+        "22/7"
+      ],
+      "y": [
+        "39/11",
+        "-6/11",
+        "-10/11",
+        "7/11",
+        "20/11",
+        "-13/11"
+      ],
+      "brute_and_sorted_optimum": "127/77"
+    },
+    {
+      "n": 6,
+      "x": [
+        "33/7",
+        "34/7",
+        "-6/7",
+        "4",
+        "36/7",
+        "23/7"
+      ],
+      "y": [
+        "-3/11",
+        "-9/11",
+        "15/11",
+        "-12/11",
+        "31/11",
+        "-14/11"
+      ],
+      "brute_and_sorted_optimum": "384/77"
+    },
+    {
+      "n": 6,
+      "x": [
+        "27/7",
+        "1/7",
+        "5",
+        "-2",
+        "37/7",
+        "20/7"
+      ],
+      "y": [
+        "2/11",
+        "3/11",
+        "7/11",
+        "-12/11",
+        "34/11",
+        "9/11"
+      ],
+      "brute_and_sorted_optimum": "46/11"
+    },
+    {
+      "n": 6,
+      "x": [
+        "-3/7",
+        "2",
+        "6/7",
+        "-11/7",
+        "23/7",
+        "5/7"
+      ],
+      "y": [
+        "6/11",
+        "3",
+        "32/11",
+        "-16/11",
+        "29/11",
+        "-15/11"
+      ],
+      "brute_and_sorted_optimum": "137/77"
+    }
+  ],
+  "method": "Direct csv.DictReader+Fraction, independent scipy.linprog HiGHS for all17 four-channel LPs, independent scipy.sparse.csgraph HopcroftKarp scan over every lower critical threshold; no production correction/loading/matching function imported.",
+  "LP_variable_order": [
+    "M",
+    "V",
+    "A",
+    "B",
+    "delta"
+  ],
+  "LP_constraints": "Allfour |x-observed|<=delta; V=A+B; V<=M; M<=H-1e-6; delta>=0; signedA/B/V permitted.",
+  "reviewed_source_sha256": "7ccb63a8ba287c0047437e982b058badc1f895de516102f3c03040327e7c929d",
+  "reviewed_evidence_sha256": "ab9be36dc4b45c8882e67f6a7669a77f015249c252b20d5c00d308683cef9df9",
+  "source_csv_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "limits": [
+    "Conditional STATIC regional means on same ROI/reference/measure only.",
+    "Sharp over independent kinematic fields for each fixed weighting separately; line and disk displayed constructions differ.",
+    "No common material/equilibrium, actual source temporal-peak semantics, noise bound, identified set or confirmed novelty proved.",
+    "Formal continuous extension beyondROI needs the smooth positive-thickness construction in review; source script only computes core moments."
+  ],
+  "document_review_pending": true
+}

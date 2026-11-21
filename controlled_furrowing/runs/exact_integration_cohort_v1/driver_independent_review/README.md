@@ -1,0 +1,11 @@
+# Independent L driver prelaunch review
+
+The [original version review](original_cube_v1_review.json) records 22 passing input, context, exact coordinate-box, preconditioner-norm, incidence and budget checks. The independent box computation evaluated all 32 corners of the five-parameter cell for every free coordinate. The independent norm computation summed exact integer numerators over a common binary denominator in each row. The largest force incidence is 6, and the largest Hessian-row incidence is 72.
+
+The [original surface smoke](original_cube_v1_surface_smoke.json) reproduces a blocking serialization failure on three L edges. Apical edge 11 produces a valid rho enclosure with a 2671-bit denominator. Raising that exact rational to successive powers creates a tail bound whose decimal fraction string exceeds Python 3.13's default 4300-digit limit. The original preparation also omitted two reviewed transitive geometry sources from its protocol. No prelaunch PASS receipt was issued for the original version.
+
+The [gate checker](check_driver_gate.py) uses in-memory receipts to exercise the gate without enabling any runs. The [scalar and box checker](review_prelaunch.py) and [surface smoke](check_selector_smoke.py) can review a versioned L preparation without running the 144-element body job or evaluating any integral, moment-defect, weighted derivative sum, or global matrix product.
+
+The [repaired smoke and guard checks](repaired_L_prelaunch_checks.json) verify outward dyadic rounding of the surface expansion radius while preserving the exact G interval and its midpoint. The previously failing edges pass at orders 19, 18, and 7, including all 36 unweighted cache-site domain checks. Both reviewed transitive geometry sources are bound.
+
+The [final refreeze checks](final_radius_refreeze_checks.json) compare the revised driver and preparation to those reviewed results. The only driver change replaces upper-endpoint equality with containment of the exact selected radius in its audited enclosure. [All 17 selected radii](cohort_radius_ball_containment.json) satisfy containment, and only two equal the upper endpoint. L's coordinate box and scalar budgets are unchanged. The [final gate](../records/optoGEF2_small_col_L/original_cube_v1/domains_prelaunch_independent_review.json) has 44 passing checks and covers L's domain and selector phase.

@@ -1,0 +1,11 @@
+{
+  "status": "RUNNING",
+  "source_sha256": "4682165bf59bd633092c042a7df619c9bc1ad272dc80d1755404c2999a65287f",
+  "protocol_sha256": "9ca811a3e7f9e35346dd28d040ff3f370599e014ce3df942c48d347f6bd2f24a",
+  "preflight_sha256": "90242d2cde1a81c075cf342f716cf8a229f45b5ce3f73778fdd9db6ade249d91",
+  "producer_root_terminal_admission_sha256": "4c56643bdf0c4fdedf5f15f9d51ce89964e3f346f868eddff7ae6a41d3513452",
+  "producer_reduction_input_admission_sha256": "62e6da0ba95c7470b05ffe347adf60846931b92cf13174ba84598de230575efa",
+  "pid": 20640,
+  "root_source_review_sha256": "12e14fb46070d40694c09f3b2a3d76492b1dc85659c7a61c17df6b617f6915e0",
+  "producer_observed_pid": 29204
+}

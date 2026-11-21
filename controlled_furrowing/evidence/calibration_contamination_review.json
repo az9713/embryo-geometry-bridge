@@ -1,0 +1,272 @@
+{
+  "status": "PASS independent exact small-only review; hypothetical exceptions only",
+  "reviewed_source_sha256": "493bfff54c97c17e8886fbe000cd773d15176d0f2436ebe7459c83b03a4ddce0",
+  "root_receipt_sha256": "d2088b54eb62452e47c5a7c5b0cbad0ad288f1fbf39a23bae81c4eb1e261f2f8",
+  "source_csv_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "all_subset_array_sha256": "2dae20429259a58aed2f57b7f52c5ac335268bb47a75c53d4de38267e2497fac",
+  "all_131072_subset_costs_independently_verified": true,
+  "all_17_budget_bounds": [
+    {
+      "k": 0,
+      "retained": 17,
+      "delta_exact": "626388743/200000000",
+      "delta_float": 3.131943715,
+      "independent_graph_maximum_retained": 17,
+      "previous_critical_exact": "616831949/200000000",
+      "previous_graph_maximum_retained": 16,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 1,
+      "retained": 16,
+      "delta_exact": "616831949/200000000",
+      "delta_float": 3.084159745,
+      "independent_graph_maximum_retained": 16,
+      "previous_critical_exact": "427967953/200000000",
+      "previous_graph_maximum_retained": 15,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 2,
+      "retained": 15,
+      "delta_exact": "339195229/200000000",
+      "delta_float": 1.695976145,
+      "independent_graph_maximum_retained": 15,
+      "previous_critical_exact": "300521919/200000000",
+      "previous_graph_maximum_retained": 14,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 3,
+      "retained": 14,
+      "delta_exact": "300521919/200000000",
+      "delta_float": 1.502609595,
+      "independent_graph_maximum_retained": 14,
+      "previous_critical_exact": "11571791/8000000",
+      "previous_graph_maximum_retained": 13,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 4,
+      "retained": 13,
+      "delta_exact": "138772841/100000000",
+      "delta_float": 1.38772841,
+      "independent_graph_maximum_retained": 13,
+      "previous_critical_exact": "4331989/3125000",
+      "previous_graph_maximum_retained": 12,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 5,
+      "retained": 12,
+      "delta_exact": "3880717/3125000",
+      "delta_float": 1.24182944,
+      "independent_graph_maximum_retained": 12,
+      "previous_critical_exact": "227197613/200000000",
+      "previous_graph_maximum_retained": 11,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 6,
+      "retained": 11,
+      "delta_exact": "161507613/200000000",
+      "delta_float": 0.807538065,
+      "independent_graph_maximum_retained": 11,
+      "previous_critical_exact": "150720657/200000000",
+      "previous_graph_maximum_retained": 10,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 7,
+      "retained": 10,
+      "delta_exact": "5073001/8000000",
+      "delta_float": 0.634125125,
+      "independent_graph_maximum_retained": 10,
+      "previous_critical_exact": "28481103/50000000",
+      "previous_graph_maximum_retained": 9,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 8,
+      "retained": 9,
+      "delta_exact": "34691303/100000000",
+      "delta_float": 0.34691303,
+      "independent_graph_maximum_retained": 9,
+      "previous_critical_exact": "63874729/200000000",
+      "previous_graph_maximum_retained": 8,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 9,
+      "retained": 8,
+      "delta_exact": "12900613/200000000",
+      "delta_float": 0.064503065,
+      "independent_graph_maximum_retained": 8,
+      "previous_critical_exact": "1403393/25000000",
+      "previous_graph_maximum_retained": 7,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 10,
+      "retained": 7,
+      "delta_exact": "1403393/25000000",
+      "delta_float": 0.05613572,
+      "independent_graph_maximum_retained": 7,
+      "previous_critical_exact": "0",
+      "previous_graph_maximum_retained": 6,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 11,
+      "retained": 6,
+      "delta_exact": "0",
+      "delta_float": 0.0,
+      "independent_graph_maximum_retained": 6,
+      "previous_critical_exact": null,
+      "previous_graph_maximum_retained": null,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 12,
+      "retained": 5,
+      "delta_exact": "0",
+      "delta_float": 0.0,
+      "independent_graph_maximum_retained": 6,
+      "previous_critical_exact": null,
+      "previous_graph_maximum_retained": null,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 13,
+      "retained": 4,
+      "delta_exact": "0",
+      "delta_float": 0.0,
+      "independent_graph_maximum_retained": 6,
+      "previous_critical_exact": null,
+      "previous_graph_maximum_retained": null,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 14,
+      "retained": 3,
+      "delta_exact": "0",
+      "delta_float": 0.0,
+      "independent_graph_maximum_retained": 6,
+      "previous_critical_exact": null,
+      "previous_graph_maximum_retained": null,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 15,
+      "retained": 2,
+      "delta_exact": "0",
+      "delta_float": 0.0,
+      "independent_graph_maximum_retained": 6,
+      "previous_critical_exact": null,
+      "previous_graph_maximum_retained": null,
+      "origin_anchored_monotone_primal_verified": true
+    },
+    {
+      "k": 16,
+      "retained": 1,
+      "delta_exact": "0",
+      "delta_float": 0.0,
+      "independent_graph_maximum_retained": 6,
+      "previous_critical_exact": null,
+      "previous_graph_maximum_retained": null,
+      "origin_anchored_monotone_primal_verified": true
+    }
+  ],
+  "fixed_dose_unique_positive_nonnegative_source_verified": true,
+  "origin_extension": "All retained doses strictlypositive; linear interpolation from(0,0)tofirstfit andbetweenretainedfittedvalues yields nonnegative nondecreasing curve.",
+  "independent_methods": [
+    "Direct violating-pair presence over all131072subsets",
+    "Exact maximum independent set on conflict graph, recursive include/exclude with caching",
+    "Everyreported retained primal residual/nonnegativeorderchecked exactly"
+  ],
+  "distinct_critical_thresholds": 32,
+  "minimum_hypothetical_exceptions_for_zero_error": 11,
+  "one_exception_matching_omission": [
+    "optoGEF2_small_col_I"
+  ],
+  "scope_limits": [
+    "No actual row excluded from mechanicalfits",
+    "No biologicaloutlier identified",
+    "No noiseor95percentCI estimated",
+    "No physicalidentifiedset computed",
+    "No largeroutcomes read",
+    "Only strictdistinctpositive reporteddoses and nonnegative source responses verified; duplicategeneralization excluded"
+  ],
+  "root_scope_guard_review": "Positive and unique dose guards and nonnegative response/discrepancy guards added; seven adversarial checks pass.",
+  "root_input_and_array_hashes_match": true,
+  "adversarial_guard_tests": [
+    {
+      "test": "maximum_compatible_count([-1], 0)",
+      "raises_ValueError": true,
+      "message": "Nonnegative response and discrepancy units required"
+    },
+    {
+      "test": "maximum_compatible_count([1], -1)",
+      "raises_ValueError": true,
+      "message": "Nonnegative response and discrepancy units required"
+    },
+    {
+      "test": "enumerate_subsets([-1],)",
+      "raises_ValueError": true,
+      "message": "Nonnegative response units required"
+    },
+    {
+      "test": "main_duplicate_dose",
+      "raises_ValueError": true,
+      "message": "This exact diagnostic requires strictly distinct reported doses"
+    },
+    {
+      "test": "main_negative_dose",
+      "raises_ValueError": true,
+      "message": "Strictly positive reported doses required for the origin-anchored construction"
+    },
+    {
+      "test": "main_zero_dose",
+      "raises_ValueError": true,
+      "message": "Strictly positive reported doses required for the origin-anchored construction"
+    },
+    {
+      "test": "main_negative_response",
+      "raises_ValueError": true,
+      "message": "Nonnegative response units required"
+    }
+  ],
+  "independent_replay_python": "from pathlib import Path\nfrom fractions import Fraction as F\nfrom functools import lru_cache\nfrom math import lcm\nimport csv, hashlib, json, numpy as np\np=Path('controlled_furrowing');r=json.loads((p/'evidence/calibration_contamination.json').read_text())\nassert hashlib.sha256((p/'scripts/calibration_contamination.py').read_bytes()).hexdigest()==r['source_sha256']=='493bfff54c97c17e8886fbe000cd773d15176d0f2436ebe7459c83b03a4ddce0'\ns=p/'data/derived/calibration_small_18um.csv';assert hashlib.sha256(s.read_bytes()).hexdigest()==r['input_sha256']\na=p/'runs/calibration_uncertainty/all_subset_costs.npy';assert hashlib.sha256(a.read_bytes()).hexdigest()==r['enumeration_array_sha256']\nrows=sorted(csv.DictReader(s.open()),key=lambda q:F(q['activation_magnitude']))\nx=[F(q['activation_magnitude'])for q in rows];v=[F(q['maximum_shortening_um'])for q in rows]\nassert len(x)==17 and all(t>0 for t in x) and all(t>=0 for t in v) and all(i<j for i,j in zip(x,x[1:]))\nscale=lcm(*(q.denominator for q in v));y=[int(q*scale)for q in v];n=len(y)\nm=np.arange(1<<n,dtype=np.int64);cost=np.zeros(1<<n,dtype=np.int64);cr={0}\nfor i in range(n):\n for j in range(i+1,n):\n  d=max(0,y[i]-y[j]);cr.add(d);pair=(1<<i)|(1<<j);sel=(m&pair)==pair;cost[sel]=np.maximum(cost[sel],d)\nassert np.array_equal(cost,np.load(a,allow_pickle=False));cr=sorted(cr)\n@lru_cache(None)\ndef alpha(t):\n ng=[0]*n\n for i in range(n):\n  for j in range(i+1,n):\n   if y[i]-y[j]>t:ng[i]|=1<<j;ng[j]|=1<<i\n @lru_cache(None)\n def rec(mask):\n  if not mask:return 0\n  vs=[i for i in range(n)if mask&(1<<i)];v=max(vs,key=lambda i:(ng[i]&mask).bit_count())\n  if not ng[v]&mask:return len(vs)\n  rest=mask&~(1<<v);return max(rec(rest),1+rec(rest&~ng[v]))\n return rec((1<<n)-1)\nfor k,b in enumerate(r['bounds']):\n need=n-k;lo=0;hi=len(cr)-1\n while lo<hi:\n  mid=(lo+hi)//2\n  if alpha(cr[mid])>=need:hi=mid\n  else:lo=mid+1\n t=cr[lo];assert F(b['sharp_delta_um'])==F(t,2*scale);assert b['independent_DP_maximum_retained']==alpha(t)\n if lo:\n  assert F(b['previous_critical_delta_um'])==F(cr[lo-1],2*scale);assert b['previous_DP_maximum_retained']==alpha(cr[lo-1])<need\n else:assert b['previous_critical_delta_um']is None\n kept=b['matching_retained_records'];omitted=b['hypothetically_omitted_records']\n assert len(kept)==need and len(omitted)==k and set(kept).isdisjoint(omitted)\n assert set(kept+omitted)==set(z['record_id']for z in rows)\n last=F(0)\n for z in b['matching_construction']:\n  actual=next(q for q in rows if q['record_id']==z['record_id']);fit=F(z['constructed_fitted_um']);yy=F(z['response_um'])\n  assert F(z['dose'])==F(actual['activation_magnitude']) and yy==F(actual['maximum_shortening_um'])\n  assert fit>=last>=0 and abs(fit-yy)<=F(t,2*scale);last=fit\nprint('PASS: all131072subsetcosts and all17sharpbounds independently replayed')\n",
+  "replay_instructions": "From embryo-geometry-bridge, load this JSON and exec its independent_replay_python field in a fresh dictionary. It performs read-only checks and prints PASS.",
+  "document_sha256": "8f1d6ccc9cb29d094a1c2611d885d34e352a5ba817549d2395e8b8392754dcb7",
+  "local_document_links": [
+    {
+      "label": "the implementation",
+      "target": "../scripts/calibration_contamination.py",
+      "exists": true
+    },
+    {
+      "label": "root results",
+      "target": "../evidence/calibration_contamination.json",
+      "exists": true
+    },
+    {
+      "label": "scientific interpretation",
+      "target": "OUTLIER-SENSITIVITY.md",
+      "exists": true
+    },
+    {
+      "label": "review receipt",
+      "target": "../evidence/calibration_contamination_review.json",
+      "exists": true
+    },
+    {
+      "label": "the calibration uncertainty analysis",
+      "target": "CALIBRATION-UNCERTAINTY.md",
+      "exists": true
+    }
+  ],
+  "source_and_root_receipt_still_current": true,
+  "independent_replay_reexecuted_from_saved_code": true,
+  "all_sources_unchanged": true
+}

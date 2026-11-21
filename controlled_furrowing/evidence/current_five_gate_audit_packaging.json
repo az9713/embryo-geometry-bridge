@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_local_references_exist": true,
+    "original_goal_explicitly_incomplete": true,
+    "full_set_requirement_retained": true
+  },
+  "audit_doc_sha256": "986bfe10ffdee5fc5db9f329d61d28c5ddd26e9bca24c050056bc91792ee89a2",
+  "referenced_file_hashes": {
+    "controlled_furrowing\\PLAN.md": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+    "controlled_furrowing\\docs\\ORIGINALITY.md": "3c7d229f3b8820ce8d0097ab1588eaf413753f615caa77856f0b27a327604bb6",
+    "controlled_furrowing\\docs\\TRANSFER-CLAIM-AUDIT.md": "89de3144a927e8bdd81550a13597a97f29c881451d8b112ad86947cb274f3fe9",
+    "controlled_furrowing\\docs\\DATA.md": "28f9ac8da7f6ee40632b83b3a268b7ddd695ba770cd07c4200a3596b13ef44ae",
+    "controlled_furrowing\\docs\\JOINT-OBSERVATION-CONTRACT.md": "d805ff0f9c757d35fdd61283ae1591be3873d73d7daadbaac521020454654d04",
+    "controlled_furrowing\\docs\\PHYSICAL-INFERENCE-READINESS.md": "ccc2be4e064101ba0e4649b35888e03f69e3025a227b1de590d1ccdc0616333e",
+    "controlled_furrowing\\docs\\TEMPORAL-ORDER-ROBUST-WITNESS.md": "6cbfd128b2549914456bedfc603db4fc493f1434dd290e3b7fdabfcc23df34ae",
+    "controlled_furrowing\\docs\\AXISYMMETRIC-MODEL.md": "1258219433890cdf225abb300c690c3f0a16521250a0328b3ac172829beaa5ed",
+    "controlled_furrowing\\docs\\QUADRATIC-ACCURACY.md": "0a4048de93dff571329ce45db81b5ad2803ed28e32978c664114383b79df48df",
+    "controlled_furrowing\\docs\\ACTIVATED-QUADRATURE.md": "c834e5a7ac42ceffe883045d05741a440e2d27d9455b71ce1f97c16a12c5c0d8",
+    "controlled_furrowing\\docs\\JOINT-REFINEMENT.md": "c97181f28feddd530dce4f8e934d71ba26bd7658fb1519cf224e0d5a89943cf6",
+    "controlled_furrowing\\docs\\PHYSICAL-PARAMETER-DOMAIN.md": "8d6a397c6efc3e7a91d9716630355dfb91acbef51928e75437b4ad4b24fd728f",
+    "controlled_furrowing\\docs\\JOINT-GAIN-CALIBRATION.md": "7f4f630ad30a21c365dda140737fff5ad0d6e28237a4a5329c0125f3411bb392",
+    "controlled_furrowing\\docs\\MATERIAL-COHORT-DESCENT.md": "def2ba46d06f6a4603d3a7d7ae099a4e65a05cb9a5e59655f19305e99d65ff88",
+    "controlled_furrowing\\docs\\MATERIAL-COHORT-DIRECT.md": "e70420bf0523f870454fdad72b623e4ddb61098864903397a408a66791c9a897",
+    "controlled_furrowing\\docs\\MATERIAL-COHORT-DIRECT-REVIEW.md": "b6f87c51da6210337b4c74e25134b9d4fb3666c37ac81f7b1d61044a1fe2c6c0",
+    "controlled_furrowing\\docs\\BOUNDED-AFFINE-MINIMAX.md": "df1374fe4e4869db53fd4fa6fd7b3129631a97cb2c77994531ba6aeb3a7402ed",
+    "controlled_furrowing\\docs\\QUADRATIC-ENDPOINT-OBSERVER.md": "9710023f8b8e40e0925a456dc3b337a9bdb6cf9bfffa4fe9ab8370c7b98b13af",
+    "controlled_furrowing\\docs\\ENDPOINT-MESH-FUNCTIONALS.md": "15ead52a37a678e527173f38947ab9d87f2851577860427584ee89b4a6feb26f",
+    "controlled_furrowing\\docs\\ALGEBRAIC-ROOT-CERTIFICATION-PATH.md": "3d2fce3e451819e8e01bab6a4395e270267118adfb2478da5345c35e61b2d655",
+    "controlled_furrowing\\docs\\ALGEBRAIC-ROOT-INDEPENDENT-REVIEW.md": "34a1d24384b8986340263347c63bacf4f2b4324b16c66ebfff4f56b7fa65da2f",
+    "controlled_furrowing\\docs\\ALGEBRAIC-ROOT-OBSERVER-ERROR.md": "d5240307f8cd56db507449bd0f28d9c45a13dfa8bd5d1b1ec4992f9ce5d1134b",
+    "controlled_furrowing\\docs\\SPATIAL-V1-RESULTS.md": "1a8063dcfe44f18fab5156ac3ea152394c753d26aa307ce5e9a3deaf4fd5bf9c",
+    "controlled_furrowing\\docs\\DRAFT-DATA-REQUEST.md": "1316cc76d6aef377122eaba1351c5d71193eb149ef15b72328af08f1a246315c"
+  },
+  "missing": [],
+  "scope": "Current full-requirement mapping and linked snapshot only; original-scope independent review is separate."
+}

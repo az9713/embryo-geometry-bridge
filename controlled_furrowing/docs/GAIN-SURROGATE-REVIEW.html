@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GAIN-SURROGATE-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the first joint-gain surrogate</h1>
+<p><strong>PASS for the exact defined surrogate; its gain support is exhausted.</strong> All four observation variants attain their optimum at the table-imposed cap <span class="math" data-tex="g=15625000/2360271\approx6.6200025336"></span>. This is not a physiological bound or a physical gain estimate. Extending the response table is necessary to investigate the boundary candidate, while the exact result on the declared interval remains valid.</p>
+<p>The reviewed <a href="../../OMITTED.html?path=controlled_furrowing/runs/joint_gain_calibration/protocol.json">protocol</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/joint_gain_calibration/response_table.json">response table</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/joint_gain_calibration/surrogate_candidates.json">candidate certificates</a>, <a href="../scripts/piecewise_gain_minimax.py">optimizer</a>, and <a href="../evidence/piecewise_gain_minimax_independent_review.json">independent receipt</a> are retained separately. No actual fitting run or root writer was rerun for this review. Pure synthetic examples were checked against a different exhaustive algorithm; stored-state observer extraction was replayed only to verify table provenance. No held-out response was inspected.</p>
+<h2>What mathematical object was optimized?</h2>
+<p>For each of four static observation conventions, the table gives closed endpoint intervals at activation strengths 0, 1, 5, 10. Their exact rational midpoints define numbers <span class="math" data-tex="v_{jk}"></span>. Linear interpolation through those numbers defines a <strong>new, explicitly specified surrogate</strong> <span class="math" data-tex="\widetilde q_k(f)"></span>. It is not a proved interpolant or enclosure of the nonlinear mechanical response between strength nodes.</p>
+<p>The objective uses all 17 small-region records and all four reported channels:</p>
+<div class="math display" data-tex="
+L(g)=\max_{i=1,\ldots,17;\ k=1,\ldots,4}
+&#124;\widetilde q_k(gI_i)-y_{ik}&#124;,
+\qquad 0\le g\le\frac{10}{\max_i I_i}.
+"></div>
+
+<p>Thus all 68 entries participate with a common micrometer worst-residual objective. This is a diagnostic optimization criterion, not a measurement-noise model or a chosen biological error tolerance. The gain cap prevents table extrapolation; it is determined by the largest recorded dose 1.51057344, not by independent physiology.</p>
+<p>The alternatives are current-radius disk versus radial-line averaging, each with either spatial-maximum or regional-mean component aggregation. They retain a flat no-growth reference, canonical source-column pairing and a static endpoint used as a peak proxy. The <a href="JOINT-OBSERVATION-CONTRACT.html">source observation contract</a> explains why these remain assumptions, rather than a uniquely recovered source algorithm.</p>
+<h2>Exact global certification over the declared interval</h2>
+<p>Every possible change of interpolation segment occurs at a gain <span class="math" data-tex="f_j/I_i"></span>. Together with the two bounds, these yield 28 distinct breakpoints and 27 positive-width closed cells. The review reconstructs all of them from the actual source doses; no cell is omitted.</p>
+<p>On one open cell, each record/channel prediction has fixed affine dependence on gain. Therefore</p>
+<div class="math display" data-tex="
+L(g)=\max_m(a_mg+b_m)
+"></div>
+
+<p>on the closed cell, with 136 signed residual lines and the zero line. Its restriction is convex even though the full piecewise objective need not be globally convex across cells. The review independently reconstructed <strong>14,796 exact line coefficients across 108 cells</strong> and matched them to the retained certificates. Every coefficient uses the correct source record, channel, strength segment and interval midpoint.</p>
+<p>At a candidate <span class="math" data-tex="g_*"></span>, let <span class="math" data-tex="A_*"></span> be the set of active lines. For a maximum of affine functions, the left and right derivatives are respectively the minimum and maximum active slopes. A sufficient and necessary closed-cell minimum condition is:</p>
+<div class="math display" data-tex="
+\begin{cases}
+\max_{m\in A_*}a_m\ge0,&amp;g_*\text{ at the left boundary},\\
+\min_{m\in A_*}a_m\le0,&amp;g_*\text{ at the right boundary},\\
+\min_{m\in A_*}a_m\le0\le\max_{m\in A_*}a_m,&amp;g_*\text{ in the interior}.
+\end{cases}
+"></div>
+
+<p>Every retained candidate, loss, active set and slope condition passes exact rational replay. Taking the smallest certified cell loss therefore proves a global minimum on the union of all cells. Floating-point linear programming proposes a candidate; the exact certificate, not the floating optimum, establishes the result. This is standard piecewise-affine convex certification, not a new optimization theorem.</p>
+<h2>Results and active constraints</h2>
+<table>
+<thead>
+<tr>
+<th>Mean weighting</th>
+<th>Component aggregation</th>
+<th style="text-align: right;">Exact-surrogate minimum residual (µm)</th>
+<th>Active limiting source entry at the cap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current disk</td>
+<td>Spatial maximum</td>
+<td style="text-align: right;">5.938104366</td>
+<td>Column M, apical entry</td>
+</tr>
+<tr>
+<td>Current disk</td>
+<td>Regional mean</td>
+<td style="text-align: right;">7.271365271</td>
+<td>Column G, apical entry</td>
+</tr>
+<tr>
+<td>Current radial line</td>
+<td>Spatial maximum</td>
+<td style="text-align: right;">5.938104366</td>
+<td>Column M, apical entry</td>
+</tr>
+<tr>
+<td>Current radial line</td>
+<td>Regional mean</td>
+<td style="text-align: right;">6.782283545</td>
+<td>Column G, apical entry</td>
+</tr>
+</tbody>
+</table>
+<p>All four gains equal the same upper cap. The active residual is observed apical shortening minus the surrogate prediction; its slope is strictly negative at the cap from the left. This identifies which small-data summary limits this fixed-scenario surrogate fit. It does not establish that the original biological component measurement uses that convention.</p>
+<p>A boundary optimum does <strong>not</strong> prove that the unrestricted physical optimum lies beyond the cap: the uncomputed response could change behavior. It does establish that the current finite table cannot support an interior gain estimate. The table extension and later direct evaluations must remain separately versioned; they must not overwrite this result or reinterpret its restricted domain.</p>
+<h2>Provenance and independent checks</h2>
+<p>The protocol, table and candidate hashes match. All 11 frozen source hashes and the small CSV hash match current files. The strength 1, 5, 10 state hashes match the already retained higher-quadrature equilibria. Replaying the frozen observer on those three states and the zero state reproduces all 64 strength/variant/channel endpoint intervals. This binds table values to their source fields; it is not an independent re-proof of the observer's geometry. A separate 21-check observer review supplies that component's independent evidence.</p>
+<p>Six synthetic cases were independently solved by enumerating every cell endpoint and every pairwise line intersection. They include a nonmonotone response, nonlinear sampled multichannel values, a flat minimizer interval, multiple equal minima and rational breakpoints. All reported optimum values agree exactly. Seven invalid-input cases are rejected. Synthetic tests invoke no root receipt writer and no biological fit.</p>
+<p>The exact midpoint definition is important. Small endpoint intervals describe stored discrete-curve quantities at the sampled strengths. Their midpoints do not bound nonlinear interpolation error, continuum error, experimental temporal peaks or unresolved observation-reference choices. Even interpolating interval endpoints would not automatically enclose the actual nonlinear response between nodes.</p>
+<h2>What remains before a physical inference claim</h2>
+<p>Extend table support under a new frozen version, independently certify the resulting surrogate candidates, and evaluate the actual nonlinear fields at every requested candidate-dose product. Preserve requested exact strengths, actual numerical strengths, failed attempts and all four observation intervals. Compare direct outputs against the surrogate rather than promoting the table optimum to a nonlinear optimum.</p>
+<p>Even successful direct verification establishes only responses at those candidate gains in one fixed mechanical scenario. It does not prove global optimality over nonlinear gain, material/geometry combinations or observation conventions. It supplies neither a discrepancy law nor the full compatible set required by the original plan. At this reviewed version, the surrogate calculation is complete; support for an interior or physical gain estimate is incomplete.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

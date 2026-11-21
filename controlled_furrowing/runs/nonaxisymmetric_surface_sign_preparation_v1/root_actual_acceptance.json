@@ -1,0 +1,47 @@
+{
+  "status": "PASS_ROOT_OBSERVED_INDEPENDENT_TRANSVERSE_SCALAR_REPLAY",
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "e04ec1",
+  "native_pid_not_recorded_by_this_scalar_verifier": true,
+  "independent_receipt_sha256": "bf20e708826c08ed674c183e8c7364048748340501645885a12aa035f68d794e",
+  "source_and_actual_hashes_rechecked": 37,
+  "windows_checked": 672,
+  "counts": {
+    "max_negative_contrast_change_small_16": {
+      "NONNEGATIVE_ON_WINDOW": 276,
+      "UNRESOLVED": 2,
+      "STRICT_NEGATIVE_PATCH": 58
+    },
+    "max_negative_contrast_change_small_17": {
+      "NONNEGATIVE_ON_WINDOW": 276,
+      "UNRESOLVED": 2,
+      "STRICT_NEGATIVE_PATCH": 58
+    }
+  },
+  "illustrative_exact_witness_locations": [
+    {
+      "case_id": "max_negative_contrast_change_small_16",
+      "face": "apical",
+      "edge": 7,
+      "window": [
+        "5/8",
+        "11/16"
+      ],
+      "tau_upper": -0.00011047414264665045,
+      "c_lower": 0.00010867575269356837
+    },
+    {
+      "case_id": "max_negative_contrast_change_small_17",
+      "face": "apical",
+      "edge": 7,
+      "window": [
+        "5/8",
+        "11/16"
+      ],
+      "tau_upper": -0.00010054264000010261,
+      "c_lower": 9.877364114696492e-05
+    }
+  ],
+  "conditional_natural_3D_energy_descent_verified": true,
+  "physical_wavelength_or_continuum_equilibrium_claimed": false
+}

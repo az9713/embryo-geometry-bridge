@@ -1,0 +1,12 @@
+from pathlib import Path
+from fractions import Fraction as Q
+import hashlib,json,datetime
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[2]
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def read(p):return json.loads(Path(p).read_text())
+def main():
+    r=read(HERE/'results.json');p=read(HERE/'protocol.json');e=read(HERE/'exact_reduction.json');rows=list(map(Q,e['absR_H_rows_exact']));signed=list(map(Q,e['signed_RH_rows_exact']));b=min(max(rows),max(signed))
+    checks={'all348_review_checks_literal_true':len(r['checks'])==348 and all(v is True for v in r['checks'].values()),'all759_inputs_current':len(p['input_hashes'])==759 and all(sha(ROOT/k)==v for k,v in p['input_hashes'].items()),'source_protocol_bindings_current':p['source_sha256']==r['source_sha256']==sha(HERE/'reduce.py')and r['protocol_sha256']==sha(HERE/'protocol.json'),'all168_local_packet_hashes_current':len(r['component_packets'])==168 and all(sha(ROOT/x['file'])==x['sha256']for x in r['component_packets']),'exact_reduction_and_signed_matrix_hashes':r['exact_reduction_sha256']==sha(HERE/'exact_reduction.json')and r['signed_RH_matrix_sha256']==sha(HERE/'signed_RH_endpoints.ndjson.gz'),'all611_rows_and_chosen_min':len(rows)==len(signed)==611 and Q(e['b_chosen_upper_exact'])==b==min(Q(e['b_absR_H_upper_exact']),Q(e['b_signed_Arb_upper_exact'])),'safe_point168_consistency_checks':len(r['safe_point_consistency'])==168 and all(x['all_point_intervals_overlap']is True for x in r['safe_point_consistency']),'outward_readable_bounds':b<=Q('0.015071982112')and Q(e['ZQ_plus_b_upper_exact'])<=Q('0.120112408')<1,'new_root_claim_absent':r['root_selfmap_or_integral_root_certified']is False,'evidence_identical':(HERE/'results.json').read_bytes()==(ROOT/'evidence/exact_uniform_full_B_independent_review.json').read_bytes()}
+    assert all(v is True for v in checks.values()),checks
+    out={'status':'PASS_FIRST_UNIFORM_FULL_B_COMPONENT_DELIVERY','utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks':checks,'source_sha256':sha(__file__),'results_sha256':sha(HERE/'results.json'),'protocol_sha256':sha(HERE/'protocol.json'),'report_sha256':sha(HERE/'RESULTS.md'),'observed_session':33739,'observed_exit_code':0,'producer_or_local_integrals_rerun':False,'root_or_original_goal_complete':False,'first_bound_preserved_without_axis_replacement':True};dest=HERE/'delivery.json';assert not dest.exists();dest.write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({'status':out['status'],'sha256':sha(dest)}))
+if __name__=='__main__':main()

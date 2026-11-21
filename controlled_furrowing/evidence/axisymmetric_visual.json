@@ -1,0 +1,15 @@
+{
+  "figure": "controlled_furrowing\\runs\\axisymmetric\\axisymmetric_summary.png",
+  "sha256": "3f79f403c0b5e7c9f6c243d912d2e8ba70a6ff30894d3cbf276eebc96d81dbdd",
+  "inputs": {
+    "controlled_furrowing\\runs\\axisymmetric\\warm_gain_0.2.json": "1f8ce81b3c4dd9f9b2d8bfded1e9a67fc436793dc6ef57127b0e6bfcbe43b896",
+    "controlled_furrowing\\runs\\axisymmetric\\warm_gain_0.5.json": "3a424ab73a82ee1875b86b961b8cfdb78d524b595f101a3f5ea28e86ce74d48d",
+    "controlled_furrowing\\runs\\axisymmetric\\warm_gain_1.0.json": "16cb8a5ae365461e4f643c64ee361623784f8ed568604565402067866c4f7533",
+    "controlled_furrowing\\runs\\axisymmetric\\warm_gain_2.0.json": "4b46283a7e3a13181c68d41a3e4c34f13d7355b32adcd98f8d32aa38ef82fe7b",
+    "controlled_furrowing\\runs\\axisymmetric\\warm_gain_4.0.json": "319c3b8b60594686ca9c8ccb88a2b820fc49002d9e29cff886fc0bd0fd620eaa",
+    "controlled_furrowing\\runs\\axisymmetric\\base.json": "ddfe0b6447ff37119971c9240451ff626ccb5e9f62decf7bbcff133ce92e45f3",
+    "controlled_furrowing\\runs\\axisymmetric\\mesh_12x6.json": "c5bab6b07910396f1b12c415efba39a0413fd1e42850f1d800a892b437847ff0",
+    "controlled_furrowing\\runs\\axisymmetric\\mesh_16x8.json": "17e2d64d84e1888f0d99c467d36620befb6db1f9f5e86379969db70eb71d01af"
+  },
+  "scope": "Synthetic data only; actual deformation no exaggeration in mesh panel; no observed large-patch outcomes read."
+}

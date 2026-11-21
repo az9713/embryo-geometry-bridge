@@ -1,0 +1,11 @@
+{
+  "command": "python -B runs/exact_loading_tube_pilot_preparation_v1/pilot.py prepare",
+  "unified_exec_chunk_id": "66bc97",
+  "observed_exit_code": 1,
+  "status": "COLD_ANCHOR_ASSERTION_FAILED_BEFORE_OUTPUTS",
+  "failure": "The first source asserted equality between L's native independent posterior and the slightly larger conservative compared posterior reported by the accepted four-case aggregation. The source now checks conservative native equality and that it encloses the direct native posterior.",
+  "new_geometry_certificates": 0,
+  "new_AD_derivatives": 0,
+  "new_integrations": 0,
+  "new_solves": 0
+}

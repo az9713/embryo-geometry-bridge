@@ -1,0 +1,4243 @@
+{
+  "status": "PASS_INDEPENDENT_CONTINUOUS_TEMPORAL_KINEMATICS",
+  "checks": {
+    "source102checks_pass": true,
+    "source17records_match_csv": true,
+    "optoGEF2_small_col_B_source_inequalities": true,
+    "optoGEF2_small_col_B_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_B_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_B_state1_reported_state_matches": true,
+    "optoGEF2_small_col_B_state2_reported_state_matches": true,
+    "optoGEF2_small_col_B_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_B_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_B_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_B_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_B_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_B_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_B_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_B_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_B_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_B_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_B_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_B_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_B_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_B_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_B_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_B_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_B_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_B_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_B_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_B_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_B_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_B_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_B_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_B_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_B_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_B_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_B_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_B_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_B_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_B_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_B_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_B_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_B_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_B_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_B_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_B_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_B_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_B_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_B_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_B_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_B_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_B_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_B_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_B_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_B_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_B_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_B_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_B_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_B_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_B_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_C_source_inequalities": true,
+    "optoGEF2_small_col_C_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_C_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_C_state1_reported_state_matches": true,
+    "optoGEF2_small_col_C_state2_reported_state_matches": true,
+    "optoGEF2_small_col_C_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_C_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_C_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_C_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_C_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_C_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_C_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_C_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_C_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_C_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_C_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_C_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_C_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_C_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_C_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_C_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_C_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_C_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_C_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_C_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_C_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_C_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_C_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_C_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_C_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_C_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_C_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_C_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_C_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_C_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_C_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_C_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_C_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_C_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_C_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_C_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_C_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_C_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_C_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_C_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_C_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_C_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_C_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_C_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_C_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_C_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_C_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_C_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_C_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_C_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_D_source_inequalities": true,
+    "optoGEF2_small_col_D_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_D_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_D_state1_reported_state_matches": true,
+    "optoGEF2_small_col_D_state2_reported_state_matches": true,
+    "optoGEF2_small_col_D_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_D_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_D_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_D_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_D_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_D_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_D_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_D_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_D_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_D_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_D_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_D_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_D_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_D_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_D_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_D_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_D_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_D_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_D_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_D_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_D_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_D_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_D_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_D_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_D_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_D_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_D_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_D_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_D_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_D_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_D_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_D_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_D_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_D_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_D_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_D_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_D_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_D_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_D_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_D_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_D_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_D_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_D_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_D_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_D_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_D_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_D_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_D_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_D_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_D_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_E_source_inequalities": true,
+    "optoGEF2_small_col_E_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_E_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_E_state1_reported_state_matches": true,
+    "optoGEF2_small_col_E_state2_reported_state_matches": true,
+    "optoGEF2_small_col_E_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_E_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_E_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_E_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_E_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_E_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_E_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_E_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_E_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_E_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_E_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_E_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_E_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_E_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_E_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_E_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_E_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_E_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_E_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_E_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_E_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_E_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_E_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_E_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_E_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_E_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_E_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_E_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_E_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_E_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_E_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_E_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_E_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_E_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_E_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_E_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_E_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_E_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_E_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_E_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_E_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_E_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_E_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_E_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_E_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_E_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_E_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_E_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_E_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_E_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_F_source_inequalities": true,
+    "optoGEF2_small_col_F_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_F_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_F_state1_reported_state_matches": true,
+    "optoGEF2_small_col_F_state2_reported_state_matches": true,
+    "optoGEF2_small_col_F_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_F_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_F_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_F_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_F_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_F_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_F_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_F_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_F_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_F_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_F_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_F_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_F_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_F_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_F_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_F_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_F_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_F_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_F_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_F_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_F_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_F_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_F_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_F_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_F_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_F_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_F_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_F_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_F_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_F_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_F_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_F_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_F_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_F_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_F_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_F_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_F_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_F_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_F_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_F_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_F_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_F_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_F_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_F_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_F_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_F_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_F_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_F_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_F_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_F_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_G_source_inequalities": true,
+    "optoGEF2_small_col_G_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_G_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_G_state1_reported_state_matches": true,
+    "optoGEF2_small_col_G_state2_reported_state_matches": true,
+    "optoGEF2_small_col_G_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_G_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_G_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_G_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_G_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_G_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_G_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_G_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_G_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_G_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_G_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_G_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_G_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_G_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_G_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_G_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_G_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_G_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_G_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_G_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_G_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_G_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_G_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_G_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_G_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_G_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_G_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_G_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_G_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_G_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_G_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_G_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_G_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_G_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_G_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_G_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_G_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_G_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_G_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_G_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_G_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_G_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_G_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_G_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_G_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_G_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_G_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_G_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_G_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_G_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_H_source_inequalities": true,
+    "optoGEF2_small_col_H_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_H_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_H_state1_reported_state_matches": true,
+    "optoGEF2_small_col_H_state2_reported_state_matches": true,
+    "optoGEF2_small_col_H_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_H_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_H_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_H_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_H_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_H_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_H_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_H_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_H_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_H_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_H_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_H_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_H_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_H_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_H_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_H_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_H_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_H_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_H_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_H_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_H_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_H_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_H_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_H_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_H_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_H_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_H_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_H_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_H_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_H_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_H_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_H_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_H_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_H_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_H_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_H_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_H_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_H_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_H_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_H_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_H_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_H_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_H_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_H_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_H_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_H_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_H_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_H_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_H_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_H_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_I_source_inequalities": true,
+    "optoGEF2_small_col_I_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_I_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_I_state1_reported_state_matches": true,
+    "optoGEF2_small_col_I_state2_reported_state_matches": true,
+    "optoGEF2_small_col_I_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_I_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_I_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_I_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_I_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_I_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_I_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_I_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_I_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_I_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_I_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_I_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_I_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_I_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_I_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_I_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_I_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_I_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_I_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_I_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_I_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_I_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_I_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_I_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_I_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_I_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_I_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_I_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_I_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_I_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_I_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_I_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_I_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_I_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_I_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_I_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_I_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_I_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_I_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_I_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_I_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_I_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_I_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_I_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_I_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_I_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_I_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_I_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_I_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_I_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_J_source_inequalities": true,
+    "optoGEF2_small_col_J_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_J_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_J_state1_reported_state_matches": true,
+    "optoGEF2_small_col_J_state2_reported_state_matches": true,
+    "optoGEF2_small_col_J_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_J_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_J_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_J_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_J_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_J_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_J_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_J_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_J_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_J_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_J_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_J_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_J_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_J_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_J_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_J_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_J_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_J_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_J_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_J_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_J_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_J_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_J_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_J_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_J_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_J_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_J_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_J_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_J_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_J_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_J_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_J_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_J_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_J_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_J_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_J_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_J_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_J_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_J_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_J_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_J_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_J_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_J_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_J_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_J_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_J_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_J_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_J_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_J_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_J_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_K_source_inequalities": true,
+    "optoGEF2_small_col_K_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_K_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_K_state1_reported_state_matches": true,
+    "optoGEF2_small_col_K_state2_reported_state_matches": true,
+    "optoGEF2_small_col_K_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_K_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_K_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_K_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_K_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_K_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_K_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_K_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_K_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_K_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_K_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_K_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_K_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_K_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_K_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_K_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_K_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_K_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_K_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_K_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_K_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_K_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_K_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_K_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_K_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_K_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_K_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_K_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_K_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_K_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_K_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_K_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_K_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_K_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_K_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_K_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_K_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_K_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_K_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_K_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_K_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_K_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_K_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_K_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_K_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_K_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_K_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_K_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_K_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_K_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_L_source_inequalities": true,
+    "optoGEF2_small_col_L_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_L_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_L_state1_reported_state_matches": true,
+    "optoGEF2_small_col_L_state2_reported_state_matches": true,
+    "optoGEF2_small_col_L_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_L_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_L_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_L_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_L_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_L_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_L_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_L_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_L_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_L_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_L_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_L_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_L_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_L_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_L_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_L_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_L_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_L_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_L_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_L_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_L_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_L_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_L_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_L_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_L_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_L_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_L_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_L_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_L_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_L_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_L_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_L_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_L_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_L_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_L_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_L_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_L_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_L_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_L_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_L_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_L_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_L_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_L_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_L_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_L_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_L_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_L_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_L_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_L_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_L_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_M_source_inequalities": true,
+    "optoGEF2_small_col_M_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_M_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_M_state1_reported_state_matches": true,
+    "optoGEF2_small_col_M_state2_reported_state_matches": true,
+    "optoGEF2_small_col_M_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_M_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_M_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_M_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_M_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_M_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_M_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_M_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_M_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_M_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_M_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_M_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_M_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_M_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_M_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_M_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_M_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_M_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_M_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_M_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_M_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_M_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_M_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_M_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_M_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_M_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_M_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_M_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_M_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_M_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_M_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_M_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_M_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_M_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_M_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_M_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_M_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_M_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_M_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_M_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_M_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_M_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_M_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_M_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_M_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_M_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_M_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_M_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_M_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_M_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_N_source_inequalities": true,
+    "optoGEF2_small_col_N_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_N_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_N_state1_reported_state_matches": true,
+    "optoGEF2_small_col_N_state2_reported_state_matches": true,
+    "optoGEF2_small_col_N_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_N_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_N_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_N_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_N_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_N_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_N_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_N_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_N_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_N_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_N_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_N_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_N_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_N_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_N_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_N_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_N_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_N_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_N_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_N_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_N_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_N_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_N_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_N_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_N_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_N_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_N_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_N_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_N_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_N_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_N_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_N_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_N_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_N_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_N_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_N_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_N_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_N_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_N_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_N_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_N_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_N_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_N_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_N_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_N_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_N_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_N_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_N_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_N_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_N_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_O_source_inequalities": true,
+    "optoGEF2_small_col_O_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_O_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_O_state1_reported_state_matches": true,
+    "optoGEF2_small_col_O_state2_reported_state_matches": true,
+    "optoGEF2_small_col_O_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_O_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_O_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_O_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_O_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_O_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_O_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_O_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_O_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_O_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_O_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_O_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_O_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_O_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_O_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_O_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_O_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_O_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_O_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_O_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_O_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_O_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_O_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_O_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_O_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_O_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_O_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_O_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_O_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_O_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_O_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_O_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_O_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_O_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_O_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_O_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_O_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_O_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_O_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_O_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_O_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_O_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_O_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_O_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_O_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_O_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_O_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_O_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_O_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_O_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_P_source_inequalities": true,
+    "optoGEF2_small_col_P_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_P_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_P_state1_reported_state_matches": true,
+    "optoGEF2_small_col_P_state2_reported_state_matches": true,
+    "optoGEF2_small_col_P_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_P_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_P_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_P_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_P_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_P_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_P_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_P_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_P_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_P_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_P_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_P_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_P_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_P_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_P_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_P_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_P_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_P_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_P_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_P_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_P_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_P_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_P_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_P_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_P_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_P_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_P_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_P_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_P_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_P_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_P_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_P_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_P_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_P_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_P_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_P_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_P_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_P_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_P_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_P_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_P_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_P_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_P_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_P_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_P_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_P_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_P_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_P_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_P_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_P_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_Q_source_inequalities": true,
+    "optoGEF2_small_col_Q_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_Q_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_Q_state1_reported_state_matches": true,
+    "optoGEF2_small_col_Q_state2_reported_state_matches": true,
+    "optoGEF2_small_col_Q_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_Q_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_Q_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_Q_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_Q_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_Q_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_Q_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_Q_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_Q_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_Q_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_Q_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_Q_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_Q_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_Q_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_Q_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_Q_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_Q_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_Q_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_Q_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_Q_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_Q_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_Q_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_Q_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_Q_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_Q_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_Q_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_Q_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_Q_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_Q_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_Q_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_Q_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_Q_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_Q_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_Q_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_Q_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_Q_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_Q_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_Q_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_Q_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_Q_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_Q_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_Q_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_Q_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_Q_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_Q_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_Q_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_Q_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_Q_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_Q_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_Q_disk_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_R_source_inequalities": true,
+    "optoGEF2_small_col_R_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_R_all_continuous_affine_peaks_exact": true,
+    "optoGEF2_small_col_R_state1_reported_state_matches": true,
+    "optoGEF2_small_col_R_state2_reported_state_matches": true,
+    "optoGEF2_small_col_R_line_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_R_line_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_R_line_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_R_line_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_R_line_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_R_line_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_R_line_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_R_line_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_R_line_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_R_line_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_R_line_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_R_line_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_R_line_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_R_line_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_R_line_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_R_line_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_R_line_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_R_line_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_R_line_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_R_line_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_R_line_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_R_line_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_R_line_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_R_line_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_R_line_same_height_map_both_component_peaks": true,
+    "optoGEF2_small_col_R_disk_first_independent_core_polynomial": true,
+    "optoGEF2_small_col_R_disk_first_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_R_disk_first_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_R_disk_first_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_R_disk_first_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_R_disk_first_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_R_disk_first_rim_displacement_zero": true,
+    "optoGEF2_small_col_R_disk_first_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_R_disk_first_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_R_disk_first_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_R_disk_first_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_R_disk_first_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_R_disk_second_independent_core_polynomial": true,
+    "optoGEF2_small_col_R_disk_second_independent_compensation_polynomial": true,
+    "optoGEF2_small_col_R_disk_second_independent_zero_total_volume_integral": true,
+    "optoGEF2_small_col_R_disk_second_global_height_exact_and_positive": true,
+    "optoGEF2_small_col_R_disk_second_global_peak_equals_ROI_peak": true,
+    "optoGEF2_small_col_R_disk_second_apical_partition_and_continuity": true,
+    "optoGEF2_small_col_R_disk_second_rim_displacement_zero": true,
+    "optoGEF2_small_col_R_disk_second_all_instantaneous_means_exact": true,
+    "optoGEF2_small_col_R_disk_second_axis_positive_regular_limit": true,
+    "optoGEF2_small_col_R_disk_second_rim_reference_radius_identity": true,
+    "optoGEF2_small_col_R_disk_second_first_segment_uniform_height_margin": true,
+    "optoGEF2_small_col_R_disk_second_first_segment_volume_polynomial_identically_zero": true,
+    "optoGEF2_small_col_R_disk_same_height_map_both_component_peaks": true,
+    "all68_endpoint_configurations_reviewed": true,
+    "both_weights_have_mean_ordering_counterexamples": true,
+    "all_stored_mean_ordering_examples_strict": true,
+    "all_source_hashes_replay": true,
+    "source_csv_hash_replays": true,
+    "current_origin_explicit_peak_mean_ordering": true,
+    "own_review_math_delimiters_balanced": true,
+    "own_review_links_exist": true,
+    "own_review_utf8_valid": true
+  },
+  "configurations": [
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "77722063/25000000",
+        "0",
+        "-749831547/100000000"
+      ],
+      "annular_coefficients": [
+        "-87788659/20000000",
+        "69836172754635623963946979663/5006365861431405531550000000",
+        "-95722130965426956717898290181/10012731722862811063100000000"
+      ],
+      "mean_A": "3",
+      "mean_B": "-239055597/100000000",
+      "minimum_height_all_first_segment_times": "759777937/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "759777937/837500000",
+        "0",
+        "74983154700000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "5975796135612545234438537867/67000000000000000000000000",
+        "6461446561867905613919133829/3350000000000000000000000",
+        "3327159453591365182166650270782721594573/368014653239500000000000000000000000",
+        "-394497568727594181762302106803731394747/184007326619750000000000000000000000",
+        "872458210477093566161005952513005591303/736029306479000000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/759777937"
+    },
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "77722063/25000000",
+        "0",
+        "-749831547/100000000"
+      ],
+      "annular_coefficients": [
+        "-87788659/20000000",
+        "69836172754635623963946979663/5006365861431405531550000000",
+        "-95722130965426956717898290181/10012731722862811063100000000"
+      ],
+      "mean_A": "12233801/100000000",
+      "mean_B": "24355301/50000000",
+      "minimum_height_all_first_segment_times": "759777937/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "759777937/837500000",
+        "0",
+        "74983154700000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "5975796135612545234438537867/67000000000000000000000000",
+        "6461446561867905613919133829/3350000000000000000000000",
+        "3327159453591365182166650270782721594573/368014653239500000000000000000000000",
+        "-394497568727594181762302106803731394747/184007326619750000000000000000000000",
+        "872458210477093566161005952513005591303/736029306479000000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/759777937"
+    },
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "77722063/25000000",
+        "0",
+        "-249943849/50000000"
+      ],
+      "annular_coefficients": [
+        "-94499723/50000000",
+        "1864846426565954147036688809/312897866339462845721875000",
+        "-20375539082216782227944165731/5006365861431405531550000000"
+      ],
+      "mean_A": "3",
+      "mean_B": "-239055597/100000000",
+      "minimum_height_all_first_segment_times": "759777937/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "759777937/837500000",
+        "0",
+        "49988769800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2878524792578684097574248293/33500000000000000000000000",
+        "15088016646346460229117855213/8375000000000000000000000",
+        "1586948395062707625004854724373532198191/184007326619750000000000000000000000",
+        "-3371898171369140100836851619984579907/3680146532395000000000000000000000",
+        "185712605704500928973189420791276595953/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/759777937"
+    },
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "77722063/25000000",
+        "0",
+        "-249943849/50000000"
+      ],
+      "annular_coefficients": [
+        "-94499723/50000000",
+        "1864846426565954147036688809/312897866339462845721875000",
+        "-20375539082216782227944165731/5006365861431405531550000000"
+      ],
+      "mean_A": "12233801/100000000",
+      "mean_B": "24355301/50000000",
+      "minimum_height_all_first_segment_times": "759777937/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "759777937/837500000",
+        "0",
+        "49988769800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2878524792578684097574248293/33500000000000000000000000",
+        "15088016646346460229117855213/8375000000000000000000000",
+        "1586948395062707625004854724373532198191/184007326619750000000000000000000000",
+        "-3371898171369140100836851619984579907/3680146532395000000000000000000000",
+        "185712605704500928973189420791276595953/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/759777937"
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "121538093/25000000",
+        "0",
+        "-532283343/50000000"
+      ],
+      "annular_coefficients": [
+        "-289207157/50000000",
+        "11490712790106603033294321529/625795732678925691443750000",
+        "-12593633113424833876096317233/1001273172286281106310000000"
+      ],
+      "mean_A": "4",
+      "mean_B": "-26870319/10000000",
+      "minimum_height_all_first_segment_times": "715961907/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "715961907/837500000",
+        "0",
+        "106456668600000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2972235315141685644846547299/33500000000000000000000000",
+        "16748231094065480723247986067/8375000000000000000000000",
+        "1706555975459240767979567146865291254937/184007326619750000000000000000000000",
+        "-259649410152626879580391899261455958437/92003663309875000000000000000000000",
+        "114784517422748862068954516848807966379/73602930647900000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/715961907"
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "121538093/25000000",
+        "0",
+        "-532283343/50000000"
+      ],
+      "annular_coefficients": [
+        "-289207157/50000000",
+        "11490712790106603033294321529/625795732678925691443750000",
+        "-12593633113424833876096317233/1001273172286281106310000000"
+      ],
+      "mean_A": "22572219/50000000",
+      "mean_B": "21538093/25000000",
+      "minimum_height_all_first_segment_times": "715961907/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "715961907/837500000",
+        "0",
+        "106456668600000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2972235315141685644846547299/33500000000000000000000000",
+        "16748231094065480723247986067/8375000000000000000000000",
+        "1706555975459240767979567146865291254937/184007326619750000000000000000000000",
+        "-259649410152626879580391899261455958437/92003663309875000000000000000000000",
+        "114784517422748862068954516848807966379/73602930647900000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/715961907"
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "121538093/25000000",
+        "0",
+        "-177427781/25000000"
+      ],
+      "annular_coefficients": [
+        "-6986211/3125000",
+        "3513800236472684564969289261/500636586143140553155000000",
+        "-11972916662178373053650373177/2503182930715702765775000000"
+      ],
+      "mean_A": "4",
+      "mean_B": "-26870319/10000000",
+      "minimum_height_all_first_segment_times": "715961907/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "715961907/837500000",
+        "0",
+        "70971112400000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "281695357804774098832738711/3350000000000000000000000",
+        "952209705730077588432321641/523437500000000000000000",
+        "798879661070032802941316655964909584979/92003663309875000000000000000000000",
+        "-24821940357186409099296003545603815861/23000915827468750000000000000000000",
+        "109127004799426918556419879532224568451/184007326619750000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/715961907"
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "121538093/25000000",
+        "0",
+        "-177427781/25000000"
+      ],
+      "annular_coefficients": [
+        "-6986211/3125000",
+        "3513800236472684564969289261/500636586143140553155000000",
+        "-11972916662178373053650373177/2503182930715702765775000000"
+      ],
+      "mean_A": "22572219/50000000",
+      "mean_B": "21538093/25000000",
+      "minimum_height_all_first_segment_times": "715961907/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "715961907/837500000",
+        "0",
+        "70971112400000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "281695357804774098832738711/3350000000000000000000000",
+        "952209705730077588432321641/523437500000000000000000",
+        "798879661070032802941316655964909584979/92003663309875000000000000000000000",
+        "-24821940357186409099296003545603815861/23000915827468750000000000000000000",
+        "109127004799426918556419879532224568451/184007326619750000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/715961907"
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "831533939/100000000",
+        "0",
+        "-250163619/20000000"
+      ],
+      "annular_coefficients": [
+        "-104821039/25000000",
+        "132013242862931636022156541399/10012731722862811063100000000",
+        "-90031445166182039618363078963/10012731722862811063100000000"
+      ],
+      "mean_A": "6",
+      "mean_B": "-92702713/50000000",
+      "minimum_height_all_first_segment_times": "2518466061/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2518466061/3350000000",
+        "0",
+        "125081809500000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "5502930660608258767629743073/67000000000000000000000000",
+        "8034901242329548506560865609/4187500000000000000000000",
+        "663276704930124687152417500764302267621/73602930647900000000000000000000000",
+        "-186501268728219548669942241879438117101/92003663309875000000000000000000000",
+        "820590523258660734768359396971882022369/736029306479000000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2518466061"
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "831533939/100000000",
+        "0",
+        "-250163619/20000000"
+      ],
+      "annular_coefficients": [
+        "-104821039/25000000",
+        "132013242862931636022156541399/10012731722862811063100000000",
+        "-90031445166182039618363078963/10012731722862811063100000000"
+      ],
+      "mean_A": "36612127/20000000",
+      "mean_B": "231533939/100000000",
+      "minimum_height_all_first_segment_times": "2518466061/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2518466061/3350000000",
+        "0",
+        "125081809500000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "5502930660608258767629743073/67000000000000000000000000",
+        "8034901242329548506560865609/4187500000000000000000000",
+        "663276704930124687152417500764302267621/73602930647900000000000000000000000",
+        "-186501268728219548669942241879438117101/92003663309875000000000000000000000",
+        "820590523258660734768359396971882022369/736029306479000000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2518466061"
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "831533939/100000000",
+        "0",
+        "-83387873/10000000"
+      ],
+      "annular_coefficients": [
+        "-2344791/100000000",
+        "-1432756551994786263621237231/10012731722862811063100000000",
+        "104220886517913649985988147/625795732678925691443750000"
+      ],
+      "mean_A": "6",
+      "mean_B": "-92702713/50000000",
+      "minimum_height_all_first_segment_times": "2518466061/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2518466061/3350000000",
+        "0",
+        "83387873000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "1284508127913380758817158097/16750000000000000000000000",
+        "28584482581973732883354573121/16750000000000000000000000",
+        "306072115152416228474049150254474089207/36801465323950000000000000000000000",
+        "3832948015185585089172520949130581143/184007326619750000000000000000000000",
+        "-949920015660712946670684084492174561/46001831654937500000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2518466061"
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "831533939/100000000",
+        "0",
+        "-83387873/10000000"
+      ],
+      "annular_coefficients": [
+        "-2344791/100000000",
+        "-1432756551994786263621237231/10012731722862811063100000000",
+        "104220886517913649985988147/625795732678925691443750000"
+      ],
+      "mean_A": "36612127/20000000",
+      "mean_B": "231533939/100000000",
+      "minimum_height_all_first_segment_times": "2518466061/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2518466061/3350000000",
+        "0",
+        "83387873000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "1284508127913380758817158097/16750000000000000000000000",
+        "28584482581973732883354573121/16750000000000000000000000",
+        "306072115152416228474049150254474089207/36801465323950000000000000000000000",
+        "3832948015185585089172520949130581143/184007326619750000000000000000000000",
+        "-949920015660712946670684084492174561/46001831654937500000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2518466061"
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "14418011/1562500",
+        "0",
+        "-350380359/50000000"
+      ],
+      "annular_coefficients": [
+        "110995993/50000000",
+        "-3673684624954048898575380883/500636586143140553155000000",
+        "25623115247322903818552107247/5006365861431405531550000000"
+      ],
+      "mean_A": "8",
+      "mean_B": "-55417101/50000000",
+      "minimum_height_all_first_segment_times": "37925739/1562500",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "37925739/52343750",
+        "0",
+        "70076071800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "486186373788420440186979939/6700000000000000000000000",
+        "13335813612087559342673298417/8375000000000000000000000",
+        "1461692250734218827712368431251465341281/184007326619750000000000000000000000",
+        "103622270066903224197912802940384893717/92003663309875000000000000000000000",
+        "-233541575496286374828399917591066567861/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "52343750/37925739"
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "14418011/1562500",
+        "0",
+        "-350380359/50000000"
+      ],
+      "annular_coefficients": [
+        "110995993/50000000",
+        "-3673684624954048898575380883/500636586143140553155000000",
+        "25623115247322903818552107247/5006365861431405531550000000"
+      ],
+      "mean_A": "162747763/50000000",
+      "mean_B": "1420587/390625",
+      "minimum_height_all_first_segment_times": "37925739/1562500",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "37925739/52343750",
+        "0",
+        "70076071800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "486186373788420440186979939/6700000000000000000000000",
+        "13335813612087559342673298417/8375000000000000000000000",
+        "1461692250734218827712368431251465341281/184007326619750000000000000000000000",
+        "103622270066903224197912802940384893717/92003663309875000000000000000000000",
+        "-233541575496286374828399917591066567861/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "52343750/37925739"
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "14418011/1562500",
+        "0",
+        "-116793453/25000000"
+      ],
+      "annular_coefficients": [
+        "113894723/25000000",
+        "-18529466753571757142193701629/1251591465357851382887500000",
+        "5130992089331157590811260609/500636586143140553155000000"
+      ],
+      "mean_A": "8",
+      "mean_B": "-55417101/50000000",
+      "minimum_height_all_first_segment_times": "37925739/1562500",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "37925739/52343750",
+        "0",
+        "46717381200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "1164358125533734847197699269/16750000000000000000000000",
+        "6169974667331519775581399787/4187500000000000000000000",
+        "695037931339167480982843418744984280427/92003663309875000000000000000000000",
+        "104590893021957183143942757116516910263/46001831654937500000000000000000000",
+        "-46766365636457056582305314225586549467/36801465323950000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "52343750/37925739"
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "14418011/1562500",
+        "0",
+        "-116793453/25000000"
+      ],
+      "annular_coefficients": [
+        "113894723/25000000",
+        "-18529466753571757142193701629/1251591465357851382887500000",
+        "5130992089331157590811260609/500636586143140553155000000"
+      ],
+      "mean_A": "162747763/50000000",
+      "mean_B": "1420587/390625",
+      "minimum_height_all_first_segment_times": "37925739/1562500",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "37925739/52343750",
+        "0",
+        "46717381200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "1164358125533734847197699269/16750000000000000000000000",
+        "6169974667331519775581399787/4187500000000000000000000",
+        "695037931339167480982843418744984280427/92003663309875000000000000000000000",
+        "104590893021957183143942757116516910263/46001831654937500000000000000000000",
+        "-46766365636457056582305314225586549467/36801465323950000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "52343750/37925739"
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "382404181/50000000",
+        "0",
+        "-150051003/10000000"
+      ],
+      "annular_coefficients": [
+        "-183925417/25000000",
+        "116730658054669031586990077141/5006365861431405531550000000",
+        "-79898740905935612415532460887/5006365861431405531550000000"
+      ],
+      "mean_A": "6",
+      "mean_B": "-20960103/6250000",
+      "minimum_height_all_first_segment_times": "1292595819/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1292595819/1675000000",
+        "0",
+        "150051003000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2919125445535632614117331957/33500000000000000000000000",
+        "8709401586437758750641308127/4187500000000000000000000",
+        "351024317223871529498807703958113420877/36801465323950000000000000000000000",
+        "-82432828657808569515565881881505479747/23000915827468750000000000000000000",
+        "728236112246005854614403968990329803181/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1292595819"
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "382404181/50000000",
+        "0",
+        "-150051003/10000000"
+      ],
+      "annular_coefficients": [
+        "-183925417/25000000",
+        "116730658054669031586990077141/5006365861431405531550000000",
+        "-79898740905935612415532460887/5006365861431405531550000000"
+      ],
+      "mean_A": "-10017001/10000000",
+      "mean_B": "182404181/50000000",
+      "minimum_height_all_first_segment_times": "1292595819/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1292595819/1675000000",
+        "0",
+        "150051003000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2919125445535632614117331957/33500000000000000000000000",
+        "8709401586437758750641308127/4187500000000000000000000",
+        "351024317223871529498807703958113420877/36801465323950000000000000000000000",
+        "-82432828657808569515565881881505479747/23000915827468750000000000000000000",
+        "728236112246005854614403968990329803181/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1292595819"
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "382404181/50000000",
+        "0",
+        "-50017001/5000000"
+      ],
+      "annular_coefficients": [
+        "-117765829/50000000",
+        "36688219675381262987901700831/5006365861431405531550000000",
+        "-6224160789101472751684568183/1251591465357851382887500000"
+      ],
+      "mean_A": "6",
+      "mean_B": "-20960103/6250000",
+      "minimum_height_all_first_segment_times": "1292595819/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1292595819/1675000000",
+        "0",
+        "100034002000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "168765959861323737775720007/2093750000000000000000000",
+        "15286400059500383201738428099/8375000000000000000000000",
+        "160177236743466256578703397468775306959/18400732661975000000000000000000000",
+        "-103701075753816968081484588200667240723/92003663309875000000000000000000000",
+        "56730038592041954980801484676806281229/92003663309875000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1292595819"
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "382404181/50000000",
+        "0",
+        "-50017001/5000000"
+      ],
+      "annular_coefficients": [
+        "-117765829/50000000",
+        "36688219675381262987901700831/5006365861431405531550000000",
+        "-6224160789101472751684568183/1251591465357851382887500000"
+      ],
+      "mean_A": "-10017001/10000000",
+      "mean_B": "182404181/50000000",
+      "minimum_height_all_first_segment_times": "1292595819/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1292595819/1675000000",
+        "0",
+        "100034002000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "168765959861323737775720007/2093750000000000000000000",
+        "15286400059500383201738428099/8375000000000000000000000",
+        "160177236743466256578703397468775306959/18400732661975000000000000000000000",
+        "-103701075753816968081484588200667240723/92003663309875000000000000000000000",
+        "56730038592041954980801484676806281229/92003663309875000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1292595819"
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "636662153/50000000",
+        "0",
+        "-1003808793/50000000"
+      ],
+      "annular_coefficients": [
+        "-4589333/625000",
+        "115837706480927967875403805309/5006365861431405531550000000",
+        "-79076298388223045247683875469/5006365861431405531550000000"
+      ],
+      "mean_A": "13",
+      "mean_B": "-173970389/25000000",
+      "minimum_height_all_first_segment_times": "1038337847/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1038337847/1675000000",
+        "0",
+        "200761758600000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2695986950500772909084718703/33500000000000000000000000",
+        "217659983907500250233061623/104687500000000000000000",
+        "1755314299122596281384527127603485511487/184007326619750000000000000000000000",
+        "-163637425399726449066735792563536245869/46001831654937500000000000000000000",
+        "720739969818055246869219036591391479647/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1038337847"
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "636662153/50000000",
+        "0",
+        "-1003808793/50000000"
+      ],
+      "annular_coefficients": [
+        "-4589333/625000",
+        "115837706480927967875403805309/5006365861431405531550000000",
+        "-79076298388223045247683875469/5006365861431405531550000000"
+      ],
+      "mean_A": "32183729/12500000",
+      "mean_B": "86662153/25000000",
+      "minimum_height_all_first_segment_times": "1038337847/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1038337847/1675000000",
+        "0",
+        "200761758600000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2695986950500772909084718703/33500000000000000000000000",
+        "217659983907500250233061623/104687500000000000000000",
+        "1755314299122596281384527127603485511487/184007326619750000000000000000000000",
+        "-163637425399726449066735792563536245869/46001831654937500000000000000000000",
+        "720739969818055246869219036591391479647/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1038337847"
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "636662153/50000000",
+        "0",
+        "-334602931/25000000"
+      ],
+      "annular_coefficients": [
+        "-32543709/50000000",
+        "8744382408592735038454086387/5006365861431405531550000000",
+        "-685733516719196917107377001/625795732678925691443750000"
+      ],
+      "mean_A": "13",
+      "mean_B": "-173970389/25000000",
+      "minimum_height_all_first_segment_times": "1038337847/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1038337847/1675000000",
+        "0",
+        "133841172400000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "600787057509758958802394541/8375000000000000000000000",
+        "217309484834681397017463737/125000000000000000000000",
+        "775069835223001569931357279113216003829/92003663309875000000000000000000000",
+        "-4971231502297749037188011550334264759/18400732661975000000000000000000000",
+        "6250109883962779552001896454117538963/46001831654937500000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1038337847"
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "636662153/50000000",
+        "0",
+        "-334602931/25000000"
+      ],
+      "annular_coefficients": [
+        "-32543709/50000000",
+        "8744382408592735038454086387/5006365861431405531550000000",
+        "-685733516719196917107377001/625795732678925691443750000"
+      ],
+      "mean_A": "32183729/12500000",
+      "mean_B": "86662153/25000000",
+      "minimum_height_all_first_segment_times": "1038337847/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1038337847/1675000000",
+        "0",
+        "133841172400000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "600787057509758958802394541/8375000000000000000000000",
+        "217309484834681397017463737/125000000000000000000000",
+        "775069835223001569931357279113216003829/92003663309875000000000000000000000",
+        "-4971231502297749037188011550334264759/18400732661975000000000000000000000",
+        "6250109883962779552001896454117538963/46001831654937500000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1038337847"
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "1049577729/100000000",
+        "0",
+        "-538197951/50000000"
+      ],
+      "annular_coefficients": [
+        "-26818173/100000000",
+        "832533179693115676023972189/1430390246123258723300000000",
+        "-701451013926022434955917/2234984759567591755156250"
+      ],
+      "mean_A": "9",
+      "mean_B": "-41844181/20000000",
+      "minimum_height_all_first_segment_times": "2300422271/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2300422271/3350000000",
+        "0",
+        "107639590200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "18539638154942148098434477/250000000000000000000000",
+        "28793160091333476267465297163/16750000000000000000000000",
+        "1538131755546498444841026577520346188009/184007326619750000000000000000000000",
+        "-16725649477364528748156162360180035043/184007326619750000000000000000000000",
+        "44753567761440137991115591524889497/1150045791373437500000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2300422271"
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "1049577729/100000000",
+        "0",
+        "-538197951/50000000"
+      ],
+      "annular_coefficients": [
+        "-26818173/100000000",
+        "832533179693115676023972189/1430390246123258723300000000",
+        "-701451013926022434955917/2234984759567591755156250"
+      ],
+      "mean_A": "126903467/50000000",
+      "mean_B": "436972161/100000000",
+      "minimum_height_all_first_segment_times": "2300422271/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2300422271/3350000000",
+        "0",
+        "107639590200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "18539638154942148098434477/250000000000000000000000",
+        "28793160091333476267465297163/16750000000000000000000000",
+        "1538131755546498444841026577520346188009/184007326619750000000000000000000000",
+        "-16725649477364528748156162360180035043/184007326619750000000000000000000000",
+        "44753567761440137991115591524889497/1150045791373437500000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2300422271"
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "1049577729/100000000",
+        "0",
+        "-179399317/25000000"
+      ],
+      "annular_coefficients": [
+        "331980461/100000000",
+        "-21801938186317163750087910157/2002546344572562212620000000",
+        "37884688999666308092800584947/5006365861431405531550000000"
+      ],
+      "mean_A": "9",
+      "mean_B": "-41844181/20000000",
+      "minimum_height_all_first_segment_times": "2300422271/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2300422271/3350000000",
+        "0",
+        "71759726800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "465460864265592747878411789/6700000000000000000000000",
+        "25733787042492162026161619109/16750000000000000000000000",
+        "714063089632237057353887623804090396003/92003663309875000000000000000000000",
+        "307561450230636853698016688690630228959/184007326619750000000000000000000000",
+        "-345299541869457076128480418458790492961/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2300422271"
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "1049577729/100000000",
+        "0",
+        "-179399317/25000000"
+      ],
+      "annular_coefficients": [
+        "331980461/100000000",
+        "-21801938186317163750087910157/2002546344572562212620000000",
+        "37884688999666308092800584947/5006365861431405531550000000"
+      ],
+      "mean_A": "126903467/50000000",
+      "mean_B": "436972161/100000000",
+      "minimum_height_all_first_segment_times": "2300422271/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2300422271/3350000000",
+        "0",
+        "71759726800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "465460864265592747878411789/6700000000000000000000000",
+        "25733787042492162026161619109/16750000000000000000000000",
+        "714063089632237057353887623804090396003/92003663309875000000000000000000000",
+        "307561450230636853698016688690630228959/184007326619750000000000000000000000",
+        "-345299541869457076128480418458790492961/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2300422271"
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "138419619/100000000",
+        "0",
+        "-68604537/25000000"
+      ],
+      "annular_coefficients": [
+        "-135998529/100000000",
+        "1233268222388609348106546639/286078049224651744660000000",
+        "-2110515709127967674990276469/715195123061629361650000000"
+      ],
+      "mean_A": "0",
+      "mean_B": "46946903/100000000",
+      "minimum_height_all_first_segment_times": "3211580381/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "3211580381/3350000000",
+        "0",
+        "27441814800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "586160567193571800466760779/6700000000000000000000000",
+        "29724109674071575756365261799/16750000000000000000000000",
+        "785243405197702241483469126085838861983/92003663309875000000000000000000000",
+        "-121926504327187760646906520489107739851/184007326619750000000000000000000000",
+        "134653890185984894202463797131198498529/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/3211580381"
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "138419619/100000000",
+        "0",
+        "-68604537/25000000"
+      ],
+      "annular_coefficients": [
+        "-135998529/100000000",
+        "1233268222388609348106546639/286078049224651744660000000",
+        "-2110515709127967674990276469/715195123061629361650000000"
+      ],
+      "mean_A": "-22868179/25000000",
+      "mean_B": "138419619/100000000",
+      "minimum_height_all_first_segment_times": "3211580381/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "3211580381/3350000000",
+        "0",
+        "27441814800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "586160567193571800466760779/6700000000000000000000000",
+        "29724109674071575756365261799/16750000000000000000000000",
+        "785243405197702241483469126085838861983/92003663309875000000000000000000000",
+        "-121926504327187760646906520489107739851/184007326619750000000000000000000000",
+        "134653890185984894202463797131198498529/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/3211580381"
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "138419619/100000000",
+        "0",
+        "-22868179/12500000"
+      ],
+      "annular_coefficients": [
+        "-44525813/100000000",
+        "13887545560229756627797044773/10012731722862811063100000000",
+        "-942929535711618312729782677/1001273172286281106310000000"
+      ],
+      "mean_A": "0",
+      "mean_B": "46946903/100000000",
+      "minimum_height_all_first_segment_times": "3211580381/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "3211580381/3350000000",
+        "0",
+        "18294543200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2890775163420962119016825793/33500000000000000000000000",
+        "28944148059070790478399218003/16750000000000000000000000",
+        "385610451799564390837845672361079620661/46001831654937500000000000000000000",
+        "-39252215845772601791797405187734912303/184007326619750000000000000000000000",
+        "8594319903200723750625973881122416951/73602930647900000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/3211580381"
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "138419619/100000000",
+        "0",
+        "-22868179/12500000"
+      ],
+      "annular_coefficients": [
+        "-44525813/100000000",
+        "13887545560229756627797044773/10012731722862811063100000000",
+        "-942929535711618312729782677/1001273172286281106310000000"
+      ],
+      "mean_A": "-22868179/25000000",
+      "mean_B": "138419619/100000000",
+      "minimum_height_all_first_segment_times": "3211580381/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "3211580381/3350000000",
+        "0",
+        "18294543200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2890775163420962119016825793/33500000000000000000000000",
+        "28944148059070790478399218003/16750000000000000000000000",
+        "385610451799564390837845672361079620661/46001831654937500000000000000000000",
+        "-39252215845772601791797405187734912303/184007326619750000000000000000000000",
+        "8594319903200723750625973881122416951/73602930647900000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/3211580381"
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "772032047/100000000",
+        "0",
+        "-255320133/25000000"
+      ],
+      "annular_coefficients": [
+        "-49849697/20000000",
+        "11106813367670103208208351863/1430390246123258723300000000",
+        "-3770793674810054803876379929/715195123061629361650000000"
+      ],
+      "mean_A": "8",
+      "mean_B": "-368394797/100000000",
+      "minimum_height_all_first_segment_times": "2577967953/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2577967953/3350000000",
+        "0",
+        "102128053200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2703096700786415410652123811/33500000000000000000000000",
+        "6137951913770068192857828807/3350000000000000000000000",
+        "802993369205309349043078051501113906547/92003663309875000000000000000000000",
+        "-219747899007606921305364851129923000087/184007326619750000000000000000000000",
+        "240581974920089465749111134220197062389/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2577967953"
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "772032047/100000000",
+        "0",
+        "-255320133/25000000"
+      ],
+      "annular_coefficients": [
+        "-49849697/20000000",
+        "11106813367670103208208351863/1430390246123258723300000000",
+        "-3770793674810054803876379929/715195123061629361650000000"
+      ],
+      "mean_A": "39893289/25000000",
+      "mean_B": "272032047/100000000",
+      "minimum_height_all_first_segment_times": "2577967953/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2577967953/3350000000",
+        "0",
+        "102128053200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2703096700786415410652123811/33500000000000000000000000",
+        "6137951913770068192857828807/3350000000000000000000000",
+        "802993369205309349043078051501113906547/92003663309875000000000000000000000",
+        "-219747899007606921305364851129923000087/184007326619750000000000000000000000",
+        "240581974920089465749111134220197062389/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2577967953"
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "772032047/100000000",
+        "0",
+        "-85106711/12500000"
+      ],
+      "annular_coefficients": [
+        "91178359/100000000",
+        "-31209637488703082528929894087/10012731722862811063100000000",
+        "11040096506362171790162429779/5006365861431405531550000000"
+      ],
+      "mean_A": "8",
+      "mean_B": "-368394797/100000000",
+      "minimum_height_all_first_segment_times": "2577967953/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2577967953/3350000000",
+        "0",
+        "68085368800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2554128846395762486549213093/33500000000000000000000000",
+        "27787037504318438471094965471/16750000000000000000000000",
+        "375403461547009766019409074984912968849/46001831654937500000000000000000000",
+        "17586905258512725107240635762665525009/36801465323950000000000000000000000",
+        "-100624826717596367699973628035528250177/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2577967953"
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "772032047/100000000",
+        "0",
+        "-85106711/12500000"
+      ],
+      "annular_coefficients": [
+        "91178359/100000000",
+        "-31209637488703082528929894087/10012731722862811063100000000",
+        "11040096506362171790162429779/5006365861431405531550000000"
+      ],
+      "mean_A": "39893289/25000000",
+      "mean_B": "272032047/100000000",
+      "minimum_height_all_first_segment_times": "2577967953/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2577967953/3350000000",
+        "0",
+        "68085368800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2554128846395762486549213093/33500000000000000000000000",
+        "27787037504318438471094965471/16750000000000000000000000",
+        "375403461547009766019409074984912968849/46001831654937500000000000000000000",
+        "17586905258512725107240635762665525009/36801465323950000000000000000000000",
+        "-100624826717596367699973628035528250177/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2577967953"
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "631048581/50000000",
+        "0",
+        "-635666949/50000000"
+      ],
+      "annular_coefficients": [
+        "-36081/390625",
+        "-178689397429103247111965751/5006365861431405531550000000",
+        "641114195243647997150635959/5006365861431405531550000000"
+      ],
+      "mean_A": "13",
+      "mean_B": "-115420201/25000000",
+      "minimum_height_all_first_segment_times": "1043951419/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1043951419/1675000000",
+        "0",
+        "127133389800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2383621354211406426514894403/33500000000000000000000000",
+        "223775376721735953090057347/130859375000000000000000",
+        "1533002387645740080633058405885909951091/184007326619750000000000000000000000",
+        "34296410508042794752028823630273891/9200366330987500000000000000000000",
+        "-5843427615456661522238529746100461517/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1043951419"
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "631048581/50000000",
+        "0",
+        "-635666949/50000000"
+      ],
+      "annular_coefficients": [
+        "-36081/390625",
+        "-178689397429103247111965751/5006365861431405531550000000",
+        "641114195243647997150635959/5006365861431405531550000000"
+      ],
+      "mean_A": "55202771/10000000",
+      "mean_B": "143145743/50000000",
+      "minimum_height_all_first_segment_times": "1043951419/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1043951419/1675000000",
+        "0",
+        "127133389800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2383621354211406426514894403/33500000000000000000000000",
+        "223775376721735953090057347/130859375000000000000000",
+        "1533002387645740080633058405885909951091/184007326619750000000000000000000000",
+        "34296410508042794752028823630273891/9200366330987500000000000000000000",
+        "-5843427615456661522238529746100461517/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1043951419"
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "631048581/50000000",
+        "0",
+        "-211888983/25000000"
+      ],
+      "annular_coefficients": [
+        "41454123/10000000",
+        "-67996073590565567197840122297/5006365861431405531550000000",
+        "5905327871285965387633089279/625795732678925691443750000"
+      ],
+      "mean_A": "13",
+      "mean_B": "-115420201/25000000",
+      "minimum_height_all_first_segment_times": "1043951419/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1043951419/1675000000",
+        "0",
+        "84755593200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "549544941711573818332243169/8375000000000000000000000",
+        "2502981504361823804479918387/1675000000000000000000000",
+        "701537262876781052438189401965657483697/92003663309875000000000000000000000",
+        "191851117274771731424204142198151066809/92003663309875000000000000000000000",
+        "-53824039800404344856416421293949848677/46001831654937500000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1043951419"
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "631048581/50000000",
+        "0",
+        "-211888983/25000000"
+      ],
+      "annular_coefficients": [
+        "41454123/10000000",
+        "-67996073590565567197840122297/5006365861431405531550000000",
+        "5905327871285965387633089279/625795732678925691443750000"
+      ],
+      "mean_A": "55202771/10000000",
+      "mean_B": "143145743/50000000",
+      "minimum_height_all_first_segment_times": "1043951419/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1043951419/1675000000",
+        "0",
+        "84755593200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "549544941711573818332243169/8375000000000000000000000",
+        "2502981504361823804479918387/1675000000000000000000000",
+        "701537262876781052438189401965657483697/92003663309875000000000000000000000",
+        "191851117274771731424204142198151066809/92003663309875000000000000000000000",
+        "-53824039800404344856416421293949848677/46001831654937500000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1043951419"
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "972802387/100000000",
+        "0",
+        "-435141819/25000000"
+      ],
+      "annular_coefficients": [
+        "-767764889/100000000",
+        "243177401964311774982489498509/10012731722862811063100000000",
+        "-3326063267328126520032001271/200254634457256221262000000"
+      ],
+      "mean_A": "7",
+      "mean_B": "-61477341/20000000",
+      "minimum_height_all_first_segment_times": "2377197613/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2377197613/3350000000",
+        "0",
+        "174056727600000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2842139641228430274273720619/33500000000000000000000000",
+        "35111000235501581969389434959/16750000000000000000000000",
+        "882603712080393275888226781993490961421/92003663309875000000000000000000000",
+        "-686952963985627223083207376407732331939/184007326619750000000000000000000000",
+        "30315363614238660338172753959330200973/14720586129580000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2377197613"
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "972802387/100000000",
+        "0",
+        "-435141819/25000000"
+      ],
+      "annular_coefficients": [
+        "-767764889/100000000",
+        "243177401964311774982489498509/10012731722862811063100000000",
+        "-3326063267328126520032001271/200254634457256221262000000"
+      ],
+      "mean_A": "9046621/100000000",
+      "mean_B": "191783337/50000000",
+      "minimum_height_all_first_segment_times": "2377197613/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2377197613/3350000000",
+        "0",
+        "174056727600000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2842139641228430274273720619/33500000000000000000000000",
+        "35111000235501581969389434959/16750000000000000000000000",
+        "882603712080393275888226781993490961421/92003663309875000000000000000000000",
+        "-686952963985627223083207376407732331939/184007326619750000000000000000000000",
+        "30315363614238660338172753959330200973/14720586129580000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2377197613"
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "972802387/100000000",
+        "0",
+        "-145047273/12500000"
+      ],
+      "annular_coefficients": [
+        "-187575797/100000000",
+        "11496308738212431407347724881/2002546344572562212620000000",
+        "-19350041180215203984262313249/5006365861431405531550000000"
+      ],
+      "mean_A": "7",
+      "mean_B": "-61477341/20000000",
+      "minimum_height_all_first_segment_times": "2377197613/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2377197613/3350000000",
+        "0",
+        "116037818400000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "517650778500056046122287829/6700000000000000000000000",
+        "30163894245971772996513997907/16750000000000000000000000",
+        "396831204977179748070781732695663653807/46001831654937500000000000000000000",
+        "-162570148395256867280264811898914126863/184007326619750000000000000000000000",
+        "176365717420625790464148495542545921787/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2377197613"
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "972802387/100000000",
+        "0",
+        "-145047273/12500000"
+      ],
+      "annular_coefficients": [
+        "-187575797/100000000",
+        "11496308738212431407347724881/2002546344572562212620000000",
+        "-19350041180215203984262313249/5006365861431405531550000000"
+      ],
+      "mean_A": "9046621/100000000",
+      "mean_B": "191783337/50000000",
+      "minimum_height_all_first_segment_times": "2377197613/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2377197613/3350000000",
+        "0",
+        "116037818400000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "517650778500056046122287829/6700000000000000000000000",
+        "30163894245971772996513997907/16750000000000000000000000",
+        "396831204977179748070781732695663653807/46001831654937500000000000000000000",
+        "-162570148395256867280264811898914126863/184007326619750000000000000000000000",
+        "176365717420625790464148495542545921787/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2377197613"
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "12",
+        "0",
+        "-302893497/12500000"
+      ],
+      "annular_coefficients": [
+        "-152893497/12500000",
+        "24270701021692235298301466607/625795732678925691443750000",
+        "-33232586367071170249726466607/1251591465357851382887500000"
+      ],
+      "mean_A": "12",
+      "mean_B": "-100964499/12500000",
+      "minimum_height_all_first_segment_times": "43/2",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "43/67",
+        "0",
+        "242314797600000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "735497909747373594311033393/8375000000000000000000000",
+        "4874240151837369233057716607/2093750000000000000000000",
+        "476276064382622586981593932467212604623/46001831654937500000000000000000000",
+        "-137113513354844726943189819333722951541/23000915827468750000000000000000000",
+        "302898008422028080805455583932022951541/92003663309875000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "67/43"
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "12",
+        "0",
+        "-302893497/12500000"
+      ],
+      "annular_coefficients": [
+        "-152893497/12500000",
+        "24270701021692235298301466607/625795732678925691443750000",
+        "-33232586367071170249726466607/1251591465357851382887500000"
+      ],
+      "mean_A": "41221371/25000000",
+      "mean_B": "56849631/25000000",
+      "minimum_height_all_first_segment_times": "43/2",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "43/67",
+        "0",
+        "242314797600000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "735497909747373594311033393/8375000000000000000000000",
+        "4874240151837369233057716607/2093750000000000000000000",
+        "476276064382622586981593932467212604623/46001831654937500000000000000000000",
+        "-137113513354844726943189819333722951541/23000915827468750000000000000000000",
+        "302898008422028080805455583932022951541/92003663309875000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "67/43"
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "12",
+        "0",
+        "-100964499/6250000"
+      ],
+      "annular_coefficients": [
+        "-25964499/6250000",
+        "4056652739959013148987988869/312897866339462845721875000",
+        "-5513549851862628948125488869/625795732678925691443750000"
+      ],
+      "mean_A": "12",
+      "mean_B": "-100964499/12500000",
+      "minimum_height_all_first_segment_times": "43/2",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "43/67",
+        "0",
+        "161543198400000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "323567759851189620743261131/4187500000000000000000000",
+        "2006672412717205116366113869/1046875000000000000000000",
+        "207182903481091986474944938865894826541/23000915827468750000000000000000000",
+        "-22930210961279244222727818977565983847/11500457913734375000000000000000000",
+        "50253183758202364677225119709990983847/46001831654937500000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "67/43"
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "12",
+        "0",
+        "-100964499/6250000"
+      ],
+      "annular_coefficients": [
+        "-25964499/6250000",
+        "4056652739959013148987988869/312897866339462845721875000",
+        "-5513549851862628948125488869/625795732678925691443750000"
+      ],
+      "mean_A": "41221371/25000000",
+      "mean_B": "56849631/25000000",
+      "minimum_height_all_first_segment_times": "43/2",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "43/67",
+        "0",
+        "161543198400000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "323567759851189620743261131/4187500000000000000000000",
+        "2006672412717205116366113869/1046875000000000000000000",
+        "207182903481091986474944938865894826541/23000915827468750000000000000000000",
+        "-22930210961279244222727818977565983847/11500457913734375000000000000000000",
+        "50253183758202364677225119709990983847/46001831654937500000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "67/43"
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "335013163/50000000",
+        "0",
+        "-579863391/50000000"
+      ],
+      "annular_coefficients": [
+        "-61212557/12500000",
+        "15497479511568828534726971059/1001273172286281106310000000",
+        "-52971201105386221658425281427/5006365861431405531550000000"
+      ],
+      "mean_A": "8",
+      "mean_B": "-129137317/25000000",
+      "minimum_height_all_first_segment_times": "1339986837/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1339986837/1675000000",
+        "0",
+        "115972678200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "570590647353501172829132397/6700000000000000000000000",
+        "4092503070507127600983643467/2093750000000000000000000",
+        "1679582640643390924476718704314794664969/184007326619750000000000000000000000",
+        "-109450459346121586455582095467242212881/46001831654937500000000000000000000",
+        "482805374860695011771767125101278963201/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1339986837"
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "335013163/50000000",
+        "0",
+        "-579863391/50000000"
+      ],
+      "annular_coefficients": [
+        "-61212557/12500000",
+        "15497479511568828534726971059/1001273172286281106310000000",
+        "-52971201105386221658425281427/5006365861431405531550000000"
+      ],
+      "mean_A": "143398081/100000000",
+      "mean_B": "140052651/100000000",
+      "minimum_height_all_first_segment_times": "1339986837/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1339986837/1675000000",
+        "0",
+        "115972678200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "570590647353501172829132397/6700000000000000000000000",
+        "4092503070507127600983643467/2093750000000000000000000",
+        "1679582640643390924476718704314794664969/184007326619750000000000000000000000",
+        "-109450459346121586455582095467242212881/46001831654937500000000000000000000",
+        "482805374860695011771767125101278963201/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1339986837"
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "335013163/50000000",
+        "0",
+        "-193287797/25000000"
+      ],
+      "annular_coefficients": [
+        "-51562431/50000000",
+        "15623526188024175972458315481/5006365861431405531550000000",
+        "-32689744694399774354334411/15644893316973142286093750"
+      ],
+      "mean_A": "8",
+      "mean_B": "-129137317/25000000",
+      "minimum_height_all_first_segment_times": "1339986837/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1339986837/1675000000",
+        "0",
+        "77315118800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "670947771729169675070982973/8375000000000000000000000",
+        "14721902671857277053346303961/8375000000000000000000000",
+        "780530404915679915724721103450902388323/92003663309875000000000000000000000",
+        "-44204771164326635508808245898137796321/92003663309875000000000000000000000",
+        "297950284530649856862497085936194793/1150045791373437500000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1339986837"
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "335013163/50000000",
+        "0",
+        "-193287797/25000000"
+      ],
+      "annular_coefficients": [
+        "-51562431/50000000",
+        "15623526188024175972458315481/5006365861431405531550000000",
+        "-32689744694399774354334411/15644893316973142286093750"
+      ],
+      "mean_A": "143398081/100000000",
+      "mean_B": "140052651/100000000",
+      "minimum_height_all_first_segment_times": "1339986837/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1339986837/1675000000",
+        "0",
+        "77315118800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "670947771729169675070982973/8375000000000000000000000",
+        "14721902671857277053346303961/8375000000000000000000000",
+        "780530404915679915724721103450902388323/92003663309875000000000000000000000",
+        "-44204771164326635508808245898137796321/92003663309875000000000000000000000",
+        "297950284530649856862497085936194793/1150045791373437500000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1339986837"
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "120752823/50000000",
+        "0",
+        "-362258469/50000000"
+      ],
+      "annular_coefficients": [
+        "-120752823/25000000",
+        "76979478418969029561146929191/5006365861431405531550000000",
+        "-10559633197884453601889561313/1001273172286281106310000000"
+      ],
+      "mean_A": "2",
+      "mean_B": "-2",
+      "minimum_height_all_first_segment_times": "1554247177/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1554247177/1675000000",
+        "0",
+        "72451693800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "3037543074379948610300438687/33500000000000000000000000",
+        "8170746995269514461862061313/4187500000000000000000000",
+        "1677005508715806488284648148632345778771/184007326619750000000000000000000000",
+        "-54352934136090245367182200485081475419/23000915827468750000000000000000000",
+        "96245649675813049419254400642688975419/73602930647900000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1554247177"
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "120752823/50000000",
+        "0",
+        "-362258469/50000000"
+      ],
+      "annular_coefficients": [
+        "-120752823/25000000",
+        "76979478418969029561146929191/5006365861431405531550000000",
+        "-10559633197884453601889561313/1001273172286281106310000000"
+      ],
+      "mean_A": "-20752823/50000000",
+      "mean_B": "20752823/50000000",
+      "minimum_height_all_first_segment_times": "1554247177/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1554247177/1675000000",
+        "0",
+        "72451693800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "3037543074379948610300438687/33500000000000000000000000",
+        "8170746995269514461862061313/4187500000000000000000000",
+        "1677005508715806488284648148632345778771/184007326619750000000000000000000000",
+        "-54352934136090245367182200485081475419/23000915827468750000000000000000000",
+        "96245649675813049419254400642688975419/73602930647900000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1554247177"
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "120752823/50000000",
+        "0",
+        "-120752823/25000000"
+      ],
+      "annular_coefficients": [
+        "-120752823/50000000",
+        "841105242108230451/109855120370000000",
+        "-719748654993230451/137318900462500000"
+      ],
+      "mean_A": "2",
+      "mean_B": "-2",
+      "minimum_height_all_first_segment_times": "1554247177/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1554247177/1675000000",
+        "0",
+        "48301129200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "875182771371889369/10000000000000000",
+        "15311869300669932115324561313/8375000000000000000000000",
+        "801480640495016346924443182786919426257/92003663309875000000000000000000000",
+        "-108273687952393257817144283058506926257/92003663309875000000000000000000000",
+        "59792321188271306380067973283993975419/92003663309875000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1554247177"
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "120752823/50000000",
+        "0",
+        "-120752823/25000000"
+      ],
+      "annular_coefficients": [
+        "-120752823/50000000",
+        "841105242108230451/109855120370000000",
+        "-719748654993230451/137318900462500000"
+      ],
+      "mean_A": "-20752823/50000000",
+      "mean_B": "20752823/50000000",
+      "minimum_height_all_first_segment_times": "1554247177/50000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "1554247177/1675000000",
+        "0",
+        "48301129200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "875182771371889369/10000000000000000",
+        "15311869300669932115324561313/8375000000000000000000000",
+        "801480640495016346924443182786919426257/92003663309875000000000000000000000",
+        "-108273687952393257817144283058506926257/92003663309875000000000000000000000",
+        "59792321188271306380067973283993975419/92003663309875000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "1675000000/1554247177"
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "583168051/100000000",
+        "0",
+        "-113766819/12500000"
+      ],
+      "annular_coefficients": [
+        "-326966501/100000000",
+        "20623613063798001752339178961/2002546344572562212620000000",
+        "-35189893375114229199218461337/5006365861431405531550000000"
+      ],
+      "mean_A": "6",
+      "mean_B": "-320210133/100000000",
+      "minimum_height_all_first_segment_times": "2766831949/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2766831949/3350000000",
+        "0",
+        "91013455200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "112790027712657701790673561/1340000000000000000000000",
+        "31352438801792509973958972131/16750000000000000000000000",
+        "407395670903303202805659293862967336421/46001831654937500000000000000000000",
+        "-291342409150483451614683428506640501759/184007326619750000000000000000000000",
+        "320737859586732085786299794863467386531/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2766831949"
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "583168051/100000000",
+        "0",
+        "-113766819/12500000"
+      ],
+      "annular_coefficients": [
+        "-326966501/100000000",
+        "20623613063798001752339178961/2002546344572562212620000000",
+        "-35189893375114229199218461337/5006365861431405531550000000"
+      ],
+      "mean_A": "81880459/100000000",
+      "mean_B": "6184669/3125000",
+      "minimum_height_all_first_segment_times": "2766831949/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2766831949/3350000000",
+        "0",
+        "91013455200000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "112790027712657701790673561/1340000000000000000000000",
+        "31352438801792509973958972131/16750000000000000000000000",
+        "407395670903303202805659293862967336421/46001831654937500000000000000000000",
+        "-291342409150483451614683428506640501759/184007326619750000000000000000000000",
+        "320737859586732085786299794863467386531/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2766831949"
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "583168051/100000000",
+        "0",
+        "-37922273/6250000"
+      ],
+      "annular_coefficients": [
+        "-23588317/100000000",
+        "859794671158607784532592371/1430390246123258723300000000",
+        "-52238968556597330615043551/143039024612325872330000000"
+      ],
+      "mean_A": "6",
+      "mean_B": "-320210133/100000000",
+      "minimum_height_all_first_segment_times": "2766831949/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2766831949/3350000000",
+        "0",
+        "60675636800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2686995012892997052058776077/33500000000000000000000000",
+        "28765620035542632838975098027/16750000000000000000000000",
+        "192071086908095965569624988436205778807/23000915827468750000000000000000000",
+        "-17145068131508475037683981786625091607/184007326619750000000000000000000000",
+        "3332920150760492978901220826171936291/73602930647900000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2766831949"
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "583168051/100000000",
+        "0",
+        "-37922273/6250000"
+      ],
+      "annular_coefficients": [
+        "-23588317/100000000",
+        "859794671158607784532592371/1430390246123258723300000000",
+        "-52238968556597330615043551/143039024612325872330000000"
+      ],
+      "mean_A": "81880459/100000000",
+      "mean_B": "6184669/3125000",
+      "minimum_height_all_first_segment_times": "2766831949/100000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "2766831949/3350000000",
+        "0",
+        "60675636800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2686995012892997052058776077/33500000000000000000000000",
+        "28765620035542632838975098027/16750000000000000000000000",
+        "192071086908095965569624988436205778807/23000915827468750000000000000000000",
+        "-17145068131508475037683981786625091607/184007326619750000000000000000000000",
+        "3332920150760492978901220826171936291/73602930647900000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "3350000000/2766831949"
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "49233871/10000000",
+        "0",
+        "-1022633817/100000000"
+      ],
+      "annular_coefficients": [
+        "-530295107/100000000",
+        "21054260517787477678732430383/1251591465357851382887500000",
+        "-115337057738921534039585460547/10012731722862811063100000000"
+      ],
+      "mean_A": "4",
+      "mean_B": "-248539229/100000000",
+      "minimum_height_all_first_segment_times": "285766129/10000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "285766129/335000000",
+        "0",
+        "102263381700000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "5896943352909410439829843493/67000000000000000000000000",
+        "33086163510607522742073982517/16750000000000000000000000",
+        "3383621007488667280865056982806330781503/368014653239500000000000000000000000",
+        "-475763742215665267688988636585601578131/184007326619750000000000000000000000",
+        "1051238224449236318605296445665442895761/736029306479000000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "335000000/285766129"
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "49233871/10000000",
+        "0",
+        "-1022633817/100000000"
+      ],
+      "annular_coefficients": [
+        "-530295107/100000000",
+        "21054260517787477678732430383/1251591465357851382887500000",
+        "-115337057738921534039585460547/10012731722862811063100000000"
+      ],
+      "mean_A": "34928513/100000000",
+      "mean_B": "58266129/50000000",
+      "minimum_height_all_first_segment_times": "285766129/10000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "285766129/335000000",
+        "0",
+        "102263381700000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "5896943352909410439829843493/67000000000000000000000000",
+        "33086163510607522742073982517/16750000000000000000000000",
+        "3383621007488667280865056982806330781503/368014653239500000000000000000000000",
+        "-475763742215665267688988636585601578131/184007326619750000000000000000000000",
+        "1051238224449236318605296445665442895761/736029306479000000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "335000000/285766129"
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "49233871/10000000",
+        "0",
+        "-340877939/50000000"
+      ],
+      "annular_coefficients": [
+        "-11838573/6250000",
+        "4238026799736512649774350289/715195123061629361650000000",
+        "-2883324451959059418280442217/715195123061629361650000000"
+      ],
+      "mean_A": "4",
+      "mean_B": "-248539229/100000000",
+      "minimum_height_all_first_segment_times": "285766129/10000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "285766129/335000000",
+        "0",
+        "68175587800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2799306426777926294594556501/33500000000000000000000000",
+        "1886224693024028160972794563/1046875000000000000000000",
+        "1587299308415970889743577126249785260501/184007326619750000000000000000000000",
+        "-41918402775300015767793641979474539491/46001831654937500000000000000000000",
+        "183960182075630931857032109216144737797/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "335000000/285766129"
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "49233871/10000000",
+        "0",
+        "-340877939/50000000"
+      ],
+      "annular_coefficients": [
+        "-11838573/6250000",
+        "4238026799736512649774350289/715195123061629361650000000",
+        "-2883324451959059418280442217/715195123061629361650000000"
+      ],
+      "mean_A": "34928513/100000000",
+      "mean_B": "58266129/50000000",
+      "minimum_height_all_first_segment_times": "285766129/10000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "285766129/335000000",
+        "0",
+        "68175587800000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2799306426777926294594556501/33500000000000000000000000",
+        "1886224693024028160972794563/1046875000000000000000000",
+        "1587299308415970889743577126249785260501/184007326619750000000000000000000000",
+        "-41918402775300015767793641979474539491/46001831654937500000000000000000000",
+        "183960182075630931857032109216144737797/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "335000000/285766129"
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "line",
+      "state": "first",
+      "core_coefficients": [
+        "259169279/25000000",
+        "0",
+        "-164747001/10000000"
+      ],
+      "annular_coefficients": [
+        "-305396447/50000000",
+        "12048068352410310115521460801/625795732678925691443750000",
+        "-65806019890017569253141358351/5006365861431405531550000000"
+      ],
+      "mean_A": "9",
+      "mean_B": "-206239777/50000000",
+      "minimum_height_all_first_segment_times": "578330721/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "578330721/837500000",
+        "0",
+        "164747001000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2745499017249068897856682041/33500000000000000000000000",
+        "16886272526814848994905328057/8375000000000000000000000",
+        "343431833640583013223359143407593876959/36801465323950000000000000000000000",
+        "-272311156029795752167448370237078578639/92003663309875000000000000000000000",
+        "599788176180503718816275810627659029013/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/578330721"
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "line",
+      "state": "second",
+      "core_coefficients": [
+        "259169279/25000000",
+        "0",
+        "-164747001/10000000"
+      ],
+      "annular_coefficients": [
+        "-305396447/50000000",
+        "12048068352410310115521460801/625795732678925691443750000",
+        "-65806019890017569253141358351/5006365861431405531550000000"
+      ],
+      "mean_A": "15084333/10000000",
+      "mean_B": "84169279/25000000",
+      "minimum_height_all_first_segment_times": "578330721/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "578330721/837500000",
+        "0",
+        "164747001000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "2745499017249068897856682041/33500000000000000000000000",
+        "16886272526814848994905328057/8375000000000000000000000",
+        "343431833640583013223359143407593876959/36801465323950000000000000000000000",
+        "-272311156029795752167448370237078578639/92003663309875000000000000000000000",
+        "599788176180503718816275810627659029013/368014653239500000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/578330721"
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "disk",
+      "state": "first",
+      "core_coefficients": [
+        "259169279/25000000",
+        "0",
+        "-54915667/5000000"
+      ],
+      "annular_coefficients": [
+        "-481533/781250",
+        "607339324967884234440009117/357597561530814680825000000",
+        "-386929690924213468741827069/357597561530814680825000000"
+      ],
+      "mean_A": "9",
+      "mean_B": "-206239777/50000000",
+      "minimum_height_all_first_segment_times": "578330721/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "578330721/837500000",
+        "0",
+        "109831334000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "1252596394532544924556230713/16750000000000000000000000",
+        "7102061432229027428661889/4089355468750000000000",
+        "154879092421325856704841588422167125653/18400732661975000000000000000000000",
+        "-6035877847468040671884669119765633971/23000915827468750000000000000000000",
+        "24686662073192378042629017025196493129/184007326619750000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/578330721"
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "disk",
+      "state": "second",
+      "core_coefficients": [
+        "259169279/25000000",
+        "0",
+        "-54915667/5000000"
+      ],
+      "annular_coefficients": [
+        "-481533/781250",
+        "607339324967884234440009117/357597561530814680825000000",
+        "-386929690924213468741827069/357597561530814680825000000"
+      ],
+      "mean_A": "15084333/10000000",
+      "mean_B": "84169279/25000000",
+      "minimum_height_all_first_segment_times": "578330721/25000000",
+      "rho_squared_core_coefficients": [
+        "0",
+        "0",
+        "578330721/837500000",
+        "0",
+        "109831334000000000/58637245681916587723"
+      ],
+      "rho_squared_annulus_coefficients": [
+        "1252596394532544924556230713/16750000000000000000000000",
+        "7102061432229027428661889/4089355468750000000000",
+        "154879092421325856704841588422167125653/18400732661975000000000000000000000",
+        "-6035877847468040671884669119765633971/23000915827468750000000000000000000",
+        "24686662073192378042629017025196493129/184007326619750000000000000000000000"
+      ],
+      "axis_inverse_scale_squared_endpoint": "837500000/578330721"
+    }
+  ],
+  "exact_piecewise_affine_paths": [
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "3"
+        ],
+        "B": [
+          "0",
+          "-239055597/100000000"
+        ],
+        "V": [
+          "0",
+          "60944403/100000000"
+        ],
+        "M": [
+          "0",
+          "77722063/25000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "3",
+          "-287766199/100000000"
+        ],
+        "B": [
+          "-239055597/100000000",
+          "287766199/100000000"
+        ],
+        "V": [
+          "60944403/100000000",
+          "0"
+        ],
+        "M": [
+          "77722063/25000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "77722063/25000000",
+        "60944403/100000000",
+        "3",
+        "24355301/50000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "4"
+        ],
+        "B": [
+          "0",
+          "-26870319/10000000"
+        ],
+        "V": [
+          "0",
+          "13129681/10000000"
+        ],
+        "M": [
+          "0",
+          "121538093/25000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "4",
+          "-177427781/50000000"
+        ],
+        "B": [
+          "-26870319/10000000",
+          "177427781/50000000"
+        ],
+        "V": [
+          "13129681/10000000",
+          "0"
+        ],
+        "M": [
+          "121538093/25000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "121538093/25000000",
+        "13129681/10000000",
+        "4",
+        "21538093/25000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "6"
+        ],
+        "B": [
+          "0",
+          "-92702713/50000000"
+        ],
+        "V": [
+          "0",
+          "207297287/50000000"
+        ],
+        "M": [
+          "0",
+          "831533939/100000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "6",
+          "-83387873/20000000"
+        ],
+        "B": [
+          "-92702713/50000000",
+          "83387873/20000000"
+        ],
+        "V": [
+          "207297287/50000000",
+          "0"
+        ],
+        "M": [
+          "831533939/100000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "831533939/100000000",
+        "207297287/50000000",
+        "6",
+        "231533939/100000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "8"
+        ],
+        "B": [
+          "0",
+          "-55417101/50000000"
+        ],
+        "V": [
+          "0",
+          "344582899/50000000"
+        ],
+        "M": [
+          "0",
+          "14418011/1562500"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "8",
+          "-237252237/50000000"
+        ],
+        "B": [
+          "-55417101/50000000",
+          "237252237/50000000"
+        ],
+        "V": [
+          "344582899/50000000",
+          "0"
+        ],
+        "M": [
+          "14418011/1562500",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "14418011/1562500",
+        "344582899/50000000",
+        "8",
+        "1420587/390625"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "6"
+        ],
+        "B": [
+          "0",
+          "-20960103/6250000"
+        ],
+        "V": [
+          "0",
+          "16539897/6250000"
+        ],
+        "M": [
+          "0",
+          "382404181/50000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "6",
+          "-70017001/10000000"
+        ],
+        "B": [
+          "-20960103/6250000",
+          "70017001/10000000"
+        ],
+        "V": [
+          "16539897/6250000",
+          "0"
+        ],
+        "M": [
+          "382404181/50000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "382404181/50000000",
+        "16539897/6250000",
+        "6",
+        "182404181/50000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "13"
+        ],
+        "B": [
+          "0",
+          "-173970389/25000000"
+        ],
+        "V": [
+          "0",
+          "151029611/25000000"
+        ],
+        "M": [
+          "0",
+          "636662153/50000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "13",
+          "-130316271/12500000"
+        ],
+        "B": [
+          "-173970389/25000000",
+          "130316271/12500000"
+        ],
+        "V": [
+          "151029611/25000000",
+          "0"
+        ],
+        "M": [
+          "636662153/50000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "636662153/50000000",
+        "151029611/25000000",
+        "13",
+        "86662153/25000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "9"
+        ],
+        "B": [
+          "0",
+          "-41844181/20000000"
+        ],
+        "V": [
+          "0",
+          "138155819/20000000"
+        ],
+        "M": [
+          "0",
+          "1049577729/100000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "9",
+          "-323096533/50000000"
+        ],
+        "B": [
+          "-41844181/20000000",
+          "323096533/50000000"
+        ],
+        "V": [
+          "138155819/20000000",
+          "0"
+        ],
+        "M": [
+          "1049577729/100000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "1049577729/100000000",
+        "138155819/20000000",
+        "9",
+        "436972161/100000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "0",
+          "46946903/100000000"
+        ],
+        "V": [
+          "0",
+          "46946903/100000000"
+        ],
+        "M": [
+          "0",
+          "138419619/100000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "0",
+          "-22868179/25000000"
+        ],
+        "B": [
+          "46946903/100000000",
+          "22868179/25000000"
+        ],
+        "V": [
+          "46946903/100000000",
+          "0"
+        ],
+        "M": [
+          "138419619/100000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "138419619/100000000",
+        "46946903/100000000",
+        "0",
+        "138419619/100000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "8"
+        ],
+        "B": [
+          "0",
+          "-368394797/100000000"
+        ],
+        "V": [
+          "0",
+          "431605203/100000000"
+        ],
+        "M": [
+          "0",
+          "772032047/100000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "8",
+          "-160106711/25000000"
+        ],
+        "B": [
+          "-368394797/100000000",
+          "160106711/25000000"
+        ],
+        "V": [
+          "431605203/100000000",
+          "0"
+        ],
+        "M": [
+          "772032047/100000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "772032047/100000000",
+        "431605203/100000000",
+        "8",
+        "272032047/100000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "13"
+        ],
+        "B": [
+          "0",
+          "-115420201/25000000"
+        ],
+        "V": [
+          "0",
+          "209579799/25000000"
+        ],
+        "M": [
+          "0",
+          "631048581/50000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "13",
+          "-74797229/10000000"
+        ],
+        "B": [
+          "-115420201/25000000",
+          "74797229/10000000"
+        ],
+        "V": [
+          "209579799/25000000",
+          "0"
+        ],
+        "M": [
+          "631048581/50000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "631048581/50000000",
+        "209579799/25000000",
+        "13",
+        "143145743/50000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "7"
+        ],
+        "B": [
+          "0",
+          "-61477341/20000000"
+        ],
+        "V": [
+          "0",
+          "78522659/20000000"
+        ],
+        "M": [
+          "0",
+          "972802387/100000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "7",
+          "-690953379/100000000"
+        ],
+        "B": [
+          "-61477341/20000000",
+          "690953379/100000000"
+        ],
+        "V": [
+          "78522659/20000000",
+          "0"
+        ],
+        "M": [
+          "972802387/100000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "972802387/100000000",
+        "78522659/20000000",
+        "7",
+        "191783337/50000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "12"
+        ],
+        "B": [
+          "0",
+          "-100964499/12500000"
+        ],
+        "V": [
+          "0",
+          "49035501/12500000"
+        ],
+        "M": [
+          "0",
+          "12"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "12",
+          "-258778629/25000000"
+        ],
+        "B": [
+          "-100964499/12500000",
+          "258778629/25000000"
+        ],
+        "V": [
+          "49035501/12500000",
+          "0"
+        ],
+        "M": [
+          "12",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "12",
+        "49035501/12500000",
+        "12",
+        "56849631/25000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "8"
+        ],
+        "B": [
+          "0",
+          "-129137317/25000000"
+        ],
+        "V": [
+          "0",
+          "70862683/25000000"
+        ],
+        "M": [
+          "0",
+          "335013163/50000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "8",
+          "-656601919/100000000"
+        ],
+        "B": [
+          "-129137317/25000000",
+          "656601919/100000000"
+        ],
+        "V": [
+          "70862683/25000000",
+          "0"
+        ],
+        "M": [
+          "335013163/50000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "335013163/50000000",
+        "70862683/25000000",
+        "8",
+        "140052651/100000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "2"
+        ],
+        "B": [
+          "0",
+          "-2"
+        ],
+        "V": [
+          "0",
+          "0"
+        ],
+        "M": [
+          "0",
+          "120752823/50000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "2",
+          "-120752823/50000000"
+        ],
+        "B": [
+          "-2",
+          "120752823/50000000"
+        ],
+        "V": [
+          "0",
+          "0"
+        ],
+        "M": [
+          "120752823/50000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "120752823/50000000",
+        "0",
+        "2",
+        "20752823/50000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "6"
+        ],
+        "B": [
+          "0",
+          "-320210133/100000000"
+        ],
+        "V": [
+          "0",
+          "279789867/100000000"
+        ],
+        "M": [
+          "0",
+          "583168051/100000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "6",
+          "-518119541/100000000"
+        ],
+        "B": [
+          "-320210133/100000000",
+          "518119541/100000000"
+        ],
+        "V": [
+          "279789867/100000000",
+          "0"
+        ],
+        "M": [
+          "583168051/100000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "583168051/100000000",
+        "279789867/100000000",
+        "6",
+        "6184669/3125000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "4"
+        ],
+        "B": [
+          "0",
+          "-248539229/100000000"
+        ],
+        "V": [
+          "0",
+          "151460771/100000000"
+        ],
+        "M": [
+          "0",
+          "49233871/10000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "4",
+          "-365071487/100000000"
+        ],
+        "B": [
+          "-248539229/100000000",
+          "365071487/100000000"
+        ],
+        "V": [
+          "151460771/100000000",
+          "0"
+        ],
+        "M": [
+          "49233871/10000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "49233871/10000000",
+        "151460771/100000000",
+        "4",
+        "58266129/50000000"
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "first_segment_mean_coefficients_in_lambda": {
+        "A": [
+          "0",
+          "9"
+        ],
+        "B": [
+          "0",
+          "-206239777/50000000"
+        ],
+        "V": [
+          "0",
+          "243760223/50000000"
+        ],
+        "M": [
+          "0",
+          "259169279/25000000"
+        ]
+      },
+      "second_segment_mean_coefficients_in_s": {
+        "A": [
+          "9",
+          "-74915667/10000000"
+        ],
+        "B": [
+          "-206239777/50000000",
+          "74915667/10000000"
+        ],
+        "V": [
+          "243760223/50000000",
+          "0"
+        ],
+        "M": [
+          "259169279/25000000",
+          "0"
+        ]
+      },
+      "endpoints_and_continuous_peaks": [
+        "259169279/25000000",
+        "243760223/50000000",
+        "9",
+        "84169279/25000000"
+      ]
+    }
+  ],
+  "different_time_mean_order_examples": [
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-87788659/20000000",
+      "peak_of_regional_mean": "60944403/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 1.3345454022121062,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-94499723/50000000",
+      "peak_of_regional_mean": "60944403/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 0.9667321842316622,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-289207157/50000000",
+      "peak_of_regional_mean": "13129681/10000000",
+      "mean_of_pointwise_temporal_peaks_display": 2.190185597875293,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-6986211/3125000",
+      "peak_of_regional_mean": "13129681/10000000",
+      "mean_of_pointwise_temporal_peaks_display": 1.6650727374059475,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-104821039/25000000",
+      "peak_of_regional_mean": "207297287/50000000",
+      "mean_of_pointwise_temporal_peaks_display": 4.519929206254277,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-2344791/100000000",
+      "peak_of_regional_mean": "207297287/50000000",
+      "mean_of_pointwise_temporal_peaks_display": 4.145978706693093,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-183925417/25000000",
+      "peak_of_regional_mean": "16539897/6250000",
+      "mean_of_pointwise_temporal_peaks_display": 3.640141207398958,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-117765829/50000000",
+      "peak_of_regional_mean": "16539897/6250000",
+      "mean_of_pointwise_temporal_peaks_display": 2.92366504833588,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-4589333/625000",
+      "peak_of_regional_mean": "151029611/25000000",
+      "mean_of_pointwise_temporal_peaks_display": 6.760468431426751,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-32543709/50000000",
+      "peak_of_regional_mean": "151029611/25000000",
+      "mean_of_pointwise_temporal_peaks_display": 6.057010556530292,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-26818173/100000000",
+      "peak_of_regional_mean": "138155819/20000000",
+      "mean_of_pointwise_temporal_peaks_display": 6.90946837456484,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-135998529/100000000",
+      "peak_of_regional_mean": "46946903/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 0.6553884759749926,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-44525813/100000000",
+      "peak_of_regional_mean": "46946903/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 0.5236531657184302,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-49849697/20000000",
+      "peak_of_regional_mean": "431605203/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 4.474960504708047,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-36081/390625",
+      "peak_of_regional_mean": "209579799/25000000",
+      "mean_of_pointwise_temporal_peaks_display": 8.3833599349221,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-767764889/100000000",
+      "peak_of_regional_mean": "78522659/20000000",
+      "mean_of_pointwise_temporal_peaks_display": 4.848420459481536,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-187575797/100000000",
+      "peak_of_regional_mean": "78522659/20000000",
+      "mean_of_pointwise_temporal_peaks_display": 4.077741624246608,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-152893497/12500000",
+      "peak_of_regional_mean": "49035501/12500000",
+      "mean_of_pointwise_temporal_peaks_display": 5.629769862919845,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-25964499/6250000",
+      "peak_of_regional_mean": "49035501/12500000",
+      "mean_of_pointwise_temporal_peaks_display": 4.457012162265075,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-61212557/12500000",
+      "peak_of_regional_mean": "70862683/25000000",
+      "mean_of_pointwise_temporal_peaks_display": 3.395226078264708,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-51562431/50000000",
+      "peak_of_regional_mean": "70862683/25000000",
+      "mean_of_pointwise_temporal_peaks_display": 2.9032825953121235,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-120752823/25000000",
+      "peak_of_regional_mean": "0",
+      "mean_of_pointwise_temporal_peaks_display": 0.9295556648594298,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-120752823/50000000",
+      "peak_of_regional_mean": "0",
+      "mean_of_pointwise_temporal_peaks_display": 0.603764115,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-326966501/100000000",
+      "peak_of_regional_mean": "279789867/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 3.1120497023472575,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-23588317/100000000",
+      "peak_of_regional_mean": "279789867/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 2.802483778028833,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-530295107/100000000",
+      "peak_of_regional_mean": "151460771/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 2.2774279223024703,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-11838573/6250000",
+      "peak_of_regional_mean": "151460771/100000000",
+      "mean_of_pointwise_temporal_peaks_display": 1.7777434209702854,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "line",
+      "final_S_negative_at_ROI_edge": "-305396447/50000000",
+      "peak_of_regional_mean": "243760223/50000000",
+      "mean_of_pointwise_temporal_peaks_display": 5.482330963168357,
+      "analytic_expression": "(2*M/3)*sqrt(M/c)",
+      "not_same_contract": true
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "disk",
+      "final_S_negative_at_ROI_edge": "-481533/781250",
+      "peak_of_regional_mean": "243760223/50000000",
+      "mean_of_pointwise_temporal_peaks_display": 4.892499270008309,
+      "analytic_expression": "M^2/(2*c)",
+      "not_same_contract": true
+    }
+  ],
+  "reviewed_hashes": {
+    "scripts/temporal_mean_witness.py": "ca85d7ba9e3b6f832a499eadee722f38ff25ab0c1defd51918ce1e83675cd872",
+    "scripts/static_isochoric_construction.py": "88d39e43db04a3b41d1e5f4423a1fa37756c2423d76fc866f7fee6188eefd2c9",
+    "evidence/temporal_mean_witness.json": "0cb01bc914ab26ab0ba1f37c6779a4206fd65f317452b59f640cae2f366d93ad",
+    "data/derived/calibration_small_18um.csv": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+    "docs/TEMPORAL-MEAN-WITNESS.md": "2053781e8b849b21f8ea43d7d7b3f94daccbbac52a844bbaecf6fd40d6d57bc4",
+    "docs/TEMPORAL-MEAN-REVIEW.md": "b1e34c49571d59495223dc7390d8c611e306a885cc8acace9ad65f0f0a951f29",
+    "docs/assets/temporal_mean_witness.png": "593167420201873f8055c88a2537bae7fd90312ad05f7b82de21803db42bd6cc"
+  },
+  "independent_program": "from pathlib import Path\nfrom fractions import Fraction as Q\nimport csv,json,hashlib,math\nroot=Path('controlled_furrowing');path=root/'evidence/temporal_mean_witness.json';reported=json.loads(path.read_text());csvpath=root/'data/derived/calibration_small_18um.csv'\ndata={r['record_id']:[Q(r[k]) for k in ('maximum_shortening_um','region_averaged_shortening_um','apical_max_shortening_um','basal_max_shortening_um')] for r in csv.DictReader(csvpath.open(encoding='utf-8-sig',newline=''))}\nsha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()\ndef mul(a,b):\n c=[Q(0)]*(len(a)+len(b)-1)\n for i,x in enumerate(a):\n  for j,y in enumerate(b):c[i+j]+=x*y\n return c\ndef at(c,x):return sum(v*x**i for i,v in enumerate(c))\ndef integrate(c):return sum(v/Q(i+1) for i,v in enumerate(c))\ndef maximum(c):\n values=[at(c,0),at(c,1)]\n if c[2]:\n  u=-c[1]/(2*c[2])\n  if 0<u<1:values.append(at(c,u))\n return max(values)\nchecks={};configs=[];paths=[];ordering=[]\nchecks['source102checks_pass']=len(reported['checks'])==102 and all(reported['checks'].values())\nchecks['source17records_match_csv']=set(v['record_id'] for v in reported['records'])==set(data)\nfor row in reported['records']:\n rid=row['record_id'];M,V,A,B=data[rid];zero=(Q(0),)*4\n states=[(M,V,A,V-A),(M,V,V-B,B)]\n checks[rid+'_source_inequalities']=min(M,V,A,B)>=0 and V<=M<Q('33.5') and V<=A+B\n checks[rid+'_instantaneous_mean_identity']=all(v==a+b for m,v,a,b in states)\n checks[rid+'_all_continuous_affine_peaks_exact']=(max(0,A,V-B)==A and max(0,V-A,B)==B and max(0,V,V)==V and max(0,M,M)==M)\n for label,state in zip(('state1','state2'),states):\n  checks[rid+'_'+label+'_reported_state_matches']=tuple(Q(row[label][k]) for k in ('M','V','A','B'))==state\n # On each closed time segment all means and ROI maxima are affine;\n # endpoint extrema and displayed inequalities prove continuous, not sampled maxima.\n pathrow={'record_id':rid,'first_segment_mean_coefficients_in_lambda':{'A':['0',str(A)],'B':['0',str(V-A)],'V':['0',str(V)],'M':['0',str(M)]},'second_segment_mean_coefficients_in_s':{'A':[str(A),str(V-A-B)],'B':[str(V-A),str(A+B-V)],'V':[str(V),'0'],'M':[str(M),'0']},'endpoints_and_continuous_peaks':list(map(str,(M,V,A,B)))}\n paths.append(pathrow)\n for weight in ('line','disk'):\n  c=(3 if weight=='line' else 2)*(M-V);core=[M,Q(0),-c];casepairs=[]\n  for label,state in zip(('first','second'),states):\n   rec=row['constructions'][weight][label];H,R,Ro=map(Q,(rec['height_um'],rec['ROI_radius_um'],rec['outer_radius_um']));d=Ro-R;aa,bb=state[2:];e=M-c\n   Icore=R*R*integrate(mul([0,1],core));IL=d*integrate(mul([R,d],[1,-1]));IB=d*integrate(mul([R,d],[0,1,-1]));K=(Icore+e*IL)/IB;ann=[e,-e-K,K]\n   prefix=rid+'_'+weight+'_'+label\n   checks[prefix+'_independent_core_polynomial']=list(map(Q,rec['core_S_coefficients_normalized_radius']))==core\n   checks[prefix+'_independent_compensation_polynomial']=list(map(Q,rec['annular_S_coefficients_normalized_annulus_radius']))==ann\n   checks[prefix+'_independent_zero_total_volume_integral']=Icore+d*integrate(mul([R,d],ann))==0\n   maxS=max(maximum(core),maximum(ann));hmin=H-maxS\n   checks[prefix+'_global_height_exact_and_positive']=hmin>0 and hmin==Q(rec['global_minimum_height_exact'])\n   checks[prefix+'_global_peak_equals_ROI_peak']=maxS==M\n   checks[prefix+'_apical_partition_and_continuity']=Q(rec['core_apical_downward_constant'])==aa and list(map(Q,rec['annular_apical_downward_coefficients']))==[aa,-aa] and at(ann,0)==at(core,1)\n   checks[prefix+'_rim_displacement_zero']=at(ann,1)==0 and aa-aa==0\n   meanS=M-c/(3 if weight=='line' else 2)\n   checks[prefix+'_all_instantaneous_means_exact']=meanS==V and aa+bb==V\n   rho_core=[Q(0),Q(0),(H-M)/H,Q(0),c/(2*H*R*R)]\n   h_ann=[H-ann[0],-ann[1],-ann[2]];primitive=mul([R,d],h_ann);rho_ann=[at(rho_core,R)]+[2*d/H*v/Q(i+1) for i,v in enumerate(primitive)]\n   checks[prefix+'_axis_positive_regular_limit']=rho_core[2]>0\n   checks[prefix+'_rim_reference_radius_identity']=at(rho_ann,1)==Ro*Ro\n   # First-time-segment scaling: every radial integral is linear in lambda.\n   # Exact positive endpoint height yields a uniform convex lower bound\n   # h_lambda >= min(H,h_star), valid for all lambda in[0,1].\n   checks[prefix+'_first_segment_uniform_height_margin']=min(H,hmin)>0\n   checks[prefix+'_first_segment_volume_polynomial_identically_zero']=Icore+d*integrate(mul([R,d],ann))==0\n   case={'record_id':rid,'weighting':weight,'state':label,'core_coefficients':list(map(str,core)),'annular_coefficients':list(map(str,ann)),'mean_A':str(aa),'mean_B':str(bb),'minimum_height_all_first_segment_times':str(min(H,hmin)),'rho_squared_core_coefficients':list(map(str,rho_core)),'rho_squared_annulus_coefficients':list(map(str,rho_ann)),'axis_inverse_scale_squared_endpoint':str(H/(H-M))};configs.append(case);casepairs.append(case)\n  checks[rid+'_'+weight+'_same_height_map_both_component_peaks']=(casepairs[0]['core_coefficients']==casepairs[1]['core_coefficients'] and casepairs[0]['annular_coefficients']==casepairs[1]['annular_coefficients'] and casepairs[0]['rho_squared_annulus_coefficients']==casepairs[1]['rho_squared_annulus_coefficients'])\n  if c>M:\n   other=(2*M/3)*math.sqrt(float(M/c)) if weight=='line' else float(M*M/(2*c))\n   ordering.append({'record_id':rid,'weighting':weight,'final_S_negative_at_ROI_edge':str(M-c),'peak_of_regional_mean':str(V),'mean_of_pointwise_temporal_peaks_display':float(other),'analytic_expression':'(2*M/3)*sqrt(M/c)' if weight=='line' else 'M^2/(2*c)','not_same_contract':float(other)>float(V)})\nchecks['all68_endpoint_configurations_reviewed']=len(configs)==68\nchecks['both_weights_have_mean_ordering_counterexamples']=set(r['weighting'] for r in ordering)=={'line','disk'}\nchecks['all_stored_mean_ordering_examples_strict']=all(r['not_same_contract'] for r in ordering)\nchecks['all_source_hashes_replay']=all(sha(root/'scripts'/name)==digest for name,digest in reported['source_hashes'].items())\nchecks['source_csv_hash_replays']=sha(csvpath)==reported['source_csv_sha256']\nreceipt={'status':'PASS_INDEPENDENT_CONTINUOUS_TEMPORAL_KINEMATICS' if all(checks.values()) else 'FAIL','checks':checks,'configurations':configs,'exact_piecewise_affine_paths':paths,'different_time_mean_order_examples':ordering,'reviewed_hashes':{p.relative_to(root).as_posix():sha(p) for p in (root/'scripts/temporal_mean_witness.py',root/'scripts/static_isochoric_construction.py',path,csvpath,root/'docs/TEMPORAL-MEAN-WITNESS.md')},'independent_program':REVIEW_CODE,'method':'Direct csv/Fraction parsing, own state formulas and expanded polynomial integration/extrema/radial-transport coefficients; no production loading or construction function imported.','continuous_time_proof':'Affineness yields exact endpoint suprema on both time intervals. First-phase zero-volume compensation is linear and h_lambda=(1-lambda)H+lambda*h_star has uniform positive margin. Monotone radial transport is continuous inlambda with regularaxis/fixedrim and J=1 a.e. Second-phase height/radial map fixed, vertical offset continuous affine; junction matches.','scope':'Distinct isochoric kinematic path per source record and weighting, no seconds, force balance, common material, activation history, source algorithm identification or novelty. V contract is sup_t(mean_r S), not mean_r(sup_t S).','origin_document_review_pending_final_image':True}\n(root/'evidence/temporal_mean_independent_review.json').write_text(json.dumps(receipt,indent=2,allow_nan=False),encoding='utf-8')\nprint(json.dumps({'status':receipt['status'],'checks':len(checks),'failed':[k for k,v in checks.items() if not v],'configurations':len(configs),'ordering_counterexamples':len(ordering)},indent=2))\nif not all(checks.values()):raise RuntimeError('Retained independent temporal review failure')\n",
+  "method": "Direct csv/Fraction parsing, own state formulas and expanded polynomial integration/extrema/radial-transport coefficients; no production loading or construction function imported.",
+  "continuous_time_proof": "Affineness yields exact endpoint suprema on both time intervals. First-phase zero-volume compensation is linear and h_lambda=(1-lambda)H+lambda*h_star has uniform positive margin. Monotone radial transport is continuous inlambda with regularaxis/fixedrim and J=1 a.e. Second-phase height/radial map fixed, vertical offset continuous affine; junction matches.",
+  "scope": "Distinct isochoric kinematic path per source record and weighting, no seconds, force balance, common material, activation history, source algorithm identification or novelty. V contract is sup_t(mean_r S), not mean_r(sup_t S).",
+  "origin_document_review_pending_final_image": false,
+  "initial_origin_document_sha256": "2053781e8b849b21f8ea43d7d7b3f94daccbbac52a844bbaecf6fd40d6d57bc4",
+  "figure_inspection": "Actual final originating original-data/synthetic-path image inspected: arbitrary time, signed components, peak mean vs sum of peaks, and no-dynamics scope visible; no source pixels."
+}

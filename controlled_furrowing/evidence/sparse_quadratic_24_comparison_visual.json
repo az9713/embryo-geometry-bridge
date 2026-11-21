@@ -1,0 +1,7 @@
+{
+  "image": "runs\\sparse_quadratic\\24_vs16_highQ.png",
+  "sha256": "eb85bfcf6f7574d26f23fad4cd4106b67dcfa1c823d3d52893e6e445ec08aa59",
+  "comparison_sha256": "1010ff60600ae8c4ca88d76b1982b0fde5445f8ea60262a838d443a74f4b5fae",
+  "display_script_sha256": "c4e760c711ad7354a31e86854c1c1a7f95d6037824ecef7bdf7a974de4c3fc25",
+  "note": "Display-only replay of saved comparison; panel bounds rounded outward. Visual inspected after title/canvas adjustment."
+}

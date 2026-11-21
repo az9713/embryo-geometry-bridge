@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RECENTERED-OBSERVERS-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the F/K center-offset observers</h1>
+<p><strong>PASS for the eight conditional static outputs of F and K.</strong> The review independently reconstructs the translated node boxes, predictor hulls, trace derivatives, graph-error constants and all eight residuals. It also replays the previously reviewed whole-body and baseline-observer components. Finalization binds the <strong>separate fresh F/K root audit</strong>, not the producer root calculations alone.</p>
+<p>The <a href="../evidence/recentered_observers_independent_review.json">final receipt</a> records 62 application/scope checks and 11 independent-root binding checks. The <a href="../../OMITTED.html?path=controlled_furrowing/runs/recentered_observer_review_v1/arithmetic.json">arithmetic receipt</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/recentered_observer_review_v1/protocol.json">frozen review protocol</a> and <a href="../scripts/review_recentered_observers.py">review source</a> retain the calculation and its hashes. This review covers <strong>8 outputs, not all 68</strong>, and makes no global-fit claim.</p>
+<h2>Why a new adapter was necessary</h2>
+<p>The original saved solver state supplies nominal P2 tissue graphs. The root proof now uses a nearby numerical center <span class="math" data-tex="u_1"></span>, obtained by one declared proof-center correction from <span class="math" data-tex="u_0"></span>. It is an auxiliary computational state, not new experimental data and not a claimed converged nonlinear-solver result.</p>
+<p>The review checks every old/new cached array except <code>u</code> is byte-identical, <strong>including the preconditioner <span class="math" data-tex="R"></span></strong>; <span class="math" data-tex="S"></span> is unchanged too. Independent fingerprints bind the reference geometry, quadrature, parameters, base coefficients, exact dose law and shared parameter cell. The old seed and new auxiliary-center identities stay distinct. Neither root proof nor observer silently replaces the seed data.</p>
+<p>The fresh independent root audit is <a href="../evidence/cohort_recentered_roots_independent_review.json">this separate receipt</a>. Its two audit capsules bind the actual new root-certificate bytes, selected domains, shared cell and common model contract. Both reassemble all 611 free coordinates and 9,504 terms at the new centers with 192-bit interval arithmetic. The application review checks those bindings and their per-record files before issuing PASS; it does not recompute those root proofs itself.</p>
+<h2>Exact node-box reconstruction</h2>
+<p>For free coordinate <span class="math" data-tex="j"></span>, a root in the reviewed family has</p>
+<div class="math display" data-tex="
+ x_j=X_j+(u_1)_j+(S\delta\theta)_j+e_j,
+ \qquad &#124;e_j&#124;\le r.
+"></div>
+
+<p>Let <span class="math" data-tex="\widetilde x_j"></span> be the <strong>original serialized seed coordinate</strong>. The correct node radius is</p>
+<div class="math display" data-tex="
+ \nu_j=&#124;X_j+(u_1)_j-\widetilde x_j&#124;
+       +\sup_{\theta\in C}&#124;(S\delta\theta)_j&#124;+r.
+"></div>
+
+<p>The first term charges both center translation and serialization directly, with exact rational arithmetic. It is not the old seed serialization gap alone. At constrained coordinates there is only the exact fixed-coordinate gap; no corrector radius is assigned. The review reconstructs all 611 predictor hulls, all 650 coordinate radii and the exact translation vector.</p>
+<p>The normal Banach radius remains <span class="math" data-tex="10^{-11}"></span>, centered at the <strong>new</strong> affine predictor. Translation is not added to the radius used by the root theorem. It enters the observer's original-seed-centered node box instead. Keeping those two roles separate is essential.</p>
+<h2>Same-current-radius trace error</h2>
+<p>The review independently extracts top and bottom P2 edges from raw reference coordinates and six-node connectivity. For each trace, it checks the radial derivative, fixed radial endpoints, the same positive-width physical ROI and the actual surface-node error <span class="math" data-tex="\varepsilon"></span>, with physical scale <span class="math" data-tex="L_0=33.5"></span> µm applied once.</p>
+<p>P2 cardinal interpolation gives coordinate error at most <span class="math" data-tex="5\varepsilon/4"></span> and radial-derivative error at most <span class="math" data-tex="8\varepsilon"></span>. Every edge satisfies the required strict radial margin. If the nominal piecewise graph has global Lipschitz upper bound <span class="math" data-tex="L"></span>, its same-current-radius vertical error is</p>
+<div class="math display" data-tex="
+ E=\frac54\varepsilon(1+L).
+"></div>
+
+<p>The global slope bound remains valid across edge junctions. The radial term matters because a point's material parameter generally moves to a different current radius.</p>
+<p>With surface errors <span class="math" data-tex="E_a,E_b"></span>, the errors assigned to maximum height shortening and disk-mean height shortening are <span class="math" data-tex="E_a+E_b"></span>. Apical and basal component maxima receive <span class="math" data-tex="E_a,E_b"></span>, respectively. This does not identify a maximum of a sum with the sum of separate maxima. All four assignments and every interval endpoint are checked exactly.</p>
+<h2>Disclosed component replays and residuals</h2>
+<p>The whole-body nodal-box certificate and baseline static observer are replays of already reviewed implementations. This review does <strong>not</strong> claim independent reimplementations of those algorithms. The body replay confirms the translated box is admissible, including the axis. The baseline replay evaluates the original saved seed graphs, with the fixed current-radius ROI, flat reference levels, signed spatial-maximum components and projected-disk mean. Actual maximum-enclosure widths are retained rather than assuming a requested reporting tolerance was achieved.</p>
+<p>For observed value <span class="math" data-tex="y"></span> and enclosed prediction <span class="math" data-tex="[a,b]"></span>, the independently recomputed sharp residual range is</p>
+<div class="math display" data-tex="
+ [\max(a-y,y-b,0),\ \max(&#124;a-y&#124;,&#124;b-y&#124;)].
+"></div>
+
+<p>For orientation, the following are approximate interval midpoints and published source values, in µm. Exact prediction/residual intervals are in the arithmetic receipt.</p>
+<table>
+<thead>
+<tr>
+<th>Record</th>
+<th>Static quantity</th>
+<th style="text-align: right;">Prediction midpoint</th>
+<th style="text-align: right;">Source value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F</td>
+<td>Maximum same-radius height shortening</td>
+<td style="text-align: right;">5.617206</td>
+<td style="text-align: right;">7.648084</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Disk-mean height shortening</td>
+<td style="text-align: right;">4.487594</td>
+<td style="text-align: right;">2.646384</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Apical downward maximum</td>
+<td style="text-align: right;">4.833357</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Basal upward maximum</td>
+<td style="text-align: right;">0.783848</td>
+<td style="text-align: right;">3.648084</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Maximum same-radius height shortening</td>
+<td style="text-align: right;">10.490407</td>
+<td style="text-align: right;">12.620972</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Disk-mean height shortening</td>
+<td style="text-align: right;">8.387087</td>
+<td style="text-align: right;">8.383192</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Apical downward maximum</td>
+<td style="text-align: right;">9.137541</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Basal upward maximum</td>
+<td style="text-align: right;">1.352866</td>
+<td style="text-align: right;">2.862915</td>
+</tr>
+</tbody>
+</table>
+<p>Tiny computational intervals are not experimental precision or continuum error bars. Their narrowness does not validate the static proxy, source-time interpretation, canonical cross-sheet pairing or fixed geometry assumptions.</p>
+<h2>Scope finding and preserved correction</h2>
+<p>The first producer aggregate correctly contained eight rows but inherited a generic field named <code>all68_uniform_static_tuple_enclosed=True</code>. That was an incorrect global-coverage label. The mathematical intervals were unaffected.</p>
+<p>The original result, source, protocol and numerical record packets remain unchanged. The authoritative <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_recentered_observers_v1/results_scoped_v2.json">scoped version-two wrapper</a> and <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_recentered_observers_v1/scope_correction.json">scope-correction receipt</a> explicitly set the global all-68 flag false, declare F/K 8-of-8 coverage and forbid global IN. Reversing <strong>only</strong> those declared metadata changes recovers the entire original packet exactly; the review verifies this and every numerical row/hash link.</p>
+<p>The eight F/K bounds can be combined with the separately audited 60 outputs by a distinct, hash-bound join. This receipt alone does not certify an all-68 fit, a full identified material set, other stationary branches, a stable/common experimental path, biological observation semantics, continuum accuracy or novelty. This is an independent project-agent check, not external peer review.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

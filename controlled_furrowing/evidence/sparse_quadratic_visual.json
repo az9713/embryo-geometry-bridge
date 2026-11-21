@@ -1,0 +1,11 @@
+{
+  "image": "runs\\sparse_quadratic\\sparse_hessian_verification.png",
+  "sha256": "7699b1b8f2a8ae9fe4395620add5a1e85f283de08990ec2644c4cc68f6105485",
+  "inputs": {
+    "runs\\sparse_quadratic\\small_hessian_comparison.npz": "1b51ef58e381f3038f60f5c9266286121be3a612974a15eb4f122731335bfdd9",
+    "evidence\\sparse_quadratic_verification.json": "0179016bf02a4e0992c26c7749962045cc3e8545a103b8dc4a91d3bbf3641b15",
+    "evidence\\sparse_quadratic_benchmark_dense.json": "3fd148781c73552df878011a7dfd53d7c0ab5848ea4fe92ed7be2496a4afa5a0",
+    "evidence\\sparse_quadratic_benchmark_sparse.json": "286e5df8af78860ebdb06e09de6747c37d839e822e0622c2c412dcfbc6d37447"
+  },
+  "scope": "Small6x3verification/benchmarkonly; no24meshperformanceextrapolationorbiologyinference."
+}

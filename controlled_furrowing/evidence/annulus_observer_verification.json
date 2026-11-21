@@ -1,0 +1,416 @@
+{
+  "status": "PASS_SYNTHETIC_COMPONENT",
+  "checks": {
+    "P1_known_pair_not_excluded": true,
+    "P1_wrong_pair_excluded": true,
+    "larger_assumed_error_relaxes_exclusion": true,
+    "occupancy_strict_equality_excluded": true,
+    "P1_branch_covers_1/4": true,
+    "P1_equal_levels_1/4": true,
+    "P1_branch_covers_3/4": true,
+    "P1_equal_levels_3/4": true,
+    "P1_branch_covers_1": true,
+    "P1_equal_levels_1": true,
+    "P1_branch_covers_3/2": true,
+    "P1_equal_levels_3/2": true,
+    "P1_zero_width_and_empty_centre_excluded": true,
+    "P1_plateau_critical_height_retained": true,
+    "P1_two_annuli_not_mistaken_for_one": true,
+    "P2_known_pair_not_excluded": true,
+    "P2_wrong_pair_excluded": true,
+    "P2_nonlinear_radial_map_equal_levels": true,
+    "P2_rational_root_enclosure_1": true,
+    "P2_rational_root_enclosure_2": true,
+    "P2_rational_root_enclosure_3": true,
+    "P2_rational_root_enclosure_4": true,
+    "P2_rational_root_enclosure_5": true,
+    "P2_rational_root_enclosure_6": true,
+    "P2_rational_root_enclosure_7": true,
+    "P2_rational_root_enclosure_8": true,
+    "P2_rational_root_enclosure_9": true,
+    "P2_rational_root_enclosure_10": true,
+    "P2_rational_root_enclosure_11": true,
+    "P2_rational_root_enclosure_12": true,
+    "P2_rational_root_enclosure_13": true,
+    "P2_rational_root_enclosure_14": true,
+    "P2_rational_root_enclosure_15": true,
+    "P2_rational_root_enclosure_16": true,
+    "P2_rational_root_enclosure_17": true,
+    "P2_rational_root_enclosure_18": true,
+    "P2_rational_root_enclosure_19": true,
+    "P2_rational_root_enclosure_20": true,
+    "P2_rational_root_enclosure_21": true,
+    "P2_rational_root_enclosure_22": true,
+    "P2_rational_root_enclosure_23": true,
+    "P2_rational_root_enclosure_24": true,
+    "P2_rational_root_enclosure_25": true,
+    "P2_rational_root_enclosure_26": true,
+    "P2_rational_root_enclosure_27": true,
+    "P2_rational_root_enclosure_28": true,
+    "P2_rational_root_enclosure_29": true,
+    "P2_rational_root_enclosure_30": true,
+    "P2_rational_root_enclosure_31": true,
+    "P2_rational_root_enclosure_32": true,
+    "P2_rational_root_enclosure_33": true,
+    "P2_rational_root_enclosure_34": true,
+    "P2_rational_root_enclosure_35": true,
+    "P2_rational_root_enclosure_36": true,
+    "P2_rational_root_enclosure_37": true,
+    "P2_rational_root_enclosure_38": true,
+    "P2_rational_root_enclosure_39": true,
+    "area_zero_radius_exact": true,
+    "area_radius_bound_algebra": true,
+    "pi_Machin_known_decimal_enclosed": true,
+    "vertical_translation_preserves_decision": true,
+    "nonmonotone_surface_rejected": true
+  },
+  "count": 62,
+  "examples": {
+    "P1_correct": {
+      "status": "NOT_EXCLUDED_BY_NECESSARY_TEST",
+      "inner_height_enclosure": {
+        "lower": {
+          "numerator": 9,
+          "denominator": 10,
+          "display": 0.9
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 10,
+          "display": 1.1
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "outer_height_enclosure": {
+        "lower": {
+          "numerator": 9,
+          "denominator": 10,
+          "display": 0.9
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 10,
+          "display": 1.1
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "assumed_uniform_surface_error": {
+        "numerator": 0,
+        "denominator": 1,
+        "display": 0.0
+      },
+      "possible_shared_height_enclosure": {
+        "lower": {
+          "numerator": 9,
+          "denominator": 10,
+          "display": 0.9
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 10,
+          "display": 1.1
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "logical_scope": "Necessary horizontal apical-void level/optional occupancy constraints only; not sufficiency, biological validation, optical calibration or a PDE error certificate."
+    },
+    "P1_wrong": {
+      "status": "EXCLUDED_UNDER_STATED_ASSUMPTIONS",
+      "inner_height_enclosure": {
+        "lower": {
+          "numerator": 7,
+          "denominator": 5,
+          "display": 1.4
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 5,
+          "display": 1.6
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "outer_height_enclosure": {
+        "lower": {
+          "numerator": 9,
+          "denominator": 10,
+          "display": 0.9
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 10,
+          "display": 1.1
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "assumed_uniform_surface_error": {
+        "numerator": 0,
+        "denominator": 1,
+        "display": 0.0
+      },
+      "possible_shared_height_enclosure": null,
+      "logical_scope": "Necessary horizontal apical-void level/optional occupancy constraints only; not sufficiency, biological validation, optical calibration or a PDE error certificate."
+    },
+    "P1_error_relaxation": {
+      "status": "NOT_EXCLUDED_BY_NECESSARY_TEST",
+      "inner_height_enclosure": {
+        "lower": {
+          "numerator": 7,
+          "denominator": 5,
+          "display": 1.4
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 5,
+          "display": 1.6
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "outer_height_enclosure": {
+        "lower": {
+          "numerator": 9,
+          "denominator": 10,
+          "display": 0.9
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 10,
+          "display": 1.1
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "assumed_uniform_surface_error": {
+        "numerator": 1,
+        "denominator": 5,
+        "display": 0.2
+      },
+      "possible_shared_height_enclosure": {
+        "lower": {
+          "numerator": 6,
+          "denominator": 5,
+          "display": 1.2
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 10,
+          "display": 1.3
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "logical_scope": "Necessary horizontal apical-void level/optional occupancy constraints only; not sufficiency, biological validation, optical calibration or a PDE error certificate."
+    },
+    "P1_pair_branches": {
+      "branches": [
+        {
+          "inner_edge": 0,
+          "outer_edge": 3,
+          "slice_height": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "upper": {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            },
+            "lower_closed": true,
+            "upper_closed": false
+          },
+          "inner_radius_affine": [
+            {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            }
+          ],
+          "outer_radius_affine": [
+            {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            }
+          ],
+          "area_inner_polynomial": [
+            {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            {
+              "numerator": -4,
+              "denominator": 1,
+              "display": -4.0
+            },
+            {
+              "numerator": 4,
+              "denominator": 1,
+              "display": 4.0
+            }
+          ],
+          "area_outer_polynomial": [
+            {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            {
+              "numerator": 4,
+              "denominator": 1,
+              "display": 4.0
+            },
+            {
+              "numerator": 4,
+              "denominator": 1,
+              "display": 4.0
+            }
+          ]
+        },
+        {
+          "inner_edge": 1,
+          "outer_edge": 2,
+          "slice_height": {
+            "lower": {
+              "numerator": 0,
+              "denominator": 1,
+              "display": 0.0
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "lower_closed": false,
+            "upper_closed": false
+          },
+          "inner_radius_affine": [
+            {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            }
+          ],
+          "outer_radius_affine": [
+            {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            }
+          ],
+          "area_inner_polynomial": [
+            {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            {
+              "numerator": -4,
+              "denominator": 1,
+              "display": -4.0
+            },
+            {
+              "numerator": 4,
+              "denominator": 1,
+              "display": 4.0
+            }
+          ],
+          "area_outer_polynomial": [
+            {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            {
+              "numerator": 4,
+              "denominator": 1,
+              "display": 4.0
+            },
+            {
+              "numerator": 4,
+              "denominator": 1,
+              "display": 4.0
+            }
+          ]
+        }
+      ],
+      "scope": "Exact rational P1 one-apical-void-annulus graph enumeration; areas are pi times the reported quadratic polynomials.",
+      "basal_occupancy_verified": true,
+      "duplicates_at_shared_edge_heights_allowed": true
+    },
+    "area_radius": {
+      "radius": {
+        "lower": {
+          "numerator": 147671048042001018336373,
+          "denominator": 151115727451828646838272,
+          "display": 0.9772050238058398
+        },
+        "upper": {
+          "numerator": 682063354708507572924885,
+          "denominator": 604462909807314587353088,
+          "display": 1.1283791670955126
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "pi_enclosure": {
+        "lower": {
+          "numerator": 303813021619815211127537023598466762462928562451138810952817612641378096120015743457898362871679747853349789150531360108636072503870855753190962676,
+          "denominator": 96706688332956914460496363220965927597026084493028663225706878412607962454259611629265419178415748337738523654483202562914812006056308746337890625,
+          "display": 3.141592653589793
+        },
+        "upper": {
+          "numerator": 398907172869630098117422257486476202880195412962577875412979272217343686559665790743215939278838925583111817358716036231628307740643908609913888,
+          "denominator": 126976096794029666576867128404132360599025863289808472224366097949013448365215435167362378781554614333264285885860545022296719253063201904296875,
+          "display": 3.141592653589793
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "area": {
+        "lower": {
+          "numerator": 3,
+          "denominator": 1,
+          "display": 3.0
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 1,
+          "display": 4.0
+        },
+        "lower_closed": true,
+        "upper_closed": true
+      },
+      "interpretation": "Translation-invariant equal-area circle radius; scalar shape relaxation, not evidence the measured contour is circular or an anatomical occupancy contour."
+    }
+  },
+  "source_sha256": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9",
+  "evidence_limit": "No measured Movie3 anatomical radius intervals are supplied. Tests are synthetic geometry only; no target-outcome fit or biological exclusion."
+}

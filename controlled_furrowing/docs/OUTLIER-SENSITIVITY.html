@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OUTLIER-SENSITIVITY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Does one exceptional embryo explain the calibration obstruction?</h1>
+<p><strong>No, under the fixed-dose common monotone-curve contract.</strong> The sharp required uniform discrepancy is 3.131943715 µm using all 17 observations and remains 3.084159745 µm even if one arbitrary record may be treated as an exception. This is a sensitivity calculation, not a decision to remove any embryo. Every actual mechanical calibration continues to retain all 17 records.</p>
+<h2>Exact question</h2>
+<p>For strictly increasing positive reported doses <span class="math" data-tex="I_1&lt;\cdots&lt;I_n"></span>, nonnegative observations <span class="math" data-tex="y_i"></span>, and an exception budget <span class="math" data-tex="k"></span>, define</p>
+<div class="math display" data-tex="
+\delta_k=\min_{S:\,&#124;S&#124;\ge n-k}\ \inf_{f\ge0,\ f\uparrow}
+\max_{i\in S}&#124;f(I_i)-y_i&#124;.
+"></div>
+
+<p>A zero-response origin can be imposed by a monotone extension to <span class="math" data-tex="f(0)=0"></span>, since every observed dose is positive. No concavity or mechanical constitutive law is assumed here.</p>
+<p>For any retained subset <span class="math" data-tex="S"></span>, the sharp discrepancy is</p>
+<div class="math display" data-tex="
+\delta(S)=\frac12\max_{i,j\in S,\ i&lt;j}(y_i-y_j)_+.
+"></div>
+
+<p>The necessity and matching monotone construction are derived in <a href="CALIBRATION-UNCERTAINTY.html">CALIBRATION-UNCERTAINTY</a>. Thus the entire exception problem is a finite exact minimization. Allowing at most <span class="math" data-tex="k"></span> deletions has the same minimum as retaining exactly <span class="math" data-tex="n-k"></span>: any larger compatible subset can be reduced without increasing its worst residual.</p>
+<h2>Results for the actual 17 records</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Hypothetical exception budget</th>
+<th style="text-align: right;">Required retained records</th>
+<th style="text-align: right;">Sharp uniform discrepancy (µm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3.131943715</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">3.084159745</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1.695976145</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1.502609595</td>
+</tr>
+</tbody>
+</table>
+<p>For the one-exception matching construction, source-column record I is omitted. Even then, record M at dose 0.78208913 has response 12 µm, while record P at dose 0.80580697 has response 5.83168051 µm. Their drop is 6.16831949 µm, forcing half that discrepancy. Complete enumeration proves that no other single omission does better. The omitted labels in the receipt identify <strong>mathematical witness constructions</strong>, not scientifically established bad observations.</p>
+<p><img alt="Exact hypothetical-exception sensitivity; all actual calibrations retain all records" src="assets/calibration_exceptions.png" /></p>
+<h2>Complete enumeration and independent dynamic programming</h2>
+<p>The implementation converts the published decimal response strings into exact common integer units. It evaluates all <span class="math" data-tex="2^{17}=131072"></span> subsets. For a subset whose last retained index is <span class="math" data-tex="j"></span>, its largest violating drop is the maximum of the prefix's drop and every newly introduced <span class="math" data-tex="y_i-y_j"></span>. Induction on the number of indices proves this recurrence accounts for every pair exactly. The complete cost array is retained and hashed.</p>
+<p>An independent interval-subsequence algorithm checks feasibility at each claimed threshold and the preceding distinct critical threshold. For a discrepancy <span class="math" data-tex="\delta"></span>, a retained observation requires a fitted value in</p>
+<div class="math display" data-tex="
+[\max\{0,y_i-\delta\},\ y_i+\delta].
+"></div>
+
+<p>For each retained count, the dynamic program keeps the smallest achievable final fitted value. A smaller final value weakly dominates a larger one for every future nondecreasing interval choice. Updating counts in descending order considers skipping or retaining each record once. Induction gives the maximum possible compatible subset size. Feasibility changes only when <span class="math" data-tex="2\delta"></span> crosses a reported violating drop, so the predecessor-threshold check establishes sharpness between critical values as well.</p>
+<p>For each optimal retained subset, the prefix maximum of the lower interval endpoints supplies a matching nonnegative monotone fitted vector. Interpolation through those values, together with the zero-response origin and a constant tail, constructs a complete admissible curve. This is sharpness in a <strong>relaxed scalar function class</strong>; the construction is not claimed to arise from the specific three-dimensional tissue energy.</p>
+<p><a href="../scripts/calibration_contamination.py">Implementation</a>, <a href="../evidence/calibration_contamination.json">exact results and matching constructions</a>, and the independent <a href="CALIBRATION-EXCEPTION-REVIEW.html">review</a> retain the evidence.</p>
+<h2>Scientific interpretation and limits</h2>
+<p>The analysis shows that the strongest incompatibility is not caused solely by one low-response embryo. It does not identify measurement error, determine a biological outlier fraction, justify discarding records, or supply a confidence interval. Measured-dose order is treated as fixed; unmeasured dose errors can change the obstruction. Different initial geometry/materials, dose-dependent trajectories, or non-common response branches can invalidate the common-curve assumption.</p>
+<p>The nested-amplitude peak theorem in the uncertainty document makes the monotone restriction relevant to a declared common quasistatic peak model even when instantaneous mechanical shortening is nonmonotone. Its common-branch, scaled-cap and observation-window assumptions remain necessary. This result neither computes the full physical parameter identified set nor establishes novelty: it is standard order-constrained compatibility applied transparently to the actual calibration data.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

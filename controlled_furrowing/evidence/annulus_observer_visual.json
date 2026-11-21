@@ -1,0 +1,6 @@
+{
+  "file": "controlled_furrowing\\evidence\\annulus_observer_visual.svg",
+  "sha256": "1fa090a641f77da56925a186b3bd36bff1fa76296a32503673e5ec4a4dbcbc5e",
+  "source": "Analytic synthetic a(r)=abs(r-2), b(r)=-1, sigma1; P1 exactpaircurve ri=2-sigma,ro=2+sigma. Rectangle ri[.4,.6],ro[2.9,3.1] is synthetic, notMovie3data.",
+  "scope": "Originalsyntheticfigure; no actualobservedradii oroutcomefit."
+}

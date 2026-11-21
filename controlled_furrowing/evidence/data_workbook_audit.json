@@ -1,0 +1,1666 @@
+{
+  "status": "PASS extraction and independent XML agreement; no predictive fit or score",
+  "source_file": "41467_2025_62483_MOESM16_ESM.xlsx",
+  "source_sha256": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d",
+  "script_sha256": "75f6147e5bfe4941f0434dc50798c975ef3e502e156f2f27950b7fcd64bbe6e9",
+  "workbooks": [
+    {
+      "file": "41467_2025_62483_MOESM16_ESM.xlsx",
+      "bytes": 256659,
+      "sha256": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d",
+      "sheets": [
+        {
+          "sheet": "Fig 2b",
+          "max_row": 16,
+          "max_column": 26,
+          "nonempty_cells": 202,
+          "numeric_cells": 189,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 2b"
+            },
+            {
+              "cell": "A3",
+              "value": "2b: Weak activation"
+            },
+            {
+              "cell": "A4",
+              "value": "Time (s)"
+            },
+            {
+              "cell": "A5",
+              "value": "Apical position (μm)"
+            },
+            {
+              "cell": "A6",
+              "value": "Basal position (μm)"
+            },
+            {
+              "cell": "A8",
+              "value": "2b': Moderate activation"
+            },
+            {
+              "cell": "A9",
+              "value": "Time (s)"
+            },
+            {
+              "cell": "A10",
+              "value": "Apical position (μm)"
+            },
+            {
+              "cell": "A11",
+              "value": "Basal position (μm)"
+            },
+            {
+              "cell": "A13",
+              "value": "2b'': Strong activation"
+            },
+            {
+              "cell": "A14",
+              "value": "Time (s)"
+            },
+            {
+              "cell": "A15",
+              "value": "Apical position (μm)"
+            },
+            {
+              "cell": "A16",
+              "value": "Basal position (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 2c",
+          "max_row": 10,
+          "max_column": 26,
+          "nonempty_cells": 63,
+          "numeric_cells": 56,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 2c"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A4",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A5",
+              "value": "Region-averaged shortening (μm)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A8",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A9",
+              "value": "Region-averaged shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 2d",
+          "max_row": 10,
+          "max_column": 26,
+          "nonempty_cells": 63,
+          "numeric_cells": 56,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 2d"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A4",
+              "value": "Maximum shortening (μm)"
+            },
+            {
+              "cell": "A5",
+              "value": "Region-averaged shortening (μm)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A8",
+              "value": "Maximum shortening (μm)"
+            },
+            {
+              "cell": "A9",
+              "value": "Region-averaged shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 2e",
+          "max_row": 9,
+          "max_column": 31,
+          "nonempty_cells": 69,
+          "numeric_cells": 56,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 2e"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A4",
+              "value": "Apical shortening (μm)"
+            },
+            {
+              "cell": "A5",
+              "value": "Basal shortening (μm)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A8",
+              "value": "Apical shortening (μm)"
+            },
+            {
+              "cell": "A9",
+              "value": "Basal shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 2f",
+          "max_row": 1004,
+          "max_column": 26,
+          "nonempty_cells": 2005,
+          "numeric_cells": 2002,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 2f"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoCysts scale factor"
+            },
+            {
+              "cell": "B3",
+              "value": "Coefficient of determination (R²)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 2g",
+          "max_row": 4,
+          "max_column": 26,
+          "nonempty_cells": 5,
+          "numeric_cells": 2,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 2g"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoCysts/OptoGEF2 expression ratio"
+            },
+            {
+              "cell": "A4",
+              "value": "OptoCysts/OptoGEF2 activity ratio"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 3b",
+          "max_row": 11,
+          "max_column": 26,
+          "nonempty_cells": 59,
+          "numeric_cells": 52,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 3b"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2 (1 copy)"
+            },
+            {
+              "cell": "A4",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A5",
+              "value": "Shortening (μm)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoGEF2 (2 copies)"
+            },
+            {
+              "cell": "A8",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A9",
+              "value": "Shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 3c",
+          "max_row": 10,
+          "max_column": 26,
+          "nonempty_cells": 61,
+          "numeric_cells": 54,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 3c"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A4",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A5",
+              "value": "Furrowing time (s)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A8",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A9",
+              "value": "Furrowing time (s)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 3d",
+          "max_row": 10,
+          "max_column": 26,
+          "nonempty_cells": 63,
+          "numeric_cells": 54,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 3d"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A4",
+              "value": "Furrow depth (μm)"
+            },
+            {
+              "cell": "A5",
+              "value": "Furrowing time (s)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A8",
+              "value": "Furrow depth (μm)"
+            },
+            {
+              "cell": "A9",
+              "value": "Furrowing time (s)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 3e",
+          "max_row": 10,
+          "max_column": 26,
+          "nonempty_cells": 49,
+          "numeric_cells": 42,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 3e"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A4",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A5",
+              "value": "Recovery time (s)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A8",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A9",
+              "value": "Recovery time (s)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 3f",
+          "max_row": 10,
+          "max_column": 26,
+          "nonempty_cells": 49,
+          "numeric_cells": 42,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 3f"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A4",
+              "value": "Furrow depth (μm)"
+            },
+            {
+              "cell": "A5",
+              "value": "Recovery time (s)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A8",
+              "value": "Furrow depth (μm)"
+            },
+            {
+              "cell": "A9",
+              "value": "Recovery time (s)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 4f",
+          "max_row": 52,
+          "max_column": 49,
+          "nonempty_cells": 195,
+          "numeric_cells": 96,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 4f"
+            },
+            {
+              "cell": "A3",
+              "value": "Activation diameter (μm)"
+            },
+            {
+              "cell": "A4",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A5",
+              "value": "Bends?"
+            },
+            {
+              "cell": "B5",
+              "value": "No"
+            },
+            {
+              "cell": "C5",
+              "value": "No"
+            },
+            {
+              "cell": "D5",
+              "value": "Yes"
+            },
+            {
+              "cell": "E5",
+              "value": "No"
+            },
+            {
+              "cell": "F5",
+              "value": "Yes"
+            },
+            {
+              "cell": "G5",
+              "value": "Yes"
+            },
+            {
+              "cell": "H5",
+              "value": "Yes"
+            },
+            {
+              "cell": "I5",
+              "value": "Yes"
+            },
+            {
+              "cell": "J5",
+              "value": "No"
+            },
+            {
+              "cell": "K5",
+              "value": "Yes"
+            },
+            {
+              "cell": "L5",
+              "value": "Yes"
+            },
+            {
+              "cell": "M5",
+              "value": "No"
+            },
+            {
+              "cell": "N5",
+              "value": "Yes"
+            },
+            {
+              "cell": "O5",
+              "value": "Yes"
+            },
+            {
+              "cell": "P5",
+              "value": "Yes"
+            },
+            {
+              "cell": "Q5",
+              "value": "Yes"
+            },
+            {
+              "cell": "R5",
+              "value": "Yes"
+            },
+            {
+              "cell": "S5",
+              "value": "No"
+            },
+            {
+              "cell": "T5",
+              "value": "No"
+            },
+            {
+              "cell": "U5",
+              "value": "No"
+            },
+            {
+              "cell": "V5",
+              "value": "Yes"
+            },
+            {
+              "cell": "W5",
+              "value": "No"
+            },
+            {
+              "cell": "X5",
+              "value": "No"
+            },
+            {
+              "cell": "Y5",
+              "value": "No"
+            },
+            {
+              "cell": "Z5",
+              "value": "No"
+            },
+            {
+              "cell": "AA5",
+              "value": "No"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 4h",
+          "max_row": 11,
+          "max_column": 26,
+          "nonempty_cells": 70,
+          "numeric_cells": 52,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 4h"
+            },
+            {
+              "cell": "A3",
+              "value": "18-μm region"
+            },
+            {
+              "cell": "A4",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A5",
+              "value": "Shortening (μm)"
+            },
+            {
+              "cell": "A7",
+              "value": "50-μm region"
+            },
+            {
+              "cell": "A8",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A9",
+              "value": "Shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 6b",
+          "max_row": 10,
+          "max_column": 67,
+          "nonempty_cells": 135,
+          "numeric_cells": 132,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 6b"
+            },
+            {
+              "cell": "A3",
+              "value": "Time (min)"
+            },
+            {
+              "cell": "A4",
+              "value": "Area (μm²)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 6d",
+          "max_row": 4,
+          "max_column": 65,
+          "nonempty_cells": 131,
+          "numeric_cells": 128,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 6d"
+            },
+            {
+              "cell": "A3",
+              "value": "Time (min)"
+            },
+            {
+              "cell": "A4",
+              "value": "Opening width (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Fig 6f",
+          "max_row": 4,
+          "max_column": 181,
+          "nonempty_cells": 363,
+          "numeric_cells": 360,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Fig 6f"
+            },
+            {
+              "cell": "A3",
+              "value": "Time (min)"
+            },
+            {
+              "cell": "A4",
+              "value": "Opening width (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 1g",
+          "max_row": 5,
+          "max_column": 26,
+          "nonempty_cells": 20,
+          "numeric_cells": 16,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 1g"
+            },
+            {
+              "cell": "A3",
+              "value": "Expression level (A.U.)"
+            },
+            {
+              "cell": "A4",
+              "value": "RhoGEF2-tgRFPt-SspB"
+            },
+            {
+              "cell": "A5",
+              "value": "SspB-tgRFPt-Cysts"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 1h",
+          "max_row": 4,
+          "max_column": 4,
+          "nonempty_cells": 8,
+          "numeric_cells": 3,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 1h"
+            },
+            {
+              "cell": "B3",
+              "value": "RhoGEF2-tgRFPt-SspB"
+            },
+            {
+              "cell": "C3",
+              "value": "SspB-tgRFPt-Cysts"
+            },
+            {
+              "cell": "D3",
+              "value": "UASp>mCh-iLID-CaaX"
+            },
+            {
+              "cell": "A4",
+              "value": "Expression variability (SD/mean)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 1i",
+          "max_row": 6,
+          "max_column": 5,
+          "nonempty_cells": 15,
+          "numeric_cells": 10,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 1i"
+            },
+            {
+              "cell": "A3",
+              "value": "Cellularization rates (μm min-1)"
+            },
+            {
+              "cell": "A4",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A5",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A6",
+              "value": "mCh-iLID-CaaX"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 2a-c",
+          "max_row": 6,
+          "max_column": 4,
+          "nonempty_cells": 16,
+          "numeric_cells": 9,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 2a-c"
+            },
+            {
+              "cell": "B3",
+              "value": "Total embryos"
+            },
+            {
+              "cell": "C3",
+              "value": "Cellularized embryos"
+            },
+            {
+              "cell": "D3",
+              "value": "Hatched embryos"
+            },
+            {
+              "cell": "A4",
+              "value": "RhoGEF2(DHPH)-Cry2-mCherry"
+            },
+            {
+              "cell": "A5",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A6",
+              "value": "OreR"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 2e",
+          "max_row": 12,
+          "max_column": 23,
+          "nonempty_cells": 185,
+          "numeric_cells": 176,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 2e"
+            },
+            {
+              "cell": "A3",
+              "value": "Time (s)"
+            },
+            {
+              "cell": "A4",
+              "value": "Myosin intensity (0 μm)"
+            },
+            {
+              "cell": "A5",
+              "value": "Myosin intensity (2 μm)"
+            },
+            {
+              "cell": "A6",
+              "value": "Myosin intensity (4 μm)"
+            },
+            {
+              "cell": "A7",
+              "value": "Myosin intensity (6 μm)"
+            },
+            {
+              "cell": "A8",
+              "value": "Myosin intensity (8 μm)"
+            },
+            {
+              "cell": "A9",
+              "value": "Myosin intensity (10 μm)"
+            },
+            {
+              "cell": "A10",
+              "value": "Myosin intensity (12 μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 2g",
+          "max_row": 17,
+          "max_column": 23,
+          "nonempty_cells": 186,
+          "numeric_cells": 176,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 2g"
+            },
+            {
+              "cell": "A3",
+              "value": "Time (s)"
+            },
+            {
+              "cell": "A4",
+              "value": "Myosin intensity (0 μm)"
+            },
+            {
+              "cell": "A5",
+              "value": "Myosin intensity (2 μm)"
+            },
+            {
+              "cell": "A6",
+              "value": "Myosin intensity (4 μm)"
+            },
+            {
+              "cell": "A7",
+              "value": "Myosin intensity (6 μm)"
+            },
+            {
+              "cell": "A8",
+              "value": "Myosin intensity (8 μm)"
+            },
+            {
+              "cell": "A9",
+              "value": "Myosin intensity (10 μm)"
+            },
+            {
+              "cell": "A10",
+              "value": "Myosin intensity (12 μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 2h",
+          "max_row": 5,
+          "max_column": 7,
+          "nonempty_cells": 15,
+          "numeric_cells": 11,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 2h"
+            },
+            {
+              "cell": "A3",
+              "value": "Spreading (μm)"
+            },
+            {
+              "cell": "A4",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A5",
+              "value": "RhoGEF2(DHPH)-Cry2"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 2i",
+          "max_row": 5,
+          "max_column": 6,
+          "nonempty_cells": 14,
+          "numeric_cells": 10,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 2i"
+            },
+            {
+              "cell": "A3",
+              "value": "Time to 10% myosin increase (s)"
+            },
+            {
+              "cell": "A4",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A5",
+              "value": "RhoGEF2(DHPH)-Cry2"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 2j",
+          "max_row": 5,
+          "max_column": 8,
+          "nonempty_cells": 16,
+          "numeric_cells": 11,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 2j"
+            },
+            {
+              "cell": "A3",
+              "value": "Time to peak myosin signal (s)"
+            },
+            {
+              "cell": "A4",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A5",
+              "value": "RhoGEF2(DHPH)-Cry2"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 3a",
+          "max_row": 5,
+          "max_column": 26,
+          "nonempty_cells": 23,
+          "numeric_cells": 19,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 3a"
+            },
+            {
+              "cell": "A3",
+              "value": "Expression level (A.U.)"
+            },
+            {
+              "cell": "A4",
+              "value": "RhoGEF2-tgRFPt-SspB"
+            },
+            {
+              "cell": "A5",
+              "value": "mCh-iLID-CaaX"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 7a",
+          "max_row": 4,
+          "max_column": 11,
+          "nonempty_cells": 18,
+          "numeric_cells": 10,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 7a"
+            },
+            {
+              "cell": "A3",
+              "value": "iLID expression (AU)"
+            },
+            {
+              "cell": "A4",
+              "value": "Shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 7b",
+          "max_row": 6,
+          "max_column": 26,
+          "nonempty_cells": 37,
+          "numeric_cells": 34,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 7b"
+            },
+            {
+              "cell": "A3",
+              "value": "Laser power² (mW²)"
+            },
+            {
+              "cell": "A4",
+              "value": "Shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 7c",
+          "max_row": 6,
+          "max_column": 26,
+          "nonempty_cells": 37,
+          "numeric_cells": 34,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 7c"
+            },
+            {
+              "cell": "A3",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A4",
+              "value": "Shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 7d",
+          "max_row": 10,
+          "max_column": 26,
+          "nonempty_cells": 63,
+          "numeric_cells": 56,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 7d"
+            },
+            {
+              "cell": "A3",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A4",
+              "value": "Laser power² * iLID expression"
+            },
+            {
+              "cell": "A5",
+              "value": "Shortening (μm)"
+            },
+            {
+              "cell": "A7",
+              "value": "OptoCysts"
+            },
+            {
+              "cell": "A8",
+              "value": "Laser power² * iLID expression"
+            },
+            {
+              "cell": "A9",
+              "value": "Shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 7e",
+          "max_row": 13,
+          "max_column": 50,
+          "nonempty_cells": 103,
+          "numeric_cells": 98,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 7e"
+            },
+            {
+              "cell": "A3",
+              "value": "Laser power² * iLID expression"
+            },
+            {
+              "cell": "A4",
+              "value": "Activation magnitude"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 7g",
+          "max_row": 4,
+          "max_column": 20,
+          "nonempty_cells": 24,
+          "numeric_cells": 8,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 7g"
+            },
+            {
+              "cell": "A3",
+              "value": "Activation magnitude"
+            },
+            {
+              "cell": "A4",
+              "value": "Shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 7i",
+          "max_row": 4,
+          "max_column": 20,
+          "nonempty_cells": 25,
+          "numeric_cells": 8,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 7i"
+            },
+            {
+              "cell": "A3",
+              "value": "Laser power² (mW²)"
+            },
+            {
+              "cell": "A4",
+              "value": "Shortening (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 8f",
+          "max_row": 5,
+          "max_column": 6,
+          "nonempty_cells": 14,
+          "numeric_cells": 10,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 8f"
+            },
+            {
+              "cell": "A3",
+              "value": "Cell height (μm)"
+            },
+            {
+              "cell": "A4",
+              "value": "Groove"
+            },
+            {
+              "cell": "A5",
+              "value": "Crest"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 9c",
+          "max_row": 5,
+          "max_column": 51,
+          "nonempty_cells": 154,
+          "numeric_cells": 150,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 9c"
+            },
+            {
+              "cell": "A3",
+              "value": "Time (s)"
+            },
+            {
+              "cell": "A4",
+              "value": "Retraction distance (OptoGEF2) (μm)"
+            },
+            {
+              "cell": "A5",
+              "value": "Retraction distance (OptoGEF2 + scra RNAi) (μm)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "Supplementary Fig 9d",
+          "max_row": 6,
+          "max_column": 10,
+          "nonempty_cells": 22,
+          "numeric_cells": 18,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "Supplementary Fig 9d"
+            },
+            {
+              "cell": "A3",
+              "value": "Initial retraction distance (μm)"
+            },
+            {
+              "cell": "A4",
+              "value": "OptoGEF2"
+            },
+            {
+              "cell": "A5",
+              "value": "OptoGEF2 + scra RNAi"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        }
+      ]
+    },
+    {
+      "file": "41467_2025_62483_MOESM4_ESM.xlsx",
+      "bytes": 11438,
+      "sha256": "6c97e2046808a9e02d0958eff947f983d51437caaae361a31b83bfa8fdf3ddd7",
+      "sheets": [
+        {
+          "sheet": "RhoGEF2-tgRFPt-SspB",
+          "max_row": 30,
+          "max_column": 4,
+          "nonempty_cells": 78,
+          "numeric_cells": 0,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "pU6-chiRNA-RhoGEF2 (gRNA plasmid)"
+            },
+            {
+              "cell": "A2",
+              "value": "Primer name"
+            },
+            {
+              "cell": "B2",
+              "value": "Primer sequence"
+            },
+            {
+              "cell": "C2",
+              "value": "Template"
+            },
+            {
+              "cell": "A3",
+              "value": "GEF2_gRNA_f"
+            },
+            {
+              "cell": "B3",
+              "value": "cttcgcaattggtcaaatgcgtgc"
+            },
+            {
+              "cell": "C3",
+              "value": "pU6-BbsI-chiRNA (Addgene #45946)"
+            },
+            {
+              "cell": "A4",
+              "value": "GEF2_gRNA_r"
+            },
+            {
+              "cell": "B4",
+              "value": "aaacgcacgcatttgaccaattgc"
+            },
+            {
+              "cell": "C4",
+              "value": "pU6-BbsI-chiRNA (Addgene #45946)"
+            },
+            {
+              "cell": "A7",
+              "value": "pHD-RhoGEF2-sfGFP-DsRed (donor plasmid precursor, built by Gibson assembly)"
+            },
+            {
+              "cell": "A8",
+              "value": "Primer name"
+            },
+            {
+              "cell": "B8",
+              "value": "Primer sequence"
+            },
+            {
+              "cell": "C8",
+              "value": "Template"
+            },
+            {
+              "cell": "D8",
+              "value": "Fragment"
+            },
+            {
+              "cell": "A9",
+              "value": "GEF2-RFP-SspB_LHA_f"
+            },
+            {
+              "cell": "B9",
+              "value": "attcgcccttgaaacgtcaatccactgatg"
+            },
+            {
+              "cell": "C9",
+              "value": "TH_attP2 nos-Cas9 (BDSC #78782)"
+            },
+            {
+              "cell": "D9",
+              "value": "Left homology arm"
+            },
+            {
+              "cell": "A10",
+              "value": "GEF2-RFP-SspB_LHA_r"
+            },
+            {
+              "cell": "B10",
+              "value": "cagatccaccttcctcatcctcagtgctag"
+            },
+            {
+              "cell": "C10",
+              "value": "TH_attP2 nos-Cas9 (BDSC #78782)"
+            },
+            {
+              "cell": "D10",
+              "value": "Left homology arm"
+            },
+            {
+              "cell": "A11",
+              "value": "GEF2-RFP-SspB_RHA_f"
+            },
+            {
+              "cell": "B11",
+              "value": "aggaggttcctaggaaacttgtttaatttttttttgtataaaatacatatttg"
+            },
+            {
+              "cell": "C11",
+              "value": "TH_attP2 nos-Cas9 (BDSC #78782)"
+            },
+            {
+              "cell": "D11",
+              "value": "Right homology arm"
+            },
+            {
+              "cell": "A12",
+              "value": "GEF2-RFP-SspB_RHA_r"
+            },
+            {
+              "cell": "B12",
+              "value": "attcgccctttatccttgcagagggcttttc"
+            },
+            {
+              "cell": "C12",
+              "value": "TH_attP2 nos-Cas9 (BDSC #78782)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "RhoGEF2-SspB",
+          "max_row": 7,
+          "max_column": 3,
+          "nonempty_cells": 12,
+          "numeric_cells": 0,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "pU6-chiRNA-RhoGEF2 (gRNA plasmid)"
+            },
+            {
+              "cell": "A2",
+              "value": "Same as RhoGEF2-tgRFPt-SspB"
+            },
+            {
+              "cell": "A4",
+              "value": "pHD-RhoGEF2-SspB-DsRed (donor plasmid, built by SDM)"
+            },
+            {
+              "cell": "A5",
+              "value": "Primer name"
+            },
+            {
+              "cell": "B5",
+              "value": "Primer sequence"
+            },
+            {
+              "cell": "C5",
+              "value": "Template"
+            },
+            {
+              "cell": "A6",
+              "value": "GEF2-SspB_RFPdel_f"
+            },
+            {
+              "cell": "B6",
+              "value": "AGCTCCCCGAAACGCCC"
+            },
+            {
+              "cell": "C6",
+              "value": "pHD-RhoGEF2-tgRFPt-SspB-DsRed"
+            },
+            {
+              "cell": "A7",
+              "value": "GEF2-SspB_RFPdel_r"
+            },
+            {
+              "cell": "B7",
+              "value": "ACTACCCCCTGAGCCGCC"
+            },
+            {
+              "cell": "C7",
+              "value": "pHD-RhoGEF2-tgRFPt-SspB-DsRed"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "SspB-tgRFPt-Cysts",
+          "max_row": 40,
+          "max_column": 4,
+          "nonempty_cells": 107,
+          "numeric_cells": 0,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "pU6-chiRNA-Cysts (gRNA plasmid)"
+            },
+            {
+              "cell": "A2",
+              "value": "Primer name"
+            },
+            {
+              "cell": "B2",
+              "value": "Primer sequence"
+            },
+            {
+              "cell": "C2",
+              "value": "Template"
+            },
+            {
+              "cell": "A3",
+              "value": "Cysts_gRNA_f"
+            },
+            {
+              "cell": "B3",
+              "value": "GATTATGGACAACGCGGGCGGTTTTAGAGCTAGAAATAGCAAG"
+            },
+            {
+              "cell": "C3",
+              "value": "pU6-BbsI-chiRNA (Addgene #45946)"
+            },
+            {
+              "cell": "A4",
+              "value": "Cysts_gRNA_r"
+            },
+            {
+              "cell": "B4",
+              "value": "GAAGTATTGAGGAAAACATACCTATATAAATG"
+            },
+            {
+              "cell": "C4",
+              "value": "pU6-BbsI-chiRNA (Addgene #45946)"
+            },
+            {
+              "cell": "A7",
+              "value": "pHD-Cry2-tgRFPt-DsRed (donor plasmid precursor, built by Gibson assembly)"
+            },
+            {
+              "cell": "A8",
+              "value": "Primer name"
+            },
+            {
+              "cell": "B8",
+              "value": "Primer sequence"
+            },
+            {
+              "cell": "C8",
+              "value": "Template"
+            },
+            {
+              "cell": "D8",
+              "value": "Fragment"
+            },
+            {
+              "cell": "A9",
+              "value": "Cry2-RFP_BB_f"
+            },
+            {
+              "cell": "B9",
+              "value": "GCTGTACAAGATTAACCCTAGAAAGATAATCATATTGTGACGTACGTTAAAG"
+            },
+            {
+              "cell": "C9",
+              "value": "pScarlessHD-sfGFP-DsRed (Addgene #80811)"
+            },
+            {
+              "cell": "D9",
+              "value": "pHD backbone + DsRed"
+            },
+            {
+              "cell": "A10",
+              "value": "Cry2-RFP_BB_r"
+            },
+            {
+              "cell": "B10",
+              "value": "CCATCTTCATAAGGGCGAATTCGCGGCC"
+            },
+            {
+              "cell": "C10",
+              "value": "pScarlessHD-sfGFP-DsRed (Addgene #80811)"
+            },
+            {
+              "cell": "D10",
+              "value": "pHD backbone + DsRed"
+            },
+            {
+              "cell": "A11",
+              "value": "Cry2-RFP_Cry2_f"
+            },
+            {
+              "cell": "B11",
+              "value": "ATTCGCCCTTATGAAGATGGACAAAAAGACTATAG"
+            },
+            {
+              "cell": "C11",
+              "value": "pCRY2PHR-mCherryN1 (Addgene #26866)"
+            },
+            {
+              "cell": "D11",
+              "value": "Cry2"
+            },
+            {
+              "cell": "A12",
+              "value": "Cry2-RFP_Cry2_r"
+            },
+            {
+              "cell": "B12",
+              "value": "TAGACACCATACCTGATCCTGATCCTGATC"
+            },
+            {
+              "cell": "C12",
+              "value": "pCRY2PHR-mCherryN1 (Addgene #26866)"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        },
+        {
+          "sheet": "SspB-Cysts",
+          "max_row": 8,
+          "max_column": 3,
+          "nonempty_cells": 12,
+          "numeric_cells": 0,
+          "string_labels": [
+            {
+              "cell": "A1",
+              "value": "pU6-chiRNA-Cysts (gRNA plasmid)"
+            },
+            {
+              "cell": "A2",
+              "value": "Same as SspB-tgRFPt-Cysts"
+            },
+            {
+              "cell": "A5",
+              "value": "pHD-SspB-DsRed-Cysts (donor plasmid, built by SDM)"
+            },
+            {
+              "cell": "A6",
+              "value": "Primer name"
+            },
+            {
+              "cell": "B6",
+              "value": "Primer sequence"
+            },
+            {
+              "cell": "C6",
+              "value": "Template"
+            },
+            {
+              "cell": "A7",
+              "value": "SspB-Cysts_RFPdel_f"
+            },
+            {
+              "cell": "B7",
+              "value": "ATTAACCCTAGAAAGATAATCATATTGTGACG"
+            },
+            {
+              "cell": "C7",
+              "value": "pHD-SspB-tgRFPt-DsRed-Cysts"
+            },
+            {
+              "cell": "A8",
+              "value": "SspB-Cysts_RFPdel_r"
+            },
+            {
+              "cell": "B8",
+              "value": "ACCAATATTCAGCTCGTCATAGATTTCT"
+            },
+            {
+              "cell": "C8",
+              "value": "pHD-SspB-tgRFPt-DsRed-Cysts"
+            }
+          ],
+          "independent_xml_cell_equality": true
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "path": "data\\derived\\calibration_small_18um.csv",
+      "rows": 17,
+      "sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518"
+    },
+    {
+      "path": "data\\derived\\evaluation_large_50um.csv",
+      "rows": 9,
+      "sha256": "7b49ea11755ce9dddd5c07d376c7f2fc5e10834bb724ae6bedbf95bb3b91a6b8"
+    },
+    {
+      "path": "data\\derived\\all_bending_records.csv",
+      "rows": 48,
+      "sha256": "620dbdef7720895f0ecff2670cbb7c3b9e9defa87067d105b3791e62420c14a0"
+    },
+    {
+      "path": "data\\derived\\evaluation_larger_bending.csv",
+      "rows": 31,
+      "sha256": "733d63ff64564b2d483617e61ba403b5dd1425bac4f2160a00a063686e214147"
+    },
+    {
+      "path": "data\\derived\\example_apical_basal_trajectories.csv",
+      "rows": 63,
+      "sha256": "5c17b08254bc810476d3ab727a25393e53ac752c2502f3d5054809170bd99102"
+    }
+  ],
+  "duplicate_checks": {
+    "small_fig2_and_fig4h_dose_maximum_exact": true,
+    "small_fig2c_and_fig2d_mean_exact": true,
+    "small_fig4f_dose_set_exact": true,
+    "large_fig4h_and_fig4f_dose_set_exact": true,
+    "calibration_individual_records": 17,
+    "duplicate_small_records_added_to_sample_size": 0
+  },
+  "larger_bending_diameter_counts": {
+    "24.94698765": 6,
+    "31.18373456": 5,
+    "37.42048148": 5,
+    "43.65722839": 6,
+    "49.8939753": 9
+  },
+  "all_bending_labels": {
+    "0": 32,
+    "1": 16
+  },
+  "caveats": [
+    "No explicit embryo IDs: source column locators are not biological specimen IDs.",
+    "Maximum and region-average shortening are different endpoints. Cross-diameter comparison uses maximum.",
+    "Separate maximum apical/basal displacements may occur at different sites/times and need not add to maximum shortening.",
+    "Workbook small/large groups are nominal18/50 µm; Fig4f reports18.71024074/49.8939753 µm. Preserve both.",
+    "Numerical diameter-response source reaches49.8939753 µm, not75. Textual75µm example is not a tabulated diameter cohort here.",
+    "Fig2b contains3 illustrative traces; no whole-cohort temporal trajectories or surface maps in these sheets.",
+    "Activation magnitude uses first-activation fluorescence normalized by a cross-experiment reference curve; not prescribed laser power or absolute molecular stress.",
+    "Maximum shortening uses a reference cellularization curve estimated with nonactivated tissue over the experiment; this is outcome processing, not an allowed forecast input."
+  ]
+}

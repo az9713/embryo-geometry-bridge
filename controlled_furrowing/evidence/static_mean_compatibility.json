@@ -1,0 +1,1424 @@
+{
+  "status": "PASS_SHARP_STATIC_KINEMATIC_COMPATIBILITY",
+  "checks": {
+    "optoGEF2_small_col_B_all_four_residuals": true,
+    "optoGEF2_small_col_B_positive_thickness": true,
+    "optoGEF2_small_col_B_both_mean_constructions": true,
+    "optoGEF2_small_col_C_all_four_residuals": true,
+    "optoGEF2_small_col_C_positive_thickness": true,
+    "optoGEF2_small_col_C_both_mean_constructions": true,
+    "optoGEF2_small_col_D_all_four_residuals": true,
+    "optoGEF2_small_col_D_positive_thickness": true,
+    "optoGEF2_small_col_D_both_mean_constructions": true,
+    "optoGEF2_small_col_E_all_four_residuals": true,
+    "optoGEF2_small_col_E_positive_thickness": true,
+    "optoGEF2_small_col_E_both_mean_constructions": true,
+    "optoGEF2_small_col_F_all_four_residuals": true,
+    "optoGEF2_small_col_F_positive_thickness": true,
+    "optoGEF2_small_col_F_both_mean_constructions": true,
+    "optoGEF2_small_col_G_all_four_residuals": true,
+    "optoGEF2_small_col_G_positive_thickness": true,
+    "optoGEF2_small_col_G_both_mean_constructions": true,
+    "optoGEF2_small_col_H_all_four_residuals": true,
+    "optoGEF2_small_col_H_positive_thickness": true,
+    "optoGEF2_small_col_H_both_mean_constructions": true,
+    "optoGEF2_small_col_I_all_four_residuals": true,
+    "optoGEF2_small_col_I_positive_thickness": true,
+    "optoGEF2_small_col_I_both_mean_constructions": true,
+    "optoGEF2_small_col_J_all_four_residuals": true,
+    "optoGEF2_small_col_J_positive_thickness": true,
+    "optoGEF2_small_col_J_both_mean_constructions": true,
+    "optoGEF2_small_col_K_all_four_residuals": true,
+    "optoGEF2_small_col_K_positive_thickness": true,
+    "optoGEF2_small_col_K_both_mean_constructions": true,
+    "optoGEF2_small_col_L_all_four_residuals": true,
+    "optoGEF2_small_col_L_positive_thickness": true,
+    "optoGEF2_small_col_L_both_mean_constructions": true,
+    "optoGEF2_small_col_M_all_four_residuals": true,
+    "optoGEF2_small_col_M_positive_thickness": true,
+    "optoGEF2_small_col_M_both_mean_constructions": true,
+    "optoGEF2_small_col_N_all_four_residuals": true,
+    "optoGEF2_small_col_N_positive_thickness": true,
+    "optoGEF2_small_col_N_both_mean_constructions": true,
+    "optoGEF2_small_col_O_all_four_residuals": true,
+    "optoGEF2_small_col_O_positive_thickness": true,
+    "optoGEF2_small_col_O_both_mean_constructions": true,
+    "optoGEF2_small_col_P_all_four_residuals": true,
+    "optoGEF2_small_col_P_positive_thickness": true,
+    "optoGEF2_small_col_P_both_mean_constructions": true,
+    "optoGEF2_small_col_Q_all_four_residuals": true,
+    "optoGEF2_small_col_Q_positive_thickness": true,
+    "optoGEF2_small_col_Q_both_mean_constructions": true,
+    "optoGEF2_small_col_R_all_four_residuals": true,
+    "optoGEF2_small_col_R_positive_thickness": true,
+    "optoGEF2_small_col_R_both_mean_constructions": true,
+    "unknown_pairing_matching_at_sorted_optimum": true,
+    "unknown_pairing_predecessor_Hall_obstruction": true,
+    "optoGEF2_small_col_O_unknown_pairing_primal": true,
+    "optoGEF2_small_col_I_unknown_pairing_primal": true,
+    "optoGEF2_small_col_B_unknown_pairing_primal": true,
+    "optoGEF2_small_col_C_unknown_pairing_primal": true,
+    "optoGEF2_small_col_Q_unknown_pairing_primal": true,
+    "optoGEF2_small_col_F_unknown_pairing_primal": true,
+    "optoGEF2_small_col_P_unknown_pairing_primal": true,
+    "optoGEF2_small_col_N_unknown_pairing_primal": true,
+    "optoGEF2_small_col_M_unknown_pairing_primal": true,
+    "optoGEF2_small_col_L_unknown_pairing_primal": true,
+    "optoGEF2_small_col_D_unknown_pairing_primal": true,
+    "optoGEF2_small_col_J_unknown_pairing_primal": true,
+    "optoGEF2_small_col_R_unknown_pairing_primal": true,
+    "optoGEF2_small_col_G_unknown_pairing_primal": true,
+    "optoGEF2_small_col_E_unknown_pairing_primal": true,
+    "optoGEF2_small_col_H_unknown_pairing_primal": true,
+    "optoGEF2_small_col_K_unknown_pairing_primal": true,
+    "independent_three_pair_permutation_enumeration": true
+  },
+  "source_csv_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "script_sha256": "7ccb63a8ba287c0047437e982b058badc1f895de516102f3c03040327e7c929d",
+  "static_regional_mean_canonical_floor_exact": "43438757/12500000",
+  "static_regional_mean_canonical_floor_display": 3.47510056,
+  "canonical_rows": [
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "original": {
+        "maximum_shortening_um": "77722063/25000000",
+        "region_averaged_shortening_um": "60944403/100000000",
+        "apical_max_shortening_um": "3",
+        "basal_max_shortening_um": "24355301/50000000"
+      },
+      "correction": {
+        "M": "77722063/25000000",
+        "V": "29412463/18750000",
+        "A": "612233801/300000000",
+        "B": "-141634393/300000000",
+        "error": "287766199/300000000",
+        "t": "287766199/300000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "77722063/25000000",
+            "0",
+            "-115516337/25000000"
+          ],
+          "A_coefficients": [
+            "612233801/300000000"
+          ],
+          "B_coefficients": [
+            "64086191/60000000",
+            "0",
+            "-115516337/25000000"
+          ],
+          "mean_S": "29412463/18750000",
+          "mean_A": "612233801/300000000",
+          "mean_B": "-141634393/300000000",
+          "max_S": "77722063/25000000",
+          "min_S": "-18897137/12500000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "77722063/25000000",
+            "0",
+            "-115516337/37500000"
+          ],
+          "A_coefficients": [
+            "612233801/300000000"
+          ],
+          "B_coefficients": [
+            "64086191/60000000",
+            "0",
+            "-115516337/37500000"
+          ],
+          "mean_S": "29412463/18750000",
+          "mean_A": "612233801/300000000",
+          "mean_B": "-141634393/300000000",
+          "max_S": "77722063/25000000",
+          "min_S": "426703/15000000"
+        }
+      },
+      "core_J_lower_bound_exact": "759777937/837500000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "original": {
+        "maximum_shortening_um": "121538093/25000000",
+        "region_averaged_shortening_um": "13129681/10000000",
+        "apical_max_shortening_um": "4",
+        "basal_max_shortening_um": "21538093/25000000"
+      },
+      "correction": {
+        "M": "121538093/25000000",
+        "V": "93593249/37500000",
+        "A": "422572219/150000000",
+        "B": "-48199223/150000000",
+        "error": "177427781/150000000",
+        "t": "177427781/150000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "121538093/25000000",
+            "0",
+            "-177427781/25000000"
+          ],
+          "A_coefficients": [
+            "422572219/150000000"
+          ],
+          "B_coefficients": [
+            "306656339/150000000",
+            "0",
+            "-177427781/25000000"
+          ],
+          "mean_S": "93593249/37500000",
+          "mean_A": "422572219/150000000",
+          "mean_B": "-48199223/150000000",
+          "max_S": "121538093/25000000",
+          "min_S": "-6986211/3125000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "121538093/25000000",
+            "0",
+            "-177427781/37500000"
+          ],
+          "A_coefficients": [
+            "422572219/150000000"
+          ],
+          "B_coefficients": [
+            "306656339/150000000",
+            "0",
+            "-177427781/37500000"
+          ],
+          "mean_S": "93593249/37500000",
+          "mean_A": "422572219/150000000",
+          "mean_B": "-48199223/150000000",
+          "max_S": "121538093/25000000",
+          "min_S": "9758717/75000000"
+        }
+      },
+      "core_J_lower_bound_exact": "715961907/837500000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "original": {
+        "maximum_shortening_um": "831533939/100000000",
+        "region_averaged_shortening_um": "207297287/50000000",
+        "apical_max_shortening_um": "6",
+        "basal_max_shortening_um": "231533939/100000000"
+      },
+      "correction": {
+        "M": "831533939/100000000",
+        "V": "1660723087/300000000",
+        "A": "276612127/60000000",
+        "B": "69415613/75000000",
+        "error": "83387873/60000000",
+        "t": "83387873/60000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "831533939/100000000",
+            "0",
+            "-83387873/10000000"
+          ],
+          "A_coefficients": [
+            "276612127/60000000"
+          ],
+          "B_coefficients": [
+            "555770591/150000000",
+            "0",
+            "-83387873/10000000"
+          ],
+          "mean_S": "1660723087/300000000",
+          "mean_A": "276612127/60000000",
+          "mean_B": "69415613/75000000",
+          "max_S": "831533939/100000000",
+          "min_S": "-2344791/100000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "831533939/100000000",
+            "0",
+            "-83387873/15000000"
+          ],
+          "A_coefficients": [
+            "276612127/60000000"
+          ],
+          "B_coefficients": [
+            "555770591/150000000",
+            "0",
+            "-83387873/15000000"
+          ],
+          "mean_S": "1660723087/300000000",
+          "mean_A": "276612127/60000000",
+          "mean_B": "69415613/75000000",
+          "max_S": "831533939/100000000",
+          "min_S": "826844357/300000000"
+        }
+      },
+      "core_J_lower_bound_exact": "2518466061/3350000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "original": {
+        "maximum_shortening_um": "14418011/1562500",
+        "region_averaged_shortening_um": "344582899/50000000",
+        "apical_max_shortening_um": "8",
+        "basal_max_shortening_um": "1420587/390625"
+      },
+      "correction": {
+        "M": "14418011/1562500",
+        "V": "211833489/25000000",
+        "A": "320915921/50000000",
+        "B": "102751057/50000000",
+        "error": "79084079/50000000",
+        "t": "79084079/50000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "14418011/1562500",
+            "0",
+            "-56564061/25000000"
+          ],
+          "A_coefficients": [
+            "320915921/50000000"
+          ],
+          "B_coefficients": [
+            "140460431/50000000",
+            "0",
+            "-56564061/25000000"
+          ],
+          "mean_S": "211833489/25000000",
+          "mean_A": "320915921/50000000",
+          "mean_B": "102751057/50000000",
+          "max_S": "14418011/1562500",
+          "min_S": "34824823/5000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "14418011/1562500",
+            "0",
+            "-18854687/12500000"
+          ],
+          "A_coefficients": [
+            "320915921/50000000"
+          ],
+          "B_coefficients": [
+            "140460431/50000000",
+            "0",
+            "-18854687/12500000"
+          ],
+          "mean_S": "211833489/25000000",
+          "mean_A": "320915921/50000000",
+          "mean_B": "102751057/50000000",
+          "max_S": "14418011/1562500",
+          "min_S": "96489401/12500000"
+        }
+      },
+      "core_J_lower_bound_exact": "37925739/52343750"
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "original": {
+        "maximum_shortening_um": "382404181/50000000",
+        "region_averaged_shortening_um": "16539897/6250000",
+        "apical_max_shortening_um": "6",
+        "basal_max_shortening_um": "182404181/50000000"
+      },
+      "correction": {
+        "M": "382404181/50000000",
+        "V": "747042533/150000000",
+        "A": "109982999/30000000",
+        "B": "98563769/75000000",
+        "error": "70017001/30000000",
+        "t": "70017001/30000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "382404181/50000000",
+            "0",
+            "-40017001/5000000"
+          ],
+          "A_coefficients": [
+            "109982999/30000000"
+          ],
+          "B_coefficients": [
+            "149324387/37500000",
+            "0",
+            "-40017001/5000000"
+          ],
+          "mean_S": "747042533/150000000",
+          "mean_A": "109982999/30000000",
+          "mean_B": "98563769/75000000",
+          "max_S": "382404181/50000000",
+          "min_S": "-17765829/50000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "382404181/50000000",
+            "0",
+            "-40017001/7500000"
+          ],
+          "A_coefficients": [
+            "109982999/30000000"
+          ],
+          "B_coefficients": [
+            "149324387/37500000",
+            "0",
+            "-40017001/7500000"
+          ],
+          "mean_S": "747042533/150000000",
+          "mean_A": "109982999/30000000",
+          "mean_B": "98563769/75000000",
+          "max_S": "382404181/50000000",
+          "min_S": "346872523/150000000"
+        }
+      },
+      "core_J_lower_bound_exact": "1292595819/1675000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "original": {
+        "maximum_shortening_um": "636662153/50000000",
+        "region_averaged_shortening_um": "151029611/25000000",
+        "apical_max_shortening_um": "13",
+        "basal_max_shortening_um": "86662153/25000000"
+      },
+      "correction": {
+        "M": "636662153/50000000",
+        "V": "1903257/200000",
+        "A": "119061243/12500000",
+        "B": "-215361/25000000",
+        "error": "43438757/12500000",
+        "t": "43438757/12500000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "636662153/50000000",
+            "0",
+            "-482543709/50000000"
+          ],
+          "A_coefficients": [
+            "119061243/12500000"
+          ],
+          "B_coefficients": [
+            "160417181/50000000",
+            "0",
+            "-482543709/50000000"
+          ],
+          "mean_S": "1903257/200000",
+          "mean_A": "119061243/12500000",
+          "mean_B": "-215361/25000000",
+          "max_S": "636662153/50000000",
+          "min_S": "38529611/12500000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "636662153/50000000",
+            "0",
+            "-160847903/25000000"
+          ],
+          "A_coefficients": [
+            "119061243/12500000"
+          ],
+          "B_coefficients": [
+            "160417181/50000000",
+            "0",
+            "-160847903/25000000"
+          ],
+          "mean_S": "1903257/200000",
+          "mean_A": "119061243/12500000",
+          "mean_B": "-215361/25000000",
+          "max_S": "636662153/50000000",
+          "min_S": "314966347/50000000"
+        }
+      },
+      "core_J_lower_bound_exact": "1038337847/1675000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "original": {
+        "maximum_shortening_um": "1049577729/100000000",
+        "region_averaged_shortening_um": "138155819/20000000",
+        "apical_max_shortening_um": "9",
+        "basal_max_shortening_um": "436972161/100000000"
+      },
+      "correction": {
+        "M": "1049577729/100000000",
+        "V": "2718530351/300000000",
+        "A": "1026903467/150000000",
+        "B": "664723417/300000000",
+        "error": "323096533/150000000",
+        "t": "323096533/150000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "1049577729/100000000",
+            "0",
+            "-107550709/25000000"
+          ],
+          "A_coefficients": [
+            "1026903467/150000000"
+          ],
+          "B_coefficients": [
+            "1094926253/300000000",
+            "0",
+            "-107550709/25000000"
+          ],
+          "mean_S": "2718530351/300000000",
+          "mean_A": "1026903467/150000000",
+          "mean_B": "664723417/300000000",
+          "max_S": "1049577729/100000000",
+          "min_S": "619374893/100000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "1049577729/100000000",
+            "0",
+            "-107550709/37500000"
+          ],
+          "A_coefficients": [
+            "1026903467/150000000"
+          ],
+          "B_coefficients": [
+            "1094926253/300000000",
+            "0",
+            "-107550709/37500000"
+          ],
+          "mean_S": "2718530351/300000000",
+          "mean_A": "1026903467/150000000",
+          "mean_B": "664723417/300000000",
+          "max_S": "1049577729/100000000",
+          "min_S": "457665503/60000000"
+        }
+      },
+      "core_J_lower_bound_exact": "2300422271/3350000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "original": {
+        "maximum_shortening_um": "138419619/100000000",
+        "region_averaged_shortening_um": "46946903/100000000",
+        "apical_max_shortening_um": "0",
+        "basal_max_shortening_um": "138419619/100000000"
+      },
+      "correction": {
+        "M": "138419619/100000000",
+        "V": "9292537/12000000",
+        "A": "-22868179/75000000",
+        "B": "323786141/300000000",
+        "error": "22868179/75000000",
+        "t": "22868179/75000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "138419619/100000000",
+            "0",
+            "-22868179/12500000"
+          ],
+          "A_coefficients": [
+            "-22868179/75000000"
+          ],
+          "B_coefficients": [
+            "506731573/300000000",
+            "0",
+            "-22868179/12500000"
+          ],
+          "mean_S": "9292537/12000000",
+          "mean_A": "-22868179/75000000",
+          "mean_B": "323786141/300000000",
+          "max_S": "138419619/100000000",
+          "min_S": "-44525813/100000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "138419619/100000000",
+            "0",
+            "-22868179/18750000"
+          ],
+          "A_coefficients": [
+            "-22868179/75000000"
+          ],
+          "B_coefficients": [
+            "506731573/300000000",
+            "0",
+            "-22868179/18750000"
+          ],
+          "mean_S": "9292537/12000000",
+          "mean_A": "-22868179/75000000",
+          "mean_B": "323786141/300000000",
+          "max_S": "138419619/100000000",
+          "min_S": "49367993/300000000"
+        }
+      },
+      "core_J_lower_bound_exact": "3211580381/3350000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "original": {
+        "maximum_shortening_um": "772032047/100000000",
+        "region_averaged_shortening_um": "431605203/100000000",
+        "apical_max_shortening_um": "8",
+        "basal_max_shortening_um": "272032047/100000000"
+      },
+      "correction": {
+        "M": "772032047/100000000",
+        "V": "1935242453/300000000",
+        "A": "439893289/75000000",
+        "B": "175669297/300000000",
+        "error": "160106711/75000000",
+        "t": "160106711/75000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "772032047/100000000",
+            "0",
+            "-47606711/12500000"
+          ],
+          "A_coefficients": [
+            "439893289/75000000"
+          ],
+          "B_coefficients": [
+            "111304597/60000000",
+            "0",
+            "-47606711/12500000"
+          ],
+          "mean_S": "1935242453/300000000",
+          "mean_A": "439893289/75000000",
+          "mean_B": "175669297/300000000",
+          "max_S": "772032047/100000000",
+          "min_S": "391178359/100000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "772032047/100000000",
+            "0",
+            "-47606711/18750000"
+          ],
+          "A_coefficients": [
+            "439893289/75000000"
+          ],
+          "B_coefficients": [
+            "111304597/60000000",
+            "0",
+            "-47606711/18750000"
+          ],
+          "mean_S": "1935242453/300000000",
+          "mean_A": "439893289/75000000",
+          "mean_B": "175669297/300000000",
+          "max_S": "772032047/100000000",
+          "min_S": "310877753/60000000"
+        }
+      },
+      "core_J_lower_bound_exact": "2577967953/3350000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "original": {
+        "maximum_shortening_um": "631048581/50000000",
+        "region_averaged_shortening_um": "209579799/25000000",
+        "apical_max_shortening_um": "13",
+        "basal_max_shortening_um": "143145743/50000000"
+      },
+      "correction": {
+        "M": "631048581/50000000",
+        "V": "1631464939/150000000",
+        "A": "315202771/30000000",
+        "B": "13862771/37500000",
+        "error": "74797229/30000000",
+        "t": "74797229/30000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "631048581/50000000",
+            "0",
+            "-65420201/12500000"
+          ],
+          "A_coefficients": [
+            "315202771/30000000"
+          ],
+          "B_coefficients": [
+            "19820743/9375000",
+            "0",
+            "-65420201/12500000"
+          ],
+          "mean_S": "1631464939/150000000",
+          "mean_A": "315202771/30000000",
+          "mean_B": "13862771/37500000",
+          "max_S": "631048581/50000000",
+          "min_S": "369367777/50000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "631048581/50000000",
+            "0",
+            "-65420201/18750000"
+          ],
+          "A_coefficients": [
+            "315202771/30000000"
+          ],
+          "B_coefficients": [
+            "19820743/9375000",
+            "0",
+            "-65420201/18750000"
+          ],
+          "mean_S": "1631464939/150000000",
+          "mean_A": "315202771/30000000",
+          "mean_B": "13862771/37500000",
+          "max_S": "631048581/50000000",
+          "min_S": "273956827/30000000"
+        }
+      },
+      "core_J_lower_bound_exact": "1043951419/1675000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "original": {
+        "maximum_shortening_um": "972802387/100000000",
+        "region_averaged_shortening_um": "78522659/20000000",
+        "apical_max_shortening_um": "7",
+        "basal_max_shortening_um": "191783337/50000000"
+      },
+      "correction": {
+        "M": "972802387/100000000",
+        "V": "38933193/6250000",
+        "A": "469682207/100000000",
+        "B": "153248881/100000000",
+        "error": "230317793/100000000",
+        "t": "230317793/100000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "972802387/100000000",
+            "0",
+            "-1049613897/100000000"
+          ],
+          "A_coefficients": [
+            "469682207/100000000"
+          ],
+          "B_coefficients": [
+            "25156009/5000000",
+            "0",
+            "-1049613897/100000000"
+          ],
+          "mean_S": "38933193/6250000",
+          "mean_A": "469682207/100000000",
+          "mean_B": "153248881/100000000",
+          "max_S": "972802387/100000000",
+          "min_S": "-7681151/10000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "972802387/100000000",
+            "0",
+            "-349871299/50000000"
+          ],
+          "A_coefficients": [
+            "469682207/100000000"
+          ],
+          "B_coefficients": [
+            "25156009/5000000",
+            "0",
+            "-349871299/50000000"
+          ],
+          "mean_S": "38933193/6250000",
+          "mean_A": "469682207/100000000",
+          "mean_B": "153248881/100000000",
+          "max_S": "972802387/100000000",
+          "min_S": "273059789/100000000"
+        }
+      },
+      "core_J_lower_bound_exact": "2377197613/3350000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "original": {
+        "maximum_shortening_um": "12",
+        "region_averaged_shortening_um": "49035501/12500000",
+        "apical_max_shortening_um": "12",
+        "basal_max_shortening_um": "56849631/25000000"
+      },
+      "correction": {
+        "M": "12",
+        "V": "36866109/5000000",
+        "A": "213740457/25000000",
+        "B": "-3676239/3125000",
+        "error": "86259543/25000000",
+        "t": "86259543/25000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "12",
+            "0",
+            "-69401673/5000000"
+          ],
+          "A_coefficients": [
+            "213740457/25000000"
+          ],
+          "B_coefficients": [
+            "86259543/25000000",
+            "0",
+            "-69401673/5000000"
+          ],
+          "mean_S": "36866109/5000000",
+          "mean_A": "213740457/25000000",
+          "mean_B": "-3676239/3125000",
+          "max_S": "12",
+          "min_S": "-9401673/5000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "12",
+            "0",
+            "-23133891/2500000"
+          ],
+          "A_coefficients": [
+            "213740457/25000000"
+          ],
+          "B_coefficients": [
+            "86259543/25000000",
+            "0",
+            "-23133891/2500000"
+          ],
+          "mean_S": "36866109/5000000",
+          "mean_A": "213740457/25000000",
+          "mean_B": "-3676239/3125000",
+          "max_S": "12",
+          "min_S": "6866109/2500000"
+        }
+      },
+      "core_J_lower_bound_exact": "43/67"
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "original": {
+        "maximum_shortening_um": "335013163/50000000",
+        "region_averaged_shortening_um": "70862683/25000000",
+        "apical_max_shortening_um": "8",
+        "basal_max_shortening_um": "140052651/100000000"
+      },
+      "correction": {
+        "M": "335013163/50000000",
+        "V": "301390823/60000000",
+        "A": "1743398081/300000000",
+        "B": "-118221983/150000000",
+        "error": "656601919/300000000",
+        "t": "656601919/300000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "335013163/50000000",
+            "0",
+            "-503124863/100000000"
+          ],
+          "A_coefficients": [
+            "1743398081/300000000"
+          ],
+          "B_coefficients": [
+            "266680897/300000000",
+            "0",
+            "-503124863/100000000"
+          ],
+          "mean_S": "301390823/60000000",
+          "mean_A": "1743398081/300000000",
+          "mean_B": "-118221983/150000000",
+          "max_S": "335013163/50000000",
+          "min_S": "166901463/100000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "335013163/50000000",
+            "0",
+            "-503124863/150000000"
+          ],
+          "A_coefficients": [
+            "1743398081/300000000"
+          ],
+          "B_coefficients": [
+            "266680897/300000000",
+            "0",
+            "-503124863/150000000"
+          ],
+          "mean_S": "301390823/60000000",
+          "mean_A": "1743398081/300000000",
+          "mean_B": "-118221983/150000000",
+          "max_S": "335013163/50000000",
+          "min_S": "250957313/75000000"
+        }
+      },
+      "core_J_lower_bound_exact": "1339986837/1675000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "original": {
+        "maximum_shortening_um": "120752823/50000000",
+        "region_averaged_shortening_um": "0",
+        "apical_max_shortening_um": "2",
+        "basal_max_shortening_um": "20752823/50000000"
+      },
+      "correction": {
+        "M": "120752823/50000000",
+        "V": "40250941/50000000",
+        "A": "59749059/50000000",
+        "B": "-9749059/25000000",
+        "error": "40250941/50000000",
+        "t": "40250941/50000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "120752823/50000000",
+            "0",
+            "-120752823/25000000"
+          ],
+          "A_coefficients": [
+            "59749059/50000000"
+          ],
+          "B_coefficients": [
+            "15250941/12500000",
+            "0",
+            "-120752823/25000000"
+          ],
+          "mean_S": "40250941/50000000",
+          "mean_A": "59749059/50000000",
+          "mean_B": "-9749059/25000000",
+          "max_S": "120752823/50000000",
+          "min_S": "-120752823/50000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "120752823/50000000",
+            "0",
+            "-40250941/12500000"
+          ],
+          "A_coefficients": [
+            "59749059/50000000"
+          ],
+          "B_coefficients": [
+            "15250941/12500000",
+            "0",
+            "-40250941/12500000"
+          ],
+          "mean_S": "40250941/50000000",
+          "mean_A": "59749059/50000000",
+          "mean_B": "-9749059/25000000",
+          "max_S": "120752823/50000000",
+          "min_S": "-40250941/50000000"
+        }
+      },
+      "core_J_lower_bound_exact": "1554247177/1675000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "original": {
+        "maximum_shortening_um": "583168051/100000000",
+        "region_averaged_shortening_um": "279789867/100000000",
+        "apical_max_shortening_um": "6",
+        "basal_max_shortening_um": "6184669/3125000"
+      },
+      "correction": {
+        "M": "583168051/100000000",
+        "V": "678744571/150000000",
+        "A": "1281880459/300000000",
+        "B": "75608683/300000000",
+        "error": "518119541/300000000",
+        "t": "518119541/300000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "583168051/100000000",
+            "0",
+            "-392015011/100000000"
+          ],
+          "A_coefficients": [
+            "1281880459/300000000"
+          ],
+          "B_coefficients": [
+            "233811847/150000000",
+            "0",
+            "-392015011/100000000"
+          ],
+          "mean_S": "678744571/150000000",
+          "mean_A": "1281880459/300000000",
+          "mean_B": "75608683/300000000",
+          "max_S": "583168051/100000000",
+          "min_S": "2389413/1250000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "583168051/100000000",
+            "0",
+            "-392015011/150000000"
+          ],
+          "A_coefficients": [
+            "1281880459/300000000"
+          ],
+          "B_coefficients": [
+            "233811847/150000000",
+            "0",
+            "-392015011/150000000"
+          ],
+          "mean_S": "678744571/150000000",
+          "mean_A": "1281880459/300000000",
+          "mean_B": "75608683/300000000",
+          "max_S": "583168051/100000000",
+          "min_S": "965474131/300000000"
+        }
+      },
+      "core_J_lower_bound_exact": "2766831949/3350000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "original": {
+        "maximum_shortening_um": "49233871/10000000",
+        "region_averaged_shortening_um": "151460771/100000000",
+        "apical_max_shortening_um": "4",
+        "basal_max_shortening_um": "58266129/50000000"
+      },
+      "correction": {
+        "M": "49233871/10000000",
+        "V": "4097269/1500000",
+        "A": "834928513/300000000",
+        "B": "-15474713/300000000",
+        "error": "365071487/300000000",
+        "t": "365071487/300000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "49233871/10000000",
+            "0",
+            "-65756233/10000000"
+          ],
+          "A_coefficients": [
+            "834928513/300000000"
+          ],
+          "B_coefficients": [
+            "642087617/300000000",
+            "0",
+            "-65756233/10000000"
+          ],
+          "mean_S": "4097269/1500000",
+          "mean_A": "834928513/300000000",
+          "mean_B": "-15474713/300000000",
+          "max_S": "49233871/10000000",
+          "min_S": "-8261181/5000000"
+        },
+        "disk": {
+          "S_coefficients": [
+            "49233871/10000000",
+            "0",
+            "-65756233/15000000"
+          ],
+          "A_coefficients": [
+            "834928513/300000000"
+          ],
+          "B_coefficients": [
+            "642087617/300000000",
+            "0",
+            "-65756233/15000000"
+          ],
+          "mean_S": "4097269/1500000",
+          "mean_A": "834928513/300000000",
+          "mean_B": "-15474713/300000000",
+          "max_S": "49233871/10000000",
+          "min_S": "16189147/30000000"
+        }
+      },
+      "core_J_lower_bound_exact": "285766129/335000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "original": {
+        "maximum_shortening_um": "259169279/25000000",
+        "region_averaged_shortening_um": "243760223/50000000",
+        "apical_max_shortening_um": "9",
+        "basal_max_shortening_um": "84169279/25000000"
+      },
+      "correction": {
+        "M": "259169279/25000000",
+        "V": "92154917/12500000",
+        "A": "65028111/10000000",
+        "B": "43479113/50000000",
+        "error": "24971889/10000000",
+        "t": "24971889/10000000"
+      },
+      "constructions": {
+        "line": {
+          "S_coefficients": [
+            "259169279/25000000",
+            "0",
+            "-44915667/5000000"
+          ],
+          "A_coefficients": [
+            "65028111/10000000"
+          ],
+          "B_coefficients": [
+            "193198003/50000000",
+            "0",
+            "-44915667/5000000"
+          ],
+          "mean_S": "92154917/12500000",
+          "mean_A": "65028111/10000000",
+          "mean_B": "43479113/50000000",
+          "max_S": "259169279/25000000",
+          "min_S": "1080967/781250"
+        },
+        "disk": {
+          "S_coefficients": [
+            "259169279/25000000",
+            "0",
+            "-14971889/2500000"
+          ],
+          "A_coefficients": [
+            "65028111/10000000"
+          ],
+          "B_coefficients": [
+            "193198003/50000000",
+            "0",
+            "-14971889/2500000"
+          ],
+          "mean_S": "92154917/12500000",
+          "mean_A": "65028111/10000000",
+          "mean_B": "43479113/50000000",
+          "max_S": "259169279/25000000",
+          "min_S": "109450389/25000000"
+        }
+      },
+      "core_J_lower_bound_exact": "578330721/837500000"
+    }
+  ],
+  "witness_records": [
+    "optoGEF2_small_col_G"
+  ],
+  "unknown_intact_pair_permutation_floor_exact": "895512391/300000000",
+  "unknown_intact_pair_permutation_floor_display": 2.9850413033333334,
+  "unknown_pairing_construction": [
+    {
+      "predicted_record_id": "optoGEF2_small_col_O",
+      "component_pair_source_id": "optoGEF2_small_col_I",
+      "required_discrepancy": "46139873/100000000",
+      "correction": {
+        "M": "120752823/50000000",
+        "V": "46139873/100000000",
+        "A": "-46139873/100000000",
+        "B": "46139873/50000000",
+        "error": "46139873/100000000",
+        "t": "46139873/100000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_I",
+      "component_pair_source_id": "optoGEF2_small_col_O",
+      "required_discrepancy": "194558743/300000000",
+      "correction": {
+        "M": "138419619/100000000",
+        "V": "83849863/75000000",
+        "A": "405441257/300000000",
+        "B": "-14008361/60000000",
+        "error": "194558743/300000000",
+        "t": "194558743/300000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_B",
+      "component_pair_source_id": "optoGEF2_small_col_B",
+      "required_discrepancy": "287766199/300000000",
+      "correction": {
+        "M": "77722063/25000000",
+        "V": "29412463/18750000",
+        "A": "612233801/300000000",
+        "B": "-141634393/300000000",
+        "error": "287766199/300000000",
+        "t": "287766199/300000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_C",
+      "component_pair_source_id": "optoGEF2_small_col_C",
+      "required_discrepancy": "177427781/150000000",
+      "correction": {
+        "M": "121538093/25000000",
+        "V": "93593249/37500000",
+        "A": "422572219/150000000",
+        "B": "-48199223/150000000",
+        "error": "177427781/150000000",
+        "t": "177427781/150000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_Q",
+      "component_pair_source_id": "optoGEF2_small_col_Q",
+      "required_discrepancy": "365071487/300000000",
+      "correction": {
+        "M": "49233871/10000000",
+        "V": "4097269/1500000",
+        "A": "834928513/300000000",
+        "B": "-15474713/300000000",
+        "error": "365071487/300000000",
+        "t": "365071487/300000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_F",
+      "component_pair_source_id": "optoGEF2_small_col_P",
+      "required_discrepancy": "33329441/18750000",
+      "correction": {
+        "M": "382404181/50000000",
+        "V": "20737283/4687500",
+        "A": "79170559/18750000",
+        "B": "3778573/18750000",
+        "error": "33329441/18750000",
+        "t": "33329441/18750000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_P",
+      "component_pair_source_id": "optoGEF2_small_col_D",
+      "required_discrepancy": "68968009/37500000",
+      "correction": {
+        "M": "583168051/100000000",
+        "V": "1391113673/300000000",
+        "A": "156031991/37500000",
+        "B": "28571549/60000000",
+        "error": "68968009/37500000",
+        "t": "68968009/37500000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_N",
+      "component_pair_source_id": "optoGEF2_small_col_N",
+      "required_discrepancy": "656601919/300000000",
+      "correction": {
+        "M": "335013163/50000000",
+        "V": "301390823/60000000",
+        "A": "1743398081/300000000",
+        "B": "-118221983/150000000",
+        "error": "656601919/300000000",
+        "t": "656601919/300000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_M",
+      "component_pair_source_id": "optoGEF2_small_col_F",
+      "required_discrepancy": "286262177/150000000",
+      "correction": {
+        "M": "12",
+        "V": "874688189/150000000",
+        "A": "613737823/150000000",
+        "B": "130475183/75000000",
+        "error": "286262177/150000000",
+        "t": "286262177/150000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_L",
+      "component_pair_source_id": "optoGEF2_small_col_J",
+      "required_discrepancy": "5307959/2343750",
+      "correction": {
+        "M": "972802387/100000000",
+        "V": "1857258637/300000000",
+        "A": "13442041/2343750",
+        "B": "136677389/300000000",
+        "error": "5307959/2343750",
+        "t": "5307959/2343750"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_D",
+      "component_pair_source_id": "optoGEF2_small_col_L",
+      "required_discrepancy": "2229907/1000000",
+      "correction": {
+        "M": "831533939/100000000",
+        "V": "318792637/50000000",
+        "A": "4770093/1000000",
+        "B": "80287987/50000000",
+        "error": "2229907/1000000",
+        "t": "2229907/1000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_J",
+      "component_pair_source_id": "optoGEF2_small_col_E",
+      "required_discrepancy": "732065069/300000000",
+      "correction": {
+        "M": "772032047/100000000",
+        "V": "1013440339/150000000",
+        "A": "1667934931/300000000",
+        "B": "358945747/300000000",
+        "error": "732065069/300000000",
+        "t": "732065069/300000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_R",
+      "component_pair_source_id": "optoGEF2_small_col_R",
+      "required_discrepancy": "24971889/10000000",
+      "correction": {
+        "M": "259169279/25000000",
+        "V": "92154917/12500000",
+        "A": "65028111/10000000",
+        "B": "43479113/50000000",
+        "error": "24971889/10000000",
+        "t": "24971889/10000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_G",
+      "component_pair_source_id": "optoGEF2_small_col_H",
+      "required_discrepancy": "732853717/300000000",
+      "correction": {
+        "M": "636662153/50000000",
+        "V": "2545209049/300000000",
+        "A": "1967146283/300000000",
+        "B": "289031383/150000000",
+        "error": "732853717/300000000",
+        "t": "732853717/300000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_E",
+      "component_pair_source_id": "optoGEF2_small_col_M",
+      "required_discrepancy": "369116363/150000000",
+      "correction": {
+        "M": "70143253/7500000",
+        "V": "70143253/7500000",
+        "A": "1430883637/150000000",
+        "B": "-28018577/150000000",
+        "error": "369116363/150000000",
+        "t": "369116363/150000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_H",
+      "component_pair_source_id": "optoGEF2_small_col_K",
+      "required_discrepancy": "895512391/300000000",
+      "correction": {
+        "M": "1049577729/100000000",
+        "V": "741962419/75000000",
+        "A": "3004487609/300000000",
+        "B": "-36637933/300000000",
+        "error": "895512391/300000000",
+        "t": "895512391/300000000"
+      }
+    },
+    {
+      "predicted_record_id": "optoGEF2_small_col_K",
+      "component_pair_source_id": "optoGEF2_small_col_G",
+      "required_discrepancy": "101041177/37500000",
+      "correction": {
+        "M": "631048581/50000000",
+        "V": "830821751/75000000",
+        "A": "386458823/37500000",
+        "B": "11580821/15000000",
+        "error": "101041177/37500000",
+        "t": "101041177/37500000"
+      }
+    }
+  ],
+  "matching_at_optimum": {
+    "matched_count": 17,
+    "left_to_right": [
+      15,
+      14,
+      16,
+      11,
+      12,
+      6,
+      9,
+      13,
+      10,
+      5,
+      3,
+      8,
+      4,
+      7,
+      2,
+      1,
+      0
+    ],
+    "all_left_matched": true
+  },
+  "previous_critical_threshold": "74425479/25000000",
+  "previous_threshold_Hall_obstruction": {
+    "matched_count": 16,
+    "left_to_right": [
+      15,
+      14,
+      10,
+      16,
+      12,
+      6,
+      11,
+      13,
+      8,
+      5,
+      7,
+      4,
+      3,
+      2,
+      1,
+      0,
+      -1
+    ],
+    "all_left_matched": false,
+    "Hall_witness": {
+      "left_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "neighbor_right_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "deficit": 1
+    }
+  },
+  "conditional_positive_height_um": "67/2",
+  "scope": [
+    "STATIC shared-ROI/shared-reference regional means only",
+    "sharp over independent kinematically admissible fields, not common mechanical equilibria",
+    "no statement that source component means were measured this way",
+    "not valid for independently maximized temporal component means",
+    "not a measurement-noise estimate or a full material identified set",
+    "standard additive linear constraint and one-dimensional bottleneck matching, no novelty claim"
+  ]
+}

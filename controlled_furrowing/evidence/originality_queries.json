@@ -1,0 +1,27 @@
+{
+  "audit_date": "2026-11-19",
+  "scope": "Exact small-region-only calibration to larger-region mechanical prediction; primary sources only for substantive judgments",
+  "searches": [
+    {"tool":"web.search_query","query":"\"10.1038/s41467-025-62483-6\""},
+    {"tool":"web.search_query","query":"\"10.1016/j.bpj.2025.10.002\""},
+    {"tool":"web.search_query","query":"\"10.1038/s41540-024-00375-z\""},
+    {"tool":"web.search_query","query":"OptoShroom3 active bilayer geometry quantitative model deformation"},
+    {"tool":"web.search_query","query":"\"optogenetically activated cell layers\" mechanochemical model Woerthmuller equations fit"},
+    {"tool":"web.search_query","query":"\"OptoShroom3\" \"model\" volume height"},
+    {"tool":"web.search_query","query":"\"Reverse engineering morphogenesis\" \"Bayesian\" validation model perturbations"},
+    {"tool":"web.search_query","query":"\"Countryman\" \"furrowing\" \"model\" 2025 18 50"},
+    {"tool":"web.search_query","query":"\"Elastic contractile stress in the basement membrane\" 013004 equations"},
+    {"tool":"web.search_query","query":"\"Theory of epithelial sheet morphology in three dimensions\" Hannezo 2014 full text"},
+    {"tool":"web.search_query","query":"\"A comprehensive model of Drosophila epithelium\" e85569 model mechanical responses"},
+    {"tool":"web.search_query","query":"\"OptoShroom3\" \"height\" \"equation\""},
+    {"tool":"web.search_query","query":"\"Reverse engineering morphogenesis through Bayesian optimization\" \"PMC\""},
+    {"tool":"web.search_query","query":"\"Elastic Contractile Stress\" \"arxiv\""},
+    {"tool":"web.search_query","query":"\"OptoShroom3\" \"V\" \"h\" \"model\" cell height"},
+    {"tool":"web.search_query","query":"\"Epithelial organ shape is generated\" actomyosin extracellular matrix model Nematbakhsh 2020"},
+    {"tool":"EuropePMC search API","query":"DOI:10.1038/s41467-022-33115-0","outcome":"Read timeout; retained in literature/access_receipts.json; direct known-PMC-ID fulltext subsequently recovered"},
+    {"tool":"EuropePMC search API","query":"DOI:10.1038/s41540-024-00375-z","outcome":"Search response JSON decode failed; final XML subsequently recovered from known PMC ID and public S3"},
+    {"tool":"EuropePMC search API","query":"DOI:10.1016/j.bpj.2025.10.002","outcome":"Search response JSON decode failed; final XML and author article-plus-supplement PDF subsequently recovered"}
+  ],
+  "query_count":19,
+  "limits":"Finite source audit, not systematic-review completeness or proof of absence. Search absence does not establish novelty. Additional web opens/finds and source downloads have separate access receipts."
+}

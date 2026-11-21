@@ -1,0 +1,104 @@
+{
+  "status": "PASS_SOURCE_RENDERING_CORRECTION",
+  "checks": {
+    "all_three_documents_archived_before_edits": true,
+    "all_document_semantic_wording_link_checks_pass": true,
+    "95_expressions_strict_KaTeX_PARSE_PASS": true,
+    "no_source_prose_raw_TeX_commands": true,
+    "no_Markdown_table_math_pipe_hazards": true,
+    "old_document_binding_and_browser_receipts_unmodified": true,
+    "earlier_failed_parser_draft_retained": true,
+    "prior_browser_pass_not_reused_for_new_documents": true
+  },
+  "documents": [
+    {
+      "file": "docs/COHORT-INFERENCE-CHECKPOINT.md",
+      "old_sha256": "13dd311979fc96f1d92c99e7fc5626387917d2bc921c8227b1a17fb2f973e0e7",
+      "new_sha256": "41c10232329c1a827252070b661ba7f58438ad22ad9d1c46496bdac480c853ef",
+      "archive_file": "runs/documentation_rendering_corrections_v1/before/docs/COHORT-INFERENCE-CHECKPOINT.md",
+      "checks": {
+        "format_only_equivalence": true,
+        "all_existing_display_math_exactly_unchanged": true,
+        "Markdown_link_targets_and_order_unchanged": true
+      },
+      "inline_wrapper_count": 21,
+      "single_absolute_value_table_alias_count": 0
+    },
+    {
+      "file": "docs/COHORT-STATIC-OBSERVERS.md",
+      "old_sha256": "9bee455c85e2a5140d14f27db8eae330e6c6e9a9d96930ff3d6b6192b1e4b185",
+      "new_sha256": "12ba2cabd7cf3d2a6b2bb6fbbb81f41bb8b98f86e2a407fa9de6297d7ab54d78",
+      "archive_file": "runs/documentation_rendering_corrections_v1/before/docs/COHORT-STATIC-OBSERVERS.md",
+      "checks": {
+        "format_only_equivalence": true,
+        "all_existing_display_math_exactly_unchanged": true,
+        "Markdown_link_targets_and_order_unchanged": true
+      },
+      "inline_wrapper_count": 20,
+      "single_absolute_value_table_alias_count": 0
+    },
+    {
+      "file": "docs/ENERGY-GAIN-GEOMETRY-REVIEW.md",
+      "old_sha256": "36801a6b02577a36d4d10e05333e9da393b062cb159fa92ea3f78ddb08b42f1b",
+      "new_sha256": "60fb202a61672b5d0b8a1c7989fbf0416477893fd521c0c656cdf53f9f96c708",
+      "archive_file": "runs/documentation_rendering_corrections_v1/before/docs/ENERGY-GAIN-GEOMETRY-REVIEW.md",
+      "checks": {
+        "format_only_equivalence": true,
+        "all_existing_display_math_exactly_unchanged": true,
+        "Markdown_link_targets_and_order_unchanged": true
+      },
+      "inline_wrapper_count": 0,
+      "single_absolute_value_table_alias_count": 1
+    }
+  ],
+  "bindings": {
+    "runs/documentation_rendering_corrections_v1/archive_manifest.json": "375aac1db5924e9046db56169bef389f742991ada92258578a1061f05bfbb5c8",
+    "runs/documentation_rendering_corrections_v1/edit_log.json": "8e605e9ad8c150429dd57c9bb622880310c5b7b01e4f0627bdb78c2167820c7f",
+    "runs/documentation_rendering_corrections_v1/math_render_checks.js": "e5ab8a9f2ab08af3153d7a13af49d13f65a628ecd61e59284ad6f4ff302db526",
+    "runs/documentation_rendering_corrections_v1/math_render_checks.json": "034d204740eb8b7c2411cde00b841d8303684df62174acf87cc7e5e1144913f1",
+    "evidence/shared_cell_cohort_inference.json": "1f8c4dc1ad8924f8fda13e6748d5e73aac426b5771b02404803d27c1955aa677",
+    "evidence/shared_cell_cohort_independent_review.json": "2f7da9f2bee4c1b7e4fdd7f3a88ed90dd914fb218269b3d65bf12bb8a6ab9114",
+    "evidence/energy_gain_geometry_independent_review.json": "0f1fe93804504a0e7964102c520d89a72b183763343619890a61a7ab94b23fe7"
+  },
+  "historical_receipts": [
+    {
+      "original_file": "runs/cohort_static_observers_v1/checkpoint_documentation.json",
+      "archive_file": "runs/documentation_rendering_corrections_v1/before/runs/cohort_static_observers_v1/checkpoint_documentation.json",
+      "sha256": "fd1df555f127e073bbfb0dffe81b26ced473b011042026efbbc06d36e9e3f89c",
+      "role": "historical_document_binding_or_browser_receipt"
+    },
+    {
+      "original_file": "evidence/readiness_snapshot_verification.json",
+      "archive_file": "runs/documentation_rendering_corrections_v1/before/evidence/readiness_snapshot_verification.json",
+      "sha256": "10c15bb468bd6feb9af576c177957790e0fd80b00b944d292025791ee1a46e45",
+      "role": "historical_document_binding_or_browser_receipt"
+    },
+    {
+      "original_file": "runs/browser_check_history/shared_cell_initial_fail/readiness_snapshot_verification.json",
+      "archive_file": "runs/documentation_rendering_corrections_v1/before/runs/browser_check_history/shared_cell_initial_fail/readiness_snapshot_verification.json",
+      "sha256": "e42135a26eb9302e31c13e311bca56502179c8ad46e09963f53811a1f7a7b0a3",
+      "role": "historical_document_binding_or_browser_receipt"
+    },
+    {
+      "original_file": "runs/browser_check_history/before_prose_math_corrections/readiness_snapshot_verification.json",
+      "archive_file": "runs/documentation_rendering_corrections_v1/before/runs/browser_check_history/before_prose_math_corrections/readiness_snapshot_verification.json",
+      "sha256": "10c15bb468bd6feb9af576c177957790e0fd80b00b944d292025791ee1a46e45",
+      "role": "historical_document_binding_or_browser_receipt"
+    },
+    {
+      "original_file": "evidence/raw_prose_math_scan.json",
+      "archive_file": "runs/documentation_rendering_corrections_v1/before/evidence/raw_prose_math_scan.json",
+      "sha256": "6bbbca12ba2ed0c23254bddd8fefa23c4979898e23187a7548eda59f387e7d25",
+      "role": "historical_document_binding_or_browser_receipt"
+    }
+  ],
+  "formatting_rules": {
+    "inline": "Only raw prose math parentheses changed to LaTeX inline delimiters; existing math spans protected.",
+    "table_absolute_value": "One |s| inside already-delimited table math replaced with equivalent \\lvert s\\rvert to avoid Markdown column splitting."
+  },
+  "combined_180_check_math_audit_unchanged": true,
+  "numeric_source_proof_and_native_figure_files_changed": false,
+  "old_numeric_or_metadata_review_receipts_regenerated": false,
+  "fresh_full_HTML_browser_and_prose_scan_status": "PENDING_PARENT_REBUILD_AND_204_VIEWS",
+  "scope": "New formatting addendum only. Historical document bindings remain truthful historical bytes; this does not rewrite their claims, reprove mathematics or relabel previous browser outcomes."
+}

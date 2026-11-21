@@ -1,0 +1,7 @@
+{
+  "file": "controlled_furrowing\\runs\\quadratic_checks\\quadratic_accuracy.png",
+  "sha256": "90c4f6112ecb8cfac94366675d62230e1fa81241c50629170d37423ac6bfb855",
+  "input": "controlled_furrowing\\evidence\\quadratic_manufactured.json",
+  "input_sha256": "bfd9649f3cfb876c7e3380cf27b496c86a91d7389a8251f89d8cfedd32530a9d",
+  "scope": "Solvedtargetindependentforcedbenchmark; empiricalquadratureerrorsnotrigorousPDEerrorbounds"
+}

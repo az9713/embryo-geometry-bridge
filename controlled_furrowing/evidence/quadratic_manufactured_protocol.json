@@ -1,0 +1,44 @@
+{
+  "scope": "Forced nonlinear continuum equilibrium with lambda-independent exact map; sampled errors are not rigorous PDE error bounds",
+  "epsilon": 0.2,
+  "mu": 1.0,
+  "outer_radius": 3.0,
+  "height": 1.0,
+  "grids": [
+    [
+      6,
+      3
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      12,
+      6
+    ]
+  ],
+  "lambda": [
+    5.0,
+    50.0,
+    500.0
+  ],
+  "forcing": [
+    "f_r=-mu epsilon^2 r exp(epsilon z)",
+    "f_z=2mu epsilon exp(-2epsilon z)"
+  ],
+  "boundary": "All-boundary displacement nodal values set to exact map; quadratic edge interpolation",
+  "initial": "Analytic nodal interpolant",
+  "gain": 0.0,
+  "surface_energies": 0.0,
+  "solver_maxiter": 200,
+  "thresholds": {
+    "force_linf": 1e-07,
+    "positive_orientation": true
+  },
+  "predeclared_evaluation": [
+    "Allcase stationarity+geometry",
+    "L2/H1/J errors by mesh and lambda",
+    "Do not equate sampled refinement with a rigorous continuum error certificate"
+  ]
+}

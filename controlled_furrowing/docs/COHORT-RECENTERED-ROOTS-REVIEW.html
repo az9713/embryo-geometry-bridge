@@ -1,0 +1,81 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>COHORT-RECENTERED-ROOTS-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent F/K proof-center refinement review</h1>
+<p><strong>Independent replay PASS for both new F/K local root certificates.</strong> The <a href="../evidence/cohort_recentered_roots_independent_review.json">new frozen review receipt</a> retains the exact outcome, enclosures and hashes. The <a href="COHORT-UNIFORM-ROOTS-REVIEW.html">earlier 15-of-17 result</a> remains immutable. This completes the local root-family component on one fixed computational cell; the original five-gate research objective remains incomplete.</p>
+<h2>A numerical proof center changed; the physical equation did not</h2>
+<p>The old F and K tests could not prove their self-map inequalities. That is a limitation of those sufficient interval bounds, not a nonexistence theorem. Simply enlarging the tested correction cubes made the derivative majorants worse. The new calculation proposes one closer proof center while preserving the physical model and the same five-coordinate parameter cell.</p>
+<p>For an original binary seed <span class="math" data-tex="u_0"></span>, exact binary preconditioner <span class="math" data-tex="R"></span>, and a stored dyadic midpoint <span class="math" data-tex="m_i"></span> of the producer's interval <span class="math" data-tex="(RF(u_0,\theta_0))_i"></span>, the numerical proposal is</p>
+<div class="math display" data-tex="
+u_{1,i}=\operatorname{RN}_{64}\!\left(\operatorname{exact}(u_{0,i})-m_i\right).
+"></div>
+
+<p>There is one nearest-even binary64 rounding of the exact subtraction. Rounding the correction to binary64 first can produce a different answer; the independent guard includes an explicit counterexample. All 611 proposed coordinates and their exact actual translations <span class="math" data-tex="u_1-u_0"></span> are checked.</p>
+<p>This is a change of proof center, not a material fit, a new biological observation, a changed activation dose or another nonlinear equilibrium optimization. The original seed state stays identified separately from the explicitly labelled auxiliary proof-center state. The latter is not falsely marked as a converged experimental or solver result.</p>
+<h2>Exact target and cache audit</h2>
+<p>The old and new cache arrays must have identical names, shapes, dtypes and bytes <strong>except for the center vector <code>u</code></strong>. This includes all reference and quadrature data, active masks, force normalization, mesh, free indices and the approximate inverse <span class="math" data-tex="R"></span>. The affine predictor file <span class="math" data-tex="S"></span> is bit-identical. Model coefficients, exact common-gain–dose law, baseline parameter vector and shared cell also stay fixed.</p>
+<p>The independent verifier recomputes the array and full-potential fingerprints. It separately checks three identities:</p>
+<ul>
+<li>the original tangent archive's <code>free_vector</code> belongs to the old seed <span class="math" data-tex="u_0"></span>;</li>
+<li>the new cache and auxiliary state's <code>free_displacement</code> both equal <span class="math" data-tex="u_1"></span>;</li>
+<li>the exact recorded center translation is <span class="math" data-tex="u_1-u_0"></span>.</li>
+</ul>
+<p>The old float Hessian/tangent archive is not relabelled as a newly evaluated archive at <span class="math" data-tex="u_1"></span>. Its preserved preconditioner and predictor are proposals. Their adequacy must be demonstrated by fresh interval force, Hessian and parameter-defect calculations at the new center.</p>
+<p>The review reproduces the exact single-rounding recipe from the recorded midpoints and checks their inclusion in the recorded force-correction balls. It does not independently repeat the old-center force assembly merely to establish that the proposal was a good Newton step. Root existence is instead proved from scratch at <span class="math" data-tex="u_1"></span>; that theorem is valid for any proposed center passing its fresh tests.</p>
+<h2>Fresh uniform root theorem</h2>
+<p>The new predictor is</p>
+<div class="math display" data-tex="
+\widehat u(\theta)=u_1+S(\theta-\theta_0),\qquad\theta\in C.
+"></div>
+
+<p>The independent implementation uses the reviewed local strain algebra and separately assembles the global force, Hessian, all five force-parameter columns and Taylor remainder at <span class="math" data-tex="u_1"></span>. It does not call the producer's point or cell routines and performs no equilibrium optimization. Each record requires all 9,504 terms and 611 free coordinates at 192-bit Arb precision.</p>
+<p>With <span class="math" data-tex="H_1=D_uF(u_1,\theta_0)"></span> and <span class="math" data-tex="B_1=D_\theta F(u_1,\theta_0)"></span>, the exact residual decomposition is</p>
+<div class="math display" data-tex="
+F(u_1+Sd,\theta_0+d)=F(u_1,\theta_0)+(H_1S+B_1)d
++\int_0^1[H(u_1+tSd,\theta_0+d)-H_1]Sd\,dt.
+"></div>
+
+<p>It remains valid even though <span class="math" data-tex="S"></span> was computed at the old seed. Its accuracy is tested through the new explicit defect and remainder, rather than assumed.</p>
+<p>The proof then bounds, uniformly over the unchanged cell and the declared corrector cube,</p>
+<div class="math display" data-tex="
+\eta\ge\&#124;RF(\widehat u(\theta),\theta)\&#124;_\infty,
+\qquad
+Z\ge\&#124;I-RD_uF(\widehat u(\theta)+v,\theta)\&#124;_\infty.
+"></div>
+
+<p>Strict <span class="math" data-tex="Z&lt;1"></span> and <span class="math" data-tex="\eta+Zr&lt;r"></span> imply one unique local stationary root for every parameter through the Banach argument. Positive Jacobian and nondegenerate surface domains are checked throughout every admitted strain box. A center-defect bound below one establishes nonsingularity of <span class="math" data-tex="R"></span>, so the fixed point is a root of <span class="math" data-tex="F"></span>.</p>
+<p>The normal corrector radius <span class="math" data-tex="r"></span> is measured about <span class="math" data-tex="\widehat u(\theta)"></span>. It is <strong>not</strong> the center translation <span class="math" data-tex="u_1-u_0"></span>. The fresh proof uses <span class="math" data-tex="u_1"></span> as its center; an observer using the old saved geometry must add the exact center translation separately to its geometric error envelope, or explicitly rebase to the auxiliary geometry with its own serialization gap.</p>
+<h2>Executed independent result</h2>
+<p>The sole independent process exited zero after 32.63 seconds. It freshly assembled both 9,504-term, 611-coordinate systems at 192-bit precision. Both records passed their 19 root/metadata checks and 16 explicit lineage checks; all six final checks passed. These counts include logical summaries and overlapping provenance checks, not independent scientific experiments.</p>
+<table>
+<thead>
+<tr>
+<th>Record</th>
+<th style="text-align: right;">η upper, approximate</th>
+<th style="text-align: right;">Z upper, approximate</th>
+<th style="text-align: right;">Full radius r</th>
+<th style="text-align: right;">(η+Zr) upper, approximate</th>
+<th style="text-align: right;">Exact center-translation norm, approximate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F</td>
+<td style="text-align: right;">7.4237296711e-13</td>
+<td style="text-align: right;">0.0754081646</td>
+<td style="text-align: right;">1e−11</td>
+<td style="text-align: right;">1.4964546131e-12</td>
+<td style="text-align: right;">8.5844803488e-11</td>
+</tr>
+<tr>
+<td>K</td>
+<td style="text-align: right;">2.4987031192e-12</td>
+<td style="text-align: right;">0.1289284033</td>
+<td style="text-align: right;">1e−11</td>
+<td style="text-align: right;">3.7879871524e-12</td>
+<td style="text-align: right;">5.0061621515e-11</td>
+</tr>
+</tbody>
+</table>
+<p>The displayed values are approximate; acceptance used exact Arb endpoint fractions. Displacement coordinates and radii here are normalized solver coordinates, while Z is dimensionless. The translation column is the exact binary-center difference displayed approximately. It is larger than the normal corrector radius in both examples and has not been confused with that radius.</p>
+<p>Fresh positive-J analytic-domain bounds also passed: the full strain tubes have quadrature-J lower bounds above approximately 0.988968597 for F and 0.964298642 for K. Whole-body injectivity and output transfer require their own separate composition proof; quadrature positivity alone is not substituted for it.</p>
+<p>These two certificates combine with the immutable 15 earlier certificates to provide a selected local stationary-root family for every one of the 17 source inputs on the same parameter cell. They do not rewrite the earlier failed tests or automatically produce eight new observer bounds. Those require a separately reviewed center-offset or rebased geometry/observation composition.</p>
+<p>The lesson is numerical: the old sufficient bounds failed around less accurate proof centers, while one arithmetic center update permitted a rigorous proof for the unchanged equations. This is standard validated-numerics machinery, not an established new biological principle or a novelty claim.</p>
+<p>Even all 17 root families and all 68 static output enclosures would supply only a conditional stationary-root-tuple calculation for this fixed finite model. A physical loading trajectory, experimental temporal maxima/ROI alignment, uncertainty in data/geometry/material domain, other branches and parameter tails, continuum-PDE error and novelty remain separate original requirements.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

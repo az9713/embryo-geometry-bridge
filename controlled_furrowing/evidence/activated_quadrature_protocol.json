@@ -1,0 +1,30 @@
+{
+  "scope": "Target-free same-space integration sensitivity on actual activated small geometry",
+  "mesh": [
+    12,
+    6
+  ],
+  "inputs": "runs/quadratic_robust/lambda_{500.0,5000.0}_target_{1.0,5.0,10.0}/final.json",
+  "policies": [
+    {
+      "volume_duffy_gauss_order": 8,
+      "surface_gauss_order": 12,
+      "volume_chunk_triangles": 12
+    },
+    {
+      "volume_duffy_gauss_order": 12,
+      "surface_gauss_order": 16,
+      "volume_chunk_triangles": 12
+    }
+  ],
+  "force_threshold": 1e-07,
+  "source_hashes": {
+    "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+  },
+  "re_equilibration_if_needed": "Warm fixed-strength solve under the new rule, retaining the original field; not a physical activation trajectory."
+}

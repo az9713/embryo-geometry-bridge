@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": {
+    "identical_apical_zero_exact": true,
+    "identical_basal_zero_exact": true
+  },
+  "source_sha256": "fd90852e68de19486a43a06ce91cadf342725956138b826a8384206b0d102756",
+  "scope": "Same-curve common-reference partition identity, no new solve"
+}

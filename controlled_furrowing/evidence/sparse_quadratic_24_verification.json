@@ -1,0 +1,172 @@
+{
+  "status": "PASS_COMPLETED_DISCRETE_24_PATH",
+  "checks": {
+    "all_three_targets_reached": true,
+    "all11_attempts_retained": true,
+    "all7_accepted_force_geometry_pass": true,
+    "all4_rejected_attempts_retained": true,
+    "all_energy_gradient_bit_identical": true,
+    "stored_forces_match_replay": true,
+    "last_verified_hash_chains": true,
+    "work_balance": true,
+    "frozen_parent_sources_unchanged": true
+  },
+  "attempts": [
+    {
+      "requested_target": 1.0,
+      "attempt": 0,
+      "gain": 1.0,
+      "accepted": false,
+      "force_replayed": 0.001550214660872229,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "950eb06e801e34088433e2889a56b850f454fa4577bf765d1d7aba5d1ac89d89"
+    },
+    {
+      "requested_target": 1.0,
+      "attempt": 1,
+      "gain": 0.5,
+      "accepted": true,
+      "force_replayed": 3.1429756334753534e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "5d1b45552583f9fb20090efe5059410b6cc8e235a28a928f31ee23e13438c4ef"
+    },
+    {
+      "requested_target": 1.0,
+      "attempt": 2,
+      "gain": 1.0,
+      "accepted": true,
+      "force_replayed": 2.982962224786916e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "51ed9b7c870625e14fc1f11baa26ddb95056f3938b0ec522420aa82bff3f1235"
+    },
+    {
+      "requested_target": 5.0,
+      "attempt": 0,
+      "gain": 5.0,
+      "accepted": false,
+      "force_replayed": 0.12397344176064756,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "915c9c31a4081807433c9e8d1bfb6a4c49fbfe420ad4328c8dd7eef0843df93c"
+    },
+    {
+      "requested_target": 5.0,
+      "attempt": 1,
+      "gain": 3.0,
+      "accepted": false,
+      "force_replayed": 0.01942876546956396,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "f0d2578496e9a2881cca425a23ccc29e90dcd584e4fff6c93797981ccd792802"
+    },
+    {
+      "requested_target": 5.0,
+      "attempt": 2,
+      "gain": 2.0,
+      "accepted": true,
+      "force_replayed": 3.471477960778277e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "add4ce0e1e46da2105f23e1466598741b1880942d566253f63f7af24073c0d32"
+    },
+    {
+      "requested_target": 5.0,
+      "attempt": 3,
+      "gain": 3.0,
+      "accepted": true,
+      "force_replayed": 3.712976445941797e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "634d1ba9a922e25bbba3c3c1cfb523139b8019829b031ab2074c937d405eb2a7"
+    },
+    {
+      "requested_target": 5.0,
+      "attempt": 4,
+      "gain": 5.0,
+      "accepted": true,
+      "force_replayed": 3.860008788839943e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "df7032981b4ea250c5573f019adf11da837a6a950fa5b42cb004c634da790723"
+    },
+    {
+      "requested_target": 10.0,
+      "attempt": 0,
+      "gain": 10.0,
+      "accepted": false,
+      "force_replayed": 0.005803911951043432,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "82488c4ca9f54b05d1ca504d1c2bcd618396b890f99453198321c8681638cf91"
+    },
+    {
+      "requested_target": 10.0,
+      "attempt": 1,
+      "gain": 7.5,
+      "accepted": true,
+      "force_replayed": 4.82959668351296e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "b10c55ed41d3f68cb2d00964ada95d4645602368df9a51d6d329ae005d5f59b6"
+    },
+    {
+      "requested_target": 10.0,
+      "attempt": 2,
+      "gain": 10.0,
+      "accepted": true,
+      "force_replayed": 4.640241844738012e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "energy_gradient_bit_identical": true,
+      "field_sha256": "240c9ba9175ee27224d4aea41c0068408888aefed9bb35e5f2822e391cbc358c"
+    }
+  ],
+  "chains": [
+    {
+      "target": 1.0,
+      "reached": true,
+      "verified_chain": true,
+      "work_balance_residual": 0.0
+    },
+    {
+      "target": 5.0,
+      "reached": true,
+      "verified_chain": true,
+      "work_balance_residual": -7.105427357601002e-15
+    },
+    {
+      "target": 10.0,
+      "reached": true,
+      "verified_chain": true,
+      "work_balance_residual": 0.0
+    }
+  ],
+  "recorded_Newton_policy": {
+    "nonzero_shift_trials": 44,
+    "accepted_newton_steps": 227,
+    "maximum_linear_residual": 4.004775677746153e-12
+  },
+  "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+  "parents": {
+    "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+  },
+  "scope": "Allactualaccepted/rejected24fields replayed; identicalphysicalenergy/gradient, differentnumericalpolicy. No PDEerror, stabilityorbiologicalpredictioncertificate."
+}

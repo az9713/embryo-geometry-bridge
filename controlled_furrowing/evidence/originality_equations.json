@@ -1,0 +1,41 @@
+{
+  "countryman2025": {
+    "doi":"10.1038/s41467-025-62483-6",
+    "primary_xml":"controlled_furrowing/data/raw/primary.xml",
+    "locators":["Sec5, Fig2:18um dose-shortening", "Sec6, Fig3:furrowing/recovery timing", "Sec7 Par28-31, Fig4a-l:size,dose,mechanism and ellipse tests", "Fig4h:p=.73 test for18um/50um shortening relationship", "Sec8 Par33-37,Fig5:basal perturbation", "Sec10 Par47:continuous-curvature theory already cited", "Methods Sec15-17:segmentation, response and activation quantification"],
+    "supplement":"controlled_furrowing/data/raw/41467_2025_62483_MOESM1_ESM.pdf",
+    "supplement_read":"18pages, including Fig8/9 and Supplementary Note pp13-14",
+    "exact_model_assessment":"No numbered calibrated spatial mechanical model or18-only-fit/larger-patch forward validation located in inspected article/supplement; qualitative mechanics and scalar size comparison already present."
+  },
+  "guerra2024": {
+    "doi":"10.1103/PRXLife.2.013004",
+    "primary_pdf":"https://journals.aps.org/prxlife/pdf/10.1103/PRXLife.2.013004",
+    "supplement_pdf":"https://journals.aps.org/prxlife/supplemental/10.1103/PRXLife.2.013004/Supplementary_GuerraSantillan.pdf",
+    "locators":["Main PDF p9 Eq1:cell energy", "Main pp9-10 Eq2-4 and Fig6:force balances and curvature", "Supplement PDF pp3-4 SectionI EqS1-S7:weakly anisotropic constant-volume cells"],
+    "energy":"Aa*sigma_a + Ab*sigma_b_active + Kb*(Ab-A0)^2/(2*A0) + Al*sigma_l - PH*V",
+    "S6":"Delta_w/w=(delta_sigma_l/sigma_l)*3*sqrt(3)*Kb*w^2/(2*A0*sigma_a+10*sqrt(3)*Kb*w^2)",
+    "assumptions":"Small anisotropy/tension changes, weak curvature R>>w, fixed cell volume, specified basal elasticity; not a finite-patch nonlinear dynamics theorem.",
+    "access":"Primary PDFs read through web parser; direct local HTTP downloads403. Successful equation capture retained in literature/web_primary_equation_captures.json."
+  },
+  "optoshroom3_2022": {
+    "doi":"10.1038/s41467-022-33115-0",
+    "locators":["Primary Fig2i-j and surrounding Results", "Supplement Fig7,PDFp7", "Primary Fig4/5:folding/organoid outcomes"],
+    "relation":"h_pred=2*V/(A_apical+A_basal)",
+    "input_information":"Other three contemporaneously measured geometric variables; conditional geometry, not activation-only forward mechanics.",
+    "source":"literature/optoshroom3_fulltext.xml and optoshroom3_supplement.pdf"
+  },
+  "woerthmueller2025_2026": {
+    "doi":"10.1016/j.bpj.2025.10.002",
+    "locators":["Eqs1-2:conserved concentration transport and Piola pullback", "Eqs3-6:in-plane Kelvin-Voigt mechanics and elastic foundation", "Eq12:sigma_active=sigma0*tanh(S*c_out)", "Eq13:positive-strain activation", "Results doublet,cell-chain andmonolayer sections", "AuthorPDFpp15-43:supporting derivations/tables"],
+    "mechanics":"div(sigma)=Y*u; sigma_passive=(1+tau_c*d_t)*(lambda*tr(epsilon)*I+2*mu*epsilon)",
+    "concentration":"d_t(J*c_hat)-Div(J*D*C_inverse*Grad(c_hat))=J*R",
+    "scope":"In-plane adherent-layer model,small-strain constitutive assumption, various kinetic/geometry examples; not the finite-height Countryman larger-patch validation claim.",
+    "publication_note":"Online9Oct2025;finalissue16Jun2026. AuthorinpressPDF provisionalMarch2026pagination is not final metadata."
+  },
+  "kumar2024": {
+    "doi":"10.1038/s41540-024-00375-z",
+    "locators":["Main Table2,PDFp7:energy components", "Sec8,PDFpp8-9:synthetic inverse benchmark and near-null Hessian directions", "Sec9 Par36,PDFp10:perturbed experimental contours fed into Bayesian optimization", "Fig4:control and treated targets fit separately", "SupplementTables1-2,PDFpp1-2:separate fitted parameter sets"],
+    "energy_components":["pressure/volume terms","cell-edge spring energy","adhesion line tensions","ECM bending rigidity times integral curvature squared"],
+    "exact_comparison":"Perturbed outcome contour is an input to optimize new parameters; does not meet no-new-condition-fitting forward prediction boundary."
+  }
+}

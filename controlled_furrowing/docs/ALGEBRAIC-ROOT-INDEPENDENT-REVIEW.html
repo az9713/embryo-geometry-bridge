@@ -1,0 +1,166 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ALGEBRAIC-ROOT-INDEPENDENT-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent verification of one algebraic equilibrium certificate</h1>
+<p><strong>A separate 256-bit interval calculation confirms a unique local stationary root for one archived 611-degree-of-freedom finite-quadrature problem.</strong> It rebuilds all 9,504 terms and their second derivatives independently. At normalized coefficient radius <span class="math" data-tex="r=10^{-11}"></span>, the independent calculation gives</p>
+<div class="math display" data-tex="
+ \eta\approx2.5277098028\times10^{-12},\qquad
+ Z\approx0.037226870681&lt;1,
+"></div>
+
+<p>and verifies the self-mapping inequality with exact rational bounds. The resulting coefficient-distance bound is</p>
+<div class="math display" data-tex="
+ \&#124;u^\dagger-u_0\&#124;_\infty&lt;2.626\times10^{-12}.
+"></div>
+
+<p>This closes an algebraic-root gap for <strong>this one fixed target</strong>. It does not bound quadrature-integration error, finite-element/PDE error, biological error, a parameter family, or the new 17-field material replay.</p>
+<p>The <a href="../scripts/review_algebraic_root.py">independent implementation</a>, <a href="../evidence/algebraic_root_independent_review.json">final PASS receipt</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/algebraic_root_independent_review/protocol.json">frozen review protocol</a> and <a href="../../OMITTED.html?path=controlled_furrowing/runs/algebraic_root_independent_review/higher_precision_replay.json">full higher-precision output</a> retain the calculation. The <a href="ALGEBRAIC-ROOT-CERTIFICATION-PATH.html">producer certificate and proof path</a> are separate artifacts and were never overwritten by this review.</p>
+<h2>1. Which root is actually certified?</h2>
+<p>The target is the archived small-region strength-one field, with a 12×6 P2 mesh, 611 free displacement coefficients, compression coefficient 5000, fixed material/geometry and Duffy8/surface12 quadrature. It is not one of the newly changed-material cohort states.</p>
+<p>Every serialized binary64 cache constant is interpreted as an exact real number: reference coordinates, shape values and gradients, quadrature radii and weights, activation mask, surface constants and the proposed preconditioner. Coordinates are formed as exact <span class="math" data-tex="X+Pu"></span>, where <span class="math" data-tex="P"></span> inserts the free displacement coefficients. The certificate therefore concerns a precise smooth finite sum with fixed binary constants.</p>
+<p>That mathematical potential differs from performing every intermediate operation in rounded Torch arithmetic, and from a finite-element integral with ideal exact Gauss nodes. Those distinctions remain explicit. The review verifies the embedded cache checksum, all current-model cache arrays, state/parameter/strength association, archived free vector and free-index ordering. The 611×611 binary preconditioner is finite and square; its usefulness and invertibility are verified through the bounds below rather than assumed from numerical inversion.</p>
+<h2>2. Independent derivative implementation</h2>
+<p>The reviewer does not call the producer point assembler or Hessian-variation routine. It implements a separate second-order forward automatic-differentiation object with Arb values, gradients and Hessians.</p>
+<p>For products <span class="math" data-tex="w=uv"></span>, it propagates</p>
+<div class="math display" data-tex="
+ Dw=v\,Du+u\,Dv,\qquad
+ D^2w=vD^2u+uD^2v+Du\otimes Dv+Dv\otimes Du.
+"></div>
+
+<p>For a scalar composition <span class="math" data-tex="w=\phi(u)"></span>, it uses</p>
+<div class="math display" data-tex="
+ Dw=\phi&#x27;(u)Du,\qquad
+ D^2w=\phi&#x27;(u)D^2u+\phi&#x27;&#x27;(u)Du\otimes Du,
+"></div>
+
+<p>with interval-enclosed logarithm, inverse and square-root operations.</p>
+<p>For meridional/hoop strain coordinates <span class="math" data-tex="q=(a,b,c,d,h)"></span>, the energy differentiated is</p>
+<div class="math display" data-tex="
+ J=(ad-bc)h,\qquad
+ W(q)=\frac{\mu}{2}
+ (a^2+b^2+c^2+d^2+h^2-3-2\log J)
+ +\frac{\kappa}{2}(\log J)^2
+ +\frac{f\chi}{2}(b^2+d^2).
+"></div>
+
+<p>This directly differentiates <span class="math" data-tex="\log[(ad-bc)h]"></span>, independently of the producer's manually written cofactor/Hessian expressions. The active terms use the vertical reference-fibre components <span class="math" data-tex="b,d"></span>.</p>
+<p>For each surface term it differentiates</p>
+<div class="math display" data-tex="
+ J_s=cR\sqrt{x^2+z^2},\qquad
+ W_s=\frac K2(J_s-1)^2+TJ_s.
+"></div>
+
+<p>Sixty-three local checks exercise positive/negative off-diagonal strain and tangent components, exact point comparisons, small interval boxes, independent interior-point containment and rejected analytic-domain violations. The checks explicitly include negative off-diagonal Hessian couplings; they do not test only diagonal or identity states.</p>
+<h2>3. Rebuilding the actual finite-dimensional function</h2>
+<p>The reviewer independently reconstructs every linear strain map from the frozen arrays, including fixed-node contributions and the free-index selection. In each term,</p>
+<div class="math display" data-tex="
+ q_\ell(u)=q_{\ell,0}+B_\ell(u-u_0),\qquad
+ F(u)=\nabla E(u)
+ =\sum_\ell w_\ell B_\ell^\mathsf T
+        \nabla W_\ell(q_\ell(u)),
+"></div>
+
+<p>and</p>
+<div class="math display" data-tex="
+ DF(u)=\sum_\ell w_\ell B_\ell^\mathsf T
+       D^2W_\ell(q_\ell(u))B_\ell.
+"></div>
+
+<p>All normalized weights are strictly positive. The full independent assembly contains <strong>9,216 bulk quadrature terms and 288 surface terms</strong>.</p>
+<p>As a separate numerical mapping diagnostic, the independent exact-real-cache point values were compared with the original frozen Torch automatic differentiation:</p>
+<table>
+<thead>
+<tr>
+<th>Diagnostic</th>
+<th style="text-align: right;">Measured difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Point gradient, absolute maximum</td>
+<td style="text-align: right;"><span class="math" data-tex="2.12\times10^{-12}"></span></td>
+</tr>
+<tr>
+<td>Hessian entries, absolute maximum</td>
+<td style="text-align: right;"><span class="math" data-tex="5.46\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Hessian entries, relative maximum</td>
+<td style="text-align: right;"><span class="math" data-tex="2.43\times10^{-15}"></span></td>
+</tr>
+</tbody>
+</table>
+<p>The comparison measures mapping/rounding consistency. It is not a claim that the two arithmetic evaluations are identical or that a small floating gradient alone proves a root.</p>
+<h2>4. Full-ball Hessian bound</h2>
+<p>Let <span class="math" data-tex="B_\infty(u_0,r)"></span> be the closed coefficient ball. The independent strain enclosure is</p>
+<div class="math display" data-tex="
+ &#124;q_{\ell,a}(u)-q_{\ell,a}(u_0)&#124;
+ \le r\,s_{\ell,a},\qquad
+ s_{\ell,a}=\sum_j &#124;B_{\ell,aj}&#124;.
+"></div>
+
+<p>Independent interval AD encloses the local Hessian throughout each strain box. If</p>
+<div class="math display" data-tex="
+ \Delta_{\ell,ab}\ge
+ \sup_{u\in B_\infty}
+ &#124;D^2W_{\ell,ab}(q_\ell(u))
+   -D^2W_{\ell,ab}(q_\ell(u_0))&#124;,
+"></div>
+
+<p>then the row sum of the assembled Hessian variation is bounded by</p>
+<div class="math display" data-tex="
+ v_i=\sum_\ell w_\ell\sum_a&#124;B_{\ell,ai}&#124;
+                       \sum_b\Delta_{\ell,ab}s_{\ell,b}.
+"></div>
+
+<p>This follows by expanding the assembled Hessian, applying the triangle inequality and summing over the second global index. It retains negative cross-couplings through absolute bounds; no diagonal-only approximation is made. For the fixed binary matrix <span class="math" data-tex="R"></span>,</p>
+<div class="math display" data-tex="
+ \&#124;R(DF(u)-DF(u_0))\&#124;_\infty
+ \le\&#124;&#124;R&#124;v\&#124;_\infty.
+"></div>
+
+<p>The independent ball calculation checks positive meridional determinant, positive hoop stretch and <span class="math" data-tex="J&gt;10^{-6}"></span> at every cached bulk quadrature point. It also checks positive surface radius, tangent norm, surface Jacobian and normalized weights. Therefore the logarithms and square roots remain analytic and the model's trial inversion penalty is inactive throughout the certified coefficient ball. This is a finite-quadrature analytic-domain statement, not a whole-body geometric certificate for every nearby deformation.</p>
+<h2>5. Banach proof and why the preconditioner suffices</h2>
+<p>Define</p>
+<div class="math display" data-tex="
+ G(u)=u-RF(u),\quad
+ \eta\ge\&#124;RF(u_0)\&#124;_\infty,\quad
+ Z_0\ge\&#124;I-RDF(u_0)\&#124;_\infty.
+"></div>
+
+<p>Combining the point defect and full-ball variation gives</p>
+<div class="math display" data-tex="
+ \sup_{u\in B_\infty}\&#124;DG(u)\&#124;_\infty
+ \le Z_0+\&#124;&#124;R&#124;v\&#124;_\infty=:Z.
+"></div>
+
+<p>The independent point defect is approximately <span class="math" data-tex="6.59123\times10^{-7}"></span>. The total independent bound is approximately 0.03722687. All acceptance inequalities use outward interval bounds or their exact rational endpoints, not these decimal displays.</p>
+<p>For any <span class="math" data-tex="u"></span> in the ball,</p>
+<div class="math display" data-tex="
+ \&#124;G(u)-u_0\&#124;_\infty
+ \le\eta+Zr&lt;r,\qquad Z&lt;1.
+"></div>
+
+<p>Thus <span class="math" data-tex="G"></span> is a contraction mapping the complete closed ball into itself. Banach's theorem gives one fixed point <span class="math" data-tex="u^\dagger"></span> in that ball.</p>
+<p>The fixed point satisfies <span class="math" data-tex="RF(u^\dagger)=0"></span>. Moreover <span class="math" data-tex="Z_0&lt;1"></span> implies <span class="math" data-tex="RDF(u_0)"></span> is invertible by the Neumann-series criterion; in a square finite-dimensional problem this forces <span class="math" data-tex="R"></span> to be invertible. Consequently <span class="math" data-tex="F(u^\dagger)=0"></span>, and any other root in the ball would be another fixed point, contradicting uniqueness. No energetic-minimum or stability assertion follows.</p>
+<p>Finally,</p>
+<div class="math display" data-tex="
+ \&#124;u^\dagger-u_0\&#124;_\infty
+ \le\frac{\eta}{1-Z}
+ \approx2.62544697794\times10^{-12}.
+"></div>
+
+<p>The independent interval-AD bound is slightly looser than the producer's manual-derivative bound, but independently proves the same radius-<span class="math" data-tex="10^{-11}"></span> ball contains one local root. Multiplication by the fixed 33.5 µm length unit gives a coefficient-coordinate distance below <span class="math" data-tex="8.80\times10^{-11}"></span> µm. That is only a unit conversion, not a continuum or experimental accuracy estimate.</p>
+<h2>6. Receipts and limits</h2>
+<p>The final independent receipt passes <strong>20 actual-target checks</strong> in addition to the 63 local derivative checks. It verifies the exact rational producer inequalities and distance bound, repeats the actual full finite-sum proof at higher precision using separate derivative/assembly/variation code, checks source/cache/state identities, and confirms the producer certificate stayed unchanged.</p>
+<p>Producer certificate SHA256:</p>
+<pre><code>132bd7695619b1ff67b276f7b65c547d980a74ab76df9c736e221e888d186721
+</code></pre>
+<p>Producer source SHA256:</p>
+<pre><code>7321d38bf17cf354cc03be2871f3fbaa45bcebbcbfca7be90d0f867b80078acf
+</code></pre>
+<p>Independent review source SHA256:</p>
+<pre><code>6af2311d0667a28af263b6fb6237063481aa8e65209ae9722c2b0246a8cff27a
+</code></pre>
+<p>Independent PASS receipt SHA256:</p>
+<pre><code>f327f2fab76f9fdcab3a83882adbb1a4ae3f0cf1e5c269e7335fb909691085d5
+</code></pre>
+<p>A separately justified observer propagation can turn this coefficient-root enclosure into endpoint enclosures. It must account for the distinction between exact <span class="math" data-tex="X+Pu_0"></span> and rounded saved current nodes, graph/ROI admissibility, and the observation functional. The coefficient bound by itself does not provide those results.</p>
+<p>The remaining scientific gaps are separate: parameter-uniform bounds, the other calibration states, source-matched temporal/ROI observations, quadrature/PDE accuracy, full material/geometry compatibility and frozen larger-region predictions. This certificate establishes neither a new biological mechanism nor confirmed novelty.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

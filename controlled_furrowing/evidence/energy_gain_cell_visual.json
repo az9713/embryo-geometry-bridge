@@ -1,0 +1,8 @@
+{
+  "status": "GENERATED_FROM_ACTUAL_UNIFORM_CERTIFICATES",
+  "energy_sha256": "f580043152595371e3d01489c4b2f0eb4cc9263d677aeaa5c85c5332b161de71",
+  "geometry_sha256": "f1b747fc05d6fe55e7fc1365c09e0b44c8d05e56b36e75174e48a610723224f7",
+  "image_sha256": "3061d0df764048eaccdb38d0fe5688d9c3d8434d68e12c7528f4b20ed0f85885",
+  "generator_sha256": "ac1e40e21ca99a1ed62dd1a98d21b7a637efbc0a2995d68d4854e0713a91e126",
+  "scope": "Taylor fraction is not physical time; J band is a common enclosure, not a sampled physical curve; fixed weak benchmark only."
+}

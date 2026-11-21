@@ -1,0 +1,6 @@
+{
+  "reason": "Inspected first visual had clipped long panel title. Cosmetic title shortening only, previous image retained.",
+  "previous_image": "runs\\sparse_quadratic\\24_vs16_highQ.initial_clipped.png",
+  "previous_sha256": "1f08748b9c302308abe8ebcdecc91744a059a2535e170c637931a3c27c0dd9e5",
+  "comparison_source_sha256": "c371d294538df5a559053f17e5a18747b45e3e66c20c7438403682a3f4752b80"
+}

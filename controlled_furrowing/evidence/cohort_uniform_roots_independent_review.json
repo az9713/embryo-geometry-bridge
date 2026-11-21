@@ -1,0 +1,1221 @@
+{
+  "status": "PARTIAL_UNRESOLVED",
+  "checks": {
+    "all17_records_reviewed": true,
+    "one_immutable_M_review_reused": true,
+    "all17_independent_acceptance_PASS": false,
+    "all_frozen_bindings_still_match": true,
+    "no_new_equilibrium_solve": true,
+    "no_PDE_observer_stability_or_identified_set_claim": true
+  },
+  "record_audits": [
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_B.json",
+      "review_sha256": "d2103df490e7b3f090597d3f83f24dc6a26ed53fcaf0860d3282506aea0e8d07",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_B",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "3dcfca685a1417d2ba11b0c4a70b40aac84a2df9b8f1c36518826188f4e803c8",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_B",
+        "bounds": {
+          "Z0": {
+            "ball": "[5.48542397285953654741297703753400527023065257850162476479e-7 +/- 4.88e-64]",
+            "lower_exact": "3610516058471745213416119640640787923703639876879972083867/6582018229284824168619876730229402019930943462534319453394436096",
+            "upper_exact": "3610516058471745213416119640640787923703639876879972083867/6582018229284824168619876730229402019930943462534319453394436096"
+          },
+          "eta": {
+            "ball": "[5.28745504374036997173224087358327303467213306686530979482e-13 +/- 3.03e-70]",
+            "lower_exact": "912316838298860977759037658651781944146283661971008352563/1725436586697640946858688965569256363112777243042596638790631055949824",
+            "upper_exact": "912316838298860977759037658651781944146283661971008352563/1725436586697640946858688965569256363112777243042596638790631055949824"
+          },
+          "Z": {
+            "ball": "[0.0486824495710373206513119204306374370562887241641876194350 +/- 4.95e-59]",
+            "lower_exact": "1222338754740931751982509584238298972852897446257341228605/25108406941546723055343157692830665664409421777856138051584",
+            "upper_exact": "2444677509481863503965019168476597945705794892514682457211/50216813883093446110686315385661331328818843555712276103168"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[1.01557000008441020368634329166470167403010054832840717383e-12 +/- 1.65e-69]",
+            "lower_exact": "3504603268996335340264591102362780259196114956107520121689/3450873173395281893717377931138512726225554486085193277581262111899648",
+            "upper_exact": "3504603268996335340264591102362780259196114956107520121695/3450873173395281893717377931138512726225554486085193277581262111899648"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.997471632040348345086844968851456636212628825829191703034 +/- 3.02e-58]",
+            "lower_exact": "1565307728119863819882726666131620084328618579783957189791/1569275433846670190958947355801916604025588861116008628224",
+            "upper_exact": "1565307728119863819882726666131620084328618579783957189791/1569275433846670190958947355801916604025588861116008628224"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 17.403105974197388,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_C.json",
+      "review_sha256": "4ea273231917ec07960e6362400f8bc574fe97bbf95de4c18d71b14aa3276619",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_C",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "ecfec8b5aac05f7dee24a7f1ce404252795556de119c21342d81a8c256ef46a8",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_C",
+        "bounds": {
+          "Z0": {
+            "ball": "[8.15116792596239492824606877407518707591787439554363099314e-7 +/- 2.91e-64]",
+            "lower_exact": "2682556793932312770700300786238600802311262573054058011205/3291009114642412084309938365114701009965471731267159726697218048",
+            "upper_exact": "2682556793932312770700300786238600802311262573054058011205/3291009114642412084309938365114701009965471731267159726697218048"
+          },
+          "eta": {
+            "ball": "[4.74721244937072212833218768931404536620820332132773225338e-13 +/- 4.80e-70]",
+            "lower_exact": "3276405617988306570232996175344678847949858670828933096113/6901746346790563787434755862277025452451108972170386555162524223799296",
+            "upper_exact": "3276405617988306570232996175344678847949858670828933096113/6901746346790563787434755862277025452451108972170386555162524223799296"
+          },
+          "Z": {
+            "ball": "[0.0649802284336062430629327554733035212736940457682654949026 +/- 5.73e-59]",
+            "lower_exact": "3263100037331301480016782864970949930623275514299842410771/50216813883093446110686315385661331328818843555712276103168",
+            "upper_exact": "3263100037331301480016782864970949930623275514299842410773/50216813883093446110686315385661331328818843555712276103168"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[1.12452352927313464346254632366443974935776078981542817436e-12 +/- 4.21e-69]",
+            "lower_exact": "3880588080020444320922654877461685654707799292264931106809/3450873173395281893717377931138512726225554486085193277581262111899648",
+            "upper_exact": "3880588080020444320922654877461685654707799292264931106813/3450873173395281893717377931138512726225554486085193277581262111899648"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.993327815662821790999965079279679883935039889849095139894 +/- 1.19e-58]",
+            "lower_exact": "3117609877752479798890762173535872597133813205133675017803/3138550867693340381917894711603833208051177722232017256448",
+            "upper_exact": "3117609877752479798890762173535872597133813205133675017803/3138550867693340381917894711603833208051177722232017256448"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.50838041305542,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_D.json",
+      "review_sha256": "602c3f8700cf49ccfa141203a76446e7eda7d6c5bba71a6730ff3efc924cdc75",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_D",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "442e011cd480a834f93877d4ab1ae7c414788f9c8110d3386d13cecc679deba2",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_D",
+        "bounds": {
+          "Z0": {
+            "ball": "[7.79340660683038156464514965648592339827693612663524878623e-7 +/- 4.16e-64]",
+            "lower_exact": "5129634435438635792702703490648626466219507834380143176647/6582018229284824168619876730229402019930943462534319453394436096",
+            "upper_exact": "5129634435438635792702703490648626466219507834380143176647/6582018229284824168619876730229402019930943462534319453394436096"
+          },
+          "eta": {
+            "ball": "[1.19872110764109267350007104746497348222792178149172418908e-12 +/- 1.35e-69]",
+            "lower_exact": "1034158628185331192213901784018014786887849678036005572251/862718293348820473429344482784628181556388621521298319395315527974912",
+            "upper_exact": "1034158628185331192213901784018014786887849678036005572251/862718293348820473429344482784628181556388621521298319395315527974912"
+          },
+          "Z": {
+            "ball": "[0.0910061410534905248240852943561985289489773463291057663254 +/- 4.20e-59]",
+            "lower_exact": "4570038447501683402525101448663836908027048866728076995531/50216813883093446110686315385661331328818843555712276103168",
+            "upper_exact": "4570038447501683402525101448663836908027048866728076995533/50216813883093446110686315385661331328818843555712276103168"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[2.10878251817599792174092399102695877171769524478278185234e-12 +/- 5.37e-69]",
+            "lower_exact": "1819285255124624916965554365661750883602007068675643701081/862718293348820473429344482784628181556388621521298319395315527974912",
+            "upper_exact": "1819285255124624916965554365661750883602007068675643701083/862718293348820473429344482784628181556388621521298319395315527974912"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.980750532466578976340870991477639787900905025978841421371 +/- 4.90e-58]",
+            "lower_exact": "6156270869327374086930339204427563626994621667007832833957/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "6156270869327374086930339204427563626994621667007832833957/6277101735386680763835789423207666416102355444464034512896"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.760264158248901,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_E.json",
+      "review_sha256": "a93c59626bfca0a7a2a9cd0aba71ef7ca2a95ed26872b5095d7c4a948e45c114",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_E",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "56b16cfa1ed0e237acfad6faf5a6eb66bce9e1b157cf7fde7b2758b14383d315",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_E",
+        "bounds": {
+          "Z0": {
+            "ball": "[9.20559223761237566710990356630957965420704805124049412761e-7 +/- 3.78e-64]",
+            "lower_exact": "3029568795966376561632247832092305533959060693603291568937/3291009114642412084309938365114701009965471731267159726697218048",
+            "upper_exact": "3029568795966376561632247832092305533959060693603291568937/3291009114642412084309938365114701009965471731267159726697218048"
+          },
+          "eta": {
+            "ball": "[2.28338820555339548936029752932041986100397829095885305166e-12 +/- 3.99e-69]",
+            "lower_exact": "1969920775747851031818932315931998369358129113227256273873/862718293348820473429344482784628181556388621521298319395315527974912",
+            "upper_exact": "1969920775747851031818932315931998369358129113227256273873/862718293348820473429344482784628181556388621521298319395315527974912"
+          },
+          "Z": {
+            "ball": "[0.109292075566797811868006189372708216540187180025884936454 +/- 4.25e-58]",
+            "lower_exact": "2744149908817435186128933753844636124274776415391682231467/25108406941546723055343157692830665664409421777856138051584",
+            "upper_exact": "686037477204358796532233438461159031068694103847920557867/6277101735386680763835789423207666416102355444464034512896"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[3.37630896122137360804035942304750202640585009121770241621e-12 +/- 2.92e-69]",
+            "lower_exact": "1456401752421616162270403890450528241430278813486403585519/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "91025109526351010141900243153158015089392425842900224095/26959946667150639794667015087019630673637144422540572481103610249216"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.971690337910429813841544361414676763663395079932236692908 +/- 2.48e-58]",
+            "lower_exact": "3049699553178014610567773229624175756126812321369382853051/3138550867693340381917894711603833208051177722232017256448",
+            "upper_exact": "3049699553178014610567773229624175756126812321369382853051/3138550867693340381917894711603833208051177722232017256448"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.404977560043335,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_F.json",
+      "review_sha256": "3ab359ce6490279deaa66b4b0145dfc3f7bc27ad93c58da3423f8dd2b776741b",
+      "audit": {
+        "status": "UNRESOLVED",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": false,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": false,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": false,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_F",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "e2744cb4121fe6a7ac55473f1a700e71e6116438fdd47ac6a9aa96e963a6a3f6",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": false,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_F",
+        "bounds": {
+          "Z0": {
+            "ball": "[7.26851972426318159330104885237853474458774135621804149856e-7 +/- 3.26e-64]",
+            "lower_exact": "299009558281353530801282526136275669263737286305654669099/411376139330301510538742295639337626245683966408394965837152256",
+            "upper_exact": "299009558281353530801282526136275669263737286305654669099/411376139330301510538742295639337626245683966408394965837152256"
+          },
+          "eta": {
+            "ball": "[8.65397747022498797242046254646145952604840112608344185146e-11 +/- 1.17e-68]",
+            "lower_exact": "72909615954996528005106188752893093194377136622201555943/842498333348457493583344221469363458551160763204392890034487820288",
+            "upper_exact": "72909615954996528005106188752893093194377136622201555943/842498333348457493583344221469363458551160763204392890034487820288"
+          },
+          "Z": {
+            "ball": "[0.690387387750399569254445491682957960051395184765163253532 +/- 6.37e-58]",
+            "lower_exact": "2166815934868555202774126143948978901689781984134434969761/3138550867693340381917894711603833208051177722232017256448",
+            "upper_exact": "1083407967434277601387063071974489450844890992067217484881/1569275433846670190958947355801916604025588861116008628224"
+          },
+          "radius": {
+            "ball": "[1.73079549397192854098106379852248202906448635879067382596e-10 +/- 7.49e-68]",
+            "lower_exact": "1086437939881064000954086196825642313001441088617/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "1086437939881064000954086196825642313001441088617/6277101735386680763835789423207666416102355444464034512896"
+          },
+          "eta_plus_Zr": {
+            "ball": "[2.06031712683594098714475569270570135063395782350619901912e-10 +/- 1.12e-67]",
+            "lower_exact": "694325498211425115263968083922931282637800553288720715999/3369993333393829974333376885877453834204643052817571560137951281152",
+            "upper_exact": "1388650996422850230527936167845862565275601106577441431999/6739986666787659948666753771754907668409286105635143120275902562304"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.988968564196819546687037139247542795995584224521266114062 +/- 1.41e-58]",
+            "lower_exact": "1551964072640682494451081114776754736792383991327908639897/1569275433846670190958947355801916604025588861116008628224",
+            "upper_exact": "1551964072640682494451081114776754736792383991327908639897/1569275433846670190958947355801916604025588861116008628224"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.544560432434082,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_G.json",
+      "review_sha256": "daef78160b08af157b2b00e380968763ac7adc21c2cc6769dd2867a1565e87de",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_G",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "23977b487295683d352e534cd588024bb536896fbefd606db3dc531f27457b8e",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_G",
+        "bounds": {
+          "Z0": {
+            "ball": "[1.02842228516473611047172407068411323199932851453058726526e-6 +/- 3.13e-63]",
+            "lower_exact": "423068389272315554341352835708034310669298776835181919025/411376139330301510538742295639337626245683966408394965837152256",
+            "upper_exact": "423068389272315554341352835708034310669298776835181919025/411376139330301510538742295639337626245683966408394965837152256"
+          },
+          "eta": {
+            "ball": "[5.53799225617928559030962237788799883007097717187265009546e-12 +/- 3.50e-69]",
+            "lower_exact": "1194431806957494261769979188158648363627992691738511005901/215679573337205118357336120696157045389097155380324579848828881993728",
+            "upper_exact": "1194431806957494261769979188158648363627992691738511005901/215679573337205118357336120696157045389097155380324579848828881993728"
+          },
+          "Z": {
+            "ball": "[0.118551134623892563993712027851290770785528507012150103885 +/- 4.46e-58]",
+            "lower_exact": "2976630131518784116753978312874952362982597808943570146033/25108406941546723055343157692830665664409421777856138051584",
+            "upper_exact": "1488315065759392058376989156437476181491298904471785073017/12554203470773361527671578846415332832204710888928069025792"
+          },
+          "radius": {
+            "ball": "[1.10759844923338011430752640699416547044083237356732851322e-11 +/- 2.95e-68]",
+            "lower_exact": "1112401303647111479969147454336212207294396290455/100433627766186892221372630771322662657637687111424552206336",
+            "upper_exact": "1112401303647111479969147454336212207294396290455/100433627766186892221372630771322662657637687111424552206336"
+          },
+          "eta_plus_Zr": {
+            "ball": "[6.85106278482209638602841923774106438180036887034026210124e-12 +/- 3.79e-69]",
+            "lower_exact": "5910537193347336266931713784372813399018104997459304502375/862718293348820473429344482784628181556388621521298319395315527974912",
+            "upper_exact": "5910537193347336266931713784372813399018104997459304502377/862718293348820473429344482784628181556388621521298319395315527974912"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.969744970919465840581245710742254340721544118831398005307 +/- 9.64e-59]",
+            "lower_exact": "6087187839841085299266825312053220911886515655471535702281/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "6087187839841085299266825312053220911886515655471535702281/6277101735386680763835789423207666416102355444464034512896"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 16.528221368789673,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_H.json",
+      "review_sha256": "5a9dd64dc171f89f71d4f8e9a3e176f1f7a1fe909f1be103e58ba61d6acba14a",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_H",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "53263b3ca6edabf3577c9dc2c5dc3fc7101019405e06c2cc8f3bc4bd1363438b",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_H",
+        "bounds": {
+          "Z0": {
+            "ball": "[8.65472103219342476990230391671162451952430236598019007055e-7 +/- 2.10e-64]",
+            "lower_exact": "5696553160327189141206854852853572083866488850816768890593/6582018229284824168619876730229402019930943462534319453394436096",
+            "upper_exact": "5696553160327189141206854852853572083866488850816768890593/6582018229284824168619876730229402019930943462534319453394436096"
+          },
+          "eta": {
+            "ball": "[1.45340153641580385413961217816211797674622459924872080348e-12 +/- 3.97e-69]",
+            "lower_exact": "5015504372188783405126578232132256292578222820769888820719/3450873173395281893717377931138512726225554486085193277581262111899648",
+            "upper_exact": "5015504372188783405126578232132256292578222820769888820719/3450873173395281893717377931138512726225554486085193277581262111899648"
+          },
+          "Z": {
+            "ball": "[0.0994094987925311682418906069795953815627861631354903551230 +/- 6.88e-59]",
+            "lower_exact": "624003537384517542138377367246049743830337157172292504289/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "2496014149538070168553509468984198975321348628689170017157/25108406941546723055343157692830665664409421777856138051584"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[2.44749652434111553655851824795807179237408623060362435471e-12 +/- 6.24e-69]",
+            "lower_exact": "4223000048913474083505774043316281896651015962518453622047/1725436586697640946858688965569256363112777243042596638790631055949824",
+            "upper_exact": "4223000048913474083505774043316281896651015962518453622053/1725436586697640946858688965569256363112777243042596638790631055949824"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.976393880847724850007240450497988955865094435965030818034 +/- 2.56e-59]",
+            "lower_exact": "3064461861945094829216926402347591651492439571149838635785/3138550867693340381917894711603833208051177722232017256448",
+            "upper_exact": "3064461861945094829216926402347591651492439571149838635785/3138550867693340381917894711603833208051177722232017256448"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.932895421981812,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_I.json",
+      "review_sha256": "80df42a217e3a72189a21602e42d0de045cf0d9b9652afc5b707ee538691fe07",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_I",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "1f73be4fde4eda2278c5bda6dc388d8c083bdf67231a87092a6d201940647c6e",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_I",
+        "bounds": {
+          "Z0": {
+            "ball": "[6.96334253118016904411955537194014635465455900636776194975e-7 +/- 4.71e-64]",
+            "lower_exact": "2291642373849110088947761920963545856232341213020766528805/3291009114642412084309938365114701009965471731267159726697218048",
+            "upper_exact": "2291642373849110088947761920963545856232341213020766528805/3291009114642412084309938365114701009965471731267159726697218048"
+          },
+          "eta": {
+            "ball": "[7.57191595093641020246889332657476450446065845042954825049e-13 +/- 1.37e-70]",
+            "lower_exact": "5225944325258056694555673418953893283941771005425064836331/6901746346790563787434755862277025452451108972170386555162524223799296",
+            "upper_exact": "5225944325258056694555673418953893283941771005425064836331/6901746346790563787434755862277025452451108972170386555162524223799296"
+          },
+          "Z": {
+            "ball": "[0.0759205160027290992742318570267811583109230895010239858088 +/- 5.35e-59]",
+            "lower_exact": "953121605504366193816021186008584065574951766530695019327/12554203470773361527671578846415332832204710888928069025792",
+            "upper_exact": "1906243211008732387632042372017168131149903533061390038655/25108406941546723055343157692830665664409421777856138051584"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[1.51639675512093201298920790292528803355529674005319468314e-12 +/- 3.99e-69]",
+            "lower_exact": "654111610308809854421554263464618437199251669761207551323/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "2616446441235239417686217053858473748797006679044830205295/1725436586697640946858688965569256363112777243042596638790631055949824"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.988703747112224901788179657599267548910689795080978564566 +/- 1.97e-58]",
+            "lower_exact": "6206194006781460890865449437381306571039591447667991171879/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "6206194006781460890865449437381306571039591447667991171879/6277101735386680763835789423207666416102355444464034512896"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.611090898513794,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_J.json",
+      "review_sha256": "4fe68cd4f2cda24f34d399f89e8229385c1ee465ab49d3d73129f45e0929d24e",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_J",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "265ad556102847af69d05f14886776015ecc709fd3962c0180a48b935cb13f51",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_J",
+        "bounds": {
+          "Z0": {
+            "ball": "[9.00395075497334114063273097805678195323776197064386882764e-7 +/- 3.59e-64]",
+            "lower_exact": "1481604200120434664618997029933076421041538482233427527259/1645504557321206042154969182557350504982735865633579863348609024",
+            "upper_exact": "1481604200120434664618997029933076421041538482233427527259/1645504557321206042154969182557350504982735865633579863348609024"
+          },
+          "eta": {
+            "ball": "[1.79982242941325770338806612346971639373337073209609357583e-12 +/- 4.24e-69]",
+            "lower_exact": "6210958938537334357410952868952991938593349092435427056191/3450873173395281893717377931138512726225554486085193277581262111899648",
+            "upper_exact": "6210958938537334357410952868952991938593349092435427056191/3450873173395281893717377931138512726225554486085193277581262111899648"
+          },
+          "Z": {
+            "ball": "[0.110014455835252235197894700823097235141973356343157689575 +/- 1.60e-58]",
+            "lower_exact": "1381143863282166307077373900149595436339164585626026207347/12554203470773361527671578846415332832204710888928069025792",
+            "upper_exact": "2762287726564332614154747800299190872678329171252052414695/25108406941546723055343157692830665664409421777856138051584"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[2.89996698776578005536701313170068874515310429552767047157e-12 +/- 5.11e-69]",
+            "lower_exact": "2501854570453213510781604496071285089721547170584884643565/862718293348820473429344482784628181556388621521298319395315527974912",
+            "upper_exact": "156365910653325844423850281004455318107596698161555290223/53919893334301279589334030174039261347274288845081144962207220498432"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.971371330173375435479354038370385915307806675884028497824 +/- 1.71e-58]",
+            "lower_exact": "1524349165584040851193365352594172259981433541565537917267/1569275433846670190958947355801916604025588861116008628224",
+            "upper_exact": "1524349165584040851193365352594172259981433541565537917267/1569275433846670190958947355801916604025588861116008628224"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.896237850189209,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_K.json",
+      "review_sha256": "89bdce32ebf02a08c6d18a8898e638b66803199b044e369ae2ac4c0dc78da725",
+      "audit": {
+        "status": "UNRESOLVED",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": false,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": false,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": false,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_K",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "97956fa3a300c9a46696f56ac7bb86c65330dac1a13cda93e037f13070178365",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": false,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_K",
+        "bounds": {
+          "Z0": {
+            "ball": "[1.53414620792985730621636336712845505231046791496695103936e-6 +/- 3.89e-63]",
+            "lower_exact": "5048889153491253530549948422597251859127601799505623883631/3291009114642412084309938365114701009965471731267159726697218048",
+            "upper_exact": "5048889153491253530549948422597251859127601799505623883631/3291009114642412084309938365114701009965471731267159726697218048"
+          },
+          "eta": {
+            "ball": "[5.22615295912143010681806686010622637205534271463352095035e-11 +/- 8.41e-70]",
+            "lower_exact": "5635872202091410138609746445743470623276301961942540363751/107839786668602559178668060348078522694548577690162289924414440996864",
+            "upper_exact": "5635872202091410138609746445743470623276301961942540363751/107839786668602559178668060348078522694548577690162289924414440996864"
+          },
+          "Z": {
+            "ball": "[0.565322773719905760886583435717273527845420630220689574577 +/- 5.87e-58]",
+            "lower_exact": "3548588563970832297653448325444396424359606648960362118097/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "3548588563970832297653448325444396424359606648960362118099/6277101735386680763835789423207666416102355444464034512896"
+          },
+          "radius": {
+            "ball": "[1.04523059159033255998753101646314285436962163577705234695e-10 +/- 2.40e-67]",
+            "lower_exact": "656101876035092348506540637279112133229473852173/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "656101876035092348506540637279112133229473852173/6277101735386680763835789423207666416102355444464034512896"
+          },
+          "eta_plus_Zr": {
+            "ball": "[1.11350795312688781782691866492059970253141799574353646249e-10 +/- 4.08e-67]",
+            "lower_exact": "750502875743724251543121542104918755907718729273707934547/6739986666787659948666753771754907668409286105635143120275902562304",
+            "upper_exact": "3002011502974897006172486168419675023630874917094831738191/26959946667150639794667015087019630673637144422540572481103610249216"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.964298623420395875984804358412374986656159291468677899372 +/- 2.88e-58]",
+            "lower_exact": "3026500281251577157900529604591108897362834821972643686027/3138550867693340381917894711603833208051177722232017256448",
+            "upper_exact": "3026500281251577157900529604591108897362834821972643686027/3138550867693340381917894711603833208051177722232017256448"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.487446784973145,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_L.json",
+      "review_sha256": "e22c818224747f27d4e6f3aea64ba3a73b725188fb65286527da88247533741d",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_L",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "a106e69578ee840b81b55ec330c35fd3baf4ea1ecd55f075b64b9c14f9671222",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_L",
+        "bounds": {
+          "Z0": {
+            "ball": "[1.41070316777131974489843653779300500660613647996238598925e-6 +/- 4.38e-63]",
+            "lower_exact": "4642636983190337110619515836459110520504673668073913083709/3291009114642412084309938365114701009965471731267159726697218048",
+            "upper_exact": "4642636983190337110619515836459110520504673668073913083709/3291009114642412084309938365114701009965471731267159726697218048"
+          },
+          "eta": {
+            "ball": "[3.00586109405841867339781040764850056044110758626125449183e-11 +/- 3.27e-68]",
+            "lower_exact": "405189273923390201575841948884649009122630062271995084477/13479973333575319897333507543509815336818572211270286240551805124608",
+            "upper_exact": "405189273923390201575841948884649009122630062271995084477/13479973333575319897333507543509815336818572211270286240551805124608"
+          },
+          "Z": {
+            "ball": "[0.383147719071228419651097324760809866920715241682071197107 +/- 1.43e-58]",
+            "lower_exact": "2405057212291456354245614179693783593397616106928188921205/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "1202528606145728177122807089846891796698808053464094460603/3138550867693340381917894711603833208051177722232017256448"
+          },
+          "radius": {
+            "ball": "[6.01172218496355843768066917835537124942723169725649655487e-11 +/- 5.79e-69]",
+            "lower_exact": "188680958799486804536947437983741995039980718007/3138550867693340381917894711603833208051177722232017256448",
+            "upper_exact": "188680958799486804536947437983741995039980718007/3138550867693340381917894711603833208051177722232017256448"
+          },
+          "eta_plus_Zr": {
+            "ball": "[5.30923873691710765753475852569405281029155440466998811455e-11 +/- 2.83e-68]",
+            "lower_exact": "1431367931904554490802017461821548301055770890740330163177/26959946667150639794667015087019630673637144422540572481103610249216",
+            "upper_exact": "715683965952277245401008730910774150527885445370165081589/13479973333575319897333507543509815336818572211270286240551805124608"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.960805072248226365206512927077907319652693245656297733403 +/- 2.77e-58]",
+            "lower_exact": "3015535593188833453472395470652388480024530754767705455465/3138550867693340381917894711603833208051177722232017256448",
+            "upper_exact": "3015535593188833453472395470652388480024530754767705455465/3138550867693340381917894711603833208051177722232017256448"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.287529230117798,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_M.json",
+      "review_sha256": "93385acf7a216a7f49c8ea8a11b0de801f6cde77441b981f99eb03f13da2ed8e",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "immutable_actual_M_review_exact_hash": true,
+          "immutable_actual_M_independent_root_audit_PASS": true,
+          "uniform_result_identical_to_reviewed_M": true,
+          "identical_immutable_M_cache_and_predictor": true,
+          "immutable_M_source_cache_review_binding": true,
+          "same_mechanical_source_dose_cell": true,
+          "cohort_source_branch_wrapper_explicit": true
+        },
+        "record_id": "optoGEF2_small_col_M",
+        "certificate_sha256": "38c2997d7299196ed5bdce6c100edf8fc19a9c31ca96e6d6292f6eb878e700f6",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "new_primary_M_local_branch_v1",
+        "reuse_review_file": "evidence/parametric_actual_M_independent_review.json",
+        "reuse_review_sha256": "4b03db70583be266a8d4ae581f19c8db0099bc028ddd6af82a5c990a91d8e600",
+        "no_fresh_M_assembly": true,
+        "scope": "Reuses immutable independently reviewed identical mechanical root family; new common observation wrapper is not itself an observer proof.",
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_N.json",
+      "review_sha256": "a229f4647cf1c3e1ed2224c1599f7dd4c8363076fd084b943fb406c060feb323",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_N",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "8721f35a1c73db8cb2b12096d24307042d4e84529ba5b815bc0444eb8b3b192d",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_N",
+        "bounds": {
+          "Z0": {
+            "ball": "[7.86039181173640021416458272214705386665918754258790518379e-7 +/- 4.63e-64]",
+            "lower_exact": "5173724219417015191527509428424592480368703722150039069389/6582018229284824168619876730229402019930943462534319453394436096",
+            "upper_exact": "5173724219417015191527509428424592480368703722150039069389/6582018229284824168619876730229402019930943462534319453394436096"
+          },
+          "eta": {
+            "ball": "[1.31838016235389196929606293625110415741241990064533955590e-12 +/- 2.07e-69]",
+            "lower_exact": "4549562734603562136198593868092881704552215575845432736617/3450873173395281893717377931138512726225554486085193277581262111899648",
+            "upper_exact": "4549562734603562136198593868092881704552215575845432736617/3450873173395281893717377931138512726225554486085193277581262111899648"
+          },
+          "Z": {
+            "ball": "[0.0925103336231456448060544693787974435495373543191528979876 +/- 3.66e-59]",
+            "lower_exact": "4645574205816386637103039352124188973685488925002566011517/50216813883093446110686315385661331328818843555712276103168",
+            "upper_exact": "4645574205816386637103039352124188973685488925002566011519/50216813883093446110686315385661331328818843555712276103168"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[2.24348349858534841735660763003907859290779344383686853578e-12 +/- 2.81e-69]",
+            "lower_exact": "1935494255055792677539607435006197217038173074867606893575/862718293348820473429344482784628181556388621521298319395315527974912",
+            "upper_exact": "1935494255055792677539607435006197217038173074867606893577/862718293348820473429344482784628181556388621521298319395315527974912"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.979957915696510514941896298888520751505237769406653997026 +/- 7.36e-59]",
+            "lower_exact": "6151295533224480762155975505426241057058670016598752014381/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "6151295533224480762155975505426241057058670016598752014381/6277101735386680763835789423207666416102355444464034512896"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.793399333953857,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_O.json",
+      "review_sha256": "2f0f9ffdec632ff6809af457a4da9c0b622746c1b50019544e1abb27e2aa8a7e",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_O",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "3fe935437944ea5f819bdab492f702d6c83d4e04ee9babd9be446e0d2601305b",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_O",
+        "bounds": {
+          "Z0": {
+            "ball": "[7.00214202693052438109929498839803535628154872128545829097e-7 +/- 2.69e-64]",
+            "lower_exact": "2304411323264904983715164388879505237932551060260712428911/3291009114642412084309938365114701009965471731267159726697218048",
+            "upper_exact": "2304411323264904983715164388879505237932551060260712428911/3291009114642412084309938365114701009965471731267159726697218048"
+          },
+          "eta": {
+            "ball": "[3.78161278462541215393811224654259284770021737076871964391e-13 +/- 4.31e-70]",
+            "lower_exact": "5219946444252985887562303048708795340396978638806775950859/13803492693581127574869511724554050904902217944340773110325048447598592",
+            "upper_exact": "5219946444252985887562303048708795340396978638806775950859/13803492693581127574869511724554050904902217944340773110325048447598592"
+          },
+          "Z": {
+            "ball": "[0.0606549644912151176189615506955266178663589557293997959865 +/- 3.74e-59]",
+            "lower_exact": "6091798125881982641025733840544152900104775896809167308749/100433627766186892221372630771322662657637687111424552206336",
+            "upper_exact": "6091798125881982641025733840544152900104775896809167308751/100433627766186892221372630771322662657637687111424552206336"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[9.84710923374692391583426731609525463433611294370869924255e-13 +/- 7.86e-70]",
+            "lower_exact": "3398112509023022999798194541340208079097130055718049535237/3450873173395281893717377931138512726225554486085193277581262111899648",
+            "upper_exact": "3398112509023022999798194541340208079097130055718049535243/3450873173395281893717377931138512726225554486085193277581262111899648"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.994726574362857125181087129161675283176607443881337696874 +/- 4.58e-58]",
+            "lower_exact": "6243999906168338611613701989508000551794462331798711114615/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "6243999906168338611613701989508000551794462331798711114615/6277101735386680763835789423207666416102355444464034512896"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.587401390075684,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_P.json",
+      "review_sha256": "efbe4665e690d37ef7dd62543705484e03dabaaa953cab86be11294c911bc153",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_P",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "651d1705999e6291cb5a30af48803966201c7691266a3e75d0187488d8269afc",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_P",
+        "bounds": {
+          "Z0": {
+            "ball": "[8.25787312543421051232458809061421400109164443684555852932e-7 +/- 2.60e-64]",
+            "lower_exact": "2717673572336460948993204500844608796418179160135238910807/3291009114642412084309938365114701009965471731267159726697218048",
+            "upper_exact": "2717673572336460948993204500844608796418179160135238910807/3291009114642412084309938365114701009965471731267159726697218048"
+          },
+          "eta": {
+            "ball": "[1.46761900463340558508257424158894997084926902631914444183e-12 +/- 3.57e-70]",
+            "lower_exact": "19783465046306661142956758812624283893256965797427728255/13479973333575319897333507543509815336818572211270286240551805124608",
+            "upper_exact": "19783465046306661142956758812624283893256965797427728255/13479973333575319897333507543509815336818572211270286240551805124608"
+          },
+          "Z": {
+            "ball": "[0.0983928955422634297663121691569190556290546452961901630039 +/- 5.51e-59]",
+            "lower_exact": "4940977722864497446539729797988360933400522414389731115485/50216813883093446110686315385661331328818843555712276103168",
+            "upper_exact": "4940977722864497446539729797988360933400522414389731115487/50216813883093446110686315385661331328818843555712276103168"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[2.45154796005603988274569593315814052713981547928104607187e-12 +/- 2.12e-69]",
+            "lower_exact": "4229990544324658064087556955778844082144833849200257611777/1725436586697640946858688965569256363112777243042596638790631055949824",
+            "upper_exact": "4229990544324658064087556955778844082144833849200257611781/1725436586697640946858688965569256363112777243042596638790631055949824"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.976908276161088499600552877449585440983899586190317435743 +/- 2.30e-58]",
+            "lower_exact": "383259539725273712422165705662098373825563286249804646173/392318858461667547739736838950479151006397215279002157056",
+            "upper_exact": "383259539725273712422165705662098373825563286249804646173/392318858461667547739736838950479151006397215279002157056"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 14.9067862033844,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_Q.json",
+      "review_sha256": "abc0128b084b85e7f36df977c8cc48e6a36544c003f08954fa026731c2fe4ac3",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_Q",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "958c41e39b93659355875a6fc0416188e492f6022ae15c597f9e5e2fdf823d9a",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_Q",
+        "bounds": {
+          "Z0": {
+            "ball": "[8.45813923335715775249695069060703523461580304200252418303e-7 +/- 3.77e-64]",
+            "lower_exact": "695895332747324745872196421349847437344711679370853973579/822752278660603021077484591278675252491367932816789931674304512",
+            "upper_exact": "695895332747324745872196421349847437344711679370853973579/822752278660603021077484591278675252491367932816789931674304512"
+          },
+          "eta": {
+            "ball": "[1.31377889599212612183617942979441904006573576535770364576e-12 +/- 1.52e-69]",
+            "lower_exact": "4533684347952098263010694808006421937495419175849043159991/3450873173395281893717377931138512726225554486085193277581262111899648",
+            "upper_exact": "4533684347952098263010694808006421937495419175849043159991/3450873173395281893717377931138512726225554486085193277581262111899648"
+          },
+          "Z": {
+            "ball": "[0.0951384928227793296916597456888072843001387562141243224382 +/- 5.75e-59]",
+            "lower_exact": "2388775993599765612018209942879471866470314098646382676411/25108406941546723055343157692830665664409421777856138051584",
+            "upper_exact": "597193998399941403004552485719867966617578524661595669103/6277101735386680763835789423207666416102355444464034512896"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[2.26516382421991941875277688668249188306712332749894687014e-12 +/- 4.23e-69]",
+            "lower_exact": "3908396537172992910206729205783908526546442069289950614215/1725436586697640946858688965569256363112777243042596638790631055949824",
+            "upper_exact": "3908396537172992910206729205783908526546442069289950614219/1725436586697640946858688965569256363112777243042596638790631055949824"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.978583139909705227998040593633495074117270762006621978211 +/- 4.77e-58]",
+            "lower_exact": "95979155089802464156596581150476450644350794760964801975/98079714615416886934934209737619787751599303819750539264",
+            "upper_exact": "95979155089802464156596581150476450644350794760964801975/98079714615416886934934209737619787751599303819750539264"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.687762022018433,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "review_file": "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_R.json",
+      "review_sha256": "50b2907e9e2c15ff54b90d0a1bfa62f9405ba545c7d9702f875b962d37beb812",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "saved_state_center_free_map_reference_reproduced": true,
+          "cache_exact_source_state_and_saved_strength_bound": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_R",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "71dcf24e50bbd5a96199645a90be8d690560bb5cdbcc71af70774e5308165c62",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_shared_cell_v1:optoGEF2_small_col_R",
+        "bounds": {
+          "Z0": {
+            "ball": "[8.80091071271981611000045620754283860111863348801131671151e-7 +/- 3.66e-65]",
+            "lower_exact": "724096934317874048529988254408109038763746724003996199059/822752278660603021077484591278675252491367932816789931674304512",
+            "upper_exact": "724096934317874048529988254408109038763746724003996199059/822752278660603021077484591278675252491367932816789931674304512"
+          },
+          "eta": {
+            "ball": "[1.63097875482606101161963900624538061109368318088781779032e-12 +/- 4.48e-69]",
+            "lower_exact": "2814150415703447298539954986935528267752615939917653177425/1725436586697640946858688965569256363112777243042596638790631055949824",
+            "upper_exact": "2814150415703447298539954986935528267752615939917653177425/1725436586697640946858688965569256363112777243042596638790631055949824"
+          },
+          "Z": {
+            "ball": "[0.101281786779683353427562145502484971240136522603482558541 +/- 1.28e-58]",
+            "lower_exact": "2543024318231256636901560234039090636786443914222517208043/25108406941546723055343157692830665664409421777856138051584",
+            "upper_exact": "635756079557814159225390058509772659196610978555629302011/6277101735386680763835789423207666416102355444464034512896"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[2.64379662262289454589526046127023032349504840692264337573e-12 +/- 5.32e-69]",
+            "lower_exact": "1140425855115299577453994665796762077761257630888370921369/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "2280851710230599154907989331593524155522515261776741842741/862718293348820473429344482784628181556388621521298319395315527974912"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.975460166118191090354182387186879697297665394694886774200 +/- 3.34e-58]",
+            "lower_exact": "6123062701541077190449748195717138900821270323449662249793/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "6123062701541077190449748195717138900821270323449662249793/6277101735386680763835789423207666416102355444464034512896"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.12607717514038,
+        "review_protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+        "all_frozen_inputs_unchanged": true
+      }
+    }
+  ],
+  "review_source_sha256": "a43a2b937a8c7d57c6926420ebec9d5fee0c2f3256350436626a9ecf5abe96e4",
+  "protocol_sha256": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+  "preflight_sha256": "33e3d5a011b938d0004070105c331e3c84d76d55cf69bcaa2cb5bc4c8efcfa3c",
+  "prelaunch_review_sha256": "392d24b36a6b1ef42457a30eff3ae38b370e4a795dc4340e0d8aaec68e76c54f",
+  "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+  "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+  "precision_bits": 192,
+  "scope": "All17 independent uniform finite-quadrature stationary-root acceptance only. Observers/body geometry/completeness/source matching remain separate.",
+  "elapsed_seconds": 262.70020389556885
+}

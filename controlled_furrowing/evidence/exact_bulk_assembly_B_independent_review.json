@@ -1,0 +1,1510 @@
+{
+  "status": "PASS_INDEPENDENT_POINT_BULK_ASSEMBLY",
+  "checks": {
+    "producer_true_complete_all144": true,
+    "element000_tails_degree_rho_hash_free_map": true,
+    "element001_tails_degree_rho_hash_free_map": true,
+    "element002_tails_degree_rho_hash_free_map": true,
+    "element003_tails_degree_rho_hash_free_map": true,
+    "element004_tails_degree_rho_hash_free_map": true,
+    "element005_tails_degree_rho_hash_free_map": true,
+    "element006_tails_degree_rho_hash_free_map": true,
+    "element007_tails_degree_rho_hash_free_map": true,
+    "element008_tails_degree_rho_hash_free_map": true,
+    "element009_tails_degree_rho_hash_free_map": true,
+    "element010_tails_degree_rho_hash_free_map": true,
+    "element011_tails_degree_rho_hash_free_map": true,
+    "element012_tails_degree_rho_hash_free_map": true,
+    "element013_tails_degree_rho_hash_free_map": true,
+    "element014_tails_degree_rho_hash_free_map": true,
+    "element015_tails_degree_rho_hash_free_map": true,
+    "element016_tails_degree_rho_hash_free_map": true,
+    "element017_tails_degree_rho_hash_free_map": true,
+    "element018_tails_degree_rho_hash_free_map": true,
+    "element019_tails_degree_rho_hash_free_map": true,
+    "element020_tails_degree_rho_hash_free_map": true,
+    "element021_tails_degree_rho_hash_free_map": true,
+    "element022_tails_degree_rho_hash_free_map": true,
+    "element023_tails_degree_rho_hash_free_map": true,
+    "element024_tails_degree_rho_hash_free_map": true,
+    "element025_tails_degree_rho_hash_free_map": true,
+    "element026_tails_degree_rho_hash_free_map": true,
+    "element027_tails_degree_rho_hash_free_map": true,
+    "element028_tails_degree_rho_hash_free_map": true,
+    "element029_tails_degree_rho_hash_free_map": true,
+    "element030_tails_degree_rho_hash_free_map": true,
+    "element031_tails_degree_rho_hash_free_map": true,
+    "element032_tails_degree_rho_hash_free_map": true,
+    "element033_tails_degree_rho_hash_free_map": true,
+    "element034_tails_degree_rho_hash_free_map": true,
+    "element035_tails_degree_rho_hash_free_map": true,
+    "element036_tails_degree_rho_hash_free_map": true,
+    "element037_tails_degree_rho_hash_free_map": true,
+    "element038_tails_degree_rho_hash_free_map": true,
+    "element039_tails_degree_rho_hash_free_map": true,
+    "element040_tails_degree_rho_hash_free_map": true,
+    "element041_tails_degree_rho_hash_free_map": true,
+    "element042_tails_degree_rho_hash_free_map": true,
+    "element043_tails_degree_rho_hash_free_map": true,
+    "element044_tails_degree_rho_hash_free_map": true,
+    "element045_tails_degree_rho_hash_free_map": true,
+    "element046_tails_degree_rho_hash_free_map": true,
+    "element047_tails_degree_rho_hash_free_map": true,
+    "element048_tails_degree_rho_hash_free_map": true,
+    "element049_tails_degree_rho_hash_free_map": true,
+    "element050_tails_degree_rho_hash_free_map": true,
+    "element051_tails_degree_rho_hash_free_map": true,
+    "element052_tails_degree_rho_hash_free_map": true,
+    "element053_tails_degree_rho_hash_free_map": true,
+    "element054_tails_degree_rho_hash_free_map": true,
+    "element055_tails_degree_rho_hash_free_map": true,
+    "element056_tails_degree_rho_hash_free_map": true,
+    "element057_tails_degree_rho_hash_free_map": true,
+    "element058_tails_degree_rho_hash_free_map": true,
+    "element059_tails_degree_rho_hash_free_map": true,
+    "element060_tails_degree_rho_hash_free_map": true,
+    "element061_tails_degree_rho_hash_free_map": true,
+    "element062_tails_degree_rho_hash_free_map": true,
+    "element063_tails_degree_rho_hash_free_map": true,
+    "element064_tails_degree_rho_hash_free_map": true,
+    "element065_tails_degree_rho_hash_free_map": true,
+    "element066_tails_degree_rho_hash_free_map": true,
+    "element067_tails_degree_rho_hash_free_map": true,
+    "element068_tails_degree_rho_hash_free_map": true,
+    "element069_tails_degree_rho_hash_free_map": true,
+    "element070_tails_degree_rho_hash_free_map": true,
+    "element071_tails_degree_rho_hash_free_map": true,
+    "element072_tails_degree_rho_hash_free_map": true,
+    "element073_tails_degree_rho_hash_free_map": true,
+    "element074_tails_degree_rho_hash_free_map": true,
+    "element075_tails_degree_rho_hash_free_map": true,
+    "element076_tails_degree_rho_hash_free_map": true,
+    "element077_tails_degree_rho_hash_free_map": true,
+    "element078_tails_degree_rho_hash_free_map": true,
+    "element079_tails_degree_rho_hash_free_map": true,
+    "element080_tails_degree_rho_hash_free_map": true,
+    "element081_tails_degree_rho_hash_free_map": true,
+    "element082_tails_degree_rho_hash_free_map": true,
+    "element083_tails_degree_rho_hash_free_map": true,
+    "element084_tails_degree_rho_hash_free_map": true,
+    "element085_tails_degree_rho_hash_free_map": true,
+    "element086_tails_degree_rho_hash_free_map": true,
+    "element087_tails_degree_rho_hash_free_map": true,
+    "element088_tails_degree_rho_hash_free_map": true,
+    "element089_tails_degree_rho_hash_free_map": true,
+    "element090_tails_degree_rho_hash_free_map": true,
+    "element091_tails_degree_rho_hash_free_map": true,
+    "element092_tails_degree_rho_hash_free_map": true,
+    "element093_tails_degree_rho_hash_free_map": true,
+    "element094_tails_degree_rho_hash_free_map": true,
+    "element095_tails_degree_rho_hash_free_map": true,
+    "element096_tails_degree_rho_hash_free_map": true,
+    "element097_tails_degree_rho_hash_free_map": true,
+    "element098_tails_degree_rho_hash_free_map": true,
+    "element099_tails_degree_rho_hash_free_map": true,
+    "element100_tails_degree_rho_hash_free_map": true,
+    "element101_tails_degree_rho_hash_free_map": true,
+    "element102_tails_degree_rho_hash_free_map": true,
+    "element103_tails_degree_rho_hash_free_map": true,
+    "element104_tails_degree_rho_hash_free_map": true,
+    "element105_tails_degree_rho_hash_free_map": true,
+    "element106_tails_degree_rho_hash_free_map": true,
+    "element107_tails_degree_rho_hash_free_map": true,
+    "element108_tails_degree_rho_hash_free_map": true,
+    "element109_tails_degree_rho_hash_free_map": true,
+    "element110_tails_degree_rho_hash_free_map": true,
+    "element111_tails_degree_rho_hash_free_map": true,
+    "element112_tails_degree_rho_hash_free_map": true,
+    "element113_tails_degree_rho_hash_free_map": true,
+    "element114_tails_degree_rho_hash_free_map": true,
+    "element115_tails_degree_rho_hash_free_map": true,
+    "element116_tails_degree_rho_hash_free_map": true,
+    "element117_tails_degree_rho_hash_free_map": true,
+    "element118_tails_degree_rho_hash_free_map": true,
+    "element119_tails_degree_rho_hash_free_map": true,
+    "element120_tails_degree_rho_hash_free_map": true,
+    "element121_tails_degree_rho_hash_free_map": true,
+    "element122_tails_degree_rho_hash_free_map": true,
+    "element123_tails_degree_rho_hash_free_map": true,
+    "element124_tails_degree_rho_hash_free_map": true,
+    "element125_tails_degree_rho_hash_free_map": true,
+    "element126_tails_degree_rho_hash_free_map": true,
+    "element127_tails_degree_rho_hash_free_map": true,
+    "element128_tails_degree_rho_hash_free_map": true,
+    "element129_tails_degree_rho_hash_free_map": true,
+    "element130_tails_degree_rho_hash_free_map": true,
+    "element131_tails_degree_rho_hash_free_map": true,
+    "element132_tails_degree_rho_hash_free_map": true,
+    "element133_tails_degree_rho_hash_free_map": true,
+    "element134_tails_degree_rho_hash_free_map": true,
+    "element135_tails_degree_rho_hash_free_map": true,
+    "element136_tails_degree_rho_hash_free_map": true,
+    "element137_tails_degree_rho_hash_free_map": true,
+    "element138_tails_degree_rho_hash_free_map": true,
+    "element139_tails_degree_rho_hash_free_map": true,
+    "element140_tails_degree_rho_hash_free_map": true,
+    "element141_tails_degree_rho_hash_free_map": true,
+    "element142_tails_degree_rho_hash_free_map": true,
+    "element143_tails_degree_rho_hash_free_map": true,
+    "all144_element_IDs_exactly_once": true,
+    "all611_force_intervals_contain_exact_endpoint_sums": true,
+    "all6676_Hslots_complete_unique_and_contain_exact_sums": true,
+    "all611_signed_RF_intervals_contain_exact_matrix_endpoint_sums": true,
+    "reported_F_norm_bounds_exact_reduction": true,
+    "reported_RF_norm_bounds_exact_reduction": true,
+    "reported_symmetric_H_row_norm_bounds_exact_reduction": true,
+    "reported_conservative_RH_norm_bounds_exact_Rnorm_times_Hnorm": true,
+    "additional48_all_force_H_overlap": true,
+    "additional143_all_force_H_overlap": true,
+    "only_predeclared_additional_indices48_143": true,
+    "all_inputs_still_frozen": true
+  },
+  "protocol_sha256": "67ecc909926f9bfc80d5dd0310dd93812c6947171fe79fe739e36ff3a199938a",
+  "review_source_sha256": "54d8c104eac35725e518e6c61407c4bb1925db5bf4a46bcc5f72f08887c3c8ce",
+  "producer_results_sha256": "c7938f431321d5b189efcd057fbf6635fbf0ea0d583cf0431f633ceeb7c23dfd",
+  "producer_protocol_sha256": "8b14c671ca877d96256225014dcc42fef97df6ea6f7cabc3af860b857398cb26",
+  "exact_reduction_sha256": "476233ee03938078efabe5cbf98b3b33fc3825393849b4a49047722e6a1e612b",
+  "all144_local_packets": [
+    {
+      "element": 0,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\000.json",
+      "sha256": "29a91f05eb9d0b52dc34976aed032c9b44ddad097fa155bcc46295b0f82360a3"
+    },
+    {
+      "element": 1,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\001.json",
+      "sha256": "a4de45586e888c2424d6fb04be5cd78172b5547a566f19563e72ee9f835a4e2b"
+    },
+    {
+      "element": 2,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\002.json",
+      "sha256": "244d197bdc22112545be4ebe1a4f7ddf37b2854c971cfc769e48db267cdf0c34"
+    },
+    {
+      "element": 3,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\003.json",
+      "sha256": "4a1e57b1893a1c7282b2ecf9ea336869fd9a553e39a53529e8d972a886e9ea2a"
+    },
+    {
+      "element": 4,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\004.json",
+      "sha256": "e180d29c4cf9ee04a1453fab87ac8ec3b47a830885cb4b076e8b585f06bca36f"
+    },
+    {
+      "element": 5,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\005.json",
+      "sha256": "21ca9ddf2a28408a435957d0263bf6d261aa77a299fc7f43d5bd56b71bcec70b"
+    },
+    {
+      "element": 6,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\006.json",
+      "sha256": "1b3d4589c84f3ebc75eebd03382e05e072d73c597331976f7b99f3cf233adfd5"
+    },
+    {
+      "element": 7,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\007.json",
+      "sha256": "652878317e2438a8106017008aec8884c3c3db1a05fb754ee788ec5e7405412e"
+    },
+    {
+      "element": 8,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\008.json",
+      "sha256": "446b86169dae67d8ad142119d6532a7602898b7100b7ae1b62c6764bbc1921a0"
+    },
+    {
+      "element": 9,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\009.json",
+      "sha256": "bb5b80cd4bf416f4755e806cea98caed3ecfd2529c7b2c2e9cb32d5d2825021d"
+    },
+    {
+      "element": 10,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\010.json",
+      "sha256": "b894203c74c37bc1d94b1cf2e771d0758085f7fb3164a56da6ad7ccbad6bfb28"
+    },
+    {
+      "element": 11,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\011.json",
+      "sha256": "6e180ab78dcd24217d055baed1e2392bfc4e29bff0d1037c27a22c1dc4bb34a2"
+    },
+    {
+      "element": 12,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\012.json",
+      "sha256": "915a3fb82b11f1c630d7dafe8782b98856cf5e7a4ef20bbcedb78d6f588a84e4"
+    },
+    {
+      "element": 13,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\013.json",
+      "sha256": "f8e6a06f9ac0743ed59387efa0b5218d14aa5f8add0a406dcd6c1d73ac55c1c4"
+    },
+    {
+      "element": 14,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\014.json",
+      "sha256": "e43a7cfc94e6f09de0cb7a263c61534fd1185b1583842b8f5c50ce9e28a00278"
+    },
+    {
+      "element": 15,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\015.json",
+      "sha256": "802e05693cc31289c528e951da3047dbd249bf2c777f21ba32acd18a53178874"
+    },
+    {
+      "element": 16,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\016.json",
+      "sha256": "11979de20c0e7fbbd149acfeb9f9ced3451ad89006eeb5dc05acd7e8b431feff"
+    },
+    {
+      "element": 17,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\017.json",
+      "sha256": "71b03e49f97334acd2bc822788887be4e8e4320ff277eaec3c6e468bb838a62c"
+    },
+    {
+      "element": 18,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\018.json",
+      "sha256": "326d9709ca0eba241ae8c8887a0a797243ec650eb04536a7500c307b9f82149d"
+    },
+    {
+      "element": 19,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\019.json",
+      "sha256": "66c9dab0b29ade89048ffd3c2c89dae28b2aefdd7024492294f49d2516cc4ff0"
+    },
+    {
+      "element": 20,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\020.json",
+      "sha256": "5bbf1bdd3c520de70b2dbec6861acc627ab96caa8b9f6c6d9d3da7cd9f50c748"
+    },
+    {
+      "element": 21,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\021.json",
+      "sha256": "e575d6f13b3fda3b836bff6bc20c7c726612a602adf8a690558893b33d1ae1df"
+    },
+    {
+      "element": 22,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\022.json",
+      "sha256": "6cd0e58c9dab2a39a505a14b4b5b270ca0f6c8e27f6332f0f8b01bb899b4c360"
+    },
+    {
+      "element": 23,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\023.json",
+      "sha256": "a41aeaa5db703f8492438123459217b554d8259403e9478ac3cf8e899a8cb33f"
+    },
+    {
+      "element": 24,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\024.json",
+      "sha256": "224147cae465dcfe414dfdfee7b6ffc8032dbd9e48342161be1422164f15eb10"
+    },
+    {
+      "element": 25,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\025.json",
+      "sha256": "86adcd470fa60703b78910e0b9b53699df5a9f00a39c87298934bd3e41411fa7"
+    },
+    {
+      "element": 26,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\026.json",
+      "sha256": "7bd551af4cce9f8dd9d77fc8da931ef3b839bff8181e01ab5bd97f8f7614abf7"
+    },
+    {
+      "element": 27,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\027.json",
+      "sha256": "81cd5a4fe752a5266334c550cfe3d56d42960319ae4722a9dbf0a7993bccca09"
+    },
+    {
+      "element": 28,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\028.json",
+      "sha256": "693cc10ffcf1a9e0a1a850c6c8e8b210fdb8a60340fd8440bdc9d983761cf14d"
+    },
+    {
+      "element": 29,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\029.json",
+      "sha256": "fd11fe4a10266729ebf1a542bd9c8ae77506e44fdcd29a1a5e3788a184a9c8ae"
+    },
+    {
+      "element": 30,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\030.json",
+      "sha256": "2ea735173c92a7d00c1b293ac60f37f959de4533f595adf371ca01fc602643a5"
+    },
+    {
+      "element": 31,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\031.json",
+      "sha256": "115bc132caec8f9d895bf97bc4edc156b699d5cdb6ee775d85428bc3f0b20a84"
+    },
+    {
+      "element": 32,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\032.json",
+      "sha256": "3a167114d7e196040c043bf4aaf7087abaaa224d78c2b7c5b7625592cf435bcb"
+    },
+    {
+      "element": 33,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\033.json",
+      "sha256": "4c3009c067310b162216e5c0f7d3436a88be9dd760f216055452cb58ca275c20"
+    },
+    {
+      "element": 34,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\034.json",
+      "sha256": "a7e2ffd31b056ca1ba82b4fec03cd60ab9f55cc8cf40e28d3dbbf17c09014e3a"
+    },
+    {
+      "element": 35,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\035.json",
+      "sha256": "9ae26e0af6f01a2ecd0ba23913ecc9844ece8b5400eddb29ee710df371d5e03d"
+    },
+    {
+      "element": 36,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\036.json",
+      "sha256": "a8ea5de7b9638883ebe5c23f82d2126f35c43aec96a94598c2234af2bb0eb075"
+    },
+    {
+      "element": 37,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\037.json",
+      "sha256": "9e955bc07a43b5be20189499de004f919d22b1ae3d5c16ba54144aed17be2415"
+    },
+    {
+      "element": 38,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\038.json",
+      "sha256": "1d8f13ba8aa4f48605bf46374cca0391cc5364b8911e128b0fb9223d3121ae70"
+    },
+    {
+      "element": 39,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\039.json",
+      "sha256": "dd335e4d725c2d6e30b08183b7dac6f5b2aa9effd395ff2ef5d0a1458992dfaf"
+    },
+    {
+      "element": 40,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\040.json",
+      "sha256": "55d396b7d0d8b286d4e8ca23bf4048d9c75db26345e8edf66fe4b1e801c4389d"
+    },
+    {
+      "element": 41,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\041.json",
+      "sha256": "b67af29c906d4fc2bfa36a2ea37f1d43ba3a833652fa6a73cb86747fe1121b2b"
+    },
+    {
+      "element": 42,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\042.json",
+      "sha256": "a6d7b4b62076942af978f253a1c54907d98ca7396bb2783b0d0931956136d3a0"
+    },
+    {
+      "element": 43,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\043.json",
+      "sha256": "5c76284e5e555db0075493863b647b0ee92a0dfc4766fe10ebaa90099a1e990c"
+    },
+    {
+      "element": 44,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\044.json",
+      "sha256": "41b1b10a3f29894078f3bba8cd3936216fe73cd76bba7c7648cbf78f5c381518"
+    },
+    {
+      "element": 45,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\045.json",
+      "sha256": "831390b4a59c83de73b66cbab4803e3360fa7f8e40412860be9a7ab64c97ce4f"
+    },
+    {
+      "element": 46,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\046.json",
+      "sha256": "a61f0788d77ae5f797a6ec2acc5c90198d10467935d8ec8b2986f9e534a638fa"
+    },
+    {
+      "element": 47,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\047.json",
+      "sha256": "05ef20da054fab7e19d4987374c71a787de0db0879cd45267c849f849e571e0a"
+    },
+    {
+      "element": 48,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\048.json",
+      "sha256": "c27700190aec6fb1317d7331faee8c93f0b4dad3ddfcea083c12dea0af26f4fb"
+    },
+    {
+      "element": 49,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\049.json",
+      "sha256": "95951d9ce5e929c92e9e3795859719350069fd6a1565e8b1d10a2a6a9bfdd0e4"
+    },
+    {
+      "element": 50,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\050.json",
+      "sha256": "b003ffefff2923bea28609877bd5e50952ffeb03e621a23a9430410e18b86d25"
+    },
+    {
+      "element": 51,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\051.json",
+      "sha256": "9edc903e7d7b372e17b59e98e522f1d26a761c951903f342c8b1ebb6334c71cc"
+    },
+    {
+      "element": 52,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\052.json",
+      "sha256": "8d744ccc460763f67f02afde3cdfc471c4e6120ab84807eb8bdd0a70f41c76b2"
+    },
+    {
+      "element": 53,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\053.json",
+      "sha256": "e72f356a68bd081c28fccf888d0dbcccb1fb72c224ef7cf0068c681239c6a1f6"
+    },
+    {
+      "element": 54,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\054.json",
+      "sha256": "9f0672b7c8b260ef0072da35eab041dfee4a9ff7aa1f809e574b4830270e3005"
+    },
+    {
+      "element": 55,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\055.json",
+      "sha256": "e44b2c69a1c0e9d6fd71f772133b1b8473e52f6c79de133d3a1876ecedc43a6d"
+    },
+    {
+      "element": 56,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\056.json",
+      "sha256": "4d1547d97575e29faa8e79004df1066ddff44757bf6f4e13e265ac4331e2aadb"
+    },
+    {
+      "element": 57,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\057.json",
+      "sha256": "fd6eba4d1ccadd84f64913fb70ff60b018d45edc47a865295edb5055251d3102"
+    },
+    {
+      "element": 58,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\058.json",
+      "sha256": "2df2803542ab5115421bdc878c00a44121f9e81527984b5b8bf516e0e16f21cf"
+    },
+    {
+      "element": 59,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\059.json",
+      "sha256": "dc9c3cd058b4cd95666db6a3079a1d9f4ea69236e4a9d5414d225c579fcb966b"
+    },
+    {
+      "element": 60,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\060.json",
+      "sha256": "62ee895dd9d6eb4c5ae99b2f2c212f7aadda1f48ec9d39ad1ea7f2c2f4b1ca98"
+    },
+    {
+      "element": 61,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\061.json",
+      "sha256": "a8a1d093b4a6377dd7b1262ea38e79551ab53e418c540e0251d78a8425c68f68"
+    },
+    {
+      "element": 62,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\062.json",
+      "sha256": "8e1f524621fd6fcc6329dd92c4218918d6043000e10cb07249d6816c4831e3ce"
+    },
+    {
+      "element": 63,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\063.json",
+      "sha256": "14aaa3937a0a0a9b0e4fe8595fd2bffb7865c28748a21470faa9fb7cd14146b9"
+    },
+    {
+      "element": 64,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\064.json",
+      "sha256": "801dbb0e63c06643662dcb04bb902e1832da807281cc1c507c92bfdf4d61fcc6"
+    },
+    {
+      "element": 65,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\065.json",
+      "sha256": "9bfa20db6d30736b7f18c04634ace4668c667fa172561cfa946fc119db5f6c84"
+    },
+    {
+      "element": 66,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\066.json",
+      "sha256": "3c171410b72dcdac0c67d1bf9f5645cb84567542a85738c38ac780dfbded1997"
+    },
+    {
+      "element": 67,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\067.json",
+      "sha256": "1a24cde4e5939ece7ab2b3422c677d6cd03509e1f7e811a236fce83bb8c58d65"
+    },
+    {
+      "element": 68,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\068.json",
+      "sha256": "155cff90bd13a4822a1ae37b8096b10558ee7f7d934840fafbd142f6ba1dabcf"
+    },
+    {
+      "element": 69,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\069.json",
+      "sha256": "6cb80d991cab6bc82bb6ef1386b9b8268aaee29888cc55390c4a62c949bb2cae"
+    },
+    {
+      "element": 70,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\070.json",
+      "sha256": "33765c5da385a08b3062f635184b7ce201f5c618056c2b13adf304f8eaf0aa78"
+    },
+    {
+      "element": 71,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\071.json",
+      "sha256": "250ec74f1111bc09010a2c94b8d89e10af5300e5d43d07aa105b854730f9141c"
+    },
+    {
+      "element": 72,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\072.json",
+      "sha256": "5be48c7ee22e3935c9aa3d85d5074e7ebb0c0302f0173557c1a645c7cba27436"
+    },
+    {
+      "element": 73,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\073.json",
+      "sha256": "667edc1fa4d1c901b171d6b145b667bff998c1783f55e973985deefc8b685bf0"
+    },
+    {
+      "element": 74,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\074.json",
+      "sha256": "c7f90783cde0a6195469c449183d6be9ac93747cf5d030ec18618bfe6595dcb5"
+    },
+    {
+      "element": 75,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\075.json",
+      "sha256": "c1fbe445a96054072691dab50bc3d7a618420e94199d2ab507b624e48127bf07"
+    },
+    {
+      "element": 76,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\076.json",
+      "sha256": "76181dc96739e5ebd03b10685d8f8a3585610eca9d71e7874b4140b8573b7e8f"
+    },
+    {
+      "element": 77,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\077.json",
+      "sha256": "97c0fc2e925edbf06729993669bad90019a2b5a8558c6a61de9cc0e48b7ea4a2"
+    },
+    {
+      "element": 78,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\078.json",
+      "sha256": "93edc9eddbdce3d1e06d6bc52b4cf384edaea3e2e1ad074fac9ada60516f6130"
+    },
+    {
+      "element": 79,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\079.json",
+      "sha256": "349602532f9fa665bfd1ce29755d26efd1242672d256f6bc7eb8f3ee5d31fb3f"
+    },
+    {
+      "element": 80,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\080.json",
+      "sha256": "01b0ad7ad4706dac3fe9a8e66cc61babe197140c0f7237f4b59de34cc1692455"
+    },
+    {
+      "element": 81,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\081.json",
+      "sha256": "05abe219ad74e4f5e8989776f278a2ca41f54c4bac9231a5640848824fef93b7"
+    },
+    {
+      "element": 82,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\082.json",
+      "sha256": "da66dc5757a5cf14a40152650b5d4ab5ab13fec21346ca232b404607c9b8c8e8"
+    },
+    {
+      "element": 83,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\083.json",
+      "sha256": "ffc3095ef744d65c90c8e484aa99959e46f5e888bc9f873c97d4fbde0cfd18ac"
+    },
+    {
+      "element": 84,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\084.json",
+      "sha256": "4bb66f8f678967375dcda9aef676472a6ae046d78f8d1e6f6b1dfe26acf2abe7"
+    },
+    {
+      "element": 85,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\085.json",
+      "sha256": "ee461194c1363ffb8f6f36374c33fe90f0a2717850c8a3977a879a12349da51e"
+    },
+    {
+      "element": 86,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\086.json",
+      "sha256": "aef442d529e4eaa6d2f7b462b704241c37a6d372fdd44230c0515e3a68b13992"
+    },
+    {
+      "element": 87,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\087.json",
+      "sha256": "20a495132a0c24eeb186c29fccbd83da6ed9c4cd35a2ef3007b1900650fb713e"
+    },
+    {
+      "element": 88,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\088.json",
+      "sha256": "abe4073cad7025729a62b193741f090dcc6ad7785ffc33cd5f6ab617c39766fc"
+    },
+    {
+      "element": 89,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\089.json",
+      "sha256": "ce54cf357a5721549d5f0ecbc4c79bcfb292e5de966ee1ae7edf0ee9591dc271"
+    },
+    {
+      "element": 90,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\090.json",
+      "sha256": "6a875a6ae63f558f7f18fea61044fbe78abb9698f342ed2fbd9faaa4588f4b62"
+    },
+    {
+      "element": 91,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\091.json",
+      "sha256": "6748659dbcdd7c2acdf3646c221a2e7525d1b6091a403354fa4b5da9a5180c55"
+    },
+    {
+      "element": 92,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\092.json",
+      "sha256": "40fe5d6a4b85840a91890d7ded725a58109c2ecf9e167e58f548d1724d0d7e15"
+    },
+    {
+      "element": 93,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\093.json",
+      "sha256": "8462c5a9f998742e1e5f73c43cf9f3c86922edf85c6e12e87acb52055cb27def"
+    },
+    {
+      "element": 94,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\094.json",
+      "sha256": "1ddeff4c4b048bf24b830f2ea60f7d0aeecf194ec792d178838427260e44a3d4"
+    },
+    {
+      "element": 95,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\095.json",
+      "sha256": "fdaaeedfe74732228a1fc2abe32312a9db486d6f5f523634987029a5b85518fc"
+    },
+    {
+      "element": 96,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\096.json",
+      "sha256": "e4ab236c00db69e972d1b11f89a48b71ce344775c4ad89cbbaedaabf3719ba40"
+    },
+    {
+      "element": 97,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\097.json",
+      "sha256": "260afeeb20ab01ef3716738a1d5a533748f69082193857c64005c7625a402ab0"
+    },
+    {
+      "element": 98,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\098.json",
+      "sha256": "8fc71e2c77311c51a34e649c7b050f23ef8b73dd5e23175f889d15d4e951d551"
+    },
+    {
+      "element": 99,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\099.json",
+      "sha256": "dd0798ef05835b242f2f0adfb2e8574f57ee79e017c41d84cb7b918eac1eaaca"
+    },
+    {
+      "element": 100,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\100.json",
+      "sha256": "b761fc384d9081c38af5ba3551bfd4207cd65ca86b7c7d22c819e684b66d5ac8"
+    },
+    {
+      "element": 101,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\101.json",
+      "sha256": "c9bdcb9894466116a2515318812c2d66166dc09ba25d88dd068e36657acb6143"
+    },
+    {
+      "element": 102,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\102.json",
+      "sha256": "e814705f3ffdc231cb07ce1b266ff431a543560b33ceef65a5d59241f899a367"
+    },
+    {
+      "element": 103,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\103.json",
+      "sha256": "10683ebb37965ef9d244cf724a724931179530647fa7d6934601748b06692093"
+    },
+    {
+      "element": 104,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\104.json",
+      "sha256": "573a19d978c13888b7c204c2e698d9a1dd79035499efbcdcddb98aa916d55146"
+    },
+    {
+      "element": 105,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\105.json",
+      "sha256": "64373e55dff60bb26d155adac6e9b150bc8188cbc69370a9376c00dfb8ef44ce"
+    },
+    {
+      "element": 106,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\106.json",
+      "sha256": "e5b0ab2f646b3e12738d5233f6942c966f1e4b2be42c55ec89a9fdc6504caf5f"
+    },
+    {
+      "element": 107,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\107.json",
+      "sha256": "aa289966ffa801ac143154d42e8e9998001017bdbd4c4b9e102fe81334b592b8"
+    },
+    {
+      "element": 108,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\108.json",
+      "sha256": "d0c1ad894ae2a204fb7fea9e01a9b384b4a6e4f0a419a8b006cb75d7da8f8f6f"
+    },
+    {
+      "element": 109,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\109.json",
+      "sha256": "6f01a7e37aeced14c8b53cd0d76b0838e86076e60b2b0686cb4e30967437490f"
+    },
+    {
+      "element": 110,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\110.json",
+      "sha256": "c816126c52de24fef9c6308be2eb3327676ce78eb589960f2d9fc25a42bd9625"
+    },
+    {
+      "element": 111,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\111.json",
+      "sha256": "b9218a365554433f508246563c0b1375e6e187a3aee7147b378f67dc0de4471f"
+    },
+    {
+      "element": 112,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\112.json",
+      "sha256": "468260697ca76dfc1dfbf6f29c9db82c96e44cb3f3edd355e0d229dc47c6003a"
+    },
+    {
+      "element": 113,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\113.json",
+      "sha256": "958d84ef63a04c06ea9884971a600218746de6fad9673e7b0a95f3581190d5f5"
+    },
+    {
+      "element": 114,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\114.json",
+      "sha256": "1e0174296d816d1c410d99e28ca167d2ec996681c519ef30ba843df15987c326"
+    },
+    {
+      "element": 115,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\115.json",
+      "sha256": "56b58c392abcbe2307302d5c84073cbaf1755b4f5cadf6949cfbbccf8fc81573"
+    },
+    {
+      "element": 116,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\116.json",
+      "sha256": "d352ade02ff486c9a23a85195dbe305356c34f5439569f4afff1109a960818a2"
+    },
+    {
+      "element": 117,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\117.json",
+      "sha256": "ce45e43a712ac79d69a9743d7ef0b3698ae34259a47d9bcad451328fb004a665"
+    },
+    {
+      "element": 118,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\118.json",
+      "sha256": "2bae48e03f572f9ab154114a3dfe8258c89a7c33c3c10d198a706fc4b370d22e"
+    },
+    {
+      "element": 119,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\119.json",
+      "sha256": "b37f5cfcf4ac4b8e8b0075b0036c14f96599d2823b97fff7d605fa4d745f831a"
+    },
+    {
+      "element": 120,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\120.json",
+      "sha256": "f8ed45cbd63568edb034a71444e2cbf734bdded781396f86b47c22f7e6ae2ec2"
+    },
+    {
+      "element": 121,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\121.json",
+      "sha256": "296c0cbfdf49beb152b9e5d118b917a0a1a553f7899e52ddf9f7adeaca679e9e"
+    },
+    {
+      "element": 122,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\122.json",
+      "sha256": "013d695580cd622b7fe0939002e75c0acfc59c12bce1d2e6bec9c03f54e6a420"
+    },
+    {
+      "element": 123,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\123.json",
+      "sha256": "56b35bc245409a9d50f3aa09464d2abe26eaba047c593c0088a5262079c9efb0"
+    },
+    {
+      "element": 124,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\124.json",
+      "sha256": "0efcd4c3cae8d3cf801f1bb1f0e29c92e6dffb097772c73688d6e13f0297058e"
+    },
+    {
+      "element": 125,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\125.json",
+      "sha256": "e6b17b9d3a2323e30f1b2384db7d5704604f365d9ebc2f614be588f4336d138e"
+    },
+    {
+      "element": 126,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\126.json",
+      "sha256": "b56916e6e950581b7a64eface90b328c9d75fa6266e81e8db6045dce9354f6b5"
+    },
+    {
+      "element": 127,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\127.json",
+      "sha256": "ea84b9cc8caf70e1f5b19c2f70ea297f828d3356528f43a84edb6cb0aeaf0747"
+    },
+    {
+      "element": 128,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\128.json",
+      "sha256": "b10d3493ffbd96488c47f24de0c6ffa7b2c1882d44150f6f4991d46e703684ab"
+    },
+    {
+      "element": 129,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\129.json",
+      "sha256": "618833ed8a0faff7c10ff8b8a6adfc6c5f14c42c0531165bb1f84da1dc8c2841"
+    },
+    {
+      "element": 130,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\130.json",
+      "sha256": "e21bfa80797830746fdb60836e9a79b3b44e0f09f36914d52c1f4d357e1e40c0"
+    },
+    {
+      "element": 131,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\131.json",
+      "sha256": "6cc4a287601092a610f4e0c1530725a42bf60007f04b4bdca271b9f6152caa82"
+    },
+    {
+      "element": 132,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\132.json",
+      "sha256": "49ecd2ed8ac7151f17def0c6e54f74fb8594230aebb60ea24ef6a7bb6e1ed486"
+    },
+    {
+      "element": 133,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\133.json",
+      "sha256": "c86643cffcb9b9501c02dee26210a023b9cf7fd1e4460b05230e5bdfba03852e"
+    },
+    {
+      "element": 134,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\134.json",
+      "sha256": "f03cbf9ba2282cc7cd9249c9e92fedf8b32245060bc3fcb7b7821cad6ce217c1"
+    },
+    {
+      "element": 135,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\135.json",
+      "sha256": "2ea1e3809ad9e02c4256b31667ab324adbfe3af35bea4cd407206f2668000f45"
+    },
+    {
+      "element": 136,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\136.json",
+      "sha256": "3ebadbfc059c637df9eb1adc8527a66935b969eca5c8edcb0e75884fdd73eaea"
+    },
+    {
+      "element": 137,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\137.json",
+      "sha256": "88fc64ff4523c648169ecbd50968829a0ba7db43128212c519387a87233a345f"
+    },
+    {
+      "element": 138,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\138.json",
+      "sha256": "523674dac62d2a0e2ce3361172751d25bf7904500d2ddd63aa59809bbae26737"
+    },
+    {
+      "element": 139,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\139.json",
+      "sha256": "cc34753ffe809401c5d2674a2c065609dbbf8406793872fb4cce164695185a21"
+    },
+    {
+      "element": 140,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\140.json",
+      "sha256": "af6d3b83850083c71647d228a38922fad874bd23beb20d1f9b356c7cae005f64"
+    },
+    {
+      "element": 141,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\141.json",
+      "sha256": "1a0c925ddb44f1c3b526222b17d54f7f2fd43c206f54d7ccb16003d5d3be94f0"
+    },
+    {
+      "element": 142,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\142.json",
+      "sha256": "f6f04271e24807e070173aff989083b91d05064063f05b00ffd288125db90718"
+    },
+    {
+      "element": 143,
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B\\elements\\143.json",
+      "sha256": "011f5645a252790274ace4fe4bf5ba44fec443733ad7d21fcdfe2ee9b01a3807"
+    }
+  ],
+  "additional_samples": [
+    {
+      "element": 48,
+      "independent_file": "additional_048.json",
+      "independent_sha256": "4823b4b5068f003015179d69cadfd3164aa7baa127d29fc06a0c96fdbe42092e",
+      "force_entries": 12,
+      "H_entries": 78,
+      "exact_basis_entry_checks": 3840,
+      "PASS": true
+    },
+    {
+      "element": 143,
+      "independent_file": "additional_143.json",
+      "independent_sha256": "14e79f373e77b359cb6295dc33d4c4d514d93fe315218c97fd644c39f4c4880e",
+      "force_entries": 10,
+      "H_entries": 55,
+      "exact_basis_entry_checks": 3200,
+      "PASS": true
+    }
+  ],
+  "tail_checks": [
+    {
+      "element": 0,
+      "PASS": true
+    },
+    {
+      "element": 1,
+      "PASS": true
+    },
+    {
+      "element": 2,
+      "PASS": true
+    },
+    {
+      "element": 3,
+      "PASS": true
+    },
+    {
+      "element": 4,
+      "PASS": true
+    },
+    {
+      "element": 5,
+      "PASS": true
+    },
+    {
+      "element": 6,
+      "PASS": true
+    },
+    {
+      "element": 7,
+      "PASS": true
+    },
+    {
+      "element": 8,
+      "PASS": true
+    },
+    {
+      "element": 9,
+      "PASS": true
+    },
+    {
+      "element": 10,
+      "PASS": true
+    },
+    {
+      "element": 11,
+      "PASS": true
+    },
+    {
+      "element": 12,
+      "PASS": true
+    },
+    {
+      "element": 13,
+      "PASS": true
+    },
+    {
+      "element": 14,
+      "PASS": true
+    },
+    {
+      "element": 15,
+      "PASS": true
+    },
+    {
+      "element": 16,
+      "PASS": true
+    },
+    {
+      "element": 17,
+      "PASS": true
+    },
+    {
+      "element": 18,
+      "PASS": true
+    },
+    {
+      "element": 19,
+      "PASS": true
+    },
+    {
+      "element": 20,
+      "PASS": true
+    },
+    {
+      "element": 21,
+      "PASS": true
+    },
+    {
+      "element": 22,
+      "PASS": true
+    },
+    {
+      "element": 23,
+      "PASS": true
+    },
+    {
+      "element": 24,
+      "PASS": true
+    },
+    {
+      "element": 25,
+      "PASS": true
+    },
+    {
+      "element": 26,
+      "PASS": true
+    },
+    {
+      "element": 27,
+      "PASS": true
+    },
+    {
+      "element": 28,
+      "PASS": true
+    },
+    {
+      "element": 29,
+      "PASS": true
+    },
+    {
+      "element": 30,
+      "PASS": true
+    },
+    {
+      "element": 31,
+      "PASS": true
+    },
+    {
+      "element": 32,
+      "PASS": true
+    },
+    {
+      "element": 33,
+      "PASS": true
+    },
+    {
+      "element": 34,
+      "PASS": true
+    },
+    {
+      "element": 35,
+      "PASS": true
+    },
+    {
+      "element": 36,
+      "PASS": true
+    },
+    {
+      "element": 37,
+      "PASS": true
+    },
+    {
+      "element": 38,
+      "PASS": true
+    },
+    {
+      "element": 39,
+      "PASS": true
+    },
+    {
+      "element": 40,
+      "PASS": true
+    },
+    {
+      "element": 41,
+      "PASS": true
+    },
+    {
+      "element": 42,
+      "PASS": true
+    },
+    {
+      "element": 43,
+      "PASS": true
+    },
+    {
+      "element": 44,
+      "PASS": true
+    },
+    {
+      "element": 45,
+      "PASS": true
+    },
+    {
+      "element": 46,
+      "PASS": true
+    },
+    {
+      "element": 47,
+      "PASS": true
+    },
+    {
+      "element": 48,
+      "PASS": true
+    },
+    {
+      "element": 49,
+      "PASS": true
+    },
+    {
+      "element": 50,
+      "PASS": true
+    },
+    {
+      "element": 51,
+      "PASS": true
+    },
+    {
+      "element": 52,
+      "PASS": true
+    },
+    {
+      "element": 53,
+      "PASS": true
+    },
+    {
+      "element": 54,
+      "PASS": true
+    },
+    {
+      "element": 55,
+      "PASS": true
+    },
+    {
+      "element": 56,
+      "PASS": true
+    },
+    {
+      "element": 57,
+      "PASS": true
+    },
+    {
+      "element": 58,
+      "PASS": true
+    },
+    {
+      "element": 59,
+      "PASS": true
+    },
+    {
+      "element": 60,
+      "PASS": true
+    },
+    {
+      "element": 61,
+      "PASS": true
+    },
+    {
+      "element": 62,
+      "PASS": true
+    },
+    {
+      "element": 63,
+      "PASS": true
+    },
+    {
+      "element": 64,
+      "PASS": true
+    },
+    {
+      "element": 65,
+      "PASS": true
+    },
+    {
+      "element": 66,
+      "PASS": true
+    },
+    {
+      "element": 67,
+      "PASS": true
+    },
+    {
+      "element": 68,
+      "PASS": true
+    },
+    {
+      "element": 69,
+      "PASS": true
+    },
+    {
+      "element": 70,
+      "PASS": true
+    },
+    {
+      "element": 71,
+      "PASS": true
+    },
+    {
+      "element": 72,
+      "PASS": true
+    },
+    {
+      "element": 73,
+      "PASS": true
+    },
+    {
+      "element": 74,
+      "PASS": true
+    },
+    {
+      "element": 75,
+      "PASS": true
+    },
+    {
+      "element": 76,
+      "PASS": true
+    },
+    {
+      "element": 77,
+      "PASS": true
+    },
+    {
+      "element": 78,
+      "PASS": true
+    },
+    {
+      "element": 79,
+      "PASS": true
+    },
+    {
+      "element": 80,
+      "PASS": true
+    },
+    {
+      "element": 81,
+      "PASS": true
+    },
+    {
+      "element": 82,
+      "PASS": true
+    },
+    {
+      "element": 83,
+      "PASS": true
+    },
+    {
+      "element": 84,
+      "PASS": true
+    },
+    {
+      "element": 85,
+      "PASS": true
+    },
+    {
+      "element": 86,
+      "PASS": true
+    },
+    {
+      "element": 87,
+      "PASS": true
+    },
+    {
+      "element": 88,
+      "PASS": true
+    },
+    {
+      "element": 89,
+      "PASS": true
+    },
+    {
+      "element": 90,
+      "PASS": true
+    },
+    {
+      "element": 91,
+      "PASS": true
+    },
+    {
+      "element": 92,
+      "PASS": true
+    },
+    {
+      "element": 93,
+      "PASS": true
+    },
+    {
+      "element": 94,
+      "PASS": true
+    },
+    {
+      "element": 95,
+      "PASS": true
+    },
+    {
+      "element": 96,
+      "PASS": true
+    },
+    {
+      "element": 97,
+      "PASS": true
+    },
+    {
+      "element": 98,
+      "PASS": true
+    },
+    {
+      "element": 99,
+      "PASS": true
+    },
+    {
+      "element": 100,
+      "PASS": true
+    },
+    {
+      "element": 101,
+      "PASS": true
+    },
+    {
+      "element": 102,
+      "PASS": true
+    },
+    {
+      "element": 103,
+      "PASS": true
+    },
+    {
+      "element": 104,
+      "PASS": true
+    },
+    {
+      "element": 105,
+      "PASS": true
+    },
+    {
+      "element": 106,
+      "PASS": true
+    },
+    {
+      "element": 107,
+      "PASS": true
+    },
+    {
+      "element": 108,
+      "PASS": true
+    },
+    {
+      "element": 109,
+      "PASS": true
+    },
+    {
+      "element": 110,
+      "PASS": true
+    },
+    {
+      "element": 111,
+      "PASS": true
+    },
+    {
+      "element": 112,
+      "PASS": true
+    },
+    {
+      "element": 113,
+      "PASS": true
+    },
+    {
+      "element": 114,
+      "PASS": true
+    },
+    {
+      "element": 115,
+      "PASS": true
+    },
+    {
+      "element": 116,
+      "PASS": true
+    },
+    {
+      "element": 117,
+      "PASS": true
+    },
+    {
+      "element": 118,
+      "PASS": true
+    },
+    {
+      "element": 119,
+      "PASS": true
+    },
+    {
+      "element": 120,
+      "PASS": true
+    },
+    {
+      "element": 121,
+      "PASS": true
+    },
+    {
+      "element": 122,
+      "PASS": true
+    },
+    {
+      "element": 123,
+      "PASS": true
+    },
+    {
+      "element": 124,
+      "PASS": true
+    },
+    {
+      "element": 125,
+      "PASS": true
+    },
+    {
+      "element": 126,
+      "PASS": true
+    },
+    {
+      "element": 127,
+      "PASS": true
+    },
+    {
+      "element": 128,
+      "PASS": true
+    },
+    {
+      "element": 129,
+      "PASS": true
+    },
+    {
+      "element": 130,
+      "PASS": true
+    },
+    {
+      "element": 131,
+      "PASS": true
+    },
+    {
+      "element": 132,
+      "PASS": true
+    },
+    {
+      "element": 133,
+      "PASS": true
+    },
+    {
+      "element": 134,
+      "PASS": true
+    },
+    {
+      "element": 135,
+      "PASS": true
+    },
+    {
+      "element": 136,
+      "PASS": true
+    },
+    {
+      "element": 137,
+      "PASS": true
+    },
+    {
+      "element": 138,
+      "PASS": true
+    },
+    {
+      "element": 139,
+      "PASS": true
+    },
+    {
+      "element": 140,
+      "PASS": true
+    },
+    {
+      "element": 141,
+      "PASS": true
+    },
+    {
+      "element": 142,
+      "PASS": true
+    },
+    {
+      "element": 143,
+      "PASS": true
+    }
+  ],
+  "exact_norms": {
+    "R_infinity_norm_exact": "7779597100340471047057/4611686018427387904",
+    "force_norm_exact_upper": "3333280575462848813638567894037975515366887415338823386575533036056310494798547556818987179968050739643030946679191371598285256668118246459920866018390981823629/120766797594289323271729746591624604509341479053326093708038601607859973196548763266756055205685080561326988000984443036792658708157593364241965896045846273396780650463232",
+    "RF_norm_exact_upper": "37285678057144392666012628308636910429622807292918829397781006976166012511950588480094351313969693661609355329465831849239307845256825889763199899862833673155656804333352469529655/2227754207823337509102134573095845373483021732054960903603121346630505452738612005129840239901060253798165190221481644194672219102234100585084307285020612396607419274589973120157653414182912",
+    "H_row_norm_exact_upper": "249973951225646165477397115473637757777273726283241075051726385031365877390291813786739852832587805407094735692189039645101677810716029999894367678181338007781855/3773962424821541352241554580988268890916921220416440428376206300245624162392148852086126725177658767541468375030763844899770584629924792632561434251432696043649395326976",
+    "RH_conservative_exact_upper": "1944696626115687247484849913518563909026882110770454176659844044757908991531572434750995514037573862236779782654063656272330313885727827836133173284471529402246834755647218585895750735/17404329748619824289860426352311291980336107281679382059399385520550823849520406290076876874227033232798165548605325345270876711736203910820971150664223534348495463082734165001231667298304"
+  },
+  "local_reintegration_coverage": {
+    "new_indices": [
+      48,
+      143
+    ],
+    "prior_indices": [
+      0,
+      6,
+      72,
+      66
+    ],
+    "total_distinct_independently_reintegrated": 6,
+    "other138": "Use mathematically reviewed generic localengine plus complete localpacket/tail/hash/free-map and exactglobalreduction checks; not individually independently reintegrated."
+  },
+  "scope": "ALL144Bcenter BULK assembly only. No surface/tube/parameteruniformity/equilibriumtransfer/PDE/sourcevalidation.",
+  "root_transfer_proved": false
+}

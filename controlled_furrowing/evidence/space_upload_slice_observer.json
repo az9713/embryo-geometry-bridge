@@ -1,0 +1,18 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "McpServerError: Sheep MCP session closed: RPC UNAVAILABLE"
+    }
+  ],
+  "structuredContent": {
+    "error": "McpServerError: Sheep MCP session closed: RPC UNAVAILABLE",
+    "error_code": "UNAVAILABLE",
+    "error_data": {
+      "type": "json_rpc_error",
+      "code": -32000,
+      "message": "Sheep MCP session closed: RPC UNAVAILABLE"
+    }
+  },
+  "isError": true
+}

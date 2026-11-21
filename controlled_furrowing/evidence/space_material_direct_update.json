@@ -1,0 +1,105 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "current_lead_updated": true,
+    "direct_result_visible": true,
+    "gain_control_limit_visible": true,
+    "figure_embedded": true,
+    "figure_readable_hash_bound": true,
+    "full_goal_still_incomplete": false
+  },
+  "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+  "upload": {
+    "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+    "reference": "library-file:fde1_bGliZmlsZV9saWdpVHZ6MWZ2SndVM0YydTkydEZn_FileDrive_d69130b799448191b036b648f75c6861",
+    "file_name": "material-primary-step-direct-comparison-bcadaa5e16604d20b30b5ca8dca079b1.png",
+    "mime_type": "image/png",
+    "byte_size": 109057,
+    "sha256": "bd6fa7502cb26721b4550e6a2aafefe00c669874679bcfcd33b9da916e96958e",
+    "file_access_confirmed": true,
+    "is_image": true,
+    "markdown": "![Direct joint material/gain result — one convention worsens](library-file:fde1_bGliZmlsZV9saWdpVHZ6MWZ2SndVM0YydTkydEZn_FileDrive_d69130b799448191b036b648f75c6861)",
+    "inserted": false,
+    "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+  },
+  "edit": {
+    "new_sequence": 10,
+    "through_sequence": 10,
+    "operation_results": [
+      {
+        "operation_index": 0,
+        "preceding_block_id": "0826f80e-5a30-48f7-9864-09563b1c8a23",
+        "created_block_ids": [],
+        "continuation_position": {
+          "block_id": "b6c89f9c-c1f1-4ae9-9472-a9cb38c5ecd6",
+          "relative_position_base64": "AP6I9cANzwNB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "b6c89f9c-c1f1-4ae9-9472-a9cb38c5ecd6",
+            "hash": "4af42d8b5bc39b42cd17ff2a5bd763d3ff0f559b3c1fec003639a1e102755188"
+          }
+        ]
+      },
+      {
+        "operation_index": 1,
+        "preceding_block_id": "1216825e-4aab-4676-9652-9188e05d2a5d",
+        "created_block_ids": [],
+        "continuation_position": {
+          "block_id": "80cac63e-1949-4259-ad71-d546c829abb8",
+          "relative_position_base64": "AJnPltMMyxJB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "80cac63e-1949-4259-ad71-d546c829abb8",
+            "hash": "fc2aa4ef87a2c288d5ecc2ea20ff6d0ca8697d188d5ae8c79d08972add16dcc8"
+          }
+        ]
+      },
+      {
+        "operation_index": 2,
+        "preceding_block_id": "231c28ec-6a1d-4288-8bbb-d65f3e004685",
+        "created_block_ids": [
+          "14b6f44d-ad37-438f-a60c-cbafd3de555f",
+          "8fab4cb9-ccb9-4492-97bc-e6edf20cae68",
+          "aa818aed-bbe8-4f62-aae8-8d7bb83451c6",
+          "f1011cd6-c682-4dcf-83fe-71c552d0008d",
+          "231c28ec-6a1d-4288-8bbb-d65f3e004685",
+          "45df23c8-a302-4392-9fee-941af3965151"
+        ],
+        "continuation_position": {
+          "block_id": "45df23c8-a302-4392-9fee-941af3965151",
+          "relative_position_base64": "AKyvrekK3hdB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "14b6f44d-ad37-438f-a60c-cbafd3de555f",
+            "hash": "fe37e6cc00f2c646149d78b4655c682921e04d5f4e4e81bfc9defb1070d1d5a6"
+          },
+          {
+            "block_id": "8fab4cb9-ccb9-4492-97bc-e6edf20cae68",
+            "hash": "e9d1327fb029b5bf68c43b1099bf8274ba09590caf00c2a598f775c6f93aba3b"
+          },
+          {
+            "block_id": "aa818aed-bbe8-4f62-aae8-8d7bb83451c6",
+            "hash": "f4493fd455bb2dd1f76e5aeba86c531c7f09fdfc397d1df48afd41c37d16b126"
+          },
+          {
+            "block_id": "f1011cd6-c682-4dcf-83fe-71c552d0008d",
+            "hash": "b7532fff7029197275e606d7b9e2ee05e3f15ad3efdfe23df67cf0c17e19c181"
+          },
+          {
+            "block_id": "231c28ec-6a1d-4288-8bbb-d65f3e004685",
+            "hash": "402d585f9ff5209437491bee1f70cae77bb0c6aa4ebfcf397c9751330e182424"
+          },
+          {
+            "block_id": "45df23c8-a302-4392-9fee-941af3965151",
+            "hash": "54a6a9fbe1c2e87061c63de030c268b3904e01a572aeb76892b773b0dea12da2"
+          }
+        ]
+      }
+    ]
+  },
+  "image_readback_sha256": "bd6fa7502cb26721b4550e6a2aafefe00c669874679bcfcd33b9da916e96958e",
+  "scope": "Verified Space direct-result narrative, limitations, native visual and hashes; no public deployment or overall completion."
+}

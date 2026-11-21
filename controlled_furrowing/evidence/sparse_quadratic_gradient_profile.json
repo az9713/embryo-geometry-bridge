@@ -1,0 +1,148 @@
+{
+  "scope": "One warmedCPUenergy+gradient evaluation at existingverified24gain0.5; profiling only, no optimization/modelchange; overheadnotwholejobtiming",
+  "self_CPU_us_total": 171284.00000000038,
+  "top_operators": [
+    {
+      "operator": "aten::mul",
+      "self_CPU_us": 15637.400000000202,
+      "CPU_total_us": 17446.100000000188,
+      "count": 1564,
+      "fraction_of_profiled_self_CPU": 0.09129515891735461
+    },
+    {
+      "operator": "aten::copy_",
+      "self_CPU_us": 11969.599999999711,
+      "CPU_total_us": 11969.599999999711,
+      "count": 1221,
+      "fraction_of_profiled_self_CPU": 0.06988160014945753
+    },
+    {
+      "operator": "aten::sum",
+      "self_CPU_us": 10553.199999999972,
+      "CPU_total_us": 12144.099999999968,
+      "count": 340,
+      "fraction_of_profiled_self_CPU": 0.06161229303379153
+    },
+    {
+      "operator": "aten::add_",
+      "self_CPU_us": 10531.400000000189,
+      "CPU_total_us": 10531.400000000189,
+      "count": 387,
+      "fraction_of_profiled_self_CPU": 0.06148501903271856
+    },
+    {
+      "operator": "aten::as_strided",
+      "self_CPU_us": 5830.000000001001,
+      "CPU_total_us": 5830.000000001001,
+      "count": 3207,
+      "fraction_of_profiled_self_CPU": 0.03403703790196976
+    },
+    {
+      "operator": "aten::add",
+      "self_CPU_us": 5403.100000000102,
+      "CPU_total_us": 6092.000000000082,
+      "count": 349,
+      "fraction_of_profiled_self_CPU": 0.03154468601854283
+    },
+    {
+      "operator": "aten::pow",
+      "self_CPU_us": 5323.9999999994125,
+      "CPU_total_us": 6409.899999999963,
+      "count": 388,
+      "fraction_of_profiled_self_CPU": 0.031082879895374938
+    },
+    {
+      "operator": "aten::bmm",
+      "self_CPU_us": 5153.900000000067,
+      "CPU_total_us": 5243.700000000103,
+      "count": 201,
+      "fraction_of_profiled_self_CPU": 0.030089792391583894
+    },
+    {
+      "operator": "aten::permute",
+      "self_CPU_us": 4490.799999999792,
+      "CPU_total_us": 5486.100000000079,
+      "count": 806,
+      "fraction_of_profiled_self_CPU": 0.026218444221292016
+    },
+    {
+      "operator": "aten::einsum",
+      "self_CPU_us": 3785.700000000199,
+      "CPU_total_us": 22010.999999999993,
+      "count": 101,
+      "fraction_of_profiled_self_CPU": 0.022101889259943663
+    },
+    {
+      "operator": "aten::_to_copy",
+      "self_CPU_us": 3659.8000000003058,
+      "CPU_total_us": 6816.300000000228,
+      "count": 535,
+      "fraction_of_profiled_self_CPU": 0.02136685271245591
+    },
+    {
+      "operator": "autograd::engine::evaluate_function: MulBackward0",
+      "self_CPU_us": 3208.200000000157,
+      "CPU_total_us": 17629.000000000146,
+      "count": 342,
+      "fraction_of_profiled_self_CPU": 0.01873029588286209
+    },
+    {
+      "operator": "aten::_linalg_det",
+      "self_CPU_us": 3177.199999999775,
+      "CPU_total_us": 15405.700000000057,
+      "count": 48,
+      "fraction_of_profiled_self_CPU": 0.01854930991802952
+    },
+    {
+      "operator": "aten::div",
+      "self_CPU_us": 3109.70000000003,
+      "CPU_total_us": 5025.40000000008,
+      "count": 302,
+      "fraction_of_profiled_self_CPU": 0.018155227575255267
+    },
+    {
+      "operator": "aten::linalg_lu_solve",
+      "self_CPU_us": 3083.8000000002503,
+      "CPU_total_us": 7176.1000000000495,
+      "count": 48,
+      "fraction_of_profiled_self_CPU": 0.01800401672076927
+    },
+    {
+      "operator": "aten::unsqueeze",
+      "self_CPU_us": 2857.299999999994,
+      "CPU_total_us": 3490.400000000047,
+      "count": 501,
+      "fraction_of_profiled_self_CPU": 0.01668165152612029
+    },
+    {
+      "operator": "aten::reshape",
+      "self_CPU_us": 2754.800000000525,
+      "CPU_total_us": 13662.70000000023,
+      "count": 604,
+      "fraction_of_profiled_self_CPU": 0.016083230190797267
+    },
+    {
+      "operator": "aten::cat",
+      "self_CPU_us": 2636.000000000029,
+      "CPU_total_us": 2655.200000000026,
+      "count": 5,
+      "fraction_of_profiled_self_CPU": 0.015389645267509069
+    },
+    {
+      "operator": "aten::linalg_lu_factor_ex",
+      "self_CPU_us": 2388.900000000058,
+      "CPU_total_us": 3438.900000000047,
+      "count": 48,
+      "fraction_of_profiled_self_CPU": 0.013947011980103527
+    },
+    {
+      "operator": "LinalgDetBackward0",
+      "self_CPU_us": 2117.200000000201,
+      "CPU_total_us": 19301.499999999927,
+      "count": 48,
+      "fraction_of_profiled_self_CPU": 0.012360757572220384
+    }
+  ],
+  "input_sha256": "5d1b45552583f9fb20090efe5059410b6cc8e235a28a928f31ee23e13438c4ef",
+  "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9"
+}

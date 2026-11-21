@@ -1,0 +1,159 @@
+{
+  "observations": [
+    {
+      "status": "RUNNING",
+      "age_seconds": 893.8181638717651,
+      "RSS_bytes": 646078464,
+      "CPU_seconds": 861.546875,
+      "last_verified_gain": 1.0,
+      "attempts": [
+        {
+          "gain": 5.0,
+          "accepted": false,
+          "force": 0.12397344176064756
+        }
+      ]
+    },
+    {
+      "status": "RUNNING",
+      "age_seconds": 1052.4811379909515,
+      "RSS_bytes": 658567168,
+      "CPU_seconds": 1014.34375,
+      "last_verified_gain": 1.0,
+      "attempts": [
+        {
+          "gain": 5.0,
+          "accepted": false,
+          "force": 0.12397344176064756
+        }
+      ]
+    },
+    {
+      "status": "RUNNING",
+      "age_seconds": 1420.049828529358,
+      "RSS_bytes": 661585920,
+      "CPU_seconds": 1370.84375,
+      "last_verified_gain": 2.0,
+      "attempts": [
+        {
+          "gain": 5.0,
+          "accepted": false,
+          "force": 0.12397344176064756
+        },
+        {
+          "gain": 3.0,
+          "accepted": false,
+          "force": 0.01942876546956396
+        },
+        {
+          "gain": 2.0,
+          "accepted": true,
+          "force": 3.471477960778277e-12
+        }
+      ]
+    },
+    {
+      "status": "RUNNING",
+      "age_seconds": 1758.8461601734161,
+      "RSS_bytes": 664903680,
+      "CPU_seconds": 1700.75,
+      "last_verified_gain": 3.0,
+      "attempts": [
+        {
+          "gain": 5.0,
+          "accepted": false,
+          "force": 0.12397344176064756
+        },
+        {
+          "gain": 3.0,
+          "accepted": false,
+          "force": 0.01942876546956396
+        },
+        {
+          "gain": 2.0,
+          "accepted": true,
+          "force": 3.471477960778277e-12
+        },
+        {
+          "gain": 3.0,
+          "accepted": true,
+          "force": 3.712976445941797e-12
+        }
+      ]
+    },
+    {
+      "status": "RUNNING",
+      "age_seconds": 1906.9599089622498,
+      "RSS_bytes": 656588800,
+      "CPU_seconds": 1845.328125,
+      "last_verified_gain": 5.0,
+      "attempts": [
+        {
+          "gain": 5.0,
+          "accepted": false,
+          "force": 0.12397344176064756
+        },
+        {
+          "gain": 3.0,
+          "accepted": false,
+          "force": 0.01942876546956396
+        },
+        {
+          "gain": 2.0,
+          "accepted": true,
+          "force": 3.471477960778277e-12
+        },
+        {
+          "gain": 3.0,
+          "accepted": true,
+          "force": 3.712976445941797e-12
+        },
+        {
+          "gain": 5.0,
+          "accepted": true,
+          "force": 3.860008788839943e-12
+        }
+      ]
+    },
+    {
+      "status": "RUNNING",
+      "age_seconds": 2094.1102480888367,
+      "RSS_bytes": 656584704,
+      "CPU_seconds": 2027.03125,
+      "last_verified_gain": 5.0,
+      "attempts": [
+        {
+          "gain": 10.0,
+          "accepted": false,
+          "force": 0.005803911951043432
+        }
+      ]
+    },
+    {
+      "status": "RUNNING",
+      "age_seconds": 2262.15519118309,
+      "RSS_bytes": 648781824,
+      "CPU_seconds": 2190.140625,
+      "last_verified_gain": 7.5,
+      "attempts": [
+        {
+          "gain": 10.0,
+          "accepted": false,
+          "force": 0.005803911951043432
+        },
+        {
+          "gain": 7.5,
+          "accepted": true,
+          "force": 4.82959668351296e-12
+        }
+      ]
+    }
+  ],
+  "final_status": {
+    "status": "FINISHED",
+    "all_targets_reached": true,
+    "pid": 29600,
+    "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9"
+  },
+  "session_completion": "exec39876 exit0; PID29600no longer running after successful completion"
+}

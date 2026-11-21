@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ROOT-BODY-GEOMETRY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Whole-body geometry of the certified discrete root</h1>
+<p><strong>The previously certified weak-load root now lies inside a nodal-coordinate box whose every field has positive whole-element Jacobian and is globally injective.</strong> This is stronger than checking Jacobians only at the integration points. It remains a certificate for one finite-dimensional target, not continuum accuracy, biological validity, material inference or a proof about the seventeen new calibration fields.</p>
+<p>The <a href="../scripts/root_body_geometry.py">implementation</a>, <a href="../evidence/root_body_geometry_synthetics.json">exact synthetic checks</a> and <a href="../../OMITTED.html?path=controlled_furrowing/evidence/root_body_geometry_verification.json">actual application</a> are retained. The <a href="ROOT-BODY-GEOMETRY-REVIEW.html">independent review</a> must verify the formulas, axis treatment, global argument and actual source bindings before this result is used elsewhere.</p>
+<h2>1. Use the root ball rather than the rounded stored field</h2>
+<p>The <a href="ALGEBRAIC-ROOT-INDEPENDENT-REVIEW.html">independent interval-AD proof</a> encloses an exact root in the free-coordinate infinity ball around the archived vector. The geometric center uses exact binary reference coordinates plus exact binary displacement values. Each free coordinate has radius at least the larger of the two retained root-distance bounds, approximately <span class="math" data-tex="2.625447\times10^{-12}"></span>; fixed coordinates have radius zero.</p>
+<p>This avoids treating the separately rounded <code>current_nodes</code> array as the exact center. The application checks the root certificate/review hashes, cache digest, reference/vector agreement and the actual free-index map. The exact geometric result then covers every coordinate choice in that box, including the certified root.</p>
+<h2>2. Bound every Jacobian, including between quadrature points</h2>
+<p>On a reference meridional triangle, let <span class="math" data-tex="(\xi,\eta)"></span> be affine coordinates and let the current map be quadratic:</p>
+<div class="math display" data-tex="
+ Y(\xi,\eta)=\sum_{a=0}^{5}N_a(\xi,\eta)Y_a,
+ \qquad F_m=\frac{\partial Y}{\partial(\xi,\eta)}D_X^{-1}.
+"></div>
+
+<p>Every entry of <span class="math" data-tex="G=\partial Y/\partial(\xi,\eta)"></span> is affine, so its degree-one Bernstein controls are its three vertex values <span class="math" data-tex="G^0,G^1,G^2"></span>. The meridional determinant has degree two. For a diagonal degree-two index its control is</p>
+<div class="math display" data-tex="
+ d_{2e_i}=\frac{G^i_{00}G^i_{11}-G^i_{01}G^i_{10}}{\det D_X};
+"></div>
+
+<p>for <span class="math" data-tex="i\ne j"></span>, it is</p>
+<div class="math display" data-tex="
+ d_{e_i+e_j}=\frac{
+ G^i_{00}G^j_{11}+G^j_{00}G^i_{11}
+ -G^i_{01}G^j_{10}-G^j_{01}G^i_{10}}
+ {2\det D_X}.
+"></div>
+
+<p>All arithmetic uses rational intervals containing every permitted nodal value. Interval dependencies may enlarge bounds; they do not discard allowed fields.</p>
+<p>The radius R also has degree-two controls: the vertex radii, and</p>
+<div class="math display" data-tex="
+ R_{e_i+e_j}=2R_{m_{ij}}-\frac{R_i+R_j}{2}.
+"></div>
+
+<p>This direct conversion preserves exactly fixed zeros along the axis. Computing a power polynomial first and relying on interval cancellation could lose them.</p>
+<p>The axisymmetric Jacobian is <span class="math" data-tex="J=\det(F_m)R/r"></span>. Its numerator has degree four, with controls</p>
+<div class="math display" data-tex="
+ n_\gamma=\sum_{\alpha+\beta=\gamma}
+ \frac{\binom2\alpha\binom2\beta}{\binom4\gamma}
+ d_\alpha R_\beta.
+"></div>
+
+<p>The reference radius elevated to degree four has controls</p>
+<div class="math display" data-tex="
+ r_\gamma=\sum_{i=0}^2\frac{\gamma_i}{4}r_i.
+"></div>
+
+<p>For <span class="math" data-tex="r_\gamma&gt;0"></span>, bound <span class="math" data-tex="n_\gamma/r_\gamma"></span>. For <span class="math" data-tex="r_\gamma=0"></span>, require the complete numerator interval to be exactly zero. Bernstein basis functions are nonnegative, so for <span class="math" data-tex="r&gt;0"></span>, J is a positive-weight average of these coefficient ratios. Their minimum lower and maximum upper endpoints therefore enclose J everywhere in the triangle. Exact axis preservation gives the corresponding positive axis limit. Classical differentiability on the three-dimensional axis is not assumed merely from this limit.</p>
+<h2>3. Prove global injectivity for every field in the box</h2>
+<p>Positive local Jacobians alone do not establish global noninterpenetration. Let</p>
+<div class="math display" data-tex="
+ S=\tfrac12(F_m+F_m^T)=
+ \begin{pmatrix}a&amp;b\\b&amp;d\end{pmatrix}.
+"></div>
+
+<p>At each triangle vertex, interval bounds certify <span class="math" data-tex="a&gt;0"></span> and <span class="math" data-tex="ad-b^2&gt;0"></span>. The bound for <span class="math" data-tex="b^2"></span> handles intervals crossing zero. For every admissible matrix,</p>
+<div class="math display" data-tex="
+ \lambda_{\min}(S)=\frac{\det S}{\lambda_{\max}(S)}
+ \ge\frac{\underline{\det S}}{\overline a+\overline d}&gt;0.
+"></div>
+
+<p>Because <span class="math" data-tex="F_m"></span>, and therefore S, is affine within a P2 triangle, vertex bounds extend throughout the triangle by convexity. Taking the smallest bound over the mesh gives <span class="math" data-tex="S\succeq mI"></span>, with <span class="math" data-tex="m&gt;0"></span>, uniformly for the entire nodal box.</p>
+<p>The reference meridian is a convex rectangle with conforming traces. Integrating the directional derivative along any segment gives</p>
+<div class="math display" data-tex="
+ (Y(x)-Y(y))\cdot(x-y)\ge m\lVert x-y\rVert^2.
+"></div>
+
+<p>Thus distinct meridional points cannot coincide. Also <span class="math" data-tex="\partial_rR\ge m"></span> and <span class="math" data-tex="R(0,z)=0"></span>, so <span class="math" data-tex="R(r,z)\ge mr&gt;0"></span> for interior radii. Exact axis preservation and this positive radius make the axisymmetric revolution injective as well. This argument covers the whole box; it does not infer a physical branch-selection or energetic-stability theorem.</p>
+<h2>4. Actual receipt and scope</h2>
+<p>The actual root application covers all <strong>144 triangles</strong>, with a positive whole-body J enclosure and positive uniform meridional monotonicity constant. Exact rational endpoints are in the receipt; the visual shows their numerical values without presenting them as measured tissue data.</p>
+<p><img alt="Whole-element Jacobian bounds for the certified root box" src="assets/root_body_geometry.png" /></p>
+<p>The generic <code>certify_box</code> function can also check a box produced by a future uniform parameter-cell root enclosure. It supplies no such root enclosure by itself. An unresolved geometric test is not a proof of inversion. Missing continuum, integration, source-observation and full compatible-set requirements remain explicit under the <a href="../PLAN.md">original five-gate plan</a>.</p>
+<p>An initial synthetic test used an incorrect expected negative-product range; the exact arithmetic implementation was correct. The failed test, source version and correction are retained under <code>runs/root_body_geometry/first_test_failure/</code> before any actual root application. The standard Bernstein and strong-monotonicity arguments are not a novelty claim.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

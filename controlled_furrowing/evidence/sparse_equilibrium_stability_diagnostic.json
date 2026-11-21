@@ -1,0 +1,76 @@
+{
+  "protocol": {
+    "scope": "Floating arithmetic Hessian curvature/inertia diagnostic only, not a rigorous true Hessian or PDE stability certificate; no optimization or target fit.",
+    "threshold": "100*machine_epsilon*matrix_infinity_norm for inertia zero classification; eigenpair residual<1e-8 relative.",
+    "inputs": [
+      "runs/joint_refinement/final.json",
+      "runs/sparse_quadratic/24x12_lambda5000/gain_10.0/final.json"
+    ],
+    "eigensolver": "Sparse shift-invert near zero; numerical dense symmetric LDL inertia independently determines sign counts.",
+    "force_tolerance": 1e-07,
+    "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9"
+  },
+  "rows": [
+    {
+      "mesh": "16x8",
+      "input": "runs/joint_refinement/final.json",
+      "field_sha256": "276ffb297135a138e030fcf8b585b6f0b3dd1df1aba293377b12a669bdfa5ffd",
+      "seconds": 2.1860347000183538,
+      "matrix_infinity_norm": 51263.77650225471,
+      "LDL_sign_tolerance": 1.138284500040825e-09,
+      "LDL_inertia": {
+        "negative": 0,
+        "near_zero": 0,
+        "positive": 1071
+      },
+      "LDL_relative_reconstruction_residual": 9.779535991206983e-16,
+      "near_zero_eigenvalues": [
+        0.0006283070532184631,
+        0.002775950526118028,
+        0.004554806022062359
+      ],
+      "eigenpair_relative_residuals": [
+        1.4084571537155864e-09,
+        4.5418271915533025e-10,
+        2.3077978371706397e-10
+      ],
+      "independent_AD_smallest_pair_relative_residual": 1.377997059998199e-09,
+      "raw_hessian_asymmetry_linf": 3.637978807091713e-12,
+      "force_linf": 3.097230317269245e-12,
+      "negative_direction_energy_replays": [],
+      "interpretation": "Numerically positive definite discrete Hessian at this saved field."
+    },
+    {
+      "mesh": "24x12",
+      "input": "runs/sparse_quadratic/24x12_lambda5000/gain_10.0/final.json",
+      "field_sha256": "379dfef2dc7326e7e52b6e29f4b7e06a1de578a62b8d78bbc821bfe712542bd6",
+      "seconds": 6.639152799994918,
+      "matrix_infinity_norm": 55686.29841567982,
+      "LDL_sign_tolerance": 1.2364842131447022e-09,
+      "LDL_inertia": {
+        "negative": 0,
+        "near_zero": 0,
+        "positive": 2375
+      },
+      "LDL_relative_reconstruction_residual": 1.0902125144695387e-15,
+      "near_zero_eigenvalues": [
+        0.00026126107310645263,
+        0.00116968699392112,
+        0.0017176117685392918
+      ],
+      "eigenpair_relative_residuals": [
+        3.4050670625752588e-09,
+        1.2274462488975593e-09,
+        5.998133837362507e-10
+      ],
+      "independent_AD_smallest_pair_relative_residual": 3.3719845950105197e-09,
+      "raw_hessian_asymmetry_linf": 7.275957614183426e-12,
+      "force_linf": 4.6402418379617484e-12,
+      "negative_direction_energy_replays": [],
+      "interpretation": "Numerically positive definite discrete Hessian at this saved field."
+    }
+  ],
+  "status": "COMPLETE",
+  "script_sha256": "5fb113f91692689aa35083806520452bf7daa33e1e9dcaecf4915b25610aeefd",
+  "scope": "Numerical discrete equilibrium curvature diagnostic only. No rigorous stability, continuum error, global minimum or branch uniqueness theorem."
+}

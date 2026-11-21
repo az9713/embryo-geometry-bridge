@@ -1,0 +1,86 @@
+{
+  "UTC": "2026-11-19T11:35:01.680324+00:00",
+  "scope": "No new optimization, target data or gain fit. All observer variants and all mesh comparisons retained.",
+  "input_fields": {
+    "12": {
+      "file": "runs/activated_quadrature/lambda_5000.0_strength_10.0/reequilibrated.json",
+      "sha256": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50"
+    },
+    "16": {
+      "file": "runs/joint_refinement/final.json",
+      "sha256": "276ffb297135a138e030fcf8b585b6f0b3dd1df1aba293377b12a669bdfa5ffd"
+    },
+    "24": {
+      "file": "runs/sparse_quadratic/24x12_lambda5000/gain_10.0/final.json",
+      "sha256": "379dfef2dc7326e7e52b6e29f4b7e06a1de578a62b8d78bbc821bfe712542bd6"
+    }
+  },
+  "length_unit_um": {
+    "numerator": 67,
+    "denominator": 2,
+    "display": 33.5
+  },
+  "current_radius_ROI_um": [
+    {
+      "numerator": 0,
+      "denominator": 1,
+      "display": 0.0
+    },
+    {
+      "numerator": 337053732898705073,
+      "denominator": 36028797018963968,
+      "display": 9.35512037
+    }
+  ],
+  "ROI_rule": "Same fixed registered current-radius [0,initial_patch_radius*length_unit], not material transport or measured PIV registration.",
+  "references_um": {
+    "apical": {
+      "numerator": 67,
+      "denominator": 2,
+      "display": 33.5
+    },
+    "basal": {
+      "numerator": 0,
+      "denominator": 1,
+      "display": 0.0
+    }
+  },
+  "variants": [
+    [
+      "current_radial_line",
+      "spatial_max"
+    ],
+    [
+      "current_radial_line",
+      "regional_mean"
+    ],
+    [
+      "current_disk",
+      "spatial_max"
+    ],
+    [
+      "current_disk",
+      "regional_mean"
+    ]
+  ],
+  "observer_maximum_reporting_width_um": {
+    "numerator": 1,
+    "denominator": 1000,
+    "display": 0.001
+  },
+  "curve_sup_reporting_width_um": {
+    "numerator": 1,
+    "denominator": 1000,
+    "display": 0.001
+  },
+  "curve_sup_maximum_cells": 16384,
+  "not_acceptance_tolerance": "Reporting resolution is not an experimental or continuum accuracy threshold.",
+  "integration_policy": {
+    "volume_duffy_gauss_order": 8,
+    "surface_gauss_order": 12,
+    "volume_chunk_triangles": 12
+  },
+  "source_sha256": "1239db0944bcb7e54a740b72056ce8804139ea0068ab5ea789c791e248518433",
+  "observer_sha256": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926",
+  "comparison_helper_sha256": "78295655c236d465a4c4ac9d324c9d810d23359855e7d54761496535ffe0d8a2"
+}

@@ -1,0 +1,3419 @@
+{
+  "status": "PASS exact deterministic bounds and independent checks; not a statistical noise estimate",
+  "scope": "17 small-only records; no larger outcomes or spatial solver read",
+  "script_sha256": "5a36eb63fc6f10bff86d8324462910ea7c02430a4e72ce69c6272b38af6fb464",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.2.6"
+  },
+  "source_hashes_before_after_equal": {
+    "data/derived/calibration_small_18um.csv": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+    "data/raw/primary.xml": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7",
+    "data/raw/41467_2025_62483_MOESM16_ESM.xlsx": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d",
+    "data/raw/41467_2025_62483_MOESM15_ESM.pdf": "c763858c27d4383f02547dd4bf2ca2d8730575a95143144c47fd2340f3d5ab0d",
+    "data/raw/41467_2025_62483_MOESM1_ESM.pdf": "b3639ea26a0bcb8c822b517a00e7954b046640a7c24d5e791df40aacac62d656"
+  },
+  "published_decimal_workbook_crosschecks": [
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!B4",
+      "canonical_csv_decimal": "0.14801043",
+      "exact_OOXML_numeric_token": "0.14801043",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!B4",
+      "canonical_csv_decimal": "3.10888252",
+      "exact_OOXML_numeric_token": "3.1088825199999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!B5",
+      "canonical_csv_decimal": "0.60944403",
+      "exact_OOXML_numeric_token": "0.60944403000000003",
+      "OOXML_minus_CSV_decimal": "3E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!B4",
+      "canonical_csv_decimal": "3",
+      "exact_OOXML_numeric_token": "3",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!B5",
+      "canonical_csv_decimal": "0.48710602",
+      "exact_OOXML_numeric_token": "0.48710601999999997",
+      "OOXML_minus_CSV_decimal": "-3E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!O4",
+      "canonical_csv_decimal": "0.27583779",
+      "exact_OOXML_numeric_token": "0.27583779000000003",
+      "OOXML_minus_CSV_decimal": "3E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!O4",
+      "canonical_csv_decimal": "2.41505646",
+      "exact_OOXML_numeric_token": "2.4150564600000002",
+      "OOXML_minus_CSV_decimal": "2E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!O5",
+      "canonical_csv_decimal": "0",
+      "exact_OOXML_numeric_token": "0",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!O4",
+      "canonical_csv_decimal": "2",
+      "exact_OOXML_numeric_token": "2",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!O5",
+      "canonical_csv_decimal": "0.41505646",
+      "exact_OOXML_numeric_token": "0.41505646000000002",
+      "OOXML_minus_CSV_decimal": "2E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!C4",
+      "canonical_csv_decimal": "0.32718904",
+      "exact_OOXML_numeric_token": "0.32718903999999999",
+      "OOXML_minus_CSV_decimal": "-1E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!C4",
+      "canonical_csv_decimal": "4.86152372",
+      "exact_OOXML_numeric_token": "4.8615237200000001",
+      "OOXML_minus_CSV_decimal": "1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!C5",
+      "canonical_csv_decimal": "1.3129681",
+      "exact_OOXML_numeric_token": "1.3129681",
+      "OOXML_minus_CSV_decimal": "0E-7"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!C4",
+      "canonical_csv_decimal": "4",
+      "exact_OOXML_numeric_token": "4",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!C5",
+      "canonical_csv_decimal": "0.86152372",
+      "exact_OOXML_numeric_token": "0.86152371999999999",
+      "OOXML_minus_CSV_decimal": "-1E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!F4",
+      "canonical_csv_decimal": "0.46402059",
+      "exact_OOXML_numeric_token": "0.46402059000000001",
+      "OOXML_minus_CSV_decimal": "1E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!F4",
+      "canonical_csv_decimal": "7.64808362",
+      "exact_OOXML_numeric_token": "7.6480836200000004",
+      "OOXML_minus_CSV_decimal": "4E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!F5",
+      "canonical_csv_decimal": "2.64638352",
+      "exact_OOXML_numeric_token": "2.6463835200000001",
+      "OOXML_minus_CSV_decimal": "1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!F4",
+      "canonical_csv_decimal": "6",
+      "exact_OOXML_numeric_token": "6",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!F5",
+      "canonical_csv_decimal": "3.64808362",
+      "exact_OOXML_numeric_token": "3.64808362",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!I4",
+      "canonical_csv_decimal": "0.47133397",
+      "exact_OOXML_numeric_token": "0.47133396999999999",
+      "OOXML_minus_CSV_decimal": "-1E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!I4",
+      "canonical_csv_decimal": "1.38419619",
+      "exact_OOXML_numeric_token": "1.3841961899999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!I5",
+      "canonical_csv_decimal": "0.46946903",
+      "exact_OOXML_numeric_token": "0.46946903000000001",
+      "OOXML_minus_CSV_decimal": "1E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!I4",
+      "canonical_csv_decimal": "0",
+      "exact_OOXML_numeric_token": "0",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!I5",
+      "canonical_csv_decimal": "1.38419619",
+      "exact_OOXML_numeric_token": "1.3841961899999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!D4",
+      "canonical_csv_decimal": "0.6924031",
+      "exact_OOXML_numeric_token": "0.69240310000000005",
+      "OOXML_minus_CSV_decimal": "5E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!D4",
+      "canonical_csv_decimal": "8.31533939",
+      "exact_OOXML_numeric_token": "8.3153393900000001",
+      "OOXML_minus_CSV_decimal": "1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!D5",
+      "canonical_csv_decimal": "4.14594574",
+      "exact_OOXML_numeric_token": "4.1459457400000002",
+      "OOXML_minus_CSV_decimal": "2E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!D4",
+      "canonical_csv_decimal": "6",
+      "exact_OOXML_numeric_token": "6",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!D5",
+      "canonical_csv_decimal": "2.31533939",
+      "exact_OOXML_numeric_token": "2.3153393900000001",
+      "OOXML_minus_CSV_decimal": "1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!N4",
+      "canonical_csv_decimal": "0.71523649",
+      "exact_OOXML_numeric_token": "0.71523649",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!N4",
+      "canonical_csv_decimal": "6.70026326",
+      "exact_OOXML_numeric_token": "6.7002632599999998",
+      "OOXML_minus_CSV_decimal": "-2E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!N5",
+      "canonical_csv_decimal": "2.83450732",
+      "exact_OOXML_numeric_token": "2.8345073200000002",
+      "OOXML_minus_CSV_decimal": "2E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!N4",
+      "canonical_csv_decimal": "8",
+      "exact_OOXML_numeric_token": "8",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!N5",
+      "canonical_csv_decimal": "1.40052651",
+      "exact_OOXML_numeric_token": "1.4005265099999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!Q4",
+      "canonical_csv_decimal": "0.75547653",
+      "exact_OOXML_numeric_token": "0.75547653000000003",
+      "OOXML_minus_CSV_decimal": "3E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!Q4",
+      "canonical_csv_decimal": "4.9233871",
+      "exact_OOXML_numeric_token": "4.9233871000000002",
+      "OOXML_minus_CSV_decimal": "2E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!Q5",
+      "canonical_csv_decimal": "1.51460771",
+      "exact_OOXML_numeric_token": "1.5146077099999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!Q4",
+      "canonical_csv_decimal": "4",
+      "exact_OOXML_numeric_token": "4",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!Q5",
+      "canonical_csv_decimal": "1.16532258",
+      "exact_OOXML_numeric_token": "1.16532258",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!M4",
+      "canonical_csv_decimal": "0.78208913",
+      "exact_OOXML_numeric_token": "0.78208913000000002",
+      "OOXML_minus_CSV_decimal": "2E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!M4",
+      "canonical_csv_decimal": "12",
+      "exact_OOXML_numeric_token": "12",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!M5",
+      "canonical_csv_decimal": "3.92284008",
+      "exact_OOXML_numeric_token": "3.9228400799999998",
+      "OOXML_minus_CSV_decimal": "-2E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!M4",
+      "canonical_csv_decimal": "12",
+      "exact_OOXML_numeric_token": "12",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!M5",
+      "canonical_csv_decimal": "2.27398524",
+      "exact_OOXML_numeric_token": "2.27398524",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!P4",
+      "canonical_csv_decimal": "0.80580697",
+      "exact_OOXML_numeric_token": "0.80580697000000001",
+      "OOXML_minus_CSV_decimal": "1E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!P4",
+      "canonical_csv_decimal": "5.83168051",
+      "exact_OOXML_numeric_token": "5.83168051",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!P5",
+      "canonical_csv_decimal": "2.79789867",
+      "exact_OOXML_numeric_token": "2.7978986699999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!P4",
+      "canonical_csv_decimal": "6",
+      "exact_OOXML_numeric_token": "6",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!P5",
+      "canonical_csv_decimal": "1.97909408",
+      "exact_OOXML_numeric_token": "1.9790940800000001",
+      "OOXML_minus_CSV_decimal": "1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!H4",
+      "canonical_csv_decimal": "0.82160217",
+      "exact_OOXML_numeric_token": "0.82160217000000002",
+      "OOXML_minus_CSV_decimal": "2E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!H4",
+      "canonical_csv_decimal": "10.49577729",
+      "exact_OOXML_numeric_token": "10.495777289999999",
+      "OOXML_minus_CSV_decimal": "-1E-15"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!H5",
+      "canonical_csv_decimal": "6.90779095",
+      "exact_OOXML_numeric_token": "6.9077909499999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!H4",
+      "canonical_csv_decimal": "9",
+      "exact_OOXML_numeric_token": "9",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!H5",
+      "canonical_csv_decimal": "4.36972161",
+      "exact_OOXML_numeric_token": "4.36972161",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!R4",
+      "canonical_csv_decimal": "0.85073705",
+      "exact_OOXML_numeric_token": "0.85073704999999999",
+      "OOXML_minus_CSV_decimal": "-1E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!R4",
+      "canonical_csv_decimal": "10.36677116",
+      "exact_OOXML_numeric_token": "10.366771160000001",
+      "OOXML_minus_CSV_decimal": "1E-15"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!R5",
+      "canonical_csv_decimal": "4.87520446",
+      "exact_OOXML_numeric_token": "4.87520446",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!R4",
+      "canonical_csv_decimal": "9",
+      "exact_OOXML_numeric_token": "9",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!R5",
+      "canonical_csv_decimal": "3.36677116",
+      "exact_OOXML_numeric_token": "3.3667711599999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!E4",
+      "canonical_csv_decimal": "0.97607953",
+      "exact_OOXML_numeric_token": "0.97607953000000003",
+      "OOXML_minus_CSV_decimal": "3E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!E4",
+      "canonical_csv_decimal": "9.22752704",
+      "exact_OOXML_numeric_token": "9.22752704",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!E5",
+      "canonical_csv_decimal": "6.89165798",
+      "exact_OOXML_numeric_token": "6.8916579799999997",
+      "OOXML_minus_CSV_decimal": "-3E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!E4",
+      "canonical_csv_decimal": "8",
+      "exact_OOXML_numeric_token": "8",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!E5",
+      "canonical_csv_decimal": "3.63670272",
+      "exact_OOXML_numeric_token": "3.6367027200000002",
+      "OOXML_minus_CSV_decimal": "2E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!J4",
+      "canonical_csv_decimal": "0.98739488",
+      "exact_OOXML_numeric_token": "0.98739487999999997",
+      "OOXML_minus_CSV_decimal": "-3E-17"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!J4",
+      "canonical_csv_decimal": "7.72032047",
+      "exact_OOXML_numeric_token": "7.7203204699999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!J5",
+      "canonical_csv_decimal": "4.31605203",
+      "exact_OOXML_numeric_token": "4.3160520299999998",
+      "OOXML_minus_CSV_decimal": "-2E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!J4",
+      "canonical_csv_decimal": "8",
+      "exact_OOXML_numeric_token": "8",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!J5",
+      "canonical_csv_decimal": "2.72032047",
+      "exact_OOXML_numeric_token": "2.7203204699999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!G4",
+      "canonical_csv_decimal": "1.04731044",
+      "exact_OOXML_numeric_token": "1.04731044",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!G4",
+      "canonical_csv_decimal": "12.73324306",
+      "exact_OOXML_numeric_token": "12.73324306",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!G5",
+      "canonical_csv_decimal": "6.04118444",
+      "exact_OOXML_numeric_token": "6.0411844400000003",
+      "OOXML_minus_CSV_decimal": "3E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!G4",
+      "canonical_csv_decimal": "13",
+      "exact_OOXML_numeric_token": "13",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!G5",
+      "canonical_csv_decimal": "3.46648612",
+      "exact_OOXML_numeric_token": "3.4664861199999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!K4",
+      "canonical_csv_decimal": "1.28898317",
+      "exact_OOXML_numeric_token": "1.2889831700000001",
+      "OOXML_minus_CSV_decimal": "1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!K4",
+      "canonical_csv_decimal": "12.62097162",
+      "exact_OOXML_numeric_token": "12.620971620000001",
+      "OOXML_minus_CSV_decimal": "1E-15"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!K5",
+      "canonical_csv_decimal": "8.38319196",
+      "exact_OOXML_numeric_token": "8.3831919599999996",
+      "OOXML_minus_CSV_decimal": "-4E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!K4",
+      "canonical_csv_decimal": "13",
+      "exact_OOXML_numeric_token": "13",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!K5",
+      "canonical_csv_decimal": "2.86291486",
+      "exact_OOXML_numeric_token": "2.8629148600000001",
+      "OOXML_minus_CSV_decimal": "1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!L4",
+      "canonical_csv_decimal": "1.51057344",
+      "exact_OOXML_numeric_token": "1.5105734399999999",
+      "OOXML_minus_CSV_decimal": "-1E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!L4",
+      "canonical_csv_decimal": "9.72802387",
+      "exact_OOXML_numeric_token": "9.7280238699999995",
+      "OOXML_minus_CSV_decimal": "-5E-16"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!L5",
+      "canonical_csv_decimal": "3.92613295",
+      "exact_OOXML_numeric_token": "3.92613295",
+      "OOXML_minus_CSV_decimal": "0E-8"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!L4",
+      "canonical_csv_decimal": "7",
+      "exact_OOXML_numeric_token": "7",
+      "OOXML_minus_CSV_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!L5",
+      "canonical_csv_decimal": "3.83566674",
+      "exact_OOXML_numeric_token": "3.8356667400000002",
+      "OOXML_minus_CSV_decimal": "2E-16"
+    }
+  ],
+  "synthetic_checks": {
+    "known_cases": 5,
+    "coverage": [
+      "monotone",
+      "descending",
+      "dose ties",
+      "negative observations",
+      "singleton"
+    ],
+    "pass": true
+  },
+  "monotone_observables": {
+    "maximum_shortening_um": {
+      "monotonicity": "declared conditional common-curve assumption; not a theorem for the full spatial FE maximum",
+      "delta_star_decimal_exact": "3.131943715",
+      "delta_star": {
+        "numerator": 626388743,
+        "denominator": 200000000,
+        "decimal_approximation": "3.131943715"
+      },
+      "OOXML_token_delta_star_decimal_exact": "3.13194371500000025",
+      "witness_pairs": [
+        {
+          "lower_dose_record": "optoGEF2_small_col_F",
+          "higher_dose_record": "optoGEF2_small_col_I",
+          "doses_exact": [
+            "0.46402059",
+            "0.47133397"
+          ],
+          "responses_um_exact": [
+            "7.64808362",
+            "1.38419619"
+          ],
+          "response_drop_um_exact": "6.26388743"
+        }
+      ],
+      "contracts": [
+        {
+          "delta": {
+            "numerator": 626388743,
+            "denominator": 200000000,
+            "decimal_approximation": "3.131943715"
+          },
+          "extra_over_floor": {
+            "numerator": 0,
+            "denominator": 1,
+            "decimal_approximation": "0"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "3.10888252",
+              "lower_um_exact": "-4612239/200000000",
+              "upper_um_exact": "903227981/200000000",
+              "midpoint_um_exact": "449307871/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "2.41505646",
+              "lower_um_exact": "-4612239/200000000",
+              "upper_um_exact": "903227981/200000000",
+              "midpoint_um_exact": "449307871/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "4.86152372",
+              "lower_um_exact": "345916001/200000000",
+              "upper_um_exact": "903227981/200000000",
+              "midpoint_um_exact": "624571991/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "7.64808362",
+              "lower_um_exact": "903227981/200000000",
+              "upper_um_exact": "903227981/200000000",
+              "midpoint_um_exact": "903227981/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "1.38419619",
+              "lower_um_exact": "903227981/200000000",
+              "upper_um_exact": "903227981/200000000",
+              "midpoint_um_exact": "903227981/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "8.31533939",
+              "lower_um_exact": "207335827/40000000",
+              "upper_um_exact": "1611066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "6.70026326",
+              "lower_um_exact": "207335827/40000000",
+              "upper_um_exact": "1611066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "4.9233871",
+              "lower_um_exact": "207335827/40000000",
+              "upper_um_exact": "1611066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "12",
+              "lower_um_exact": "1773611257/200000000",
+              "upper_um_exact": "358544969/40000000",
+              "midpoint_um_exact": "1783168051/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "5.83168051",
+              "lower_um_exact": "1773611257/200000000",
+              "upper_um_exact": "358544969/40000000",
+              "midpoint_um_exact": "1783168051/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "10.49577729",
+              "lower_um_exact": "1773611257/200000000",
+              "upper_um_exact": "2170452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "10.36677116",
+              "lower_um_exact": "1773611257/200000000",
+              "upper_um_exact": "2170452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "9.22752704",
+              "lower_um_exact": "1773611257/200000000",
+              "upper_um_exact": "2170452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "7.72032047",
+              "lower_um_exact": "1773611257/200000000",
+              "upper_um_exact": "2170452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "12.73324306",
+              "lower_um_exact": "1920259869/200000000",
+              "upper_um_exact": "2571993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "12.62097162",
+              "lower_um_exact": "1920259869/200000000",
+              "upper_um_exact": "2571993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "9.72802387",
+              "lower_um_exact": "1920259869/200000000",
+              "upper_um_exact": "2571993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 726388743,
+            "denominator": 200000000,
+            "decimal_approximation": "3.631943715"
+          },
+          "extra_over_floor": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal_approximation": "0.5"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "3.10888252",
+              "lower_um_exact": "-104612239/200000000",
+              "upper_um_exact": "1003227981/200000000",
+              "midpoint_um_exact": "449307871/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "2.41505646",
+              "lower_um_exact": "-104612239/200000000",
+              "upper_um_exact": "1003227981/200000000",
+              "midpoint_um_exact": "449307871/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "4.86152372",
+              "lower_um_exact": "245916001/200000000",
+              "upper_um_exact": "1003227981/200000000",
+              "midpoint_um_exact": "624571991/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "7.64808362",
+              "lower_um_exact": "803227981/200000000",
+              "upper_um_exact": "1003227981/200000000",
+              "midpoint_um_exact": "903227981/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "1.38419619",
+              "lower_um_exact": "803227981/200000000",
+              "upper_um_exact": "1003227981/200000000",
+              "midpoint_um_exact": "903227981/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "8.31533939",
+              "lower_um_exact": "187335827/40000000",
+              "upper_um_exact": "1711066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "6.70026326",
+              "lower_um_exact": "187335827/40000000",
+              "upper_um_exact": "1711066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "4.9233871",
+              "lower_um_exact": "187335827/40000000",
+              "upper_um_exact": "1711066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "12",
+              "lower_um_exact": "1673611257/200000000",
+              "upper_um_exact": "378544969/40000000",
+              "midpoint_um_exact": "1783168051/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "5.83168051",
+              "lower_um_exact": "1673611257/200000000",
+              "upper_um_exact": "378544969/40000000",
+              "midpoint_um_exact": "1783168051/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "10.49577729",
+              "lower_um_exact": "1673611257/200000000",
+              "upper_um_exact": "2270452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "10.36677116",
+              "lower_um_exact": "1673611257/200000000",
+              "upper_um_exact": "2270452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "9.22752704",
+              "lower_um_exact": "1673611257/200000000",
+              "upper_um_exact": "2270452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "7.72032047",
+              "lower_um_exact": "1673611257/200000000",
+              "upper_um_exact": "2270452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "12.73324306",
+              "lower_um_exact": "1820259869/200000000",
+              "upper_um_exact": "2671993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "12.62097162",
+              "lower_um_exact": "1820259869/200000000",
+              "upper_um_exact": "2671993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "9.72802387",
+              "lower_um_exact": "1820259869/200000000",
+              "upper_um_exact": "2671993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 826388743,
+            "denominator": 200000000,
+            "decimal_approximation": "4.131943715"
+          },
+          "extra_over_floor": {
+            "numerator": 1,
+            "denominator": 1,
+            "decimal_approximation": "1"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "3.10888252",
+              "lower_um_exact": "-204612239/200000000",
+              "upper_um_exact": "1103227981/200000000",
+              "midpoint_um_exact": "449307871/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "2.41505646",
+              "lower_um_exact": "-204612239/200000000",
+              "upper_um_exact": "1103227981/200000000",
+              "midpoint_um_exact": "449307871/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "4.86152372",
+              "lower_um_exact": "145916001/200000000",
+              "upper_um_exact": "1103227981/200000000",
+              "midpoint_um_exact": "624571991/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "7.64808362",
+              "lower_um_exact": "703227981/200000000",
+              "upper_um_exact": "1103227981/200000000",
+              "midpoint_um_exact": "903227981/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "1.38419619",
+              "lower_um_exact": "703227981/200000000",
+              "upper_um_exact": "1103227981/200000000",
+              "midpoint_um_exact": "903227981/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "8.31533939",
+              "lower_um_exact": "167335827/40000000",
+              "upper_um_exact": "1811066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "6.70026326",
+              "lower_um_exact": "167335827/40000000",
+              "upper_um_exact": "1811066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "4.9233871",
+              "lower_um_exact": "167335827/40000000",
+              "upper_um_exact": "1811066163/200000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "12",
+              "lower_um_exact": "1573611257/200000000",
+              "upper_um_exact": "398544969/40000000",
+              "midpoint_um_exact": "1783168051/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "5.83168051",
+              "lower_um_exact": "1573611257/200000000",
+              "upper_um_exact": "398544969/40000000",
+              "midpoint_um_exact": "1783168051/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "10.49577729",
+              "lower_um_exact": "1573611257/200000000",
+              "upper_um_exact": "2370452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "10.36677116",
+              "lower_um_exact": "1573611257/200000000",
+              "upper_um_exact": "2370452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "9.22752704",
+              "lower_um_exact": "1573611257/200000000",
+              "upper_um_exact": "2370452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "7.72032047",
+              "lower_um_exact": "1573611257/200000000",
+              "upper_um_exact": "2370452837/200000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "12.73324306",
+              "lower_um_exact": "1720259869/200000000",
+              "upper_um_exact": "2771993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "12.62097162",
+              "lower_um_exact": "1720259869/200000000",
+              "upper_um_exact": "2771993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "9.72802387",
+              "lower_um_exact": "1720259869/200000000",
+              "upper_um_exact": "2771993517/200000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 626388743,
+            "denominator": 100000000,
+            "decimal_approximation": "6.26388743"
+          },
+          "extra_over_floor": {
+            "numerator": 626388743,
+            "denominator": 200000000,
+            "decimal_approximation": "3.131943715"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "3.10888252",
+              "lower_um_exact": "-315500491/100000000",
+              "upper_um_exact": "382404181/50000000",
+              "midpoint_um_exact": "449307871/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "2.41505646",
+              "lower_um_exact": "-315500491/100000000",
+              "upper_um_exact": "382404181/50000000",
+              "midpoint_um_exact": "449307871/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "4.86152372",
+              "lower_um_exact": "-140236371/100000000",
+              "upper_um_exact": "382404181/50000000",
+              "midpoint_um_exact": "624571991/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "7.64808362",
+              "lower_um_exact": "138419619/100000000",
+              "upper_um_exact": "382404181/50000000",
+              "midpoint_um_exact": "903227981/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "1.38419619",
+              "lower_um_exact": "138419619/100000000",
+              "upper_um_exact": "382404181/50000000",
+              "midpoint_um_exact": "903227981/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "8.31533939",
+              "lower_um_exact": "51286299/25000000",
+              "upper_um_exact": "1118727453/100000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "6.70026326",
+              "lower_um_exact": "51286299/25000000",
+              "upper_um_exact": "1118727453/100000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "4.9233871",
+              "lower_um_exact": "51286299/25000000",
+              "upper_um_exact": "1118727453/100000000",
+              "midpoint_um_exact": "1323872649/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "12",
+              "lower_um_exact": "573611257/100000000",
+              "upper_um_exact": "604778397/50000000",
+              "midpoint_um_exact": "1783168051/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "5.83168051",
+              "lower_um_exact": "573611257/100000000",
+              "upper_um_exact": "604778397/50000000",
+              "midpoint_um_exact": "1783168051/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "10.49577729",
+              "lower_um_exact": "573611257/100000000",
+              "upper_um_exact": "139842079/10000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "10.36677116",
+              "lower_um_exact": "573611257/100000000",
+              "upper_um_exact": "139842079/10000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "9.22752704",
+              "lower_um_exact": "573611257/100000000",
+              "upper_um_exact": "139842079/10000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "7.72032047",
+              "lower_um_exact": "573611257/100000000",
+              "upper_um_exact": "139842079/10000000",
+              "midpoint_um_exact": "1972032047/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "12.73324306",
+              "lower_um_exact": "646935563/100000000",
+              "upper_um_exact": "159919113/10000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "12.62097162",
+              "lower_um_exact": "646935563/100000000",
+              "upper_um_exact": "159919113/10000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "9.72802387",
+              "lower_um_exact": "646935563/100000000",
+              "upper_um_exact": "159919113/10000000",
+              "midpoint_um_exact": "2246126693/200000000"
+            }
+          ]
+        }
+      ],
+      "below_floor_exact_rejection_test": true,
+      "pair_scan_interval_algorithms_agree_exactly": true
+    },
+    "region_averaged_shortening_um": {
+      "monotonicity": "declared conditional common-curve assumption; not a theorem for the full spatial FE maximum",
+      "delta_star_decimal_exact": "2.228529505",
+      "delta_star": {
+        "numerator": 445705901,
+        "denominator": 200000000,
+        "decimal_approximation": "2.228529505"
+      },
+      "OOXML_token_delta_star_decimal_exact": "2.2285295049999998",
+      "witness_pairs": [
+        {
+          "lower_dose_record": "optoGEF2_small_col_K",
+          "higher_dose_record": "optoGEF2_small_col_L",
+          "doses_exact": [
+            "1.28898317",
+            "1.51057344"
+          ],
+          "responses_um_exact": [
+            "8.38319196",
+            "3.92613295"
+          ],
+          "response_drop_um_exact": "4.45705901"
+        }
+      ],
+      "contracts": [
+        {
+          "delta": {
+            "numerator": 445705901,
+            "denominator": 200000000,
+            "decimal_approximation": "2.228529505"
+          },
+          "extra_over_floor": {
+            "numerator": 0,
+            "denominator": 1,
+            "decimal_approximation": "0"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "0.60944403",
+              "lower_um_exact": "-64763419/40000000",
+              "upper_um_exact": "445705901/200000000",
+              "midpoint_um_exact": "60944403/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "0",
+              "lower_um_exact": "-64763419/40000000",
+              "upper_um_exact": "445705901/200000000",
+              "midpoint_um_exact": "60944403/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "1.3129681",
+              "lower_um_exact": "-183112281/200000000",
+              "upper_um_exact": "539599707/200000000",
+              "midpoint_um_exact": "178243713/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "2.64638352",
+              "lower_um_exact": "83570803/200000000",
+              "upper_um_exact": "539599707/200000000",
+              "midpoint_um_exact": "62317051/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "0.46946903",
+              "lower_um_exact": "83570803/200000000",
+              "upper_um_exact": "539599707/200000000",
+              "midpoint_um_exact": "62317051/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "4.14594574",
+              "lower_um_exact": "383483247/200000000",
+              "upper_um_exact": "748627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "2.83450732",
+              "lower_um_exact": "383483247/200000000",
+              "upper_um_exact": "748627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "1.51460771",
+              "lower_um_exact": "383483247/200000000",
+              "upper_um_exact": "748627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "3.92284008",
+              "lower_um_exact": "383483247/200000000",
+              "upper_um_exact": "201057127/40000000",
+              "midpoint_um_exact": "694384441/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "2.79789867",
+              "lower_um_exact": "383483247/200000000",
+              "upper_um_exact": "201057127/40000000",
+              "midpoint_um_exact": "694384441/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "6.90779095",
+              "lower_um_exact": "935852289/200000000",
+              "upper_um_exact": "1230932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "4.87520446",
+              "lower_um_exact": "935852289/200000000",
+              "upper_um_exact": "1230932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "6.89165798",
+              "lower_um_exact": "935852289/200000000",
+              "upper_um_exact": "1230932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "4.31605203",
+              "lower_um_exact": "935852289/200000000",
+              "upper_um_exact": "1230932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "6.04118444",
+              "lower_um_exact": "935852289/200000000",
+              "upper_um_exact": "1230932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "8.38319196",
+              "lower_um_exact": "1230932491/200000000",
+              "upper_um_exact": "1230932491/200000000",
+              "midpoint_um_exact": "1230932491/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "3.92613295",
+              "lower_um_exact": "1230932491/200000000",
+              "upper_um_exact": "1230932491/200000000",
+              "midpoint_um_exact": "1230932491/200000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 545705901,
+            "denominator": 200000000,
+            "decimal_approximation": "2.728529505"
+          },
+          "extra_over_floor": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal_approximation": "0.5"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "0.60944403",
+              "lower_um_exact": "-84763419/40000000",
+              "upper_um_exact": "545705901/200000000",
+              "midpoint_um_exact": "60944403/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "0",
+              "lower_um_exact": "-84763419/40000000",
+              "upper_um_exact": "545705901/200000000",
+              "midpoint_um_exact": "60944403/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "1.3129681",
+              "lower_um_exact": "-283112281/200000000",
+              "upper_um_exact": "639599707/200000000",
+              "midpoint_um_exact": "178243713/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "2.64638352",
+              "lower_um_exact": "-16429197/200000000",
+              "upper_um_exact": "639599707/200000000",
+              "midpoint_um_exact": "62317051/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "0.46946903",
+              "lower_um_exact": "-16429197/200000000",
+              "upper_um_exact": "639599707/200000000",
+              "midpoint_um_exact": "62317051/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "4.14594574",
+              "lower_um_exact": "283483247/200000000",
+              "upper_um_exact": "848627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "2.83450732",
+              "lower_um_exact": "283483247/200000000",
+              "upper_um_exact": "848627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "1.51460771",
+              "lower_um_exact": "283483247/200000000",
+              "upper_um_exact": "848627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "3.92284008",
+              "lower_um_exact": "283483247/200000000",
+              "upper_um_exact": "221057127/40000000",
+              "midpoint_um_exact": "694384441/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "2.79789867",
+              "lower_um_exact": "283483247/200000000",
+              "upper_um_exact": "221057127/40000000",
+              "midpoint_um_exact": "694384441/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "6.90779095",
+              "lower_um_exact": "835852289/200000000",
+              "upper_um_exact": "1330932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "4.87520446",
+              "lower_um_exact": "835852289/200000000",
+              "upper_um_exact": "1330932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "6.89165798",
+              "lower_um_exact": "835852289/200000000",
+              "upper_um_exact": "1330932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "4.31605203",
+              "lower_um_exact": "835852289/200000000",
+              "upper_um_exact": "1330932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "6.04118444",
+              "lower_um_exact": "835852289/200000000",
+              "upper_um_exact": "1330932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "8.38319196",
+              "lower_um_exact": "1130932491/200000000",
+              "upper_um_exact": "1330932491/200000000",
+              "midpoint_um_exact": "1230932491/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "3.92613295",
+              "lower_um_exact": "1130932491/200000000",
+              "upper_um_exact": "1330932491/200000000",
+              "midpoint_um_exact": "1230932491/200000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 645705901,
+            "denominator": 200000000,
+            "decimal_approximation": "3.228529505"
+          },
+          "extra_over_floor": {
+            "numerator": 1,
+            "denominator": 1,
+            "decimal_approximation": "1"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "0.60944403",
+              "lower_um_exact": "-104763419/40000000",
+              "upper_um_exact": "645705901/200000000",
+              "midpoint_um_exact": "60944403/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "0",
+              "lower_um_exact": "-104763419/40000000",
+              "upper_um_exact": "645705901/200000000",
+              "midpoint_um_exact": "60944403/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "1.3129681",
+              "lower_um_exact": "-383112281/200000000",
+              "upper_um_exact": "739599707/200000000",
+              "midpoint_um_exact": "178243713/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "2.64638352",
+              "lower_um_exact": "-116429197/200000000",
+              "upper_um_exact": "739599707/200000000",
+              "midpoint_um_exact": "62317051/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "0.46946903",
+              "lower_um_exact": "-116429197/200000000",
+              "upper_um_exact": "739599707/200000000",
+              "midpoint_um_exact": "62317051/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "4.14594574",
+              "lower_um_exact": "183483247/200000000",
+              "upper_um_exact": "948627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "2.83450732",
+              "lower_um_exact": "183483247/200000000",
+              "upper_um_exact": "948627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "1.51460771",
+              "lower_um_exact": "183483247/200000000",
+              "upper_um_exact": "948627443/200000000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "3.92284008",
+              "lower_um_exact": "183483247/200000000",
+              "upper_um_exact": "241057127/40000000",
+              "midpoint_um_exact": "694384441/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "2.79789867",
+              "lower_um_exact": "183483247/200000000",
+              "upper_um_exact": "241057127/40000000",
+              "midpoint_um_exact": "694384441/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "6.90779095",
+              "lower_um_exact": "735852289/200000000",
+              "upper_um_exact": "1430932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "4.87520446",
+              "lower_um_exact": "735852289/200000000",
+              "upper_um_exact": "1430932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "6.89165798",
+              "lower_um_exact": "735852289/200000000",
+              "upper_um_exact": "1430932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "4.31605203",
+              "lower_um_exact": "735852289/200000000",
+              "upper_um_exact": "1430932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "6.04118444",
+              "lower_um_exact": "735852289/200000000",
+              "upper_um_exact": "1430932491/200000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "8.38319196",
+              "lower_um_exact": "1030932491/200000000",
+              "upper_um_exact": "1430932491/200000000",
+              "midpoint_um_exact": "1230932491/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "3.92613295",
+              "lower_um_exact": "1030932491/200000000",
+              "upper_um_exact": "1430932491/200000000",
+              "midpoint_um_exact": "1230932491/200000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 445705901,
+            "denominator": 100000000,
+            "decimal_approximation": "4.45705901"
+          },
+          "extra_over_floor": {
+            "numerator": 445705901,
+            "denominator": 200000000,
+            "decimal_approximation": "2.228529505"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "0.60944403",
+              "lower_um_exact": "-192380749/50000000",
+              "upper_um_exact": "445705901/100000000",
+              "midpoint_um_exact": "60944403/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "0",
+              "lower_um_exact": "-192380749/50000000",
+              "upper_um_exact": "445705901/100000000",
+              "midpoint_um_exact": "60944403/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "1.3129681",
+              "lower_um_exact": "-314409091/100000000",
+              "upper_um_exact": "123163201/25000000",
+              "midpoint_um_exact": "178243713/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "2.64638352",
+              "lower_um_exact": "-181067549/100000000",
+              "upper_um_exact": "123163201/25000000",
+              "midpoint_um_exact": "62317051/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "0.46946903",
+              "lower_um_exact": "-181067549/100000000",
+              "upper_um_exact": "123163201/25000000",
+              "midpoint_um_exact": "62317051/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "4.14594574",
+              "lower_um_exact": "-31111327/100000000",
+              "upper_um_exact": "37322917/6250000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "2.83450732",
+              "lower_um_exact": "-31111327/100000000",
+              "upper_um_exact": "37322917/6250000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "1.51460771",
+              "lower_um_exact": "-31111327/100000000",
+              "upper_um_exact": "37322917/6250000",
+              "midpoint_um_exact": "113211069/40000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "3.92284008",
+              "lower_um_exact": "-31111327/100000000",
+              "upper_um_exact": "90686971/12500000",
+              "midpoint_um_exact": "694384441/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "2.79789867",
+              "lower_um_exact": "-31111327/100000000",
+              "upper_um_exact": "90686971/12500000",
+              "midpoint_um_exact": "694384441/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "6.90779095",
+              "lower_um_exact": "122536597/50000000",
+              "upper_um_exact": "209579799/25000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "4.87520446",
+              "lower_um_exact": "122536597/50000000",
+              "upper_um_exact": "209579799/25000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "6.89165798",
+              "lower_um_exact": "122536597/50000000",
+              "upper_um_exact": "209579799/25000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "4.31605203",
+              "lower_um_exact": "122536597/50000000",
+              "upper_um_exact": "209579799/25000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "6.04118444",
+              "lower_um_exact": "122536597/50000000",
+              "upper_um_exact": "209579799/25000000",
+              "midpoint_um_exact": "108339239/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "8.38319196",
+              "lower_um_exact": "78522659/20000000",
+              "upper_um_exact": "209579799/25000000",
+              "midpoint_um_exact": "1230932491/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "3.92613295",
+              "lower_um_exact": "78522659/20000000",
+              "upper_um_exact": "209579799/25000000",
+              "midpoint_um_exact": "1230932491/200000000"
+            }
+          ]
+        }
+      ],
+      "below_floor_exact_rejection_test": true,
+      "pair_scan_interval_algorithms_agree_exactly": true
+    },
+    "apical_max_shortening_um": {
+      "monotonicity": "declared conditional common-curve assumption; not a theorem for the full spatial FE maximum",
+      "delta_star_decimal_exact": "3",
+      "delta_star": {
+        "numerator": 3,
+        "denominator": 1,
+        "decimal_approximation": "3"
+      },
+      "OOXML_token_delta_star_decimal_exact": "3",
+      "witness_pairs": [
+        {
+          "lower_dose_record": "optoGEF2_small_col_F",
+          "higher_dose_record": "optoGEF2_small_col_I",
+          "doses_exact": [
+            "0.46402059",
+            "0.47133397"
+          ],
+          "responses_um_exact": [
+            "6",
+            "0"
+          ],
+          "response_drop_um_exact": "6"
+        },
+        {
+          "lower_dose_record": "optoGEF2_small_col_M",
+          "higher_dose_record": "optoGEF2_small_col_P",
+          "doses_exact": [
+            "0.78208913",
+            "0.80580697"
+          ],
+          "responses_um_exact": [
+            "12",
+            "6"
+          ],
+          "response_drop_um_exact": "6"
+        },
+        {
+          "lower_dose_record": "optoGEF2_small_col_G",
+          "higher_dose_record": "optoGEF2_small_col_L",
+          "doses_exact": [
+            "1.04731044",
+            "1.51057344"
+          ],
+          "responses_um_exact": [
+            "13",
+            "7"
+          ],
+          "response_drop_um_exact": "6"
+        },
+        {
+          "lower_dose_record": "optoGEF2_small_col_K",
+          "higher_dose_record": "optoGEF2_small_col_L",
+          "doses_exact": [
+            "1.28898317",
+            "1.51057344"
+          ],
+          "responses_um_exact": [
+            "13",
+            "7"
+          ],
+          "response_drop_um_exact": "6"
+        }
+      ],
+      "contracts": [
+        {
+          "delta": {
+            "numerator": 3,
+            "denominator": 1,
+            "decimal_approximation": "3"
+          },
+          "extra_over_floor": {
+            "numerator": 0,
+            "denominator": 1,
+            "decimal_approximation": "0"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "3",
+              "lower_um_exact": "0",
+              "upper_um_exact": "3",
+              "midpoint_um_exact": "3/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "2",
+              "lower_um_exact": "0",
+              "upper_um_exact": "3",
+              "midpoint_um_exact": "3/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "4",
+              "lower_um_exact": "1",
+              "upper_um_exact": "3",
+              "midpoint_um_exact": "2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "6",
+              "lower_um_exact": "3",
+              "upper_um_exact": "3",
+              "midpoint_um_exact": "3"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "0",
+              "lower_um_exact": "3",
+              "upper_um_exact": "3",
+              "midpoint_um_exact": "3"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "6",
+              "lower_um_exact": "3",
+              "upper_um_exact": "7",
+              "midpoint_um_exact": "5"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "8",
+              "lower_um_exact": "5",
+              "upper_um_exact": "7",
+              "midpoint_um_exact": "6"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "4",
+              "lower_um_exact": "5",
+              "upper_um_exact": "7",
+              "midpoint_um_exact": "6"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "12",
+              "lower_um_exact": "9",
+              "upper_um_exact": "9",
+              "midpoint_um_exact": "9"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "6",
+              "lower_um_exact": "9",
+              "upper_um_exact": "9",
+              "midpoint_um_exact": "9"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "9",
+              "lower_um_exact": "9",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "9",
+              "lower_um_exact": "9",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "8",
+              "lower_um_exact": "9",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "8",
+              "lower_um_exact": "9",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "13",
+              "lower_um_exact": "10",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "10"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "13",
+              "lower_um_exact": "10",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "10"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "7",
+              "lower_um_exact": "10",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "10"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 7,
+            "denominator": 2,
+            "decimal_approximation": "3.5"
+          },
+          "extra_over_floor": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal_approximation": "0.5"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "3",
+              "lower_um_exact": "-1/2",
+              "upper_um_exact": "7/2",
+              "midpoint_um_exact": "3/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "2",
+              "lower_um_exact": "-1/2",
+              "upper_um_exact": "7/2",
+              "midpoint_um_exact": "3/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "4",
+              "lower_um_exact": "1/2",
+              "upper_um_exact": "7/2",
+              "midpoint_um_exact": "2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "6",
+              "lower_um_exact": "5/2",
+              "upper_um_exact": "7/2",
+              "midpoint_um_exact": "3"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "0",
+              "lower_um_exact": "5/2",
+              "upper_um_exact": "7/2",
+              "midpoint_um_exact": "3"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "6",
+              "lower_um_exact": "5/2",
+              "upper_um_exact": "15/2",
+              "midpoint_um_exact": "5"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "8",
+              "lower_um_exact": "9/2",
+              "upper_um_exact": "15/2",
+              "midpoint_um_exact": "6"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "4",
+              "lower_um_exact": "9/2",
+              "upper_um_exact": "15/2",
+              "midpoint_um_exact": "6"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "12",
+              "lower_um_exact": "17/2",
+              "upper_um_exact": "19/2",
+              "midpoint_um_exact": "9"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "6",
+              "lower_um_exact": "17/2",
+              "upper_um_exact": "19/2",
+              "midpoint_um_exact": "9"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "9",
+              "lower_um_exact": "17/2",
+              "upper_um_exact": "21/2",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "9",
+              "lower_um_exact": "17/2",
+              "upper_um_exact": "21/2",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "8",
+              "lower_um_exact": "17/2",
+              "upper_um_exact": "21/2",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "8",
+              "lower_um_exact": "17/2",
+              "upper_um_exact": "21/2",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "13",
+              "lower_um_exact": "19/2",
+              "upper_um_exact": "21/2",
+              "midpoint_um_exact": "10"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "13",
+              "lower_um_exact": "19/2",
+              "upper_um_exact": "21/2",
+              "midpoint_um_exact": "10"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "7",
+              "lower_um_exact": "19/2",
+              "upper_um_exact": "21/2",
+              "midpoint_um_exact": "10"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 4,
+            "denominator": 1,
+            "decimal_approximation": "4"
+          },
+          "extra_over_floor": {
+            "numerator": 1,
+            "denominator": 1,
+            "decimal_approximation": "1"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "3",
+              "lower_um_exact": "-1",
+              "upper_um_exact": "4",
+              "midpoint_um_exact": "3/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "2",
+              "lower_um_exact": "-1",
+              "upper_um_exact": "4",
+              "midpoint_um_exact": "3/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "4",
+              "lower_um_exact": "0",
+              "upper_um_exact": "4",
+              "midpoint_um_exact": "2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "6",
+              "lower_um_exact": "2",
+              "upper_um_exact": "4",
+              "midpoint_um_exact": "3"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "0",
+              "lower_um_exact": "2",
+              "upper_um_exact": "4",
+              "midpoint_um_exact": "3"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "6",
+              "lower_um_exact": "2",
+              "upper_um_exact": "8",
+              "midpoint_um_exact": "5"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "8",
+              "lower_um_exact": "4",
+              "upper_um_exact": "8",
+              "midpoint_um_exact": "6"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "4",
+              "lower_um_exact": "4",
+              "upper_um_exact": "8",
+              "midpoint_um_exact": "6"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "12",
+              "lower_um_exact": "8",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "9"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "6",
+              "lower_um_exact": "8",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "9"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "9",
+              "lower_um_exact": "8",
+              "upper_um_exact": "11",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "9",
+              "lower_um_exact": "8",
+              "upper_um_exact": "11",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "8",
+              "lower_um_exact": "8",
+              "upper_um_exact": "11",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "8",
+              "lower_um_exact": "8",
+              "upper_um_exact": "11",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "13",
+              "lower_um_exact": "9",
+              "upper_um_exact": "11",
+              "midpoint_um_exact": "10"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "13",
+              "lower_um_exact": "9",
+              "upper_um_exact": "11",
+              "midpoint_um_exact": "10"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "7",
+              "lower_um_exact": "9",
+              "upper_um_exact": "11",
+              "midpoint_um_exact": "10"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 6,
+            "denominator": 1,
+            "decimal_approximation": "6"
+          },
+          "extra_over_floor": {
+            "numerator": 3,
+            "denominator": 1,
+            "decimal_approximation": "3"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "3",
+              "lower_um_exact": "-3",
+              "upper_um_exact": "6",
+              "midpoint_um_exact": "3/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "2",
+              "lower_um_exact": "-3",
+              "upper_um_exact": "6",
+              "midpoint_um_exact": "3/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "4",
+              "lower_um_exact": "-2",
+              "upper_um_exact": "6",
+              "midpoint_um_exact": "2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "6",
+              "lower_um_exact": "0",
+              "upper_um_exact": "6",
+              "midpoint_um_exact": "3"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "0",
+              "lower_um_exact": "0",
+              "upper_um_exact": "6",
+              "midpoint_um_exact": "3"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "6",
+              "lower_um_exact": "0",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "5"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "8",
+              "lower_um_exact": "2",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "6"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "4",
+              "lower_um_exact": "2",
+              "upper_um_exact": "10",
+              "midpoint_um_exact": "6"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "12",
+              "lower_um_exact": "6",
+              "upper_um_exact": "12",
+              "midpoint_um_exact": "9"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "6",
+              "lower_um_exact": "6",
+              "upper_um_exact": "12",
+              "midpoint_um_exact": "9"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "9",
+              "lower_um_exact": "6",
+              "upper_um_exact": "13",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "9",
+              "lower_um_exact": "6",
+              "upper_um_exact": "13",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "8",
+              "lower_um_exact": "6",
+              "upper_um_exact": "13",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "8",
+              "lower_um_exact": "6",
+              "upper_um_exact": "13",
+              "midpoint_um_exact": "19/2"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "13",
+              "lower_um_exact": "7",
+              "upper_um_exact": "13",
+              "midpoint_um_exact": "10"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "13",
+              "lower_um_exact": "7",
+              "upper_um_exact": "13",
+              "midpoint_um_exact": "10"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "7",
+              "lower_um_exact": "7",
+              "upper_um_exact": "13",
+              "midpoint_um_exact": "10"
+            }
+          ]
+        }
+      ],
+      "below_floor_exact_rejection_test": true,
+      "pair_scan_interval_algorithms_agree_exactly": true
+    },
+    "basal_max_shortening_um": {
+      "monotonicity": "declared conditional common-curve assumption; not a theorem for the full spatial FE maximum",
+      "delta_star_decimal_exact": "1.24138052",
+      "delta_star": {
+        "numerator": 31034513,
+        "denominator": 25000000,
+        "decimal_approximation": "1.24138052"
+      },
+      "OOXML_token_delta_star_decimal_exact": "1.24138052",
+      "witness_pairs": [
+        {
+          "lower_dose_record": "optoGEF2_small_col_F",
+          "higher_dose_record": "optoGEF2_small_col_Q",
+          "doses_exact": [
+            "0.46402059",
+            "0.75547653"
+          ],
+          "responses_um_exact": [
+            "3.64808362",
+            "1.16532258"
+          ],
+          "response_drop_um_exact": "2.48276104"
+        }
+      ],
+      "contracts": [
+        {
+          "delta": {
+            "numerator": 31034513,
+            "denominator": 25000000,
+            "decimal_approximation": "1.24138052"
+          },
+          "extra_over_floor": {
+            "numerator": 0,
+            "denominator": 1,
+            "decimal_approximation": "0"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "0.48710602",
+              "lower_um_exact": "-1508549/2000000",
+              "upper_um_exact": "82821849/50000000",
+              "midpoint_um_exact": "11277031/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "0.41505646",
+              "lower_um_exact": "-1508549/2000000",
+              "upper_um_exact": "82821849/50000000",
+              "midpoint_um_exact": "11277031/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "0.86152372",
+              "lower_um_exact": "-474821/1250000",
+              "upper_um_exact": "26286303/12500000",
+              "midpoint_um_exact": "21538093/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "3.64808362",
+              "lower_um_exact": "24067031/10000000",
+              "upper_um_exact": "24067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "1.38419619",
+              "lower_um_exact": "24067031/10000000",
+              "upper_um_exact": "24067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "2.31533939",
+              "lower_um_exact": "24067031/10000000",
+              "upper_um_exact": "24067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "1.40052651",
+              "lower_um_exact": "24067031/10000000",
+              "upper_um_exact": "24067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "1.16532258",
+              "lower_um_exact": "24067031/10000000",
+              "upper_um_exact": "24067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "2.27398524",
+              "lower_um_exact": "24067031/10000000",
+              "upper_um_exact": "16102373/5000000",
+              "midpoint_um_exact": "56271777/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "1.97909408",
+              "lower_um_exact": "24067031/10000000",
+              "upper_um_exact": "16102373/5000000",
+              "midpoint_um_exact": "56271777/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "4.36972161",
+              "lower_um_exact": "312834109/100000000",
+              "upper_um_exact": "396170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "3.36677116",
+              "lower_um_exact": "312834109/100000000",
+              "upper_um_exact": "396170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "3.63670272",
+              "lower_um_exact": "312834109/100000000",
+              "upper_um_exact": "396170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "2.72032047",
+              "lower_um_exact": "312834109/100000000",
+              "upper_um_exact": "396170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "3.46648612",
+              "lower_um_exact": "312834109/100000000",
+              "upper_um_exact": "205214769/50000000",
+              "midpoint_um_exact": "723263647/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "2.86291486",
+              "lower_um_exact": "312834109/100000000",
+              "upper_um_exact": "205214769/50000000",
+              "midpoint_um_exact": "723263647/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "3.83566674",
+              "lower_um_exact": "312834109/100000000",
+              "upper_um_exact": "253852363/50000000",
+              "midpoint_um_exact": "164107767/40000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 43534513,
+            "denominator": 25000000,
+            "decimal_approximation": "1.74138052"
+          },
+          "extra_over_floor": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal_approximation": "0.5"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "0.48710602",
+              "lower_um_exact": "-2508549/2000000",
+              "upper_um_exact": "107821849/50000000",
+              "midpoint_um_exact": "11277031/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "0.41505646",
+              "lower_um_exact": "-2508549/2000000",
+              "upper_um_exact": "107821849/50000000",
+              "midpoint_um_exact": "11277031/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "0.86152372",
+              "lower_um_exact": "-1099821/1250000",
+              "upper_um_exact": "32536303/12500000",
+              "midpoint_um_exact": "21538093/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "3.64808362",
+              "lower_um_exact": "19067031/10000000",
+              "upper_um_exact": "29067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "1.38419619",
+              "lower_um_exact": "19067031/10000000",
+              "upper_um_exact": "29067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "2.31533939",
+              "lower_um_exact": "19067031/10000000",
+              "upper_um_exact": "29067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "1.40052651",
+              "lower_um_exact": "19067031/10000000",
+              "upper_um_exact": "29067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "1.16532258",
+              "lower_um_exact": "19067031/10000000",
+              "upper_um_exact": "29067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "2.27398524",
+              "lower_um_exact": "19067031/10000000",
+              "upper_um_exact": "18602373/5000000",
+              "midpoint_um_exact": "56271777/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "1.97909408",
+              "lower_um_exact": "19067031/10000000",
+              "upper_um_exact": "18602373/5000000",
+              "midpoint_um_exact": "56271777/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "4.36972161",
+              "lower_um_exact": "262834109/100000000",
+              "upper_um_exact": "446170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "3.36677116",
+              "lower_um_exact": "262834109/100000000",
+              "upper_um_exact": "446170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "3.63670272",
+              "lower_um_exact": "262834109/100000000",
+              "upper_um_exact": "446170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "2.72032047",
+              "lower_um_exact": "262834109/100000000",
+              "upper_um_exact": "446170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "3.46648612",
+              "lower_um_exact": "262834109/100000000",
+              "upper_um_exact": "230214769/50000000",
+              "midpoint_um_exact": "723263647/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "2.86291486",
+              "lower_um_exact": "262834109/100000000",
+              "upper_um_exact": "230214769/50000000",
+              "midpoint_um_exact": "723263647/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "3.83566674",
+              "lower_um_exact": "262834109/100000000",
+              "upper_um_exact": "278852363/50000000",
+              "midpoint_um_exact": "164107767/40000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 56034513,
+            "denominator": 25000000,
+            "decimal_approximation": "2.24138052"
+          },
+          "extra_over_floor": {
+            "numerator": 1,
+            "denominator": 1,
+            "decimal_approximation": "1"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "0.48710602",
+              "lower_um_exact": "-3508549/2000000",
+              "upper_um_exact": "132821849/50000000",
+              "midpoint_um_exact": "11277031/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "0.41505646",
+              "lower_um_exact": "-3508549/2000000",
+              "upper_um_exact": "132821849/50000000",
+              "midpoint_um_exact": "11277031/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "0.86152372",
+              "lower_um_exact": "-1724821/1250000",
+              "upper_um_exact": "38786303/12500000",
+              "midpoint_um_exact": "21538093/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "3.64808362",
+              "lower_um_exact": "14067031/10000000",
+              "upper_um_exact": "34067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "1.38419619",
+              "lower_um_exact": "14067031/10000000",
+              "upper_um_exact": "34067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "2.31533939",
+              "lower_um_exact": "14067031/10000000",
+              "upper_um_exact": "34067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "1.40052651",
+              "lower_um_exact": "14067031/10000000",
+              "upper_um_exact": "34067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "1.16532258",
+              "lower_um_exact": "14067031/10000000",
+              "upper_um_exact": "34067031/10000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "2.27398524",
+              "lower_um_exact": "14067031/10000000",
+              "upper_um_exact": "21102373/5000000",
+              "midpoint_um_exact": "56271777/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "1.97909408",
+              "lower_um_exact": "14067031/10000000",
+              "upper_um_exact": "21102373/5000000",
+              "midpoint_um_exact": "56271777/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "4.36972161",
+              "lower_um_exact": "212834109/100000000",
+              "upper_um_exact": "496170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "3.36677116",
+              "lower_um_exact": "212834109/100000000",
+              "upper_um_exact": "496170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "3.63670272",
+              "lower_um_exact": "212834109/100000000",
+              "upper_um_exact": "496170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "2.72032047",
+              "lower_um_exact": "212834109/100000000",
+              "upper_um_exact": "496170099/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "3.46648612",
+              "lower_um_exact": "212834109/100000000",
+              "upper_um_exact": "255214769/50000000",
+              "midpoint_um_exact": "723263647/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "2.86291486",
+              "lower_um_exact": "212834109/100000000",
+              "upper_um_exact": "255214769/50000000",
+              "midpoint_um_exact": "723263647/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "3.83566674",
+              "lower_um_exact": "212834109/100000000",
+              "upper_um_exact": "303852363/50000000",
+              "midpoint_um_exact": "164107767/40000000"
+            }
+          ]
+        },
+        {
+          "delta": {
+            "numerator": 31034513,
+            "denominator": 12500000,
+            "decimal_approximation": "2.48276104"
+          },
+          "extra_over_floor": {
+            "numerator": 31034513,
+            "denominator": 25000000,
+            "decimal_approximation": "1.24138052"
+          },
+          "at_observed_doses": [
+            {
+              "record_id": "optoGEF2_small_col_B",
+              "dose": "0.14801043",
+              "observed_um": "0.48710602",
+              "lower_um_exact": "-99782751/50000000",
+              "upper_um_exact": "1159127/400000",
+              "midpoint_um_exact": "11277031/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_O",
+              "dose": "0.27583779",
+              "observed_um": "0.41505646",
+              "lower_um_exact": "-99782751/50000000",
+              "upper_um_exact": "1159127/400000",
+              "midpoint_um_exact": "11277031/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_C",
+              "dose": "0.32718904",
+              "observed_um": "0.86152372",
+              "lower_um_exact": "-40530933/25000000",
+              "upper_um_exact": "83607119/25000000",
+              "midpoint_um_exact": "21538093/25000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_F",
+              "dose": "0.46402059",
+              "observed_um": "3.64808362",
+              "lower_um_exact": "58266129/50000000",
+              "upper_um_exact": "182404181/50000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_I",
+              "dose": "0.47133397",
+              "observed_um": "1.38419619",
+              "lower_um_exact": "58266129/50000000",
+              "upper_um_exact": "182404181/50000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_D",
+              "dose": "0.6924031",
+              "observed_um": "2.31533939",
+              "lower_um_exact": "58266129/50000000",
+              "upper_um_exact": "182404181/50000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_N",
+              "dose": "0.71523649",
+              "observed_um": "1.40052651",
+              "lower_um_exact": "58266129/50000000",
+              "upper_um_exact": "182404181/50000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_Q",
+              "dose": "0.75547653",
+              "observed_um": "1.16532258",
+              "lower_um_exact": "58266129/50000000",
+              "upper_um_exact": "182404181/50000000",
+              "midpoint_um_exact": "24067031/10000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_M",
+              "dose": "0.78208913",
+              "observed_um": "2.27398524",
+              "lower_um_exact": "58266129/50000000",
+              "upper_um_exact": "55773189/12500000",
+              "midpoint_um_exact": "56271777/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_P",
+              "dose": "0.80580697",
+              "observed_um": "1.97909408",
+              "lower_um_exact": "58266129/50000000",
+              "upper_um_exact": "55773189/12500000",
+              "midpoint_um_exact": "56271777/20000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_H",
+              "dose": "0.82160217",
+              "observed_um": "4.36972161",
+              "lower_um_exact": "188696057/100000000",
+              "upper_um_exact": "520308151/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_R",
+              "dose": "0.85073705",
+              "observed_um": "3.36677116",
+              "lower_um_exact": "188696057/100000000",
+              "upper_um_exact": "520308151/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_E",
+              "dose": "0.97607953",
+              "observed_um": "3.63670272",
+              "lower_um_exact": "188696057/100000000",
+              "upper_um_exact": "520308151/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_J",
+              "dose": "0.98739488",
+              "observed_um": "2.72032047",
+              "lower_um_exact": "188696057/100000000",
+              "upper_um_exact": "520308151/100000000",
+              "midpoint_um_exact": "44312763/12500000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_G",
+              "dose": "1.04731044",
+              "observed_um": "3.46648612",
+              "lower_um_exact": "188696057/100000000",
+              "upper_um_exact": "53456759/10000000",
+              "midpoint_um_exact": "723263647/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_K",
+              "dose": "1.28898317",
+              "observed_um": "2.86291486",
+              "lower_um_exact": "188696057/100000000",
+              "upper_um_exact": "53456759/10000000",
+              "midpoint_um_exact": "723263647/200000000"
+            },
+            {
+              "record_id": "optoGEF2_small_col_L",
+              "dose": "1.51057344",
+              "observed_um": "3.83566674",
+              "lower_um_exact": "188696057/100000000",
+              "upper_um_exact": "315921389/50000000",
+              "midpoint_um_exact": "164107767/40000000"
+            }
+          ]
+        }
+      ],
+      "below_floor_exact_rejection_test": true,
+      "pair_scan_interval_algorithms_agree_exactly": true
+    }
+  },
+  "concave_anchored_maximum_shortening": {
+    "class": "nonnegative nondecreasing concave f on x>=0 with f(0)=0",
+    "delta_star": {
+      "numerator": 15244809486711951,
+      "denominator": 4178077000000000,
+      "decimal_approximation": "3.64876221446180886565757404662479892065177353122022404086856"
+    },
+    "witness_records": [
+      "optoGEF2_small_col_I",
+      "optoGEF2_small_col_M"
+    ],
+    "beta": {
+      "numerator": 47133397,
+      "denominator": 78208913,
+      "decimal_approximation": "0.602660172504890842812250823636942761242570907487232305606907"
+    },
+    "dual_weights": [
+      {
+        "numerator": 78208913,
+        "denominator": 125342310,
+        "decimal_approximation": "0.623962594913082422048867617008175451689058546950347412617495"
+      },
+      {
+        "numerator": 47133397,
+        "denominator": 125342310,
+        "decimal_approximation": "0.376037405086917577951132382991824548310941453049652587382505"
+      },
+      {
+        "numerator": 78208913,
+        "denominator": 125342310,
+        "decimal_approximation": "0.623962594913082422048867617008175451689058546950347412617495"
+      }
+    ],
+    "exact_dual_combined_lhs": "-delta",
+    "exact_dual_combined_rhs": {
+      "numerator": -15244809486711951,
+      "denominator": 4178077000000000,
+      "decimal_approximation": "-3.64876221446180886565757404662479892065177353122022404086856"
+    },
+    "matching_curve": {
+      "formula": "f(x)=min(g*x,C)",
+      "g": {
+        "numerator": 446139873,
+        "denominator": 41780770,
+        "decimal_approximation": "10.6781151472316091828848534864244962455215641071239232785801"
+      },
+      "C_um": {
+        "numerator": 37955660477683669,
+        "denominator": 4178077000000000,
+        "decimal_approximation": "9.08448084553819113434242595337520107934822646877977595913144"
+      },
+      "saturation_dose": {
+        "numerator": 37955660477683669,
+        "denominator": 44613987300000000,
+        "decimal_approximation": "0.850756966026295278028198120727039342659247137052015971681599"
+      }
+    },
+    "exact_primal_constraint_count": 68,
+    "all_exact_slacks_nonnegative": true,
+    "max_exact_residual": {
+      "numerator": 15244809486711951,
+      "denominator": 4178077000000000,
+      "decimal_approximation": "3.64876221446180886565757404662479892065177353122022404086856"
+    },
+    "numeric_independent_lp_delta": 3.648762214461806,
+    "numeric_lp_is_not_exact_proof": true,
+    "restriction_warning": "Sharp for relaxed shape class; only necessary for the restricted column family, not full spatial FE",
+    "OOXML_token_variant": {
+      "delta_star": {
+        "numerator": 2286721423006792615262494600000001,
+        "denominator": 626711550000000005000000000000000,
+        "decimal_approximation": "3.64876221446180878111897495377411999891357552151288739681297"
+      },
+      "matching_g": {
+        "numerator": 1338419618999999990,
+        "denominator": 125342310000000001,
+        "decimal_approximation": "10.6781151472316090179117079681106162961915416421588504616554"
+      },
+      "matching_C_um": {
+        "numerator": 5693349071652550448403720699999999,
+        "denominator": 626711550000000005000000000000000,
+        "decimal_approximation": "9.08448084553819121888102504622588000108642447848711260318703"
+      },
+      "all_68_exact_constraints_verified": true
+    }
+  },
+  "homogeneous_linear_maximum_shortening": {
+    "class": "f(I)=g*I, g>=0; a null comparator, not the FE active-stress gain",
+    "delta_star": {
+      "numerator": 105186995548924669,
+      "denominator": 22926625700000000,
+      "decimal_approximation": "4.58798415978521728123297271782999449413090038801479626371708"
+    },
+    "attaining_gain_um_per_normalized_dose": {
+      "numerator": 2172802387,
+      "denominator": 229266257,
+      "decimal_approximation": "9.47720094283215868089999829325080314806203688316855105284857"
+    },
+    "gain_contract": "g in [max(0,max_i((y_i-delta)/I_i)), min_i((y_i+delta)/I_i)]"
+  },
+  "column_inverse_derivatives": {
+    "symbolic_first_derivative_verified": true,
+    "symbolic_second_derivative_verified": true,
+    "first_bracket_lower_bound_for_x_ge1_nu_0to1": "3-nu >=2",
+    "second_bracket_lower_bound_for_x_ge1_nu_0to1": "3+nu >=3",
+    "property": "Restricted column law increasing and strictly concave; not generalized to spatial FE"
+  },
+  "nested_set_peak_theorem": {
+    "formula": "M(I;theta)=sup_{0<=A<=gI} O(q(A;theta))",
+    "proof": "For I1<=I2 and g>=0 the first amplitude set is contained in the second",
+    "common_branch_scaled_cap_full_path_required": true,
+    "instantaneous_FE_observable_need_not_be_monotone": true,
+    "source_spatial_temporal_maximum": "Methods Sec16",
+    "actual_experimental_path_equivalence_proven": false,
+    "restrictions": [
+      "fixed measured doses",
+      "common material/geometry/reference law",
+      "common branch",
+      "full nested path coverage",
+      "same observation operator"
+    ]
+  },
+  "dose_order_caveat": {
+    "maximum_witness_dose_gap": "0.00731338",
+    "uniform_dose_error_allowance_preserving_witness_order_inclusive": "0.00365669",
+    "larger_error": "Can reverse this witness order; does not prove all other compatibility bounds disappear"
+  },
+  "primary_unit_audit": {
+    "Sec22_distinct_samples_explicit": true,
+    "Sec22_OptoGEF2_17_embryos_explicit": true,
+    "Fig2_literal_each_marker_is_individual_embryo_sentence": "not found in inspected caption",
+    "reporting_summary_page2_random_selection_and_blinding": true,
+    "missing_specimen_ID_is_not_evidence_of_dependence": true,
+    "IID_noise_or_independent_measurement_errors_proven": false,
+    "shared_dose_normalization": "Sec17 reference curve averaged across experiments; common calibration may couple errors",
+    "per_record_quantitative_error_bounds": "not found in inspected methods, worksheets, supplement captions and reporting summary",
+    "sampling_resolution_is_not_segmentation_uncertainty": true,
+    "locator_text_sha256": {
+      "Sec14": "0f8b3d3fee2cf93425f35356fb34e1a4b17c2279fc7133bd097d2fe18f8563cd",
+      "Sec15": "1340292a330a22f236ed37a761319a0aad7f71d229b18ce9b2a14c679cf616da",
+      "Sec16": "4cb0bb01706c1c85e9940aa550faa36f278d254337b4eb70008ece8b0cd54f7f",
+      "Sec17": "4b1a000fbe6b17b8a4839b296d47c70b6232d6d4032d16a40fee47b854aad97b",
+      "Sec22": "6ed8b1b3e7b4997e7b606c698d79aeee1b9887b41af01855a8853c24fb7e0dad"
+    },
+    "reporting_page2_extracted_text_sha256": "9e1fef3238b884cec54ab0a4cfdaa74420bd6bd92bb9f1edb69651342baf5e52"
+  },
+  "interpretation": {
+    "not_novel": "Standard order/shape-constrained deterministic inference",
+    "not_confidence_interval": true,
+    "not_measurement_noise_estimate": true,
+    "not_FE_monotonicity_or_concavity_theorem": true,
+    "full_physical_identified_set_not_computed": true
+  }
+}

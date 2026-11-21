@@ -1,0 +1,1370 @@
+{
+  "status": "PASS",
+  "checks": {
+    "identity_exact_J_one": true,
+    "affine_isochoric_J_one": true,
+    "nonzero_entire_box_certified": true,
+    "axis_uncertainty_not_certified": true,
+    "large_box_unresolved_not_inversion_claim": true,
+    "reflected_map_not_certified": true,
+    "interval_square_-2_3": true,
+    "interval_square_-1_-1/2": true,
+    "interval_square_1/3_2": true,
+    "interval_product_with_negative": true,
+    "invalid_input_0": true,
+    "invalid_input_1": true,
+    "invalid_input_2": true
+  },
+  "identity": {
+    "status": "CERTIFIED_ENTIRE_NODAL_BOX_EMBEDDING",
+    "all_element_J_positive": true,
+    "uniform_strong_monotonicity": true,
+    "axis_preserved_for_entire_box": true,
+    "global_injectivity_for_entire_box": true,
+    "J_bound": {
+      "lower_exact": "1",
+      "upper_exact": "1"
+    },
+    "strong_monotonicity_lower_exact": "1/2",
+    "reference_topology": {
+      "status": "CERTIFIED_STRONGLY_MONOTONE_DISCRETE_MAP",
+      "global_injectivity_certified": true,
+      "convex_reference_rectangle": true,
+      "conforming_P2_traces": true,
+      "strong_monotonicity_constant_lower": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "axis_preserved": true,
+      "vertex_symmetric_gradient_certificates": [
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        }
+      ],
+      "scope": "Exact sufficient discrete meridional injectivity on convex reference; positive axisymmetric J is checked separately."
+    },
+    "triangles": [
+      {
+        "positive_J_for_entire_box": true,
+        "axis_zero_coefficients_exact_for_entire_box": true,
+        "J_bound": {
+          "lower_exact": "1",
+          "upper_exact": "1"
+        },
+        "correlated_degree4_coefficients": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "numerator": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              0,
+              1,
+              3
+            ],
+            "numerator": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              0,
+              2,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              0,
+              3,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              0,
+              4,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              1,
+              0,
+              3
+            ],
+            "numerator": {
+              "lower_exact": "3/4",
+              "upper_exact": "3/4"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              1,
+              1,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "3/4",
+              "upper_exact": "3/4"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              1,
+              2,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "3/4",
+              "upper_exact": "3/4"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              1,
+              3,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "3/4",
+              "upper_exact": "3/4"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              2,
+              0,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "1/2",
+              "upper_exact": "1/2"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              2,
+              1,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "1/2",
+              "upper_exact": "1/2"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              2,
+              2,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "1/2",
+              "upper_exact": "1/2"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              3,
+              0,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "1/4",
+              "upper_exact": "1/4"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              3,
+              1,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "1/4",
+              "upper_exact": "1/4"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              4,
+              0,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          }
+        ],
+        "strong_monotonicity_for_entire_box": true,
+        "strong_monotonicity_lower_exact": "1/2",
+        "vertex_symmetric_gradient_bounds": [
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              },
+              {
+                "lower_exact": "0",
+                "upper_exact": "0"
+              },
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "1/2"
+          },
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              },
+              {
+                "lower_exact": "0",
+                "upper_exact": "0"
+              },
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "1/2"
+          },
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              },
+              {
+                "lower_exact": "0",
+                "upper_exact": "0"
+              },
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "1/2"
+          }
+        ]
+      },
+      {
+        "positive_J_for_entire_box": true,
+        "axis_zero_coefficients_exact_for_entire_box": true,
+        "J_bound": {
+          "lower_exact": "1",
+          "upper_exact": "1"
+        },
+        "correlated_degree4_coefficients": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          },
+          {
+            "index": [
+              0,
+              1,
+              3
+            ],
+            "numerator": {
+              "lower_exact": "1/4",
+              "upper_exact": "1/4"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              0,
+              2,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "1/2",
+              "upper_exact": "1/2"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              0,
+              3,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "3/4",
+              "upper_exact": "3/4"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              0,
+              4,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              1,
+              0,
+              3
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          },
+          {
+            "index": [
+              1,
+              1,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "1/4",
+              "upper_exact": "1/4"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              1,
+              2,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "1/2",
+              "upper_exact": "1/2"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              1,
+              3,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "3/4",
+              "upper_exact": "3/4"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              2,
+              0,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          },
+          {
+            "index": [
+              2,
+              1,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "1/4",
+              "upper_exact": "1/4"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              2,
+              2,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "1/2",
+              "upper_exact": "1/2"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              3,
+              0,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          },
+          {
+            "index": [
+              3,
+              1,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "1/4",
+              "upper_exact": "1/4"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "1",
+              "upper_exact": "1"
+            }
+          },
+          {
+            "index": [
+              4,
+              0,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          }
+        ],
+        "strong_monotonicity_for_entire_box": true,
+        "strong_monotonicity_lower_exact": "1/2",
+        "vertex_symmetric_gradient_bounds": [
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              },
+              {
+                "lower_exact": "0",
+                "upper_exact": "0"
+              },
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "1/2"
+          },
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              },
+              {
+                "lower_exact": "0",
+                "upper_exact": "0"
+              },
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "1/2"
+          },
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              },
+              {
+                "lower_exact": "0",
+                "upper_exact": "0"
+              },
+              {
+                "lower_exact": "1",
+                "upper_exact": "1"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "1/2"
+          }
+        ]
+      }
+    ],
+    "scope": "Every conforming P2 field in the supplied nodal-coordinate box. No root existence, physical parameter coverage, continuum error or biological validation supplied by this function."
+  },
+  "nonzero_box": {
+    "status": "CERTIFIED_ENTIRE_NODAL_BOX_EMBEDDING",
+    "all_element_J_positive": true,
+    "uniform_strong_monotonicity": true,
+    "axis_preserved_for_entire_box": true,
+    "global_injectivity_for_entire_box": true,
+    "J_bound": {
+      "lower_exact": "997150544997/1000000000000",
+      "upper_exact": "501425987643/500000000000"
+    },
+    "strong_monotonicity_lower_exact": "99729993/200270000",
+    "reference_topology": {
+      "status": "CERTIFIED_STRONGLY_MONOTONE_DISCRETE_MAP",
+      "global_injectivity_certified": true,
+      "convex_reference_rectangle": true,
+      "conforming_P2_traces": true,
+      "strong_monotonicity_constant_lower": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "axis_preserved": true,
+      "vertex_symmetric_gradient_certificates": [
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        },
+        {
+          "symmetric_F": [
+            "1",
+            "0",
+            "1"
+          ],
+          "lambda_min_lower": "1/2"
+        }
+      ],
+      "scope": "Exact sufficient discrete meridional injectivity on convex reference; positive axisymmetric J is checked separately."
+    },
+    "triangles": [
+      {
+        "positive_J_for_entire_box": true,
+        "axis_zero_coefficients_exact_for_entire_box": true,
+        "J_bound": {
+          "lower_exact": "997150544997/1000000000000",
+          "upper_exact": "501425987643/500000000000"
+        },
+        "correlated_degree4_coefficients": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "numerator": {
+              "lower_exact": "498600144999/500000000000",
+              "upper_exact": "501400845071/500000000000"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "498600144999/500000000000",
+              "upper_exact": "501400845071/500000000000"
+            }
+          },
+          {
+            "index": [
+              0,
+              1,
+              3
+            ],
+            "numerator": {
+              "lower_exact": "997150544997/1000000000000",
+              "upper_exact": "501425987643/500000000000"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "997150544997/1000000000000",
+              "upper_exact": "501425987643/500000000000"
+            }
+          },
+          {
+            "index": [
+              0,
+              2,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "149575091/150000000",
+              "upper_exact": "501417693503/500000000000"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "149575091/150000000",
+              "upper_exact": "501417693503/500000000000"
+            }
+          },
+          {
+            "index": [
+              0,
+              3,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "997250495003/1000000000000",
+              "upper_exact": "501375972643/500000000000"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "997250495003/1000000000000",
+              "upper_exact": "501375972643/500000000000"
+            }
+          },
+          {
+            "index": [
+              0,
+              4,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "498700115001/500000000000",
+              "upper_exact": "501300835071/500000000000"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "498700115001/500000000000",
+              "upper_exact": "501300835071/500000000000"
+            }
+          },
+          {
+            "index": [
+              1,
+              0,
+              3
+            ],
+            "numerator": {
+              "lower_exact": "93493809687/125000000000",
+              "upper_exact": "188012839433/250000000000"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "31164603229/31250000000",
+              "upper_exact": "188012839433/187500000000"
+            }
+          },
+          {
+            "index": [
+              1,
+              1,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "74791728083/100000000000",
+              "upper_exact": "11751325747/15625000000"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "74791728083/75000000000",
+              "upper_exact": "11751325747/11718750000"
+            }
+          },
+          {
+            "index": [
+              1,
+              2,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "74795058417/100000000000",
+              "upper_exact": "47003218613/62500000000"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "24931686139/25000000000",
+              "upper_exact": "47003218613/46875000000"
+            }
+          },
+          {
+            "index": [
+              1,
+              3,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "46753150469/62500000000",
+              "upper_exact": "187987831933/250000000000"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "46753150469/46875000000",
+              "upper_exact": "187987831933/187500000000"
+            }
+          },
+          {
+            "index": [
+              2,
+              0,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "299200266997/600000000000",
+              "upper_exact": "100266853039/200000000000"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "299200266997/300000000000",
+              "upper_exact": "100266853039/100000000000"
+            }
+          },
+          {
+            "index": [
+              2,
+              1,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "149595149/300000000",
+              "upper_exact": "100270198711/200000000000"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "149595149/150000000",
+              "upper_exact": "100270198711/100000000000"
+            }
+          },
+          {
+            "index": [
+              2,
+              2,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "299220245003/600000000000",
+              "upper_exact": "100260183039/200000000000"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "299220245003/300000000000",
+              "upper_exact": "100260183039/100000000000"
+            }
+          },
+          {
+            "index": [
+              3,
+              0,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "19948021/80000000",
+              "upper_exact": "1253252313/5000000000"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "19948021/20000000",
+              "upper_exact": "1253252313/1250000000"
+            }
+          },
+          {
+            "index": [
+              3,
+              1,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "19948021/80000000",
+              "upper_exact": "1253252313/5000000000"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "19948021/20000000",
+              "upper_exact": "1253252313/1250000000"
+            }
+          },
+          {
+            "index": [
+              4,
+              0,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          }
+        ],
+        "strong_monotonicity_for_entire_box": true,
+        "strong_monotonicity_lower_exact": "99729993/200270000",
+        "vertex_symmetric_gradient_bounds": [
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1999/2000",
+                "upper_exact": "2001/2000"
+              },
+              {
+                "lower_exact": "-9/10000",
+                "upper_exact": "9/10000"
+              },
+              {
+                "lower_exact": "624/625",
+                "upper_exact": "626/625"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "99789999/200210000"
+          },
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "9993/10000",
+                "upper_exact": "10007/10000"
+              },
+              {
+                "lower_exact": "-3/2500",
+                "upper_exact": "3/2500"
+              },
+              {
+                "lower_exact": "4991/5000",
+                "upper_exact": "5009/5000"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "16624997/33375000"
+          },
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "9991/10000",
+                "upper_exact": "10009/10000"
+              },
+              {
+                "lower_exact": "-13/10000",
+                "upper_exact": "13/10000"
+              },
+              {
+                "lower_exact": "4991/5000",
+                "upper_exact": "5009/5000"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "99729993/200270000"
+          }
+        ]
+      },
+      {
+        "positive_J_for_entire_box": true,
+        "axis_zero_coefficients_exact_for_entire_box": true,
+        "J_bound": {
+          "lower_exact": "498700154997/500000000000",
+          "upper_exact": "501300795067/500000000000"
+        },
+        "correlated_degree4_coefficients": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          },
+          {
+            "index": [
+              0,
+              1,
+              3
+            ],
+            "numerator": {
+              "lower_exact": "4991005249/20000000000",
+              "upper_exact": "5009005251/20000000000"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "4991005249/5000000000",
+              "upper_exact": "5009005251/5000000000"
+            }
+          },
+          {
+            "index": [
+              0,
+              2,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "299380268983/600000000000",
+              "upper_exact": "100206809699/200000000000"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "299380268983/300000000000",
+              "upper_exact": "100206809699/100000000000"
+            }
+          },
+          {
+            "index": [
+              0,
+              3,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "374125243743/500000000000",
+              "upper_exact": "375875603857/500000000000"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "124708414581/125000000000",
+              "upper_exact": "375875603857/375000000000"
+            }
+          },
+          {
+            "index": [
+              0,
+              4,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "498700154997/500000000000",
+              "upper_exact": "501300795067/500000000000"
+            },
+            "denominator_exact": "1",
+            "ratio": {
+              "lower_exact": "498700154997/500000000000",
+              "upper_exact": "501300795067/500000000000"
+            }
+          },
+          {
+            "index": [
+              1,
+              0,
+              3
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          },
+          {
+            "index": [
+              1,
+              1,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "4991005249/20000000000",
+              "upper_exact": "5009005251/20000000000"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "4991005249/5000000000",
+              "upper_exact": "5009005251/5000000000"
+            }
+          },
+          {
+            "index": [
+              1,
+              2,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "299380276979/600000000000",
+              "upper_exact": "100206807031/200000000000"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "299380276979/300000000000",
+              "upper_exact": "100206807031/100000000000"
+            }
+          },
+          {
+            "index": [
+              1,
+              3,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "374125263741/500000000000",
+              "upper_exact": "75175116771/100000000000"
+            },
+            "denominator_exact": "3/4",
+            "ratio": {
+              "lower_exact": "124708421247/125000000000",
+              "upper_exact": "25058372257/25000000000"
+            }
+          },
+          {
+            "index": [
+              2,
+              0,
+              2
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          },
+          {
+            "index": [
+              2,
+              1,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "4991005249/20000000000",
+              "upper_exact": "5009005251/20000000000"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "4991005249/5000000000",
+              "upper_exact": "5009005251/5000000000"
+            }
+          },
+          {
+            "index": [
+              2,
+              2,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "3991737133/8000000000",
+              "upper_exact": "100206804363/200000000000"
+            },
+            "denominator_exact": "1/2",
+            "ratio": {
+              "lower_exact": "3991737133/4000000000",
+              "upper_exact": "100206804363/100000000000"
+            }
+          },
+          {
+            "index": [
+              3,
+              0,
+              1
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          },
+          {
+            "index": [
+              3,
+              1,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "4991005249/20000000000",
+              "upper_exact": "5009005251/20000000000"
+            },
+            "denominator_exact": "1/4",
+            "ratio": {
+              "lower_exact": "4991005249/5000000000",
+              "upper_exact": "5009005251/5000000000"
+            }
+          },
+          {
+            "index": [
+              4,
+              0,
+              0
+            ],
+            "numerator": {
+              "lower_exact": "0",
+              "upper_exact": "0"
+            },
+            "denominator_exact": "0",
+            "ratio": null
+          }
+        ],
+        "strong_monotonicity_for_entire_box": true,
+        "strong_monotonicity_lower_exact": "99749981/200250000",
+        "vertex_symmetric_gradient_bounds": [
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1999/2000",
+                "upper_exact": "2001/2000"
+              },
+              {
+                "lower_exact": "-1/1250",
+                "upper_exact": "1/1250"
+              },
+              {
+                "lower_exact": "1249/1250",
+                "upper_exact": "1251/1250"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "4161249/8338750"
+          },
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1997/2000",
+                "upper_exact": "2003/2000"
+              },
+              {
+                "lower_exact": "-13/10000",
+                "upper_exact": "13/10000"
+              },
+              {
+                "lower_exact": "999/1000",
+                "upper_exact": "1001/1000"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "99749981/200250000"
+          },
+          {
+            "symmetric_gradient": [
+              {
+                "lower_exact": "1999/2000",
+                "upper_exact": "2001/2000"
+              },
+              {
+                "lower_exact": "-9/10000",
+                "upper_exact": "9/10000"
+              },
+              {
+                "lower_exact": "1249/1250",
+                "upper_exact": "1251/1250"
+              }
+            ],
+            "positive_definite_for_entire_box": true,
+            "lambda_lower_exact": "14267137/28590000"
+          }
+        ]
+      }
+    ],
+    "scope": "Every conforming P2 field in the supplied nodal-coordinate box. No root existence, physical parameter coverage, continuum error or biological validation supplied by this function."
+  },
+  "source_sha256": "18013c6c50c5f679eb6c4abc04e3cf9ce447ee18d0bf1efbf6dcfbd6806f49c2",
+  "scope": "Exact analytical/synthetic interval geometry; actual root application separate."
+}

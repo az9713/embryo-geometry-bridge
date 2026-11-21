@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ENDPOINT-OBSERVER-INDEPENDENT-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent check: which two points define tissue height?</h1>
+<p><strong>21 independent checks pass.</strong> The new observer correctly distinguishes height at one current physical radius from height between material endpoints that have moved to different radii. Separate spatial maxima, line means and disk means also remain distinct. The <a href="../scripts/verify_endpoint_observer_independently.py">replay script</a>, <a href="../evidence/quadratic_endpoint_observer_independent_review.json">receipt</a>, and <a href="QUADRATIC-ENDPOINT-OBSERVER.html">observer derivation/API</a> are retained.</p>
+<p>This review runs no mechanical optimization or biological fit. It uses a new exact analytic geometry, common-reference shifts, and an independent floating-point reconstruction/integration of one previously saved mechanical field. The production observer source is frozen at SHA256 <code>075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926</code>.</p>
+<h2>A counterexample with exact answers</h2>
+<p>Take two quadratic/linear material boundary curves, with <span class="math" data-tex="0\le t\le1"></span>:</p>
+<div class="math display" data-tex="
+(R_a(t),Z_a(t))=(t+t^2,10-t),\qquad
+(R_b(t),Z_b(t))=(2t,1-t).
+"></div>
+
+<p>Both cover the same current-radius interval <span class="math" data-tex="[0,2]"></span>, are radially monotone, and enclose a positive vertical thickness. Their common flat reference height is ten. If one pairs equal material parameters, the apparent shortening is</p>
+<div class="math display" data-tex="
+10-Z_a(t)+Z_b(t)=1.
+"></div>
+
+<p>But the top and bottom generally have different current radii at that material label. At the common physical radius <span class="math" data-tex="R=t+t^2"></span>, the basal parameter is <span class="math" data-tex="t_b=(t+t^2)/2"></span>. The correct vertical shortening is therefore</p>
+<div class="math display" data-tex="
+S(R(t))=1+\frac t2-\frac{t^2}2.
+"></div>
+
+<p>It has maximum <span class="math" data-tex="9/8"></span> at <span class="math" data-tex="t=1/2"></span>, or <span class="math" data-tex="R=3/4"></span>. Its line and disk means are, respectively,</p>
+<div class="math display" data-tex="
+\frac12\int_0^2S(R)\,dR=\frac{13}{12},\qquad
+\frac12\int_0^2R S(R)\,dR=\frac{43}{40}.
+"></div>
+
+<p>The individual spatial component maxima are each one, so their sum is two. Thus one geometry gives five different answers: material-paired value one, disk mean <span class="math" data-tex="43/40"></span>, line mean <span class="math" data-tex="13/12"></span>, current-radius maximum <span class="math" data-tex="9/8"></span>, and sum of separate component maxima two. None may be substituted for another without an additional argument.</p>
+<p><img alt="Exact synthetic geometry and its different summaries" src="assets/endpoint_counterexample.png" /></p>
+<p>The image is original and synthetic. The plot is illustrative; the rational formulas supply the exact results. Its <a href="../evidence/endpoint_counterexample_visual.json">generator and hash receipt</a> are retained.</p>
+<p>For the same example, the line-mean components are <span class="math" data-tex="7/12"></span> and <span class="math" data-tex="1/2"></span>; the disk-mean components are <span class="math" data-tex="89/120"></span> and <span class="math" data-tex="1/3"></span>. The independent tests compare the observer intervals directly with all these exact rational values.</p>
+<h2>A reference change preserves height but changes the partition</h2>
+<p>Adding <span class="math" data-tex="c=1/2"></span> to both component reference heights preserves their difference. It increases the declared apical-downward response by <span class="math" data-tex="1/2"></span> and decreases the basal-upward response by <span class="math" data-tex="1/2"></span>, while leaving both maximum and mean height shortening unchanged. Both spatial-weighting alternatives pass this check.</p>
+<p>This illustrates why a height reference alone cannot determine an apical/basal partition. It does not establish that the original experiment lacked a registered component reference. The <a href="JOINT-OBSERVATION-CONTRACT.html">source contract audit</a> states what its methods, images and workbook establish and what remains unspecified.</p>
+<h2>Independent check on an actual saved mechanical field</h2>
+<p>The review uses the corrected 12×6 field at compression coefficient 5000 and activation strength ten. It independently reconstructs each quadratic boundary from its Lagrange endpoint/midpoint controls, inverts the radial polynomial using numerical roots, and integrates apical motion, basal motion and height shortening separately on every current-radius segment.</p>
+<p>For both line and disk weights, the resulting six numerical integrals agree with the exact observer interval midpoints to at most approximately <span class="math" data-tex="1.78\times10^{-15}"></span> µm. This is an independent floating-point crosscheck, not a validated bound on the quadrature implementation. The observer's exact polynomial primitives and rational inverse brackets remain the basis of its interval claims.</p>
+<h2>Consequences for the previous calibration checks</h2>
+<p>Earlier material-column shortening and axis displacements remain retained, correctly labeled mechanical proxies. Their arithmetic is not erased. However, agreement or disagreement of those proxies with published extrema/regional means is not, by itself, proof that a matched experimental observation was predicted or violated. The source-matched quantity and its reference/aggregation rule must be established first.</p>
+<p>The new observer improves that alignment and supports a more explicit joint calibration. It does not supply experimental time coverage, source segmentation uncertainty, a continuum PDE error bound, a physical identified set or novelty. Those remain separate requirements under the original plan.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

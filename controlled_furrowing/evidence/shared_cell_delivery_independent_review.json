@@ -1,0 +1,92 @@
+{
+  "status": "PASS_INDEPENDENT_COMPONENT_DELIVERY",
+  "checks": {
+    "immutable_snapshot_reports_PASS": true,
+    "all214_current_snapshot_files_hashmatch": true,
+    "exact102_pages_204_viewports_no_duplicates_missing": true,
+    "browser_receipt_exact_hash_binding": true,
+    "all204_browser_rows_pass_literalTrue": true,
+    "all204_math_counts_raw_prose_assets_layout_links_clean": true,
+    "raw_scan_exact102_unique_current_pages": true,
+    "raw_scan_currentHTMLhashes_no_commands": true,
+    "raw_scan_own_verifier_source_current": true,
+    "independent_rendering38checks_PASS": true,
+    "rendering_source_and_fixture_hashes_current": true,
+    "old180_math_receipt_unchanged": true,
+    "old180_ONLY_declared_builder_delta": true,
+    "current_render_builder_verifier_in_immutable_browser_snapshot": true,
+    "all71_scientific_inputs_still_current": true,
+    "all18_physical_observer_kernel_sources_unchanged": true,
+    "component_math_records17_outputs68_originalgoal_notcomplete": true,
+    "parent_index_current_2width_PASS": true,
+    "parent_index_current_html_and_builder_hashes": true,
+    "three_doc_rendering_only_delta_current_and_old_archived": true,
+    "three_doc_source_math_render_checks_current": true,
+    "space_author_receipt_PASS_and_math_hashes_current": true,
+    "fresh_independent_Space91blocks_sequence13": true,
+    "fresh_Space_latest_section_exact_math_hashes_scope": true,
+    "visual_generation_followed_by_bound_inspection": true,
+    "all_four_local_visual_files_match_receipt": true,
+    "fresh_native_both_image_reads_match_upload_localbytes": true,
+    "full_five_gates_still_incomplete": true
+  },
+  "failures": [],
+  "created_utc": "2026-11-19T15:54:21.613185+00:00",
+  "review_source_sha256": "03bd5d1dd869418765eedd86408f39920a5d395351eff859afa741e96db3670c",
+  "file_hashes_relative_to_child_except_parent_prefix": {
+    "evidence/readiness_snapshot_verification.json": "23bb42d8f7971e666a10deab29644f82ac8cd6cc7001c5ccd3b1d3970bc458b3",
+    "evidence/report_browser_verification.json": "34332d279597119393ab159f4195959213d371f67b951f01f37315f02dbe652d",
+    "evidence/raw_prose_math_scan.json": "b459920e242f6a908e8026c601be2ec18f9729cd74ba93163e70f0613c78e7be",
+    "evidence/rendering_guard_independent_review.json": "56e2684e9078cfebd0b8eac0d8e753ca8347e84c3944ff75ff2724689be42c78",
+    "evidence/shared_cell_cohort_independent_review.json": "2f7da9f2bee4c1b7e4fdd7f3a88ed90dd914fb218269b3d65bf12bb8a6ab9114",
+    "evidence/shared_cell_cohort_inference.json": "1f8c4dc1ad8924f8fda13e6748d5e73aac426b5771b02404803d27c1955aa677",
+    "evidence/parent_index_checkpoint_verification.json": "e709cb8fb121ae186b0243a3a67b7f2cd3c0a3ea4bc83bdba303b9c1e121979a",
+    "evidence/space_shared_cell_update.json": "78e5a18db5366e03410e13b773b9cda13f1ca78425ef63b8ec55a845dbabf680",
+    "runs/shared_cell_cohort_v1/protocol.json": "9a513b33eb8ef589a8ea82561e476ffc9ca8440dcef5ee4488ff11710165f7ea",
+    "runs/shared_cell_cohort_v1/visual_receipt.json": "af513b23505b7dce3f9a4e3afec323a0f7968c66a33d987924bc60db38929185",
+    "runs/shared_cell_cohort_v1/visual_inspection.json": "cd09ceaf58dec0d10d7c38976d84a0fd317fce042dede47326a70b1bf6b6eedb",
+    "runs/documentation_rendering_corrections_v1/edit_log.json": "8e605e9ad8c150429dd57c9bb622880310c5b7b01e4f0627bdb78c2167820c7f",
+    "runs/documentation_rendering_corrections_v1/math_render_checks.json": "034d204740eb8b7c2411cde00b841d8303684df62174acf87cc7e5e1144913f1",
+    "runs/shared_cell_delivery_review_v1/space_live_readback.json": "6b3ddbed979a17cce47acd8b8e39bd44af213c7f3d0b7bb1c3f01d1d03c283b3",
+    "evidence/gates.json": "b35a9203145532087699d1c740fa6fe5f685d858996f30b0dfce5d3006de91f7",
+    "scripts/scan_raw_prose_math.py": "bcf803b308a4122db1d57e6e92ad2004b5e4c8db4bd239ef3f3cc5bd56b0cab7",
+    "parent:docs/index.html": "33f39433d7098132e743b46e3af9bf0be87b96df32bbca4d01c20e26ea8cab9a",
+    "parent:scripts/build_dossier.py": "a3edeee64e8a8d9b195cbe7fede4c9160e60d252903a44b27eb57c574056c62b"
+  },
+  "historical_stale_receipts_NOT_used_as_current": [
+    {
+      "receipt": "evidence/final_component_binding_check.json",
+      "interpretation": "Point-root-phase historical PASS, not a current delivery verifier; excluded from acceptance.",
+      "stale_bindings": {
+        "docs/CURRENT-FIVE-GATE-AUDIT.md": {
+          "historical_expected": "986bfe10ffdee5fc5db9f329d61d28c5ddd26e9bca24c050056bc91792ee89a2",
+          "current": "992dab3b84ac9660c1df255692588092b842ee1680e4905c8563800fdd4ddaea"
+        },
+        "evidence/gates.json": {
+          "historical_expected": "c357584c1c83570caef3cfefb6363202a8b5a74fb7192880c39c3d383f635adf",
+          "current": "b35a9203145532087699d1c740fa6fe5f685d858996f30b0dfce5d3006de91f7"
+        }
+      }
+    },
+    {
+      "receipt": "evidence/shared_cell_render_focus.json",
+      "interpretation": "Earlier focused page test superseded by full immutable102/204 browser snapshot; excluded from acceptance.",
+      "historical_HTML_sha256": "77c7933a20f97b3bef0db315e033cbb9f9e6cdfc2fac69e2fcbab36899221533",
+      "current_HTML_sha256": "9afdbb1bea446a98851163140c3e85c32533ee7af4a7988ee74578a14fc5de76"
+    }
+  ],
+  "browser_scope": {
+    "current_child_pages": 102,
+    "current_child_page_viewports": 204,
+    "parent_landing_viewports": 2,
+    "fresh_browser_rerun_by_this_reviewer": false,
+    "method": "Current exacthashbinding+inspection of existing immutable browser rows; own independent renderingfixtures already executed separately."
+  },
+  "Space_scope": "Fresh independent native Page read seq13/91blocks and actual PNGreference reads with exactbytehashes matching local/authorreceipts; no Space edits or contact. Account/ACL identities omitted from retained readback.",
+  "root_final_delivery_receipt_intentionally_not_bound": "Root finalizer writes shared_cell_final_delivery.json after consuming thisreview; bindingpendingfilewouldcausecircularstaleness.",
+  "component_complete": true,
+  "original_five_gate_goal_complete": false,
+  "full_physical_identified_set_computed": false,
+  "confirmed_novelty": false,
+  "scope": "Componentdeliveryverification only; no numerical/root/Hessian jobs, productiondocument/HTML edits, publicdeployment or newscientificproof. Backslash-command scan remainsheuristic, notuniversalsemanticmathdetection."
+}

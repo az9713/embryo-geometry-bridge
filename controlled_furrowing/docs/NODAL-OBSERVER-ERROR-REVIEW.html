@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NODAL-OBSERVER-ERROR-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review: nodal coordinate errors to static endpoint errors</h1>
+<p><strong>Verdict: PASS for the current conditional transfer theorem and its revised API. No actual mechanical error radius is certified by this review.</strong> A verified or explicitly assumed nodal bound is required as input. Force residuals, agreement between meshes and higher-quadrature checks are not substituted for that bound.</p>
+<p>The proof constants, common-domain conditions, cross-edge comparison and endpoint composition were checked independently. <code>evidence/nodal_observer_error_independent_review.json</code> retains <strong>80 passing exact/control checks</strong> before final documentation checks, including 64 independent radial/vertical sign corners, a deliberate edge-crossing example and the revised ROI guards. The mathematical proof covers all points; the finite control test grid is corroboration rather than that proof.</p>
+<h2>Exact trace constants</h2>
+<p>On each corresponding P2 edge, use local parameter t in [0,1] and nodal functions</p>
+<div class="math display" data-tex="
+ N_0=1-3t+2t^2,\qquad N_1=4t-4t^2,\qquad N_2=-t+2t^2.
+"></div>
+
+<p>Assume every corresponding physical nodal coordinate differs by at most epsilon, separately in R and Z. For t&lt;=1/2, the basis signs give</p>
+<div class="math display" data-tex="
+ \sum_i&#124;N_i&#124;=1+2t-4t^2\le\frac54.
+"></div>
+
+<p>Reflection handles the other half. At t=1/4 the signs (+,+,-) attain 5/4. Also <span class="math" data-tex="\sum_i&#124;N_i&#x27;&#124;"></span> is a convex piecewise-linear function of t; its endpoint values are eight, hence its maximum is eight. The radial error signs (-,+,-) attain the derivative constant at t=0. Therefore</p>
+<div class="math display" data-tex="
+ \&#124;\widetilde R-R\&#124;_\infty,
+ \&#124;\widetilde Z-Z\&#124;_\infty\le e:=\frac54\varepsilon,
+ \qquad\&#124;\widetilde R&#x27;-R&#x27;\&#124;_\infty\le8\varepsilon.
+"></div>
+
+<p>These two constants are separately sharp for unconstrained edge nodal errors. The final composed observer bound is conservative and is not claimed sharp. Fixed-node constraints can improve constants but are not exploited here.</p>
+<p>If every base edge has minimum normalized-parameter radial derivative m&gt;8epsilon, every perturbed edge remains strictly radially increasing. Shared global nodes must retain conformity, so the assembled perturbed trace is continuous and increasing. These are assumptions about corresponding P2 fields; a force residual alone does not prove them.</p>
+<h2>Why crossing an edge does not invalidate the bound</h2>
+<p>Let G be the continuous base Eulerian graph on its full radial domain. The exact code uses the global bound</p>
+<div class="math display" data-tex="
+ L=\max_{\rm edges}
+ \frac{\max_{t\in[0,1]}&#124;Z&#x27;(t)&#124;}{\min_{t\in[0,1]}R&#x27;(t)}.
+"></div>
+
+<p>Each numerator and denominator extremum occurs at an endpoint of its linear derivative. The resulting piecewise bound gives one global Lipschitz constant across the continuous joined graph.</p>
+<p>For any r in a common covered physical ROI, select the perturbed edge and local parameter with <span class="math" data-tex="\widetilde R(t)=r"></span>. The corresponding base R(t) is in the full base domain, although it may lie outside the ROI or on the other side of a graph knot. Then</p>
+<div class="math display" data-tex="
+ &#124;\widetilde Z(t)-G(r)&#124;
+ \le &#124;\widetilde Z(t)-Z(t)&#124;+&#124;G(R(t))-G(r)&#124;
+ \le e+Le.
+"></div>
+
+<p>The proof does not assume that the two inverse maps choose the same edge. Restricting L to the selected base edge or an unexpanded ROI would not be justified in general.</p>
+<p>An independent exact example uses two base edges: flat height on R in [0,1], then slope four on [1,2]. Move their shared radial knot to 1+epsilon and each adjacent radial midpoint by epsilon/2, preserving outer radii and all heights. At r=1+epsilon/2, the perturbed inverse lies on the first edge while the base inverse lies on the second. The actual height error is 2epsilon. A same-edge slope-zero estimate of 5epsilon/4 would fail, but the implemented global-Lipschitz bound succeeds.</p>
+<h2>Common domain and positive mean mass</h2>
+<p>If the two global endpoint radii are independently known to remain fixed, the whole base radial domain is inherited. The boolean API flag asserts this external fact; the function does not verify it from unknown perturbed nodes.</p>
+<p>Without that assertion, the nodal error bound supplies a guaranteed common interior. Using the conservative e, an ROI contained in <span class="math" data-tex="[R_{\min}+e,R_{\max}-e]"></span> is sufficient. A full-domain request without fixed endpoints is correctly left unresolved. A boundary inverse that merely exists for the base trace is insufficient.</p>
+<p>Apical and basal endpoint errors may be combined only on one identical fixed ROI. The current API rejects composition of differing default full-surface ROIs, while allowing an explicitly supplied common covered interval. The mean interface also rejects zero-width common ROIs, because line/disk normalization would have zero mass. A single-curve pointwise bound on a singleton remains meaningful and is kept available separately.</p>
+<p>The original same-ROI composition gap was preserved in <code>runs/nodal_error_transfer/initial_revision/</code>. The reviewer then exposed the zero-width mean-mass case; its source/tests/finding are preserved in <code>runs/nodal_error_transfer/pre_mean_mass_guard/</code>, and the current version has thirteen passing source checks. Neither historical gap invalidated the current project's positive-width common ROI, but both generic API cases required explicit handling.</p>
+<h2>Endpoint composition and reference/weight assumptions</h2>
+<p>For two static surfaces with Eulerian errors Ea and Eb on the same ROI, unchanged reference profiles imply</p>
+<div class="math display" data-tex="
+ &#124;\delta d_a&#124;\le E_a,\qquad &#124;\delta d_b&#124;\le E_b,
+ \qquad&#124;\delta s&#124;\le E_a+E_b.
+"></div>
+
+<p>For any bounded functions, <span class="math" data-tex="&#124;\sup f-\sup g&#124;\le\&#124;f-g\&#124;_\infty"></span>. A fixed normalized nonnegative measure has operator norm one on bounded functions. Thus component maxima/means obey Ea or Eb, while height maximum/mean obey their sum. Signed shortening is permitted; no positive-part clipping is assumed.</p>
+<p>The physical ROI, references and normalized measure must be identical in the comparison. Changing a counterfactual reference, registration, spatial mask or geometry-dependent surface-area weight adds other errors not covered here. In particular, unchanged surfaces with zero nodal error cannot bound an independently shifted reference height. The line/disk weights are fixed functions of current physical radius, which meets the stated condition.</p>
+<h2>A future algebraic root cube requires a rounding bridge</h2>
+<p>Suppose an independently validated root satisfies <span class="math" data-tex="\&#124;u_*-u_0\&#124;_\infty\le r"></span> in the fixed free-displacement coordinates. The exact reference-plus-centre sum and stored rounded <code>current_nodes</code> need not coincide. A sufficient physical-coordinate input is</p>
+<div class="math display" data-tex="
+ \varepsilon=L_0 r+
+ \max_i\left&#124;L_0(X_i+u_{0,i})-x_{i,\rm stored}\right&#124;,
+"></div>
+
+<p>with fixed coordinates treated consistently and the last term evaluated with exact arithmetic or rigorous intervals. Omitting it is unjustified even if the numerical gap is very small. The root cube must also preserve the actual radial boundary constraints and admissible geometry.</p>
+<p>A finite-dimensional certificate for one quadrature-defined root would still leave quadrature-model differences, continuum discretization, branch/stability issues, temporal observation semantics and experimental uncertainties separate. This component supplies the conditional last link from a nodal bound to static observations; it does not create the missing nodal bound or a physical confidence interval.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

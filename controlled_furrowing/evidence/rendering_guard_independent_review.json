@@ -1,0 +1,530 @@
+{
+  "status": "PASS",
+  "checks": {
+    "builder_AST_unchanged_except_convert": true,
+    "pipe_entity_present_before_tableparse": true,
+    "new_table_1440_local_assets_no_browser_errors": true,
+    "new_table_1440_one_mathnode_exact_dataset": true,
+    "new_table_1440_exact_three_header_bodycells": true,
+    "new_table_1440_KaTeX_success_exact_annotation": true,
+    "old_table_1440_local_assets_no_browser_errors": true,
+    "old_table_1440_old_format_failure_reproduced": true,
+    "raw_prose_1440_local_assets_no_browser_errors": true,
+    "raw_prose_1440_old_count_guard_misses_raw": true,
+    "raw_prose_1440_new_guard_rejects_raw": true,
+    "code_exempt_1440_local_assets_no_browser_errors": true,
+    "code_exempt_1440_code_style_script_exempt": true,
+    "standalone_1440_local_assets_no_browser_errors": true,
+    "standalone_1440_inline_display_regression": true,
+    "guard_limit_1440_local_assets_no_browser_errors": true,
+    "guard_limit_1440_heuristic_limit_explicit": true,
+    "new_table_390_local_assets_no_browser_errors": true,
+    "new_table_390_one_mathnode_exact_dataset": true,
+    "new_table_390_exact_three_header_bodycells": true,
+    "new_table_390_KaTeX_success_exact_annotation": true,
+    "old_table_390_local_assets_no_browser_errors": true,
+    "old_table_390_old_format_failure_reproduced": true,
+    "raw_prose_390_local_assets_no_browser_errors": true,
+    "raw_prose_390_old_count_guard_misses_raw": true,
+    "raw_prose_390_new_guard_rejects_raw": true,
+    "code_exempt_390_local_assets_no_browser_errors": true,
+    "code_exempt_390_code_style_script_exempt": true,
+    "standalone_390_local_assets_no_browser_errors": true,
+    "standalone_390_inline_display_regression": true,
+    "guard_limit_390_local_assets_no_browser_errors": true,
+    "guard_limit_390_heuristic_limit_explicit": true,
+    "old180_receipt_bytes_unchanged": true,
+    "ONLY_old_builder_binding_superseded": true,
+    "archived_builder_equals_old180_binding": true,
+    "all71_science_inputs_unchanged": true,
+    "all18_physical_observer_sources_unchanged": true,
+    "tested_render_sources_unchanged": true
+  },
+  "review_source_sha256": "cd3915d100fe0e8d5404e82fba175a93d631c1e60fabc674c428f5771a7b1c96",
+  "source_hashes": {
+    "old_builder": "5ef22e616c6cd754af7443235ba3e7833b0b06f4caf6816e203a0d2c79c6d9de",
+    "new_builder": "557adfe58653e806fbd1ee8516cdd621bdb5b039d7a85f3cd1f6d2f0cf0c6b09",
+    "old_verifier": "712b1399ca1c792d081373fedcfd7f4d19c1f1dca75ce379fd475584b855952e",
+    "new_verifier": "841d8e81d4db8a15cf6411526f2177fc1a293663e98152f0c2771aa467ed0237",
+    "old_review": "2f7da9f2bee4c1b7e4fdd7f3a88ed90dd914fb218269b3d65bf12bb8a6ab9114"
+  },
+  "source_files": {
+    "old_builder": "runs/rendering_guard_revision_0/build_report.py",
+    "new_builder": "scripts/build_report.py",
+    "old_verifier": "runs/rendering_guard_revision_0/verify_report.py",
+    "new_verifier": "scripts/verify_report.py",
+    "old_review": "runs/rendering_guard_revision_0/shared_cell_cohort_independent_review.json"
+  },
+  "browser": "Microsoft Edge, Playwright headless",
+  "browser_version": "157.0.4341.60",
+  "playwright_version": "1.57.0",
+  "markdown_version": "3.8.2",
+  "fixture_results": [
+    {
+      "fixture": "new_table",
+      "width": 1440,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 1,
+        "rendered": 1,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 1,
+        "rendered": 1,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [
+          "|s|\\le0.001"
+        ],
+        "headCells": [
+          "Name",
+          "Condition",
+          "Note"
+        ],
+        "bodyRows": [
+          [
+            "increment",
+            "\u2223s\u2223\u22640.001|s|\\le0.001\u2223s\u2223\u22640.001",
+            "kept"
+          ]
+        ],
+        "codeText": [],
+        "annotations": [
+          "|s|\\le0.001"
+        ],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "old_table",
+      "width": 1440,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [],
+        "headCells": [
+          "Name",
+          "Condition",
+          "Note"
+        ],
+        "bodyRows": [
+          [
+            "increment",
+            "<span class=\"math\" data-tex=\"",
+            "s"
+          ]
+        ],
+        "codeText": [],
+        "annotations": [],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "raw_prose",
+      "width": 1440,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "rawProseTeX": [
+          "\\rho",
+          "\\frac"
+        ],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [],
+        "headCells": [],
+        "bodyRows": [],
+        "codeText": [],
+        "annotations": [],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "code_exempt",
+      "width": 1440,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [],
+        "headCells": [],
+        "bodyRows": [],
+        "codeText": [
+          "\\rho \\frac{1}{2}\n",
+          "\\rho \\frac{1}{2}\n",
+          "\\alpha"
+        ],
+        "annotations": [],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "standalone",
+      "width": 1440,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 2,
+        "rendered": 2,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 2,
+        "rendered": 2,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [
+          "|x|=1",
+          "\\|x\\|_2=1"
+        ],
+        "headCells": [],
+        "bodyRows": [],
+        "codeText": [],
+        "annotations": [
+          "|x|=1",
+          "\\|x\\|_2=1"
+        ],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "guard_limit",
+      "width": 1440,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [],
+        "headCells": [],
+        "bodyRows": [],
+        "codeText": [],
+        "annotations": [],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "new_table",
+      "width": 390,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 1,
+        "rendered": 1,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 1,
+        "rendered": 1,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [
+          "|s|\\le0.001"
+        ],
+        "headCells": [
+          "Name",
+          "Condition",
+          "Note"
+        ],
+        "bodyRows": [
+          [
+            "increment",
+            "\u2223s\u2223\u22640.001|s|\\le0.001\u2223s\u2223\u22640.001",
+            "kept"
+          ]
+        ],
+        "codeText": [],
+        "annotations": [
+          "|s|\\le0.001"
+        ],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "old_table",
+      "width": 390,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [],
+        "headCells": [
+          "Name",
+          "Condition",
+          "Note"
+        ],
+        "bodyRows": [
+          [
+            "increment",
+            "<span class=\"math\" data-tex=\"",
+            "s"
+          ]
+        ],
+        "codeText": [],
+        "annotations": [],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "raw_prose",
+      "width": 390,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "rawProseTeX": [
+          "\\rho",
+          "\\frac"
+        ],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [],
+        "headCells": [],
+        "bodyRows": [],
+        "codeText": [],
+        "annotations": [],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "code_exempt",
+      "width": 390,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [],
+        "headCells": [],
+        "bodyRows": [],
+        "codeText": [
+          "\\rho \\frac{1}{2}\n",
+          "\\rho \\frac{1}{2}\n",
+          "\\alpha"
+        ],
+        "annotations": [],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "standalone",
+      "width": 390,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 2,
+        "rendered": 2,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 2,
+        "rendered": 2,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [
+          "|x|=1",
+          "\\|x\\|_2=1"
+        ],
+        "headCells": [],
+        "bodyRows": [],
+        "codeText": [],
+        "annotations": [
+          "|x|=1",
+          "\\|x\\|_2=1"
+        ],
+        "katexVersion": "0.16.11"
+      }
+    },
+    {
+      "fixture": "guard_limit",
+      "width": 390,
+      "HTTP_status": 200,
+      "browser_errors": [],
+      "HTTP_errors": [],
+      "old_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "images": true,
+        "overflow": false
+      },
+      "new_guard": {
+        "errors": "",
+        "math": 0,
+        "rendered": 0,
+        "rawProseTeX": [],
+        "images": true,
+        "overflow": false
+      },
+      "DOM": {
+        "dataTex": [],
+        "headCells": [],
+        "bodyRows": [],
+        "codeText": [],
+        "annotations": [],
+        "katexVersion": "0.16.11"
+      }
+    }
+  ],
+  "fixture_file_hashes": {
+    "runs/rendering_guard_review_v1/builder_delta.diff": "1cc63334c2eb3275728360c38eba1e59aefd05a9149333c761bece041b5ecf30",
+    "runs/rendering_guard_review_v1/code_exempt.html": "74771cbfda51c2e9fdeeca1c584d7f5a08de02452e7fa50bf94b2816d71c1994",
+    "runs/rendering_guard_review_v1/guard_limit.html": "a4f8b08904c062a2e0fa0fd6dd70fb65e528a92927e06b1e6c4c3ee9e76339de",
+    "runs/rendering_guard_review_v1/new_probe.js": "8dafd72538e3a9bbc8c83fd9aa2f252042edaee48caf3b4b54b79c0606ffd876",
+    "runs/rendering_guard_review_v1/new_table.html": "40fc2be38b153928dc4878d1e5971b6a1fadd84c11e4d61fcc8d1b6c69885e6f",
+    "runs/rendering_guard_review_v1/new_table_1440.png": "10cdd8911da052e7c6a7ad52d927fc3f1b58cbb2f81792200f6a666f16810571",
+    "runs/rendering_guard_review_v1/new_table_390.png": "61f03cedb56bc97efbddbfe586d46be8782da019fad8dca8b396c1bc62846dc3",
+    "runs/rendering_guard_review_v1/old_probe.js": "99884b5d2add21eda210cd0ab17c6e5e995d11e7a39690f4f18cd479fa88f002",
+    "runs/rendering_guard_review_v1/old_table.html": "54c46147fb9e3e2bc9478e49d9680fcd427582071ec94731bb13847e220dc526",
+    "runs/rendering_guard_review_v1/old_table_1440.png": "8cfe51b4440222997795626028d29a0869d1fe725d52b35e6af54f3497fbf2d9",
+    "runs/rendering_guard_review_v1/old_table_390.png": "675b1e3533e97ce95cda84947bcdd696e8d9bc1d150b4751a9391f3d9de467df",
+    "runs/rendering_guard_review_v1/raw_prose.html": "f11a4d6b43613741b6af2c7a6b7797ee85d971b34819b6d63cb0a33b91f89271",
+    "runs/rendering_guard_review_v1/review_rendering_guard.py": "cd3915d100fe0e8d5404e82fba175a93d631c1e60fabc674c428f5771a7b1c96",
+    "runs/rendering_guard_review_v1/standalone.html": "9b2059341123c77ab404486479f60ffb10de1cc8d946bb84cf23eeef490613db",
+    "runs/rendering_guard_review_v1/table_fixture.md": "30f9df3cd8d93f8cd8299377ea93b8c71fbc0cf26055e325b182697b8238a806",
+    "runs/rendering_guard_review_v1/verifier_delta.diff": "b5b92a42afbd130a42f46634e2f4bc8a82f31a573e2ff52a2c127e075d2c6cdb",
+    "runs/rendering_guard_review_v1/source_snapshots/new_builder.py": "557adfe58653e806fbd1ee8516cdd621bdb5b039d7a85f3cd1f6d2f0cf0c6b09",
+    "runs/rendering_guard_review_v1/source_snapshots/new_verifier.py": "841d8e81d4db8a15cf6411526f2177fc1a293663e98152f0c2771aa467ed0237",
+    "runs/rendering_guard_review_v1/source_snapshots/old_builder.py": "5ef22e616c6cd754af7443235ba3e7833b0b06f4caf6816e203a0d2c79c6d9de",
+    "runs/rendering_guard_review_v1/source_snapshots/old_review.json": "2f7da9f2bee4c1b7e4fdd7f3a88ed90dd914fb218269b3d65bf12bb8a6ab9114",
+    "runs/rendering_guard_review_v1/source_snapshots/old_verifier.py": "712b1399ca1c792d081373fedcfd7f4d19c1f1dca75ce379fd475584b855952e"
+  },
+  "old180_control_source_supersession": {
+    "path": "controlled_furrowing/scripts/build_report.py",
+    "old": "5ef22e616c6cd754af7443235ba3e7833b0b06f4caf6816e203a0d2c79c6d9de",
+    "new": "557adfe58653e806fbd1ee8516cdd621bdb5b039d7a85f3cd1f6d2f0cf0c6b09",
+    "reason": "Escape attribute pipes before Markdown; browser restores exact TeX."
+  },
+  "scope": "Independent localfixtures only, not final102pages/204viewports, livedeployment or newsciencecomputation. Detector matches backslash-letter control words; .math/script/style/pre/code exempt. Plain algebra or control-symbol-only text is not universally detected.",
+  "scientific_proofs_or_claims_changed": false,
+  "development_note": "Initial sourcegenerator nested-string syntax failed before writing any review files or executing browser/science; corrected generator. Original production sources were never edited."
+}

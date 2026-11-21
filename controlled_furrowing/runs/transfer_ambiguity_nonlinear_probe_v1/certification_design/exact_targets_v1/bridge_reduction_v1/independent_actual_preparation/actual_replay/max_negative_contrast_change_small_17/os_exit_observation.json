@@ -1,0 +1,10 @@
+{
+  "status": "PASS_OBSERVED_INDEPENDENT_GLOBAL_REDUCTION_TRUE_OS_EXIT",
+  "pilot_id": "max_negative_contrast_change_small_17",
+  "pid": 20740,
+  "unified_exec_session": 81577,
+  "observed_exit_code": 0,
+  "terminal_sha256": "cbbe45e8dc12aac6903ec184395122ee95f239cc8e1be017c7d552010d384a40",
+  "receipt_sha256": "665fab8f7b5c822eb0846c39d1f50f67aa151090dffc0ddf4be5abcf77b06b98",
+  "root_admission_sha256": "e933245e569719f01f9bd80b3fde305bd5ccfff0bfc22ba657a8718c89216130"
+}

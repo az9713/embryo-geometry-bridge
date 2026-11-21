@@ -1,0 +1,22 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"byte_size\": 136127,\n  \"file_access_confirmed\": true,\n  \"file_name\": \"scalar_reproduction-67d0ac95aeb64757b30847b7437f1020.png\",\n  \"inserted\": false,\n  \"is_image\": true,\n  \"markdown\": \"![Frozen scalar reproduction \\u2014 not shape prediction](library-file:fde1_bGliZmlsZV9HRG5Udl9wNzE5cDl2UkQ1MUV4d2x3_FileDrive_d69130b799448191b036b648f75c6861)\",\n  \"mime_type\": \"image/png\",\n  \"next_step\": \"Read the Page and use edit_page with its fresh guards to insert markdown.\",\n  \"page_id\": \"page_c50551506ff881919407cc8f9f3477c2\",\n  \"reference\": \"library-file:fde1_bGliZmlsZV9HRG5Udl9wNzE5cDl2UkQ1MUV4d2x3_FileDrive_d69130b799448191b036b648f75c6861\",\n  \"sha256\": \"e29241116d1eb93c6e37a54260d2dea3bb101babeed6dd85e35de6484f1db096\"\n}"
+    }
+  ],
+  "structuredContent": {
+    "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+    "reference": "library-file:fde1_bGliZmlsZV9HRG5Udl9wNzE5cDl2UkQ1MUV4d2x3_FileDrive_d69130b799448191b036b648f75c6861",
+    "file_name": "scalar_reproduction-67d0ac95aeb64757b30847b7437f1020.png",
+    "mime_type": "image/png",
+    "byte_size": 136127,
+    "sha256": "e29241116d1eb93c6e37a54260d2dea3bb101babeed6dd85e35de6484f1db096",
+    "file_access_confirmed": true,
+    "is_image": true,
+    "markdown": "![Frozen scalar reproduction — not shape prediction](library-file:fde1_bGliZmlsZV9HRG5Udl9wNzE5cDl2UkQ1MUV4d2x3_FileDrive_d69130b799448191b036b648f75c6861)",
+    "inserted": false,
+    "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+  },
+  "isError": false
+}

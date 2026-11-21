@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GAIN-SURROGATE-V2-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent gate for the extended gain surrogate</h1>
+<p><strong>PASS for the frozen v2 defined surrogate.</strong> Extending the verified strength table from 10 to 20 produces interior optima for all four observation alternatives. The review certifies the complete finite surrogate calculation and its source linkage; it does not certify a nonlinear physical gain optimum or complete identified set. Direct nonlinear candidate evaluation may now proceed against the exact reviewed hashes.</p>
+<p>The <a href="../../OMITTED.html?path=controlled_furrowing/runs/joint_gain_extension_v2/protocol.json">frozen protocol</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/joint_gain_extension_v2/response_table.json">extended response table</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/joint_gain_extension_v2/surrogate_candidates.json">candidate certificates</a>, and <a href="../evidence/piecewise_gain_minimax_v2_independent_review.json">independent gate receipt</a> are separate from the preserved <a href="GAIN-SURROGATE-REVIEW.html">v1 review</a>. No biological fit or solver optimization was rerun by this reviewer.</p>
+<h2>Frozen inputs and new-node checks</h2>
+<p>The table now has strengths 0, 1, 5, 10, 20. Its first four rows are identical to v1, and all parent-artifact, seed-field, source-code and small-data hashes match. The new strength 20 state has the same physical parameters, reaches its requested target, and is bound to the new table by SHA256.</p>
+<p>The reviewer re-evaluated the frozen physical potential's gradient at that saved field under both integration policies, without taking an optimization step. The normalized force norms were 5.5149149×10⁻¹² under Duffy8/surface12 and 5.4514844×10⁻¹¹ under Duffy12/surface16; both pass the declared 10⁻⁷ gate. Replaying the frozen exact geometry verifier reproduces the retained positive-J and global-embedding certificates. The observer reproduces all 16 new strength/variant/channel intervals. These checks bind one stored discrete state to the table; they are not continuum error bounds or independent proofs of the verifier algorithms.</p>
+<p>The cap is now <span class="math" data-tex="20/\max I_i=31250000/2360271\approx13.2400050672"></span>. The protocol's conditional extension rule stopped at 20 because every variant's restricted surrogate optimum is interior. No strength 40 or 80 field was needed or promoted into this reviewed table.</p>
+<h2>Complete exact certificate replay</h2>
+<p>All 17 records and all four channels remain in the objective. The reviewer reconstructed 43 breakpoints, 42 gain cells per variant, and 23,016 signed affine line coefficients across 168 cell certificates. Every coefficient agrees exactly with the actual source response, dose, channel, interpolation segment and rational midpoint of the node interval.</p>
+<p>Each candidate loss and active set passes the appropriate exact convex subgradient or cell-boundary condition. The cells cover the complete declared gain interval, and the reported global result is the minimum over every cell. The optimizer is byte-identical to the one independently checked using exhaustive vertex enumeration on six synthetic cases in v1. No optimizer was invoked to reproduce the actual v2 results: the retained certificates were independently replayed.</p>
+<table>
+<thead>
+<tr>
+<th>Spatial mean weight</th>
+<th>Component aggregation</th>
+<th style="text-align: right;">Interior surrogate gain</th>
+<th style="text-align: right;">Minimum worst residual (µm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current disk</td>
+<td>Spatial maximum</td>
+<td style="text-align: right;">8.062972020</td>
+<td style="text-align: right;">5.246851170</td>
+</tr>
+<tr>
+<td>Current disk</td>
+<td>Regional mean</td>
+<td style="text-align: right;">9.509957310</td>
+<td style="text-align: right;">6.024626246</td>
+</tr>
+<tr>
+<td>Current radial line</td>
+<td>Spatial maximum</td>
+<td style="text-align: right;">7.327159326</td>
+<td style="text-align: right;">5.599341560</td>
+</tr>
+<tr>
+<td>Current radial line</td>
+<td>Regional mean</td>
+<td style="text-align: right;">8.160245983</td>
+<td style="text-align: right;">6.076291390</td>
+</tr>
+</tbody>
+</table>
+<p>All four optima balance two active residuals: overprediction of column L's regional-mean shortening and underprediction of column M's apical entry. This identifies a quantitative tradeoff within the current fixed-scenario surrogate. It is not a demonstrated biological inconsistency: source observation semantics, heterogeneous specimens, nonlinear interpolation, time dependence and numerical error remain separate issues.</p>
+<h2>What this gate authorizes—and what it does not establish</h2>
+<p>The receipt's PASS is bound to the exact protocol, table, candidate and optimizer hashes. It permits direct evaluation of the reviewed candidate-dose strengths under the frozen v2 procedure, retaining failures and all four endpoint intervals. Changing any reviewed artifact requires another audit or a separately versioned result.</p>
+<p>An interior surrogate optimum resolves v1's immediate table-edge problem. It does not prove that no better gain exists outside the declared range, that the actual nonlinear response follows the midpoint interpolant, or that a static endpoint equals the experimental temporal maximum. The exact long rational gain strings describe this finite mathematical surrogate, not biological measurement precision.</p>
+<p>Direct replay remains necessary. Its completed outputs can assess interpolation discrepancies and candidate residual requirements, but point checks alone will not establish a uniform interpolation bound or global nonlinear optimum. The four conventions retain the <a href="JOINT-OBSERVATION-CONTRACT.html">source-observation limitations</a>. No discrepancy law, noise estimate, full material/geometry identified set, larger-region predictive success or novel concept follows from this gate.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

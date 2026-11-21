@@ -1,0 +1,22 @@
+{
+  "kind": "dense",
+  "seconds": 1.2759388000122271,
+  "RSS_before_bytes": 535281664,
+  "sampled_peak_RSS_bytes": 649605120,
+  "sampled_incremental_RSS_bytes": 114323456,
+  "measurement": "ProcessRSSsampled5ms; includesnativeTorchallocations; maymissbriefpeaks; notGPUmemory.",
+  "pattern": {
+    "free_DOF": 161,
+    "structural_nonzeros": 3045,
+    "colors": 42,
+    "seed_chunk": 4,
+    "row_color_collision_free": true,
+    "pattern_symmetric": true,
+    "pattern_color_sha256": "c5bca26243f22dce090c182dc79c84eb96772fff617f39228266a1822af9c4ff",
+    "dense_matrix_bytes": 207368,
+    "sparse_values_and_int64_indices_bytes": 50016,
+    "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+  },
+  "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+  "scope": "Smallmeshseparateprocessbenchmark; not24meshmemorypredictionorphysicalaccuracy."
+}

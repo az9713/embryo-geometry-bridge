@@ -1,0 +1,9 @@
+{
+  "status": "WITHDRAWN_PENDING_SAFE_REPLAY",
+  "audit_sha256": "fe0f5414ecf16b6ff3e804d53a6ad68d44ef6a6766824786acd4ef2645fff084",
+  "affected": "Point integration/cache discrepancy and derived center-escape certificate; sparse interval-AD independent bulk-cache check; unreleased uniform bulk preflight.",
+  "old_delivery_sha256": "63236576ffc4e518a4b80448978b3dd562a5078f560c2efbeb5c1e034decfc50",
+  "old_receipts_preserved": true,
+  "unaffected": "Exact-rational moments/tails, dense old quadrature-root/minimum proofs, arbitrary-center exact-I body/boundary geometry.",
+  "goal_achieved": false
+}

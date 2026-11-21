@@ -1,0 +1,47 @@
+{
+  "source_sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+  "checks": [
+    {
+      "gain": 0.2,
+      "seconds": 0.7946690999960992,
+      "force": 1.5743238960738704e-14,
+      "converged": true,
+      "minJ": 0.9944708282663907,
+      "stages": 1
+    },
+    {
+      "gain": 0.5,
+      "seconds": 0.6590409000054933,
+      "force": 8.900432474368003e-15,
+      "converged": true,
+      "minJ": 0.9864858356169053,
+      "stages": 1
+    },
+    {
+      "gain": 1.0,
+      "seconds": 0.6759448999946471,
+      "force": 4.42130463100196e-14,
+      "converged": true,
+      "minJ": 0.9739361832033523,
+      "stages": 1
+    },
+    {
+      "gain": 2.0,
+      "seconds": 0.5881607999908738,
+      "force": 4.5723366312897884e-12,
+      "converged": true,
+      "minJ": 0.9512879382131416,
+      "stages": 1
+    },
+    {
+      "gain": 4.0,
+      "seconds": 0.6518547999730799,
+      "force": 1.5584755708175635e-14,
+      "converged": true,
+      "minJ": 0.9135114964672169,
+      "stages": 1
+    }
+  ],
+  "previous_default_result_difference": 0.0,
+  "status": "PASS"
+}

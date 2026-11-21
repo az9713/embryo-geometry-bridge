@@ -1,0 +1,42 @@
+{
+  "status": "PASS_RESPONSE_SUPPORT_NUMERICS",
+  "checks": {
+    "locked_protocol_and_parents_unchanged": true,
+    "one_support_node20_only": true,
+    "all_four_candidates_interior": true,
+    "last_verified_attempt_chain": true,
+    "Q8_force_gate": true,
+    "Q12_cross_force_gate": true,
+    "exact_discrete_geometry": true,
+    "no_direct_v1_or_v2_job": true
+  },
+  "source_hashes": {
+    "joint_gain_extension.py": "b54b46251fc4df0c057765c55dcc64305e359645b97fbda34fd54ecaaff99e37",
+    "joint_gain_calibration.py": "9d29bb899915076afb8b83fb8aa1be4211e1101f178470556a5be84a179e3d6f",
+    "joint_calibration_contract.py": "ed3bcf3b16ae7d369d70d76570385d59854dda7926e9f73b3b200b5fcea02512",
+    "piecewise_gain_minimax.py": "3d803c3b9a39095707633bf83989fdfab7ce7ca963c81e3dffca11ff7e145a2e",
+    "quadratic_endpoint_observer.py": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926",
+    "sparse_quadratic.py": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+    "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "mixed_geometry_certificate.py": "fb0d49d680286ff49d0dc6713baca41fbebbf724442bff9731292e1441b03fd8",
+    "mixed_geometry_certificate_v2.py": "165d3b914b1ab9bad2e6591a7df63c09e004f33a742cfa5f4430584746edfbd2"
+  },
+  "protocol_sha256": "3b72bcf4583c0b136d01c420028a20a9324dc9c0b3b4ef212b14ec76a62e2031",
+  "candidate_file_sha256": "c9da0d77ee25f5bcb6da88ea2890ff3209a72a9a2eedc387fa9b7f3db71abefd",
+  "response_table_sha256": "e38462ec9b8b8b04cb69bf4f1c46824e58f3be16e1a9c831d1cf0cde7719f666",
+  "extension_field_sha256": "8fe0b775f958798f4c50941c8df5be1df7702d35576a51850cf0d803dffad316",
+  "attempt_replays": [
+    {
+      "initial_is_last_verified": true,
+      "accepted": true,
+      "file": "runs/joint_gain_extension_v2/extension/strength_20/attempt_000_gain_20.json",
+      "sha256": "f3d4c74566d77e708b3e70f4f4ad0330dae9f3113acb3fda9be1a93dc55b45c1"
+    }
+  ],
+  "scope": "Numerical support-node provenance only. Independent LPcertificateaudit is a separate required gate; no inferred nonlinear/physical gain."
+}

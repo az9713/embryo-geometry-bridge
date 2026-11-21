@@ -1,0 +1,7 @@
+{
+  "status": "RUNNING",
+  "source_sha256": "9781008eb4c384ae10dfc205fdb977d64d6964168c7ffb1e6e7731d7cf5524e3",
+  "protocol_sha256": "dbe4f863526a282d51599efdf78b4c12dfa30ce9371c8f75d7b9ab5739a6a5d2",
+  "pid": 3724,
+  "producer_observed_exit_sha256": "05891318bcbc38bd312931063121be19871650df7e7fbb936eb3ad65b529fcbf"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS_KL_LOADING_COLD_FIXTURES",
+  "bindings": {
+    "source_sha256": "d39ae6c3bfa3d932eaba03ddd59fc275fd5b3b1c094e7f9a544810d8c10dc8bc",
+    "plan_sha256": "c3b1870e5ad815bc5df5ec94d4731b0228e529ba2e0651f847102b8e0ecaa277",
+    "envelope_sha256": "f50c04b1802176abf4f5494898c8128018d4db8f8d0bb410af7774e5a3fff925",
+    "protocol_sha256": "fe64074d1a169a7672039c73dc07ca35c728cc1c299cf2a28025e0a0e7a97e43"
+  },
+  "checks": {
+    "swept_envelope_covers_both_fibers_and_preserves_fixed_axis": true,
+    "axis_motion_and_boolean_radius_and_reversed_intervals_rejected": true,
+    "quadratic_range_uses_signed_interior_turning_point": true,
+    "signed_affine_cancellation_yields_real_tube_and_posterior": true,
+    "strict_selfmap_and_z_equal_one_boundaries_remain_unresolved": true,
+    "posterior_inclusion_test_distinguishes_overlap_and_strict_touch": true,
+    "positive_external_geometry_phase_roundtrip_and_foreign_envelope_rejection": true,
+    "independent_actual_gate_rejects_float_OS_code_and_boolean_PID": true,
+    "absent_fresh_full_envelope_H_and_foreign_active_result_rejected": true,
+    "real_K_candidate_context_and_frozen_box_route_without_geometry": true
+  },
+  "frozen_design_hashes_rechecked": 130,
+  "native_K_and_L_centers_and_R_premise_matched": true,
+  "all_signed_K_center_rows_matched": 611,
+  "whole_KL_path_certified": false,
+  "new_geometry_certificates": 0,
+  "new_AD_derivatives": 0,
+  "new_integrations": 0,
+  "new_solves": 0
+}

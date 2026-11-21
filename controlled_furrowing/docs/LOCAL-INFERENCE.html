@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LOCAL-INFERENCE</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>What extra observation would make the local mechanics identifiable?</h1>
+<p>This is an exact local calculation for the finite-height frustum candidate, not a newly discovered biological mechanism or a proof of global tissue prediction. It makes a concrete measurement recommendation instead of treating every fitted parameter as known.</p>
+<p>Let the resting hexagonal cell edge be one length unit, the height-to-edge ratio be <span class="math" data-tex="q&gt;0"></span>, apical/basal baseline tension be <span class="math" data-tex="T&gt;0"></span>, and basal area modulus be <span class="math" data-tex="K\ge0"></span>. The finite-height energy and exact areas are in <a href="MODEL-CANDIDATES.html">MODEL-CANDIDATES</a>. Its rest-state Hessian is</p>
+<div class="math display" data-tex="
+\mathcal H=\begin{pmatrix}
+6\sqrt3(K+3T)&amp;-6\sqrt3K\\
+-6\sqrt3K&amp;2\sqrt3(3K+T+9T/q^2)
+\end{pmatrix}.
+"></div>
+
+<p>Its first leading minor is positive and</p>
+<div class="math display" data-tex="
+\det\mathcal H=\frac{36T}{q^2}
+\left(10Kq^2+9K+3Tq^2+27T\right)&gt;0.
+"></div>
+
+<p>Thus this resting state is a strict local minimum; no global uniqueness of the two-variable nonlinear energy is asserted.</p>
+<p>Write <span class="math" data-tex="w"></span> for mean edge width and <span class="math" data-tex="\delta"></span> for half the apical/basal edge difference. A small lateral-tension increment gives</p>
+<div class="math display" data-tex="
+r:=\frac{d\delta/dI}{dw/dI}
+=\frac{3K}{T+3K+9T/q^2}.
+"></div>
+
+<p>The height derivative at rest is <span class="math" data-tex="dH/dI=-2q\,dw/dI"></span>. If the active lateral-tension gain is <span class="math" data-tex="g"></span>, the positive shortening slope is</p>
+<div class="math display" data-tex="
+m=\frac{12q^2g}{K_{\rm eff}},\qquad
+K_{\rm eff}=\mathcal H_{ww}
+-\frac{\mathcal H_{w\delta}^2}{\mathcal H_{\delta\delta}}&gt;0.
+"></div>
+
+<p>For <strong>each</strong> <span class="math" data-tex="K/T\ge0"></span>, choose <span class="math" data-tex="g=mK_{\rm eff}/(12q^2)"></span>. The same measured height slope is then reproduced while the asymmetry ratio ranges from zero toward one. A height slope alone therefore does not determine the local shape response. This is a small-signal parameterization-specific result, not a proof that the entire nonlinear dose curve is uninformative.</p>
+<p>An independent measurement of the apical/basal shape-response ratio supplies the missing information:</p>
+<div class="math display" data-tex="
+\frac KT=\frac{r(1+9/q^2)}{3(1-r)},\qquad 0\le r&lt;1.
+"></div>
+
+<p>This inverse is unique and increasing. Its sensitivity diverges as <span class="math" data-tex="r\to1"></span>; recording a second observable is insufficient if it is too noisy near saturation. Once <span class="math" data-tex="K/T"></span> is known, the shortening slope determines <span class="math" data-tex="g/T"></span>, not an absolute force scale. Multiplying every tension, modulus and active gain by the same positive constant leaves equilibrium geometry unchanged.</p>
+<p><img alt="Synthetic local inference, not an embryo fit" src="assets/local_identifiability.png" /></p>
+<h2>Verification and practical meaning</h2>
+<p>The root implementation rederived the Hessian, determinant, response ratio and inverse symbolically. A separate triangulated-polyhedron integration verified exact frustum volumes and lateral areas for 100 independently sampled geometries; maximum relative discrepancy was <span class="math" data-tex="8.89\times10^{-16}"></span>. <a href="../evidence/local_mechanics_independent.json">Receipt</a>; <a href="../scripts/verify_local_mechanics.py">replay script</a>. Another agent independently checked the design identities in <a href="../evidence/model_design_symbolic.json">model_design_symbolic.json</a>.</p>
+<p>The practical recommendation is to measure paired, time-matched apical/basal geometry and initial cell dimensions under small perturbations. Separate apical and basal maxima from different times cannot be substituted for that ratio. A coupled tissue still requires shared-interface mechanics, surrounding-tissue constraints and a spatial observation operator; this calculation does not remove those requirements.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

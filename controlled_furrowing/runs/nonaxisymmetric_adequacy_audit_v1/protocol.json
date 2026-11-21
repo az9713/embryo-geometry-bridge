@@ -1,0 +1,139 @@
+{
+  "status": "FROZEN_COLD_NEGATIVE_KL_TRANSVERSE_SURFACE_STRESS_SCREEN",
+  "source_sha256": "f33aaf277eea10fd364a529f95d369551c99b73747f7856cee3af4318b60b3a3",
+  "derivation_sha256": "74eb585b6f53469058c654fb3e56cc297fc22389818d29ad205412455be4317c",
+  "premise_sha256": {
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/preparation/protocol.json": "754da64bb96cd8a19707181315e6c3e3f014e8d37a898b83c1693342c82c9850",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/target_manifest.json": "cb25fbeaef753cea700c187cd8b377b7dcf4aa1fe2b0b246ed17134a07a89bc3",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/loading_affine_identity_v1/READBACK.md": "61e1a3a9362c8ce066588719c002cd6b66cba75840c8412b8fd5f9b3188f2b28",
+    "scripts/exact_fe_target_safe.py": "889b61cfa794d432021fbd4670b781169033d4b8451554b18e7f7a569d9d3954",
+    "scripts/exact_cohort_integrator.py": "092dc51161e708cdba3791ec47a7f8e843dd0e1afc866b6f65f286b8657d1745",
+    "scripts/quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/os_exit_observation.json": "aa3c90101c64ccefe1403af2c296bcb22cafad3b2e35d73539aa7e3c5227f281",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/terminal.json": "561a6271c27b2e5b394bbf058fbe8f5214e1db1b2e385d1ab2a9646c5f767f92",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/receipt.json": "e73ea05a4703256235a46ce7b914298d3f8258e9fef029f4dbe952b04bb9798a",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_16.json": "277e44690660400b559978c76621b73bf8f62627e2203bf366d630ff70d34fda",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/all_four_readback.json": "859f507ad3762cfef44d53672bbe15a43592ce54d6e08ba8828bf50a925ec340",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/os_exit_observation.json": "149ed5718bb5563dd0b59358025044ec89bd8d43b0dc121a77c1b04e808f791d",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/terminal.json": "cbbe45e8dc12aac6903ec184395122ee95f239cc8e1be017c7d552010d384a40",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/receipt.json": "665fab8f7b5c822eb0846c39d1f50f67aa151090dffc0ddf4be5abcf77b06b98",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_targets_v1/preparation/max_negative_contrast_change_small_16/model_contract.json": "c8765c04148c42d9d96d022bdb26030286d36edeea201ced0387c844a5d4f879",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/preparation/enlarged_trial_boxes/max_negative_contrast_change_small_16.json": "a109fc74f1cfa36e4d905e10fa7cda94acde1038aea5ed69041a317dab34179b",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_targets_v1/preparation/max_negative_contrast_change_small_16/row.json": "e70fa9b0cc82dd624a1b3bad8259f07dd0e02623d2496639d8e761e1cfdf7d1e",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/remaining_cached_30_v1/recenter_v1/actual/max_negative_contrast_change_small_16/recentered_cache_packet.json": "c7ef4cb944fb73ec0b498f97dbebf3727d4a7e5773957a1b573a57a8b77b6549",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/model_observation_contract.json": "3188680f8eba5f9e21127e06253761beff647125140f58040956c993c4c131a4",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/coordinate_box_1.json": "ce62dae21b181aa059518440311c5b9e699ccc22f1015a2c91ec5c1da493debe",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/row.json": "339b4500b699ff3e698984cfa928c3660d57c31dbcbbc57d764b7dc7c60b48d8",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/cached_pilots_v1/actual/max_negative_contrast_change_small_17/cache_packet.json": "7c94b3f989cab5fb31d979851b3ee94a155b96e2251a34092f1cab2b6a0c96a3",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/active_energy.py": "072ed83a30565be34bd5fe7dde559526e089a070df0ad95f0e61611db9e9e76d",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/protocol.json": "06dd35434358ad7dcb993349281ed6bf8a84fd0a34f7ca2d4932ec0792842361",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_16.json": "a991e1e3431c09886361a1be0d6617f20d551423d5e110567fc2bbcc63a6d952",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/independent_actual/replay/max_negative_contrast_change_small_17_box_1.json": "723e71ba60138282a934a76579bd50b02e11888edd7547d4a24cd2f4d8759bf9"
+  },
+  "two_exact_spatial_roots": [
+    {
+      "case_id": "max_negative_contrast_change_small_16",
+      "id": "optoGEF2_small_col_K",
+      "contract_sha256": "c8765c04148c42d9d96d022bdb26030286d36edeea201ced0387c844a5d4f879",
+      "box_sha256": "a109fc74f1cfa36e4d905e10fa7cda94acde1038aea5ed69041a317dab34179b",
+      "cache_sha256": "c7ef4cb944fb73ec0b498f97dbebf3727d4a7e5773957a1b573a57a8b77b6549",
+      "exact_spatial_proof_sha256": "277e44690660400b559978c76621b73bf8f62627e2203bf366d630ff70d34fda",
+      "dose_exact": "128898317/100000000",
+      "gain_exact": "64514921227949195479162532166550657437421842320831181507877747902175657683751485209988928277860356104398718835848067615012061036484855426295266121999099896185847464646240631276064376353482245077690399878048328621125/7953725324340077089165634398523029499273471120114806160088304759067068793526491077897709174381925978876999339559389808170748110206037013841551692503611906534910091767425761222034589817462103855598741318492401696768",
+      "normalization_exact": "7958517471031993/281474976710656",
+      "posterior_exact": "116301180197542642048626591615723103833232381709607728343936110458260453384328061206821093080348650912972844068880535319729365223840134235281895995703956208807986692811549200123226840316505747496622126730535971619021187/3923606699876756431422910760676667101697300924350893711127619194560762427839749731571608624044607771043921917666915268199932050400354340979986024878114942572303914232166181278716229766696002564550694429514735750778866935899588194",
+      "exact_drive_exact": "66526918141361797270144471725813947511417666353556106699895711570725783310429477518543715549199266103021369239176121466218068818433387683502218785542405217065843659292939341988018083964947667839166614330699478431407545173/6362980259472061671332507518818423599418776896091844928070643807253655034821192862318167339505540783101599471647511846536598488164829611073241354002889525227928073413940608977627671853969683084478993054793921357414400000",
+      "geometry_proof_sha256": "a991e1e3431c09886361a1be0d6617f20d551423d5e110567fc2bbcc63a6d952",
+      "strong_monotonicity_lower_exact": "13080753962743865818987416526690382945384665497930771205031357/43581098374658413884087282928137142409158164391464249706795520",
+      "body_J_bounds_exact": [
+        "7116684958269925500361889063958387132581224723159/7403252054362054204471875999216790574372191008192",
+        "472644366044412973518858535307181048479291043049/462703253397628479756275034783411671400006890160"
+      ]
+    },
+    {
+      "case_id": "max_negative_contrast_change_small_17",
+      "id": "optoGEF2_small_col_L",
+      "contract_sha256": "3188680f8eba5f9e21127e06253761beff647125140f58040956c993c4c131a4",
+      "box_sha256": "ce62dae21b181aa059518440311c5b9e699ccc22f1015a2c91ec5c1da493debe",
+      "cache_sha256": "7c94b3f989cab5fb31d979851b3ee94a155b96e2251a34092f1cab2b6a0c96a3",
+      "exact_spatial_proof_sha256": "665fab8f7b5c822eb0846c39d1f50f67aa151090dffc0ddf4be5abcf77b06b98",
+      "dose_exact": "2360271/1562500",
+      "gain_exact": "64514921227949195479162532166550657437421842320831181507877747902175657683751485209988928277860356104398718835848067615012061036484855426295266121999099896185847464646240631276064376353482245077690399878048328621125/7953725324340077089165634398523029499273471120114806160088304759067068793526491077897709174381925978876999339559389808170748110206037013841551692503611906534910091767425761222034589817462103855598741318492401696768",
+      "normalization_exact": "7958517471031993/281474976710656",
+      "posterior_exact": "11772906287389012609790923897831864139263694938744708878351972117059436826914355897506546991390512432389414174616553702393800615507303676567314527845309524754547831409427400306348658714458852808411965718717688052529754/420109688775610384023087686792504771306447198118145916763365628510907446433036830506756696152845095504032257607501973936767892114968854141062555808413943941759931151047140358127385019545976215002402762250185976197916294732846121",
+      "exact_drive_exact": "1218181581132903004502387431674213494243848713571444268870240959350528333895086413984526221882509924503082148043247635182017058517161169615018832520295500088563731049824376168180701933121679136574123182484488053143290599/99421566554250963614570429981537868740918389001435077001103809488338359919081138473721364679774074735962491744492372602134351377575462673019396156295148831686376147092822015275432372718276298194984266481155021209600000",
+      "geometry_proof_sha256": "723e71ba60138282a934a76579bd50b02e11888edd7547d4a24cd2f4d8759bf9",
+      "strong_monotonicity_lower_exact": "716402889588407294218975152953405194214251328502089567583449293/2704557349372237180555151671590175946907634126924109789002465280",
+      "body_J_bounds_exact": [
+        "36930479330680613776356279127969193423965597004/38558604449802365648291020829254117574855161501",
+        "32867013489439201443082569006588894880850358945/32100821915933032741898755800691975034797225984"
+      ]
+    }
+  ],
+  "physical_extension": "Same objective 3D bulk and material disk area energy with full wall clamp, no added bending or couplings.",
+  "fixed_windows_on_each_ordered_edge": [
+    [
+      "1/16",
+      "1/8"
+    ],
+    [
+      "1/8",
+      "3/16"
+    ],
+    [
+      "3/16",
+      "1/4"
+    ],
+    [
+      "1/4",
+      "5/16"
+    ],
+    [
+      "5/16",
+      "3/8"
+    ],
+    [
+      "3/8",
+      "7/16"
+    ],
+    [
+      "7/16",
+      "1/2"
+    ],
+    [
+      "1/2",
+      "9/16"
+    ],
+    [
+      "9/16",
+      "5/8"
+    ],
+    [
+      "5/8",
+      "11/16"
+    ],
+    [
+      "11/16",
+      "3/4"
+    ],
+    [
+      "3/4",
+      "13/16"
+    ],
+    [
+      "13/16",
+      "7/8"
+    ],
+    [
+      "7/8",
+      "15/16"
+    ]
+  ],
+  "cases": 2,
+  "faces_each": 2,
+  "edges_each": 12,
+  "total_windows": 672,
+  "criterion": "Strict negative tau on one annular subinterval at the exact root plus matched geometry implies energy descent in the natural 3D extension.",
+  "actual_stress_evaluations": 0,
+  "new_3D_solve_or_AD_or_integration": 0
+}

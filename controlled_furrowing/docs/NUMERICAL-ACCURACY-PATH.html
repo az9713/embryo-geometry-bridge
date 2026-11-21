@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NUMERICAL-ACCURACY-PATH</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Numerical accuracy before adding material complexity</h1>
+<p>Status: independent numerical-methods assessment of the frozen v1 model. Three additional target-free computations have been executed; the proposed mixed solver and the full locking benchmark have <strong>not</strong> been implemented here. This work does not close the original geometric validation gates.</p>
+<h2>What the current model actually enforces</h2>
+<p>The stored energy in <code>scripts/axisymmetric_mechanics.py</code>, <code>energy_components</code>, is</p>
+<div class="math display" data-tex="
+ W(F)=\frac\mu2(I_1-3-2\log J)+\frac\kappa2(\log J)^2,
+ \qquad J=\det F&gt;0.
+"></div>
+
+<p>The source parameter named <code>bulk</code> is <span class="math" data-tex="\kappa"></span>, not the infinitesimal bulk modulus. Expanding about <span class="math" data-tex="F=I"></span> gives</p>
+<div class="math display" data-tex="
+ W=\mu\,\varepsilon:\varepsilon
+   +\frac\kappa2(\operatorname{tr}\varepsilon)^2+O(&#124;\nabla u&#124;^3),
+ \quad K=\kappa+2\mu/3,
+ \quad \nu=\frac\kappa{2(\kappa+\mu)}.
+"></div>
+
+<p>Thus <span class="math" data-tex="\kappa/\mu=50"></span> implies small-strain <span class="math" data-tex="\nu=0.490196"></span>, not an exact constraint <span class="math" data-tex="J=1"></span>. The active term is <span class="math" data-tex="f&#124;Fn_0&#124;^2/2"></span>; relevant nondimensional load ratios include both <span class="math" data-tex="f/\mu"></span> and <span class="math" data-tex="f/\kappa"></span>. Large activation can cause substantial compression even when the infinitesimal Poisson ratio is close to one half. At <span class="math" data-tex="J=0.8"></span>, the penalty pressure conjugate to <span class="math" data-tex="\log J"></span> is <span class="math" data-tex="\kappa\log J=-11.16\mu"></span> for <span class="math" data-tex="\kappa=50\mu"></span>, comparable to prescribed activation strengths around ten. Positive <span class="math" data-tex="J"></span> checks orientation; it does not check biological near-incompressibility.</p>
+<p>There are two different unresolved effects: finite compressibility in the stated continuum constitutive law, and discretization error that can include volumetric locking. Their contributions cannot be separated by terminology, force residuals, or global volume change.</p>
+<h2>Executed diagnostic and retained receipts</h2>
+<p>The driver <code>runs/numerical_accuracy/run_diagnostic.py</code> imports the frozen solver only. Its protocol was written before these computations. It reads no biological outcome files and performs no fitting. The small-region geometry is fixed at measured diameter 18.71024074 µm, height 33.5 µm, and activation 5–25 µm below the apical surface; <span class="math" data-tex="H=1"></span>, <span class="math" data-tex="R_o/H=3"></span>, <span class="math" data-tex="\mu=1"></span>, <span class="math" data-tex="K_b=2"></span>, <span class="math" data-tex="K_a=0.2"></span>. The same <span class="math" data-tex="12\times6"></span> mesh and fixed dimensionless activation <span class="math" data-tex="f=10"></span> are used for all cases, with ten continuation increments.</p>
+<table>
+<thead>
+<tr>
+<th><span class="math" data-tex="\kappa/\mu"></span></th>
+<th style="text-align: right;">min <span class="math" data-tex="J"></span></th>
+<th style="text-align: right;">max <span class="math" data-tex="J"></span></th>
+<th style="text-align: right;">global volume change</th>
+<th style="text-align: right;">max column shortening / <span class="math" data-tex="H"></span></th>
+<th style="text-align: right;">scaled force residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td style="text-align: right;">0.630287</td>
+<td style="text-align: right;">1.289477</td>
+<td style="text-align: right;">−0.00310827</td>
+<td style="text-align: right;">0.356179</td>
+<td style="text-align: right;">9.42e−13</td>
+</tr>
+<tr>
+<td>50</td>
+<td style="text-align: right;">0.830797</td>
+<td style="text-align: right;">1.118653</td>
+<td style="text-align: right;">−0.000644038</td>
+<td style="text-align: right;">0.297379</td>
+<td style="text-align: right;">6.30e−11</td>
+</tr>
+<tr>
+<td>500</td>
+<td style="text-align: right;">0.942053</td>
+<td style="text-align: right;">1.050965</td>
+<td style="text-align: right;">−0.0000531218</td>
+<td style="text-align: right;">0.147463</td>
+<td style="text-align: right;">2.11e−13</td>
+</tr>
+</tbody>
+</table>
+<p>All accepted local orientations and every continuation stage passed the solver's stationarity criterion. Nevertheless, none is certified as a continuum-accurate solution or as the global energy minimum. The bulk sweep shows strong dependence of the <strong>discrete</strong> geometry on compressibility. It does not prove locking: the continuum problem itself changes when <span class="math" data-tex="\kappa"></span> changes. A global volume loss of only 0.0644% coexists with 16.9% local volume loss at <span class="math" data-tex="\kappa=50"></span>. Global volume accounting therefore cannot replace a local <span class="math" data-tex="J"></span> audit.</p>
+<p>Separately, the existing synthetic suite reports maximum shortening 0.0109952, 0.0135872 and about 0.01654 <span class="math" data-tex="H"></span> on 8×4, 12×6 and 16×8 meshes at <span class="math" data-tex="f=0.2"></span>, <span class="math" data-tex="\kappa=50"></span>. Those runs use the module's default activation geometry, not the precise source geometry above. They demonstrate mesh sensitivity but cannot be combined with this sweep to form a matched 3×3 study. Neither sequence supplies a rigorous error bound.</p>
+<p>Full fields, strain diagnostics, continuation histories, source/protocol hashes and timings are retained in <code>runs/numerical_accuracy/bulk_{5,50,500}.json</code>. <code>summary.json</code> and <code>evidence/numerical_accuracy_plan.json</code> index them.</p>
+<p><img alt="Fixed-load compressibility diagnostic" src="../../omitted-asset.svg" /></p>
+<h2>Recommended upgrade: mixed displacement–pressure, quadratic displacement</h2>
+<p>Use one finite-height axisymmetric implementation of the <strong>same energy and activation</strong>, with continuous quadratic displacement and continuous linear pressure on a shape-regular triangulation. Do not obtain a more favorable shape by silently switching constitutive law. An exact algebraic mixed potential for the present volumetric penalty is</p>
+<div class="math display" data-tex="
+ \mathcal L(u,q)=\int_{\Omega_0}
+ \left[\frac\mu2(I_1-3-2\log J)
+       +q\log J-\frac{q^2}{2\kappa}
+       +\frac f2\chi_A&#124;Fn_0&#124;^2\right]dV_0+E_s.
+"></div>
+
+<p>Stationarity in <span class="math" data-tex="q"></span> gives <span class="math" data-tex="q=\kappa\log J"></span>, recovering the frozen continuum energy pointwise before discretization. The displacement stress contribution is</p>
+<div class="math display" data-tex="
+ P=\mu(F-F^{-T})+qF^{-T}+f\chi_A(Fn_0)\otimes n_0.
+"></div>
+
+<p>The pressure residual is <span class="math" data-tex="\int s(\log J-q/\kappa)dV_0=0"></span>; displacement equilibrium is <span class="math" data-tex="\int P:\nabla v\,dV_0+\delta E_s[v]=0"></span>. This is a saddle-point Newton problem, not an unconstrained minimization in both fields. Axisymmetric integration must use <span class="math" data-tex="2\pi r\,dr\,dz"></span>, including hoop strain <span class="math" data-tex="u_r/r"></span> and regularity <span class="math" data-tex="u_r(0,z)=0"></span>. A pressure mean constraint is appropriate only for an actual constant-pressure nullspace; it must not be imposed blindly on a traction-boundary problem.</p>
+<p>Taylor–Hood is a well established starting point, not a blanket proof of stability for every finite-strain state or weighted axisymmetric mesh. Verify its tangent inf-sup behavior on the actual mesh family and monitor pressure oscillation. A genuine stabilized or macroelement pressure method is an alternative if its stability and constitutive consistency are established. Merely adding P1 pressure to P1 displacement is insufficient. A three-field <span class="math" data-tex="u,p,J"></span> formulation is a defensible alternative, especially with an explicit isochoric/volumetric split, but changing that split changes the constitutive law and requires a separate retained model version.</p>
+<p>The method is standard: the <a href="https://ferrite-fem.github.io/Ferrite.jl/stable/gallery/quasi_incompressible_hyperelasticity/">Ferrite nearly incompressible tutorial</a> demonstrates mixed Taylor–Hood finite-strain mechanics; its volumetric energy differs from ours and must not be copied without adaptation. The <a href="https://dealii.org/9.7.0/doxygen/deal.II/step_44.html">deal.II step-44 tutorial</a> documents a three-field approach to avoiding overly stiff displacement discretizations and traces it to Simo, Taylor and Pister (1985), DOI <a href="https://doi.org/10.1016/0045-7825(85)90033-7">10.1016/0045-7825(85)90033-7</a>. These sources support the method choice, not a claim that locking has already been diagnosed in this project.</p>
+<h2>A diagnostic that can distinguish locking from physical incompressibility</h2>
+<p>First use a manufactured <strong>small-strain, zero-surface-tension</strong> axisymmetric benchmark with an exact nonaffine divergence-free displacement. On <span class="math" data-tex="0\le r\le R"></span>, <span class="math" data-tex="0\le z\le H"></span>, choose</p>
+<div class="math display" data-tex="
+ \psi=r^2 f(r)g(z),\quad
+ f(r)=(1-r^2/R^2)^2,\quad g(z)=z^2(H-z)^2,
+ \qquad
+ u_r=-\frac1r\partial_z\psi=-rf g&#x27;,\quad
+ u_z=\frac1r\partial_r\psi=(2f+rf&#x27;)g.
+"></div>
+
+<p>Then <span class="math" data-tex="\operatorname{div}_{axi}u=r^{-1}\partial_r(ru_r)+\partial_z u_z=0"></span> identically; the smooth axis limits exist, and this field vanishes at the rim and at <span class="math" data-tex="z=0,H"></span>. Set pressure zero and manufacture body force <span class="math" data-tex="b=-\operatorname{div}_{axi}(2\mu\varepsilon(u))"></span>, with the exact displacement boundary conditions. The exact linear-elastic displacement is now <strong>the same for every</strong> <span class="math" data-tex="\kappa"></span>, because its divergence vanishes. Compare energy- and <span class="math" data-tex="L^2"></span>-norm displacement errors against that known solution for both P1 and mixed discretizations. Deterioration with increasing <span class="math" data-tex="\kappa"></span> at fixed mesh, relieved by the stable mixed method, directly identifies lack of locking robustness. An affine patch test alone is inadequate: affine fields are exactly representable by P1 and may hide this problem. This benchmark validates the tangent regime; it does not prove finite-strain convergence.</p>
+<p>Then, without a new biological fit, execute a matched nine-case matrix on the actual small geometry: <span class="math" data-tex="\kappa/\mu\in\{5,50,500\}"></span>, <span class="math" data-tex="(n_r,n_z)\in\{(8,4),(12,6),(16,8)\}"></span>, initially <span class="math" data-tex="f=0.2"></span>, then separately <span class="math" data-tex="f=10"></span>. Keep geometry, material surface terms, load, boundary and quadrature fixed. Run both formulations. Exact uniform refinement or a declared mesh generator must avoid changing the activation support. Retain failed solves. Compare full surfaces on a common physical radial domain, local <span class="math" data-tex="J"></span>, pressure, shortening, total energy and free-force residual. Quadrature must be independently raised, including the surface integrals. Extend refinement when the initial matrix is insufficient.</p>
+<h2>Acceptance before returning to biological transfer</h2>
+<ol>
+<li>Pass zero-load, affine/isochoric and manufactured nonaffine benchmarks; verify consistent mixed tangents, pressure conventions, axis regularity and absence of a spurious pressure mode.</li>
+<li>At fixed finite <span class="math" data-tex="\kappa"></span>, establish repeatable surface convergence and cross-formulation agreement. A small Newton residual verifies algebraic solution, not discretization accuracy.</li>
+<li>Separate a <strong>model choice</strong> (finite compressibility or exact incompressibility) from mesh effects. Report local volume distortion and its localization. A biologically admissible volume tolerance requires independent evidence; do not infer it from a desired answer. If exact incompressibility is selected, verify its mixed constraint directly.</li>
+<li>Recheck branch stability, outer-boundary dependence, contact/global injectivity and activation-interface refinement. P1 pointwise extrema cannot be reused unchanged for curved P2 elements; use certified polynomial/interval bounds if rigorous element-wide <span class="math" data-tex="J&gt;0"></span> is claimed.</li>
+<li>Report empirical mesh uncertainty honestly. To call a continuum feature rigorously certified requires an applicable a posteriori bound or validated discretization and nonlinear-solution bound. Coarse/fine differences alone do not provide one, particularly for a plug-slice observer whose gap can be exactly zero.</li>
+<li>Only after numerical adequacy is passed, repeat small-only calibration under the retained revised protocol, freeze all material scenarios, and evaluate larger geometry. Keep static peak-proxy and unknown slice/time qualifications.</li>
+</ol>
+<p>Adding baseline tension is physically motivated but does not solve these numerical gates. Its flat-reference first variation is balanced by the clamped rim, and <span class="math" data-tex="T A"></span> contributes <span class="math" data-tex="\tfrac T2\int&#124;\nabla w&#124;^2"></span> at small normal slope, whereas a stress-free area spring begins at quartic normal slope. This explains the different linear normal stiffness; it does not establish either biological adequacy or numerical accuracy. No novel mechanics principle or confirmed novel biological result is claimed here.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

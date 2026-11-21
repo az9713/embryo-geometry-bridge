@@ -1,0 +1,85 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SHARED-CELL-COHORT-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the all-68 shared-cell stationary calculation</h1>
+<p><strong>The mathematical and provenance audit passes.</strong> All 17 source inputs and four channels per input are accounted for, with the same parameter cell and observation contract and an independently reviewed root/observer proof pair for every record. The <a href="../evidence/shared_cell_cohort_independent_review.json">receipt</a> binds the actual <a href="../evidence/shared_cell_cohort_inference.json">combined result</a>, its source and the publication-control snapshot reviewed alongside it. No force, Hessian, equilibrium, geometry or baseline-observer computation is repeated by this audit.</p>
+<p>This completes a bounded conditional component: a uniform stationary-root tuple and 68 static output enclosures on one very small parameter cell. The original five-gate research objective is still incomplete.</p>
+<h2>The object actually certified</h2>
+<p>The five coordinates are apical and basal area moduli, apical and basal prestresses, and a common activation gain. Every source dose uses exactly the same closed cell <span class="math" data-tex="C"></span>. Its four positive baselines vary by relative half-width <span class="math" data-tex="10^{-8}"></span>; apical prestress varies from zero to <span class="math" data-tex="2\times10^{-10}"></span> in the declared normalized units. These are computational support bounds, not measured physiological uncertainties or a confidence region.</p>
+<p>At each of the 17 exact source doses, a selected local stationary root <span class="math" data-tex="u_i(\theta)"></span> exists for every <span class="math" data-tex="\theta\in C"></span>. The first 15 root families retain their original reviewed certificates. F and K use separately reviewed proof-center refinements for the unchanged physical target. They are not silently substituted into the old failed calculation.</p>
+<p>The current output law has four quantities: maximum same-current-radius height shortening, disk-averaged height shortening, maximum apical downward displacement and maximum basal upward displacement. The fixed ROI and flat reference heights are part of the declared static contract. They are not assumed to reconstruct the experimental temporal observation pipeline.</p>
+<p>Every output enclosure <span class="math" data-tex="[\ell_{ij},v_{ij}]"></span> is uniform over the cell and is derived from a full root/predictor/geometry error envelope. The audit compares these bounds with each observer's <code>prediction_intervals_exact</code>; it does not substitute the baseline point predictions. All 68 actual intervals have positive width.</p>
+<h2>The exact discrepancy theorem</h2>
+<p>Define the maximum absolute static discrepancy</p>
+<div class="math display" data-tex="
+D(\theta)=\max_{\substack{1\le i\le17\\1\le j\le4}}
+\left&#124;O_j(u_i(\theta))-y_{ij}\right&#124;.
+"></div>
+
+<p>For each observed value <span class="math" data-tex="y_{ij}"></span>, interval arithmetic gives</p>
+<div class="math display" data-tex="
+d^-_{ij}=\max(\ell_{ij}-y_{ij},\;y_{ij}-v_{ij},\;0),
+\qquad
+d^+_{ij}=\max(&#124;\ell_{ij}-y_{ij}&#124;,\;&#124;v_{ij}-y_{ij}&#124;).
+"></div>
+
+<p>Since the actual output lies inside its uniform interval, its absolute residual lies between these two bounds. Taking maxima preserves both inequalities. Therefore</p>
+<div class="math display" data-tex="
+L:=\max_{ij}d^-_{ij}\le D(\theta)\le
+U:=\max_{ij}d^+_{ij}
+\qquad\text{for every }\theta\in C.
+"></div>
+
+<p>The exact rational endpoints are retained in the combined result. Their decimal displays are</p>
+<div class="math display" data-tex="
+L\approx5.186387141964336\;\mu\mathrm m,
+\qquad
+U\approx5.186387360305146\;\mu\mathrm m.
+"></div>
+
+<p>Both bounding maxima are supplied by M's apical channel. The audit independently recomputes every one of the 68 residual pairs from the source CSV and the selected observer intervals, then recomputes the maxima and range width with exact fractions.</p>
+<p>This is a pointwise conservative enclosure of <span class="math" data-tex="D"></span> throughout the specified cell. It is not a proof that the interval endpoints are attained, a sharp minimax theorem, or a global material optimum. The small enclosure width does not include mesh/integration/continuum error, source processing uncertainty or physiological parameter uncertainty.</p>
+<h2>What the two tolerance queries mean</h2>
+<p>For a declared common allowance <span class="math" data-tex="\delta"></span>, the theorem implies:</p>
+<table>
+<thead>
+<tr>
+<th>Query</th>
+<th>Certified implication on this cell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math" data-tex="\delta&lt;L"></span></td>
+<td>Every parameter in the cell fails for the supplied selected stationary tuple. Other branches remain unresolved.</td>
+</tr>
+<tr>
+<td><span class="math" data-tex="\delta\ge U"></span></td>
+<td>Every parameter in the cell has the supplied stationary tuple satisfying all 68 declared static comparisons.</td>
+</tr>
+<tr>
+<td><span class="math" data-tex="L\le\delta&lt;U"></span></td>
+<td>The interval calculation alone does not decide compatibility.</td>
+</tr>
+</tbody>
+</table>
+<p>The recorded 5.1 micrometre query is below <span class="math" data-tex="L"></span>, so the selected-tuple decision is OUT. That does not prove that all stationary branches or the whole physical parameter domain are excluded.</p>
+<p>The recorded 5.2 micrometre query is above <span class="math" data-tex="U"></span>, so every point of this nonempty cell has a stationary-tuple witness for that allowance. It supplies an inner component of the <strong>declared conditional</strong> compatibility problem. It does not assert that every other branch passes or that the full identified set has been computed.</p>
+<p>These illustrative queries were selected after the earlier M threshold was known. They are neither prospective statistical tests nor estimates of experimental noise. Increasing an allowance changes the question being asked; it does not demonstrate that the model matches the source's actual measurement uncertainty.</p>
+<h2>The 60-plus-8 evidence chain</h2>
+<p>The combination selects 15 earlier audited records, giving 60 outputs, and exactly F and K's two newly audited records, giving eight outputs. It rejects duplicate selected records and requires four channels per selected record. The independent audit checks:</p>
+<ul>
+<li>exact source-dose association and the same nonempty cell and contract across all records;</li>
+<li>each root certificate's bytes, passing uniform-root capsule and local branch identifier;</li>
+<li>each observer certificate's bytes, passing application checks and its matching root proof;</li>
+<li>the new F/K application's explicit uniform-quantifier and admissible-family flags;</li>
+<li>all frozen combination inputs and both exact tolerance-query decisions.</li>
+</ul>
+<p>The raw two-record F/K output originally inherited a misleading nested all-68 flag. Its separately retained metadata correction makes the nested scope explicitly eight outputs and leaves all record files, numeric intervals and aggregate numeric bounds unchanged. The combined 68-output conclusion is made only in the new outer calculation. The audit verifies the corrected wrapper, correction receipt and independent F/K application review together; it does not treat the original nested flag as a valid global result.</p>
+<p>The underlying body and baseline-observer implementations have their disclosed reviewed-component replays. This audit does not relabel those as another independent implementation. Neither does a stationary tuple constitute one stable physical loading path through all activation doses.</p>
+<h2>What remains outside this result</h2>
+<p>The original contract still requires adequate source-compatible physical inference and uncertainty-propagated larger-region prediction. One tiny fixed-geometry cell is not the full material/geometry domain. Other branches, zero-coefficient faces, unbounded parameter tails and independent physiological constraints are not resolved by this calculation.</p>
+<p>The experimental temporal peak/reference/ROI/aggregation procedure, specimen-level source pairing and measurement/discrepancy law remain conditional. The finite model uses frozen binary quadrature and geometry constants; its exact discrete-root theorem is not an ideal-integral or continuum-PDE error theorem. No revised larger-region biological validation or confirmed scientific novelty follows from the compatibility witness alone.</p>
+<p>The meaningful next operations concern those remaining inference, forward-error, source and transfer requirements. Another local PASS or another editorial audit cannot substitute for them.</p>
+<h2>Publication-control snapshot</h2>
+<p>The original PLAN remains byte-identical. The current gate ledger still marks Gate 3 in progress, Gate 4's original target incomplete and the full objective unachieved. Its latest shared-cell entry binds the exact 17-record/68-channel result; the earlier partial phase is explicitly historical and superseded. All eight prior control snapshots in the parameter-family archive match their retained hashes.</p>
+<p>The README still states that the original 15-step project is incomplete and claims no new GitHub Pages deployment. Both landing-page generators lead with the completed conditional calculation and retain its scientific limits. Their shortened public enclosure, [5.18638714, 5.18638737] micrometres, is rounded safely outward from the exact endpoints.</p>
+<p>This audit identified one older parent-landing sentence that still called the all-68 calculation incomplete. It was corrected to distinguish that historical checkpoint from the current conditional result. The child single-root heading and limitation were likewise clarified as historical and specific to that earlier one-field proof.</p>
+<p>This receipt binds publication <strong>sources</strong>. Final generated HTML, equation rendering, link layout and any live external service are outside this particular audit and need their separately retained build/browser receipts. The final HTML can include this review without a circular source-versus-generated-page hash claim.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

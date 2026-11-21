@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MODEL-CANDIDATES</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Gate 3: mechanically defensible model candidates</h1>
+<p><strong>Decision:</strong> a finite-height independent-cell null can be specified and tested quantitatively now. It cannot predict patch-scale bending. A coupled finite-thickness model is the appropriate shape candidate, but its large-region point prediction is not identified by a scalar small-region shortening curve alone. No mechanical simulation, fit or held-out score is performed in this design document. None of the standard energy, scaling or invariance arguments below is claimed novel.</p>
+<h2>Experimental and input contract</h2>
+<p>Countryman et al., <em>Nature Communications</em> 16:7665 (2025), <a href="https://doi.org/10.1038/s41467-025-62483-6">primary article</a>, Figs. 2–4, reports lateral illumination of an 18-micrometre-diameter region at cell heights 32–35 micrometres. Illumination occupies 5–25 micrometres below the apical surface. Its dose is an optical recruitment proxy, not a force measurement. The source distinguishes cell shortening from apical-surface furrowing and from internalization. Its supplementary information pp. 9–10 and 13 discusses optical controls, larger-region morphology and tool limitations.</p>
+<p>Allowed training outcomes are the small-region observations only. Larger-region diameter and measured optical dose are prescribed intervention inputs; larger-region shortening, bending labels, surface profiles and representative post-activation images are evaluation outcomes. They cannot select stiffness, active gain, a threshold, an initial shape or an error tolerance. Published outcomes are already known, so the test is retrospective, not blind.</p>
+<p>The source-data audit reports 17 small-region maximum-shortening/dose pairs and nine nominal-50-micrometre pairs in Fig. 4h. The repeated small pairs in Fig. 2d/4h are not independent training cohorts. The continuous target must be <strong>maximum shortening in both groups</strong>. Fig. 2c average shortening is a different observable. Separate apical/basal maxima need not occur at the same place or time; their sum is not constrained to equal the maximum cell-height shortening. Report measured diameters separately from nominal labels. No specimen identity should be invented from row order.</p>
+<p>The published activation normalizer is calculated across experiments. Using supplied normalized doses is a declared source optical calibration, not a strictly training-only preprocessing claim. Re-estimating a training-only normalizer requires raw activation intensities. No normalization may use held-out shape outcomes.</p>
+<h2>Thickness and curvature invalidate an automatic plate reduction</h2>
+<p>Let activation radius be <span class="math" data-tex="a=D/2"></span> and tissue height <span class="math" data-tex="h"></span>. At nominal diameter 18 micrometres,</p>
+<div class="math display" data-tex="
+\frac h a=\frac{32\text{--}35}{9}=3.56\text{--}3.89.
+"></div>
+
+<p>At nominal diameter 50 micrometres, <span class="math" data-tex="h/a=1.28\text{--}1.40"></span>. Neither is a thin-tissue limit <span class="math" data-tex="h/a\ll1"></span>. A thin basal cortical layer could have thickness much smaller than <span class="math" data-tex="a"></span>; that does not make the entire epithelium a thin plate. A plate law needs a separately justified reduction and comparison against finite-thickness mechanics.</p>
+<p>Initial AP and DV curvatures must be measured before activation. They are independent geometric inputs, not parameters selected from the large-region bending response. Axisymmetry is a conditional circular-patch benchmark; anisotropic initial curvature or elliptical stimulation requires a genuinely non-axisymmetric model. Cell size relative to activation radius must also be checked before treating a few-cell patch as a continuum.</p>
+<h2>M0: exact finite-height column null</h2>
+<p>Use an ideal circular column solely as a homogeneous local null. Its volume <span class="math" data-tex="V"></span> is fixed, cross-sectional area is <span class="math" data-tex="A&gt;0"></span>, height is <span class="math" data-tex="H=V/A"></span>, and lateral area is <span class="math" data-tex="2V\sqrt\pi A^{-1/2}"></span>. For nonnegative basal area modulus <span class="math" data-tex="K_b"></span>, positive lateral tension <span class="math" data-tex="\sigma_l"></span> and positive combined apical/basal baseline tension <span class="math" data-tex="\Sigma"></span>, define</p>
+<div class="math display" data-tex="
+E(A;I)=\Sigma A+\frac{K_b}{2A_0}(A-A_0)^2
++2\sigma_l(I)V\sqrt\pi A^{-1/2},
+\qquad \sigma_l(I)=\sigma_{l0}+gI.
+"></div>
+
+<p>The positive affine gain <span class="math" data-tex="g"></span> is an explicit small-dose constitutive hypothesis, not a measured conversion from fluorescence to force. Positive tension imposes a restricted dose range. This energy structure follows existing cell-surface mechanics; it does not propose a new mechanism.</p>
+<p>The equilibrium law is</p>
+<div class="math display" data-tex="
+\Sigma+K_b(A/A_0-1)-\sigma_l(I)V\sqrt\pi A^{-3/2}=0,
+\qquad S(I)=H_0-\frac V{A(I)}.
+"></div>
+
+<p>It is well defined: energy diverges at zero and infinity under the stated assumptions, and</p>
+<div class="math display" data-tex="
+E&#x27;&#x27;(A)=\frac{K_b}{A_0}+\frac{3\sigma_l(I)V\sqrt\pi}{2A^{5/2}}&gt;0.
+"></div>
+
+<p>Thus exactly one positive minimizer exists. A positive-mobility overdamped relaxation is permissible if kinetics are explicitly needed, but endpoint maxima do not determine a unique activation time course or viscosity. The fixed-volume null is conditional, not a proof that cellularizing tissue has constant volume. Cellularization reference growth belongs in the observation operator rather than being misclassified as activation-induced shortening. The source's post-response reference correction may define the evaluated target; it cannot silently become a future-time forecast input.</p>
+<h3>Independent-column invariance theorem</h3>
+<p>Suppose a patch contains <span class="math" data-tex="N"></span> identical, uncoupled columns, all with the same dose and no diameter-dependent boundary load. Its energy is <span class="math" data-tex="\sum_{i=1}^N E(A_i;I)"></span>. Strict convexity gives <span class="math" data-tex="A_i=A(I)"></span> for every cell, for every positive <span class="math" data-tex="N"></span>. Consequently both the mean and the maximum shortening equal <span class="math" data-tex="S(I)"></span>, independently of patch diameter. Multiplying the number of columns cannot generate a bending transition or reverse the displacement direction.</p>
+<p>This is a rigorous statement about M0, not a theorem that all local biological models are size invariant. In particular, for independent <strong>heterogeneous</strong> cells with shortening CDF <span class="math" data-tex="G_I"></span>, the maximum satisfies</p>
+<div class="math display" data-tex="
+\Pr(M_N\le s\mid I)=G_I(s)^N.
+"></div>
+
+<p>Maximum shortening may therefore change with patch size even without mechanical coupling. A claim that a size effect proves mechanical propagation must exclude this order-statistics alternative. The workbook does not supply the cell-level distribution and activated cell counts needed to calibrate it. Scalar maximum shortening is a bounded response test, not a substitute for predicting surface geometry.</p>
+<p>The M0 energy has no tissue embedding or center-of-mass constraint. It determines height, not the individual apical/basal positions in the laboratory frame. It cannot predict an outward bulge or an inward furrow. A classifier appended to its shortening curve would not be a mechanical derivation.</p>
+<h2>M1: finite-height asymmetric-cell energy</h2>
+<p>The closest theoretical baseline is Guerra Santillán, Dahmann and Fischer-Friedrich, <em>PRX Life</em> 2:013004 (2024), <a href="https://doi.org/10.1103/PRXLife.2.013004">main paper</a>, Eq. (1), Fig. 6 and <a href="https://journals.aps.org/prxlife/supplemental/10.1103/PRXLife.2.013004/Supplementary_GuerraSantillan.pdf">Supplement §I, S1–S7</a>. It already couples lateral tension, basal elasticity and cell-shape asymmetry. Its wing-disc basement-membrane parameters cannot be assigned to embryonic basal actomyosin. The material structure is a candidate analogy requiring validation.</p>
+<p>An exact geometric extension, not a validated new biological law, uses a regular hexagonal frustum. Let top/bottom edge lengths be <span class="math" data-tex="w+\delta"></span> and <span class="math" data-tex="w-\delta"></span>, with <span class="math" data-tex="w&gt;&#124;\delta&#124;"></span>, and <span class="math" data-tex="C=3\sqrt3/2"></span>. Then</p>
+<div class="math display" data-tex="
+A_a=C(w+\delta)^2,\quad A_b=C(w-\delta)^2,
+\quad H=\frac V{C(w^2+\delta^2/3)},
+\quad A_l=6w\sqrt{H^2+3\delta^2}.
+"></div>
+
+<p>The volume and lateral area are exact frustum formulas, including finite slant. There is no <span class="math" data-tex="H/w\ll1"></span> assumption. Define</p>
+<div class="math display" data-tex="
+E(w,\delta;I)=\sigma_a A_a+\sigma_{b0} A_b
++\frac{K_b}{2A_{b0}}(A_b-A_{b0})^2+\sigma_l(I)A_l.
+"></div>
+
+<p>This is still a local cell model. It does not make independently optimized frusta into a compatible tissue: shared faces, cell tilts and neighboring-cell forces must be solved jointly. Basal/apical stiffness differences are capable of inducing shape asymmetry, but that principle and its weak-curvature analysis are already in the cited theory.</p>
+<h3>An explicit local identifiability calculation</h3>
+<p>For an illustrative symmetric reference, normalize <span class="math" data-tex="w_0=1"></span>, set <span class="math" data-tex="A_{b0}=C"></span>, <span class="math" data-tex="\sigma_a=\sigma_{b0}=T&gt;0"></span>, and let <span class="math" data-tex="H_0=q"></span>. The resting lateral tension is <span class="math" data-tex="\sigma_{l0}=\sqrt3T/q"></span>. The exact Hessian at the resting configuration is</p>
+<div class="math display" data-tex="
+\mathcal H_{ww}=4C(3T+K_b),\qquad
+\mathcal H_{w\delta}=-4CK_b,\qquad
+\mathcal H_{\delta\delta}=2\sqrt3(T+3K_b+9T/q^2).
+"></div>
+
+<p>Small lateral-tension increments produce</p>
+<div class="math display" data-tex="
+\frac{\Delta\delta}{\Delta w}
+=\frac{3K_b}{T+3K_b+9T/q^2}\in[0,1).
+"></div>
+
+<p>The height-response slope fixes a combination of active gain and effective stiffness; it does not, by itself, fix the asymmetry ratio. For any admissible <span class="math" data-tex="K_b/T"></span>, active gain can be adjusted to reproduce the same infinitesimal shortening slope while changing predicted asymmetry. This is a local small-signal non-identifiability result for this parameterization, not a proof that every nonlinear dose curve or every additional apical/basal observation fails to identify it.</p>
+<p>No global tissue curvature formula may be inferred merely by treating these cells as independent wedges. A parallel-surface relation such as <span class="math" data-tex="\kappa\simeq2\delta/(wH)"></span> additionally assumes a compatible weak-curvature embedding. It is a diagnostic limit, not a thin-plate model or a large-region shape predictor.</p>
+<h2>M2: minimal genuine shape candidate</h2>
+<p>The defensible mechanical extension is a coupled finite-thickness patch with explicit apical and basal interfaces. Two implementations are admissible:</p>
+<ul>
+<li>A 3D cell/vertex model with fixed cell volumes, shared lateral interfaces, apical/basal tensions, basal area elasticity and surrounding nonactivated cells. Activation changes specified lateral face tensions within the illuminated 5–25-micrometre depth range. Cell topology and initial surface geometry come from pre-activation observations. Shared faces must be counted once with an explicitly defined interface tension.</li>
+<li>A 3D nearly incompressible hyperelastic/viscoelastic body with resolved depth-dependent active stress and apical/basal surface constitutive laws. This is a homogenized approximation; it must be checked against activation radius/cell size and cannot silently become a Kirchhoff–Love plate. Mixed incompressibility, volume conservation, baseline prestress, contact and outer-boundary sensitivity need independent checks.</li>
+</ul>
+<p>Both must embed the pre-activation tissue curvature, mechanically couple activated cells to an unactivated surrounding region, and account for vitelline contact if relevant. The outer domain and boundary conditions are fixed from the acquisition geometry or a declared remote-boundary sensitivity analysis. They cannot be tuned against the large-region morphology. Basal elasticity is a material assumption, not a generic clamp: displacement support, area stiffness and active prestress are different quantities.</p>
+<p>No arbitrary diameter threshold is allowed. Continuous changes in curvature, apical depth and basal position must result from equilibrium/dynamics. Any bending label is applied afterward using an independent, predeclared observation operator; a label threshold chosen from held-out Fig. 4f is forbidden.</p>
+<h2>Dimensionless combinations and what can actually be fitted</h2>
+<p>For the local surface-energy model, using <span class="math" data-tex="w_0"></span> and <span class="math" data-tex="\sigma_a w_0^2"></span> as scales leaves the ratios</p>
+<div class="math display" data-tex="
+V/w_0^3,\quad A_{b0}/w_0^2,\quad
+\sigma_{b0}/\sigma_a,\quad K_b/\sigma_a,
+\quad\sigma_{l0}/\sigma_a,\quad g/\sigma_a.
+"></div>
+
+<p>For a bulk 3D model with shear modulus <span class="math" data-tex="\mu"></span>, height <span class="math" data-tex="h"></span> and time scale <span class="math" data-tex="t_*"></span>, relevant groups include</p>
+<div class="math display" data-tex="
+a/h,\quad h/R_{AP},\quad h/R_{DV},\quad\ell_{cell}/h,
+\quad K_b/(\mu h),\quad T_{a,b}/(\mu h),\quad
+\sigma_{active}/\mu,\quad\eta/(\mu t_*).
+"></div>
+
+<p>Illumination depths divided by <span class="math" data-tex="h"></span>, outer-domain size divided by <span class="math" data-tex="h"></span>, contact properties and activation turnover are additional inputs if used. A common positive scaling of all force/energy parameters, with matching viscous/friction parameters for dynamics, leaves shape trajectories invariant. Shape data therefore constrain ratios, not an absolute force scale, unless an independent mechanical measurement breaks that symmetry.</p>
+<h2>Identified-set prediction contract</h2>
+<p>For a fully specified candidate, let <span class="math" data-tex="Y_{18}(\theta)"></span> denote training observables and <span class="math" data-tex="\mathcal U_{18}"></span> their declared uncertainty region. Use</p>
+<div class="math display" data-tex="
+\Theta_{18}=\{\theta:\ Y_{18}(\theta)\in\mathcal U_{18}\}
+\cap\Theta_{\rm physical},
+\qquad
+\mathcal P_D=\{Y_D(\theta):\theta\in\Theta_{18}\}.
+"></div>
+
+<p>Only after freezing <span class="math" data-tex="\Theta_{18}"></span>, the observation operator and numerical uncertainty may a larger-diameter experiment be scored. A point estimate with a narrow optimizer covariance is not proof that <span class="math" data-tex="\mathcal P_D"></span> is narrow. If several parameter sets fit the small-region data but give materially different large-region surface shapes, the correct prediction is that set or interval. If even its envelope cannot be computed reliably, the mechanical point-prediction gate remains unresolved.</p>
+<p>The scalar workbook can support a no-refit homogeneous-column response null. A credible 3D prediction additionally requires initial cell geometry and curvature, a justified basal constitutive law, compatible neighboring-tissue constraints, and spatial apical/basal validation data or a sufficiently informative identified set. Do not invent these quantities to force a desired large-region outcome.</p>
+<h2>Required verification before a coupled prediction claim</h2>
+<ol>
+<li>Check exact cell volume, surface areas, rigid-motion invariance and zero-activation equilibrium.</li>
+<li>Check stable passive energy and nonnegative dissipation for the selected rheology; active work is explicitly supplied, not free equilibrium energy generation.</li>
+<li>Verify finite-thickness solutions and coupled-face forces; compare any reduced limit with the full model.</li>
+<li>Recover known parameters/combinations synthetically and exhibit alternative fits along unresolved directions.</li>
+<li>Freeze the small-region calibration, activation observation model and numerical error protocol before large-region scoring.</li>
+<li>Report scalar shortening, surface displacement and bending-classification outcomes separately. A scalar response success cannot pass the 3D shape-prediction gate.</li>
+</ol>
+<p>The accompanying <code>model_design_*.json</code> receipts retain source hashes, exact-symbolic checks and the design boundary. Modest originality, if any, must lie in a genuinely new and independently checked no-refit prediction or nontrivial information limit, not in relabeling this standard mechanics.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

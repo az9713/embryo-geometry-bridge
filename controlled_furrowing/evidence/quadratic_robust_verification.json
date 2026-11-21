@@ -1,0 +1,115 @@
+{
+  "status": "COMPLETE",
+  "energy_gradient_equality": [
+    {
+      "gain": 0.0,
+      "energy_exactly_equal": true,
+      "gradient_exactly_equal": true
+    },
+    {
+      "gain": 1.0,
+      "energy_exactly_equal": true,
+      "gradient_exactly_equal": true
+    },
+    {
+      "gain": 5.0,
+      "energy_exactly_equal": true,
+      "gradient_exactly_equal": true
+    }
+  ],
+  "all_energy_gradients_bit_identical": true,
+  "rows": [
+    {
+      "lambda": 500.0,
+      "target": 1.0,
+      "reached": true,
+      "verified_strength": 1.0,
+      "force": 2.7324044177441664e-13,
+      "sampled_J_min": 0.9975482447880277,
+      "sampled_J_max": 1.0030905054751051,
+      "shortening": 0.06591695638667516,
+      "attempts": 1,
+      "failed_attempts": 0,
+      "seconds": 13.162710100004915,
+      "stop_reason": "target reached"
+    },
+    {
+      "lambda": 500.0,
+      "target": 5.0,
+      "reached": true,
+      "verified_strength": 5.0,
+      "force": 1.7991175962347528e-10,
+      "sampled_J_min": 0.9799173069012945,
+      "sampled_J_max": 1.017614054741299,
+      "shortening": 0.2142194385745999,
+      "attempts": 1,
+      "failed_attempts": 0,
+      "seconds": 11.94138629999361,
+      "stop_reason": "target reached"
+    },
+    {
+      "lambda": 500.0,
+      "target": 10.0,
+      "reached": true,
+      "verified_strength": 10.0,
+      "force": 9.089288756326461e-11,
+      "sampled_J_min": 0.966827678414544,
+      "sampled_J_max": 1.0303799395031337,
+      "shortening": 0.3173492597294354,
+      "attempts": 1,
+      "failed_attempts": 0,
+      "seconds": 11.80926239999826,
+      "stop_reason": "target reached"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 1.0,
+      "reached": true,
+      "verified_strength": 1.0,
+      "force": 3.2460701571871504e-09,
+      "sampled_J_min": 0.9992304097155624,
+      "sampled_J_max": 1.0009026903052107,
+      "shortening": 0.05955996043499734,
+      "attempts": 1,
+      "failed_attempts": 0,
+      "seconds": 27.263461099995766,
+      "stop_reason": "target reached"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "reached": true,
+      "verified_strength": 5.0,
+      "force": 2.718676840726339e-11,
+      "sampled_J_min": 0.9907230449624136,
+      "sampled_J_max": 1.0045635473718528,
+      "shortening": 0.20909120924633484,
+      "attempts": 7,
+      "failed_attempts": 3,
+      "seconds": 69.7108432999812,
+      "stop_reason": "target reached"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 10.0,
+      "reached": true,
+      "verified_strength": 10.0,
+      "force": 4.400088474999786e-12,
+      "sampled_J_min": 0.9805728278543651,
+      "sampled_J_max": 1.0088188251108128,
+      "shortening": 0.3129474190935082,
+      "attempts": 7,
+      "failed_attempts": 3,
+      "seconds": 69.28550820000237,
+      "stop_reason": "target reached"
+    }
+  ],
+  "source_sha256": "2e00d7b2b61ecfa9006716ba9a0245af47f2c85ae7b647caf47b66b13532dba9",
+  "parents": {
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410"
+  },
+  "scope": "Target-free small-geometry robust numerical continuation, no outcomes fitted"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_ROOT_OBSERVED_LATER_WAVE_INDEPENDENT_GLOBAL_EXIT",
+  "mode": "independent",
+  "wave_id": "wave_03",
+  "pid": 29608,
+  "observed_exit_code": 0,
+  "unified_exec_session": 26512,
+  "unified_exec_final_chunk_id": "c212bc",
+  "started_sha256": "fc7c0d75472eaa0f562dab289d0fc9630e03b4de2844b8df1020c9c3df06ffe2",
+  "terminal_sha256": "bfdca495dca2c28c0a5339c14d12dfe26f37a1bf8d253400068e1cf3dbdcfc06",
+  "results_sha256": "8ddecf0622e57e8dd8d3e5b113c3261ad1c4981d5f6ac231585cf8adc69af2b8",
+  "sha256": {
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/started.json": "fc7c0d75472eaa0f562dab289d0fc9630e03b4de2844b8df1020c9c3df06ffe2",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/terminal.json": "bfdca495dca2c28c0a5339c14d12dfe26f37a1bf8d253400068e1cf3dbdcfc06",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/results.json": "8ddecf0622e57e8dd8d3e5b113c3261ad1c4981d5f6ac231585cf8adc69af2b8",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_contrast_change_small_05/operands.json": "5d3271af5529e31e4ca570c66e531b6fbc1d95e9711b5e7ac01a6ebb37f5796a",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_contrast_change_small_05/results.json": "c57799b13901ffa3ed68000f2b444d452590fb5da624b1580e1a8a1dc9345c85",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_contrast_change_small_15/operands.json": "4856e2130a1daa04e50df8b98649ca804f8fda8860a1fefe38bc510fa00782f9",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_contrast_change_small_15/results.json": "c3982f22ca898372221ecdd3071b6acfdde16859c9935274a490757154862912",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_negative_contrast_change_small_05/operands.json": "8a3b28ffda8891e024caa6c86e08fadec04110d2dd07b44c219b41344cf11862",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_negative_contrast_change_small_05/results.json": "2a274a6711645681b7e6ba90b246e7531f1c65a8ff63ea3d1aa5f6a5fdd0e0b0",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_negative_contrast_change_small_15/operands.json": "48ac8c8619100804a54be8dbc93d8243006072740e32e953d3d6e7e259b83cf7",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_negative_contrast_change_small_15/results.json": "b2c58dfb347fd32d6ac071e194bae68d121bedf478fe655dc0b95916cf83c9c8"
+  },
+  "root_scalar_and_672_leaf_checks_passed": true
+}

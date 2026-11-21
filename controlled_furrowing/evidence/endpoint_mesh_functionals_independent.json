@@ -1,0 +1,558 @@
+{
+  "status": "PASS_INDEPENDENT_NUMERICAL_CROSSCHECK",
+  "checks": {
+    "12_current_radial_line__spatial_max_apical_downward": true,
+    "12_current_radial_line__spatial_max_basal_upward": true,
+    "12_current_radial_line__spatial_max_maximum_Eulerian_height_shortening": true,
+    "12_current_radial_line__spatial_max_regional_mean_Eulerian_height_shortening": true,
+    "12_current_radial_line__regional_mean_apical_downward": true,
+    "12_current_radial_line__regional_mean_basal_upward": true,
+    "12_current_radial_line__regional_mean_maximum_Eulerian_height_shortening": true,
+    "12_current_radial_line__regional_mean_regional_mean_Eulerian_height_shortening": true,
+    "12_current_disk__spatial_max_apical_downward": true,
+    "12_current_disk__spatial_max_basal_upward": true,
+    "12_current_disk__spatial_max_maximum_Eulerian_height_shortening": true,
+    "12_current_disk__spatial_max_regional_mean_Eulerian_height_shortening": true,
+    "12_current_disk__regional_mean_apical_downward": true,
+    "12_current_disk__regional_mean_basal_upward": true,
+    "12_current_disk__regional_mean_maximum_Eulerian_height_shortening": true,
+    "12_current_disk__regional_mean_regional_mean_Eulerian_height_shortening": true,
+    "16_current_radial_line__spatial_max_apical_downward": true,
+    "16_current_radial_line__spatial_max_basal_upward": true,
+    "16_current_radial_line__spatial_max_maximum_Eulerian_height_shortening": true,
+    "16_current_radial_line__spatial_max_regional_mean_Eulerian_height_shortening": true,
+    "16_current_radial_line__regional_mean_apical_downward": true,
+    "16_current_radial_line__regional_mean_basal_upward": true,
+    "16_current_radial_line__regional_mean_maximum_Eulerian_height_shortening": true,
+    "16_current_radial_line__regional_mean_regional_mean_Eulerian_height_shortening": true,
+    "16_current_disk__spatial_max_apical_downward": true,
+    "16_current_disk__spatial_max_basal_upward": true,
+    "16_current_disk__spatial_max_maximum_Eulerian_height_shortening": true,
+    "16_current_disk__spatial_max_regional_mean_Eulerian_height_shortening": true,
+    "16_current_disk__regional_mean_apical_downward": true,
+    "16_current_disk__regional_mean_basal_upward": true,
+    "16_current_disk__regional_mean_maximum_Eulerian_height_shortening": true,
+    "16_current_disk__regional_mean_regional_mean_Eulerian_height_shortening": true,
+    "24_current_radial_line__spatial_max_apical_downward": true,
+    "24_current_radial_line__spatial_max_basal_upward": true,
+    "24_current_radial_line__spatial_max_maximum_Eulerian_height_shortening": true,
+    "24_current_radial_line__spatial_max_regional_mean_Eulerian_height_shortening": true,
+    "24_current_radial_line__regional_mean_apical_downward": true,
+    "24_current_radial_line__regional_mean_basal_upward": true,
+    "24_current_radial_line__regional_mean_maximum_Eulerian_height_shortening": true,
+    "24_current_radial_line__regional_mean_regional_mean_Eulerian_height_shortening": true,
+    "24_current_disk__spatial_max_apical_downward": true,
+    "24_current_disk__spatial_max_basal_upward": true,
+    "24_current_disk__spatial_max_maximum_Eulerian_height_shortening": true,
+    "24_current_disk__spatial_max_regional_mean_Eulerian_height_shortening": true,
+    "24_current_disk__regional_mean_apical_downward": true,
+    "24_current_disk__regional_mean_basal_upward": true,
+    "24_current_disk__regional_mean_maximum_Eulerian_height_shortening": true,
+    "24_current_disk__regional_mean_regional_mean_Eulerian_height_shortening": true,
+    "ROI_sup_12_16_top": true,
+    "ROI_sup_12_16_bottom": true,
+    "ROI_sup_16_24_top": true,
+    "ROI_sup_16_24_bottom": true,
+    "ROI_sup_12_24_top": true,
+    "ROI_sup_12_24_bottom": true
+  },
+  "endpoint_checks": [
+    {
+      "check": "12_current_radial_line__spatial_max_apical_downward",
+      "independent_value_um": 9.015838648186161,
+      "production_interval_um": [
+        9.015838648186161,
+        9.015838648186161
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_radial_line__spatial_max_basal_upward",
+      "independent_value_um": 1.4744220382219262,
+      "production_interval_um": [
+        1.4744220382219262,
+        1.4744220382219262
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_radial_line__spatial_max_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.490260686408087,
+      "production_interval_um": [
+        10.490260686408089,
+        10.490260686408089
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_radial_line__spatial_max_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 9.120620694442255,
+      "production_interval_um": [
+        9.12062069444226,
+        9.12062069444226
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_radial_line__regional_mean_apical_downward",
+      "independent_value_um": 7.853660735593682,
+      "production_interval_um": [
+        7.853660735593686,
+        7.853660735593686
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_radial_line__regional_mean_basal_upward",
+      "independent_value_um": 1.266959958848574,
+      "production_interval_um": [
+        1.2669599588485738,
+        1.2669599588485738
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_radial_line__regional_mean_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.490260686408087,
+      "production_interval_um": [
+        10.490260686408089,
+        10.490260686408089
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_radial_line__regional_mean_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 9.120620694442255,
+      "production_interval_um": [
+        9.12062069444226,
+        9.12062069444226
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_disk__spatial_max_apical_downward",
+      "independent_value_um": 9.015838648186161,
+      "production_interval_um": [
+        9.015838648186161,
+        9.015838648186161
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_disk__spatial_max_basal_upward",
+      "independent_value_um": 1.4744220382219262,
+      "production_interval_um": [
+        1.4744220382219262,
+        1.4744220382219262
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_disk__spatial_max_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.490260686408087,
+      "production_interval_um": [
+        10.490260686408089,
+        10.490260686408089
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_disk__spatial_max_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 8.397367596644443,
+      "production_interval_um": [
+        8.397367596644445,
+        8.397367596644445
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_disk__regional_mean_apical_downward",
+      "independent_value_um": 7.228724106056902,
+      "production_interval_um": [
+        7.228724106056904,
+        7.228724106056904
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_disk__regional_mean_basal_upward",
+      "independent_value_um": 1.1686434905875418,
+      "production_interval_um": [
+        1.1686434905875416,
+        1.1686434905875416
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_disk__regional_mean_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.490260686408087,
+      "production_interval_um": [
+        10.490260686408089,
+        10.490260686408089
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "12_current_disk__regional_mean_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 8.397367596644443,
+      "production_interval_um": [
+        8.397367596644445,
+        8.397367596644445
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_radial_line__spatial_max_apical_downward",
+      "independent_value_um": 9.223679087917827,
+      "production_interval_um": [
+        9.223679087917825,
+        9.223679087917825
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_radial_line__spatial_max_basal_upward",
+      "independent_value_um": 1.4240294261182163,
+      "production_interval_um": [
+        1.4240294261182163,
+        1.4240294261182163
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_radial_line__spatial_max_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.6477085120354,
+      "production_interval_um": [
+        10.647708511635267,
+        10.647708514036042
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_radial_line__spatial_max_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 9.224047576439737,
+      "production_interval_um": [
+        9.224047576439737,
+        9.224047576439737
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_radial_line__regional_mean_apical_downward",
+      "independent_value_um": 7.996533953961087,
+      "production_interval_um": [
+        7.996533953961087,
+        7.996533953961087
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_radial_line__regional_mean_basal_upward",
+      "independent_value_um": 1.22751362247865,
+      "production_interval_um": [
+        1.2275136224786503,
+        1.2275136224786503
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_radial_line__regional_mean_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.6477085120354,
+      "production_interval_um": [
+        10.647708511635267,
+        10.647708514036042
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_radial_line__regional_mean_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 9.224047576439737,
+      "production_interval_um": [
+        9.224047576439737,
+        9.224047576439737
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_disk__spatial_max_apical_downward",
+      "independent_value_um": 9.223679087917827,
+      "production_interval_um": [
+        9.223679087917825,
+        9.223679087917825
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_disk__spatial_max_basal_upward",
+      "independent_value_um": 1.4240294261182163,
+      "production_interval_um": [
+        1.4240294261182163,
+        1.4240294261182163
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_disk__spatial_max_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.6477085120354,
+      "production_interval_um": [
+        10.647708511635267,
+        10.647708514036042
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_disk__spatial_max_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 8.467979057914386,
+      "production_interval_um": [
+        8.467979057914384,
+        8.467979057914384
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_disk__regional_mean_apical_downward",
+      "independent_value_um": 7.335428732191989,
+      "production_interval_um": [
+        7.335428732191986,
+        7.335428732191986
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_disk__regional_mean_basal_upward",
+      "independent_value_um": 1.1325503257223974,
+      "production_interval_um": [
+        1.1325503257223974,
+        1.1325503257223974
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_disk__regional_mean_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.6477085120354,
+      "production_interval_um": [
+        10.647708511635267,
+        10.647708514036042
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "16_current_disk__regional_mean_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 8.467979057914386,
+      "production_interval_um": [
+        8.467979057914384,
+        8.467979057914384
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_radial_line__spatial_max_apical_downward",
+      "independent_value_um": 9.381109396937862,
+      "production_interval_um": [
+        9.38110939693786,
+        9.38110939693786
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_radial_line__spatial_max_basal_upward",
+      "independent_value_um": 1.3007730474454438,
+      "production_interval_um": [
+        1.3007730474454438,
+        1.3007730474454438
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_radial_line__spatial_max_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.681662263138815,
+      "production_interval_um": [
+        10.681602377822077,
+        10.681882444383305
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_radial_line__spatial_max_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 9.300895125071193,
+      "production_interval_um": [
+        9.300895125071191,
+        9.300895125071191
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_radial_line__regional_mean_apical_downward",
+      "independent_value_um": 8.175276654770496,
+      "production_interval_um": [
+        8.175276654770494,
+        8.175276654770494
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_radial_line__regional_mean_basal_upward",
+      "independent_value_um": 1.1256184703006966,
+      "production_interval_um": [
+        1.1256184703006968,
+        1.1256184703006968
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_radial_line__regional_mean_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.681662263138815,
+      "production_interval_um": [
+        10.681602377822077,
+        10.681882444383305
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_radial_line__regional_mean_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 9.300895125071193,
+      "production_interval_um": [
+        9.300895125071191,
+        9.300895125071191
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_disk__spatial_max_apical_downward",
+      "independent_value_um": 9.381109396937862,
+      "production_interval_um": [
+        9.38110939693786,
+        9.38110939693786
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_disk__spatial_max_basal_upward",
+      "independent_value_um": 1.3007730474454438,
+      "production_interval_um": [
+        1.3007730474454438,
+        1.3007730474454438
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_disk__spatial_max_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.681662263138815,
+      "production_interval_um": [
+        10.681602377822077,
+        10.681882444383305
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_disk__spatial_max_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 8.528477443892733,
+      "production_interval_um": [
+        8.528477443892731,
+        8.528477443892731
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_disk__regional_mean_apical_downward",
+      "independent_value_um": 7.4868930698928615,
+      "production_interval_um": [
+        7.48689306989286,
+        7.48689306989286
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_disk__regional_mean_basal_upward",
+      "independent_value_um": 1.0415843739998722,
+      "production_interval_um": [
+        1.0415843739998725,
+        1.0415843739998725
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_disk__regional_mean_maximum_Eulerian_height_shortening",
+      "independent_value_um": 10.681662263138815,
+      "production_interval_um": [
+        10.681602377822077,
+        10.681882444383305
+      ],
+      "within_interval_up_to_float_tolerance": true
+    },
+    {
+      "check": "24_current_disk__regional_mean_regional_mean_Eulerian_height_shortening",
+      "independent_value_um": 8.528477443892733,
+      "production_interval_um": [
+        8.528477443892731,
+        8.528477443892731
+      ],
+      "within_interval_up_to_float_tolerance": true
+    }
+  ],
+  "ROI_curve_checks": [
+    {
+      "check": "ROI_sup_12_16_top",
+      "independent_numerical_maximum_um": 0.22590733978975663,
+      "production_interval_um": [
+        0.22590733967187662,
+        0.2268973837916135
+      ],
+      "within_enclosure_with_float_tolerance": true
+    },
+    {
+      "check": "ROI_sup_12_16_bottom",
+      "independent_numerical_maximum_um": 0.05058732101918406,
+      "production_interval_um": [
+        0.05058732101918416,
+        0.05058732101918416
+      ],
+      "within_enclosure_with_float_tolerance": true
+    },
+    {
+      "check": "ROI_sup_16_24_top",
+      "independent_numerical_maximum_um": 0.32650253669750384,
+      "production_interval_um": [
+        0.3265025366975066,
+        0.32712165650121483
+      ],
+      "within_enclosure_with_float_tolerance": true
+    },
+    {
+      "check": "ROI_sup_16_24_bottom",
+      "independent_numerical_maximum_um": 0.12357869330675064,
+      "production_interval_um": [
+        0.12357869330675064,
+        0.12451744512123195
+      ],
+      "within_enclosure_with_float_tolerance": true
+    },
+    {
+      "check": "ROI_sup_12_24_top",
+      "independent_numerical_maximum_um": 0.5155465334420235,
+      "production_interval_um": [
+        0.5155465334420143,
+        0.5160752713689207
+      ],
+      "within_enclosure_with_float_tolerance": true
+    },
+    {
+      "check": "ROI_sup_12_24_bottom",
+      "independent_numerical_maximum_um": 0.1741660143259347,
+      "production_interval_um": [
+        0.17416601432593481,
+        0.17416601432593481
+      ],
+      "within_enclosure_with_float_tolerance": true
+    }
+  ],
+  "independent_methods": "Separately coded physical nodal polynomials; Brent inverse, SciPy quadrature and bounded float optimization. Does not call exact observer or graph helper.",
+  "float_comparison_tolerance_um": 2e-08,
+  "source_sha256": "ac074decbeed54b8b5a5faa3fe9c9d906c71fc35c867edb7f33b9bd2550b8efd",
+  "inputs_sha256": {
+    "runs/activated_quadrature/lambda_5000.0_strength_10.0/reequilibrated.json": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50",
+    "runs/joint_refinement/final.json": "276ffb297135a138e030fcf8b585b6f0b3dd1df1aba293377b12a669bdfa5ffd",
+    "runs/sparse_quadratic/24x12_lambda5000/gain_10.0/final.json": "379dfef2dc7326e7e52b6e29f4b7e06a1de578a62b8d78bbc821bfe712542bd6"
+  },
+  "scope": "Independent numerical sanity check on exact discrete certificates, not an independent rigorous error enclosure or experiment."
+}

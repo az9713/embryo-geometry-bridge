@@ -1,0 +1,287 @@
+{
+  "status": "PASS_PORTABLE_SITE_BROWSER",
+  "browser": "Microsoft Edge headless",
+  "version": "158.0.4370.33",
+  "javascript_disabled": true,
+  "page_sha256": {
+    "docs/index.html": "a44cbb20791b045161d555506d4a5b1b40dbc0fa39b419fdb0f84891427ba5d4",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html": "0169608d940dd146adb0aa2525b84931bf41df3dfa8f47904b227cb7736a7461"
+  },
+  "views": [
+    {
+      "page": "docs/index.html",
+      "width": 1440,
+      "status": "PASS",
+      "geometry": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failed": 0,
+        "images": []
+      },
+      "local_links": [
+        {
+          "path": "../controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+          "status": 200
+        },
+        {
+          "path": "../README.md",
+          "status": 200
+        },
+        {
+          "path": "../PUBLICATION_MANIFEST.json",
+          "status": 200
+        },
+        {
+          "path": "../OMITTED.html",
+          "status": 200
+        }
+      ],
+      "screenshot": "landing_1440.png",
+      "screenshot_sha256": "e19aea51d1d9ad15d488bfe6ea4259fab5ce9cf98d38ea9663c81901a9a76fce"
+    },
+    {
+      "page": "docs/index.html",
+      "width": 390,
+      "status": "PASS",
+      "geometry": {
+        "width": 390,
+        "scroll": 390,
+        "math": 0,
+        "rendered": 0,
+        "accessible": 0,
+        "failed": 0,
+        "images": []
+      },
+      "local_links": [
+        {
+          "path": "../controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+          "status": 200
+        },
+        {
+          "path": "../README.md",
+          "status": 200
+        },
+        {
+          "path": "../PUBLICATION_MANIFEST.json",
+          "status": 200
+        },
+        {
+          "path": "../OMITTED.html",
+          "status": 200
+        }
+      ],
+      "screenshot": "landing_390.png",
+      "screenshot_sha256": "21c4f63ad761423435be755d97565a5074e90e08a3bf8996427517f0aadcca61"
+    },
+    {
+      "page": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+      "width": 1440,
+      "status": "PASS",
+      "geometry": {
+        "width": 1440,
+        "scroll": 1440,
+        "math": 24,
+        "rendered": 24,
+        "accessible": 24,
+        "failed": 0,
+        "images": [
+          {
+            "src": "transverse_windows.png",
+            "ok": true
+          },
+          {
+            "src": "selfmap.png",
+            "ok": true
+          },
+          {
+            "src": "slab_guards.png",
+            "ok": true
+          }
+        ]
+      },
+      "local_links": [
+        {
+          "path": "REPORT.md",
+          "status": 200
+        },
+        {
+          "path": "exact_bounds.csv",
+          "status": 200
+        },
+        {
+          "path": "exact_observer_comparisons.csv",
+          "status": 200
+        },
+        {
+          "path": "transverse_windows.csv",
+          "status": 200
+        },
+        {
+          "path": "exact_slab_geometry.csv",
+          "status": 200
+        },
+        {
+          "path": "../global_reduction_v1/independent/results.json",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/root_actual_acceptance.json",
+          "status": 200
+        },
+        {
+          "path": "transverse_windows.csv",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/independent_actual_readback.json",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../nonaxisymmetric_adequacy_audit_v1/READBACK.md",
+          "status": 200
+        },
+        {
+          "path": "exact_bounds.csv",
+          "status": 200
+        },
+        {
+          "path": "../global_reduction_v1/independent/root_observed_exit.json",
+          "status": 200
+        },
+        {
+          "path": "../../wave_02/checkpoint_v1/REPORT.html",
+          "status": 200
+        },
+        {
+          "path": "exact_observer_comparisons.csv",
+          "status": 200
+        },
+        {
+          "path": "../observer_application_v1/independent_actual_readback/root_acceptance.json",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/actual/receipt.json",
+          "status": 200
+        },
+        {
+          "path": "exact_slab_geometry.csv",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/receipt.json",
+          "status": 200
+        }
+      ],
+      "screenshot": "report_1440.png",
+      "screenshot_sha256": "4998cf80fcede6c110006bc8b63f4ab4b0051ebf5ceadba283dc71008e8aa9e4"
+    },
+    {
+      "page": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+      "width": 390,
+      "status": "PASS",
+      "geometry": {
+        "width": 390,
+        "scroll": 390,
+        "math": 24,
+        "rendered": 24,
+        "accessible": 24,
+        "failed": 0,
+        "images": [
+          {
+            "src": "transverse_windows.png",
+            "ok": true
+          },
+          {
+            "src": "selfmap.png",
+            "ok": true
+          },
+          {
+            "src": "slab_guards.png",
+            "ok": true
+          }
+        ]
+      },
+      "local_links": [
+        {
+          "path": "REPORT.md",
+          "status": 200
+        },
+        {
+          "path": "exact_bounds.csv",
+          "status": 200
+        },
+        {
+          "path": "exact_observer_comparisons.csv",
+          "status": 200
+        },
+        {
+          "path": "transverse_windows.csv",
+          "status": 200
+        },
+        {
+          "path": "exact_slab_geometry.csv",
+          "status": 200
+        },
+        {
+          "path": "../global_reduction_v1/independent/results.json",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/root_actual_acceptance.json",
+          "status": 200
+        },
+        {
+          "path": "transverse_windows.csv",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/independent_actual_readback.json",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../nonaxisymmetric_adequacy_audit_v1/READBACK.md",
+          "status": 200
+        },
+        {
+          "path": "exact_bounds.csv",
+          "status": 200
+        },
+        {
+          "path": "../global_reduction_v1/independent/root_observed_exit.json",
+          "status": 200
+        },
+        {
+          "path": "../../wave_02/checkpoint_v1/REPORT.html",
+          "status": 200
+        },
+        {
+          "path": "exact_observer_comparisons.csv",
+          "status": 200
+        },
+        {
+          "path": "../observer_application_v1/independent_actual_readback/root_acceptance.json",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/actual/receipt.json",
+          "status": 200
+        },
+        {
+          "path": "exact_slab_geometry.csv",
+          "status": 200
+        },
+        {
+          "path": "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/receipt.json",
+          "status": 200
+        }
+      ],
+      "screenshot": "report_390.png",
+      "screenshot_sha256": "9a1fa0481d1c312b1553ca833081824aa5da6a50cfa42964a3e40dd712f8a5f4"
+    }
+  ],
+  "scope": "Portable generated landing and byte-identical latest report at two widths; other pages statically checked."
+}

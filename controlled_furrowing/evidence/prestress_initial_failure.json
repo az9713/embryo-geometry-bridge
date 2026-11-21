@@ -1,0 +1,6 @@
+{
+  "stage": "receipt_serialization_after_numerical_runs",
+  "error": "TypeError: Object of type bool is not JSON serializable (numpy.bool_ in checks)",
+  "source_sha256": "8f05a84c8f61ca4ab70f7c01037475f33ff5271d507b710f15fcca49c2eef612",
+  "resolution": "Explicit bool conversion for receipt values; no numerical code or tolerances changed."
+}

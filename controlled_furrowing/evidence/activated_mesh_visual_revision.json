@@ -1,0 +1,6 @@
+{
+  "issue": "Cosmetic rewrite read UTF8 plot source using host locale, corrupting an en-dash in axis text. Numerical fields/comparison/source runner unchanged.",
+  "correction": "Explicit UTF8 read/write; ASCII physical-domain label; original affected PNG retained.",
+  "before_png_sha256": "2629d2357b3600d0ee0164661d5f8c8d1c1e286b78b9b66af4c628d2ba4961eb",
+  "after_png_sha256": "ea5fc9a3a2d84fcff10e5519a424a6e950d5d767d43de28d2af85c2080bbd32a"
+}

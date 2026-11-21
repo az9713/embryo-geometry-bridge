@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": {
+    "flat_no_existence": true,
+    "groove_interval_exact": true,
+    "missing_slice_retains_ambiguity": true,
+    "pit_cannot_create_plug": true,
+    "basal_occupancy_retained": true,
+    "witness_annulus": true,
+    "specified_slice": true,
+    "error_lipschitz_1000_perturbations": true
+  },
+  "scope": "Algorithm checks plus symbolic proof in SLICE-OBSERVER.md; finite-element error is NOT certified here",
+  "random_seed": 20261119,
+  "max_positive_error_excess": 0.0,
+  "source_sha256": "cc6c23a1338f1bdbf67f985dc71daf336d21af3019b8f6395aa84a8e4cdd4b6b"
+}

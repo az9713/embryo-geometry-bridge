@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SYNTHETIC_COMPONENT",
+  "checks": {
+    "projection_kernel_energy_identity": true,
+    "AD_vs_FD": true,
+    "zero_reference": true,
+    "activated_stationary_positive": true
+  },
+  "identity_error": 1.0842021724855044e-19,
+  "AD_relative_error": 3.8703694701679865e-08,
+  "source_sha256": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+  "parents": {
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+  }
+}

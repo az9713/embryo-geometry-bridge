@@ -1,0 +1,89 @@
+{
+  "status": "PASS scoped deterministic inference and artifact checks",
+  "bounds_receipt_byte_stable_twice": true,
+  "bounds_receipt_sha256": "c095964c5c3489a4aa172c100c2d9968fea6c62f9ff199d973fa24aae9ab12dd",
+  "plot_byte_stable_twice": true,
+  "plot_sha256": "c62358a19220c007c21c0d6f3dc9ba20f556034d3624cccd65f5a150418c1488",
+  "source_crosschecks": 85,
+  "synthetic_known_cases": {
+    "known_cases": 5,
+    "coverage": [
+      "monotone",
+      "descending",
+      "dose ties",
+      "negative observations",
+      "singleton"
+    ],
+    "pass": true
+  },
+  "independent_algorithms": [
+    "Decimal O(n^2) pair scan",
+    "Fraction grouped prefix scan",
+    "greedy interval feasibility",
+    "exact rational concave primal/dual witnesses",
+    "independent SciPy HiGHS LP",
+    "SymPy symbolic derivative equality"
+  ],
+  "concave_constraints_exact": 68,
+  "all_four_17_point_envelopes_at_four_delta_levels_verified": true,
+  "original_sources_unchanged": true,
+  "no_larger_outcome_or_FE_solver_file_read_by_script": true,
+  "local_doc_links": [
+    {
+      "label": "script",
+      "target": "../scripts/calibration_uncertainty.py",
+      "exists": true
+    },
+    {
+      "label": "exact bounds and witnesses",
+      "target": "../evidence/calibration_uncertainty_bounds.json",
+      "exists": true
+    },
+    {
+      "label": "verification receipt",
+      "target": "../evidence/calibration_uncertainty_verification.json",
+      "exists": true
+    },
+    {
+      "label": "original visualization",
+      "target": "../runs/calibration_uncertainty/compatibility_envelopes.png",
+      "exists": true
+    }
+  ],
+  "display_math_delimiters_balanced": true,
+  "visual_review": "Four-panel original plot viewed; observed-grid shading is not a confidence interval; concave attaining curve uses its explicitly larger residual floor.",
+  "artifact_hashes": [
+    {
+      "path": "docs/CALIBRATION-UNCERTAINTY.md",
+      "bytes": 14084,
+      "sha256": "b8618490f2714a5612206f1e35eb11dada224d3f2dc044e85d2b39bb1fb3b1b3"
+    },
+    {
+      "path": "scripts/calibration_uncertainty.py",
+      "bytes": 20817,
+      "sha256": "5a36eb63fc6f10bff86d8324462910ea7c02430a4e72ce69c6272b38af6fb464"
+    },
+    {
+      "path": "evidence/calibration_uncertainty_bounds.json",
+      "bytes": 128982,
+      "sha256": "c095964c5c3489a4aa172c100c2d9968fea6c62f9ff199d973fa24aae9ab12dd"
+    },
+    {
+      "path": "runs/calibration_uncertainty/compatibility_envelopes.png",
+      "bytes": 228735,
+      "sha256": "c62358a19220c007c21c0d6f3dc9ba20f556034d3624cccd65f5a150418c1488"
+    },
+    {
+      "path": "runs/calibration_uncertainty/literature_receipt.json",
+      "bytes": 546,
+      "sha256": "d51ccb8e3de15012fa12a617b73073e9a8cb0e5ce19c0b03544e3593fc7d2b84"
+    }
+  ],
+  "limitations": [
+    "No statistical uncertainty or measurement noise estimated",
+    "No physical identified set computed",
+    "No full FE monotonicity or concavity theorem",
+    "Peak nesting assumes common branch, cap and complete path coverage",
+    "File-token exactness is not biological precision"
+  ]
+}

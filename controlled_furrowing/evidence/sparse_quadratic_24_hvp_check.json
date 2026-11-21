@@ -1,0 +1,41 @@
+{
+  "status": "PASS_LARGE_DERIVATIVE_SPOTCHECK",
+  "checks": {
+    "large_pattern_row_colors_unique": true,
+    "three_AD_Hv_checks": true,
+    "three_FD_Hv_checks": true
+  },
+  "rows": [
+    {
+      "direction": 0,
+      "AD_relative_linf": 3.395224626614235e-16,
+      "FD_relative_linf": 2.1567114728601836e-09
+    },
+    {
+      "direction": 1,
+      "AD_relative_linf": 3.741425593410455e-16,
+      "FD_relative_linf": 1.6260604146550828e-09
+    },
+    {
+      "direction": 2,
+      "AD_relative_linf": 4.1096494556813607e-16,
+      "FD_relative_linf": 1.5763159477484704e-09
+    }
+  ],
+  "pattern": {
+    "free_DOF": 2375,
+    "structural_nonzeros": 52005,
+    "colors": 46,
+    "seed_chunk": 4,
+    "row_color_collision_free": true,
+    "pattern_symmetric": true,
+    "pattern_color_sha256": "d5f3e39f3bee8cd6521de2e3908d8cf1be04a095ace4263c3e4c66dcdb56a82f",
+    "dense_matrix_bytes": 45125000,
+    "sparse_values_and_int64_indices_bytes": 851088,
+    "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+  },
+  "input": "runs\\sparse_quadratic\\24x12_lambda5000\\gain_1.0\\attempt_001_gain_0.5.json",
+  "input_sha256": "5d1b45552583f9fb20090efe5059410b6cc8e235a28a928f31ee23e13438c4ef",
+  "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+  "scope": "Derivativeevaluationonlyattheexistingverified24x12gain0.5field; nooptimizationjob, noPDEerrororbiologyclaim."
+}

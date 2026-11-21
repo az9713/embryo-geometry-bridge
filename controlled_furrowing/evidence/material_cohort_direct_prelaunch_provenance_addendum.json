@@ -1,0 +1,25 @@
+{
+  "status": "EXACT_LAUNCH_BYTES_RECOVERED_AND_HASH_VERIFIED",
+  "launch_snapshot_file": "runs/material_cohort_direct_v1/prelaunch_review_launch_snapshot.json",
+  "launch_snapshot_sha256": "3fdef9e44a23a572b12e6fc11bec47f5f753eaecb5aefa0f1277609eed90879c",
+  "current_review_file": "evidence/material_cohort_direct_prelaunch_review.json",
+  "current_review_sha256": "cdcb914af204518ab0cc82f1167d25629699b641058ab7bbde2fabb4baddf5b4",
+  "difference_only_added_top_level_field": "prelaunch_revision_archive_hashes",
+  "added_metadata": {
+    "runs/material_cohort_direct_v1/pre_launch_revision_0/finding.json": "ccbf476f586ed21dff0140c19abcaaf68c0ae5ab6e82ce0b8750dd4e6e118bb3",
+    "runs/material_cohort_direct_v1/pre_launch_revision_0/material_cohort_direct.py": "b114eab80fcb6693cacef06b0920292ece48295d85b70c4ef2cad8187f8eb24a",
+    "runs/material_cohort_direct_v1/pre_launch_revision_0/protocol.json": "f2b0c08563408fb5d7d3a5d0a78b51b6c8a8975cc8a52b76a6d2c4151f7d1191",
+    "runs/material_cohort_direct_v1/pre_launch_revision_0/synthetic_verification.json": "000274e7d616f82c5b3a20e95e9d0b54d00eabd09f158008ccc9351b96ff2bb7",
+    "runs/material_cohort_direct_v1/pre_launch_revision_1/finding.json": "e59b26b3f6e93980bd3c73028a698b7554e33efe2477254e4a4497dc2688edc3",
+    "runs/material_cohort_direct_v1/pre_launch_revision_1/material_cohort_direct.py": "a7842dddabb38153fd131a5890d332665b42afcf7e8ba29ef418683e615f6fbf",
+    "runs/material_cohort_direct_v1/pre_launch_revision_1/protocol.json": "50e47780f30d1511b8bb6de3c5c87902a3bffff23ce85398b9635f6cc43a43cd",
+    "runs/material_cohort_direct_v1/pre_launch_revision_1/synthetic_verification.json": "c6fb51b3525ac847779807d1fac2746749159cac2da32900ffe99c140e515dda"
+  },
+  "all_existing_keys_values_identical": true,
+  "status_checks_driver_protocol_candidate_affine_hashes_unchanged": true,
+  "job_captured_launch_hash_matches_exact_reconstructed_bytes": true,
+  "recovery_method": "Remove solelythe laterarchive-hashmetadata field fromcurrentJSON; reserializewithoriginaljson.dumps(indent=2)+newline andWindowsCRLFtexttranslation; exactSHA256equalstoalreadycapturedlaunchhash, givingbytelevel\u2014not inferred\u2014identity.",
+  "chronology": "Currentgatefile was exposed asPASS before final archive-metadata addition; callerlaunchedbetween thetwoownedwrites. Reviewlogicandscientificchecks unchanged. No source/protocol/material parameter change, no rerun and no currentgate overwrite.",
+  "guarding_future_work": "Freeze gatefiles before announcingPASS; use separate supplements for later documentary metadata.",
+  "created_utc": "2026-11-19T12:54:26.814838+00:00"
+}

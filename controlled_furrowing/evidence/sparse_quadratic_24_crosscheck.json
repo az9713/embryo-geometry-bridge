@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "gain": 5.0,
+      "field": "runs/sparse_quadratic/24x12_lambda5000/gain_5.0/final.json",
+      "field_sha256": "0834d8ca5df922830722ee2222c8d2d2d979617942d7d04fd42d44bb0bb01eaf",
+      "Duffy12_surface16": {
+        "scaled_energy": 2.0090402881054827,
+        "energy": 56.804275888902964,
+        "scaled_force_linf": 3.7992562925987655e-12,
+        "energy_components": {
+          "bulk": 0.057408402475854776,
+          "surface": 0.0012995107294552439,
+          "tension": 56.55114924365865,
+          "active": 0.19441873203899612,
+          "pointwise_volumetric": 0.002193018052103123,
+          "total": 56.80427588890296
+        },
+        "sampled_J_min": 0.9732293541400985,
+        "sampled_J_max": 1.016293074690469
+      },
+      "cross_force_gate": true,
+      "seconds": 0.3013552000047639
+    },
+    {
+      "gain": 10.0,
+      "field": "runs/sparse_quadratic/24x12_lambda5000/gain_10.0/final.json",
+      "field_sha256": "379dfef2dc7326e7e52b6e29f4b7e06a1de578a62b8d78bbc821bfe712542bd6",
+      "Duffy12_surface16": {
+        "scaled_energy": 2.014935935594559,
+        "energy": 56.9709713944615,
+        "scaled_force_linf": 4.369081986932595e-12,
+        "energy_components": {
+          "bulk": 0.12397301742789862,
+          "surface": 0.0028761961643663696,
+          "tension": 56.5536841594539,
+          "active": 0.29043802141533226,
+          "pointwise_volumetric": 0.004851765923229179,
+          "total": 56.9709713944615
+        },
+        "sampled_J_min": 0.9595966036059524,
+        "sampled_J_max": 1.0262928839141112
+      },
+      "cross_force_gate": true,
+      "seconds": 0.30257960001472384,
+      "geometry_summary": {
+        "all_exact_J_positive": true,
+        "J_lower_exact": "36954940906997162927232098628137675416926588592/38558604449802365648291020829254117574855161501",
+        "J_upper_exact": "660789623389947948242084821415554611987276897/642643407496706221883715326088071765833342903",
+        "J_lower_display": 0.9584097099548057,
+        "J_upper_display": 1.0282368350496691,
+        "global_embedding_certified": true
+      }
+    }
+  ],
+  "source_hashes": {
+    "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+  },
+  "script_sha256": "882fb03caa4ed61b636954a532c95b5631bf5c0e4ed235c1507e1fc3e802e1ed",
+  "scope": "Evaluation-only final24 gains5/10, no new equilibrium or biological data."
+}

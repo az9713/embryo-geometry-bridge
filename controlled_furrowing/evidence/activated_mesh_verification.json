@@ -1,0 +1,304 @@
+{
+  "status": "PASS_NUMERICAL_EXECUTION_NOT_MESH_ADEQUACY",
+  "checks": {
+    "six_targets_reached": true,
+    "all22_attempts_retained": true,
+    "all14_accepted_force_geometry_pass": true,
+    "all8_rejections_retained": true,
+    "stored_forces_replay": true,
+    "frozen_sources_unchanged": true,
+    "all12_curve_widths_achieved": true
+  },
+  "attempts": [
+    {
+      "lambda": 500.0,
+      "target": 1.0,
+      "attempt": 0,
+      "gain": 1.0,
+      "accepted": true,
+      "replayed_force": 6.354212539168638e-13,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "cc47118d7f33d7cc01d064d925143cf08a6a1e3b843c2327453899bd8d7e40e5"
+    },
+    {
+      "lambda": 500.0,
+      "target": 5.0,
+      "attempt": 0,
+      "gain": 5.0,
+      "accepted": false,
+      "replayed_force": 0.00808546618231704,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "13d181ef513c458db2671c5b918c4f4a7543c61000cec26d5aa5e28888c32076"
+    },
+    {
+      "lambda": 500.0,
+      "target": 5.0,
+      "attempt": 1,
+      "gain": 3.0,
+      "accepted": true,
+      "replayed_force": 4.0863471460761414e-13,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "df0ab9d77ff6a8b57f9e36ef2372d184ddc67fc50bdcdc92d50cc0b7004b1a9c"
+    },
+    {
+      "lambda": 500.0,
+      "target": 5.0,
+      "attempt": 2,
+      "gain": 5.0,
+      "accepted": true,
+      "replayed_force": 4.355576229547742e-13,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "b2c5ff7cbe06c8c6b7ad0582f312af76d200fc0c7f0e17656ec245e0d0196c36"
+    },
+    {
+      "lambda": 500.0,
+      "target": 10.0,
+      "attempt": 0,
+      "gain": 10.0,
+      "accepted": true,
+      "replayed_force": 6.829558077924014e-13,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "a121a79afb5ff5e32894d3b9113008e75f9583fd0d8274d6814afc3984be1926"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 1.0,
+      "attempt": 0,
+      "gain": 1.0,
+      "accepted": false,
+      "replayed_force": 0.0236848061618413,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "e7b0cb99cda4c12b3199514741fc6c0a78610ae60cec33412ceb60adc71b8631"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 1.0,
+      "attempt": 1,
+      "gain": 0.5,
+      "accepted": true,
+      "replayed_force": 4.1960072840342005e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "7120bc6979acabcf0e597802a7886ae1a2923a8af9909f2062f6d1d1c86f672b"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 1.0,
+      "attempt": 2,
+      "gain": 1.0,
+      "accepted": true,
+      "replayed_force": 4.357200147561691e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "3f38f951108fd9b178f21865b467adb49eb0f09f8f55b3a8e1372136da12bfd2"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 0,
+      "gain": 5.0,
+      "accepted": false,
+      "replayed_force": 0.03490950250129584,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "d0a4b34971fabd1b9bc5f634c8e3c92182aa49dbac2f7ec1209f81664e326bcc"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 1,
+      "gain": 3.0,
+      "accepted": false,
+      "replayed_force": 0.034464041281910385,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "0adc76b42b94c55ec16dbbef5653b173337ca826d64c95f2a14713fa67cb6919"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 2,
+      "gain": 2.0,
+      "accepted": false,
+      "replayed_force": 0.031120366945058403,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "7111bef0a7bf01f8299973b53d2118fbde98ad05948df915bdaa8c12a3c9cf3e"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 3,
+      "gain": 1.5,
+      "accepted": true,
+      "replayed_force": 5.051562968383556e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "7f42c17ee269d9d8e021717559fc877deb90f369ffee3ef32a6b733bfa6df5c1"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 4,
+      "gain": 2.0,
+      "accepted": true,
+      "replayed_force": 7.079388445363662e-11,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "0b329b9916835941fbb6735dced11943de387c6c50b38bed5d1bfc6cf317978e"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 5,
+      "gain": 3.0,
+      "accepted": false,
+      "replayed_force": 0.020105946728182236,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "eec7c2b3119c7e69ecdf5e7025fa8d61873709504e98f99c82f08f0b68902935"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 6,
+      "gain": 2.5,
+      "accepted": true,
+      "replayed_force": 5.406486713942053e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "eab6c606242513d27b0ddab007b1fcd7cd5f35a84baf0a6836937754528fcccc"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 7,
+      "gain": 3.0,
+      "accepted": true,
+      "replayed_force": 3.853354686047627e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "9b94c04e3865c9b3097b946786f2226ac52eebaf298d20810988870da3516e88"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 8,
+      "gain": 5.0,
+      "accepted": false,
+      "replayed_force": 0.010997305207464576,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "cf00ce15c282eb015c6e6308f16a894a4652e4e8df7b0b703a529309e25460e0"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 9,
+      "gain": 4.0,
+      "accepted": true,
+      "replayed_force": 4.2178867820305554e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "c22b349fcae17acde3586d4591057e71a300f3b4e92130835e04f440a49e455e"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "attempt": 10,
+      "gain": 5.0,
+      "accepted": true,
+      "replayed_force": 1.1365680022568797e-10,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "02ceb162a52b2b6c780499ec887d080331ddee0b264932469756c689fa21ba87"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 10.0,
+      "attempt": 0,
+      "gain": 10.0,
+      "accepted": false,
+      "replayed_force": 0.06757192106412523,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "e350cbc7cceef738204cbd843d3a6ac6f2a959f680a7c2ccc9f7dc998e5ac921"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 10.0,
+      "attempt": 1,
+      "gain": 7.5,
+      "accepted": true,
+      "replayed_force": 4.2462618707675426e-12,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "3ff726c1536443d20aa49fd271bc92139af8200b47a30b808a196ef5bbcbdee3"
+    },
+    {
+      "lambda": 5000.0,
+      "target": 10.0,
+      "attempt": 2,
+      "gain": 10.0,
+      "accepted": true,
+      "replayed_force": 1.4930192195408698e-10,
+      "stored_force_difference": 0.0,
+      "positive_geometry": true,
+      "field_sha256": "5f5ccee7f41ba050b5b66030d630b8f795c7fd9ede89c831244156401771794b"
+    }
+  ],
+  "chains": [
+    {
+      "lambda": 500.0,
+      "target": 1.0,
+      "verified_chain": true
+    },
+    {
+      "lambda": 500.0,
+      "target": 5.0,
+      "verified_chain": true
+    },
+    {
+      "lambda": 500.0,
+      "target": 10.0,
+      "verified_chain": true
+    },
+    {
+      "lambda": 5000.0,
+      "target": 1.0,
+      "verified_chain": true
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "verified_chain": true
+    },
+    {
+      "lambda": 5000.0,
+      "target": 10.0,
+      "verified_chain": true
+    }
+  ],
+  "frozen_sources": {
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "annulus_observer.py": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9"
+  },
+  "runner_source_sha256": "78295655c236d465a4c4ac9d324c9d810d23359855e7d54761496535ffe0d8a2",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.2.6",
+    "scipy": "1.16.0",
+    "torch": "2.11.0+cu128"
+  },
+  "scope": "FixedQ0 integration. Replays discrete force/geometry and lastverifiedhashchains; nonnegligiblemeshchangesremain. No PDEerrororbiologicalaccuracycertificate."
+}

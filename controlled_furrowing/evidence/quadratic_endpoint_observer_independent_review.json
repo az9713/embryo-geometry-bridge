@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_observer_source": true,
+    "current_radial_line_Eulerian_maximum_9_over_8": true,
+    "current_radial_line_mean_analytic": true,
+    "current_radial_line_separate_maxima_are_one_each": true,
+    "current_radial_line_material_pair_proxy_is_different": true,
+    "current_radial_line_reference_gauge_preserves_height": true,
+    "current_radial_line_reference_gauge_moves_components_oppositely": true,
+    "current_radial_line_component_mean_analytic": true,
+    "current_disk_Eulerian_maximum_9_over_8": true,
+    "current_disk_mean_analytic": true,
+    "current_disk_separate_maxima_are_one_each": true,
+    "current_disk_material_pair_proxy_is_different": true,
+    "current_disk_reference_gauge_preserves_height": true,
+    "current_disk_reference_gauge_moves_components_oppositely": true,
+    "current_disk_component_mean_analytic": true,
+    "independent_float_integral_current_radial_line_apical_downward": true,
+    "independent_float_integral_current_radial_line_basal_upward": true,
+    "independent_float_integral_current_radial_line_regional_mean_Eulerian_height_shortening": true,
+    "independent_float_integral_current_disk_apical_downward": true,
+    "independent_float_integral_current_disk_basal_upward": true,
+    "independent_float_integral_current_disk_regional_mean_Eulerian_height_shortening": true
+  },
+  "observer_sha256": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926",
+  "actual_field_sha256": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50",
+  "actual_integral_crosschecks": [
+    {
+      "weighting": "current_radial_line",
+      "observable": "apical_downward",
+      "independent_quad": 7.853660735593685,
+      "exact_interval_midpoint_display": 7.853660735593686,
+      "difference": 8.881784197001252e-16
+    },
+    {
+      "weighting": "current_radial_line",
+      "observable": "basal_upward",
+      "independent_quad": 1.266959958848574,
+      "exact_interval_midpoint_display": 1.2669599588485738,
+      "difference": 2.220446049250313e-16
+    },
+    {
+      "weighting": "current_radial_line",
+      "observable": "regional_mean_Eulerian_height_shortening",
+      "independent_quad": 9.120620694442259,
+      "exact_interval_midpoint_display": 9.12062069444226,
+      "difference": 1.7763568394002505e-15
+    },
+    {
+      "weighting": "current_disk",
+      "observable": "apical_downward",
+      "independent_quad": 7.228724106056903,
+      "exact_interval_midpoint_display": 7.228724106056904,
+      "difference": 8.881784197001252e-16
+    },
+    {
+      "weighting": "current_disk",
+      "observable": "basal_upward",
+      "independent_quad": 1.1686434905875416,
+      "exact_interval_midpoint_display": 1.1686434905875416,
+      "difference": 0.0
+    },
+    {
+      "weighting": "current_disk",
+      "observable": "regional_mean_Eulerian_height_shortening",
+      "independent_quad": 8.397367596644445,
+      "exact_interval_midpoint_display": 8.397367596644445,
+      "difference": 0.0
+    }
+  ],
+  "analytic_case": {
+    "top": "R=t+t^2,Z=10-t",
+    "bottom": "R=2t,Z=1-t",
+    "material_paired_shortening": "1",
+    "Eulerian_peak": "9/8",
+    "line_mean": "13/12",
+    "disk_mean": "43/40"
+  },
+  "scope": "Independent exact analytic/gauge cases and numerical-integral replay on one saved field; no fit, continuum-error or biological-observer equivalence claim."
+}

@@ -1,0 +1,1651 @@
+{
+  "status": "PASS",
+  "checks": {
+    "whole_cell_not_mistaken_for_point_IN": true,
+    "uniform_all_rows_IN": true,
+    "selected_branch_OUT_not_all_branches_OUT": true,
+    "actual_point_kind_not_promoted_to_cell": true,
+    "mutated_certificate_hash_rejected": true,
+    "missing_record_retained_not_dropped": true,
+    "one_uniform_exclusion_keeps_other3_rows_missing": true,
+    "wrong_contract_not_accepted": true,
+    "uncertified_common_branch_law_rejected": true,
+    "duplicate_record_not_silently_selected": true,
+    "exact_closed_cover_retains_boundary_UNRESOLVED": true,
+    "boundary_cells_not_falsely_excluded": true,
+    "fully_resolved_analytic_finite_cover": true,
+    "mixed_discrepancy_context_rejected": true,
+    "forged_leaf_status_fails_proof_replay": true,
+    "unbounded_tails_preserved": true,
+    "proofless_IN_leaf_rejected": true,
+    "proofless_OUT_leaf_rejected": true,
+    "partial_context_leaf_rejected": true,
+    "mutated_root_node_rejected": true,
+    "forged_empty_unbounded_remainder_rejected": true,
+    "standalone_export_mutation_rejected": true,
+    "standalone_good_export_replays": true,
+    "gap_in_cover_rejected": true,
+    "exact_mean_identity_necessary_floor": true
+  },
+  "source_sha256": "ad47678db9010fbf30fdd0dfbdd2c8e723121ca4fc97f55c57c12fadefe28df1",
+  "finite_cover": {
+    "root_cell": {
+      "x": [
+        "-1",
+        "1"
+      ]
+    },
+    "ambient_domain": {
+      "x": {
+        "lower": "-1",
+        "upper": "1",
+        "lower_strict": false,
+        "upper_strict": false
+      }
+    },
+    "nodes": {
+      "0": {
+        "cell": {
+          "x": [
+            "-1",
+            "1"
+          ]
+        },
+        "parent": null,
+        "children": [
+          "00",
+          "01"
+        ],
+        "classification": {
+          "status": "UNRESOLVED",
+          "reason": "No uniform cell proof attached"
+        },
+        "split_coordinate": "x"
+      },
+      "00": {
+        "cell": {
+          "x": [
+            "-1",
+            "-1/2"
+          ]
+        },
+        "parent": "0",
+        "children": [],
+        "classification": {
+          "status": "UNRESOLVED",
+          "selected_branch_status": "UNRESOLVED",
+          "all_branches_existential_parameter_status": "UNRESOLVED",
+          "parameter_cell": {
+            "x": [
+              "-1",
+              "-1/2"
+            ]
+          },
+          "parameter_cell_sha256": "ba9652f866ad3fbdd830daf44e2f9414488ca40a513cf3d4c42879c16c8434a5",
+          "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+          "record_count": 1,
+          "constraint_count": 4,
+          "constraints": [
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "UNRESOLVED",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1",
+                "-1/2"
+              ],
+              "minimum_residual_exact": "1/2",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "UNRESOLVED",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1",
+                "-1/2"
+              ],
+              "minimum_residual_exact": "1/2",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "UNRESOLVED",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1",
+                "-1/2"
+              ],
+              "minimum_residual_exact": "1/2",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "UNRESOLVED",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1",
+                "-1/2"
+              ],
+              "minimum_residual_exact": "1/2",
+              "maximum_residual_exact": "1"
+            }
+          ],
+          "uniform_records_covered": [
+            "r"
+          ],
+          "proof_provenance": [
+            {
+              "record_id": "r",
+              "root_sha256": "d78235a429e5f751d07b6fc5b34dbc25ade7a3cb0e63ac89ff59a1cb9f54e1f7",
+              "root_review_sha256": "860768753e54c4ba547eef2f3798b085e407f864f3af5af040277f1d026a77fa",
+              "observer_sha256": "cd3e92879f67ad5c1b2465a2e3eacaac10a48987233f56d26765bb8003d033f3",
+              "observer_review_sha256": "95b9c9e10e61de4a4931d3301f89aff5d24a62cbb375a537e9cf54ad13709d89",
+              "outer_cell_sha256": "ba9652f866ad3fbdd830daf44e2f9414488ca40a513cf3d4c42879c16c8434a5",
+              "requested_subset_exactly_checked": true,
+              "branch_domain_id": "synthetic_affine_root",
+              "channels_covered": [
+                "apical_max_shortening_um",
+                "basal_max_shortening_um",
+                "maximum_shortening_um",
+                "region_averaged_shortening_um"
+              ]
+            }
+          ],
+          "unresolved_proof_issues": [],
+          "conditional_static_operator_necessary_test": null,
+          "uniform_constraints_covered": [
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um"
+            }
+          ],
+          "inference_context": {
+            "observations": {
+              "r": {
+                "maximum_shortening_um": "0",
+                "region_averaged_shortening_um": "0",
+                "apical_max_shortening_um": "0",
+                "basal_max_shortening_um": "0"
+              }
+            },
+            "doses": {
+              "r": "1"
+            },
+            "discrepancies": {
+              "maximum_shortening_um": "1/2",
+              "region_averaged_shortening_um": "1/2",
+              "apical_max_shortening_um": "1/2",
+              "basal_max_shortening_um": "1/2"
+            },
+            "operator": null,
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf"
+          },
+          "inference_context_sha256": "3a54d0e79974fd41c21ee27e8b3420fabd969ad3338f48ba740823e64bb5564e",
+          "uniform_forward_package": {
+            "kind": "AUDITED_UNIFORM_CELL_FORWARD_V1",
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+            "branch_law_semantics": "independent_stationary_root_per_record",
+            "records": [
+              {
+                "record_id": "r",
+                "root_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/00/r_root.json",
+                  "sha256": "d78235a429e5f751d07b6fc5b34dbc25ade7a3cb0e63ac89ff59a1cb9f54e1f7"
+                },
+                "root_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/00/r_root_review.json",
+                  "sha256": "860768753e54c4ba547eef2f3798b085e407f864f3af5af040277f1d026a77fa"
+                },
+                "observer_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/00/r_observer.json",
+                  "sha256": "cd3e92879f67ad5c1b2465a2e3eacaac10a48987233f56d26765bb8003d033f3"
+                },
+                "observer_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/00/r_observer_review.json",
+                  "sha256": "95b9c9e10e61de4a4931d3301f89aff5d24a62cbb375a537e9cf54ad13709d89"
+                }
+              }
+            ],
+            "scope": "SYNTHETIC exact affine fixture, not biological/mechanical validation"
+          },
+          "branch_law_semantics": "independent_stationary_root_per_record",
+          "common_path_or_energetic_stability_certified": false,
+          "discrepancy_vector_exact": {
+            "maximum_shortening_um": "1/2",
+            "region_averaged_shortening_um": "1/2",
+            "apical_max_shortening_um": "1/2",
+            "basal_max_shortening_um": "1/2"
+          },
+          "scope": "Selected-branch cell decisions only unless an explicit universal static-operator contradiction applies. IN requires every row; OUT may use one uniform contradiction. Neither incomplete coverage nor a finite box exhausts the physical domain."
+        }
+      },
+      "01": {
+        "cell": {
+          "x": [
+            "-1/2",
+            "1"
+          ]
+        },
+        "parent": "0",
+        "children": [
+          "010",
+          "011"
+        ],
+        "classification": {
+          "status": "UNRESOLVED",
+          "reason": "New leaf retained pending proof"
+        },
+        "split_coordinate": "x"
+      },
+      "010": {
+        "cell": {
+          "x": [
+            "-1/2",
+            "1/2"
+          ]
+        },
+        "parent": "01",
+        "children": [],
+        "classification": {
+          "status": "IN",
+          "selected_branch_status": "IN",
+          "all_branches_existential_parameter_status": "IN_STATIONARY_ROOT_TUPLE_WITNESS",
+          "parameter_cell": {
+            "x": [
+              "-1/2",
+              "1/2"
+            ]
+          },
+          "parameter_cell_sha256": "d4ad0962fffdde2468bda6f3546088a53ac8f05d98e83ce908505548b984ab12",
+          "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+          "record_count": 1,
+          "constraint_count": 4,
+          "constraints": [
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1/2"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1/2"
+            },
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1/2"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1/2"
+            }
+          ],
+          "uniform_records_covered": [
+            "r"
+          ],
+          "proof_provenance": [
+            {
+              "record_id": "r",
+              "root_sha256": "ae27653b09edd2d293abee8e0f3d3ce73edb9e5e06427ebb287fe5afa065e22f",
+              "root_review_sha256": "58ad79fa4e63b8c8c14afea4266355ff012499efeaee0347c9cfba02183281a2",
+              "observer_sha256": "0b97760bf2d01f07f42980ffded4b1cddeae2d9ac25fd68ef373deeb2f11e153",
+              "observer_review_sha256": "df15ab35dc9bbf3b570741b60d8a6bb4aee4bf1e667796bad563837655cf03f4",
+              "outer_cell_sha256": "d4ad0962fffdde2468bda6f3546088a53ac8f05d98e83ce908505548b984ab12",
+              "requested_subset_exactly_checked": true,
+              "branch_domain_id": "synthetic_affine_root",
+              "channels_covered": [
+                "apical_max_shortening_um",
+                "basal_max_shortening_um",
+                "maximum_shortening_um",
+                "region_averaged_shortening_um"
+              ]
+            }
+          ],
+          "unresolved_proof_issues": [],
+          "conditional_static_operator_necessary_test": null,
+          "uniform_constraints_covered": [
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um"
+            }
+          ],
+          "inference_context": {
+            "observations": {
+              "r": {
+                "maximum_shortening_um": "0",
+                "region_averaged_shortening_um": "0",
+                "apical_max_shortening_um": "0",
+                "basal_max_shortening_um": "0"
+              }
+            },
+            "doses": {
+              "r": "1"
+            },
+            "discrepancies": {
+              "maximum_shortening_um": "1/2",
+              "region_averaged_shortening_um": "1/2",
+              "apical_max_shortening_um": "1/2",
+              "basal_max_shortening_um": "1/2"
+            },
+            "operator": null,
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf"
+          },
+          "inference_context_sha256": "3a54d0e79974fd41c21ee27e8b3420fabd969ad3338f48ba740823e64bb5564e",
+          "uniform_forward_package": {
+            "kind": "AUDITED_UNIFORM_CELL_FORWARD_V1",
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+            "branch_law_semantics": "independent_stationary_root_per_record",
+            "records": [
+              {
+                "record_id": "r",
+                "root_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/010/r_root.json",
+                  "sha256": "ae27653b09edd2d293abee8e0f3d3ce73edb9e5e06427ebb287fe5afa065e22f"
+                },
+                "root_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/010/r_root_review.json",
+                  "sha256": "58ad79fa4e63b8c8c14afea4266355ff012499efeaee0347c9cfba02183281a2"
+                },
+                "observer_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/010/r_observer.json",
+                  "sha256": "0b97760bf2d01f07f42980ffded4b1cddeae2d9ac25fd68ef373deeb2f11e153"
+                },
+                "observer_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/010/r_observer_review.json",
+                  "sha256": "df15ab35dc9bbf3b570741b60d8a6bb4aee4bf1e667796bad563837655cf03f4"
+                }
+              }
+            ],
+            "scope": "SYNTHETIC exact affine fixture, not biological/mechanical validation"
+          },
+          "branch_law_semantics": "independent_stationary_root_per_record",
+          "common_path_or_energetic_stability_certified": false,
+          "discrepancy_vector_exact": {
+            "maximum_shortening_um": "1/2",
+            "region_averaged_shortening_um": "1/2",
+            "apical_max_shortening_um": "1/2",
+            "basal_max_shortening_um": "1/2"
+          },
+          "scope": "Selected-branch cell decisions only unless an explicit universal static-operator contradiction applies. IN requires every row; OUT may use one uniform contradiction. Neither incomplete coverage nor a finite box exhausts the physical domain."
+        }
+      },
+      "011": {
+        "cell": {
+          "x": [
+            "1/2",
+            "1"
+          ]
+        },
+        "parent": "01",
+        "children": [],
+        "classification": {
+          "status": "UNRESOLVED",
+          "selected_branch_status": "UNRESOLVED",
+          "all_branches_existential_parameter_status": "UNRESOLVED",
+          "parameter_cell": {
+            "x": [
+              "1/2",
+              "1"
+            ]
+          },
+          "parameter_cell_sha256": "5c87d9de9b4127b5d2941e966c7c0029fe0fec7edb67b1370e9c2f02c3a7de82",
+          "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+          "record_count": 1,
+          "constraint_count": 4,
+          "constraints": [
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "UNRESOLVED",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "1/2",
+                "1"
+              ],
+              "minimum_residual_exact": "1/2",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "UNRESOLVED",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "1/2",
+                "1"
+              ],
+              "minimum_residual_exact": "1/2",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "UNRESOLVED",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "1/2",
+                "1"
+              ],
+              "minimum_residual_exact": "1/2",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1/2",
+                "1/2"
+              ],
+              "status": "UNRESOLVED",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "1/2",
+                "1"
+              ],
+              "minimum_residual_exact": "1/2",
+              "maximum_residual_exact": "1"
+            }
+          ],
+          "uniform_records_covered": [
+            "r"
+          ],
+          "proof_provenance": [
+            {
+              "record_id": "r",
+              "root_sha256": "c683fb1656d082a5c9d0ec0d4b509d59ffb9f17b51b6d6487804651579410305",
+              "root_review_sha256": "ff27444123a657fa688a2d8c02ca7dfed1fd3469daa3dcb139385b09496877ce",
+              "observer_sha256": "e287f0074fb3ebc1ed102ac348024b3f1b49b27e16ddc6e7c53281d0874b2c18",
+              "observer_review_sha256": "323be38e224e38ae2bcbce9f3ab6ebdc9275ccc35b21540c9be80de1b547e739",
+              "outer_cell_sha256": "5c87d9de9b4127b5d2941e966c7c0029fe0fec7edb67b1370e9c2f02c3a7de82",
+              "requested_subset_exactly_checked": true,
+              "branch_domain_id": "synthetic_affine_root",
+              "channels_covered": [
+                "apical_max_shortening_um",
+                "basal_max_shortening_um",
+                "maximum_shortening_um",
+                "region_averaged_shortening_um"
+              ]
+            }
+          ],
+          "unresolved_proof_issues": [],
+          "conditional_static_operator_necessary_test": null,
+          "uniform_constraints_covered": [
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um"
+            }
+          ],
+          "inference_context": {
+            "observations": {
+              "r": {
+                "maximum_shortening_um": "0",
+                "region_averaged_shortening_um": "0",
+                "apical_max_shortening_um": "0",
+                "basal_max_shortening_um": "0"
+              }
+            },
+            "doses": {
+              "r": "1"
+            },
+            "discrepancies": {
+              "maximum_shortening_um": "1/2",
+              "region_averaged_shortening_um": "1/2",
+              "apical_max_shortening_um": "1/2",
+              "basal_max_shortening_um": "1/2"
+            },
+            "operator": null,
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf"
+          },
+          "inference_context_sha256": "3a54d0e79974fd41c21ee27e8b3420fabd969ad3338f48ba740823e64bb5564e",
+          "uniform_forward_package": {
+            "kind": "AUDITED_UNIFORM_CELL_FORWARD_V1",
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+            "branch_law_semantics": "independent_stationary_root_per_record",
+            "records": [
+              {
+                "record_id": "r",
+                "root_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/011/r_root.json",
+                  "sha256": "c683fb1656d082a5c9d0ec0d4b509d59ffb9f17b51b6d6487804651579410305"
+                },
+                "root_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/011/r_root_review.json",
+                  "sha256": "ff27444123a657fa688a2d8c02ca7dfed1fd3469daa3dcb139385b09496877ce"
+                },
+                "observer_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/011/r_observer.json",
+                  "sha256": "e287f0074fb3ebc1ed102ac348024b3f1b49b27e16ddc6e7c53281d0874b2c18"
+                },
+                "observer_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/011/r_observer_review.json",
+                  "sha256": "323be38e224e38ae2bcbce9f3ab6ebdc9275ccc35b21540c9be80de1b547e739"
+                }
+              }
+            ],
+            "scope": "SYNTHETIC exact affine fixture, not biological/mechanical validation"
+          },
+          "branch_law_semantics": "independent_stationary_root_per_record",
+          "common_path_or_energetic_stability_certified": false,
+          "discrepancy_vector_exact": {
+            "maximum_shortening_um": "1/2",
+            "region_averaged_shortening_um": "1/2",
+            "apical_max_shortening_um": "1/2",
+            "basal_max_shortening_um": "1/2"
+          },
+          "scope": "Selected-branch cell decisions only unless an explicit universal static-operator contradiction applies. IN requires every row; OUT may use one uniform contradiction. Neither incomplete coverage nor a finite box exhausts the physical domain."
+        }
+      }
+    },
+    "outside_remainder": {
+      "status": "EMPTY",
+      "set_definition": "ambient_domain minus closed root_cell",
+      "ambient_domain": {
+        "x": {
+          "lower": "-1",
+          "upper": "1",
+          "lower_strict": false,
+          "upper_strict": false
+        }
+      },
+      "root_cell": {
+        "x": [
+          "-1",
+          "1"
+        ]
+      },
+      "unbounded_tail_proof": null
+    },
+    "uncovered_physics": [
+      "Synthetic only; not physical material domain"
+    ],
+    "inference_context_sha256": "3a54d0e79974fd41c21ee27e8b3420fabd969ad3338f48ba740823e64bb5564e",
+    "verification": {
+      "exact_closed_leaf_union_equals_root_box": true,
+      "leaves": [
+        "00",
+        "010",
+        "011"
+      ],
+      "unresolved_leaves": [
+        "00",
+        "011"
+      ],
+      "finite_selected_branch_cover_complete": false,
+      "ambient_remainder_status": "EMPTY",
+      "uncovered_physics": [
+        "Synthetic only; not physical material domain"
+      ],
+      "global_branch_path_certified": false,
+      "full_physical_identified_set_complete": false,
+      "scope": "Cover geometry is proved by exact binary union induction. Scientific cell decisions require their own proof receipts; unbounded tails and excluded physics are retained."
+    }
+  },
+  "fully_resolved_synthetic_cover": {
+    "root_cell": {
+      "x": [
+        "-1",
+        "1"
+      ]
+    },
+    "ambient_domain": {
+      "x": {
+        "lower": "-1",
+        "upper": "1",
+        "lower_strict": false,
+        "upper_strict": false
+      }
+    },
+    "nodes": {
+      "0": {
+        "cell": {
+          "x": [
+            "-1",
+            "1"
+          ]
+        },
+        "parent": null,
+        "children": [
+          "00",
+          "01"
+        ],
+        "classification": {
+          "status": "UNRESOLVED",
+          "reason": "No uniform cell proof attached"
+        },
+        "split_coordinate": "x"
+      },
+      "00": {
+        "cell": {
+          "x": [
+            "-1",
+            "0"
+          ]
+        },
+        "parent": "0",
+        "children": [],
+        "classification": {
+          "status": "IN",
+          "selected_branch_status": "IN",
+          "all_branches_existential_parameter_status": "IN_STATIONARY_ROOT_TUPLE_WITNESS",
+          "parameter_cell": {
+            "x": [
+              "-1",
+              "0"
+            ]
+          },
+          "parameter_cell_sha256": "caacccc9e38c46924107078903c5ce8ca7b6ad3a60f9aebc9e6f3cff4f32de52",
+          "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+          "record_count": 1,
+          "constraint_count": 4,
+          "constraints": [
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1",
+                "1"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1",
+                "0"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1",
+                "1"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1",
+                "0"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1",
+                "1"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1",
+                "0"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1",
+                "1"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "-1",
+                "0"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1"
+            }
+          ],
+          "uniform_records_covered": [
+            "r"
+          ],
+          "proof_provenance": [
+            {
+              "record_id": "r",
+              "root_sha256": "9050f31a2b424651913c00dc255974f822fad0f8369598e7ae8baf685baf1439",
+              "root_review_sha256": "75b38bd8ac50db1da1731e172d61422789fffdacb500333baff1a23382df7e4a",
+              "observer_sha256": "440bdf4ab174838e24e3559d01c98a0f16b93696f455e20765c92c61650bb572",
+              "observer_review_sha256": "f677c7b35a688188d3a3d67b74b0ca75d143277d19ea80dc75497ed6c59b1ebf",
+              "outer_cell_sha256": "caacccc9e38c46924107078903c5ce8ca7b6ad3a60f9aebc9e6f3cff4f32de52",
+              "requested_subset_exactly_checked": true,
+              "branch_domain_id": "synthetic_affine_root",
+              "channels_covered": [
+                "apical_max_shortening_um",
+                "basal_max_shortening_um",
+                "maximum_shortening_um",
+                "region_averaged_shortening_um"
+              ]
+            }
+          ],
+          "unresolved_proof_issues": [],
+          "conditional_static_operator_necessary_test": null,
+          "uniform_constraints_covered": [
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um"
+            }
+          ],
+          "inference_context": {
+            "observations": {
+              "r": {
+                "maximum_shortening_um": "0",
+                "region_averaged_shortening_um": "0",
+                "apical_max_shortening_um": "0",
+                "basal_max_shortening_um": "0"
+              }
+            },
+            "doses": {
+              "r": "1"
+            },
+            "discrepancies": {
+              "maximum_shortening_um": "1",
+              "region_averaged_shortening_um": "1",
+              "apical_max_shortening_um": "1",
+              "basal_max_shortening_um": "1"
+            },
+            "operator": null,
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf"
+          },
+          "inference_context_sha256": "60d574fbd895477205ad01204b8d80ee9e889ecb34b0837f84ab86f9deea1742",
+          "uniform_forward_package": {
+            "kind": "AUDITED_UNIFORM_CELL_FORWARD_V1",
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+            "branch_law_semantics": "independent_stationary_root_per_record",
+            "records": [
+              {
+                "record_id": "r",
+                "root_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/full00/r_root.json",
+                  "sha256": "9050f31a2b424651913c00dc255974f822fad0f8369598e7ae8baf685baf1439"
+                },
+                "root_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/full00/r_root_review.json",
+                  "sha256": "75b38bd8ac50db1da1731e172d61422789fffdacb500333baff1a23382df7e4a"
+                },
+                "observer_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/full00/r_observer.json",
+                  "sha256": "440bdf4ab174838e24e3559d01c98a0f16b93696f455e20765c92c61650bb572"
+                },
+                "observer_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/full00/r_observer_review.json",
+                  "sha256": "f677c7b35a688188d3a3d67b74b0ca75d143277d19ea80dc75497ed6c59b1ebf"
+                }
+              }
+            ],
+            "scope": "SYNTHETIC exact affine fixture, not biological/mechanical validation"
+          },
+          "branch_law_semantics": "independent_stationary_root_per_record",
+          "common_path_or_energetic_stability_certified": false,
+          "discrepancy_vector_exact": {
+            "maximum_shortening_um": "1",
+            "region_averaged_shortening_um": "1",
+            "apical_max_shortening_um": "1",
+            "basal_max_shortening_um": "1"
+          },
+          "scope": "Selected-branch cell decisions only unless an explicit universal static-operator contradiction applies. IN requires every row; OUT may use one uniform contradiction. Neither incomplete coverage nor a finite box exhausts the physical domain."
+        }
+      },
+      "01": {
+        "cell": {
+          "x": [
+            "0",
+            "1"
+          ]
+        },
+        "parent": "0",
+        "children": [],
+        "classification": {
+          "status": "IN",
+          "selected_branch_status": "IN",
+          "all_branches_existential_parameter_status": "IN_STATIONARY_ROOT_TUPLE_WITNESS",
+          "parameter_cell": {
+            "x": [
+              "0",
+              "1"
+            ]
+          },
+          "parameter_cell_sha256": "709b10f110944ecd16e93f82731341ecf665f7056b842c59b6845a0a55e64305",
+          "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+          "record_count": 1,
+          "constraint_count": 4,
+          "constraints": [
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1",
+                "1"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "0",
+                "1"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1",
+                "1"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "0",
+                "1"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1",
+                "1"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "0",
+                "1"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um",
+              "observed_exact": "0",
+              "allowed_band_exact": [
+                "-1",
+                "1"
+              ],
+              "status": "IN",
+              "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+              "prediction_interval_exact": [
+                "0",
+                "1"
+              ],
+              "minimum_residual_exact": "0",
+              "maximum_residual_exact": "1"
+            }
+          ],
+          "uniform_records_covered": [
+            "r"
+          ],
+          "proof_provenance": [
+            {
+              "record_id": "r",
+              "root_sha256": "bb544158b52f0ca5e4afcf467ee9d23d996af23d49f0fc3b77016fb04a61b48a",
+              "root_review_sha256": "55758ab1af85f62a8adc78ce4b30697ae195535e62fbcec77cb68f37ec4fc702",
+              "observer_sha256": "59538f6e7d1e21711290749295beee79bc5f72caa1398197d28c961bb64cada1",
+              "observer_review_sha256": "9ebd52e18c085c805a518993f0d93276288eb87cdd750dc781a8c651bab465fa",
+              "outer_cell_sha256": "709b10f110944ecd16e93f82731341ecf665f7056b842c59b6845a0a55e64305",
+              "requested_subset_exactly_checked": true,
+              "branch_domain_id": "synthetic_affine_root",
+              "channels_covered": [
+                "apical_max_shortening_um",
+                "basal_max_shortening_um",
+                "maximum_shortening_um",
+                "region_averaged_shortening_um"
+              ]
+            }
+          ],
+          "unresolved_proof_issues": [],
+          "conditional_static_operator_necessary_test": null,
+          "uniform_constraints_covered": [
+            {
+              "record_id": "r",
+              "observable": "apical_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "basal_max_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "maximum_shortening_um"
+            },
+            {
+              "record_id": "r",
+              "observable": "region_averaged_shortening_um"
+            }
+          ],
+          "inference_context": {
+            "observations": {
+              "r": {
+                "maximum_shortening_um": "0",
+                "region_averaged_shortening_um": "0",
+                "apical_max_shortening_um": "0",
+                "basal_max_shortening_um": "0"
+              }
+            },
+            "doses": {
+              "r": "1"
+            },
+            "discrepancies": {
+              "maximum_shortening_um": "1",
+              "region_averaged_shortening_um": "1",
+              "apical_max_shortening_um": "1",
+              "basal_max_shortening_um": "1"
+            },
+            "operator": null,
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf"
+          },
+          "inference_context_sha256": "60d574fbd895477205ad01204b8d80ee9e889ecb34b0837f84ab86f9deea1742",
+          "uniform_forward_package": {
+            "kind": "AUDITED_UNIFORM_CELL_FORWARD_V1",
+            "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+            "branch_law_semantics": "independent_stationary_root_per_record",
+            "records": [
+              {
+                "record_id": "r",
+                "root_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/full01/r_root.json",
+                  "sha256": "bb544158b52f0ca5e4afcf467ee9d23d996af23d49f0fc3b77016fb04a61b48a"
+                },
+                "root_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/full01/r_root_review.json",
+                  "sha256": "55758ab1af85f62a8adc78ce4b30697ae195535e62fbcec77cb68f37ec4fc702"
+                },
+                "observer_certificate": {
+                  "file": "runs/validated_identified_set_v1/synthetic/full01/r_observer.json",
+                  "sha256": "59538f6e7d1e21711290749295beee79bc5f72caa1398197d28c961bb64cada1"
+                },
+                "observer_review": {
+                  "file": "runs/validated_identified_set_v1/synthetic/full01/r_observer_review.json",
+                  "sha256": "9ebd52e18c085c805a518993f0d93276288eb87cdd750dc781a8c651bab465fa"
+                }
+              }
+            ],
+            "scope": "SYNTHETIC exact affine fixture, not biological/mechanical validation"
+          },
+          "branch_law_semantics": "independent_stationary_root_per_record",
+          "common_path_or_energetic_stability_certified": false,
+          "discrepancy_vector_exact": {
+            "maximum_shortening_um": "1",
+            "region_averaged_shortening_um": "1",
+            "apical_max_shortening_um": "1",
+            "basal_max_shortening_um": "1"
+          },
+          "scope": "Selected-branch cell decisions only unless an explicit universal static-operator contradiction applies. IN requires every row; OUT may use one uniform contradiction. Neither incomplete coverage nor a finite box exhausts the physical domain."
+        }
+      }
+    },
+    "outside_remainder": {
+      "status": "EMPTY",
+      "set_definition": "ambient_domain minus closed root_cell",
+      "ambient_domain": {
+        "x": {
+          "lower": "-1",
+          "upper": "1",
+          "lower_strict": false,
+          "upper_strict": false
+        }
+      },
+      "root_cell": {
+        "x": [
+          "-1",
+          "1"
+        ]
+      },
+      "unbounded_tail_proof": null
+    },
+    "uncovered_physics": [
+      "Synthetic model only"
+    ],
+    "inference_context_sha256": "60d574fbd895477205ad01204b8d80ee9e889ecb34b0837f84ab86f9deea1742",
+    "verification": {
+      "exact_closed_leaf_union_equals_root_box": true,
+      "leaves": [
+        "00",
+        "01"
+      ],
+      "unresolved_leaves": [],
+      "finite_selected_branch_cover_complete": true,
+      "ambient_remainder_status": "EMPTY",
+      "uncovered_physics": [
+        "Synthetic model only"
+      ],
+      "global_branch_path_certified": false,
+      "full_physical_identified_set_complete": false,
+      "scope": "Cover geometry is proved by exact binary union induction. Scientific cell decisions require their own proof receipts; unbounded tails and excluded physics are retained."
+    }
+  },
+  "unbounded_cover": {
+    "root_cell": {
+      "x": [
+        "-1",
+        "1"
+      ]
+    },
+    "ambient_domain": {
+      "x": {
+        "lower": null,
+        "upper": null,
+        "lower_strict": false,
+        "upper_strict": false
+      }
+    },
+    "nodes": {
+      "0": {
+        "cell": {
+          "x": [
+            "-1",
+            "1"
+          ]
+        },
+        "parent": null,
+        "children": [
+          "00",
+          "01"
+        ],
+        "classification": {
+          "status": "UNRESOLVED",
+          "reason": "No uniform cell proof attached"
+        },
+        "split_coordinate": "x"
+      },
+      "00": {
+        "cell": {
+          "x": [
+            "-1",
+            "0"
+          ]
+        },
+        "parent": "0",
+        "children": [],
+        "classification": {
+          "status": "UNRESOLVED",
+          "reason": "New leaf retained pending proof"
+        }
+      },
+      "01": {
+        "cell": {
+          "x": [
+            "0",
+            "1"
+          ]
+        },
+        "parent": "0",
+        "children": [],
+        "classification": {
+          "status": "UNRESOLVED",
+          "reason": "New leaf retained pending proof"
+        }
+      }
+    },
+    "outside_remainder": {
+      "status": "UNCOVERED",
+      "set_definition": "ambient_domain minus closed root_cell",
+      "ambient_domain": {
+        "x": {
+          "lower": null,
+          "upper": null,
+          "lower_strict": false,
+          "upper_strict": false
+        }
+      },
+      "root_cell": {
+        "x": [
+          "-1",
+          "1"
+        ]
+      },
+      "unbounded_tail_proof": null
+    },
+    "uncovered_physics": [
+      "All other material/geometry coordinates"
+    ],
+    "inference_context_sha256": null,
+    "verification": {
+      "exact_closed_leaf_union_equals_root_box": true,
+      "leaves": [
+        "00",
+        "01"
+      ],
+      "unresolved_leaves": [
+        "00",
+        "01"
+      ],
+      "finite_selected_branch_cover_complete": false,
+      "ambient_remainder_status": "UNCOVERED",
+      "uncovered_physics": [
+        "All other material/geometry coordinates"
+      ],
+      "global_branch_path_certified": false,
+      "full_physical_identified_set_complete": false,
+      "scope": "Cover geometry is proved by exact binary union induction. Scientific cell decisions require their own proof receipts; unbounded tails and excluded physics are retained."
+    }
+  },
+  "uniform_IN_example": {
+    "status": "IN",
+    "selected_branch_status": "IN",
+    "all_branches_existential_parameter_status": "IN_STATIONARY_ROOT_TUPLE_WITNESS",
+    "parameter_cell": {
+      "x": [
+        "-1/2",
+        "1/2"
+      ]
+    },
+    "parameter_cell_sha256": "d4ad0962fffdde2468bda6f3546088a53ac8f05d98e83ce908505548b984ab12",
+    "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+    "record_count": 1,
+    "constraint_count": 4,
+    "constraints": [
+      {
+        "record_id": "r",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "0",
+        "allowed_band_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "status": "IN",
+        "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+        "prediction_interval_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "minimum_residual_exact": "0",
+        "maximum_residual_exact": "1/2"
+      },
+      {
+        "record_id": "r",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "0",
+        "allowed_band_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "status": "IN",
+        "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+        "prediction_interval_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "minimum_residual_exact": "0",
+        "maximum_residual_exact": "1/2"
+      },
+      {
+        "record_id": "r",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "0",
+        "allowed_band_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "status": "IN",
+        "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+        "prediction_interval_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "minimum_residual_exact": "0",
+        "maximum_residual_exact": "1/2"
+      },
+      {
+        "record_id": "r",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "0",
+        "allowed_band_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "status": "IN",
+        "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+        "prediction_interval_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "minimum_residual_exact": "0",
+        "maximum_residual_exact": "1/2"
+      }
+    ],
+    "uniform_records_covered": [
+      "r"
+    ],
+    "proof_provenance": [
+      {
+        "record_id": "r",
+        "root_sha256": "ae27653b09edd2d293abee8e0f3d3ce73edb9e5e06427ebb287fe5afa065e22f",
+        "root_review_sha256": "58ad79fa4e63b8c8c14afea4266355ff012499efeaee0347c9cfba02183281a2",
+        "observer_sha256": "0b97760bf2d01f07f42980ffded4b1cddeae2d9ac25fd68ef373deeb2f11e153",
+        "observer_review_sha256": "df15ab35dc9bbf3b570741b60d8a6bb4aee4bf1e667796bad563837655cf03f4",
+        "outer_cell_sha256": "d4ad0962fffdde2468bda6f3546088a53ac8f05d98e83ce908505548b984ab12",
+        "requested_subset_exactly_checked": true,
+        "branch_domain_id": "synthetic_affine_root",
+        "channels_covered": [
+          "apical_max_shortening_um",
+          "basal_max_shortening_um",
+          "maximum_shortening_um",
+          "region_averaged_shortening_um"
+        ]
+      }
+    ],
+    "unresolved_proof_issues": [],
+    "conditional_static_operator_necessary_test": null,
+    "uniform_constraints_covered": [
+      {
+        "record_id": "r",
+        "observable": "apical_max_shortening_um"
+      },
+      {
+        "record_id": "r",
+        "observable": "basal_max_shortening_um"
+      },
+      {
+        "record_id": "r",
+        "observable": "maximum_shortening_um"
+      },
+      {
+        "record_id": "r",
+        "observable": "region_averaged_shortening_um"
+      }
+    ],
+    "inference_context": {
+      "observations": {
+        "r": {
+          "maximum_shortening_um": "0",
+          "region_averaged_shortening_um": "0",
+          "apical_max_shortening_um": "0",
+          "basal_max_shortening_um": "0"
+        }
+      },
+      "doses": {
+        "r": "1"
+      },
+      "discrepancies": {
+        "maximum_shortening_um": "1/2",
+        "region_averaged_shortening_um": "1/2",
+        "apical_max_shortening_um": "1/2",
+        "basal_max_shortening_um": "1/2"
+      },
+      "operator": null,
+      "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf"
+    },
+    "inference_context_sha256": "3a54d0e79974fd41c21ee27e8b3420fabd969ad3338f48ba740823e64bb5564e",
+    "uniform_forward_package": {
+      "kind": "AUDITED_UNIFORM_CELL_FORWARD_V1",
+      "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+      "branch_law_semantics": "independent_stationary_root_per_record",
+      "records": [
+        {
+          "record_id": "r",
+          "root_certificate": {
+            "file": "runs/validated_identified_set_v1/synthetic/inside/r_root.json",
+            "sha256": "ae27653b09edd2d293abee8e0f3d3ce73edb9e5e06427ebb287fe5afa065e22f"
+          },
+          "root_review": {
+            "file": "runs/validated_identified_set_v1/synthetic/inside/r_root_review.json",
+            "sha256": "58ad79fa4e63b8c8c14afea4266355ff012499efeaee0347c9cfba02183281a2"
+          },
+          "observer_certificate": {
+            "file": "runs/validated_identified_set_v1/synthetic/inside/r_observer.json",
+            "sha256": "0b97760bf2d01f07f42980ffded4b1cddeae2d9ac25fd68ef373deeb2f11e153"
+          },
+          "observer_review": {
+            "file": "runs/validated_identified_set_v1/synthetic/inside/r_observer_review.json",
+            "sha256": "df15ab35dc9bbf3b570741b60d8a6bb4aee4bf1e667796bad563837655cf03f4"
+          }
+        }
+      ],
+      "scope": "SYNTHETIC exact affine fixture, not biological/mechanical validation"
+    },
+    "branch_law_semantics": "independent_stationary_root_per_record",
+    "common_path_or_energetic_stability_certified": false,
+    "discrepancy_vector_exact": {
+      "maximum_shortening_um": "1/2",
+      "region_averaged_shortening_um": "1/2",
+      "apical_max_shortening_um": "1/2",
+      "basal_max_shortening_um": "1/2"
+    },
+    "scope": "Selected-branch cell decisions only unless an explicit universal static-operator contradiction applies. IN requires every row; OUT may use one uniform contradiction. Neither incomplete coverage nor a finite box exhausts the physical domain."
+  },
+  "selected_OUT_example": {
+    "status": "OUT",
+    "selected_branch_status": "OUT",
+    "all_branches_existential_parameter_status": "UNRESOLVED",
+    "parameter_cell": {
+      "x": [
+        "3/4",
+        "1"
+      ]
+    },
+    "parameter_cell_sha256": "5cebf61f2ce32c87a2e97459222bb0a855d27d2d1ad3520fa5752b71119def78",
+    "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+    "record_count": 1,
+    "constraint_count": 4,
+    "constraints": [
+      {
+        "record_id": "r",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "0",
+        "allowed_band_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "status": "OUT",
+        "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+        "prediction_interval_exact": [
+          "3/4",
+          "1"
+        ],
+        "minimum_residual_exact": "3/4",
+        "maximum_residual_exact": "1"
+      },
+      {
+        "record_id": "r",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "0",
+        "allowed_band_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "status": "OUT",
+        "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+        "prediction_interval_exact": [
+          "3/4",
+          "1"
+        ],
+        "minimum_residual_exact": "3/4",
+        "maximum_residual_exact": "1"
+      },
+      {
+        "record_id": "r",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "0",
+        "allowed_band_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "status": "OUT",
+        "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+        "prediction_interval_exact": [
+          "3/4",
+          "1"
+        ],
+        "minimum_residual_exact": "3/4",
+        "maximum_residual_exact": "1"
+      },
+      {
+        "record_id": "r",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "0",
+        "allowed_band_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "status": "OUT",
+        "reason": "Interval comparison for every parameter in requested cell on specified certified root branch",
+        "prediction_interval_exact": [
+          "3/4",
+          "1"
+        ],
+        "minimum_residual_exact": "3/4",
+        "maximum_residual_exact": "1"
+      }
+    ],
+    "uniform_records_covered": [
+      "r"
+    ],
+    "proof_provenance": [
+      {
+        "record_id": "r",
+        "root_sha256": "8cef4c1810b2ffaa7fa640de26bb34a7116b244075660c9eee7051a0de827179",
+        "root_review_sha256": "e9dbdab4e43110873d35aa76db844513615c99f6a95b2f711220f6e44fb8219f",
+        "observer_sha256": "465904ffb54124618509e1f79a310f98b13bfb14f1ea6182b6e57c3c13c7c0c6",
+        "observer_review_sha256": "3563df84faf5f4a7db350711e280dfa8442ded4549544b764f3f7f46282cb272",
+        "outer_cell_sha256": "5cebf61f2ce32c87a2e97459222bb0a855d27d2d1ad3520fa5752b71119def78",
+        "requested_subset_exactly_checked": true,
+        "branch_domain_id": "synthetic_affine_root",
+        "channels_covered": [
+          "apical_max_shortening_um",
+          "basal_max_shortening_um",
+          "maximum_shortening_um",
+          "region_averaged_shortening_um"
+        ]
+      }
+    ],
+    "unresolved_proof_issues": [],
+    "conditional_static_operator_necessary_test": null,
+    "uniform_constraints_covered": [
+      {
+        "record_id": "r",
+        "observable": "apical_max_shortening_um"
+      },
+      {
+        "record_id": "r",
+        "observable": "basal_max_shortening_um"
+      },
+      {
+        "record_id": "r",
+        "observable": "maximum_shortening_um"
+      },
+      {
+        "record_id": "r",
+        "observable": "region_averaged_shortening_um"
+      }
+    ],
+    "inference_context": {
+      "observations": {
+        "r": {
+          "maximum_shortening_um": "0",
+          "region_averaged_shortening_um": "0",
+          "apical_max_shortening_um": "0",
+          "basal_max_shortening_um": "0"
+        }
+      },
+      "doses": {
+        "r": "1"
+      },
+      "discrepancies": {
+        "maximum_shortening_um": "1/2",
+        "region_averaged_shortening_um": "1/2",
+        "apical_max_shortening_um": "1/2",
+        "basal_max_shortening_um": "1/2"
+      },
+      "operator": null,
+      "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf"
+    },
+    "inference_context_sha256": "3a54d0e79974fd41c21ee27e8b3420fabd969ad3338f48ba740823e64bb5564e",
+    "uniform_forward_package": {
+      "kind": "AUDITED_UNIFORM_CELL_FORWARD_V1",
+      "model_observation_contract_sha256": "615703ced604154d868d55c960c8f6aff42bef9a5aa324537f0026fbdb50deaf",
+      "branch_law_semantics": "independent_stationary_root_per_record",
+      "records": [
+        {
+          "record_id": "r",
+          "root_certificate": {
+            "file": "runs/validated_identified_set_v1/synthetic/outside/r_root.json",
+            "sha256": "8cef4c1810b2ffaa7fa640de26bb34a7116b244075660c9eee7051a0de827179"
+          },
+          "root_review": {
+            "file": "runs/validated_identified_set_v1/synthetic/outside/r_root_review.json",
+            "sha256": "e9dbdab4e43110873d35aa76db844513615c99f6a95b2f711220f6e44fb8219f"
+          },
+          "observer_certificate": {
+            "file": "runs/validated_identified_set_v1/synthetic/outside/r_observer.json",
+            "sha256": "465904ffb54124618509e1f79a310f98b13bfb14f1ea6182b6e57c3c13c7c0c6"
+          },
+          "observer_review": {
+            "file": "runs/validated_identified_set_v1/synthetic/outside/r_observer_review.json",
+            "sha256": "3563df84faf5f4a7db350711e280dfa8442ded4549544b764f3f7f46282cb272"
+          }
+        }
+      ],
+      "scope": "SYNTHETIC exact affine fixture, not biological/mechanical validation"
+    },
+    "branch_law_semantics": "independent_stationary_root_per_record",
+    "common_path_or_energetic_stability_certified": false,
+    "discrepancy_vector_exact": {
+      "maximum_shortening_um": "1/2",
+      "region_averaged_shortening_um": "1/2",
+      "apical_max_shortening_um": "1/2",
+      "basal_max_shortening_um": "1/2"
+    },
+    "scope": "Selected-branch cell decisions only unless an explicit universal static-operator contradiction applies. IN requires every row; OUT may use one uniform contradiction. Neither incomplete coverage nor a finite box exhausts the physical domain."
+  },
+  "scope": "Analytic synthetic proof/plumbing only. Not an actual mechanical forward cell or completed identified set.",
+  "dependency_source_hashes": {
+    "joint_calibration_contract.py": "ed3bcf3b16ae7d369d70d76570385d59854dda7926e9f73b3b200b5fcea02512"
+  }
+}

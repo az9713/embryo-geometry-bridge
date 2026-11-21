@@ -1,0 +1,96 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QUADRATIC-SOLVE-POLICY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Numerical continuation from verified states</h1>
+<p>The frozen full-P2 energy is unchanged. The earlier target-free pilot retained failed small-gain stationarity checks, particularly at high volume penalty. A later final state could have a small force residual while its overall continuation history still failed. This component changes numerical policy rather than constitutive physics, accepts no failed warm state and retains every attempted increment.</p>
+<p><code>scripts/robust_quadratic.py</code> subclasses the frozen full-P2 model. It inherits the energy, gradient, pressure, geometry, reference configuration, boundary conditions and observations. Its only optimizer change is a larger budget: up to 1200 L-BFGS iterations followed by up to 25 safeguarded Newton iterations. The normalized force threshold remains exactly <span class="math" data-tex="10^{-7}"></span>. Positive geometry is still required; neither a small mean volume error nor positive J at quadrature alone substitutes for that gate.</p>
+<h2>The accepted-state invariant</h2>
+<p>The principal API is:</p>
+<pre><code class="language-python">from robust_quadratic import Parameters, SolvePolicy, build_model
+model = build_model(Parameters(bulk=5000,
+                              basal_surface_tension=2),
+                    policy=SolvePolicy())
+first = model.advance(1.0, output_directory='private-run/target1')
+second = model.advance(5.0, previous=first,
+                       output_directory='private-run/target5')
+</code></pre>
+<p>The legacy fixed-strength methods are inherited for compatibility; <code>advance</code> is the verified-state continuation controller. A supplied previous result must be marked converged, have the identical parameter set, and pass a fresh force and geometry calculation. The state is not trusted just because its file contains a <code>true</code> flag. In the absence of a prior result the zero-activation reference is solved and verified first.</p>
+<p>Let <span class="math" data-tex="(g_k,u_k)"></span> be the last accepted gain/state and <span class="math" data-tex="g_*\ge g_k"></span> the next candidate. Each trial starts from an independent copy of <span class="math" data-tex="u_k"></span>. A trial is accepted only if its fixed-strength solve and replay pass the unchanged force/geometry gates. The controller then replaces the accepted pair. On failure it leaves both <span class="math" data-tex="g_k"></span> and <span class="math" data-tex="u_k"></span> unchanged and replaces the failed candidate by its midpoint and the original candidate:</p>
+<div class="math display" data-tex="
+ (g_*,\ldots)\longmapsto\left(\frac{g_k+g_*}{2},g_*,\ldots\right).
+"></div>
+
+<p>Thus, by induction, every trial is initialized from a verified state. Failed optimizer vectors are never used as warm starts. The retained initial-vector hashes and accepted-result hashes make this invariant replayable without relying only on prose. A failed state is not promoted merely because a later target happens to converge.</p>
+<p>The policy stops explicitly if bisection would require a half-step smaller than 0.001 or if 128 attempts have been made for one requested target. Neither bound guarantees reaching the target. On stopping, the result records the last verified gain, the requested gain and <code>reached_target=false</code>; overall <code>converged</code> is false even though the last accepted state itself remains verified. There is no numerical success claim for an unreached target. Only nondecreasing activation is currently supported.</p>
+<h2>Failed numerical trials are not a physical trajectory</h2>
+<p>Every actual failed result is retained separately, with force, geometry, vector hash, gain and optimizer history. The accepted path receives its own mechanical potential-work ledger:</p>
+<div class="math display" data-tex="
+ W_k=E(u_k,g_{k+1})-E(u_k,g_k),\qquad
+ D_k=E(u_k,g_{k+1})-E(u_{k+1},g_{k+1}).
+"></div>
+
+<p>The telescope <span class="math" data-tex="\Delta E=\sum W_k-\sum D_k"></span> is checked numerically. These quantities refer to the chosen externally controlled mechanical potential. Failed optimization attempts do not represent time evolution, photons spent or ATP consumption. The controller introduces no biological sensing policy, autonomous regulation or kinetic timescale.</p>
+<h2>Target-free test and evidence</h2>
+<p>The protocol fixes dimensionless <span class="math" data-tex="H=1"></span>, physical conversion <span class="math" data-tex="H=33.5\,\mu\mathrm m"></span>, <span class="math" data-tex="a/H=9.35512037/33.5"></span>, illuminated material depths <span class="math" data-tex="8.5/33.5"></span> to <span class="math" data-tex="28.5/33.5"></span>, outer radius 3, 12×6 meridional cells, shear modulus 1, apical/basal area moduli 0.2/2, basal tension 2 and apical tension 0. It tests volume coefficients 500 and 5000, with requested gains 1, 5 and 10 in sequence. No measured shortening or larger-region outcome is read or fitted.</p>
+<p>Before solving, three random-state objective/gradient comparisons at gains 0/1/5 require bit-for-bit equality with the frozen full-P2 model. This verifies that stronger iteration and adaptive continuation do not change the governing energy. The original failed pilot remains untouched under <code>runs/quadratic_pilot/</code>.</p>
+<p><code>evidence/quadratic_robust_protocol.json</code> fixes the policy and test before the calculations. <code>quadratic_robust_verification.json</code> records the source and all parent hashes, exact energy/gradient comparison and six target outcomes. Complete trial fields, per-target attempt ledgers and final accepted states are retained in <code>runs/quadratic_robust/</code>.</p>
+<p>All six requested targets were reached:</p>
+<table>
+<thead>
+<tr>
+<th>Volume coefficient</th>
+<th style="text-align: right;">Target gain</th>
+<th style="text-align: right;">Final force infinity norm</th>
+<th>Sampled J range</th>
+<th style="text-align: right;">Attempts / rejected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2.73×10⁻¹³</td>
+<td>0.997548–1.003091</td>
+<td style="text-align: right;">1 / 0</td>
+</tr>
+<tr>
+<td>500</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.80×10⁻¹⁰</td>
+<td>0.979917–1.017614</td>
+<td style="text-align: right;">1 / 0</td>
+</tr>
+<tr>
+<td>500</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">9.09×10⁻¹¹</td>
+<td>0.966828–1.030380</td>
+<td style="text-align: right;">1 / 0</td>
+</tr>
+<tr>
+<td>5000</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3.25×10⁻⁹</td>
+<td>0.999230–1.000903</td>
+<td style="text-align: right;">1 / 0</td>
+</tr>
+<tr>
+<td>5000</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2.72×10⁻¹¹</td>
+<td>0.990723–1.004564</td>
+<td style="text-align: right;">7 / 3</td>
+</tr>
+<tr>
+<td>5000</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4.40×10⁻¹²</td>
+<td>0.980573–1.008819</td>
+<td style="text-align: right;">7 / 3</td>
+</tr>
+</tbody>
+</table>
+<p>These are actual quadrature J evaluations, not exact extrema or conservative coefficient bounds. The remaining local finite-compressibility and continuum-discretization questions are not erased by improved stationarity.</p>
+<p>At coefficient 5000, the first attempt from gain 1 to gain 5 failed with force 0.06879. The trial from 1 to 3 also failed. Steps from 1 to 2 and 2 to 3 verified; a subsequent 3 to 5 trial failed, and 3 to 4 then 4 to 5 verified. This is an actual numerical failure/recovery sequence, not a simulated demonstration. Gain 10 required three further rejected attempts. All six rejected optimizer states remain saved. There were eighteen actual attempts and twelve accepted increments in total.</p>
+<p>The original numerical batch used controller SHA256 <code>2e00d7b2b61ecfa9006716ba9a0245af47f2c85ae7b647caf47b66b13532dba9</code>; that exact source and receipt are preserved under <code>runs/quadratic_robust/pre_guard_hardening/</code>. An input-hardening review then added explicit rejection of nonfinite gains/gradients and guaranteed a terminal attempt-ledger flush. It did not change finite-input energy or optimizer arithmetic. Final controller SHA256 is <code>be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b</code>.</p>
+<p><code>evidence/quadratic_robust_guard_review.json</code> verifies nine guard/controller checks and replays all six final states under that final source. The accepted input-hash chains match exactly and the potential-work telescopes agree within 1.43×10⁻¹⁴. The min-step and attempt-limit tests use explicitly labeled injected failures; their fields are kept separate from the actual scientific runs. <code>quadratic_robust_attempt_replay.json</code> additionally replays every actual accepted/rejected field, preserving the distinction between a rejected computation and an accepted physical candidate.</p>
+<p>This verifies a finite-dimensional numerical controller. It does not establish a continuum error bound, identify material properties, justify an equilibrium-to-transient observation map, validate the larger-region prediction or prove novel biological physics.</p>
+<p><img alt="Actual robust continuation attempts, accepted gains and unchanged force gate" src="../../omitted-asset.svg" /></p>
+<p>The figure displays actual calculations, with accepted attempts in green and rejected attempts in red. It is not a biological trajectory. Image/input hashes are retained in <code>evidence/quadratic_robust_visual.json</code>.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

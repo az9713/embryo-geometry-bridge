@@ -1,0 +1,33 @@
+{
+  "status": "PASS_SMOOTH_FIXED_ROI_NODE_DERIVATIVES",
+  "checks": {
+    "all35_synthetic_checks_pass": true,
+    "all49_saved12_checks_pass": true,
+    "source_matches_both_receipts": true,
+    "frozen_curve_extractor_unchanged": true,
+    "production_functions_no_optimization_calls": true,
+    "doc_math_balanced": true,
+    "doc_links_exist": true,
+    "utf8_no_replacement_char": true
+  },
+  "file_sha256": {
+    "scripts/quadratic_mean_derivatives.py": "681b69335a80ae0468dd98856c5562b24524827809ece465747b95454d152bff",
+    "docs/QUADRATIC-MEAN-DERIVATIVES.md": "7db89c4bc2e3acd63af4d09ecbf2daa50770aeff0eb95345ae1e6fc33dbddc41",
+    "evidence/quadratic_mean_derivatives_synthetic.json": "49ac18fdf0e69050469d20ad324e5806f8e624b9a281dbb35b1f77a78bb0e799",
+    "evidence/quadratic_mean_derivatives_saved.json": "4758b9baae2918fc1136a0e46b657469355d20b1024f0df0e5e234c2f28b9a86"
+  },
+  "maximum_synthetic_FD_error": 3.1245672715840556e-11,
+  "maximum_saved_FD_distance_to_interval": 1.990627194331518e-10,
+  "limits": "Fixed current ROI/reference/weight/length unit only. Full node arrays represent derivative on admissible trace variations; select true mechanics free DOFs. No maximum/material/implicit derivative, local rank or biological validity claim.",
+  "dead_links": [],
+  "packaging_correction": "Initial false inline-delimiter match retained separately; fractional TeX notation clarified without mathematical/numerical change.",
+  "dependency_sha256": {
+    "annulus_observer.py": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9",
+    "quadratic_endpoint_observer.py": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926"
+  },
+  "FD_environment": {
+    "python": "3.13.5",
+    "numpy": "2.2.6",
+    "scipy": "1.16.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ROOT_OBSERVED_KL_SEGMENT_GEOMETRY_DIAGNOSTIC_EXIT",
+  "pid": 17504,
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "f19a13",
+  "receipt_sha256": "97953457778f39011d96cc071070d2d5d342eb362f7e8e904d28d7947fd6e214",
+  "terminal_sha256": "184a8f23c6f4c8934741a74ee5f47a5bdf64b854bcc2a9031e1ee5d0d93652e0",
+  "started_sha256": "00492fb4e259e62a7870eb5fe9574d2ea8594255a91b4693554fe221230ed8db"
+}

@@ -1,0 +1,154 @@
+{
+  "status": "PASS_INDEPENDENT_PHYSICAL_DOMAIN_REVIEW",
+  "checks": {
+    "reviewed_current_module_hash": true,
+    "independent_physical_to_solver_values": true,
+    "dimensionless_height_uses_fixed_L0": true,
+    "physical_activation_coordinates_recovered": true,
+    "independent_exact_quotient": true,
+    "all_ratio_inverse_exact": true,
+    "exact_quotient_scale_19/7": true,
+    "floating_material_map_scale_19/7": true,
+    "exact_quotient_scale_3/1000": true,
+    "floating_material_map_scale_3/1000": true,
+    "exact_quotient_scale_100000000000000000000000000000000000000000000000000000000000000000000000000000000": true,
+    "floating_material_map_scale_100000000000000000000000000000000000000000000000000000000000000000000000000000000": true,
+    "changed_height_preserves_fixed_unit_material": true,
+    "changed_height_changes_geometry_and_H_ratios": true,
+    "test_entire_discrete_field_admissible": true,
+    "fixed_trial_penalty_inactive": true,
+    "actual_raw_kernel_energy_scale_3.7": true,
+    "actual_normalized_objective_invariant_3.7": true,
+    "actual_normalized_gradient_invariant_3.7": true,
+    "actual_normalized_Hessian_vector_invariant_3.7": true,
+    "scaled_trial_penalty_inactive_3.7": true,
+    "actual_raw_kernel_energy_scale_0.23": true,
+    "actual_normalized_objective_invariant_0.23": true,
+    "actual_normalized_gradient_invariant_0.23": true,
+    "actual_normalized_Hessian_vector_invariant_0.23": true,
+    "scaled_trial_penalty_inactive_0.23": true,
+    "length_unit_covariance_geometry": true,
+    "length_unit_covariance_raw_energy": true,
+    "length_unit_covariance_physical_energy": true,
+    "length_unit_covariance_normalized_objective": true,
+    "length_unit_covariance_gradient_rescales": true,
+    "length_unit_gain_unchanged": true,
+    "positive_finite_sequence_approaches_excluded_mu_face": true,
+    "ratio_growth_not_bounded_by_simplex": true,
+    "original_float_formula_reproduces_positive_loss": true,
+    "new_guard_quotient": true,
+    "new_guard_surface_conversion": true,
+    "new_guard_common_scale_gain": true,
+    "new_guard_solver_gain_ratio": true,
+    "exact_extreme_preserves_positive_mu": true,
+    "root_receipt_current_source_hashes": true
+  },
+  "independent_material": {
+    "mu": 3.2,
+    "kappa": 960.0,
+    "apical_area_modulus": 37.4,
+    "basal_area_modulus": 136.0,
+    "apical_tension": 10.2,
+    "basal_tension": 51.0,
+    "gain": 17.6
+  },
+  "fixed_geometry": {
+    "height_um": 29.0,
+    "outer_radius_um": 68.0,
+    "patch_radius_um": 7.0,
+    "activated_z_min_um": 4.0,
+    "activated_z_max_um": 24.0,
+    "length_unit_um": 17.0,
+    "nr": 6,
+    "nz": 3
+  },
+  "mapped_solver_values": [
+    1.0,
+    300.0,
+    0.6874999999999999,
+    2.5,
+    0.18749999999999997,
+    0.9375,
+    5.5
+  ],
+  "exact_quotient": [
+    "16/4973",
+    "4800/4973",
+    "11/4973",
+    "40/4973",
+    "3/4973",
+    "15/4973",
+    "88/4973"
+  ],
+  "admissible_field_exact_J_lower": "31661835566642856360780949880039942117173642016/32391876531295312854365102969829878124495957845",
+  "kernel_scaling_tests": [
+    {
+      "scale": 3.7,
+      "raw_energy_absolute_error": 5.684341886080802e-14,
+      "normalized_objective_absolute_error": 1.1102230246251565e-16,
+      "normalized_gradient_linf_error": 1.1102230246251565e-16,
+      "normalized_Hv_linf_error": 7.105427357601002e-15
+    },
+    {
+      "scale": 0.23,
+      "raw_energy_absolute_error": 3.552713678800501e-15,
+      "normalized_objective_absolute_error": 2.220446049250313e-16,
+      "normalized_gradient_linf_error": 7.025630077706069e-17,
+      "normalized_Hv_linf_error": 5.684341886080802e-14
+    }
+  ],
+  "length_unit_covariance": {
+    "raw_energy_L0_17": 57.625968625972504,
+    "raw_energy_L0_34": 7.203246078246563,
+    "normalized_gradient_covariance_error": 2.220446049250313e-16
+  },
+  "review_found_and_fixed": {
+    "original_source_sha256": "30291e23d0b82f08fc6e6e2bc42db541725f1c56db5728fd07bb6c259d281123",
+    "corrected_source_sha256": "8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4",
+    "finding": "Positive coefficients could silently underflow to zero in floating max-rescaled quotient, creating an excluded simplex face.",
+    "original_formula_reproduced_mu_coordinate": 0.0,
+    "fix": "Author added explicit loss-of-positive-coefficient rejection to quotient, pressure conversion, common scaling and solver ratios. Exact helper remains authoritative for extreme ratios.",
+    "independent_guard_tests": [
+      {
+        "path": "quotient",
+        "rejected": true,
+        "message": "floating quotient underflows; use exact_quotient"
+      },
+      {
+        "path": "surface_conversion",
+        "rejected": true,
+        "message": "coefficient conversion underflows; use exact arithmetic"
+      },
+      {
+        "path": "common_scale_gain",
+        "rejected": true,
+        "message": "common coefficient scaling underflows; use exact arithmetic"
+      },
+      {
+        "path": "solver_gain_ratio",
+        "rejected": true,
+        "message": "solver coefficient ratios underflow; use exact arithmetic"
+      }
+    ]
+  },
+  "sources": {
+    "physical_parameter_domain.py": "8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4",
+    "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+  },
+  "reviewed_document_sha256": "8d6a397c6efc3e7a91d9716630355dfb91acbef51928e75437b4ad4b24fd728f",
+  "root_verification_receipt_sha256": "7e529d2286c3188c89c8c45efa8ed7c7960b2fc561b2c8760b56414dca9b4f6c",
+  "verification_program": "from pathlib import Path\nfrom dataclasses import asdict,replace\nfrom fractions import Fraction as Q\nimport sys,json,hashlib,math\nimport numpy as np\nimport torch\nroot=Path('controlled_furrowing').resolve();sys.path.insert(0,str(root/'scripts'))\nfrom physical_parameter_domain import PhysicalMaterial,exact_quotient,solver_parameters,source_hashes\nfrom quadratic_quadrature_study import AxisymmetricModel\nfrom mixed_geometry_certificate_v2 import correlated_J_certificate\ntorch.set_num_threads(1);program=globals().get('program','Replay code retained in original receipt.')\nsha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()\noriginal_hash='30291e23d0b82f08fc6e6e2bc42db541725f1c56db5728fd07bb6c259d281123'\nfinal_hash='8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4'\nmaterial=PhysicalMaterial(3.2,960.,37.4,136.,10.2,51.,17.6)\ngeom={'height_um':29.,'outer_radius_um':68.,'patch_radius_um':7.,'activated_z_min_um':4.,'activated_z_max_um':24.,'length_unit_um':17.,'nr':6,'nz':3}\np,gain=solver_parameters(material,**geom)\nexpected=[1.,300.,11/16,2.5,3/16,15/16,5.5]\nactual=[p.mu,p.bulk,p.apical_area_modulus,p.basal_area_modulus,p.apical_surface_tension,p.basal_surface_tension,gain]\nchecks={'reviewed_current_module_hash':sha(root/'scripts/physical_parameter_domain.py')==final_hash,\n        'independent_physical_to_solver_values':np.allclose(actual,expected,rtol=0,atol=2e-15),\n        'dimensionless_height_uses_fixed_L0':p.height==29/17,\n        'physical_activation_coordinates_recovered':abs(p.height*p.activation_z_min-4/17)<1e-15 and abs(p.height*p.activation_z_max-24/17)<1e-15}\npressure=(Q(16,5),Q(960),Q(11,5),Q(8),Q(3,5),Q(3),Q(88,5))\nw=exact_quotient(pressure);expected_w=tuple(Q(n,4973) for n in (16,4800,11,40,3,15,88))\nchecks['independent_exact_quotient']=w==expected_w and sum(w)==1\nchecks['all_ratio_inverse_exact']=all(w[i]/w[0]==pressure[i]/pressure[0] for i in range(7))\nfor factor in (Q(19,7),Q(3,1000),Q(10)**80):\n    checks['exact_quotient_scale_'+str(factor)]=exact_quotient([v*factor for v in pressure])==w\n    numeric_factor=float(factor)\n    pp,gg=solver_parameters(material.scaled(numeric_factor),**geom)\n    checks['floating_material_map_scale_'+str(factor)]=all(math.isclose(asdict(p)[k],x,rel_tol=2e-14,abs_tol=2e-14) for k,x in asdict(pp).items()) and math.isclose(gain,gg,rel_tol=2e-14)\nph,_=solver_parameters(material,**dict(geom,height_um=31.))\nchecks['changed_height_preserves_fixed_unit_material']=all(getattr(ph,k)==getattr(p,k) for k in ('mu','bulk','apical_area_modulus','basal_area_modulus','apical_surface_tension','basal_surface_tension'))\nchecks['changed_height_changes_geometry_and_H_ratios']=ph.height!=p.height and ph.basal_surface_tension/ph.height!=p.basal_surface_tension/p.height\nrng=np.random.default_rng(19891119);m=AxisymmetricModel(p);u=rng.normal(size=len(m.free))*2e-4;strength=gain*.61\ne,g=m.objective(u,strength);coordinates=m.coordinates(torch.tensor(u,dtype=torch.float64));parts=m.energy_components(coordinates,strength)\nn=max(i for t in m.triangles for i in t[:3])+1\ncerts=[correlated_J_certificate([m.reference[i].tolist() for i in t[:3]],[coordinates.detach().numpy()[i].tolist() for i in t]) for t in m.triangles]\nlower=min(Q(v['J_bound']['lower']['exact']) for v in certs)\nchecks['test_entire_discrete_field_admissible']=lower>Q(1,10**6) and all(v['positive_J_certified'] for v in certs)\nchecks['fixed_trial_penalty_inactive']=float(parts['trial_inversion_penalty'])==0.\nkernel=[]\ndirection=rng.normal(size=len(u));direction/=np.linalg.norm(direction)\ndef hv(model,vector,gain):\n    x=torch.tensor(vector,dtype=torch.float64,requires_grad=True);E=model.energy_components(model.coordinates(x),gain)['total']/model.energy_scale\n    gradient=torch.autograd.grad(E,x,create_graph=True)[0]\n    return torch.autograd.grad(gradient,x,grad_outputs=torch.tensor(direction,dtype=torch.float64))[0].detach().numpy()\nbase_hv=hv(m,u,strength)\nfor scale in (3.7,.23):\n    ps=replace(p,mu=p.mu*scale,bulk=p.bulk*scale,apical_area_modulus=p.apical_area_modulus*scale,basal_area_modulus=p.basal_area_modulus*scale,apical_surface_tension=p.apical_surface_tension*scale,basal_surface_tension=p.basal_surface_tension*scale)\n    other=AxisymmetricModel(ps);es,gs=other.objective(u,strength*scale);pp=other.energy_components(other.coordinates(torch.tensor(u,dtype=torch.float64)),strength*scale)\n    raw_error=abs(float(pp['total'])-scale*float(parts['total']));ge=float(np.max(abs(gs-g)));he=float(np.max(abs(hv(other,u,strength*scale)-base_hv)))\n    checks[f'actual_raw_kernel_energy_scale_{scale}']=raw_error<1e-10\n    checks[f'actual_normalized_objective_invariant_{scale}']=abs(es-e)<1e-12\n    checks[f'actual_normalized_gradient_invariant_{scale}']=ge<1e-10\n    checks[f'actual_normalized_Hessian_vector_invariant_{scale}']=he<1e-9\n    checks[f'scaled_trial_penalty_inactive_{scale}']=float(pp['trial_inversion_penalty'])==0.\n    kernel.append({'scale':scale,'raw_energy_absolute_error':raw_error,'normalized_objective_absolute_error':abs(es-e),'normalized_gradient_linf_error':ge,'normalized_Hv_linf_error':he})\np2,gain2=solver_parameters(material,**dict(geom,length_unit_um=34.));m2=AxisymmetricModel(p2)\ne2,g2=m2.objective(u/2,strength);parts2=m2.energy_components(m2.coordinates(torch.tensor(u/2,dtype=torch.float64)),strength)\nraw0=float(parts['total']);raw2=float(parts2['total'])\nchecks['length_unit_covariance_geometry']=np.max(abs(m2.reference-m.reference/2))<1e-14\nchecks['length_unit_covariance_raw_energy']=abs(raw2-raw0/8)<1e-10\nchecks['length_unit_covariance_physical_energy']=abs(material.mu*34**3*raw2-material.mu*17**3*raw0)<1e-8\nchecks['length_unit_covariance_normalized_objective']=abs(e2-e)<1e-12\nchecks['length_unit_covariance_gradient_rescales']=np.max(abs(g2-2*g))<1e-10\nchecks['length_unit_gain_unchanged']=gain2==gain\n# Excluded-face sequence: every finite member is admitted, ratios unbounded.\nseq=[exact_quotient((1,10**k,0,0,0,0,0)) for k in (1,10,100)]\nchecks['positive_finite_sequence_approaches_excluded_mu_face']=all(v[0]>0 and v[1]>0 for v in seq) and seq[-1][0]<Q(1,10**99)\nchecks['ratio_growth_not_bounded_by_simplex']=seq[-1][1]/seq[-1][0]==10**100\n# Independent reproductions of the review-discovered old formula and final guards.\noldvector=np.array([5e-290,7e290,0,0,0,0,0]);old_w=oldvector/oldvector.max();old_q=old_w/old_w.sum()\nchecks['original_float_formula_reproduces_positive_loss']=old_q[0]==0\nguards=[\n ('quotient',lambda:PhysicalMaterial(5e-290,7e290,0,0,0,0,0).quotient(17.)),\n ('surface_conversion',lambda:PhysicalMaterial(2,3,5e-310,0,0,0,0).pressure_vector(9e100)),\n ('common_scale_gain',lambda:PhysicalMaterial(2,3,0,0,0,0,1e-300).scaled(2e-100)),\n ('solver_gain_ratio',lambda:solver_parameters(PhysicalMaterial(7e100,2e101,0,0,0,0,5e-300),**geom))]\nguardrows=[]\nfor name,call in guards:\n    try:call();checks['new_guard_'+name]=False;guardrows.append({'path':name,'rejected':False})\n    except ValueError as err:checks['new_guard_'+name]=True;guardrows.append({'path':name,'rejected':True,'message':str(err)})\nexact_extreme=exact_quotient(('5e-290','7e290',0,0,0,0,0))\nchecks['exact_extreme_preserves_positive_mu']=exact_extreme[0]>0 and exact_extreme[1]>0 and sum(exact_extreme)==1\nchecks={k:bool(v) for k,v in checks.items()}\nroot_receipt=json.loads((root/'evidence/physical_parameter_domain_verification.json').read_text())\nchecks['root_receipt_current_source_hashes']=all(sha(root/'scripts'/name)==s for name,s in root_receipt['source_hashes'].items())\nresult={'status':'PASS_INDEPENDENT_PHYSICAL_DOMAIN_REVIEW' if all(checks.values()) else 'FAIL','checks':checks,\n        'independent_material':asdict(material),'fixed_geometry':geom,'mapped_solver_values':actual,'exact_quotient':[str(x) for x in w],\n        'admissible_field_exact_J_lower':str(lower),'kernel_scaling_tests':kernel,'length_unit_covariance':{'raw_energy_L0_17':raw0,'raw_energy_L0_34':raw2,'normalized_gradient_covariance_error':float(np.max(abs(g2-2*g)))},\n        'review_found_and_fixed':{'original_source_sha256':original_hash,'corrected_source_sha256':final_hash,\n            'finding':'Positive coefficients could silently underflow to zero in floating max-rescaled quotient, creating an excluded simplex face.',\n            'original_formula_reproduced_mu_coordinate':float(old_q[0]),'fix':'Author added explicit loss-of-positive-coefficient rejection to quotient, pressure conversion, common scaling and solver ratios. Exact helper remains authoritative for extreme ratios.','independent_guard_tests':guardrows},\n        'sources':source_hashes(),'reviewed_document_sha256':sha(root/'docs/PHYSICAL-PARAMETER-DOMAIN.md'),'root_verification_receipt_sha256':sha(root/'evidence/physical_parameter_domain_verification.json'),\n        'verification_program':program,'scope':'Independent units/gauge/domain/kernel verification, no equilibrium solve, target data or fitting.',\n        'limitations':['Common-scale theorem only for positive-J physical energy with no independently fixed mechanical forcing; numerical trial extension is excluded','No compact admitted ratio domain, despite compact simplex closure','No computed identified set/prediction envelope or chosen discrepancy/statistical law','Stationarity and geometry do not fix relaxation times under unchanged mobility','The force-scale symmetry and quotient are standard, not a novelty claim']}\n(root/'evidence/physical_parameter_domain_independent_review.json').write_text(json.dumps(result,indent=2)+'\\n')\nprint(json.dumps({'status':result['status'],'checks':len(checks),'all_pass':all(checks.values()),'scaling':kernel,'length_covariance_error':result['length_unit_covariance']['normalized_gradient_covariance_error'],'field_Jlower':float(lower),'guard_tests':guardrows},indent=2))\nassert all(checks.values()),[k for k,v in checks.items() if not v]\n",
+  "scope": "Independent units/gauge/domain/kernel verification, no equilibrium solve, target data or fitting.",
+  "limitations": [
+    "Common-scale theorem only for positive-J physical energy with no independently fixed mechanical forcing; numerical trial extension is excluded",
+    "No compact admitted ratio domain, despite compact simplex closure",
+    "No computed identified set/prediction envelope or chosen discrepancy/statistical law",
+    "Stationarity and geometry do not fix relaxation times under unchanged mobility",
+    "The force-scale symmetry and quotient are standard, not a novelty claim"
+  ]
+}

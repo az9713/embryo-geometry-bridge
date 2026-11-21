@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+  "uploads": [
+    {
+      "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+      "reference": "library-file:fde1_bGliZmlsZV9uQ1lKdjRQbU01ZkhTMFJRMFFEMk9n_FileDrive_d69130b799448191b036b648f75c6861",
+      "file_name": "compatibility_envelopes-27179fedef0e49f0b4dd83029d40df08.png",
+      "mime_type": "image/png",
+      "byte_size": 228735,
+      "sha256": "c62358a19220c007c21c0d6f3dc9ba20f556034d3624cccd65f5a150418c1488",
+      "file_access_confirmed": true,
+      "is_image": true,
+      "markdown": "![Small-region compatibility envelopes — not confidence bands](library-file:fde1_bGliZmlsZV9uQ1lKdjRQbU01ZkhTMFJRMFFEMk9n_FileDrive_d69130b799448191b036b648f75c6861)",
+      "inserted": false,
+      "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+    },
+    {
+      "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+      "reference": "library-file:fde1_bGliZmlsZV9jZ2p0dFlfOXZ1V0hMTFhFUlY3WndR_FileDrive_d69130b799448191b036b648f75c6861",
+      "file_name": "joint-refinement-7611d73a549f4c96a83f962084948fc5.png",
+      "mime_type": "image/png",
+      "byte_size": 188184,
+      "sha256": "7f7f70498003baa4af433dbad06c352f576306280d95dae1024888d8675ec9cd",
+      "file_access_confirmed": true,
+      "is_image": true,
+      "markdown": "![Higher-quadrature mesh comparison — discrete differences, not continuum error bounds](library-file:fde1_bGliZmlsZV9jZ2p0dFlfOXZ1V0hMTFhFUlY3WndR_FileDrive_d69130b799448191b036b648f75c6861)",
+      "inserted": false,
+      "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+    }
+  ],
+  "edit": {
+    "new_sequence": 4,
+    "through_sequence": 4,
+    "operation_results": [
+      {
+        "operation_index": 0,
+        "preceding_block_id": "2a64dead-6413-424a-96c0-49763d59862e",
+        "created_block_ids": [
+          "de641f35-f591-408c-8251-038224515f08",
+          "56dc122a-4502-400e-8b1f-8028fbcc1923",
+          "2b9e5594-133c-4dba-ba07-eebae74b0c08",
+          "cd8baf95-61c0-4fcd-aec7-4b0d74d70606",
+          "7b72cc58-b0ba-4f2a-b46c-262fc368804c",
+          "a6979c1f-3035-4e4f-93d7-fcb8bce486c8",
+          "38126341-12a4-4f18-8ae8-29e01d099e40",
+          "b29ee6bc-c2e0-4eab-8c4b-cfe773ebe0ab",
+          "2a64dead-6413-424a-96c0-49763d59862e",
+          "580fa626-7e07-4788-a16b-8c0c6b6a192e"
+        ],
+        "continuation_position": {
+          "block_id": "580fa626-7e07-4788-a16b-8c0c6b6a192e",
+          "relative_position_base64": "AK2s3s8M1RhB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "de641f35-f591-408c-8251-038224515f08",
+            "hash": "6f62cb35d3ebd5d49cdf6b03030d58ba18372ccefb07eb1f9b69cb1c3c6ba358"
+          },
+          {
+            "block_id": "56dc122a-4502-400e-8b1f-8028fbcc1923",
+            "hash": "185c780b34b388784eb27ed911ca45d804cae98ed7347bfa05c667f95445395d"
+          },
+          {
+            "block_id": "2b9e5594-133c-4dba-ba07-eebae74b0c08",
+            "hash": "5b681e37d812f145bfe2f135acd39b455f015bae83cc4afe211cbd13eb780f51"
+          },
+          {
+            "block_id": "cd8baf95-61c0-4fcd-aec7-4b0d74d70606",
+            "hash": "f1f6136060e7eeb322f8f162b8aa2f0e90d90fbd2b1c9827b1dc670bf9486d9c"
+          },
+          {
+            "block_id": "7b72cc58-b0ba-4f2a-b46c-262fc368804c",
+            "hash": "d146f60b8adf02f2eaf8af6a7fca76fc740a70c443bcc85664df7aff9c19d04c"
+          },
+          {
+            "block_id": "a6979c1f-3035-4e4f-93d7-fcb8bce486c8",
+            "hash": "320dc5cf5111ccc0c37c0d9283fc01cfc90dc110770c596a886fc57fd12ccd79"
+          },
+          {
+            "block_id": "38126341-12a4-4f18-8ae8-29e01d099e40",
+            "hash": "e15a3c44288387575a1f26a319f6dafafd2b2e0dfe5def57813dd2846fdf352c"
+          },
+          {
+            "block_id": "b29ee6bc-c2e0-4eab-8c4b-cfe773ebe0ab",
+            "hash": "8c2fc7ce808d045429f2951af53467eedcb159763b512dd07d2033b400706a30"
+          },
+          {
+            "block_id": "2a64dead-6413-424a-96c0-49763d59862e",
+            "hash": "e36cb6732b2dd4a8aaf68dde30f78e9c4c922f8c08e9af8a0ca9a35714b442c5"
+          },
+          {
+            "block_id": "580fa626-7e07-4788-a16b-8c0c6b6a192e",
+            "hash": "1bed9438c0e08255903f6bf74bad23513596ef8816dabc6cce17f393a13e443d"
+          }
+        ]
+      }
+    ]
+  },
+  "readback_checks": {
+    "calibration_floor": true,
+    "exception_floor": true,
+    "joint_interval": true,
+    "calibration_image": true,
+    "joint_image": true,
+    "goal_incomplete": true,
+    "scale_symmetry": true,
+    "pending_24_not_success": true
+  },
+  "observed_blocks": [
+    {
+      "id": "fdf3d455-7ab2-48b6-8323-f681384eaa08",
+      "hash": "5b371ff53ffcfa9a245f9f482ab2353fccf3698aded634b49e3f2995ad7927d2"
+    },
+    {
+      "id": "de641f35-f591-408c-8251-038224515f08",
+      "hash": "6f62cb35d3ebd5d49cdf6b03030d58ba18372ccefb07eb1f9b69cb1c3c6ba358"
+    },
+    {
+      "id": "56dc122a-4502-400e-8b1f-8028fbcc1923",
+      "hash": "185c780b34b388784eb27ed911ca45d804cae98ed7347bfa05c667f95445395d"
+    },
+    {
+      "id": "2b9e5594-133c-4dba-ba07-eebae74b0c08",
+      "hash": "5b681e37d812f145bfe2f135acd39b455f015bae83cc4afe211cbd13eb780f51"
+    },
+    {
+      "id": "cd8baf95-61c0-4fcd-aec7-4b0d74d70606",
+      "hash": "f1f6136060e7eeb322f8f162b8aa2f0e90d90fbd2b1c9827b1dc670bf9486d9c"
+    },
+    {
+      "id": "7b72cc58-b0ba-4f2a-b46c-262fc368804c",
+      "hash": "d146f60b8adf02f2eaf8af6a7fca76fc740a70c443bcc85664df7aff9c19d04c"
+    },
+    {
+      "id": "a6979c1f-3035-4e4f-93d7-fcb8bce486c8",
+      "hash": "320dc5cf5111ccc0c37c0d9283fc01cfc90dc110770c596a886fc57fd12ccd79"
+    },
+    {
+      "id": "38126341-12a4-4f18-8ae8-29e01d099e40",
+      "hash": "e15a3c44288387575a1f26a319f6dafafd2b2e0dfe5def57813dd2846fdf352c"
+    },
+    {
+      "id": "b29ee6bc-c2e0-4eab-8c4b-cfe773ebe0ab",
+      "hash": "8c2fc7ce808d045429f2951af53467eedcb159763b512dd07d2033b400706a30"
+    },
+    {
+      "id": "2a64dead-6413-424a-96c0-49763d59862e",
+      "hash": "e36cb6732b2dd4a8aaf68dde30f78e9c4c922f8c08e9af8a0ca9a35714b442c5"
+    },
+    {
+      "id": "580fa626-7e07-4788-a16b-8c0c6b6a192e",
+      "hash": "1bed9438c0e08255903f6bf74bad23513596ef8816dabc6cce17f393a13e443d"
+    }
+  ],
+  "scope": "Native Space text/image insertion and readback; not public GitHub publication or research completion."
+}

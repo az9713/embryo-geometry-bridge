@@ -1,0 +1,543 @@
+{
+  "status": "PASS",
+  "html_pages": 107,
+  "rows": [
+    {
+      "page": "ACTIVATED-MESH-STUDY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "30f75e54e7c6efc74135281e5557d628e13a73b43d532f0e673afdda3c2e8eeb"
+    },
+    {
+      "page": "ACTIVATED-QUADRATURE.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "dc480cbbb689ede7b4363a7b6636997e78db93707fa6ecd442a41815502adb49"
+    },
+    {
+      "page": "ACTUAL-M-CELL-EXCLUSION.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "8e19791ef6ef3cd7e1f6433c251e33af622ca4ed2f12f9b6663c9f37b5b4e999"
+    },
+    {
+      "page": "ALGEBRAIC-ROOT-CERTIFICATION-PATH.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "378c531b7b87649291cc8eebd7f02459ad5a5e3c1daeae92e29a73ff75445241"
+    },
+    {
+      "page": "ALGEBRAIC-ROOT-INDEPENDENT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "e95a12e1ec5258e43264d9933d07bf9626ba2501fab0d1aa015b0ec388cdfeac"
+    },
+    {
+      "page": "ALGEBRAIC-ROOT-OBSERVER-ERROR.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "30dda198fb4d2265f4f1f75d17e48d2f7740457b08da5e5581c9663053db4e53"
+    },
+    {
+      "page": "ANNULUS-OBSERVER.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "53b9cd2bff29caf745b085279de1c1042369d7d17e71a3c431a835eb4c25e48f"
+    },
+    {
+      "page": "AXISYMMETRIC-MODEL.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "bcc46cd005cc7053dc0e5ce5fc7f003dd7e42989fce368bd7dbd16fbeb1bde81"
+    },
+    {
+      "page": "BASELINE-TENSION.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "364f6b182840c42a9af04751e9bf084004d7e2bf17536815b77051d584d56415"
+    },
+    {
+      "page": "BOUNDED-AFFINE-MINIMAX-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "245806d563f64fb0a04fc2dd58275f166764b9c58934ee27ffa12f7bf9d84709"
+    },
+    {
+      "page": "BOUNDED-AFFINE-MINIMAX.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "46f90b2787762d4b7a0d2469fac9736c0837d017ebec18e7df3c25712de688c5"
+    },
+    {
+      "page": "CALIBRATION-EXCEPTION-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "25cd5ef1f04ee92346fbe6dd17200d03c8462a6f3063dcde6ce1964f02579414"
+    },
+    {
+      "page": "CALIBRATION-UNCERTAINTY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "55f17c64647a6259ff84b58c8f66fcabe371ce1530ab7674dec1027d391a0e98"
+    },
+    {
+      "page": "COHORT-BOUND-DIAGNOSTICS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "0633fc72701ef2b926e808607a88475bc270c1955176b077bdb8d817b00e3acc"
+    },
+    {
+      "page": "COHORT-ENERGY-STABILITY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "5b98dc9f7f3ea328032d06300e4ce46f6daa8594f67b0a2da35462f5e94cabf3"
+    },
+    {
+      "page": "COHORT-INFERENCE-CHECKPOINT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "ab2f8d8fc6cd978ac21d90f7eb9b5e19a3dcaedd04d2664902c354e65d0ded6d"
+    },
+    {
+      "page": "COHORT-RECENTERED-ROOTS-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "79e2f2bb722bbfbb2d425505a295b112110d13b31260d6cf220368dc642ab49d"
+    },
+    {
+      "page": "COHORT-STATIC-APPLICATION-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "aa63ff08f7f622996286b105ad060ca045377e3eb59adbec5feb8c095101d475"
+    },
+    {
+      "page": "COHORT-STATIC-OBSERVERS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "fdf3a8ef089f74287b13bdc5af7ca841e3ac7fafe3ccea997396e2087216c67a"
+    },
+    {
+      "page": "COHORT-UNIFORM-ROOTS-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "d59d56d02df28c3c1953054f0225c8f6a5f60b13f03c9a6ff851087965cd4cfe"
+    },
+    {
+      "page": "COHORT-UNIFORM-ROOTS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "c679d84f9046e75c73f88700cadea66c939ef89d15a0ef70f00e5e7c861411fd"
+    },
+    {
+      "page": "COMPLETION-AUDIT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "c7c8f43c8d38f7ab72b780e48eb7de781a270e618e36fd2cb1fae9124e241d93"
+    },
+    {
+      "page": "CURRENT-FIVE-GATE-AUDIT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "c6ed36f66dc25a14817d35147bf90c1e9c80736858d29549dcb6d6f9a1a506e1"
+    },
+    {
+      "page": "CURRENT-FIVE-GATE-AUDIT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "608d95487ebf016a437d4a63570dde06b7dc9b478fed29cf6ddf98a23fc26fb6"
+    },
+    {
+      "page": "DATA.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "99b071788280de8312400305877c7cbd7f268231b146c36cf107e5cd5f25f6c1"
+    },
+    {
+      "page": "DISCRETE-GEOMETRY-CERTIFICATE.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "93e58a6c22bb89e6bb60fa7db71798bd48077d4efbc52f3ab95b12d49055df3e"
+    },
+    {
+      "page": "DRAFT-DATA-REQUEST.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "8249eb5eb7aba2465dfcb6aa5895d10d0a5212ebe40b9e54dd853e4a593c7eee"
+    },
+    {
+      "page": "ENDPOINT-MESH-FUNCTIONALS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "a4e99ef879d7ef2092f55b2838a5526b63003747202f089533099dec49244c0c"
+    },
+    {
+      "page": "ENDPOINT-OBSERVER-INDEPENDENT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "f5629106a2269789753ce752d0e86ccf95f516489f51efb2bdb5f398dfaed440"
+    },
+    {
+      "page": "ENERGY-GAIN-CELL-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "ed39c9f0eb49000bde60319d7433c00bea3dd0dbcec6671a089c6559fcb441ca"
+    },
+    {
+      "page": "ENERGY-GAIN-CELL.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "40a724c49cf2f3e6b0c7c126a6dd88b36ee3b37508c377eae2dcd24aa82f2871"
+    },
+    {
+      "page": "ENERGY-GAIN-GEOMETRY-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "caa3570d924c153061700b57225462ac4d4f3c7617961d7da9b1673603d8aaed"
+    },
+    {
+      "page": "ENERGY-GAIN-GEOMETRY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "ba1ee2257336e186a13897c3ad12ee5289a502a2fe101135a89698ae08b8ff25"
+    },
+    {
+      "page": "EXACT-INTEGRAL-ROOT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "7ecbb1d646e0dead936ef0b00501a49ce4cca722971923d72c1b6b58a0acddf5"
+    },
+    {
+      "page": "EXACT-INTEGRATION-BRIDGE.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "b24d74ed2598aee57bfbbb7581a5bf736841fc0183fdb8e23851508b1d645934"
+    },
+    {
+      "page": "GAIN-SURROGATE-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "fc4b2986d9fa641562f511ff267fa859ec51327053bdf3eb29c5567ed559beb0"
+    },
+    {
+      "page": "GAIN-SURROGATE-V2-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "01120e88da46b32e90c5f87a73e4870bb08eac5fc4c78cdc251806614d8197ba"
+    },
+    {
+      "page": "index.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "7a2310be61c500f96d89dd25e0b6403897901fa55442f65d78e65a31676425ec"
+    },
+    {
+      "page": "JOINT-CALIBRATION-CONSTRAINTS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "b2643aa563ecacc935bba0847c1f4ae64b1917976b57d2574607f0d06f73e3ea"
+    },
+    {
+      "page": "JOINT-CONSTRAINT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "1b97db3510052740b09becc91c63268358748e69c11acb83282b912c430e6c27"
+    },
+    {
+      "page": "JOINT-DIRECT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "d549eb54584abf03b23eb78870f9e382476b6dc857041bf092906b8d3b4844c2"
+    },
+    {
+      "page": "JOINT-GAIN-CALIBRATION.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "bd51564fe31489f04ffacb8df856d92675045150b5a069502831a806938ad0db"
+    },
+    {
+      "page": "JOINT-INFERENCE-PROGRESS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "08b474bfb25fc7f9a7b923c71e5a24dacf0327474ed77d9f22e4a33adde4e207"
+    },
+    {
+      "page": "JOINT-OBSERVATION-CONTRACT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "1302d6146a127a83fada67a180f71ce6982563f8cf171e4490c582f2cfe06783"
+    },
+    {
+      "page": "JOINT-REFINEMENT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "995e326e03e6aac44da8cee47004458d521a10c474f3d916f8b3c727a0fd22a2"
+    },
+    {
+      "page": "LOCAL-INFERENCE.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "371425d3b6cb499558b8b887f356d21599b72b4419497f6113548d30853d0367"
+    },
+    {
+      "page": "MATERIAL-COHORT-DESCENT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "4b5bed88fde7d2e9c53b3518c2557f2b39e68da010d2b3cf66fb153c0bc908af"
+    },
+    {
+      "page": "MATERIAL-COHORT-DESCENT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "a69a8d4e90c2397eca147c6e4eaf0f8ed2ab8a30af87eb21ed519086756c89e6"
+    },
+    {
+      "page": "MATERIAL-COHORT-DIRECT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "42a6c5bb6323f2414f92638381817032d52c06a6c7fb2be5e09523b1fc89889b"
+    },
+    {
+      "page": "MATERIAL-COHORT-DIRECT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "183586e72f284ed752f857161902f8fb1e3936cb8e7ec542459138184a337d36"
+    },
+    {
+      "page": "MATERIAL-INPUTS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "cb9f2fc72ff31152f2560da789221a7f9443506f49c5bc323aca89d6287ffa66"
+    },
+    {
+      "page": "MATERIAL-TANGENT-INFERENCE.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "224b071b5dc3254b457ca113931a9bb76899ba239d931a1da256a22a0458b647"
+    },
+    {
+      "page": "MATERIAL-TANGENT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "95c8523bce238952fc8e3e24ec1ae8b29dbfb1113b0e0eb3c8e6fb97e9605619"
+    },
+    {
+      "page": "MIXED-GEOMETRY-PROOF.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "f5bf939f06711fd9c12a9a1c874550b0ee7f8056b64d3c6709923f7d342e1245"
+    },
+    {
+      "page": "MIXED-MECHANICS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "8a682d25119e5dcd5c04b8cc982df3f4e119b25f77ae1e01fda206797428b5e0"
+    },
+    {
+      "page": "MODEL-CANDIDATES.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "1ae6911d403bbdcaed4e709f677359c078942c326ac2e0ce1c84a483e541b555"
+    },
+    {
+      "page": "MOVIE-GEOMETRY-FEASIBILITY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "9e1315fc287e26b59b85b473494c2512a33a2480b07fda212b88c34c1a4478a7"
+    },
+    {
+      "page": "NODAL-OBSERVER-ERROR-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "9e17476241dc2379a4da823d609f973f5fcc103e5f4482fed03e0e9a1e720e41"
+    },
+    {
+      "page": "NODAL-OBSERVER-ERROR-TRANSFER.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "63beecfd7ca4d54d135345efffa6faaa0a9d98ee22baad82e4d305392108b508"
+    },
+    {
+      "page": "NUMERICAL-ACCURACY-PATH.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "6a314175d3c3e96e6252e6c3baf716b2d89fd002c2a4be2e849e7cea5cc14f5c"
+    },
+    {
+      "page": "ORIGINALITY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "727f39aa41c76b2fd88690651b7ff036b44ec61eec9200ed58c7d34774b3a248"
+    },
+    {
+      "page": "OUTLIER-SENSITIVITY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "7192cc4b9d0c5dd2d3a563ebabeae9832c7c8a4c95c673ece59475d3130196d6"
+    },
+    {
+      "page": "PARAMETER-INFERENCE-CHECKPOINT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "ea9708220234292104cfda4fe3f7fcef1719d430cb2752c1fb289221039c88c6"
+    },
+    {
+      "page": "PARAMETER-INFERENCE-CHECKPOINT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "9dce63038ab113e337971b4feffcfa8b6358772e44c608c09693acb869153cab"
+    },
+    {
+      "page": "PARAMETRIC-ACTUAL-M-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "8aa8304860a44f0e2824c1e8a33baf3bf02d231c66a92a94063e56f0818f7db0"
+    },
+    {
+      "page": "PARAMETRIC-NORM-FEASIBILITY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "b05c2cd2d20771e715a42ddeffb08bb07cbbc0f41d7690094bd1d5afed12fdbf"
+    },
+    {
+      "page": "PARAMETRIC-ROOT-CELLS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "b79a5ac7d4496540355e13b0cce4f2a4ee1068de69119948757b2b829a1ca7b5"
+    },
+    {
+      "page": "PHYSICAL-DOMAIN-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "69f056cbe132e5763b729ddfc2f77ecd504ffbe6d0be626dce5e67f2af5f91e0"
+    },
+    {
+      "page": "PHYSICAL-INFERENCE-READINESS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "7200112c7fb30d72862d45b99bfb721080a85476ccd4be9291ee444a9d199598"
+    },
+    {
+      "page": "PHYSICAL-PARAMETER-DOMAIN.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "5a005c05b954a943a08741b008dce917e0ad378dfa57f641debfe7fc59ba1710"
+    },
+    {
+      "page": "PROTOCOL-ERRATA.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "d4b6111cbfcf271d38ef4f10be44c4b9c556171d54c9a0377ad09ba282eb7a45"
+    },
+    {
+      "page": "PUBLIC-SUPPLEMENT-AUDIT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "d1ac38f57735e09c8bed30b5e5c357a0ae5794933c975b5679550bcc15c417a7"
+    },
+    {
+      "page": "QUADRATIC-ACCURACY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "5851e24933f9d79415c9fcb907683d0f94de4a3a1da3e9a62f380d233b138796"
+    },
+    {
+      "page": "QUADRATIC-ENDPOINT-OBSERVER.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "769cbb2a6c52d5cfc73f580be20701001178fd951c3526f6a5b9a8010cc24f5c"
+    },
+    {
+      "page": "QUADRATIC-FITTED-LOAD-READINESS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "2a292b2b77fdd1cbbf55f2bf9d4c9743ebb093c2790af463c8fa612b173a4a15"
+    },
+    {
+      "page": "QUADRATIC-INDEPENDENT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "4e9a9989b59ceb6aa74df5a842c0104cbbadcb47fd063e2f7d60ee3e07bb3bb8"
+    },
+    {
+      "page": "QUADRATIC-MEAN-DERIVATIVES.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "cb1a0bc67381703ec5c2f41f5dd0a90421aba7725f913b98593c6cbc9aef51e7"
+    },
+    {
+      "page": "QUADRATIC-SOLVE-POLICY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "6ce508d504915d03562d6ad4e71b80b654bb9ce37bb615800d43817f0c09b6e4"
+    },
+    {
+      "page": "RAW-DATA-REQUIREMENTS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "7c131d0f6f6b9f6a6142d779db235ba640fc6a7a3e3991a26f6fe7650785e681"
+    },
+    {
+      "page": "READINESS-CHECKPOINT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "6cea5b7405ed4d704b4bd1e8a0a2ce522da380f920e2fce200798370e2e07790"
+    },
+    {
+      "page": "READINESS-CONTRACT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "ba4a95943c3670f03227c41eabdaf3c36f6a42795f5600303a6fd38f7cb3f6e3"
+    },
+    {
+      "page": "RECENTERED-OBSERVERS-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "70d6e29dd2aa0d50a4f3864b845a1d3f3fe6f1f400ce953c6175829156a1b7f9"
+    },
+    {
+      "page": "ROOT-BODY-GEOMETRY-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "271f6776b1af575ad4d991072c8c888a8c51ab65a132f5d8dffef16f7a8186b4"
+    },
+    {
+      "page": "ROOT-BODY-GEOMETRY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "164ad462ed90623ee1ba890836f4790cacb1f4c24c6c7ce50ee18f807672f2d2"
+    },
+    {
+      "page": "ROOT-OBSERVER-APPLICATION-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "ea75caae0bf4957b29dc2e81a93cb3260a6c4ec1ac533347302717d4aa7118be"
+    },
+    {
+      "page": "SAFE-INTEGRATION-REPLAY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "e6b8141382547f9b611dc6d738353d9ff58194fb528f9a34ca928d4f68849390"
+    },
+    {
+      "page": "SCALAR-MATH.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "85ea6f39866eeb9b366b84ed51c3265cecd3cefec0d49e2c38bb6722e889ea59"
+    },
+    {
+      "page": "SCIENCE-OVERVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "c240c3802d0e15db6a2531cde69a140b1398c0545f0559c2b75ef6703548ec8b"
+    },
+    {
+      "page": "SHARED-CELL-COHORT-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "419cd2609f1536ee589507340d118c15d8d071139de2bb6ec46da52d5035445b"
+    },
+    {
+      "page": "SHARED-CELL-COHORT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "9afdbb1bea446a98851163140c3e85c32533ee7af4a7988ee74578a14fc5de76"
+    },
+    {
+      "page": "SLICE-OBSERVER.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "1860c57183298d390b9502514e7998c5c5fec30acc3223ac344c9483b293985f"
+    },
+    {
+      "page": "SPARSE-NEWTON.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "7c6069afaab31fb2ba381d84ddd9cc467eb6bbbc8b1b9d42dd1b5bdaa519fdf3"
+    },
+    {
+      "page": "SPARSE24-GAIN1-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "aec47718346717901d26d8d987fd6bde46e55b45619f52924a56d414239aae32"
+    },
+    {
+      "page": "SPATIAL-CALIBRATION.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "89f330d9c21605ad5bf1a3f0685d9ff8db481010e8b2085c11ec42b416cfe160"
+    },
+    {
+      "page": "SPATIAL-V1-RESULTS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "4172ee3c4d873b67d6618b90793a577b4d2a4eebb8c7f6f864fa326fd2881aa9"
+    },
+    {
+      "page": "SPATIAL-V1-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "8f0aae88d195e29ef86eb250d779c1c092ae1005a25930bf7ca6c52df7012650"
+    },
+    {
+      "page": "SPATIAL-VALIDATION-CONTRACT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "6aebf55d8da4c1dd1bbd9b0ddbe2b2c768c43c540517cb0df65dd7be6d1cda31"
+    },
+    {
+      "page": "STATIC-MEAN-COMPATIBILITY.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "f5832433398df709e2518455af83a49d3eda3e2f8372e37c451b5259d2135950"
+    },
+    {
+      "page": "STATIC-MEAN-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "d8e695198c08754cbb55b4839b3eba45ffc185755e6c9ca0912234350ba5d473"
+    },
+    {
+      "page": "TEMPORAL-MEAN-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "6282708547120fed01f7656d2293612f1be1e7d81cfcc4f7dc3fb1a9c91282a3"
+    },
+    {
+      "page": "TEMPORAL-MEAN-WITNESS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "c2e313d3508c57a7839e734e536b751a3d8950a22ab125268c624767fa9c715c"
+    },
+    {
+      "page": "TEMPORAL-ORDER-ROBUST-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "983ef1ae690affed88a0fe532633548c1b412987174d95c612fbb4d441e326a4"
+    },
+    {
+      "page": "TEMPORAL-ORDER-ROBUST-WITNESS.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "02f0dc8cb721a56bc0ab888933d0c907cc9cd823c7d7ae97ec5131ebb1625be3"
+    },
+    {
+      "page": "TENSION-CALIBRATION.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "e4003c641ab43c31f896349b7677f1dd239c8d4e741d2062d2329a61713d67fc"
+    },
+    {
+      "page": "TRANSFER-CLAIM-AUDIT.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "5ea597e0c2edf99b8629ff15d23fe7fdcd1d437477c84c2838cf72822033f131"
+    },
+    {
+      "page": "VALIDATED-IDENTIFIED-SET-REVIEW.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "26685b9af757407ef93a1dfaa27063d9fe483be87f37dc750b598b22782a3bad"
+    },
+    {
+      "page": "VALIDATED-IDENTIFIED-SET.html",
+      "raw_TeX_commands_in_prose": [],
+      "HTML_sha256": "0f5903e1179d1e0c446fe629cff6b49a56bc01f229e3b1570e44bd53ab524042"
+    }
+  ],
+  "verifier_source_sha256": "bcf803b308a4122db1d57e6e92ad2004b5e4c8db4bd239ef3f3cc5bd56b0cab7",
+  "scope": "Static prose scan outside declared math/code/scripts/styles. Detects backslash-letter macros, not every possible plain-text mathematical expression. Actual browser parsing/rendering is checked separately."
+}

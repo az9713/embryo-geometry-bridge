@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ROOT_OBSERVED_INDEPENDENT_LATER_OBSERVER_READBACK_EXIT",
+  "pid": 22072,
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "e8bf08",
+  "wave_id": "wave_03",
+  "receipt_sha256": "bebafcaa9721f829a9d5f69555f48df2346b3098615e5fb39b5d632875beb74a",
+  "terminal_sha256": "31e9e5a7e6c7c60d3cd1e9a0cb2b3a65496ccf623ea495721bc0ab3a5d0628fd",
+  "started_sha256": "f1cce71fb6eadf979a454f73feb487f409d7f718f996ba04fafa807ee743f45a",
+  "producer_os_sha256": "dea0cebe28e89a8afdc36080bddea257782dd9d8001e6921a605c982202ea236",
+  "native_global_os_sha256": "8352f1d4fda4f0d198d802fd79ba3a2c9f3f8278497f62ed6e017b840c6df2b6"
+}

@@ -1,0 +1,156 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CALIBRATION-UNCERTAINTY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>What uncertainty does the small-region calibration require?</h1>
+<p><strong>A single nondecreasing curve cannot fit all 17 small-region maximum-shortening records with a uniform residual below 3.131943715 µm.</strong> Adding nonnegative concavity and a zero-response origin raises the sharp floor to approximately 3.648762214 µm. A homogeneous linear response needs approximately 4.587984160 µm. These are exact deterministic compatibility statements for declared curve classes and the published numerical records. They are <strong>not</strong> estimates of segmentation noise, biological variation, or 95% confidence intervals.</p>
+<p>This work uses only the 17 small-region OptoGEF2 observations. No larger-region outcomes or spatial-solver files enter the calculation. The <a href="../scripts/calibration_uncertainty.py">script</a>, <a href="../evidence/calibration_uncertainty_bounds.json">exact bounds and witnesses</a>, and <a href="../evidence/calibration_uncertainty_verification.json">verification receipt</a> retain the calculations. The <a href="../runs/calibration_uncertainty/compatibility_envelopes.png">original visualization</a> displays all four observables and their admissible envelopes; the shaded regions are not statistical confidence bands.</p>
+<h2>Observation unit and measurement definition</h2>
+<p>The primary source is Countryman et al., Nature Communications 16, 7665 (2025), <a href="https://doi.org/10.1038/s41467-025-62483-6">DOI</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12361397/">article</a>. Methods Sec22 explicitly says, “All measurements were taken from distinct samples.” It also identifies 17 OptoGEF2 embryos, including one without visible shortening. The reporting summary, page 2, describes random selection of individual embryos, genotype-based group allocation, automated apical segmentation blinded to condition, and manual basal segmentation blinded to activation magnitude but not genotype. The Fig2 caption does not itself contain an explicit sentence equating every marker with an individual embryo; the experiment/sample descriptions nevertheless support treating the 17 records as distinct biological samples.</p>
+<p>Missing specimen IDs limit cross-file identity verification. They are <strong>not evidence of dependent samples</strong>. Conversely, distinct embryos do not establish independent, identically distributed measurement errors. Sec17 normalizes activation fluorescence against a reference curve averaged across experiments; a shared calibration can couple measurement errors even when specimens are distinct.</p>
+<p>The response is not simply a cell's final height. Methods Sec16 constructs an embryo-specific counterfactual height curve using nonactivated tissue and its ongoing cellularization. Maximum shortening is the largest reference-relative reduction across <strong>both spatial location and observation time</strong>. Region-averaged shortening is a separate temporally maximized, spatially averaged summary; maximum and averaging must not be assumed to commute without a source-compatible implementation. Apical and basal displacement maxima are separate observables; they need not occur at the same position or time and cannot be added to reconstruct maximum shortening.</p>
+<p>Sec14 gives sampling and protocol information, including nominal 2 µm z-plane spacing and 22 s acquisition intervals. Sec15 describes manual correction and manual basal annotation. Neither spatial sampling nor the integer-valued apical entries supplies a validated annotation-error bound. No numerical per-record segmentation, coordinate, dose-error interval, or complete measurement-noise law was found in the inspected methods, source worksheets, supplementary captions, and reporting summary. This is a bounded source audit, not a claim that such errors are intrinsically unknowable.</p>
+<h2>A standard sharp monotone compatibility theorem</h2>
+<p>Let the fixed measured doses be <span class="math" data-tex="I_i"></span>, responses be <span class="math" data-tex="y_i"></span>, and consider the contract</p>
+<div class="math display" data-tex="
+f\text{ nondecreasing},\qquad &#124;f(I_i)-y_i&#124;\le\delta\quad(i=1,\ldots,n).
+"></div>
+
+<p>There is no stochastic error assumption. On the observed dose interval, the smallest compatible uniform residual is</p>
+<div class="math display" data-tex="
+\boxed{\delta_* = \frac12\max_{I_i\le I_j}(y_i-y_j)_+.}
+"></div>
+
+<p><strong>Necessity.</strong> For every ordered pair, monotonicity and the two residual inequalities imply</p>
+<div class="math display" data-tex="
+y_i-\delta\le f(I_i)\le f(I_j)\le y_j+\delta,
+"></div>
+
+<p>so <span class="math" data-tex="2\delta\ge y_i-y_j"></span>.</p>
+<p><strong>Sufficiency and exact envelopes.</strong> For <span class="math" data-tex="\delta\ge\delta_*"></span>, define</p>
+<div class="math display" data-tex="
+L_\delta(I)=\max_{I_i\le I}(y_i-\delta),\qquad
+U_\delta(I)=\min_{I_j\ge I}(y_j+\delta).
+"></div>
+
+<p>Both are nondecreasing and <span class="math" data-tex="L_\delta\le U_\delta"></span>. At each observed dose they lie within every applicable observation interval. Thus each endpoint envelope, and their midpoint, gives an admissible fitted vector. Between observations, monotone interpolation gives an admissible curve. Any admissible curve must satisfy <span class="math" data-tex="L_\delta\le f\le U_\delta"></span>; each endpoint value can be attained by an admissible extension, so these are sharp pointwise bounds. At coincident doses, all records at that dose must share one fitted value; the implementation explicitly handles this case. Outside the observed dose interval, one side of the unconstrained envelope is unbounded unless additional assumptions are supplied.</p>
+<p>This is standard unweighted <span class="math" data-tex="L^\infty"></span> isotonic regression, not a new theorem. See Stout, <a href="https://doi.org/10.1016/j.jcss.2017.09.001"><em>Weighted L∞ isotonic regression</em>, JCSS 91 (2018), 69–81</a>, especially the violating-pair lower bound and minimum/maximum regressions. A <a href="https://web.eecs.umich.edu/~qstout/pap/LinfinityIsoReg.pdf">primary author-hosted manuscript</a> was checked in the literature audit.</p>
+<h2>Exact small-data obstruction and its meaning</h2>
+<p>The strongest maximum-shortening witness is:</p>
+<table>
+<thead>
+<tr>
+<th>Source-column record</th>
+<th style="text-align: right;">Dose</th>
+<th style="text-align: right;">Maximum shortening</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F</td>
+<td style="text-align: right;">0.46402059</td>
+<td style="text-align: right;">7.64808362 µm</td>
+</tr>
+<tr>
+<td>I</td>
+<td style="text-align: right;">0.47133397</td>
+<td style="text-align: right;">1.38419619 µm</td>
+</tr>
+</tbody>
+</table>
+<p>The slightly larger measured dose has a 6.26388743 µm smaller response. Therefore <span class="math" data-tex="\delta_* = 3.131943715"></span> µm. This says that <strong>any common monotone deterministic curve has at least that much worst-case residual</strong>. It does not identify how much comes from measurement error, dose error, specimen heterogeneity, missing mechanics, or a wrong common-curve assumption.</p>
+<p>Exactness refers to the numerical representation. The frozen CSV uses canonical shortest decimal representations of the source workbook's floating-point values. The original OOXML spells these two responses as 7.6480836200000004 and 1.3841961899999999, giving the exact token-based floor 3.13194371500000025 µm. The 2.5×10⁻¹⁶ µm difference is serialization, not meaningful biological precision. Both calculations and all 85 source-cell comparisons are retained.</p>
+<p>The witness also depends on measured dose order. The dose separation is 0.00731338. If each dose has an unknown absolute error at most 0.00365669, the witness order cannot reverse, so its lower bound survives. A larger dose-error allowance can reverse this particular pair; it does not establish that every other obstruction disappears. No such dose-error allowance has been independently measured here.</p>
+<p>Applying the same calculation separately gives:</p>
+<table>
+<thead>
+<tr>
+<th>Declared monotone observable</th>
+<th style="text-align: right;">Sharp CSV residual floor</th>
+<th>One strongest witness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum shortening</td>
+<td style="text-align: right;">3.131943715 µm</td>
+<td>F → I</td>
+</tr>
+<tr>
+<td>Region-averaged shortening</td>
+<td style="text-align: right;">2.228529505 µm</td>
+<td>K → L</td>
+</tr>
+<tr>
+<td>Separate apical maximum</td>
+<td style="text-align: right;">3 µm</td>
+<td>F → I; M → P also attains the floor</td>
+</tr>
+<tr>
+<td>Separate basal maximum</td>
+<td style="text-align: right;">1.24138052 µm</td>
+<td>F → Q</td>
+</tr>
+</tbody>
+</table>
+<p>Monotonicity of a biological component response is a conditional modeling restriction, not established by the table itself. The separate floors cannot be summed to infer a height error, because the component maxima are not additive.</p>
+<h2>Why the floor can apply to a quasistatic peak model</h2>
+<p>A common instantaneous finite-element shortening curve need not be monotone. There is, however, a different elementary monotonicity statement for a correctly defined peak observable. Suppose one common quasistatic branch <span class="math" data-tex="q(A;\theta)"></span> is available over activation amplitudes <span class="math" data-tex="0\le A\le gI"></span>, with <span class="math" data-tex="g\ge0"></span>, and define</p>
+<div class="math display" data-tex="
+M(I;\theta)=\sup_{0\le A\le gI}\mathcal O(q(A;\theta)).
+"></div>
+
+<p>If <span class="math" data-tex="I_1\le I_2"></span>, the first amplitude interval is contained in the second, so <span class="math" data-tex="M(I_1;\theta)\le M(I_2;\theta)"></span>, regardless of whether the instantaneous observable is monotone. Including a spatial maximum inside <span class="math" data-tex="\mathcal O"></span>, or using a separate apical/basal observable, leaves this argument unchanged. This is the standard maximum-over-nested-sets observation, not new mathematics.</p>
+<p>Consequently, the 3.131943715 µm floor is necessary for a <strong>common-branch, scaled-cap, full-path quasistatic peak model</strong> with a uniform residual contract and fixed doses. The source's spatial-temporal maximum motivates considering such an operator. It does not prove its assumptions: finite observation windows, dose-dependent pulse histories or branches, hysteresis, reference-growth differences, specimen geometry and material heterogeneity can destroy the common nested-set representation. The current audit does not prove instantaneous FE monotonicity, path coverage, or equivalence between an equilibrium peak and the experimental temporal maximum.</p>
+<h2>A sharper conditional concavity obstruction</h2>
+<p>For the relaxed class of nonnegative nondecreasing concave curves with <span class="math" data-tex="f(0)=0"></span>, the sharp floor is</p>
+<div class="math display" data-tex="
+\delta_{\rm conc}
+=\frac{15244809486711951}{4178077000000000}
+\approx3.648762214461809\;\mu\mathrm m.
+"></div>
+
+<p>Let record I have dose <span class="math" data-tex="x_j=0.47133397"></span>, response <span class="math" data-tex="y_j=1.38419619"></span>, and record M have <span class="math" data-tex="x_k=0.78208913"></span>, <span class="math" data-tex="y_k=12"></span>. With <span class="math" data-tex="\beta=x_j/x_k"></span>, origin-anchored concavity forces <span class="math" data-tex="f(x_j)\ge\beta f(x_k)"></span>. Combining the two observation intervals gives</p>
+<div class="math display" data-tex="
+y_j+\delta\ge\beta(y_k-\delta),\qquad
+\delta\ge\frac{\beta y_k-y_j}{1+\beta}=\delta_{\rm conc}.
+"></div>
+
+<p>This lower bound is attained for all 17 records by the exact rational curve</p>
+<div class="math display" data-tex="
+f(x)=\min(gx,C),\qquad
+g=\frac{y_k-\delta_{\rm conc}}{x_k}\approx10.6781151472,
+\qquad C=\max_i(y_i-\delta_{\rm conc})\approx9.08448084554\;\mu\mathrm m.
+"></div>
+
+<p>It is nonnegative, nondecreasing and concave. All 68 rational linear-program constraints—34 observation inequalities, 17 monotonicity inequalities, 16 slope-concavity inequalities and nonnegative residual—are verified exactly. An exact dual witness combines the two observation inequalities and the origin-concavity consequence to produce <span class="math" data-tex="-\delta\le-\delta_{\rm conc}"></span>. A separate floating-point linear program agrees; the rational primal/dual witnesses, rather than the floating-point optimizer, establish sharpness. Repeating the exact check using original OOXML numeric tokens gives the same conclusion up to serialization differences, retained in the receipt.</p>
+<p>This relaxed class is relevant to the separately derived column null, conditionally. Write</p>
+<div class="math display" data-tex="
+I(S)=\frac{(1-2\nu)x^{3/2}+\nu x^{5/2}-(1-\nu)}{a},
+\qquad x=(1-S/h)^{-1},
+"></div>
+
+<p>with <span class="math" data-tex="a,h&gt;0"></span>, <span class="math" data-tex="0\le\nu\le1"></span>, and <span class="math" data-tex="0\le S&lt;h"></span>. Direct differentiation gives</p>
+<div class="math display" data-tex="
+I&#x27;(S)=\frac{x^{5/2}}{2ah}[3(1-2\nu)+5\nu x]&gt;0,
+"></div>
+
+<div class="math display" data-tex="
+I&#x27;&#x27;(S)=\frac{5x^{7/2}}{4ah^2}[3(1-2\nu)+7\nu x]&gt;0.
+"></div>
+
+<p>For <span class="math" data-tex="x\ge1"></span>, the two bracketed factors are bounded below by <span class="math" data-tex="3-\nu&gt;0"></span> and <span class="math" data-tex="3+\nu&gt;0"></span>, respectively. Hence the inverse response has <span class="math" data-tex="S&#x27;&gt;0"></span>, <span class="math" data-tex="S&#x27;&#x27;=-I&#x27;&#x27;/(I&#x27;)^3&lt;0"></span>, and <span class="math" data-tex="S(0)=0"></span>. The relaxed concavity floor is therefore a necessary compatibility bound for that column family. The piecewise-linear attaining curve is not asserted to belong to the more restrictive column family. Concavity has not been established for the full spatial FE maximum or for a general peak-over-branches operator.</p>
+<p>For comparison, the stricter homogeneous linear null <span class="math" data-tex="f(I)=gI"></span>, <span class="math" data-tex="g\ge0"></span>, has exact minimum uniform error approximately 4.587984159785218 µm. Its admissible gain interval at a declared <span class="math" data-tex="\delta"></span> is</p>
+<div class="math display" data-tex="
+\left[\max\!\left(0,\max_i\frac{y_i-\delta}{I_i}\right),
+\min_i\frac{y_i+\delta}{I_i}\right].
+"></div>
+
+<p>The interval first becomes nonempty at that floor, with gain approximately 9.47720094283 µm per normalized dose. This response gain is a null-comparator coefficient, not a direct material modulus or the active-stress parameter of the coupled solver.</p>
+<h2>Concrete uncertainty contracts and the remaining physical inference</h2>
+<p>A defensible report can present the family of deterministic contracts <span class="math" data-tex="\mathcal C_\delta"></span>, rather than invent one physical error bar. For a common monotone curve, <span class="math" data-tex="\mathcal C_\delta"></span> is empty below the sharp floor; at and above it, the receipt gives exact pointwise envelopes at <span class="math" data-tex="\delta_*"></span>, <span class="math" data-tex="\delta_*+0.5"></span> µm, <span class="math" data-tex="\delta_*+1"></span> µm and <span class="math" data-tex="2\delta_*"></span>. Nonnegativity can additionally clip the lower envelope at zero without changing these data's minimum floor. This is an extra physical restriction, not an observed zero-dose datum.</p>
+<p>For an actual physical family, the desired object is instead</p>
+<div class="math display" data-tex="
+\Theta_\delta=\{\theta\in\Theta_{\rm prior}:
+&#124;\mathcal O_i(q(\theta,I_i))-y_i&#124;\le\delta\;\forall i,
+\ \text{declared geometry and solver-validity conditions hold}\}.
+"></div>
+
+<p>The curve bounds can exclude a noise contract for that family only when the family's required shape property has been proved. They do not determine <span class="math" data-tex="\Theta_\delta"></span>, identify basal stiffness or prestress, give valid probabilities, or justify an arbitrary finite parameter grid. Completing physical inference still requires a justified observation operator, specimen/reference variation or a common-specimen assumption, dose uncertainty, a declared discrepancy contract, independently constrained geometry/material ranges, accurate branch solutions, and a validated search or enclosure of every remaining parameter combination. One least-squares optimum or a few carried branches is not that set.</p>
+<p>The practical advance is a quantitative rejection threshold: a common-path peak model claiming uniformly smaller residual is already incompatible with the published small-only records under its own fixed-dose assumptions. Its originality lies neither in isotonic regression nor in this elementary application. It improves the project's uncertainty accounting and clarifies which new measurements or physical assumptions would actually sharpen inference.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

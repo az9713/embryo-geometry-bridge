@@ -1,0 +1,28 @@
+{
+  "status": "PASS_INDEPENDENT_KL_LOADING_GEOMETRY_PRELAUNCH",
+  "pilot_id": "negative_KL_exact_spatial_loading_secant_v1",
+  "bindings": {
+    "source_sha256": "d39ae6c3bfa3d932eaba03ddd59fc275fd5b3b1c094e7f9a544810d8c10dc8bc",
+    "protocol_sha256": "fe64074d1a169a7672039c73dc07ca35c728cc1c299cf2a28025e0a0e7a97e43",
+    "preflight_sha256": "911f6839bd9cc49dafe626e688cc30d88a283ad87b5aaf92fecc5b629a684881",
+    "plan_sha256": "c3b1870e5ad815bc5df5ec94d4731b0228e529ba2e0651f847102b8e0ecaa277",
+    "envelope_sha256": "f50c04b1802176abf4f5494898c8128018d4db8f8d0bb410af7774e5a3fff925"
+  },
+  "checks": {
+    "same_exact_K_center_R_drive_and_KL_physical_reference": true,
+    "secant_envelope_contains_all_closed_fibers_and_radial_bounds_checked": true,
+    "fresh_body_charts_and_trace_geometry_only": true,
+    "write_once_run_and_terminal_with_no_subprocesses": true
+  },
+  "geometry_only_authorized": true,
+  "mechanical_kernels_authorized": false,
+  "independent_audit_file": "runs/exact_loading_tube_pilot_geometry_source_review_v1/audit_result.json",
+  "independent_audit_sha256": "b6783fb61d0510fd95e786cf8335213e7ae8f4b356ec84a2a2efc863469ea587",
+  "independent_audit_source_sha256": "e1dec98d767a28c50b1757aa53a82f7d0b3f9ccbda76bf89ea52c01d600ba6e0",
+  "observation": {
+    "observed_exit_code": 0,
+    "unified_exec_chunk_id": "2339f9",
+    "direct_tool_observation": true
+  },
+  "scope": "Cold review of the exact K/L source for fresh 650-coordinate envelope geometry only; no loaded chart geometry or mechanics job run. Actual exit and independent geometry replay still required."
+}

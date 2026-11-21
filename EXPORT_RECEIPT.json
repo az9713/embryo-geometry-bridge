@@ -1,0 +1,39 @@
+{
+  "status": "PASS_CURATED_PORTABLE_PUBLICATION_EXPORT",
+  "scope": "Curated snapshot creation and validation before Git initialization or remote publication. No full historical raw integration closure is claimed.",
+  "scoped_verifier_exit_code": 0,
+  "scoped_verifier_tool_chunk": "db1bfc",
+  "verification": {
+    "status": "PASS_PUBLICATION_SNAPSHOT_SCOPE",
+    "scope": "Manifest hashes, static local links, and selected scalar summaries. No raw integrations or historical process reproduction.",
+    "included_hashes": 1651,
+    "html_pages": 120,
+    "local_links_and_assets": 1647,
+    "selected_scalar_replay": {
+      "Wave03_selfmaps": 4,
+      "Wave03_observer_rows": 64,
+      "stress_windows": 672,
+      "whole_box_geometry_slots": 6,
+      "passed_four_slab_geometry_only": true
+    }
+  },
+  "recognized_privacy_screen": {
+    "status": "PASS",
+    "unified_exec_final_chunk_id": "101043",
+    "observed_exit_code": 0,
+    "text_files_checked_before_final_generated_metadata": 1591,
+    "flagged_files": 0,
+    "matching_private_values_printed": false,
+    "limits": "Recognized text patterns and inspected raster metadata."
+  },
+  "portable_browser_receipt": "verification/browser/receipt.json",
+  "portable_browser_receipt_sha256": "b7cf98fbe4032fc3f020a39fffffb3ff4868683821dd8a3aa7dddd17494f2fba",
+  "portable_browser_tool_chunk": "f4c430",
+  "portable_browser_observed_exit_code": 0,
+  "no_author_contact": true,
+  "source_research_complete": false,
+  "actual_git_or_network_mutations_at_export": false,
+  "manifest_sha256": "06b48b69fdcab2df6716e8e71ee044b61f94994973428d39ff2198b2071dbee7",
+  "included_data_files": 1651,
+  "included_data_bytes": 163575879
+}

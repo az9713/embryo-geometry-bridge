@@ -1,0 +1,9 @@
+{
+  "file": "controlled_furrowing\\runs\\quadratic_robust\\solver_policy.png",
+  "sha256": "46e1b030564b03968fda5344844da51c60dd9ffb24ea1d9188a07c3b3340f297",
+  "inputs": {
+    "controlled_furrowing\\runs\\quadratic_robust\\lambda_5000.0_target_5.0\\final.json": "8dff2258d65bcd8928ab323ba9487548e2f9dc1f14a1744fcc7ec5aaf3ed10d1",
+    "controlled_furrowing\\runs\\quadratic_robust\\lambda_5000.0_target_10.0\\final.json": "2508aae756447119cd67cf2c50dc8cbfc8ab1e7b47b27749f8a0e4a26d88044a"
+  },
+  "scope": "Actualtargetfreeattempts, notfailure-injectiontests; no biologicalmeasurementortrajectoryinterpretation"
+}

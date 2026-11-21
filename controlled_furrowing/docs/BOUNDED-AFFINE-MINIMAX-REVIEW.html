@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BOUNDED-AFFINE-MINIMAX-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of bounded affine minimax calibration</h1>
+<p><strong>PASS for the defined affine optimization problems and their source-to-coefficient dataflow.</strong> All four actual cohort certificates were reconstructed independently, including the historical and hardened-helper extractions. This is not a certificate of mechanical derivative accuracy, nonlinear improvement, a physical optimum or the full compatible parameter set.</p>
+<p>The <a href="../evidence/bounded_affine_minimax_independent_review.json">independent receipt</a> retains executed replay programs, exact certificates, source hashes, adversarial checks and findings. It binds the current <a href="../scripts/bounded_affine_minimax.py">helper</a>, the frozen <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_descent_v1/results.json">cohort results</a>, and the authoritative <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_descent_v1/exact_extraction_v2/exact_candidates.json">version-2 exact candidates</a>. Mechanical tangent verification is a <a href="MATERIAL-COHORT-DESCENT-REVIEW.html">separate independent review</a>.</p>
+<h2>What the certificate proves</h2>
+<p>For explicitly supplied residual intercepts <span class="math" data-tex="r_i"></span>, derivative coefficients <span class="math" data-tex="J_{ij}"></span> and a bounded step box, the problem is</p>
+<div class="math display" data-tex="
+\min_{\ell\leq s\leq u}\max_i&#124;r_i+J_i s&#124;.
+"></div>
+
+<p>Introduce <span class="math" data-tex="t\geq0"></span> and write all residual and coordinate constraints as <span class="math" data-tex="Ax\leq b"></span>, where <span class="math" data-tex="x=(s,t)"></span> and <span class="math" data-tex="c=(0,\ldots,0,1)"></span>. A certificate supplies a feasible <span class="math" data-tex="x_*"></span> and nonnegative multipliers <span class="math" data-tex="\lambda"></span> satisfying</p>
+<div class="math display" data-tex="
+A^T\lambda=-c,\qquad -\lambda^Tb=c^Tx_*.
+"></div>
+
+<p>For every feasible <span class="math" data-tex="x"></span>, multiplication of <span class="math" data-tex="Ax\leq b"></span> by <span class="math" data-tex="\lambda\geq0"></span> gives</p>
+<div class="math display" data-tex="
+-c^Tx=\lambda^TAx\leq\lambda^Tb,
+\qquad c^Tx\geq-\lambda^Tb=c^Tx_*.
+"></div>
+
+<p>Thus feasibility, nonnegative dual multipliers, stationarity and objective equality prove a global optimum of this exact rational LP. No floating solver status is needed for the proof once that certificate is available.</p>
+<p>The implementation uses floating HiGHS to propose an active basis, then solves and checks exact rational systems. Bounded basis recovery can fail and return <code>UNRESOLVED</code>; it is not a complete symbolic LP algorithm. Failure to recover a certificate is not evidence of infeasibility. An unrepresentable floating proposal also returns <code>UNRESOLVED</code>. No numerical proposal is accepted solely because its floating residual is small.</p>
+<h2>Independent helper checks</h2>
+<p>The independent test program uses determinant/Cramer's-rule vertex enumeration rather than the helper's elimination/basis routine. It covers 29 analytic or exhaustively enumerated cases, 194 feasible enumerated vertices, and 145 solver calls including residual permutations, row sign flips, coefficient scaling and coordinate permutations. Cases include fixed boxes, zero sensitivities, duplicate constraints, interior rational optima, one-sided bounds and a five-coordinate analytic example.</p>
+<p>Four adversarial certificates each fail exactly one necessary obligation: primal feasibility, dual nonnegativity, stationarity or objective equality. Independent arithmetic and the root verifier agree on all four failures. The test program records 206 passing checks. A further 15 guard checks cover malformed sequences/certificates, dimensions, NaN/infinity, valid NumPy arrays and finite exact coefficients outside floating range.</p>
+<p>Two implementation findings were corrected before the authoritative extraction: string containers could be interpreted as digit sequences, and an enormous finite rational could crash floating conversion. Neither produced a false mathematical optimum for the valid decoded numbers. The original source bytes and its extraction remain preserved; the hardened helper is linked to a new versioned extraction. For receipt chronology, <code>initial_source_snapshot</code> captures the already hardened <code>a0156ac…</code> revision; <code>reported_findings_source_sha256</code> and <code>historical_source_archive</code> identify the original <code>ac2c3bf…</code> bytes on which the two findings were reproduced. The independent review verifies both sets of actual certificates without rewriting either history.</p>
+<h2>Actual cohort association and rounding checks</h2>
+<p>The cohort contains 17 biological records and 68 observed summaries. Four observer conventions reuse the same 17 baseline states at the primary disk/spatial-max gain; there are 272 candidate scalar residuals, not 272 independent observations. This common baseline differs from evaluating each convention at its earlier separately optimized gain.</p>
+<p>The review independently checked every source-column identity/dose, baseline-field hash, actual gain-dose association, observer-record hash and mechanical archive/verification hash. All 17 baseline graph observers were re-executed. Every coordinate order and finite-difference step was checked, and all 2,720 central-difference interval calculations were reconstructed from their retained plus/minus endpoint intervals.</p>
+<p>The actual affine tables were rebuilt without calling the root minimax or certificate checker: all 272 intercepts, all 1,360 selected derivative coefficients, all four 68-row label orders and every trust bound agree exactly. Intercepts use exact baseline-interval midpoints minus the canonical source values. Derivatives use the smaller-step interval midpoint converted to binary64, then retain that binary value as an exact fraction. The trust bounds similarly retain their binary representations. These are definitions of the affine surrogate; they are not rounding-error enclosures for an exact mechanical derivative.</p>
+<p>Both extractions use these saved fractions verbatim. Reinterpreting them through decimal floating strings would define a slightly different LP. The hardened helper's generic floating-input convention does not change already rational inputs.</p>
+<p>The independent arithmetic reconstructed the producer's weak-dual lower bounds and feasible upper bounds, and then checked exact primal/dual equality for both historical and authoritative extractions. The exponential/additive parameter proposal mapping was also reproduced.</p>
+<table>
+<thead>
+<tr>
+<th>Convention</th>
+<th style="text-align: right;">Common-baseline worst residual (µm)</th>
+<th style="text-align: right;">Exact affine optimum, rounded (µm)</th>
+<th style="text-align: right;">Predicted affine reduction (µm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk / spatial-max components</td>
+<td style="text-align: right;">5.379836</td>
+<td style="text-align: right;">5.183863</td>
+<td style="text-align: right;">0.195973</td>
+</tr>
+<tr>
+<td>Disk / regional-mean components</td>
+<td style="text-align: right;">6.467716</td>
+<td style="text-align: right;">6.076690</td>
+<td style="text-align: right;">0.391026</td>
+</tr>
+<tr>
+<td>Line / spatial-max components</td>
+<td style="text-align: right;">6.183270</td>
+<td style="text-align: right;">5.553978</td>
+<td style="text-align: right;">0.629291</td>
+</tr>
+<tr>
+<td>Line / regional-mean components</td>
+<td style="text-align: right;">6.183270</td>
+<td style="text-align: right;">6.026441</td>
+<td style="text-align: right;">0.156829</td>
+</tr>
+</tbody>
+</table>
+<p>For the predeclared primary disk/spatial-max convention, the proposed display parameters are <span class="math" data-tex="K_a=0.2210341836"></span>, <span class="math" data-tex="K_b=1.8096748361"></span>, <span class="math" data-tex="T_a=0"></span>, <span class="math" data-tex="T_b=2.2103418362"></span>, and gain approximately 7.8126545043 in the declared normalized solver units. The compression coefficient remains fixed at 5000 by assumption. The gain display is a convenience rounding; a subsequent direct protocol must bind its exact gain-transformation and target-rounding convention explicitly.</p>
+<h2>Scientific scope of this pass</h2>
+<p>The five coordinates are logarithmic changes in apical/basal area coefficients, an additive apical tension, a logarithmic basal tension and a logarithmic common gain. Their trust box is a numerical local-search choice. A logarithmic step of 0.1 multiplies a coefficient by <span class="math" data-tex="e^{0.1}"></span>; it is not exactly a 10% physical uncertainty. Fixing compression and geometry does not mean those quantities were identified by the data.</p>
+<p>The saved perturbed graph coefficients are diagnostic fields, not new equilibria. Finite-difference agreement at two steps does not bound truncation error or establish differentiability of a spatial maximum. Exact smooth-mean differentiation does not make the floating mechanical tangents or nonsmooth maxima exact. The separate tangent review supplies additional numerical checks, with its own stated limits.</p>
+<p>No equilibrium under the proposed new material parameters was solved by this cohort calculation. Consequently all four reductions in the table remain <strong>affine predictions</strong> until a separately frozen nonlinear replay tests them. An exact LP optimum can still propose a step that worsens the nonlinear response. A successful later replay would establish one local improvement under a conditional static observer; it would not prove a nonlinear global optimum, biological validity, source temporal-operator equivalence or completion of the original identified-set requirement.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

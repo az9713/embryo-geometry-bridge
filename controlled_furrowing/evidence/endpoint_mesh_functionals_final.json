@@ -1,0 +1,38 @@
+{
+  "status": "PASS_CONDITIONAL_DISCRETE_FUNCTIONAL_AUDIT",
+  "checks": {
+    "27_synthetic_checks_pass": true,
+    "7_saved_field_result_gates_pass": true,
+    "54_independent_numeric_checks_pass": true,
+    "complete_results": true,
+    "source_matches_prefield_protocol": true,
+    "production_analysis_has_no_optimization_call": true,
+    "doc_local_links_exist": true,
+    "doc_display_math_balanced": true,
+    "utf8_no_replacement_character": true
+  },
+  "file_sha256": {
+    "scripts/endpoint_mesh_functionals.py": "1239db0944bcb7e54a740b72056ce8804139ea0068ab5ea789c791e248518433",
+    "docs/ENDPOINT-MESH-FUNCTIONALS.md": "15ead52a37a678e527173f38947ab9d87f2851577860427584ee89b4a6feb26f",
+    "evidence/endpoint_mesh_functionals_independent.json": "b87df21401b207b87c3319d4c2a3601dd46df29f31b3828f454da1809114a80a",
+    "evidence/endpoint_mesh_functionals_initial_report_failure.json": "d32a991240a373e664940cb9981ef90b40e0b33935fc918b50db3e05d9ff2281",
+    "evidence/endpoint_mesh_functionals_protocol.json": "a68326de0f015a836e95765d2a8a846fea8d39bfd22f8c5ef1a434034be4d693",
+    "evidence/endpoint_mesh_functionals_results.json": "62fb665612b460ddc5b453f64e01d76c0a7799e639115979c75c60508aa2d018",
+    "evidence/endpoint_mesh_functionals_synthetic.json": "86e50da53f1cbfaf20d22ad339f807fac686090d9b7467877b285924bfc477a1",
+    "evidence/endpoint_mesh_functionals_verification.json": "841b49a96344931787b31f7a1b75f26f1ee1ee4e8520b461ba6a5c83194302d3",
+    "evidence/endpoint_mesh_functionals_visuals.json": "5f675619b88a15f6ab910b6dadd0cd662069ada6da7d4ead058d1c51737e44bd",
+    "runs/endpoint_mesh_functionals/endpoint_mesh_sensitivity.png": "1d57acfbbdf218c69744ece80d7852a58df90f8680b366e32819569e48f9f82f",
+    "runs/endpoint_mesh_functionals/endpoint_mesh_values.png": "51bbe5a6e3535ecd75513e24bb62fe4b7b4cd7618fc7173fd8a1449fc86d1050",
+    "runs/endpoint_mesh_functionals/finalize.py": "6a34229f69dd948b0b69ef22508f0d5dd25c45facb012fcc96f4f1d3404d0e19",
+    "runs/endpoint_mesh_functionals/independent_check.initial_numpy_bool_failure.py": "c402649ef803cda7e378299ea7e50d70f6ef71a7e41995ee35245835bd125f80",
+    "runs/endpoint_mesh_functionals/independent_check.py": "ac074decbeed54b8b5a5faa3fe9c9d906c71fc35c867edb7f33b9bd2550b8efd",
+    "runs/endpoint_mesh_functionals/mesh_12_observations.json": "1d0c624784bd70e1bc66340e48165866e25bd6db52232670a02eef9993092ff4",
+    "runs/endpoint_mesh_functionals/mesh_16_observations.json": "80df945c3bb983978c7ad9be376985f4702a22d04410f7dc5d0ad6a2100dd66e",
+    "runs/endpoint_mesh_functionals/mesh_24_observations.json": "dda1cb3f2b79e212a6419034e209f1f9bc578a94f81444eaf0d40542232a5b90",
+    "runs/endpoint_mesh_functionals/plot.py": "d7682b81d5c7cdedc9c33944c52385c318b8391cc48b2f2193cea7cef8f2342f",
+    "runs/endpoint_mesh_functionals/write_results.py": "1f467d92c1b28ff9b54bc2bb0c4b93ce81c1c6f29a21c4da3b14242380558d1d"
+  },
+  "visual_review": "Both PNGs inspected: all axes, titles and legends visible; plot marks concern stored field/functional sensitivity, not PDE errors.",
+  "scope": "Original Gate3 component only. No optimization, new experimental fit, continuum error bar, canonical source observation map, biological validation or confirmed novelty.",
+  "dead_local_links": []
+}

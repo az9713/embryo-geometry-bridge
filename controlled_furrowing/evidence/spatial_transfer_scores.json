@@ -1,0 +1,3902 @@
+{
+  "status": "CONDITIONAL_DISCRETE_DIAGNOSTIC_SCORED",
+  "branches": [
+    {
+      "branch": "basal_0.2",
+      "basal_modulus": 0.2,
+      "gain": 8.66,
+      "frozen_prediction_sha256": "3f6c5c9959df1373e36fc1c3e2844f243f20c5c7221facbadafa69ced0aa2c5c",
+      "scalar_evaluation_n": 9,
+      "scalar_scores": {
+        "RMSE_um": 3.0881369697724317,
+        "MAE_um": 2.552933624986426,
+        "signed_bias_um": 2.446180467727737
+      },
+      "scalar_pairs": [
+        {
+          "record_id": "optoGEF2_large_col_B",
+          "prediction_um": 5.70271357977258,
+          "observed_um": 0.071243,
+          "prediction_source": "fig4f_col_B"
+        },
+        {
+          "record_id": "optoGEF2_large_col_C",
+          "prediction_um": 6.652336280695932,
+          "observed_um": 3.080957,
+          "prediction_source": "fig4f_col_C"
+        },
+        {
+          "record_id": "optoGEF2_large_col_D",
+          "prediction_um": 8.67822274686894,
+          "observed_um": 8.72639,
+          "prediction_source": "fig4f_col_D"
+        },
+        {
+          "record_id": "optoGEF2_large_col_E",
+          "prediction_um": 6.638711614873133,
+          "observed_um": 2.376692,
+          "prediction_source": "fig4f_col_E"
+        },
+        {
+          "record_id": "optoGEF2_large_col_F",
+          "prediction_um": 11.187393532179064,
+          "observed_um": 9.378311,
+          "prediction_source": "fig4f_col_F"
+        },
+        {
+          "record_id": "optoGEF2_large_col_G",
+          "prediction_um": 11.99313424968347,
+          "observed_um": 8.383168,
+          "prediction_source": "fig4f_col_G"
+        },
+        {
+          "record_id": "optoGEF2_large_col_H",
+          "prediction_um": 8.506965747674787,
+          "observed_um": 7.0,
+          "prediction_source": "fig4f_col_H"
+        },
+        {
+          "record_id": "optoGEF2_large_col_I",
+          "prediction_um": 10.596385045466958,
+          "observed_um": 11.028607,
+          "prediction_source": "fig4f_col_I"
+        },
+        {
+          "record_id": "optoGEF2_large_col_J",
+          "prediction_um": 4.833144412334769,
+          "observed_um": 2.728015,
+          "prediction_source": "fig4f_col_J"
+        }
+      ],
+      "label_n": 31,
+      "conditional_nominal_label_exclusions_by_assumed_surface_error_um": {
+        "0.0": 0,
+        "0.05": 0,
+        "0.2": 0
+      },
+      "ambiguous_label_sets_by_assumed_surface_error_um": {
+        "0.0": 31,
+        "0.05": 31,
+        "0.2": 31
+      },
+      "maximum_force_residual": 1.437647015323229e-10,
+      "minimum_local_J": 0.8124542869818118,
+      "maximum_local_J": 1.157871910880807,
+      "maximum_absolute_global_volume_change": 0.0038866166222368825,
+      "records": [
+        {
+          "record_id": "fig4f_col_AB",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AB",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.50741082
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9473341297058725,
+              0.966355673776653
+            ],
+            "signed_interval_gap": 0.019021544070780494,
+            "conditional_gap_enclosure": [
+              0.019021544070780494,
+              0.019021544070780494
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9568449017412628,
+            "witness_empty_apical_annuli": [
+              [
+                0.05013153928559169,
+                0.24314462814388496
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.127084928482125,
+          "central_basal_displacement_um": 6.011293851464574,
+          "maximum_column_shortening_um": 7.263039573917184
+        },
+        {
+          "record_id": "fig4f_col_AA",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AA",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.55289753
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9449118291446095,
+              0.9643013343978147
+            ],
+            "signed_interval_gap": 0.019389505253205264,
+            "conditional_gap_enclosure": [
+              0.019389505253205264,
+              0.019389505253205264
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9546065817712122,
+            "witness_empty_apical_annuli": [
+              [
+                0.04973734033897926,
+                0.24190448677771273
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.1959052976732063,
+          "central_basal_displacement_um": 6.305572373685347,
+          "maximum_column_shortening_um": 7.639445782807477
+        },
+        {
+          "record_id": "fig4f_col_AC",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AC",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.57140392
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9439621046273428,
+              0.9634664115058902
+            ],
+            "signed_interval_gap": 0.01950430687854743,
+            "conditional_gap_enclosure": [
+              0.01950430687854743,
+              0.01950430687854743
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9537142580666165,
+            "witness_empty_apical_annuli": [
+              [
+                0.04956272083658868,
+                0.24137701159960834
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.2238752145526788,
+          "central_basal_displacement_um": 6.418798484394745,
+          "maximum_column_shortening_um": 7.785944913932804
+        },
+        {
+          "record_id": "fig4f_col_AF",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AF",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.17404851
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9143254521805296,
+              0.9338073066425479
+            ],
+            "signed_interval_gap": 0.019481854462018222,
+            "conditional_gap_enclosure": [
+              0.019481854462018222,
+              0.019481854462018222
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9240663794115387,
+            "witness_empty_apical_annuli": [
+              [
+                0.04686389662961843,
+                0.2167917579268965
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.217455227474647,
+          "central_basal_displacement_um": 8.702358265449934,
+          "maximum_column_shortening_um": 11.19369363284245
+        },
+        {
+          "record_id": "fig4f_col_AE",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AE",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.31545596
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9065792077636905,
+              0.9257352024972617
+            ],
+            "signed_interval_gap": 0.019155994733571213,
+            "conditional_gap_enclosure": [
+              0.019155994733571213,
+              0.019155994733571213
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.916157205130476,
+            "witness_empty_apical_annuli": [
+              [
+                0.04709522667200752,
+                0.21050616865633776
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.4878707163417326,
+          "central_basal_displacement_um": 8.967198625369349,
+          "maximum_column_shortening_um": 11.748677380457416
+        },
+        {
+          "record_id": "fig4f_col_AD",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AD",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.95278236
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8659554644953471,
+              0.8826581238800616
+            ],
+            "signed_interval_gap": 0.01670265938471449,
+            "conditional_gap_enclosure": [
+              0.01670265938471449,
+              0.01670265938471449
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.8743067941877043,
+            "witness_empty_apical_annuli": [
+              [
+                0.04799203150687218,
+                0.16634699309403525
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -3.9309528500179365,
+          "central_basal_displacement_um": 9.367292229270028,
+          "maximum_column_shortening_um": 13.649746419991425
+        },
+        {
+          "record_id": "fig4f_col_Z",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_Z",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.23971927
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9706622603348177,
+              0.98427225113064
+            ],
+            "signed_interval_gap": 0.013609990795822258,
+            "conditional_gap_enclosure": [
+              0.013609990795822258,
+              0.013609990795822258
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9774672557327289,
+            "witness_empty_apical_annuli": [
+              [
+                0.06507742138214634,
+                0.31289963916832475
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.5268795871235605,
+          "central_basal_displacement_um": 4.191440562649518,
+          "maximum_column_shortening_um": 4.813051655576339
+        },
+        {
+          "record_id": "fig4f_col_Y",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_Y",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.53279366
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9558367557768593,
+              0.973085184601567
+            ],
+            "signed_interval_gap": 0.017248428824707673,
+            "conditional_gap_enclosure": [
+              0.017248428824707673,
+              0.017248428824707673
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9644609701892132,
+            "witness_empty_apical_annuli": [
+              [
+                0.05906348643158459,
+                0.2989834221000777
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.9016463158475052,
+          "central_basal_displacement_um": 6.810046125920092,
+          "maximum_column_shortening_um": 7.942423828499634
+        },
+        {
+          "record_id": "fig4f_col_W",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_W",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.90840079
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9368614426928522,
+              0.9551110598980912
+            ],
+            "signed_interval_gap": 0.018249617205238988,
+            "conditional_gap_enclosure": [
+              0.018249617205238988,
+              0.018249617205238988
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9459862512954718,
+            "witness_empty_apical_annuli": [
+              [
+                0.058872970753979154,
+                0.26807594642887295
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.503779493413945,
+          "central_basal_displacement_um": 8.51956781906077,
+          "maximum_column_shortening_um": 10.376926296967259
+        },
+        {
+          "record_id": "fig4f_col_X",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_X",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.92402627
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9359697609787115,
+              0.9542141570981506
+            ],
+            "signed_interval_gap": 0.018244396119439066,
+            "conditional_gap_enclosure": [
+              0.018244396119439066,
+              0.018244396119439066
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.945091959038431,
+            "witness_empty_apical_annuli": [
+              [
+                0.058904537667990496,
+                0.266862162348103
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.5338257372119548,
+          "central_basal_displacement_um": 8.565556567926558,
+          "maximum_column_shortening_um": 10.456906703983606
+        },
+        {
+          "record_id": "fig4f_col_V",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_V",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 1.26223079
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9137614486149348,
+              0.9312398665292706
+            ],
+            "signed_interval_gap": 0.017478417914335798,
+            "conditional_gap_enclosure": [
+              0.017478417914335798,
+              0.017478417914335798
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9225006575721026,
+            "witness_empty_apical_annuli": [
+              [
+                0.05956110480697362,
+                0.24074311024035122
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.303464471269435,
+          "central_basal_displacement_um": 9.194332667072699,
+          "maximum_column_shortening_um": 11.923275179248124
+        },
+        {
+          "record_id": "fig4f_col_U",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_U",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.15051392
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9825339540317666,
+              0.9919766904725853
+            ],
+            "signed_interval_gap": 0.009442736440818722,
+            "conditional_gap_enclosure": [
+              0.009442736440818722,
+              0.009442736440818722
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9872553222521759,
+            "witness_empty_apical_annuli": [
+              [
+                0.07828150539529373,
+                0.37302463517502904
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.2687808691683925,
+          "central_basal_displacement_um": 3.2470875442899407,
+          "maximum_column_shortening_um": 3.5906745804931637
+        },
+        {
+          "record_id": "fig4f_col_T",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_T",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.46366399
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9688247964133421,
+              0.9832047989245624
+            ],
+            "signed_interval_gap": 0.014380002511220291,
+            "conditional_gap_enclosure": [
+              0.014380002511220291,
+              0.014380002511220291
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9760147976689522,
+            "witness_empty_apical_annuli": [
+              [
+                0.07049670798015656,
+                0.340241706643949
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.5626392360271608,
+          "central_basal_displacement_um": 6.75191924589624,
+          "maximum_column_shortening_um": 7.566510875305795
+        },
+        {
+          "record_id": "fig4f_col_Q",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_Q",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.89526724
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9467081243801785,
+              0.962240547953703
+            ],
+            "signed_interval_gap": 0.015532423573524468,
+            "conditional_gap_enclosure": [
+              0.015532423573524468,
+              0.015532423573524468
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9544743361669408,
+            "witness_empty_apical_annuli": [
+              [
+                0.07158641797954969,
+                0.28458342755314675
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.264941643550951,
+          "central_basal_displacement_um": 8.817408476321617,
+          "maximum_column_shortening_um": 10.498775218155803
+        },
+        {
+          "record_id": "fig4f_col_S",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_S",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.94810797
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9430897963137693,
+              0.9585418198821826
+            ],
+            "signed_interval_gap": 0.015452023568413242,
+            "conditional_gap_enclosure": [
+              0.015452023568413242,
+              0.015452023568413242
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.950815808097976,
+            "witness_empty_apical_annuli": [
+              [
+                0.07170373821168771,
+                0.2693365998971831
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.388849033946884,
+          "central_basal_displacement_um": 8.942037256080752,
+          "maximum_column_shortening_um": 10.76246249364298
+        },
+        {
+          "record_id": "fig4f_col_R",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_R",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 1.39103388
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9011665465198395,
+              0.9148166984516622
+            ],
+            "signed_interval_gap": 0.01365015193182273,
+            "conditional_gap_enclosure": [
+              0.01365015193182273,
+              0.01365015193182273
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9079916224857509,
+            "witness_empty_apical_annuli": [
+              [
+                0.07250937876069986,
+                0.2011658187851287
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.853640601869315,
+          "central_basal_displacement_um": 9.124725519930555,
+          "maximum_column_shortening_um": 12.513436407405585
+        },
+        {
+          "record_id": "fig4f_col_M",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_M",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.17501565
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.986962168891066,
+              0.995357121226062
+            ],
+            "signed_interval_gap": 0.008394952334995986,
+            "conditional_gap_enclosure": [
+              0.008394952334995986,
+              0.008394952334995986
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.991159645058564,
+            "witness_empty_apical_annuli": [
+              [
+                0.08492338331342088,
+                0.4180825603239851
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.15553643892692254,
+          "central_basal_displacement_um": 3.848883006915832,
+          "maximum_column_shortening_um": 4.110574679064232
+        },
+        {
+          "record_id": "fig4f_col_K",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_K",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.51874902
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9765682310832751,
+              0.9886610838738139
+            ],
+            "signed_interval_gap": 0.012092852790538844,
+            "conditional_gap_enclosure": [
+              0.012092852790538844,
+              0.012092852790538844
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9826146574785445,
+            "witness_empty_apical_annuli": [
+              [
+                0.08347063031183552,
+                0.3494656093147338
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.37985369022723414,
+          "central_basal_displacement_um": 7.462000817759426,
+          "maximum_column_shortening_um": 8.141895157378702
+        },
+        {
+          "record_id": "fig4f_col_L",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_L",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.91088485
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9539585263360341,
+              0.9659140375853977
+            ],
+            "signed_interval_gap": 0.01195551124936367,
+            "conditional_gap_enclosure": [
+              0.01195551124936367,
+              0.01195551124936367
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9599362819607159,
+            "witness_empty_apical_annuli": [
+              [
+                0.08470472669473217,
+                0.24627160026930073
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.1418797408891759,
+          "central_basal_displacement_um": 9.062238934560723,
+          "maximum_column_shortening_um": 10.651927357485787
+        },
+        {
+          "record_id": "fig4f_col_O",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_O",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.09397258
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9359378982207978,
+              0.9471041107881937
+            ],
+            "signed_interval_gap": 0.011166212567395917,
+            "conditional_gap_enclosure": [
+              0.011166212567395917,
+              0.011166212567395917
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9415210045044957,
+            "witness_empty_apical_annuli": [
+              [
+                0.08510073037781912,
+                0.2238632567649609
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.7720122885955119,
+          "central_basal_displacement_um": 9.205263933405103,
+          "maximum_column_shortening_um": 11.481137375028611
+        },
+        {
+          "record_id": "fig4f_col_N",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_N",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.15884867
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9280886654705826,
+              0.9388820030220784
+            ],
+            "signed_interval_gap": 0.010793337551495807,
+            "conditional_gap_enclosure": [
+              0.010793337551495807,
+              0.010793337551495807
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9334853342463305,
+            "witness_empty_apical_annuli": [
+              [
+                0.08521114599002154,
+                0.21775626348735502
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.047452898760375,
+          "central_basal_displacement_um": 9.169579068422587,
+          "maximum_column_shortening_um": 11.740222130387991
+        },
+        {
+          "record_id": "fig4f_col_P",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_P",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.5168727
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8678844358732168,
+              0.8756590524243875
+            ],
+            "signed_interval_gap": 0.007774616551170621,
+            "conditional_gap_enclosure": [
+              0.007774616551170621,
+              0.007774616551170621
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.8717717441488022,
+            "witness_empty_apical_annuli": [
+              [
+                0.08551114928606753,
+                0.19299062486325008
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -4.16542174378302,
+          "central_basal_displacement_um": 8.124482309993741,
+          "maximum_column_shortening_um": 12.927304848605353
+        },
+        {
+          "record_id": "fig4f_col_J",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_J",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.21819433
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9919102686142043,
+              0.9994257967266502
+            ],
+            "signed_interval_gap": 0.007515528112445935,
+            "conditional_gap_enclosure": [
+              0.007515528112445935,
+              0.007515528112445935
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9956680326704272,
+            "witness_empty_apical_annuli": [
+              [
+                0.09468305044941175,
+                0.431863070621999
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.019235809657217717,
+          "central_basal_displacement_um": 4.671236601145333,
+          "maximum_column_shortening_um": 4.833144412334769
+        },
+        {
+          "record_id": "fig4f_col_B",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_B",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.28018503
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.991217193116776,
+              0.9994676025833835
+            ],
+            "signed_interval_gap": 0.008250409466607489,
+            "conditional_gap_enclosure": [
+              0.008250409466607489,
+              0.008250409466607489
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9953423978500797,
+            "witness_empty_apical_annuli": [
+              [
+                0.09510644182092902,
+                0.41197771774369124
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.017835313456652124,
+          "central_basal_displacement_um": 5.503907595500492,
+          "maximum_column_shortening_um": 5.70271357977258
+        },
+        {
+          "record_id": "fig4f_col_E",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_E",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.35848814
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.990241990579636,
+              0.9990644158135996
+            ],
+            "signed_interval_gap": 0.008822425233963593,
+            "conditional_gap_enclosure": [
+              0.008822425233963593,
+              0.008822425233963593
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9946532031966178,
+            "witness_empty_apical_annuli": [
+              [
+                0.0956070222708431,
+                0.39107842149321187
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.03134207024441288,
+          "central_basal_displacement_um": 6.382080486754645,
+          "maximum_column_shortening_um": 6.638711614873133
+        },
+        {
+          "record_id": "fig4f_col_C",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_C",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.35972812
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9902239678078107,
+              0.9990530085628573
+            ],
+            "signed_interval_gap": 0.008829040755046536,
+            "conditional_gap_enclosure": [
+              0.008829040755046536,
+              0.008829040755046536
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9946384881853341,
+            "witness_empty_apical_annuli": [
+              [
+                0.09561464020271687,
+                0.3907807849517564
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.03172421314428109,
+          "central_basal_displacement_um": 6.394656554024718,
+          "maximum_column_shortening_um": 6.652336280695932
+        },
+        {
+          "record_id": "fig4f_col_H",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_H",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.5614692
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9853088080561783,
+              0.9945412662049968
+            ],
+            "signed_interval_gap": 0.009232458148818568,
+            "conditional_gap_enclosure": [
+              0.009232458148818568,
+              0.009232458148818568
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9899250371305875,
+            "witness_empty_apical_annuli": [
+              [
+                0.09672828073133094,
+                0.29478253273001676
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.18286758213260612,
+          "central_basal_displacement_um": 8.002186315046837,
+          "maximum_column_shortening_um": 8.506965747674787
+        },
+        {
+          "record_id": "fig4f_col_D",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_D",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.58395102
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9844481327898121,
+              0.9936627170045929
+            ],
+            "signed_interval_gap": 0.009214584214780719,
+            "conditional_gap_enclosure": [
+              0.009214584214780719,
+              0.009214584214780719
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9890554248972026,
+            "witness_empty_apical_annuli": [
+              [
+                0.09683715093192993,
+                0.2887724955795291
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.21229898034613937,
+          "central_basal_displacement_um": 8.134601777569536,
+          "maximum_column_shortening_um": 8.67822274686894
+        },
+        {
+          "record_id": "fig4f_col_I",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_I",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.89767374
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9630243212568007,
+              0.9711237709576109
+            ],
+            "signed_interval_gap": 0.008099449700810224,
+            "conditional_gap_enclosure": [
+              0.008099449700810224,
+              0.008099449700810224
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9670740461072058,
+            "witness_empty_apical_annuli": [
+              [
+                0.09803608897586752,
+                0.23985999523380194
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.9673536729200338,
+          "central_basal_displacement_um": 9.180694931124487,
+          "maximum_column_shortening_um": 10.596385045466958
+        },
+        {
+          "record_id": "fig4f_col_F",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_F",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 1.02397148
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9480843130755322,
+              0.9553308089472975
+            ],
+            "signed_interval_gap": 0.0072464958717652905,
+            "conditional_gap_enclosure": [
+              0.0072464958717652905,
+              0.0072464958717652905
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9517075610114148,
+            "witness_empty_apical_annuli": [
+              [
+                0.0983393283108147,
+                0.22879699933492123
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.496417900265534,
+          "central_basal_displacement_um": 9.197567455387915,
+          "maximum_column_shortening_um": 11.187393532179064
+        },
+        {
+          "record_id": "fig4f_col_G",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_G",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 1.2279829
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9134876713015052,
+              0.918822148697198
+            ],
+            "signed_interval_gap": 0.005334477395692816,
+            "conditional_gap_enclosure": [
+              0.005334477395692816,
+              0.005334477395692816
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9161549099993516,
+            "witness_empty_apical_annuli": [
+              [
+                0.09857613255297695,
+                0.214891776778378
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.719458018643866,
+          "central_basal_displacement_um": 8.70014393455203,
+          "maximum_column_shortening_um": 11.99313424968347
+        }
+      ]
+    },
+    {
+      "branch": "basal_2",
+      "basal_modulus": 2.0,
+      "gain": 8.88,
+      "frozen_prediction_sha256": "94e20e105f697c4b332423766fd5341ee3033441963aa36d49c4bf7f6d36fa0f",
+      "scalar_evaluation_n": 9,
+      "scalar_scores": {
+        "RMSE_um": 3.0476898086845554,
+        "MAE_um": 2.5272897630226123,
+        "signed_bias_um": 2.376537352110307
+      },
+      "scalar_pairs": [
+        {
+          "record_id": "optoGEF2_large_col_B",
+          "prediction_um": 5.687269127704605,
+          "observed_um": 0.071243,
+          "prediction_source": "fig4f_col_B"
+        },
+        {
+          "record_id": "optoGEF2_large_col_C",
+          "prediction_um": 6.619332249231484,
+          "observed_um": 3.080957,
+          "prediction_source": "fig4f_col_C"
+        },
+        {
+          "record_id": "optoGEF2_large_col_D",
+          "prediction_um": 8.600587385790295,
+          "observed_um": 8.72639,
+          "prediction_source": "fig4f_col_D"
+        },
+        {
+          "record_id": "optoGEF2_large_col_E",
+          "prediction_um": 6.605979163063412,
+          "observed_um": 2.376692,
+          "prediction_source": "fig4f_col_E"
+        },
+        {
+          "record_id": "optoGEF2_large_col_F",
+          "prediction_um": 11.05648086845219,
+          "observed_um": 9.378311,
+          "prediction_source": "fig4f_col_F"
+        },
+        {
+          "record_id": "optoGEF2_large_col_G",
+          "prediction_um": 11.852314640454257,
+          "observed_um": 8.383168,
+          "prediction_source": "fig4f_col_G"
+        },
+        {
+          "record_id": "optoGEF2_large_col_H",
+          "prediction_um": 8.433311923709823,
+          "observed_um": 7.0,
+          "prediction_source": "fig4f_col_H"
+        },
+        {
+          "record_id": "optoGEF2_large_col_I",
+          "prediction_um": 10.476023765104332,
+          "observed_um": 11.028607,
+          "prediction_source": "fig4f_col_I"
+        },
+        {
+          "record_id": "optoGEF2_large_col_J",
+          "prediction_um": 4.830920045482365,
+          "observed_um": 2.728015,
+          "prediction_source": "fig4f_col_J"
+        }
+      ],
+      "label_n": 31,
+      "conditional_nominal_label_exclusions_by_assumed_surface_error_um": {
+        "0.0": 0,
+        "0.05": 0,
+        "0.2": 0
+      },
+      "ambiguous_label_sets_by_assumed_surface_error_um": {
+        "0.0": 31,
+        "0.05": 31,
+        "0.2": 31
+      },
+      "maximum_force_residual": 1.223877009936744e-10,
+      "minimum_local_J": 0.8092849858101723,
+      "maximum_local_J": 1.156557763719306,
+      "maximum_absolute_global_volume_change": 0.003878870776961585,
+      "records": [
+        {
+          "record_id": "fig4f_col_AB",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AB",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.50741082
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9455891148871898,
+              0.9645227567918028
+            ],
+            "signed_interval_gap": 0.018933641904612997,
+            "conditional_gap_enclosure": [
+              0.018933641904612997,
+              0.018933641904612997
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9550559358394963,
+            "witness_empty_apical_annuli": [
+              [
+                0.050075545220601536,
+                0.24199962621262489
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.1884876474746071,
+          "central_basal_displacement_um": 6.038235772684236,
+          "maximum_column_shortening_um": 7.301871984140082
+        },
+        {
+          "record_id": "fig4f_col_AA",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AA",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.55289753
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9431531149192338,
+              0.9623711749155327
+            ],
+            "signed_interval_gap": 0.019218059996298886,
+            "conditional_gap_enclosure": [
+              0.019218059996298886,
+              0.019218059996298886
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9527621449173833,
+            "witness_empty_apical_annuli": [
+              [
+                0.04960129609603889,
+                0.2405509033685344
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.2605656403296546,
+          "central_basal_displacement_um": 6.32948749659399,
+          "maximum_column_shortening_um": 7.670445685981561
+        },
+        {
+          "record_id": "fig4f_col_AC",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AC",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.57140392
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9421974668148025,
+              0.9614957030063225
+            ],
+            "signed_interval_gap": 0.019298236191519935,
+            "conditional_gap_enclosure": [
+              0.019298236191519935,
+              0.019298236191519935
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9518465849105625,
+            "witness_empty_apical_annuli": [
+              [
+                0.04939222614923171,
+                0.23994194622981163
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.2898939492881971,
+          "central_basal_displacement_um": 6.441451757844766,
+          "maximum_column_shortening_um": 7.813681613149761
+        },
+        {
+          "record_id": "fig4f_col_AF",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AF",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.17404851
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.91140733571783,
+              0.9303217644354983
+            ],
+            "signed_interval_gap": 0.018914428717668352,
+            "conditional_gap_enclosure": [
+              0.018914428717668352,
+              0.018914428717668352
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9208645500766641,
+            "witness_empty_apical_annuli": [
+              [
+                0.04694672261121125,
+                0.21305886016040873
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.334220891410807,
+          "central_basal_displacement_um": 8.690671400920786,
+          "maximum_column_shortening_um": 11.123337015124514
+        },
+        {
+          "record_id": "fig4f_col_AE",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AE",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.31545596
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9032762750478414,
+              0.9218141975799921
+            ],
+            "signed_interval_gap": 0.018537922532150697,
+            "conditional_gap_enclosure": [
+              0.018537922532150697,
+              0.018537922532150697
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9125452363139167,
+            "witness_empty_apical_annuli": [
+              [
+                0.04719277000361509,
+                0.20678012071243074
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.619224381070266,
+          "central_basal_displacement_um": 8.947745150013851,
+          "maximum_column_shortening_um": 11.660339727463867
+        },
+        {
+          "record_id": "fig4f_col_AD",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AD",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.95278236
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8603304024745506,
+              0.8763372600259334
+            ],
+            "signed_interval_gap": 0.016006857551382758,
+            "conditional_gap_enclosure": [
+              0.016006857551382758,
+              0.016006857551382758
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.868333831250242,
+            "witness_empty_apical_annuli": [
+              [
+                0.04812933765415192,
+                0.15854087906916212
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -4.142701789131232,
+          "central_basal_displacement_um": 9.295291834153382,
+          "maximum_column_shortening_um": 13.497676063906782
+        },
+        {
+          "record_id": "fig4f_col_Z",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_Z",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.23971927
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9693141695421216,
+              0.9831486895119838
+            ],
+            "signed_interval_gap": 0.01383451996986218,
+            "conditional_gap_enclosure": [
+              0.01383451996986218,
+              0.01383451996986218
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9762314295270527,
+            "witness_empty_apical_annuli": [
+              [
+                0.06532719501154222,
+                0.31322101169619804
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.5645189013485443,
+          "central_basal_displacement_um": 4.239136495159651,
+          "maximum_column_shortening_um": 4.857568824332406
+        },
+        {
+          "record_id": "fig4f_col_Y",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_Y",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.53279366
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9547706756318729,
+              0.9720237257492477
+            ],
+            "signed_interval_gap": 0.01725305011737477,
+            "conditional_gap_enclosure": [
+              0.01725305011737477,
+              0.01725305011737477
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9633972006905602,
+            "witness_empty_apical_annuli": [
+              [
+                0.058856761654503306,
+                0.29829324649327305
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.9372051874002031,
+          "central_basal_displacement_um": 6.888907404864298,
+          "maximum_column_shortening_um": 7.941682130905712
+        },
+        {
+          "record_id": "fig4f_col_W",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_W",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.90840079
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.935948402243906,
+              0.9543183082051834
+            ],
+            "signed_interval_gap": 0.01836990596127741,
+            "conditional_gap_enclosure": [
+              0.01836990596127741,
+              0.01836990596127741
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9451333552245447,
+            "witness_empty_apical_annuli": [
+              [
+                0.05897066472477202,
+                0.26734373034095876
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.530336675126357,
+          "central_basal_displacement_um": 8.636498754199742,
+          "maximum_column_shortening_um": 10.3131071269866
+        },
+        {
+          "record_id": "fig4f_col_X",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_X",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.92402627
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9350677806737693,
+              0.9534366363075125
+            ],
+            "signed_interval_gap": 0.018368855633743242,
+            "conditional_gap_enclosure": [
+              0.018368855633743242,
+              0.018368855633743242
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9442522084906408,
+            "witness_empty_apical_annuli": [
+              [
+                0.05900531213731924,
+                0.2661953943656673
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.5598726836983305,
+          "central_basal_displacement_um": 8.684250144848026,
+          "maximum_column_shortening_um": 10.390844240930964
+        },
+        {
+          "record_id": "fig4f_col_V",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_V",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 1.26223079
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9134665937514521,
+              0.9311653198476325
+            ],
+            "signed_interval_gap": 0.017698726096180395,
+            "conditional_gap_enclosure": [
+              0.017698726096180395,
+              0.017698726096180395
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9223159567995423,
+            "witness_empty_apical_annuli": [
+              [
+                0.059737459235509376,
+                0.24417019289903524
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.305961785104311,
+          "central_basal_displacement_um": 9.36432044023208,
+          "maximum_column_shortening_um": 11.817046255145037
+        },
+        {
+          "record_id": "fig4f_col_U",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_U",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.15051392
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9817124798175149,
+              0.9914216716395718
+            ],
+            "signed_interval_gap": 0.009709191822056984,
+            "conditional_gap_enclosure": [
+              0.009709191822056984,
+              0.009709191822056984
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9865670757285434,
+            "witness_empty_apical_annuli": [
+              [
+                0.07886950546708908,
+                0.3746063917552473
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.2873740000743432,
+          "central_basal_displacement_um": 3.303389227127007,
+          "maximum_column_shortening_um": 3.6230299701651814
+        },
+        {
+          "record_id": "fig4f_col_T",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_T",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.46366399
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9692820200283692,
+              0.9840498849425225
+            ],
+            "signed_interval_gap": 0.014767864914153384,
+            "conditional_gap_enclosure": [
+              0.014767864914153384,
+              0.014767864914153384
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9766659524854459,
+            "witness_empty_apical_annuli": [
+              [
+                0.07056842367714929,
+                0.343352590568088
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.5343288544254947,
+          "central_basal_displacement_um": 6.911086755374055,
+          "maximum_column_shortening_um": 7.550336043405382
+        },
+        {
+          "record_id": "fig4f_col_Q",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_Q",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.89526724
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9504271972965183,
+              0.9669052298348617
+            ],
+            "signed_interval_gap": 0.016478032538343457,
+            "conditional_gap_enclosure": [
+              0.016478032538343457,
+              0.016478032538343457
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.95866621356569,
+            "witness_empty_apical_annuli": [
+              [
+                0.0717920531612018,
+                0.29930785017960276
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.1086748005321327,
+          "central_basal_displacement_um": 9.154831647253468,
+          "maximum_column_shortening_um": 10.412352701653106
+        },
+        {
+          "record_id": "fig4f_col_S",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_S",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.94810797
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9474337221624767,
+              0.9638997286860325
+            ],
+            "signed_interval_gap": 0.016466006523555787,
+            "conditional_gap_enclosure": [
+              0.016466006523555787,
+              0.016466006523555787
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9556667254242546,
+            "witness_empty_apical_annuli": [
+              [
+                0.07193115897033638,
+                0.2953905149670563
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.2093590890179124,
+          "central_basal_displacement_um": 9.30873159429622,
+          "maximum_column_shortening_um": 10.669611385797083
+        },
+        {
+          "record_id": "fig4f_col_R",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_R",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 1.39103388
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9150808661786418,
+              0.9302635902038805
+            ],
+            "signed_interval_gap": 0.01518272402523868,
+            "conditional_gap_enclosure": [
+              0.01518272402523868,
+              0.01518272402523868
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9226722281912612,
+            "witness_empty_apical_annuli": [
+              [
+                0.07299768761807265,
+                0.22128121761602831
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.3361697281700033,
+          "central_basal_displacement_um": 9.884649033953197,
+          "maximum_column_shortening_um": 12.3828727301398
+        },
+        {
+          "record_id": "fig4f_col_M",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_M",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.17501565
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9871234722365572,
+              0.9959871034902533
+            ],
+            "signed_interval_gap": 0.008863631253696158,
+            "conditional_gap_enclosure": [
+              0.008863631253696158,
+              0.008863631253696158
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9915552878634053,
+            "witness_empty_apical_annuli": [
+              [
+                0.08688701072519577,
+                0.4234635426605703
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.1344320330765137,
+          "central_basal_displacement_um": 3.9612176191388215,
+          "maximum_column_shortening_um": 4.128269440980911
+        },
+        {
+          "record_id": "fig4f_col_K",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_K",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.51874902
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9810194105367286,
+              0.9940915554391067
+            ],
+            "signed_interval_gap": 0.013072144902378069,
+            "conditional_gap_enclosure": [
+              0.013072144902378069,
+              0.013072144902378069
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9875554829879176,
+            "witness_empty_apical_annuli": [
+              [
+                0.08367283133588442,
+                0.3638132596594761
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.19793289278992704,
+          "central_basal_displacement_um": 7.8051329235146,
+          "maximum_column_shortening_um": 8.093548840170866
+        },
+        {
+          "record_id": "fig4f_col_L",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_L",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.91088485
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9671595209798267,
+              0.9811066238465395
+            ],
+            "signed_interval_gap": 0.013947102866712746,
+            "conditional_gap_enclosure": [
+              0.013947102866712746,
+              0.013947102866712746
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9741330724131831,
+            "witness_empty_apical_annuli": [
+              [
+                0.08517745755944742,
+                0.28652335844951327
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.632928101140928,
+          "central_basal_displacement_um": 9.791963640489184,
+          "maximum_column_shortening_um": 10.544955407111114
+        },
+        {
+          "record_id": "fig4f_col_O",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_O",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.09397258
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9563730330592359,
+              0.9699890024781804
+            ],
+            "signed_interval_gap": 0.013615969418944496,
+            "conditional_gap_enclosure": [
+              0.013615969418944496,
+              0.013615969418944496
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9631810177687081,
+            "witness_empty_apical_annuli": [
+              [
+                0.08576669402963104,
+                0.2592589340967302
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.0053684169809556,
+          "central_basal_displacement_um": 10.223695236133855,
+          "maximum_column_shortening_um": 11.356914853673812
+        },
+        {
+          "record_id": "fig4f_col_N",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_N",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.15884867
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9518275679806353,
+              0.9652380127535944
+            ],
+            "signed_interval_gap": 0.013410444772959162,
+            "conditional_gap_enclosure": [
+              0.013410444772959162,
+              0.013410444772959162
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9585327903671148,
+            "witness_empty_apical_annuli": [
+              [
+                0.0859598956921939,
+                0.25179645136979495
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.1645265727545862,
+          "central_basal_displacement_um": 10.31655687464206,
+          "maximum_column_shortening_um": 11.61118548038654
+        },
+        {
+          "record_id": "fig4f_col_P",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_P",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.5168727
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9194494700104678,
+              0.9309911019442064
+            ],
+            "signed_interval_gap": 0.011541631933738583,
+            "conditional_gap_enclosure": [
+              0.011541631933738583,
+              0.011541631933738583
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9252202859773371,
+            "witness_empty_apical_annuli": [
+              [
+                0.08688747272222432,
+                0.2215961221823874
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.3117980848690847,
+          "central_basal_displacement_um": 10.328162115353894,
+          "maximum_column_shortening_um": 12.779494485777786
+        },
+        {
+          "record_id": "fig4f_col_J",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_J",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.21819433
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9947430582400634,
+              1.0
+            ],
+            "signed_interval_gap": 0.005256941759936629,
+            "conditional_gap_enclosure": [
+              0.005256941759936629,
+              0.005256941759936629
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9973715291200317,
+            "witness_empty_apical_annuli": [
+              [
+                0.12757575570077365,
+                0.42260529745366476
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.09291888595973008,
+          "central_basal_displacement_um": 4.897035429732731,
+          "maximum_column_shortening_um": 4.830920045482365
+        },
+        {
+          "record_id": "fig4f_col_B",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_B",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.28018503
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9953212258611045,
+              1.0
+            ],
+            "signed_interval_gap": 0.004678774138895503,
+            "conditional_gap_enclosure": [
+              0.004678774138895503,
+              0.004678774138895503
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9976606129305523,
+            "witness_empty_apical_annuli": [
+              [
+                0.14083663680274203,
+                0.3971155098982426
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.143469769769206,
+          "central_basal_displacement_um": 5.795900102460582,
+          "maximum_column_shortening_um": 5.687269127704605
+        },
+        {
+          "record_id": "fig4f_col_E",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_E",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.35848814
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9961229067291046,
+              1.0
+            ],
+            "signed_interval_gap": 0.00387709327089536,
+            "conditional_gap_enclosure": [
+              0.00387709327089536,
+              0.00387709327089536
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9980614533645523,
+            "witness_empty_apical_annuli": [
+              [
+                0.15384326827237288,
+                0.3211963890999495
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.19884692243698066,
+          "central_basal_displacement_um": 6.76145777750311,
+          "maximum_column_shortening_um": 6.605979163063412
+        },
+        {
+          "record_id": "fig4f_col_C",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_C",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.35972812
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9961345610546315,
+              1.0
+            ],
+            "signed_interval_gap": 0.0038654389453685045,
+            "conditional_gap_enclosure": [
+              0.0038654389453685045,
+              0.0038654389453685045
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9980672805273157,
+            "witness_empty_apical_annuli": [
+              [
+                0.1540143184274412,
+                0.3199149082855325
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.19961476933134514,
+          "central_basal_displacement_um": 6.7754574602078685,
+          "maximum_column_shortening_um": 6.619332249231484
+        },
+        {
+          "record_id": "fig4f_col_H",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_H",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.5614692
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9968312349627652,
+              1.0
+            ],
+            "signed_interval_gap": 0.003168765037234844,
+            "conditional_gap_enclosure": [
+              0.003168765037234844,
+              0.003168765037234844
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9984156174813825,
+            "witness_empty_apical_annuli": [
+              [
+                0.16644343244106705,
+                0.2429045670869167
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.2636412512986558,
+          "central_basal_displacement_um": 8.638320540305816,
+          "maximum_column_shortening_um": 8.433311923709823
+        },
+        {
+          "record_id": "fig4f_col_D",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_D",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.58395102
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9967163635127307,
+              1.0
+            ],
+            "signed_interval_gap": 0.003283636487269259,
+            "conditional_gap_enclosure": [
+              0.003283636487269259,
+              0.003283636487269259
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9983581817563654,
+            "witness_empty_apical_annuli": [
+              [
+                0.16585728537037855,
+                0.2420933789437411
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.26235322996270116,
+          "central_basal_displacement_um": 8.803070570236303,
+          "maximum_column_shortening_um": 8.600587385790295
+        },
+        {
+          "record_id": "fig4f_col_I",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_I",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.89767374
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9900975372853071,
+              1.0
+            ],
+            "signed_interval_gap": 0.009902462714692861,
+            "conditional_gap_enclosure": [
+              0.009902462714692861,
+              0.009902462714692861
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9950487686426536,
+            "witness_empty_apical_annuli": [
+              [
+                0.11160269868585126,
+                0.27852682198085854
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.04869949155856712,
+          "central_basal_displacement_um": 10.452737969682598,
+          "maximum_column_shortening_um": 10.476023765104332
+        },
+        {
+          "record_id": "fig4f_col_F",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_F",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 1.02397148
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9846368099751851,
+              0.9957366544496068
+            ],
+            "signed_interval_gap": 0.011099844474421694,
+            "conditional_gap_enclosure": [
+              0.011099844474421694,
+              0.011099844474421694
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.990186732212396,
+            "witness_empty_apical_annuli": [
+              [
+                0.0994959129681572,
+                0.27587376706735317
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.14282207593817237,
+          "central_basal_displacement_um": 10.83832905324972,
+          "maximum_column_shortening_um": 11.05648086845219
+        },
+        {
+          "record_id": "fig4f_col_G",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_G",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 1.2279829
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9723011078251667,
+              0.9826337689039274
+            ],
+            "signed_interval_gap": 0.010332661078760741,
+            "conditional_gap_enclosure": [
+              0.010332661078760741,
+              0.010332661078760741
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.977467438364547,
+            "witness_empty_apical_annuli": [
+              [
+                0.10029102814598136,
+                0.2579526096911979
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.5817687417184323,
+          "central_basal_displacement_um": 11.19046784650291,
+          "maximum_column_shortening_um": 11.852314640454257
+        }
+      ]
+    },
+    {
+      "branch": "basal_20",
+      "basal_modulus": 20.0,
+      "gain": 9.5,
+      "frozen_prediction_sha256": "431b4b0b9e4d4d47a04c548ca645fa23fb5e9783b2b99a71db6790cbd1f3d895",
+      "scalar_evaluation_n": 9,
+      "scalar_scores": {
+        "RMSE_um": 3.1503004709874545,
+        "MAE_um": 2.6015100649165586,
+        "signed_bias_um": 2.482836336873294
+      },
+      "scalar_pairs": [
+        {
+          "record_id": "optoGEF2_large_col_B",
+          "prediction_um": 5.863711441205651,
+          "observed_um": 0.071243,
+          "prediction_source": "fig4f_col_B"
+        },
+        {
+          "record_id": "optoGEF2_large_col_C",
+          "prediction_um": 6.782379425753819,
+          "observed_um": 3.080957,
+          "prediction_source": "fig4f_col_C"
+        },
+        {
+          "record_id": "optoGEF2_large_col_D",
+          "prediction_um": 8.70730222154066,
+          "observed_um": 8.72639,
+          "prediction_source": "fig4f_col_D"
+        },
+        {
+          "record_id": "optoGEF2_large_col_E",
+          "prediction_um": 6.769287161238547,
+          "observed_um": 2.376692,
+          "prediction_source": "fig4f_col_E"
+        },
+        {
+          "record_id": "optoGEF2_large_col_F",
+          "prediction_um": 11.075003308648663,
+          "observed_um": 9.378311,
+          "prediction_source": "fig4f_col_F"
+        },
+        {
+          "record_id": "optoGEF2_large_col_G",
+          "prediction_um": 11.851389103443049,
+          "observed_um": 8.383168,
+          "prediction_source": "fig4f_col_G"
+        },
+        {
+          "record_id": "optoGEF2_large_col_H",
+          "prediction_um": 8.545860658318981,
+          "observed_um": 7.0,
+          "prediction_source": "fig4f_col_H"
+        },
+        {
+          "record_id": "optoGEF2_large_col_I",
+          "prediction_um": 10.513663002264648,
+          "observed_um": 11.028607,
+          "prediction_source": "fig4f_col_I"
+        },
+        {
+          "record_id": "optoGEF2_large_col_J",
+          "prediction_um": 5.010313709445626,
+          "observed_um": 2.728015,
+          "prediction_source": "fig4f_col_J"
+        }
+      ],
+      "label_n": 31,
+      "conditional_nominal_label_exclusions_by_assumed_surface_error_um": {
+        "0.0": 0,
+        "0.05": 0,
+        "0.2": 0
+      },
+      "ambiguous_label_sets_by_assumed_surface_error_um": {
+        "0.0": 31,
+        "0.05": 31,
+        "0.2": 31
+      },
+      "maximum_force_residual": 7.229029354294259e-11,
+      "minimum_local_J": 0.7972522412307165,
+      "maximum_local_J": 1.1636733731749194,
+      "maximum_absolute_global_volume_change": 0.004154958799585606,
+      "records": [
+        {
+          "record_id": "fig4f_col_AB",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AB",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.50741082
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9379880065693308,
+              0.9562928131858778
+            ],
+            "signed_interval_gap": 0.018304806616546987,
+            "conditional_gap_enclosure": [
+              0.018304806616546987,
+              0.018304806616546987
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9471404098776043,
+            "witness_empty_apical_annuli": [
+              [
+                0.04844487613209077,
+                0.23559993009395958
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.4641907582730944,
+          "central_basal_displacement_um": 5.905568919032759,
+          "maximum_column_shortening_um": 7.428361398423597
+        },
+        {
+          "record_id": "fig4f_col_AA",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AA",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.55289753
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9347518788778686,
+              0.9531455263050069
+            ],
+            "signed_interval_gap": 0.018393647427138338,
+            "conditional_gap_enclosure": [
+              0.018393647427138338,
+              0.018393647427138338
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9439487025914377,
+            "witness_empty_apical_annuli": [
+              [
+                0.04773308413355882,
+                0.23368040992076716
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.5696248687822678,
+          "central_basal_displacement_um": 6.158715357032061,
+          "maximum_column_shortening_um": 7.78859853646844
+        },
+        {
+          "record_id": "fig4f_col_AC",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_AC",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 0.57140392
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9334650429000763,
+              0.9518591712873464
+            ],
+            "signed_interval_gap": 0.01839412838727017,
+            "conditional_gap_enclosure": [
+              0.01839412838727017,
+              0.01839412838727017
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9426621070937113,
+            "witness_empty_apical_annuli": [
+              [
+                0.04742480491839546,
+                0.23289742019600612
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.6127177618738946,
+          "central_basal_displacement_um": 6.255135789998429,
+          "maximum_column_shortening_um": 7.928546841948406
+        },
+        {
+          "record_id": "fig4f_col_AF",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AF",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.17404851
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8887106407232312,
+              0.9066572890674668
+            ],
+            "signed_interval_gap": 0.01794664834423554,
+            "conditional_gap_enclosure": [
+              0.01794664834423554,
+              0.01794664834423554
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.897683964895349,
+            "witness_empty_apical_annuli": [
+              [
+                0.04686611858324653,
+                0.20162145398463943
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -3.1269808162398625,
+          "central_basal_displacement_um": 8.020969474765048,
+          "maximum_column_shortening_um": 11.175560706573116
+        },
+        {
+          "record_id": "fig4f_col_AE",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AE",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.31545596
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8773365343568726,
+              0.8948185744175301
+            ],
+            "signed_interval_gap": 0.017482040060657456,
+            "conditional_gap_enclosure": [
+              0.017482040060657456,
+              0.017482040060657456
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.8860775543872014,
+            "witness_empty_apical_annuli": [
+              [
+                0.04709268952204274,
+                0.1956985703586616
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -3.523577757012742,
+          "central_basal_displacement_um": 8.168842226393805,
+          "maximum_column_shortening_um": 11.70614079171712
+        },
+        {
+          "record_id": "fig4f_col_AD",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_AD",
+            "reported_diameter_um": 24.94698765,
+            "activation_magnitude": 1.95278236
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8227553412037136,
+              0.8376546645261922
+            ],
+            "signed_interval_gap": 0.014899323322478564,
+            "conditional_gap_enclosure": [
+              0.014899323322478564,
+              0.014899323322478564
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.8302050028649529,
+            "witness_empty_apical_annuli": [
+              [
+                0.0478950058998019,
+                0.14095166349518537
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -5.438568738372561,
+          "central_basal_displacement_um": 8.129466018642862,
+          "maximum_column_shortening_um": 13.568034757015425
+        },
+        {
+          "record_id": "fig4f_col_Z",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_Z",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.23971927
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9656673999998165,
+              0.97978524359907
+            ],
+            "signed_interval_gap": 0.014117843599253499,
+            "conditional_gap_enclosure": [
+              0.014117843599253499,
+              0.014117843599253499
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9727263217994433,
+            "witness_empty_apical_annuli": [
+              [
+                0.06458555906627707,
+                0.30986295933461006
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.6771943394311535,
+          "central_basal_displacement_um": 4.313397012079755,
+          "maximum_column_shortening_um": 5.024770110841287
+        },
+        {
+          "record_id": "fig4f_col_Y",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_Y",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.53279366
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9442384553138602,
+              0.9613720106198895
+            ],
+            "signed_interval_gap": 0.017133555306029336,
+            "conditional_gap_enclosure": [
+              0.017133555306029336,
+              0.017133555306029336
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9528052329668748,
+            "witness_empty_apical_annuli": [
+              [
+                0.05807507553024598,
+                0.2881190672638472
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.294037644233701,
+          "central_basal_displacement_um": 6.711420678068706,
+          "maximum_column_shortening_um": 8.072037318857006
+        },
+        {
+          "record_id": "fig4f_col_W",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_W",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.90840079
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9137316267077981,
+              0.9318200847621452
+            ],
+            "signed_interval_gap": 0.018088458054347112,
+            "conditional_gap_enclosure": [
+              0.018088458054347112,
+              0.018088458054347112
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9227758557349717,
+            "witness_empty_apical_annuli": [
+              [
+                0.058833324688895954,
+                0.2553920034039681
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.2840271604681366,
+          "central_basal_displacement_um": 8.04513012081375,
+          "maximum_column_shortening_um": 10.393700424761146
+        },
+        {
+          "record_id": "fig4f_col_X",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_X",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 0.92402627
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9123668672665936,
+              0.9304402132682407
+            ],
+            "signed_interval_gap": 0.018073346001647117,
+            "conditional_gap_enclosure": [
+              0.018073346001647117,
+              0.018073346001647117
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9214035402674171,
+            "witness_empty_apical_annuli": [
+              [
+                0.058865855631881236,
+                0.2543009002093236
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.3302528555139377,
+          "central_basal_displacement_um": 8.075913039934237,
+          "maximum_column_shortening_um": 10.470005658252868
+        },
+        {
+          "record_id": "fig4f_col_V",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_V",
+            "reported_diameter_um": 31.18373456,
+            "activation_magnitude": 1.26223079
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8813682927408909,
+              0.8985032509035775
+            ],
+            "signed_interval_gap": 0.01713495816268662,
+            "conditional_gap_enclosure": [
+              0.01713495816268662,
+              0.01713495816268662
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.8899357718222343,
+            "witness_empty_apical_annuli": [
+              [
+                0.059565820143531706,
+                0.2140197359933138
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -3.400141094730153,
+          "central_basal_displacement_um": 8.433791818497712,
+          "maximum_column_shortening_um": 11.876966441388818
+        },
+        {
+          "record_id": "fig4f_col_U",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_U",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.15051392
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9795741862729921,
+              0.9896705067334188
+            ],
+            "signed_interval_gap": 0.010096320460426744,
+            "conditional_gap_enclosure": [
+              0.010096320460426744,
+              0.010096320460426744
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9846223465032055,
+            "witness_empty_apical_annuli": [
+              [
+                0.07843778979317276,
+                0.37295841280164777
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.34603802443046916,
+          "central_basal_displacement_um": 3.4185285275916883,
+          "maximum_column_shortening_um": 3.7717605058176824
+        },
+        {
+          "record_id": "fig4f_col_T",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_T",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.46366399
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9588889536728344,
+              0.9740472686197533
+            ],
+            "signed_interval_gap": 0.015158314946918883,
+            "conditional_gap_enclosure": [
+              0.015158314946918883,
+              0.015158314946918883
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9664681111462938,
+            "witness_empty_apical_annuli": [
+              [
+                0.07048051152322395,
+                0.33376331286345867
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.8694165012382635,
+          "central_basal_displacement_um": 6.773153420438742,
+          "maximum_column_shortening_um": 7.68034793145027
+        },
+        {
+          "record_id": "fig4f_col_Q",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_Q",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.89526724
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9234476480584917,
+              0.9402283199774996
+            ],
+            "signed_interval_gap": 0.016780671919007895,
+            "conditional_gap_enclosure": [
+              0.016780671919007895,
+              0.016780671919007895
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9318379840179956,
+            "witness_empty_apical_annuli": [
+              [
+                0.07154201569444626,
+                0.28590518596561515
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.0023512807537647,
+          "central_basal_displacement_um": 8.427417477828687,
+          "maximum_column_shortening_um": 10.477867889613549
+        },
+        {
+          "record_id": "fig4f_col_S",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_S",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 0.94810797
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.918534770998382,
+              0.9352820576953691
+            ],
+            "signed_interval_gap": 0.016747286696987107,
+            "conditional_gap_enclosure": [
+              0.016747286696987107,
+              0.016747286696987107
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9269084143468755,
+            "witness_empty_apical_annuli": [
+              [
+                0.07166763640166467,
+                0.27293839997693425
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.1680510672051354,
+          "central_basal_displacement_um": 8.514378451913363,
+          "maximum_column_shortening_um": 10.730027531986284
+        },
+        {
+          "record_id": "fig4f_col_R",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_R",
+            "reported_diameter_um": 37.42048148,
+            "activation_magnitude": 1.39103388
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8738596446481294,
+              0.8891283023168732
+            ],
+            "signed_interval_gap": 0.015268657668743857,
+            "conditional_gap_enclosure": [
+              0.015268657668743857,
+              0.015268657668743857
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.8814939734825014,
+            "witness_empty_apical_annuli": [
+              [
+                0.07270754536587032,
+                0.2128163049693501
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -3.7142018723847467,
+          "central_basal_displacement_um": 8.674028270017914,
+          "maximum_column_shortening_um": 12.419891437625267
+        },
+        {
+          "record_id": "fig4f_col_M",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_M",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.17501565
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9850886942802702,
+              0.9943445090062979
+            ],
+            "signed_interval_gap": 0.009255814726027656,
+            "conditional_gap_enclosure": [
+              0.009255814726027656,
+              0.009255814726027656
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9897166016432841,
+            "witness_empty_apical_annuli": [
+              [
+                0.08628626725263608,
+                0.42208537532810003
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.18945894828902055,
+          "central_basal_displacement_um": 4.0969067247263355,
+          "maximum_column_shortening_um": 4.2863656730153545
+        },
+        {
+          "record_id": "fig4f_col_K",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_K",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.51874902
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9664044994062162,
+              0.9802339619650763
+            ],
+            "signed_interval_gap": 0.013829462558860084,
+            "conditional_gap_enclosure": [
+              0.013829462558860084,
+              0.013829462558860084
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9733192306856462,
+            "witness_empty_apical_annuli": [
+              [
+                0.08353398468600225,
+                0.3588184524949567
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.6621622741699444,
+          "central_basal_displacement_um": 7.533473299023874,
+          "maximum_column_shortening_um": 8.195635573193819
+        },
+        {
+          "record_id": "fig4f_col_L",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_L",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 0.91088485
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9332644606887968,
+              0.9481337028397374
+            ],
+            "signed_interval_gap": 0.014869242150940654,
+            "conditional_gap_enclosure": [
+              0.014869242150940654,
+              0.014869242150940654
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9406990817642671,
+            "witness_empty_apical_annuli": [
+              [
+                0.08478824859199867,
+                0.28164005681334753
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.7375209548687967,
+          "central_basal_displacement_um": 8.835377279393338,
+          "maximum_column_shortening_um": 10.573892561613924
+        },
+        {
+          "record_id": "fig4f_col_O",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_O",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.09397258
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9148346527234911,
+              0.9293820380099929
+            ],
+            "signed_interval_gap": 0.01454738528650179,
+            "conditional_gap_enclosure": [
+              0.01454738528650179,
+              0.01454738528650179
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.922108345366742,
+            "witness_empty_apical_annuli": [
+              [
+                0.08530828513118008,
+                0.2567632979838977
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.365701726665239,
+          "central_basal_displacement_um": 9.000764731796187,
+          "maximum_column_shortening_um": 11.366466458461426
+        },
+        {
+          "record_id": "fig4f_col_N",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_N",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.15884867
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9079793458695983,
+              0.9223234688686487
+            ],
+            "signed_interval_gap": 0.014344122999050413,
+            "conditional_gap_enclosure": [
+              0.014344122999050413,
+              0.014344122999050413
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9151514073691235,
+            "witness_empty_apical_annuli": [
+              [
+                0.08548681092037379,
+                0.24997466627096426
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.602163792900269,
+          "central_basal_displacement_um": 9.014498049502471,
+          "maximum_column_shortening_um": 11.61666184240274
+        },
+        {
+          "record_id": "fig4f_col_P",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_P",
+            "reported_diameter_um": 43.65722839,
+            "activation_magnitude": 1.5168727
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.8683560674331837,
+              0.8809500421965056
+            ],
+            "signed_interval_gap": 0.012593974763321913,
+            "conditional_gap_enclosure": [
+              0.012593974763321913,
+              0.012593974763321913
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.8746530548148447,
+            "witness_empty_apical_annuli": [
+              [
+                0.08643534491187516,
+                0.22325527741175313
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -3.9881735864170613,
+          "central_basal_displacement_um": 8.795894776937713,
+          "maximum_column_shortening_um": 12.784068363354773
+        },
+        {
+          "record_id": "fig4f_col_J",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_J",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.21819433
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9923830949720056,
+              1.0
+            ],
+            "signed_interval_gap": 0.007616905027994392,
+            "conditional_gap_enclosure": [
+              0.007616905027994392,
+              0.007616905027994392
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9961915474860028,
+            "witness_empty_apical_annuli": [
+              [
+                0.1062180233333175,
+                0.4438583899646542
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.03456679672060192,
+          "central_basal_displacement_um": 5.044880506166228,
+          "maximum_column_shortening_um": 5.010313709445626
+        },
+        {
+          "record_id": "fig4f_col_B",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_B",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.28018503
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9908394507959253,
+              1.0
+            ],
+            "signed_interval_gap": 0.00916054920407472,
+            "conditional_gap_enclosure": [
+              0.00916054920407472,
+              0.00916054920407472
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9954197253979626,
+            "witness_empty_apical_annuli": [
+              [
+                0.10077590685371463,
+                0.43122119377135615
+              ]
+            ]
+          },
+          "central_apical_displacement_um": 0.018549706026680157,
+          "central_basal_displacement_um": 5.882261147232334,
+          "maximum_column_shortening_um": 5.863711441205651
+        },
+        {
+          "record_id": "fig4f_col_E",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_E",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.35848814
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.98809207992374,
+              0.9988236902571047
+            ],
+            "signed_interval_gap": 0.010731610333364672,
+            "conditional_gap_enclosure": [
+              0.010731610333364672,
+              0.010731610333364672
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9934578850904223,
+            "witness_empty_apical_annuli": [
+              [
+                0.09585049913944185,
+                0.4177582931486086
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.039406376386992126,
+          "central_basal_displacement_um": 6.729880784851556,
+          "maximum_column_shortening_um": 6.769287161238547
+        },
+        {
+          "record_id": "fig4f_col_C",
+          "observed_label": 0,
+          "input": {
+            "record_id": "fig4f_col_C",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.35972812
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9880409272932683,
+              0.9987863498869887
+            ],
+            "signed_interval_gap": 0.010745422593720355,
+            "conditional_gap_enclosure": [
+              0.010745422593720355,
+              0.010745422593720355
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9934136385901284,
+            "witness_empty_apical_annuli": [
+              [
+                0.09585812776181163,
+                0.41751533215984454
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.04065727878587966,
+          "central_basal_displacement_um": 6.741722146967938,
+          "maximum_column_shortening_um": 6.782379425753819
+        },
+        {
+          "record_id": "fig4f_col_H",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_H",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.5614692
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.976740284258838,
+              0.9890543112788782
+            ],
+            "signed_interval_gap": 0.012314027020040252,
+            "conditional_gap_enclosure": [
+              0.012314027020040252,
+              0.012314027020040252
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9828972977688581,
+            "witness_empty_apical_annuli": [
+              [
+                0.09695485104163404,
+                0.3743578198246572
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.3666805721575797,
+          "central_basal_displacement_um": 8.179180086161402,
+          "maximum_column_shortening_um": 8.545860658318981
+        },
+        {
+          "record_id": "fig4f_col_D",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_D",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.58395102
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9751534567613106,
+              0.9875747985401949
+            ],
+            "signed_interval_gap": 0.01242134177888432,
+            "conditional_gap_enclosure": [
+              0.01242134177888432,
+              0.01242134177888432
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9813641276507528,
+            "witness_empty_apical_annuli": [
+              [
+                0.09706246000605986,
+                0.36580208681266213
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -0.41624424890347017,
+          "central_basal_displacement_um": 8.29105797263719,
+          "maximum_column_shortening_um": 8.70730222154066
+        },
+        {
+          "record_id": "fig4f_col_I",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_I",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 0.89767374
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9482140946249414,
+              0.9611569790545091
+            ],
+            "signed_interval_gap": 0.012942884429567703,
+            "conditional_gap_enclosure": [
+              0.012942884429567703,
+              0.012942884429567703
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9546855368397253,
+            "witness_empty_apical_annuli": [
+              [
+                0.09837344325897157,
+                0.29728975494623533
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.3012412016739439,
+          "central_basal_displacement_um": 9.212421800590704,
+          "maximum_column_shortening_um": 10.513663002264648
+        },
+        {
+          "record_id": "fig4f_col_F",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_F",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 1.02397148
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9356253850177605,
+              0.9483810543365604
+            ],
+            "signed_interval_gap": 0.0127556693187999,
+            "conditional_gap_enclosure": [
+              0.0127556693187999,
+              0.0127556693187999
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9420032196771604,
+            "witness_empty_apical_annuli": [
+              [
+                0.09883345869506627,
+                0.28225823606728995
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -1.729234679725227,
+          "central_basal_displacement_um": 9.345768628923434,
+          "maximum_column_shortening_um": 11.075003308648663
+        },
+        {
+          "record_id": "fig4f_col_G",
+          "observed_label": 1,
+          "input": {
+            "record_id": "fig4f_col_G",
+            "reported_diameter_um": 49.8939753,
+            "activation_magnitude": 1.2279829
+          },
+          "observer": {
+            "scope": "Ideal continuous axisymmetric horizontal-slice observation; not specimen acquisition reconstruction",
+            "possible_apical_void_slice_interval": [
+              0.9143554823623518,
+              0.9264755750854828
+            ],
+            "signed_interval_gap": 0.012120092723131082,
+            "conditional_gap_enclosure": [
+              0.012120092723131082,
+              0.012120092723131082
+            ],
+            "uniform_surface_error_assumption": 0.0,
+            "unknown_slice_label_set": [
+              0,
+              1
+            ],
+            "positive_existence_robust_under_error": true,
+            "point_label": null,
+            "warning": "A nonempty existence interval does not predict an observed positive label without acquisition slice height and resolution. The supplied surface error is an assumption, not an internally proved FE error estimate.",
+            "witness_slice_height": 0.9204155287239173,
+            "witness_empty_apical_annuli": [
+              [
+                0.09953073843167966,
+                0.2644633656486579
+              ]
+            ]
+          },
+          "central_apical_displacement_um": -2.463068234636325,
+          "central_basal_displacement_um": 9.388320868806723,
+          "maximum_column_shortening_um": 11.851389103443049
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "SPATIAL-PROTOCOL.json": "6db7a2f44ec7945af8ba0d9420c2d40b9824f735a1671bfaa6698f2cdeab63d5",
+    "scripts/score_spatial.py": "ce7957d796442852c37ec4580e5519f098b3ea67be6c87aa1836de1addcb40bf",
+    "data/derived/evaluation_large_50um.csv": "7b49ea11755ce9dddd5c07d376c7f2fc5e10834bb724ae6bedbf95bb3b91a6b8",
+    "data/derived/evaluation_larger_bending.csv": "733d63ff64564b2d483617e61ba403b5dd1425bac4f2160a00a063686e214147"
+  },
+  "error_assumption_warning": "0/.05/.2 um are illustrative assumed uniform surface-error bounds, NOT measured or certified errors. Label exclusions remain conditional on slice/body/time assumptions.",
+  "missing_validation": [
+    "specimen initial geometry and material bounds",
+    "complete calibration identified set",
+    "source transient/slice observation operator",
+    "rigorous continuum accuracy",
+    "ellipse/non-axisymmetric response"
+  ],
+  "novelty": "None established; this is model reproduction/stress testing and conditional observation mathematics"
+}

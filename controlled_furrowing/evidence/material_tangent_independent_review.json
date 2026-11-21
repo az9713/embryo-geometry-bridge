@@ -1,0 +1,963 @@
+{
+  "status": "PASS_INDEPENDENT_FLOATING_MATERIAL_TANGENT_REVIEW",
+  "checks": {
+    "script_matches_protocol": true,
+    "protocol_receipt_hash_matches": true,
+    "all_frozen_physical_sources_match": true,
+    "mean_derivative_source_matches": true,
+    "1_input_hash_matches_protocol_and_receipt": true,
+    "1_matrix_NPZ_hash_matches_receipt": true,
+    "1_archive_vector_matches_state": true,
+    "1_archive_free_indices_match_model": true,
+    "1_actual_quadrature_matches_model": true,
+    "1_fresh_force_below_gate": true,
+    "1_freshAD_implicit_column_0": true,
+    "1_freshAD_vs_archivedH_column_0": true,
+    "1_freshAD_implicit_column_1": true,
+    "1_freshAD_vs_archivedH_column_1": true,
+    "1_freshAD_implicit_column_2": true,
+    "1_freshAD_vs_archivedH_column_2": true,
+    "1_freshAD_implicit_column_3": true,
+    "1_freshAD_vs_archivedH_column_3": true,
+    "1_freshAD_implicit_column_4": true,
+    "1_freshAD_vs_archivedH_column_4": true,
+    "1_freshAD_implicit_column_5": true,
+    "1_freshAD_vs_archivedH_column_5": true,
+    "1_current_disk_chain_rule_units_match": true,
+    "1_current_disk_displacement_only_FD_column_0": true,
+    "1_current_disk_displacement_only_FD_column_1": true,
+    "1_current_disk_displacement_only_FD_column_2": true,
+    "1_current_disk_displacement_only_FD_column_3": true,
+    "1_current_disk_displacement_only_FD_column_4": true,
+    "1_current_disk_displacement_only_FD_column_5": true,
+    "1_current_radial_line_chain_rule_units_match": true,
+    "1_current_radial_line_displacement_only_FD_column_0": true,
+    "1_current_radial_line_displacement_only_FD_column_1": true,
+    "1_current_radial_line_displacement_only_FD_column_2": true,
+    "1_current_radial_line_displacement_only_FD_column_3": true,
+    "1_current_radial_line_displacement_only_FD_column_4": true,
+    "1_current_radial_line_displacement_only_FD_column_5": true,
+    "5_input_hash_matches_protocol_and_receipt": true,
+    "5_matrix_NPZ_hash_matches_receipt": true,
+    "5_archive_vector_matches_state": true,
+    "5_archive_free_indices_match_model": true,
+    "5_actual_quadrature_matches_model": true,
+    "5_fresh_force_below_gate": true,
+    "5_freshAD_implicit_column_0": true,
+    "5_freshAD_vs_archivedH_column_0": true,
+    "5_freshAD_implicit_column_1": true,
+    "5_freshAD_vs_archivedH_column_1": true,
+    "5_freshAD_implicit_column_2": true,
+    "5_freshAD_vs_archivedH_column_2": true,
+    "5_freshAD_implicit_column_3": true,
+    "5_freshAD_vs_archivedH_column_3": true,
+    "5_freshAD_implicit_column_4": true,
+    "5_freshAD_vs_archivedH_column_4": true,
+    "5_freshAD_implicit_column_5": true,
+    "5_freshAD_vs_archivedH_column_5": true,
+    "gain5_six_independent_component_B_columns": true,
+    "gain5_independently_assembled_force_scale_gauge": true,
+    "gain5_pointwise_inversion_penalty_inactive": true,
+    "5_current_disk_chain_rule_units_match": true,
+    "5_current_disk_displacement_only_FD_column_0": true,
+    "5_current_disk_displacement_only_FD_column_1": true,
+    "5_current_disk_displacement_only_FD_column_2": true,
+    "5_current_disk_displacement_only_FD_column_3": true,
+    "5_current_disk_displacement_only_FD_column_4": true,
+    "5_current_disk_displacement_only_FD_column_5": true,
+    "5_current_radial_line_chain_rule_units_match": true,
+    "5_current_radial_line_displacement_only_FD_column_0": true,
+    "5_current_radial_line_displacement_only_FD_column_1": true,
+    "5_current_radial_line_displacement_only_FD_column_2": true,
+    "5_current_radial_line_displacement_only_FD_column_3": true,
+    "5_current_radial_line_displacement_only_FD_column_4": true,
+    "5_current_radial_line_displacement_only_FD_column_5": true,
+    "10_input_hash_matches_protocol_and_receipt": true,
+    "10_matrix_NPZ_hash_matches_receipt": true,
+    "10_archive_vector_matches_state": true,
+    "10_archive_free_indices_match_model": true,
+    "10_actual_quadrature_matches_model": true,
+    "10_fresh_force_below_gate": true,
+    "10_freshAD_implicit_column_0": true,
+    "10_freshAD_vs_archivedH_column_0": true,
+    "10_freshAD_implicit_column_1": true,
+    "10_freshAD_vs_archivedH_column_1": true,
+    "10_freshAD_implicit_column_2": true,
+    "10_freshAD_vs_archivedH_column_2": true,
+    "10_freshAD_implicit_column_3": true,
+    "10_freshAD_vs_archivedH_column_3": true,
+    "10_freshAD_implicit_column_4": true,
+    "10_freshAD_vs_archivedH_column_4": true,
+    "10_freshAD_implicit_column_5": true,
+    "10_freshAD_vs_archivedH_column_5": true,
+    "10_current_disk_chain_rule_units_match": true,
+    "10_current_disk_displacement_only_FD_column_0": true,
+    "10_current_disk_displacement_only_FD_column_1": true,
+    "10_current_disk_displacement_only_FD_column_2": true,
+    "10_current_disk_displacement_only_FD_column_3": true,
+    "10_current_disk_displacement_only_FD_column_4": true,
+    "10_current_disk_displacement_only_FD_column_5": true,
+    "10_current_radial_line_chain_rule_units_match": true,
+    "10_current_radial_line_displacement_only_FD_column_0": true,
+    "10_current_radial_line_displacement_only_FD_column_1": true,
+    "10_current_radial_line_displacement_only_FD_column_2": true,
+    "10_current_radial_line_displacement_only_FD_column_3": true,
+    "10_current_radial_line_displacement_only_FD_column_4": true,
+    "10_current_radial_line_displacement_only_FD_column_5": true,
+    "current_disk_recomputed_singular_values_match": true,
+    "current_radial_line_recomputed_singular_values_match": true,
+    "multiplicative_FD_error_explained_by_sinh_factor": true,
+    "actual_input_archive_hashes_unchanged_after_review": true,
+    "current_root_material_source_unchanged": true,
+    "review_doc_math_delimiters_balanced": true,
+    "review_doc_local_links_exist": true,
+    "review_doc_utf8_no_replacement_char": true
+  },
+  "records": [
+    {
+      "strength": 1.0,
+      "force_linf": 3.2476886035071734e-12,
+      "linear_HVP_checks": [
+        {
+          "column": 0,
+          "fresh_AD_HS_plus_B_relative_residual": 8.13198372938875e-13,
+          "fresh_AD_vs_archived_H_relative_difference": 4.970035681343168e-13
+        },
+        {
+          "column": 1,
+          "fresh_AD_HS_plus_B_relative_residual": 2.8057898200839285e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 1.899392283448966e-12
+        },
+        {
+          "column": 2,
+          "fresh_AD_HS_plus_B_relative_residual": 4.129142566762478e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 2.222278030268166e-12
+        },
+        {
+          "column": 3,
+          "fresh_AD_HS_plus_B_relative_residual": 5.57102998303517e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 4.384865316819504e-12
+        },
+        {
+          "column": 4,
+          "fresh_AD_HS_plus_B_relative_residual": 4.917724776515346e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.733865363166127e-12
+        },
+        {
+          "column": 5,
+          "fresh_AD_HS_plus_B_relative_residual": 9.842165522002313e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 6.35241609427415e-12
+        }
+      ],
+      "observations": [
+        {
+          "weighting": "current_disk",
+          "mean_J": [
+            [
+              -0.10650326802118382,
+              0.00344360689211602,
+              -0.020319036160176936,
+              -2.1607956868887217,
+              0.08186173638220355,
+              1.2149850339355972
+            ],
+            [
+              -0.002182116555499515,
+              -0.0056393313332935855,
+              0.010938306204810122,
+              0.20149893526227716,
+              -0.1875354753502132,
+              0.2099262054218479
+            ]
+          ],
+          "displacement_only_FD_rows": [
+            {
+              "column": 0,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.1065032680358513,
+                -0.0021821165555047095
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.10650326802118382,
+                -0.002182116555499515
+              ],
+              "max_abs_error": 1.466748944523033e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 1,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                0.003443606892972184,
+                -0.0056393313332958606
+              ],
+              "predicted_apical_basal_derivative": [
+                0.00344360689211602,
+                -0.0056393313332935855
+              ],
+              "max_abs_error": 8.561640979509733e-13,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 2,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.020319036124760714,
+                0.010938306204827386
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.020319036160176936,
+                0.010938306204810122
+              ],
+              "max_abs_error": 3.5416222038398004e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 3,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -2.1607956868763267,
+                0.20149893526236196
+              ],
+              "predicted_apical_basal_derivative": [
+                -2.1607956868887217,
+                0.20149893526227716
+              ],
+              "max_abs_error": 1.2394973936125098e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 4,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                0.08186173637625416,
+                -0.18753547535013682
+              ],
+              "predicted_apical_basal_derivative": [
+                0.08186173638220355,
+                -0.1875354753502132
+              ],
+              "max_abs_error": 5.94939375542225e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 5,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                1.2149850339326917,
+                0.20992620542184537
+              ],
+              "predicted_apical_basal_derivative": [
+                1.2149850339355972,
+                0.2099262054218479
+              ],
+              "max_abs_error": 2.9054536554440347e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            }
+          ]
+        },
+        {
+          "weighting": "current_radial_line",
+          "mean_J": [
+            [
+              -0.1267135161814833,
+              0.0067635795987540034,
+              -0.019867786393397126,
+              -2.3339041642300584,
+              0.08561835356011235,
+              1.3160231075073057
+            ],
+            [
+              -0.002258507131961056,
+              -0.005613755714813191,
+              0.011348784870334147,
+              0.20832735683932485,
+              -0.2052785157018945,
+              0.22948864874028407
+            ]
+          ],
+          "displacement_only_FD_rows": [
+            {
+              "column": 0,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.1267135161597821,
+                -0.0022585071318692584
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.1267135161814833,
+                -0.002258507131961056
+              ],
+              "max_abs_error": 2.1701196395440547e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 1,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                0.006763579598612068,
+                -0.005613755715005997
+              ],
+              "predicted_apical_basal_derivative": [
+                0.0067635795987540034,
+                -0.005613755714813191
+              ],
+              "max_abs_error": 1.9280584073744222e-13,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 2,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.01986778642049103,
+                0.011348784870190975
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.019867786393397126,
+                0.011348784870334147
+              ],
+              "max_abs_error": 2.7093903509634032e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 3,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -2.3339041642245206,
+                0.2083273568392885
+              ],
+              "predicted_apical_basal_derivative": [
+                -2.3339041642300584,
+                0.20832735683932485
+              ],
+              "max_abs_error": 5.537792446830281e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 4,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                0.08561835358023018,
+                -0.20527851570195654
+              ],
+              "predicted_apical_basal_derivative": [
+                0.08561835356011235,
+                -0.2052785157018945
+              ],
+              "max_abs_error": 2.0117824073295765e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 5,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                1.3160231074849094,
+                0.22948864874056119
+              ],
+              "predicted_apical_basal_derivative": [
+                1.3160231075073057,
+                0.22948864874028407
+              ],
+              "max_abs_error": 2.2396307031158358e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "strength": 5.0,
+      "force_linf": 3.137898794969285e-12,
+      "linear_HVP_checks": [
+        {
+          "column": 0,
+          "fresh_AD_HS_plus_B_relative_residual": 6.003086543787126e-13,
+          "fresh_AD_vs_archived_H_relative_difference": 4.1372798639601306e-13
+        },
+        {
+          "column": 1,
+          "fresh_AD_HS_plus_B_relative_residual": 4.831344235706871e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.2744383510041405e-12
+        },
+        {
+          "column": 2,
+          "fresh_AD_HS_plus_B_relative_residual": 5.534718816413716e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 2.7450830428350375e-12
+        },
+        {
+          "column": 3,
+          "fresh_AD_HS_plus_B_relative_residual": 6.662834957966161e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.8041442837346884e-12
+        },
+        {
+          "column": 4,
+          "fresh_AD_HS_plus_B_relative_residual": 5.1874818962897814e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.0890706614680933e-12
+        },
+        {
+          "column": 5,
+          "fresh_AD_HS_plus_B_relative_residual": 6.935506171325213e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.996420981687237e-12
+        }
+      ],
+      "observations": [
+        {
+          "weighting": "current_disk",
+          "mean_J": [
+            [
+              -0.15877599951689111,
+              -0.01695104875386642,
+              -0.08422787861389905,
+              -5.831674274985193,
+              0.3389758450077056,
+              3.0906439155109164
+            ],
+            [
+              0.018578627440546305,
+              -0.026663027616736695,
+              0.045808820810143494,
+              0.9893507568727252,
+              -0.6364193675558271,
+              0.5032651019491031
+            ]
+          ],
+          "displacement_only_FD_rows": [
+            {
+              "column": 0,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.1587759995125282,
+                0.018578627440368756
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.15877599951689111,
+                0.018578627440546305
+              ],
+              "max_abs_error": 4.3629266865963245e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 1,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.0169510487424418,
+                -0.026663027616335988
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.01695104875386642,
+                -0.026663027616736695
+              ],
+              "max_abs_error": 1.1424621665367951e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 2,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.08422787860951075,
+                0.045808820810511186
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.08422787861389905,
+                0.045808820810143494
+              ],
+              "max_abs_error": 4.388295282709009e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 3,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -5.831674275000864,
+                0.9893507568703441
+              ],
+              "predicted_apical_basal_derivative": [
+                -5.831674274985193,
+                0.9893507568727252
+              ],
+              "max_abs_error": 1.567102003718901e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 4,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                0.33897584501119127,
+                -0.6364193675562069
+              ],
+              "predicted_apical_basal_derivative": [
+                0.3389758450077056,
+                -0.6364193675558271
+              ],
+              "max_abs_error": 3.4856562081131415e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 5,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                3.0906439154954057,
+                0.5032651019487577
+              ],
+              "predicted_apical_basal_derivative": [
+                3.0906439155109164,
+                0.5032651019491031
+              ],
+              "max_abs_error": 1.5510703832433137e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            }
+          ]
+        },
+        {
+          "weighting": "current_radial_line",
+          "mean_J": [
+            [
+              -0.18243498123558055,
+              -0.0039683663037739115,
+              -0.0829497193917729,
+              -6.384615437177777,
+              0.36516297624368677,
+              3.358017977509079
+            ],
+            [
+              0.02050649078188888,
+              -0.026420242833516853,
+              0.04713595300292278,
+              1.032695741654962,
+              -0.6975702920290809,
+              0.546264629555248
+            ]
+          ],
+          "displacement_only_FD_rows": [
+            {
+              "column": 0,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.18243498123737822,
+                0.020506490782112863
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.18243498123558055,
+                0.02050649078188888
+              ],
+              "max_abs_error": 1.7976731214730535e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 1,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.003968366293349845,
+                -0.026420242832947416
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.0039683663037739115,
+                -0.026420242833516853
+              ],
+              "max_abs_error": 1.0424066124170572e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 2,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.08294971939548645,
+                0.047135953002985786
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.0829497193917729,
+                0.04713595300292278
+              ],
+              "max_abs_error": 3.7135572394930705e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 3,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -6.3846154371560715,
+                1.0326957416528781
+              ],
+              "predicted_apical_basal_derivative": [
+                -6.384615437177777,
+                1.032695741654962
+              ],
+              "max_abs_error": 2.170530422063166e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 4,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                0.3651629762480013,
+                -0.6975702920292148
+              ],
+              "predicted_apical_basal_derivative": [
+                0.36516297624368677,
+                -0.6975702920290809
+              ],
+              "max_abs_error": 4.314548718298283e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 5,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                3.3580179774972407,
+                0.5462646295545381
+              ],
+              "predicted_apical_basal_derivative": [
+                3.358017977509079,
+                0.546264629555248
+              ],
+              "max_abs_error": 1.1838086066973119e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "strength": 10.0,
+      "force_linf": 2.8146492569384313e-12,
+      "linear_HVP_checks": [
+        {
+          "column": 0,
+          "fresh_AD_HS_plus_B_relative_residual": 5.866465717393348e-13,
+          "fresh_AD_vs_archived_H_relative_difference": 3.4868315252696294e-13
+        },
+        {
+          "column": 1,
+          "fresh_AD_HS_plus_B_relative_residual": 5.808912491789657e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.4941526740575658e-12
+        },
+        {
+          "column": 2,
+          "fresh_AD_HS_plus_B_relative_residual": 4.661451790005443e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.4000782365405565e-12
+        },
+        {
+          "column": 3,
+          "fresh_AD_HS_plus_B_relative_residual": 7.1202934787000024e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.994236684383068e-12
+        },
+        {
+          "column": 4,
+          "fresh_AD_HS_plus_B_relative_residual": 4.192113149860988e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 2.8836238144244316e-12
+        },
+        {
+          "column": 5,
+          "fresh_AD_HS_plus_B_relative_residual": 5.312662866101976e-12,
+          "fresh_AD_vs_archived_H_relative_difference": 3.3912087745144415e-12
+        }
+      ],
+      "observations": [
+        {
+          "weighting": "current_disk",
+          "mean_J": [
+            [
+              -0.17043092664139436,
+              -0.09486831494854081,
+              -0.15081674048103905,
+              -7.329698099224855,
+              0.5572436064201294,
+              4.021064533682977
+            ],
+            [
+              0.04680889475333869,
+              -0.04427487062023254,
+              0.07718751430463448,
+              1.712022942391459,
+              -0.9168804450382589,
+              0.4589180710437759
+            ]
+          ],
+          "displacement_only_FD_rows": [
+            {
+              "column": 0,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.1704309266337134,
+                0.04680889475361383
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.17043092664139436,
+                0.04680889475333869
+              ],
+              "max_abs_error": 7.680966973566683e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 1,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.09486831494598391,
+                -0.04427487061975377
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.09486831494854081,
+                -0.04427487062023254
+              ],
+              "max_abs_error": 2.5568991368629668e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 2,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.15081674048289528,
+                0.077187514304633
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.15081674048103905,
+                0.07718751430463448
+              ],
+              "max_abs_error": 1.8562373860220305e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 3,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -7.329698099329818,
+                1.7120229423783773
+              ],
+              "predicted_apical_basal_derivative": [
+                -7.329698099224855,
+                1.712022942391459
+              ],
+              "max_abs_error": 1.049631492833214e-10,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 4,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                0.5572436064227304,
+                -0.9168804450387924
+              ],
+              "predicted_apical_basal_derivative": [
+                0.5572436064201294,
+                -0.9168804450382589
+              ],
+              "max_abs_error": 2.6010305020918167e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 5,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                4.02106453368134,
+                0.45891807104347926
+              ],
+              "predicted_apical_basal_derivative": [
+                4.021064533682977,
+                0.4589180710437759
+              ],
+              "max_abs_error": 1.6369128275073308e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            }
+          ]
+        },
+        {
+          "weighting": "current_radial_line",
+          "mean_J": [
+            [
+              -0.19215227992793685,
+              -0.07411655247084718,
+              -0.1504805296694336,
+              -8.08075968164299,
+              0.6164164093998042,
+              4.40479156847767
+            ],
+            [
+              0.04993910952733529,
+              -0.043051647312581015,
+              0.07785936814779143,
+              1.8043346574278194,
+              -0.9965880373955898,
+              0.47196766012738967
+            ]
+          ],
+          "displacement_only_FD_rows": [
+            {
+              "column": 0,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.1921522799186448,
+                0.04993910952655334
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.19215227992793685,
+                0.04993910952733529
+              ],
+              "max_abs_error": 9.292039360175863e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 1,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.07411655246869486,
+                -0.04305164731266409
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.07411655247084718,
+                -0.043051647312581015
+              ],
+              "max_abs_error": 2.152319988901752e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 2,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -0.15048052967259196,
+                0.07785936814719285
+              ],
+              "predicted_apical_basal_derivative": [
+                -0.1504805296694336,
+                0.07785936814779143
+              ],
+              "max_abs_error": 3.1583624604536453e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 3,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                -8.08075968160793,
+                1.8043346574181385
+              ],
+              "predicted_apical_basal_derivative": [
+                -8.08075968164299,
+                1.8043346574278194
+              ],
+              "max_abs_error": 3.5059954939242743e-11,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 4,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                0.6164164094002444,
+                -0.9965880373952185
+              ],
+              "predicted_apical_basal_derivative": [
+                0.6164164093998042,
+                -0.9965880373955898
+              ],
+              "max_abs_error": 4.4020342926387457e-13,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            },
+            {
+              "column": 5,
+              "step": 0.0001,
+              "FD_apical_basal_means": [
+                4.4047915684686245,
+                0.4719676601272482
+              ],
+              "predicted_apical_basal_derivative": [
+                4.40479156847767,
+                0.47196766012738967
+              ],
+              "max_abs_error": 9.045209026226075e-12,
+              "scope": "u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "independent_component_assembly": {
+    "strength": 5.0,
+    "component_relative_B_errors": [
+      9.993534029746206e-15,
+      1.2210862756036555e-14,
+      8.646065394495234e-14,
+      6.981081897332825e-15,
+      1.208578971001029e-13,
+      6.220082561224305e-16
+    ],
+    "force_gauge_linf": 3.9988086626696617e-16,
+    "max_abs_B_difference": 4.579669976578771e-16,
+    "component_potentials_unscaled": [
+      0.006785307755822616,
+      0.00046560908685623755,
+      0.0005969734859669664,
+      28.335017409584037,
+      56.551533610704546,
+      0.21386535685358604
+    ],
+    "scope": "Own volume/active/shear expressions and independent split surface Gauss loops; shares geometric FE cache, not constitutive gradient assembly."
+  },
+  "svd_replay": {
+    "current_disk": {
+      "recomputed_singular_values": [
+        11.064452006203123,
+        1.8566097640730446,
+        0.13352640708773714,
+        0.045221509690549375,
+        0.012159722972979957,
+        0.0014387797105662734
+      ],
+      "condition_ratio_in_declared_mixed_coordinates": 7690.164050095193,
+      "not_inferred": "No full experimental/68row Jacobian, noise-weighted rank, global inverse or material posterior."
+    },
+    "current_radial_line": {
+      "recomputed_singular_values": [
+        12.12862615122902,
+        1.9768313807205546,
+        0.14869678807143813,
+        0.05767290634778597,
+        0.012287732145285717,
+        0.0013096232004524183
+      ],
+      "condition_ratio_in_declared_mixed_coordinates": 9261.157061847332,
+      "not_inferred": "No full experimental/68row Jacobian, noise-weighted rank, global inverse or material posterior."
+    }
+  },
+  "central_log_FD_expected_relative_factor": 1.6666667512765798e-07,
+  "source_and_archive_sha256": {
+    "runs\\activated_quadrature\\lambda_5000.0_strength_1.0\\reequilibrated.json": "d313cb9bee8073ae141feaca429f72a77c7eb32c5053c4a392033d3e6d869460",
+    "runs\\material_tangent_inference\\strength_1\\tangents.npz": "eaa419fd2715f9e81cf6bff5e67affd2eeaecc224b9615536a09042a34c4c3e6",
+    "runs\\activated_quadrature\\lambda_5000.0_strength_5.0\\reequilibrated.json": "662060f2dce6efd8da0195fe851baba76bfeb2e5b20b93d63bceccbf0c8b4325",
+    "runs\\material_tangent_inference\\strength_5\\tangents.npz": "64760bc0ae0f838aa80c320d721611190ae48b186e6954cd9116c6068b1ab083",
+    "runs\\activated_quadrature\\lambda_5000.0_strength_10.0\\reequilibrated.json": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50",
+    "runs\\material_tangent_inference\\strength_10\\tangents.npz": "787ecb825811fcde5f8445dbfb0d4a64ed37a591270227cdc43546bc6ebcb41c"
+  },
+  "reviewed_source_sha256": "63ded9fdd73038f770ce9369e9d8a2d6d972a4863f83515b20a5961a5b522d78",
+  "mechanics_receipt_sha256": "9ca38a79e501912ac970c0f451e96cf6b872d3055106cd15db64ebf6ae1c5880",
+  "mean_diagnostic_receipt_sha256": "35ff90ec1614777af7c9559fbcabe63004b0ea42a22bbbc71e0b840410c57ded",
+  "independent_program": "from pathlib import Path\nfrom fractions import Fraction as Q\nimport sys,json,hashlib,platform\nimport numpy as np,torch,scipy\nfrom scipy.sparse import csr_matrix\nsys.path.insert(0,str(Path('controlled_furrowing/scripts').resolve()))\nfrom sparse_quadratic import AxisymmetricModel,Parameters\nfrom quadratic_mean_derivatives import mean_state_gradients\nfrom quadratic_endpoint_observer import Curve,mass,interval,scale,add\nroot=Path('controlled_furrowing');torch.set_num_threads(1)\nsha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()\nout=root/'runs/material_tangent_inference'\nmechanics=json.loads((root/'evidence/material_tangent_mechanics_verification.json').read_text())\ndiagnostic=json.loads((root/'evidence/material_tangent_mean_diagnostic.json').read_text())\nprotocol=json.loads((out/'mechanics_protocol.json').read_text())\nchecks={};records=[];all_sources={};assembled_comparison=None\nchecks['script_matches_protocol']=sha(root/'scripts/material_tangent_inference.py')==protocol['script_sha256']\nchecks['protocol_receipt_hash_matches']=sha(out/'mechanics_protocol.json')==mechanics['protocol_sha256']\nchecks['all_frozen_physical_sources_match']=all(sha(root/'scripts'/name)==value for name,value in protocol['physical_source_hashes'].items())\nchecks['mean_derivative_source_matches']=sha(root/'scripts/quadratic_mean_derivatives.py')==diagnostic['observer_derivative_source_sha256']=='681b69335a80ae0468dd98856c5562b24524827809ece465747b95454d152bff'\nobservations={}\nfor row in mechanics['rows']:\n strength=row['strength'];key=str(int(strength));path=root/row['input'];state=json.loads(path.read_text());archive_path=out/f'strength_{key}'/'tangents.npz';archive=np.load(archive_path)\n checks[key+'_input_hash_matches_protocol_and_receipt']=sha(path)==row['input_sha256']==protocol['input_hashes'][key]\n checks[key+'_matrix_NPZ_hash_matches_receipt']=sha(archive_path)==row['matrix_archive_sha256']\n all_sources[str(path.relative_to(root))]=sha(path);all_sources[str(archive_path.relative_to(root))]=sha(archive_path)\n model=AxisymmetricModel(Parameters(**state['parameters']));u=np.array(state['free_displacement']);B=archive['parameter_force_derivatives'];S=archive['displacement_tangents'];free=archive['free_indices']\n H=csr_matrix((archive['H_data'],archive['H_indices'],archive['H_indptr']),shape=tuple(archive['H_shape']))\n checks[key+'_archive_vector_matches_state']=np.array_equal(archive['free_vector'],u)\n checks[key+'_archive_free_indices_match_model']=np.array_equal(free,model.free)\n checks[key+'_actual_quadrature_matches_model']=state['integration_policy']=={'volume_duffy_gauss_order':8,'surface_gauss_order':12,'volume_chunk_triangles':12}\n energy,g=model.objective(u,strength);checks[key+'_fresh_force_below_gate']=float(np.max(abs(g)))<1e-7\n # Direct H*v from differentiation of the actual frozen physical energy,\n # independent of sparse coloring, recovery and archived sparse entries.\n x=torch.tensor(u,dtype=torch.float64,requires_grad=True);parts=model.energy_components(model.coordinates(x),strength);E=parts['total']/model.energy_scale\n gradient=torch.autograd.grad(E,x,create_graph=True)[0];linear_rows=[]\n for j in range(6):\n  hv=torch.autograd.grad(gradient,x,grad_outputs=torch.tensor(S[:,j],dtype=torch.float64),retain_graph=True)[0].detach().numpy()\n  rel=float(np.linalg.norm(hv+B[:,j])/max(np.linalg.norm(B[:,j]),1e-14));checks[f'{key}_freshAD_implicit_column_{j}']=rel<1e-9\n  sparse_rel=float(np.linalg.norm(hv-H@S[:,j])/max(np.linalg.norm(hv),1e-14));checks[f'{key}_freshAD_vs_archivedH_column_{j}']=sparse_rel<1e-10\n  linear_rows.append({'column':j,'fresh_AD_HS_plus_B_relative_residual':rel,'fresh_AD_vs_archived_H_relative_difference':sparse_rel})\n if strength==5.:\n  # Independent component potentials. Reuse geometric P2 quadrature data,\n  # but never call energy_components to form a component derivative.\n  current=model.coordinates(x);nodal=current[model.tri]\n  F=torch.einsum('tad,tqaj->tqdj',nodal,model.shape_grad);rq=torch.einsum('qa,tad->tqd',model.shape,nodal)[:,:,0]\n  hoop=rq/model.qr;J=torch.linalg.det(F)*hoop;W=model.integration\n  vol=(W*model.parameters.bulk/2*torch.log(J)**2).sum()\n  active=(W*model.active*strength/2*(F[:,:,:,1]**2).sum(2)).sum()\n  shear=(W*model.parameters.mu/2*((F*F).sum((2,3))+hoop**2-3-2*torch.log(J))).sum()\n  # Independent surface true-area expression, own Gauss rule and P2 basis.\n  q,w=np.polynomial.legendre.leggauss(12);q=(q+1)/2;w=w/2\n  N=torch.tensor(np.stack([1-3*q+2*q*q,4*q-4*q*q,-q+2*q*q],axis=1),dtype=torch.float64)\n  dN=torch.tensor(np.stack([-3+4*q,4-8*q,-1+4*q],axis=1),dtype=torch.float64);gw=torch.tensor(w,dtype=torch.float64)\n  surface_parts={}\n  for name,edges,modulus,tension in [('apical',model.top_edges,model.parameters.apical_area_modulus,model.parameters.apical_surface_tension),('basal',model.bottom_edges,model.parameters.basal_area_modulus,model.parameters.basal_surface_tension)]:\n   y=current[edges];X=model.X[edges];R=torch.einsum('qa,tad->tqd',N,y)[:,:,0]\n   tangent=torch.einsum('qa,tad->tqd',dN,y);current_measure=2*np.pi*R*torch.sqrt((tangent*tangent).sum(2))\n   refR=torch.einsum('qa,tad->tqd',N,X)[:,:,0];length=torch.sqrt(((X[:,2]-X[:,0])**2).sum(1))\n   ref_measure=2*np.pi*refR*length[:,None];ratio=current_measure/ref_measure\n   surface_parts[name+'_area']=(gw*ref_measure*modulus/2*(ratio-1)**2).sum()\n   surface_parts[name+'_true_area']=(gw*current_measure).sum()\n  components=[vol,surface_parts['apical_area'],surface_parts['basal_area'],surface_parts['apical_true_area'],model.parameters.basal_surface_tension*surface_parts['basal_true_area'],active]\n  ownB=np.column_stack([torch.autograd.grad(c/model.energy_scale,x,retain_graph=True)[0].detach().numpy() for c in components])\n  errors=np.linalg.norm(ownB-B,axis=0)/np.maximum(np.linalg.norm(B,axis=0),1e-14)\n  checks['gain5_six_independent_component_B_columns']=bool(np.max(errors)<1e-10)\n  shear_g=torch.autograd.grad(shear/model.energy_scale,x,retain_graph=True)[0].detach().numpy()\n  gauge=ownB[:,0]+ownB[:,1]+ownB[:,2]+model.parameters.apical_surface_tension*ownB[:,3]+ownB[:,4]+ownB[:,5]+shear_g-g\n  checks['gain5_independently_assembled_force_scale_gauge']=float(np.max(abs(gauge)))<1e-10\n  checks['gain5_pointwise_inversion_penalty_inactive']=float(J.detach().min())>1e-6\n  assembled_comparison={'strength':5.,'component_relative_B_errors':errors.tolist(),'force_gauge_linf':float(np.max(abs(gauge))),'max_abs_B_difference':float(np.max(abs(ownB-B))),'component_potentials_unscaled':list(map(lambda c:float(c.detach()),components)),'scope':'Own volume/active/shear expressions and independent split surface Gauss loops; shares geometric FE cache, not constitutive gradient assembly.'}\n # Smooth-observation derivatives and displacement-only FD. No new states or\n # converged flags: perturb coordinates and call low-level graph means.\n observation_rows=[]\n roi=(Q(0),Q(state['parameters']['patch_radius'])*Q('33.5'));L=Q('33.5')\n def graph_mean(vector,edges,weight):\n  coords=model.coordinates(torch.tensor(vector,dtype=torch.float64)).detach().numpy()[edges]\n  controls=[[(Q(float(r))*L,Q(float(z))*L) for r,z in e] for e in coords]\n  curve=Curve(controls);a=curve.integral(roi,weight);return scale(a,1/mass(roi,weight))\n for weight in ('current_disk','current_radial_line'):\n  mean_result=mean_state_gradients(state,weighting=weight);local=[]\n  for name in ('apical_regional_mean_downward','basal_regional_mean_upward'):\n   G=np.array([[float((v.lo+v.hi)/2)*33.5 for v in node] for node in mean_result['node_gradients'][name]]).ravel()[free]\n   local.append(G@S)\n  own_meanJ=np.stack(local)\n  saved_row=next(r for r in diagnostic['rows'] if r['strength']==strength and r['weighting']==weight)\n  checks[key+'_'+weight+'_chain_rule_units_match']=np.max(abs(own_meanJ-np.array(saved_row['mean_material_jacobian'])))<1e-12\n  observations[(key,weight)]=own_meanJ\n  step=1e-4;fdrows=[]\n  for j in range(6):\n   values={}\n   for sign in (-1,1):\n    trial=u+sign*step*S[:,j];top=graph_mean(trial,model.top_edges,weight);bottom=graph_mean(trial,model.bottom_edges,weight)\n    values[sign]=np.array([33.5-float((top.lo+top.hi)/2),float((bottom.lo+bottom.hi)/2)])\n   fd=(values[1]-values[-1])/(2*step);err=np.max(abs(fd-own_meanJ[:,j]));checks[f'{key}_{weight}_displacement_only_FD_column_{j}']=float(err)<2e-6\n   fdrows.append({'column':j,'step':step,'FD_apical_basal_means':fd.tolist(),'predicted_apical_basal_derivative':own_meanJ[:,j].tolist(),'max_abs_error':float(err),'scope':'u\u00c2\u00b1hS are geometric perturbations, not re-equilibrated material states.'})\n  observation_rows.append({'weighting':weight,'mean_J':own_meanJ.tolist(),'displacement_only_FD_rows':fdrows})\n records.append({'strength':strength,'force_linf':float(np.max(abs(g))),'linear_HVP_checks':linear_rows,'observations':observation_rows})\n# Recompute diagnostics in the exact declared coordinate/row convention.\nsvdrows={}\nfor weight in ('current_disk','current_radial_line'):\n full=np.vstack([observations[(key,weight)] for key in ('1','5','10')]);sing=np.linalg.svd(full,compute_uv=False);saved=np.array(diagnostic['summaries'][weight]['singular_values'])\n checks[weight+'_recomputed_singular_values_match']=np.max(abs(sing-saved))<1e-12\n svdrows[weight]={'recomputed_singular_values':sing.tolist(),'condition_ratio_in_declared_mixed_coordinates':float(sing[0]/sing[-1]),'not_inferred':'No full experimental/68row Jacobian, noise-weighted rank, global inverse or material posterior.'}\nfdtheory=float(np.sinh(.001)/.001-1)\nchecks['multiplicative_FD_error_explained_by_sinh_factor']=all(abs(r['fixed_state_FD_relative_error']-fdtheory)<5e-10 for row in mechanics['rows'] for r in row['fixed_state_derivative_checks'] if r['FD_kind']=='central multiplicative')\nchecks['actual_input_archive_hashes_unchanged_after_review']=all(sha(root/rel)==digest for rel,digest in all_sources.items())\nchecks={k:bool(v) for k,v in checks.items()}\nreceipt={'status':'PASS_INDEPENDENT_FLOATING_MATERIAL_TANGENT_REVIEW' if all(checks.values()) else 'FAIL','checks':checks,'records':records,'independent_component_assembly':assembled_comparison,'svd_replay':svdrows,'central_log_FD_expected_relative_factor':fdtheory,'source_and_archive_sha256':all_sources,'reviewed_source_sha256':sha(root/'scripts/material_tangent_inference.py'),'mechanics_receipt_sha256':sha(root/'evidence/material_tangent_mechanics_verification.json'),'mean_diagnostic_receipt_sha256':sha(root/'evidence/material_tangent_mean_diagnostic.json'),'independent_program':REVIEW_CODE,'environment':{'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__,'torch':torch.__version__},'thresholds':{'HS_plus_B_relative':1e-9,'HVP_archive_relative':1e-10,'component_B_relative':1e-10,'mean_displacement_FD_absolute':2e-6,'mean_displacement_FD_step':1e-4},'provenance_note':'means() lacks a fresh own input/NPZ hash gate; this review explicitly verifies current actual files against locked mechanics protocol and archive hashes. No production source edited or new production stage run.','scope':'Floating local six-coordinate/smooth-mean diagnostics on three stored12HQstates. Exact IFT requires exact regular root; no validated root/PDE certificate, maxima derivatives, full experimental rank, shared-material fit, physical posterior or globalTheta.'}\nreceipt[\"retained_initial_reporting_failure\"]={'status': 'INITIAL_REPORT_SERIALIZATION_FAILURE', 'exception': 'TypeError: Object of type bool is not JSON serializable', 'cause': 'One NumPy comparison boolean remained in own checks dictionary.', 'original_independent_program_sha256': '36f74a91c0ab924ba418b6fc702ba31ddc2b567311d371d5648f06aeabe3676e', 'correction': 'Cast report check values to ordinary bool; no model, arithmetic, thresholds or frozen source changed.'}\n(root/'evidence/material_tangent_independent_review.json').write_text(json.dumps(receipt,indent=2,allow_nan=False),encoding='utf-8')\nprint(json.dumps({'status':receipt['status'],'checks':len(checks),'failed':[k for k,v in checks.items() if not v],'max_B_relative':max(assembled_comparison['component_relative_B_errors']),'max_HS_residual':max(v['fresh_AD_HS_plus_B_relative_residual'] for r in records for v in r['linear_HVP_checks']),'max_mean_FD_absolute':max(v['max_abs_error'] for r in records for o in r['observations'] for v in o['displacement_only_FD_rows'])},indent=2))\nif not all(checks.values()):raise RuntimeError('Retained independent material review failure')\n",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.2.6",
+    "scipy": "1.16.0",
+    "torch": "2.11.0+cu128"
+  },
+  "thresholds": {
+    "HS_plus_B_relative": 1e-09,
+    "HVP_archive_relative": 1e-10,
+    "component_B_relative": 1e-10,
+    "mean_displacement_FD_absolute": 2e-06,
+    "mean_displacement_FD_step": 0.0001
+  },
+  "provenance_note": "means() lacks a fresh own input/NPZ hash gate; this review explicitly verifies current actual files against locked mechanics protocol and archive hashes. No production source edited or new production stage run.",
+  "scope": "Floating local six-coordinate/smooth-mean diagnostics on three stored12HQstates. Exact IFT requires exact regular root; no validated root/PDE certificate, maxima derivatives, full experimental rank, shared-material fit, physical posterior or globalTheta.",
+  "retained_initial_reporting_failure": {
+    "status": "INITIAL_REPORT_SERIALIZATION_FAILURE",
+    "exception": "TypeError: Object of type bool is not JSON serializable",
+    "cause": "One NumPy comparison boolean remained in own checks dictionary.",
+    "original_independent_program_sha256": "36f74a91c0ab924ba418b6fc702ba31ddc2b567311d371d5648f06aeabe3676e",
+    "correction": "Cast report check values to ordinary bool; no model, arithmetic, thresholds or frozen source changed."
+  },
+  "reviewed_document_hashes": {
+    "docs/MATERIAL-TANGENT-REVIEW.md": "43edbbe61da3f27d5cecae1b2414182629f68a9ed01dee5e757036d1de4ce30b",
+    "docs/MATERIAL-TANGENT-INFERENCE.md": "01d58158c1cb29915d605538dea32e1989de7c8aebf7b7a469bfee3ae1fab11b"
+  },
+  "current_origin_document_review": "Actual MATERIAL-TANGENT-INFERENCE.md read: conditional IFT, finite-coefficient meaning, common-force gauge, physical-unit chain rule, one-sidedTa, mixed-coordinate SVD and limited3strength smoothmean scope are sound. No new source fix required for current snapshot.",
+  "review_program_sha256": "4dd947f316c7585c9e7d9ff9e75900fd688e79beb3816716698624b0bd341b8b"
+}

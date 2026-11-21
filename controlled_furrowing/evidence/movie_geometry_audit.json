@@ -1,0 +1,855 @@
+{
+  "audit_version": 1,
+  "status": "PASS provenance/display checks; INSUFFICIENT certified anatomical geometry",
+  "scope": "One published illustrative Movie3; no cohort substitution, no model import or fitting",
+  "software": {
+    "python": "3.13.5",
+    "opencv": "4.13.0",
+    "numpy": "2.2.6"
+  },
+  "script_sha256": "d96574110875657cdefa75eb4ed18387bf074d7cb6c6d48b66200e2d94ff195e",
+  "source_hashes": [
+    {
+      "path": "data/raw/41467_2025_62483_MOESM7_ESM.avi",
+      "bytes": 4547582,
+      "sha256": "260555e647c56a74b157ef624fe263568cc47fbda553d3e8aa7fe0ad05e14be7",
+      "md5": "5fd7caaf133c37705ef40dd8319f054c"
+    },
+    {
+      "path": "runs/movie_geometry/source_fig4_unmodified.jpg",
+      "bytes": 288587,
+      "sha256": "c587150d86e7326b9774643410b1242b61053326f194cab8e0b91ce61dfe6473",
+      "md5": "65845f806af49e5bc0781a025ead9c5e"
+    },
+    {
+      "path": "data/raw/primary.xml",
+      "bytes": 199537,
+      "sha256": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7",
+      "md5": "748dd568f53261746289056c3d9086cf"
+    },
+    {
+      "path": "data/raw/PMC12361397.1.json",
+      "bytes": 3101,
+      "sha256": "aa97b3d107feadaae032c7414c474c713e2b81d6e3ce484e633968977ea6b4f0",
+      "md5": "02a774770806af70eec4470f20fd9581"
+    },
+    {
+      "path": "data/derived/additional_files_description.txt",
+      "bytes": 5798,
+      "sha256": "8b139203ccb6fe1917b628b0bbf942e2ba04313cb8d364f24b8a2d98d8591609",
+      "md5": "1d371d73781878306b237d35d0eb1e99"
+    },
+    {
+      "path": "data/derived/evaluation_large_50um.csv",
+      "bytes": 1308,
+      "sha256": "7b49ea11755ce9dddd5c07d376c7f2fc5e10834bb724ae6bedbf95bb3b91a6b8",
+      "md5": "35841f9329ae3afb099946a66d45a246"
+    }
+  ],
+  "official_checksum_checks": [
+    {
+      "file": "41467_2025_62483_MOESM7_ESM.avi",
+      "official_md5": "5fd7caaf133c37705ef40dd8319f054c",
+      "actual_md5": "5fd7caaf133c37705ef40dd8319f054c",
+      "pass": true
+    },
+    {
+      "file": "source_fig4_unmodified.jpg",
+      "official_md5": "65845f806af49e5bc0781a025ead9c5e",
+      "actual_md5": "65845f806af49e5bc0781a025ead9c5e",
+      "pass": true
+    }
+  ],
+  "source_locator_text_hashes": {
+    "Sec7": {
+      "utf8_bytes": 8078,
+      "sha256_of_extracted_text": "da38fd03e20bae1872dc1444fdb00f30e6156cee7d0b47d522795179054b19c7"
+    },
+    "Sec14": {
+      "utf8_bytes": 4304,
+      "sha256_of_extracted_text": "0f8b3d3fee2cf93425f35356fb34e1a4b17c2279fc7133bd097d2fe18f8563cd"
+    },
+    "Sec15": {
+      "utf8_bytes": 998,
+      "sha256_of_extracted_text": "1340292a330a22f236ed37a761319a0aad7f71d229b18ce9b2a14c679cf616da"
+    },
+    "Sec17": {
+      "utf8_bytes": 2155,
+      "sha256_of_extracted_text": "4b1a000fbe6b17b8a4839b296d47c70b6232d6d4032d16a40fee47b854aad97b"
+    },
+    "Fig4_caption": {
+      "utf8_bytes": 2033,
+      "sha256_of_extracted_text": "3f473ecafadd5c8ddd95e3617ab33c498ab1b91af3cdd4b1c963ee926a7e2673"
+    },
+    "Supplementary_Movie3_description": {
+      "utf8_bytes": 809,
+      "sha256_of_extracted_text": "36354dd5c36bf44178b0c51f4e1b4243e107fb1a0909d298fc2edacea5d99f9a"
+    }
+  },
+  "container": {
+    "decoded_frames": 26,
+    "width": 1908,
+    "height": 826,
+    "playback_fps": 4.0,
+    "biological_time_is_not_playback_time": true,
+    "ffmpeg_log": "runs/movie_geometry/ffmpeg_decode_local.txt",
+    "display_sample_aspect": "1:1 container metadata; not proof of biological reslice calibration"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "burned_in_seconds_manually_transcribed": 0,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "2560028ee3198ad56e53792d343693b672208fd91a8115faad71aa14b78854b0"
+    },
+    {
+      "index": 1,
+      "burned_in_seconds_manually_transcribed": 21,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "e43070ada858b26c5e776fc34b86777023049e607b0c9c0fc47986f5cd942a0b"
+    },
+    {
+      "index": 2,
+      "burned_in_seconds_manually_transcribed": 43,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "11932297d7d6e6d47bce36937bc8d10094b07a267208c0f67417aafff0800e65"
+    },
+    {
+      "index": 3,
+      "burned_in_seconds_manually_transcribed": 64,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "d9462d142221879e4b1e5bf6f30bcbabac03896d05ee90149418cca3aec6dfaf"
+    },
+    {
+      "index": 4,
+      "burned_in_seconds_manually_transcribed": 86,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "3ce7482df6ec06b84558ba8cf9ad19a85761a33c229741f7797bf78d5d8a97b1"
+    },
+    {
+      "index": 5,
+      "burned_in_seconds_manually_transcribed": 108,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "bb37f5a1822b686b6bdb7172e9c1138df5b85b73faa23b208ae0fe2609cb039d"
+    },
+    {
+      "index": 6,
+      "burned_in_seconds_manually_transcribed": 129,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "ede9087ea14e9605684d01838188dc7959cce2b1cbb6204df9f82c65b9238781"
+    },
+    {
+      "index": 7,
+      "burned_in_seconds_manually_transcribed": 151,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "f8ba5546862ab043168d8de5d4c0ed33eb24bbed68db0ca8effdbd0185be8ca9"
+    },
+    {
+      "index": 8,
+      "burned_in_seconds_manually_transcribed": 172,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "91afcdc0989e047ef1811114c777e5529984041843b8ffe0e06d7d09c5877610"
+    },
+    {
+      "index": 9,
+      "burned_in_seconds_manually_transcribed": 194,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "abdecc86a816c1d5d274e942940d8d664131dcaeee3832e30706e3afa0124a68"
+    },
+    {
+      "index": 10,
+      "burned_in_seconds_manually_transcribed": 216,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "f2433d8465bd428c3cfca06a89d007bea6459a993378eef218b536371cc54f5d"
+    },
+    {
+      "index": 11,
+      "burned_in_seconds_manually_transcribed": 237,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "8fce549e1c9cb9b86c2d77f33d618509960ae334be4486bb9f52f5ec0ccaa679"
+    },
+    {
+      "index": 12,
+      "burned_in_seconds_manually_transcribed": 259,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "82b27a0364f5739c3cfdb471c0b91e57ff09901999acc0b9ea562bbf1654e9da"
+    },
+    {
+      "index": 13,
+      "burned_in_seconds_manually_transcribed": 280,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "69d0d8027a3c9e0ba62efdf140a98fc0c6402b37e336822013241880ea573c10"
+    },
+    {
+      "index": 14,
+      "burned_in_seconds_manually_transcribed": 302,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "ec9e9c4b6699b39be576bf13c7b5a1cd2d045d8cede6651f3f5bf0b902ceb88f"
+    },
+    {
+      "index": 15,
+      "burned_in_seconds_manually_transcribed": 324,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "390e770c6b0810365cdf98ec2ee5d5a31870bd40787bbbc72b9ed86ed46ce9f3"
+    },
+    {
+      "index": 16,
+      "burned_in_seconds_manually_transcribed": 345,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "8faa6953ba8e1d5ac247ec7cf15dc6859c0d98257b9fdad995cbda057e2463a9"
+    },
+    {
+      "index": 17,
+      "burned_in_seconds_manually_transcribed": 367,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "ecde98bc30404424f26c809d8ab308ba1969975ff873f1ffeb668b8359ccbd2b"
+    },
+    {
+      "index": 18,
+      "burned_in_seconds_manually_transcribed": 388,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "0485b23cea4d65321b2df6bd111c17d19cb3a78e38fd302c94fd3ba431c0a940"
+    },
+    {
+      "index": 19,
+      "burned_in_seconds_manually_transcribed": 410,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "4bd22f8e64789a9752cbd479aeab702722db151cd2bbfe962bb7e73903a8bb84"
+    },
+    {
+      "index": 20,
+      "burned_in_seconds_manually_transcribed": 432,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "e6876339cf50748f22f851c306586b31059ba33936a4bfada879592e8edb29e2"
+    },
+    {
+      "index": 21,
+      "burned_in_seconds_manually_transcribed": 453,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "a30eccd811146a7d5db3a89e2ce1021a6e1c9167c3ca08f825a64b4dfb1a1ff9"
+    },
+    {
+      "index": 22,
+      "burned_in_seconds_manually_transcribed": 475,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "a286cb9221686963fb070ec20f492fce22d15d8c54239690fedd71e8d8c81123"
+    },
+    {
+      "index": 23,
+      "burned_in_seconds_manually_transcribed": 496,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "5003d957be0df5c1e2e4bef7f3f08e9806c693aa8d81331e94fb5482bd8c5256"
+    },
+    {
+      "index": 24,
+      "burned_in_seconds_manually_transcribed": 518,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "01d75ced5b504ff6cc738090cd346364d057a4ee2b0ec1389258ddf794da4e94"
+    },
+    {
+      "index": 25,
+      "burned_in_seconds_manually_transcribed": 540,
+      "decoded_bgr_shape": [
+        826,
+        1908,
+        3
+      ],
+      "decoded_bgr_sha256": "0ade5ee22f1f6639b3aa751829ccb20089c484cd16514c1d8a02457a4bfb414d"
+    }
+  ],
+  "timing": {
+    "method": "Manual transcription of all burned-in timestamps; not raw acquisition timestamps",
+    "formula_check": "All 26 equal floor(21.6*frame_index)",
+    "source_nominal_interval_seconds": 22,
+    "precise_activation_origin_and_subsecond_timestamps": "not provided"
+  },
+  "scale_bar": {
+    "caption_micrometers": 20,
+    "threshold_checks": [
+      {
+        "threshold": 128,
+        "x": 1198,
+        "y": 785,
+        "width": 160,
+        "height": 15,
+        "area": 2400
+      },
+      {
+        "threshold": 200,
+        "x": 1198,
+        "y": 785,
+        "width": 160,
+        "height": 15,
+        "area": 2400
+      },
+      {
+        "threshold": 230,
+        "x": 1198,
+        "y": 785,
+        "width": 160,
+        "height": 15,
+        "area": 2398
+      },
+      {
+        "threshold": 250,
+        "x": 1198,
+        "y": 785,
+        "width": 160,
+        "height": 15,
+        "area": 2387
+      }
+    ],
+    "nominal_horizontal_um_per_display_pixel": 0.125,
+    "assumed_endpoint_allowance_pixels_each": 1,
+    "conditional_width_interval_pixels": [
+      158,
+      162
+    ],
+    "conditional_horizontal_um_per_pixel_interval": [
+      0.12345679012345678,
+      0.12658227848101267
+    ],
+    "interval_scope": "Raster endpoint allowance only; physical calibration and panel transform uncertainty not bounded",
+    "per_panel_xy_and_transverse_xz_isotropy": "consistent with source display, not explicitly documented"
+  },
+  "crop_diagnostics": {
+    "transverse_roi_xyxy_half_open": [
+      20,
+      170,
+      576,
+      538
+    ],
+    "frame0_rows": [
+      {
+        "source_y": 168,
+        "mean_intensity": 1.0377697841726619,
+        "max_intensity": 10
+      },
+      {
+        "source_y": 169,
+        "mean_intensity": 1.5845323741007193,
+        "max_intensity": 12
+      },
+      {
+        "source_y": 170,
+        "mean_intensity": 133.20863309352518,
+        "max_intensity": 255
+      },
+      {
+        "source_y": 171,
+        "mean_intensity": 133.6708633093525,
+        "max_intensity": 255
+      },
+      {
+        "source_y": 172,
+        "mean_intensity": 133.1025179856115,
+        "max_intensity": 254
+      },
+      {
+        "source_y": 535,
+        "mean_intensity": 76.41726618705036,
+        "max_intensity": 255
+      },
+      {
+        "source_y": 536,
+        "mean_intensity": 76.43884892086331,
+        "max_intensity": 255
+      },
+      {
+        "source_y": 537,
+        "mean_intensity": 76.85071942446044,
+        "max_intensity": 252
+      },
+      {
+        "source_y": 538,
+        "mean_intensity": 1.2553956834532374,
+        "max_intensity": 17
+      }
+    ],
+    "visual_inspection_frames": [
+      0,
+      13
+    ],
+    "finding": "Lateral membrane fluorescence reaches upper display crop; continuous apical boundary not visible. Crop edge is not anatomy."
+  },
+  "figure_correspondence": {
+    "direct_resize_is_not_physical_calibration": true,
+    "unfiltered": {
+      "c0": {
+        "figure_crop_xyxy": [
+          326,
+          14,
+          460,
+          95
+        ],
+        "movie_roi_xyxy": [
+          20,
+          170,
+          576,
+          538
+        ],
+        "pearson_ncc_all_frames": [
+          0.13030945544121442,
+          0.14790829785282036,
+          -0.02627136878151736,
+          -0.03061772595446233,
+          -0.02607453285676763,
+          -0.02210481939019476,
+          -0.008764451535706163,
+          -0.026850996738783117,
+          -0.006486829248966402,
+          -0.015470052628053729,
+          0.0068216805613089074,
+          0.0010989722651653753,
+          0.0018558874147711984,
+          -0.007021544514303459,
+          -0.002165602479864317,
+          0.0031929900944954255,
+          0.02051257983249921,
+          0.02186702122976925,
+          0.03552493279929637,
+          0.026546182502335303,
+          0.0167301657510561,
+          0.00012377517803644492,
+          -0.007397960253123104,
+          -0.007329984201181805,
+          -0.045595027953417945,
+          -0.0411188726517373
+        ],
+        "best_three": [
+          {
+            "frame": 1,
+            "ncc": 0.14790829785282036
+          },
+          {
+            "frame": 0,
+            "ncc": 0.13030945544121442
+          },
+          {
+            "frame": 18,
+            "ncc": 0.03552493279929637
+          }
+        ]
+      },
+      "c2": {
+        "figure_crop_xyxy": [
+          326,
+          97,
+          460,
+          178
+        ],
+        "movie_roi_xyxy": [
+          20,
+          170,
+          576,
+          538
+        ],
+        "pearson_ncc_all_frames": [
+          -0.005047985140312272,
+          -0.019403536713540892,
+          0.5366829616003272,
+          0.5421452263103831,
+          0.55318084658522,
+          0.5817128190153976,
+          0.5805047853366083,
+          0.5768890264181084,
+          0.5722642336769236,
+          0.5700206523992356,
+          0.5646540844879742,
+          0.5479252590373355,
+          0.5550298137541712,
+          0.5478649591014795,
+          0.5400978173650005,
+          0.5393167344762566,
+          0.5357172857961124,
+          0.5382023480090221,
+          0.5447374913708903,
+          0.554219034177989,
+          0.5423001437577896,
+          0.5225385302496212,
+          0.48899552786955797,
+          0.48617126757552603,
+          0.4875228906561639,
+          0.4712688859089717
+        ],
+        "best_three": [
+          {
+            "frame": 5,
+            "ncc": 0.5817128190153976
+          },
+          {
+            "frame": 6,
+            "ncc": 0.5805047853366083
+          },
+          {
+            "frame": 7,
+            "ncc": 0.5768890264181084
+          }
+        ]
+      },
+      "c8": {
+        "figure_crop_xyxy": [
+          326,
+          180,
+          460,
+          261
+        ],
+        "movie_roi_xyxy": [
+          20,
+          170,
+          576,
+          538
+        ],
+        "pearson_ncc_all_frames": [
+          -0.03720639869039156,
+          -0.05325588780242047,
+          0.3912327133809493,
+          0.4120984043370267,
+          0.41610744306403186,
+          0.41830523395941416,
+          0.4468385322235976,
+          0.4583571507809136,
+          0.4769745925723909,
+          0.49193513504396563,
+          0.4957988037619029,
+          0.5116667506492646,
+          0.5063654662701558,
+          0.5215991692842433,
+          0.5292313384668264,
+          0.5173005793871,
+          0.5428771433249302,
+          0.5480530623206189,
+          0.5565298312175178,
+          0.5792432221142844,
+          0.5715045034554633,
+          0.5342589323833137,
+          0.5147992743915907,
+          0.492775017205776,
+          0.4946694595419324,
+          0.4792339692285814
+        ],
+        "best_three": [
+          {
+            "frame": 19,
+            "ncc": 0.5792432221142844
+          },
+          {
+            "frame": 20,
+            "ncc": 0.5715045034554633
+          },
+          {
+            "frame": 18,
+            "ncc": 0.5565298312175178
+          }
+        ]
+      },
+      "d0": {
+        "figure_crop_xyxy": [
+          509,
+          25,
+          627,
+          143
+        ],
+        "movie_roi_xyxy": [
+          675,
+          170,
+          1232,
+          728
+        ],
+        "pearson_ncc_all_frames": [
+          0.7961130703239464,
+          0.8592878812932371,
+          0.27099869446850844,
+          0.23241499259617032,
+          0.21239085939839716,
+          0.18853643132066122,
+          0.18159446936585433,
+          0.18102821690304513,
+          0.18742501924810967,
+          0.1893620890429207,
+          0.19294733509831433,
+          0.19663186376602515,
+          0.19319342593278552,
+          0.19520628511878368,
+          0.21232205866202447,
+          0.2071227456359968,
+          0.20383355403917372,
+          0.20217782464226072,
+          0.20476197240299174,
+          0.2060891264989333,
+          0.20018832442914938,
+          0.2022446866549367,
+          0.21161802190405993,
+          0.20823518914902558,
+          0.22152612875580274,
+          0.23742309277564755
+        ],
+        "best_three": [
+          {
+            "frame": 1,
+            "ncc": 0.8592878812932371
+          },
+          {
+            "frame": 0,
+            "ncc": 0.7961130703239464
+          },
+          {
+            "frame": 2,
+            "ncc": 0.27099869446850844
+          }
+        ]
+      },
+      "d2": {
+        "figure_crop_xyxy": [
+          509,
+          145,
+          627,
+          261
+        ],
+        "movie_roi_xyxy": [
+          675,
+          170,
+          1232,
+          728
+        ],
+        "pearson_ncc_all_frames": [
+          0.17933018219767363,
+          0.17181262244649134,
+          0.6393925424352098,
+          0.7324013909731312,
+          0.8452308688942203,
+          0.9151189807384138,
+          0.8267573698943628,
+          0.7786893888131532,
+          0.7548494624100817,
+          0.737955297040356,
+          0.7111108513831405,
+          0.7010137366221649,
+          0.6941160166379693,
+          0.6892210123020713,
+          0.6762151075722294,
+          0.6489284838242058,
+          0.6302397826917983,
+          0.6132159347018824,
+          0.607315165550522,
+          0.5981832894314368,
+          0.5815361224908454,
+          0.5819296621038628,
+          0.5566029797989845,
+          0.5354784220520888,
+          0.5370445508952927,
+          0.5122616595968092
+        ],
+        "best_three": [
+          {
+            "frame": 5,
+            "ncc": 0.9151189807384138
+          },
+          {
+            "frame": 4,
+            "ncc": 0.8452308688942203
+          },
+          {
+            "frame": 6,
+            "ncc": 0.8267573698943628
+          }
+        ]
+      }
+    },
+    "highpass_sigma_resized_pixels": 2,
+    "highpass_d2_all_frames": {
+      "middle": [
+        0.03299808614303964,
+        0.03976135279404968,
+        0.09577583709693956,
+        0.19713888602262283,
+        0.4413512284499916,
+        0.6829415200504584,
+        0.4070003898433881,
+        0.3044452334903762,
+        0.2787246900862999,
+        0.26207616465263434,
+        0.22306100663003905,
+        0.21673515909475308,
+        0.21392780709211226,
+        0.222894458493283,
+        0.21478723432002114,
+        0.1656243734679995,
+        0.14527630923844506,
+        0.13748028636441886,
+        0.13039835407853356,
+        0.12156268583185369,
+        0.08703925080311935,
+        0.08924919716776952,
+        0.04544330339620001,
+        0.018388247359325514,
+        0.023357101243642504,
+        0.021328850560551713
+      ],
+      "right_panel_negative_control": [
+        0.022401854850094015,
+        0.018303118641810442,
+        0.03049193687734501,
+        0.04004872873040054,
+        0.044945883455874566,
+        0.029925621416794678,
+        0.020784180770172273,
+        0.03353525067745529,
+        0.04142551145275842,
+        0.03680872765765679,
+        0.04001703565875229,
+        0.03593039783248709,
+        0.0367828037067633,
+        0.03791256840300079,
+        0.046535971166689755,
+        0.04550418490340271,
+        0.026156650223858463,
+        0.046850403017564136,
+        0.04990745270568686,
+        0.05668115357782594,
+        0.05964909141271532,
+        0.06127378153297956,
+        0.07228196656308514,
+        0.05914806850491432,
+        0.039669367924668,
+        0.03377339421297595
+      ]
+    },
+    "finding": "Image correspondence supports common published field. No acquisition/specimen ID crosswalk supplied."
+  },
+  "cohort_identity": {
+    "caption_dose": 1.02,
+    "rounded_dose_candidates": [
+      {
+        "record_id": "optoGEF2_large_col_F",
+        "activation_magnitude": "1.02397148",
+        "maximum_shortening_um": "9.378311",
+        "nominal_diameter_um": "50",
+        "reported_diameter_um": "49.8939753",
+        "dose_source": "Fig 4h!F8",
+        "maximum_source": "Fig 4h!F9",
+        "identity_status": "Source-column record; no explicit biological embryo ID"
+      }
+    ],
+    "classification": "unique rounded-dose inference, not verified specimen ID"
+  },
+  "plane_convention": {
+    "caption": "2 micrometers below apical surface, middle; 30 micrometers, right",
+    "initial_vs_current_global_reference": "not specified",
+    "pointwise_surface_following_plane": "not assumed; not a single horizontal plane on curved tissue",
+    "Sec17_tracking_is_separate_myosin_z_spreading_procedure": true
+  },
+  "geometry_decision": {
+    "full_initial_apical_basal_height": "NO-GO: apical censoring and missing z calibration/registration",
+    "peak_height_or_shortening_profile": "NO-GO: no uncensored time-matched surface pair or independently known peak",
+    "rigorous_biological_censored_micrometer_bound": "NO-GO: no validated basal annotation/z calibration error bound",
+    "basal_display_proxy": "Potential exploratory expert annotation; not extracted as certified anatomy",
+    "annulus_Ai_Ao_with_certified_uncertainty": "NO-GO from this raster alone: no resolved unique inner contour, PSF or semantic occupancy validation",
+    "annulus_image_proxy_future_work": "Possible conditional fixed annotation/segmentation sensitivity study, explicitly not anatomical ground truth",
+    "source_qualitative_bending": "Supported by source Sec7 and visible central plug/dark moat; fluorescence alone does not certify solid occupancy",
+    "no_model_parameters_fitted": true,
+    "no_source_frames_for_public_site": true,
+    "one_movie_does_not_validate_full_cohort_or_identified_set": true
+  },
+  "sources_unchanged_before_after": true
+}

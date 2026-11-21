@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PHYSICAL-DOMAIN-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of physical units and the force-scale quotient</h1>
+<p><strong>Result:</strong> 41 independent checks pass for the corrected <code>physical_parameter_domain.py</code>, source SHA256</p>
+<pre><code class="language-text">8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4
+</code></pre>
+<p>The unit conversion, common-force-scale symmetry, exact quotient and noncompact-domain qualifications in <code>PHYSICAL-PARAMETER-DOMAIN.md</code> are correct in their stated scope. The review found a floating underflow issue; the author corrected it, and four independent extreme-input tests now verify the guards. The complete evidence, before/after hashes, field certificate and replay program are retained in <code>evidence/physical_parameter_domain_independent_review.json</code>.</p>
+<p>This review performs no equilibrium optimization, biological data read, parameter fit or identified-set calculation. It does not repeat only the author's verification examples.</p>
+<h2>1. Independent dimensional conversion</h2>
+<p>The review uses a different synthetic physical material:</p>
+<div class="math display" data-tex="
+ \mu=3.2\ {\rm Pa},\quad\kappa=960\ {\rm Pa},\quad
+ (K_a,K_b,T_a,T_b)=(37.4,136,10.2,51)\ {\rm Pa\,\mu m},
+ \quad g=17.6\ {\rm Pa/input}.
+"></div>
+
+<p>The fixed unit is <span class="math" data-tex="L_0=17\,\mu\mathrm m"></span>, specimen height <span class="math" data-tex="H=29\,\mu\mathrm m"></span>, outer radius 68 µm, patch radius 7 µm, and active basal-height coordinates 4–24 µm. These values are test inputs, not measured biology.</p>
+<p>Since <span class="math" data-tex="dV=L_0^3d\hat V"></span>, <span class="math" data-tex="dA=L_0^2d\hat A"></span>, and deformation gradients and area ratios are invariant to a common coordinate-unit conversion, dividing by <span class="math" data-tex="\mu L_0^3"></span> produces</p>
+<div class="math display" data-tex="
+ \hat\mu=1,\quad\hat\kappa=\kappa/\mu,
+ \quad \hat K_s=K_s/(\mu L_0),\quad
+ \hat T_s=T_s/(\mu L_0),\quad\hat g=g/\mu.
+"></div>
+
+<p>The independently expected solver values are</p>
+<div class="math display" data-tex="
+ (1,300,11/16,5/2,3/16,15/16,11/2),
+"></div>
+
+<p>in the order shear, compression, apical/basal area stiffness, apical/basal tension, gain. The implemented conversion agrees. Its dimensionless height is 29/17. Because activation inputs are basal-height coordinates, multiplying each reported activation fraction by <span class="math" data-tex="\hat H"></span> recovers 4/17 and 24/17 exactly up to floating rounding.</p>
+<p>Changing height to 31 µm with the same fixed <span class="math" data-tex="L_0"></span> changes geometry and activation fractions, while all material coefficients remain unchanged. If instead one uses <span class="math" data-tex="H"></span> itself as the length unit, surface coefficients must change as <span class="math" data-tex="1/H"></span>. Holding <span class="math" data-tex="K_s/(\mu H)"></span> fixed across changing height would prescribe a changing physical surface material. That distinction is correctly preserved by the helper.</p>
+<p>The unit Pa·µm³ corresponds to <span class="math" data-tex="10^{-18}"></span> J. Surface energy is consistent: <span class="math" data-tex="(\mathrm{Pa}\,\mu\mathrm m)(\mu\mathrm m)^2=\mathrm{Pa}\,\mu\mathrm m^3"></span>. No absolute biological work or force is inferred by stating those units.</p>
+<h2>2. A second, independent length-unit covariance test</h2>
+<p>Keeping the same physical specimen and material, the review doubles the arbitrary coordinate unit from 17 to 34 µm. The corresponding reference and displacement coordinates halve; dimensionless surface coefficients halve. On the same physical test deformation:</p>
+<div class="math display" data-tex="
+ \mathcal E_{34}=\mathcal E_{17}/8,
+ \quad \mu(34)^3\mathcal E_{34}=\mu(17)^3\mathcal E_{17}.
+"></div>
+
+<p>The implementation satisfies both raw dimensionless-energy scaling and reconstructed physical-energy invariance. The volume-normalized objective remains unchanged.</p>
+<p>A useful numerical consequence is that the gradient with respect to dimensionless displacement is <strong>coordinate-unit dependent</strong>. If <span class="math" data-tex="\hat u&#x27;=\hat u/2"></span>, then <span class="math" data-tex="\nabla_{\hat u&#x27;}\Phi=2\nabla_{\hat u}\Phi"></span>. The independent test verifies that relation within 2.23e−16. Stationary zeros are invariant, but a finite force-residual tolerance must be interpreted with the declared fixed <span class="math" data-tex="L_0"></span>. This is not an error in the mapper: the actual study holds <span class="math" data-tex="L_0=33.5\,\mu\mathrm m"></span> fixed. It is a reason to retain the length-unit convention in future solver receipts.</p>
+<p>Changing coordinate units is separate from changing the physical activation protocol. For example, holding activation depths below the apical surface fixed while varying height requires the caller to update the supplied basal-height coordinates accordingly.</p>
+<h2>3. Independent verification on the actual high-quadrature kernel</h2>
+<p>A different random nonzero P2 field is used on the synthetic geometry above, with actual activation <span class="math" data-tex="\hat g\times0.61"></span>. Exact correlated Bernstein certificates prove the entire stored discrete field has <span class="math" data-tex="J&gt;0.97746"></span>, so the fixed numerical inversion penalty is inactive everywhere, not merely absent at a few quadrature points.</p>
+<p>The reviewer bypasses the normalization-to-unit-shear helper and multiplies every actual kernel coefficient, including activation gain, by factors <strong>3.7</strong> and <strong>0.23</strong>. These non-power-of-two factors differ from the author's examples. In the full pointwise physical potential,</p>
+<div class="math display" data-tex="
+ E_{\alpha c}=\alpha E_c,
+ \quad DE_{\alpha c}=\alpha DE_c,
+ \quad D^2E_{\alpha c}=\alpha D^2E_c.
+"></div>
+
+<p>The kernel's objective and derivatives normalized by <span class="math" data-tex="\mu V_0"></span> must therefore remain invariant. Observed discrepancies are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Scale</th>
+<th style="text-align: right;">Raw energy scaling error</th>
+<th style="text-align: right;">Normalized objective error</th>
+<th style="text-align: right;">Normalized gradient max error</th>
+<th style="text-align: right;">Normalized Hessian-vector max error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">5.69e−14</td>
+<td style="text-align: right;">1.12e−16</td>
+<td style="text-align: right;">1.12e−16</td>
+<td style="text-align: right;">7.11e−15</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.23</td>
+<td style="text-align: right;">3.56e−15</td>
+<td style="text-align: right;">2.23e−16</td>
+<td style="text-align: right;">7.03e−17</td>
+<td style="text-align: right;">5.69e−14</td>
+</tr>
+</tbody>
+</table>
+<p>The identity concerns admissible physical energy. The numerical extension contains a fixed inversion-penalty coefficient. If that term is active, scaling only the seven physical coefficients gives <span class="math" data-tex="\alpha E_{phys}+P_{fixed}"></span>, which generally differs from <span class="math" data-tex="\alpha(E_{phys}+P_{fixed})"></span>. The documented exclusion is essential and correct.</p>
+<p>The symmetry also requires no separately fixed mechanical forcing. Independently known traction, pressure or body load can supply an absolute force reference. A fixed mobility in a dynamical model does not preserve relaxation times when energy is multiplied by <span class="math" data-tex="\alpha"></span>. The proposition correctly concerns quasistatic shapes and a consistently selected branch, not a unique equilibrium or universal dynamics.</p>
+<h2>4. Exact quotient and the noncompact admitted domain</h2>
+<p>The independent physical example gives the pressure-unit coefficient vector</p>
+<div class="math display" data-tex="
+ c=(16/5,960,11/5,8,3/5,3,88/5),
+"></div>
+
+<p>whose exact quotient is</p>
+<div class="math display" data-tex="
+ w=\frac1{4973}(16,4800,11,40,3,15,88).
+"></div>
+
+<p>Exact arithmetic verifies its sum, all inverse ratios <span class="math" data-tex="w_j/w_\mu=c_j/c_\mu"></span>, and invariance under three new rational scaling factors, including an extreme factor <span class="math" data-tex="10^{80}"></span>.</p>
+<p>The normalized coordinate vector represents common-positive-scale equivalence classes. It does not make the admitted domain compact. For example,</p>
+<div class="math display" data-tex="
+ c_n=(1,n,0,0,0,0,0),\qquad
+ w_n=(1/(n+1),n/(n+1),0,\ldots,0)
+"></div>
+
+<p>has positive admitted <span class="math" data-tex="\mu,\kappa"></span> for every finite <span class="math" data-tex="n"></span>, but approaches the excluded <span class="math" data-tex="w_\mu=0"></span> face and has unbounded ratio <span class="math" data-tex="\kappa/\mu=n"></span>. Exact tests include <span class="math" data-tex="n=10^{100}"></span>. The closed simplex is compact; the admitted subset with <span class="math" data-tex="w_\mu,w_\kappa&gt;0"></span> is not. Neither existence of minimizers, attained prediction extrema nor uniform solver accuracy follows from compact closure alone.</p>
+<p>The exact quotient treats its supplied rational/decimal coefficient values exactly. It does not remove uncertainty in those values or certify a prior floating-point dimensional conversion. The floating convenience method is explicitly an approximation.</p>
+<h2>5. Issue found, author fix, and independent regression checks</h2>
+<p>The initially reviewed source, SHA256 <code>30291e23d0b82f08fc6e6e2bc42db541725f1c56db5728fd07bb6c259d281123</code>, used floating max-rescaling followed by normalization without checking loss of positive coordinates. With admissible finite coefficients <span class="math" data-tex="\mu=5\times10^{-290}"></span>, <span class="math" data-tex="\kappa=7\times10^{290}"></span>, the reproduced original floating formula returns <span class="math" data-tex="w_\mu=0"></span>, falsely landing on an excluded face.</p>
+<p>The author corrected four paths: floating quotient, physical-pressure conversion, common coefficient scaling, and solver-ratio conversion. Each now rejects loss of any positive input coefficient to floating zero. The independent review checks four different extreme-input examples, including loss of a positive gain under scaling and loss of a gain under division by very large shear modulus. All raise the intended <code>ValueError</code>. The exact rational helper retains strictly positive <span class="math" data-tex="\mu"></span> for the same extreme quotient.</p>
+<p>This fix does not make arbitrary extreme ratios accurately representable in binary64. It prevents a silent domain change and directs such cases to exact arithmetic. No other correctness blocker was found in the reviewed scope.</p>
+<h2>6. Limits of the conclusion</h2>
+<p>The module correctly identifies a standard structural nonidentifiability and supplies consistent units. It does not compute the conditional compatible set <span class="math" data-tex="\Theta_\delta"></span>, its larger-region prediction envelope, discrepancy allowances, a likelihood or a confidence region. The documentary caveats about excluded simplex faces, branch selection, input errors and specimen-specific nuisance variables are appropriate. No novelty claim follows from this standard scale symmetry, its quotient or the numerical implementation checks.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

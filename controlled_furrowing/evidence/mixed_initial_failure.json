@@ -1,0 +1,6 @@
+{
+  "stage": "quadratic_boundary_output_extension",
+  "error": "IndexError: too many indices for array in maximum-column-shortening output",
+  "source_sha256": "a980013db2f3d1c3ec8f50e824afb0fdef7e138e7829372f95dc68c040215fcd",
+  "resolution": "Correct gather-then-component indexing; energy, solver and thresholds unchanged."
+}

@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MATERIAL-COHORT-DESCENT-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent numeric review of the all-record material descent</h1>
+<p><strong>Verdict: PASS for the current local tangent and observation plumbing.</strong> All seventeen source-column records are covered under one declared common baseline gain. The saved forces, material right-hand sides, tangent systems, smooth-mean chain rule and source/input/archive hashes independently replay. The output remains a proposed step for a finite affine surrogate; no new updated-material equilibrium has been solved or validated.</p>
+<p>The retained independent program and evidence are in <code>evidence/material_cohort_descent_independent_review.json</code>. It contains <strong>594 passing numeric/provenance checks</strong> before the final document checks. This review does not duplicate the separate exact affine primal/dual certificate audit.</p>
+<h2>Baseline and parameter coordinates</h2>
+<p>The protocol starts from the previously verified calibration-only candidate with lowest discrepancy among four already tested observation/gain candidates. That comparison does not establish the globally optimal nonlinear gain. Its common gain is approximately 8.062972020048665. For every record, the actual activation strength is exactly the floating representation of the retained rational gain times the retained decimal dose.</p>
+<p>All seventeen unique canonical source-column IDs match the CSV and saved fields, including record I with zero apical entry and record O with zero regional mean. No record is omitted or assigned a replacement value. This verifies source-record coverage; it does not independently establish biological specimen identities or remove the documented cross-panel pairing assumption.</p>
+<p>The same seventeen baseline fields are reobserved under all four declared observation conventions. Alternate conventions are therefore compared locally at this common baseline, rather than at their own globally optimized nonlinear material/gain solutions.</p>
+<p>Mechanical archives retain six columns:</p>
+<div class="math display" data-tex="
+ (\log\kappa,\log K_a,\log K_b,T_a,\log T_b,\log g).
+"></div>
+
+<p>The affine step uses only columns 1 through 5 in zero-based indexing:</p>
+<div class="math display" data-tex="
+ (\log K_a,\log K_b,T_a,\log T_b,\log g).
+"></div>
+
+<p>The finite compression coefficient kappa=5000, geometry, reference, quadrature and length unit remain fixed. Its computed diagnostic tangent is <strong>not</strong> an active fitting direction. The additive apical-tension step is constrained to [0,0.02] because the baseline tension is zero; the other coordinates have a numerical +/-0.1 trust interval. These intervals are numerical step limits, not measured material priors or an exhaustive physical domain.</p>
+<h2>Independent mechanical replay on every field</h2>
+<p>At each saved baseline, let</p>
+<div class="math display" data-tex="
+ R(u,\theta)=\partial_u\frac{E(u,\theta)}{\mu V_0},\qquad
+ H=\partial_uR,\qquad B=\partial_\theta R.
+"></div>
+
+<p>All seventeen fresh force evaluations pass the unchanged 1e-7 threshold; the largest normalized force is <strong>1.86e-10</strong>. Every archive free vector and index array matches the saved field and current model. All actual integration policies are Duffy-8/surface-12; nominal parent fields 4/8 are not substituted for the actual integration policy.</p>
+<p>For every field, an independent scalar-energy assembly differentiates all six parameter components: pointwise logarithmic volume, separate apical/basal area elasticity, additive apical true area, basal tension times true area and active fibre energy. It shares the checked geometric P2 cache but does not call the production coefficient-doubling force routine. Separate surface Gauss loops form the current revolved area directly. The largest relative difference from archived B across all 102 columns is <strong>2.06e-11</strong>.</p>
+<p>All 102 archived linear systems satisfy</p>
+<div class="math display" data-tex="
+ H S_j+B_j\simeq0,
+"></div>
+
+<p>with maximum relative residual <strong>9.19e-12</strong>. Thirty fresh automatic-differentiation Hessian-vector products at five selected records independently check the actual energy along the archived tangent directions. The selection covers weak, intermediate and strong activation and the I/O source edge cases. Their largest relative residual is <strong>9.46e-12</strong>. This bypasses the archived sparse-Hessian multiplication rather than checking only that an archive is internally consistent.</p>
+<p>The implicit-function interpretation remains conditional on an exact regular equilibrium. Floating small residuals, positive numerical geometry screens and successful factorizations do not enclose an exact root or its inverse Hessian. The source does not claim that stronger result.</p>
+<h2>Exact smooth-mean contraction and graph finite differences</h2>
+<p>The exact physical-node mean gradients from the <a href="QUADRATIC-MEAN-DERIVATIVES.html">geometric derivative module</a> are contracted independently on every record. The correct chain rule is</p>
+<div class="math display" data-tex="
+ D_\theta O
+ =\left(L_0D_{x_{\rm phys}}O\right)_{\rm free}S,
+ \qquad L_0=33.5\,\mu\mathrm m.
+"></div>
+
+<p>All <strong>510</strong> interval contractions match the saved analytic tangents: seventeen records, two spatial measures, three smooth means and five active directions. They preserve signs, physical units and the free-coordinate restriction. These are exact geometric derivative bounds along serialized floating tangent vectors; the floating equilibrium inverse does not thereby become rigorously enclosed.</p>
+<p>On five selected records, fresh low-level quadratic graph integrals evaluate both measures along <span class="math" data-tex="u\pm hS_j"></span>. They use no fabricated convergence metadata and do not re-equilibrate a changed material. The largest smooth-mean finite-difference discrepancy is <strong>4.24e-9 micrometres per declared coordinate</strong>, below the retained 2e-6 threshold. References, current-radius ROI and length unit stay fixed throughout.</p>
+<p>The source also retains two central-difference steps for all five directions and all four observation conventions. This review independently checks their interval-subtraction algebra, step order and positive local geometry-screen labels. The affine matrix uses exactly the declared smaller-step midpoint for all 68 rows; no record-wise choice of a convenient derivative is introduced.</p>
+<h2>What the maximum differences do not prove</h2>
+<p>Spatial maxima can be nonsmooth when extrema compete. Agreement of two central-difference steps is only a numerical diagnostic. For example,</p>
+<div class="math display" data-tex="
+ f(x)=&#124;x&#124;\quad\Longrightarrow\quad
+ \frac{f(h)-f(-h)}{2h}=0
+"></div>
+
+<p>for every positive h, even though the derivative at zero does not exist. The retained synthetic check explicitly exposes this issue. Neither small two-step discrepancies nor the exact interval arithmetic for each displaced graph proves differentiability of the maximum or bounds the error of a nonlinear material update.</p>
+<p>The displaced graph vectors are labeled as nonstationary geometric probes. Their local orientation screens and graph validity checks do not turn them into newly solved equilibria. The one-sided physical apical-tension constraint is imposed on the proposed material step; using both displacement signs to check a geometric derivative does not assert a negative physical-tension branch.</p>
+<h2>Affine descent is a proposal, not a new mechanical fit</h2>
+<p>Each of the four local affine problems has one common five-coordinate step and 68 constraints in the fixed seventeen-record/four-observable order. The independently checked plumbing selects the declared smaller-step derivative midpoints. A separate reviewer checks the rational primal/weak-dual certificates for those finite rounded affine problems.</p>
+<p>Such a certificate can tightly bound the optimum of the specified affine model. It does not bound derivative approximation error, maximum nonsmoothness, exact-root error, nonlinear remainder, finite-element continuum error or a changed-material equilibrium. In particular, an affine decrease is not evidence that the actual nonlinear common-material discrepancy decreased. A directly solved and independently verified material update is still needed for that claim.</p>
+<p>The current result performs no new nonlinear equilibrium solves, reads no larger-region response for this step, fixes kappa rather than fitting numerical compressibility, and leaves the original full compatible-set/propagation goal open. Trust-box limits and four conditional observation variants are not a physical posterior. No biological mechanism, novel concept or global parameter-domain result follows from this local proposal.</p>
+<h2>Retained verification scope</h2>
+<p>The receipt hashes all seventeen baseline fields, mechanical archives, mechanical verification records and full observer-tangent files, as well as the protocol, terminal job, results and frozen runner. Current bytes still match the predeclared source/input references. The original runner and physical sources were not edited, and no job was relaunched by the reviewer.</p>
+<p>The completed component is an independently checked cohort-wide local numerical direction. Its strength is coverage and audited derivative plumbing; its limits are exact-root/maximum/nonlinear/continuum uncertainty and unresolved experimental observation semantics.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,18 @@
+{
+  "status": "FINISHED",
+  "exit_code": 0,
+  "source_sha256": "3051ac6d35ee18407e29e8b82e96d789e685073dd3f067b01b50b459c0b970e5",
+  "protocol_sha256": "1198124fe22265e81113a3f383a82c6b816334e5d3a54df837bd16eb491aadea",
+  "preflight_sha256": "b3310545e2ab4e15e5988c90d4011565eebd5797f0c9449c75bcfad52a5f8b88",
+  "later_waves_release_sha256": "002b471dceed8666aa0f70e1e9673744f49d0bf3a70da65a194c3faf34b0adbe",
+  "profiles_sha256": "31c680040387762f835a235e678435400ac163081509abf9b012494d20de04f0",
+  "pid": 17168,
+  "mode": "independent",
+  "wave_id": "wave_02",
+  "source_review_sha256": "f39bb78a6ee4ee66cfdf25dc287a4856a1f7b5f94298c612fbbc8c17794d171f",
+  "hull_admission_sha256": "fe6b62b70388b06a04e399fcaa94dbfcfd75f1160353b1776109a75e80b93049",
+  "raw_wave_admission_sha256": "5a4a9afed767b8a5562df80a38e24b099806890d494b8ecb5418dfa4f1838892",
+  "raw_root_observed_exit_sha256": "0c65987453cadfb436ebe09daff35d017c826b036aa863feb690d799d6105b75",
+  "producer_observed_os_sha256": "5c7b6237cec4fe5124b005cdcd0f3f425c82388106c4a6ea3fd21ebc7771cf78",
+  "results_sha256": "1a2a785c5bceaf4d301295162747a63cfec4c4da235ba709a46c8e383d04b411"
+}

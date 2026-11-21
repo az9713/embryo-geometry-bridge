@@ -1,0 +1,94 @@
+{
+  "status": "PASS_SAFE_SIX_POINT_BULK_REPLAYS",
+  "checks": {
+    "element0_same_free_map": true,
+    "element0_all_force_intervals_overlap": true,
+    "element0_all_H_intervals_overlap": true,
+    "element0_gradient0_direct_moment_product_overlaps_dual": true,
+    "element0_H00_direct_moment_product_overlaps_dual": true,
+    "element6_same_free_map": true,
+    "element6_all_force_intervals_overlap": true,
+    "element6_all_H_intervals_overlap": true,
+    "element6_gradient0_direct_moment_product_overlaps_dual": true,
+    "element6_H00_direct_moment_product_overlaps_dual": true,
+    "element72_same_free_map": true,
+    "element72_all_force_intervals_overlap": true,
+    "element72_all_H_intervals_overlap": true,
+    "element72_gradient0_direct_moment_product_overlaps_dual": true,
+    "element72_H00_direct_moment_product_overlaps_dual": true,
+    "element66_same_free_map": true,
+    "element66_all_force_intervals_overlap": true,
+    "element66_all_H_intervals_overlap": true,
+    "element66_gradient0_direct_moment_product_overlaps_dual": true,
+    "element66_H00_direct_moment_product_overlaps_dual": true,
+    "element48_same_free_map": true,
+    "element48_all_force_intervals_overlap": true,
+    "element48_all_H_intervals_overlap": true,
+    "element48_gradient0_direct_moment_product_overlaps_dual": true,
+    "element48_H00_direct_moment_product_overlaps_dual": true,
+    "element143_same_free_map": true,
+    "element143_all_force_intervals_overlap": true,
+    "element143_all_H_intervals_overlap": true,
+    "element143_gradient0_direct_moment_product_overlaps_dual": true,
+    "element143_H00_direct_moment_product_overlaps_dual": true,
+    "all_frozen_inputs_current": true,
+    "exactly_six_predeclared_indices": true
+  },
+  "protocol_sha256": "3b73fd85d40c37721d82dcf801f64e36a8b3a646f8ab498ce94ab5456c379d4a",
+  "source_sha256": "23e75263f44afe48770f7f4b0abcbaa80f802ec2ba5b070e57c15d5c2222b75b",
+  "elements": [
+    {
+      "element": 0,
+      "file": "element_000.json",
+      "sha256": "6bcfeaf0f10d2ada223d41eb23086430d8547f9e1aeaf10209284b6500a3943d",
+      "force_entries": 11,
+      "H_entries": 66,
+      "canonical_basis_entry_checks": 3520
+    },
+    {
+      "element": 6,
+      "file": "element_006.json",
+      "sha256": "22623f65c6330674b1f4a7ef325e982ff43c3b6ebab9a2a8d59d0ad20d69d345",
+      "force_entries": 12,
+      "H_entries": 78,
+      "canonical_basis_entry_checks": 3840
+    },
+    {
+      "element": 72,
+      "file": "element_072.json",
+      "sha256": "b3cbbb9e8fa44e9942651f98d794c14bb1a4af06b044f899c31d4d3debcab4d4",
+      "force_entries": 9,
+      "H_entries": 45,
+      "canonical_basis_entry_checks": 2880
+    },
+    {
+      "element": 66,
+      "file": "element_066.json",
+      "sha256": "f7fee7a6d4afcb656e628ff4205eb2f976a786a584ec915cd5eaee1227f20ce5",
+      "force_entries": 6,
+      "H_entries": 21,
+      "canonical_basis_entry_checks": 1920
+    },
+    {
+      "element": 48,
+      "file": "element_048.json",
+      "sha256": "eae93bdc096b8cf76d79b1aa63f433c58596d6d2fccc520acb4fafa2de6d7a1a",
+      "force_entries": 12,
+      "H_entries": 78,
+      "canonical_basis_entry_checks": 3840
+    },
+    {
+      "element": 143,
+      "file": "element_143.json",
+      "sha256": "cef5490eabe242460d35d675c32b276f5a7b69923528c97830ffe1deef492698",
+      "force_entries": 10,
+      "H_entries": 55,
+      "canonical_basis_entry_checks": 3200
+    }
+  ],
+  "seconds": 94.93991710001137,
+  "producer_results_sha256": "9b7a7f6d42136497fd92d1341b69feaf4bb5ad1de94bca6667282e860ab72597",
+  "scope": "Only six POINT bulk local integrations plus exact signed reductions later. Reused safe sparse arithmetic/DUAL, exact moments and constitutive core; independent cubicJ, coefficient convolution, direct canonical maps/manual lifts and selected direct moment contractions. No parameter tube/PDE/root transfer.",
+  "old_v1_integration_certificates_restored": false,
+  "root_transfer_proved": false
+}

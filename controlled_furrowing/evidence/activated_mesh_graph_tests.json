@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": {
+    "same_Eulerian_graph_different_material_parameterization": true,
+    "exact_constant_offset_supremum": true,
+    "full_common_physical_domain": true
+  },
+  "source_sha256": "78295655c236d465a4c4ac9d324c9d810d23359855e7d54761496535ffe0d8a2",
+  "scope": "Synthetic exactgraphcomparison only; no mechanical solve or target data."
+}

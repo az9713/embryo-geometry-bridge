@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QUADRATIC-FITTED-LOAD-READINESS</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Readiness of the actual activated quadratic model for calibration</h1>
+<p><strong>Decision:</strong> the robust solver now produces verified discrete equilibria and embedded bodies on the actual small-region geometry. It is ready for explicitly provisional discrete calibration diagnostics. It is <strong>not yet ready for a continuum-accurate mechanical transfer claim</strong>: activated-state mesh, quadrature and near-incompressibility accuracy remain unresolved. The manufactured benchmark's accuracy cannot be transferred to these much more strongly activated fields.</p>
+<p>This review reads six actual final states from <code>runs/quadratic_robust/lambda_{500.0,5000.0}_target_{1.0,5.0,10.0}/final.json</code>. It reads no biological response data, performs no fit, and uses none of the failed states in <code>runs/quadratic_pilot</code> as a calibration result. Receipt: <code>evidence/quadratic_robust_geometry.json</code>, including a reproducible replay program, input hashes, all exact triangle coefficients and exact point evaluations.</p>
+<h2>1. Model and source provenance</h2>
+<p>Every reviewed final state uses 12×6 meridional cells, P2 displacement, the original <strong>pointwise</strong> logarithmic-volume penalty, and the actual small-patch geometry: height scale 33.5 µm, measured diameter 18.71024074 µm, outer radius three heights, and activation 5–25 µm below the apical surface. The declared surface parameters are <span class="math" data-tex="K_b/(\mu H)=2"></span>, <span class="math" data-tex="K_a/(\mu H)=0.2"></span>, <span class="math" data-tex="T_b/(\mu H)=2"></span>, <span class="math" data-tex="T_a=0"></span>. Activation strengths <span class="math" data-tex="f/\mu=1,5,10"></span> are numerical load cases, not fitted biological forces.</p>
+<p>The numerical batch used retained controller source</p>
+<pre><code class="language-text">2e00d7b2b61ecfa9006716ba9a0245af47f2c85ae7b647caf47b66b13532dba9
+</code></pre>
+<p>at <code>runs/quadratic_robust/pre_guard_hardening/robust_quadratic.py</code>. Final input guards and terminal-ledger persistence use controller</p>
+<pre><code class="language-text">be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b
+</code></pre>
+<p>The constitutive/energy source remains</p>
+<pre><code class="language-text">5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410
+</code></pre>
+<p>for <code>scripts/axisymmetric_quadratic.py</code>. Current parent-source hashes match the batch receipt. The independent reviewer verifies both controller hashes and replays energies and gradients against the frozen full-P2 model; the controller changes numerical policy, not energy or gradient.</p>
+<h2>2. Algebraic acceptance and failed-step accounting</h2>
+<p>All six requested targets were reached. Replay of every final field passes the predeclared scaled free-force threshold <span class="math" data-tex="10^{-7}"></span>; the largest final residual is approximately <span class="math" data-tex="3.25\times10^{-9}"></span>. Across the six continuation records, <strong>12 accepted increments</strong> pass replayed stationarity. <strong>Six failed attempts</strong> remain retained. At every attempt, the initial-vector hash equals the most recent accepted-vector hash. A rejected optimizer vector is not used as the next state. Recomputed accepted-path energy ledgers close within numerical rounding.</p>
+<p>These checks support a verified discrete stationary-state path. They do not prove a global energy minimum, a unique branch, a biological time trajectory, or physical photon/ATP expenditure. The accepted-path work ledger refers to the specified externally ramped mechanical potential. Failed numerical trials are not physical events.</p>
+<h2>3. Exact whole-body discrete geometry</h2>
+<p>The independent rational verifier checks every one of the <strong>864 quadratic triangles</strong> in the six final bodies. The degree-four correlated Bernstein method bounds</p>
+<div class="math display" data-tex="
+ J=\det F_m\,R/r
+"></div>
+
+<p>by first forming the polynomial numerator <span class="math" data-tex="\det F_m R"></span>, then dividing its Bernstein coefficients by the degree-elevated affine reference-radius coefficients. Exact zero coefficients on the axis are handled explicitly. The complete derivation is in <code>QUADRATIC-INDEPENDENT-REVIEW.md</code>; the implementation is <code>scripts/mixed_geometry_certificate_v2.py</code>.</p>
+<p>All six bodies also pass two independent sufficient global conditions: the existing exact disk/Jordan-boundary certificate, including quadratic radial monotonicity and top–bottom separation, and the exact vertexwise positive-definiteness test for the symmetric meridional deformation gradient, implying strong monotonicity on the convex reference rectangle. Thus each saved meridional body is globally embedded, and its axis-preserving revolution is an injective three-dimensional body. This excludes self-overlap of the represented body; contact with an external structure absent from the model is outside the claim.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><span class="math" data-tex="\lambda/\mu"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="f/\mu"></span></th>
+<th style="text-align: right;">Original quadrature <span class="math" data-tex="J"></span> range</th>
+<th style="text-align: right;">Certified whole-body discrete <span class="math" data-tex="J"></span> interval</th>
+<th>Whole-body <span class="math" data-tex="&#124;J-1&#124;&lt;1\%"></span>?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">[0.997548, 1.003091]</td>
+<td style="text-align: right;">[0.992104, 1.009470]</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">[0.979917, 1.017614]</td>
+<td style="text-align: right;">[0.957415, 1.038645]</td>
+<td>No; violation proved</td>
+</tr>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">[0.966828, 1.030380]</td>
+<td style="text-align: right;">[0.929214, 1.066934]</td>
+<td>No; violation proved</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">[0.999230, 1.000903]</td>
+<td style="text-align: right;">[0.997586, 1.002742]</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">[0.990723, 1.004564]</td>
+<td style="text-align: right;">[0.980397, 1.010771]</td>
+<td>No; violation proved</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">[0.980573, 1.008819]</td>
+<td style="text-align: right;">[0.959310, 1.021443]</td>
+<td>No; violation proved</td>
+</tr>
+</tbody>
+</table>
+<p>Displayed numbers approximate exact rational bounds in the receipt. A bound endpoint need not be attained. The original quadrature extrema are observed values at a finite point set, not global extrema or error bounds.</p>
+<p>To distinguish conservative bounds from actual violations, we also evaluate <span class="math" data-tex="J"></span> exactly at triangle vertices, edge midpoints and centroids with positive reference radius. These are attained values of the stored discrete map. At <span class="math" data-tex="\lambda=5000,f=5"></span>, one such point has <span class="math" data-tex="J=1.0107707674"></span>, exceeding 1.01, although the original quadrature maximum was only 1.004564. At <span class="math" data-tex="\lambda=5000,f=10"></span>, exact evaluated values include 0.9832949015 and 1.0207526236. The stronger-load cases therefore fail a 1% diagnostic by explicit rational point inequalities, not just by lack of a sufficiently sharp bound. Those points still do not necessarily realize the global extrema.</p>
+<p>One percent is a transparent numerical diagnostic used here to report local distortion; it is not an experimentally justified tissue compressibility limit. The actual biologically acceptable tolerance must be established independently.</p>
+<h2>4. What the penalty comparison says</h2>
+<p>The maximum activated material-column shortening changes as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><span class="math" data-tex="f/\mu"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda=500"></span>, shortening/<span class="math" data-tex="H"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda=5000"></span>, shortening/<span class="math" data-tex="H"></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.06591696</td>
+<td style="text-align: right;">0.05955996</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.21421944</td>
+<td style="text-align: right;">0.20909121</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.31734926</td>
+<td style="text-align: right;">0.31294742</td>
+</tr>
+</tbody>
+</table>
+<p>The endpoint changes by about 9.6%, 2.4% and 1.4% respectively. A relatively small change in one endpoint does not certify the complete geometry. The much stronger volume oscillations in the earlier projected-pressure model are avoided by restoring the full pointwise penalty, but substantial local distortions remain at these activated loads.</p>
+<p>Changing <span class="math" data-tex="\lambda"></span> changes the finite-compressibility continuum material law. If that finite law is the scientific model, <span class="math" data-tex="\lambda"></span> needs independent identification or declared uncertainty. If instead <span class="math" data-tex="\lambda"></span> is a numerical penalty approximating an incompressibility constraint, convergence of both geometry and local volume distortion as <span class="math" data-tex="\lambda\to\infty"></span> must be assessed with sufficient displacement resolution. Raising <span class="math" data-tex="\lambda"></span> alone is not evidence that locking or discretization error has disappeared.</p>
+<h2>5. Next accuracy gate, before a physical calibration freeze</h2>
+<ol>
+<li>Repeat these <strong>actual activated</strong> cases on a finer matched mesh, initially 16×8, retaining the same activation geometry, constitutive terms, boundary, loads and solver thresholds. Compare against 12×6; refine further if differences remain material. Do not re-fit activation gain separately to conceal resolution changes.</li>
+<li>Compare complete apical and basal curves on a common physical radial domain, signed displacement extrema, material-column shortening, local <span class="math" data-tex="J"></span> certificates, energy and force residuals. Distinguish material-column height from Eulerian tissue thickness.</li>
+<li>Raise volume and surface quadrature independently. Converged algebraic equations at one quadrature rule do not establish accurate nonlinear energy integration.</li>
+<li>Separate finite material compressibility from the intended incompressible limit. Declare a numerical local-volume tolerance, report its scientific justification separately, and track local extrema rather than global volume alone. Retain all tested penalty branches.</li>
+<li>Establish a calibration-only numerical uncertainty budget and verify sensitivity of fitted gain and secondary small-region displacements to mesh/penalty choices. Only then freeze a physical small-to-large transfer forecast. Static peak-proxy and missing slice/time issues remain separate biological limitations.</li>
+</ol>
+<p>A provisional fit to a precisely declared discrete model can still help diagnose whether that model is even compatible with the small-region measurements. It must be labeled as such; it cannot close the original continuum-mechanics or biological-prediction gates. Adding further material complexity before these accuracy checks would make failure attribution harder.</p>
+<p>The retained independent review passes <strong>49 checks</strong>, with all input/source hashes and exact coefficients available for replay. This is progress in solving and verifying the actual discrete mechanics. It establishes no new biological concept or confirmed original general theorem.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,516 @@
+{
+  "status": "PASS",
+  "checks": {
+    "positive_bound_exact_optimum": true,
+    "positive_bound_independent_inequalities": true,
+    "positive_bound_reject_false_lower_loss": true,
+    "negative_bound_exact_optimum": true,
+    "negative_bound_independent_inequalities": true,
+    "negative_bound_reject_false_lower_loss": true,
+    "opposing_residuals_exact_optimum": true,
+    "opposing_residuals_independent_inequalities": true,
+    "opposing_residuals_reject_false_lower_loss": true,
+    "one_sided_tension_exact_optimum": true,
+    "one_sided_tension_independent_inequalities": true,
+    "one_sided_tension_reject_false_lower_loss": true,
+    "exact_zero_exact_optimum": true,
+    "exact_zero_independent_inequalities": true,
+    "exact_zero_reject_false_lower_loss": true,
+    "unused_coordinate_exact_optimum": true,
+    "unused_coordinate_independent_inequalities": true,
+    "unused_coordinate_reject_false_lower_loss": true,
+    "two_independent_channels_exact_optimum": true,
+    "two_independent_channels_independent_inequalities": true,
+    "two_independent_channels_reject_false_lower_loss": true,
+    "degenerate_fixed_box_exact_optimum": true,
+    "degenerate_fixed_box_independent_inequalities": true,
+    "degenerate_fixed_box_reject_false_lower_loss": true,
+    "nan_guard": true,
+    "bad_bounds_guard": true,
+    "dimension_guard": true,
+    "string_residual_guard": true,
+    "string_bounds_guard": true,
+    "string_jacobian_guard": true,
+    "string_certificate_guard": true,
+    "unrepresentable_float_proposal_unresolved": true
+  },
+  "rows": [
+    {
+      "name": "positive_bound",
+      "result": {
+        "status": "CERTIFIED_DEFINED_AFFINE_LP",
+        "step_exact": [
+          "-1"
+        ],
+        "step_display": [
+          -1.0
+        ],
+        "loss_exact": "2",
+        "loss_display": 2.0,
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "2"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        "checks": {
+          "exact_primal_feasibility": true,
+          "exact_dual_nonnegative": true,
+          "exact_dual_stationarity": true,
+          "exact_primal_dual_objective_equality": true
+        },
+        "active_constraints": [
+          "residual_0_positive",
+          "coordinate_0_lower"
+        ],
+        "dual_support": [
+          {
+            "constraint": "residual_0_positive",
+            "multiplier_exact": "1"
+          },
+          {
+            "constraint": "coordinate_0_lower",
+            "multiplier_exact": "1"
+          }
+        ],
+        "floating_proposal": {
+          "step": [
+            -1.0
+          ],
+          "loss": 2.0
+        },
+        "basis_trials": 1,
+        "coefficient_convention": "Decimal str(float) for floating inputs; exact rationals otherwise.",
+        "scope": "Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate."
+      },
+      "analytic_expected_exact": "2"
+    },
+    {
+      "name": "negative_bound",
+      "result": {
+        "status": "CERTIFIED_DEFINED_AFFINE_LP",
+        "step_exact": [
+          "1"
+        ],
+        "step_display": [
+          1.0
+        ],
+        "loss_exact": "2",
+        "loss_display": 2.0,
+        "certificate": {
+          "primal_exact": [
+            "1",
+            "2"
+          ],
+          "dual_exact": [
+            "0",
+            "1",
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "checks": {
+          "exact_primal_feasibility": true,
+          "exact_dual_nonnegative": true,
+          "exact_dual_stationarity": true,
+          "exact_primal_dual_objective_equality": true
+        },
+        "active_constraints": [
+          "residual_0_negative",
+          "coordinate_0_upper"
+        ],
+        "dual_support": [
+          {
+            "constraint": "residual_0_negative",
+            "multiplier_exact": "1"
+          },
+          {
+            "constraint": "coordinate_0_upper",
+            "multiplier_exact": "1"
+          }
+        ],
+        "floating_proposal": {
+          "step": [
+            1.0
+          ],
+          "loss": 2.0
+        },
+        "basis_trials": 1,
+        "coefficient_convention": "Decimal str(float) for floating inputs; exact rationals otherwise.",
+        "scope": "Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate."
+      },
+      "analytic_expected_exact": "2"
+    },
+    {
+      "name": "opposing_residuals",
+      "result": {
+        "status": "CERTIFIED_DEFINED_AFFINE_LP",
+        "step_exact": [
+          "0"
+        ],
+        "step_display": [
+          0.0
+        ],
+        "loss_exact": "2",
+        "loss_display": 2.0,
+        "certificate": {
+          "primal_exact": [
+            "0",
+            "2"
+          ],
+          "dual_exact": [
+            "1/2",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "checks": {
+          "exact_primal_feasibility": true,
+          "exact_dual_nonnegative": true,
+          "exact_dual_stationarity": true,
+          "exact_primal_dual_objective_equality": true
+        },
+        "active_constraints": [
+          "residual_0_positive",
+          "residual_1_negative"
+        ],
+        "dual_support": [
+          {
+            "constraint": "residual_0_positive",
+            "multiplier_exact": "1/2"
+          },
+          {
+            "constraint": "residual_1_negative",
+            "multiplier_exact": "1/2"
+          }
+        ],
+        "floating_proposal": {
+          "step": [
+            -0.0
+          ],
+          "loss": 2.0
+        },
+        "basis_trials": 1,
+        "coefficient_convention": "Decimal str(float) for floating inputs; exact rationals otherwise.",
+        "scope": "Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate."
+      },
+      "analytic_expected_exact": "2"
+    },
+    {
+      "name": "one_sided_tension",
+      "result": {
+        "status": "CERTIFIED_DEFINED_AFFINE_LP",
+        "step_exact": [
+          "1/50"
+        ],
+        "step_display": [
+          0.02
+        ],
+        "loss_exact": "4/5",
+        "loss_display": 0.8,
+        "certificate": {
+          "primal_exact": [
+            "1/50",
+            "4/5"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "10",
+            "0",
+            "0"
+          ]
+        },
+        "checks": {
+          "exact_primal_feasibility": true,
+          "exact_dual_nonnegative": true,
+          "exact_dual_stationarity": true,
+          "exact_primal_dual_objective_equality": true
+        },
+        "active_constraints": [
+          "residual_0_positive",
+          "coordinate_0_upper"
+        ],
+        "dual_support": [
+          {
+            "constraint": "residual_0_positive",
+            "multiplier_exact": "1"
+          },
+          {
+            "constraint": "coordinate_0_upper",
+            "multiplier_exact": "10"
+          }
+        ],
+        "floating_proposal": {
+          "step": [
+            0.02
+          ],
+          "loss": 0.8
+        },
+        "basis_trials": 1,
+        "coefficient_convention": "Decimal str(float) for floating inputs; exact rationals otherwise.",
+        "scope": "Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate."
+      },
+      "analytic_expected_exact": "4/5"
+    },
+    {
+      "name": "exact_zero",
+      "result": {
+        "status": "CERTIFIED_DEFINED_AFFINE_LP",
+        "step_exact": [
+          "-1"
+        ],
+        "step_display": [
+          -1.0
+        ],
+        "loss_exact": "0",
+        "loss_display": 0.0,
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "0"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "checks": {
+          "exact_primal_feasibility": true,
+          "exact_dual_nonnegative": true,
+          "exact_dual_stationarity": true,
+          "exact_primal_dual_objective_equality": true
+        },
+        "active_constraints": [
+          "residual_0_positive",
+          "residual_0_negative",
+          "nonnegative_loss"
+        ],
+        "dual_support": [
+          {
+            "constraint": "nonnegative_loss",
+            "multiplier_exact": "1"
+          }
+        ],
+        "floating_proposal": {
+          "step": [
+            -1.0
+          ],
+          "loss": 0.0
+        },
+        "basis_trials": 1,
+        "coefficient_convention": "Decimal str(float) for floating inputs; exact rationals otherwise.",
+        "scope": "Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate."
+      },
+      "analytic_expected_exact": "0"
+    },
+    {
+      "name": "unused_coordinate",
+      "result": {
+        "status": "CERTIFIED_DEFINED_AFFINE_LP",
+        "step_exact": [
+          "0",
+          "-4"
+        ],
+        "step_display": [
+          0.0,
+          -4.0
+        ],
+        "loss_exact": "2",
+        "loss_display": 2.0,
+        "certificate": {
+          "primal_exact": [
+            "0",
+            "-4",
+            "2"
+          ],
+          "dual_exact": [
+            "1/2",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "checks": {
+          "exact_primal_feasibility": true,
+          "exact_dual_nonnegative": true,
+          "exact_dual_stationarity": true,
+          "exact_primal_dual_objective_equality": true
+        },
+        "active_constraints": [
+          "residual_0_positive",
+          "residual_1_negative",
+          "coordinate_1_lower"
+        ],
+        "dual_support": [
+          {
+            "constraint": "residual_0_positive",
+            "multiplier_exact": "1/2"
+          },
+          {
+            "constraint": "residual_1_negative",
+            "multiplier_exact": "1/2"
+          }
+        ],
+        "floating_proposal": {
+          "step": [
+            -0.0,
+            -4.0
+          ],
+          "loss": 2.0
+        },
+        "basis_trials": 1,
+        "coefficient_convention": "Decimal str(float) for floating inputs; exact rationals otherwise.",
+        "scope": "Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate."
+      },
+      "analytic_expected_exact": "2"
+    },
+    {
+      "name": "two_independent_channels",
+      "result": {
+        "status": "CERTIFIED_DEFINED_AFFINE_LP",
+        "step_exact": [
+          "-1",
+          "-1"
+        ],
+        "step_display": [
+          -1.0,
+          -1.0
+        ],
+        "loss_exact": "2",
+        "loss_display": 2.0,
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "-1",
+            "2"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "checks": {
+          "exact_primal_feasibility": true,
+          "exact_dual_nonnegative": true,
+          "exact_dual_stationarity": true,
+          "exact_primal_dual_objective_equality": true
+        },
+        "active_constraints": [
+          "residual_0_positive",
+          "coordinate_0_lower",
+          "coordinate_1_lower"
+        ],
+        "dual_support": [
+          {
+            "constraint": "residual_0_positive",
+            "multiplier_exact": "1"
+          },
+          {
+            "constraint": "coordinate_0_lower",
+            "multiplier_exact": "1"
+          }
+        ],
+        "floating_proposal": {
+          "step": [
+            -1.0,
+            -1.0
+          ],
+          "loss": 2.0
+        },
+        "basis_trials": 1,
+        "coefficient_convention": "Decimal str(float) for floating inputs; exact rationals otherwise.",
+        "scope": "Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate."
+      },
+      "analytic_expected_exact": "2"
+    },
+    {
+      "name": "degenerate_fixed_box",
+      "result": {
+        "status": "CERTIFIED_DEFINED_AFFINE_LP",
+        "step_exact": [
+          "0"
+        ],
+        "step_display": [
+          0.0
+        ],
+        "loss_exact": "3",
+        "loss_display": 3.0,
+        "certificate": {
+          "primal_exact": [
+            "0",
+            "3"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        "checks": {
+          "exact_primal_feasibility": true,
+          "exact_dual_nonnegative": true,
+          "exact_dual_stationarity": true,
+          "exact_primal_dual_objective_equality": true
+        },
+        "active_constraints": [
+          "residual_0_positive",
+          "coordinate_0_upper",
+          "coordinate_0_lower"
+        ],
+        "dual_support": [
+          {
+            "constraint": "residual_0_positive",
+            "multiplier_exact": "1"
+          },
+          {
+            "constraint": "coordinate_0_lower",
+            "multiplier_exact": "1"
+          }
+        ],
+        "floating_proposal": {
+          "step": [
+            -0.0
+          ],
+          "loss": 3.0
+        },
+        "basis_trials": 1,
+        "coefficient_convention": "Decimal str(float) for floating inputs; exact rationals otherwise.",
+        "scope": "Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate."
+      },
+      "analytic_expected_exact": "3"
+    }
+  ],
+  "source_sha256": "a0156acb5e9a3574f87033f2bb821b5dbd8ebe9d4940d8996ed8b15be6368d9d",
+  "proof": "For Ax<=b and lambda>=0 with A^T lambda=-c, c^T x>=-lambda^T b. Equality plus primal feasibility proves global optimality.",
+  "scope": "Analytically solvable affine LPs plus adversarial false-loss checks; no biological or nonlinear-model claim."
+}

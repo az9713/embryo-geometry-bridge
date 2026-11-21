@@ -1,0 +1,499 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact certificate/provenance review of the v1 defined midpoint-table surrogate only; no nonlinear physical inference.",
+  "checks": {
+    "prepared_hash_chain": true,
+    "all_frozen_sources_current": true,
+    "all68_input_records_and_channels": true,
+    "four_strength_nodes_exact": true,
+    "all28_gaincuts_cover_declared_interval": true,
+    "all108_exact_cell_certificates": true,
+    "all14796_line_coefficients_match_source_midpoints": true,
+    "four_variants_global_minimum_of_all_cell_optima": true,
+    "all_four_gain_cap_flags": true,
+    "all64_node_variant_channel_intervals_replay_frozen_observer": true,
+    "no_extrapolation": true,
+    "no_root_fit_or_writer_called": true,
+    "six_synthetic_global_vertex_enumerations_agree": true,
+    "seven_invalid_input_guards": true,
+    "source_unchanged_after_pure_synthetic_tests": true,
+    "root_twelve_checks_and_observer_twentyone_checks_hashbound": true,
+    "display_math_delimiters_balanced": true,
+    "local_document_links_exist": true
+  },
+  "candidate_file_sha256": "0d8322b7ecafb34a90861093ce1eaa66839064c770bef31961d5faaeee47c059",
+  "response_table_sha256": "0b955e9fc92668f1898df718ea2d74a5afeaa51eabf56bcf17f506426d102b37",
+  "protocol_sha256": "10ae4985d8e63634f8d9083ddf2ea0dac6c0969b8508d06c61f443f5ac84e379",
+  "optimizer_source_sha256": "3d803c3b9a39095707633bf83989fdfab7ce7ca963c81e3dffca11ff7e145a2e",
+  "input_state_provenance": [
+    {
+      "strength": 0,
+      "file": "runs/joint_gain_calibration/zero/final.json",
+      "sha256": "e7308ba56188fb1e7c57b35cffd793afefbbb20016c48f8924af3aaeade85be7",
+      "sixteen_variant_channel_intervals_match_frozen_observer": true
+    },
+    {
+      "strength": 1,
+      "file": "runs/activated_quadrature/lambda_5000.0_strength_1.0/reequilibrated.json",
+      "sha256": "d313cb9bee8073ae141feaca429f72a77c7eb32c5053c4a392033d3e6d869460",
+      "sixteen_variant_channel_intervals_match_frozen_observer": true
+    },
+    {
+      "strength": 5,
+      "file": "runs/activated_quadrature/lambda_5000.0_strength_5.0/reequilibrated.json",
+      "sha256": "662060f2dce6efd8da0195fe851baba76bfeb2e5b20b93d63bceccbf0c8b4325",
+      "sixteen_variant_channel_intervals_match_frozen_observer": true
+    },
+    {
+      "strength": 10,
+      "file": "runs/activated_quadrature/lambda_5000.0_strength_10.0/reequilibrated.json",
+      "sha256": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50",
+      "sixteen_variant_channel_intervals_match_frozen_observer": true
+    }
+  ],
+  "midpoint_definition": "Exact meanofeachsuppliedclosedinterval endpoint; not an errorenclosure for the responsebetweenstrengthnodes",
+  "gain_bounds_exact": [
+    "0",
+    "15625000/2360271"
+  ],
+  "breakpoints_exact": [
+    "0",
+    "1562500/2360271",
+    "100000000/128898317",
+    "25000000/26182761",
+    "3125000/3085609",
+    "100000000/97607953",
+    "20000000/17014741",
+    "100000000/82160217",
+    "100000000/80580697",
+    "100000000/78208913",
+    "100000000/75547653",
+    "100000000/71523649",
+    "10000000/6924031",
+    "100000000/47133397",
+    "100000000/46402059",
+    "12500000/4089863",
+    "7812500/2360271",
+    "100000000/27583779",
+    "500000000/128898317",
+    "125000000/26182761",
+    "15625000/3085609",
+    "500000000/97607953",
+    "100000000/17014741",
+    "500000000/82160217",
+    "500000000/80580697",
+    "500000000/78208913",
+    "500000000/75547653",
+    "15625000/2360271"
+  ],
+  "variant_results": [
+    {
+      "variant": "current_disk__spatial_max",
+      "gain_exact": "15625000/2360271",
+      "gain_display": 6.620002533607369,
+      "loss_exact": "2693135385288411901779559/453534532099984553148416",
+      "loss_display": 5.938104366206658,
+      "cells": 27,
+      "lines_per_cell": 137,
+      "all68_record_channel_lines_verified": true,
+      "boundary_optimum": true,
+      "last_cell_active_slopes_strictly_negative": true,
+      "active_boundary_witnesses": [
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "channel": "apical_max_shortening_um",
+          "residual_sign": "observed_minus_prediction"
+        }
+      ]
+    },
+    {
+      "variant": "current_disk__regional_mean",
+      "gain_exact": "15625000/2360271",
+      "gain_display": 6.620002533607369,
+      "loss_exact": "7632981600591188309328419589215943209000917683700815115321731056918344735476821320073072852745326954009006654064219924478702747115313159016164721854394012281872910200944244096519417286630033161435453/1049731558836769933287916181735886019993601099990896052711154122968258447105876561375140676345889744531810897903714676361964828756034005074393006697894465708777982978540229891426598257707197367582720",
+      "loss_display": 7.271365270802622,
+      "cells": 27,
+      "lines_per_cell": 137,
+      "all68_record_channel_lines_verified": true,
+      "boundary_optimum": true,
+      "last_cell_active_slopes_strictly_negative": true,
+      "active_boundary_witnesses": [
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "channel": "apical_max_shortening_um",
+          "residual_sign": "observed_minus_prediction"
+        }
+      ]
+    },
+    {
+      "variant": "current_radial_line__spatial_max",
+      "gain_exact": "15625000/2360271",
+      "gain_display": 6.620002533607369,
+      "loss_exact": "2693135385288411901779559/453534532099984553148416",
+      "loss_display": 5.938104366206658,
+      "cells": 27,
+      "lines_per_cell": 137,
+      "all68_record_channel_lines_verified": true,
+      "boundary_optimum": true,
+      "last_cell_active_slopes_strictly_negative": true,
+      "active_boundary_witnesses": [
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "channel": "apical_max_shortening_um",
+          "residual_sign": "observed_minus_prediction"
+        }
+      ]
+    },
+    {
+      "variant": "current_radial_line__regional_mean",
+      "gain_exact": "15625000/2360271",
+      "gain_display": 6.620002533607369,
+      "loss_exact": "6197414233713757340884760064836273339583203979262258840671119551454288189590487433409177868381855142183030337496630355439406577507208555/913765134187017793105884551596963256773148534112737915159942623604341533864374637903286532561046125355166307922911729491349556619640832",
+      "loss_display": 6.782283545133984,
+      "cells": 27,
+      "lines_per_cell": 137,
+      "all68_record_channel_lines_verified": true,
+      "boundary_optimum": true,
+      "last_cell_active_slopes_strictly_negative": true,
+      "active_boundary_witnesses": [
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "channel": "apical_max_shortening_um",
+          "residual_sign": "observed_minus_prediction"
+        }
+      ]
+    }
+  ],
+  "certified_cell_count": 108,
+  "reconstructed_line_count": 14796,
+  "support_status": "INCOMPLETE support: all four optima attain the computational table cap, not a physiological gain bound.",
+  "certified_nonlinear_interpolation_error": false,
+  "physical_or_continuum_gain_optimum_established": false,
+  "full_physical_identified_set": false,
+  "held_out_responses_read": false,
+  "novelty": "Standard piecewise-affine convexcell andsubgradient certification; no noveltyclaim",
+  "limitations": [
+    "Tableendpoint intervals bounddiscreteobserveroutputs only",
+    "Frozenobserverreexecution binds tableprovenance butisnotindependentreproof ofobservermathematics",
+    "Source temporal/component/ROI semantics remainconditional",
+    "Minimaxcommonmicrometerweightingisdiagnostic, notnoiseestimation",
+    "Candidatecapdoesnotprovephysicaloptimumliesbeyondcap orpredictfuturetableturning"
+  ],
+  "synthetic_independent_vertex_examples": [
+    {
+      "name": "analytic_linear",
+      "exact_vertex_minimum_loss": "1/3",
+      "leftmost_vertex_minimizer": "2/3",
+      "reported_gain": "2/3",
+      "reported_loss": "1/3",
+      "certified_cells": 1,
+      "all_pair_intersection_enumeration_agrees": true
+    },
+    {
+      "name": "nonmonotone_response",
+      "exact_vertex_minimum_loss": "1/3",
+      "leftmost_vertex_minimizer": "1/3",
+      "reported_gain": "1/3",
+      "reported_loss": "1/3",
+      "certified_cells": 3,
+      "all_pair_intersection_enumeration_agrees": true
+    },
+    {
+      "name": "nonlinear_sampled_multichannel",
+      "exact_vertex_minimum_loss": "11/7",
+      "leftmost_vertex_minimizer": "8/7",
+      "reported_gain": "8/7",
+      "reported_loss": "11/7",
+      "certified_cells": 3,
+      "all_pair_intersection_enumeration_agrees": true
+    },
+    {
+      "name": "interior_flat_minimizer",
+      "exact_vertex_minimum_loss": "1",
+      "leftmost_vertex_minimizer": "1",
+      "reported_gain": "1",
+      "reported_loss": "1",
+      "certified_cells": 1,
+      "all_pair_intersection_enumeration_agrees": true
+    },
+    {
+      "name": "multiple_zero_minima",
+      "exact_vertex_minimum_loss": "0",
+      "leftmost_vertex_minimizer": "0",
+      "reported_gain": "0",
+      "reported_loss": "0",
+      "certified_cells": 3,
+      "all_pair_intersection_enumeration_agrees": true
+    },
+    {
+      "name": "rational_breakpoints",
+      "exact_vertex_minimum_loss": "31/690",
+      "leftmost_vertex_minimizer": "182/207",
+      "reported_gain": "182/207",
+      "reported_loss": "31/690",
+      "certified_cells": 3,
+      "all_pair_intersection_enumeration_agrees": true
+    }
+  ],
+  "invalid_synthetic_inputs_rejected": [
+    "duplicate_strength",
+    "zero_dose",
+    "extrapolation",
+    "missing_channel",
+    "Boolean",
+    "nonfinite",
+    "negative_gain"
+  ],
+  "candidate_file": "runs/joint_gain_calibration/surrogate_candidates.json",
+  "response_table_file": "runs/joint_gain_calibration/response_table.json",
+  "protocol_file": "runs/joint_gain_calibration/protocol.json",
+  "root_twelve_check_verification_sha256": "83dbbbccec0418ea3a0d7bdf748c7a744363155c893c9b231174306d9f28010a",
+  "frozen_observer_independent_review_sha256": "572ee0ce20da2852ef3aea67c229c81de8e0adede1b0f48d61007244325f9ee7",
+  "synthetic_fixture_inputs": [
+    {
+      "name": "analytic_linear",
+      "strengths": [
+        0,
+        4
+      ],
+      "responses": [
+        [
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "doses": [
+        1,
+        2
+      ],
+      "observations": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "bounds": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "nonmonotone_response",
+      "strengths": [
+        0,
+        1,
+        3
+      ],
+      "responses": [
+        [
+          0
+        ],
+        [
+          4
+        ],
+        [
+          1
+        ]
+      ],
+      "doses": [
+        1,
+        2
+      ],
+      "observations": [
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "bounds": [
+        0,
+        "3/2"
+      ]
+    },
+    {
+      "name": "nonlinear_sampled_multichannel",
+      "strengths": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "responses": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          16,
+          -1
+        ]
+      ],
+      "doses": [
+        "1/2",
+        1
+      ],
+      "observations": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "bounds": [
+        0,
+        4
+      ]
+    },
+    {
+      "name": "interior_flat_minimizer",
+      "strengths": [
+        0,
+        5
+      ],
+      "responses": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "doses": [
+        1
+      ],
+      "observations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "bounds": [
+        0,
+        5
+      ]
+    },
+    {
+      "name": "multiple_zero_minima",
+      "strengths": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "responses": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "doses": [
+        1
+      ],
+      "observations": [
+        [
+          0
+        ]
+      ],
+      "bounds": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "rational_breakpoints",
+      "strengths": [
+        0,
+        "1/3",
+        2
+      ],
+      "responses": [
+        [
+          0,
+          0
+        ],
+        [
+          "2/7",
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "doses": [
+        "2/3",
+        "5/4"
+      ],
+      "observations": [
+        [
+          "3/7",
+          "1/2"
+        ],
+        [
+          "5/8",
+          "-1/3"
+        ]
+      ],
+      "bounds": [
+        0,
+        "8/5"
+      ]
+    }
+  ],
+  "independent_replay_python": "from pathlib import Path\nfrom fractions import Fraction as F\nimport csv,json,hashlib\np=Path('controlled_furrowing');d=p/'runs/joint_gain_calibration'\nq=json.loads((d/'protocol.json').read_text());t=json.loads((d/'response_table.json').read_text());c=json.loads((d/'surrogate_candidates.json').read_text())\nsha=lambda z:hashlib.sha256(z.read_bytes()).hexdigest()\nassert c['protocol_sha256']==t['protocol_sha256']==sha(d/'protocol.json') and c['response_table_sha256']==sha(d/'response_table.json')\nassert all(sha(p/'scripts'/n)==h for n,h in q['source_hashes'].items())\nrows=list(csv.DictReader((p/'data/derived/calibration_small_18um.csv').open()))\nassert len(rows)==17 and sha(p/'data/derived/calibration_small_18um.csv')==q['calibration_csv_sha256']\nkeys=('maximum_shortening_um','region_averaged_shortening_um','apical_max_shortening_um','basal_max_shortening_um')\nI=[F(z['activation_magnitude'])for z in rows];Y=[[F(z[k])for k in keys]for z in rows];nodes=[F(z['strength_exact'])for z in t['rows']]\nlo,hi=map(F,q['gain_bounds_exact']);assert lo==0 and hi==10/max(I)\ncuts=sorted({lo,hi}|{x/y for x in nodes for y in I if lo<x/y<hi});assert len(cuts)==28\nfor variant in c['variants']:\n name=variant['variant'];fit=variant['surrogate_fit'];V=[]\n for row in t['rows']:\n  vals=[]\n  for key in keys:\n   a,b=map(F,row['variant_endpoint_intervals'][name][key]);assert a<=b;vals.append((a+b)/2)\n  V.append(vals)\n values=[]\n for cell,left,right in zip(fit['certified_cells'],cuts,cuts[1:]):\n  middle=(left+right)/2;lines=[]\n  for dose,yy in zip(I,Y):\n   j=next(i for i in range(len(nodes)-1)if nodes[i]<dose*middle<nodes[i+1])\n   for k,y in enumerate(yy):\n    slope=(V[j+1][k]-V[j][k])/(nodes[j+1]-nodes[j]);a=slope*dose;b=V[j][k]-slope*nodes[j]-y\n    lines.extend([(a,b),(-a,-b)])\n  lines.append((F(0),F(0)));assert lines==[(F(a),F(b))for a,b in cell['all_line_coefficients_exact']]\n  assert list(map(F,cell['cell_exact']))==[left,right]\n  x,L=F(cell['gain_exact']),F(cell['loss_exact']);assert left<=x<=right and max(a*x+b for a,b in lines)==L\n  inds=[i for i,(a,b)in enumerate(lines)if a*x+b==L];slopes=[lines[i][0]for i in inds]\n  assert inds==cell['active_line_indices'] and slopes==list(map(F,cell['active_slopes_exact']))\n  assert(x==left and max(slopes)>=0)or(x==right and min(slopes)<=0)or(left<x<right and min(slopes)<=0<=max(slopes))\n  values.append((L,x))\n assert len(values)==27 and min(values)==(F(fit['loss_exact']),F(fit['gain_exact'])) and F(fit['gain_exact'])==hi\nprint('PASS:108 source-reconstructed convex certificates cover the entire v1gain interval; no optimizer called')\n",
+  "replay_instructions": "From embryo-geometry-bridge, exec the independent_replay_python field in a freshdictionary. It reads only and performs no optimization.",
+  "review_document_sha256": "64f5a5e82f377b453d2a44c7cfa1a4ec543f24c8c09ea22eb8943baae82e50ae",
+  "local_document_links": [
+    {
+      "target": "../runs/joint_gain_calibration/protocol.json",
+      "exists": true
+    },
+    {
+      "target": "../runs/joint_gain_calibration/response_table.json",
+      "exists": true
+    },
+    {
+      "target": "../runs/joint_gain_calibration/surrogate_candidates.json",
+      "exists": true
+    },
+    {
+      "target": "../scripts/piecewise_gain_minimax.py",
+      "exists": true
+    },
+    {
+      "target": "../evidence/piecewise_gain_minimax_independent_review.json",
+      "exists": true
+    },
+    {
+      "target": "JOINT-OBSERVATION-CONTRACT.md",
+      "exists": true
+    }
+  ]
+}

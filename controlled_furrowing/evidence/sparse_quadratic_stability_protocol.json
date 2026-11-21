@@ -1,0 +1,11 @@
+{
+  "scope": "Floating arithmetic Hessian curvature/inertia diagnostic only, not a rigorous true Hessian or PDE stability certificate; no optimization or target fit.",
+  "threshold": "100*machine_epsilon*matrix_infinity_norm for inertia zero classification; eigenpair residual<1e-8 relative.",
+  "inputs": [
+    "runs/joint_refinement/final.json",
+    "runs/sparse_quadratic/24x12_lambda5000/gain_10.0/final.json"
+  ],
+  "eigensolver": "Sparse shift-invert near zero; numerical dense symmetric LDL inertia independently determines sign counts.",
+  "force_tolerance": 1e-07,
+  "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9"
+}

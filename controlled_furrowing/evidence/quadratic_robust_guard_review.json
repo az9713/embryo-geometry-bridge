@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "checks": {
+    "nonfinite_gain_rejected": true,
+    "failed_previous_rejected": true,
+    "nonfinite_vector_rejected": true,
+    "nonfinite_gradient_rejected": true,
+    "injected_failure_bisected": true,
+    "failed_vector_never_reused": true,
+    "minimum_step_stops_without_target": true,
+    "attempt_limit_stops_without_target": true,
+    "all6_scientific_states_reverified": true
+  },
+  "rows": [
+    {
+      "lambda": 500.0,
+      "target": 1.0,
+      "state_reverified": true,
+      "input_hash_chain_verified": true,
+      "energy_gradient_bit_identical": true,
+      "work_balance": 0.0,
+      "failed_attempts": 0
+    },
+    {
+      "lambda": 500.0,
+      "target": 5.0,
+      "state_reverified": true,
+      "input_hash_chain_verified": true,
+      "energy_gradient_bit_identical": true,
+      "work_balance": 0.0,
+      "failed_attempts": 0
+    },
+    {
+      "lambda": 500.0,
+      "target": 10.0,
+      "state_reverified": true,
+      "input_hash_chain_verified": true,
+      "energy_gradient_bit_identical": true,
+      "work_balance": 0.0,
+      "failed_attempts": 0
+    },
+    {
+      "lambda": 5000.0,
+      "target": 1.0,
+      "state_reverified": true,
+      "input_hash_chain_verified": true,
+      "energy_gradient_bit_identical": true,
+      "work_balance": 0.0,
+      "failed_attempts": 0
+    },
+    {
+      "lambda": 5000.0,
+      "target": 5.0,
+      "state_reverified": true,
+      "input_hash_chain_verified": true,
+      "energy_gradient_bit_identical": true,
+      "work_balance": 7.105427357601002e-15,
+      "failed_attempts": 3
+    },
+    {
+      "lambda": 5000.0,
+      "target": 10.0,
+      "state_reverified": true,
+      "input_hash_chain_verified": true,
+      "energy_gradient_bit_identical": true,
+      "work_balance": 1.4210854715202004e-14,
+      "failed_attempts": 3
+    }
+  ],
+  "final_controller_sha256": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+  "numerical_batch_controller_sha256": "2e00d7b2b61ecfa9006716ba9a0245af47f2c85ae7b647caf47b66b13532dba9",
+  "scope": "Final input guards and failure-controller unit tests; all6 prior numerical states replayed. Failure injections explicitly synthetic, not scientific runs. Guards/terminal ledger persistence do not alter finite-input energy/optimizer arithmetic."
+}

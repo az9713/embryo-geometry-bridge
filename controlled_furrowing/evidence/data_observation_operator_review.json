@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-11-19T09:00:13.743513+00:00",
+  "status": "Source qualitative operator audited; numeric equivalence not established",
+  "source": {
+    "doi": "10.1038/s41467-025-62483-6",
+    "locator": "Sec7/Par28; Fig4d-f; Supplementary Movie3 description",
+    "quote": "central tissue plug surrounded by acellular perivitelline space",
+    "primary_xml_sha256": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7"
+  },
+  "source_label": "Appearance of a central tissue island surrounded by perivitelline space in apical image slices; continuous phenotype dichotomized.",
+  "movie": {
+    "file": "data/raw/41467_2025_62483_MOESM7_ESM.avi",
+    "sha256": "260555e647c56a74b157ef624fe263568cc47fbda553d3e8aa7fe0ad05e14be7",
+    "reviewed_playback_frames": [
+      0,
+      13,
+      25
+    ],
+    "visible_biological_times": [
+      "00:00",
+      "04:40",
+      "09:00"
+    ],
+    "observations": [
+      "Continuous tissue in2um subapical panel",
+      "Central island plus dark surrounding moat; transverse deformation",
+      "Largely recovered appearance"
+    ],
+    "warning": "Visual AI inspection of one published positive example; not blinded annotation, cohort-ID mapping, label-error calibration or fullmovie validation."
+  },
+  "conditional_axisymmetric_operator": {
+    "tissue_section": "S(z*)={r: z_b(r)<=z*<=z_a(r)}",
+    "criterion": "Central and outer tissue components separated by an open interval of absent tissue; revolution gives an annular moat.",
+    "requires": [
+      "total apical and basal surfaces in a common physical frame",
+      "fixed justified sliceplane or explicit source-compatible search rule",
+      "time window including transient peak response",
+      "minimum resolvable gap/contrast policy if comparing to optical labels"
+    ]
+  },
+  "proxy_counterexample": {
+    "initial_apical_z_um": 0,
+    "basal_z_um": -33.5,
+    "slice_z_um": -2,
+    "deformed_apical_values_um_at_radial_nodes": [
+      1,
+      -1,
+      0
+    ],
+    "nodes": "centre, interior ring, farfield; interpolate continuously without undershoot",
+    "crest_minus_groove_um": 2,
+    "moat": false,
+    "reason": "All apical points remain above the slice, and basal tissue below it; tissue intersects the entire radial section despite positive crest prominence."
+  },
+  "unresolved": [
+    "Per-record exactsliceplane reference (preactivation/current/local apical) nottabulated",
+    "Per-record classification timewindow nottabulated",
+    "No numerical detection threshold, observererror or sourceimage-to-label mapping",
+    "2um movie depth descriptor is not a measured classifier threshold",
+    "Incremental deformation alone can remove initialcurvature needed for total sliceintersection"
+  ],
+  "no_outcome_fitting": true,
+  "no_new_threshold_from_labels": true
+}

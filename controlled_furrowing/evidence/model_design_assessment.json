@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-19",
+  "gate": 3,
+  "design_status": "PASS for physically scoped candidates and independent-column no-size-effect proof; full coupled shape model not implemented",
+  "full_shape_prediction_ready": false,
+  "scalar_no_refit_response_null_ready": true,
+  "source_doi": "10.1038/s41467-025-62483-6",
+  "closest_theory_doi": "10.1103/PRXLife.2.013004",
+  "source_access": {
+    "countryman": "Full primary XML; mainFig2-4; supplement18pages withpp9-10,13note inspected",
+    "theory50": "MainEq1,Fig6 and Supplement\u00a7I S1-S7 read via APS primary pages"
+  },
+  "source_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12361397/",
+    "https://journals.aps.org/prxlife/pdf/10.1103/PRXLife.2.013004",
+    "https://journals.aps.org/prxlife/supplemental/10.1103/PRXLife.2.013004/Supplementary_GuerraSantillan.pdf"
+  ],
+  "critical_constraints": [
+    "h/a=3.56\u20133.89 at18umdiameter; no automatic tissue thin-plate limit",
+    "Train and heldout targets both maximumshortening; no swapping mean and max",
+    "Repeated sourcepanels are samecohort, not newreplicates",
+    "Independentheterogeneouscell maxima maydependonpatchsize via orderstatistics, withoutmechanicalcoupling",
+    "Separateapical/basal maxima are notco-temporal/spatial jointconstraints",
+    "Large-regionpointshape predictionrequirescoupled geometry andidentifiedparameters; returnidentifiedsetotherwise",
+    "Publishednormalizedactivation usescross-experimentstandard, mustdeclare sourceopticalcalibration",
+    "Suppliedpost-responsecellularizationcorrection is targetconstruction, notforecastinput"
+  ],
+  "absolute_force_scale_identifiable_from_shapes_alone": false,
+  "missing_for_coupled_shape": [
+    "PreactivationcellgeometryandAP/DVcurvature",
+    "Basalconstitutivelaworidentifiedset",
+    "Neighborconstraints/contact/remote-boundarysensitivity",
+    "Spatialapicalandbasalvalidationobservations",
+    "Activeforcevsfluorescenceandkineticinformationoridentifiedset"
+  ],
+  "novelty_claim": "None established; generic convexity, energy scaling and model nonidentifiability are routine. Candidate contribution would need new quantitative heldout prediction or nontrivial information bound beyond closest theory.",
+  "files": {
+    "docs/MODEL-CANDIDATES.md": "edcc074c597b4b41659de89098305fa5ee6fb16969fd32b0958c292653bf5b38",
+    "evidence/model_design_symbolic.json": "5bd61135bf1cb039205275a8993049d442b2926ccaf39aceb6571e55725809fd"
+  }
+}

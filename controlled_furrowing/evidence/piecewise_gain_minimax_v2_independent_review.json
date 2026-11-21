@@ -1,0 +1,232 @@
+{
+  "status": "PASS",
+  "checks": {
+    "three_requested_artifact_hashes_match": true,
+    "all_twelve_frozen_source_hashes_match": true,
+    "v1_parent_artifacts_unchanged": true,
+    "all_seed_field_hashes_match": true,
+    "first_four_table_nodes_immutable_v1_copy": true,
+    "new_strength20_field_hash_and_same_parameters": true,
+    "strength20_Q8_Q12_force_replay_pass": true,
+    "strength20_exact_geometry_replay_equal": true,
+    "new_sixteen_observer_intervals_match": true,
+    "all68sourceentries_and_doses_verified": true,
+    "all43gainbreakpoints_covered": true,
+    "all168cell_optimality_certificates_exact": true,
+    "all23016affinecoefficients_source_reconstructed": true,
+    "global_minimum_over_all_closed_cells": true,
+    "all_four_optima_strictly_interior": true,
+    "no_table_extrapolation": true,
+    "no_physical_fit_or_solver_optimization_reexecuted": true,
+    "same_optimizer_as_independently_tested_v1": true,
+    "saved_independent_certificate_replay_passes": true,
+    "review_doc_local_links_exist": true,
+    "review_math_delimiters_balanced": true,
+    "all_gate_hashes_unchanged_before_final_PASS": true
+  },
+  "candidate_file": "runs/joint_gain_extension_v2/surrogate_candidates.json",
+  "candidate_file_sha256": "c9da0d77ee25f5bcb6da88ea2890ff3209a72a9a2eedc387fa9b7f3db71abefd",
+  "response_table_file": "runs/joint_gain_extension_v2/response_table.json",
+  "response_table_sha256": "e38462ec9b8b8b04cb69bf4f1c46824e58f3be16e1a9c831d1cf0cde7719f666",
+  "protocol_file": "runs/joint_gain_extension_v2/protocol.json",
+  "protocol_sha256": "3b72bcf4583c0b136d01c420028a20a9324dc9c0b3b4ef212b14ec76a62e2031",
+  "optimizer_source_sha256": "3d803c3b9a39095707633bf83989fdfab7ce7ca963c81e3dffca11ff7e145a2e",
+  "scope": "V2 exact defined interval-midpoint piecewise-linear surrogate on 0<=g<=20/maxdose; not a nonlinear or continuum optimum.",
+  "gain_bounds_exact": [
+    "0",
+    "31250000/2360271"
+  ],
+  "strength_nodes_exact": [
+    "0",
+    "1",
+    "5",
+    "10",
+    "20"
+  ],
+  "breakpoints_exact": [
+    "0",
+    "1562500/2360271",
+    "100000000/128898317",
+    "25000000/26182761",
+    "3125000/3085609",
+    "100000000/97607953",
+    "20000000/17014741",
+    "100000000/82160217",
+    "100000000/80580697",
+    "100000000/78208913",
+    "100000000/75547653",
+    "100000000/71523649",
+    "10000000/6924031",
+    "100000000/47133397",
+    "100000000/46402059",
+    "12500000/4089863",
+    "7812500/2360271",
+    "100000000/27583779",
+    "500000000/128898317",
+    "125000000/26182761",
+    "15625000/3085609",
+    "500000000/97607953",
+    "100000000/17014741",
+    "500000000/82160217",
+    "500000000/80580697",
+    "500000000/78208913",
+    "500000000/75547653",
+    "15625000/2360271",
+    "100000000/14801043",
+    "500000000/71523649",
+    "50000000/6924031",
+    "1000000000/128898317",
+    "250000000/26182761",
+    "31250000/3085609",
+    "1000000000/97607953",
+    "500000000/47133397",
+    "500000000/46402059",
+    "200000000/17014741",
+    "1000000000/82160217",
+    "1000000000/80580697",
+    "1000000000/78208913",
+    "1000000000/75547653",
+    "31250000/2360271"
+  ],
+  "certificate_count": 168,
+  "line_coefficient_count": 23016,
+  "new_field_checks": {
+    "file": "runs\\joint_gain_extension_v2\\extension\\strength_20\\final.json",
+    "sha256": "8fe0b775f958798f4c50941c8df5be1df7702d35576a51850cf0d803dffad316",
+    "Q8_force_linf_replayed": 5.514914913629099e-12,
+    "Q12_force_linf_replayed": 5.4514844027853115e-11,
+    "all_exact_J_positive": true,
+    "global_embedding_certified": true,
+    "geometry_verifier_replay_scope": "Reexecution of frozen exact verifiers, not independent proof oftheiralgorithms orcontinuumaccuracy"
+  },
+  "variant_results": [
+    {
+      "variant": "current_disk__spatial_max",
+      "gain_exact": "227837889871219561697764743131811280995244025051840221298000446602475877729600094285525966271113758605933299480242162835218853328241239714855051483817817221382904242351939102254307189991717998558234000/28257308757204942712226747398045139545080925529826764943977596399332230680295520663128560465729059028479494982233396911548866051355009481375019548833946837386968169054404715801476974297166946767840803",
+      "gain_display": 8.062972020048665,
+      "loss_exact": "9965853857377668913620798057297804986851225969623811871868424717504367573449763587436471832705220832448997807274401623943960006203560990818978507389536987286344561510746268864224720509830896329230226567567542593513233979/1899397092379719901890300751886096596841425939131894008379296658881688070095878466363632041643445009881074469148510998966148802437262570469624284776981947829232260720579286261978409508647666592381788971580275032064000000",
+      "loss_um_display": 5.246851170489912,
+      "all68entries": true,
+      "cells": 42,
+      "interior_in_declared_interval": true,
+      "active_witnesses": [
+        {
+          "record_id": "optoGEF2_small_col_L",
+          "channel": "region_averaged_shortening_um",
+          "sign": "prediction-minus-observation"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "channel": "apical_max_shortening_um",
+          "sign": "observation-minus-prediction"
+        }
+      ]
+    },
+    {
+      "variant": "current_disk__regional_mean",
+      "gain_exact": "364824581030465192902970641361749932165439832107034443673299669398990344423479140539229747336646152916459719532125082489102677010560286622126958961164326499933113144312773415039782825583146775337351000/38362378414575972604624937369676825529850940895826629382394382247039175195259063631879225423119709613331127939340552395854237134888396534072294081730214820902050399860729201842623010230403175495230741",
+      "gain_display": 9.50995730994219,
+      "loss_exact": "95886448351935776054279069487466100843179534351737185711466151043859258946770511710626417180362628192738782729433227839693231131563112574718102422883307758416322898742704555497760995749750359453276753690204298902749088883972411940667458401072534806356449760657996634078689098755232487225619444910301543376272875173070269850997842316115342774545996594170290467481286223688883274792600135898571697/15915750528594314234020060796402622442576136753284424333810206101124183717277891080771530613737052392816211869848983715054832820420276803433215438599709918292593000486262452590946975931375042305731204382571987126017640479912014616311502249110350941802286564297579145430553634433910396091598279280916681824376419130762692259973915051039641040456857183881737341588792280734246867892657192960000000",
+      "loss_um_display": 6.024626245533676,
+      "all68entries": true,
+      "cells": 42,
+      "interior_in_declared_interval": true,
+      "active_witnesses": [
+        {
+          "record_id": "optoGEF2_small_col_L",
+          "channel": "region_averaged_shortening_um",
+          "sign": "prediction-minus-observation"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "channel": "apical_max_shortening_um",
+          "sign": "observation-minus-prediction"
+        }
+      ]
+    },
+    {
+      "variant": "current_radial_line__spatial_max",
+      "gain_exact": "55929764633101576921911874876222242897338486681761920838830923423270767666740563543412084105085865677994809328396959924176347889913799120/7633212565417168700446487124980470648111272424665969759449428699588955060559972670695668250237583955763147195373629901103550344928988653",
+      "gain_display": 7.327159325615468,
+      "loss_exact": "23941317306097714610707516833027744821650604895086664328725550269099467818995403891967003616484882258433098257305016895177807288839491632024202063381628473381/4275737968314993629522844960741663145146161591973094651305817157814538383027433435944332462299476127934840561530497354669545348959847714892144653107200000000",
+      "loss_um_display": 5.599341560103282,
+      "all68entries": true,
+      "cells": 42,
+      "interior_in_declared_interval": true,
+      "active_witnesses": [
+        {
+          "record_id": "optoGEF2_small_col_L",
+          "channel": "region_averaged_shortening_um",
+          "sign": "prediction-minus-observation"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "channel": "apical_max_shortening_um",
+          "sign": "observation-minus-prediction"
+        }
+      ]
+    },
+    {
+      "variant": "current_radial_line__regional_mean",
+      "gain_exact": "586249697362711860959502886815399512462923873115096378131449930856219520398043719286883094977019027393202652570247141731503331501137991200/71842159977777555198972354135822167388917396577760064107446967921264817613564720946524404667723661872193452656227760526252303984795390329",
+      "gain_display": 8.160245982916612,
+      "loss_exact": "591190121519431340950288758030228091228279328106971097171542853214164906418456908680657014260790936160386411868118605386528995656640138961587279844747155280509566752955643528668602884225310545151651222347976648246694402253599304204814035630481410930443175080119385333611/97294563991370237062094942624975682349775013551897519256197272499993026271979902279820951136282937165874016082369275196931146780662473674196145531840709714251862901932572008033362461865007415927414111515859566537708258231621641548976861260354426475755596719063040000000",
+      "loss_um_display": 6.076291390461119,
+      "all68entries": true,
+      "cells": 42,
+      "interior_in_declared_interval": true,
+      "active_witnesses": [
+        {
+          "record_id": "optoGEF2_small_col_L",
+          "channel": "region_averaged_shortening_um",
+          "sign": "prediction-minus-observation"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "channel": "apical_max_shortening_um",
+          "sign": "observation-minus-prediction"
+        }
+      ]
+    }
+  ],
+  "v1_independent_review_sha256": "702b4bc4fa51a9ca376bf182f207ad3514ce14458540aa1e6a08c26bd1743b80",
+  "physically_global_gain_estimate_established": false,
+  "full_identified_set_computed": false,
+  "discrepancy_or_noise_law_chosen": false,
+  "held_out_responses_read": false,
+  "direct_replay_authorized_by_this_document_only_after_status_PASS": true,
+  "limitations": [
+    "Interioroptima resolvev1tableboundary withinthisdeclaredtableonly",
+    "No validatednonlinearinterpolation, continuum, temporalpeak, sourceoperator ormaterialidentifiedseterrorbounds",
+    "Directcandidateevaluationstillneeded; itscompletiondoesnotproveglobalnonlinearoptimality"
+  ],
+  "independent_replay_python": "from pathlib import Path\nfrom fractions import Fraction as F\nimport csv,json,hashlib\np=Path('controlled_furrowing');d=p/'runs/joint_gain_extension_v2'\nq=json.loads((d/'protocol.json').read_text());t=json.loads((d/'response_table.json').read_text());c=json.loads((d/'surrogate_candidates.json').read_text())\nsha=lambda z:hashlib.sha256(z.read_bytes()).hexdigest()\nassert c['protocol_sha256']==t['protocol_sha256']==sha(d/'protocol.json') and c['response_table_sha256']==sha(d/'response_table.json')\nassert all(sha(p/'scripts'/n)==h for n,h in q['source_hashes'].items())\nrows=list(csv.DictReader((p/'data/derived/calibration_small_18um.csv').open()))\nassert len(rows)==17 and sha(p/'data/derived/calibration_small_18um.csv')==q['calibration_csv_sha256']\nkeys=('maximum_shortening_um','region_averaged_shortening_um','apical_max_shortening_um','basal_max_shortening_um')\nI=[F(z['activation_magnitude'])for z in rows];Y=[[F(z[k])for k in keys]for z in rows];nodes=[F(z['strength_exact'])for z in t['rows']]\nlo,hi=F(0),max(nodes)/max(I);assert lo==0 and hi==20/max(I)\ncuts=sorted({lo,hi}|{x/y for x in nodes for y in I if lo<x/y<hi});assert len(cuts)==43\nfor variant in c['variants']:\n name=variant['variant'];fit=variant['surrogate_fit'];V=[]\n for row in t['rows']:\n  vals=[]\n  for key in keys:\n   a,b=map(F,row['variant_endpoint_intervals'][name][key]);assert a<=b;vals.append((a+b)/2)\n  V.append(vals)\n values=[]\n for cell,left,right in zip(fit['certified_cells'],cuts,cuts[1:]):\n  middle=(left+right)/2;lines=[]\n  for dose,yy in zip(I,Y):\n   j=next(i for i in range(len(nodes)-1)if nodes[i]<dose*middle<nodes[i+1])\n   for k,y in enumerate(yy):\n    slope=(V[j+1][k]-V[j][k])/(nodes[j+1]-nodes[j]);a=slope*dose;b=V[j][k]-slope*nodes[j]-y\n    lines.extend([(a,b),(-a,-b)])\n  lines.append((F(0),F(0)));assert lines==[(F(a),F(b))for a,b in cell['all_line_coefficients_exact']]\n  assert list(map(F,cell['cell_exact']))==[left,right]\n  x,L=F(cell['gain_exact']),F(cell['loss_exact']);assert left<=x<=right and max(a*x+b for a,b in lines)==L\n  inds=[i for i,(a,b)in enumerate(lines)if a*x+b==L];slopes=[lines[i][0]for i in inds]\n  assert inds==cell['active_line_indices'] and slopes==list(map(F,cell['active_slopes_exact']))\n  assert(x==left and max(slopes)>=0)or(x==right and min(slopes)<=0)or(left<x<right and min(slopes)<=0<=max(slopes))\n  values.append((L,x))\n assert len(values)==42 and min(values)==(F(fit['loss_exact']),F(fit['gain_exact'])) and lo<F(fit['gain_exact'])<hi\nprint('PASS:168 source-reconstructed convex certificates cover the entire v2gain interval; no optimizer called')\n",
+  "replay_instructions": "From embryo-geometry-bridge, execute the saved independent_replay_python in a fresh dictionary. It performs read-only source-reconstructed coefficient/certificate checks, no optimization.",
+  "review_document_sha256": "6a0832905f2c453e15342712dbc44ea3509ac188161836dc2f30eedfc70e3fe7",
+  "local_document_links": [
+    {
+      "target": "../runs/joint_gain_extension_v2/protocol.json",
+      "exists": true
+    },
+    {
+      "target": "../runs/joint_gain_extension_v2/response_table.json",
+      "exists": true
+    },
+    {
+      "target": "../runs/joint_gain_extension_v2/surrogate_candidates.json",
+      "exists": true
+    },
+    {
+      "target": "../evidence/piecewise_gain_minimax_v2_independent_review.json",
+      "exists": true
+    },
+    {
+      "target": "GAIN-SURROGATE-REVIEW.md",
+      "exists": true
+    },
+    {
+      "target": "JOINT-OBSERVATION-CONTRACT.md",
+      "exists": true
+    }
+  ]
+}

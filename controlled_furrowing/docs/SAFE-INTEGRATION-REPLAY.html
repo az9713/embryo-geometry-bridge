@@ -1,0 +1,235 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SAFE-INTEGRATION-REPLAY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>A corrected point certificate: what survives the interval-arithmetic failure</h1>
+<p>The corrected computation again proves a restricted result: for one saved
+finite-element field and its original parameters, the <strong>exact-spatial-integral
+Newton-like map sends the old center outside the old certified cube</strong>. The
+earlier point-integration receipts remain withdrawn. This statement now rests
+on newly computed safe intervals and new independent checks; agreement with
+the earlier displayed numbers is not a proof premise.</p>
+<p>It does <strong>not</strong> prove that an equilibrium fails to exist, that an equilibrium
+lies outside that cube, or that the biological model has been validated.</p>
+<p><img alt="Coordinate projection and reverse-triangle bound, with the corrected proof chain." src="../../omitted-asset.svg" /></p>
+<p><em>The teal interval is one coordinate projection of the old radius cube. The
+gold interval encloses that coordinate of the new map image of the old center;
+it is not an equilibrium enclosure. The right panel shows the certified lower
+displacement relative to the old radius. All plotted coordinates are normalized
+displacements, scaled by the old radius, with decimal display approximations.
+The underlying comparisons use retained exact fractions. The diagram is
+original and generated from the corrected receipts.</em></p>
+<h2>The two mathematical targets</h2>
+<p>This concerns the project's model of controlled tissue folding. Bulk
+elasticity, energies on the two opposed boundary surfaces, and a prescribed
+local contractile drive enter a mechanical energy. The present update checks
+the numerical mathematics of that model; it adds no microscopy observation or
+molecular mechanism.</p>
+<p>The controlled-furrowing model represents an axisymmetric epithelial body by
+quadratic finite elements. At the selected resolution there are 611 free
+displacement coordinates. Fixed material geometry, piecewise element
+activation, material constants and boundary conditions define a finite
+dimensional energy. Two implementations of its spatial integration must be
+distinguished:</p>
+<ul>
+<li><span class="math" data-tex="E_Q"></span> is the previously certified finite sum, using the actual stored binary
+  quadrature nodes, weights and strain-map coefficients.</li>
+<li><span class="math" data-tex="E_I"></span> integrates the coherent P2 displacement field over the reference
+  elements and surfaces. Stored binary input coefficients are interpreted as
+  exact rational constants. The integral itself is bounded with validated
+  moments and constitutive-series remainder bounds.</li>
+</ul>
+<p>An exact spatial integral of a fixed finite-element ansatz is still a finite
+dimensional target. It is not the un-discretized elasticity PDE.</p>
+<p>Write <span class="math" data-tex="F_Q=\nabla E_Q"></span>, <span class="math" data-tex="F_I=\nabla E_I"></span>, and let <span class="math" data-tex="R"></span> be the same stored
+binary approximate inverse, also interpreted exactly. The original field is
+<span class="math" data-tex="u_0"></span>, at the original base parameter <span class="math" data-tex="\theta_0"></span> for source record B. The
+old cube is</p>
+<div class="math display" data-tex="
+\mathcal B_r(u_0)=\{u:\&#124;u-u_0\&#124;_\infty\le r\},
+\qquad r=10^{-11}.
+"></div>
+
+<p>The original, independently checked dense-quadrature proof bounds
+<span class="math" data-tex="\&#124;R F_Q(u_0)\&#124;_\infty"></span>. A different spatial target needs a new error bridge;
+a small floating difference between quadrature orders is insufficient.</p>
+<h2>The arithmetic flaw and its repair</h2>
+<p>Sparse polynomials store only coefficients thought to be nonzero. The earlier
+helper retained a coefficient with <code>if v != 0</code>. For an Arb ball containing zero
+and nonzero values, both <code>v == 0</code> and <code>v != 0</code> can be false. These tests certify
+relations between uncertain quantities; they are not logical complements.
+Consequently, the old cleanup could discard a coefficient whose true value
+was nonzero. The simplest example is a ball centered at zero containing 1/2:
+turning that coefficient into an omitted term incorrectly replaces its allowed
+value 1/2 by zero.</p>
+<p>The failure was observed in the actual new uniform-field construction:
+ten uncertain coefficients were dropped across nine cleanup calls. The audit
+did not establish observed corruption of every historical point result.
+Nevertheless, the old full point certificates could not be relied upon: their
+local enclosure engine was unsound, and their independent integrations reused
+that same arithmetic. Hash agreement and two implementations sharing a bug do
+not establish enclosure validity.</p>
+<p>The new version removes only a coefficient <strong>certified exactly zero</strong>, using
+<code>is_zero()</code> for finite Arb balls, and rejects nonfinite coefficients. All old
+sources and receipts are preserved. An independently checked safe target and
+jet helper pass 992 checks, including adversarial interval-coefficient cases.
+The additional signed-cancellation fixture sets</p>
+<div class="math display" data-tex="
+e_0=\frac1{5001}+2^{-1000}.
+"></div>
+
+<p>For the degree-one expansion of the relevant volumetric derivative, the
+constant coefficient is exactly <span class="math" data-tex="5001\,2^{-1000}"></span>. At 128-bit working precision
+its computed ball can cross zero. The corrected polynomial retains it and
+encloses its exact value. Silently deleting it is forbidden regardless of its
+small size.</p>
+<h2>Fresh calculations and their independent checks</h2>
+<p>The new producer recomputes all 144 bulk elements and 24 surface edges at the
+same original field and parameters. It does not reuse historical point-error
+outputs as validated numerical contributions. The normalization, actual rules,
+stored physical inputs and constitutive laws remain fixed.</p>
+<p>The integration method contracts <strong>signed</strong> integral-minus-rule moments of
+the truncated constitutive polynomials. It retains nonzero low-degree defects
+of the actual binary rule rather than assuming ideal Gaussian exactness. Force
+and Hessian remainders are bounded separately with both positive masses: the
+exact reference-integral mass and the sum of actual positive auxiliary weights.
+The finite canonical-map-versus-cached-map correction is evaluated at the same
+exact stored nodal field.</p>
+<p>The independent verification has two distinct layers:</p>
+<ul>
+<li><strong>Independent local integration.</strong> Six predeclared bulk elements are
+  reintegrated at degree 18 and 640 bits. The reviewer builds the Jacobian jet
+  from two signed cubic monomials, generates constitutive coefficients by a
+  separate convolution, rebuilds canonical barycentric maps, and performs
+  manual point lifts. All 60 force and 343 upper-Hessian interval comparisons
+  pass, together with 19,200 canonical basis-entry checks. The runtime receipt
+  contains 32 checks. Separately, six surface edges at degree 28/640 bits give
+ 30 force and92 upper-Hessian comparisons and a 349-check review receipt.</li>
+<li><strong>Complete exact reduction.</strong> Every one of the 168 new local packets is
+  checked for identity, hashes, free-coordinate maps, domains and order/tail
+  policy. Serialized interval endpoints are added with exact rational
+  arithmetic to reconstruct 611 force coordinates and 6676 symmetric
+  upper-Hessian slots. All 611 signed products by the exact binary <span class="math" data-tex="R"></span> are
+  reduced independently. This layer passes 208 checks and retains 355 input
+  bindings.</li>
+</ul>
+<p>These are not 168 independent reintegrations. The remaining local packets rely
+on the reviewed generic safe engines, their domain/tail checks, and the
+complete exact reduction. The local replays explicitly reuse the reviewed
+moment, tail and low dimensional constitutive primitives. Evidence counts
+describe different checks; they are not independent statistical trials.</p>
+<h2>The new bound and proof</h2>
+<p>Let <span class="math" data-tex="D=R(F_I-F_Q)(u_0)"></span>. The corrected intervals prove the following
+conservatively rounded bounds:</p>
+<div class="math display" data-tex="
+1.673692093\times10^{-11}
+\le \&#124;D\&#124;_\infty
+\le 1.673692097\times10^{-11}.
+"></div>
+
+<p>The old dense-quadrature residual premise is still valid. The review uses the
+larger of the author and independent upper bounds, not the more favorable
+number:</p>
+<div class="math display" data-tex="
+\&#124;R F_Q(u_0)\&#124;_\infty\le\eta,
+\qquad \eta\le5.287455044\times10^{-13}.
+"></div>
+
+<p>The base parameter is verified to belong to the same original closed parameter
+cell. Its affine predictor equals <span class="math" data-tex="u_0"></span> there, so this residual premise
+applies at exactly the point used by the new calculation. The reverse triangle
+inequality gives</p>
+<div class="math display" data-tex="
+\begin{aligned}
+\&#124;R F_I(u_0)\&#124;_\infty
+&amp;\ge \&#124;D\&#124;_\infty-\&#124;R F_Q(u_0)\&#124;_\infty\\
+&amp;\ge L-\eta\\
+&amp;\ge1.6208175\times10^{-11}&gt;r,
+\end{aligned}
+"></div>
+
+<p>where <span class="math" data-tex="L"></span> and <span class="math" data-tex="\eta"></span> are the retained exact-fraction bounds. Therefore</p>
+<div class="math display" data-tex="
+T_I(u)=u-R F_I(u)
+\quad\Longrightarrow\quad
+T_I(u_0)\notin\mathcal B_r(u_0).
+"></div>
+
+<p>A fresh coordinate witness is free index 588, node 313, axial component. Its map
+displacement is enclosed approximately by
+<span class="math" data-tex="[-1.72656665,-1.62081754]\times10^{-11}"></span>; the source receipt stores the exact
+endpoints. That coordinate alone establishes escape from the old cube.</p>
+<p>The conclusion is about the <strong>self-map property</strong>, a premise in a Banach
+fixed-point proof. It does not establish root exclusion. For example,
+<span class="math" data-tex="T(x)=6/5-x/2"></span> sends the center 0 of <span class="math" data-tex="[-1,1]"></span> outside the interval, but has
+the fixed point <span class="math" data-tex="4/5"></span> inside it. A different center, radius, preconditioner,
+or proof norm may succeed for the integral target; that remains further work.</p>
+<h2>What remains valid, and what remains unproved</h2>
+<p>The 17 dense finite-quadrature root certificates and their 611-coordinate
+axisymmetric local-energy-minimum proofs concern <span class="math" data-tex="E_Q"></span>. They do not use the
+faulty sparse polynomial path and remain valid within their declared scope.
+The separately checked exact rational moment formulas and pure interval
+whole-body geometry results also remain valid. Geometry of a box does not
+imply that an integral equilibrium belongs to that box.</p>
+<p>The new point certificate supplies no whole-tube bounds on
+<span class="math" data-tex="F_I-F_Q"></span> or <span class="math" data-tex="\nabla F_I-\nabla F_Q"></span>, no integral-root existence or stability,
+and no inference over the full physical parameter/geometry domain. It does not
+close the source temporal-observation/registration gaps, establish a shared
+dynamic path between doses, prove a continuum PDE result, or validate the
+model biologically. No novel biological concept or new general mathematical
+principle is claimed. The methods are standard validated numerical analysis
+applied to this explicitly defined model; their value here is a reproducible
+statement with precise limits.</p>
+<p>The next mathematical operation is to use the corrected arithmetic for uniform
+integration derivative bounds on a freshly verified comparison domain, then
+attempt an appropriately centered integral-root enclosure. The original
+five-gate objective remains incomplete. New point certification does not
+replace full parameter-set inference, geometry/branch/tail coverage,
+continuum analysis or source-compatible prediction and validation.</p>
+<h2>Retained receipts</h2>
+<table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th>New receipt or artifact</th>
+<th>Hash prefix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arithmetic failure and scoped withdrawal</td>
+<td><code>evidence/interval_polynomial_cleanup_audit.json</code></td>
+<td><code>fe0f5414</code></td>
+</tr>
+<tr>
+<td>Independently reviewed safe polynomial kernel</td>
+<td><code>evidence/exact_safe_polynomial_kernel_independent_review.json</code></td>
+<td><code>a2f6b6c4</code></td>
+</tr>
+<tr>
+<td>New six-element bulk replay</td>
+<td><code>evidence/exact_bulk_independent_replay_safe_v2.json</code></td>
+<td><code>37515a8d</code></td>
+</tr>
+<tr>
+<td>New six-edge surface replay</td>
+<td><code>evidence/exact_surface_safe_independent_review.json</code></td>
+<td><code>248ba500</code></td>
+</tr>
+<tr>
+<td>Corrected complete point reduction</td>
+<td><code>evidence/exact_complete_point_B_independent_review_safe_v2.json</code></td>
+<td><code>433125c7</code></td>
+</tr>
+<tr>
+<td>Fresh coordinate witness</td>
+<td><code>runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/coordinate_witness.json</code></td>
+<td><code>98a70c84</code></td>
+</tr>
+<tr>
+<td>New component delivery bindings</td>
+<td><code>runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/delivery.json</code></td>
+<td><code>68383583</code></td>
+</tr>
+</tbody>
+</table>
+<p>The preparation receipt binds full hashes, exact plotted values, current source
+files and figure-generation code. Historical unsafe point receipts remain
+withdrawn and are retained for the development record.</p>
+<p>This corrected point result is now independently reviewed. The subsequent <a href="EXACT-INTEGRAL-ROOT.html">uniform integral-root theorem</a> adds full-domain derivative and residual bounds; it proves more than the point certificate alone. Historical unsafe receipts remain withdrawn.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

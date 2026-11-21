@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SPARSE24-GAIN1-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the completed 24×12 strength-1 state</h1>
+<p><strong>31 independent checks pass for one completed activation strength only.</strong> The 24×12 higher-quadrature state at <span class="math" data-tex="f/\mu=1"></span> is a verified discrete equilibrium with exact positive-J and global embedding certificates. This review does not certify completion of the strength-5 or strength-10 targets, and performs no new optimization.</p>
+<p>Receipt: <code>evidence/sparse24_gain1_independent_review.json</code>, including the replay program, all exact element certificates, continuation provenance, source hashes and two-mesh comparison. Reviewed field:</p>
+<pre><code class="language-text">runs/sparse_quadratic/24x12_lambda5000/gain_1.0/final.json
+SHA256 f1d03340c76d760730e62fe2b961e4751d0791411ae5df15604abe02124ffd3d
+</code></pre>
+<p>The folder's word “gain” denotes this runner's activation-strength target; it is not a newly fitted biological gain.</p>
+<h2>Model and scope</h2>
+<p>The model is an idealized flat, finite-height, axisymmetric tissue solid with a localized vertical active-fibre contraction potential. The height scale is 33.5 µm, patch diameter 18.71024074 µm, and active depth 5–25 µm below the apical surface. The shear scale is one, logarithmic-volume penalty <span class="math" data-tex="\kappa/\mu=5000"></span>, basal/apical area moduli are 2 and 0.2, and basal/apical tensions are 2 and zero in the declared normalized units. The outer meridional rim is clamped.</p>
+<p>The displacement field is continuous P2 on 24×12 meridional cells: <strong>576 quadratic triangles and 2,375 free displacement degrees of freedom</strong>. The actual integration is Duffy8 volume quadrature and surface Gauss12. The nominal inherited parameter fields <code>quadrature=4</code> and <code>surface_quadrature=8</code> do not describe the actual overridden integration policy; the separate saved policy does.</p>
+<p>No biological response observations, target labels, parameter fits or new material laws enter this review. Maximum material-column shortening is an explicit model observable; it is not automatically apical furrow depth or a transient experimental maximum.</p>
+<h2>Saved-state force, energy and geometry replay</h2>
+<p>The sparse source remains</p>
+<pre><code class="language-text">d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9
+</code></pre>
+<p>and every physical-kernel parent hash matches the original 24×12 protocol. Reconstructed energy and gradient are bit-identical to the non-sparse higher-quadrature parent kernel. The saved total energy is reproduced with zero absolute difference in this replay.</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th style="text-align: right;">Independent result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Duffy8/surface12 scaled free-force residual</td>
+<td style="text-align: right;">2.983e−12</td>
+</tr>
+<tr>
+<td>Duffy12/surface16 cross-evaluated residual</td>
+<td style="text-align: right;">3.216e−12</td>
+</tr>
+<tr>
+<td>Required force threshold</td>
+<td style="text-align: right;">1e−7</td>
+</tr>
+<tr>
+<td>Original sampled quadrature <span class="math" data-tex="J"></span> range</td>
+<td style="text-align: right;">[0.997521, 1.001901]</td>
+</tr>
+<tr>
+<td>Exact whole-discrete-body <span class="math" data-tex="J"></span> enclosure, outward rounded</td>
+<td style="text-align: right;">[0.99737057, 1.00242578]</td>
+</tr>
+<tr>
+<td>Exact global embedding</td>
+<td style="text-align: right;">Pass</td>
+</tr>
+</tbody>
+</table>
+<p>The correlated degree-four rational Bernstein construction combines <span class="math" data-tex="\det F_m R"></span> before division by reference radius <span class="math" data-tex="r"></span>, retaining correlations that separate factor bounds discard. It proves the stated whole-element bounds for every triangle, including valid axis limits. The stored rational endpoints also prove <span class="math" data-tex="&#124;J-1&#124;&lt;1\%"></span> everywhere in this particular discrete body. One percent is a numerical diagnostic, not an independently measured biological compressibility limit.</p>
+<p>The earlier separate-factor bound [approximately 0.96256, 1.03824] was conservative; it was not evidence that the body actually attained 3.8% local distortion. The sharper interval certifies the same saved field without changing its solution. The construction and global-injectivity arguments are explained in <code>QUADRATIC-INDEPENDENT-REVIEW.md</code> and <code>MIXED-GEOMETRY-PROOF.md</code>. These are discrete geometry certificates, not a continuum approximation-error bound.</p>
+<h2>Three attempts, one rejection, and no rejected-state reuse</h2>
+<p>The complete target-1 ledger is replayed, including the rejected attempt:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Attempt</th>
+<th>Last verified strength → attempted strength</th>
+<th>Decision</th>
+<th style="text-align: right;">Replayed force residual</th>
+<th>State used next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td>0 → 1</td>
+<td>Reject</td>
+<td style="text-align: right;">approximately 1.550e−3</td>
+<td>Verified strength-0 vector retained</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>0 → 0.5</td>
+<td>Accept</td>
+<td style="text-align: right;">3.143e−12</td>
+<td>Verified strength-0.5 vector</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>0.5 → 1</td>
+<td>Accept</td>
+<td style="text-align: right;">2.983e−12</td>
+<td>Final verified strength-1 vector</td>
+</tr>
+</tbody>
+</table>
+<p>Every attempt's initial-vector hash matches the most recent accepted vector. The final vector matches the last accepted attempt. The first rejected vector is retained in its own file and never admitted as the next initial state. Its geometry was positive, but its force residual failed; “rejected” here describes numerical nonconvergence, not physical inversion.</p>
+<p>Accepted-path work and relaxation drops are independently recomputed using the chosen mechanical potential. Their energy-balance residual is zero to the recorded arithmetic in this replay. The ledger is numerical continuation bookkeeping; it is not a biological time trajectory, calorimetric measurement or ATP account.</p>
+<h2>Matched comparison with the verified 12×6 higher-rule state</h2>
+<p>The comparator is <code>runs/activated_quadrature/lambda_5000.0_strength_1.0/reequilibrated.json</code>, bound to its prior independent-verification hash. Its physical parameters, strength and actual integration policy match; only the displacement mesh differs. The reviewer does <strong>not</strong> substitute a 16×8 default-rule state. No verified matched 16×8 higher-rule strength-1 field is included, so no three-level convergence trend is claimed.</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Verified higher-rule 12×6 → 24×12 comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum material-column shortening</td>
+<td style="text-align: right;">1.99113690 → 2.33011795 µm</td>
+</tr>
+<tr>
+<td>Shortening change</td>
+<td style="text-align: right;">+0.33898105 µm</td>
+</tr>
+<tr>
+<td>Eulerian apical vertical-discrepancy sup</td>
+<td style="text-align: right;">[0.35326005, 0.35848985] µm</td>
+</tr>
+<tr>
+<td>Eulerian basal vertical-discrepancy sup</td>
+<td style="text-align: right;">[0.01403053, 0.01852789] µm</td>
+</tr>
+<tr>
+<td>Same-material apical vector-displacement sup enclosure</td>
+<td style="text-align: right;">approximately [0.35297418, 0.35542345] µm</td>
+</tr>
+</tbody>
+</table>
+<p>The Eulerian intervals are exact rational enclosures displayed with outward rounding. They compare heights at the same <strong>deformed physical radius</strong>, using quadratic radial inversion and adaptive interval cells. Their requested reporting width 0.01 µm is achieved for both surfaces. It is not a scientific accuracy threshold.</p>
+<p>The same-material metric instead pairs equal reference radii and bounds a vector displacement; its upper bound also bounds Hausdorff distance. Its lower bound is not a Hausdorff lower bound. These different metrics must not be substituted for one another. All are comparisons of two stored discrete curves, not uncertainty intervals for a continuum solution.</p>
+<h2>What this establishes</h2>
+<p>One previously completed numerical target has independently verified source provenance, discrete stationarity, integration consistency, exact geometry and last-verified continuation behavior. A substantial two-mesh observable difference remains. The check does not establish mesh convergence, uniform penalty robustness, a unique equilibrium branch, a global energy minimum, biological accuracy, a compatible parameter set, novelty, or completion of the remaining 24×12 targets.</p>
+<p>The live continuation to other strengths was neither restarted nor duplicated. Its outcomes require their own receipts and review.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

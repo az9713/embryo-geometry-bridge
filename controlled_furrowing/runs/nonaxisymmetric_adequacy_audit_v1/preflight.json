@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_sha256": "f33aaf277eea10fd364a529f95d369551c99b73747f7856cee3af4318b60b3a3",
+  "protocol_sha256": "a09fb767d9990fce5816203d45579a5b400a1271248788b685a91aebda355e32",
+  "checks": {
+    "hand_exact_compressed_flat_trace_with_negative_surface_stress": true,
+    "interval_perturbed_trace_still_negative": true,
+    "exact_zero_boundary_and_large_tension_do_not_trigger_negative": true,
+    "strict_bernstein_endpoint_guard": true,
+    "axial_rank_one_exact_det_and_active_ignore_azimuthal_gradient": true,
+    "natural_disk_area_squared_has_only_second_order_azimuthal_term": true,
+    "same_exact_spatial_proof_boxes_material_and_surfaces": true,
+    "analytic_geometry_and_global_admissibility_premises_matched": true,
+    "did_not_evaluate_actual_surface_stress_or_modes": true
+  },
+  "actual_stress_evaluations": 0,
+  "actual_AD_FE_jobs_or_spatial_integrals": 0
+}

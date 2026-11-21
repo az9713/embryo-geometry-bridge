@@ -1,0 +1,128 @@
+{
+  "status": "PASS_SYNTHETIC_COMPONENT",
+  "checks": {
+    "original_source_unchanged": true,
+    "flat_zero_dose_reference": true,
+    "flat_reference_first_variation": true,
+    "reference_true_area_energy": true,
+    "deformed_true_area_crosscheck": true,
+    "AD_vs_finite_difference": true,
+    "unbalanced_curvature_rejected": true,
+    "warm_cold_stationarity": true,
+    "warm_cold_agreement": true,
+    "work_ledger": true,
+    "material_and_tension_scaling": true,
+    "all_scenarios_stationary_positiveJ": true
+  },
+  "source_sha256": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+  "base_source_sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+  "derivative_relative_error": 4.5672090508421034e-08,
+  "reference_area_relative_error": 1.142286754285438e-16,
+  "reference_force_linf": 1.6858819124671634e-16,
+  "warm_cold_displacement_difference": 3.85426135451894e-11,
+  "scaling_displacement_difference": 0.0,
+  "scenarios": {
+    "0.2": [
+      {
+        "activation_strength": 0.2,
+        "converged": true,
+        "scaled_free_force_linf": 1.194595225691153e-11,
+        "minimum_J": 0.9947852487045031,
+        "central_apical_displacement": -0.0027575488171416307,
+        "central_basal_displacement": 0.005712399980520838,
+        "maximum_activated_column_shortening": 0.008469948797662497,
+        "single_valued_surface_graphs": true
+      },
+      {
+        "activation_strength": 1.0,
+        "converged": true,
+        "scaled_free_force_linf": 2.0230887277927767e-14,
+        "minimum_J": 0.9752541157137646,
+        "central_apical_displacement": -0.012579675410326563,
+        "central_basal_displacement": 0.026810338058806484,
+        "maximum_activated_column_shortening": 0.03939001346913307,
+        "single_valued_surface_graphs": true
+      },
+      {
+        "activation_strength": 4.0,
+        "converged": true,
+        "scaled_free_force_linf": 9.915215621204149e-13,
+        "minimum_J": 0.916317327818914,
+        "central_apical_displacement": -0.03988313711902525,
+        "central_basal_displacement": 0.0868107505795618,
+        "maximum_activated_column_shortening": 0.12669388769858703,
+        "single_valued_surface_graphs": true
+      }
+    ],
+    "2.0": [
+      {
+        "activation_strength": 0.2,
+        "converged": true,
+        "scaled_free_force_linf": 1.372908175491759e-12,
+        "minimum_J": 0.9951280524178782,
+        "central_apical_displacement": -0.003926451732454539,
+        "central_basal_displacement": 0.0016742122425374673,
+        "maximum_activated_column_shortening": 0.005600663974992037,
+        "single_valued_surface_graphs": true
+      },
+      {
+        "activation_strength": 1.0,
+        "converged": true,
+        "scaled_free_force_linf": 3.5297448557763955e-14,
+        "minimum_J": 0.9765616049501342,
+        "central_apical_displacement": -0.01842643593669313,
+        "central_basal_displacement": 0.007964900078116262,
+        "maximum_activated_column_shortening": 0.026391336014809363,
+        "single_valued_surface_graphs": true
+      },
+      {
+        "activation_strength": 4.0,
+        "converged": true,
+        "scaled_free_force_linf": 1.2324342935077226e-13,
+        "minimum_J": 0.9175072659042673,
+        "central_apical_displacement": -0.062389035232003676,
+        "central_basal_displacement": 0.027230573959496948,
+        "maximum_activated_column_shortening": 0.08961960919150058,
+        "single_valued_surface_graphs": true
+      }
+    ],
+    "20.0": [
+      {
+        "activation_strength": 0.2,
+        "converged": true,
+        "scaled_free_force_linf": 3.578535932207208e-12,
+        "minimum_J": 0.9952292555242721,
+        "central_apical_displacement": -0.004436278777059988,
+        "central_basal_displacement": 0.00021002172268118883,
+        "maximum_activated_column_shortening": 0.0047663666042415676,
+        "single_valued_surface_graphs": true
+      },
+      {
+        "activation_strength": 1.0,
+        "converged": true,
+        "scaled_free_force_linf": 2.2202942197464826e-10,
+        "minimum_J": 0.9769341199430116,
+        "central_apical_displacement": -0.020947715525927446,
+        "central_basal_displacement": 0.0010021488351390293,
+        "maximum_activated_column_shortening": 0.022499576271185484,
+        "single_valued_surface_graphs": true
+      },
+      {
+        "activation_strength": 4.0,
+        "converged": true,
+        "scaled_free_force_linf": 1.3648483385142463e-12,
+        "minimum_J": 0.9176594757428562,
+        "central_apical_displacement": -0.07201004293021263,
+        "central_basal_displacement": 0.0034568791478881873,
+        "maximum_activated_column_shortening": 0.07623193678562501,
+        "single_valued_surface_graphs": true
+      }
+    ]
+  },
+  "seconds": 13.770412399986526,
+  "limits": [
+    "No continuum mesh error certificate",
+    "No experimentally identified tension range",
+    "No prediction of transient peak without kinetics"
+  ]
+}

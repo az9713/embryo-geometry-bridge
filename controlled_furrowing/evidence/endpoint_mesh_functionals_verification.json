@@ -1,0 +1,20 @@
+{
+  "status": "PASS_SCOPED_SAVED_FIELD_SENSITIVITY",
+  "checks": {
+    "all12_observer_variants_processed": true,
+    "all_maximum_widths_achieved": true,
+    "all6_ROI_sup_widths_achieved": true,
+    "all48_actual_differences_below_Lipschitz_bounds": true,
+    "all6_comparisons_use_exact_same_current_ROI": true,
+    "input_hashes_unchanged": true,
+    "frozen_observer_and_helper_unchanged": true
+  },
+  "synthetic_receipt_sha256": "86e50da53f1cbfaf20d22ad339f807fac686090d9b7467877b285924bfc477a1",
+  "results_sha256": "62fb665612b460ddc5b453f64e01d76c0a7799e639115979c75c60508aa2d018",
+  "source_sha256": "1239db0944bcb7e54a740b72056ce8804139ea0068ab5ea789c791e248518433",
+  "full_domain_sensitivity_receipts": {
+    "12_to16": "evidence/joint_refinement_comparison.json",
+    "16_to24": "evidence/sparse_quadratic_24_comparison.json"
+  },
+  "scope": "No PDE error bound, experimental measurement uncertainty, statistical inference adequacy, original observation resolution or novel concept claim."
+}

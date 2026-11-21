@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>COHORT-UNIFORM-ROOTS-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the shared-cell cohort root bounds</h1>
+<p><strong>Completed independent replay; mathematical outcome PARTIAL_UNRESOLVED.</strong> Fifteen of the 17 selected stationary-root families are certified. F and K remain unresolved by the tested sufficient bounds. The <a href="../evidence/cohort_uniform_roots_independent_review.json">frozen receipt</a> lists every record, exact bounds, checks and hashes. The earlier <a href="PARAMETRIC-ACTUAL-M-REVIEW.html">actual-M review</a> remains immutable. The original five-gate research objective remains incomplete.</p>
+<h2>Target and separation from the producer</h2>
+<p>The target is the exact-real stationary equation of the declared finite-quadrature, frozen-binary-coefficient P2 energy. Every record uses the same five-coordinate parameter cell, fixed reference geometry and compression coefficient, and its own exact source dose. The input strength is the exact product of the common gain and that dose; it is not silently replaced by the rounded strength recorded by the floating-point solver.</p>
+<p>The <a href="../scripts/review_cohort_uniform_roots.py">reviewer</a> restores each saved cache, approximate inverse and affine predictor. It does not optimize an equilibrium or call the producer's <code>build_point</code> or <code>evaluate_cell</code>. It uses the already reviewed local strain-coordinate derivative formulas, then separately assembles the global force, Hessian, all five force-parameter columns, Taylor remainder and contraction bounds. This is an independent assembly and proof replay; it is not an independent rederivation of every shared local algebra helper.</p>
+<p>Record M reuses its already completed, hash-bound independent mechanical proof. Its dose is compared as an exact rational number, rather than by decimal versus fraction spelling. A cohort wrapper does not supply a new biological observation proof.</p>
+<p>The remaining 16 records each require fresh assembly of all 9,504 quadrature terms and all 611 free coordinates at 192-bit Arb precision. No arbitrary equality of numerical upper majorants across different precisions is required. Two sound enclosures can differ while certifying the same theorem.</p>
+<h2>Uniform root theorem</h2>
+<p>Write the free-displacement equation as</p>
+<div class="math display" data-tex="
+F(u,\theta)=0,\qquad \theta\in C,
+"></div>
+
+<p>and let <span class="math" data-tex="R"></span> be the exact binary matrix used as a preconditioner. For each fixed parameter, use the affine predictor</p>
+<div class="math display" data-tex="
+\widehat u(\theta)=u_0+S(\theta-\theta_0).
+"></div>
+
+<p>The review bounds, uniformly over the closed parameter cell and the full corrector cube,</p>
+<div class="math display" data-tex="
+\eta\ge\sup_{\theta\in C}\&#124;RF(\widehat u(\theta),\theta)\&#124;_\infty,
+\quad
+Z\ge\sup_{\substack{\theta\in C\\\&#124;v\&#124;_\infty\le r}}
+\&#124;I-RD_uF(\widehat u(\theta)+v,\theta)\&#124;_\infty.
+"></div>
+
+<p>If <span class="math" data-tex="Z&lt;1"></span> and <span class="math" data-tex="\eta+Zr&lt;r"></span>, then</p>
+<div class="math display" data-tex="
+v\longmapsto v-RF(\widehat u(\theta)+v,\theta)
+"></div>
+
+<p>maps the closed corrector cube into itself and is a contraction. Banach's theorem gives exactly one fixed point in that cube for each parameter. The separate center-defect bound <span class="math" data-tex="\&#124;I-RH_0\&#124;_\infty&lt;1"></span> implies that <span class="math" data-tex="R"></span> is nonsingular, so its fixed point solves <span class="math" data-tex="F=0"></span>. This establishes a selected local stationary root for every parameter. It does not exclude roots outside the declared branch domain.</p>
+<p>Every independent acceptance uses the producer's <strong>full declared corrector radius</strong>. Downstream geometry and observers can therefore use that common cube without depending on tiny crossprecision differences in the sharper posterior estimate <span class="math" data-tex="\eta/(1-Z)"></span>.</p>
+<h2>Force-parameter columns and residual remainder</h2>
+<p>For fixed displacement, the force is affine in the varied coefficients. At the center let <span class="math" data-tex="H_0=D_uF(u_0,\theta_0)"></span>, <span class="math" data-tex="B_0=D_\theta F(u_0,\theta_0)"></span>, <span class="math" data-tex="d=\theta-\theta_0"></span>. The exact identity is</p>
+<div class="math display" data-tex="
+F(u_0+Sd,\theta_0+d)
+=F_0+(H_0S+B_0)d
++\int_0^1[H(u_0+tSd,\theta_0+d)-H_0]Sd\,dt.
+"></div>
+
+<p>Thus predictor accuracy is tested by the explicit linear defect and interval remainder; a floating-point tangent is not assumed exact. A hull containing <span class="math" data-tex="td"></span>, <span class="math" data-tex="0\le t\le1"></span>, encloses the path in the last term. The projection <span class="math" data-tex="B_{\rm strain}S"></span> is formed before absolute values to retain useful cancellation.</p>
+<p>For a surface contribution <span class="math" data-tex="K(J_s-1)^2/2+TJ_s"></span>, the parameter columns are <span class="math" data-tex="(J_s-1)\nabla J_s"></span> and <span class="math" data-tex="\nabla J_s"></span>. For the active bulk term <span class="math" data-tex="gI\,m(b^2+d^2)/2"></span>, the gain column is <span class="math" data-tex="Im(0,b,0,d,0)^T"></span>. The independent lightweight checks differentiate these identities symbolically.</p>
+<p>A local Hessian difference is projected with a rigorous absolute row bound. With a strain map <span class="math" data-tex="B"></span>, a local change <span class="math" data-tex="D"></span>, and positive quadrature weight <span class="math" data-tex="w"></span>,</p>
+<div class="math display" data-tex="
+\sum_j&#124;(B^TDB)_{ij}&#124;
+\le\sum_a&#124;B_{ai}&#124;\sum_b&#124;D_{ab}&#124;\sum_j&#124;B_{bj}&#124;.
+"></div>
+
+<p>Summing positive weighted contributions and multiplying their row majorants by <span class="math" data-tex="&#124;R&#124;"></span> yields a valid global infinity-norm bound. Every logarithm, square root and division must remain in the analytic positive-J, positive-radius and nondegenerate-tangent region throughout the admitted box.</p>
+<h2>Evidence and failure policy</h2>
+<p>Before expensive replay, the independent source, provider manifest, numerical versions, exact per-record result/cache/predictor/state hashes, producer protocols and any separately reviewed radius-only supplement are frozen. A parent prelaunch receipt must bind the reviewer source and its final protocol/preflight. No output is called a completed all-17 review until the batch actually terminates.</p>
+<p>The original failed producer run and all unresolved radius tests remain retained. Failure of a sufficient contraction/self-map test means <strong>UNRESOLVED</strong>, not nonexistence. A radius-only retry may change the proof neighborhood while retaining exactly the same parameter cell, target equation and saved center. It must be recorded as a separate version with its own prelaunch review.</p>
+<p>Each final per-record audit capsule binds the exact reviewed root result, shared cell and observation-contract hash. Uniform root acceptance is distinct from whole-body injectivity, uniform output bounds and all-68-row calibration compatibility. Those require their own composition proofs.</p>
+<h2>Executed result and retained failures</h2>
+<p>The sole replay process exited successfully after 262.7 seconds. It freshly assembled 16 records at 192-bit precision: 152,064 center quadrature-term assemblies, plus the predictor-remainder and full-tube evaluations, and 16 complete 611-coordinate force/Hessian/parameter-column systems. Record M reused its immutable prior independent review through seven explicit mechanical-cache and context checks. All frozen sources and inputs still matched at the end.</p>
+<p>There are 263 per-record checks: 257 true and six false. The false entries are exactly the three expected entries at each of F and K: producer status is not certified; the strict self-map inequality fails; and overall Banach acceptance therefore fails. In both cases the contraction bound itself is below one, and the analytic positive-J domain check passes. These are unresolved sufficient tests, not proofs that physical or discrete equilibria do not exist.</p>
+<table>
+<thead>
+<tr>
+<th>Source column</th>
+<th>Independent status</th>
+<th style="text-align: right;">η upper, approximate</th>
+<th style="text-align: right;">Z upper, approximate</th>
+<th style="text-align: right;">Full corrector radius, approximate</th>
+<th style="text-align: right;">(η+Zr)/r, approximate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>PASS</td>
+<td style="text-align: right;">5.28746e-13</td>
+<td style="text-align: right;">0.0486824</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.1015570</td>
+</tr>
+<tr>
+<td>C</td>
+<td>PASS</td>
+<td style="text-align: right;">4.74721e-13</td>
+<td style="text-align: right;">0.0649802</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.1124524</td>
+</tr>
+<tr>
+<td>D</td>
+<td>PASS</td>
+<td style="text-align: right;">1.19872e-12</td>
+<td style="text-align: right;">0.0910061</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.2108783</td>
+</tr>
+<tr>
+<td>E</td>
+<td>PASS</td>
+<td style="text-align: right;">2.28339e-12</td>
+<td style="text-align: right;">0.1092921</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.3376309</td>
+</tr>
+<tr>
+<td>F</td>
+<td>UNRESOLVED</td>
+<td style="text-align: right;">8.65398e-11</td>
+<td style="text-align: right;">0.6903874</td>
+<td style="text-align: right;">1.73080e-10</td>
+<td style="text-align: right;">1.1903874</td>
+</tr>
+<tr>
+<td>G</td>
+<td>PASS</td>
+<td style="text-align: right;">5.53799e-12</td>
+<td style="text-align: right;">0.1185511</td>
+<td style="text-align: right;">1.10760e-11</td>
+<td style="text-align: right;">0.6185511</td>
+</tr>
+<tr>
+<td>H</td>
+<td>PASS</td>
+<td style="text-align: right;">1.45340e-12</td>
+<td style="text-align: right;">0.0994095</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.2447497</td>
+</tr>
+<tr>
+<td>I</td>
+<td>PASS</td>
+<td style="text-align: right;">7.57192e-13</td>
+<td style="text-align: right;">0.0759205</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.1516397</td>
+</tr>
+<tr>
+<td>J</td>
+<td>PASS</td>
+<td style="text-align: right;">1.79982e-12</td>
+<td style="text-align: right;">0.1100145</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.2899967</td>
+</tr>
+<tr>
+<td>K</td>
+<td>UNRESOLVED</td>
+<td style="text-align: right;">5.22615e-11</td>
+<td style="text-align: right;">0.5653228</td>
+<td style="text-align: right;">1.04523e-10</td>
+<td style="text-align: right;">1.0653228</td>
+</tr>
+<tr>
+<td>L</td>
+<td>PASS</td>
+<td style="text-align: right;">3.00586e-11</td>
+<td style="text-align: right;">0.3831477</td>
+<td style="text-align: right;">6.01172e-11</td>
+<td style="text-align: right;">0.8831477</td>
+</tr>
+<tr>
+<td>M</td>
+<td>PASS, immutable review reused</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">1e−11</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>N</td>
+<td>PASS</td>
+<td style="text-align: right;">1.31838e-12</td>
+<td style="text-align: right;">0.0925103</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.2243483</td>
+</tr>
+<tr>
+<td>O</td>
+<td>PASS</td>
+<td style="text-align: right;">3.78161e-13</td>
+<td style="text-align: right;">0.0606550</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.0984711</td>
+</tr>
+<tr>
+<td>P</td>
+<td>PASS</td>
+<td style="text-align: right;">1.46762e-12</td>
+<td style="text-align: right;">0.0983929</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.2451548</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>PASS</td>
+<td style="text-align: right;">1.31378e-12</td>
+<td style="text-align: right;">0.0951385</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.2265164</td>
+</tr>
+<tr>
+<td>R</td>
+<td>PASS</td>
+<td style="text-align: right;">1.63098e-12</td>
+<td style="text-align: right;">0.1012818</td>
+<td style="text-align: right;">1.00000e-11</td>
+<td style="text-align: right;">0.2643797</td>
+</tr>
+</tbody>
+</table>
+<p>The table is a diagnostic display, not the proof arithmetic. Acceptance used exact rational endpoints of Arb enclosures, retained separately for every record. Every certified record satisfies strict contraction and self-map inequalities at the exact declared full radius.</p>
+<p>The independent batch reviewed the final v2 wrappers at their selected original radii. The failed v1 run, the decimal-versus-fraction dose guard correction and the subsequent failed radius-only supplement are retained by exact hash in the <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_uniform_root_review_v1/provider_manifest.json">provider manifest</a>. The six larger-radius supplement attempts were not independently reassembled by this batch; their immutable history is distinguished from the fresh 16-record proof calculation. No parameter cell was narrowed to turn F or K into a pass.</p>
+<p>Before replay, a reviewer-only serialization defect was caught: one guard returned a NumPy boolean rather than a native boolean. The entire unsolved source/protocol/preflight revision was preserved under <code>runs/cohort_uniform_root_review_v1/preflight_revision_0</code>, then the native-bool cast and a regression check were added. The final frozen reviewer passed 24 lightweight guards; the separate parent prelaunch review passed 18 checks. No numerical replay had started before that correction.</p>
+<p>The 15 successful root families can be composed with separately reviewed geometry and observation enclosures. They do not supply roots or output bounds for F and K. In particular, they do not justify an all-68-row upper discrepancy bound, an IN classification or a common stable loading path. A later proof-center refinement, if attempted, is a separate versioned mathematical calculation and cannot silently replace these retained partial results.</p>
+<h2>Limits of this result</h2>
+<p>Even a complete all-17 root review would establish only local stationary-root families of this fixed finite model. It would not prove a common stable or quasistatic trajectory, an experimental temporal maximum, ideal-quadrature or continuum-PDE accuracy, biological material identification, a full-domain identified set, or novelty. The original five-gate research objective remains incomplete.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,9 @@
+# Isolated nonlinear discovery queue
+
+The two original exact-integration supervisors remain unchanged. Their two-worker integration cap is preserved. The root is authorizing one additional **serial floating nonlinear queue**, distinct from the interval-integration workers, to test the scientifically decisive transfer pair rather than waiting for the entire integration cohort to finish. This is an explicit scheduling change, not a claim that only two mathematical workers will run in total.
+
+Observed host inventory: eight physical cores, twelve logical processors, 31.68 GiB total visible memory and approximately 6.06 GiB free at the scheduling check. These are point-in-time observations, not resource guarantees. The nonlinear queue sets Torch, OpenMP, OpenBLAS, MKL and NumExpr thread counts to one. It starts only one endpoint worker at a time. It uses exclusive new output directories and shares no mutable numerical context with the two interval processes.
+
+The independent prelaunch gate is `preparation/prelaunch_independent_review.json`, SHA256 `df6daf32ca582e03ce7d4ab2ecc97e4ce44ca6420fe85134f352b5a64aa21b26`. Source and protocol were frozen before any nonlinear results. Primary selection is half of each endpoint of the `source_residual_allowance`, `budget_exact=1/100` local affine row. The predicted affine contrast separation is approximately 0.15490079433427828 micrometres. This is a predeclared numerical diagnostic, not an experimental uncertainty estimate or a source-compatible witness claim.
+
+No existing integration, proof, source data or publication is restarted or modified by this queue. Its worker, OS and supervisor terminal records must be inspected before calling it complete. A successful worker can report scientific incompatibility; a failed numerical checkpoint is retained and prevents a successful-comparison claim. All five original gates remain in force.

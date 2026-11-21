@@ -1,0 +1,83 @@
+{
+  "status": "FOUR_SINGLETON_TARGETS_PREPARED",
+  "pilot_order": [
+    "max_contrast_change_small_17",
+    "max_contrast_change_large_03",
+    "max_negative_contrast_change_small_17",
+    "max_negative_contrast_change_large_03"
+  ],
+  "radii_exact": [
+    "1/68719476736",
+    "1/17179869184"
+  ],
+  "targets": [
+    {
+      "pilot_id": "max_contrast_change_small_17",
+      "model_contract": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_small_17/model_observation_contract.json",
+      "model_contract_sha256": "b507905f4163c3052c9d87ef4d6505fa4ddf71385015efec70cf14eca6da34cb",
+      "predictor": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_small_17/predictor.json",
+      "predictor_sha256": "9243e1884990296647be8e62784c879e493a5ec82e4555c8fbed7a04351f6ead",
+      "row": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_small_17/row.json",
+      "row_sha256": "4e8d23c004554ea27ef643f42d9407148029430b8ba9163c55873e4e1e0ecda3",
+      "rule": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_small_17/auxiliary_rule.json",
+      "rule_sha256": "7faca8da6f240b4e34ddcb865249a4aa6860f51f52e8b238eaacea069b1e74a1",
+      "routes": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_small_17/routes.json",
+      "routes_sha256": "0766e6b00b22d8c4351e12ab7f21f726c25f761f47f21f629963036f689ff09c",
+      "box_0": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_small_17/coordinate_box_0.json",
+      "box_0_sha256": "9c4f4c02fb570f201052344edbf4318eb5663716de8cf59a448c778650d86a90",
+      "box_1": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_small_17/coordinate_box_1.json",
+      "box_1_sha256": "6b5914f5c16a706522155b9785746223c2ae2800e43e65203437f41f7ea9ed7a"
+    },
+    {
+      "pilot_id": "max_contrast_change_large_03",
+      "model_contract": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_large_03/model_observation_contract.json",
+      "model_contract_sha256": "9312d687c16a8a64f7b14874437d50162a12d320c3799509d0920cbbfe8c094a",
+      "predictor": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_large_03/predictor.json",
+      "predictor_sha256": "cae80a54fd1afd53280115b681546ef31dcaa6dbcfa70a261d9d4db34389ee5f",
+      "row": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_large_03/row.json",
+      "row_sha256": "96f6ebc343f879c8ef36aa0d4c7450cefce96b0435b5ce6a148528369c432e3c",
+      "rule": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_large_03/auxiliary_rule.json",
+      "rule_sha256": "5a308a88cfe4bb500cc32b7f94809ccc49e24d72cbe252e11b50f31371587389",
+      "routes": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_large_03/routes.json",
+      "routes_sha256": "baac7f2423519108f12e0272dacd0f63f1ca2107ff0d667178a2ef8ba6e4ca4a",
+      "box_0": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_large_03/coordinate_box_0.json",
+      "box_0_sha256": "5c64f4dab390af0774bc8dcb214d01ae22ebb4644bf0370b1bb15de2e291d3bb",
+      "box_1": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_contrast_change_large_03/coordinate_box_1.json",
+      "box_1_sha256": "06abe082d75af479a576c337632bf341ca259a2f76e54cbb1452d3c278eab51e"
+    },
+    {
+      "pilot_id": "max_negative_contrast_change_small_17",
+      "model_contract": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/model_observation_contract.json",
+      "model_contract_sha256": "3188680f8eba5f9e21127e06253761beff647125140f58040956c993c4c131a4",
+      "predictor": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/predictor.json",
+      "predictor_sha256": "a306b9e837d71723f37b86637c0efb72be65918483338185fcefe207f499cfe7",
+      "row": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/row.json",
+      "row_sha256": "339b4500b699ff3e698984cfa928c3660d57c31dbcbbc57d764b7dc7c60b48d8",
+      "rule": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/auxiliary_rule.json",
+      "rule_sha256": "7faca8da6f240b4e34ddcb865249a4aa6860f51f52e8b238eaacea069b1e74a1",
+      "routes": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/routes.json",
+      "routes_sha256": "d6a59bd20488dccc00c5daae2ea56921e72148687767bc9df2885c0c1b2c93a4",
+      "box_0": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/coordinate_box_0.json",
+      "box_0_sha256": "3fb6105c2963a4d1a173a501a21da755b57e9b53f19eac19f2f238f6e8c11568",
+      "box_1": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/coordinate_box_1.json",
+      "box_1_sha256": "ce62dae21b181aa059518440311c5b9e699ccc22f1015a2c91ec5c1da493debe"
+    },
+    {
+      "pilot_id": "max_negative_contrast_change_large_03",
+      "model_contract": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_large_03/model_observation_contract.json",
+      "model_contract_sha256": "e3196249905d7f7c6ecab4dddc4598b7c788f0701245fd907493a0c26dbb277d",
+      "predictor": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_large_03/predictor.json",
+      "predictor_sha256": "d421f8250c628908f85d52bd1f57ad54d29c967b35804fb70b0ce485fd75ccb8",
+      "row": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_large_03/row.json",
+      "row_sha256": "4784ab1c5264ef421a14e2239420aca48cc544a64553d68518d0d33fb0c13522",
+      "rule": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_large_03/auxiliary_rule.json",
+      "rule_sha256": "5a308a88cfe4bb500cc32b7f94809ccc49e24d72cbe252e11b50f31371587389",
+      "routes": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_large_03/routes.json",
+      "routes_sha256": "590291341f1feb316f663d7414805053d4e44837ba0b1bcc0437b305a3aa207a",
+      "box_0": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_large_03/coordinate_box_0.json",
+      "box_0_sha256": "375d4faf99d262645d9bd3ac4edf3ed4947d62c2a60e7f4ff5fd09252e021557",
+      "box_1": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_large_03/coordinate_box_1.json",
+      "box_1_sha256": "011e1ef6faac29e2632ab86361291de39dafdc9efb359087c99ed7d4de4e7f79"
+    }
+  ]
+}

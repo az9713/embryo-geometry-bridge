@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SPATIAL-V1-RESULTS</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>First coupled model: executed, but spatial adequacy fails</h1>
+<p>This is the retained <strong>v1</strong> finite-height nonlinear axisymmetric model. It is a conditional mechanical stress test, not a new biological discovery. Its original sources, calibration, 93 larger-region fields and frozen hashes remain unchanged while a separate prestress revision is developed.</p>
+<h2>What was fitted and what was held out</h2>
+<p>Only the 17 small-region dose/maximum-shortening values fit one activation gain per declared basal-area-modulus scenario. All use height 33.5 µm, a flat stress-free reference, finite thickness, an activation depth 5–25 µm below the apical surface, and the same outer boundary. Parameters are exploratory scenarios, not independently measured bounds or a complete identified set.</p>
+<p>The field observation used for calibration is the maximum vertical shortening of matched material columns. It is an explicitly conditional peak-equilibrium proxy, not automatically the source's current-spatial/time-maximum measurement. Separate small-region apical and basal maxima are used as an independent adequacy check, not added together or silently promoted to paired trajectories.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Basal area modulus / µh</th>
+<th style="text-align: right;">Fitted gain</th>
+<th style="text-align: right;">Direct small-region height-proxy RMSE (µm)</th>
+<th style="text-align: right;">Larger-region scalar RMSE (µm), n=9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">8.66</td>
+<td style="text-align: right;">2.2472</td>
+<td style="text-align: right;">3.0881</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8.88</td>
+<td style="text-align: right;">2.2558</td>
+<td style="text-align: right;">3.0477</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">9.50</td>
+<td style="text-align: right;">2.2694</td>
+<td style="text-align: right;">3.1503</td>
+</tr>
+</tbody>
+</table>
+<p>The nonlinear-response interpolation used for fitting was checked against 51 direct small-region solves; maximum discrepancies are 0.01126, 0.01107 and 0.00784 µm, below the predeclared 0.05-µm calibration-surrogate tolerance. These are checks at the selected gains, not a uniform interpolation certificate or proof of a continuous-parameter optimum.</p>
+<h2>The decisive training-only failure</h2>
+<p>Every scenario predicts basal motion larger than apical motion in all 17 small-region records. The source component maxima are apical-dominant in 16 of 17. Component ordering agrees in only 1/17, despite a reasonable scalar shortening fit. Apical-component RMSE is 5.25–5.64 µm; basal-component RMSE is 3.36–3.80 µm. The static-versus-temporal-maxima mismatch limits a formal biological falsification, but the declared family plainly has not established small-region spatial adequacy. <a href="../evidence/spatial_calibration_adequacy.json">Independent component audit</a>; <a href="SPATIAL-CALIBRATION.html">observation qualifications</a>.</p>
+<p>The larger-region runs are therefore retained as <strong>diagnostics of an already inadequate candidate</strong>, not advertised as validated forecasts. Their scalar errors are also worse than the frozen calibration-only linear comparator's 2.2270 µm.</p>
+<p><img alt="Frozen v1 diagnostic, not validated geometry prediction" src="assets/spatial_transfer.png" /></p>
+<h2>Why zero label exclusions is not predictive success</h2>
+<p>All 31 larger-region cases in every branch allow both image labels <span class="math" data-tex="\{0,1\}"></span> when acquisition slice height is unknown, for each reported illustrative surface-error assumption. Consequently no observed label is excluded, but <strong>the label test is non-discriminating</strong>. It does not have 100% accuracy. A physical surface that permits a plug-like slice does not determine whether the actual recorded slice intersected it. The source phenotype is also transient; a static calculation does not establish its peak or recovery time. <a href="SLICE-OBSERVER.html">Exact conditional observer and error bound</a>.</p>
+<p>The assumed 0, 0.05 and 0.2 µm uniform surface errors in the diagnostic figure are sensitivity scenarios. None is a measured error or a finite-element continuum certificate.</p>
+<h2>What the numerical receipts prove</h2>
+<p>All 93 larger-region solves meet the locked normalized nodal-force tolerance, with maximum residual below <span class="math" data-tex="1.44\times10^{-10}"></span>. Exact rational checks independently verify the 51 calibrated and 93 larger-region P1 bodies: triangle orientation, disk topology, simple boundary, axis preservation, local Jacobian bounds and volume ratios. This establishes valid, noninterpenetrating <strong>discrete geometries</strong>, not closeness to the unknown continuum solution. <a href="DISCRETE-GEOMETRY-CERTIFICATE.html">Proof and certificate</a>.</p>
+<p>Local Jacobians reach approximately 0.797 in the larger-region fields, corresponding to about 20% local material-volume compression. Small global volume loss does not remove that problem. The log-volume penalty coefficient divided by shear modulus is 50; that does not guarantee near incompressibility when fitted activation is large. Mesh sensitivity is substantial even at low activation. Neither material biology nor continuum accuracy has been validated.</p>
+<h2>The justified revision</h2>
+<p>A stress-free area-elastic membrane gives no quadratic normal stiffness about a flat surface. For a normal graph <span class="math" data-tex="w"></span>,</p>
+<div class="math display" data-tex="
+J_s=\sqrt{1+(w&#x27;)^2},\qquad
+\frac K2(J_s-1)^2=\frac K8(w&#x27;)^4+O((w&#x27;)^6).
+"></div>
+
+<p>Baseline membrane tension instead contributes</p>
+<div class="math display" data-tex="
+T(J_s-1)=\frac T2(w&#x27;)^2+O((w&#x27;)^4).
+"></div>
+
+<p>This standard geometric-stiffness distinction motivates a <strong>separate, small-region-driven</strong> prestress revision. It does not prove that the revision will fit the biology or solve compressibility. A mixed higher-order numerical model and matched mesh/penalty tests are also being developed before stronger continuum claims.</p>
+<h2>Five-gate status</h2>
+<p>Originality and data-availability audits are executed. The coupled discrete model, calibration and conditional larger-region fields now exist and are independently checked. The original stronger gates remain incomplete: the material identified set is not characterized, specimen geometry and source acquisition mapping are missing, the current candidate fails spatial calibration adequacy, and continuum accuracy is unresolved. A correct diagnostic computation is not a passed biological prediction or confirmed novelty.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

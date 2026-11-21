@@ -1,0 +1,220 @@
+{
+  "status": "PASS",
+  "checks": {
+    "both_records_freshly_assembled": true,
+    "both_independent_uniform_root_proofs_PASS": true,
+    "same_physicaltarget_andC": true,
+    "all_frozen_bindings_unchanged": true,
+    "no_old_review_overwritten": true,
+    "no_observer_commonpath_PDE_or_global_completion_claim": true
+  },
+  "record_audits": [
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "review_file": "runs/cohort_recentered_root_review_v1/records/optoGEF2_small_col_F.json",
+      "review_sha256": "ada2ff7f82b087b0f5529d62ce9395914e1de42d27415a4b1e2ed33f8e6fb7c2",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "old_matrix_archive_belongs_to_seed_u0_not_new_u1": true,
+          "new_cache_center_u1_matches_auxiliary_state": true,
+          "cache_exact_auxiliary_state_and_original_seed_bound": true,
+          "exact_gain_dose_and_original_solver_strength_distinguished": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true,
+          "all_physical_target_and_center_lineage_checks": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_F",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "7ee9815aed5233e2566c9fdc4b81896b858f6aaaa2316b223f8fc6aee04eb6ce",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_recentered_v1:optoGEF2_small_col_F",
+        "bounds": {
+          "Z0": {
+            "ball": "[9.15335186338243531598581149136614381330154884345959476195e-6 +/- 2.17e-63]",
+            "lower_exact": "3765470551490087667675317998120738668757997857397350440573/411376139330301510538742295639337626245683966408394965837152256",
+            "upper_exact": "3765470551490087667675317998120738668757997857397350440573/411376139330301510538742295639337626245683966408394965837152256"
+          },
+          "eta": {
+            "ball": "[7.42372967105065490586775137220986553938943684216833061624e-13 +/- 1.25e-70]",
+            "lower_exact": "2561834956836728566155865349902401473394181790680642121925/3450873173395281893717377931138512726225554486085193277581262111899648",
+            "upper_exact": "2561834956836728566155865349902401473394181790680642121925/3450873173395281893717377931138512726225554486085193277581262111899648"
+          },
+          "Z": {
+            "ball": "[0.0754081645965386804711838753135799317349520703188637510917 +/- 5.88e-59]",
+            "lower_exact": "118336180212814353216480857937949168452253250565674371457/1569275433846670190958947355801916604025588861116008628224",
+            "upper_exact": "1893378883405029651463693727007186695236052009050789943313/25108406941546723055343157692830665664409421777856138051584"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[1.49645461307045229529861389035678587128846438740547057254e-12 +/- 1.58e-69]",
+            "lower_exact": "161377346232763762441839223073012234173619804749052454405/107839786668602559178668060348078522694548577690162289924414440996864",
+            "upper_exact": "1291018769862110099534713784584097873388958437992419635241/862718293348820473429344482784628181556388621521298319395315527974912"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.988968597158336761046766931663154289533954958411157911536 +/- 2.07e-58]",
+            "lower_exact": "1551964124366381721259933976711346506897392620089804424353/1569275433846670190958947355801916604025588861116008628224",
+            "upper_exact": "1551964124366381721259933976711346506897392620089804424353/1569275433846670190958947355801916604025588861116008628224"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 16.157024145126343,
+        "lineage_review": {
+          "status": "PASS",
+          "checks": {
+            "all_cache_array_names_unchanged": true,
+            "ALL_binary_arrays_except_u_identical": true,
+            "exact_binary_preconditioner_unchanged": true,
+            "exact_predictor_file_unchanged": true,
+            "seed_u0_and_auxiliary_u1_separate": true,
+            "one_round_center_recipe_reproduced": true,
+            "recorded_midpoints_lie_inside_recorded_RF_balls": true,
+            "same_parameters_equation_cache_and_archived_tangents": true,
+            "source_and_auxiliary_identities_separate_bound": true,
+            "same_cell_target_dose_new_declared_branch": true,
+            "normal_corrector_not_translation": true,
+            "all611_actual_translations_exact": true,
+            "cache_fingerprints_independently_reproduced": true,
+            "potential_array_fingerprints_reproduced": true,
+            "full_physical_target_fingerprints_reproduced": true,
+            "old_float_tangent_archive_keeps_u0": true
+          },
+          "translation_linf_exact": "3092885/36028797018963968",
+          "recipe_scope": "Exact reproduction of stored midpoint single-round subtraction and unchanged physicaltarget. Old RFball assembly not independently repeated; fresh new-center root theorem is independent of whether this proposal was an accurate Newtonstep."
+        },
+        "review_protocol_sha256": "1d5d036059c7dd8ff08f656fc6362811c6ef77e596e4b0f375eef6b256ef3e36",
+        "all_frozen_bindings_unchanged": true
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "review_file": "runs/cohort_recentered_root_review_v1/records/optoGEF2_small_col_K.json",
+      "review_sha256": "5829ae088b0fe71a893d60517739fcb248de2a6731a4aaf8de4ed2b9b37b5d20",
+      "audit": {
+        "status": "PASS",
+        "checks": {
+          "binary_predictor_reproduces_archived_tangent_rule": true,
+          "old_matrix_archive_belongs_to_seed_u0_not_new_u1": true,
+          "new_cache_center_u1_matches_auxiliary_state": true,
+          "cache_exact_auxiliary_state_and_original_seed_bound": true,
+          "exact_gain_dose_and_original_solver_strength_distinguished": true,
+          "material_geometry_exact_source_record_bound": true,
+          "reference_mesh_reproduced": true,
+          "producer_declares_certified_uniform_root": true,
+          "cell_matches_result_and_expected_hash": true,
+          "finite_square_preconditioner_and_predictor": true,
+          "all9504terms_611free_dofs": true,
+          "all9216bulk_288surface_terms": true,
+          "preconditioner_nonsingular_from_center_defect": true,
+          "uniform_contraction": true,
+          "uniform_strict_selfmap": true,
+          "all_analytic_domain_J_gt_1e6_inverse": true,
+          "strict_Banach_acceptance": true,
+          "no_producer_point_cell_or_optimization_called": true,
+          "all_physical_target_and_center_lineage_checks": true
+        },
+        "precision_bits": 192,
+        "record_id": "optoGEF2_small_col_K",
+        "free_dofs": 611,
+        "local_terms": 9504,
+        "certificate_sha256": "cae3814a37c1fc8a2c2af742aa42e7f2abd0bc14af495a9282af371e5ab41738",
+        "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+        "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+        "uniform_quantifier_verified": true,
+        "branch_law_semantics": "independent_stationary_root_per_record",
+        "branch_scope": "selected_unique_root_in_declared_domain",
+        "branch_domain_id": "cohort_recentered_v1:optoGEF2_small_col_K",
+        "bounds": {
+          "Z0": {
+            "ball": "[5.68400421795735887493397498138599982496461747743485470668e-6 +/- 3.00e-64]",
+            "lower_exact": "2338263711120447939707620740573788060002498533149224356233/411376139330301510538742295639337626245683966408394965837152256",
+            "upper_exact": "2338263711120447939707620740573788060002498533149224356233/411376139330301510538742295639337626245683966408394965837152256"
+          },
+          "eta": {
+            "ball": "[2.49870311917089712068125138669247998360504700150346421676e-12 +/- 4.30e-69]",
+            "lower_exact": "1077838445278245372110658146617178708364455746240988970063/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "1077838445278245372110658146617178708364455746240988970063/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "Z": {
+            "ball": "[0.128928403326002902681466628695109333460548135891048142461 +/- 1.58e-58]",
+            "lower_exact": "3237186817033146898060391453306724765614964008425716877681/25108406941546723055343157692830665664409421777856138051584",
+            "upper_exact": "3237186817033146898060391453306724765614964008425716877683/25108406941546723055343157692830665664409421777856138051584"
+          },
+          "radius": {
+            "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+            "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+            "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+          },
+          "eta_plus_Zr": {
+            "ball": "[3.78798715243092614749591767364357331821052836041394564137e-12 +/- 6.51e-69]",
+            "lower_exact": "3267965811372466878231974463227180930744074352034419734923/862718293348820473429344482784628181556388621521298319395315527974912",
+            "upper_exact": "3267965811372466878231974463227180930744074352034419734927/862718293348820473429344482784628181556388621521298319395315527974912"
+          },
+          "quadrature_J_lower": {
+            "ball": "[0.964298642304472554796898849549766240342551904740531570842 +/- 1.36e-58]",
+            "lower_exact": "6053000681040424807547604472981356743269158355870382650149/6277101735386680763835789423207666416102355444464034512896",
+            "upper_exact": "6053000681040424807547604472981356743269158355870382650149/6277101735386680763835789423207666416102355444464034512896"
+          }
+        },
+        "scope": "Finite-quadrature local stationary-root family only; no observer/PDE/energetic stability/common path assertion.",
+        "elapsed_seconds": 15.59884262084961,
+        "lineage_review": {
+          "status": "PASS",
+          "checks": {
+            "all_cache_array_names_unchanged": true,
+            "ALL_binary_arrays_except_u_identical": true,
+            "exact_binary_preconditioner_unchanged": true,
+            "exact_predictor_file_unchanged": true,
+            "seed_u0_and_auxiliary_u1_separate": true,
+            "one_round_center_recipe_reproduced": true,
+            "recorded_midpoints_lie_inside_recorded_RF_balls": true,
+            "same_parameters_equation_cache_and_archived_tangents": true,
+            "source_and_auxiliary_identities_separate_bound": true,
+            "same_cell_target_dose_new_declared_branch": true,
+            "normal_corrector_not_translation": true,
+            "all611_actual_translations_exact": true,
+            "cache_fingerprints_independently_reproduced": true,
+            "potential_array_fingerprints_reproduced": true,
+            "full_physical_target_fingerprints_reproduced": true,
+            "old_float_tangent_archive_keeps_u0": true
+          },
+          "translation_linf_exact": "450915/9007199254740992",
+          "recipe_scope": "Exact reproduction of stored midpoint single-round subtraction and unchanged physicaltarget. Old RFball assembly not independently repeated; fresh new-center root theorem is independent of whether this proposal was an accurate Newtonstep."
+        },
+        "review_protocol_sha256": "1d5d036059c7dd8ff08f656fc6362811c6ef77e596e4b0f375eef6b256ef3e36",
+        "all_frozen_bindings_unchanged": true
+      }
+    }
+  ],
+  "review_source_sha256": "93fbacf29cbacc730374c688959ad81b9187de53f50c51f568c814b9348c8b92",
+  "protocol_sha256": "1d5d036059c7dd8ff08f656fc6362811c6ef77e596e4b0f375eef6b256ef3e36",
+  "preflight_sha256": "482c0443d287e73e12a52defc5b2f3cf21d74e1cd3d828f1e58a956b3d0ba4e6",
+  "prelaunch_review_sha256": "851e653691a8baeb619017410c456fe7f10569fafd07133ac4fde91d062aecad",
+  "precision_bits": 192,
+  "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+  "model_observation_contract_sha256": "2498493bf50049295eb2ad0d2360b1defaf387ee8db8828ceb576f3d7e942f82",
+  "scope": "Fresh independent F/K local root proof at newu1; exact same physicaltarget andC; no observers/fullidentifiedset/PDE/commonpath.",
+  "elapsed_seconds": 32.62947702407837
+}

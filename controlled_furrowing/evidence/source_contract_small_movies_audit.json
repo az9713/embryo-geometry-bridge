@@ -1,0 +1,435 @@
+{
+  "status": "COMPLETE_LOCAL_SOURCE_FEASIBILITY_AUDIT",
+  "checks": {
+    "movie1_official_metadata_bytes_MD5_ETag_HTTP_verified": true,
+    "movie1_all_frames_decode_count_verified": true,
+    "movie1_first_PNG_and_decoded_pixel_hash_verified": true,
+    "movie1_middle_PNG_and_decoded_pixel_hash_verified": true,
+    "movie1_last_PNG_and_decoded_pixel_hash_verified": true,
+    "movie2_official_metadata_bytes_MD5_ETag_HTTP_verified": true,
+    "movie2_all_frames_decode_count_verified": true,
+    "movie2_first_PNG_and_decoded_pixel_hash_verified": true,
+    "movie2_middle_PNG_and_decoded_pixel_hash_verified": true,
+    "movie2_last_PNG_and_decoded_pixel_hash_verified": true,
+    "movie1_decoder_disagreement_preserved_and_quantified_not_forced_PASS": true,
+    "movie2_pixel_hash_agreement_is_decode_consistency_only": true,
+    "both_movies_manually_inspected_at_required_frames": true,
+    "no_cohort_linkage_or_certified_measurement_promoted": true
+  },
+  "article": {
+    "doi": "10.1038/s41467-025-62483-6",
+    "pmcid": "PMC12361397",
+    "version": 1,
+    "publication": "Nat Commun. 2025 Aug 18;16:7665. doi: 10.1038/s41467-025-62483-6",
+    "official_license_metadata": "CC BY-NC-ND"
+  },
+  "movies": [
+    {
+      "movie": 1,
+      "official_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM5_ESM.avi",
+      "official_metadata_url": "s3://pmc-oa-opendata/PMC12361397.1/41467_2025_62483_MOESM5_ESM.avi?md5=9fa988129edbc41b0748a7e0b7b029ea",
+      "official_listing_entry": {
+        "Key": "PMC12361397.1/41467_2025_62483_MOESM5_ESM.avi",
+        "LastModified": "2026-02-23T18:15:48.000Z",
+        "ETag": "\"9fa988129edbc41b0748a7e0b7b029ea\"",
+        "ChecksumAlgorithm": "CRC32",
+        "ChecksumType": "FULL_OBJECT",
+        "Size": "7587078",
+        "StorageClass": "STANDARD"
+      },
+      "source_file": "data/raw/41467_2025_62483_MOESM5_ESM.avi",
+      "source_bytes": 7587078,
+      "source_md5": "9fa988129edbc41b0748a7e0b7b029ea",
+      "source_sha256": "2b7277b3a897e005d2920c34f7e262d7094eac63ddedd7b4b63e6860c32957da",
+      "decoded_frames": 159,
+      "container_stream": {
+        "codec_name": "mjpeg",
+        "codec_long_name": "Motion JPEG",
+        "codec_tag_string": "MJPG",
+        "width": 832,
+        "height": 445,
+        "pix_fmt": "yuvj420p",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/24",
+        "duration": "6.625000",
+        "nb_frames": "159",
+        "nb_read_frames": "159",
+        "color_range": "pc",
+        "color_space": "bt470bg"
+      },
+      "media_first_middle_last_seconds": [
+        0.0,
+        3.2916666666666665,
+        6.583333333333333
+      ],
+      "source_description_and_manual_visual_assessment": {
+        "description_locator": "MOESM3_ESM.pdf p1, SupplementaryMovie1; primary.xml Par10",
+        "genotype": "OptoGEF2; mCh-iLID-CaaX membrane marker; two endogenous RhoGEF2-tgRFPt-SspB copies.",
+        "activation": "No activation; normal gastrulation control.",
+        "imaging": "15µm apical average-intensity z-projection, not an apical–basal transverse section.",
+        "nominal_scale_bar_um": 50,
+        "views": "One projected embryo view. Native source field extends to image boundaries; no paired apical/basal height profiles are supplied.",
+        "biological_timestamp_labels_first_middle_last": [
+          "00:00",
+          "24:19",
+          "48:39"
+        ],
+        "full_profile_feasibility": "Not supplied: an apical projection cannot establish both apical/basal surfaces and height.",
+        "peak_reference_feasibility": "Not an activated small-region peak response; no calibration counterfactual growth curve or activated ROI.",
+        "individual_17_record_linkage": "None stated; this is an unactivated control, not an identified dose-response record."
+      },
+      "selected_frames": [
+        {
+          "label": "first",
+          "index": 0,
+          "pts": 0,
+          "time_base": "1/24",
+          "media_time_seconds": 0.0,
+          "shape_rgb": [
+            445,
+            832,
+            3
+          ],
+          "canonical_RGB24_SHA256": "905a49f6c5b0a3ab9d60ac9d9324262ec92d9ae3d5580a47fb80ef40386e5083",
+          "PNG_file": "runs/source_contract_supplements_v1/movies_1_2/movie_1/first.png",
+          "PNG_SHA256": "022828db14d86b6ccab0de31acfdd24de688c694c652152bd5b1d7d9bbb3759e"
+        },
+        {
+          "label": "middle",
+          "index": 79,
+          "pts": 79,
+          "time_base": "1/24",
+          "media_time_seconds": 3.2916666666666665,
+          "shape_rgb": [
+            445,
+            832,
+            3
+          ],
+          "canonical_RGB24_SHA256": "fcecfe4524c608fa6240a0659ae7717a24276cf3a9efb0639703327e161f6a25",
+          "PNG_file": "runs/source_contract_supplements_v1/movies_1_2/movie_1/middle.png",
+          "PNG_SHA256": "66af061fd3e8363560ac44d3805222cd7be0f65fc090c47e7e3fe5fa560455f9"
+        },
+        {
+          "label": "last",
+          "index": 158,
+          "pts": 158,
+          "time_base": "1/24",
+          "media_time_seconds": 6.583333333333333,
+          "shape_rgb": [
+            445,
+            832,
+            3
+          ],
+          "canonical_RGB24_SHA256": "da0c4efe8d30c53c134b95b51970c2c5811731bf310788f9ae8394ffe8b7235f",
+          "PNG_file": "runs/source_contract_supplements_v1/movies_1_2/movie_1/last.png",
+          "PNG_SHA256": "98661ce18e7f123a50fd8883cd18b6bb7c60045d6bc69aae2f24501203ee25dc"
+        }
+      ],
+      "contact_sheet_file": "runs/source_contract_supplements_v1/movies_1_2/movie_1/contact-sheet.png",
+      "contact_sheet_sha256": "a21218b8d8eb496b422da7bc6a73da9a138cf24f3b84d36849c961292c3c8f1f",
+      "all_RGB24_hashes_identical_across_bindings": false,
+      "visually_inspected_first_middle_last_and_contact_sheet": true,
+      "scope": "Local prepared-source movie inspection; no anatomical segmentation or measurement error inferred from pixel brightness."
+    },
+    {
+      "movie": 2,
+      "official_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM6_ESM.avi",
+      "official_metadata_url": "s3://pmc-oa-opendata/PMC12361397.1/41467_2025_62483_MOESM6_ESM.avi?md5=6451e50744adb8bdd8092c6f55420ed2",
+      "official_listing_entry": {
+        "Key": "PMC12361397.1/41467_2025_62483_MOESM6_ESM.avi",
+        "LastModified": "2026-02-23T18:15:11.000Z",
+        "ETag": "\"6451e50744adb8bdd8092c6f55420ed2\"",
+        "ChecksumAlgorithm": "CRC32",
+        "ChecksumType": "FULL_OBJECT",
+        "Size": "5717420",
+        "StorageClass": "STANDARD"
+      },
+      "source_file": "data/raw/41467_2025_62483_MOESM6_ESM.avi",
+      "source_bytes": 5717420,
+      "source_md5": "6451e50744adb8bdd8092c6f55420ed2",
+      "source_sha256": "daa1e790945477658fc55261b82feec6aa1767b8f9ac3e8a7f296f64bc3a13b9",
+      "decoded_frames": 20,
+      "container_stream": {
+        "codec_name": "mjpeg",
+        "codec_long_name": "Motion JPEG",
+        "codec_tag_string": "MJPG",
+        "width": 1332,
+        "height": 1760,
+        "pix_fmt": "yuvj420p",
+        "r_frame_rate": "4/1",
+        "avg_frame_rate": "4/1",
+        "time_base": "1/4",
+        "duration": "5.000000",
+        "nb_frames": "20",
+        "nb_read_frames": "20",
+        "color_range": "pc",
+        "color_space": "bt470bg"
+      },
+      "media_first_middle_last_seconds": [
+        0.0,
+        2.5,
+        4.75
+      ],
+      "source_description_and_manual_visual_assessment": {
+        "description_locator": "MOESM3_ESM.pdf p1, SupplementaryMovie2; primary.xml Par14/Par15 and Fig1 caption",
+        "genotype": "Left OptoGEF2 (two RhoGEF2-tgRFPt-SspB copies); right OptoCysts (two SspB-tgRFPt-Cysts copies); both show mCh-iLID-CaaX.",
+        "activation": "927nm illumination of a nominal18µm-diameter cylindrical lateral region5–25µm below the apical surface in dorsal primary epithelium.",
+        "imaging": "Top transverse sections along the dorsoventral axis; middle in-plane6µm subapical; bottom in-plane22µm subapical.",
+        "nominal_scale_bar_um": 20,
+        "views": "Two illustrated embryos, three prepared panels each; cyan activation outlines appear at the first frame.",
+        "biological_timestamp_labels_first_middle_last": [
+          "00:00",
+          "03:36",
+          "06:50"
+        ],
+        "full_profile_feasibility": "Useful qualitative transverse membrane views and nominal scale exist. They do not establish a uniquely annotated, complete uncropped A/B graph across the required ROI at initial and verified peak times. Upper structures lie close to the prepared panel crop; lateral boundaries are cropped. No calibrated rawzstack/profile masks accompany this AVI.",
+        "peak_reference_feasibility": "A labelled00:00 frame is present; no negative-time baseline or per-record counterfactual growth/PIV/ROI map is encoded. The actual peak of the quantified source observable is not identified. Subapical plane-following versus fixed/reference-plane registration is not specified per frame.",
+        "individual_17_record_linkage": "No individual embryoID, Fig2source-column crosswalk or normalized activation magnitude. Shared OptoGEF2 genotype/nominal18µm condition is a population-level association only; the OptoCysts example is not one of the selected17 OptoGEF2 records."
+      },
+      "selected_frames": [
+        {
+          "label": "first",
+          "index": 0,
+          "pts": 0,
+          "time_base": "1/4",
+          "media_time_seconds": 0.0,
+          "shape_rgb": [
+            1760,
+            1332,
+            3
+          ],
+          "canonical_RGB24_SHA256": "1fca54b267221b2ffa9137342d980eaa3815c34eba56c98b44ed34b87d89b359",
+          "PNG_file": "runs/source_contract_supplements_v1/movies_1_2/movie_2/first.png",
+          "PNG_SHA256": "10d06f66a396c676e92bdb3943df0debb7fc3fd51996b00b1fd3d87453918c46"
+        },
+        {
+          "label": "middle",
+          "index": 10,
+          "pts": 10,
+          "time_base": "1/4",
+          "media_time_seconds": 2.5,
+          "shape_rgb": [
+            1760,
+            1332,
+            3
+          ],
+          "canonical_RGB24_SHA256": "442e74d0efe1b6f7282750fb8aea041c6830550a55847b3a2c4fb843eaff6c2e",
+          "PNG_file": "runs/source_contract_supplements_v1/movies_1_2/movie_2/middle.png",
+          "PNG_SHA256": "5d9aff6977d216178222ba1ea6b399194cffdb3431b7dde3797319ddd72aaeae"
+        },
+        {
+          "label": "last",
+          "index": 19,
+          "pts": 19,
+          "time_base": "1/4",
+          "media_time_seconds": 4.75,
+          "shape_rgb": [
+            1760,
+            1332,
+            3
+          ],
+          "canonical_RGB24_SHA256": "2ebd12e3949b4ba49b8d0ff052537c9a64f927089f10f4eeb7a90a6200361127",
+          "PNG_file": "runs/source_contract_supplements_v1/movies_1_2/movie_2/last.png",
+          "PNG_SHA256": "9cee140d7309a23ea27cd38d1b04c109dcd127966000742b0490d4f11a0639e0"
+        }
+      ],
+      "contact_sheet_file": "runs/source_contract_supplements_v1/movies_1_2/movie_2/contact-sheet.png",
+      "contact_sheet_sha256": "5ef91edad09de143e0576c31948a1a47b2e777e44043f2a9ef8eb383cf909bee",
+      "all_RGB24_hashes_identical_across_bindings": true,
+      "visually_inspected_first_middle_last_and_contact_sheet": true,
+      "scope": "Local prepared-source movie inspection; no anatomical segmentation or measurement error inferred from pixel brightness."
+    }
+  ],
+  "decoder_difference_movie1": {
+    "status": "DECODER_DIFFERENCE_QUANTIFIED_NOT_FORCED_IDENTICAL",
+    "source_SHA256": "2b7277b3a897e005d2920c34f7e262d7094eac63ddedd7b4b63e6860c32957da",
+    "frame_count": 159,
+    "extra_OpenCV_frame": false,
+    "compared_pixels": 58868160,
+    "max_abs_difference_per_RGB_channel": [
+      2,
+      4,
+      3
+    ],
+    "mean_abs_difference_per_RGB_channel": [
+      0.0026475772302038997,
+      1.8140308105434244,
+      0.005641385767790262
+    ],
+    "fraction_changed_per_RGB_channel": [
+      0.002601966835722401,
+      0.9542903838000033,
+      0.005338624478835418
+    ],
+    "fraction_pixels_any_RGB_channel_changed": 0.9553030534672733,
+    "selected_frames": {
+      "0": {
+        "max_abs_difference_per_RGB_channel": [
+          2,
+          4,
+          3
+        ],
+        "mean_abs_difference_per_RGB_channel": [
+          0.0032303370786516852,
+          1.8401010155574762,
+          0.0063283275713050995
+        ],
+        "fraction_pixels_any_channel_changed": 0.9656790190146932
+      },
+      "79": {
+        "max_abs_difference_per_RGB_channel": [
+          2,
+          4,
+          3
+        ],
+        "mean_abs_difference_per_RGB_channel": [
+          0.0025956136560069142,
+          1.800135047536733,
+          0.00555585566119274
+        ],
+        "fraction_pixels_any_channel_changed": 0.9522201815038893
+      },
+      "158": {
+        "max_abs_difference_per_RGB_channel": [
+          2,
+          3,
+          3
+        ],
+        "mean_abs_difference_per_RGB_channel": [
+          0.0033356741573033707,
+          1.800062121866897,
+          0.00588267070008643
+        ],
+        "fraction_pixels_any_channel_changed": 0.9511479040622299
+      }
+    },
+    "PyAV_version": "17.0.1",
+    "PyAV_library_versions": {
+      "libavutil": [
+        60,
+        8,
+        100
+      ],
+      "libavcodec": [
+        62,
+        11,
+        100
+      ],
+      "libavformat": [
+        62,
+        3,
+        100
+      ],
+      "libavdevice": [
+        62,
+        1,
+        100
+      ],
+      "libavfilter": [
+        11,
+        4,
+        100
+      ],
+      "libswscale": [
+        9,
+        1,
+        100
+      ],
+      "libswresample": [
+        6,
+        1,
+        100
+      ]
+    },
+    "OpenCV_version": "4.13.0",
+    "OpenCV_FFmpeg_build_lines": [
+      "FFMPEG:                      YES (prebuilt binaries)",
+      "avcodec:                   YES (58.134.100)",
+      "avformat:                  YES (58.76.100)",
+      "avutil:                    YES (56.70.100)",
+      "swscale:                   YES (5.9.100)"
+    ],
+    "scope": "Numerical decoder/color-conversion difference only. Neither RGB agreement nor disagreement is an anatomical calibration, noise bound or biological finding."
+  },
+  "bindings": {
+    "data/raw/PMC12361397.1.json": "aa97b3d107feadaae032c7414c474c713e2b81d6e3ce484e633968977ea6b4f0",
+    "data/raw/oa_object_listing.xml": "922e95c2b1e72f823d8d64d444d4ca356d289607f5e2bb9a3aca0e2bc0143a60",
+    "data/raw/41467_2025_62483_MOESM3_ESM.pdf": "455fb6555c4e9a42c6670f2cd1e3af27e8fcdf9d04c865c7bcfe92ee63ce9020",
+    "data/raw/primary.xml": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7",
+    "data/raw/41467_2025_62483_MOESM5_ESM.avi": "2b7277b3a897e005d2920c34f7e262d7094eac63ddedd7b4b63e6860c32957da",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/http.json": "7f83c119782e6144c8e3bb24cf8c74c7803260e184087f448beb813c4e5b65f1",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/ffprobe.json": "26afbd0a3c2a9e616fcc000b4339633497f49e04a8f52316c341d32e093c39c0",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/decode_receipt.json": "e3afefa3213f9a3e6864c664d70fd7781ec52a8133811a9cf9767cbc5035c78b",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/all_frames.json": "93b1fd8a09675337118b239b6fc4e324129ad217c545acfcdb603d85eafec2b6",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/contact-sheet.png": "a21218b8d8eb496b422da7bc6a73da9a138cf24f3b84d36849c961292c3c8f1f",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/first.png": "022828db14d86b6ccab0de31acfdd24de688c694c652152bd5b1d7d9bbb3759e",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/middle.png": "66af061fd3e8363560ac44d3805222cd7be0f65fc090c47e7e3fe5fa560455f9",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/last.png": "98661ce18e7f123a50fd8883cd18b6bb7c60045d6bc69aae2f24501203ee25dc",
+    "data/raw/41467_2025_62483_MOESM6_ESM.avi": "daa1e790945477658fc55261b82feec6aa1767b8f9ac3e8a7f296f64bc3a13b9",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_2/http.json": "9b73ff56b1a9c520aa0bc9a37794560394b4b8f657d84d48a3007ac0cb08ef04",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_2/ffprobe.json": "ecf5810bceeddba3c6e76cfd5ef7af81741095a0080884af7b1888d3299e2dea",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_2/decode_receipt.json": "4e6e89e5f38033d89e45670affab87988f836a3b6cd1ddd997461302cddffe72",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_2/all_frames.json": "94adf6299a81278fa49da91e365fb1172a41ac0ecef0d309712d1e1fa914b9fd",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_2/contact-sheet.png": "5ef91edad09de143e0576c31948a1a47b2e777e44043f2a9ef8eb383cf909bee",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_2/first.png": "10d06f66a396c676e92bdb3943df0debb7fc3fd51996b00b1fd3d87453918c46",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_2/middle.png": "5d9aff6977d216178222ba1ea6b399194cffdb3431b7dde3797319ddd72aaeae",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_2/last.png": "9cee140d7309a23ea27cd38d1b04c109dcd127966000742b0490d4f11a0639e0",
+    "runs/source_contract_supplements_v1/movies_1_2/movie_1/decoder_difference.json": "63e610f577df0687a64b0c00d035942e0ff7baac759e28d17dd390e5a8008938",
+    "runs/source_contract_supplements_v1/movies_1_2/protocol.json": "5cb728301f070adb8637d9489bacff1dcf0df965d9d1680b44c12437c9a3d45c",
+    "runs/source_contract_supplements_v1/movies_1_2/acquire_decode.py": "595cc343f13804cba42b048f45d72ad7adda2e960887f411c8df6d570ea77465",
+    "runs/source_contract_supplements_v1/movies_1_2/quantify_decoder_difference.py": "0a522ec74399f8b471db2e61bb301c59aa26794c119d82dbf490376ffab986de",
+    "runs/source_contract_supplements_v1/movies_1_2/acquisition_decode.json": "a90ef909a37d3211e1c652d1c54ae38f2d226951f942f7c359a85bb05bdec975",
+    "runs/source_contract_supplements_v1/movies_1_2/job.json": "0290e3f848a5ce984d1d9564a9985f92fc9b6080344fb5143b8cdf6549f92631",
+    "runs/source_contract_supplements_v1/movies_1_2/terminal.json": "dde4f43f2c8360401350ba9272cf11583f12c2e7b50849bada557c81d76a760b"
+  },
+  "source_locators": [
+    {
+      "file": "data/raw/41467_2025_62483_MOESM3_ESM.pdf",
+      "locator": "p1 SupplementaryMovies1/2",
+      "role": "Exact source condition, genotype, nominalROI, planes and scale."
+    },
+    {
+      "file": "data/raw/primary.xml",
+      "locator": "Par10",
+      "role": "Movie1 normal-development control."
+    },
+    {
+      "file": "data/raw/primary.xml",
+      "locator": "Par14/Par15 and Fig1 caption",
+      "role": "Movie2 is a qualitative OptoGEF2/OptoCysts comparison; no Fig2individual crosswalk."
+    },
+    {
+      "file": "data/raw/primary.xml",
+      "locator": "Fig2 caption",
+      "role": "Separate17-cohort source uses emitted iLID activation fluorescence and source segmentation; Movie2 does not encode its per-record dose."
+    },
+    {
+      "file": "data/raw/primary.xml",
+      "locator": "Par56",
+      "role": "General lateral-activation protocol; nominal32–35µm initialheight,5–25µm activationdepth,44µm imagingstacks/2µm slice spacing and approximately22s frames."
+    },
+    {
+      "file": "data/raw/primary.xml",
+      "locator": "Par66",
+      "role": "Prepared images have contrast/zsignal normalization, manualzdrift correction and orientation; encoded AVI is not the raw calibrated acquisition."
+    }
+  ],
+  "feasibility_verdict": {
+    "new_qualitative_context": true,
+    "nominal_time_scale_ROI_and_planes_available_for_movie2": true,
+    "certified_full_initial_and_verified_peak_apical_basal_profiles_obtained": false,
+    "verified_link_to_any_of17_individual_calibration_records": false,
+    "new_normalized_activation_dose_or_referencegrowth_or_noise_bounds_obtained": false,
+    "whole17_source_observation_contract_resolved": false,
+    "exploratory_use": "Movie2 could support an explicitly assumed qualitative/manual-digitization pilot after expert boundary/reference review. This audit supplies no new calibrated profile, phenotype mask, parameter fit or certified measurement interval.",
+    "why_nominal_is_not_error_bound": "A20µm displayed bar, source927nm/18µm geometry and roundedtimestamps provide nominal context, not raw voxel/z calibration, resampling/registration uncertainty, missing-boundary guarantees or biological measurement-error bounds.",
+    "no_false_clipping_theorem": "Some upper/lower membrane structures are visible in transversepanels. The finding is lack of a verified complete, registered, uniquely traceable profile—not proof that every possible anatomical contour is absent or physically truncated.",
+    "figure_movie_scale_distinction": "The AVI and its own description use20µm; primaryFig1stills caption10µm is a separate prepared figure scale and is not substituted for the movie scale."
+  },
+  "time_scope": "Movie1media6.625s at24fps contains printed biological00:00–48:39; Movie2media5s at4fps contains printed00:00–06:50. Container time is playback, not experimental elapsed time. Selected printed labels were read manually; no peak-time identity or exactinterpolation is inferred.",
+  "cohort_identity_scope": "Genotype and nominalactivation category are not specimenIDs. Coincidental response/dose similarity, rounded dose labels or column order cannot establish Movie2left belongs to a specific B:R record.",
+  "decoder_scope": "Bothbindings useFFmpeg. The Movie1RGB difference is retained as decoder/conversion precision, not a biological result, segmentation tolerance or estimated noise.",
+  "local_preview_only_not_public_adaptation": true,
+  "no_model_params_noise_docs_README_gates_HTML_or_old_proof_packets_modified": true
+}

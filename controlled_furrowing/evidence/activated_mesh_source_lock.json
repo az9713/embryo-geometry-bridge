@@ -1,0 +1,19 @@
+{
+  "status": "FROZEN_COMPLETED_DISCRETE_MESH_STUDY_NOT_CONTINUUM_ADEQUACY",
+  "files": {
+    "scripts/run_activated_mesh_study.py": "78295655c236d465a4c4ac9d324c9d810d23359855e7d54761496535ffe0d8a2",
+    "docs/ACTIVATED-MESH-STUDY.md": "d46c113fa98d6aa37e91e9f5db5cb329dba6842d170a67f3ed9e3c6aaf0f095b",
+    "evidence/activated_mesh_protocol.json": "007a88db62daeaae272e638886f02d82b94ed0007485c5e0fcee86805e19254e",
+    "evidence/activated_mesh_results.json": "e1b99d9d0460cffe1776cb0d396b1fb8b36013ce1af2bf60439575494d822644",
+    "evidence/activated_mesh_comparison.json": "0a2ad5372484b8ca3c8d68b10bd5288b73c3ae3e351ce1f0eaf14f1a040ed8aa",
+    "evidence/activated_mesh_verification.json": "8ef113166f9fcb1c72a20268e8e69a7854d0776918c878abab01f26196341fc7",
+    "evidence/activated_mesh_graph_tests.json": "e16335a6de02caefed493c0eb036f2d9e9cb74a7befc81102d95ae1cc4c67c26",
+    "evidence/activated_mesh_graph_adversarial.json": "5c29160d8b357f31b82cba98f908a545c43e8a65e56c1e562d5146f136184b5b",
+    "evidence/activated_mesh_visual.json": "7d4d9f222e18ead96f10985072e238406aa1aa2ebb6beeca14cbeff7fa13c033",
+    "runs/activated_mesh/activated_mesh_comparison.png": "ea5fc9a3a2d84fcff10e5519a424a6e950d5d767d43de28d2af85c2080bbd32a",
+    "runs/activated_mesh/active_job.json": "21bb17e35c202bb79992322327eff085976b0d5ab269bb3eec2ce9e88c7ba9ee"
+  },
+  "outward_table_intervals_checked": true,
+  "single_job_exit": "exec session29645 completed exit0; active_job FINISHED/all6targetsreached",
+  "scientific_limit": "Nonnegligibleapicalshapechanges andunstablecoefficientordering;possiblebranchselection;fixedQ0underintegration;noPDEerrorbound/novelty/biologicalpredictionclaim."
+}

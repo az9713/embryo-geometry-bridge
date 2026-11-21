@@ -1,0 +1,106 @@
+{
+  "status": "PASS_SPARSE_COMPONENT",
+  "checks": {
+    "row_colors_collision_free": true,
+    "symmetric_pattern": true,
+    "entire_H_matches_dense_AD": true,
+    "dense_offpattern_zero": true,
+    "raw_recovery_symmetric": true,
+    "Hv_AD_0": true,
+    "Hv_FD_0": true,
+    "Hv_AD_1": true,
+    "Hv_FD_1": true,
+    "Hv_AD_2": true,
+    "Hv_FD_2": true,
+    "energy_gradient_bitidentity_gain0.0": true,
+    "energy_gradient_bitidentity_gain1.0": true,
+    "energy_gradient_bitidentity_gain5.0": true,
+    "sparse_policy_activated_force_geometry": true
+  },
+  "entire_H_absolute_difference": 4.547473508864641e-13,
+  "entire_H_relative_difference": 1.0584911351890738e-16,
+  "offpattern_absolute": 0.0,
+  "raw_asymmetry": 4.547473508864641e-13,
+  "Hv_checks": [
+    {
+      "AD_relative": 1.31155993565057e-16,
+      "FD_relative": 1.9034729867910786e-10
+    },
+    {
+      "AD_relative": 8.426680523037162e-17,
+      "FD_relative": 9.886842031576116e-11
+    },
+    {
+      "AD_relative": 5.389533871833838e-16,
+      "FD_relative": 8.977484676503265e-10
+    }
+  ],
+  "pattern": {
+    "free_DOF": 161,
+    "structural_nonzeros": 3045,
+    "colors": 42,
+    "seed_chunk": 4,
+    "row_color_collision_free": true,
+    "pattern_symmetric": true,
+    "pattern_color_sha256": "c5bca26243f22dce090c182dc79c84eb96772fff617f39228266a1822af9c4ff",
+    "dense_matrix_bytes": 207368,
+    "sparse_values_and_int64_indices_bytes": 50016,
+    "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+  },
+  "benchmarks": [
+    {
+      "kind": "dense",
+      "seconds": 1.2759388000122271,
+      "RSS_before_bytes": 535281664,
+      "sampled_peak_RSS_bytes": 649605120,
+      "sampled_incremental_RSS_bytes": 114323456,
+      "measurement": "ProcessRSSsampled5ms; includesnativeTorchallocations; maymissbriefpeaks; notGPUmemory.",
+      "pattern": {
+        "free_DOF": 161,
+        "structural_nonzeros": 3045,
+        "colors": 42,
+        "seed_chunk": 4,
+        "row_color_collision_free": true,
+        "pattern_symmetric": true,
+        "pattern_color_sha256": "c5bca26243f22dce090c182dc79c84eb96772fff617f39228266a1822af9c4ff",
+        "dense_matrix_bytes": 207368,
+        "sparse_values_and_int64_indices_bytes": 50016,
+        "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+      },
+      "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+      "scope": "Smallmeshseparateprocessbenchmark; not24meshmemorypredictionorphysicalaccuracy."
+    },
+    {
+      "kind": "sparse",
+      "seconds": 1.1554068000114057,
+      "RSS_before_bytes": 535126016,
+      "sampled_peak_RSS_bytes": 601956352,
+      "sampled_incremental_RSS_bytes": 66830336,
+      "measurement": "ProcessRSSsampled5ms; includesnativeTorchallocations; maymissbriefpeaks; notGPUmemory.",
+      "pattern": {
+        "free_DOF": 161,
+        "structural_nonzeros": 3045,
+        "colors": 42,
+        "seed_chunk": 4,
+        "row_color_collision_free": true,
+        "pattern_symmetric": true,
+        "pattern_color_sha256": "c5bca26243f22dce090c182dc79c84eb96772fff617f39228266a1822af9c4ff",
+        "dense_matrix_bytes": 207368,
+        "sparse_values_and_int64_indices_bytes": 50016,
+        "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+      },
+      "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+      "scope": "Smallmeshseparateprocessbenchmark; not24meshmemorypredictionorphysicalaccuracy."
+    }
+  ],
+  "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+  "parents": {
+    "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+  },
+  "scope": "Samephysicalenergy/gradient, differentverifiednumericalpolicy; nophysical/PDEerrorclaim."
+}

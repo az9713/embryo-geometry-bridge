@@ -1,0 +1,259 @@
+{
+  "status": "PASS_EDGE_WAVE03_DESKTOP_MOBILE",
+  "browser": "Microsoft Edge headless",
+  "version": "158.0.4370.33",
+  "javascript_disabled": true,
+  "source_sha256": "36e1343e0cafabf358e954d3146448a950a07de2bb9e95cac6b2816dbf0efbc8",
+  "build_receipt_sha256": "d5c0418863062609955e0735852ecb889e559d557bbf98d04164249d6d4e6370",
+  "frozen_inputs_and_outputs_unchanged": true,
+  "views": [
+    {
+      "status": "PASS",
+      "render_ok": true,
+      "resources_ok": true,
+      "width": 1440,
+      "document_width": 1440,
+      "title": "Wave 03 exact-spatial roots and transverse stability",
+      "rows": 10,
+      "fonts": true,
+      "raw_tex": [],
+      "math": [
+        24,
+        24,
+        24,
+        0,
+        0
+      ],
+      "images": [
+        {
+          "src": "transverse_windows.png",
+          "loaded": true,
+          "alt": "Each of the K and L apical traces contains a band of red strictly negative checked windows across several interior edges. The basal checked windows are nonnegative. Two apical windows at each anchor remain unresolved."
+        },
+        {
+          "src": "selfmap.png",
+          "loaded": true,
+          "alt": "Stacked center-force and derivative terms for +I, +G, −I and −G lie below the unit self-map budget. The free percentage equals the certified margin divided by the cube radius."
+        },
+        {
+          "src": "slab_guards.png",
+          "loaded": true,
+          "alt": "The single K–L envelope gives a negative lower bound on J. The two half-interval boxes give positive determinant lower bounds but fail other geometry guards. The four quarter-interval boxes give positive determinant lower bounds and pass the tested body and bulk-log guards."
+        }
+      ],
+      "extents": [
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        },
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        },
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        },
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        },
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        }
+      ],
+      "includes_summary": true,
+      "local_links_http_status": {
+        "../../../../../../../report/favicon.png": 200,
+        "../../../../../../../../../../docs/assets/katex/katex.min.css": 200,
+        "REPORT.md": 200,
+        "exact_bounds.csv": 200,
+        "exact_observer_comparisons.csv": 200,
+        "transverse_windows.csv": 200,
+        "exact_slab_geometry.csv": 200,
+        "../global_reduction_v1/independent/results.json": 200,
+        "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/root_actual_acceptance.json": 200,
+        "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/independent_actual_readback.json": 200,
+        "../../../../../../../../nonaxisymmetric_adequacy_audit_v1/READBACK.md": 200,
+        "../global_reduction_v1/independent/root_observed_exit.json": 200,
+        "../../wave_02/checkpoint_v1/REPORT.html": 200,
+        "../observer_application_v1/independent_actual_readback/root_acceptance.json": 200,
+        "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/actual/receipt.json": 200,
+        "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/receipt.json": 200
+      },
+      "external_source_from_independent_web_check": [
+        "https://arxiv.org/html/2101.04006"
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/docs/assets/katex/katex.min.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/selfmap.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/transverse_windows.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/slab_guards.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/docs/assets/katex/fonts/KaTeX_Math-Italic.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/docs/assets/katex/fonts/KaTeX_Main-Regular.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/favicon.png",
+          "status": 200
+        }
+      ],
+      "errors": [],
+      "request_failures": [],
+      "screenshots_sha256": {
+        "wave03_1440_top.png": "a84f79e9ecd79052966144bb2505526018840693f7123a4bdacd244543e3cc11",
+        "wave03_1440_full.png": "4998cf80fcede6c110006bc8b63f4ab4b0051ebf5ceadba283dc71008e8aa9e4"
+      }
+    },
+    {
+      "status": "PASS",
+      "render_ok": true,
+      "resources_ok": true,
+      "width": 390,
+      "document_width": 390,
+      "title": "Wave 03 exact-spatial roots and transverse stability",
+      "rows": 10,
+      "fonts": true,
+      "raw_tex": [],
+      "math": [
+        24,
+        24,
+        24,
+        0,
+        0
+      ],
+      "images": [
+        {
+          "src": "transverse_windows.png",
+          "loaded": true,
+          "alt": "Each of the K and L apical traces contains a band of red strictly negative checked windows across several interior edges. The basal checked windows are nonnegative. Two apical windows at each anchor remain unresolved."
+        },
+        {
+          "src": "selfmap.png",
+          "loaded": true,
+          "alt": "Stacked center-force and derivative terms for +I, +G, −I and −G lie below the unit self-map budget. The free percentage equals the certified margin divided by the cube radius."
+        },
+        {
+          "src": "slab_guards.png",
+          "loaded": true,
+          "alt": "The single K–L envelope gives a negative lower bound on J. The two half-interval boxes give positive determinant lower bounds but fail other geometry guards. The four quarter-interval boxes give positive determinant lower bounds and pass the tested body and bulk-log guards."
+        }
+      ],
+      "extents": [
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        },
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        },
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        },
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        },
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        }
+      ],
+      "includes_summary": true,
+      "local_links_http_status": {
+        "../../../../../../../report/favicon.png": 200,
+        "../../../../../../../../../../docs/assets/katex/katex.min.css": 200,
+        "REPORT.md": 200,
+        "exact_bounds.csv": 200,
+        "exact_observer_comparisons.csv": 200,
+        "transverse_windows.csv": 200,
+        "exact_slab_geometry.csv": 200,
+        "../global_reduction_v1/independent/results.json": 200,
+        "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/root_actual_acceptance.json": 200,
+        "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/independent_actual_readback.json": 200,
+        "../../../../../../../../nonaxisymmetric_adequacy_audit_v1/READBACK.md": 200,
+        "../global_reduction_v1/independent/root_observed_exit.json": 200,
+        "../../wave_02/checkpoint_v1/REPORT.html": 200,
+        "../observer_application_v1/independent_actual_readback/root_acceptance.json": 200,
+        "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/actual/receipt.json": 200,
+        "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/receipt.json": 200
+      },
+      "external_source_from_independent_web_check": [
+        "https://arxiv.org/html/2101.04006"
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/docs/assets/katex/katex.min.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/selfmap.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/transverse_windows.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/slab_guards.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/docs/assets/katex/fonts/KaTeX_Math-Italic.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/docs/assets/katex/fonts/KaTeX_Main-Regular.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62311/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/favicon.png",
+          "status": 200
+        }
+      ],
+      "errors": [],
+      "request_failures": [],
+      "screenshots_sha256": {
+        "wave03_390_top.png": "98ff6505b8ea96200ec3226d0dd081bee40a01dbf46fafbe8d6b8c3e283bd827",
+        "wave03_390_full.png": "9a1fa0481d1c312b1553ca833081824aa5da6a50cfa42964a3e40dd712f8a5f4"
+      }
+    }
+  ]
+}

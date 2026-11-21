@@ -1,0 +1,18 @@
+# First-wave signed reduction of independent component hulls
+
+The cold reducer keeps the four first-wave targets and exact admitted cubes. It accepts 144 bulk and 24 surface component hulls per target only after the full raw producer and four independent replay phases have true observed exits and matching hashes. There is no later-wave or numerical worker authorization in this package.
+
+The reducer checks each signed scalar against the matching raw producer packet and confirms the full rational union hull of the independently valid and original intervals. An independently valid interval is a mathematical premise, while overlap and containment diagnostics carry no proof by themselves. Nonnesting is retained. A genuinely disjoint point force, point cache-correction or whole Hessian row prevents admission for the wave. Exact signed matrices are assembled only after all four cases and all component endpoints pass.
+
+Apply the exact frozen binary R to the signed defects. Add the already preconditioned cached point anchor once, before taking the infinity norm. Keep whole-box ZQ and the signed Hessian defect contracted with the same R. The admissible-cube contraction and exclusion inequalities are distinct. Unresolved means neither sufficient test proves its conclusion. The candidate posterior e is measured from the verified spatial center. Observer eligibility uses sigma+e<e_goal, and the physical error is 33.5(sigma+e+old xi) µm. Both recentered states retain the original scores and observer tolerances. Any later actual observer transfer applies its own archived geometry and graph checks.
+
+An optional positive exact Sym(R) premise can support a minimum on a passing contraction cube. The minimum candidate also states the conservative normalized H lower bound (1−z)/||R||∞. The optional native actual proof must match the identical target, box, derivative, cache, observer archive and exact binary R. Omitting it leaves minima open. Neither raw steady-state existence nor minimum claims promote before independent global endpoint replay and source review.
+
+## External gates
+
+- preparation/independent_prelaunch/review.json must use PASS_INDEPENDENT_FIRST_WAVE_SPATIAL_REDUCER_COLD, nonempty literal-true checks, case_order exactly the four entries in the frozen protocol, and new_spatial_integrals_authorized=false.
+- admission/actual_input_admission.json must use PASS_INDEPENDENT_FIRST_WAVE_WHOLE_HULLS_REDUCTION_INPUTS, nonempty literal-true checks, reducer_review_sha256, root_producer_admission_sha256, hull_source_review_sha256 and hull_case_observations in protocol order. Each observation row contains case_id and observed_os_exit_sha256. Set all_four_cases_required_before_arithmetic=true and new_spatial_integrals_authorized=false.
+- Both gates include identical source_sha256, protocol_sha256, preflight_sha256, first_wave_worker_admission_sha256 and joined_bridge_input_admission_sha256.
+- The admission also contains optional_spd, either null or an object with observed_os_exit_sha256 and replay_phase containing {source_sha256, protocol_sha256, preflight_sha256}. The phase describes the independent remaining32 SPD reader. The corresponding external OS observation is under that reader's actual_replay folder.
+
+Run only after independent cold review and the complete actual admission. Pass exact --protocol-sha256, --preflight-sha256, --review, --review-sha256, --admission and --admission-sha256. Bind the supervisor process exit separately. The numerical output remains candidate-only for independent global review. The initial synthetic fixture misspelled its archived xi field and stopped before opening any raw or native packet. That draft is preserved in development_revision_0.

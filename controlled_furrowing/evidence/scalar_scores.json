@@ -1,0 +1,60 @@
+{
+  "status": "SCORED auxiliary scalar reproduction only",
+  "n_calibration": 17,
+  "n_evaluation": 9,
+  "prediction_sha256": "59d20d02ce903c1c4e4e1d04382686d17366601ea9ad39bcdfe2b21d2037c639",
+  "evaluation_sha256": "7b49ea11755ce9dddd5c07d376c7f2fc5e10834bb724ae6bedbf95bb3b91a6b8",
+  "scores": {
+    "primary_mechanical": {
+      "RMSE_um": 1.9953595546681286,
+      "MAE_um": 1.6847472103122854,
+      "signed_bias_um": 0.667178394987608,
+      "residuals_um": [
+        3.6972620407785093,
+        1.5464306906096588,
+        -2.027587279178296,
+        2.23787080388369,
+        0.34972554881173146,
+        2.4367967145115905,
+        -0.4890071614418465,
+        -2.062465228340905,
+        0.3155794252543398
+      ]
+    },
+    "OLS": {
+      "RMSE_um": 2.227042421890283,
+      "MAE_um": 1.9350941235787387,
+      "signed_bias_um": 0.7040794046326343,
+      "residuals_um": [
+        4.056582213992393,
+        1.6310663790014668,
+        -2.367578612976553,
+        2.3262244403516363,
+        0.21219713526956951,
+        2.7056864681175323,
+        -0.8063046273288279,
+        -2.3656829949520883,
+        0.9445242402185801
+      ]
+    },
+    "zero_shortening": {
+      "RMSE_um": 6.892817356781066,
+      "MAE_um": 5.863709222222223,
+      "signed_bias_um": -5.863709222222223,
+      "residuals_um": [
+        -0.071243,
+        -3.080957,
+        -8.72639,
+        -2.376692,
+        -9.378311,
+        -8.383168,
+        -7.0,
+        -11.028607,
+        -2.728015
+      ]
+    }
+  },
+  "geometric_gate": "NOT PASSED; no coupled geometry prediction exists",
+  "novelty": "None established: source Fig4h already compares this size dependence",
+  "statistical_limit": "No independence/coverage guarantee, equivalence claim or biological mechanism identification"
+}

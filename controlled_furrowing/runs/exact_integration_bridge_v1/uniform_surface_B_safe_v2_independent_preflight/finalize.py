@@ -1,0 +1,12 @@
+"""Read-only packaging of the preparation review, not actual surface output."""
+from pathlib import Path
+import hashlib,json,datetime
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[2];OUT=ROOT/'runs/exact_integration_bridge_v1/uniform_surface_B_safe_v2'
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def read(p):return json.loads(Path(p).read_text())
+def main():
+    r=read(HERE/'review.json');checks={'all406_checks_literal_true':r['status']=='PASS'and len(r['checks'])==406 and all(x is True for x in r['checks'].values()),'all24_wholeedge_details':len(r['whole_edge_details'])==24 and all(x['direct_P2_and_interval_Bernstein_proof']is True for x in r['whole_edge_details']),'all288_local_sites':len(r['local_site_details'])==288 and all(x['same_exact_normalization_and_fullY_line']is True for x in r['local_site_details']),'all_source_input_hashes_current':all(sha(ROOT/k)==h for k,h in r['source_and_input_hashes'].items()),'source_protocol_preflight_current':r['source_sha256']==sha(ROOT/'scripts/exact_uniform_surface_bridge_B_safe.py')and r['protocol_sha256']==sha(OUT/'protocol.json')and r['preflight_sha256']==sha(OUT/'preflight.json'),'owned_review_source_current':r['review_source_sha256']==sha(HERE/'review.py'),'launch_review_identical_to_retained_bytes':(OUT/'prelaunch_independent_review.json').read_bytes()==(HERE/'review.json').read_bytes()}
+    assert all(v is True for v in checks.values()),checks
+    out={'status':'PASS_INDEPENDENT_UNIFORM_SURFACE_PRELAUNCH_DELIVERY','utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks':checks,'launch_review_sha256':sha(OUT/'prelaunch_independent_review.json'),'own_source_sha256':sha(HERE/'review.py'),'report_sha256':sha(HERE/'REVIEW.md'),'finalizer_sha256':sha(__file__),'retained_wholeedge_leaves':sum(x['leaf_count']for x in r['whole_edge_details']),'retained_local_sites':288,'execution_observation':{'session_id':53466,'terminal_exit_code':0,'actual_integrals_or_weighted_cache_sums_by_reviewer':False},'current_producer_run_status_not_inferred':True,'new_root_or_original_goal_complete':False,'scope':'Bounded independent prelaunch review only; actual surface integrals remain a separate producer/reviewer stage.'}
+    p=HERE/'delivery.json';assert not p.exists();p.write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({'status':out['status'],'checks':len(checks),'sha256':sha(p)}))
+if __name__=='__main__':main()

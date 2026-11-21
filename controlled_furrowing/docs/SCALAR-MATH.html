@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SCALAR-MATH</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent mathematical review of the auxiliary scalar null</h1>
+<p><strong>Scope:</strong> derivation and numerical-root verification of the frozen scalar response. This is not completion of the coupled geometric prediction gates. A calibrated maximum-shortening curve is a homogeneous maximum proxy; it does not validate equilibrium kinetics, predict individual surface positions or establish a biological mechanism.</p>
+<h2>Derivation from the column energy</h2>
+<p>For the conditional volume-conserving column energy in MODEL-CANDIDATES,</p>
+<div class="math display" data-tex="
+E(A;I)=\Sigma A+\frac{K_b}{2A_0}(A-A_0)^2
++2(\sigma_{l0}+gI)V\sqrt\pi A^{-1/2},
+"></div>
+
+<p>equilibrium requires</p>
+<div class="math display" data-tex="
+\Sigma+K_b(A/A_0-1)
+-(\sigma_{l0}+gI)V\sqrt\pi A^{-3/2}=0.
+"></div>
+
+<p>Let <span class="math" data-tex="A_*"></span> be its unactivated equilibrium area, <span class="math" data-tex="h=V/A_*"></span>, <span class="math" data-tex="x=A/A_*"></span>, and introduce positive baseline effective tension and nonnegative stiffness</p>
+<div class="math display" data-tex="
+L_0=\Sigma+K_b(A_*/A_0-1)
+=\sigma_{l0}V\sqrt\pi A_*^{-3/2},
+\quad B=K_bA_*/A_0,\quad Q=V\sqrt\pi A_*^{-3/2}.
+"></div>
+
+<p>Subtract the unactivated equilibrium after multiplication by <span class="math" data-tex="x^{3/2}"></span>:</p>
+<div class="math display" data-tex="
+L_0(x^{3/2}-1)+B(x-1)x^{3/2}=gQI.
+"></div>
+
+<p>Therefore, with</p>
+<div class="math display" data-tex="
+\nu=\frac B{L_0+B},\qquad a=\frac{gQ}{L_0+B},
+"></div>
+
+<p>the implemented equation is exactly</p>
+<div class="math display" data-tex="
+F_\nu(x)=(1-\nu)(x^{3/2}-1)+\nu(x-1)x^{3/2}=aI,
+\qquad S=h(1-x^{-1}).
+"></div>
+
+<p>If <span class="math" data-tex="A_*=A_0"></span>, then <span class="math" data-tex="L_0=\Sigma"></span>, <span class="math" data-tex="B=K_b"></span>, giving the simpler <span class="math" data-tex="\nu=K_b/(\Sigma+K_b)"></span>. In general, fitted dimensionless parameters absorb baseline prestretch; they do not uniquely recover a physical basal modulus or active force.</p>
+<p>Positive baseline lateral tension implies <span class="math" data-tex="L_0&gt;0"></span> and hence <span class="math" data-tex="0\le\nu&lt;1"></span>. The declared grid endpoint <span class="math" data-tex="\nu=1"></span> is a limiting zero-baseline-tension case, not the interior of that strictly positive class. Its mathematical response is well defined and may be used as a clearly labeled limiting null/sensitivity case. No physical basal stiffness can be inferred merely because that endpoint gives the best scalar fit.</p>
+<h2>Root existence, sign and bracket</h2>
+<p>For <span class="math" data-tex="I,a\ge0"></span>, seek <span class="math" data-tex="x\ge1"></span>. We have <span class="math" data-tex="F_\nu(1)=0"></span>, unbounded growth, and</p>
+<div class="math display" data-tex="
+F&#x27;_\nu(x)=\sqrt x\left[\frac32(1-\nu)+\frac\nu2(5x-3)\right]
+\ge\frac32-\frac\nu2\ge1.
+"></div>
+
+<p>There is consequently exactly one root on this physical branch, with area expansion and shortening satisfying</p>
+<div class="math display" data-tex="
+x\ge1,\qquad 0\le S&lt;h.
+"></div>
+
+<p>The implementation's upper bracket <span class="math" data-tex="1+2aI"></span> is valid. A stronger elementary bound is</p>
+<div class="math display" data-tex="
+F_\nu(x)\ge(1-\nu)(x-1)+\nu(x-1)=x-1,
+\qquad 1\le x_*\le1+aI.
+"></div>
+
+<p>Thus the looser implemented upper bound is conservative, including <span class="math" data-tex="aI=0"></span>, where both endpoints are exactly one. Bisection uses monotonicity to select the bracket half. In exact arithmetic, after <span class="math" data-tex="n"></span> steps the interval has width <span class="math" data-tex="2aI/2^n"></span>. Since <span class="math" data-tex="dS/dx=h/x^2\le h"></span>, a root-interval width also bounds the range of shortening by <span class="math" data-tex="h"></span> times that width.</p>
+<p>These last statements are exact-arithmetic facts. Double-precision midpoints eventually stagnate and computed signs have rounding error; 60 iterations are <strong>not</strong> an interval-arithmetic certificate. The independent receipt compares production values against high-precision roots of a different polynomial representation,</p>
+<div class="math display" data-tex="
+\nu y^5+(1-2\nu)y^3-(1-\nu)-aI=0,\qquad y=\sqrt x\ge1,
+"></div>
+
+<p>and checks the closed form <span class="math" data-tex="x=(1+aI)^{2/3}"></span> at <span class="math" data-tex="\nu=0"></span>. Agreement is numerical verification over the recorded test range, not proof of a uniform floating-point enclosure.</p>
+<h2>Interpretation, fitting and observational equivalence</h2>
+<p>The predicted quantity is conditional equilibrium height loss for identical cells under an effective affine optical-dose-to-lateral-tension law. The source outcome is a maximum over space and time after cellularization-reference correction. Equating these quantities is an explicitly testable auxiliary null; it is not derived from the dynamic experiment. Fixed heights 32, 33.5 and 35 micrometres form a declared sensitivity analysis, not embryo-specific height measurements or a confidence set.</p>
+<p>The finite-grid fit selects a minimum only over the declared grid. It does not prove continuum optimality or uniqueness. At small dose,</p>
+<div class="math display" data-tex="
+S(I)=\frac{ha}{3/2-\nu/2}I+O(I^2).
+"></div>
+
+<p>A linear training response therefore constrains this combination, not <span class="math" data-tex="a"></span> and <span class="math" data-tex="\nu"></span> independently. Nonlinear data may provide additional information; no general impossibility theorem for that fit is asserted. More fundamentally, all physical parameter combinations yielding the same <span class="math" data-tex="(h,a,\nu)"></span> produce the same scalar curve. A common positive scaling of all energy/active-force parameters is one such equivalence.</p>
+<p>The homogeneous model contains no diameter variable, tissue embedding, compatible neighboring-cell forces or curvature. Conditional on dose, its response is identical at both activation sizes. This is the independent-column null being tested, not a successful derivation of size-dependent shape. Independent heterogeneous cells can also give diameter-dependent maxima through ordinary order statistics; rejecting the homogeneous null would not uniquely demonstrate mechanical coupling.</p>
+<p>The optical normalizer is supplied by the publication across experiments. Published outcomes were previously inspected. Prediction-file separation verifies computational withholding only; it is not human blinding or external preregistration. Both training and evaluation must use maximum shortening, and the repeated 18-micrometre panels cannot be counted as independent replicates.</p>
+<h2>Code-review boundary</h2>
+<p>Initial review requested rejection of nonfinite heights, intensities and gains rather than silently generating NaNs, explicit labeling of the limiting material endpoint, and propagation of the protocol iteration count to evaluation calls. The corrected version 2 implements these requirements; its NaN guard tests pass. At version 1's value of 60, the original default and declared iteration count already coincided, so that correction changes no valid version-1 response. Earlier files/locks must be retained, and version-2 predictions must be freshly frozen before evaluation scoring, with final source/protocol hashes recorded.</p>
+<p>The independent review receipt records these findings, 135 high-precision test cases, numerical discrepancies and the exact reviewed source/protocol hashes. Its maximum absolute shortening difference is less than 8.56e-15 micrometres across the declared cases. No held-out response was used in this mathematical review and no experimental score is calculated here. These checks do not validate a tissue shape, a biochemical mechanism or equilibrium-dynamics equivalence.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

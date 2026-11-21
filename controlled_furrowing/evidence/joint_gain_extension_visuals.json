@@ -1,0 +1,11 @@
+{
+  "scope": "Final complete direct-candidate figures, no new solves or heldout responses",
+  "generator_sha256": "044585adaae491e221a5699eaf4d6dba6d8df38139ce931437a098ba7d9aefa4",
+  "direct_results_sha256": "78c779112966adaa6819778637d3abf573afbc5af61ee74ea1ec28b8b5967dea",
+  "calibration_csv_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "figures": {
+    "joint-direct-endpoints.png": "6351d1273547d41294972b28a833d3be55557951650e9f78c895ff2d55cd8053",
+    "joint-direct-residuals.png": "f6048b43e298b31187cfd4b43ec22ee4939b90f4f0ae1cc1ba7d45c978d9d85a",
+    "joint-direct-surrogate-comparison.png": "7ab7243fd79df01a6402f07609b10ebdb78ff716a426e668007a25ee55459041"
+  }
+}

@@ -1,0 +1,1511 @@
+{
+  "status": "COMPLETE_BOTH_ORDERING_CLASSIFICATION_WITH_NONATTAINMENT",
+  "checks": {
+    "optoGEF2_small_col_B_exact_component_peaks": true,
+    "optoGEF2_small_col_B_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_B_line_mean_exact": true,
+    "optoGEF2_small_col_B_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_B_line_positive_height": true,
+    "optoGEF2_small_col_B_line_volume_exact": true,
+    "optoGEF2_small_col_B_disk_mean_exact": true,
+    "optoGEF2_small_col_B_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_B_disk_positive_height": true,
+    "optoGEF2_small_col_B_disk_volume_exact": true,
+    "optoGEF2_small_col_C_exact_component_peaks": true,
+    "optoGEF2_small_col_C_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_C_line_mean_exact": true,
+    "optoGEF2_small_col_C_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_C_line_positive_height": true,
+    "optoGEF2_small_col_C_line_volume_exact": true,
+    "optoGEF2_small_col_C_disk_mean_exact": true,
+    "optoGEF2_small_col_C_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_C_disk_positive_height": true,
+    "optoGEF2_small_col_C_disk_volume_exact": true,
+    "optoGEF2_small_col_D_exact_component_peaks": true,
+    "optoGEF2_small_col_D_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_D_line_mean_exact": true,
+    "optoGEF2_small_col_D_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_D_line_positive_height": true,
+    "optoGEF2_small_col_D_line_volume_exact": true,
+    "optoGEF2_small_col_D_disk_mean_exact": true,
+    "optoGEF2_small_col_D_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_D_disk_positive_height": true,
+    "optoGEF2_small_col_D_disk_volume_exact": true,
+    "optoGEF2_small_col_E_exact_component_peaks": true,
+    "optoGEF2_small_col_E_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_E_line_mean_exact": true,
+    "optoGEF2_small_col_E_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_E_line_positive_height": true,
+    "optoGEF2_small_col_E_line_volume_exact": true,
+    "optoGEF2_small_col_E_disk_mean_exact": true,
+    "optoGEF2_small_col_E_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_E_disk_positive_height": true,
+    "optoGEF2_small_col_E_disk_volume_exact": true,
+    "optoGEF2_small_col_F_exact_component_peaks": true,
+    "optoGEF2_small_col_F_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_F_line_mean_exact": true,
+    "optoGEF2_small_col_F_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_F_line_positive_height": true,
+    "optoGEF2_small_col_F_line_volume_exact": true,
+    "optoGEF2_small_col_F_disk_mean_exact": true,
+    "optoGEF2_small_col_F_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_F_disk_positive_height": true,
+    "optoGEF2_small_col_F_disk_volume_exact": true,
+    "optoGEF2_small_col_G_exact_component_peaks": true,
+    "optoGEF2_small_col_G_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_G_line_mean_exact": true,
+    "optoGEF2_small_col_G_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_G_line_positive_height": true,
+    "optoGEF2_small_col_G_line_volume_exact": true,
+    "optoGEF2_small_col_G_disk_mean_exact": true,
+    "optoGEF2_small_col_G_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_G_disk_positive_height": true,
+    "optoGEF2_small_col_G_disk_volume_exact": true,
+    "optoGEF2_small_col_H_exact_component_peaks": true,
+    "optoGEF2_small_col_H_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_H_line_mean_exact": true,
+    "optoGEF2_small_col_H_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_H_line_positive_height": true,
+    "optoGEF2_small_col_H_line_volume_exact": true,
+    "optoGEF2_small_col_H_disk_mean_exact": true,
+    "optoGEF2_small_col_H_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_H_disk_positive_height": true,
+    "optoGEF2_small_col_H_disk_volume_exact": true,
+    "optoGEF2_small_col_I_exact_component_peaks": true,
+    "optoGEF2_small_col_I_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_I_line_mean_exact": true,
+    "optoGEF2_small_col_I_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_I_line_positive_height": true,
+    "optoGEF2_small_col_I_line_volume_exact": true,
+    "optoGEF2_small_col_I_disk_mean_exact": true,
+    "optoGEF2_small_col_I_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_I_disk_positive_height": true,
+    "optoGEF2_small_col_I_disk_volume_exact": true,
+    "optoGEF2_small_col_J_exact_component_peaks": true,
+    "optoGEF2_small_col_J_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_J_line_mean_exact": true,
+    "optoGEF2_small_col_J_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_J_line_positive_height": true,
+    "optoGEF2_small_col_J_line_volume_exact": true,
+    "optoGEF2_small_col_J_disk_mean_exact": true,
+    "optoGEF2_small_col_J_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_J_disk_positive_height": true,
+    "optoGEF2_small_col_J_disk_volume_exact": true,
+    "optoGEF2_small_col_K_exact_component_peaks": true,
+    "optoGEF2_small_col_K_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_K_line_mean_exact": true,
+    "optoGEF2_small_col_K_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_K_line_positive_height": true,
+    "optoGEF2_small_col_K_line_volume_exact": true,
+    "optoGEF2_small_col_K_disk_mean_exact": true,
+    "optoGEF2_small_col_K_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_K_disk_positive_height": true,
+    "optoGEF2_small_col_K_disk_volume_exact": true,
+    "optoGEF2_small_col_L_exact_component_peaks": true,
+    "optoGEF2_small_col_L_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_L_line_mean_exact": true,
+    "optoGEF2_small_col_L_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_L_line_positive_height": true,
+    "optoGEF2_small_col_L_line_volume_exact": true,
+    "optoGEF2_small_col_L_disk_mean_exact": true,
+    "optoGEF2_small_col_L_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_L_disk_positive_height": true,
+    "optoGEF2_small_col_L_disk_volume_exact": true,
+    "optoGEF2_small_col_M_exact_component_peaks": true,
+    "optoGEF2_small_col_M_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_M_line_mean_exact": true,
+    "optoGEF2_small_col_M_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_M_line_positive_height": true,
+    "optoGEF2_small_col_M_line_volume_exact": true,
+    "optoGEF2_small_col_M_disk_mean_exact": true,
+    "optoGEF2_small_col_M_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_M_disk_positive_height": true,
+    "optoGEF2_small_col_M_disk_volume_exact": true,
+    "optoGEF2_small_col_N_exact_component_peaks": true,
+    "optoGEF2_small_col_N_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_N_line_mean_exact": true,
+    "optoGEF2_small_col_N_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_N_line_positive_height": true,
+    "optoGEF2_small_col_N_line_volume_exact": true,
+    "optoGEF2_small_col_N_disk_mean_exact": true,
+    "optoGEF2_small_col_N_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_N_disk_positive_height": true,
+    "optoGEF2_small_col_N_disk_volume_exact": true,
+    "optoGEF2_small_col_O_exact_component_peaks": true,
+    "optoGEF2_small_col_O_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_O_line_approximation_8": true,
+    "optoGEF2_small_col_O_line_approximation_32": true,
+    "optoGEF2_small_col_O_line_approximation_128": true,
+    "optoGEF2_small_col_O_line_approximation_512": true,
+    "optoGEF2_small_col_O_line_decreasing_mean_sequence": true,
+    "optoGEF2_small_col_O_disk_approximation_8": true,
+    "optoGEF2_small_col_O_disk_approximation_32": true,
+    "optoGEF2_small_col_O_disk_approximation_128": true,
+    "optoGEF2_small_col_O_disk_approximation_512": true,
+    "optoGEF2_small_col_O_disk_decreasing_mean_sequence": true,
+    "optoGEF2_small_col_P_exact_component_peaks": true,
+    "optoGEF2_small_col_P_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_P_line_mean_exact": true,
+    "optoGEF2_small_col_P_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_P_line_positive_height": true,
+    "optoGEF2_small_col_P_line_volume_exact": true,
+    "optoGEF2_small_col_P_disk_mean_exact": true,
+    "optoGEF2_small_col_P_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_P_disk_positive_height": true,
+    "optoGEF2_small_col_P_disk_volume_exact": true,
+    "optoGEF2_small_col_Q_exact_component_peaks": true,
+    "optoGEF2_small_col_Q_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_Q_line_mean_exact": true,
+    "optoGEF2_small_col_Q_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_Q_line_positive_height": true,
+    "optoGEF2_small_col_Q_line_volume_exact": true,
+    "optoGEF2_small_col_Q_disk_mean_exact": true,
+    "optoGEF2_small_col_Q_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_Q_disk_positive_height": true,
+    "optoGEF2_small_col_Q_disk_volume_exact": true,
+    "optoGEF2_small_col_R_exact_component_peaks": true,
+    "optoGEF2_small_col_R_instantaneous_mean_identity": true,
+    "optoGEF2_small_col_R_line_mean_exact": true,
+    "optoGEF2_small_col_R_line_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_R_line_positive_height": true,
+    "optoGEF2_small_col_R_line_volume_exact": true,
+    "optoGEF2_small_col_R_disk_mean_exact": true,
+    "optoGEF2_small_col_R_disk_ROI_profile_nonnegative": true,
+    "optoGEF2_small_col_R_disk_positive_height": true,
+    "optoGEF2_small_col_R_disk_volume_exact": true,
+    "all_seventeen_records_retained": true,
+    "actual_zero_mean_positive_max_boundary_is_O": true
+  },
+  "rows": [
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "77722063/25000000",
+        "V": "60944403/100000000",
+        "A": "3",
+        "B": "24355301/50000000"
+      },
+      "component_state1": [
+        "3",
+        "-239055597/100000000"
+      ],
+      "component_state2": [
+        "12233801/100000000",
+        "24355301/50000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 20,
+          "bump_mean_exact": "274877906944/1412926920405",
+          "nonnegative_baseline_exact": "653675643472421327/113804901346100000000",
+          "maximum_exact": "77722063/25000000",
+          "mean_exact": "60944403/100000000",
+          "core_polynomial_coefficients": [
+            "77722063/25000000",
+            "0",
+            "-70630478568348467769/1138049013461000000",
+            "0",
+            "1341979092798620887611/2276098026922000000",
+            "0",
+            "-4025937278395862662833/1138049013461000000",
+            "0",
+            "68440933732729665268161/4552196053844000000",
+            "0",
+            "-68440933732729665268161/1422561266826250000",
+            "0",
+            "68440933732729665268161/569024506730500000",
+            "0",
+            "-68440933732729665268161/284512253365250000",
+            "0",
+            "889732138525485648486093/2276098026922000000",
+            "0",
+            "-296577379508495216162031/569024506730500000",
+            "0",
+            "3262351174593447377782341/5690245067305000000",
+            "0",
+            "-296577379508495216162031/569024506730500000",
+            "0",
+            "889732138525485648486093/2276098026922000000",
+            "0",
+            "-68440933732729665268161/284512253365250000",
+            "0",
+            "68440933732729665268161/569024506730500000",
+            "0",
+            "-68440933732729665268161/1422561266826250000",
+            "0",
+            "68440933732729665268161/4552196053844000000",
+            "0",
+            "-4025937278395862662833/1138049013461000000",
+            "0",
+            "1341979092798620887611/2276098026922000000",
+            "0",
+            "-70630478568348467769/1138049013461000000",
+            "0",
+            "70630478568348467769/22760980269220000000"
+          ],
+          "core_integral_rS_dr_exact": "1911230290296027842424216646820564671/284512253365250000000000000000000000",
+          "annulus_coefficients": [
+            "653675643472421327/113804901346100000000",
+            "-299238828966036187410964638071286240893/11394979459253680989006191620389100000000",
+            "58447010111861362278068030731121603389/2848744864813420247251547905097275000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "759777937/25000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 5,
+          "bump_mean_exact": "1/6",
+          "nonnegative_baseline_exact": "27389083/250000000",
+          "maximum_exact": "77722063/25000000",
+          "mean_exact": "60944403/100000000",
+          "core_polynomial_coefficients": [
+            "77722063/25000000",
+            "0",
+            "-749831547/50000000",
+            "0",
+            "749831547/25000000",
+            "0",
+            "-749831547/25000000",
+            "0",
+            "749831547/50000000",
+            "0",
+            "-749831547/250000000"
+          ],
+          "core_integral_rS_dr_exact": "53337491517145288575751707/2000000000000000000000000",
+          "annulus_coefficients": [
+            "27389083/250000000",
+            "-949432629031403644676448247/2503182930715702765775000000",
+            "6751930888171811148558841097/25031829307157027657750000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "759777937/25000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "121538093/25000000",
+        "V": "13129681/10000000",
+        "A": "4",
+        "B": "21538093/25000000"
+      },
+      "component_state1": [
+        "4",
+        "-26870319/10000000"
+      ],
+      "component_state2": [
+        "22572219/50000000",
+        "21538093/25000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 11,
+          "bump_mean_exact": "524288/2028117",
+          "nonnegative_baseline_exact": "5700718797817/75191450000000",
+          "maximum_exact": "121538093/25000000",
+          "mean_exact": "13129681/10000000",
+          "core_polynomial_coefficients": [
+            "121538093/25000000",
+            "0",
+            "-3958287288102147/75191450000000",
+            "0",
+            "3958287288102147/15038290000000",
+            "0",
+            "-11874861864306441/15038290000000",
+            "0",
+            "11874861864306441/7519145000000",
+            "0",
+            "-83124033050145087/37595725000000",
+            "0",
+            "83124033050145087/37595725000000",
+            "0",
+            "-11874861864306441/7519145000000",
+            "0",
+            "11874861864306441/15038290000000",
+            "0",
+            "-3958287288102147/15038290000000",
+            "0",
+            "3958287288102147/75191450000000",
+            "0",
+            "-359844298918377/75191450000000"
+          ],
+          "core_integral_rS_dr_exact": "124933193768394481758450945841263/6015316000000000000000000000000",
+          "annulus_coefficients": [
+            "5700718797817/75191450000000",
+            "-3994019235208780532494422610449059/15057436334061058298210609900000000",
+            "570484775241665612509873963172801/3011487266812211659642121980000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "715961907/25000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 3,
+          "bump_mean_exact": "1/4",
+          "nonnegative_baseline_exact": "9758717/75000000",
+          "maximum_exact": "121538093/25000000",
+          "mean_exact": "13129681/10000000",
+          "core_polynomial_coefficients": [
+            "121538093/25000000",
+            "0",
+            "-177427781/12500000",
+            "0",
+            "177427781/12500000",
+            "0",
+            "-177427781/37500000"
+          ],
+          "core_integral_rS_dr_exact": "11490870604808839782261289/200000000000000000000000",
+          "annulus_coefficients": [
+            "9758717/75000000",
+            "-180742559887693808628243007/375477439607355414866250000",
+            "2637737044950470142672239713/7509548792147108297325000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "715961907/25000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "831533939/100000000",
+        "V": "207297287/50000000",
+        "A": "6",
+        "B": "231533939/100000000"
+      },
+      "component_state1": [
+        "6",
+        "-92702713/50000000"
+      ],
+      "component_state2": [
+        "36612127/20000000",
+        "231533939/100000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 3,
+          "bump_mean_exact": "16/35",
+          "nonnegative_baseline_exact": "603133533/950000000",
+          "maximum_exact": "831533939/100000000",
+          "mean_exact": "207297287/50000000",
+          "core_polynomial_coefficients": [
+            "831533939/100000000",
+            "0",
+            "-1751145333/76000000",
+            "0",
+            "1751145333/76000000",
+            "0",
+            "-583715111/76000000"
+          ],
+          "core_integral_rS_dr_exact": "16994251828761821768719759391/152000000000000000000000000",
+          "annulus_coefficients": [
+            "603133533/950000000",
+            "-816806439825113159834357064633/380483805468786820397800000000",
+            "575245869465456195402397507341/380483805468786820397800000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2518466061/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "412249783/200000000",
+          "maximum_exact": "831533939/100000000",
+          "mean_exact": "207297287/50000000",
+          "core_polynomial_coefficients": [
+            "831533939/100000000",
+            "0",
+            "-250163619/20000000",
+            "0",
+            "250163619/40000000"
+          ],
+          "core_integral_rS_dr_exact": "181423014134533934257841903/1000000000000000000000000",
+          "annulus_coefficients": [
+            "412249783/200000000",
+            "-135216818072051787615936921037/20025463445725622126200000000",
+            "23484838318044421905151794491/5006365861431405531550000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2518466061/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "14418011/1562500",
+        "V": "344582899/50000000",
+        "A": "8",
+        "B": "1420587/390625"
+      },
+      "component_state1": [
+        "8",
+        "-55417101/50000000"
+      ],
+      "component_state2": [
+        "162747763/50000000",
+        "1420587/390625"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "8/15",
+          "nonnegative_baseline_exact": "211104667/50000000",
+          "maximum_exact": "14418011/1562500",
+          "mean_exact": "344582899/50000000",
+          "core_polynomial_coefficients": [
+            "14418011/1562500",
+            "0",
+            "-50054337/5000000",
+            "0",
+            "50054337/10000000"
+          ],
+          "core_integral_rS_dr_exact": "128883161569668671537328689/500000000000000000000000",
+          "annulus_coefficients": [
+            "211104667/50000000",
+            "-68558687723877596114330018653/5006365861431405531550000000",
+            "740958496292573374261462559/78224466584865711430468750"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "37925739/1562500",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "114474469/20000000",
+          "maximum_exact": "14418011/1562500",
+          "mean_exact": "344582899/50000000",
+          "core_polynomial_coefficients": [
+            "14418011/1562500",
+            "0",
+            "-350380359/50000000",
+            "0",
+            "350380359/100000000"
+          ],
+          "core_integral_rS_dr_exact": "301573016514179845877300731/1000000000000000000000000",
+          "annulus_coefficients": [
+            "114474469/20000000",
+            "-185310107939696699200952107247/10012731722862811063100000000",
+            "1000000004523343174891931309/78224466584865711430468750"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "37925739/1562500",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "382404181/50000000",
+        "V": "16539897/6250000",
+        "A": "6",
+        "B": "182404181/50000000"
+      },
+      "component_state1": [
+        "6",
+        "-20960103/6250000"
+      ],
+      "component_state2": [
+        "-10017001/10000000",
+        "182404181/50000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 6,
+          "bump_mean_exact": "1024/3003",
+          "nonnegative_baseline_exact": "721575523/12368750000",
+          "maximum_exact": "382404181/50000000",
+          "mean_exact": "16539897/6250000",
+          "core_polynomial_coefficients": [
+            "382404181/50000000",
+            "0",
+            "-450603162009/9895000000",
+            "0",
+            "450603162009/3958000000",
+            "0",
+            "-150201054003/989500000",
+            "0",
+            "450603162009/3958000000",
+            "0",
+            "-450603162009/9895000000",
+            "0",
+            "150201054003/19790000000"
+          ],
+          "core_integral_rS_dr_exact": "98947351374446339355267801401/1979000000000000000000000000",
+          "annulus_coefficients": [
+            "721575523/12368750000",
+            "-1213056449970197864307517104463/4953799019886375773468725000000",
+            "924058764786860906303254364411/4953799019886375773468725000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "1292595819/50000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "14553347/100000000",
+          "maximum_exact": "382404181/50000000",
+          "mean_exact": "16539897/6250000",
+          "core_polynomial_coefficients": [
+            "382404181/50000000",
+            "0",
+            "-150051003/10000000",
+            "0",
+            "150051003/20000000"
+          ],
+          "core_integral_rS_dr_exact": "14475432894665598858654993/125000000000000000000000",
+          "annulus_coefficients": [
+            "14553347/100000000",
+            "-6009388765261884194167539113/10012731722862811063100000000",
+            "1138050293363645241550051789/2503182930715702765775000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "1292595819/50000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "636662153/50000000",
+        "V": "151029611/25000000",
+        "A": "13",
+        "B": "86662153/25000000"
+      },
+      "component_state1": [
+        "13",
+        "-173970389/25000000"
+      ],
+      "component_state2": [
+        "32183729/12500000",
+        "86662153/25000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 3,
+          "bump_mean_exact": "16/35",
+          "nonnegative_baseline_exact": "192739161/475000000",
+          "maximum_exact": "636662153/50000000",
+          "mean_exact": "151029611/25000000",
+          "core_polynomial_coefficients": [
+            "636662153/50000000",
+            "0",
+            "-7026661551/190000000",
+            "0",
+            "7026661551/190000000",
+            "0",
+            "-2342220517/190000000"
+          ],
+          "core_integral_rS_dr_exact": "11598811160767779793356954137/76000000000000000000000000",
+          "annulus_coefficients": [
+            "192739161/475000000",
+            "-279525347259005072803553274231/190241902734393410198900000000",
+            "202331526795698563907416791867/190241902734393410198900000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "1038337847/50000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "269515513/100000000",
+          "maximum_exact": "636662153/50000000",
+          "mean_exact": "151029611/25000000",
+          "core_polynomial_coefficients": [
+            "636662153/50000000",
+            "0",
+            "-1003808793/50000000",
+            "0",
+            "1003808793/100000000"
+          ],
+          "core_integral_rS_dr_exact": "132178513514198387735105459/500000000000000000000000",
+          "annulus_coefficients": [
+            "269515513/100000000",
+            "-88726043093764551538416124531/10012731722862811063100000000",
+            "15435044456394277003870351457/2503182930715702765775000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "1038337847/50000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "1049577729/100000000",
+        "V": "138155819/20000000",
+        "A": "9",
+        "B": "436972161/100000000"
+      },
+      "component_state1": [
+        "9",
+        "-41844181/20000000"
+      ],
+      "component_state2": [
+        "126903467/50000000",
+        "436972161/100000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "8/15",
+          "nonnegative_baseline_exact": "1965064593/700000000",
+          "maximum_exact": "1049577729/100000000",
+          "mean_exact": "138155819/20000000",
+          "core_polynomial_coefficients": [
+            "1049577729/100000000",
+            "0",
+            "-538197951/35000000",
+            "0",
+            "538197951/70000000"
+          ],
+          "core_integral_rS_dr_exact": "3289862590769354892516621547/14000000000000000000000000",
+          "annulus_coefficients": [
+            "1965064593/700000000",
+            "-643520197588634579596524670197/70089122060039677441700000000",
+            "223381775855289296715529841007/35044561030019838720850000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2300422271/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "255689889/50000000",
+          "maximum_exact": "1049577729/100000000",
+          "mean_exact": "138155819/20000000",
+          "core_polynomial_coefficients": [
+            "1049577729/100000000",
+            "0",
+            "-538197951/50000000",
+            "0",
+            "538197951/100000000"
+          ],
+          "core_integral_rS_dr_exact": "120911592553573129351588211/400000000000000000000000",
+          "annulus_coefficients": [
+            "255689889/50000000",
+            "-518616815475005564607339831/31289786633946284572187500",
+            "57377147847945181107654263001/5006365861431405531550000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2300422271/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "138419619/100000000",
+        "V": "46946903/100000000",
+        "A": "0",
+        "B": "138419619/100000000"
+      },
+      "component_state1": [
+        "0",
+        "46946903/100000000"
+      ],
+      "component_state2": [
+        "-22868179/25000000",
+        "138419619/100000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 7,
+          "bump_mean_exact": "2048/6435",
+          "nonnegative_baseline_exact": "18619941093/438700000000",
+          "maximum_exact": "138419619/100000000",
+          "mean_exact": "46946903/100000000",
+          "core_polynomial_coefficients": [
+            "138419619/100000000",
+            "0",
+            "-206019424611/21935000000",
+            "0",
+            "618058273833/21935000000",
+            "0",
+            "-206019424611/4387000000",
+            "0",
+            "206019424611/4387000000",
+            "0",
+            "-618058273833/21935000000",
+            "0",
+            "206019424611/21935000000",
+            "0",
+            "-29431346373/21935000000"
+          ],
+          "core_integral_rS_dr_exact": "161380739716746855766162923819/17548000000000000000000000000",
+          "annulus_coefficients": [
+            "18619941093/438700000000",
+            "-399673141247587169095507754367/2745365879262447008363731250000",
+            "4530405511364215272375017010189/43925854068199152133819700000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "3211580381/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "242109/20000000",
+          "maximum_exact": "138419619/100000000",
+          "mean_exact": "46946903/100000000",
+          "core_polynomial_coefficients": [
+            "138419619/100000000",
+            "0",
+            "-68604537/25000000",
+            "0",
+            "68604537/50000000"
+          ],
+          "core_integral_rS_dr_exact": "41087120674867267133174207/2000000000000000000000000",
+          "annulus_coefficients": [
+            "242109/20000000",
+            "-630792533815338000218064717/10012731722862811063100000000",
+            "254791955290404192017130411/5006365861431405531550000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "3211580381/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "772032047/100000000",
+        "V": "431605203/100000000",
+        "A": "8",
+        "B": "272032047/100000000"
+      },
+      "component_state1": [
+        "8",
+        "-368394797/100000000"
+      ],
+      "component_state2": [
+        "39893289/25000000",
+        "272032047/100000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "8/15",
+          "nonnegative_baseline_exact": "297821669/700000000",
+          "maximum_exact": "772032047/100000000",
+          "mean_exact": "431605203/100000000",
+          "core_polynomial_coefficients": [
+            "772032047/100000000",
+            "0",
+            "-255320133/17500000",
+            "0",
+            "255320133/35000000"
+          ],
+          "core_integral_rS_dr_exact": "1750326937556550752588044041/14000000000000000000000000",
+          "annulus_coefficients": [
+            "297821669/700000000",
+            "-105041095726808184993033579941/70089122060039677441700000000",
+            "37610505498642853252296258401/35044561030019838720850000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2577967953/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "261391781/100000000",
+          "maximum_exact": "772032047/100000000",
+          "mean_exact": "431605203/100000000",
+          "core_polynomial_coefficients": [
+            "772032047/100000000",
+            "0",
+            "-255320133/25000000",
+            "0",
+            "255320133/50000000"
+          ],
+          "core_integral_rS_dr_exact": "377733437700066899600786907/2000000000000000000000000",
+          "annulus_coefficients": [
+            "261391781/100000000",
+            "-85241399456728026249815340497/10012731722862811063100000000",
+            "29534470839792470112656608343/5006365861431405531550000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2577967953/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "631048581/50000000",
+        "V": "209579799/25000000",
+        "A": "13",
+        "B": "143145743/50000000"
+      },
+      "component_state1": [
+        "13",
+        "-115420201/25000000"
+      ],
+      "component_state2": [
+        "55202771/10000000",
+        "143145743/50000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "8/15",
+          "nonnegative_baseline_exact": "619502661/175000000",
+          "maximum_exact": "631048581/50000000",
+          "mean_exact": "209579799/25000000",
+          "core_polynomial_coefficients": [
+            "631048581/50000000",
+            "0",
+            "-635666949/35000000",
+            "0",
+            "635666949/70000000"
+          ],
+          "core_integral_rS_dr_exact": "2011564048278035935315830453/7000000000000000000000000",
+          "annulus_coefficients": [
+            "619502661/175000000",
+            "-101343376782586459784090968407/8761140257504959680212500000",
+            "140657614103246659652875047723/17522280515009919360425000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "1043951419/50000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "626430213/100000000",
+          "maximum_exact": "631048581/50000000",
+          "mean_exact": "209579799/25000000",
+          "core_polynomial_coefficients": [
+            "631048581/50000000",
+            "0",
+            "-635666949/50000000",
+            "0",
+            "635666949/100000000"
+          ],
+          "core_integral_rS_dr_exact": "183420629312383528205256831/500000000000000000000000",
+          "annulus_coefficients": [
+            "626430213/100000000",
+            "-203253206612172264886850635959/10012731722862811063100000000",
+            "35132607488381046961621435389/2503182930715702765775000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "1043951419/50000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "972802387/100000000",
+        "V": "78522659/20000000",
+        "A": "7",
+        "B": "191783337/50000000"
+      },
+      "component_state1": [
+        "7",
+        "-61477341/20000000"
+      ],
+      "component_state2": [
+        "9046621/100000000",
+        "191783337/50000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 5,
+          "bump_mean_exact": "256/693",
+          "nonnegative_baseline_exact": "1212821177/2300000000",
+          "maximum_exact": "972802387/100000000",
+          "mean_exact": "78522659/20000000",
+          "core_polynomial_coefficients": [
+            "972802387/100000000",
+            "0",
+            "-5290408431/115000000",
+            "0",
+            "5290408431/57500000",
+            "0",
+            "-5290408431/57500000",
+            "0",
+            "5290408431/115000000",
+            "0",
+            "-5290408431/575000000"
+          ],
+          "core_integral_rS_dr_exact": "4148156407086569405328947339/46000000000000000000000000",
+          "annulus_coefficients": [
+            "1212821177/2300000000",
+            "-17820925535445277579163123803/10012731722862811063100000000",
+            "144222378292082130544988107391/115146414812922327225650000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2377197613/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "102518749/100000000",
+          "maximum_exact": "972802387/100000000",
+          "mean_exact": "78522659/20000000",
+          "core_polynomial_coefficients": [
+            "972802387/100000000",
+            "0",
+            "-435141819/25000000",
+            "0",
+            "435141819/50000000"
+          ],
+          "core_integral_rS_dr_exact": "68721678319109831107712171/400000000000000000000000",
+          "annulus_coefficients": [
+            "102518749/100000000",
+            "-1384189127975128072205998729/400509268914512442524000000",
+            "12169900448186550458513123803/5006365861431405531550000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2377197613/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "12",
+        "V": "49035501/12500000",
+        "A": "12",
+        "B": "56849631/25000000"
+      },
+      "component_state1": [
+        "12",
+        "-100964499/12500000"
+      ],
+      "component_state2": [
+        "41221371/25000000",
+        "56849631/25000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 7,
+          "bump_mean_exact": "2048/6435",
+          "nonnegative_baseline_exact": "1668689787/10967500000",
+          "maximum_exact": "12",
+          "mean_exact": "49035501/12500000",
+          "core_polynomial_coefficients": [
+            "12",
+            "0",
+            "-909589171491/10967500000",
+            "0",
+            "2728767514473/10967500000",
+            "0",
+            "-909589171491/2193500000",
+            "0",
+            "909589171491/2193500000",
+            "0",
+            "-2728767514473/10967500000",
+            "0",
+            "909589171491/10967500000",
+            "0",
+            "-129941310213/10967500000"
+          ],
+          "core_integral_rS_dr_exact": "125405664406680754236699220821/1754800000000000000000000000",
+          "annulus_coefficients": [
+            "1668689787/10967500000",
+            "-2495021687004019983298814174403/4392585406819915213381970000000",
+            "365339192073507298874918174403/878517081363983042676394000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "43/2",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 3,
+          "bump_mean_exact": "1/4",
+          "nonnegative_baseline_exact": "3845167/3125000",
+          "maximum_exact": "12",
+          "mean_exact": "49035501/12500000",
+          "core_polynomial_coefficients": [
+            "12",
+            "0",
+            "-100964499/3125000",
+            "0",
+            "100964499/3125000",
+            "0",
+            "-33654833/3125000"
+          ],
+          "core_integral_rS_dr_exact": "42915025660789052525488869/250000000000000000000000",
+          "annulus_coefficients": [
+            "3845167/3125000",
+            "-2569929157886452016083170377/625795732678925691443750000",
+            "1799916645874347483541829623/625795732678925691443750000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "43/2",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "335013163/50000000",
+        "V": "70862683/25000000",
+        "A": "8",
+        "B": "140052651/100000000"
+      },
+      "component_state1": [
+        "8",
+        "-129137317/25000000"
+      ],
+      "component_state2": [
+        "143398081/100000000",
+        "140052651/100000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 4,
+          "bump_mean_exact": "128/315",
+          "nonnegative_baseline_exact": "880902713/4675000000",
+          "maximum_exact": "335013163/50000000",
+          "mean_exact": "70862683/25000000",
+          "core_polynomial_coefficients": [
+            "335013163/50000000",
+            "0",
+            "-12177131211/467500000",
+            "0",
+            "36531393633/935000000",
+            "0",
+            "-12177131211/467500000",
+            "0",
+            "12177131211/1870000000"
+          ],
+          "core_integral_rS_dr_exact": "12199117195946823477464912053/187000000000000000000000000",
+          "annulus_coefficients": [
+            "880902713/4675000000",
+            "-158113518673359531652527472837/234047604021918208599962500000",
+            "228024611954608919382142903771/468095208043836417199925000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "1339986837/50000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "18032587/20000000",
+          "maximum_exact": "335013163/50000000",
+          "mean_exact": "70862683/25000000",
+          "core_polynomial_coefficients": [
+            "335013163/50000000",
+            "0",
+            "-579863391/50000000",
+            "0",
+            "579863391/100000000"
+          ],
+          "core_integral_rS_dr_exact": "62017799294787671466517027/500000000000000000000000",
+          "annulus_coefficients": [
+            "18032587/20000000",
+            "-30109332544219133264674718573/10012731722862811063100000000",
+            "5270389937302489196669764147/2503182930715702765775000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "1339986837/50000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "status": "NONATTAINMENT_BOUNDARY_RETAINED",
+      "observed_exact": {
+        "M": "120752823/50000000",
+        "V": "0",
+        "A": "2",
+        "B": "20752823/50000000"
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "583168051/100000000",
+        "V": "279789867/100000000",
+        "A": "6",
+        "B": "6184669/3125000"
+      },
+      "component_state1": [
+        "6",
+        "-320210133/100000000"
+      ],
+      "component_state2": [
+        "81880459/100000000",
+        "6184669/3125000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 3,
+          "bump_mean_exact": "16/35",
+          "nonnegative_baseline_exact": "461956529/1900000000",
+          "maximum_exact": "583168051/100000000",
+          "mean_exact": "279789867/100000000",
+          "core_polynomial_coefficients": [
+            "583168051/100000000",
+            "0",
+            "-796367733/47500000",
+            "0",
+            "796367733/47500000",
+            "0",
+            "-265455911/47500000"
+          ],
+          "core_integral_rS_dr_exact": "2727520793963854703466341791/38000000000000000000000000",
+          "annulus_coefficients": [
+            "461956529/1900000000",
+            "-163006470206582650732721849741/190241902734393410198900000000",
+            "58376001140781854656898544971/95120951367196705099450000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2766831949/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "5124031/4000000",
+          "maximum_exact": "583168051/100000000",
+          "mean_exact": "279789867/100000000",
+          "core_polynomial_coefficients": [
+            "583168051/100000000",
+            "0",
+            "-113766819/12500000",
+            "0",
+            "113766819/25000000"
+          ],
+          "core_integral_rS_dr_exact": "244867271202832334091223923/2000000000000000000000000",
+          "annulus_coefficients": [
+            "5124031/4000000",
+            "-6018988796079898023590219809/1430390246123258723300000000",
+            "2093323902635798071893907117/715195123061629361650000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "2766831949/100000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "49233871/10000000",
+        "V": "151460771/100000000",
+        "A": "4",
+        "B": "58266129/50000000"
+      },
+      "component_state1": [
+        "4",
+        "-248539229/100000000"
+      ],
+      "component_state2": [
+        "34928513/100000000",
+        "58266129/50000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 8,
+          "bump_mean_exact": "32768/109395",
+          "nonnegative_baseline_exact": "87219238853/1532540000000",
+          "maximum_exact": "49233871/10000000",
+          "mean_exact": "151460771/100000000",
+          "core_polynomial_coefficients": [
+            "49233871/10000000",
+            "0",
+            "-7458068427381/191567500000",
+            "0",
+            "52206478991667/383135000000",
+            "0",
+            "-52206478991667/191567500000",
+            "0",
+            "52206478991667/153254000000",
+            "0",
+            "-52206478991667/191567500000",
+            "0",
+            "52206478991667/383135000000",
+            "0",
+            "-7458068427381/191567500000",
+            "0",
+            "7458068427381/1532540000000"
+          ],
+          "core_integral_rS_dr_exact": "400787109552407222136159138689/15325400000000000000000000000",
+          "annulus_coefficients": [
+            "87219238853/1532540000000",
+            "-32495917376377395047386497395483/153449118745561724666432740000000",
+            "594072224482589446418779996231/3836227968639043116660818500000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "285766129/10000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 3,
+          "bump_mean_exact": "1/4",
+          "nonnegative_baseline_exact": "56752187/150000000",
+          "maximum_exact": "49233871/10000000",
+          "mean_exact": "151460771/100000000",
+          "core_polynomial_coefficients": [
+            "49233871/10000000",
+            "0",
+            "-340877939/25000000",
+            "0",
+            "340877939/25000000",
+            "0",
+            "-340877939/75000000"
+          ],
+          "core_integral_rS_dr_exact": "132555857317903091555443499/2000000000000000000000000",
+          "annulus_coefficients": [
+            "56752187/150000000",
+            "-686005523337900183422678267/536396342296222021237500000",
+            "1932244346041968692549684497/2145585369184888084950000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "285766129/10000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "status": "EXACT_BOTH_ORDERING_WITNESS",
+      "observed_exact": {
+        "M": "259169279/25000000",
+        "V": "243760223/50000000",
+        "A": "9",
+        "B": "84169279/25000000"
+      },
+      "component_state1": [
+        "9",
+        "-206239777/50000000"
+      ],
+      "component_state2": [
+        "15084333/10000000",
+        "84169279/25000000"
+      ],
+      "profiles": {
+        "line": {
+          "degree_parameter": 3,
+          "bump_mean_exact": "16/35",
+          "nonnegative_baseline_exact": "238190877/950000000",
+          "maximum_exact": "259169279/25000000",
+          "mean_exact": "243760223/50000000",
+          "core_polynomial_coefficients": [
+            "259169279/25000000",
+            "0",
+            "-1153229007/38000000",
+            "0",
+            "1153229007/38000000",
+            "0",
+            "-384409669/38000000"
+          ],
+          "core_integral_rS_dr_exact": "9244560193832709993844067977/76000000000000000000000000",
+          "annulus_coefficients": [
+            "238190877/950000000",
+            "-178954102776160397011841337801/190241902734393410198900000000",
+            "131255275771472118655739511027/190241902734393410198900000000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "578330721/25000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        },
+        "disk": {
+          "degree_parameter": 2,
+          "bump_mean_exact": "1/3",
+          "nonnegative_baseline_exact": "212942111/100000000",
+          "maximum_exact": "259169279/25000000",
+          "mean_exact": "243760223/50000000",
+          "core_polynomial_coefficients": [
+            "259169279/25000000",
+            "0",
+            "-164747001/10000000",
+            "0",
+            "164747001/20000000"
+          ],
+          "core_integral_rS_dr_exact": "213334747515369768518769287/1000000000000000000000000",
+          "annulus_coefficients": [
+            "212942111/100000000",
+            "-10022196640868486561636948807/1430390246123258723300000000",
+            "872036681904440471781284993/178798780765407340412500000"
+          ],
+          "total_integral_rS_dr_exact": "0",
+          "minimum_height_lower_exact": "578330721/25000000",
+          "factorization": "S=C+(M-C)*(1-(r/R)^2)^p >=0 onROI; J=1a.e. through compensated radial transport"
+        }
+      }
+    }
+  ],
+  "nonattainment_boundary_rows": [
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "maximum_exact": "120752823/50000000",
+      "reported_mean_exact": "0",
+      "status": "EXACT_NONATTAINMENT_UNDER_INITIAL_ZERO_AND_LOCAL_PEAK_MEAN",
+      "infimum_mean_error_exact": "0",
+      "approximating_sequences": {
+        "line": [
+          {
+            "p": 8,
+            "mean_error_exact": "10304240896/14244140625",
+            "mean_error_display": 0.7234020757921295,
+            "core_profile": "M*(1-(r/R)^2)^p",
+            "component_state1": [
+              "2",
+              "-18184040354/14244140625"
+            ],
+            "component_state2": [
+              "562191143993/1823250000000",
+              "20752823/50000000"
+            ]
+          },
+          {
+            "p": 32,
+            "mean_error_exact": "61710339706863598174208/165005221023476818359375",
+            "mean_error_display": 0.37399022481890737,
+            "core_profile": "M*(1-(r/R)^2)^p",
+            "component_state1": [
+              "2",
+              "-268300102340090038544542/165005221023476818359375"
+            ],
+            "component_state2": [
+              "-867346331220258169100441/21120668291005032750000000",
+              "20752823/50000000"
+            ]
+          },
+          {
+            "p": 128,
+            "mean_error_exact": "387362080465255084802079930759356837301812401084408499863607786395034484230586368/2053614413822093900832592708292619307055123015580142733793728110852977225943359375",
+            "mean_error_display": 0.18862454307783824,
+            "core_profile": "M*(1-(r/R)^2)^p",
+            "component_state1": [
+              "2",
+              "-3719866747178932716863105485825881776808433630075876967723848435310919967656132382/2053614413822093900832592708292619307055123015580142733793728110852977225943359375"
+            ],
+            "component_state2": [
+              "-59520492587611939771531142574897968180753917776231729858501039807755497424650820441/262862644969228019306571866661455271303055745994258269925597198189181084920750000000",
+              "20752823/50000000"
+            ]
+          },
+          {
+            "p": 512,
+            "mean_error_exact": "1111620403315252375756050826960557091139553733463152853374374290908948538281671971246396560942855974693098204186860998770210407047004771536742880791805810698789088184732664309345259428237392839808961837160744391140901533320891088833489079898383318423553061946928516055132173790314896058244353004178887292223488/11760807480886472283283724843586558532134913171428947788635957473667194139915057167103736010745674586025946802235228720211605284895920155822323902621396550726183934000483234389378857854680898746809504688969332202127692569439862601165259848905351514489499490385534062546256839081176862757715960056033285498046875",
+            "mean_error_display": 0.09451905450555542,
+            "core_profile": "M*(1-(r/R)^2)^p",
+            "component_state1": [
+              "2",
+              "-22409994558457692190811398860212559973130272609394742723897540656425439741548442362961075460548493197358795400283596441653000162744835540107904924450987290753578779816233804469412456281124404653810047540777920013114483605558834113497030617912319710555445918824139609037381504372038829457187567107887683703870262/11760807480886472283283724843586558532134913171428947788635957473667194139915057167103736010745674586025946802235228720211605284895920155822323902621396550726183934000483234389378857854680898746809504688969332202127692569439862601165259848905351514489499490385534062546256839081176862757715960056033285498046875"
+            ],
+            "component_state2": [
+              "-482531675704704572420071575325764300389268424944322477734616889193203235784219693725351495737826006949733983193243279504787063477655976548034466202062817523434399330608837791444555636706515894228509116594722263198492545602447675557447110139956064798220454874149796755806179339457027229680521095959000298081943661/1505383357553468452260316779979079492113268885942905316945402556629400849909127317389278209375446347011321190686109276187085476466677779945257459535538758492951543552061854001840493805399155039591616600188074521872344648888302412949153260659884993854655934769348360005920875402390638432987642887172260543750000000",
+              "20752823/50000000"
+            ]
+          }
+        ],
+        "disk": [
+          {
+            "p": 8,
+            "mean_error_exact": "40250941/150000000",
+            "mean_error_display": 0.2683396066666667,
+            "core_profile": "M*(1-(r/R)^2)^p",
+            "component_state1": [
+              "2",
+              "-259749059/150000000"
+            ],
+            "component_state2": [
+              "-2750941/18750000",
+              "20752823/50000000"
+            ]
+          },
+          {
+            "p": 32,
+            "mean_error_exact": "40250941/550000000",
+            "mean_error_display": 0.0731835290909091,
+            "core_profile": "M*(1-(r/R)^2)^p",
+            "component_state1": [
+              "2",
+              "-1059749059/550000000"
+            ],
+            "component_state2": [
+              "-5875941/17187500",
+              "20752823/50000000"
+            ]
+          },
+          {
+            "p": 128,
+            "mean_error_exact": "40250941/2150000000",
+            "mean_error_display": 0.018721367906976743,
+            "core_profile": "M*(1-(r/R)^2)^p",
+            "component_state1": [
+              "2",
+              "-4259749059/2150000000"
+            ],
+            "component_state2": [
+              "-6657191/16796875",
+              "20752823/50000000"
+            ]
+          },
+          {
+            "p": 512,
+            "mean_error_exact": "40250941/8550000000",
+            "mean_error_display": 0.0047077123976608185,
+            "core_profile": "M*(1-(r/R)^2)^p",
+            "component_state1": [
+              "2",
+              "-17059749059/8550000000"
+            ],
+            "component_state2": [
+              "-27410014/66796875",
+              "20752823/50000000"
+            ]
+          }
+        ]
+      },
+      "caveat": "Continuity, nonnegative normalized full-support weights and pointwise-zero initial reference are model assumptions, not verified source implementation."
+    }
+  ],
+  "script_sha256": "65fd57848c88a2ed3e788c09dc70331c910d9d273fc811052f97e9dc96386ad2",
+  "source_csv_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "proof": [
+    "OnROI Sstar>=0, so ramp0->Sstar thenhold gives sup_t S(t,r)=Sstar(r) pointwise.",
+    "For V>0, both sup_t mean(S) andmean(sup_t S) therefore equalV.",
+    "Component means follow0->(A,V-A)->(V-B,B); their separatepeaks areA,B.",
+    "The maximum spatialheightshortening isM; annuluscompensation andradialtransport giveJ=1a.e.,positiveheight,fixedrim.",
+    "For V=0<M, continuity+pointwisezero initial reference imply mean(sup_tS)>0, so exact matching is impossible in this class.",
+    "M*(1-(r/R)^2)^p has fixed positive maximumM and mean->0 by dominated convergence, so the nonattained error infimum is zero.",
+    "Each record/weight usesitsownpath. No common constitutive/activation law or timescale is realized."
+  ],
+  "scope": "Sixteen exact both-ordering kinematic witnesses plus one retained nonattainment boundary; no fully source-aligned dynamics, measured error or common material fit."
+}

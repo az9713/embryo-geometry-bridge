@@ -1,0 +1,164 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MATERIAL-COHORT-DIRECT-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the actual material/gain replay</h1>
+<p><strong>Verdict: PASS for the completed seventeen-record nonlinear candidate replay.</strong> The new-material zero state and all seventeen requested input states pass fresh Q8/Q12 force checks, exact stored-P2 geometry checks, nodal/boundary reconstruction and continuation provenance. The primary conditional discrepancy strictly decreases for the saved fields, from approximately 5.379835675 to 5.186387251 micrometres.</p>
+<p>This is a directly evaluated improvement of one predeclared <strong>joint material/gain candidate</strong> at one finite-element scenario. It is not a nonlinear optimum, a verified exact-root/continuum statement, an improvement under every observation convention or a completed physical parameter inference.</p>
+<p>The independent program and exact endpoint/residual intervals are retained in <code>evidence/material_cohort_direct_independent_review.json</code>. All <strong>427 numerical/provenance checks pass</strong> before final packaging checks. The reviewer launched no equilibrium calculation, restarted no job and edited no physical source.</p>
+<h2>One frozen proposal and all seventeen records</h2>
+<p>The sole job completed all seventeen records under frozen driver <code>448675cc6f59973c07a372f119aea5dd9be0f915398f57a3f9bd7d5cfe91074e</code> and protocol <code>1ed458c8f0f7b9c9bacfdf0c04b907d474d06e5607ced5956ecc2d2f1adac953</code>. The terminal results hash is <code>638a95bc97055e33a10e4f6c34f4750629b23f53688d19b3c8f9e7ca1ecce2b7</code>.</p>
+<p>The proposed ratios and common gain, displayed approximately, are:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Previous</th>
+<th style="text-align: right;">New</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apical area coefficient</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.2210341836</td>
+</tr>
+<tr>
+<td>Basal area coefficient</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1.8096748361</td>
+</tr>
+<tr>
+<td>Apical baseline tension</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Basal baseline tension</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2.2103418362</td>
+</tr>
+<tr>
+<td>Common activation gain</td>
+<td style="text-align: right;">8.0629720200</td>
+<td style="text-align: right;">7.8126545043</td>
+</tr>
+</tbody>
+</table>
+<p>The finite logarithmic-volume coefficient remains 5000, shear coefficient remains the force unit, and geometry/discretization remain unchanged. The five-coordinate step is transformed using the declared stored binary64 exponential/multiplication rule; the review independently reconstructs that rule. The displayed decimals are not measured material constants or exact transcendental values.</p>
+<p>All seventeen unique source-column records are retained, including I and O. Every requested strength is the exact retained gain-times-dose product; actual solver inputs and their rational binary64 rounding differences match the protocol. No per-record gain or post-result material refit is introduced. The other three convention-specific affine proposals are not separately solved.</p>
+<h2>Mechanical and geometric verification</h2>
+<p>The driver first solves and certifies a <strong>new-material zero</strong> field. Its Q8/Q12 force residuals independently replay at about 1.00e-12 and 5.23e-13. It is not an old-material field relabeled as a valid new-material initializer.</p>
+<p>Across all seventeen nonzero targets:</p>
+<table>
+<thead>
+<tr>
+<th>Independent check</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fresh Q8 normalized force</td>
+<td>Maximum 1.162e-10, below 1e-7</td>
+</tr>
+<tr>
+<td>Fresh Q12/surface-16 force on the same field</td>
+<td>Maximum 1.161e-10, below 1e-7</td>
+</tr>
+<tr>
+<td>Exact determinant/global-embedding certificates</td>
+<td>All targets and zero pass</td>
+</tr>
+<tr>
+<td>Reference/current node and connectivity reconstruction</td>
+<td>Bit-for-bit match</td>
+</tr>
+<tr>
+<td>Stored P2 boundary controls versus actual nodes</td>
+<td>Bit-for-bit match</td>
+</tr>
+<tr>
+<td>Fixed coefficients, axis radius and clamped outer rim</td>
+<td>Preserved</td>
+</tr>
+<tr>
+<td>Exact boundary radial monotonicity</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>Observer reporting intervals</td>
+<td>Resolved on all states</td>
+</tr>
+</tbody>
+</table>
+<p>Exact rational certificate recomputation covers 2592 triangle instances across the eighteen fields. One outward common enclosure for all nonzero targets is</p>
+<div class="math display" data-tex="
+ 0.95829100124&lt;J&lt;1.02340430069.
+"></div>
+
+<p>The exact fractions, field hashes and canonical hashes of the independently recomputed geometry certificates are in the receipt. These certificates concern the stored discrete maps. They do not enclose a continuum solution or establish that each floating small-residual field contains an exact root.</p>
+<p>The Q12 check is a force evaluation with higher numerical integration at the same coordinates, without reoptimization. Agreement supports this integration check; it is not a rigorous continuum or uniform quadrature-error bound. No energetic stability or global/unique equilibrium proof is supplied.</p>
+<h2>Verified continuation and retained attempts</h2>
+<p>The targets are reached in ascending input order from the new-material zero. All seventeen requested increments are accepted and there are zero rejected attempts. For every retained attempt, the review independently checks parameters, input strength, initial verified-vector hash, final-vector hash, fresh force and local orientation screen. The next initializer is exactly the preceding verified vector, and each final target matches its chain endpoint.</p>
+<p>Every accepted target additionally has the full Q12 and exact geometry certification. Original-material fields appear only as the baseline comparison, never as verified new-material warm starts.</p>
+<p>The old baseline fields were selected from a different, denser input-continuation history. No uniqueness or branch-identity theorem connects those old and new paths. The verified statement is that the declared solver/continuation procedure produced these new stationary-tolerance fields and their observed loss; it is not a proof of a unique local material branch.</p>
+<h2>All four operators on the same new fields</h2>
+<p>The independent audit reobserves each new field and each corresponding old baseline field under all four declared conventions. Every comparison uses the same seventeen source vectors, common fixed current-radius ROI, reference heights and canonical source-column pairing. The old comparison for alternate conventions is at the <strong>same original primary common gain</strong>, not their separately selected old gains.</p>
+<p>The following are approximate micrometre losses; the receipt retains exact rational observer/residual intervals:</p>
+<table>
+<thead>
+<tr>
+<th>Conditional observation convention</th>
+<th style="text-align: right;">Old same baseline</th>
+<th style="text-align: right;">New primary proposal</th>
+<th style="text-align: right;">Old minus new</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk / spatial-max components</td>
+<td style="text-align: right;">5.379836</td>
+<td style="text-align: right;">5.186387</td>
+<td style="text-align: right;">+0.193448</td>
+</tr>
+<tr>
+<td>Disk / regional-mean components</td>
+<td style="text-align: right;">6.467716</td>
+<td style="text-align: right;">6.528489</td>
+<td style="text-align: right;">-0.060772</td>
+</tr>
+<tr>
+<td>Line / spatial-max components</td>
+<td style="text-align: right;">6.183270</td>
+<td style="text-align: right;">5.978243</td>
+<td style="text-align: right;">+0.205027</td>
+</tr>
+<tr>
+<td>Line / regional-mean components</td>
+<td style="text-align: right;">6.183270</td>
+<td style="text-align: right;">6.064266</td>
+<td style="text-align: right;">+0.119004</td>
+</tr>
+</tbody>
+</table>
+<p>Thus one convention worsens. The primary proposal was selected before these nonlinear results; the audit does not switch conventions afterward to manufacture an improvement.</p>
+<p>For an observed value y and predicted interval [l,u], the independent residual bounds are</p>
+<div class="math display" data-tex="
+ \inf_{x\in[l,u]}&#124;x-y&#124;=\max(l-y,y-u,0),\qquad
+ \sup_{x\in[l,u]}&#124;x-y&#124;=\max(&#124;l-y&#124;,&#124;u-y&#124;).
+"></div>
+
+<p>Taking maxima over all 68 channels gives the reported discrepancy enclosure. The primary decrease is rigorously enclosed for these stored fields by the outward interval</p>
+<div class="math display" data-tex="
+ \Delta_{\rm old}-\Delta_{\rm new}
+ \in[0.193448423,\,0.193448424]\;\mu\mathrm m.
+"></div>
+
+<p>The new worst channel is the apical component of source-column M; the regional-mean height channel of source-column L is close behind. The residual remains above five micrometres, and no experimental discrepancy/noise budget has been established here.</p>
+<h2>What the affine prediction learned</h2>
+<p>The primary affine prediction was approximately 5.183862986 micrometres. The actual new discrepancy is higher by about 0.002524265 micrometres. A direct nonlinear replay was necessary to establish that this particular proposed improvement survives the finite step. The difference at this one step is an empirical surrogate check, not a bound on all future nonlinear remainders.</p>
+<p>Gain changes together with the material coefficients, and the old gain was a verified surrogate-selected candidate rather than a certified nonlinear gain optimum. Consequently this result does not isolate the benefit of material-ratio changes or prove improvement beyond reoptimizing gain alone. It demonstrates a lower-loss joint candidate under the primary conditional operator.</p>
+<h2>Prelaunch documentary provenance, kept distinct from numerical correctness</h2>
+<p>The launch job captured review SHA <code>3fdef9e44a23a572b12e6fc11bec47f5f753eaecb5aefa0f1277609eed90879c</code>. The final documentary review SHA is <code>cdcb914af204518ab0cc82f1167d25629699b641058ab7bbde2fabb4baddf5b4</code>.</p>
+<p>The reviewer independently checked that both recovered launch files are byte-identical and match the captured hash. The later file adds only <code>prelaunch_revision_archive_hashes</code>; every original key/value, PASS10 check and driver/protocol/candidate/affine binding is unchanged. All appended archive hashes match their retained files. The launch and final documentary hashes are deliberately distinguished, with the recovery addendum retained. No source, numerical policy, parameter or launch was changed by that documentary update.</p>
+<p>This resolves the review-file chronology; it is not used as a substitute for the independent force/geometry/observation replay above.</p>
+<h2>Limits of the completed component</h2>
+<p>The component now establishes an actual discrete primary loss decrease, rather than only an affine proposal. It leaves unresolved exact-root enclosures, spatial convergence, physically constrained material/geometry uncertainty, source temporal-peak semantics and larger-region prediction. Reobserving four static conventions is not four independent data sets or an experimental validation.</p>
+<p>The earlier continuum/mesh adequacy deficit is not cleared by force convergence at this one grid. No full compatible set, global nonlinear optimum, biological mechanism or confirmed novelty is established. The scientific advance within this workflow is a fully checked local candidate update and a clear account of where its interpretation stops.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

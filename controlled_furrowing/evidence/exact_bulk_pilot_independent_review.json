@@ -1,0 +1,78 @@
+{
+  "status": "PASS_INDEPENDENT_POINT_BULK_PILOT",
+  "checks": {
+    "element0_direct_gradient_moment_vs_dual": true,
+    "element0_direct_H00_moment_vs_dual": true,
+    "element0_same_chart_global_free_projection": true,
+    "element0_all_force_intervals_overlap": true,
+    "element0_all_Hessian_intervals_overlap": true,
+    "element6_direct_gradient_moment_vs_dual": true,
+    "element6_direct_H00_moment_vs_dual": true,
+    "element6_same_chart_global_free_projection": true,
+    "element6_all_force_intervals_overlap": true,
+    "element6_all_Hessian_intervals_overlap": true,
+    "element72_direct_gradient_moment_vs_dual": true,
+    "element72_direct_H00_moment_vs_dual": true,
+    "element72_same_chart_global_free_projection": true,
+    "element72_all_force_intervals_overlap": true,
+    "element72_all_Hessian_intervals_overlap": true,
+    "element66_direct_gradient_moment_vs_dual": true,
+    "element66_direct_H00_moment_vs_dual": true,
+    "element66_same_chart_global_free_projection": true,
+    "element66_all_force_intervals_overlap": true,
+    "element66_all_Hessian_intervals_overlap": true,
+    "all_frozen_inputs_still_match": true
+  },
+  "protocol_sha256": "9c7d96952c6bf003da27a16a7bd3ae71f656cfbbc89e758e8c95d72dd40eda34",
+  "review_source_sha256": "82f19f5aaf7a2ae986768fb2450c882e6b625cd6a03f5e0a6846ff215b927686",
+  "elements": [
+    {
+      "file": "element_000.json",
+      "sha256": "1f315260573760734589b870b2d52d2c7ff4a204340be1d13fd808eb90a79730",
+      "force_entries": 11,
+      "Hessian_entries": 66,
+      "canonical_basis_point_entry_checks": 3520
+    },
+    {
+      "file": "element_006.json",
+      "sha256": "7de1d7a7957058b680f70e2bc13725fd889b94884b308b860ec57574c6932645",
+      "force_entries": 12,
+      "Hessian_entries": 78,
+      "canonical_basis_point_entry_checks": 3840
+    },
+    {
+      "file": "element_072.json",
+      "sha256": "bf977cc5d9d57c6ea92ad58a49ebd0c00fb17b6f86a99b627421da36b2f03334",
+      "force_entries": 9,
+      "Hessian_entries": 45,
+      "canonical_basis_point_entry_checks": 2880
+    },
+    {
+      "file": "element_066.json",
+      "sha256": "dc6dbce2d825cf96aeb42e38de9cadf402952331cf70c9ecf97f1e709f2224c6",
+      "force_entries": 6,
+      "Hessian_entries": 21,
+      "canonical_basis_point_entry_checks": 1920
+    }
+  ],
+  "producer_driver_sha256": "91a4f9a41b69c7b9e9ae5d5e0021087a7dfa4cf9e80625273bb4945d0ac3d0b3",
+  "producer_protocol_sha256": "746b260f5fbe7d049958681533165784e4847a15ca7d302ae9cdf5712cda95f0",
+  "precision_bits": 640,
+  "order": 18,
+  "reviewed_reuse": [
+    "ExactFEtarget polynomial algebra/field construction",
+    "Exactrational/logarithmicmoments and derivative-tail majorants",
+    "Constitutive five-variable gradient/Hessian",
+    "Signedmoment-dual contraction"
+  ],
+  "independent_components": [
+    "Signed cubicmonomial Jacobianjet",
+    "Log/geometricseries coefficient convolution",
+    "Direct barycentric canonical strain/freebasismaps atallpoints",
+    "Manual different-association pointconstitutive lifts",
+    "Direct moment-product checks forgradient0/H00",
+    "Higherorder18 andprecision640 with intervaloverlap comparison"
+  ],
+  "scope": "Four bulk elements at saved recordBcenter only. No surfaces/globalassembly/tubeuniformity/roottransfer/PDE/sourcevalidation.",
+  "root_transfer_proved": false
+}

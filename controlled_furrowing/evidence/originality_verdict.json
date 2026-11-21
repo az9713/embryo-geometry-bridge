@@ -1,0 +1,13 @@
+{
+  "audit_date":"2026-11-19",
+  "verification":"PASS_FOR_BOUNDED_EXACT_CLAIM_AUDIT",
+  "scientific_originality":"UNCONFIRMED; no new concept established",
+  "scalar_only_claim":"NO_GO_FOR_NOVELTY; reproduction of known18um/50um shortening comparison is useful but insufficient",
+  "bounded_spatial_transfer_claim":"GO_FOR_RETROSPECTIVE_EVALUATION; not a successful prediction or novelty finding",
+  "exact_candidate":"One fixed finite-height mechanically consistent model fit only18um apical/basal responses plus independent initial/material information predicts larger-region signed deformation and bending without target-conditioned fit.",
+  "nearest_nontrivial_target":"Set-valued quantitative spatial transfer across size/orientation, including uncertainty and identifiable parameter combinations, rather than scalar dose-response repetition.",
+  "already_established":["dose-dependent cell shortening and known small/large comparison","larger activation and basal mechanics affect bending","volume-conservation geometry","basal elastic layer plus lateral tension induces cell anisotropy/curvature","coupled optogenetic signaling and mechanics","inverse parameter fitting and nonidentifiability from tissue shape"],
+  "unresolved_required_checks":["small-region data identify bending-controlling parameter combinations","no larger-condition calibration/model-branch selection hidden in transfer claim","finite-height geometry and material assumptions appropriate to early-embryo basal actomyosin","measured target is the actually predicted geometry","new candidate theorem compared against inverse mechanics/experimental-design literature before claiming originality"],
+  "adversarial_review":"CountrymanFig4h p=.73 is non-rejection, not an equivalence theorem; nevertheless it makes scalar-only size transfer a known-result replication. Countryman andGuerra already provide the qualitative mechanism. Kumar inverse matching uses target perturbation contours and is not the candidate no-refit forward evaluation. OptoShroom3 geometry consumes measured contemporaneous inputs and cannot be relabeled an activation-to-shape forecast.",
+  "limits":"Finite primary-source audit with explicit access gaps; no proof that the remaining claim is unpublished. No external author contact or expert endorsement. Data/model/score gates not passed by originality audit."
+}

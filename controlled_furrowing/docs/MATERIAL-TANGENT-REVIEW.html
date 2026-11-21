@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MATERIAL-TANGENT-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the local material-tangent diagnostic</h1>
+<p><strong>Verdict: PASS for the current floating, fixed-geometry diagnostic.</strong> The source, archived matrices, current saved inputs, composed smooth-mean derivatives and current explanatory document were independently checked. This is an internal AI review, not external scientific validation or a completed experimental inverse problem.</p>
+<p>The review performs no optimization, new equilibrium calculation or fit. Its retained program and results are inside <code>evidence/material_tangent_independent_review.json</code>, allowing the numerical checks to be replayed without changing frozen sources. All <strong>107 numerical/provenance checks pass</strong> before the final documentation checks described below.</p>
+<h2>What mathematical derivative is being approximated?</h2>
+<p>For the fixed free-displacement space, references, geometry, quadrature and activation support, define</p>
+<div class="math display" data-tex="
+ R(u,\theta)=\nabla_u\frac{E(u,\theta)}{\mu V_0},\qquad
+ H=\partial_uR,\qquad B=\partial_\theta R.
+"></div>
+
+<p>At an <strong>exact regular root</strong>, differentiability and invertibility of H imply a local equilibrium branch with</p>
+<div class="math display" data-tex="
+ H S=-B,\qquad S=\frac{\partial u_*}{\partial\theta}.
+"></div>
+
+<p>The accepted positive-J states lie on the smooth branch of the implemented potential; the reference activation indicator and free-coordinate constraints stay fixed under these material variations. The additive apical-tension coordinate at zero is physically one-sided. One may use the smooth mathematical extension of the potential to formulate the local theorem, then restrict the branch to nonnegative tension; an unconstrained parameter SVD does not impose that restriction.</p>
+<p>Actual calculations use small-residual saved fields and floating matrices. Neither a successful sparse factorization nor a small force residual encloses an exact regular root. The displayed S is therefore a <strong>floating linearized response at the stored field</strong>, not a rigorously enclosed equilibrium derivative. This qualification is explicit in the originating source and document.</p>
+<h2>Independently assembled parameter-force derivatives</h2>
+<p>The six coordinates, in order, are log finite compression coefficient, log apical area coefficient, log basal area coefficient, additive apical tension, log basal tension and log common activation gain. Shear coefficient mu is fixed as the force unit. The compression coefficient is the finite coefficient of the logarithmic-volume term, not an independently measured physiological bulk modulus.</p>
+<p>At the saved 12x6 high-quadrature gain-5 field, the review independently assembles six scalar component potentials and differentiates them by automatic differentiation. It shares the verified geometric P2 quadrature cache but never calls the production component-force assembly to form these columns:</p>
+<div class="math display" data-tex="
+\begin{aligned}
+ E_\kappa&amp;=\int\frac\kappa2(\log J)^2\,dV_0,\\
+ E_{K_a}&amp;=\int_{\Gamma_a}\frac{K_a}2(J_s-1)^2\,dA_0,
+ &amp;E_{K_b}&amp;=\int_{\Gamma_b}\frac{K_b}2(J_s-1)^2\,dA_0,\\
+ E_{T_a,\mathrm{add}}&amp;=\int_{\Gamma_a}dA,
+ &amp;E_{T_b,\log}&amp;=T_b\int_{\Gamma_b}dA,\\
+ E_{g,\log}&amp;=\int\frac{f\chi}{2}&#124;F n_0&#124;^2\,dV_0.
+\end{aligned}
+"></div>
+
+<p>For each component, the column is <span class="math" data-tex="\nabla_uE_j/(\mu V_0)"></span>. The additive apical-tension column is the derivative of true area, not the derivative of a zero energy term at zero tension. Separate apical/basal Gauss loops use current revolved area <span class="math" data-tex="2\pi R&#124;\partial_t y&#124;dt"></span> and reference area to form the surface terms.</p>
+<p>All six independent columns match the archived B: the largest relative column difference is <strong>1.21e-13</strong>, and the largest absolute entry difference is <strong>4.58e-16</strong>. This corroborates the production doubling identity for coefficient-linear energies. Central log finite differences have the predictable factor</p>
+<div class="math display" data-tex="
+ \frac{R(ce^h)-R(ce^{-h})}{2h}
+ =\frac{\sinh h}{h}\,\partial_{\log c}R,
+"></div>
+
+<p>so their reported relative error near 1.67e-7 at h=0.001 is expected truncation, rather than unexplained derivative error. The additive coefficient check is one-sided because its baseline value is zero.</p>
+<p>The independently assembled shear contribution also reproduces the common-force gauge cancellation. If all physical coefficients, active strength and mu scale together, the normalized force is unchanged. With inactive trial-inversion penalty, the mu column contributes the shear gradient minus the normalized full force. Adding that term to the six coefficient columns, with apical tension multiplying its additive column, leaves a maximum residual <strong>4.00e-16</strong>. This is a force-scale symmetry check, not new biological information.</p>
+<h2>Fresh Hessian-vector checks of all three saved tangents</h2>
+<p>For each saved gain 1, 5 and 10, a fresh automatic-differentiation Hessian-vector product differentiates the actual frozen potential along every archived column of S. It is independent of sparse coloring, Hessian recovery and the archived sparse entries. All eighteen columns satisfy the retained relative tolerance 1e-9 for <span class="math" data-tex="HS+B"></span>; the largest observed relative residual is <strong>9.85e-12</strong>. Their fresh HVPs also agree with multiplication by the archived sparse H.</p>
+<p>The review separately checks that every archived free vector equals the saved field, every free-index array equals the current mechanical model, the actual integration rule is Duffy-8/surface-12, fresh forces pass the unchanged 1e-7 gate, and all current input and NPZ hashes equal the locked protocol/receipts. No stored field or production archive was modified.</p>
+<h2>Units and the composed observation derivative</h2>
+<p>The <a href="QUADRATIC-MEAN-DERIVATIVES.html">exact smooth geometric gradients</a> are derivatives of a mean measured in micrometres with respect to physical node coordinates measured in micrometres. If the mechanical displacement is dimensionless and <span class="math" data-tex="x_{\rm phys}=L_0(X+u)"></span>, then</p>
+<div class="math display" data-tex="
+ D_uO=L_0D_{x_{\rm phys}}O,
+ \qquad D_\theta O=(L_0D_{x_{\rm phys}}O)_{\rm free}\,S,
+ \qquad L_0=33.5\,\mu\mathrm m.
+"></div>
+
+<p>The root code uses the correct scale, flattening order and free-coordinate restriction. The current parameter variations hold ROI/reference/length unit fixed, so no explicit observation-parameter term is missing for this declared calculation. Varying height, ROI, references or activation support would require their separate explicit derivatives.</p>
+<p>For each of the eighteen material directions and each of line/disk weighting, the review evaluates the mean directly on the displaced geometries <span class="math" data-tex="u\pm10^{-4}S_j"></span>. It calls only low-level quadratic graph integrals: it does <strong>not</strong> fabricate <code>converged</code> flags or describe these geometric perturbations as newly equilibrated material states. The largest absolute difference between these mean finite differences and the two-channel chain-rule derivative is <strong>1.05e-10 micrometres per declared coordinate</strong>, below the predeclared 2e-6 crosscheck threshold.</p>
+<p>Both signs of a geometric displacement direction may be used to check the observable derivative even when the associated material coordinate has only one physical side. This does not evaluate a negative physical apical tension or assert existence of that branch. The apical and basal means are two algebraically distinct channels; no statistical noise independence is assumed. Height mean is their exact sum and is correctly excluded as a third independent row.</p>
+<h2>What the SVD does—and does not—say</h2>
+<p>Recomputing the six-by-six matrices and singular values reproduces both reported diagnostics. Their condition ratios are approximately 7690 for disk weighting and 9261 for line weighting. The weakest reported right-singular vectors have the largest magnitude in the basal-area coordinate, consistent with the originating document's bounded interpretation.</p>
+<p>These singular values mix five logarithmic coordinates and one additive coordinate. Their magnitudes and weakest directions depend on the chosen scaling, strengths, mean measure and row convention. They are not a parameterization-invariant uncertainty, a noise-weighted information matrix, the full experimental 68-summary Jacobian, the completed dose cohort or a global identifiability theorem. Full spatial profiles, maxima and dynamics can carry different information. No derivatives of competing maxima have been supplied here.</p>
+<h2>One provenance weakness for future reuse</h2>
+<p><code>means()</code> checks the mechanical source protocol but does not independently enforce the current saved-input and NPZ hashes before composing its outputs. If those files changed between stages, source equality alone would not prevent mixing a new observation gradient with an old mechanical tangent.</p>
+<p><strong>Current snapshot:</strong> all current input, archive, vector and index checks pass in this independent review, so this is not evidence that the retained result is incorrect. Before future reuse, the runner should check each input hash against <code>mechanics_protocol.json</code>, each NPZ hash against its mechanics row and the vector/index correspondence before evaluating means. The review records this limited missing runtime guard; it does not modify the frozen source or run a new production stage.</p>
+<p>The first independent-report write encountered a NumPy-boolean JSON serialization error. Its original program hash and failure are retained in the final receipt. Casting report flags to ordinary booleans fixed reporting without changing a model, arithmetic method or threshold. The harmless existing Tensor-to-float warning in the production source is not hidden by editing that source.</p>
+<p>The completed result is a checked local sensitivity component. Validated roots and forward errors, an empirically justified observation contract, experimental discrepancy accounting and the full parameter-domain analysis remain necessary before material inference or biological validation can be claimed.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

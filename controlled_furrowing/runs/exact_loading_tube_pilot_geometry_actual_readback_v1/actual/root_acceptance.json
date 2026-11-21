@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ROOT_REHASH_OF_DELEGATED_KL_UNRESOLVED_GEOMETRY_REPLAY",
+  "independent_receipt_sha256": "595988a5a2b15b237ad13ec575290d915046dc2d9ae01c8243547923bac27ba9",
+  "delegated_os_observation_sha256": "d33e301a76decc888c803227a88058fab7aa1714c373536f49acd36750c340a0",
+  "delegated_true_tool_chunk_id": "f3afd2",
+  "source_and_actual_hashes_rechecked": 64,
+  "body_triangles_recomputed": 144,
+  "loading_path_proved": false
+}

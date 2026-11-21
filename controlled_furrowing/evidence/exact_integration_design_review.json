@@ -1,0 +1,170 @@
+{
+  "status": "PASS_BOUNDED_INDEPENDENT_DESIGN_REVIEW",
+  "checks": {
+    "all_scale_inventory_checks_PASS": true,
+    "all_bound_inputs_still_current": true,
+    "scale_script_hash_current": true,
+    "all17_error_budgets_have_strict_spare_margin": true,
+    "all17_transferred_Hessian_floor_positive_under_budget": true,
+    "axis_vertex_Duffy_example_direction_dependent_but_smooth": true,
+    "axis_vertex_example_not_one_corner_limit": true,
+    "weighted_surface_energy_cancellation_exact": true,
+    "no_exact_integration_certificate_claimed": true,
+    "declared_all17_144_element_inventory": true
+  },
+  "artifact_sha256": {
+    "runs/exact_integration_bridge_v1/independent_design/audit_scales.py": "fae3de45e192774d6123fe32882cee1b02db0c9ffaa85cb4d089e4de0ac435b4",
+    "runs/exact_integration_bridge_v1/independent_design/scales.json": "60e7b31a24ade9c6023a0a27d76df44e1ef26026ee9423d63e84327fa3aeb1c7",
+    "runs/exact_integration_bridge_v1/independent_design/DESIGN-REVIEW.md": "1c3958394458d0d9ba2d60d292fda7985356b913da53f8c86213c028f4ac6c59",
+    "runs/exact_integration_bridge_v1/independent_design/verify_design.py": "4a5daab51383e25e1ddc5c061c5408520f9acb6c8490db5e98fd3bf9b834a19e",
+    "scripts/axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "scripts/axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "scripts/axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "scripts/quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "scripts/algebraic_root_feasibility.py": "7321d38bf17cf354cc03be2871f3fbaa45bcebbcbfca7be90d0f867b80078acf",
+    "scripts/root_body_geometry.py": "18013c6c50c5f679eb6c4abc04e3cf9ce447ee18d0bf1efbf6dcfbd6806f49c2",
+    "scripts/cohort_energy_stability.py": "a3fe42c9d79907103c0e02af35db3bdc4c2f89aee59755c006e9ab09e322ee7d"
+  },
+  "scale_input_bindings": {
+    "evidence/shared_cell_cohort_inference.json": "1f8c4dc1ad8924f8fda13e6748d5e73aac426b5771b02404803d27c1955aa677",
+    "runs/cohort_uniform_roots_v2/records/00_optoGEF2_small_col_B/result.json": "3dcfca685a1417d2ba11b0c4a70b40aac84a2df9b8f1c36518826188f4e803c8",
+    "runs/cohort_static_observers_v1/composition_final/records/00_B.json": "8ea15ab81a4b610a75ac12564d610b92084399cef15df21c577e2684ede1106b",
+    "evidence/cohort_uniform_roots_independent_review.json": "67c9d5195c36fc11814d08517070fe53ea0f10f67d45911df517bd900e098297",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_B.json": "59299c7da35ecf9b59641a60c4cf480b545952b7db0a712a4003c295c1f6f1a8",
+    "runs/cohort_uniform_roots_v1/records/00_optoGEF2_small_col_B/preparation_attempts/000/point_cache.json": "f334f4cc139a21df34f7aff3019559a39ef1313c670223885b9474498dd84fb9",
+    "runs/cohort_uniform_roots_v2/records/01_optoGEF2_small_col_C/result.json": "ecfec8b5aac05f7dee24a7f1ce404252795556de119c21342d81a8c256ef46a8",
+    "runs/cohort_static_observers_v1/composition_final/records/01_C.json": "9036608447e01a2e16acc72686c70b1340f0375d509c639b568566f6217485b0",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_C.json": "b09fd384960694ce141061b1872c74f1ef3ceb0da1167f757ba87d39b38e8782",
+    "runs/cohort_uniform_roots_v1/records/01_optoGEF2_small_col_C/preparation_attempts/000/point_cache.json": "eecb9401a0676e61e8ea079d890e6eaa505ea7020852b95a7c41c904a598354f",
+    "runs/cohort_uniform_roots_v2/records/02_optoGEF2_small_col_D/result.json": "442e011cd480a834f93877d4ab1ae7c414788f9c8110d3386d13cecc679deba2",
+    "runs/cohort_static_observers_v1/composition_final/records/02_D.json": "b9cd2ddabc459297760058ab7112a02a8d45d89d282d33bfe2297a1ffaecd761",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_D.json": "a05b1ddbc06a50b992931219353d8e9f2608fe65d65d1c1f126772183d0a477d",
+    "runs/cohort_uniform_roots_v1/records/02_optoGEF2_small_col_D/preparation_attempts/000/point_cache.json": "26ac5a802533ee56d01b5cf0bb2eb70655c196bbd825ce2848bcb86f43e27d4c",
+    "runs/cohort_uniform_roots_v2/records/03_optoGEF2_small_col_E/result.json": "56b16cfa1ed0e237acfad6faf5a6eb66bce9e1b157cf7fde7b2758b14383d315",
+    "runs/cohort_static_observers_v1/composition_final/records/03_E.json": "1989fae5d22d12a32ec8b7632ac2d56d0afbc6ed401f2d2f54a3b557fdcd56eb",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_E.json": "8ab010205cc9329649fb89e9b931721a5506a5c3284739f4073c6b72bbc23ea2",
+    "runs/cohort_uniform_roots_v1/records/03_optoGEF2_small_col_E/preparation_attempts/000/point_cache.json": "662f187cfdd9421a5b37b75875fc08581187ec25e0cb1e00d8143ba0cce11b81",
+    "runs/cohort_uniform_roots_v2/records/05_optoGEF2_small_col_G/result.json": "23977b487295683d352e534cd588024bb536896fbefd606db3dc531f27457b8e",
+    "runs/cohort_static_observers_v1/composition_final/records/05_G.json": "a2beacc9576cf820e7f6c3a34dc43ff88fbf28b5e4e23f15e13e057a34629e2d",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_G.json": "1c791a11b1f9ba1caca176a7283d053e6e304e20011993acb33e4ae98d402391",
+    "runs/cohort_uniform_roots_v1/records/05_optoGEF2_small_col_G/preparation_attempts/000/point_cache.json": "bb13bea3d1e0be2e7dea12fa49d78747572a3ae6e5fa85f5a8af6d8f6b56f092",
+    "runs/cohort_uniform_roots_v2/records/06_optoGEF2_small_col_H/result.json": "53263b3ca6edabf3577c9dc2c5dc3fc7101019405e06c2cc8f3bc4bd1363438b",
+    "runs/cohort_static_observers_v1/composition_final/records/06_H.json": "501f4b64a8d55c58d3f26376a92c080f44c184583897e21b48580597fb712c0b",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_H.json": "6bf5c1a722b6a40bfbbf46c90ceedc4cb885337c86986c08e10af5c9d959a5c3",
+    "runs/cohort_uniform_roots_v1/records/06_optoGEF2_small_col_H/preparation_attempts/000/point_cache.json": "b737825f51bd8f9b1e5446fa0a8f9daa0028936dc15ef22d860499fd35ff7c88",
+    "runs/cohort_uniform_roots_v2/records/07_optoGEF2_small_col_I/result.json": "1f73be4fde4eda2278c5bda6dc388d8c083bdf67231a87092a6d201940647c6e",
+    "runs/cohort_static_observers_v1/composition_final/records/07_I.json": "ff5b6d7d52eb1882d997ce61ae76e440bac835a9ddc122cc06276a51055b20b0",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_I.json": "59f8614eed30d16ee66f0b208d8a588dd07fde73cb960fe64e9cc3941c5939bf",
+    "runs/cohort_uniform_roots_v1/records/07_optoGEF2_small_col_I/preparation_attempts/000/point_cache.json": "0616655cc691e3bb7b0901c12bc5279a29c70b88d6d285263feb5c248eedabab",
+    "runs/cohort_uniform_roots_v2/records/08_optoGEF2_small_col_J/result.json": "265ad556102847af69d05f14886776015ecc709fd3962c0180a48b935cb13f51",
+    "runs/cohort_static_observers_v1/composition_final/records/08_J.json": "cdf6262ee0649033ba7b38ab1449ec0848049e169738f441a4becf8a5c57b81c",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_J.json": "dffa2dd6b0de465e72ba22449e4716cfd2ed7b690722273e0556965b4bc76c20",
+    "runs/cohort_uniform_roots_v1/records/08_optoGEF2_small_col_J/preparation_attempts/000/point_cache.json": "04ed0a083b79e386dd1c72cfad2ccf2c0fe4d5a1a94724e0c2877f90f981b1f3",
+    "runs/cohort_uniform_roots_v2/records/10_optoGEF2_small_col_L/result.json": "a106e69578ee840b81b55ec330c35fd3baf4ea1ecd55f075b64b9c14f9671222",
+    "runs/cohort_static_observers_v1/composition_final/records/10_L.json": "b3a3e93778c35c1c115693a812c5f286c53e80a2b4145a2587e9a541166ad65a",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_L.json": "d1f80e62b71116104606e4df4f0b421482be511886abe71771ec25e7bd24cbbd",
+    "runs/cohort_uniform_roots_v1/records/10_optoGEF2_small_col_L/preparation_attempts/000/point_cache.json": "60a68dc117c61aed6db823df44da247270385c8ce91eaf4dfa2dbf08bd932be3",
+    "runs/cohort_uniform_roots_v2/records/11_optoGEF2_small_col_M/result.json": "38c2997d7299196ed5bdce6c100edf8fc19a9c31ca96e6d6292f6eb878e700f6",
+    "runs/cohort_static_observers_v1/composition_final/records/11_M.json": "5212f27132a186971132448af6fd0d92fedb72bd13a24016354178b0d46220cb",
+    "evidence/parametric_actual_M_independent_review.json": "4b03db70583be266a8d4ae581f19c8db0099bc028ddd6af82a5c990a91d8e600",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_M.json": "137388b7db57a60e49770d58cf9de1308d8c25619784ce2672124f7b16084d8a",
+    "runs/parametric_root_cells_v1/actual_M/point_cache.json": "1a9edb8b96a922cfed7ad78c796549f5655e29b60926da9e78a90e3ceb0e9cab",
+    "runs/cohort_uniform_roots_v2/records/12_optoGEF2_small_col_N/result.json": "8721f35a1c73db8cb2b12096d24307042d4e84529ba5b815bc0444eb8b3b192d",
+    "runs/cohort_static_observers_v1/composition_final/records/12_N.json": "c617e12a48d17c894f954b63134a6404556222106024a2c86f61192f596c4c1c",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_N.json": "6a43aa8f655a59a2d8f6879adf8dcab636a7ad5396b90598c07fc591a746e1b3",
+    "runs/cohort_uniform_roots_v2/records/12_optoGEF2_small_col_N/preparation_attempts/000/point_cache.json": "7733c3f1e524d503e57152f1a074335742a04aac8445d6d04ae1c5da8dfed38f",
+    "runs/cohort_uniform_roots_v2/records/13_optoGEF2_small_col_O/result.json": "3fe935437944ea5f819bdab492f702d6c83d4e04ee9babd9be446e0d2601305b",
+    "runs/cohort_static_observers_v1/composition_final/records/13_O.json": "857a509de4d23e9a21638f66c1237e18716cbba217607417c0828a75f6aa26a3",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_O.json": "8587e207fef2a3a63e2742c10fabedd58374f8f4a6655381e0297141b680f331",
+    "runs/cohort_uniform_roots_v2/records/13_optoGEF2_small_col_O/preparation_attempts/000/point_cache.json": "30bf17d08373b5c8c36ed83ce33fad50981b1c8dec25f25ff3047befdb5d49a5",
+    "runs/cohort_uniform_roots_v2/records/14_optoGEF2_small_col_P/result.json": "651d1705999e6291cb5a30af48803966201c7691266a3e75d0187488d8269afc",
+    "runs/cohort_static_observers_v1/composition_final/records/14_P.json": "69b0abe6764a20dbdf285e2a481bc1414e13961d8c55e58333b72a2b5bfcc4bd",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_P.json": "a90e58938f02afc21462cd49a509dc4158dd9db76cc58edc8bc219247ce8b36f",
+    "runs/cohort_uniform_roots_v2/records/14_optoGEF2_small_col_P/preparation_attempts/000/point_cache.json": "e7c67707cc2444b312a1d0599ca32a89f20ce9dc10fff1c143fee9a77a4f4bb2",
+    "runs/cohort_uniform_roots_v2/records/15_optoGEF2_small_col_Q/result.json": "958c41e39b93659355875a6fc0416188e492f6022ae15c597f9e5e2fdf823d9a",
+    "runs/cohort_static_observers_v1/composition_final/records/15_Q.json": "f8dabbde534c762a8a08524af3daf744eba541d675eaf255d361ca14ad4c37b7",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_Q.json": "d691de633dabc50a3a8c894a047b632e9463a8fc2353980fd8e77e5737a54ca3",
+    "runs/cohort_uniform_roots_v2/records/15_optoGEF2_small_col_Q/preparation_attempts/000/point_cache.json": "6fab745ba3420d3fb731fc8adc1434827272bb3675de9abb797ef2ea31558fb2",
+    "runs/cohort_uniform_roots_v2/records/16_optoGEF2_small_col_R/result.json": "71dcf24e50bbd5a96199645a90be8d690560bb5cdbcc71af70774e5308165c62",
+    "runs/cohort_static_observers_v1/composition_final/records/16_R.json": "69362188148d00f7fb50bc6ffd86b8564ba707cd9ec385beeb0d1465fcb63ab8",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_R.json": "8508075f0d22fc2b86ca9289d3caf1f5596ecf0bfe224431751f811af3c206e7",
+    "runs/cohort_uniform_roots_v2/records/16_optoGEF2_small_col_R/preparation_attempts/000/point_cache.json": "7a34358c1c3c09324a73d1c94c30af014b7b39f1b12ec272b7cb12cac333fe7c",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_F/result.json": "7ee9815aed5233e2566c9fdc4b81896b858f6aaaa2316b223f8fc6aee04eb6ce",
+    "runs/cohort_recentered_observers_v1/records/optoGEF2_small_col_F.json": "899837a59fe9e2e6f9e4c85deb705824f992f44cbe0250dbecfac8e1a306216d",
+    "evidence/cohort_recentered_roots_independent_review.json": "9eb544895612e1da07972c2f48de74156e1e7f18b638140306270fbf111ee34f",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_F.json": "a160a7ed2f51344dc9fc769e566bde5d2ab9e564eb3e9359e4c2b8817db63101",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_F/point_cache.json": "4c78a721b2909b5b517064e416b1dad29d7822305c6ee8002c3b2d667b42442d",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_K/result.json": "cae3814a37c1fc8a2c2af742aa42e7f2abd0bc14af495a9282af371e5ab41738",
+    "runs/cohort_recentered_observers_v1/records/optoGEF2_small_col_K.json": "ca97b7b6bb8fdb66038cbf2bc9c6ba82ceebced53e0aa85591f5c6d1d23d7df9",
+    "runs/cohort_energy_stability_review_v1/records/optoGEF2_small_col_K.json": "e25b0ad49775b5a5c1a14abc27e6514b4a9c29182345ec128d9f54e69b27f61e",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_K/point_cache.json": "8db76b47b1cc400b049ff8595382170785b42343b390c7fe74264dfb6223548b"
+  },
+  "exact_integration_bridge_status": "NOT_IMPLEMENTED_OR_CERTIFIED_BY_THIS_AUDIT",
+  "review_scope": "Proof obligations and exact read-only arithmetic/computability audit, not a quadrature error calculation or theorem of successful persistence.",
+  "criteria": {
+    "gradient_defect": "a >= sup_theta ||R(FI-FQ)(p_theta)||infinity",
+    "Hessian_defect": "b >= sup_theta,u_in_B ||R(HI-HQ)(u)||infinity",
+    "acceptance": "Z+b<1 and eta+a+(Z+b)*r<r",
+    "minimum": "sym(R)>0 with transferred contraction gives HI >=(1-Z-b)/||R||infinity I"
+  },
+  "quantitative_extrema": {
+    "minimum_remaining_selfmap_slack_exact": {
+      "record_id": "optoGEF2_small_col_G",
+      "exact": "5327052521557047499737673250890167197820979521367224875806157028930408918154089096955717097630477714857121/1260864198284623334792929283204595641762551656654894293374345388935863096687910739565256520156317300505812095689818112",
+      "display": 4.224921707511705e-12
+    },
+    "minimum_sufficient_separate_unpreconditioned_force_budget_exact": {
+      "record_id": "optoGEF2_small_col_G",
+      "exact": "5327052521557047499737673250890167197820979521367224875806157028930408918154089096955717097630477714857121/7848014872037343933842327053287277678143437023859919368044093466144082784028719941471047481103118247769809033276784902144",
+      "display": 6.787770676298611e-16
+    },
+    "minimum_sufficient_preconditioned_Hessian_defect_budget_exact": {
+      "record_id": "optoGEF2_small_col_L",
+      "exact": "69198142931977032130856583037661324647384318054885875274665525983556813496256467442908043196340699789139/2368739147829362870276666611767246046857935175433098953581650971302818312563848524181523961267221161836544",
+      "display": 0.029213070166627678
+    },
+    "minimum_m_exact": {
+      "record_id": "optoGEF2_small_col_L",
+      "exact": "1936022261547612204795087621756941411352369668767922795845/4902883592302261811911359906248334843579398557833863064715264",
+      "display": 0.0003948742051692295
+    },
+    "minimum_wholebody_J_lower_exact": {
+      "record_id": "optoGEF2_small_col_L",
+      "exact": "1924778229683282981753438824580940330233060916070730088319702712562923784526334781943008319643263766392681241970483008615819712958238321561457439046287600004814058295241188332431215751918142177014948767222022302648492000087354359431746344803026542677019251842661394583103302803702048581117363785176737879684510379097813995958223476918670873736240198676945257561121742603792927592798709285449033101456518646954998218042481515181892091714454691838545551646171623658779239833005319853459031873340108412521516192176391807657324079842148487674611982181339959275172757354966326250701287056262188409713401858411633967921125131603114077728309235639381054833357938624530955966305899348990905206810833719754429196103478812960084130102179395702819246436341693384602269801485030759570585947697457787/2008553142745618416646513525182533871614202714900089626834742296850411132928897631766681445841336075156201284286342816980679351013535207475900066184149146805748520550267884736137280395532646681245533928112056420403715049153217404341808051333833232900620172592001431511885290619703945774597070645455942345046835429493409093340632680134896400730913599957037135326683165565230398767764542820149596232199422380223419240994708929902495141076077337444992753852987161817888896884618533199603937327226283716917389064588748407469063162814277984391812864819908073159945583126845256637137394602432771440649173023204760076037357576589128636195319916361950492183857756672158671383177911847047231322430721967575891286538694776653167680656210532882446229412923338012051374080000000000000000000000000000",
+      "display": 0.9582909153462486
+    },
+    "minimum_strong_monotonicity_lower_exact": {
+      "record_id": "optoGEF2_small_col_L",
+      "exact": "1309230392184988434146065402876204993699055252564590012623201228279178677680830049600038381963489329821184524137505912026459736302585593870918814481112456162424296258805599060724414202353961513798510136132224445922765960444173768271918408947402732550801770378503515455011846124917578875682363288414781455646582743946380885182974798547687866576940367245850814661688606701649862749203242034417685931175650880945862931875387141733920032139758584734421497700978142221382240413390345019650030874302865833251742767211200463895156977086405688736873888829855329/4799881113397048890720693356336523002415334237451156165191627736996404655841191180357421696961051393754348187350048807503428724448973071768551337447539005697493716707457967774392900142719357475246262588774277751742734165099634742285633790134667888811706332979694524580195101755284669277817295061383217714953982090038425704843053688763956194121627055448726406836189167262054217780892800256780326984416154643368693324566656897506481990630160943899616312870580020737945938414514413006310897058040544934807472177048675441101382616419110949318819840000000000",
+      "display": 0.27276308751289025
+    },
+    "maximum_Z_exact": {
+      "record_id": "optoGEF2_small_col_L",
+      "exact": "1202528606145728177122807089846891796698808053464094460603/3138550867693340381917894711603833208051177722232017256448",
+      "display": 0.3831477190712284
+    },
+    "maximum_R_infinity_exact": {
+      "record_id": "optoGEF2_small_col_B",
+      "exact": "7779597100340471047057/4611686018427387904",
+      "display": 1686.9312154502138
+    },
+    "maximum_wholebody_J_upper_exact": {
+      "record_id": "optoGEF2_small_col_L",
+      "exact": "3425937024733179309309180778772292765638646428399075572354046864190431108979101662732240689524796522418917391643583417768566857287266520937185873944007938964203917307694203147841620536036213070711008959401417189457412684953421573423682342550134620225490142439232191028928627316020075458753849382519885705718212072920854430476361012542022005498880748962890492864269124615957829325962653955404992431701037453266837434955061098229855710331473986407651981163147499670837224090803666342414974207771103322403657183418744694463438939721161757877609121826109408870453417887509978518634028630421163462482653130619608081173390145667576383999106759490852319151221887129076083185683902754034036719164931498562674595750746692372522619855358099293641264189478320824914729411577772206018986959552770519/3347588571242698026515737227657929993915411096229447484180677543012590333585887290668469130912608906428173667272631421349122406006923902047373500866693137266752032028818172061103588647790810156211519765152074276894848541525473613055617886273810225979008031085758302328259728500302596015959653966303534047425542037849752563184953134767808099803110697640530720146781619868188491828990497354316996980092941593754339807734557669616462628089254167291636142055859284516056976512149961603760261117396019270743900254621751812613409283973193954188005473609518588352158568801667063986855168118613732710470784718096633970464687330233337597997482729689638459620446190839493923268651715147112698563168244155998333485428429486692909773151991867059184612677961885809639424000000000000000000000000000000",
+      "display": 1.0234044452665212
+    }
+  },
+  "author_method_comparison": "Proposed axis-regularized spatial series/exact-moment method agrees in principle. Binary rule moment defects and all cache-map rounding must be retained. No implementation yet reviewed.",
+  "next_required_execution": [
+    "Freeze exactly integrated FE target and source-bound rule/map consistency decomposition.",
+    "Implement validated variation integrals with explicit axis cancellation and nonzero binary moment defects.",
+    "Compute actual a,b on representative G/L and other15tubes; retain failures.",
+    "If necessary create separately reviewed enlarged/recentered/energy-norm proof domains, then revalidate geometry and all observer error transport."
+  ],
+  "scope_limits": [
+    "No new equilibrium optimization, Hessian assembly or integral-bound computation.",
+    "No PDE/discretization error, source temporal validation, complete parameter/geometry domain, new held-out prediction or confirmed novelty.",
+    "No external contact or production/documentation changes.",
+    "Original full five-gate project remains incomplete."
+  ]
+}

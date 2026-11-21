@@ -1,0 +1,69 @@
+{
+  "audit_date_workspace": "2026-11-19",
+  "scope": "Bounded primary-source audit before implementing a necessary unknown-slice annulus compatibility observer. Not a systematic novelty clearance.",
+  "queries": [
+    "reconstruct shape unknown cross section planes contours inverse problem paper",
+    "tissue morphogenesis confocal optical section shape reconstruction ambiguity surface contours paper",
+    "3D shape reconstruction planar cross sections unknown orientation level set geometry primary paper",
+    "shape cross-sections unknown planes reconstruction orientation positions",
+    "unknown slice reconstruction geometry shape contours",
+    "confocal annulus tissue optical section topology"
+  ],
+  "sources": [
+    {
+      "title": "Surfaces From Contours: The Correspondence and Branching Problems",
+      "authors": "David Meyers, Shelley Skinner, Kenneth Sloan",
+      "year": 1991,
+      "url": "https://graphicsinterface.org/wp-content/uploads/gi1991-32.pdf",
+      "access": "Primary conference full-text PDF accessed, nine pages",
+      "locators": "PDF pp1-2, printed pp246-247, definitions of contour/section and correspondence ambiguity",
+      "established": "Contours are surface-plane intersections; sparse contour data has correspondence/topology ambiguity.",
+      "difference": "Reconstructs surfaces from multiple sections; does not establish a unique solid from our single image or certify a fluorophore observation model."
+    },
+    {
+      "title": "CrossSDF: 3D Reconstruction of Thin Structures From Cross-Sections",
+      "authors": "Thomas Walker et al.",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2412.04120v1",
+      "access": "Primary author preprint HTML full text accessed",
+      "locators": "Section3.1 Input and output; Section3.2; Section3.4",
+      "established": "Uses supplied planes and segmented contours to constrain a three-dimensional signed-distance representation; inside/outside information matters.",
+      "difference": "Its planes are part of input; our unmeasured horizontal slice height is existentially eliminated for a necessary test rather than estimated by neural reconstruction."
+    },
+    {
+      "title": "Validation of three-dimensional diffraction contrast tomography reconstructions by means of electron backscatter diffraction characterization",
+      "authors": "Melanie Syha et al.",
+      "year": 2013,
+      "doi": "10.1107/S002188981301580X",
+      "url": "https://journals.iucr.org/j/issues/2013/04/00/ks5358/ks5358.pdf",
+      "access": "Primary publisher full-text PDF accessed, six pages",
+      "locators": "Section2.4, PDFp3/printedp1147; Discussion PDFp5/printedp1149",
+      "established": "Unknown cutting-plane orientation must be addressed in geometric validation; near-tangent boundaries amplify section-contour errors.",
+      "difference": "Materials tomography uses matched pores to estimate planes; it does not validate our biological plane or fluorescence segmentation."
+    },
+    {
+      "title": "Computational reconstruction of cell and tissue surfaces for modeling and data analysis",
+      "authors": "Frederick Klauschen et al.",
+      "year": 2009,
+      "doi": "10.1038/nprot.2009.94",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3474339/",
+      "access": "Primary author manuscript full-text PMC HTML accessed; later repeated find encountered browser challenge",
+      "locators": "Abstract and Introduction, paragraphs on segmented confocal/two-photon stacks and lower out-of-plane resolution",
+      "established": "Reconstruction is based on microscopy segmentation and must address resolution-dependent geometric artifacts.",
+      "difference": "Uses volumetric microscopy data; cannot turn a single dark annulus into known three-dimensional tissue occupancy."
+    }
+  ],
+  "failed_or_limited_accesses": [
+    {"url":"https://www.cs.tau.ac.il/~amberman/impreconPaper.pdf","result":"Web tool rejected 15771183-byte content as too large; primary search excerpt available, not full-text read."},
+    {"url":"https://omid.amini.perso.math.cnrs.fr/Publications/GeomTom.pdf","result":"Primary author PDF open timed out; search excerpt describes density/transversality/reach assumptions; no theorem imported as locally verified."},
+    {"url":"https://openaccess.thecvf.com/content/CVPR2023/papers/Sawdayee_OReX_Object_Reconstruction_From_Planar_Cross-Sections_Using_Neural_Fields_CVPR_2023_paper.pdf","result":"Publisher open returned403; primary indexed Section3.1 available but full PDF not read."}
+  ],
+  "classification": {
+    "level_set_contour_constraint": "Established geometry",
+    "eliminating_common_height_by_equal_surface_values": "Elementary necessary condition, not a new theorem claim",
+    "interval_range_exclusion": "Standard rigorous enclosure logic",
+    "project_specific_contribution": "Transparent, reproducible observer and retained conditional exclusions, if actual data support measured radius intervals",
+    "novel_biological_concept": "Not established"
+  },
+  "implementation_decision": "GO for a conservative conditional observer. Never interpret passed necessary constraints as full prediction validation; reject only within stated horizontal-plane/apical-void/surface-error/measurement assumptions."
+}

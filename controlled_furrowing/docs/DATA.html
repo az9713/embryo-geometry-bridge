@@ -1,0 +1,185 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DATA</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Data gate: controlled epithelial furrowing</h1>
+<p><strong>Verdict: GO for a retrospective small-to-large transfer test of maximum cell shortening.</strong> The public source workbook also permits a larger-diameter bending-label check. It does not supply a complete individual-resolved 3D shape/time-series benchmark or independent material calibration. This is a data audit, not a model fit, predictive score, or claim of scientific novelty.</p>
+<p>The source is Countryman et al., <em>Endogenous OptoRhoGEFs reveal biophysical principles of epithelial tissue furrowing</em>, Nature Communications 16, 7665 (18 August 2025), <a href="https://doi.org/10.1038/s41467-025-62483-6">DOI</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12361397/">PMC</a>. The inspected experiments activate lateral membranes in the dorsal primary epithelium of Drosophila at gastrulation onset. Methods specify cell heights of 32–35 µm, a cylindrical activation volume spanning 5–25 µm below the apical surface, and nominal 18-µm small regions. These are protocol-level descriptors, not per-embryo measured initial geometries in the workbook.</p>
+<h2>Actual retrieval and provenance</h2>
+<p>Direct Springer CDN addresses failed DNS; PMC attachment requests returned HTML challenges despite HTTP 200; EuropePMC supplementary-archive requests timed out or returned HTTP 503. Those failures are retained, but they did <strong>not</strong> establish data unavailability. The official public NCBI S3 listing succeeded:</p>
+<p><code>https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&amp;prefix=PMC12361397&amp;max-keys=50</code></p>
+<p>It contains 26 objects: 6 figure images, 10 supplementary movies, 4 supplementary PDFs, 2 workbooks, and article XML/PDF/text/metadata. Object names, sizes, ETags and listing bytes are retained. Only selected relevant objects were downloaded; listing an object is distinguished from decoding it. The original full-volume microscopy is author-request according to the article; no author contact was made. Published numerical source data and an illustrative movie are nevertheless accessible and inspected.</p>
+<p>Downloaded numerical sources:</p>
+<table>
+<thead>
+<tr>
+<th>Original</th>
+<th>Meaning</th>
+<th style="text-align: right;">Bytes</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM16_ESM.xlsx">MOESM16</a></td>
+<td>Source Data, 36 worksheets</td>
+<td style="text-align: right;">256659</td>
+<td><code>11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d</code></td>
+</tr>
+<tr>
+<td><a href="https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM4_ESM.xlsx">MOESM4</a></td>
+<td>Supplementary Data1, 4 primer-design worksheets</td>
+<td style="text-align: right;">11438</td>
+<td><code>6c97e2046808a9e02d0958eff947f983d51437caaae361a31b83bfa8fdf3ddd7</code></td>
+</tr>
+</tbody>
+</table>
+<p>The supplement PDF (MOESM1), file-description PDF (MOESM3), reporting summary (MOESM15), official object metadata, and Supplementary Movie3 (MOESM7) were also downloaded. The first is available to the originality/model audit. Sources remain byte-for-byte originals in <code>data/raw/</code>; derived extracts are separate. <a href="../evidence/data_downloads.json">Download receipts</a>, <a href="../evidence/data_additional_downloads.json">additional downloads</a>, <a href="../evidence/data_oa_object_inventory.json">object inventory</a>, and <a href="../evidence/data_integrity.json">integrity checks</a> give sizes, hashes and original-source checksum comparisons.</p>
+<p>The article and official metadata state <strong>CC BY-NC-ND 4.0</strong>. No permissive code/data license is inferred from “open access”; no custom code is provided. Originals retain attribution and licensing. This audit's numerical extractions are for reproducible analysis; the article's license is not represented as permission to redistribute adapted article figures. The movie inspection image is a local diagnostic, not an original project visualization or an independently acquired observation.</p>
+<h2>All worksheets inspected and independently parsed</h2>
+<p>Every nonempty cell in all <strong>40 worksheets</strong> was compared between openpyxl and a separate standard-library ZIP/XML/shared-string parser. Cell coordinates, values and full worksheet inventories are retained in <code>data/derived/all_workbook_cells.json</code> and <a href="../evidence/data_workbook_audit.json">the audit receipt</a>. Formatting can inflate maximum worksheet dimensions; data counts use actual numeric cells.</p>
+<p>The 36 Source Data sheets cover:</p>
+<table>
+<thead>
+<tr>
+<th>Sheets</th>
+<th>What they contain</th>
+<th>Use/limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fig2b</td>
+<td>Three illustrated time/apical/basal position traces</td>
+<td>63 timepoints in total; not whole-cohort trajectories</td>
+</tr>
+<tr>
+<td>Fig2c,2d,2e</td>
+<td>Dose/average shortening, maximum shortening, separate apical/basal maxima</td>
+<td>17 OptoGEF2 and 11 OptoCysts small-region observations</td>
+</tr>
+<tr>
+<td>Fig2f,2g</td>
+<td>Published scaling sweep and expression/activity ratios</td>
+<td>Derived summaries, not new embryos</td>
+</tr>
+<tr>
+<td>Fig3b</td>
+<td>One-copy/two-copy dose-response summaries</td>
+<td>Different genotype comparison; not silently pooled</td>
+</tr>
+<tr>
+<td>Fig3c,3d,3e,3f</td>
+<td>Furrowing/recovery times versus dose/depth</td>
+<td>Summaries with response-based eligibility; not complete traces</td>
+</tr>
+<tr>
+<td>Fig4f</td>
+<td>Diameter, activation magnitude, bending Yes/No</td>
+<td>48 source records across six diameters, including the reused 17 small observations</td>
+</tr>
+<tr>
+<td>Fig4h</td>
+<td>Dose and maximum shortening in small/large regions</td>
+<td>Same17 small, plus9 nominal50-µm records</td>
+</tr>
+<tr>
+<td>Fig6b,6d,6f</td>
+<td>Area/opening-width trajectories</td>
+<td>Other developmental tissues/activation protocols; not this calibration/test cohort</td>
+</tr>
+<tr>
+<td>SupplementaryFig1g,1h,1i</td>
+<td>Expression levels/variation and cellularization rates</td>
+<td>No per-record initial-state map into Fig4h</td>
+</tr>
+<tr>
+<td>SupplementaryFig2a-c,2e,2g,2h,2i,2j</td>
+<td>Viability and myosin intensity/spreading/timing</td>
+<td>Related tool characterization, not large-region shape coordinates</td>
+</tr>
+<tr>
+<td>SupplementaryFig3a</td>
+<td>Protein-expression comparison</td>
+<td>Molecular abundance summary</td>
+</tr>
+<tr>
+<td>SupplementaryFig7a,7b,7c,7d,7e,7g,7i</td>
+<td>Alternative dose summaries/control responses</td>
+<td>Some duplicate main-response observations; not independent validation cohorts</td>
+</tr>
+<tr>
+<td>SupplementaryFig8f</td>
+<td>Groove/crest cell-height comparison</td>
+<td>Five values each; no full surface/curvature map</td>
+</tr>
+<tr>
+<td>SupplementaryFig9c,9d</td>
+<td>Ablation/retraction curves and initial distances</td>
+<td>Basal-mechanics perturbation information, not an absolute modulus calibration</td>
+</tr>
+</tbody>
+</table>
+<p>Supplementary Data1's four sheets are named <code>RhoGEF2-tgRFPt-SspB</code>, <code>RhoGEF2-SspB</code>, <code>SspB-tgRFPt-Cysts</code>, <code>SspB-Cysts</code> and contain cloning primers/templates. They do not supply missing geometric trajectories.</p>
+<h2>Endpoint and duplicate identity checks</h2>
+<p>The small-region calibration endpoint must be <strong>maximum shortening</strong>, because that is the large-region endpoint in Fig4h. Region-averaged shortening from Fig2c is a different observable. The script verifies exact dose and maximum-shortening equality between Fig2/Fig4h small records; these are <strong>one set of17</strong>, not34 independent samples. It also verifies equality of the repeated mean-shortening array and matching dose sets in Fig4f.</p>
+<p>Each canonical CSV record has an explicit source-cell locator such as <code>Fig 2d!B4</code>. Key worksheets lack biological embryo IDs. IDs such as <code>optoGEF2_small_col_B</code> are <strong>analysis locators</strong>, not invented specimen identifiers. Same-column endpoint associations follow the source-table organization; exact duplicate dose/response checks support reuse across relevant panels. They do not reconstruct missing raw-file IDs or permit arbitrary joins to other sheets.</p>
+<p>The primary Methods statistical section explicitly reports distinct samples, and its OptoGEF2 response discussion identifies 17 embryos. Missing table IDs therefore limit record crosswalks; they are <strong>not evidence that the embryos are dependent samples</strong>. Distinct biological units do not by themselves establish an identical additive-error law, independent dose-normalization errors, or a confidence-coverage guarantee. The new <a href="CALIBRATION-UNCERTAINTY.html">calibration uncertainty analysis</a> retains the exact source locators and this distinction.</p>
+<p>Separate maximum apical and basal displacements may occur at different sites/times. Their sum need not equal maximum height shortening. No such identity is imposed or used to repair data.</p>
+<h2>Numerical diameter audit and feasible split</h2>
+<p>Fig4f stores the following diameters:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Reported diameter (µm)</th>
+<th style="text-align: right;">Records</th>
+<th>Proposed role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">18.71024074</td>
+<td style="text-align: right;">17</td>
+<td>Small calibration set, reused in main dose-response panels</td>
+</tr>
+<tr>
+<td style="text-align: right;">24.94698765</td>
+<td style="text-align: right;">6</td>
+<td>Larger-region bending evaluation</td>
+</tr>
+<tr>
+<td style="text-align: right;">31.18373456</td>
+<td style="text-align: right;">5</td>
+<td>Larger-region bending evaluation</td>
+</tr>
+<tr>
+<td style="text-align: right;">37.42048148</td>
+<td style="text-align: right;">5</td>
+<td>Larger-region bending evaluation</td>
+</tr>
+<tr>
+<td style="text-align: right;">43.65722839</td>
+<td style="text-align: right;">6</td>
+<td>Larger-region bending evaluation</td>
+</tr>
+<tr>
+<td style="text-align: right;">49.89397530</td>
+<td style="text-align: right;">9</td>
+<td>Large-region maximum-shortening and bending evaluation</td>
+</tr>
+</tbody>
+</table>
+<p>The paper labels small/large groups nominally18/50 µm. Both nominal and workbook diameters are preserved; no silent rescaling or rounding is performed. The article discusses experiments up to75 µm, but this numerical source table ends at49.8939753 µm. A quantitative75-µm cohort must not be fabricated from that textual statement.</p>
+<p>Canonical exports, with no fitting or scoring:</p>
+<ul>
+<li><code>data/derived/calibration_small_18um.csv</code>:17 OptoGEF2 dose/maximum-shortening records, plus average/apical/basal calibration outcomes and source locators.</li>
+<li><code>evaluation_large_50um.csv</code>:9 dose/maximum-shortening records; held-out responses are separated from calibration files.</li>
+<li><code>evaluation_larger_bending.csv</code>:31 larger-region diameter/dose/bending records.</li>
+<li><code>all_bending_records.csv</code>:48 records including the17 reused small observations, explicitly tagged.</li>
+<li><code>example_apical_basal_trajectories.csv</code>:63 points from three illustrative traces; no unverified join to a cohort embryo ID.</li>
+</ul>
+<p>These supply a defensible <strong>retrospective withheld-diameter computation</strong>. Public target values were inspected during data auditing; this is not a prospective or analyst-blinded experiment. The predictive model and selection rules must be frozen before test-score inspection. A data extractor's successful parse is not evidence of predictive accuracy.</p>
+<h2>Inputs, outcomes, and what cannot be inferred</h2>
+<p><strong>Allowed test inputs:</strong> intervention diameter, OptoGEF2 genotype/protocol and measured activation magnitude. The latter is normalized fluorescence during the first activation scan, not prescribed laser power, an absolute GEF concentration, or a known mechanical stress. The source standard curve is averaged across experiments; raw fluorescence is unavailable to reconstruct a training-only normalization. Consequently the honest target is prediction <strong>conditional on the published realized-dose descriptor</strong>, not prediction solely from pre-exposure laser commands.</p>
+<p><strong>Held-out outcomes:</strong> maximum shortening and bending classification. The source shortening measure subtracts a cellularization-reference trajectory inferred from non-activated tissue. This is an outcome-processing definition, not an admissible future trajectory to feed into a predictor. Calibration may use small-region outcomes; the large-region outcome/reference curve must not initialize a simulation.</p>
+<p>Initial cell height is protocol-level32–35 µm; individual heights, full initial surfaces, embryo curvature, force/stress calibration and individual material moduli are not supplied in these tables. The 3 small-region example traces do not yield full-cohort dynamics. Bending is an image-based categorical label from a continuous phenotype, not a numerical curvature, sign-calibrated furrow-depth field, or 3D surface.</p>
+<p>Supplementary Movie3 is an accessible50-µm example with transverse and two in-plane panels. It decodes as26 frames,1908×826 RGB,4 playback frames/s. The inspected frame carries biological time and a20-µm scale bar; playback fps is <strong>not acquisition timing</strong>. The publication includes crop/registration/display operations and no verified workbook-record crosswalk. It is useful qualitative geometry evidence, not a substitute for a complete paired raw-volume cohort. Its source hash and first/middle/last decoded hashes are in <a href="../evidence/data_movie3_inspection.json">the movie receipt</a>.</p>
+<h2>Gate conclusion and replay</h2>
+<p>Run <code>python controlled_furrowing/data/audit_workbooks.py</code> from the project root after retrieving the unchanged workbooks. The script compares every cell independently, proves duplicate checks, and exports the separated tables. It performs no optimization, learning, parameter fitting, or model evaluation.</p>
+<p><strong>Gate2 passes for actual-data inventory and the specified scalar/label test.</strong> A successful maximum-shortening transfer would be meaningful for that endpoint. It would not alone establish that one mechanical model predicts full larger-region deformation, bending geometry or dynamics. Those stronger claims need additional identifiable mechanical parameters and shape/time-resolved observations; limited public raw access does not invalidate the available numerical comparison.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,1438 @@
+{
+  "status": "PASS_SAFE_V2_COMPLETE_POINT_REDUCTION",
+  "checks": {
+    "negative_scalar_endpoint_reversal": true,
+    "exact_signed_sum": true,
+    "zero_crossing_absolute_lower": true,
+    "negative_interval_absolute_lower": true,
+    "negative_interval_absolute_upper": true,
+    "closed_endpoint_overlap": true,
+    "center_escape_does_not_imply_no_fixedpoint": true,
+    "both_SAFE_producers_true_terminal_labels": true,
+    "both_SAFE_prelaunch_reviews_bound_literal_PASS": true,
+    "oldQ_eta_capsule_same_original_B_u0_C": true,
+    "same_exact_base_theta_mu_kappa_gain_dose": true,
+    "base_theta_in_same_closed_C": true,
+    "same_exact_u0_reference_free_sigma_R": true,
+    "old_eta_radius_same_selected_Q_proof": true,
+    "bulk_0_local_hash_map_domain_tail_policy": true,
+    "bulk_1_local_hash_map_domain_tail_policy": true,
+    "bulk_2_local_hash_map_domain_tail_policy": true,
+    "bulk_3_local_hash_map_domain_tail_policy": true,
+    "bulk_4_local_hash_map_domain_tail_policy": true,
+    "bulk_5_local_hash_map_domain_tail_policy": true,
+    "bulk_6_local_hash_map_domain_tail_policy": true,
+    "bulk_7_local_hash_map_domain_tail_policy": true,
+    "bulk_8_local_hash_map_domain_tail_policy": true,
+    "bulk_9_local_hash_map_domain_tail_policy": true,
+    "bulk_10_local_hash_map_domain_tail_policy": true,
+    "bulk_11_local_hash_map_domain_tail_policy": true,
+    "bulk_12_local_hash_map_domain_tail_policy": true,
+    "bulk_13_local_hash_map_domain_tail_policy": true,
+    "bulk_14_local_hash_map_domain_tail_policy": true,
+    "bulk_15_local_hash_map_domain_tail_policy": true,
+    "bulk_16_local_hash_map_domain_tail_policy": true,
+    "bulk_17_local_hash_map_domain_tail_policy": true,
+    "bulk_18_local_hash_map_domain_tail_policy": true,
+    "bulk_19_local_hash_map_domain_tail_policy": true,
+    "bulk_20_local_hash_map_domain_tail_policy": true,
+    "bulk_21_local_hash_map_domain_tail_policy": true,
+    "bulk_22_local_hash_map_domain_tail_policy": true,
+    "bulk_23_local_hash_map_domain_tail_policy": true,
+    "bulk_24_local_hash_map_domain_tail_policy": true,
+    "bulk_25_local_hash_map_domain_tail_policy": true,
+    "bulk_26_local_hash_map_domain_tail_policy": true,
+    "bulk_27_local_hash_map_domain_tail_policy": true,
+    "bulk_28_local_hash_map_domain_tail_policy": true,
+    "bulk_29_local_hash_map_domain_tail_policy": true,
+    "bulk_30_local_hash_map_domain_tail_policy": true,
+    "bulk_31_local_hash_map_domain_tail_policy": true,
+    "bulk_32_local_hash_map_domain_tail_policy": true,
+    "bulk_33_local_hash_map_domain_tail_policy": true,
+    "bulk_34_local_hash_map_domain_tail_policy": true,
+    "bulk_35_local_hash_map_domain_tail_policy": true,
+    "bulk_36_local_hash_map_domain_tail_policy": true,
+    "bulk_37_local_hash_map_domain_tail_policy": true,
+    "bulk_38_local_hash_map_domain_tail_policy": true,
+    "bulk_39_local_hash_map_domain_tail_policy": true,
+    "bulk_40_local_hash_map_domain_tail_policy": true,
+    "bulk_41_local_hash_map_domain_tail_policy": true,
+    "bulk_42_local_hash_map_domain_tail_policy": true,
+    "bulk_43_local_hash_map_domain_tail_policy": true,
+    "bulk_44_local_hash_map_domain_tail_policy": true,
+    "bulk_45_local_hash_map_domain_tail_policy": true,
+    "bulk_46_local_hash_map_domain_tail_policy": true,
+    "bulk_47_local_hash_map_domain_tail_policy": true,
+    "bulk_48_local_hash_map_domain_tail_policy": true,
+    "bulk_49_local_hash_map_domain_tail_policy": true,
+    "bulk_50_local_hash_map_domain_tail_policy": true,
+    "bulk_51_local_hash_map_domain_tail_policy": true,
+    "bulk_52_local_hash_map_domain_tail_policy": true,
+    "bulk_53_local_hash_map_domain_tail_policy": true,
+    "bulk_54_local_hash_map_domain_tail_policy": true,
+    "bulk_55_local_hash_map_domain_tail_policy": true,
+    "bulk_56_local_hash_map_domain_tail_policy": true,
+    "bulk_57_local_hash_map_domain_tail_policy": true,
+    "bulk_58_local_hash_map_domain_tail_policy": true,
+    "bulk_59_local_hash_map_domain_tail_policy": true,
+    "bulk_60_local_hash_map_domain_tail_policy": true,
+    "bulk_61_local_hash_map_domain_tail_policy": true,
+    "bulk_62_local_hash_map_domain_tail_policy": true,
+    "bulk_63_local_hash_map_domain_tail_policy": true,
+    "bulk_64_local_hash_map_domain_tail_policy": true,
+    "bulk_65_local_hash_map_domain_tail_policy": true,
+    "bulk_66_local_hash_map_domain_tail_policy": true,
+    "bulk_67_local_hash_map_domain_tail_policy": true,
+    "bulk_68_local_hash_map_domain_tail_policy": true,
+    "bulk_69_local_hash_map_domain_tail_policy": true,
+    "bulk_70_local_hash_map_domain_tail_policy": true,
+    "bulk_71_local_hash_map_domain_tail_policy": true,
+    "bulk_72_local_hash_map_domain_tail_policy": true,
+    "bulk_73_local_hash_map_domain_tail_policy": true,
+    "bulk_74_local_hash_map_domain_tail_policy": true,
+    "bulk_75_local_hash_map_domain_tail_policy": true,
+    "bulk_76_local_hash_map_domain_tail_policy": true,
+    "bulk_77_local_hash_map_domain_tail_policy": true,
+    "bulk_78_local_hash_map_domain_tail_policy": true,
+    "bulk_79_local_hash_map_domain_tail_policy": true,
+    "bulk_80_local_hash_map_domain_tail_policy": true,
+    "bulk_81_local_hash_map_domain_tail_policy": true,
+    "bulk_82_local_hash_map_domain_tail_policy": true,
+    "bulk_83_local_hash_map_domain_tail_policy": true,
+    "bulk_84_local_hash_map_domain_tail_policy": true,
+    "bulk_85_local_hash_map_domain_tail_policy": true,
+    "bulk_86_local_hash_map_domain_tail_policy": true,
+    "bulk_87_local_hash_map_domain_tail_policy": true,
+    "bulk_88_local_hash_map_domain_tail_policy": true,
+    "bulk_89_local_hash_map_domain_tail_policy": true,
+    "bulk_90_local_hash_map_domain_tail_policy": true,
+    "bulk_91_local_hash_map_domain_tail_policy": true,
+    "bulk_92_local_hash_map_domain_tail_policy": true,
+    "bulk_93_local_hash_map_domain_tail_policy": true,
+    "bulk_94_local_hash_map_domain_tail_policy": true,
+    "bulk_95_local_hash_map_domain_tail_policy": true,
+    "bulk_96_local_hash_map_domain_tail_policy": true,
+    "bulk_97_local_hash_map_domain_tail_policy": true,
+    "bulk_98_local_hash_map_domain_tail_policy": true,
+    "bulk_99_local_hash_map_domain_tail_policy": true,
+    "bulk_100_local_hash_map_domain_tail_policy": true,
+    "bulk_101_local_hash_map_domain_tail_policy": true,
+    "bulk_102_local_hash_map_domain_tail_policy": true,
+    "bulk_103_local_hash_map_domain_tail_policy": true,
+    "bulk_104_local_hash_map_domain_tail_policy": true,
+    "bulk_105_local_hash_map_domain_tail_policy": true,
+    "bulk_106_local_hash_map_domain_tail_policy": true,
+    "bulk_107_local_hash_map_domain_tail_policy": true,
+    "bulk_108_local_hash_map_domain_tail_policy": true,
+    "bulk_109_local_hash_map_domain_tail_policy": true,
+    "bulk_110_local_hash_map_domain_tail_policy": true,
+    "bulk_111_local_hash_map_domain_tail_policy": true,
+    "bulk_112_local_hash_map_domain_tail_policy": true,
+    "bulk_113_local_hash_map_domain_tail_policy": true,
+    "bulk_114_local_hash_map_domain_tail_policy": true,
+    "bulk_115_local_hash_map_domain_tail_policy": true,
+    "bulk_116_local_hash_map_domain_tail_policy": true,
+    "bulk_117_local_hash_map_domain_tail_policy": true,
+    "bulk_118_local_hash_map_domain_tail_policy": true,
+    "bulk_119_local_hash_map_domain_tail_policy": true,
+    "bulk_120_local_hash_map_domain_tail_policy": true,
+    "bulk_121_local_hash_map_domain_tail_policy": true,
+    "bulk_122_local_hash_map_domain_tail_policy": true,
+    "bulk_123_local_hash_map_domain_tail_policy": true,
+    "bulk_124_local_hash_map_domain_tail_policy": true,
+    "bulk_125_local_hash_map_domain_tail_policy": true,
+    "bulk_126_local_hash_map_domain_tail_policy": true,
+    "bulk_127_local_hash_map_domain_tail_policy": true,
+    "bulk_128_local_hash_map_domain_tail_policy": true,
+    "bulk_129_local_hash_map_domain_tail_policy": true,
+    "bulk_130_local_hash_map_domain_tail_policy": true,
+    "bulk_131_local_hash_map_domain_tail_policy": true,
+    "bulk_132_local_hash_map_domain_tail_policy": true,
+    "bulk_133_local_hash_map_domain_tail_policy": true,
+    "bulk_134_local_hash_map_domain_tail_policy": true,
+    "bulk_135_local_hash_map_domain_tail_policy": true,
+    "bulk_136_local_hash_map_domain_tail_policy": true,
+    "bulk_137_local_hash_map_domain_tail_policy": true,
+    "bulk_138_local_hash_map_domain_tail_policy": true,
+    "bulk_139_local_hash_map_domain_tail_policy": true,
+    "bulk_140_local_hash_map_domain_tail_policy": true,
+    "bulk_141_local_hash_map_domain_tail_policy": true,
+    "bulk_142_local_hash_map_domain_tail_policy": true,
+    "bulk_143_local_hash_map_domain_tail_policy": true,
+    "bulk_exact_unique_complete_coverage": true,
+    "bulk_611_force_matches_exact_endpoint_sum": true,
+    "bulk_all_symmetric_H_slots_match_exact_sum": true,
+    "surface_(0, 0)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 1)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 2)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 3)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 4)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 5)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 6)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 7)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 8)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 9)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 10)_local_hash_map_domain_tail_policy": true,
+    "surface_(0, 11)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 0)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 1)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 2)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 3)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 4)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 5)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 6)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 7)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 8)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 9)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 10)_local_hash_map_domain_tail_policy": true,
+    "surface_(1, 11)_local_hash_map_domain_tail_policy": true,
+    "surface_exact_unique_complete_coverage": true,
+    "surface_611_force_matches_exact_endpoint_sum": true,
+    "surface_all_symmetric_H_slots_match_exact_sum": true,
+    "all168_packets_and6676_slots": true,
+    "safe6bulk_review_PASS": true,
+    "safe_bulk_replay0_all_entries_match": true,
+    "safe_bulk_replay6_all_entries_match": true,
+    "safe_bulk_replay72_all_entries_match": true,
+    "safe_bulk_replay66_all_entries_match": true,
+    "safe_bulk_replay48_all_entries_match": true,
+    "safe_bulk_replay143_all_entries_match": true,
+    "safe6surface_review_PASS": true,
+    "safe_surface_replay(0, 0)_all_entries_match": true,
+    "safe_surface_replay(0, 1)_all_entries_match": true,
+    "safe_surface_replay(0, 11)_all_entries_match": true,
+    "safe_surface_replay(1, 0)_all_entries_match": true,
+    "safe_surface_replay(1, 1)_all_entries_match": true,
+    "safe_surface_replay(1, 11)_all_entries_match": true,
+    "SAFE_combined_point_exact_base_eta_radius_scope": true,
+    "SAFE_combined_point_all611F_and_RF_enclose_exact_sum": true,
+    "SAFE_combined_point_norm_bounds_valid": true,
+    "SAFE_combined_point_map_formula_and_boolean_valid": true,
+    "all_frozen_bindings_current": true
+  },
+  "review_source_sha256": "4a1148e7ab8f8741dc16efc99434a7bc511381e7d3ce17802c561f90e87fb749",
+  "source_and_input_hashes": {
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/results.json": "9b7a7f6d42136497fd92d1341b69feaf4bb5ad1de94bca6667282e860ab72597",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/results.json": "024c3070f2f3e27866dbcf771cff6c08cb5648396b16bc709af552e9797028d9",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/protocol_v2.json": "92488086a01c04d8e0e307f606484a05a701328d192465b7ea9757a97c64d015",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/protocol.json": "55e0df292e44081d58863dc8c17b1b568efd6e1ece7177f38da203de6f0d24e7",
+    "scripts/exact_fe_target_safe.py": "889b61cfa794d432021fbd4670b781169033d4b8451554b18e7f7a569d9d3954",
+    "scripts/algebraic_root_feasibility.py": "7321d38bf17cf354cc03be2871f3fbaa45bcebbcbfca7be90d0f867b80078acf",
+    "evidence/shared_cell_cohort_inference.json": "1f8c4dc1ad8924f8fda13e6748d5e73aac426b5771b02404803d27c1955aa677",
+    "runs/cohort_uniform_roots_v2/records/00_optoGEF2_small_col_B/result.json": "3dcfca685a1417d2ba11b0c4a70b40aac84a2df9b8f1c36518826188f4e803c8",
+    "evidence/cohort_uniform_roots_independent_review.json": "67c9d5195c36fc11814d08517070fe53ea0f10f67d45911df517bd900e098297",
+    "runs/cohort_static_observers_v1/composition_final/records/00_B.json": "8ea15ab81a4b610a75ac12564d610b92084399cef15df21c577e2684ede1106b",
+    "evidence/cohort_static_observers_independent_review.json": "5e71814a8a266ff309f990dfcd07b7ba8078abee39c5db8ac10ea04aaa2af8ad",
+    "runs/cohort_uniform_roots_v1/records/00_optoGEF2_small_col_B/preparation_attempts/000/tangents.npz": "c0952dc018cc6c627d9db88f8f3a7dbab7d0531eea6e3c77b01519f9839f070c",
+    "runs/cohort_uniform_roots_v1/records/00_optoGEF2_small_col_B/preparation_attempts/000/affine_predictor.npz": "b086e4a6ecd9b89c020a069728e0dc571b34203ab360097b9194b6d57f0f0fa1",
+    "runs/cohort_uniform_roots_v1/records/00_optoGEF2_small_col_B/preparation_attempts/000/tangent_verification.json": "11c2e13bab52aeded4191f091104e8c65930e9b4e71df8be4313e5d6d4a6de58",
+    "runs/cohort_uniform_roots_v1/records/00_optoGEF2_small_col_B/preparation_attempts/000/point_cache.json": "f334f4cc139a21df34f7aff3019559a39ef1313c670223885b9474498dd84fb9",
+    "runs/cohort_uniform_roots_v1/records/00_optoGEF2_small_col_B/preparation_attempts/000/started.json": "e917f327f1c6e0e3c33ebe356ce243ff46931fa22d94fac35be0daa97178f43c",
+    "runs/cohort_uniform_roots_v1/records/00_optoGEF2_small_col_B/result.json": "e471cd100320220242ac45aaae0cc5e8d89b4ae92d9e0b108fce9c3e494a7be0",
+    "runs/material_cohort_direct_v1/direct/00/final.json": "172613bf1de4f8fd39f297b5a6a124611a19afff1272cfc150de36c7a40b45e3",
+    "runs/cohort_uniform_roots_v2/records/01_optoGEF2_small_col_C/result.json": "ecfec8b5aac05f7dee24a7f1ce404252795556de119c21342d81a8c256ef46a8",
+    "runs/cohort_static_observers_v1/composition_final/records/01_C.json": "9036608447e01a2e16acc72686c70b1340f0375d509c639b568566f6217485b0",
+    "runs/cohort_uniform_roots_v1/records/01_optoGEF2_small_col_C/preparation_attempts/000/tangents.npz": "d1d83bd65ba6665529d288a0e2374a0aecf3502def61d4e962b4c1e558201da1",
+    "runs/cohort_uniform_roots_v1/records/01_optoGEF2_small_col_C/preparation_attempts/000/affine_predictor.npz": "7c97f7fda3b99e8a209128be8740f7b25ecc05679c60b799369333aaac5d6593",
+    "runs/cohort_uniform_roots_v1/records/01_optoGEF2_small_col_C/preparation_attempts/000/tangent_verification.json": "63d4011dee1887d70de6f620de8de6bb41bd94da4bbe3f6b79e229af92c377bc",
+    "runs/cohort_uniform_roots_v1/records/01_optoGEF2_small_col_C/preparation_attempts/000/point_cache.json": "eecb9401a0676e61e8ea079d890e6eaa505ea7020852b95a7c41c904a598354f",
+    "runs/cohort_uniform_roots_v1/records/01_optoGEF2_small_col_C/preparation_attempts/000/started.json": "8dd2d7add120d66f6268e527a633947d10650a90f3cc98a9c56221731f5cd4bf",
+    "runs/cohort_uniform_roots_v1/records/01_optoGEF2_small_col_C/result.json": "c6cba93d946fc2f2f2d3d37a03a5c2f9ccd8dcf9df61adb548edc66b2e22a8cd",
+    "runs/material_cohort_direct_v1/direct/02/final.json": "0679d66374303f7693ddfb5f21b315bd3b5387d6dce892585ae0bb8eda293390",
+    "runs/cohort_uniform_roots_v2/records/02_optoGEF2_small_col_D/result.json": "442e011cd480a834f93877d4ab1ae7c414788f9c8110d3386d13cecc679deba2",
+    "runs/cohort_static_observers_v1/composition_final/records/02_D.json": "b9cd2ddabc459297760058ab7112a02a8d45d89d282d33bfe2297a1ffaecd761",
+    "runs/cohort_uniform_roots_v1/records/02_optoGEF2_small_col_D/preparation_attempts/000/tangents.npz": "ec51e61c5c21d19f445291488a5114b851a78ed68b7801488b4537398c0d69ef",
+    "runs/cohort_uniform_roots_v1/records/02_optoGEF2_small_col_D/preparation_attempts/000/affine_predictor.npz": "70d63ac1b92286b68ab08202e5746dccc606342fd7d07feaed6ae07cbf0c72a7",
+    "runs/cohort_uniform_roots_v1/records/02_optoGEF2_small_col_D/preparation_attempts/000/tangent_verification.json": "f69d4c0b72ebc6eb836ec2ef53ca9114f17bc9827a638dd286f530969562f229",
+    "runs/cohort_uniform_roots_v1/records/02_optoGEF2_small_col_D/preparation_attempts/000/point_cache.json": "26ac5a802533ee56d01b5cf0bb2eb70655c196bbd825ce2848bcb86f43e27d4c",
+    "runs/cohort_uniform_roots_v1/records/02_optoGEF2_small_col_D/preparation_attempts/000/started.json": "716ad50b243e4e9f23fd9b9d3781ea6aa325c09edde185487201fba97953cd2f",
+    "runs/cohort_uniform_roots_v1/records/02_optoGEF2_small_col_D/result.json": "57a273f29816f3e0070d902c2308eba838da61d17735079e1027717fba4a2bc2",
+    "runs/material_cohort_direct_v1/direct/05/final.json": "0fd6f33b199064eac05b3287855bbb622f6c81076608350209d7fccc458db50c",
+    "runs/cohort_uniform_roots_v2/records/03_optoGEF2_small_col_E/result.json": "56b16cfa1ed0e237acfad6faf5a6eb66bce9e1b157cf7fde7b2758b14383d315",
+    "runs/cohort_static_observers_v1/composition_final/records/03_E.json": "1989fae5d22d12a32ec8b7632ac2d56d0afbc6ed401f2d2f54a3b557fdcd56eb",
+    "runs/cohort_uniform_roots_v1/records/03_optoGEF2_small_col_E/preparation_attempts/000/tangents.npz": "96d14b603a1d3b91b276885ccc4a5614ffa3e071f0d259993662a869ad178465",
+    "runs/cohort_uniform_roots_v1/records/03_optoGEF2_small_col_E/preparation_attempts/000/affine_predictor.npz": "0f837a155a8771f1a6414a2289bbe0e1d2da2c7493ad8f55f897d5f8895d58d0",
+    "runs/cohort_uniform_roots_v1/records/03_optoGEF2_small_col_E/preparation_attempts/000/tangent_verification.json": "da3ab00d045abb778d71e288da3c5f604ba3edcaea2a5858b49930da8177411d",
+    "runs/cohort_uniform_roots_v1/records/03_optoGEF2_small_col_E/preparation_attempts/000/point_cache.json": "662f187cfdd9421a5b37b75875fc08581187ec25e0cb1e00d8143ba0cce11b81",
+    "runs/cohort_uniform_roots_v1/records/03_optoGEF2_small_col_E/preparation_attempts/000/started.json": "bfcaf84e6e71ada8ea447a9f5323ae569ec1f9dba068f5dc8ed62723b0918fe7",
+    "runs/cohort_uniform_roots_v1/records/03_optoGEF2_small_col_E/result.json": "d9ba0b0eb5121da42f02c16fb392e07f2c8f8f4f46f76cf716558b79da6b6c87",
+    "runs/material_cohort_direct_v1/direct/12/final.json": "618c4b338294850b2f26d1afe2a21bae075d94212d88189224550946f0623d37",
+    "runs/cohort_uniform_roots_v2/records/05_optoGEF2_small_col_G/result.json": "23977b487295683d352e534cd588024bb536896fbefd606db3dc531f27457b8e",
+    "runs/cohort_static_observers_v1/composition_final/records/05_G.json": "a2beacc9576cf820e7f6c3a34dc43ff88fbf28b5e4e23f15e13e057a34629e2d",
+    "runs/cohort_uniform_roots_v1/records/05_optoGEF2_small_col_G/preparation_attempts/000/tangents.npz": "27da3164367ff5404a213d15609352e50ca3450e649c0ad75e44d60af2434916",
+    "runs/cohort_uniform_roots_v1/records/05_optoGEF2_small_col_G/preparation_attempts/000/affine_predictor.npz": "a7f06a9630658dc89f28e6c6da426206c576ef827ccc53fed17e3959f1054761",
+    "runs/cohort_uniform_roots_v1/records/05_optoGEF2_small_col_G/preparation_attempts/000/tangent_verification.json": "5c4e9b7571a63937dc1d7bb680564f72b05e86d389a8396775f3e18b957192cf",
+    "runs/cohort_uniform_roots_v1/records/05_optoGEF2_small_col_G/preparation_attempts/000/point_cache.json": "bb13bea3d1e0be2e7dea12fa49d78747572a3ae6e5fa85f5a8af6d8f6b56f092",
+    "runs/cohort_uniform_roots_v1/records/05_optoGEF2_small_col_G/preparation_attempts/000/started.json": "439c9ed7043af09b11b6890cfdecc69f7748b298bf99c6893308fd0b0d597fc1",
+    "runs/cohort_uniform_roots_v1/records/05_optoGEF2_small_col_G/result.json": "1956075ae79688386b7af5673c07ec47b443bc166e4901a5585542e7596e7c61",
+    "runs/material_cohort_direct_v1/direct/14/final.json": "66eaa705b6ef3442fbb60011d35f3e0c592adcbfc1ba404e6937b54c476e1346",
+    "runs/cohort_uniform_roots_v2/records/06_optoGEF2_small_col_H/result.json": "53263b3ca6edabf3577c9dc2c5dc3fc7101019405e06c2cc8f3bc4bd1363438b",
+    "runs/cohort_static_observers_v1/composition_final/records/06_H.json": "501f4b64a8d55c58d3f26376a92c080f44c184583897e21b48580597fb712c0b",
+    "runs/cohort_uniform_roots_v1/records/06_optoGEF2_small_col_H/preparation_attempts/000/tangents.npz": "e9d5c3f0bc8770767b7b61c601612824e2aaf79959e3dd45fedd1af64ae6dff5",
+    "runs/cohort_uniform_roots_v1/records/06_optoGEF2_small_col_H/preparation_attempts/000/affine_predictor.npz": "09cf74e015bb33bb4a7787807ec49cb405d4818172c0f0b2cf8c61ad7edcca0d",
+    "runs/cohort_uniform_roots_v1/records/06_optoGEF2_small_col_H/preparation_attempts/000/tangent_verification.json": "9129b2d4eeefebdf27c8512c7f2390c0a360007a3f34850ef55afbcdd01968de",
+    "runs/cohort_uniform_roots_v1/records/06_optoGEF2_small_col_H/preparation_attempts/000/point_cache.json": "b737825f51bd8f9b1e5446fa0a8f9daa0028936dc15ef22d860499fd35ff7c88",
+    "runs/cohort_uniform_roots_v1/records/06_optoGEF2_small_col_H/preparation_attempts/000/started.json": "1dd8ca4fff542a4b55cc1cc887714743c41e3f4f454a952c348fcbd82f03a004",
+    "runs/cohort_uniform_roots_v1/records/06_optoGEF2_small_col_H/result.json": "7e719973e9c8eba127bf4d9688f0d23f1f6a4e50c11b4e79357ac70a3d703933",
+    "runs/material_cohort_direct_v1/direct/10/final.json": "3866e4d06f107499ed1ebf71548a126414b17314936640a7119f7ace1db7c074",
+    "runs/cohort_uniform_roots_v2/records/07_optoGEF2_small_col_I/result.json": "1f73be4fde4eda2278c5bda6dc388d8c083bdf67231a87092a6d201940647c6e",
+    "runs/cohort_static_observers_v1/composition_final/records/07_I.json": "ff5b6d7d52eb1882d997ce61ae76e440bac835a9ddc122cc06276a51055b20b0",
+    "runs/cohort_uniform_roots_v1/records/07_optoGEF2_small_col_I/preparation_attempts/000/tangents.npz": "741aa4c9181b192c470795b7e7765e92f2282de90357a81089e11b577cec4fcf",
+    "runs/cohort_uniform_roots_v1/records/07_optoGEF2_small_col_I/preparation_attempts/000/affine_predictor.npz": "c70e937ff46343aae0fe594dab795f183ac40fdb20f85a2890f464436aabe76b",
+    "runs/cohort_uniform_roots_v1/records/07_optoGEF2_small_col_I/preparation_attempts/000/tangent_verification.json": "f22e0f443e87ad121133d2d71d1939955b6e7a45654d9be041b760fae37ed86e",
+    "runs/cohort_uniform_roots_v1/records/07_optoGEF2_small_col_I/preparation_attempts/000/point_cache.json": "0616655cc691e3bb7b0901c12bc5279a29c70b88d6d285263feb5c248eedabab",
+    "runs/cohort_uniform_roots_v1/records/07_optoGEF2_small_col_I/preparation_attempts/000/started.json": "b72c912387e8b32babc17fa531e8c437d255192d8fb8e0fd5bdce709df1270cf",
+    "runs/cohort_uniform_roots_v1/records/07_optoGEF2_small_col_I/result.json": "d5e53675a3ec6d28fa366efb32cd8e97adf5c6f2eaee2170a80deab57f4eb17d",
+    "runs/material_cohort_direct_v1/direct/04/final.json": "901cdf4a56984e9b8a010be80818717e4f0aee0fe4ce5ea90b2608a588a66996",
+    "runs/cohort_uniform_roots_v2/records/08_optoGEF2_small_col_J/result.json": "265ad556102847af69d05f14886776015ecc709fd3962c0180a48b935cb13f51",
+    "runs/cohort_static_observers_v1/composition_final/records/08_J.json": "cdf6262ee0649033ba7b38ab1449ec0848049e169738f441a4becf8a5c57b81c",
+    "runs/cohort_uniform_roots_v1/records/08_optoGEF2_small_col_J/preparation_attempts/000/tangents.npz": "e1898b20be9fba8d495f0088e5500a3f50abce3b2a5db2c156b5a8fa77f4d2d9",
+    "runs/cohort_uniform_roots_v1/records/08_optoGEF2_small_col_J/preparation_attempts/000/affine_predictor.npz": "63a99bca283c40227cfb92f9c097f3d29aaa3f780ea79fd39ba4bba52380e9ea",
+    "runs/cohort_uniform_roots_v1/records/08_optoGEF2_small_col_J/preparation_attempts/000/tangent_verification.json": "082f85dbf7562773a31c7651fe91cbddad1afb9f00707cd630f2f6845d9758cd",
+    "runs/cohort_uniform_roots_v1/records/08_optoGEF2_small_col_J/preparation_attempts/000/point_cache.json": "04ed0a083b79e386dd1c72cfad2ccf2c0fe4d5a1a94724e0c2877f90f981b1f3",
+    "runs/cohort_uniform_roots_v1/records/08_optoGEF2_small_col_J/preparation_attempts/000/started.json": "86ee42e779220ca99f3212690515e890ddca34f1a126c5063a5d8c08cf7fe732",
+    "runs/cohort_uniform_roots_v1/records/08_optoGEF2_small_col_J/result.json": "41a4fde94b2971beea2d2d4f61b7d40cf881a415b4bb51349faf27279310b9f0",
+    "runs/material_cohort_direct_v1/direct/13/final.json": "2db731bccd549e13c908dba2721bc3bbbc92094004bcd2210c1d93c34a91971f",
+    "runs/cohort_uniform_roots_v2/records/10_optoGEF2_small_col_L/result.json": "a106e69578ee840b81b55ec330c35fd3baf4ea1ecd55f075b64b9c14f9671222",
+    "runs/cohort_static_observers_v1/composition_final/records/10_L.json": "b3a3e93778c35c1c115693a812c5f286c53e80a2b4145a2587e9a541166ad65a",
+    "runs/cohort_uniform_roots_v1/records/10_optoGEF2_small_col_L/preparation_attempts/000/tangents.npz": "f4ecb30848e462d4459fa477728fcd0357e163762c80e19212e5f910d1487cb0",
+    "runs/cohort_uniform_roots_v1/records/10_optoGEF2_small_col_L/preparation_attempts/000/affine_predictor.npz": "df7f89e19d426fbe36b7a896fd64b7c7d0c29c7d7fb7a0c7d16713bfbdc948a8",
+    "runs/cohort_uniform_roots_v1/records/10_optoGEF2_small_col_L/preparation_attempts/000/tangent_verification.json": "1b42655c0ff9b7a8d723f469e8db3e89e64e8aa64b42de6822d0ed154c269bed",
+    "runs/cohort_uniform_roots_v1/records/10_optoGEF2_small_col_L/preparation_attempts/000/point_cache.json": "60a68dc117c61aed6db823df44da247270385c8ce91eaf4dfa2dbf08bd932be3",
+    "runs/cohort_uniform_roots_v1/records/10_optoGEF2_small_col_L/preparation_attempts/000/started.json": "f551788c1ec48b84c25962473e9eeadf004883c94e7ac0a80b2aaaa926abbb1f",
+    "runs/cohort_uniform_roots_v1/records/10_optoGEF2_small_col_L/result.json": "3cbd1d4abd989d5359e37486a6c91a53cbda088ef47a422c3dfec471b444465c",
+    "runs/material_cohort_direct_v1/direct/16/final.json": "58276c4ecbf40bdcc554c7851a58f39d128db4764e2cff5b4c545b667c126720",
+    "runs/cohort_uniform_roots_v2/records/11_optoGEF2_small_col_M/result.json": "38c2997d7299196ed5bdce6c100edf8fc19a9c31ca96e6d6292f6eb878e700f6",
+    "runs/cohort_static_observers_v1/composition_final/records/11_M.json": "5212f27132a186971132448af6fd0d92fedb72bd13a24016354178b0d46220cb",
+    "runs/parametric_root_cells_v1/actual_M/root_certificate.json": "d1b11c4b678ea043835177589ab271c858a56fd8d32487549d3394d977745047",
+    "runs/parametric_root_cells_v1/actual_M/point_cache.json": "1a9edb8b96a922cfed7ad78c796549f5655e29b60926da9e78a90e3ceb0e9cab",
+    "runs/parametric_root_cells_v1/actual_M/affine_predictor.npz": "36c487b8c15fdb0817c234d21d5d02574660d8be3848539420d186eedc015eef",
+    "evidence/parametric_actual_M_independent_review.json": "4b03db70583be266a8d4ae581f19c8db0099bc028ddd6af82a5c990a91d8e600",
+    "runs/material_cohort_direct_v1/direct/08/final.json": "bfaa3a3d05af6ff8c5b8e55bda886ae8125b24a3543b0a4c7c5c6a5c26dd4ea0",
+    "runs/cohort_uniform_roots_v2/records/12_optoGEF2_small_col_N/result.json": "8721f35a1c73db8cb2b12096d24307042d4e84529ba5b815bc0444eb8b3b192d",
+    "runs/cohort_static_observers_v1/composition_final/records/12_N.json": "c617e12a48d17c894f954b63134a6404556222106024a2c86f61192f596c4c1c",
+    "runs/cohort_uniform_roots_v2/records/12_optoGEF2_small_col_N/preparation_attempts/000/tangents.npz": "747d97f51b4b53f3f53ecda43470658d28c0797ba0507bbe3a7d63943230bc32",
+    "runs/cohort_uniform_roots_v2/records/12_optoGEF2_small_col_N/preparation_attempts/000/affine_predictor.npz": "36d4ce20f96a8b65e9c7fc94e23cade2f32a53d84b8623cb36fe62547a39b9a9",
+    "runs/cohort_uniform_roots_v2/records/12_optoGEF2_small_col_N/preparation_attempts/000/tangent_verification.json": "5141e602b1129065de6417450e839c5ca559f986db8f05dc77da79bfdc81fa32",
+    "runs/cohort_uniform_roots_v2/records/12_optoGEF2_small_col_N/preparation_attempts/000/point_cache.json": "7733c3f1e524d503e57152f1a074335742a04aac8445d6d04ae1c5da8dfed38f",
+    "runs/cohort_uniform_roots_v2/records/12_optoGEF2_small_col_N/preparation_attempts/000/started.json": "058d862a48ec77d713654a11a305e3a08d74a37f92fe53e52862a56457e6f5f0",
+    "runs/material_cohort_direct_v1/direct/06/final.json": "a357c170bbfa031d3aa349b0baf946c85cc539540fbb841d2459795bfe642864",
+    "runs/cohort_uniform_roots_v2/records/13_optoGEF2_small_col_O/result.json": "3fe935437944ea5f819bdab492f702d6c83d4e04ee9babd9be446e0d2601305b",
+    "runs/cohort_static_observers_v1/composition_final/records/13_O.json": "857a509de4d23e9a21638f66c1237e18716cbba217607417c0828a75f6aa26a3",
+    "runs/cohort_uniform_roots_v2/records/13_optoGEF2_small_col_O/preparation_attempts/000/tangents.npz": "fbba6487e724dafad542e60e2722c3c02ab285d0b1d99689c62d1282e0131076",
+    "runs/cohort_uniform_roots_v2/records/13_optoGEF2_small_col_O/preparation_attempts/000/affine_predictor.npz": "55a7df17443857d5b37e01521ea3b135153c2158270831c9f555f84dd36bc8a5",
+    "runs/cohort_uniform_roots_v2/records/13_optoGEF2_small_col_O/preparation_attempts/000/tangent_verification.json": "81b1c067d3eb333bdccc96e0da3f4a21c04e9235f3b50956bc62221c65fccc3b",
+    "runs/cohort_uniform_roots_v2/records/13_optoGEF2_small_col_O/preparation_attempts/000/point_cache.json": "30bf17d08373b5c8c36ed83ce33fad50981b1c8dec25f25ff3047befdb5d49a5",
+    "runs/cohort_uniform_roots_v2/records/13_optoGEF2_small_col_O/preparation_attempts/000/started.json": "03e8d3d0aaa663a8a60967c9a8271d76426afe2539cffb929c540a939029e651",
+    "runs/material_cohort_direct_v1/direct/01/final.json": "9bf1b18926f4d60296a29f99286c6e42f0f9116f69d9e0cddca93f35e1f1d6d4",
+    "runs/cohort_uniform_roots_v2/records/14_optoGEF2_small_col_P/result.json": "651d1705999e6291cb5a30af48803966201c7691266a3e75d0187488d8269afc",
+    "runs/cohort_static_observers_v1/composition_final/records/14_P.json": "69b0abe6764a20dbdf285e2a481bc1414e13961d8c55e58333b72a2b5bfcc4bd",
+    "runs/cohort_uniform_roots_v2/records/14_optoGEF2_small_col_P/preparation_attempts/000/tangents.npz": "246e2a6ae99ed179c960e255e5f92f5b461170bfe3f76b6513c266dcaa6a092b",
+    "runs/cohort_uniform_roots_v2/records/14_optoGEF2_small_col_P/preparation_attempts/000/affine_predictor.npz": "803c83a40004b878cc0a20dd83e16503bcd895e6eb63f6280a6ea529bbd8d201",
+    "runs/cohort_uniform_roots_v2/records/14_optoGEF2_small_col_P/preparation_attempts/000/tangent_verification.json": "1a417e7a8d745a2b086c9038b8ea1c37acdc1ca5931265b39bf043dee72b611b",
+    "runs/cohort_uniform_roots_v2/records/14_optoGEF2_small_col_P/preparation_attempts/000/point_cache.json": "e7c67707cc2444b312a1d0599ca32a89f20ce9dc10fff1c143fee9a77a4f4bb2",
+    "runs/cohort_uniform_roots_v2/records/14_optoGEF2_small_col_P/preparation_attempts/000/started.json": "75e472f29d8eea4078d48fbe080a6022b2f6c5c3074cd6a7d3683b83e43af4d4",
+    "runs/material_cohort_direct_v1/direct/09/final.json": "623cbac5db3f515cca6b234ec506dc5fb0ef514be84cb81221aff0a6ec8513d5",
+    "runs/cohort_uniform_roots_v2/records/15_optoGEF2_small_col_Q/result.json": "958c41e39b93659355875a6fc0416188e492f6022ae15c597f9e5e2fdf823d9a",
+    "runs/cohort_static_observers_v1/composition_final/records/15_Q.json": "f8dabbde534c762a8a08524af3daf744eba541d675eaf255d361ca14ad4c37b7",
+    "runs/cohort_uniform_roots_v2/records/15_optoGEF2_small_col_Q/preparation_attempts/000/tangents.npz": "e092a9d8c4cb7ad3f4ac0ad381f118318c84263ffaf87afc9c1ffaddbcf94028",
+    "runs/cohort_uniform_roots_v2/records/15_optoGEF2_small_col_Q/preparation_attempts/000/affine_predictor.npz": "8d4d5dc784e8bf6874959a6f7bbd7d0b1879a217be885fcff1fdc9a906e88622",
+    "runs/cohort_uniform_roots_v2/records/15_optoGEF2_small_col_Q/preparation_attempts/000/tangent_verification.json": "a97299c0c336b9596017293109b76067b1d922ac7f00b4bc7a82227520e4d192",
+    "runs/cohort_uniform_roots_v2/records/15_optoGEF2_small_col_Q/preparation_attempts/000/point_cache.json": "6fab745ba3420d3fb731fc8adc1434827272bb3675de9abb797ef2ea31558fb2",
+    "runs/cohort_uniform_roots_v2/records/15_optoGEF2_small_col_Q/preparation_attempts/000/started.json": "dbb4b866d5a98aeadeb732c62cedcc3387e9e385d4aaeb2edd885c23256cdd2e",
+    "runs/material_cohort_direct_v1/direct/07/final.json": "69647b03c13568ae9dff4838eea24dc6d7f82878b02c422999a418711595184d",
+    "runs/cohort_uniform_roots_v2/records/16_optoGEF2_small_col_R/result.json": "71dcf24e50bbd5a96199645a90be8d690560bb5cdbcc71af70774e5308165c62",
+    "runs/cohort_static_observers_v1/composition_final/records/16_R.json": "69362188148d00f7fb50bc6ffd86b8564ba707cd9ec385beeb0d1465fcb63ab8",
+    "runs/cohort_uniform_roots_v2/records/16_optoGEF2_small_col_R/preparation_attempts/000/tangents.npz": "ecb3dcae3098dba5f017c66cbc41464c54fb7cfef481c64af3a95f2f8b53f2a7",
+    "runs/cohort_uniform_roots_v2/records/16_optoGEF2_small_col_R/preparation_attempts/000/affine_predictor.npz": "a3f804b30fef71150fecd77f660226ce2fd131974bf4786610dd57e74d043cc8",
+    "runs/cohort_uniform_roots_v2/records/16_optoGEF2_small_col_R/preparation_attempts/000/tangent_verification.json": "a2d66889be3ff54ade56e3e2c04f901e3d27a6de0d5a55ce9468c3b5758c14e0",
+    "runs/cohort_uniform_roots_v2/records/16_optoGEF2_small_col_R/preparation_attempts/000/point_cache.json": "7a34358c1c3c09324a73d1c94c30af014b7b39f1b12ec272b7cb12cac333fe7c",
+    "runs/cohort_uniform_roots_v2/records/16_optoGEF2_small_col_R/preparation_attempts/000/started.json": "93550046e069521b7b1618fd814c842ff49ff452ecb48d7f36c5b64da49001d1",
+    "runs/material_cohort_direct_v1/direct/11/final.json": "407d4446e5b5975185da1a17cec4dff624848020795a2a125e2b56d5b072909e",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_F/result.json": "7ee9815aed5233e2566c9fdc4b81896b858f6aaaa2316b223f8fc6aee04eb6ce",
+    "evidence/cohort_recentered_roots_independent_review.json": "9eb544895612e1da07972c2f48de74156e1e7f18b638140306270fbf111ee34f",
+    "runs/cohort_recentered_observers_v1/records/optoGEF2_small_col_F.json": "899837a59fe9e2e6f9e4c85deb705824f992f44cbe0250dbecfac8e1a306216d",
+    "evidence/recentered_observers_independent_review.json": "f0e99c437c2eede9f4d490f7ed020fa825227b4cee57065075322cd4e60fcd97",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_F/center_arrays.npz": "f06842a2eddfc3ce29b510af5745243522beaa3282ee6fc9ea17a916f029ae0d",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_F/proof_center_state.json": "9fc4819bc6ae85ce2db3913b4890a48bb4fe7b268275ada830ee17ad41fd9f13",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_F/point_cache.json": "4c78a721b2909b5b517064e416b1dad29d7822305c6ee8002c3b2d667b42442d",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_F/center_refinement.json": "607e9020175235fbe902245b6645ef7058db7b2c0939c56a9ccac56c426fb091",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_F/affine_predictor.npz": "f28f37bf3fac205485b1ddc8bef8cb41974d40ca29fe6b87eac9de400a09d1ae",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_K/result.json": "cae3814a37c1fc8a2c2af742aa42e7f2abd0bc14af495a9282af371e5ab41738",
+    "runs/cohort_recentered_observers_v1/records/optoGEF2_small_col_K.json": "ca97b7b6bb8fdb66038cbf2bc9c6ba82ceebced53e0aa85591f5c6d1d23d7df9",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_K/center_arrays.npz": "fe08f688e09673f641fd7c3ed4a98e65f49ff51f6dbac38a3864969bcdd194de",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_K/proof_center_state.json": "9aae061d8da9ab43fc7299c8732364d7a8c30a25f971351d2b019a79c772c10c",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_K/point_cache.json": "8db76b47b1cc400b049ff8595382170785b42343b390c7fe74264dfb6223548b",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_K/center_refinement.json": "caad9013223bd669b1c202d02dcdc5ba05f94b0fa8e7b11b58f43e718aeb84d8",
+    "runs/cohort_recentered_roots_v1/records/optoGEF2_small_col_K/affine_predictor.npz": "d179db772e39543e58c27335e6a3becbef6ae5ada8e80d510e3dd748f15547a9",
+    "scripts/exact_bulk_bridge_assembly_safe.py": "84a36fe274e3606d77adfe668fcdfc975e84996319d7bfc3cf4883d31de94950",
+    "scripts/exact_bulk_bridge_safe.py": "d09233e0ac5a0145f13a9bde2e89127df8b248bf89b6541e281c013db7cc1f74",
+    "scripts/exact_fe_moments.py": "52bd1e4b54f4ae03ca66592bf4ab295fef30713e5fe171e6fc3e955acf2b9925",
+    "runs/exact_integration_bridge_v1/safe_kernel_v2/polynomial_jet_safe.py": "1439e20ec127d39565467d0788173b1148b5ab47f659b3b39486b81aaf1ee373",
+    "runs/exact_integration_bridge_v1/target_preparation_safe_v2/protocol.json": "68164b3a922854b05d55c57d6872e92451e176484d7f5bf2ba3127101819850b",
+    "evidence/exact_safe_polynomial_kernel_independent_review.json": "a2f6b6c4740e5475a818cf58320fa43cc8c8ea63c7f37afe44c1c8632bd9356d",
+    "runs/exact_integration_bridge_v1/independent_design/geometry_alignment.json": "a7c7089c0a7c020dedbcf7e6cc858958114d106dddd21b7e68af4e098d700a31",
+    "evidence/exact_fe_moments_independent_review.json": "3d0d55cca32af72ff779480db254f8097af02fe4981c94ddf74adf04c2cbba28",
+    "evidence/interval_polynomial_cleanup_audit.json": "fe0f5414ecf16b6ff3e804d53a6ad68d44ef6a6766824786acd4ef2645fff084",
+    "scripts/exact_surface_bridge_assembly_safe.py": "1012f6f679d48661890310daa0a4d05064a380930a55843e22a88995b0680fb3",
+    "scripts/exact_surface_bridge_safe.py": "3f8627e87b2fcf95a7109aecf10e1780a534292d2ce53640dea8ae8cd9e621b3",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/prelaunch_independent_review.json": "3a35d29d7daec46cd09e866b2e9dc93362d672cc341b3ce6fb7634bbe86d0029",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/prelaunch_independent_review.json": "2d5ebef98b0ea021d92aac12aea41d113b2ea96568b84661e003f6c7f9130979",
+    "runs/cohort_uniform_root_review_v1/records/optoGEF2_small_col_B.json": "d2103df490e7b3f090597d3f83f24dc6a26ed53fcaf0860d3282506aea0e8d07",
+    "runs/cohort_uniform_root_review_v1/protocol.json": "f34d853954f23fa4e9c786dce8c59b79ff74a3802e1949a26a1fa356958ddd7f",
+    "runs/cohort_uniform_roots_v1/protocol.json": "e1a6efd2a3a09611f60419b36845db296f8b75e875a150b8ce2384cf623e0982",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/000.json": "4d3e87d70e788a9a3b4f302e5be6cde313e8a34a8f3a5c45cb52de412acd2521",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/001.json": "32ab7fd5b8f9641a9681799cd0056b48f9c8901971eeb4a0280fbcf029e4059e",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/002.json": "27288508d84650a824f23de8715cbb940f9f3355e78dfc543f3dd69eaa8552c7",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/003.json": "612162314258d12c75fb8d5141123c3dd717fdca8ed9ff2b464d4963e51b5942",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/004.json": "c7d2a9322f16335f44c2633ead0394474a60593cbd0f2adbcf1ebf3c99a8dd59",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/005.json": "45256498d9ba76788be3e3dae470bf8fa1b7af0d976873ec824099d38c6a9a45",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/006.json": "0af3c6dc11585b0f8c92cca2cfe469c044711bad996d1bbada82d035e6dd11c4",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/007.json": "78230b58bcfd11765e907f598c2917e5275130737aeec1899b89a670946a48fe",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/008.json": "e9540040f6882c3913ed426124f5ed1c6dd884adb7b1764e5f9898bd261a55fa",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/009.json": "874c8decd016672d3dcf92c84ea37fa6aa835b22c87b8dd8c66452045ebbab2f",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/010.json": "7d8ae549c6a92e58a014542cedfad0bb458590bb39828e459eb00f9ee87c3aca",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/011.json": "ad81f65f3792cdddfe205e305e6e0f1646f1ca5cd0455c27edf3d2b2ce743ab1",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/012.json": "6750fc18b7f5c1af85aa413b7917f8d323d8891ac1c5268a59578a858d31cce1",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/013.json": "6616e7c54c81fe060008f403061b08aa01b220e0324056f3680c0bcfed39767b",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/014.json": "5df5ffeb9d4424bd8f1d572ac17b01b807970bd3d16c84aee9940bbc36013676",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/015.json": "8a751cca2b9126900b0c205bea6d8147a21497d61000ba1340cb08219188034c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/016.json": "f270f6478d62fb75f1bc08332dc638d6b63f3f0d7458055f3a62f9bdbc60e937",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/017.json": "64eb7610bea8db090c01b94408709b617c1dfc18a8eeb0a5edceadf8bb799bc8",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/018.json": "420b217f78708e52a4436a42b064ca96f98dc27b4fd5a89cd825b2d9ec795cf9",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/019.json": "93bc92d073fd058cb919ce8f3f873f7fa09994f6a3affba2d13ec691b2936c5a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/020.json": "193be1bee68fa49b7b6a79d2509fe911a3b0932851b7794c6af8f0686d2c8562",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/021.json": "4b4f73bc277650de8e86c088eb5dcf1435a7e6b1cf121106456933f23d57dc0a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/022.json": "37bfc5c225c70160f5e5a714dd37bab9ba8f16f27e7881745f035df2ddacadd6",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/023.json": "34b1ff02dce058a6292de8045d33a949cfaa2a7bb123d8909b646ec337e76b5b",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/024.json": "4848088a7084b692bcd34123dfad2a45e46731b47565b0277acc3d275833454d",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/025.json": "cd2309571e8c6121f7fb8e52cf26b63e4850fb664b6e2f693d4791f5051c4fc5",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/026.json": "b7ab82f8642a34bf05d68d87b51eb91ada95f204f5ea04f99b5b4da706a45919",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/027.json": "d543f3bda48ade44b2b5808271cb681a8249c9c9907bcc5634a128029abee168",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/028.json": "4ef69b317b0bf6f181be12c430cf36e91dfea3885792cef2a32aaffd5a3b7fd8",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/029.json": "cfe302470dbbd1dce299a833c65c11668258fa5fe2bfe640b91a794dbadd61b9",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/030.json": "c101ec140fb0a3f9bfe6b7679ee3467b2884bdb37be9f7ac8169790b34b67bb8",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/031.json": "07ebabd2dfd31518a06667b938b17f07a6faad8125efee2bea8ec8625dd45b55",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/032.json": "34c886255c94ab5b81197a99f534ddb2f28f26aa067d9bd609618c0f8f5e7414",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/033.json": "5fe231393fcc18b1ef9ef8b7da94da602039880de67f5830d82570bf6988771e",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/034.json": "d8629b80591cef9cf459d533ba3f5808f8e272cbb813da9e7e8d18b4c96f087c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/035.json": "cdb3176a695d6f1dc7fb6ad102e6f487827f4491bfae3fa4c2bad96bd60809d7",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/036.json": "94533b53d544b864703dfc218faba75b157216efc78af54ca384db01fd7f315c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/037.json": "da78d25b7f2fc77bd891fd2e99a4803bd3cc03bb36987e66573a89178ec01fd1",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/038.json": "88aa13453e97bd06e8f5fc59d1c14062fae5fbedc6cf21c4b0ade11c903b7cc3",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/039.json": "39267ecdf51be1b59662c768b066cb847040fb6748d5f2519e6e5f1dd2ce3a12",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/040.json": "b6d1e998cbcd5931cd14eeb4214288af0deb6c1d50b02e5fa731435239cb7c47",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/041.json": "a6b31576d221f2de1f8c2c2535db58c2ad0573fc85b3a2413613bbc16c90d3b7",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/042.json": "61a130ef2aa3214d536378e2cb807f58ebd8e4b8dada23e6b434d1dce6bf901d",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/043.json": "93e860280d8a37bae8889a51548f22c3030019834f008f8c8e0e2afeea20021a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/044.json": "fa26dfe8857f9571ed1b7d6e7c7a80925d935a9fd6fa6e56477c6b22d461e2cb",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/045.json": "1bd025569b15deefcbd70923ca1a41cbfbcf7b0d27e55f043f9e169338a5b971",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/046.json": "d929667d9e17712fd78b4da89408a6946c255491e52beab195823985a6d02a5d",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/047.json": "7e1f8110953182cd712f206d6cde30f0fe3b38fa04be5985849abcc54f829243",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/048.json": "7b12152b0662bb9a980b82ba13dd628ad645f86966bccb6d49e0ebe3626d85af",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/049.json": "ac2408769a9566b33cee37053fe8407a70c411b21ecc6f1eec36b52708b5cb07",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/050.json": "b1d3745a6a915f52408046d318535cf78af3fd6b0543a32809c9575d24d6ebcd",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/051.json": "243c0a5269ca010464fc48bf700f74cf00514e8f1c4910beee0dc2bc36eeb332",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/052.json": "c6e082ebab1759ce22e169382baaced0de7040a1dbeb627873d55cd137f12f7c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/053.json": "f9716ad3ff820368038349d45654b74ad283c77197c1153bb8bb97f2372de35d",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/054.json": "77ea9dd037eb1ec933856d28e5e2de7fb59e2c7ef44111a33508a5af712110d7",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/055.json": "3ea65d9fdab65fd3f68a187cc8ca5f74e72103cce8d873b82eda17470aa4b385",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/056.json": "ac761cee80a23ab7b67230bb78511ce895abd82daba5013283f181e2bdfd032a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/057.json": "56f6f9cec86d3a000bf8e855554845614484f2fc86ff37b3e550e18d99f60122",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/058.json": "6abe955ed6d152bcb6e92521acd3f5441b89895339c5159425ee2f17d0295c10",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/059.json": "41601e89d279fe7a560ed01cf7c43202a415b49b7d9d0be7959f6fc299cca968",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/060.json": "2207485edcd839b4c628800600fb0f9787d78a209d89b08c55cfb72d6bfc8057",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/061.json": "07c5cb95519811f05e72b2c31e334b23016a3c69209d1980d860e1450bfc5682",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/062.json": "2fd7598f095bfd422b23cd1e98679a330d0696e8aabae2af039e0d1f6a99042a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/063.json": "7f2b462e9dd3963579b20a76876527b319d86db9a68a363e598ae2586bad6718",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/064.json": "be1d39fd751f21562b4292754549792fdfe3939d56a8c9307540325b45dca09f",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/065.json": "4a64c74442ee2d07c4bbefd0798efe5e3843e350ca4a4cbaf6034447f1f4d088",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/066.json": "ab5156f47cd40d5624bde598fbc608ceca912e3c625ee62cc414a26e0414e80a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/067.json": "96ad7b6d952ee44eebc279234e96028a17c864ea4a77af116b59ff56f4ebedec",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/068.json": "9da4a1760bcb8c7c1ffd39099e6187d40d3b7c83a010c538eccc042d297a532f",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/069.json": "fbd514df8802de45c8a86f95c2c66ce2aed88f2fbd8bfcf13b6bc872e77213ce",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/070.json": "d190ca5a71109c7c28aa92e5c07cf37e1098951669df3f6e722ec5aec124791b",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/071.json": "3e890653ec8d428bdb2a4cea270408568fe43d0ae06edce4b511348eb3be77fe",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/072.json": "e8d9a531d29b41c9625db04ac5a6ba5f07f2989c73b5f27f9e1607f3da0a8bdf",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/073.json": "96c0d227f6fa42543b0cc1db806e7a4a11a9e11be18a8fe00acacbc88c40aa0f",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/074.json": "a3b1c1dc3038e728084953b388db96497b861bcbc7855728dc124035bb003c1b",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/075.json": "fa9bb751568ee99a2cd12532deaa0e31c8a7e5b3f2e2ffbbdf24e6f730d52d38",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/076.json": "1f20348e0484d44022bcc1839e21ecf83a727eb0c2b9f0f25dc3ed7b122a857c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/077.json": "7f10dd6f4b0a3eec1d37187a03f71853b98756e6f505fc5389bbff395f78e463",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/078.json": "1c2aab000b3efa534d62aa17c2f622bb8b91c03de8a1bcb1017113eaa118cb1c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/079.json": "f5faea4038ed495e6193f64a7c4c25ef9f14d542f8e03e6bb6b29a878b160c89",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/080.json": "3bdae73087ca4ce0d7891e819dfc56ef19a7d344f48e88237bdd93e61ab6597a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/081.json": "dd7dc7f18c1d103462f806ccd9840ff968b6df840a4d93fb6db2056fd9c1b9af",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/082.json": "48af865311972ea9278c176ccafbd8424018f8040bfedca39d97b5e7e070cf85",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/083.json": "5cfa7774faf8bfca7a3b9f0223308cdaf778faa1ec09bfad1dd4ed34601b0f07",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/084.json": "97f2e2626379abe033c296d727822a15610889d738bc3f85f9bc304615d8b4bb",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/085.json": "aa89b0d9f41c2bbab562ed833a36e4677f3f5702486c9cf2a09edfdae4dcc5fa",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/086.json": "70017f63fb0eeeba938a9f48a8886de6af0c4cdb17089e6a4fc1a6922a398919",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/087.json": "36c9d0250f10848fbc61a535ef20e740258a04ea4419abd63dcd02ea948d53c5",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/088.json": "38d8d1475c9c0b33bdc30bd2d69f6dff709898a007f860fcd5cd3976c0f6ffbd",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/089.json": "2fef4d0cdc65cb1cf7c6ed58fbab86c17d0297a00c91fd85bdc285425005b50f",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/090.json": "828f4ec1c2183a68672869f5f226851530ecc349bae6e43f60183870f15b318a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/091.json": "3a1f89baa020234c72c239a145b3e9acdaf2b86ac0fa44f5a4ee9252a6c22814",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/092.json": "7627bec439a704778f14b6eaab6fac7f66831e806515a03199fb05f634253c1a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/093.json": "498d6bc81988a3d31b42e1ca7694fb73bf02bde5481cea2781bdfa702cb85273",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/094.json": "b3b301f93de69e0e314f492cc1d4de18ee8b3f0a0c6697a2d6a2a27f42c81741",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/095.json": "aac7a2fb67169150a5290be61ccafebae18d290ba96aec130df77b6540df0d99",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/096.json": "262e0c96c7a4814e85849599954af4c54f46ab1c26cf301bc1a6068750923d11",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/097.json": "e391252939880844c898a9f57933f3281d523937c2e75cbf6c82ad4997b92dd4",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/098.json": "f5403acca0f91563462875fb0c5b4536d1002c14ca032011f026469b50d13814",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/099.json": "cb95c91e507c23be104dbcef27bcf224fa232dcadfdd165728a27d63bba6a6f8",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/100.json": "0af6173147e86bef866a37e20fe6ce1bc6c42ca7c5ea812c1bbf1e8faa79b03a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/101.json": "21d3a86fce3986996f3a9abae51eefca198fbc2d389ba2aeefe4a6bc1fca1c7a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/102.json": "f6860e67f9b32e69d2e3c8e78da3fe4dd55f06a8543efd27a8a0b6a7d79e3392",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/103.json": "db1720225fb3d0a245f28693debf4b6537c35e26a5099d8a2709c57982a4577b",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/104.json": "95cefe2e9f9db8276ec1e67928b6aff90156816b5e5f3c42def8a39206d2f5f1",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/105.json": "d4f6e8ed546add3b59d982600b4266daa57ad739aa478a3e6d4e79b3bf2b1605",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/106.json": "507328dc8af36cfb6c50e7018ad6493918f3f2e0064c4e74ae9c32883d5db96c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/107.json": "17aa08c0f3e0d072a2daa521c8e0462c63cf998950ddc27cea376abefd3a689e",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/108.json": "c32e59e71e6efcc23d02fc014af22746eb3ea241976d16c6395c148a83e05429",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/109.json": "8e52e703b842136e43bb2b84f9c5752b7257ea9c71849351657bd37d2b5d5d6d",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/110.json": "5cc81615f571adac5611480a766a6f424c0f78f4881c1c9c40b845b6b708f63c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/111.json": "5f447cafafcafc358379600d8b8e24a06afe0c62679db92bc5d1826dde893cd6",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/112.json": "2c592e734b019beb9f624e5a38e3855300d01b61ee5d02eb7b05b382c1dd0033",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/113.json": "9094380d61a26c9a82b9bf7c3482990253b5c6da8e731f64438a9a3f504d1736",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/114.json": "e55a23b6cdd4d302f8070763b01ac095fe0319fc469530e49816a5ad9f91cab6",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/115.json": "9682f6e991d7121c026f80870c93f4abb56013a09ba40cba291835f7b1e9cb0b",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/116.json": "2029589d24313131593843032d430748252fb075da31029cef66f0a6f64ec431",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/117.json": "ef0cd7b0b30a5eacfb581bc15aaf27d4ce6d7264b3bf13eaa1ec6f3aae9d66d1",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/118.json": "ea147da072a5caad7ad7c241a4a17efdf3a0da02ccecb87d0fc690c4e05d7347",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/119.json": "45a15731006ddadd4a2dfaf3728eb7da475ccb758e1f0fd6bff36929088b48c4",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/120.json": "9c54a527c8158b6f656853d0c29e4ed4a4ce0100272ef453871c93e0debc9b69",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/121.json": "0eae3606e50ef9850d17db9f7af9bbc40e73ce6fc1b633dc89d690fadd7e54b2",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/122.json": "f76e909cc06dccee71d835e3944e60612cd1ec7ce383eb17884b61339f84153b",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/123.json": "e9f7d75e2a4de98cdaaa43c3a6432727054553a953754a57d148a956d01733de",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/124.json": "2b223f31347caa44af25a7ec4c20bea9dfb18f0920a94327b077aa701bb91020",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/125.json": "e2378bc3531a278ab441153029f18e25503a58c5b329320bc328dfe9c5e3acf4",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/126.json": "02c8a4786f2e80dd26842f502f8833cc8f3e0efc2e114ad268d3235e9b9a5941",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/127.json": "35177d731a3f35e1706e2329758713066c578789b548fd55c421bb212711c40a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/128.json": "de249450479f84847b3b339e69a594d4e863f924f8e494d85844849178fc1d82",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/129.json": "75a1791d2fcf40a1689adc1be920e9f3df22a0a33893b41e17aedfa6960b7c51",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/130.json": "d0c2b6eef2a7716235cf5a623462c98e5fb8c30c0621e0d0296834423f8bf82d",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/131.json": "bc0ddc9bc0d135e723bd764db60f07f1c8871753c2b2e8eb7e7931e30c8a151f",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/132.json": "6d473de36c68dfce35d9199bfa0ec40f357e45a880fc73125d65c096bf137c1f",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/133.json": "f18ab8bad3156009084eda4939975364c59d132e84f3093eb3d8fe05fd116504",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/134.json": "3b63fc02658595c4d48f463725e42513e0f5e0ddc9abb96be51460fc7b08435c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/135.json": "a7640532e27af1f25101a10bd6c0dcd22799006b0792fe853f1844cff9d6bace",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/136.json": "f8b868123b7b3bf05ec055edc0defea2bb74f29ffccc9f63904ccb8a870b5b6c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/137.json": "95f28f0e7293c7bb36cb920aef94d525657d0760f9fe9ce96f1f03a73daacbca",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/138.json": "8f81b3a73d224a84864a2efe5f23bbbb212499eec706a130085666dcbd0ac53b",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/139.json": "358a8148351a7a1964648788b796ade333ec87698d51b7f33b45e3a3074e0433",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/140.json": "864e383a6b2109231687780a0db0a3e716c00f93d18daec5cf3449c42a11cf2a",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/141.json": "4d50f1dd387b9098822e5d29e7a20c6402b7cd0dc624c7b215a258758d06b195",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/142.json": "a4c211683748083111d038f08508693742e1d7c874834fcd2742e686ada4d21c",
+    "runs/exact_integration_bridge_v1/bulk_assembly_B_safe_v2/elements/143.json": "fbb1890a37c1a9328694296054b026916325a409ebb08ea5542fb913fe8b1f78",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge00.json": "8ab77684935d9dec54a5b2f637775aa041ccbff0dafe7a900eec221e59a99fb9",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge01.json": "cd0085566b593c654c8348b31ed15d420b1dfb4c8c8956f3d89e40f94d3be296",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge02.json": "c60089f95e3cf0fce9d0edc36373a76500d303e6c77c58b003e3f6af5989b458",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge03.json": "c7542f97ed6f8efc19c0b07c4cdcc6015dbbd311bad4078164c21ac3f446604b",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge04.json": "78017242e6ba4367db17e9debba0ffe3e8c53e8782999b962450260e8e5679c2",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge05.json": "c4994c86d9aff4583848d5b4cccdb7b16758edcf9c52bdeab343f8bce66a32bd",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge06.json": "f3c66be575195f39e047e720ef58a05c0ff9ccb46bc41c2714e4a4ce32c1d45e",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge07.json": "5c2c9e7e1429872c5bbb1f88e8f068589beef637c0d54d39c03c7cca62972d51",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge08.json": "9412c97093cd9191910d87a99154b3c906134a936b750f35de151a2f5d3986a5",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge09.json": "e15fb0146d9cf00d939a225e9aba8bc85fb5ca30db310a84756a631fb68248e3",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge10.json": "c28228dce8cbd4b38170ddd87ac97aee2c21094666fd6f980202f87897fdf18a",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge11.json": "1d0e75261220475d54df3f943c4d5d1a30334a1e65e5f8d07b5e2a1527f2b272",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge00.json": "8b4d136bcdf43b06d9d362e0177665c61c74693a0932d9233dfbbe8cf9ddfee6",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge01.json": "c5c14ebef3a29870443ff8ec83783b1d55605a3f0159f60c944bb935d3f76b16",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge02.json": "4455abc25077cf87abeaab36cd31a44fc1089a50a090564abd8023fe50c3988c",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge03.json": "ef144e692958b0261836823d3749c92fbb09a5710bf9cecbd3bebbfcf380b1d8",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge04.json": "b829587b4beceec8d3f949755207d4e235632c09408c5124cd5337124d8e1376",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge05.json": "a907f4063d71375aafd8d4c95e356ba3f87e4ae17771667026d40f6213aa0d6c",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge06.json": "c2d485bde1a96c52b8d5d2caa779628291881447cd14a91e1d6bf29fa04a15f3",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge07.json": "0db13656cfb3a945c31f1f92fd16a2ff273b3afb10d7566174f7fcd4e2e81d54",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge08.json": "a3a9bd64077ac46d8fa7baf5413e75aaeb28c2d950060da0d05d67d51a676c68",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge09.json": "2b20b1e407416788ba5007703a1f19b0d1c7fc5bef3d493ee5d5a3324232a240",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge10.json": "0cf1ecd5f0f8bb8444d215d3311450821de7fec5e67694ab055fe82da0f91f5c",
+    "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge11.json": "2ee508cd586fb87a3ac7ffe59a41aea9a8096174c49c013ca748c401546a60e2",
+    "runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/results.json": "37515a8d8c9591bb656bc7ee06e6c9cdd94393088ce520edf1fbdb158d413af2",
+    "runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/protocol.json": "3b73fd85d40c37721d82dcf801f64e36a8b3a646f8ab498ce94ab5456c379d4a",
+    "runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/element_000.json": "6bcfeaf0f10d2ada223d41eb23086430d8547f9e1aeaf10209284b6500a3943d",
+    "runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/element_006.json": "22623f65c6330674b1f4a7ef325e982ff43c3b6ebab9a2a8d59d0ad20d69d345",
+    "runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/element_072.json": "b3cbbb9e8fa44e9942651f98d794c14bb1a4af06b044f899c31d4d3debcab4d4",
+    "runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/element_066.json": "f7fee7a6d4afcb656e628ff4205eb2f976a786a584ec915cd5eaee1227f20ce5",
+    "runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/element_048.json": "eae93bdc096b8cf76d79b1aa63f433c58596d6d2fccc520acb4fafa2de6d7a1a",
+    "runs/exact_integration_bridge_v1/bulk_independent_replay_safe_v2/element_143.json": "cef5490eabe242460d35d675c32b276f5a7b69923528c97830ffe1deef492698",
+    "evidence/exact_surface_safe_independent_review.json": "248ba5000b27f8e29ede2b501b00bf16e5fbdc6624f06a65a8ced339c39c37a2",
+    "runs/exact_integration_bridge_v1/surface_independent_replay_safe_v2/results.json": "fd6fd10fe63827d8cdbdcc8b12d4df2a5537e324d50fa31b05a74673878b3859",
+    "runs/exact_integration_bridge_v1/surface_independent_replay_safe_v2/protocol.json": "52af16c0df9edfde4dd95fb214b4accc3cc49e176ea344186572ed19a575b378",
+    "runs/exact_integration_bridge_v1/surface_independent_replay_safe_v2/face0_edge00.json": "3f6dba159f72b814d662caeef8de9e603ddbbcab2fbe3473d47868ba13e3340b",
+    "runs/exact_integration_bridge_v1/surface_independent_replay_safe_v2/face0_edge01.json": "5169caa3ef2472475dd80edccce8840d63693f679dbc9cc6d324ce14ed8896b3",
+    "runs/exact_integration_bridge_v1/surface_independent_replay_safe_v2/face0_edge11.json": "c53aa8be817318b80d44d2b4ddb132b5886c0097191f7d7f6d61ebcaac3eceef",
+    "runs/exact_integration_bridge_v1/surface_independent_replay_safe_v2/face1_edge00.json": "f9a536a355d5a99b84741a3f5460a741fb4f95ca05b6c7600ac97421bbaec2ce",
+    "runs/exact_integration_bridge_v1/surface_independent_replay_safe_v2/face1_edge01.json": "f92963377ab3233de66adc1548ceb0d65e654d6c3fad1bc4fdc6afe317973a98",
+    "runs/exact_integration_bridge_v1/surface_independent_replay_safe_v2/face1_edge11.json": "e695875665c795ffc0d445f652f90b925879dc796c18d0c7767167d638ff5a38",
+    "runs/exact_integration_bridge_v1/complete_point_B_safe_v2/results.json": "bc4984893680ee945b09797847a8926ece5ab482ff75c932bef73a6a20fbe8e0"
+  },
+  "all168_packets": [
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\000.json",
+      "sha256": "4d3e87d70e788a9a3b4f302e5be6cde313e8a34a8f3a5c45cb52de412acd2521"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\001.json",
+      "sha256": "32ab7fd5b8f9641a9681799cd0056b48f9c8901971eeb4a0280fbcf029e4059e"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\002.json",
+      "sha256": "27288508d84650a824f23de8715cbb940f9f3355e78dfc543f3dd69eaa8552c7"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\003.json",
+      "sha256": "612162314258d12c75fb8d5141123c3dd717fdca8ed9ff2b464d4963e51b5942"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\004.json",
+      "sha256": "c7d2a9322f16335f44c2633ead0394474a60593cbd0f2adbcf1ebf3c99a8dd59"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\005.json",
+      "sha256": "45256498d9ba76788be3e3dae470bf8fa1b7af0d976873ec824099d38c6a9a45"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\006.json",
+      "sha256": "0af3c6dc11585b0f8c92cca2cfe469c044711bad996d1bbada82d035e6dd11c4"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\007.json",
+      "sha256": "78230b58bcfd11765e907f598c2917e5275130737aeec1899b89a670946a48fe"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\008.json",
+      "sha256": "e9540040f6882c3913ed426124f5ed1c6dd884adb7b1764e5f9898bd261a55fa"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\009.json",
+      "sha256": "874c8decd016672d3dcf92c84ea37fa6aa835b22c87b8dd8c66452045ebbab2f"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\010.json",
+      "sha256": "7d8ae549c6a92e58a014542cedfad0bb458590bb39828e459eb00f9ee87c3aca"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\011.json",
+      "sha256": "ad81f65f3792cdddfe205e305e6e0f1646f1ca5cd0455c27edf3d2b2ce743ab1"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\012.json",
+      "sha256": "6750fc18b7f5c1af85aa413b7917f8d323d8891ac1c5268a59578a858d31cce1"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\013.json",
+      "sha256": "6616e7c54c81fe060008f403061b08aa01b220e0324056f3680c0bcfed39767b"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\014.json",
+      "sha256": "5df5ffeb9d4424bd8f1d572ac17b01b807970bd3d16c84aee9940bbc36013676"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\015.json",
+      "sha256": "8a751cca2b9126900b0c205bea6d8147a21497d61000ba1340cb08219188034c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\016.json",
+      "sha256": "f270f6478d62fb75f1bc08332dc638d6b63f3f0d7458055f3a62f9bdbc60e937"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\017.json",
+      "sha256": "64eb7610bea8db090c01b94408709b617c1dfc18a8eeb0a5edceadf8bb799bc8"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\018.json",
+      "sha256": "420b217f78708e52a4436a42b064ca96f98dc27b4fd5a89cd825b2d9ec795cf9"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\019.json",
+      "sha256": "93bc92d073fd058cb919ce8f3f873f7fa09994f6a3affba2d13ec691b2936c5a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\020.json",
+      "sha256": "193be1bee68fa49b7b6a79d2509fe911a3b0932851b7794c6af8f0686d2c8562"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\021.json",
+      "sha256": "4b4f73bc277650de8e86c088eb5dcf1435a7e6b1cf121106456933f23d57dc0a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\022.json",
+      "sha256": "37bfc5c225c70160f5e5a714dd37bab9ba8f16f27e7881745f035df2ddacadd6"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\023.json",
+      "sha256": "34b1ff02dce058a6292de8045d33a949cfaa2a7bb123d8909b646ec337e76b5b"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\024.json",
+      "sha256": "4848088a7084b692bcd34123dfad2a45e46731b47565b0277acc3d275833454d"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\025.json",
+      "sha256": "cd2309571e8c6121f7fb8e52cf26b63e4850fb664b6e2f693d4791f5051c4fc5"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\026.json",
+      "sha256": "b7ab82f8642a34bf05d68d87b51eb91ada95f204f5ea04f99b5b4da706a45919"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\027.json",
+      "sha256": "d543f3bda48ade44b2b5808271cb681a8249c9c9907bcc5634a128029abee168"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\028.json",
+      "sha256": "4ef69b317b0bf6f181be12c430cf36e91dfea3885792cef2a32aaffd5a3b7fd8"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\029.json",
+      "sha256": "cfe302470dbbd1dce299a833c65c11668258fa5fe2bfe640b91a794dbadd61b9"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\030.json",
+      "sha256": "c101ec140fb0a3f9bfe6b7679ee3467b2884bdb37be9f7ac8169790b34b67bb8"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\031.json",
+      "sha256": "07ebabd2dfd31518a06667b938b17f07a6faad8125efee2bea8ec8625dd45b55"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\032.json",
+      "sha256": "34c886255c94ab5b81197a99f534ddb2f28f26aa067d9bd609618c0f8f5e7414"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\033.json",
+      "sha256": "5fe231393fcc18b1ef9ef8b7da94da602039880de67f5830d82570bf6988771e"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\034.json",
+      "sha256": "d8629b80591cef9cf459d533ba3f5808f8e272cbb813da9e7e8d18b4c96f087c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\035.json",
+      "sha256": "cdb3176a695d6f1dc7fb6ad102e6f487827f4491bfae3fa4c2bad96bd60809d7"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\036.json",
+      "sha256": "94533b53d544b864703dfc218faba75b157216efc78af54ca384db01fd7f315c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\037.json",
+      "sha256": "da78d25b7f2fc77bd891fd2e99a4803bd3cc03bb36987e66573a89178ec01fd1"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\038.json",
+      "sha256": "88aa13453e97bd06e8f5fc59d1c14062fae5fbedc6cf21c4b0ade11c903b7cc3"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\039.json",
+      "sha256": "39267ecdf51be1b59662c768b066cb847040fb6748d5f2519e6e5f1dd2ce3a12"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\040.json",
+      "sha256": "b6d1e998cbcd5931cd14eeb4214288af0deb6c1d50b02e5fa731435239cb7c47"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\041.json",
+      "sha256": "a6b31576d221f2de1f8c2c2535db58c2ad0573fc85b3a2413613bbc16c90d3b7"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\042.json",
+      "sha256": "61a130ef2aa3214d536378e2cb807f58ebd8e4b8dada23e6b434d1dce6bf901d"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\043.json",
+      "sha256": "93e860280d8a37bae8889a51548f22c3030019834f008f8c8e0e2afeea20021a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\044.json",
+      "sha256": "fa26dfe8857f9571ed1b7d6e7c7a80925d935a9fd6fa6e56477c6b22d461e2cb"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\045.json",
+      "sha256": "1bd025569b15deefcbd70923ca1a41cbfbcf7b0d27e55f043f9e169338a5b971"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\046.json",
+      "sha256": "d929667d9e17712fd78b4da89408a6946c255491e52beab195823985a6d02a5d"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\047.json",
+      "sha256": "7e1f8110953182cd712f206d6cde30f0fe3b38fa04be5985849abcc54f829243"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\048.json",
+      "sha256": "7b12152b0662bb9a980b82ba13dd628ad645f86966bccb6d49e0ebe3626d85af"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\049.json",
+      "sha256": "ac2408769a9566b33cee37053fe8407a70c411b21ecc6f1eec36b52708b5cb07"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\050.json",
+      "sha256": "b1d3745a6a915f52408046d318535cf78af3fd6b0543a32809c9575d24d6ebcd"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\051.json",
+      "sha256": "243c0a5269ca010464fc48bf700f74cf00514e8f1c4910beee0dc2bc36eeb332"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\052.json",
+      "sha256": "c6e082ebab1759ce22e169382baaced0de7040a1dbeb627873d55cd137f12f7c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\053.json",
+      "sha256": "f9716ad3ff820368038349d45654b74ad283c77197c1153bb8bb97f2372de35d"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\054.json",
+      "sha256": "77ea9dd037eb1ec933856d28e5e2de7fb59e2c7ef44111a33508a5af712110d7"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\055.json",
+      "sha256": "3ea65d9fdab65fd3f68a187cc8ca5f74e72103cce8d873b82eda17470aa4b385"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\056.json",
+      "sha256": "ac761cee80a23ab7b67230bb78511ce895abd82daba5013283f181e2bdfd032a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\057.json",
+      "sha256": "56f6f9cec86d3a000bf8e855554845614484f2fc86ff37b3e550e18d99f60122"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\058.json",
+      "sha256": "6abe955ed6d152bcb6e92521acd3f5441b89895339c5159425ee2f17d0295c10"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\059.json",
+      "sha256": "41601e89d279fe7a560ed01cf7c43202a415b49b7d9d0be7959f6fc299cca968"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\060.json",
+      "sha256": "2207485edcd839b4c628800600fb0f9787d78a209d89b08c55cfb72d6bfc8057"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\061.json",
+      "sha256": "07c5cb95519811f05e72b2c31e334b23016a3c69209d1980d860e1450bfc5682"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\062.json",
+      "sha256": "2fd7598f095bfd422b23cd1e98679a330d0696e8aabae2af039e0d1f6a99042a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\063.json",
+      "sha256": "7f2b462e9dd3963579b20a76876527b319d86db9a68a363e598ae2586bad6718"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\064.json",
+      "sha256": "be1d39fd751f21562b4292754549792fdfe3939d56a8c9307540325b45dca09f"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\065.json",
+      "sha256": "4a64c74442ee2d07c4bbefd0798efe5e3843e350ca4a4cbaf6034447f1f4d088"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\066.json",
+      "sha256": "ab5156f47cd40d5624bde598fbc608ceca912e3c625ee62cc414a26e0414e80a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\067.json",
+      "sha256": "96ad7b6d952ee44eebc279234e96028a17c864ea4a77af116b59ff56f4ebedec"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\068.json",
+      "sha256": "9da4a1760bcb8c7c1ffd39099e6187d40d3b7c83a010c538eccc042d297a532f"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\069.json",
+      "sha256": "fbd514df8802de45c8a86f95c2c66ce2aed88f2fbd8bfcf13b6bc872e77213ce"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\070.json",
+      "sha256": "d190ca5a71109c7c28aa92e5c07cf37e1098951669df3f6e722ec5aec124791b"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\071.json",
+      "sha256": "3e890653ec8d428bdb2a4cea270408568fe43d0ae06edce4b511348eb3be77fe"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\072.json",
+      "sha256": "e8d9a531d29b41c9625db04ac5a6ba5f07f2989c73b5f27f9e1607f3da0a8bdf"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\073.json",
+      "sha256": "96c0d227f6fa42543b0cc1db806e7a4a11a9e11be18a8fe00acacbc88c40aa0f"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\074.json",
+      "sha256": "a3b1c1dc3038e728084953b388db96497b861bcbc7855728dc124035bb003c1b"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\075.json",
+      "sha256": "fa9bb751568ee99a2cd12532deaa0e31c8a7e5b3f2e2ffbbdf24e6f730d52d38"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\076.json",
+      "sha256": "1f20348e0484d44022bcc1839e21ecf83a727eb0c2b9f0f25dc3ed7b122a857c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\077.json",
+      "sha256": "7f10dd6f4b0a3eec1d37187a03f71853b98756e6f505fc5389bbff395f78e463"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\078.json",
+      "sha256": "1c2aab000b3efa534d62aa17c2f622bb8b91c03de8a1bcb1017113eaa118cb1c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\079.json",
+      "sha256": "f5faea4038ed495e6193f64a7c4c25ef9f14d542f8e03e6bb6b29a878b160c89"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\080.json",
+      "sha256": "3bdae73087ca4ce0d7891e819dfc56ef19a7d344f48e88237bdd93e61ab6597a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\081.json",
+      "sha256": "dd7dc7f18c1d103462f806ccd9840ff968b6df840a4d93fb6db2056fd9c1b9af"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\082.json",
+      "sha256": "48af865311972ea9278c176ccafbd8424018f8040bfedca39d97b5e7e070cf85"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\083.json",
+      "sha256": "5cfa7774faf8bfca7a3b9f0223308cdaf778faa1ec09bfad1dd4ed34601b0f07"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\084.json",
+      "sha256": "97f2e2626379abe033c296d727822a15610889d738bc3f85f9bc304615d8b4bb"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\085.json",
+      "sha256": "aa89b0d9f41c2bbab562ed833a36e4677f3f5702486c9cf2a09edfdae4dcc5fa"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\086.json",
+      "sha256": "70017f63fb0eeeba938a9f48a8886de6af0c4cdb17089e6a4fc1a6922a398919"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\087.json",
+      "sha256": "36c9d0250f10848fbc61a535ef20e740258a04ea4419abd63dcd02ea948d53c5"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\088.json",
+      "sha256": "38d8d1475c9c0b33bdc30bd2d69f6dff709898a007f860fcd5cd3976c0f6ffbd"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\089.json",
+      "sha256": "2fef4d0cdc65cb1cf7c6ed58fbab86c17d0297a00c91fd85bdc285425005b50f"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\090.json",
+      "sha256": "828f4ec1c2183a68672869f5f226851530ecc349bae6e43f60183870f15b318a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\091.json",
+      "sha256": "3a1f89baa020234c72c239a145b3e9acdaf2b86ac0fa44f5a4ee9252a6c22814"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\092.json",
+      "sha256": "7627bec439a704778f14b6eaab6fac7f66831e806515a03199fb05f634253c1a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\093.json",
+      "sha256": "498d6bc81988a3d31b42e1ca7694fb73bf02bde5481cea2781bdfa702cb85273"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\094.json",
+      "sha256": "b3b301f93de69e0e314f492cc1d4de18ee8b3f0a0c6697a2d6a2a27f42c81741"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\095.json",
+      "sha256": "aac7a2fb67169150a5290be61ccafebae18d290ba96aec130df77b6540df0d99"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\096.json",
+      "sha256": "262e0c96c7a4814e85849599954af4c54f46ab1c26cf301bc1a6068750923d11"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\097.json",
+      "sha256": "e391252939880844c898a9f57933f3281d523937c2e75cbf6c82ad4997b92dd4"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\098.json",
+      "sha256": "f5403acca0f91563462875fb0c5b4536d1002c14ca032011f026469b50d13814"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\099.json",
+      "sha256": "cb95c91e507c23be104dbcef27bcf224fa232dcadfdd165728a27d63bba6a6f8"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\100.json",
+      "sha256": "0af6173147e86bef866a37e20fe6ce1bc6c42ca7c5ea812c1bbf1e8faa79b03a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\101.json",
+      "sha256": "21d3a86fce3986996f3a9abae51eefca198fbc2d389ba2aeefe4a6bc1fca1c7a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\102.json",
+      "sha256": "f6860e67f9b32e69d2e3c8e78da3fe4dd55f06a8543efd27a8a0b6a7d79e3392"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\103.json",
+      "sha256": "db1720225fb3d0a245f28693debf4b6537c35e26a5099d8a2709c57982a4577b"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\104.json",
+      "sha256": "95cefe2e9f9db8276ec1e67928b6aff90156816b5e5f3c42def8a39206d2f5f1"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\105.json",
+      "sha256": "d4f6e8ed546add3b59d982600b4266daa57ad739aa478a3e6d4e79b3bf2b1605"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\106.json",
+      "sha256": "507328dc8af36cfb6c50e7018ad6493918f3f2e0064c4e74ae9c32883d5db96c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\107.json",
+      "sha256": "17aa08c0f3e0d072a2daa521c8e0462c63cf998950ddc27cea376abefd3a689e"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\108.json",
+      "sha256": "c32e59e71e6efcc23d02fc014af22746eb3ea241976d16c6395c148a83e05429"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\109.json",
+      "sha256": "8e52e703b842136e43bb2b84f9c5752b7257ea9c71849351657bd37d2b5d5d6d"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\110.json",
+      "sha256": "5cc81615f571adac5611480a766a6f424c0f78f4881c1c9c40b845b6b708f63c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\111.json",
+      "sha256": "5f447cafafcafc358379600d8b8e24a06afe0c62679db92bc5d1826dde893cd6"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\112.json",
+      "sha256": "2c592e734b019beb9f624e5a38e3855300d01b61ee5d02eb7b05b382c1dd0033"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\113.json",
+      "sha256": "9094380d61a26c9a82b9bf7c3482990253b5c6da8e731f64438a9a3f504d1736"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\114.json",
+      "sha256": "e55a23b6cdd4d302f8070763b01ac095fe0319fc469530e49816a5ad9f91cab6"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\115.json",
+      "sha256": "9682f6e991d7121c026f80870c93f4abb56013a09ba40cba291835f7b1e9cb0b"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\116.json",
+      "sha256": "2029589d24313131593843032d430748252fb075da31029cef66f0a6f64ec431"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\117.json",
+      "sha256": "ef0cd7b0b30a5eacfb581bc15aaf27d4ce6d7264b3bf13eaa1ec6f3aae9d66d1"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\118.json",
+      "sha256": "ea147da072a5caad7ad7c241a4a17efdf3a0da02ccecb87d0fc690c4e05d7347"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\119.json",
+      "sha256": "45a15731006ddadd4a2dfaf3728eb7da475ccb758e1f0fd6bff36929088b48c4"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\120.json",
+      "sha256": "9c54a527c8158b6f656853d0c29e4ed4a4ce0100272ef453871c93e0debc9b69"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\121.json",
+      "sha256": "0eae3606e50ef9850d17db9f7af9bbc40e73ce6fc1b633dc89d690fadd7e54b2"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\122.json",
+      "sha256": "f76e909cc06dccee71d835e3944e60612cd1ec7ce383eb17884b61339f84153b"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\123.json",
+      "sha256": "e9f7d75e2a4de98cdaaa43c3a6432727054553a953754a57d148a956d01733de"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\124.json",
+      "sha256": "2b223f31347caa44af25a7ec4c20bea9dfb18f0920a94327b077aa701bb91020"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\125.json",
+      "sha256": "e2378bc3531a278ab441153029f18e25503a58c5b329320bc328dfe9c5e3acf4"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\126.json",
+      "sha256": "02c8a4786f2e80dd26842f502f8833cc8f3e0efc2e114ad268d3235e9b9a5941"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\127.json",
+      "sha256": "35177d731a3f35e1706e2329758713066c578789b548fd55c421bb212711c40a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\128.json",
+      "sha256": "de249450479f84847b3b339e69a594d4e863f924f8e494d85844849178fc1d82"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\129.json",
+      "sha256": "75a1791d2fcf40a1689adc1be920e9f3df22a0a33893b41e17aedfa6960b7c51"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\130.json",
+      "sha256": "d0c2b6eef2a7716235cf5a623462c98e5fb8c30c0621e0d0296834423f8bf82d"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\131.json",
+      "sha256": "bc0ddc9bc0d135e723bd764db60f07f1c8871753c2b2e8eb7e7931e30c8a151f"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\132.json",
+      "sha256": "6d473de36c68dfce35d9199bfa0ec40f357e45a880fc73125d65c096bf137c1f"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\133.json",
+      "sha256": "f18ab8bad3156009084eda4939975364c59d132e84f3093eb3d8fe05fd116504"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\134.json",
+      "sha256": "3b63fc02658595c4d48f463725e42513e0f5e0ddc9abb96be51460fc7b08435c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\135.json",
+      "sha256": "a7640532e27af1f25101a10bd6c0dcd22799006b0792fe853f1844cff9d6bace"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\136.json",
+      "sha256": "f8b868123b7b3bf05ec055edc0defea2bb74f29ffccc9f63904ccb8a870b5b6c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\137.json",
+      "sha256": "95f28f0e7293c7bb36cb920aef94d525657d0760f9fe9ce96f1f03a73daacbca"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\138.json",
+      "sha256": "8f81b3a73d224a84864a2efe5f23bbbb212499eec706a130085666dcbd0ac53b"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\139.json",
+      "sha256": "358a8148351a7a1964648788b796ade333ec87698d51b7f33b45e3a3074e0433"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\140.json",
+      "sha256": "864e383a6b2109231687780a0db0a3e716c00f93d18daec5cf3449c42a11cf2a"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\141.json",
+      "sha256": "4d50f1dd387b9098822e5d29e7a20c6402b7cd0dc624c7b215a258758d06b195"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\142.json",
+      "sha256": "a4c211683748083111d038f08508693742e1d7c874834fcd2742e686ada4d21c"
+    },
+    {
+      "kind": "bulk",
+      "file": "runs\\exact_integration_bridge_v1\\bulk_assembly_B_safe_v2\\elements\\143.json",
+      "sha256": "fbb1890a37c1a9328694296054b026916325a409ebb08ea5542fb913fe8b1f78"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge00.json",
+      "sha256": "8ab77684935d9dec54a5b2f637775aa041ccbff0dafe7a900eec221e59a99fb9"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge01.json",
+      "sha256": "cd0085566b593c654c8348b31ed15d420b1dfb4c8c8956f3d89e40f94d3be296"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge02.json",
+      "sha256": "c60089f95e3cf0fce9d0edc36373a76500d303e6c77c58b003e3f6af5989b458"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge03.json",
+      "sha256": "c7542f97ed6f8efc19c0b07c4cdcc6015dbbd311bad4078164c21ac3f446604b"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge04.json",
+      "sha256": "78017242e6ba4367db17e9debba0ffe3e8c53e8782999b962450260e8e5679c2"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge05.json",
+      "sha256": "c4994c86d9aff4583848d5b4cccdb7b16758edcf9c52bdeab343f8bce66a32bd"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge06.json",
+      "sha256": "f3c66be575195f39e047e720ef58a05c0ff9ccb46bc41c2714e4a4ce32c1d45e"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge07.json",
+      "sha256": "5c2c9e7e1429872c5bbb1f88e8f068589beef637c0d54d39c03c7cca62972d51"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge08.json",
+      "sha256": "9412c97093cd9191910d87a99154b3c906134a936b750f35de151a2f5d3986a5"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge09.json",
+      "sha256": "e15fb0146d9cf00d939a225e9aba8bc85fb5ca30db310a84756a631fb68248e3"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge10.json",
+      "sha256": "c28228dce8cbd4b38170ddd87ac97aee2c21094666fd6f980202f87897fdf18a"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face0_edge11.json",
+      "sha256": "1d0e75261220475d54df3f943c4d5d1a30334a1e65e5f8d07b5e2a1527f2b272"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge00.json",
+      "sha256": "8b4d136bcdf43b06d9d362e0177665c61c74693a0932d9233dfbbe8cf9ddfee6"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge01.json",
+      "sha256": "c5c14ebef3a29870443ff8ec83783b1d55605a3f0159f60c944bb935d3f76b16"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge02.json",
+      "sha256": "4455abc25077cf87abeaab36cd31a44fc1089a50a090564abd8023fe50c3988c"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge03.json",
+      "sha256": "ef144e692958b0261836823d3749c92fbb09a5710bf9cecbd3bebbfcf380b1d8"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge04.json",
+      "sha256": "b829587b4beceec8d3f949755207d4e235632c09408c5124cd5337124d8e1376"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge05.json",
+      "sha256": "a907f4063d71375aafd8d4c95e356ba3f87e4ae17771667026d40f6213aa0d6c"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge06.json",
+      "sha256": "c2d485bde1a96c52b8d5d2caa779628291881447cd14a91e1d6bf29fa04a15f3"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge07.json",
+      "sha256": "0db13656cfb3a945c31f1f92fd16a2ff273b3afb10d7566174f7fcd4e2e81d54"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge08.json",
+      "sha256": "a3a9bd64077ac46d8fa7baf5413e75aaeb28c2d950060da0d05d67d51a676c68"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge09.json",
+      "sha256": "2b20b1e407416788ba5007703a1f19b0d1c7fc5bef3d493ee5d5a3324232a240"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge10.json",
+      "sha256": "0cf1ecd5f0f8bb8444d215d3311450821de7fec5e67694ab055fe82da0f91f5c"
+    },
+    {
+      "kind": "surface",
+      "file": "runs/exact_integration_bridge_v1/surface_assembly_B_safe_v2/edges/face1_edge11.json",
+      "sha256": "2ee508cd586fb87a3ac7ffe59a41aea9a8096174c49c013ca748c401546a60e2"
+    }
+  ],
+  "exact_reduction_sha256": "8e1c0a5e39fe88d2eee27751048d290e82fcdf72d139deaebc37c4e643bb6e07",
+  "certificate": {
+    "RF_norm_lower_exact": "9545150986540726796398312850386646409469213515382007122018142460333230689241470555942184804831949477304614325928937945164342029493071137415784934911679853592398016546910882618151903/570305077202774402330146450712536415611653563406069991322399064737409395901084673313239101414671424972330288696699300913836088090171929749781582664965276773531499334295033118760359274030825472",
+    "RF_norm_upper_exact": "9545151000321138866196552562694024365894614540120941411271388442332578516400987264321621498464788416967158923327618840315334574790699630894120110337629630351337001397431297636307935/570305077202774402330146450712536415611653563406069991322399064737409395901084673313239101414671424972330288696699300913836088090171929749781582664965276773531499334295033118760359274030825472",
+    "H_row_norm_upper_exact": "249973951225646165477397115473637757777273726283241075051726385031365877390291813786739852832587805407094735692189039645101677810716029999894367678181338007781855/3773962424821541352241554580988268890916921220416440428376206300245624162392148852086126725177658767541468375030763844899770584629924792632561434251432696043649395326976",
+    "Rnorm_exact": "7779597100340471047057/4611686018427387904",
+    "conservative_RH_norm_upper_exact": "1944696626115687247484849913518563909026882110770454176659844044757908991531572434750995514037573862236779782654063656272330313885727827836133173284471529402246834755647218585895750735/17404329748619824289860426352311291980336107281679382059399385520550823849520406290076876874227033232798165548605325345270876711736203910820971150664223534348495463082734165001231667298304",
+    "eta_author_exact": "424830632741564286190298414504168953722643733675/803469022129495137770981046170581301261101496891396417650688",
+    "eta_independent_exact": "912316838298860977759037658651781944146283661971008352563/1725436586697640946858688965569256363112777243042596638790631055949824",
+    "eta_used_exact": "912316838298860977759037658651781944146283661971008352563/1725436586697640946858688965569256363112777243042596638790631055949824",
+    "old_radius_exact": "1/100000000000",
+    "new_integral_map_center_distance_lower_exact": "9243604740848071736290391316880526412105209304431548393268674830827425296114057423507753121541670122070542398443956541532993691738084018778960256968438864120288173626998240682447839/570305077202774402330146450712536415611653563406069991322399064737409395901084673313239101414671424972330288696699300913836088090171929749781582664965276773531499334295033118760359274030825472",
+    "new_integral_map_center_outside_old_cube": true
+  },
+  "old_v1_claims_restored": false,
+  "new_conditional_negative_map_certificate_proved": true,
+  "proof": "At exact base theta0 in C the old predictor is u0. Unaffected oldQ certificate bounds ||R FQ(u0)|| by max(author,independent eta). New SAFE complete discrepancy intervals give ||R(FI-FQ)(u0)||>=L. Therefore ||R FI(u0)||>=max(0,L-eta). Only if this exceeds r is the NEW map center outside the OLD cube. No root nonexistence or root location follows.",
+  "reintegration_coverage": {
+    "bulk": 6,
+    "bulk_total": 144,
+    "surface": 6,
+    "surface_total": 24,
+    "remaining_packets": "Reviewed generic safe engines, complete local domain/tail/hash/map checks and exact signed reduction; not independently reintegrated individually."
+  },
+  "scope": "One original B-center and exact base theta only; no uniform a/b, new integral root/stability/PDE/biological validation or full-five-gate completion."
+}

@@ -1,0 +1,245 @@
+{
+  "status": "REPLAYED_ALL9_FINAL_FIELDS",
+  "all_final_forces_below_1e_minus7": true,
+  "all_strict_continuation_gates_pass": false,
+  "rows": [
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh12x6_lambda5.0.json",
+      "lambda": 5.0,
+      "nr": 12,
+      "nz": 6,
+      "final_force_replayed": 6.931006333102396e-15,
+      "stored_force_difference": 0.0,
+      "strict_failed_stages": [
+        {
+          "gain": 2.0,
+          "force": 1.7941429877012455e-06
+        }
+      ],
+      "pointwise_logJ_RMS": 0.03204312979029552,
+      "projected_logJ_RMS": 0.017990569765017367,
+      "unresolved_logJ_RMS": 0.026516062420498396,
+      "unpenalized_kernel_energy_at_same_lambda": 0.04969932109598532
+    },
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh12x6_lambda50.0.json",
+      "lambda": 50.0,
+      "nr": 12,
+      "nz": 6,
+      "final_force_replayed": 6.668403776757294e-11,
+      "stored_force_difference": 0.0,
+      "strict_failed_stages": [
+        {
+          "gain": 3.0,
+          "force": 6.999458491062656e-05
+        },
+        {
+          "gain": 4.0,
+          "force": 7.689902737638128e-06
+        },
+        {
+          "gain": 5.0,
+          "force": 8.597221357823672e-06
+        }
+      ],
+      "pointwise_logJ_RMS": 0.026549220553325772,
+      "projected_logJ_RMS": 0.0027451235826098657,
+      "unresolved_logJ_RMS": 0.026406919708768285,
+      "unpenalized_kernel_energy_at_same_lambda": 0.4929102856174185
+    },
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh12x6_lambda500.0.json",
+      "lambda": 500.0,
+      "nr": 12,
+      "nz": 6,
+      "final_force_replayed": 4.872723779374491e-12,
+      "stored_force_difference": 0.0,
+      "strict_failed_stages": [
+        {
+          "gain": 1.0,
+          "force": 0.04985909356556424
+        },
+        {
+          "gain": 8.0,
+          "force": 1.589341460135911e-06
+        },
+        {
+          "gain": 9.0,
+          "force": 0.0013138163626836203
+        }
+      ],
+      "pointwise_logJ_RMS": 0.02634331608633509,
+      "projected_logJ_RMS": 0.000292615928181468,
+      "unresolved_logJ_RMS": 0.02634169087858894,
+      "unpenalized_kernel_energy_at_same_lambda": 4.904781767822948
+    },
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh16x8_lambda5.0.json",
+      "lambda": 5.0,
+      "nr": 16,
+      "nz": 8,
+      "final_force_replayed": 5.385251164273519e-14,
+      "stored_force_difference": 5.421010862427522e-20,
+      "strict_failed_stages": [
+        {
+          "gain": 2.0,
+          "force": 1.4549148124719371e-05
+        },
+        {
+          "gain": 3.0,
+          "force": 2.2706683123271135e-06
+        },
+        {
+          "gain": 4.0,
+          "force": 1.5754108464548092e-06
+        },
+        {
+          "gain": 5.0,
+          "force": 2.7637284168247696e-07
+        }
+      ],
+      "pointwise_logJ_RMS": 0.0297761348493203,
+      "projected_logJ_RMS": 0.018684947949084922,
+      "unresolved_logJ_RMS": 0.02318385055819878,
+      "unpenalized_kernel_energy_at_same_lambda": 0.03799299480091343
+    },
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh16x8_lambda50.0.json",
+      "lambda": 50.0,
+      "nr": 16,
+      "nz": 8,
+      "final_force_replayed": 2.7141030308625025e-12,
+      "stored_force_difference": 1.0842021724855044e-19,
+      "strict_failed_stages": [
+        {
+          "gain": 1.0,
+          "force": 0.00032039218168652706
+        },
+        {
+          "gain": 2.0,
+          "force": 0.0053817408302546665
+        },
+        {
+          "gain": 3.0,
+          "force": 0.00017724178418706012
+        },
+        {
+          "gain": 4.0,
+          "force": 0.0016531919683730775
+        },
+        {
+          "gain": 5.0,
+          "force": 0.001385466524623128
+        },
+        {
+          "gain": 6.0,
+          "force": 0.0017989679877691385
+        },
+        {
+          "gain": 7.0,
+          "force": 0.0021343834062457837
+        },
+        {
+          "gain": 8.0,
+          "force": 1.4771148610157476e-05
+        }
+      ],
+      "pointwise_logJ_RMS": 0.022793777703963854,
+      "projected_logJ_RMS": 0.0029056551712575967,
+      "unresolved_logJ_RMS": 0.022607818781197442,
+      "unpenalized_kernel_energy_at_same_lambda": 0.36128482259384953
+    },
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh16x8_lambda500.0.json",
+      "lambda": 500.0,
+      "nr": 16,
+      "nz": 8,
+      "final_force_replayed": 2.549460208917109e-13,
+      "stored_force_difference": 0.0,
+      "strict_failed_stages": [
+        {
+          "gain": 1.0,
+          "force": 0.04882785859971127
+        },
+        {
+          "gain": 2.0,
+          "force": 0.027284267212015795
+        },
+        {
+          "gain": 3.0,
+          "force": 0.011515920850408866
+        },
+        {
+          "gain": 4.0,
+          "force": 0.0003265554987292519
+        },
+        {
+          "gain": 5.0,
+          "force": 1.1338897133599565e-06
+        }
+      ],
+      "pointwise_logJ_RMS": 0.022429810861975544,
+      "projected_logJ_RMS": 0.000310692564169861,
+      "unresolved_logJ_RMS": 0.022427658937895542,
+      "unpenalized_kernel_energy_at_same_lambda": 3.555496675884911
+    },
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh8x4_lambda5.0.json",
+      "lambda": 5.0,
+      "nr": 8,
+      "nz": 4,
+      "final_force_replayed": 4.058331361939116e-15,
+      "stored_force_difference": 0.0,
+      "strict_failed_stages": [],
+      "pointwise_logJ_RMS": 0.03557387928835853,
+      "projected_logJ_RMS": 0.017348453272394912,
+      "unresolved_logJ_RMS": 0.031056916406466278,
+      "unpenalized_kernel_energy_at_same_lambda": 0.06817875352677434
+    },
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh8x4_lambda50.0.json",
+      "lambda": 50.0,
+      "nr": 8,
+      "nz": 4,
+      "final_force_replayed": 2.972961736817312e-11,
+      "stored_force_difference": 0.0,
+      "strict_failed_stages": [],
+      "pointwise_logJ_RMS": 0.03068598488125408,
+      "projected_logJ_RMS": 0.0026568304304219843,
+      "unresolved_logJ_RMS": 0.030570752692672416,
+      "unpenalized_kernel_energy_at_same_lambda": 0.6606092558583211
+    },
+    {
+      "file": "controlled_furrowing\\runs\\mixed_checks\\fixed10\\mesh8x4_lambda500.0.json",
+      "lambda": 500.0,
+      "nr": 8,
+      "nz": 4,
+      "final_force_replayed": 9.101191141328534e-14,
+      "stored_force_difference": 0.0,
+      "strict_failed_stages": [
+        {
+          "gain": 1.0,
+          "force": 0.04233701470070102
+        },
+        {
+          "gain": 2.0,
+          "force": 0.0028198619418900385
+        },
+        {
+          "gain": 3.0,
+          "force": 0.04305299904931963
+        },
+        {
+          "gain": 4.0,
+          "force": 3.3436116880960907e-05
+        }
+      ],
+      "pointwise_logJ_RMS": 0.030442309809364628,
+      "projected_logJ_RMS": 0.000283792966290925,
+      "unresolved_logJ_RMS": 0.030440986976141587,
+      "unpenalized_kernel_energy_at_same_lambda": 6.550128942522995
+    }
+  ],
+  "source_sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+  "scope": "Retains failed prior stages even if final state stationary; projection kernel not governed by lambda penalty"
+}

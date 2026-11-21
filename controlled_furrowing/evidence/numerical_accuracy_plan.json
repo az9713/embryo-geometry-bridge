@@ -1,0 +1,133 @@
+{
+  "status": "PASS_EXECUTED_DIAGNOSTIC_AND_PLAN_ONLY",
+  "scope": "No mixed solver or complete locking diagnosis executed. Three fixed-load finite-compressibility diagnostics and independent geometry/hash replay.",
+  "checks": {
+    "bulk_5.0_hashes": true,
+    "bulk_5.0_stationary": true,
+    "bulk_5.0_independent_J": true,
+    "bulk_5.0_independent_volume": true,
+    "bulk_50.0_hashes": true,
+    "bulk_50.0_stationary": true,
+    "bulk_50.0_independent_J": true,
+    "bulk_50.0_independent_volume": true,
+    "bulk_500.0_hashes": true,
+    "bulk_500.0_stationary": true,
+    "bulk_500.0_independent_J": true,
+    "bulk_500.0_independent_volume": true,
+    "manufactured_axisymmetric_divergence_exact_zero": true,
+    "manufactured_rim_boundary_exact_zero": true,
+    "manufactured_top_bottom_exact_zero": true,
+    "mixed_elimination_exact": true,
+    "mixed_pressure_residual_exact": true
+  },
+  "results": [
+    {
+      "converged": true,
+      "minimum_J": 0.6302871221900231,
+      "maximum_J": 1.2894766307627825,
+      "relative_volume_change": -0.003108273164805442,
+      "scaled_free_force_linf": 9.413386818082556e-13,
+      "maximum_activated_column_shortening": 0.35617917286519685,
+      "central_apical_displacement": -0.15190643814812188,
+      "central_basal_displacement": 0.20427273471707494,
+      "bulk": 5.0,
+      "seconds": 11.999549500003923,
+      "artifact": "bulk_5.json",
+      "sha256": "474cdd8fa55121a719d02ec8062c7e153632533838835b7333979c0777bd0d3e"
+    },
+    {
+      "converged": true,
+      "minimum_J": 0.8307973598032692,
+      "maximum_J": 1.1186528934897915,
+      "relative_volume_change": -0.0006440379368607418,
+      "scaled_free_force_linf": 6.292151034145016e-11,
+      "maximum_activated_column_shortening": 0.2973788867577736,
+      "central_apical_displacement": -0.07262645685342162,
+      "central_basal_displacement": 0.224752429904352,
+      "bulk": 50.0,
+      "seconds": 13.132863299979363,
+      "artifact": "bulk_50.json",
+      "sha256": "aee9a99685ee4a3a309361341879c5dbf64a50edff7bf7e39db964f78949e99a"
+    },
+    {
+      "converged": true,
+      "minimum_J": 0.9420527156325885,
+      "maximum_J": 1.0509652915621757,
+      "relative_volume_change": -5.3121772565778436e-05,
+      "scaled_free_force_linf": 2.105191021506414e-13,
+      "maximum_activated_column_shortening": 0.14746341257872164,
+      "central_apical_displacement": -0.011055837815887148,
+      "central_basal_displacement": 0.12370296698028682,
+      "bulk": 500.0,
+      "seconds": 12.495811400003731,
+      "artifact": "bulk_500.json",
+      "sha256": "7a3b49d9fe95f303a7618204f58a7a27fe0446848cfd5c8b9c379430f6e2a0c2"
+    }
+  ],
+  "independent_replay": [
+    {
+      "bulk": 5.0,
+      "independent_min_J": 0.6302871221900227,
+      "independent_max_J": 1.2894766307627816,
+      "independent_volume": 28.18644952904901,
+      "volume_absolute_difference": 3.552713678800501e-15,
+      "file_sha256": "474cdd8fa55121a719d02ec8062c7e153632533838835b7333979c0777bd0d3e"
+    },
+    {
+      "bulk": 50.0,
+      "independent_min_J": 0.8307973598032694,
+      "independent_max_J": 1.1186528934897917,
+      "independent_volume": 28.25612413864846,
+      "volume_absolute_difference": 0.0,
+      "file_sha256": "aee9a99685ee4a3a309361341879c5dbf64a50edff7bf7e39db964f78949e99a"
+    },
+    {
+      "bulk": 500.0,
+      "independent_min_J": 0.9420527156325881,
+      "independent_max_J": 1.0509652915621754,
+      "independent_volume": 28.272831899574193,
+      "volume_absolute_difference": 3.552713678800501e-15,
+      "file_sha256": "7a3b49d9fe95f303a7618204f58a7a27fe0446848cfd5c8b9c379430f6e2a0c2"
+    }
+  ],
+  "source_sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+  "protocol_sha256": "f04920dbb024c6ecf00c8f813f49807c055b177bf2904f2c7d218e1e7c43b822",
+  "document_sha256": "28127fc6770b526e5614bb4772ed14a45a80e06053164c299017e6da3b08ee07",
+  "driver_sha256": "a9ffa3255f9bd24a099180597f10cbe3604058f44701719601ff8d34c2167ede",
+  "verifier_sha256": "a42caf1f2cef7b8c3e107c8ca08f2df8cbfd574b12d922087b4c9145c125d10a",
+  "visual": {
+    "path": "runs/numerical_accuracy/compressibility-diagnostic.png",
+    "sha256": "c8f38de9f4ecec388f3f42cda2a7d840689025834c4d5b2c6d2272f2a26ed5e5"
+  },
+  "recommended_next_method": "Axisymmetric P2 displacement/P1 pressure mixed saddle formulation preserving original logJ energy; verify weighted stability and nonlinear tangent.",
+  "planned_not_executed": [
+    "Divergence-free manufactured forcing benchmark with P1 and mixed methods",
+    "Matched bulk5/50/500 by mesh8x4/12x6/16x8 at fixed f=.2 and separately10",
+    "Mixed finite-strain solver",
+    "Rigorous continuum-error certificate",
+    "Independent biological incompressibility measurement"
+  ],
+  "literature": [
+    {
+      "title": "Ferrite nearly incompressible hyperelasticity tutorial",
+      "url": "https://ferrite-fem.github.io/Ferrite.jl/stable/gallery/quasi_incompressible_hyperelasticity/",
+      "used_for": "Primary software documentation: mixed Taylor-Hood finite-strain example; different volumetric law"
+    },
+    {
+      "title": "deal.II step-44",
+      "url": "https://dealii.org/9.7.0/doxygen/deal.II/step_44.html",
+      "used_for": "Primary software documentation: locking and three-field finite-strain alternative"
+    },
+    {
+      "title": "Simo Taylor Pister1985",
+      "doi": "10.1016/0045-7825(85)90033-7",
+      "used_for": "Original variational/projection volume-constraint formulation, cited by step-44; not independently line-by-line audited here"
+    }
+  ],
+  "limitations": [
+    "No continuum limit, global minimum, injectivity or biological adequacy certification",
+    "No causal attribution of discrete bulk sensitivity to locking",
+    "Global volume agreement does not exclude large local volume distortion",
+    "Zero-gap plug observer is not robust to arbitrary small surface errors"
+  ]
+}

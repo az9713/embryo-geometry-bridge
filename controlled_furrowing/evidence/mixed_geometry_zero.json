@@ -1,0 +1,2747 @@
+{
+  "status": "CERTIFIED_DISCRETE_EMBEDDING",
+  "all_local_J_certified": true,
+  "boundary": {
+    "status": "CERTIFIED_JORDAN_BOUNDARY",
+    "disk_topology": true,
+    "conforming_P2_edges": true,
+    "strict_coordinate_monotonicity": true,
+    "top_bottom_hull_gap": {
+      "exact": "1",
+      "float": 1.0
+    },
+    "axis_preserved": true,
+    "scope": "Exact sufficient certificate for serialized flat-reference P2 boundary; no continuum approximation claim."
+  },
+  "triangles": [
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "53307581080957566352670952267693/2596148429267413814265248164610048",
+        "float": 0.020533333333333334
+      },
+      "meridional_determinant_bernstein": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872"
+      ],
+      "reference_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "150230455773607678434322119158119/2596148429267413814265248164610048",
+        "float": 0.057866666666666663
+      },
+      "meridional_determinant_bernstein": [
+        "22337854151757665/22337854151757659",
+        "22337854151757665/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "22337854151757665/22337854151757659",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872"
+      ],
+      "reference_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "9692287469265013898315294105019/649037107316853453566312041152512",
+        "float": 0.014933333333333337
+      },
+      "meridional_determinant_bernstein": [
+        "1441151880758557/1441151880758559",
+        "1441151880758557/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1441151880758557/1441151880758559",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872"
+      ],
+      "reference_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/72057594037927936",
+        "6725375443539941/144115188075855872"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "53307581080957566352670952267693/2596148429267413814265248164610048",
+        "float": 0.020533333333333334
+      },
+      "meridional_determinant_bernstein": [
+        "6725375443539943/6725375443539941",
+        "6725375443539939/6725375443539941",
+        "6725375443539939/6725375443539941",
+        "1",
+        "6725375443539939/6725375443539941",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/36028797018963968",
+        "20176126330619825/144115188075855872",
+        "6725375443539941/36028797018963968",
+        "20176126330619825/144115188075855872"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/36028797018963968",
+        "20176126330619823/144115188075855872",
+        "6725375443539941/36028797018963968",
+        "20176126330619823/144115188075855872"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "6725375443539939/6725375443539941",
+          "float": 0.9999999999999997
+        },
+        "upper": {
+          "exact": "6725375443539943/6725375443539941",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "20176126330619825/20176126330619823",
+        "1",
+        "20176126330619825/20176126330619823"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "20176126330619825/20176126330619823",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "6725375443539939/6725375443539941",
+          "float": 0.9999999999999997
+        },
+        "upper": {
+          "exact": "135692024569710228203291335169975/135692024569710174400287786850443",
+          "float": 1.0000000000000004
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "150230455773607678434322119158119/2596148429267413814265248164610048",
+        "float": 0.057866666666666663
+      },
+      "meridional_determinant_bernstein": [
+        "150230455773607763462283083913095/150230455773607678434322119158119",
+        "150230455773607674110866476882435/150230455773607678434322119158119",
+        "150230455773607593406361154403167/150230455773607678434322119158119",
+        "22337854151757665/22337854151757659",
+        "6725375443539939/6725375443539941",
+        "150230455773607678434322119158107/150230455773607678434322119158119"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/36028797018963968",
+        "20176126330619825/144115188075855872",
+        "6725375443539941/36028797018963968",
+        "20176126330619825/144115188075855872"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/36028797018963968",
+        "20176126330619823/144115188075855872",
+        "6725375443539941/36028797018963968",
+        "20176126330619823/144115188075855872"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "150230455773607593406361154403167/150230455773607678434322119158119",
+          "float": 0.9999999999999994
+        },
+        "upper": {
+          "exact": "150230455773607763462283083913095/150230455773607678434322119158119",
+          "float": 1.0000000000000007
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "20176126330619825/20176126330619823",
+        "1",
+        "20176126330619825/20176126330619823"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "20176126330619825/20176126330619823",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "150230455773607593406361154403167/150230455773607678434322119158119",
+          "float": 0.9999999999999994
+        },
+        "upper": {
+          "exact": "3031068654394904707733658123240605073777784108375/3031068654394902691737864516117719028036212792937",
+          "float": 1.0000000000000007
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "9692287469265013898315294105019/649037107316853453566312041152512",
+        "float": 0.014933333333333337
+      },
+      "meridional_determinant_bernstein": [
+        "9692287469265003329868168542251/9692287469265013898315294105019",
+        "3230762489754999188420215169341/3230762489755004632771764701673",
+        "3230762489755008155587473222593/3230762489755004632771764701673",
+        "1441151880758557/1441151880758559",
+        "6725375443539939/6725375443539941",
+        "9692287469265013898315294105023/9692287469265013898315294105019"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/36028797018963968",
+        "20176126330619825/144115188075855872",
+        "6725375443539941/36028797018963968",
+        "20176126330619825/144115188075855872"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/36028797018963968",
+        "20176126330619823/144115188075855872",
+        "6725375443539941/36028797018963968",
+        "20176126330619823/144115188075855872"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "3230762489754999188420215169341/3230762489755004632771764701673",
+          "float": 0.9999999999999983
+        },
+        "upper": {
+          "exact": "3230762489755008155587473222593/3230762489755004632771764701673",
+          "float": 1.000000000000001
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "20176126330619825/20176126330619823",
+        "1",
+        "20176126330619825/20176126330619823"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "20176126330619825/20176126330619823",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "3230762489754999188420215169341/3230762489755004632771764701673",
+          "float": 0.9999999999999983
+        },
+        "upper": {
+          "exact": "65184272137524882657525553034565583763883706225/65184272137524805119225798914487703862775063879",
+          "float": 1.000000000000001
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "26653790540478787139503148219883/1298074214633706907132624082305024",
+        "float": 0.020533333333333337
+      },
+      "meridional_determinant_bernstein": [
+        "3362687721769969/3362687721769971",
+        "3362687721769973/3362687721769971",
+        "3362687721769973/3362687721769971",
+        "1",
+        "3362687721769973/3362687721769971",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "1261007895663739/4503599627370496",
+        "16813438608849851/72057594037927936",
+        "1261007895663739/4503599627370496",
+        "16813438608849851/72057594037927936"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "1261007895663739/4503599627370496",
+        "16813438608849853/72057594037927936",
+        "1261007895663739/4503599627370496",
+        "16813438608849853/72057594037927936"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "3362687721769969/3362687721769971",
+          "float": 0.9999999999999994
+        },
+        "upper": {
+          "exact": "3362687721769973/3362687721769971",
+          "float": 1.0000000000000007
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "16813438608849851/16813438608849853",
+        "1",
+        "16813438608849851/16813438608849853"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "16813438608849851/16813438608849853",
+          "float": 0.9999999999999999
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "56538343570712542402597081924619/56538343570712582754849743164263",
+          "float": 0.9999999999999993
+        },
+        "upper": {
+          "exact": "3362687721769973/3362687721769971",
+          "float": 1.0000000000000007
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "75115227886803850386088135457889/1298074214633706907132624082305024",
+        "float": 0.05786666666666668
+      },
+      "meridional_determinant_bernstein": [
+        "75115227886803825886506162562385/75115227886803850386088135457889",
+        "75115227886803915237922769593045/75115227886803850386088135457889",
+        "75115227886803874885670108353369/75115227886803850386088135457889",
+        "22337854151757665/22337854151757659",
+        "3362687721769973/3362687721769971",
+        "25038409295601283462029378485967/25038409295601283462029378485963"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "1261007895663739/4503599627370496",
+        "16813438608849851/72057594037927936",
+        "1261007895663739/4503599627370496",
+        "16813438608849851/72057594037927936"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "1261007895663739/4503599627370496",
+        "16813438608849853/72057594037927936",
+        "1261007895663739/4503599627370496",
+        "16813438608849853/72057594037927936"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "75115227886803825886506162562385/75115227886803850386088135457889",
+          "float": 0.9999999999999997
+        },
+        "upper": {
+          "exact": "75115227886803915237922769593045/75115227886803850386088135457889",
+          "float": 1.0000000000000009
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "16813438608849851/16813438608849853",
+        "1",
+        "16813438608849851/16813438608849853"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "16813438608849851/16813438608849853",
+          "float": 0.9999999999999999
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1262945272664542451417120658089801316319885454635/1262945272664543013569793875460572830961805340317",
+          "float": 0.9999999999999996
+        },
+        "upper": {
+          "exact": "75115227886803915237922769593045/75115227886803850386088135457889",
+          "float": 1.0000000000000009
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "4846143734632507669733587431789/324518553658426726783156020576256",
+        "float": 0.014933333333333338
+      },
+      "meridional_determinant_bernstein": [
+        "4846143734632498062054382374733/4846143734632507669733587431789",
+        "4846143734632503826661905408961/4846143734632507669733587431789",
+        "4846143734632517277412792488853/4846143734632507669733587431789",
+        "1441151880758557/1441151880758559",
+        "3362687721769973/3362687721769971",
+        "4846143734632507669733587431785/4846143734632507669733587431789"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "1261007895663739/4503599627370496",
+        "16813438608849851/72057594037927936",
+        "1261007895663739/4503599627370496",
+        "16813438608849851/72057594037927936"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "1261007895663739/4503599627370496",
+        "16813438608849853/72057594037927936",
+        "1261007895663739/4503599627370496",
+        "16813438608849853/72057594037927936"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "4846143734632498062054382374733/4846143734632507669733587431789",
+          "float": 0.999999999999998
+        },
+        "upper": {
+          "exact": "4846143734632517277412792488853/4846143734632507669733587431789",
+          "float": 1.000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "16813438608849851/16813438608849853",
+        "1",
+        "16813438608849851/16813438608849853"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "16813438608849851/16813438608849853",
+          "float": 0.9999999999999999
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "81480340171905849707051495525465524807213214783/81480340171906020937463452540630837589380177017",
+          "float": 0.9999999999999979
+        },
+        "upper": {
+          "exact": "4846143734632517277412792488853/4846143734632507669733587431789",
+          "float": 1.000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "32365317084867086779893663723177/162259276829213363391578010288128",
+        "float": 0.19946666666666663
+      },
+      "meridional_determinant_bernstein": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992"
+      ],
+      "reference_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "91211348148261784819182936848091/162259276829213363391578010288128",
+        "float": 0.5621333333333332
+      },
+      "meridional_determinant_bernstein": [
+        "22337854151757665/22337854151757659",
+        "22337854151757665/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "22337854151757665/22337854151757659",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992"
+      ],
+      "reference_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "5884603106339471437234392172191/40564819207303340847894502572032",
+        "float": 0.14506666666666668
+      },
+      "meridional_determinant_bernstein": [
+        "1441151880758557/1441151880758559",
+        "1441151880758557/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1441151880758557/1441151880758559",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992"
+      ],
+      "reference_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992",
+        "1336067889453247/1125899906842624",
+        "6605279453476727/9007199254740992"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "16182658542433547353114503947625/81129638414606681695789005144064",
+        "float": 0.19946666666666668
+      },
+      "meridional_determinant_bernstein": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "45605674074130903578518544302875/81129638414606681695789005144064",
+        "float": 0.5621333333333334
+      },
+      "meridional_determinant_bernstein": [
+        "22337854151757665/22337854151757659",
+        "22337854151757665/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "22337854151757665/22337854151757659",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "2942301553169736439193136465375/20282409603651670423947251286016",
+        "float": 0.1450666666666667
+      },
+      "meridional_determinant_bernstein": [
+        "1441151880758557/1441151880758559",
+        "1441151880758557/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1441151880758557/1441151880758559",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496",
+        "4713767609981119/2251799813685248",
+        "7385903388887613/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "16182658542433547353114503947625/81129638414606681695789005144064",
+        "float": 0.19946666666666668
+      },
+      "meridional_determinant_bernstein": [
+        "2041631831074627/2041631831074625",
+        "2041631831074623/2041631831074625",
+        "2041631831074623/2041631831074625",
+        "1",
+        "2041631831074623/2041631831074625",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "3",
+        "11469167051036865/4503599627370496",
+        "3",
+        "11469167051036865/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "3",
+        "11469167051036863/4503599627370496",
+        "3",
+        "11469167051036863/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "2041631831074623/2041631831074625",
+          "float": 0.999999999999999
+        },
+        "upper": {
+          "exact": "2041631831074627/2041631831074625",
+          "float": 1.0000000000000009
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "11469167051036865/11469167051036863",
+        "1",
+        "11469167051036865/11469167051036863"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "11469167051036865/11469167051036863",
+          "float": 1.0000000000000002
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "2041631831074623/2041631831074625",
+          "float": 0.999999999999999
+        },
+        "upper": {
+          "exact": "56423654282672710043295284637/56423654282672644931011515425",
+          "float": 1.000000000000001
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "45605674074130903578518544302875/81129638414606681695789005144064",
+        "float": 0.5621333333333334
+      },
+      "meridional_determinant_bernstein": [
+        "9121134814826192100803566853191/9121134814826180715703708860575",
+        "9121134814826174230520245447059/9121134814826180715703708860575",
+        "45605674074130846653019254339819/45605674074130903578518544302875",
+        "22337854151757665/22337854151757659",
+        "2041631831074623/2041631831074625",
+        "45605674074130903578518544302863/45605674074130903578518544302875"
+      ],
+      "current_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "3",
+        "11469167051036865/4503599627370496",
+        "3",
+        "11469167051036865/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "3",
+        "11469167051036863/4503599627370496",
+        "3",
+        "11469167051036863/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "45605674074130846653019254339819/45605674074130903578518544302875",
+          "float": 0.9999999999999988
+        },
+        "upper": {
+          "exact": "9121134814826192100803566853191/9121134814826180715703708860575",
+          "float": 1.0000000000000013
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "11469167051036865/11469167051036863",
+        "1",
+        "11469167051036865/11469167051036863"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "11469167051036865/11469167051036863",
+          "float": 1.0000000000000002
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "45605674074130846653019254339819/45605674074130903578518544302875",
+          "float": 0.9999999999999988
+        },
+        "upper": {
+          "exact": "252076672015107950287424836500458060004298521/252076672015107591685300032390184406588078015",
+          "float": 1.0000000000000013
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "2942301553169736439193136465375/20282409603651670423947251286016",
+        "float": 0.1450666666666667
+      },
+      "meridional_determinant_bernstein": [
+        "2942301553169735238233235833239/2942301553169736439193136465375",
+        "980767184389909824541904266337/980767184389912146397712155125",
+        "980767184389912546717679032501/980767184389912146397712155125",
+        "1441151880758557/1441151880758559",
+        "2041631831074623/2041631831074625",
+        "2942301553169736439193136465379/2942301553169736439193136465375"
+      ],
+      "current_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "3",
+        "11469167051036865/4503599627370496",
+        "3",
+        "11469167051036865/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "3",
+        "11469167051036863/4503599627370496",
+        "3",
+        "11469167051036863/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "980767184389909824541904266337/980767184389912146397712155125",
+          "float": 0.9999999999999977
+        },
+        "upper": {
+          "exact": "980767184389912546717679032501/980767184389912146397712155125",
+          "float": 1.0000000000000004
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "11469167051036865/11469167051036863",
+        "1",
+        "11469167051036865/11469167051036863"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "11469167051036865/11469167051036863",
+          "float": 1.0000000000000002
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "980767184389909824541904266337/980767184389912146397712155125",
+          "float": 0.9999999999999977
+        },
+        "upper": {
+          "exact": "749905511729532166655895778985918304138943291/749905511729531729797832928186300643303291525",
+          "float": 1.0000000000000007
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "53307581080957566352670952267693/2596148429267413814265248164610048",
+        "float": 0.020533333333333334
+      },
+      "meridional_determinant_bernstein": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "0",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/144115188075855872",
+        "0"
+      ],
+      "reference_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "0",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/144115188075855872",
+        "0"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "150230455773607678434322119158119/2596148429267413814265248164610048",
+        "float": 0.057866666666666663
+      },
+      "meridional_determinant_bernstein": [
+        "22337854151757665/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "1",
+        "22337854151757653/22337854151757659",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "0",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/144115188075855872",
+        "0"
+      ],
+      "reference_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "0",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/144115188075855872",
+        "0"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "9692287469265013898315294105019/649037107316853453566312041152512",
+        "float": 0.014933333333333337
+      },
+      "meridional_determinant_bernstein": [
+        "1441151880758557/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1",
+        "1441151880758561/1441151880758559",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "0",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/144115188075855872",
+        "0"
+      ],
+      "reference_radius_bernstein": [
+        "0",
+        "6725375443539941/72057594037927936",
+        "0",
+        "6725375443539941/144115188075855872",
+        "6725375443539941/144115188075855872",
+        "0"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "53307581080957566352670952267693/2596148429267413814265248164610048",
+        "float": 0.020533333333333334
+      },
+      "meridional_determinant_bernstein": [
+        "6725375443539943/6725375443539941",
+        "6725375443539939/6725375443539941",
+        "6725375443539943/6725375443539941",
+        "1",
+        "1",
+        "6725375443539943/6725375443539941"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/72057594037927936",
+        "20176126330619825/144115188075855872",
+        "20176126330619825/144115188075855872",
+        "6725375443539941/72057594037927936"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/72057594037927936",
+        "20176126330619823/144115188075855872",
+        "20176126330619823/144115188075855872",
+        "6725375443539941/72057594037927936"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "6725375443539939/6725375443539941",
+          "float": 0.9999999999999997
+        },
+        "upper": {
+          "exact": "6725375443539943/6725375443539941",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "20176126330619825/20176126330619823",
+        "20176126330619825/20176126330619823",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "20176126330619825/20176126330619823",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "6725375443539939/6725375443539941",
+          "float": 0.9999999999999997
+        },
+        "upper": {
+          "exact": "135692024569710228203291335169975/135692024569710174400287786850443",
+          "float": 1.0000000000000004
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "150230455773607678434322119158119/2596148429267413814265248164610048",
+        "float": 0.057866666666666663
+      },
+      "meridional_determinant_bernstein": [
+        "150230455773607763462283083913095/150230455773607678434322119158119",
+        "150230455773607593406361154403167/150230455773607678434322119158119",
+        "150230455773607682757777761433779/150230455773607678434322119158119",
+        "150230455773607678434322119158107/150230455773607678434322119158119",
+        "22337854151757653/22337854151757659",
+        "6725375443539943/6725375443539941"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/72057594037927936",
+        "20176126330619825/144115188075855872",
+        "20176126330619825/144115188075855872",
+        "6725375443539941/72057594037927936"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/72057594037927936",
+        "20176126330619823/144115188075855872",
+        "20176126330619823/144115188075855872",
+        "6725375443539941/72057594037927936"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "150230455773607593406361154403167/150230455773607678434322119158119",
+          "float": 0.9999999999999994
+        },
+        "upper": {
+          "exact": "150230455773607763462283083913095/150230455773607678434322119158119",
+          "float": 1.0000000000000007
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "20176126330619825/20176126330619823",
+        "20176126330619825/20176126330619823",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "20176126330619825/20176126330619823",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "150230455773607593406361154403167/150230455773607678434322119158119",
+          "float": 0.9999999999999994
+        },
+        "upper": {
+          "exact": "3031068654394904707733658123240605073777784108375/3031068654394902691737864516117719028036212792937",
+          "float": 1.0000000000000007
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "9692287469265013898315294105019/649037107316853453566312041152512",
+        "float": 0.014933333333333337
+      },
+      "meridional_determinant_bernstein": [
+        "9692287469265003329868168542251/9692287469265013898315294105019",
+        "3230762489755008155587473222593/3230762489755004632771764701673",
+        "9692287469265030231369942702023/9692287469265013898315294105019",
+        "9692287469265013898315294105023/9692287469265013898315294105019",
+        "1441151880758561/1441151880758559",
+        "6725375443539943/6725375443539941"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/72057594037927936",
+        "20176126330619825/144115188075855872",
+        "20176126330619825/144115188075855872",
+        "6725375443539941/72057594037927936"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/72057594037927936",
+        "6725375443539941/36028797018963968",
+        "6725375443539941/72057594037927936",
+        "20176126330619823/144115188075855872",
+        "20176126330619823/144115188075855872",
+        "6725375443539941/72057594037927936"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "9692287469265003329868168542251/9692287469265013898315294105019",
+          "float": 0.9999999999999989
+        },
+        "upper": {
+          "exact": "9692287469265030231369942702023/9692287469265013898315294105019",
+          "float": 1.0000000000000018
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "20176126330619825/20176126330619823",
+        "20176126330619825/20176126330619823",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "20176126330619825/20176126330619823",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "9692287469265003329868168542251/9692287469265013898315294105019",
+          "float": 0.9999999999999989
+        },
+        "upper": {
+          "exact": "195552816412574764280026290284036469300871405975/195552816412574415357677396743463111588325191637",
+          "float": 1.0000000000000018
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "26653790540478787139503148219883/1298074214633706907132624082305024",
+        "float": 0.020533333333333337
+      },
+      "meridional_determinant_bernstein": [
+        "3362687721769969/3362687721769971",
+        "3362687721769973/3362687721769971",
+        "3362687721769969/3362687721769971",
+        "1",
+        "1",
+        "3362687721769969/3362687721769971"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "6725375443539941/36028797018963968",
+        "16813438608849851/72057594037927936",
+        "16813438608849851/72057594037927936",
+        "6725375443539941/36028797018963968"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "6725375443539941/36028797018963968",
+        "16813438608849853/72057594037927936",
+        "16813438608849853/72057594037927936",
+        "6725375443539941/36028797018963968"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "3362687721769969/3362687721769971",
+          "float": 0.9999999999999994
+        },
+        "upper": {
+          "exact": "3362687721769973/3362687721769971",
+          "float": 1.0000000000000007
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "16813438608849851/16813438608849853",
+        "16813438608849851/16813438608849853",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "16813438608849851/16813438608849853",
+          "float": 0.9999999999999999
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "56538343570712542402597081924619/56538343570712582754849743164263",
+          "float": 0.9999999999999993
+        },
+        "upper": {
+          "exact": "3362687721769973/3362687721769971",
+          "float": 1.0000000000000007
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "75115227886803850386088135457889/1298074214633706907132624082305024",
+        "float": 0.05786666666666668
+      },
+      "meridional_determinant_bernstein": [
+        "75115227886803825886506162562385/75115227886803850386088135457889",
+        "75115227886803874885670108353369/75115227886803850386088135457889",
+        "75115227886803785534253501322757/75115227886803850386088135457889",
+        "25038409295601283462029378485967/25038409295601283462029378485963",
+        "22337854151757653/22337854151757659",
+        "3362687721769969/3362687721769971"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "6725375443539941/36028797018963968",
+        "16813438608849851/72057594037927936",
+        "16813438608849851/72057594037927936",
+        "6725375443539941/36028797018963968"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "6725375443539941/36028797018963968",
+        "16813438608849853/72057594037927936",
+        "16813438608849853/72057594037927936",
+        "6725375443539941/36028797018963968"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "75115227886803785534253501322757/75115227886803850386088135457889",
+          "float": 0.9999999999999991
+        },
+        "upper": {
+          "exact": "75115227886803874885670108353369/75115227886803850386088135457889",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "16813438608849851/16813438608849853",
+        "16813438608849851/16813438608849853",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "16813438608849851/16813438608849853",
+          "float": 0.9999999999999999
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1262945272664541772956997809539292485154902359207/1262945272664543013569793875460572830961805340317",
+          "float": 0.999999999999999
+        },
+        "upper": {
+          "exact": "75115227886803874885670108353369/75115227886803850386088135457889",
+          "float": 1.0000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "4846143734632507669733587431789/324518553658426726783156020576256",
+        "float": 0.014933333333333338
+      },
+      "meridional_determinant_bernstein": [
+        "4846143734632498062054382374733/4846143734632507669733587431789",
+        "4846143734632517277412792488853/4846143734632507669733587431789",
+        "4846143734632511512805269454609/4846143734632507669733587431789",
+        "4846143734632507669733587431785/4846143734632507669733587431789",
+        "1441151880758561/1441151880758559",
+        "3362687721769969/3362687721769971"
+      ],
+      "current_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "6725375443539941/36028797018963968",
+        "16813438608849851/72057594037927936",
+        "16813438608849851/72057594037927936",
+        "6725375443539941/36028797018963968"
+      ],
+      "reference_radius_bernstein": [
+        "6725375443539941/36028797018963968",
+        "1261007895663739/4503599627370496",
+        "6725375443539941/36028797018963968",
+        "16813438608849853/72057594037927936",
+        "16813438608849853/72057594037927936",
+        "6725375443539941/36028797018963968"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "4846143734632498062054382374733/4846143734632507669733587431789",
+          "float": 0.999999999999998
+        },
+        "upper": {
+          "exact": "4846143734632517277412792488853/4846143734632507669733587431789",
+          "float": 1.000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "16813438608849851/16813438608849853",
+        "16813438608849851/16813438608849853",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "16813438608849851/16813438608849853",
+          "float": 0.9999999999999999
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "81480340171905849707051495525465524807213214783/81480340171906020937463452540630837589380177017",
+          "float": 0.9999999999999979
+        },
+        "upper": {
+          "exact": "4846143734632517277412792488853/4846143734632507669733587431789",
+          "float": 1.000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "32365317084867086779893663723177/162259276829213363391578010288128",
+        "float": 0.19946666666666663
+      },
+      "meridional_determinant_bernstein": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1261007895663739/4503599627370496",
+        "6605279453476727/9007199254740992",
+        "6605279453476727/9007199254740992",
+        "1261007895663739/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1261007895663739/4503599627370496",
+        "6605279453476727/9007199254740992",
+        "6605279453476727/9007199254740992",
+        "1261007895663739/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "91211348148261784819182936848091/162259276829213363391578010288128",
+        "float": 0.5621333333333332
+      },
+      "meridional_determinant_bernstein": [
+        "22337854151757665/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "1",
+        "22337854151757653/22337854151757659",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1261007895663739/4503599627370496",
+        "6605279453476727/9007199254740992",
+        "6605279453476727/9007199254740992",
+        "1261007895663739/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1261007895663739/4503599627370496",
+        "6605279453476727/9007199254740992",
+        "6605279453476727/9007199254740992",
+        "1261007895663739/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "5884603106339471437234392172191/40564819207303340847894502572032",
+        "float": 0.14506666666666668
+      },
+      "meridional_determinant_bernstein": [
+        "1441151880758557/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1",
+        "1441151880758561/1441151880758559",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1261007895663739/4503599627370496",
+        "6605279453476727/9007199254740992",
+        "6605279453476727/9007199254740992",
+        "1261007895663739/4503599627370496"
+      ],
+      "reference_radius_bernstein": [
+        "1261007895663739/4503599627370496",
+        "1336067889453247/1125899906842624",
+        "1261007895663739/4503599627370496",
+        "6605279453476727/9007199254740992",
+        "6605279453476727/9007199254740992",
+        "1261007895663739/4503599627370496"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "16182658542433547353114503947625/81129638414606681695789005144064",
+        "float": 0.19946666666666668
+      },
+      "meridional_determinant_bernstein": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "1336067889453247/1125899906842624",
+        "7385903388887613/4503599627370496",
+        "7385903388887613/4503599627370496",
+        "1336067889453247/1125899906842624"
+      ],
+      "reference_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "1336067889453247/1125899906842624",
+        "7385903388887613/4503599627370496",
+        "7385903388887613/4503599627370496",
+        "1336067889453247/1125899906842624"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "45605674074130903578518544302875/81129638414606681695789005144064",
+        "float": 0.5621333333333334
+      },
+      "meridional_determinant_bernstein": [
+        "22337854151757665/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "22337854151757653/22337854151757659",
+        "1",
+        "22337854151757653/22337854151757659",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "1336067889453247/1125899906842624",
+        "7385903388887613/4503599627370496",
+        "7385903388887613/4503599627370496",
+        "1336067889453247/1125899906842624"
+      ],
+      "reference_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "1336067889453247/1125899906842624",
+        "7385903388887613/4503599627370496",
+        "7385903388887613/4503599627370496",
+        "1336067889453247/1125899906842624"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "22337854151757653/22337854151757659",
+          "float": 0.9999999999999998
+        },
+        "upper": {
+          "exact": "22337854151757665/22337854151757659",
+          "float": 1.0000000000000002
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "2942301553169736439193136465375/20282409603651670423947251286016",
+        "float": 0.1450666666666667
+      },
+      "meridional_determinant_bernstein": [
+        "1441151880758557/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1441151880758561/1441151880758559",
+        "1",
+        "1441151880758561/1441151880758559",
+        "1"
+      ],
+      "current_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "1336067889453247/1125899906842624",
+        "7385903388887613/4503599627370496",
+        "7385903388887613/4503599627370496",
+        "1336067889453247/1125899906842624"
+      ],
+      "reference_radius_bernstein": [
+        "1336067889453247/1125899906842624",
+        "4713767609981119/2251799813685248",
+        "1336067889453247/1125899906842624",
+        "7385903388887613/4503599627370496",
+        "7385903388887613/4503599627370496",
+        "1336067889453247/1125899906842624"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "1",
+          "float": 1.0
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "1441151880758557/1441151880758559",
+          "float": 0.9999999999999987
+        },
+        "upper": {
+          "exact": "1441151880758561/1441151880758559",
+          "float": 1.0000000000000013
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "16182658542433547353114503947625/81129638414606681695789005144064",
+        "float": 0.19946666666666668
+      },
+      "meridional_determinant_bernstein": [
+        "2041631831074627/2041631831074625",
+        "2041631831074623/2041631831074625",
+        "2041631831074627/2041631831074625",
+        "1",
+        "1",
+        "2041631831074627/2041631831074625"
+      ],
+      "current_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "4713767609981119/2251799813685248",
+        "11469167051036865/4503599627370496",
+        "11469167051036865/4503599627370496",
+        "4713767609981119/2251799813685248"
+      ],
+      "reference_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "4713767609981119/2251799813685248",
+        "11469167051036863/4503599627370496",
+        "11469167051036863/4503599627370496",
+        "4713767609981119/2251799813685248"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "2041631831074623/2041631831074625",
+          "float": 0.999999999999999
+        },
+        "upper": {
+          "exact": "2041631831074627/2041631831074625",
+          "float": 1.0000000000000009
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "11469167051036865/11469167051036863",
+        "11469167051036865/11469167051036863",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "11469167051036865/11469167051036863",
+          "float": 1.0000000000000002
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "2041631831074623/2041631831074625",
+          "float": 0.999999999999999
+        },
+        "upper": {
+          "exact": "56423654282672710043295284637/56423654282672644931011515425",
+          "float": 1.000000000000001
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "45605674074130903578518544302875/81129638414606681695789005144064",
+        "float": 0.5621333333333334
+      },
+      "meridional_determinant_bernstein": [
+        "9121134814826192100803566853191/9121134814826180715703708860575",
+        "45605674074130846653019254339819/45605674074130903578518544302875",
+        "45605674074130936004435861370431/45605674074130903578518544302875",
+        "45605674074130903578518544302863/45605674074130903578518544302875",
+        "22337854151757653/22337854151757659",
+        "2041631831074627/2041631831074625"
+      ],
+      "current_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "4713767609981119/2251799813685248",
+        "11469167051036865/4503599627370496",
+        "11469167051036865/4503599627370496",
+        "4713767609981119/2251799813685248"
+      ],
+      "reference_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "4713767609981119/2251799813685248",
+        "11469167051036863/4503599627370496",
+        "11469167051036863/4503599627370496",
+        "4713767609981119/2251799813685248"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "45605674074130846653019254339819/45605674074130903578518544302875",
+          "float": 0.9999999999999988
+        },
+        "upper": {
+          "exact": "9121134814826192100803566853191/9121134814826180715703708860575",
+          "float": 1.0000000000000013
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "11469167051036865/11469167051036863",
+        "11469167051036865/11469167051036863",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "11469167051036865/11469167051036863",
+          "float": 1.0000000000000002
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "45605674074130846653019254339819/45605674074130903578518544302875",
+          "float": 0.9999999999999988
+        },
+        "upper": {
+          "exact": "252076672015107950287424836500458060004298521/252076672015107591685300032390184406588078015",
+          "float": 1.0000000000000013
+        }
+      }
+    },
+    {
+      "status": "CERTIFIED_POSITIVE_DISCRETE_J",
+      "node_order": "vertices_then_01_12_20",
+      "arithmetic": "exact rational of supplied binary64 coordinates",
+      "reference_determinant": {
+        "exact": "2942301553169736439193136465375/20282409603651670423947251286016",
+        "float": 0.1450666666666667
+      },
+      "meridional_determinant_bernstein": [
+        "2942301553169735238233235833239/2942301553169736439193136465375",
+        "980767184389912546717679032501/980767184389912146397712155125",
+        "2942301553169743404760560131747/2942301553169736439193136465375",
+        "2942301553169736439193136465379/2942301553169736439193136465375",
+        "1441151880758561/1441151880758559",
+        "2041631831074627/2041631831074625"
+      ],
+      "current_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "4713767609981119/2251799813685248",
+        "11469167051036865/4503599627370496",
+        "11469167051036865/4503599627370496",
+        "4713767609981119/2251799813685248"
+      ],
+      "reference_radius_bernstein": [
+        "4713767609981119/2251799813685248",
+        "3",
+        "4713767609981119/2251799813685248",
+        "11469167051036863/4503599627370496",
+        "11469167051036863/4503599627370496",
+        "4713767609981119/2251799813685248"
+      ],
+      "meridional_determinant_bound": {
+        "lower": {
+          "exact": "2942301553169735238233235833239/2942301553169736439193136465375",
+          "float": 0.9999999999999996
+        },
+        "upper": {
+          "exact": "2942301553169743404760560131747/2942301553169736439193136465375",
+          "float": 1.0000000000000024
+        }
+      },
+      "axis_zero_coefficients_exact": true,
+      "hoop_ratio_coefficients": [
+        "1",
+        "1",
+        "1",
+        "11469167051036865/11469167051036863",
+        "11469167051036865/11469167051036863",
+        "1"
+      ],
+      "hoop_stretch_bound": {
+        "lower": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "upper": {
+          "exact": "11469167051036865/11469167051036863",
+          "float": 1.0000000000000002
+        }
+      },
+      "positive_meridional_determinant_certified": true,
+      "positive_hoop_stretch_certified": true,
+      "scope": "Sufficient whole-element bounds, including axis limit. Failure to certify does not prove inversion; no equilibrium/continuum error bound.",
+      "J_bound": {
+        "lower": {
+          "exact": "2942301553169735238233235833239/2942301553169736439193136465375",
+          "float": 0.9999999999999996
+        },
+        "upper": {
+          "exact": "27105018496248203706636124817633260656509119/27105018496248134811969864874203637709757525",
+          "float": 1.0000000000000024
+        }
+      }
+    }
+  ],
+  "global_injectivity_certified": true,
+  "scope": "Exact P2 meridian embedding and axis-preserving revolution only, conditional on supplied P1 reference disk; not continuum error or biology validation.",
+  "input_path": "runs/mixed_checks/zero.json",
+  "input_sha256": "30f55ecf5953972e154e0ebf5f35e9416c3ed4fa644f1fffade4bdd75852eaf1",
+  "certificate_source_sha256": "fb0d49d680286ff49d0dc6713baca41fbebbf724442bff9731292e1441b03fd8",
+  "reported_stationarity": true,
+  "reported_J_bounds_are_float_diagnostics_only": [
+    0.9999999999999982,
+    1.0000000000000022
+  ],
+  "exact_surface_extrema": {
+    "basal": {
+      "minimum_Z": {
+        "exact": "0",
+        "float": 0.0
+      },
+      "maximum_Z": {
+        "exact": "0",
+        "float": 0.0
+      }
+    },
+    "apical": {
+      "minimum_Z": {
+        "exact": "1",
+        "float": 1.0
+      },
+      "maximum_Z": {
+        "exact": "1",
+        "float": 1.0
+      }
+    },
+    "maximum_activated_material_column_shortening": {
+      "exact": "0",
+      "float": 0.0
+    },
+    "argmax_reference_radius": {
+      "exact": "0",
+      "float": 0.0
+    },
+    "scope": "Exact extrema of quadratic Z curves and aligned material-column heights, not Eulerian thickness minima."
+  }
+}

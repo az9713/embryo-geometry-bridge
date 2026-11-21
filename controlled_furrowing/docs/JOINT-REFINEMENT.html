@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JOINT-REFINEMENT</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Joint quadrature and mesh refinement of the activated tissue model</h1>
+<p><strong>Completed:</strong> the verified higher-rule 16×8 equilibrium still differs from the higher-rule 12×6 equilibrium by an exact discrete Eulerian apical-height supremum enclosed in <strong>[0.749610, 0.757379] µm</strong>. The maximum material-column shortening changes by only +0.157448 µm. Therefore integration correction does not remove the substantial inter-mesh shape sensitivity.</p>
+<p>This study uses one preselected strong-load case: the actual small-region geometry, <span class="math" data-tex="\lambda/\mu=5000"></span>, <span class="math" data-tex="f/\mu=10"></span>, and a 16×8 P2 mesh. It tests whether the substantial 12×6-to-16×8 shape sensitivity remains after correcting numerical integration. There is no biological response-data input, gain fit or material change.</p>
+<p>The source runner is <code>scripts/run_joint_refinement.py</code>; full states, protocols and receipts are retained separately under <code>runs/joint_refinement</code> and <code>evidence/joint_refinement_*.json</code>. This job does not launch a 24×12 computation.</p>
+<h2>1. What is held fixed and what changes</h2>
+<p>The previous default-rule mesh comparison at this load gave an exact discrete Eulerian apical-height discrepancy in approximately [0.747863, 0.755509] µm. That comparison held the six-point degree-four volume rule and surface Gauss8 fixed. Separately, the quadrature study demonstrated that default-rule equilibria fail the higher-rule force check, despite a modest correction to some scalar observables.</p>
+<p>Here the coarse comparator is the already verified <strong>12×6 Duffy8/surface12 equilibrium</strong>. The 16×8 default-rule equilibrium is used solely as an initial guess for a new fixed-load Duffy8/surface12 relaxation. Its old verification is not reused as higher-rule verification. The new field must pass Duffy12/surface16 force evaluation, exact local orientation and global embedding checks before comparison.</p>
+<p>Both final comparators therefore use the same actual integration policy, constitutive law, load, boundary, activation support and material parameters. Their represented equilibrium equations differ through the displacement mesh. The coarse solve uses dense Newton polishing and the fine solve verified sparse Newton polishing; these preserve the same potential and gradient, but identical numerical trajectories or a unique corresponding nonlinear equilibrium branch are not proved. This tests empirical inter-mesh sensitivity after integration correction, with that branch qualification. It is not a mathematical continuum-error enclosure.</p>
+<h2>2. Sparse Newton preserves the physical model</h2>
+<p>The physical potential in the higher-rule implementation is a sum of element and boundary-edge contributions. A volume triangle depends on the displacement components of its six P2 nodes; a boundary surface contribution depends on its three edge nodes. Fixed degrees of freedom are eliminated. The auxiliary pressure projection is detached diagnostic output and does not enter the physical potential.</p>
+<p>Consequently, the physical Hessian can have a nonzero entry only when its two free degrees of freedom occur in a common element or boundary edge. The sparsity graph contains these complete local cliques and all diagonals. It is an overestimate when an individual coupling happens to vanish at one state, which is safe.</p>
+<p>For compressed automatic differentiation, color columns so that no row's allowed columns share a color. If <span class="math" data-tex="S_{jc}=1"></span> when column <span class="math" data-tex="j"></span> has color <span class="math" data-tex="c"></span>, then</p>
+<div class="math display" data-tex="
+ (HS)_{ic}=\sum_{j:\,color(j)=c}H_{ij}.
+"></div>
+
+<p>There is at most one permitted nonzero in that sum for each row and color. Thus every patterned entry can be recovered from the compressed Hessian products. A distance-two coloring of the symmetric Hessian graph supplies this property. It must be verified for the constructed pattern, not assumed from a color count.</p>
+<p>Sparse recovery, linear algebra and Newton policy change the numerical method only. Independent verification must compare recovered and dense Hessians on a small model, check entries outside the pattern, compare full Hessian-vector products, and confirm energy/gradient equality with the same higher-rule model. No sparse solve is launched by this runner until the verification receipt's checks pass and its source hash matches the loaded sparse module.</p>
+<h2>3. Two geometry metrics, with different meanings</h2>
+<p>The primary shape comparison is</p>
+<div class="math display" data-tex="
+ \sup_{R\in I}&#124;Z_{16,Q8}(R)-Z_{12,Q8}(R)&#124;,
+"></div>
+
+<p>on the common <strong>deformed physical radial domain</strong>. Each monotone quadratic radial map is inverted by exact rational bracketing. The resulting height ranges, including interior height extrema, bound differences over adaptive radial cells. Pointwise attained differences give a global lower bound and cell range bounds give a global upper bound. The interval width target 0.01 µm is reporting resolution, not biological acceptance or PDE accuracy. The reused implementation is <code>QuadraticGraph</code> / <code>compare_graphs</code> in <code>scripts/run_activated_mesh_study.py</code>.</p>
+<p>A separate comparison pairs equal <strong>reference material radii</strong>. The union of coarse and fine reference breakpoints partitions both boundaries into intervals on which each curve is quadratic in the same parameter. Exact endpoint and midpoint evaluation gives quadratic difference Bézier controls. Their maximum norm bounds the same-parameter vector displacement and hence the geometric Hausdorff distance between curve images. The stored squared bound is rational.</p>
+<p>The same-parameter metric is not an Eulerian vertical error. Its attained lower bound is a lower bound for that chosen pairing, not for Hausdorff distance. These metrics must not be divided or substituted for one another when discussing relative effects.</p>
+<h2>4. Verification and status</h2>
+<p>Two initial exact identity checks for the common-material partition comparison pass. The sparse implementation passes its component suite and <strong>15 additional independent checks</strong> in <code>evidence/joint_refinement_sparse_review.json</code>. The independent case uses the actual small-region geometry with <span class="math" data-tex="\lambda=5000,f=10"></span> on a small 6×3 mesh, differing from the implementation author's component case. The manually rebuilt element/edge clique pattern matches; every row has distinct column colors; the complete dense AD Hessian is exactly zero outside the pattern; the recovered matrix differs from dense AD by approximately 7.93e−17 relatively. Three independent AD Hessian-vector checks agree at approximately 2e−16, and finite-difference Hessian-vector checks at approximately 3e−10. Physical energy and gradient are bit-identical to the higher-quadrature parent implementation.</p>
+<p>The full dense/recovered matrices, free vector and coloring are retained in <code>runs/joint_refinement/independent_sparse_Hessian.npz</code>. Sparse source SHA256:</p>
+<pre><code class="language-text">d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9
+</code></pre>
+<h2>5. Actual higher-rule solve and independently verified result</h2>
+<p>The 16×8 higher-rule field reaches scaled force residual 3.097e−12. Evaluating the same field with Duffy12/surface16 gives 3.847e−12, passing the original 1e−7 threshold. All 256 quadratic triangles have exact positive-J certificates, and the body passes exact global embedding checks. The correlated discrete Jacobian enclosure is contained in [0.955286, 1.027349]; it is a sufficient bound, not an assertion that its endpoints are attained.</p>
+<p>The actual-size sparse pattern has 1,071 free degrees of freedom, 22,885 structural nonzeros and 48 colors. An additional independent replay verifies three Hessian-vector products at this actual saved 16×8 state, with relative discrepancies below 5.2e−16. It also replays source/input hashes, force residuals, energy/gradient identity and exact material-curve bounds: <strong>19 checks pass</strong> in <code>evidence/joint_refinement_verification.json</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Higher-rule 16×8 versus higher-rule 12×6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eulerian apical vertical sup, exact enclosure</td>
+<td style="text-align: right;">[0.74961024, 0.75737893] µm</td>
+</tr>
+<tr>
+<td>Eulerian basal vertical sup, exact enclosure</td>
+<td style="text-align: right;">[0.09575328, 0.10548523] µm</td>
+</tr>
+<tr>
+<td>Maximum material-column shortening change</td>
+<td style="text-align: right;">+0.15744782 µm</td>
+</tr>
+<tr>
+<td>Central apical displacement change</td>
+<td style="text-align: right;">−0.20687568 µm</td>
+</tr>
+<tr>
+<td>Central basal displacement change</td>
+<td style="text-align: right;">−0.05058732 µm</td>
+</tr>
+<tr>
+<td>Same-material apical vector-displacement sup</td>
+<td style="text-align: right;">approximately 0.69452812 µm, exact squared endpoints coincide</td>
+</tr>
+<tr>
+<td>Same-material basal vector-displacement enclosure</td>
+<td style="text-align: right;">approximately [0.09006139, 0.12362765] µm</td>
+</tr>
+</tbody>
+</table>
+<p>The vertical-sup table intervals are rounded outward. The complete rational endpoints are in <code>evidence/joint_refinement_comparison.json</code>. Same-material upper bounds also bound Hausdorff distance; the same-material lower values are not Hausdorff lower bounds. No row is a continuum-solution uncertainty interval.</p>
+<p><img alt="Higher-rule coarse and fine curves and their Eulerian height difference" src="../runs/joint_refinement/joint-refinement.png" /></p>
+<p>The displayed profiles sample the exact quadratic graphs for visualization. The rigorous supremum enclosures use interval inversion and adaptive cells, not the visual sampling grid. Figure provenance is in <code>evidence/joint_refinement_visuals.json</code>; the retained generator is <code>runs/joint_refinement/make_visual.py</code>.</p>
+<h2>6. Interpretation</h2>
+<p>The corrected-rule apical discrepancy is essentially the same scale as the original default-rule discrepancy [0.74786312, 0.75550860] µm. This establishes that the observed discrete shape sensitivity persists under the tested integration correction. It also demonstrates that a scalar shortening endpoint can change much less than the full predicted curve. Neither a tiny force residual nor a stable scalar endpoint is enough to establish shape convergence.</p>
+<p>The result does not identify the continuum solution, prove a convergence rate, establish uniform penalty robustness, exclude nonlinear branch sensitivity, or validate a specimen. The next finer mesh is a separate job, not duplicated here. Before a physical small-to-large transfer claim, one must assess further shape convergence under the same corrected integration and retain the uncertainty from material, initial geometry and observational definitions. No new biological concept or general novel numerical theorem is claimed.</p>
+<p>The runner binds all solver/helper sources before launch and verifies them after the solve. Reproduce only after inspecting the existing job record, which prevents an accidental duplicate live job:</p>
+<pre><code class="language-powershell">python -X utf8 controlled_furrowing/scripts/run_joint_refinement.py --verification controlled_furrowing/evidence/sparse_quadratic_verification.json
+</code></pre>
+<p>Original default-rule and higher-rule coarse fields remain intact. The new fine field is <code>runs/joint_refinement/final.json</code>; sparse and final independent replay programs are retained inside their JSON receipts.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

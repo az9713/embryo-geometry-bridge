@@ -1,0 +1,107 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The exact-integral root for L</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>The exact-integral root for record L</h1>
+<p><strong>The original predictor cube for record L contains a unique root of the exactly integrated finite-element force for every parameter vector in the same closed cell. The root is a strict local minimum of the normalized finite-element energy.</strong> The signed residual calculation establishes this result within the original cube of radius <span class="math" data-tex="6.011722184963558\times10^{-11}"></span> in normalized nodal coordinates. The displayed numbers are rounded. The strict comparisons use exact fractions. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/actual_independent_review.json">Independent 256-bit certificate</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/final_mathematical_readback/receipt.json">Final mathematical readback</a></p>
+<h2>The model and the cube</h2>
+<p>The broader experiment uses light to induce local contraction in embryonic epithelial tissue. Record L, the workbook column identified as <strong>optoGEF2_small_col_L</strong>, has a dimensionless source dose of <strong>1.51057344</strong>. The calculation concerns a fixed axisymmetric quadratic, or P2, finite-element model of the tissue. Here <span class="math" data-tex="u\in\mathbb R^{611}"></span> is the vector of free normalized nodal displacements, after imposing the axis and outer-rim constraints. Its parameter vector is <span class="math" data-tex="\theta=(K_a,K_b,T_a,T_b,g)"></span>. These are apical and basal area moduli, apical and basal surface tensions, and common activation gain. Apical and basal name the tissue's two opposing faces; their distinct elastic and contractile properties can affect bending. The active coefficient is the exact product of gain and source dose. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/records/optoGEF2_small_col_L/original_cube_v1/protocol.json">Original L protocol</a> · <a href="COHORT-UNIFORM-ROOTS.html">Shared root cohort</a></p>
+<p>Write <span class="math" data-tex="F_Q=\nabla E_Q"></span> for the force of the energy evaluated by the frozen binary quadrature cache, and <span class="math" data-tex="F_I=\nabla E_I"></span> for the force of the energy integrated over the same fixed finite-element space. The force is the energy gradient under the sign convention used here. Both share a positive energy normalization. Write <span class="math" data-tex="H_Q"></span> and <span class="math" data-tex="H_I"></span> for their nodal derivatives, the respective energy Hessians.</p>
+<p>The cached proof supplied the affine predictor <span class="math" data-tex="p(\theta)=u_0+S(\theta-\theta_0)"></span> and a square preconditioner <span class="math" data-tex="R"></span> that approximately inverts the force derivative. A predictor estimates the change in displacement as the parameters move away from the base point <span class="math" data-tex="\theta_0"></span>. The exact same closed parameter cell <span class="math" data-tex="C"></span>, stored <span class="math" data-tex="S"></span> and <span class="math" data-tex="R"></span>, and parameter-matched cube <span class="math" data-tex="X_\theta=p(\theta)+[-r,r]^{611}"></span> enter this proof. The cell includes the one-sided apical tension interval starting at zero. A larger independent nodal box covers all these cubes and the segments from <span class="math" data-tex="u_0"></span> to each predictor. The positive-Jacobian and surface-domain bounds permit the integral and derivative enclosures along those segments. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/records/optoGEF2_small_col_L/original_cube_v1/coordinate_box.json">Original nodal box</a> · <a href="COHORT-INTEGRATION-L.html">Earlier L integration and domain checks</a></p>
+<h2>Center the bulk integration defect</h2>
+<p>Split the difference <span class="math" data-tex="F_I-F_Q=D_B+D_S"></span> into bulk and surface force terms in the same free coordinate order. Set <span class="math" data-tex="\delta\theta=\theta-\theta_0"></span> and let <span class="math" data-tex="\delta g=g-g_0"></span> be its gain component. The bulk defect <span class="math" data-tex="D_B(u,g)"></span> is affine in <span class="math" data-tex="g"></span> at fixed <span class="math" data-tex="u"></span>. Its gain derivative <span class="math" data-tex="G_B(u)=\partial_gD_B(u,g)"></span> uses the source-dose-scaled difference of the integral and cache axial stiffness actions.</p>
+<p>First move from <span class="math" data-tex="u_0"></span> to <span class="math" data-tex="p(\theta)"></span> at <span class="math" data-tex="g_0"></span>, then change gain at the final displacement. The fundamental theorem of calculus and the exact affine gain step give</p>
+<div class="math display" data-tex="
+\begin{aligned}
+R D_B(p(\theta),g)
+  &amp;= b_0 + R\overline H_B(\theta) S\,\delta\theta+R G_B(p(\theta))\,\delta g,\\
+b_0&amp;=R D_B(u_0,g_0),\\
+\overline H_B(\theta)&amp;=\int_0^1 \partial_u D_B(u_0+tS\,\delta\theta,g_0)\,dt .
+\end{aligned}
+"></div>
+
+<p>The computation centers all <strong>144 bulk elements</strong> using a point-force enclosure, a Hessian enclosure applied to the displacement increment, and the exact gain dependence with rigorously bounded derivative. For the <strong>24 surface edges</strong>, it retains the signed force intervals over the whole box. The combined reduction assembles <strong>611 force rows</strong> and <strong>6,676 symmetric upper-triangular Hessian entries</strong>, in the same normalization and coordinate order. The surface term may vary over the box, so its addition to the point bulk term supplies an interval enclosure rather than a surface force evaluated at a unique parameter point. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/centered_bulk_L_v1/preparation/protocol.json">Centered bulk protocol</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/centered_bulk_L_v1/actual_independent_review.json">Centered bulk packet review</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/centered_bulk_L_v1/reduction_preparation/actual_independent_review.json">Centered reduction review</a></p>
+<h2>Preserve signs in the full predictor residual</h2>
+<p>At fixed <span class="math" data-tex="u_0"></span>, <span class="math" data-tex="F_Q"></span> is affine in the five coefficients. To build its predictor identity, move the parameters first at <span class="math" data-tex="u_0"></span>, then move the displacement from <span class="math" data-tex="u_0"></span> to <span class="math" data-tex="p(\theta)"></span> at the <strong>final</strong> parameter <span class="math" data-tex="\theta"></span>. With <span class="math" data-tex="q_0=R F_Q(u_0,\theta_0)"></span>,</p>
+<div class="math display" data-tex="
+\begin{aligned}
+R F_Q(p(\theta),\theta) &amp;= q_0+A_Q\,\delta\theta+\varepsilon_Q(\theta),\\
+A_Q &amp;= R\bigl[\partial_\theta F_Q(u_0,\theta_0)+H_Q(u_0,\theta_0)S\bigr],\\
+\varepsilon_Q(\theta)
+&amp;=R\int_0^1\bigl[H_Q(u_0+tS\,\delta\theta,\theta)-H_Q(u_0,\theta_0)\bigr]S\,\delta\theta\,dt .
+\end{aligned}
+"></div>
+
+<p>This order makes the parameter step exact and accounts for both parameter and displacement dependence in the nodal remainder. Each closed parameter-offset interval contains zero, and the verified bounds cover the straight nodal segment at final <span class="math" data-tex="\theta"></span>. The cached-force audit reconstructs the signed anchor and five slopes from <strong>9,504 cache sites</strong> and gives a symmetric error interval for the remainder in each row. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/preparation/protocol.json">Frozen signed residual protocol</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/preparation/prelaunch_independent_review.json">Prelaunch review</a> · <a href="../runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/independent_actual/replay.py">Independent cached replay source</a></p>
+<p>To enclose <span class="math" data-tex="RF_I(p(\theta),\theta)"></span>, add <span class="math" data-tex="q_0"></span>, <span class="math" data-tex="b_0"></span>, and the bounded surface term <span class="math" data-tex="RD_S"></span> in each row with their signs intact. Form each of the five interval columns by adding the cached slope to <span class="math" data-tex="R\overline H_B S"></span>, and include <span class="math" data-tex="RG_B"></span> in the gain column. Each resulting column multiplies one shared parameter offset. Add the cached remainder enclosure, then take the largest absolute endpoint over all rows. Keeping the signs until that last operation preserves cancellations between the cached and integration-defect contributions. Evaluation over the closed offset intervals may relax correlations, so the result remains a uniform enclosure over <span class="math" data-tex="C"></span>. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/independent_actual/results.json">Independent signed rows and exact bounds</a></p>
+<p><img alt="Uniform residual bounds obtained with separate force norms and by adding signed rows, relative to the exact force budget." src="../../omitted-asset.svg" /></p>
+<h2>Apply the contraction test</h2>
+<p>Use the infinity norm, taking the largest component in magnitude for a vector and the maximum absolute row sum for a matrix. The proof uses a uniform bound <span class="math" data-tex="\eta"></span> on <span class="math" data-tex="\&#124;RF_I(p(\theta),\theta)\&#124;_\infty"></span> and a uniform bound <span class="math" data-tex="z"></span> on <span class="math" data-tex="\&#124;I-RH_I(u,\theta)\&#124;_\infty"></span> for <span class="math" data-tex="u\in X_\theta"></span>. The whole-cube derivative bound is <span class="math" data-tex="z=Z_Q+b"></span>, where <span class="math" data-tex="Z_Q"></span> bounds <span class="math" data-tex="\&#124;I-RH_Q\&#124;_\infty"></span> and <span class="math" data-tex="b"></span> bounds <span class="math" data-tex="\&#124;R(H_I-H_Q)\&#124;_\infty"></span>. The signed calculation sharpens <span class="math" data-tex="\eta"></span> while using the previously checked whole-cube derivative bound. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/scaled_offaxis_L_v1/reduction_preparation/actual_independent_review.json">Scaled reduction review</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/actual_independent_review.json">Independent signed proof</a></p>
+<p>For fixed <span class="math" data-tex="\theta"></span>, take <span class="math" data-tex="T_\theta(u)=u-RF_I(u,\theta)"></span>. The derivative bound gives Lipschitz constant at most <span class="math" data-tex="z"></span> on the convex cube. At its center the map moves the predictor by at most <span class="math" data-tex="\eta"></span>. Hence every image lies within distance <span class="math" data-tex="\eta+zr"></span> of the predictor. The decision requires <span class="math" data-tex="z&lt;1"></span> and <span class="math" data-tex="\eta+zr&lt;r"></span>. The original direct integral enclosure leaves this test unresolved. Rewriting the off-axis integrals in scaled material coordinates and then centering all bulk force contributions further tighten the bounds. The signed full residual is the first of the four stages to satisfy the strict inequality. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/reduction_preparation/optoGEF2_small_col_L_reduction_review.json">Direct reduction</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/centered_bulk_L_v1/reduction_preparation/actual_independent_review.json">Centered reduction</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/publication/receipt.json">Exact arithmetic for both figures</a></p>
+<table>
+<thead>
+<tr>
+<th>Enclosure stage</th>
+<th style="text-align: right;"><span class="math" data-tex="(\eta+zr)/r"></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct integration defect</td>
+<td style="text-align: right;">10,917.7892967</td>
+</tr>
+<tr>
+<td>Scaled coordinates on 132 off-axis elements</td>
+<td style="text-align: right;">25.4985717175</td>
+</tr>
+<tr>
+<td>Centered bulk with separate cached and defect norms</td>
+<td style="text-align: right;">1.19214056427</td>
+</tr>
+<tr>
+<td>Signed full predictor residual</td>
+<td style="text-align: right;"><strong>0.765587093559</strong></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="The ratio of the self-map bound to the original cube radius at each of the four reviewed stages, with the pass threshold at one." src="../../omitted-asset.svg" /></p>
+<p>The final numbers are from the <strong>independent 256-bit replay</strong>. The predictor coordinate bounds, force-map residual and map radius use normalized nodal coordinates.</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Rounded value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signed predictor residual bound <span class="math" data-tex="\eta"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="2.298807859837408\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Whole-cube Lipschitz bound <span class="math" data-tex="z"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="0.38319951989736132"></span></td>
+</tr>
+<tr>
+<td>Original radius <span class="math" data-tex="r"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="6.011722184963558\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Self-map bound <span class="math" data-tex="\eta+zr"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="4.602496914871760\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Strict self-map margin <span class="math" data-tex="r-(\eta+zr)"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="1.409225270091799\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Predictor-to-root error bound <span class="math" data-tex="\eta/(1-z)"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="3.726987792640621\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Normalized Hessian curvature lower bound <span class="math" data-tex="m"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="3.948410451880172\times10^{-4}"></span></td>
+</tr>
+</tbody>
+</table>
+<p>The closed cube is complete, so Banach’s theorem supplies a unique fixed point there. Since <span class="math" data-tex="\&#124;I-RH_I\&#124;_\infty&lt;1"></span>, the matrix <span class="math" data-tex="RH_I"></span> is invertible by the Neumann series. Both factors are square, so <span class="math" data-tex="R"></span> is invertible and a fixed point is exactly a force root. If <span class="math" data-tex="u_I"></span> is the root, the contraction estimate gives <span class="math" data-tex="\&#124;u_I-p(\theta)\&#124;_\infty\le\eta+z\&#124;u_I-p(\theta)\&#124;_\infty"></span>, yielding the tabulated error bound. Every bound applies uniformly on the same closed <span class="math" data-tex="C"></span>, with one selected cube for each parameter.</p>
+<p>For local minimality, the cached Hessian <span class="math" data-tex="H_Q"></span> is positive definite on the same tube by the reviewed energy certificate. At a fixed <span class="math" data-tex="u,\theta"></span> in the tube, the symmetric homotopy <span class="math" data-tex="H_t=(1-t)H_Q+tH_I"></span> satisfies <span class="math" data-tex="\&#124;I-RH_t\&#124;_\infty\le (1-t)Z_Q+tz&lt;1"></span> for all <span class="math" data-tex="0\le t\le1"></span>. Thus <span class="math" data-tex="H_t"></span> is nonsingular and its inertia, the counts of positive and negative eigenvalues, stays constant. This carries positive definiteness to <span class="math" data-tex="H_I"></span>. The Neumann bound on <span class="math" data-tex="(RH_I)^{-1}"></span> gives <span class="math" data-tex="\&#124;H_I^{-1}\&#124;_\infty\le\&#124;R\&#124;_\infty/(1-z)"></span>. Since the spectral radius is bounded by the induced norm, <span class="math" data-tex="\lambda_{\min}(H_I)\ge m=(1-z)/\&#124;R\&#124;_\infty&gt;0"></span>. The interior root is therefore a strict local energy minimum. <a href="../evidence/cohort_energy_stability_independent_review.json">Cached energy certificate</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/final_mathematical_readback/receipt.json">Final proof readback</a></p>
+<h2>Scope and reproducibility</h2>
+<p>The earlier B theorem places its integral root outside the original B cube, whereas this theorem puts the L root inside the original L cube. These comparisons depend on each record’s numerical predictor and chosen radius. The physical dose effect cannot be inferred from cube membership. B and L now have exact-integral root results for their respective selected branches. For the other fifteen records, integral root certification remains open, as do continuum PDE approximation, source-compatible physical fit, physical loading paths, and novelty. <a href="EXACT-INTEGRAL-ROOT.html">B exact-integral theorem</a> · <a href="../PLAN.md">Five-gate study contract</a></p>
+<p>The independent replay reconstructs the cached 9,504-site calculation and the 611 signed force rows. It shares the reviewed local derivative, integral-defect and box-contraction premises, which the final mathematical readback binds explicitly. The retained visualization source rehashes those bindings and derives both plots from the exact certificates. <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/preparation/preflight.json">Frozen source and preflight</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/independent_actual/terminal.json">Independent terminal receipt</a> · <a href="../runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/publication/figures.py">Figure source</a> · <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/signed_predictor_L_v1/publication/protocol.json">Figure protocol and source hashes</a></p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

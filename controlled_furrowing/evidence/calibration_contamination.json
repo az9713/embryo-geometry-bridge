@@ -1,0 +1,1482 @@
+{
+  "status": "PASS_EXACT_CONDITIONAL_CONTAMINATION_DIAGNOSTIC",
+  "n": 17,
+  "enumerated_subsets": 131072,
+  "scale": 100000000,
+  "checks": {
+    "ordered_data_zero_budget_zero_error": true,
+    "one_reversal_half_drop": true,
+    "remove_one_reversal_zero_error": true,
+    "DP_two_disjoint_dips": true,
+    "all_exact_primal_and_independent_DP_checks": true,
+    "all_seventeen_preserved_in_source": true,
+    "full_data_floor_matches_prior_receipt": true
+  },
+  "bounds": [
+    {
+      "hypothetical_exception_budget": 0,
+      "required_retained": 17,
+      "sharp_delta_um": "626388743/200000000",
+      "sharp_delta_float_um": 3.131943715,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "hypothetically_omitted_records": [],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "0"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "0"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "345916001/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "903227981/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_I",
+          "dose": "47133397/100000000",
+          "response_um": "138419619/100000000",
+          "constructed_fitted_um": "903227981/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "207335827/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_N",
+          "dose": "71523649/100000000",
+          "response_um": "335013163/50000000",
+          "constructed_fitted_um": "207335827/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_Q",
+          "dose": "75547653/100000000",
+          "response_um": "49233871/10000000",
+          "constructed_fitted_um": "207335827/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "dose": "78208913/100000000",
+          "response_um": "12",
+          "constructed_fitted_um": "1773611257/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_P",
+          "dose": "80580697/100000000",
+          "response_um": "583168051/100000000",
+          "constructed_fitted_um": "1773611257/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "1773611257/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "1773611257/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_E",
+          "dose": "97607953/100000000",
+          "response_um": "14418011/1562500",
+          "constructed_fitted_um": "1773611257/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_J",
+          "dose": "3085609/3125000",
+          "response_um": "772032047/100000000",
+          "constructed_fitted_um": "1773611257/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "1920259869/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "1920259869/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_L",
+          "dose": "2360271/1562500",
+          "response_um": "972802387/100000000",
+          "constructed_fitted_um": "1920259869/200000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 17,
+      "previous_critical_delta_um": "616831949/200000000",
+      "previous_DP_maximum_retained": 16
+    },
+    {
+      "hypothetical_exception_budget": 1,
+      "required_retained": 16,
+      "sharp_delta_um": "616831949/200000000",
+      "sharp_delta_float_um": 3.084159745,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_I"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "988911/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "988911/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "71094559/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "36511391/8000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "1046235929/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_N",
+          "dose": "71523649/100000000",
+          "response_um": "335013163/50000000",
+          "constructed_fitted_um": "1046235929/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_Q",
+          "dose": "75547653/100000000",
+          "response_um": "49233871/10000000",
+          "constructed_fitted_um": "1046235929/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "dose": "78208913/100000000",
+          "response_um": "12",
+          "constructed_fitted_um": "1783168051/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_P",
+          "dose": "80580697/100000000",
+          "response_um": "583168051/100000000",
+          "constructed_fitted_um": "1783168051/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "1783168051/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "1783168051/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_E",
+          "dose": "97607953/100000000",
+          "response_um": "14418011/1562500",
+          "constructed_fitted_um": "1783168051/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_J",
+          "dose": "3085609/3125000",
+          "response_um": "772032047/100000000",
+          "constructed_fitted_um": "1783168051/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "1929816663/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "1929816663/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_L",
+          "dose": "2360271/1562500",
+          "response_um": "972802387/100000000",
+          "constructed_fitted_um": "1929816663/200000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 16,
+      "previous_critical_delta_um": "427967953/200000000",
+      "previous_DP_maximum_retained": 15
+    },
+    {
+      "hypothetical_exception_budget": 2,
+      "required_retained": 15,
+      "sharp_delta_um": "339195229/200000000",
+      "sharp_delta_float_um": 1.695976145,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_M"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "11303251/8000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "11303251/8000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "126621903/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "238084299/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "1323872649/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_N",
+          "dose": "71523649/100000000",
+          "response_um": "335013163/50000000",
+          "constructed_fitted_um": "1323872649/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_Q",
+          "dose": "75547653/100000000",
+          "response_um": "49233871/10000000",
+          "constructed_fitted_um": "1323872649/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_P",
+          "dose": "80580697/100000000",
+          "response_um": "583168051/100000000",
+          "constructed_fitted_um": "1323872649/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "1759960229/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "1759960229/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_E",
+          "dose": "97607953/100000000",
+          "response_um": "14418011/1562500",
+          "constructed_fitted_um": "1759960229/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_J",
+          "dose": "3085609/3125000",
+          "response_um": "772032047/100000000",
+          "constructed_fitted_um": "1759960229/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "2207453383/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "2207453383/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_L",
+          "dose": "2360271/1562500",
+          "response_um": "972802387/100000000",
+          "constructed_fitted_um": "2207453383/200000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 15,
+      "previous_critical_delta_um": "300521919/200000000",
+      "previous_DP_maximum_retained": 14
+    },
+    {
+      "hypothetical_exception_budget": 3,
+      "required_retained": 14,
+      "sharp_delta_um": "300521919/200000000",
+      "sharp_delta_float_um": 1.502609595,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "64250917/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "64250917/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "26871313/8000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "245818961/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "1362545959/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_N",
+          "dose": "71523649/100000000",
+          "response_um": "335013163/50000000",
+          "constructed_fitted_um": "1362545959/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_P",
+          "dose": "80580697/100000000",
+          "response_um": "583168051/100000000",
+          "constructed_fitted_um": "1362545959/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "1798633539/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "1798633539/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_E",
+          "dose": "97607953/100000000",
+          "response_um": "14418011/1562500",
+          "constructed_fitted_um": "1798633539/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_J",
+          "dose": "3085609/3125000",
+          "response_um": "772032047/100000000",
+          "constructed_fitted_um": "1798633539/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "2246126693/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "2246126693/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_L",
+          "dose": "2360271/1562500",
+          "response_um": "972802387/100000000",
+          "constructed_fitted_um": "2246126693/200000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 14,
+      "previous_critical_delta_um": "11571791/8000000",
+      "previous_DP_maximum_retained": 13
+    },
+    {
+      "hypothetical_exception_budget": 4,
+      "required_retained": 13,
+      "sharp_delta_um": "138772841/100000000",
+      "sharp_delta_float_um": 1.38772841,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "172115411/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "172115411/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "347379531/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "626035521/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "346380549/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_N",
+          "dose": "71523649/100000000",
+          "response_um": "335013163/50000000",
+          "constructed_fitted_um": "346380549/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_P",
+          "dose": "80580697/100000000",
+          "response_um": "583168051/100000000",
+          "constructed_fitted_um": "346380549/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "113850611/12500000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "113850611/12500000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_E",
+          "dose": "97607953/100000000",
+          "response_um": "14418011/1562500",
+          "constructed_fitted_um": "113850611/12500000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_J",
+          "dose": "3085609/3125000",
+          "response_um": "772032047/100000000",
+          "constructed_fitted_um": "113850611/12500000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "226910293/20000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "226910293/20000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 13,
+      "previous_critical_delta_um": "4331989/3125000",
+      "previous_DP_maximum_retained": 12
+    },
+    {
+      "hypothetical_exception_budget": 5,
+      "required_retained": 12,
+      "sharp_delta_um": "3880717/3125000",
+      "sharp_delta_float_um": 1.24182944,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "46676327/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "46676327/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "90492357/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "320312709/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "141470199/20000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_N",
+          "dose": "71523649/100000000",
+          "response_um": "335013163/50000000",
+          "constructed_fitted_um": "141470199/20000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_P",
+          "dose": "80580697/100000000",
+          "response_um": "583168051/100000000",
+          "constructed_fitted_um": "141470199/20000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "185078957/20000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "185078957/20000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_E",
+          "dose": "97607953/100000000",
+          "response_um": "14418011/1562500",
+          "constructed_fitted_um": "185078957/20000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "574570681/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "574570681/50000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 12,
+      "previous_critical_delta_um": "227197613/200000000",
+      "previous_DP_maximum_retained": 11
+    },
+    {
+      "hypothetical_exception_budget": 6,
+      "required_retained": 11,
+      "sharp_delta_um": "161507613/200000000",
+      "sharp_delta_float_um": 0.807538065,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "460268891/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "460268891/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "810797131/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "1368109111/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "300312053/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_N",
+          "dose": "71523649/100000000",
+          "response_um": "335013163/50000000",
+          "constructed_fitted_um": "300312053/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "387529569/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "387529569/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_E",
+          "dose": "97607953/100000000",
+          "response_um": "14418011/1562500",
+          "constructed_fitted_um": "387529569/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "2385140999/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "2385140999/200000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 11,
+      "previous_critical_delta_um": "150720657/200000000",
+      "previous_DP_maximum_retained": 10
+    },
+    {
+      "hypothetical_exception_budget": 7,
+      "required_retained": 10,
+      "sharp_delta_um": "5073001/8000000",
+      "sharp_delta_float_um": 0.634125125,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "494951479/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "494951479/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "845479719/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "1402791699/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "1536242853/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "1972330433/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "1972330433/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_E",
+          "dose": "97607953/100000000",
+          "response_um": "14418011/1562500",
+          "constructed_fitted_um": "1972330433/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "2419823587/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "2419823587/200000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 10,
+      "previous_critical_delta_um": "28481103/50000000",
+      "previous_DP_maximum_retained": 9
+    },
+    {
+      "hypothetical_exception_budget": 8,
+      "required_retained": 9,
+      "sharp_delta_um": "34691303/100000000",
+      "sharp_delta_float_um": 0.34691303,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "276196949/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_O",
+          "dose": "27583779/100000000",
+          "response_um": "120752823/50000000",
+          "constructed_fitted_um": "276196949/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "451461069/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "730117059/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "199210659/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "507443213/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "507443213/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "1238633003/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "1238633003/100000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 9,
+      "previous_critical_delta_um": "63874729/200000000",
+      "previous_DP_maximum_retained": 8
+    },
+    {
+      "hypothetical_exception_budget": 9,
+      "required_retained": 8,
+      "sharp_delta_um": "12900613/200000000",
+      "sharp_delta_float_um": 0.064503065,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "608875891/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "959404131/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "1516716111/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "330033453/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_H",
+          "dose": "82160217/100000000",
+          "response_um": "1049577729/100000000",
+          "constructed_fitted_um": "417250969/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_R",
+          "dose": "17014741/20000000",
+          "response_um": "259169279/25000000",
+          "constructed_fitted_um": "417250969/40000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "2533747999/200000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "2533747999/200000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 8,
+      "previous_critical_delta_um": "1403393/25000000",
+      "previous_DP_maximum_retained": 7
+    },
+    {
+      "hypothetical_exception_budget": 10,
+      "required_retained": 7,
+      "sharp_delta_um": "1403393/25000000",
+      "sharp_delta_float_um": 0.05613572,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "7631867/2500000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "1201347/250000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "75919479/10000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "825920367/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "dose": "78208913/100000000",
+          "response_um": "12",
+          "constructed_fitted_um": "298596607/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "633855367/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_K",
+          "dose": "128898317/100000000",
+          "response_um": "631048581/50000000",
+          "constructed_fitted_um": "633855367/50000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 7,
+      "previous_critical_delta_um": "0",
+      "previous_DP_maximum_retained": 6
+    },
+    {
+      "hypothetical_exception_budget": 11,
+      "required_retained": 6,
+      "sharp_delta_um": "0",
+      "sharp_delta_float_um": 0.0,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_G"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "77722063/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "121538093/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "382404181/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "831533939/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "dose": "78208913/100000000",
+          "response_um": "12",
+          "constructed_fitted_um": "12"
+        },
+        {
+          "record_id": "optoGEF2_small_col_G",
+          "dose": "26182761/25000000",
+          "response_um": "636662153/50000000",
+          "constructed_fitted_um": "636662153/50000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 6,
+      "previous_critical_delta_um": null,
+      "previous_DP_maximum_retained": null
+    },
+    {
+      "hypothetical_exception_budget": 12,
+      "required_retained": 5,
+      "sharp_delta_um": "0",
+      "sharp_delta_float_um": 0.0,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_M"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "77722063/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "121538093/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "382404181/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "831533939/100000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_M",
+          "dose": "78208913/100000000",
+          "response_um": "12",
+          "constructed_fitted_um": "12"
+        }
+      ],
+      "independent_DP_maximum_retained": 6,
+      "previous_critical_delta_um": null,
+      "previous_DP_maximum_retained": null
+    },
+    {
+      "hypothetical_exception_budget": 13,
+      "required_retained": 4,
+      "sharp_delta_um": "0",
+      "sharp_delta_float_um": 0.0,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_D"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "77722063/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "121538093/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "382404181/50000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_D",
+          "dose": "6924031/10000000",
+          "response_um": "831533939/100000000",
+          "constructed_fitted_um": "831533939/100000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 6,
+      "previous_critical_delta_um": null,
+      "previous_DP_maximum_retained": null
+    },
+    {
+      "hypothetical_exception_budget": 14,
+      "required_retained": 3,
+      "sharp_delta_um": "0",
+      "sharp_delta_float_um": 0.0,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "77722063/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "121538093/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_F",
+          "dose": "46402059/100000000",
+          "response_um": "382404181/50000000",
+          "constructed_fitted_um": "382404181/50000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 6,
+      "previous_critical_delta_um": null,
+      "previous_DP_maximum_retained": null
+    },
+    {
+      "hypothetical_exception_budget": 15,
+      "required_retained": 2,
+      "sharp_delta_um": "0",
+      "sharp_delta_float_um": 0.0,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B",
+        "optoGEF2_small_col_C"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "77722063/25000000"
+        },
+        {
+          "record_id": "optoGEF2_small_col_C",
+          "dose": "4089863/12500000",
+          "response_um": "121538093/25000000",
+          "constructed_fitted_um": "121538093/25000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 6,
+      "previous_critical_delta_um": null,
+      "previous_DP_maximum_retained": null
+    },
+    {
+      "hypothetical_exception_budget": 16,
+      "required_retained": 1,
+      "sharp_delta_um": "0",
+      "sharp_delta_float_um": 0.0,
+      "matching_retained_records": [
+        "optoGEF2_small_col_B"
+      ],
+      "hypothetically_omitted_records": [
+        "optoGEF2_small_col_O",
+        "optoGEF2_small_col_C",
+        "optoGEF2_small_col_F",
+        "optoGEF2_small_col_I",
+        "optoGEF2_small_col_D",
+        "optoGEF2_small_col_N",
+        "optoGEF2_small_col_Q",
+        "optoGEF2_small_col_M",
+        "optoGEF2_small_col_P",
+        "optoGEF2_small_col_H",
+        "optoGEF2_small_col_R",
+        "optoGEF2_small_col_E",
+        "optoGEF2_small_col_J",
+        "optoGEF2_small_col_G",
+        "optoGEF2_small_col_K",
+        "optoGEF2_small_col_L"
+      ],
+      "matching_construction": [
+        {
+          "record_id": "optoGEF2_small_col_B",
+          "dose": "14801043/100000000",
+          "response_um": "77722063/25000000",
+          "constructed_fitted_um": "77722063/25000000"
+        }
+      ],
+      "independent_DP_maximum_retained": 6,
+      "previous_critical_delta_um": null,
+      "previous_DP_maximum_retained": null
+    }
+  ],
+  "input_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "source_sha256": "493bfff54c97c17e8886fbe000cd773d15176d0f2436ebe7459c83b03a4ddce0",
+  "enumeration_array_sha256": "2dae20429259a58aed2f57b7f52c5ac335268bb47a75c53d4de38267e2497fac",
+  "scope": "Sharp bounds in the relaxed nonnegative monotone curve class at fixed reported doses. Not an anatomical error estimate, actual row exclusion, or physical parameter identified set."
+}

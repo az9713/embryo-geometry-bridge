@@ -1,0 +1,85 @@
+{
+  "status": "PASS_CONSISTENCY_COMPONENT",
+  "rows": [
+    {
+      "nr": 6,
+      "nz": 3,
+      "maximum_sampled_J_error": 0.0046313450321811,
+      "shear_energy": 5.213670411439997,
+      "shear_energy_exact_continuum": 5.213552448492228,
+      "relative_shear_energy_error": 2.26262129199295e-05,
+      "projected_volumetric_energy": 2.077675687797882e-05,
+      "volume_error": -2.7714562157443723e-06,
+      "orientation": {
+        "certified_positive": true,
+        "axis_zero_coefficients_verified": true,
+        "determinant_Bernstein_min": 0.8182382841098675,
+        "hoop_ratio_Bernstein_min": 0.9995052140524325,
+        "J_lower_bound": 0.8716503244328103,
+        "J_upper_bound": 1.1267236043559539,
+        "method": "Sufficient degree2 Bernstein coefficient bounds in floating point; not interval arithmetic; failure is uncertified, not a proof of inversion."
+      }
+    },
+    {
+      "nr": 8,
+      "nz": 4,
+      "maximum_sampled_J_error": 0.0011418358452518484,
+      "shear_energy": 5.213560864886679,
+      "shear_energy_exact_continuum": 5.213552448492228,
+      "relative_shear_energy_error": 1.6143300627380341e-06,
+      "projected_volumetric_energy": 1.4550303620759107e-07,
+      "volume_error": -1.9045446586485326e-07,
+      "orientation": {
+        "certified_positive": true,
+        "axis_zero_coefficients_verified": true,
+        "determinant_Bernstein_min": 0.8182382841098667,
+        "hoop_ratio_Bernstein_min": 0.9995052140524325,
+        "J_lower_bound": 0.936816752704168,
+        "J_upper_bound": 1.0626606530257292,
+        "method": "Sufficient degree2 Bernstein coefficient bounds in floating point; not interval arithmetic; failure is uncertified, not a proof of inversion."
+      }
+    },
+    {
+      "nr": 12,
+      "nz": 6,
+      "maximum_sampled_J_error": 0.0005051312990336232,
+      "shear_energy": 5.213554133284298,
+      "shear_energy_exact_continuum": 5.213552448492228,
+      "relative_shear_energy_error": 3.2315625220213917e-07,
+      "projected_volumetric_energy": 1.1726039758683043e-08,
+      "volume_error": -3.804936254958591e-08,
+      "orientation": {
+        "certified_positive": true,
+        "axis_zero_coefficients_verified": true,
+        "determinant_Bernstein_min": 0.8182382841098604,
+        "hoop_ratio_Bernstein_min": 0.9998776604190005,
+        "J_lower_bound": 0.9581263650023603,
+        "J_upper_bound": 1.0416239833753618,
+        "method": "Sufficient degree2 Bernstein coefficient bounds in floating point; not interval arithmetic; failure is uncertified, not a proof of inversion."
+      }
+    },
+    {
+      "nr": 16,
+      "nz": 8,
+      "maximum_sampled_J_error": 0.0002834773137051494,
+      "shear_energy": 5.213552960320158,
+      "shear_energy_exact_continuum": 5.213552448492228,
+      "relative_shear_energy_error": 9.817258672661922e-08,
+      "projected_volumetric_energy": 2.1934287618717693e-09,
+      "volume_error": -1.1899982998997416e-08,
+      "orientation": {
+        "certified_positive": true,
+        "axis_zero_coefficients_verified": true,
+        "determinant_Bernstein_min": 0.8186080663393738,
+        "hoop_ratio_Bernstein_min": 0.9998776604190008,
+        "J_lower_bound": 0.9686920021057462,
+        "J_upper_bound": 1.03116265702572,
+        "method": "Sufficient degree2 Bernstein coefficient bounds in floating point; not interval arithmetic; failure is uncertified, not a proof of inversion."
+      }
+    }
+  ],
+  "nonisochoric_affine_pressure_error": 1.8385293287792592e-13,
+  "nonisochoric_affine_volume_energy_error": 5.734301922188934e-14,
+  "source_sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+  "scope": "Interpolation/energy consistency, not forced PDE convergence or validation; map need not satisfy clamped-rim boundary condition"
+}

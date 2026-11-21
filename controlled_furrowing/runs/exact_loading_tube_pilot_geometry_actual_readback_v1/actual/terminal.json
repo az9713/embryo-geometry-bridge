@@ -1,0 +1,15 @@
+{
+  "status": "FINISHED",
+  "exit_code": 0,
+  "source_sha256": "ba5450b546371c730389a41f93d1e3d88b37c08c19f613c096f051cf8c0eb403",
+  "protocol_sha256": "3fa79d7c14865978c4b891f4b4c44ccb388f23c0ea061004c9a807c714e5584e",
+  "producer_os_sha256": "a3c801b5f877779ff64d6a08ce1b30ea0aeaa20c9d48b90151be091ec3bd5207",
+  "producer_result_sha256": "c20b56435795ead2cc7bdc9de9b34c2c2b1baa155f326b531f9177cb4b95c3de",
+  "producer_terminal_sha256": "4f8c3c0ea196e83d2a96bbf8988499a3619f387c85c391f66129f3c3df396188",
+  "producer_body_sha256": "916a11f13efee23570ed15ff5ea069efce0646e677ba176d1f49f3221598bbea",
+  "pid": 21576,
+  "producer_pid": 18484,
+  "pilot_id": "negative_KL_exact_spatial_loading_secant_v1",
+  "receipt_sha256": "595988a5a2b15b237ad13ec575290d915046dc2d9ae01c8243547923bac27ba9",
+  "mathematical_status": "VERIFIED_UNRESOLVED_KL_WHOLE_ENVELOPE_BODY"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ROOT_SOURCE_AND_TUBE_THEOREM_READBACK",
+  "receipt_sha256": "dbfb9871da2b384fcd57e44015a35bfeebbfccf25e23a6f45178f3aef488ff3c",
+  "all_input_hashes_rechecked": 130,
+  "complete_METHOD_read": true,
+  "uniform_contraction_sufficient_test_and_IFT_checked": true,
+  "minimum_requires_same_R_symmetric_part_premise": true,
+  "posterior_inclusion_not_box_overlap_for_junctions_checked": true,
+  "K_L_physical_crosswalk_independently_reviewed_separately": true,
+  "loading_path_certified": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "RUNNING",
+  "source_sha256": "58ba50a6a7e4c3726ed996b0785369a9eb0406867e737983c45523f96ffa1bfe",
+  "protocol_sha256": "b1478e3bd7c55f52b3d6f4cce5b84354080103edf8aef20376777e894fecf1f0",
+  "pid": 22020,
+  "wave_id": "wave_02",
+  "producer_os_sha256": "e35e7ea095d81bc3bc1fb216d749a73a89940fc1dc612b99b5b6cac8cb02e8b5",
+  "native_global_os_sha256": "b6f8b9014b397d8da5b962cd757993d1060096cadeaa8a76d7e53c29d461e082"
+}

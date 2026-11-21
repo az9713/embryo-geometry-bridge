@@ -1,0 +1,2054 @@
+{
+  "status": "PASS_INDEPENDENT_NUMERIC_COHORT_TANGENT_REVIEW",
+  "checks": {
+    "terminal17job_result_hash": true,
+    "exact17_unique_complete_source_coverage": true,
+    "all17_result_records_same_order": true,
+    "five_active_coordinates_exclude_kappa": true,
+    "fixed_kappa_and_fixed_geometry_declared": true,
+    "sources_match_protocol_and_results": true,
+    "protocol_hash_matches_results": true,
+    "baseline_direct_result_hash_matches": true,
+    "prior_independent_direct_review_hash_matches": true,
+    "baseline_gain_same_as_selected_prior_candidate": true,
+    "baseline_best_only_among_four_prior_candidates": true,
+    "same17_baseline_states_and_no_new_equilibria": true,
+    "0_all_input_and_archive_hashes_match": true,
+    "0_exact_gain_dose_and_canonical_source_values": true,
+    "0_same_material_geometry_and_Q8": true,
+    "0_archive_vector_indices_and_six_column_shapes": true,
+    "0_fresh_force_gate_and_stored_force": true,
+    "0_all6_archived_HS_plus_B_residuals": true,
+    "0_all6_independent_component_B_columns": true,
+    "0_five_graph_directions_correct_names": true,
+    "0_0_two_steps_and_both_positive_geometry_screens": true,
+    "0_0_0_FD_interval_algebra_exact": true,
+    "0_0_1_FD_interval_algebra_exact": true,
+    "0_1_two_steps_and_both_positive_geometry_screens": true,
+    "0_1_0_FD_interval_algebra_exact": true,
+    "0_1_1_FD_interval_algebra_exact": true,
+    "0_2_two_steps_and_both_positive_geometry_screens": true,
+    "0_2_0_FD_interval_algebra_exact": true,
+    "0_2_1_FD_interval_algebra_exact": true,
+    "0_3_two_steps_and_both_positive_geometry_screens": true,
+    "0_3_0_FD_interval_algebra_exact": true,
+    "0_3_1_FD_interval_algebra_exact": true,
+    "0_4_two_steps_and_both_positive_geometry_screens": true,
+    "0_4_0_FD_interval_algebra_exact": true,
+    "0_4_1_FD_interval_algebra_exact": true,
+    "0_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "0_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "0_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "0_current_disk_0_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_disk_1_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_disk_2_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_disk_3_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_disk_4_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "0_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "0_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "0_current_radial_line_0_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_radial_line_1_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_radial_line_2_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_radial_line_3_fresh_lowlevel_graph_mean_FD": true,
+    "0_current_radial_line_4_fresh_lowlevel_graph_mean_FD": true,
+    "0_0_fresh_AD_HS_residual": true,
+    "0_1_fresh_AD_HS_residual": true,
+    "0_2_fresh_AD_HS_residual": true,
+    "0_3_fresh_AD_HS_residual": true,
+    "0_4_fresh_AD_HS_residual": true,
+    "0_5_fresh_AD_HS_residual": true,
+    "1_all_input_and_archive_hashes_match": true,
+    "1_exact_gain_dose_and_canonical_source_values": true,
+    "1_same_material_geometry_and_Q8": true,
+    "1_archive_vector_indices_and_six_column_shapes": true,
+    "1_fresh_force_gate_and_stored_force": true,
+    "1_all6_archived_HS_plus_B_residuals": true,
+    "1_all6_independent_component_B_columns": true,
+    "1_five_graph_directions_correct_names": true,
+    "1_0_two_steps_and_both_positive_geometry_screens": true,
+    "1_0_0_FD_interval_algebra_exact": true,
+    "1_0_1_FD_interval_algebra_exact": true,
+    "1_1_two_steps_and_both_positive_geometry_screens": true,
+    "1_1_0_FD_interval_algebra_exact": true,
+    "1_1_1_FD_interval_algebra_exact": true,
+    "1_2_two_steps_and_both_positive_geometry_screens": true,
+    "1_2_0_FD_interval_algebra_exact": true,
+    "1_2_1_FD_interval_algebra_exact": true,
+    "1_3_two_steps_and_both_positive_geometry_screens": true,
+    "1_3_0_FD_interval_algebra_exact": true,
+    "1_3_1_FD_interval_algebra_exact": true,
+    "1_4_two_steps_and_both_positive_geometry_screens": true,
+    "1_4_0_FD_interval_algebra_exact": true,
+    "1_4_1_FD_interval_algebra_exact": true,
+    "1_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "1_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "1_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "1_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "1_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "1_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "2_all_input_and_archive_hashes_match": true,
+    "2_exact_gain_dose_and_canonical_source_values": true,
+    "2_same_material_geometry_and_Q8": true,
+    "2_archive_vector_indices_and_six_column_shapes": true,
+    "2_fresh_force_gate_and_stored_force": true,
+    "2_all6_archived_HS_plus_B_residuals": true,
+    "2_all6_independent_component_B_columns": true,
+    "2_five_graph_directions_correct_names": true,
+    "2_0_two_steps_and_both_positive_geometry_screens": true,
+    "2_0_0_FD_interval_algebra_exact": true,
+    "2_0_1_FD_interval_algebra_exact": true,
+    "2_1_two_steps_and_both_positive_geometry_screens": true,
+    "2_1_0_FD_interval_algebra_exact": true,
+    "2_1_1_FD_interval_algebra_exact": true,
+    "2_2_two_steps_and_both_positive_geometry_screens": true,
+    "2_2_0_FD_interval_algebra_exact": true,
+    "2_2_1_FD_interval_algebra_exact": true,
+    "2_3_two_steps_and_both_positive_geometry_screens": true,
+    "2_3_0_FD_interval_algebra_exact": true,
+    "2_3_1_FD_interval_algebra_exact": true,
+    "2_4_two_steps_and_both_positive_geometry_screens": true,
+    "2_4_0_FD_interval_algebra_exact": true,
+    "2_4_1_FD_interval_algebra_exact": true,
+    "2_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "2_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "2_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "2_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "2_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "2_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "3_all_input_and_archive_hashes_match": true,
+    "3_exact_gain_dose_and_canonical_source_values": true,
+    "3_same_material_geometry_and_Q8": true,
+    "3_archive_vector_indices_and_six_column_shapes": true,
+    "3_fresh_force_gate_and_stored_force": true,
+    "3_all6_archived_HS_plus_B_residuals": true,
+    "3_all6_independent_component_B_columns": true,
+    "3_five_graph_directions_correct_names": true,
+    "3_0_two_steps_and_both_positive_geometry_screens": true,
+    "3_0_0_FD_interval_algebra_exact": true,
+    "3_0_1_FD_interval_algebra_exact": true,
+    "3_1_two_steps_and_both_positive_geometry_screens": true,
+    "3_1_0_FD_interval_algebra_exact": true,
+    "3_1_1_FD_interval_algebra_exact": true,
+    "3_2_two_steps_and_both_positive_geometry_screens": true,
+    "3_2_0_FD_interval_algebra_exact": true,
+    "3_2_1_FD_interval_algebra_exact": true,
+    "3_3_two_steps_and_both_positive_geometry_screens": true,
+    "3_3_0_FD_interval_algebra_exact": true,
+    "3_3_1_FD_interval_algebra_exact": true,
+    "3_4_two_steps_and_both_positive_geometry_screens": true,
+    "3_4_0_FD_interval_algebra_exact": true,
+    "3_4_1_FD_interval_algebra_exact": true,
+    "3_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "3_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "3_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "3_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "3_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "3_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "4_all_input_and_archive_hashes_match": true,
+    "4_exact_gain_dose_and_canonical_source_values": true,
+    "4_same_material_geometry_and_Q8": true,
+    "4_archive_vector_indices_and_six_column_shapes": true,
+    "4_fresh_force_gate_and_stored_force": true,
+    "4_all6_archived_HS_plus_B_residuals": true,
+    "4_all6_independent_component_B_columns": true,
+    "4_five_graph_directions_correct_names": true,
+    "4_0_two_steps_and_both_positive_geometry_screens": true,
+    "4_0_0_FD_interval_algebra_exact": true,
+    "4_0_1_FD_interval_algebra_exact": true,
+    "4_1_two_steps_and_both_positive_geometry_screens": true,
+    "4_1_0_FD_interval_algebra_exact": true,
+    "4_1_1_FD_interval_algebra_exact": true,
+    "4_2_two_steps_and_both_positive_geometry_screens": true,
+    "4_2_0_FD_interval_algebra_exact": true,
+    "4_2_1_FD_interval_algebra_exact": true,
+    "4_3_two_steps_and_both_positive_geometry_screens": true,
+    "4_3_0_FD_interval_algebra_exact": true,
+    "4_3_1_FD_interval_algebra_exact": true,
+    "4_4_two_steps_and_both_positive_geometry_screens": true,
+    "4_4_0_FD_interval_algebra_exact": true,
+    "4_4_1_FD_interval_algebra_exact": true,
+    "4_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "4_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "4_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "4_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "4_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "4_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "5_all_input_and_archive_hashes_match": true,
+    "5_exact_gain_dose_and_canonical_source_values": true,
+    "5_same_material_geometry_and_Q8": true,
+    "5_archive_vector_indices_and_six_column_shapes": true,
+    "5_fresh_force_gate_and_stored_force": true,
+    "5_all6_archived_HS_plus_B_residuals": true,
+    "5_all6_independent_component_B_columns": true,
+    "5_five_graph_directions_correct_names": true,
+    "5_0_two_steps_and_both_positive_geometry_screens": true,
+    "5_0_0_FD_interval_algebra_exact": true,
+    "5_0_1_FD_interval_algebra_exact": true,
+    "5_1_two_steps_and_both_positive_geometry_screens": true,
+    "5_1_0_FD_interval_algebra_exact": true,
+    "5_1_1_FD_interval_algebra_exact": true,
+    "5_2_two_steps_and_both_positive_geometry_screens": true,
+    "5_2_0_FD_interval_algebra_exact": true,
+    "5_2_1_FD_interval_algebra_exact": true,
+    "5_3_two_steps_and_both_positive_geometry_screens": true,
+    "5_3_0_FD_interval_algebra_exact": true,
+    "5_3_1_FD_interval_algebra_exact": true,
+    "5_4_two_steps_and_both_positive_geometry_screens": true,
+    "5_4_0_FD_interval_algebra_exact": true,
+    "5_4_1_FD_interval_algebra_exact": true,
+    "5_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "5_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "5_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "5_current_disk_0_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_disk_1_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_disk_2_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_disk_3_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_disk_4_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "5_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "5_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "5_current_radial_line_0_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_radial_line_1_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_radial_line_2_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_radial_line_3_fresh_lowlevel_graph_mean_FD": true,
+    "5_current_radial_line_4_fresh_lowlevel_graph_mean_FD": true,
+    "5_0_fresh_AD_HS_residual": true,
+    "5_1_fresh_AD_HS_residual": true,
+    "5_2_fresh_AD_HS_residual": true,
+    "5_3_fresh_AD_HS_residual": true,
+    "5_4_fresh_AD_HS_residual": true,
+    "5_5_fresh_AD_HS_residual": true,
+    "6_all_input_and_archive_hashes_match": true,
+    "6_exact_gain_dose_and_canonical_source_values": true,
+    "6_same_material_geometry_and_Q8": true,
+    "6_archive_vector_indices_and_six_column_shapes": true,
+    "6_fresh_force_gate_and_stored_force": true,
+    "6_all6_archived_HS_plus_B_residuals": true,
+    "6_all6_independent_component_B_columns": true,
+    "6_five_graph_directions_correct_names": true,
+    "6_0_two_steps_and_both_positive_geometry_screens": true,
+    "6_0_0_FD_interval_algebra_exact": true,
+    "6_0_1_FD_interval_algebra_exact": true,
+    "6_1_two_steps_and_both_positive_geometry_screens": true,
+    "6_1_0_FD_interval_algebra_exact": true,
+    "6_1_1_FD_interval_algebra_exact": true,
+    "6_2_two_steps_and_both_positive_geometry_screens": true,
+    "6_2_0_FD_interval_algebra_exact": true,
+    "6_2_1_FD_interval_algebra_exact": true,
+    "6_3_two_steps_and_both_positive_geometry_screens": true,
+    "6_3_0_FD_interval_algebra_exact": true,
+    "6_3_1_FD_interval_algebra_exact": true,
+    "6_4_two_steps_and_both_positive_geometry_screens": true,
+    "6_4_0_FD_interval_algebra_exact": true,
+    "6_4_1_FD_interval_algebra_exact": true,
+    "6_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "6_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "6_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "6_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "6_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "6_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "7_all_input_and_archive_hashes_match": true,
+    "7_exact_gain_dose_and_canonical_source_values": true,
+    "7_same_material_geometry_and_Q8": true,
+    "7_archive_vector_indices_and_six_column_shapes": true,
+    "7_fresh_force_gate_and_stored_force": true,
+    "7_all6_archived_HS_plus_B_residuals": true,
+    "7_all6_independent_component_B_columns": true,
+    "7_five_graph_directions_correct_names": true,
+    "7_0_two_steps_and_both_positive_geometry_screens": true,
+    "7_0_0_FD_interval_algebra_exact": true,
+    "7_0_1_FD_interval_algebra_exact": true,
+    "7_1_two_steps_and_both_positive_geometry_screens": true,
+    "7_1_0_FD_interval_algebra_exact": true,
+    "7_1_1_FD_interval_algebra_exact": true,
+    "7_2_two_steps_and_both_positive_geometry_screens": true,
+    "7_2_0_FD_interval_algebra_exact": true,
+    "7_2_1_FD_interval_algebra_exact": true,
+    "7_3_two_steps_and_both_positive_geometry_screens": true,
+    "7_3_0_FD_interval_algebra_exact": true,
+    "7_3_1_FD_interval_algebra_exact": true,
+    "7_4_two_steps_and_both_positive_geometry_screens": true,
+    "7_4_0_FD_interval_algebra_exact": true,
+    "7_4_1_FD_interval_algebra_exact": true,
+    "7_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "7_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "7_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "7_current_disk_0_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_disk_1_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_disk_2_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_disk_3_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_disk_4_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "7_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "7_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "7_current_radial_line_0_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_radial_line_1_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_radial_line_2_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_radial_line_3_fresh_lowlevel_graph_mean_FD": true,
+    "7_current_radial_line_4_fresh_lowlevel_graph_mean_FD": true,
+    "7_0_fresh_AD_HS_residual": true,
+    "7_1_fresh_AD_HS_residual": true,
+    "7_2_fresh_AD_HS_residual": true,
+    "7_3_fresh_AD_HS_residual": true,
+    "7_4_fresh_AD_HS_residual": true,
+    "7_5_fresh_AD_HS_residual": true,
+    "8_all_input_and_archive_hashes_match": true,
+    "8_exact_gain_dose_and_canonical_source_values": true,
+    "8_same_material_geometry_and_Q8": true,
+    "8_archive_vector_indices_and_six_column_shapes": true,
+    "8_fresh_force_gate_and_stored_force": true,
+    "8_all6_archived_HS_plus_B_residuals": true,
+    "8_all6_independent_component_B_columns": true,
+    "8_five_graph_directions_correct_names": true,
+    "8_0_two_steps_and_both_positive_geometry_screens": true,
+    "8_0_0_FD_interval_algebra_exact": true,
+    "8_0_1_FD_interval_algebra_exact": true,
+    "8_1_two_steps_and_both_positive_geometry_screens": true,
+    "8_1_0_FD_interval_algebra_exact": true,
+    "8_1_1_FD_interval_algebra_exact": true,
+    "8_2_two_steps_and_both_positive_geometry_screens": true,
+    "8_2_0_FD_interval_algebra_exact": true,
+    "8_2_1_FD_interval_algebra_exact": true,
+    "8_3_two_steps_and_both_positive_geometry_screens": true,
+    "8_3_0_FD_interval_algebra_exact": true,
+    "8_3_1_FD_interval_algebra_exact": true,
+    "8_4_two_steps_and_both_positive_geometry_screens": true,
+    "8_4_0_FD_interval_algebra_exact": true,
+    "8_4_1_FD_interval_algebra_exact": true,
+    "8_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "8_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "8_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "8_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "8_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "8_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "9_all_input_and_archive_hashes_match": true,
+    "9_exact_gain_dose_and_canonical_source_values": true,
+    "9_same_material_geometry_and_Q8": true,
+    "9_archive_vector_indices_and_six_column_shapes": true,
+    "9_fresh_force_gate_and_stored_force": true,
+    "9_all6_archived_HS_plus_B_residuals": true,
+    "9_all6_independent_component_B_columns": true,
+    "9_five_graph_directions_correct_names": true,
+    "9_0_two_steps_and_both_positive_geometry_screens": true,
+    "9_0_0_FD_interval_algebra_exact": true,
+    "9_0_1_FD_interval_algebra_exact": true,
+    "9_1_two_steps_and_both_positive_geometry_screens": true,
+    "9_1_0_FD_interval_algebra_exact": true,
+    "9_1_1_FD_interval_algebra_exact": true,
+    "9_2_two_steps_and_both_positive_geometry_screens": true,
+    "9_2_0_FD_interval_algebra_exact": true,
+    "9_2_1_FD_interval_algebra_exact": true,
+    "9_3_two_steps_and_both_positive_geometry_screens": true,
+    "9_3_0_FD_interval_algebra_exact": true,
+    "9_3_1_FD_interval_algebra_exact": true,
+    "9_4_two_steps_and_both_positive_geometry_screens": true,
+    "9_4_0_FD_interval_algebra_exact": true,
+    "9_4_1_FD_interval_algebra_exact": true,
+    "9_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "9_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "9_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "9_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "9_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "9_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "10_all_input_and_archive_hashes_match": true,
+    "10_exact_gain_dose_and_canonical_source_values": true,
+    "10_same_material_geometry_and_Q8": true,
+    "10_archive_vector_indices_and_six_column_shapes": true,
+    "10_fresh_force_gate_and_stored_force": true,
+    "10_all6_archived_HS_plus_B_residuals": true,
+    "10_all6_independent_component_B_columns": true,
+    "10_five_graph_directions_correct_names": true,
+    "10_0_two_steps_and_both_positive_geometry_screens": true,
+    "10_0_0_FD_interval_algebra_exact": true,
+    "10_0_1_FD_interval_algebra_exact": true,
+    "10_1_two_steps_and_both_positive_geometry_screens": true,
+    "10_1_0_FD_interval_algebra_exact": true,
+    "10_1_1_FD_interval_algebra_exact": true,
+    "10_2_two_steps_and_both_positive_geometry_screens": true,
+    "10_2_0_FD_interval_algebra_exact": true,
+    "10_2_1_FD_interval_algebra_exact": true,
+    "10_3_two_steps_and_both_positive_geometry_screens": true,
+    "10_3_0_FD_interval_algebra_exact": true,
+    "10_3_1_FD_interval_algebra_exact": true,
+    "10_4_two_steps_and_both_positive_geometry_screens": true,
+    "10_4_0_FD_interval_algebra_exact": true,
+    "10_4_1_FD_interval_algebra_exact": true,
+    "10_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "10_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "10_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "10_current_disk_0_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_disk_1_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_disk_2_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_disk_3_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_disk_4_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "10_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "10_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "10_current_radial_line_0_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_radial_line_1_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_radial_line_2_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_radial_line_3_fresh_lowlevel_graph_mean_FD": true,
+    "10_current_radial_line_4_fresh_lowlevel_graph_mean_FD": true,
+    "10_0_fresh_AD_HS_residual": true,
+    "10_1_fresh_AD_HS_residual": true,
+    "10_2_fresh_AD_HS_residual": true,
+    "10_3_fresh_AD_HS_residual": true,
+    "10_4_fresh_AD_HS_residual": true,
+    "10_5_fresh_AD_HS_residual": true,
+    "11_all_input_and_archive_hashes_match": true,
+    "11_exact_gain_dose_and_canonical_source_values": true,
+    "11_same_material_geometry_and_Q8": true,
+    "11_archive_vector_indices_and_six_column_shapes": true,
+    "11_fresh_force_gate_and_stored_force": true,
+    "11_all6_archived_HS_plus_B_residuals": true,
+    "11_all6_independent_component_B_columns": true,
+    "11_five_graph_directions_correct_names": true,
+    "11_0_two_steps_and_both_positive_geometry_screens": true,
+    "11_0_0_FD_interval_algebra_exact": true,
+    "11_0_1_FD_interval_algebra_exact": true,
+    "11_1_two_steps_and_both_positive_geometry_screens": true,
+    "11_1_0_FD_interval_algebra_exact": true,
+    "11_1_1_FD_interval_algebra_exact": true,
+    "11_2_two_steps_and_both_positive_geometry_screens": true,
+    "11_2_0_FD_interval_algebra_exact": true,
+    "11_2_1_FD_interval_algebra_exact": true,
+    "11_3_two_steps_and_both_positive_geometry_screens": true,
+    "11_3_0_FD_interval_algebra_exact": true,
+    "11_3_1_FD_interval_algebra_exact": true,
+    "11_4_two_steps_and_both_positive_geometry_screens": true,
+    "11_4_0_FD_interval_algebra_exact": true,
+    "11_4_1_FD_interval_algebra_exact": true,
+    "11_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "11_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "11_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "11_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "11_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "11_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "12_all_input_and_archive_hashes_match": true,
+    "12_exact_gain_dose_and_canonical_source_values": true,
+    "12_same_material_geometry_and_Q8": true,
+    "12_archive_vector_indices_and_six_column_shapes": true,
+    "12_fresh_force_gate_and_stored_force": true,
+    "12_all6_archived_HS_plus_B_residuals": true,
+    "12_all6_independent_component_B_columns": true,
+    "12_five_graph_directions_correct_names": true,
+    "12_0_two_steps_and_both_positive_geometry_screens": true,
+    "12_0_0_FD_interval_algebra_exact": true,
+    "12_0_1_FD_interval_algebra_exact": true,
+    "12_1_two_steps_and_both_positive_geometry_screens": true,
+    "12_1_0_FD_interval_algebra_exact": true,
+    "12_1_1_FD_interval_algebra_exact": true,
+    "12_2_two_steps_and_both_positive_geometry_screens": true,
+    "12_2_0_FD_interval_algebra_exact": true,
+    "12_2_1_FD_interval_algebra_exact": true,
+    "12_3_two_steps_and_both_positive_geometry_screens": true,
+    "12_3_0_FD_interval_algebra_exact": true,
+    "12_3_1_FD_interval_algebra_exact": true,
+    "12_4_two_steps_and_both_positive_geometry_screens": true,
+    "12_4_0_FD_interval_algebra_exact": true,
+    "12_4_1_FD_interval_algebra_exact": true,
+    "12_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "12_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "12_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "12_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "12_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "12_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "13_all_input_and_archive_hashes_match": true,
+    "13_exact_gain_dose_and_canonical_source_values": true,
+    "13_same_material_geometry_and_Q8": true,
+    "13_archive_vector_indices_and_six_column_shapes": true,
+    "13_fresh_force_gate_and_stored_force": true,
+    "13_all6_archived_HS_plus_B_residuals": true,
+    "13_all6_independent_component_B_columns": true,
+    "13_five_graph_directions_correct_names": true,
+    "13_0_two_steps_and_both_positive_geometry_screens": true,
+    "13_0_0_FD_interval_algebra_exact": true,
+    "13_0_1_FD_interval_algebra_exact": true,
+    "13_1_two_steps_and_both_positive_geometry_screens": true,
+    "13_1_0_FD_interval_algebra_exact": true,
+    "13_1_1_FD_interval_algebra_exact": true,
+    "13_2_two_steps_and_both_positive_geometry_screens": true,
+    "13_2_0_FD_interval_algebra_exact": true,
+    "13_2_1_FD_interval_algebra_exact": true,
+    "13_3_two_steps_and_both_positive_geometry_screens": true,
+    "13_3_0_FD_interval_algebra_exact": true,
+    "13_3_1_FD_interval_algebra_exact": true,
+    "13_4_two_steps_and_both_positive_geometry_screens": true,
+    "13_4_0_FD_interval_algebra_exact": true,
+    "13_4_1_FD_interval_algebra_exact": true,
+    "13_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "13_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "13_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "13_current_disk_0_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_disk_1_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_disk_2_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_disk_3_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_disk_4_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "13_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "13_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "13_current_radial_line_0_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_radial_line_1_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_radial_line_2_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_radial_line_3_fresh_lowlevel_graph_mean_FD": true,
+    "13_current_radial_line_4_fresh_lowlevel_graph_mean_FD": true,
+    "13_0_fresh_AD_HS_residual": true,
+    "13_1_fresh_AD_HS_residual": true,
+    "13_2_fresh_AD_HS_residual": true,
+    "13_3_fresh_AD_HS_residual": true,
+    "13_4_fresh_AD_HS_residual": true,
+    "13_5_fresh_AD_HS_residual": true,
+    "14_all_input_and_archive_hashes_match": true,
+    "14_exact_gain_dose_and_canonical_source_values": true,
+    "14_same_material_geometry_and_Q8": true,
+    "14_archive_vector_indices_and_six_column_shapes": true,
+    "14_fresh_force_gate_and_stored_force": true,
+    "14_all6_archived_HS_plus_B_residuals": true,
+    "14_all6_independent_component_B_columns": true,
+    "14_five_graph_directions_correct_names": true,
+    "14_0_two_steps_and_both_positive_geometry_screens": true,
+    "14_0_0_FD_interval_algebra_exact": true,
+    "14_0_1_FD_interval_algebra_exact": true,
+    "14_1_two_steps_and_both_positive_geometry_screens": true,
+    "14_1_0_FD_interval_algebra_exact": true,
+    "14_1_1_FD_interval_algebra_exact": true,
+    "14_2_two_steps_and_both_positive_geometry_screens": true,
+    "14_2_0_FD_interval_algebra_exact": true,
+    "14_2_1_FD_interval_algebra_exact": true,
+    "14_3_two_steps_and_both_positive_geometry_screens": true,
+    "14_3_0_FD_interval_algebra_exact": true,
+    "14_3_1_FD_interval_algebra_exact": true,
+    "14_4_two_steps_and_both_positive_geometry_screens": true,
+    "14_4_0_FD_interval_algebra_exact": true,
+    "14_4_1_FD_interval_algebra_exact": true,
+    "14_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "14_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "14_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "14_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "14_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "14_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "15_all_input_and_archive_hashes_match": true,
+    "15_exact_gain_dose_and_canonical_source_values": true,
+    "15_same_material_geometry_and_Q8": true,
+    "15_archive_vector_indices_and_six_column_shapes": true,
+    "15_fresh_force_gate_and_stored_force": true,
+    "15_all6_archived_HS_plus_B_residuals": true,
+    "15_all6_independent_component_B_columns": true,
+    "15_five_graph_directions_correct_names": true,
+    "15_0_two_steps_and_both_positive_geometry_screens": true,
+    "15_0_0_FD_interval_algebra_exact": true,
+    "15_0_1_FD_interval_algebra_exact": true,
+    "15_1_two_steps_and_both_positive_geometry_screens": true,
+    "15_1_0_FD_interval_algebra_exact": true,
+    "15_1_1_FD_interval_algebra_exact": true,
+    "15_2_two_steps_and_both_positive_geometry_screens": true,
+    "15_2_0_FD_interval_algebra_exact": true,
+    "15_2_1_FD_interval_algebra_exact": true,
+    "15_3_two_steps_and_both_positive_geometry_screens": true,
+    "15_3_0_FD_interval_algebra_exact": true,
+    "15_3_1_FD_interval_algebra_exact": true,
+    "15_4_two_steps_and_both_positive_geometry_screens": true,
+    "15_4_0_FD_interval_algebra_exact": true,
+    "15_4_1_FD_interval_algebra_exact": true,
+    "15_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "15_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "15_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "15_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "15_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "15_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "16_all_input_and_archive_hashes_match": true,
+    "16_exact_gain_dose_and_canonical_source_values": true,
+    "16_same_material_geometry_and_Q8": true,
+    "16_archive_vector_indices_and_six_column_shapes": true,
+    "16_fresh_force_gate_and_stored_force": true,
+    "16_all6_archived_HS_plus_B_residuals": true,
+    "16_all6_independent_component_B_columns": true,
+    "16_five_graph_directions_correct_names": true,
+    "16_0_two_steps_and_both_positive_geometry_screens": true,
+    "16_0_0_FD_interval_algebra_exact": true,
+    "16_0_1_FD_interval_algebra_exact": true,
+    "16_1_two_steps_and_both_positive_geometry_screens": true,
+    "16_1_0_FD_interval_algebra_exact": true,
+    "16_1_1_FD_interval_algebra_exact": true,
+    "16_2_two_steps_and_both_positive_geometry_screens": true,
+    "16_2_0_FD_interval_algebra_exact": true,
+    "16_2_1_FD_interval_algebra_exact": true,
+    "16_3_two_steps_and_both_positive_geometry_screens": true,
+    "16_3_0_FD_interval_algebra_exact": true,
+    "16_3_1_FD_interval_algebra_exact": true,
+    "16_4_two_steps_and_both_positive_geometry_screens": true,
+    "16_4_0_FD_interval_algebra_exact": true,
+    "16_4_1_FD_interval_algebra_exact": true,
+    "16_current_disk_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "16_current_disk_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "16_current_disk_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "16_current_radial_line_apical_regional_mean_downward_full_exact_chain_rule": true,
+    "16_current_radial_line_basal_regional_mean_upward_full_exact_chain_rule": true,
+    "16_current_radial_line_height_regional_mean_shortening_full_exact_chain_rule": true,
+    "current_disk__spatial_max_LP68constraint_order_and_5coordinates": true,
+    "current_disk__spatial_max_LP_uses_declared_smaller_step_midpoints": true,
+    "current_disk__regional_mean_LP68constraint_order_and_5coordinates": true,
+    "current_disk__regional_mean_LP_uses_declared_smaller_step_midpoints": true,
+    "current_radial_line__spatial_max_LP68constraint_order_and_5coordinates": true,
+    "current_radial_line__spatial_max_LP_uses_declared_smaller_step_midpoints": true,
+    "current_radial_line__regional_mean_LP68constraint_order_and_5coordinates": true,
+    "current_radial_line__regional_mean_LP_uses_declared_smaller_step_midpoints": true,
+    "all_sources_and_saved_files_still_unchanged": true,
+    "review_doc_math_delimiters_balanced": true,
+    "review_doc_local_links_exist": true,
+    "review_doc_utf8_no_replacement_char": true,
+    "runner_source_still_protocol_frozen": true
+  },
+  "rows": [
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "index": 0,
+      "strength": 1.1934039557653715,
+      "fresh_force_linf": 2.3509972153735667e-11,
+      "archived_linear_relative_residuals": [
+        6.382066299968481e-13,
+        2.4966031328757993e-12,
+        4.238812682379406e-12,
+        5.9896568102736154e-12,
+        4.996647430386072e-12,
+        9.184855496801849e-12
+      ],
+      "independent_component_B_relative_errors": [
+        2.057257926715134e-11,
+        2.9383309627989246e-14,
+        2.3182107939000173e-13,
+        1.5461263690912434e-14,
+        4.503550485607231e-13,
+        6.812633963273107e-16
+      ],
+      "fresh_AD_HVP_checks": [
+        {
+          "column": 0,
+          "fresh_AD_HS_plus_B_relative": 6.927424393065273e-13
+        },
+        {
+          "column": 1,
+          "fresh_AD_HS_plus_B_relative": 2.8502291548696417e-12
+        },
+        {
+          "column": 2,
+          "fresh_AD_HS_plus_B_relative": 4.186230424394399e-12
+        },
+        {
+          "column": 3,
+          "fresh_AD_HS_plus_B_relative": 5.998896489927166e-12
+        },
+        {
+          "column": 4,
+          "fresh_AD_HS_plus_B_relative": 5.290815934482944e-12
+        },
+        {
+          "column": 5,
+          "fresh_AD_HS_plus_B_relative": 9.459100600450956e-12
+        }
+      ],
+      "sampled_smooth_mean_graph_FDs": [
+        {
+          "weighting": "current_disk",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 2.2852444762910817e-12,
+              "finite_difference": [
+                0.0038918474345450704,
+                -0.006735240867083991,
+                -0.00284339343248341
+              ],
+              "analytic_midpoint": [
+                0.003891847436830315,
+                -0.006735240867096329,
+                -0.0028433934302660134
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 1.4917563712080195e-12,
+              "finite_difference": [
+                -0.023950185710219785,
+                0.012941430069135507,
+                -0.011008755640862233
+              ],
+              "analytic_midpoint": [
+                -0.02395018571147758,
+                0.01294143006912359,
+                -0.01100875564235399
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 7.169997928713201e-11,
+              "finite_difference": [
+                -2.496893373955089,
+                0.24371394769218124,
+                -2.253179426262797
+              ],
+              "analytic_midpoint": [
+                -2.496893374026789,
+                0.24371394769287777,
+                -2.2531794263339116
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 2.859434911073322e-12,
+              "finite_difference": [
+                0.09674510133805825,
+                -0.21858069821023562,
+                -0.12183559687217738
+              ],
+              "analytic_midpoint": [
+                0.09674510134091768,
+                -0.21858069821027196,
+                -0.12183559686935426
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 7.302825011379355e-12,
+              "finite_difference": [
+                1.3933801609447016,
+                0.23934985070145354,
+                1.6327300116460997
+              ],
+              "analytic_midpoint": [
+                1.3933801609519525,
+                0.2393498507014501,
+                1.6327300116534025
+              ]
+            }
+          ]
+        },
+        {
+          "weighting": "current_radial_line",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 6.996200493936122e-13,
+              "finite_difference": [
+                0.007756426338545452,
+                -0.006703831512910874,
+                0.0010525948255235562
+              ],
+              "analytic_midpoint": [
+                0.007756426337845832,
+                -0.006703831512891075,
+                0.001052594824954758
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 2.0257164001780126e-12,
+              "finite_difference": [
+                -0.023430520123213228,
+                0.013424741906076232,
+                -0.010005778217081485
+              ],
+              "analytic_midpoint": [
+                -0.02343052012514738,
+                0.013424741906040177,
+                -0.010005778219107201
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 6.724354406628663e-11,
+              "finite_difference": [
+                -2.6984256115198946,
+                0.25205226489499744,
+                -2.446373346624675
+              ],
+              "analytic_midpoint": [
+                -2.698425611587138,
+                0.252052264895625,
+                -2.4463733466915127
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 3.6179115259216132e-12,
+              "finite_difference": [
+                0.1013701349243945,
+                -0.23935182200079952,
+                -0.13798168707657155
+              ],
+              "analytic_midpoint": [
+                0.10137013492780052,
+                -0.23935182200075417,
+                -0.13798168707295363
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 4.703348821522013e-12,
+              "finite_difference": [
+                1.5095085766851923,
+                0.2617994932898604,
+                1.7713080699750527
+              ],
+              "analytic_midpoint": [
+                1.5095085766898213,
+                0.26179949328993485,
+                1.771308069979756
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "index": 1,
+      "strength": 2.6381160747865833,
+      "fresh_force_linf": 1.487645784011872e-11,
+      "archived_linear_relative_residuals": [
+        6.22306954558158e-13,
+        3.2367884524564505e-12,
+        3.881832267521732e-12,
+        5.04558734162096e-12,
+        4.826723193304512e-12,
+        7.956652824330328e-12
+      ],
+      "independent_component_B_relative_errors": [
+        9.651598894546473e-12,
+        2.4534968657849492e-14,
+        1.5652503980502887e-13,
+        1.0133350263813495e-14,
+        1.2624329107682222e-13,
+        6.359250898837039e-16
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "index": 2,
+      "strength": 5.582826821894957,
+      "fresh_force_linf": 1.6331875701000934e-10,
+      "archived_linear_relative_residuals": [
+        5.648561821104181e-13,
+        5.1281670103747895e-12,
+        5.262274674076959e-12,
+        5.569020817595787e-12,
+        5.118263525538531e-12,
+        6.846014399556773e-12
+      ],
+      "independent_component_B_relative_errors": [
+        5.928465580146265e-12,
+        1.3361781502299887e-14,
+        9.158923414353929e-14,
+        9.46673283401735e-15,
+        1.0645412198069764e-13,
+        1.5054345670177096e-15
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "index": 3,
+      "strength": 7.870101939732251,
+      "fresh_force_linf": 3.319459121367118e-12,
+      "archived_linear_relative_residuals": [
+        5.388324663037817e-13,
+        5.017384345428163e-12,
+        5.102015232150493e-12,
+        7.277826840684782e-12,
+        5.121796799502142e-12,
+        5.920196948884045e-12
+      ],
+      "independent_component_B_relative_errors": [
+        4.444405465227754e-12,
+        9.644161946919158e-15,
+        8.363331009975896e-14,
+        6.574007782534399e-15,
+        8.341888412803648e-14,
+        1.2206870124646966e-15
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "index": 4,
+      "strength": 3.7413850338964734,
+      "fresh_force_linf": 1.8562551306168865e-10,
+      "archived_linear_relative_residuals": [
+        7.05787480314387e-13,
+        4.633717705092533e-12,
+        4.797102669106283e-12,
+        5.267169244071904e-12,
+        5.533059645203444e-12,
+        7.727971775667309e-12
+      ],
+      "independent_component_B_relative_errors": [
+        7.647030256148345e-12,
+        1.1261200732556084e-14,
+        7.158800357199075e-14,
+        9.663982395699587e-15,
+        1.396834768717077e-13,
+        1.2183020762993244e-15
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "index": 5,
+      "strength": 8.444434774024856,
+      "fresh_force_linf": 4.405672398080651e-11,
+      "archived_linear_relative_residuals": [
+        5.583639012038817e-13,
+        5.589170408768315e-12,
+        4.8564878368294865e-12,
+        6.083777007431016e-12,
+        5.620947515229503e-12,
+        5.369541911651161e-12
+      ],
+      "independent_component_B_relative_errors": [
+        3.932647216865246e-12,
+        9.978618120235118e-15,
+        9.437893155220506e-14,
+        3.678517797850012e-15,
+        1.0741109983368795e-13,
+        1.1442743838216642e-15
+      ],
+      "fresh_AD_HVP_checks": [
+        {
+          "column": 0,
+          "fresh_AD_HS_plus_B_relative": 5.430674871630331e-13
+        },
+        {
+          "column": 1,
+          "fresh_AD_HS_plus_B_relative": 6.079582717717423e-12
+        },
+        {
+          "column": 2,
+          "fresh_AD_HS_plus_B_relative": 4.9134012701002364e-12
+        },
+        {
+          "column": 3,
+          "fresh_AD_HS_plus_B_relative": 5.77649580389094e-12
+        },
+        {
+          "column": 4,
+          "fresh_AD_HS_plus_B_relative": 5.816186933014991e-12
+        },
+        {
+          "column": 5,
+          "fresh_AD_HS_plus_B_relative": 5.3436955979314655e-12
+        }
+      ],
+      "sampled_smooth_mean_graph_FDs": [
+        {
+          "weighting": "current_disk",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 2.0805301925719277e-12,
+              "finite_difference": [
+                -0.06640967248117136,
+                -0.039810057579581226,
+                -0.10621973006053054
+              ],
+              "analytic_midpoint": [
+                -0.06640967248287785,
+                -0.039810057579733216,
+                -0.10621973006261107
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 3.1706928749208885e-12,
+              "finite_difference": [
+                -0.1307607125617949,
+                0.06836422091738292,
+                -0.06239649164463401
+              ],
+              "analytic_midpoint": [
+                -0.13076071255891272,
+                0.06836422091744938,
+                -0.06239649164146332
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 2.404559218405211e-09,
+              "finite_difference": [
+                -6.948158068830423,
+                1.503679859822471,
+                -5.444478209007286
+              ],
+              "analytic_midpoint": [
+                -6.948158066647772,
+                1.5036798600450456,
+                -5.444478206602727
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 2.089051154285926e-12,
+              "finite_difference": [
+                0.4995594039165496,
+                -0.8496820875407707,
+                -0.35012268362422105
+              ],
+              "analytic_midpoint": [
+                0.4995594039184193,
+                -0.8496820875405513,
+                -0.350122683622132
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 9.949818746690653e-11,
+              "finite_difference": [
+                3.7588732624840304,
+                0.5039286499837203,
+                4.262801912467751
+              ],
+              "analytic_midpoint": [
+                3.7588732625833576,
+                0.5039286499838911,
+                4.262801912567249
+              ]
+            }
+          ]
+        },
+        {
+          "weighting": "current_radial_line",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 4.541367282229203e-13,
+              "finite_difference": [
+                -0.04785382878580435,
+                -0.039007979069971555,
+                -0.08686180785666409
+              ],
+              "analytic_midpoint": [
+                -0.04785382878625849,
+                -0.03900797907004163,
+                -0.08686180785630011
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 2.620154093690985e-12,
+              "finite_difference": [
+                -0.12980644384441575,
+                0.06942250114128079,
+                -0.06038394270291292
+              ],
+              "analytic_midpoint": [
+                -0.1298064438417956,
+                0.0694225011411565,
+                -0.06038394270063911
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 3.973017470570994e-10,
+              "finite_difference": [
+                -7.654340690120165,
+                1.5807480747174196,
+                -6.073592615402745
+              ],
+              "analytic_midpoint": [
+                -7.654340690517467,
+                1.5807480748883858,
+                -6.073592615629081
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 3.0302427234119023e-12,
+              "finite_difference": [
+                0.5483989236267917,
+                -0.9266273371790756,
+                -0.378228413552506
+              ],
+              "analytic_midpoint": [
+                0.5483989236297252,
+                -0.926627337179201,
+                -0.3782284135494758
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 6.558042997539815e-11,
+              "finite_difference": [
+                4.107693092350928,
+                0.5304730463704388,
+                4.638166138720479
+              ],
+              "analytic_midpoint": [
+                4.107693092414343,
+                0.5304730463717156,
+                4.638166138786059
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "index": 6,
+      "strength": 6.624555308321266,
+      "fresh_force_linf": 4.7889581406349024e-11,
+      "archived_linear_relative_residuals": [
+        5.688581697506478e-13,
+        5.5058839496181756e-12,
+        4.404075163212842e-12,
+        6.078491456657049e-12,
+        4.199411180497119e-12,
+        6.388412822435237e-12
+      ],
+      "independent_component_B_relative_errors": [
+        5.605753523974461e-12,
+        1.5113885824135694e-14,
+        8.441846437411874e-14,
+        4.788732141314518e-15,
+        1.0347011750553715e-13,
+        6.95899049857385e-16
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "index": 7,
+      "strength": 3.8003526122084565,
+      "fresh_force_linf": 3.4335759062364968e-12,
+      "archived_linear_relative_residuals": [
+        6.608983566130276e-13,
+        4.27557192327583e-12,
+        4.007902988350147e-12,
+        5.867624690977433e-12,
+        4.804481675536059e-12,
+        7.053144350457284e-12
+      ],
+      "independent_component_B_relative_errors": [
+        7.30594534395321e-12,
+        1.8696700282816675e-14,
+        8.363129168583963e-14,
+        1.1499676769967677e-14,
+        1.286060961063676e-13,
+        1.2608631439292804e-15
+      ],
+      "fresh_AD_HVP_checks": [
+        {
+          "column": 0,
+          "fresh_AD_HS_plus_B_relative": 6.462571826506328e-13
+        },
+        {
+          "column": 1,
+          "fresh_AD_HS_plus_B_relative": 4.462500635250579e-12
+        },
+        {
+          "column": 2,
+          "fresh_AD_HS_plus_B_relative": 3.830663402404964e-12
+        },
+        {
+          "column": 3,
+          "fresh_AD_HS_plus_B_relative": 5.9651446224254165e-12
+        },
+        {
+          "column": 4,
+          "fresh_AD_HS_plus_B_relative": 4.800707106245507e-12
+        },
+        {
+          "column": 5,
+          "fresh_AD_HS_plus_B_relative": 6.977469127845484e-12
+        }
+      ],
+      "sampled_smooth_mean_graph_FDs": [
+        {
+          "weighting": "current_disk",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 3.5821267826974257e-12,
+              "finite_difference": [
+                -0.005113937259437762,
+                -0.020941191424928007,
+                -0.02605512868480986
+              ],
+              "analytic_midpoint": [
+                -0.005113937263019889,
+                -0.020941191424919126,
+                -0.026055128687939015
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 1.6299323002400001e-12,
+              "finite_difference": [
+                -0.06678698183648635,
+                0.036603672386781305,
+                -0.03018330944914993
+              ],
+              "analytic_midpoint": [
+                -0.06678698183756875,
+                0.036603672386788876,
+                -0.030183309450779863
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 3.7564173993587247e-10,
+              "finite_difference": [
+                -5.21134569719095,
+                0.7802908760814464,
+                -4.431054821109726
+              ],
+              "analytic_midpoint": [
+                -5.2113456968418275,
+                0.7802908761077438,
+                -4.431054820734084
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 3.1256108812272032e-12,
+              "finite_difference": [
+                0.2714375717260964,
+                -0.5335009903481014,
+                -0.2620634186225601
+              ],
+              "analytic_midpoint": [
+                0.27143757172859134,
+                -0.5335009903480258,
+                -0.2620634186194345
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 8.892087066669774e-11,
+              "finite_difference": [
+                2.7684636259799333,
+                0.46161524456433956,
+                3.230078870544162
+              ],
+              "analytic_midpoint": [
+                2.7684636260687503,
+                0.4616152445643326,
+                3.2300788706330827
+              ]
+            }
+          ]
+        },
+        {
+          "weighting": "current_radial_line",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 1.5694077981631693e-12,
+              "finite_difference": [
+                0.005302557429587296,
+                -0.020792954428805466,
+                -0.015490396999773282
+              ],
+              "analytic_midpoint": [
+                0.005302557428017888,
+                -0.02079295442874811,
+                -0.01549039700073022
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 8.188762168348518e-13,
+              "finite_difference": [
+                -0.06565132695968146,
+                0.037792986920859306,
+                -0.02785834003926624
+              ],
+              "analytic_midpoint": [
+                -0.06565132695930828,
+                0.03779298692086092,
+                -0.027858340038447362
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 2.829692036243614e-10,
+              "finite_difference": [
+                -5.687563784398719,
+                0.812233410565244,
+                -4.875330373833364
+              ],
+              "analytic_midpoint": [
+                -5.687563784681688,
+                0.812233410585858,
+                -4.875330374095831
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 9.602318939982979e-13,
+              "finite_difference": [
+                0.2902274920479897,
+                -0.5851770568467973,
+                -0.2949495647985856
+              ],
+              "analytic_midpoint": [
+                0.29022749204894993,
+                -0.5851770568466916,
+                -0.2949495647977417
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 5.6345150767356245e-11,
+              "finite_difference": [
+                3.0051840658131823,
+                0.5038031717319313,
+                3.5089872375451137
+              ],
+              "analytic_midpoint": [
+                3.005184065869423,
+                0.5038031717320359,
+                3.508987237601459
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "index": 8,
+      "strength": 7.961337290179309,
+      "fresh_force_linf": 2.3202096101067153e-12,
+      "archived_linear_relative_residuals": [
+        5.353730529917719e-13,
+        5.238059784962203e-12,
+        4.610409220180703e-12,
+        5.867550045487943e-12,
+        5.397305407928167e-12,
+        5.220427355254246e-12
+      ],
+      "independent_component_B_relative_errors": [
+        3.724249561825954e-12,
+        1.2233457232498082e-14,
+        7.180110718394793e-14,
+        5.659583605374044e-15,
+        8.751004810198292e-14,
+        6.982139267362452e-16
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "index": 9,
+      "strength": 10.393035234023632,
+      "fresh_force_linf": 3.999938401333392e-12,
+      "archived_linear_relative_residuals": [
+        6.200482722435716e-13,
+        5.258487328370008e-12,
+        5.40508556075692e-12,
+        6.860534540943775e-12,
+        4.298003272625286e-12,
+        5.705227933050339e-12
+      ],
+      "independent_component_B_relative_errors": [
+        4.065961356475361e-12,
+        7.270887728670567e-15,
+        4.8235133428884486e-14,
+        5.168605158050555e-15,
+        6.263351608086981e-14,
+        9.801064746869186e-16
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "index": 10,
+      "strength": 12.17971138094866,
+      "fresh_force_linf": 3.1685118938307166e-12,
+      "archived_linear_relative_residuals": [
+        5.399203066861876e-13,
+        5.803936572373042e-12,
+        5.444866230164815e-12,
+        6.637180093104722e-12,
+        4.804921055267159e-12,
+        4.9484861027159456e-12
+      ],
+      "independent_component_B_relative_errors": [
+        3.2096748405210627e-12,
+        7.941935963180397e-15,
+        8.383507559093562e-14,
+        3.793117484144726e-15,
+        6.964110460541572e-14,
+        1.061842319079569e-15
+      ],
+      "fresh_AD_HVP_checks": [
+        {
+          "column": 0,
+          "fresh_AD_HS_plus_B_relative": 6.135151412267178e-13
+        },
+        {
+          "column": 1,
+          "fresh_AD_HS_plus_B_relative": 5.59731961048186e-12
+        },
+        {
+          "column": 2,
+          "fresh_AD_HS_plus_B_relative": 5.559497564172728e-12
+        },
+        {
+          "column": 3,
+          "fresh_AD_HS_plus_B_relative": 6.280677357828574e-12
+        },
+        {
+          "column": 4,
+          "fresh_AD_HS_plus_B_relative": 5.223906281614235e-12
+        },
+        {
+          "column": 5,
+          "fresh_AD_HS_plus_B_relative": 4.797908818223774e-12
+        }
+      ],
+      "sampled_smooth_mean_graph_FDs": [
+        {
+          "weighting": "current_disk",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 2.5570101591654293e-12,
+              "finite_difference": [
+                -0.14131279089824034,
+                -0.049199194525506584,
+                -0.19051198542285874
+              ],
+              "analytic_midpoint": [
+                -0.14131279089568333,
+                -0.04919919452562169,
+                -0.190511985421305
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 4.972133815783764e-13,
+              "finite_difference": [
+                -0.17815837114909527,
+                0.08853907153349994,
+                -0.08961929961515125
+              ],
+              "analytic_midpoint": [
+                -0.17815837114859806,
+                0.08853907153354587,
+                -0.0896192996150522
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 4.232221684219439e-09,
+              "finite_difference": [
+                -7.82949674306721,
+                1.9857314293825201,
+                -5.843765313684912
+              ],
+              "analytic_midpoint": [
+                -7.829496739369185,
+                1.985731429916494,
+                -5.8437653094526905
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 5.278388837126613e-12,
+              "finite_difference": [
+                0.6226701295553028,
+                -0.9876980631533527,
+                -0.36502793359893815
+              ],
+              "analytic_midpoint": [
+                0.6226701295598162,
+                -0.987698063153476,
+                -0.36502793359365976
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 1.3251355568399958e-10,
+              "finite_difference": [
+                4.376198597075387,
+                0.3604146075490977,
+                4.736613204624263
+              ],
+              "analytic_midpoint": [
+                4.3761985972038175,
+                0.36041460755295807,
+                4.736613204756776
+              ]
+            }
+          ]
+        },
+        {
+          "weighting": "current_radial_line",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 7.912559496503491e-13,
+              "finite_difference": [
+                -0.11668762358851836,
+                -0.04722091099451653,
+                -0.16390853458325694
+              ],
+              "analytic_midpoint": [
+                -0.11668762358790426,
+                -0.0472209109945614,
+                -0.16390853458246568
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 7.312622729571672e-13,
+              "finite_difference": [
+                -0.17920477181476713,
+                0.08849586829984268,
+                -0.09070890351559058
+              ],
+              "analytic_midpoint": [
+                -0.179204771814697,
+                0.08849586829983769,
+                -0.09070890351485932
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 4.0841063864149874e-10,
+              "finite_difference": [
+                -8.607456834276661,
+                2.097796366732352,
+                -6.509660467543199
+              ],
+              "analytic_midpoint": [
+                -8.607456834488932,
+                2.0977963671407625,
+                -6.50966046734817
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 7.47607531437211e-12,
+              "finite_difference": [
+                0.6957209825984023,
+                -1.0678523859704026,
+                -0.3721314033722223
+              ],
+              "analytic_midpoint": [
+                0.6957209826057958,
+                -1.067852385970542,
+                -0.3721314033647462
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 9.399503397844455e-11,
+              "finite_difference": [
+                4.799061125059012,
+                0.35165770433498444,
+                5.150718829394663
+              ],
+              "analytic_midpoint": [
+                4.7990611251520985,
+                0.3516577043365588,
+                5.150718829488658
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "index": 11,
+      "strength": 6.305962772374203,
+      "fresh_force_linf": 2.6356911445035713e-12,
+      "archived_linear_relative_residuals": [
+        5.506932848009475e-13,
+        5.967833240478892e-12,
+        5.4850591972654584e-12,
+        6.491012533831689e-12,
+        4.52268221380874e-12,
+        5.864490471020675e-12
+      ],
+      "independent_component_B_relative_errors": [
+        4.618106172765952e-12,
+        1.1848137599226352e-14,
+        1.069408274369504e-13,
+        6.452028543787922e-15,
+        1.1832692085813464e-13,
+        7.745440852629491e-16
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "index": 12,
+      "strength": 5.766931806587817,
+      "fresh_force_linf": 5.36409195870096e-11,
+      "archived_linear_relative_residuals": [
+        5.718058185854169e-13,
+        5.182829886193208e-12,
+        4.65709054051158e-12,
+        6.128900635770245e-12,
+        4.975754420887422e-12,
+        6.291203688831164e-12
+      ],
+      "independent_component_B_relative_errors": [
+        5.419399256596465e-12,
+        2.0260343482742133e-14,
+        1.207436168779871e-13,
+        8.810282765683934e-15,
+        9.580187016428621e-14,
+        8.155883318151184e-16
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "index": 13,
+      "strength": 2.2240723828420594,
+      "fresh_force_linf": 3.1572106040655967e-12,
+      "archived_linear_relative_residuals": [
+        7.163704233858107e-13,
+        3.6079138980407257e-12,
+        4.337144144399474e-12,
+        5.6840359023725125e-12,
+        4.7894674920154145e-12,
+        8.520585898210623e-12
+      ],
+      "independent_component_B_relative_errors": [
+        1.0565981768083284e-11,
+        1.7379396694565543e-14,
+        1.516561477986419e-13,
+        1.2033964459468169e-14,
+        1.8411173634568097e-13,
+        6.658593957207834e-16
+      ],
+      "fresh_AD_HVP_checks": [
+        {
+          "column": 0,
+          "fresh_AD_HS_plus_B_relative": 6.243541646186736e-13
+        },
+        {
+          "column": 1,
+          "fresh_AD_HS_plus_B_relative": 3.479838405595048e-12
+        },
+        {
+          "column": 2,
+          "fresh_AD_HS_plus_B_relative": 4.085400564243711e-12
+        },
+        {
+          "column": 3,
+          "fresh_AD_HS_plus_B_relative": 5.479852892883016e-12
+        },
+        {
+          "column": 4,
+          "fresh_AD_HS_plus_B_relative": 4.709824287061512e-12
+        },
+        {
+          "column": 5,
+          "fresh_AD_HS_plus_B_relative": 7.971842991881854e-12
+        }
+      ],
+      "sampled_smooth_mean_graph_FDs": [
+        {
+          "weighting": "current_disk",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 2.940425680719727e-12,
+              "finite_difference": [
+                0.0036981113140654998,
+                -0.012551418546447035,
+                -0.008853307232659091
+              ],
+              "analytic_midpoint": [
+                0.0036981113167241205,
+                -0.012551418546442787,
+                -0.008853307229718665
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 1.796368609419119e-12,
+              "finite_difference": [
+                -0.04202034698863599,
+                0.022999580287452748,
+                -0.019020766701238756
+              ],
+              "analytic_midpoint": [
+                -0.04202034699043236,
+                0.022999580287448987,
+                -0.019020766702983374
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 6.09619021929575e-11,
+              "finite_difference": [
+                -3.9091511473436924,
+                0.46798178877632823,
+                -3.4411693585671976
+              ],
+              "analytic_midpoint": [
+                -3.9091511474046543,
+                0.46798178878175356,
+                -3.4411693586229006
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 3.4030833706566455e-12,
+              "finite_difference": [
+                0.1711805255055765,
+                -0.36276863955708727,
+                -0.19158811405173282
+              ],
+              "analytic_midpoint": [
+                0.17118052550874222,
+                -0.36276863955707195,
+                -0.19158811404832973
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 3.86379817030047e-11,
+              "finite_difference": [
+                2.117946990388475,
+                0.35774306626246144,
+                2.4756900566509366
+              ],
+              "analytic_midpoint": [
+                2.1179469904271038,
+                0.3577430662624708,
+                2.4756900566895745
+              ]
+            }
+          ]
+        },
+        {
+          "weighting": "current_radial_line",
+          "fresh_geometric_FD_checks": [
+            {
+              "column": 1,
+              "step": 0.0005,
+              "max_abs_error": 1.2721490527667356e-12,
+              "finite_difference": [
+                0.010273263868043614,
+                -0.012482839323424422,
+                -0.002209575455047741
+              ],
+              "analytic_midpoint": [
+                0.010273263869315763,
+                -0.012482839323444342,
+                -0.0022095754541285786
+              ]
+            },
+            {
+              "column": 2,
+              "step": 0.0005,
+              "max_abs_error": 2.162998946619865e-12,
+              "finite_difference": [
+                -0.04120366160620392,
+                0.023825377823749605,
+                -0.017378283782676363
+              ],
+              "analytic_midpoint": [
+                -0.04120366160419341,
+                0.023825377823680046,
+                -0.017378283780513364
+              ]
+            },
+            {
+              "column": 3,
+              "step": 0.0005,
+              "max_abs_error": 1.737125998602096e-10,
+              "finite_difference": [
+                -4.242270191223696,
+                0.48517303572848114,
+                -3.757097155495437
+              ],
+              "analytic_midpoint": [
+                -4.242270191397409,
+                0.48517303573284104,
+                -3.757097155664568
+              ]
+            },
+            {
+              "column": 4,
+              "step": 0.0005,
+              "max_abs_error": 6.376843497690743e-13,
+              "finite_difference": [
+                0.1809652979360976,
+                -0.39777733781642954,
+                -0.2168120398802209
+              ],
+              "analytic_midpoint": [
+                0.1809652979367353,
+                -0.39777733781640545,
+                -0.21681203987967015
+              ]
+            },
+            {
+              "column": 5,
+              "step": 0.0005,
+              "max_abs_error": 2.787770014833768e-11,
+              "finite_difference": [
+                2.2969480874763804,
+                0.3917015125479706,
+                2.688649600024462
+              ],
+              "analytic_midpoint": [
+                2.2969480875042185,
+                0.3917015125481211,
+                2.6886496000523397
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "index": 14,
+      "strength": 6.497199052670194,
+      "fresh_force_linf": 3.637989947269035e-12,
+      "archived_linear_relative_residuals": [
+        5.246345016468195e-13,
+        4.646266791017525e-12,
+        4.768321070104918e-12,
+        6.030823447489733e-12,
+        5.793116272147906e-12,
+        5.501490551565183e-12
+      ],
+      "independent_component_B_relative_errors": [
+        4.4893026314520946e-12,
+        1.9076649750192572e-14,
+        7.242279990881067e-14,
+        4.122262877990894e-15,
+        8.19586353815774e-14,
+        7.938518898175508e-16
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "index": 15,
+      "strength": 6.091386123193455,
+      "fresh_force_linf": 1.4000426024670526e-10,
+      "archived_linear_relative_residuals": [
+        5.359320361594219e-13,
+        5.228752657610782e-12,
+        4.350482769767364e-12,
+        5.923873235177196e-12,
+        4.774709485723373e-12,
+        5.962257373717292e-12
+      ],
+      "independent_component_B_relative_errors": [
+        5.175749467508966e-12,
+        1.6836319341274907e-14,
+        7.444327638212441e-14,
+        5.550752859722355e-15,
+        7.092322821714367e-14,
+        1.1112930434275253e-15
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "index": 16,
+      "strength": 6.859469030568742,
+      "fresh_force_linf": 1.231820165618555e-10,
+      "archived_linear_relative_residuals": [
+        7.098510464445667e-13,
+        5.585336763380718e-12,
+        4.816557702882451e-12,
+        6.0129222010879435e-12,
+        4.54005873137582e-12,
+        5.572399866739911e-12
+      ],
+      "independent_component_B_relative_errors": [
+        4.3215976687109765e-12,
+        1.0161161672763514e-14,
+        8.544559578176638e-14,
+        6.365060904211264e-15,
+        7.824142814449743e-14,
+        1.0796629163103908e-15
+      ],
+      "fresh_AD_HVP_checks": [],
+      "sampled_smooth_mean_graph_FDs": []
+    }
+  ],
+  "baseline_common_gain_exact": "227837889871219561697764743131811280995244025051840221298000446602475877729600094285525966271113758605933299480242162835218853328241239714855051483817817221382904242351939102254307189991717998558234000/28257308757204942712226747398045139545080925529826764943977596399332230680295520663128560465729059028479494982233396911548866051355009481375019548833946837386968169054404715801476974297166946767840803",
+  "active_coordinates": [
+    "log_apical_area",
+    "log_basal_area",
+    "apical_tension_additive",
+    "log_basal_tension",
+    "log_common_gain"
+  ],
+  "six_tangent_columns": [
+    "log_kappa",
+    "log_apical_area",
+    "log_basal_area",
+    "apical_tension_additive",
+    "log_basal_tension",
+    "log_common_gain"
+  ],
+  "source_input_archive_sha256": {
+    "runs/joint_gain_extension_v2/direct/001/final.json": "fd76d1c85c3162f4b8cd08c7ac2f49da3e234fe86d41405cd8f16a4f215a0374",
+    "runs/material_cohort_descent_v1/records/00/observer_tangents.json": "08b8b2206cfc2ca8f7d7a73377a7a8d7b350992c42c81164902b9f0aa6035516",
+    "runs/material_cohort_descent_v1/records/00/mechanical_tangents.npz": "38b52d4e933618db0c35df4f63324bde0031fd7e4b3ee514c28c801dcb614fae",
+    "runs/material_cohort_descent_v1/records/00/mechanical_verification.json": "b76bfde90847c31e0399de22ef01c8a7e0526efed7d1f696c049f469d86ac5bd",
+    "runs/joint_gain_extension_v2/direct/009/final.json": "f27545c0e630aa52d7be6f98baa60e474c3a0be289d16e1ca06e78af2edccc53",
+    "runs/material_cohort_descent_v1/records/01/observer_tangents.json": "058fabba61b362eea8e716c3cd82ef96c67eeb4ad1101af56e6a55ad1bb0b4a0",
+    "runs/material_cohort_descent_v1/records/01/mechanical_tangents.npz": "ca35921bd83ac46db54e3bfb0d29a3c0271d8b147bebad8e764799b4623cc4fb",
+    "runs/material_cohort_descent_v1/records/01/mechanical_verification.json": "99819a2c55a2b18748ca8462dae29aebb3e2c79e829dfa06d7863c77bb49f984",
+    "runs/joint_gain_extension_v2/direct/023/final.json": "3ddc0992c5b2ec91782cb3232a9dae17727d49dd9af330a729d31844b552e70e",
+    "runs/material_cohort_descent_v1/records/02/observer_tangents.json": "185d71eaeb4050976e41ef5e0ca5ac231158176fa4640687d9b4a5dceb4ea312",
+    "runs/material_cohort_descent_v1/records/02/mechanical_tangents.npz": "87505695b5931b103cadf0563ed4a9afc2fd68b2777996a1bdb5c6e84b31e9e8",
+    "runs/material_cohort_descent_v1/records/02/mechanical_verification.json": "2cb04092041ae8ac33ab0385408e20fc404c24f2ea8c645959d6f4769452a779",
+    "runs/joint_gain_extension_v2/direct/050/final.json": "5f123db1aa0acb23c68412f3e9b6ed4f349b25658166ce065ff1102c620f3cea",
+    "runs/material_cohort_descent_v1/records/03/observer_tangents.json": "c1ef2f745391003dfd2479211df2cee1065f7f345a7cf44ffdbe699b37282e33",
+    "runs/material_cohort_descent_v1/records/03/mechanical_tangents.npz": "959f94330609edcac253c30b13394402e0b755634046e661b80353875581a6db",
+    "runs/material_cohort_descent_v1/records/03/mechanical_verification.json": "43215d0dab3b854c9a694a5fa631530e1f99412649f9b0335fd93609f89b9923",
+    "runs/joint_gain_extension_v2/direct/014/final.json": "9fc538705d67ecb0e42009659f3a660a8df2bfe920592c3b1595f3ade557c9f0",
+    "runs/material_cohort_descent_v1/records/04/observer_tangents.json": "abb189f7ab251793f2fcacf97a8385e5d02e7bb64cd5169028a9e5da40f561bd",
+    "runs/material_cohort_descent_v1/records/04/mechanical_tangents.npz": "2931d37f58f1c831a3b2169604e24633ba1e5dc48be61443760d7b43378c2b54",
+    "runs/material_cohort_descent_v1/records/04/mechanical_verification.json": "baa67e1fdc183841f1917e7f8e06ae98e615dfc094fb4208b9a6f1a9a4ec921b",
+    "runs/joint_gain_extension_v2/direct/055/final.json": "018bb06b6d3f1cba77bcbefa0f4d328963d96161a850a1b707888c80271a03af",
+    "runs/material_cohort_descent_v1/records/05/observer_tangents.json": "1dc5b0fc67b649c7d1d44642c76e1951699556394c44c1d98106558ceb96e08b",
+    "runs/material_cohort_descent_v1/records/05/mechanical_tangents.npz": "c5d8a7946fc7adf61328eff0f002623f332f1bd8b9922794fe8d179807e1a823",
+    "runs/material_cohort_descent_v1/records/05/mechanical_verification.json": "3aa1de51e33a820a304c5738a02aeb3e5e2a2bd728bd076cbd5e3af28eb8060d",
+    "runs/joint_gain_extension_v2/direct/038/final.json": "5564a9184a945bb6f375d10b705fb1caaebccade9103b38fc60ebf7580a05bc1",
+    "runs/material_cohort_descent_v1/records/06/observer_tangents.json": "0bee1dab2d7dc9dbd49f56a59d1b5be6f0051aa35a3e440116d451e6981bbe68",
+    "runs/material_cohort_descent_v1/records/06/mechanical_tangents.npz": "9a55f7a7a80fdc6cf0397860c672fd9ecf6a4ad7c264caa664dea40cb884116a",
+    "runs/material_cohort_descent_v1/records/06/mechanical_verification.json": "ffbe4f6b2367cd8a039ee1932b72b1705fe03a6c6945d8106713301bab41a780",
+    "runs/joint_gain_extension_v2/direct/016/final.json": "17501df5ae631391525fe22413851b5bdf7c4386345ae36f691408cdce0d9d7f",
+    "runs/material_cohort_descent_v1/records/07/observer_tangents.json": "98dcde6666899aedb6bea24e3c31c99d830dc681765ab3be73adee16cf2568a3",
+    "runs/material_cohort_descent_v1/records/07/mechanical_tangents.npz": "677cb3090b5a77530ad85e2147dc0afdbd7248154d9582ecb4745941a51ba075",
+    "runs/material_cohort_descent_v1/records/07/mechanical_verification.json": "1914ccf626b577b24b26eab548429a4a1404ca1b1be013c608c17a5378cf4418",
+    "runs/joint_gain_extension_v2/direct/051/final.json": "0b8c9ffa7b5be4d0da81d33b5d63d17681bed7a23e2dd20ada525b86013bffa5",
+    "runs/material_cohort_descent_v1/records/08/observer_tangents.json": "384373db099ac9668175c1b53a091f6317e0f8e1538b8cf7d6f6d2df60be1ee3",
+    "runs/material_cohort_descent_v1/records/08/mechanical_tangents.npz": "ed9e2d0bec5cffca3b47d406ad3252df8dfa9eef201ded90c755b963acd55ae1",
+    "runs/material_cohort_descent_v1/records/08/mechanical_verification.json": "8d588708c2744d6e03ede680d10ce24e3b5bb5c8fb73755b2665e66441e4771d",
+    "runs/joint_gain_extension_v2/direct/061/final.json": "ccfef4778b495c11e05b633217c6ed63da0749fbca034013d021a10ed415ed0c",
+    "runs/material_cohort_descent_v1/records/09/observer_tangents.json": "74e0c096628ee938d4babcbee2f6b09371df6e88100ded92494e1f0a5012fbfd",
+    "runs/material_cohort_descent_v1/records/09/mechanical_tangents.npz": "d0e9418742c70f0afd3aadafaf2e00d8d2f91988685b12fdfb30c261fe146801",
+    "runs/material_cohort_descent_v1/records/09/mechanical_verification.json": "aa75bbca9a3c8d7dd4a9f390e1bed1111a2556254b8ebc4db426385b1e935fcf",
+    "runs/joint_gain_extension_v2/direct/064/final.json": "353e470217bbe9f0ab93656379a83fcf435cc53cfdbebd12ffe44ccbc3024000",
+    "runs/material_cohort_descent_v1/records/10/observer_tangents.json": "95a60072aa7ac02a3cf9af684f580e50812c9523fa185e597756744bea837005",
+    "runs/material_cohort_descent_v1/records/10/mechanical_tangents.npz": "9b4582fbd30ee81c05910e8e1b39721cb8fb3f79b45ea1179fbc0c943e62b358",
+    "runs/material_cohort_descent_v1/records/10/mechanical_verification.json": "acde965ea38609285e248cddbc0dcc2d42a7f5a8de7a85dd3add4d88eb57ae7f",
+    "runs/joint_gain_extension_v2/direct/033/final.json": "c3cc9fe6550e4e82dfffaf49c044b0a52370b5ecd38832fb3c1849a91e0af698",
+    "runs/material_cohort_descent_v1/records/11/observer_tangents.json": "8ce8b0e1e72d7ef780e1715bc0a42a74b346812fa237a0fb52710a0eb6b4622f",
+    "runs/material_cohort_descent_v1/records/11/mechanical_tangents.npz": "abb19fa2d349f501cd3bf0f0c1a48275f11c2e7f9cf546ce39aafe624f5aedc4",
+    "runs/material_cohort_descent_v1/records/11/mechanical_verification.json": "0d8fff13f62977b0db007f839bbae4874bfd277ceb1d7c2335225b21b1927ef9",
+    "runs/joint_gain_extension_v2/direct/026/final.json": "0c53cf3b006f469ebcc8aba25fcb5302dbff2f9f30c95eef3c63a25a7ebf150d",
+    "runs/material_cohort_descent_v1/records/12/observer_tangents.json": "98809713a7a65db741cefaabd2958f66892b97190ffa5c6ce5a5913f4e80f938",
+    "runs/material_cohort_descent_v1/records/12/mechanical_tangents.npz": "1b13fdfaec8a8cf74546ebe4809c1f38b38ae3e39ba53fb4f3cb97e792efb0fe",
+    "runs/material_cohort_descent_v1/records/12/mechanical_verification.json": "90e2599369eb3c3e240a44e536b023eeab69b2e5e9519202b9a8424dca49c5ac",
+    "runs/joint_gain_extension_v2/direct/005/final.json": "9e460f4d55f44f58a353e8e1855bc10d575338cb37c4b8c38b752f026c8da5d1",
+    "runs/material_cohort_descent_v1/records/13/observer_tangents.json": "85c00393f1b68107d110b1b53fd9cc97d05cdd9443edbd4298d31da2c2cde9c3",
+    "runs/material_cohort_descent_v1/records/13/mechanical_tangents.npz": "3512844c6cdd214bfe43457f8cb1f262c88727d1b7e3fc86471ec6821ad10872",
+    "runs/material_cohort_descent_v1/records/13/mechanical_verification.json": "3e238da760b1d7c9a8e126b179355d168072f58431c14aeb159771b802fd1ca9",
+    "runs/joint_gain_extension_v2/direct/035/final.json": "46ad300b74a4f6d922b76b5bcb89eb6c3d7a8e154dbddd936243f8e8dc157b29",
+    "runs/material_cohort_descent_v1/records/14/observer_tangents.json": "032bf6fa38091f9709cb8b287d50dc98341617480f6809ff3218cb484cd35baf",
+    "runs/material_cohort_descent_v1/records/14/mechanical_tangents.npz": "f32948e800a48e9022f3f417a5e17696b36b08e147326c1278fa5d7f63cb894a",
+    "runs/material_cohort_descent_v1/records/14/mechanical_verification.json": "76a25c5bdbca647f1f7d6617aca384058863e6788c6309cfacb85529868fee3d",
+    "runs/joint_gain_extension_v2/direct/030/final.json": "a16df66eaa7c41afc9ece64b5f06f36a0bad5da9934e91c5b1e2a514a3c7b311",
+    "runs/material_cohort_descent_v1/records/15/observer_tangents.json": "289d5374c7c12fdd75cd5782bc05136affc0103dea05e2a09c64ed7d0b20b52b",
+    "runs/material_cohort_descent_v1/records/15/mechanical_tangents.npz": "879c44f991093b98cb0e9c989ff332e1304ab6c666e4b53e229eac81ddc0a099",
+    "runs/material_cohort_descent_v1/records/15/mechanical_verification.json": "26c28c4fd01580bca821a2cbf903cfdba266447a6c05550a25046989b39b11f4",
+    "runs/joint_gain_extension_v2/direct/041/final.json": "dbe878ffaaa6cf5a8425a650b06a3915e6aafdcec9bd27d87f3aee7202dd71cf",
+    "runs/material_cohort_descent_v1/records/16/observer_tangents.json": "4a46b6280abde01a5de42223b2eaed8f894501bb0223217593b7ca857be35d86",
+    "runs/material_cohort_descent_v1/records/16/mechanical_tangents.npz": "9e4a95cf4f5626e3fd69879604d912d91f6a1818550852db37ec9e179383c066",
+    "runs/material_cohort_descent_v1/records/16/mechanical_verification.json": "a1bc6e81b370dfa60284b355cb8a797f4de220419007ffb340383ca62279cc0b"
+  },
+  "reviewed_metadata_sha256": {
+    "runs/material_cohort_descent_v1/protocol.json": "dbec2723481dc9a3a66c6dbde0648721b7283b734b33d532477e2d3357d47c47",
+    "runs/material_cohort_descent_v1/results.json": "70c3b02bd4a26e57181875715af5ad3865688a76374ca26de67bc7ac10d89259",
+    "runs/material_cohort_descent_v1/job.json": "41504dc9786dba7787490c7db63cf3dc684ab37cc37193b96b1d69657d7baef9",
+    "scripts/material_cohort_descent.py": "8343f4908a76a47f8c83159e7befbbaa23afdc7d4a5f4689bda9ec901e3957c1"
+  },
+  "independent_program": "from pathlib import Path\nfrom fractions import Fraction as Q\nimport sys,json,csv,hashlib\nimport numpy as np,torch\nfrom scipy.sparse import csr_matrix\nsys.path.insert(0,str(Path('controlled_furrowing/scripts').resolve()))\nfrom sparse_quadratic import AxisymmetricModel,Parameters\nfrom quadratic_mean_derivatives import mean_state_gradients\nfrom quadratic_endpoint_observer import Curve,mass,scale\nroot=Path('controlled_furrowing');out=root/'runs/material_cohort_descent_v1';torch.set_num_threads(1);sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()\nprotocol=json.loads((out/'protocol.json').read_text());result=json.loads((out/'results.json').read_text());job=json.loads((out/'job.json').read_text());baseline=json.loads((root/'runs/joint_gain_extension_v2/direct_results.json').read_text())\nraw={r['record_id']:r for r in csv.DictReader((root/'data/derived/calibration_small_18um.csv').open(encoding='utf-8-sig',newline=''))}\nobsnames=('maximum_shortening_um','region_averaged_shortening_um','apical_max_shortening_um','basal_max_shortening_um')\nallcolumns=('log_kappa','log_apical_area','log_basal_area','apical_tension_additive','log_basal_tension','log_common_gain')\nactive=(1,2,3,4,5);L=Q('33.5');gain=Q(protocol['baseline_gain_exact']);checks={};rows=[];input_hashes={}\nchecks['terminal17job_result_hash']=job['status']=='FINISHED' and job['records_verified']==17 and sha(out/'results.json')==job['result_sha256']\nchecks['exact17_unique_complete_source_coverage']=len(protocol['records'])==17 and len(set(r['record_id'] for r in protocol['records']))==17 and set(r['record_id'] for r in protocol['records'])==set(raw)\nchecks['all17_result_records_same_order']=len(result['records'])==17 and [r['record_id'] for r in result['records']]==[r['record_id'] for r in protocol['records']]\nchecks['five_active_coordinates_exclude_kappa']=tuple(protocol['active_column_indices'])==active and tuple(protocol['all_mechanical_tangent_columns'])==allcolumns and tuple(protocol['active_LP_columns'])==tuple(allcolumns[i] for i in active)\nchecks['fixed_kappa_and_fixed_geometry_declared']=protocol['fixed_compression_coefficient']==5000 and protocol['parameters']['bulk']==5000 and protocol['fixed_geometry'] and protocol['fixed_length_um']=='67/2'\nchecks['sources_match_protocol_and_results']=protocol['sources']==result['source_hashes'] and all(sha(root/'scripts'/name)==digest for name,digest in protocol['sources'].items())\nchecks['protocol_hash_matches_results']=sha(out/'protocol.json')==result['protocol_sha256']\nchecks['baseline_direct_result_hash_matches']=sha(root/'runs/joint_gain_extension_v2/direct_results.json')==protocol['baseline_direct_results_sha256']\nchecks['prior_independent_direct_review_hash_matches']=sha(root/'evidence/joint_direct_independent_review.json')==protocol['independent_direct_review_sha256']\nbest=next(v for v in baseline['variants'] if v['variant']==protocol['baseline_variant'])\nchecks['baseline_gain_same_as_selected_prior_candidate']=Q(best['selected_exact_SURROGATE_gain'])==gain\nchecks['baseline_best_only_among_four_prior_candidates']=all(Q(best['direct_candidate_discrepancy_requirement_um_exact'][1])<Q(v['direct_candidate_discrepancy_requirement_um_exact'][0]) for v in baseline['variants'] if v['variant']!=protocol['baseline_variant'])\nchecks['same17_baseline_states_and_no_new_equilibria']=protocol['same17_base_states_for_all4_variants'] and result['new_equilibrium_solves']==0 and protocol['no_new_equilibrium_solves']\n\ndef component_B(model,u,f):\n x=torch.tensor(u,dtype=torch.float64,requires_grad=True);y=model.coordinates(x);nodal=y[model.tri]\n F=torch.einsum('tad,tqaj->tqdj',nodal,model.shape_grad);R=torch.einsum('qa,tad->tqd',model.shape,nodal)[:,:,0];J=torch.linalg.det(F)*R/model.qr;w=model.integration\n Ekap=(w*model.parameters.bulk/2*torch.log(J)**2).sum();Eact=(w*model.active*f/2*(F[:,:,:,1]**2).sum(2)).sum()\n q,gw=np.polynomial.legendre.leggauss(12);q=(q+1)/2;gw=torch.tensor(gw/2,dtype=torch.float64);N=torch.tensor(np.stack([1-3*q+2*q*q,4*q-4*q*q,-q+2*q*q],1));dN=torch.tensor(np.stack([-3+4*q,4-8*q,-1+4*q],1));P={}\n for name,edges,K,T in [('a',model.top_edges,model.parameters.apical_area_modulus,model.parameters.apical_surface_tension),('b',model.bottom_edges,model.parameters.basal_area_modulus,model.parameters.basal_surface_tension)]:\n  z=y[edges];X=model.X[edges];currentR=torch.einsum('qa,tad->tqd',N,z)[:,:,0];dy=torch.einsum('qa,tad->tqd',dN,z);dA=2*np.pi*currentR*torch.sqrt((dy*dy).sum(2));refR=torch.einsum('qa,tad->tqd',N,X)[:,:,0];length=torch.sqrt(((X[:,2]-X[:,0])**2).sum(1));dA0=2*np.pi*refR*length[:,None]\n  P[name+'area']=(gw*dA0*K/2*(dA/dA0-1)**2).sum();P[name+'truearea']=(gw*dA).sum()\n pieces=[Ekap,P['aarea'],P['barea'],P['atruearea'],model.parameters.basal_surface_tension*P['btruearea'],Eact]\n return np.column_stack([torch.autograd.grad(e/model.energy_scale,x,retain_graph=True)[0].detach().numpy() for e in pieces])\ndef mean_on_vector(model,u,edges,roi,weight):\n nodes=model.coordinates(torch.tensor(u,dtype=torch.float64)).detach().numpy()[edges];controls=[[(Q(float(r))*L,Q(float(z))*L) for r,z in edge] for edge in nodes];g=Curve(controls);value=scale(g.integral(roi,weight),1/mass(roi,weight));return float((value.lo+value.hi)/2)\nsamples={0,5,7,10,13}\nfor i,(rec,rowref) in enumerate(zip(protocol['records'],result['records'])):\n prefix=str(i);statepath=root/rec['field'];state=json.loads(statepath.read_text());rowpath=root/rowref['file'];row=json.loads(rowpath.read_text());folder=rowpath.parent;archpath=folder/'mechanical_tangents.npz';arch=np.load(archpath);verpath=folder/'mechanical_verification.json';ver=json.loads(verpath.read_text());model=AxisymmetricModel(Parameters(**state['parameters']));u=np.array(state['free_displacement']);f=state['activation_strength'];B=arch['parameter_force_derivatives'];S=arch['displacement_tangents'];free=arch['free_indices'];H=csr_matrix((arch['H_data'],arch['H_indices'],arch['H_indptr']),shape=tuple(arch['H_shape']))\n input_hashes.update({p.relative_to(root).as_posix():sha(p) for p in (statepath,rowpath,archpath,verpath)})\n checks[prefix+'_all_input_and_archive_hashes_match']=sha(statepath)==rec['field_sha256']==row['input_field_sha256'] and sha(rowpath)==rowref['sha256'] and sha(archpath)==row['mechanical_archive_sha256'] and sha(verpath)==row['mechanical_verification_sha256']\n checks[prefix+'_exact_gain_dose_and_canonical_source_values']=f==float(gain*Q(rec['dose_exact'])) and rec['dose_exact']==raw[rec['record_id']]['activation_magnitude'] and all(Q(rec['observed_exact'][k])==Q(raw[rec['record_id']][k]) for k in obsnames)\n checks[prefix+'_same_material_geometry_and_Q8']=state['parameters']==protocol['parameters'] and state['parameters']['bulk']==5000 and state['integration_policy']=={'volume_duffy_gauss_order':8,'surface_gauss_order':12,'volume_chunk_triangles':12}\n checks[prefix+'_archive_vector_indices_and_six_column_shapes']=np.array_equal(arch['free_vector'],u) and np.array_equal(free,model.free) and B.shape==S.shape==(len(u),6) and H.shape==(len(u),len(u))\n e,g=model.objective(u,f);force=float(np.max(abs(g)));checks[prefix+'_fresh_force_gate_and_stored_force']=force<1e-7 and abs(force-ver['force_linf'])<1e-12\n linear=np.linalg.norm(H@S+B,axis=0)/np.maximum(np.linalg.norm(B,axis=0),1e-14);checks[prefix+'_all6_archived_HS_plus_B_residuals']=bool(max(linear)<1e-9)\n ownB=component_B(model,u,f);Berr=np.linalg.norm(ownB-B,axis=0)/np.maximum(np.linalg.norm(B,axis=0),1e-14);checks[prefix+'_all6_independent_component_B_columns']=bool(max(Berr)<1e-9)\n checks[prefix+'_five_graph_directions_correct_names']=tuple(d['coordinate'] for d in row['coordinate_diagnostics'])==tuple(allcolumns[c] for c in active)\n local_fd_checks=[]\n for j,direction in enumerate(row['coordinate_diagnostics']):\n  pairs=direction['two_steps'];checks[f'{prefix}_{j}_two_steps_and_both_positive_geometry_screens']=len(pairs)==2 and pairs[0]['step']==2*pairs[1]['step'] and all(v['floating_local_orientation_positive'] for pair in pairs for v in pair['geometry'].values())\n  for k,pair in enumerate(pairs):\n   denom=2*Q.from_float(pair['step'])\n   okay=True\n   for variant,values in pair['central_difference_intervals'].items():\n    for key,bounds in values.items():\n     a,b=map(Q,pair['endpoint_intervals']['1'][variant][key]);c,d=map(Q,pair['endpoint_intervals']['-1'][variant][key]);okay &= list(map(Q,bounds))==[(a-d)/denom,(b-c)/denom]\n   checks[f'{prefix}_{j}_{k}_FD_interval_algebra_exact']=okay\n # Contract all three smoothmean exact node derivatives independently, all17.\n mean_rows=[];roi=(Q(0),Q(state['parameters']['patch_radius'])*L)\n for weight in ('current_disk','current_radial_line'):\n  derivative=mean_state_gradients(state,weighting=weight);contracted={}\n  for name,gradient in derivative['node_gradients'].items():\n   flat=[v for pair in gradient for v in pair];certs=[]\n   for col in active:\n    lo=hi=Q(0)\n    for idx,c in zip(free,S[:,col]):\n     v=flat[idx];a=Q.from_float(float(c))*L;lo+=min(a*v.lo,a*v.hi);hi+=max(a*v.lo,a*v.hi)\n    certs.append((lo,hi))\n   contracted[name]=certs\n   checks[prefix+'_'+weight+'_'+name+'_full_exact_chain_rule']=certs==[tuple(map(Q,ab)) for ab in row['analytic_smooth_mean_tangent_intervals'][weight][name]]\n  if i in samples:\n   FD=[]\n   for j,col in enumerate(active):\n    h=row['coordinate_diagnostics'][j]['two_steps'][1]['step'];values={}\n    for sign in (-1,1):\n     trial=u+sign*h*S[:,col];top=mean_on_vector(model,trial,model.top_edges,roi,weight);bottom=mean_on_vector(model,trial,model.bottom_edges,roi,weight);values[sign]=np.array([33.5-top,bottom,33.5-top+bottom])\n    fd=(values[1]-values[-1])/(2*h)\n    names=('apical_regional_mean_downward','basal_regional_mean_upward','height_regional_mean_shortening');expected=np.array([float(sum(contracted[name][j])/2) for name in names]);error=float(max(abs(fd-expected)));checks[f'{prefix}_{weight}_{j}_fresh_lowlevel_graph_mean_FD']=error<2e-6;FD.append({'column':col,'step':h,'max_abs_error':error,'finite_difference':fd.tolist(),'analytic_midpoint':expected.tolist()})\n   mean_rows.append({'weighting':weight,'fresh_geometric_FD_checks':FD})\n HVP=[]\n if i in samples:\n  x=torch.tensor(u,dtype=torch.float64,requires_grad=True);E=model.energy_components(model.coordinates(x),f)['total']/model.energy_scale;gg=torch.autograd.grad(E,x,create_graph=True)[0]\n  for col in range(6):\n   hv=torch.autograd.grad(gg,x,grad_outputs=torch.tensor(S[:,col],dtype=torch.float64),retain_graph=True)[0].detach().numpy();relative=float(np.linalg.norm(hv+B[:,col])/max(np.linalg.norm(B[:,col]),1e-14));checks[f'{prefix}_{col}_fresh_AD_HS_residual']=relative<1e-9;HVP.append({'column':col,'fresh_AD_HS_plus_B_relative':relative})\n rows.append({'record_id':rec['record_id'],'index':i,'strength':f,'fresh_force_linf':force,'archived_linear_relative_residuals':linear.tolist(),'independent_component_B_relative_errors':Berr.tolist(),'fresh_AD_HVP_checks':HVP,'sampled_smooth_mean_graph_FDs':mean_rows})\n print('INDEPENDENT_REVIEWED '+str(i+1)+'/17 '+rec['record_id'],flush=True)\nfor candidate in result['candidates']:\n variant=candidate['variant'];expected_order=[{'record_id':rec['record_id'],'observable':key} for rec in protocol['records'] for key in obsnames]\n checks[variant+'_LP68constraint_order_and_5coordinates']=candidate['all68_constraint_order']==expected_order and len(candidate['affine_LP']['affine_derivative_coefficients_exact'])==68 and all(len(x)==5 for x in candidate['affine_LP']['affine_derivative_coefficients_exact'])\n # Dataaudit owns independent LP proof; only check derivative plumbing here.\n D=candidate['affine_LP']['affine_derivative_coefficients_exact'];at=0;okay=True\n for rec,rowref in zip(protocol['records'],result['records']):\n  row=json.loads((root/rowref['file']).read_text())\n  for key in obsnames:\n   expected=[Q.from_float(float(sum(map(Q,d['two_steps'][1]['central_difference_intervals'][variant][key]))/2)) for d in row['coordinate_diagnostics']]\n   okay &= list(map(Q,D[at]))==expected;at+=1\n checks[variant+'_LP_uses_declared_smaller_step_midpoints']=okay\nchecks['all_sources_and_saved_files_still_unchanged']=all(sha(root/rel)==digest for rel,digest in input_hashes.items()) and all(sha(root/'scripts'/name)==digest for name,digest in protocol['sources'].items())\nchecks={k:bool(v) for k,v in checks.items()}\nreceipt={'status':'PASS_INDEPENDENT_NUMERIC_COHORT_TANGENT_REVIEW' if all(checks.values()) else 'FAIL','checks':checks,'rows':rows,'baseline_common_gain_exact':str(gain),'active_coordinates':[allcolumns[i] for i in active],'six_tangent_columns':list(allcolumns),'source_input_archive_sha256':input_hashes,'reviewed_metadata_sha256':{p.relative_to(root).as_posix():sha(p) for p in (out/'protocol.json',out/'results.json',out/'job.json',root/'scripts/material_cohort_descent.py')},'independent_program':REVIEW_CODE,'method':'All17 fresh forces; independent scalar component-energy/autograd B on everyfield; all102 archived HS residuals;30 freshADHVPchecks at5selectedrecords; exact physical-node mean chainrule all17; lowlevel displaced-graph FD checks atweak/mid/strong andI/O records. No production mechanical_tangent(), optimizations or newequilibrium solves.','thresholds':{'force':1e-7,'HS_relative':1e-9,'component_B_relative':1e-9,'sample_graph_mean_FD_absolute':2e-6},'scope':'Numeric tangent/observation plumbing only. Exact LP certificate reviewed separately. Graphperturbations are not roots; two-step maximum differences do notprove differentiability or bound nonlinearerror. Kappa5000 fixed, trustboxnumerical, no updated material equilibrium, identifiedset or biology/novelty claim.'}\n(root/'evidence/material_cohort_descent_independent_review.json').write_text(json.dumps(receipt,indent=2,allow_nan=False),encoding='utf-8')\nprint(json.dumps({'status':receipt['status'],'checks':len(checks),'failed':[k for k,v in checks.items() if not v],'max_force':max(v['fresh_force_linf'] for v in rows),'max_archived_HS_residual':max(max(v['archived_linear_relative_residuals']) for v in rows),'max_B_relative_error':max(max(v['independent_component_B_relative_errors']) for v in rows)},indent=2))\nif not all(checks.values()):raise RuntimeError('Retained cohort numeric review failure')\n",
+  "method": "All17 fresh forces; independent scalar component-energy/autograd B on everyfield; all102 archived HS residuals;30 freshADHVPchecks at5selectedrecords; exact physical-node mean chainrule all17; lowlevel displaced-graph FD checks atweak/mid/strong andI/O records. No production mechanical_tangent(), optimizations or newequilibrium solves.",
+  "thresholds": {
+    "force": 1e-07,
+    "HS_relative": 1e-09,
+    "component_B_relative": 1e-09,
+    "sample_graph_mean_FD_absolute": 2e-06
+  },
+  "scope": "Numeric tangent/observation plumbing only. Exact LP certificate reviewed separately. Graphperturbations are not roots; two-step maximum differences do notprove differentiability or bound nonlinearerror. Kappa5000 fixed, trustboxnumerical, no updated material equilibrium, identifiedset or biology/novelty claim.",
+  "review_document_sha256": "25f503865a4eb7d48fa7e513449d465b8894d6f1defd70bb84059ac61efcf281",
+  "source_csv_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "final_statistics": {
+    "maximum_fresh_force_linf": 1.8562551306168865e-10,
+    "maximum_archived_HS_plus_B_relative": 9.184855496801849e-12,
+    "maximum_independent_component_B_relative": 2.057257926715134e-11,
+    "maximum_freshAD_HVP_residual": 9.459100600450956e-12,
+    "maximum_sampled_mean_graph_FD_absolute": 4.232221684219439e-09
+  },
+  "independent_program_sha256": "c1f2a3b10ad29edb2b6147b87a56102c70028b5926881066fb16d30be21beb33"
+}

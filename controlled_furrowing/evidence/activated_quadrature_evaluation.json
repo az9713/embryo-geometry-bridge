@@ -1,0 +1,437 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "lambda": 500.0,
+      "strength": 1.0,
+      "input": "runs/quadratic_robust/lambda_500.0_target_1.0/final.json",
+      "input_sha256": "b52e7b9b05b0d5e4a0e40d85f37179d7b0cfb6c8cca817b49737c66364f649f5",
+      "default_evaluation": {
+        "scaled_energy": 2.002359766743226,
+        "energy": 56.61538859739858,
+        "scaled_force_linf": 2.7324044177441664e-13,
+        "energy_components": {
+          "bulk": 0.00516426214113351,
+          "surface": 0.00010900266235794074,
+          "tension": 56.54889265198813,
+          "active": 0.06122268060695484,
+          "pointwise_volumetric": 0.00029841070816289186,
+          "total": 56.61538859739858
+        },
+        "sampled_J_min": 0.9975482447880277,
+        "sampled_J_max": 1.0030905054751051
+      },
+      "higher_evaluations": [
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 8,
+            "surface_gauss_order": 12,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.002359945752525,
+          "energy": 56.61539365876729,
+          "scaled_force_linf": 3.309966500078185e-05,
+          "energy_components": {
+            "bulk": 0.005169323509820541,
+            "surface": 0.00010900266235830848,
+            "tension": 56.54889265198815,
+            "active": 0.0612226806069548,
+            "pointwise_volumetric": 0.0003034509331931669,
+            "total": 56.61539365876728
+          },
+          "sampled_J_min": 0.9927192713875018,
+          "sampled_J_max": 1.0089938020209648,
+          "force_gate": false,
+          "energy_difference_from_default": 5.0613687108125305e-06
+        },
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 12,
+            "surface_gauss_order": 16,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.002359945752501,
+          "energy": 56.61539365876662,
+          "scaled_force_linf": 3.309966505576239e-05,
+          "energy_components": {
+            "bulk": 0.00516932350918113,
+            "surface": 0.00010900266235831443,
+            "tension": 56.54889265198813,
+            "active": 0.061222680606954814,
+            "pointwise_volumetric": 0.0003034509325562999,
+            "total": 56.61539365876663
+          },
+          "sampled_J_min": 0.9924128696059584,
+          "sampled_J_max": 1.0092486516791306,
+          "force_gate": false,
+          "energy_difference_from_default": 5.061368042902359e-06
+        }
+      ]
+    },
+    {
+      "lambda": 500.0,
+      "strength": 5.0,
+      "input": "runs/quadratic_robust/lambda_500.0_target_5.0/final.json",
+      "input_sha256": "eb9f2cbb5200cc2ed92ad0e0f6f1c23375d30bc988f59f9bfde2f03fc66e9313",
+      "default_evaluation": {
+        "scaled_energy": 2.009262273432483,
+        "energy": 56.8105523761555,
+        "scaled_force_linf": 1.7991175962347528e-10,
+        "energy_components": {
+          "bulk": 0.05628558769705292,
+          "surface": 0.0012100766270880699,
+          "tension": 56.551228463799546,
+          "active": 0.20182824803180768,
+          "pointwise_volumetric": 0.003050225531434204,
+          "total": 56.8105523761555
+        },
+        "sampled_J_min": 0.9799173069012945,
+        "sampled_J_max": 1.017614054741299
+      },
+      "higher_evaluations": [
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 8,
+            "surface_gauss_order": 12,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.009263753976408,
+          "energy": 56.810594237548784,
+          "scaled_force_linf": 0.00013028897081293796,
+          "energy_components": {
+            "bulk": 0.05632744909032059,
+            "surface": 0.0012100766270917488,
+            "tension": 56.55122846379956,
+            "active": 0.20182824803180746,
+            "pointwise_volumetric": 0.0030918620968279006,
+            "total": 56.810594237548784
+          },
+          "sampled_J_min": 0.9602527889088779,
+          "sampled_J_max": 1.0335568440528007,
+          "force_gate": false,
+          "energy_difference_from_default": 4.186139328510308e-05
+        },
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 12,
+            "surface_gauss_order": 16,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.0092637539762435,
+          "energy": 56.810594237544144,
+          "scaled_force_linf": 0.00013028897081277836,
+          "energy_components": {
+            "bulk": 0.056327449085693856,
+            "surface": 0.0012100766270917653,
+            "tension": 56.55122846379954,
+            "active": 0.20182824803180752,
+            "pointwise_volumetric": 0.003091862092226496,
+            "total": 56.81059423754414
+          },
+          "sampled_J_min": 0.9587454288790186,
+          "sampled_J_max": 1.036223848263931,
+          "force_gate": false,
+          "energy_difference_from_default": 4.186138864525901e-05
+        }
+      ]
+    },
+    {
+      "lambda": 500.0,
+      "strength": 10.0,
+      "input": "runs/quadratic_robust/lambda_500.0_target_10.0/final.json",
+      "input_sha256": "c9c25c8877b9b0a4763291d088c3a6eabdfebd3e842254be16b01d83706ae39d",
+      "default_evaluation": {
+        "scaled_energy": 2.015394518430165,
+        "energy": 56.98393751866808,
+        "scaled_force_linf": 9.089288756326461e-11,
+        "energy_components": {
+          "bulk": 0.1252182814370869,
+          "surface": 0.0028821025414198093,
+          "tension": 56.55384481971109,
+          "active": 0.30199231497848333,
+          "pointwise_volumetric": 0.0067864187464360785,
+          "total": 56.98393751866808
+        },
+        "sampled_J_min": 0.966827678414544,
+        "sampled_J_max": 1.0303799395031337
+      },
+      "higher_evaluations": [
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 8,
+            "surface_gauss_order": 12,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.015396276613198,
+          "energy": 56.983987230122196,
+          "scaled_force_linf": 0.00019802233224882953,
+          "energy_components": {
+            "bulk": 0.12526799289118365,
+            "surface": 0.0028821025414279217,
+            "tension": 56.55384481971111,
+            "active": 0.30199231497848295,
+            "pointwise_volumetric": 0.0068357151636422656,
+            "total": 56.9839872301222
+          },
+          "sampled_J_min": 0.9339663455143016,
+          "sampled_J_max": 1.0580056207501527,
+          "force_gate": false,
+          "energy_difference_from_default": 4.971145411758471e-05
+        },
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 12,
+            "surface_gauss_order": 16,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.01539627661302,
+          "energy": 56.98398723011718,
+          "scaled_force_linf": 0.00019802233224875082,
+          "energy_components": {
+            "bulk": 0.12526799288615684,
+            "surface": 0.0028821025414279278,
+            "tension": 56.5538448197111,
+            "active": 0.301992314978483,
+            "pointwise_volumetric": 0.0068357151586625345,
+            "total": 56.98398723011717
+          },
+          "sampled_J_min": 0.9314426315751559,
+          "sampled_J_max": 1.0626824359955438,
+          "force_gate": false,
+          "energy_difference_from_default": 4.9711449101152994e-05
+        }
+      ]
+    },
+    {
+      "lambda": 5000.0,
+      "strength": 1.0,
+      "input": "runs/quadratic_robust/lambda_5000.0_target_1.0/final.json",
+      "input_sha256": "708c01f763982702c01eda25115e5f16f3b11bdc0e5cd649c79e423a7177f3e0",
+      "default_evaluation": {
+        "scaled_energy": 2.00239767006345,
+        "energy": 56.61646028852984,
+        "scaled_force_linf": 3.2460701571871504e-09,
+        "energy_components": {
+          "bulk": 0.004469037997380504,
+          "surface": 8.012553917191342e-05,
+          "tension": 56.54889846028969,
+          "active": 0.06301266470358927,
+          "pointwise_volumetric": 0.0006647337927574441,
+          "total": 56.61646028852984
+        },
+        "sampled_J_min": 0.9992304097155624,
+        "sampled_J_max": 1.0009026903052107
+      },
+      "higher_evaluations": [
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 8,
+            "surface_gauss_order": 12,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.0023981613620565,
+          "energy": 56.616474179670696,
+          "scaled_force_linf": 0.00017324097071191196,
+          "energy_components": {
+            "bulk": 0.0044829291382072565,
+            "surface": 8.012553917195942e-05,
+            "tension": 56.548898460289735,
+            "active": 0.0630126647035892,
+            "pointwise_volumetric": 0.0006786191150668741,
+            "total": 56.6164741796707
+          },
+          "sampled_J_min": 0.9977493264992328,
+          "sampled_J_max": 1.0024680876420677,
+          "force_gate": false,
+          "energy_difference_from_default": 1.3891140859811912e-05
+        },
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 12,
+            "surface_gauss_order": 16,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.0023981613620103,
+          "energy": 56.61647417966941,
+          "scaled_force_linf": 0.00017324097107369657,
+          "energy_components": {
+            "bulk": 0.0044829291369177324,
+            "surface": 8.012553917196114e-05,
+            "tension": 56.54889846028972,
+            "active": 0.06301266470358921,
+            "pointwise_volumetric": 0.0006786191137778794,
+            "total": 56.6164741796694
+          },
+          "sampled_J_min": 0.9976620134464125,
+          "sampled_J_max": 1.0026124218927635,
+          "force_gate": false,
+          "energy_difference_from_default": 1.389113957372956e-05
+        }
+      ]
+    },
+    {
+      "lambda": 5000.0,
+      "strength": 5.0,
+      "input": "runs/quadratic_robust/lambda_5000.0_target_5.0/final.json",
+      "input_sha256": "8dff2258d65bcd8928ab323ba9487548e2f9dc1f14a1744fcc7ec5aaf3ed10d1",
+      "default_evaluation": {
+        "scaled_energy": 2.0096272957805548,
+        "energy": 56.82087313989938,
+        "scaled_force_linf": 2.718676840726339e-11,
+        "energy_components": {
+          "bulk": 0.05456964438939331,
+          "surface": 0.0010707713201572604,
+          "tension": 56.55153313993592,
+          "active": 0.21369958425391047,
+          "pointwise_volumetric": 0.006683300745915207,
+          "total": 56.820873139899376
+        },
+        "sampled_J_min": 0.9907230449624136,
+        "sampled_J_max": 1.0045635473718528
+      },
+      "higher_evaluations": [
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 8,
+            "surface_gauss_order": 12,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.009632900042464,
+          "energy": 56.82103159667179,
+          "scaled_force_linf": 0.0006735527257032505,
+          "energy_components": {
+            "bulk": 0.054728101161777426,
+            "surface": 0.0010707713201576735,
+            "tension": 56.55153313993594,
+            "active": 0.21369958425391017,
+            "pointwise_volumetric": 0.006841671375133078,
+            "total": 56.82103159667179
+          },
+          "sampled_J_min": 0.9816511410818566,
+          "sampled_J_max": 1.009286497284507,
+          "force_gate": false,
+          "energy_difference_from_default": 0.0001584567724037811
+        },
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 12,
+            "surface_gauss_order": 16,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.009632900041922,
+          "energy": 56.82103159665648,
+          "scaled_force_linf": 0.0006735527258457975,
+          "energy_components": {
+            "bulk": 0.05472810114649795,
+            "surface": 0.0010707713201576973,
+            "tension": 56.55153313993593,
+            "active": 0.21369958425391025,
+            "pointwise_volumetric": 0.006841671359864292,
+            "total": 56.82103159665649
+          },
+          "sampled_J_min": 0.980983716641039,
+          "sampled_J_max": 1.0100656273888375,
+          "force_gate": false,
+          "energy_difference_from_default": 0.00015845675709869056
+        }
+      ]
+    },
+    {
+      "lambda": 5000.0,
+      "strength": 10.0,
+      "input": "runs/quadratic_robust/lambda_5000.0_target_10.0/final.json",
+      "input_sha256": "2508aae756447119cd67cf2c50dc8cbfc8ab1e7b47b27749f8a0e4a26d88044a",
+      "default_evaluation": {
+        "scaled_energy": 2.0161689891073085,
+        "energy": 57.00583516117568,
+        "scaled_force_linf": 4.400088474999786e-12,
+        "energy_components": {
+          "bulk": 0.12340581790900845,
+          "surface": 0.00291327906195367,
+          "tension": 56.554669970562045,
+          "active": 0.3248460936426726,
+          "pointwise_volumetric": 0.013666188956408257,
+          "total": 57.00583516117568
+        },
+        "sampled_J_min": 0.9805728278543651,
+        "sampled_J_max": 1.0088188251108128
+      },
+      "higher_evaluations": [
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 8,
+            "surface_gauss_order": 12,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.016179465804847,
+          "energy": 57.00613138281989,
+          "scaled_force_linf": 0.0009942722662307033,
+          "energy_components": {
+            "bulk": 0.12370203955320468,
+            "surface": 0.0029132790619544177,
+            "tension": 56.55466997056206,
+            "active": 0.3248460936426723,
+            "pointwise_volumetric": 0.013962194824610035,
+            "total": 57.00613138281989
+          },
+          "sampled_J_min": 0.9618016083774553,
+          "sampled_J_max": 1.0178934046697639,
+          "force_gate": false,
+          "energy_difference_from_default": 0.0002962216442057297
+        },
+        {
+          "policy": {
+            "volume_duffy_gauss_order": 12,
+            "surface_gauss_order": 16,
+            "volume_chunk_triangles": 12
+          },
+          "scaled_energy": 2.0161794658039502,
+          "energy": 57.00613138279455,
+          "scaled_force_linf": 0.0009942722505246575,
+          "energy_components": {
+            "bulk": 0.12370203952788443,
+            "surface": 0.0029132790619544446,
+            "tension": 56.554669970562045,
+            "active": 0.3248460936426724,
+            "pointwise_volumetric": 0.013962194799316754,
+            "total": 57.00613138279456
+          },
+          "sampled_J_min": 0.9604736920155521,
+          "sampled_J_max": 1.0193943318661627,
+          "force_gate": false,
+          "energy_difference_from_default": 0.00029622161886777576
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "scope": "Target-free same-space integration sensitivity on actual activated small geometry",
+    "mesh": [
+      12,
+      6
+    ],
+    "inputs": "runs/quadratic_robust/lambda_{500.0,5000.0}_target_{1.0,5.0,10.0}/final.json",
+    "policies": [
+      {
+        "volume_duffy_gauss_order": 8,
+        "surface_gauss_order": 12,
+        "volume_chunk_triangles": 12
+      },
+      {
+        "volume_duffy_gauss_order": 12,
+        "surface_gauss_order": 16,
+        "volume_chunk_triangles": 12
+      }
+    ],
+    "force_threshold": 1e-07,
+    "source_hashes": {
+      "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+      "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+      "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+      "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+      "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+      "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+    },
+    "re_equilibration_if_needed": "Warm fixed-strength solve under the new rule, retaining the original field; not a physical activation trajectory."
+  }
+}

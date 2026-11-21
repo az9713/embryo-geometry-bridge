@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Observer comparisons at 36 cached-quadrature equilibria</title><style>
+:root {color-scheme:dark;font:17px/1.62 system-ui,sans-serif;background:#0d1420;color:#eaf1fb}
+* {box-sizing:border-box}
+body {margin:0}
+main {max-width:900px;margin:0 auto;padding:clamp(20px,5vw,60px)}
+h1,h2 {line-height:1.12;text-wrap:balance}
+h1 {font-size:clamp(2rem,5.4vw,3.25rem);margin:0 0 1rem;letter-spacing:-.04em}
+h2 {font-size:clamp(1.35rem,3.1vw,1.9rem);margin:2.25rem 0 .8rem;border-top:1px solid #364963;padding-top:1rem}
+p {margin:.75rem 0 1rem}
+strong {color:#fff}
+a {color:#84dec9;text-underline-offset:.2em}
+a:focus-visible {outline:2px solid #fff;outline-offset:3px}
+.table-wrap {margin:1.3rem 0; overflow-wrap:anywhere}
+table {width:100%;border-collapse:collapse;table-layout:fixed;font-variant-numeric:tabular-nums;background:#121c2b}
+td,th {padding:.72rem;text-align:left;vertical-align:top;border-bottom:1px solid #30425b}
+th {color:#b9c9df;font-size:.9rem}
+figure {margin:1.3rem 0;border:1px solid #364963;border-radius:14px;background:#121c2b;overflow:hidden}
+img {display:block;width:100%;height:auto}
+@media(max-width:540px){:root{font-size:16px}td,th{padding:.42rem}table{font-size:.82rem}}
+</style></head>
+<body><main><h1>Observer comparisons at 36 cached-quadrature equilibria</h1>
+<p>Both frozen parameter choices satisfy all 68 primary small-region comparisons at the same conditional allowance of <strong>5.389835674801 µm</strong>. They still differ on the model’s large-region apical contrast. The certified positive-direction minus negative-direction gap is <strong>[0.15475515644, 0.15475515689] µm</strong>. <a href="../observer_application_v1/independent_readback/receipt.json">Independent observer readback</a></p>
+<h2>Calibration and prediction</h2>
+<p>Each candidate contributes 17 small-region equilibria and one large-region equilibrium. At each small state the primary observer compares maximum shortening, disk-averaged shortening and the separate apical and basal spatial maxima on a fixed region in current radius.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Frozen candidate</th>
+<th>Primary comparisons within allowance</th>
+<th>Large-region Q (µm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Positive direction</td>
+<td>68 / 68</td>
+<td>[-4.13600326187, -4.13600326142]</td>
+</tr>
+<tr>
+<td>Negative direction</td>
+<td>68 / 68</td>
+<td>[-4.29075841832, -4.29075841830]</td>
+</tr>
+</tbody>
+</table></div>
+<p>The smallest slack across all 136 comparisons is about <strong>0.004812538323 µm</strong>. It occurs at the negative-direction L state for region-averaged shortening. Slack is the frozen allowance minus the upper endpoint of the absolute residual interval.</p>
+<figure><img alt="Large-region Q centers at minus 4.136003 and minus 4.290758 micrometers. The positive-direction value is greater." src="large_contrast.png" /></figure>
+<p>The plot marks the centers of the enclosures. The certified intervals are narrower than the plot resolution. The large observable <strong>Q = Zₐ(0) − Zₐ(Rₛ)</strong> compares the apical height on the axis with the height at the same fixed current shoulder radius Rₛ in each field. Both Q values are negative. The signed gap is positive because the positive-direction candidate has the higher Q. These values are model predictions at the prescribed large input.</p>
+<h2>From a root bound to an observer bound</h2>
+<p>Let <strong>e</strong> be the certified root error measured from the verification center in dimensionless free coordinates. Let <strong>ξ</strong> be the original binary storage gap between the exact nodal sum and the saved coordinates. For verification at the original center, each nodal coordinate differs from the archived field by at most <strong>33.5(e + ξ) µm</strong>. For the two recentered fields, positive E and negative K, the actual binary center shift <strong>σ</strong> gives the bound <strong>33.5(σ + e + ξ) µm</strong>. The comparison uses the original saved observer and the original ξ in both cases.</p>
+<p>A strictly positive radial derivative bound and fixed axis and rim radii keep the quadratic traces invertible over the same region. The nodal error bounds the apical and basal heights at fixed current radius. Their error bounds add for total shortening. Each component maximum uses its own surface bound. The bound on Q adds the axis-node vertical error and the same-radius apical shoulder error. Every comparison uses the worst absolute residual over the full inflated interval. <a href="../observer_application_v1/METHOD.md">Observer transfer method</a></p>
+<h2>Dependence on observer convention</h2>
+<p>The primary convention uses current-radius disk weighting and spatial maxima for the separate components. In the earlier stored-field comparison, the three alternate conventions each exceeded the same frozen allowance for the pair.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Alternate stored-field convention</th>
+<th>Required common allowance, approximately</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk weighting, component regional means</td>
+<td>6.576090 µm</td>
+</tr>
+<tr>
+<td>Radial-line weighting, component spatial maxima</td>
+<td>6.191999 µm</td>
+</tr>
+<tr>
+<td>Radial-line weighting, component regional means</td>
+<td>6.191999 µm</td>
+</tr>
+</tbody>
+</table></div>
+<p>The allowance is a chosen model discrepancy bound. Its calibration as experimental noise and the experimental observation mapping remain unresolved. This comparison covers fixed states of the finite, cached-quadrature model. Exact-spatial integration has separate certificates for four fixed-input equilibria and minima. The full 36-state exact-spatial observer comparison, loading-path validity, continuum adequacy and novelty remain open. <a href="../../../observer_robustness/independent_actual/receipt.json">Alternate-observer review</a> · <a href="../../exact_targets_v1/four_spatial_checkpoint_v1/SPATIAL.html">Four exact-spatial certificates</a></p></main></body></html>

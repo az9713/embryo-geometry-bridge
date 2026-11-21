@@ -1,0 +1,110 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ACTIVATED-MESH-STUDY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Matched refinement of the activated finite-height body</h1>
+<p>This target-free study compares the existing 12×6 mechanical states with a 16×8 meridional mesh, keeping the constitutive law, activation strength, physical geometry, boundary conditions, integration rule and solver policy fixed. It does not read response data or refit activation gains. The purpose is numerical readiness: measure how much the computed activated tissue changes under refinement before treating its geometry as a biological prediction.</p>
+<p>The source was frozen before the single job was launched. <code>scripts/run_activated_mesh_study.py</code> has SHA256 <code>78295655c236d465a4c4ac9d324c9d810d23359855e7d54761496535ffe0d8a2</code>. It checks six frozen dependencies before solving. The <a href="QUADRATIC-SOLVE-POLICY.html">robust continuation policy</a> accepts only force-and-geometry-verified states, retains rejected trials, and starts every retry from the last verified vector. Failure remains a legitimate outcome.</p>
+<h2>What is matched</h2>
+<p>The reference thickness is <span class="math" data-tex="H=1"></span>, with the declared dimensional conversion <span class="math" data-tex="H=33.5\,\mu\mathrm m"></span>. The physical activation radius is 9.35512037 µm and its depth is 5–25 µm below the top, corresponding to reference height fractions <span class="math" data-tex="8.5/33.5"></span> through <span class="math" data-tex="28.5/33.5"></span>. The outer radius remains <span class="math" data-tex="3H"></span>; the reference is flat and its outer rim is clamped.</p>
+<p>The shear modulus is 1, basal/apical area moduli are 2/0.2, and basal/apical baseline tensions are 2/0. Volume coefficients are 500 and 5000; each branch attempts activation strengths 1, 5 and 10 in sequence. No strength is changed to make the refined model match an earlier shortening value. All parameter fields besides the radial/depth cell counts are checked for exact equality before comparison.</p>
+<p>The governing constitutive law is the frozen full pointwise logarithmic-volume penalty, implemented with P2 displacement. Both meshes use the same six-point degree-4 Dunavant volume rule and eight-point surface Gauss rule. A separate high-quadrature study examines integration error. Keeping this rule fixed prevents silently conflating a mesh change with an integration-policy change; it does not prove quadrature error is negligible.</p>
+<h2>Eulerian geometry, not corresponding material node indices</h2>
+<p>The deformed top and bottom have quadratic meridional segments</p>
+<div class="math display" data-tex="
+ R(t)=R_0+R_1t+R_2t^2,\qquad
+ Z(t)=Z_0+Z_1t+Z_2t^2,\qquad 0\le t\le1.
+"></div>
+
+<p>Different meshes have different material nodes and radial displacement. Comparing two nodes with the same index or the same reference radius does not generally compare the two surfaces at the same current physical position. The whole-curve comparison instead fixes a common <strong>Eulerian physical radius</strong> <span class="math" data-tex="\rho"></span> and evaluates both current graphs there.</p>
+<p>Stored controls are interpreted as exact rationals and multiplied by the same declared 33.5-µm scale. The radial derivative is linear, so its endpoint values verify monotonicity of each quadratic radial map. Exact rational bisection encloses the root of <span class="math" data-tex="R(t)=\rho"></span>. The corresponding height range is bounded using the bracket endpoints and any quadratic height critical point. No floating-point root approximation is promoted into an exact curve location.</p>
+<p>Both models span the same physical radial domain, 0–100.5 µm. The code still explicitly computes and records the common covered domain; incomplete coverage or a nonmonotone surface raises an error rather than silently reinterpreting the surface as a graph.</p>
+<h2>A rigorous discrepancy between two discrete curves</h2>
+<p>For fine/coarse graphs <span class="math" data-tex="a_f,a_c"></span>, partition the common physical radius interval into cells <span class="math" data-tex="I_j"></span>. Rational inversion supplies enclosures</p>
+<div class="math display" data-tex="
+ a_f(I_j)\subseteq[F_j^-,F_j^+],\qquad
+ a_c(I_j)\subseteq[C_j^-,C_j^+].
+"></div>
+
+<p>For every <span class="math" data-tex="\rho\in I_j"></span>, their difference belongs to</p>
+<div class="math display" data-tex="
+ [F_j^- - C_j^+,\;F_j^+ - C_j^-].
+"></div>
+
+<p>The maximum absolute endpoint over all cells is therefore an upper bound <span class="math" data-tex="U"></span> on the supremum discrepancy between the two <strong>stored discrete curves</strong>. At a sampled radius, an interval enclosing the point difference supplies a lower bound on its absolute value: zero if the interval contains zero, otherwise its distance from zero. The maximum of these pointwise lower bounds is <span class="math" data-tex="L"></span>. Thus</p>
+<div class="math display" data-tex="
+ L\le\sup_\rho&#124;a_f(\rho)-a_c(\rho)&#124;\le U.
+"></div>
+
+<p>The same construction is applied to the basal surface. Refining a radial cell preserves complete domain coverage, while every new point remains a valid lower-bound witness. The code refines the cell with the largest remaining upper bound until <span class="math" data-tex="U-L\le0.01\,\mu\mathrm m"></span> or 4096 active cells are reached. Any unresolved enclosure width is reported. The 0.01-µm value is a requested reporting resolution, not a biological acceptance tolerance.</p>
+<p>This enclosure separates two issues: uncertainty in the geometric comparison of saved discrete fields, and their unknown error relative to the continuum mechanical solution. It rigorously encloses the former. It is <strong>not</strong> a finite-element PDE error bound, a Richardson estimate, physical parameter uncertainty or a confidence interval. A small mesh discrepancy alone does not establish convergence to the correct continuum solution; shared underintegration or locking can affect both meshes.</p>
+<p>The plot also uses a common 257-point physical radial grid for readable full-curve overlays. Those display samples do not replace the interval-cell supremum enclosure.</p>
+<h2>Other measurements and retained evidence</h2>
+<p>The report separately compares central signed apical/basal displacement and maximum activated material-column shortening. Central displacements refer to the same symmetry axis on both meshes. The maximum column statistic is computed from each model's material-column quadratic extrema; it is not mislabeled an Eulerian thickness maximum or a maximum over biological time.</p>
+<p>Each full field retains solver residuals, actual quadrature J values, conservative Bernstein J bounds, volume change, quadratic surface controls, pressure diagnostics and every accepted/rejected attempt. Conservative J bounds are not attained compression measurements. The run protocol records physical scaling, integration policy, solver policy, source hashes and the absence of target responses. Its live process record prevents accidental duplicate jobs.</p>
+<p><code>evidence/activated_mesh_graph_tests.json</code> verifies the comparison with synthetic exact tests. In particular, two different material parameterizations of the same Eulerian straight graph produce zero enclosed physical discrepancy, despite differing midpoint material values. A constant 0.1-unit height offset has an exact supremum of 0.1. The full common physical domain is checked explicitly.</p>
+<p>The separate retained replay <code>runs/activated_mesh/verify_graph_bounds.py</code> compares twelve general quadratic graph differences with their independently computed analytic endpoint/critical-point maxima. Every true maximum lies in the rational interval-cell enclosure, and all twelve requested reporting widths are achieved. Its receipt is <code>evidence/activated_mesh_graph_adversarial.json</code>. These are implementation tests for the geometric comparison, not biological evidence.</p>
+<p>The principal receipts are <code>activated_mesh_protocol.json</code>, <code>activated_mesh_results.json</code> and <code>activated_mesh_comparison.json</code> under <code>evidence/</code>. Complete new states and attempt ledgers are under <code>runs/activated_mesh/</code>; existing 12×6 states remain unchanged under <code>runs/quadratic_robust/</code>.</p>
+<h2>Completed result: scalar agreement does not establish shape convergence</h2>
+<p>All six 16×8 targets were reached. The retained path contains 22 attempted increments: fourteen accepted and eight rejected. Every accepted field passes the unchanged force/positive-geometry gate. A separate replay verifies all 22 force calculations, all six cross-target input-hash chains and that all six frozen dependencies remain unchanged. All twelve apical/basal supremum enclosures achieve the requested 0.01-µm reporting width. The receipt status is deliberately <code>PASS_NUMERICAL_EXECUTION_NOT_MESH_ADEQUACY</code>.</p>
+<p>The following intervals enclose the supremum discrepancy between the two stored discrete surfaces over the full common physical radial domain. They do not enclose either mesh's continuum error.</p>
+<table>
+<thead>
+<tr>
+<th>Volume coefficient</th>
+<th style="text-align: right;">Gain</th>
+<th>Apical curve discrepancy (µm)</th>
+<th>Basal curve discrepancy (µm)</th>
+<th style="text-align: right;">Fine minus coarse maximum column shortening (µm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500</td>
+<td style="text-align: right;">1</td>
+<td>[0.12359, 0.13307]</td>
+<td>[0.00692, 0.01582]</td>
+<td style="text-align: right;">+0.08830</td>
+</tr>
+<tr>
+<td>500</td>
+<td style="text-align: right;">5</td>
+<td>[0.45461, 0.46459]</td>
+<td>[0.02802, 0.03786]</td>
+<td style="text-align: right;">+0.04381</td>
+</tr>
+<tr>
+<td>500</td>
+<td style="text-align: right;">10</td>
+<td>[0.70222, 0.71216]</td>
+<td>[0.04219, 0.05201]</td>
+<td style="text-align: right;">−0.15177</td>
+</tr>
+<tr>
+<td>5000</td>
+<td style="text-align: right;">1</td>
+<td>[0.18652, 0.19622]</td>
+<td>[0.00789, 0.01629]</td>
+<td style="text-align: right;">+0.18514</td>
+</tr>
+<tr>
+<td>5000</td>
+<td style="text-align: right;">5</td>
+<td>[0.51174, 0.52068]</td>
+<td>[0.04860, 0.05815]</td>
+<td style="text-align: right;">+0.23601</td>
+</tr>
+<tr>
+<td>5000</td>
+<td style="text-align: right;">10</td>
+<td>[0.74786, 0.75551]</td>
+<td>[0.09616, 0.10594]</td>
+<td style="text-align: right;">+0.15060</td>
+</tr>
+</tbody>
+</table>
+<p>Table intervals are rounded outward from the exact rational receipts. For example at coefficient 500 and gain 5, the scalar shortening changes by only about 0.044 µm, while the apical profile differs somewhere by at least 0.4546 µm. Good agreement in a central or maximum shortening statistic would therefore miss a substantially larger shape difference.</p>
+<p>Even a qualitative parameter ordering is not stable in these discrete calculations. At gains 5 and 10, the 12×6 model gives greater shortening for coefficient 500 than 5000, whereas the 16×8 model reverses this ordering. This is a warning about numerical readiness, not a robust physical effect or a new constitutive discovery.</p>
+<p>There is a further limitation beyond ordinary discretization error: the adaptive controller accepted different intermediate gains on different meshes. The energy is nonlinear and no uniqueness/global-minimum theorem has been proved. Consequently a local-equilibrium branch-selection effect has not been excluded. The differences are accurately described as matched numerical mesh-study discrepancies; they must not all be attributed to a rigorously isolated approximation-error mechanism.</p>
+<p><img alt="Whole Eulerian curve differences, unchanged-gain shortening and discrete supremum enclosures" src="../../omitted-asset.svg" /></p>
+<p>The top panels compare surfaces at the same current physical radius over the entire 0–100.5-µm domain. The lower-right bars are exact-arithmetic enclosures between discrete curves, not confidence intervals or PDE error bars. Figure/input hashes are retained in <code>evidence/activated_mesh_visual.json</code>.</p>
+<h2>Consequence for the next accuracy gate</h2>
+<p>This calculation does not pass mesh adequacy. Further refinement or a verified adaptive mesh, branch checks, and integration-error control are needed before assigning a justified continuum uncertainty to the activated shape. No 24×12 job was launched as part of this first 16×8 delivery.</p>
+<p>The separate <a href="ACTIVATED-QUADRATURE.html">activated quadrature study</a> changes integration in the same 12×6 space and reequilibrates those fields. Its same-material/Hausdorff curve bound is not the same metric as the Eulerian vertical supremum used here; a numerical ratio between the two would require an appropriate conversion. Neither study alone supplies a rigorous continuum error bound, and mesh/integration interactions remain to be checked.</p>
+<p>This is established numerical verification practice applied transparently to this model, not a new biological concept. Original study gates still require numerical adequacy, defensible material/geometry uncertainty, a justified observation/time operator and genuine larger-region testing.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

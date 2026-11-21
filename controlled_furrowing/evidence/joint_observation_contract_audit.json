@@ -1,0 +1,1437 @@
+{
+  "status": "COMPLETE_SOURCE_OBSERVATION_AUDIT; exactfour-output sourceequivalence NOTestablished",
+  "audit_utc": "2026-11-19T11:09:41.387821+00:00",
+  "scope": "Small-block source audit only; no fit, discrepancy choice, heldout response inspection, or frozenprotocol change",
+  "primary_locators": [
+    {
+      "locator": "Sec5",
+      "title": "RhoGEF-driven cell shortening is dose-dependent",
+      "text_sha256": "c7707a1796c46ddfd6f1dc6e2fb3ffce69de9215e4cb7b193ee7adb876182a14"
+    },
+    {
+      "locator": "Sec15",
+      "title": "Furrow segmentation and tracking",
+      "text_sha256": "1340292a330a22f236ed37a761319a0aad7f71d229b18ce9b2a14c679cf616da"
+    },
+    {
+      "locator": "Sec16",
+      "title": "Furrow quantification",
+      "text_sha256": "4cb0bb01706c1c85e9940aa550faa36f278d254337b4eb70008ece8b0cd54f7f"
+    },
+    {
+      "locator": "Sec17",
+      "title": "Activation quantification",
+      "text_sha256": "4b1a000fbe6b17b8a4839b296d47c70b6232d6d4032d16a40fee47b854aad97b"
+    },
+    {
+      "locator": "Fig2captiona\u2013e",
+      "text_sha256": "df6cdd1b9b747be2e6d5dc874526e2d4289c11788c6caa1a9f96a2a584df29c0"
+    }
+  ],
+  "workbook_headers": {
+    "Fig 2c": {
+      "A3": "OptoGEF2",
+      "A4": "Activation magnitude",
+      "A5": "Region-averaged shortening (\u03bcm)"
+    },
+    "Fig 2d": {
+      "A3": "OptoGEF2",
+      "A4": "Maximum shortening (\u03bcm)",
+      "A5": "Region-averaged shortening (\u03bcm)"
+    },
+    "Fig 2e": {
+      "A3": "OptoGEF2",
+      "A4": "Apical shortening (\u03bcm)",
+      "A5": "Basal shortening (\u03bcm)"
+    },
+    "Fig 4h": {
+      "A3": "18-\u03bcm region",
+      "A4": "Activation magnitude",
+      "A5": "Shortening (\u03bcm)"
+    }
+  },
+  "small_selected_workbook_cells": [
+    {
+      "sheet": "Fig 2c",
+      "cell": "B4",
+      "value": "0.14801043"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "C4",
+      "value": "0.32718904"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "D4",
+      "value": "0.6924031"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "E4",
+      "value": "0.97607953"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "F4",
+      "value": "0.46402059"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "G4",
+      "value": "1.04731044"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "H4",
+      "value": "0.82160217"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "I4",
+      "value": "0.47133397"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "J4",
+      "value": "0.98739488"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "K4",
+      "value": "1.28898317"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "L4",
+      "value": "1.51057344"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "M4",
+      "value": "0.78208913"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "N4",
+      "value": "0.71523649"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "O4",
+      "value": "0.27583779"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "P4",
+      "value": "0.80580697"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "Q4",
+      "value": "0.75547653"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "R4",
+      "value": "0.85073705"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "B5",
+      "value": "0.60944403"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "C5",
+      "value": "1.3129681"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "D5",
+      "value": "4.14594574"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "E5",
+      "value": "6.89165798"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "F5",
+      "value": "2.64638352"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "G5",
+      "value": "6.04118444"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "H5",
+      "value": "6.90779095"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "I5",
+      "value": "0.46946903"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "J5",
+      "value": "4.31605203"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "K5",
+      "value": "8.38319196"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "L5",
+      "value": "3.92613295"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "M5",
+      "value": "3.92284008"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "N5",
+      "value": "2.83450732"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "O5",
+      "value": "0"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "P5",
+      "value": "2.79789867"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "Q5",
+      "value": "1.51460771"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "R5",
+      "value": "4.87520446"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "B4",
+      "value": "3.10888252"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "C4",
+      "value": "4.86152372"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "D4",
+      "value": "8.31533939"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "E4",
+      "value": "9.22752704"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "F4",
+      "value": "7.64808362"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "G4",
+      "value": "12.73324306"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "H4",
+      "value": "10.49577729"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "I4",
+      "value": "1.38419619"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "J4",
+      "value": "7.72032047"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "K4",
+      "value": "12.62097162"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "L4",
+      "value": "9.72802387"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "M4",
+      "value": "12"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "N4",
+      "value": "6.70026326"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "O4",
+      "value": "2.41505646"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "P4",
+      "value": "5.83168051"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "Q4",
+      "value": "4.9233871"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "R4",
+      "value": "10.36677116"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "B5",
+      "value": "0.60944403"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "C5",
+      "value": "1.3129681"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "D5",
+      "value": "4.14594574"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "E5",
+      "value": "6.89165798"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "F5",
+      "value": "2.64638352"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "G5",
+      "value": "6.04118444"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "H5",
+      "value": "6.90779095"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "I5",
+      "value": "0.46946903"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "J5",
+      "value": "4.31605203"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "K5",
+      "value": "8.38319196"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "L5",
+      "value": "3.92613295"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "M5",
+      "value": "3.92284008"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "N5",
+      "value": "2.83450732"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "O5",
+      "value": "0"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "P5",
+      "value": "2.79789867"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "Q5",
+      "value": "1.51460771"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "R5",
+      "value": "4.87520446"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "B4",
+      "value": "3"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "C4",
+      "value": "4"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "D4",
+      "value": "6"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "E4",
+      "value": "8"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "F4",
+      "value": "6"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "G4",
+      "value": "13"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "H4",
+      "value": "9"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "I4",
+      "value": "0"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "J4",
+      "value": "8"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "K4",
+      "value": "13"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "L4",
+      "value": "7"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "M4",
+      "value": "12"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "N4",
+      "value": "8"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "O4",
+      "value": "2"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "P4",
+      "value": "6"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "Q4",
+      "value": "4"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "R4",
+      "value": "9"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "B5",
+      "value": "0.48710602"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "C5",
+      "value": "0.86152372"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "D5",
+      "value": "2.31533939"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "E5",
+      "value": "3.63670272"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "F5",
+      "value": "3.64808362"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "G5",
+      "value": "3.46648612"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "H5",
+      "value": "4.36972161"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "I5",
+      "value": "1.38419619"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "J5",
+      "value": "2.72032047"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "K5",
+      "value": "2.86291486"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "L5",
+      "value": "3.83566674"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "M5",
+      "value": "2.27398524"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "N5",
+      "value": "1.40052651"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "O5",
+      "value": "0.41505646"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "P5",
+      "value": "1.97909408"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "Q5",
+      "value": "1.16532258"
+    },
+    {
+      "sheet": "Fig 2e",
+      "cell": "R5",
+      "value": "3.36677116"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "B4",
+      "value": "0.14801043"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "C4",
+      "value": "0.32718904"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "D4",
+      "value": "0.6924031"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "E4",
+      "value": "0.97607953"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "F4",
+      "value": "0.46402059"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "G4",
+      "value": "1.04731044"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "H4",
+      "value": "0.82160217"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "I4",
+      "value": "0.47133397"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "J4",
+      "value": "0.98739488"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "K4",
+      "value": "1.28898317"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "L4",
+      "value": "1.51057344"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "M4",
+      "value": "0.78208913"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "N4",
+      "value": "0.71523649"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "O4",
+      "value": "0.27583779"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "P4",
+      "value": "0.80580697"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "Q4",
+      "value": "0.75547653"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "R4",
+      "value": "0.85073705"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "B5",
+      "value": "3.10888252"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "C5",
+      "value": "4.86152372"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "D5",
+      "value": "8.31533939"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "E5",
+      "value": "9.22752704"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "F5",
+      "value": "7.64808362"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "G5",
+      "value": "12.73324306"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "H5",
+      "value": "10.49577729"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "I5",
+      "value": "1.38419619"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "J5",
+      "value": "7.72032047"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "K5",
+      "value": "12.62097162"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "L5",
+      "value": "9.72802387"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "M5",
+      "value": "12"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "N5",
+      "value": "6.70026326"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "O5",
+      "value": "2.41505646"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "P5",
+      "value": "5.83168051"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "Q5",
+      "value": "4.9233871"
+    },
+    {
+      "sheet": "Fig 4h",
+      "cell": "R5",
+      "value": "10.36677116"
+    }
+  ],
+  "source_crosschecks": [
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!B4",
+      "canonical_decimal": "0.14801043"
+    },
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!B4",
+      "canonical_decimal": "3.10888252"
+    },
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!B5",
+      "canonical_decimal": "0.60944403"
+    },
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!B4",
+      "canonical_decimal": "3"
+    },
+    {
+      "record": "optoGEF2_small_col_B",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!B5",
+      "canonical_decimal": "0.48710602"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!C4",
+      "canonical_decimal": "0.32718904"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!C4",
+      "canonical_decimal": "4.86152372"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!C5",
+      "canonical_decimal": "1.3129681"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!C4",
+      "canonical_decimal": "4"
+    },
+    {
+      "record": "optoGEF2_small_col_C",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!C5",
+      "canonical_decimal": "0.86152372"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!D4",
+      "canonical_decimal": "0.6924031"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!D4",
+      "canonical_decimal": "8.31533939"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!D5",
+      "canonical_decimal": "4.14594574"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!D4",
+      "canonical_decimal": "6"
+    },
+    {
+      "record": "optoGEF2_small_col_D",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!D5",
+      "canonical_decimal": "2.31533939"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!E4",
+      "canonical_decimal": "0.97607953"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!E4",
+      "canonical_decimal": "9.22752704"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!E5",
+      "canonical_decimal": "6.89165798"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!E4",
+      "canonical_decimal": "8"
+    },
+    {
+      "record": "optoGEF2_small_col_E",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!E5",
+      "canonical_decimal": "3.63670272"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!F4",
+      "canonical_decimal": "0.46402059"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!F4",
+      "canonical_decimal": "7.64808362"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!F5",
+      "canonical_decimal": "2.64638352"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!F4",
+      "canonical_decimal": "6"
+    },
+    {
+      "record": "optoGEF2_small_col_F",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!F5",
+      "canonical_decimal": "3.64808362"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!G4",
+      "canonical_decimal": "1.04731044"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!G4",
+      "canonical_decimal": "12.73324306"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!G5",
+      "canonical_decimal": "6.04118444"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!G4",
+      "canonical_decimal": "13"
+    },
+    {
+      "record": "optoGEF2_small_col_G",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!G5",
+      "canonical_decimal": "3.46648612"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!H4",
+      "canonical_decimal": "0.82160217"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!H4",
+      "canonical_decimal": "10.49577729"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!H5",
+      "canonical_decimal": "6.90779095"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!H4",
+      "canonical_decimal": "9"
+    },
+    {
+      "record": "optoGEF2_small_col_H",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!H5",
+      "canonical_decimal": "4.36972161"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!I4",
+      "canonical_decimal": "0.47133397"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!I4",
+      "canonical_decimal": "1.38419619"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!I5",
+      "canonical_decimal": "0.46946903"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!I4",
+      "canonical_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_I",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!I5",
+      "canonical_decimal": "1.38419619"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!J4",
+      "canonical_decimal": "0.98739488"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!J4",
+      "canonical_decimal": "7.72032047"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!J5",
+      "canonical_decimal": "4.31605203"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!J4",
+      "canonical_decimal": "8"
+    },
+    {
+      "record": "optoGEF2_small_col_J",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!J5",
+      "canonical_decimal": "2.72032047"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!K4",
+      "canonical_decimal": "1.28898317"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!K4",
+      "canonical_decimal": "12.62097162"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!K5",
+      "canonical_decimal": "8.38319196"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!K4",
+      "canonical_decimal": "13"
+    },
+    {
+      "record": "optoGEF2_small_col_K",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!K5",
+      "canonical_decimal": "2.86291486"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!L4",
+      "canonical_decimal": "1.51057344"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!L4",
+      "canonical_decimal": "9.72802387"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!L5",
+      "canonical_decimal": "3.92613295"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!L4",
+      "canonical_decimal": "7"
+    },
+    {
+      "record": "optoGEF2_small_col_L",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!L5",
+      "canonical_decimal": "3.83566674"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!M4",
+      "canonical_decimal": "0.78208913"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!M4",
+      "canonical_decimal": "12"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!M5",
+      "canonical_decimal": "3.92284008"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!M4",
+      "canonical_decimal": "12"
+    },
+    {
+      "record": "optoGEF2_small_col_M",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!M5",
+      "canonical_decimal": "2.27398524"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!N4",
+      "canonical_decimal": "0.71523649"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!N4",
+      "canonical_decimal": "6.70026326"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!N5",
+      "canonical_decimal": "2.83450732"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!N4",
+      "canonical_decimal": "8"
+    },
+    {
+      "record": "optoGEF2_small_col_N",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!N5",
+      "canonical_decimal": "1.40052651"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!O4",
+      "canonical_decimal": "0.27583779"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!O4",
+      "canonical_decimal": "2.41505646"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!O5",
+      "canonical_decimal": "0"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!O4",
+      "canonical_decimal": "2"
+    },
+    {
+      "record": "optoGEF2_small_col_O",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!O5",
+      "canonical_decimal": "0.41505646"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!P4",
+      "canonical_decimal": "0.80580697"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!P4",
+      "canonical_decimal": "5.83168051"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!P5",
+      "canonical_decimal": "2.79789867"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!P4",
+      "canonical_decimal": "6"
+    },
+    {
+      "record": "optoGEF2_small_col_P",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!P5",
+      "canonical_decimal": "1.97909408"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!Q4",
+      "canonical_decimal": "0.75547653"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!Q4",
+      "canonical_decimal": "4.9233871"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!Q5",
+      "canonical_decimal": "1.51460771"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!Q4",
+      "canonical_decimal": "4"
+    },
+    {
+      "record": "optoGEF2_small_col_Q",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!Q5",
+      "canonical_decimal": "1.16532258"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "activation_magnitude",
+      "locator": "Fig 2c!R4",
+      "canonical_decimal": "0.85073705"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "maximum_shortening_um",
+      "locator": "Fig 2d!R4",
+      "canonical_decimal": "10.36677116"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "region_averaged_shortening_um",
+      "locator": "Fig 2c!R5",
+      "canonical_decimal": "4.87520446"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "apical_max_shortening_um",
+      "locator": "Fig 2e!R4",
+      "canonical_decimal": "9"
+    },
+    {
+      "record": "optoGEF2_small_col_R",
+      "observable": "basal_max_shortening_um",
+      "locator": "Fig 2e!R5",
+      "canonical_decimal": "3.36677116"
+    }
+  ],
+  "mean_duplicate_exact": true,
+  "dose_max_duplicate_in_Fig4h_small_exact": true,
+  "mean_values_unique_count": 17,
+  "canonical_inequality_checks": {
+    "all17_mean_le_max": true,
+    "all17_max_le_apical_plus_basal": true,
+    "max_equals_component_sum_records": [
+      "optoGEF2_small_col_C",
+      "optoGEF2_small_col_D",
+      "optoGEF2_small_col_I",
+      "optoGEF2_small_col_O"
+    ],
+    "inequalities_do_not_establish_component_aggregation": true
+  },
+  "pairing": {
+    "Fig2e_withincolumn_apical_basal_pair_author_supported": true,
+    "Fig2c_to_2d_verified_by_unique_mean": true,
+    "Fig2e_to_otherpanels_canonical_order": "Reasonable documented commonB:R source-column assumption, not independently verified specimen IDs",
+    "optional_nuisance": "One unknown permutation of17PAIRED(A,B)columns; never independent shuffles",
+    "interval_matching_logic": "Guaranteedgraph perfectmatching -> sufficientIN; possiblegraph Hallwitness -> OUT; intermediate -> UNRESOLVED",
+    "no_permutation_or_noise_law_selected_here": true
+  },
+  "illustrative_trace_checks": [
+    {
+      "example": "Fig2b_weak",
+      "timepoints": 21,
+      "time_range_s": [
+        "-443/10",
+        "2013/5"
+      ],
+      "regional_mean_apical_max_minus_min_um": "3",
+      "caption_rounded_dose": "0.15",
+      "matching_canonical_record": "optoGEF2_small_col_B",
+      "classification": "Rounded-dose plus excursion correspondence; not verified specimen ID or proof of component operator"
+    },
+    {
+      "example": "Fig2b_moderate",
+      "timepoints": 25,
+      "time_range_s": [
+        "-717/10",
+        "5179/10"
+      ],
+      "regional_mean_apical_max_minus_min_um": "6",
+      "caption_rounded_dose": "0.46",
+      "matching_canonical_record": "optoGEF2_small_col_F",
+      "classification": "Rounded-dose plus excursion correspondence; not verified specimen ID or proof of component operator"
+    },
+    {
+      "example": "Fig2b_strong",
+      "timepoints": 17,
+      "time_range_s": [
+        "-89/2",
+        "321"
+      ],
+      "regional_mean_apical_max_minus_min_um": "13",
+      "caption_rounded_dose": "1.29",
+      "matching_canonical_record": "optoGEF2_small_col_K",
+      "classification": "Rounded-dose plus excursion correspondence; not verified specimen ID or proof of component operator"
+    }
+  ],
+  "trace_cell_values_independently_matched_to_workbook": 189,
+  "supplement_pages_screened": [
+    {
+      "page": 1,
+      "text_sha256": "1a446e7e0ee8a556ffe634413a063db1e7f236b3ae530a1352a704760b30716c"
+    },
+    {
+      "page": 2,
+      "text_sha256": "873e780958d650b13dd20c16b238142c7109076d76c46cb2c1c62d3c84065deb"
+    },
+    {
+      "page": 3,
+      "text_sha256": "de48c5601817f6e2575a030a015c15a99b87dc8e5a846e8f2c4885e2ed897d4e"
+    },
+    {
+      "page": 4,
+      "text_sha256": "9fb8b27359044d87ec7c9f1cf8d3122a8fbbe8d50dff8fe8abc29437c719738d"
+    },
+    {
+      "page": 7,
+      "text_sha256": "f5235457c612da306fe73e570c83cf9775aa58cfcba37569f53adae1121b55ac"
+    },
+    {
+      "page": 9,
+      "text_sha256": "1ece706f37d725e46d6e03e11a2379ccd174f7f0cb726b1e9147a813db2b1657"
+    },
+    {
+      "page": 12,
+      "text_sha256": "8275ab88a4952d28a7e9e82daeec77f07de19355322705c41b16235e1d2f646f"
+    },
+    {
+      "page": 13,
+      "text_sha256": "b53348f3b0e867bfa6ccf2f2625458e4d39883a496e7324deeea00bee95151c6"
+    },
+    {
+      "page": 18,
+      "text_sha256": "65af38658f65e7ed13c6b412bca8f54178263d54dbb965a03b5f3f35a5720faf"
+    }
+  ],
+  "definitions": {
+    "height": "Vertical apical_z minus basal_z at common registered horizontal coordinate; not normal thickness or material fibre",
+    "reference": "Embryo-specific noactivation height curve from nonactivated tissue cellularization; full field/ratefit notprovided",
+    "maximum_total": "sup over observedtime and trackedactivationROI of referenceheight-currentheight",
+    "regional_mean": "Spatially averaged temporally maximal summary; max/mean ordering not uniquelyspecified inpublicprose",
+    "components": "Fig2e maximum surface shortening labels; regionalmean versus spatialmax and exact counterfactual allocation unresolved",
+    "source_has_motion_tracking": true,
+    "claim_source_is_unregistered": false,
+    "component_reference_from_height_alone_unique": false,
+    "initial_apical_anchor": "Published preactivation coordinate data make it plausible; exact Fig2e reference rule not explicitlyverified",
+    "positivepart_clipping_established": false,
+    "ROI_material_vs_Eulerian_and_weights_explicit": false
+  },
+  "model_contract_alternatives": {
+    "static_reference": "Declaredinitialgraphs; currentflatH/0 doesnotinclude cellularization",
+    "same_current_radius_graph_inversion_required": true,
+    "mean_weights": [
+      "diameterline:1/R integral s dr",
+      "projecteddisk:2/R\u00b2 integral r*s dr"
+    ],
+    "component_aggregation": [
+      "separate spatialmax",
+      "regionalmean"
+    ],
+    "quasistatic": "Conditional amplitude-path supremum; not automatically actualtimewindowpeak",
+    "finite_saved_states": "Finitepathmaximum only; continuouspathcoverage/errornotcertified",
+    "legacy_materialcolumn_or_axis_motion_is_sourceexact": false
+  },
+  "exact_synthetic_counterexamples": {
+    "max_mean_order": {
+      "V1": "1",
+      "V2": "2"
+    },
+    "separatecomponent_peak_sum": {
+      "height_peak": "2",
+      "sum_component_peaks": "4"
+    }
+  },
+  "fig2_source_inspection": {
+    "canonical_existing_path": "literature\\material_constraints_countryman_fig2.jpg",
+    "bytes": 160884,
+    "sha256": "536a1fa618d78717d937a377da16f84db7bc782e3437c000f7173db770a8eb50",
+    "official_md5": "eca4cf5f1708fc425afdf242c4c59e50",
+    "official_md5_matches": true,
+    "local_visual_inspection": true,
+    "adapted_publication": false,
+    "access": "Webimageopenfailed; PythonS3fetch160884bytes matchedexistingcopy exactly; newlyfetchedduplicate removed, originalretainedunchanged",
+    "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_Fig2_HTML.jpg"
+  },
+  "source_hashes": [
+    {
+      "path": "data/raw/primary.xml",
+      "sha256": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7"
+    },
+    {
+      "path": "data/raw/41467_2025_62483_MOESM16_ESM.xlsx",
+      "sha256": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d"
+    },
+    {
+      "path": "data/raw/41467_2025_62483_MOESM1_ESM.pdf",
+      "sha256": "b3639ea26a0bcb8c822b517a00e7954b046640a7c24d5e791df40aacac62d656"
+    },
+    {
+      "path": "data/derived/calibration_small_18um.csv",
+      "sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518"
+    },
+    {
+      "path": "data/derived/example_apical_basal_trajectories.csv",
+      "sha256": "5c17b08254bc810476d3ab727a25393e53ac752c2502f3d5054809170bd99102"
+    },
+    {
+      "path": "literature/material_constraints_countryman_fig2.jpg",
+      "sha256": "536a1fa618d78717d937a377da16f84db7bc782e3437c000f7173db770a8eb50"
+    },
+    {
+      "path": "scripts/axisymmetric_mechanics.py",
+      "sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+    },
+    {
+      "path": "scripts/axisymmetric_mixed.py",
+      "sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14"
+    }
+  ],
+  "local_doc_links": [
+    {
+      "target": "../evidence/joint_observation_contract_audit.json",
+      "exists": true
+    }
+  ],
+  "display_math_delimiters_balanced": true,
+  "document_sha256": "d805ff0f9c757d35fdd61283ae1591be3873d73d7daadbaac521020454654d04"
+}

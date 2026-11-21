@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ENERGY-GAIN-CELL-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the uniform energy-gain cell</h1>
+<p><strong>PASS for the declared fixed-material weak-load family, with explicit limits on independence.</strong> Exact rational acceptance arithmetic and all frozen inputs were checked separately, then the complete unchanged Arb bound-production code was reproduced into a new output directory. This is not described as an independent reimplementation of every local majorant.</p>
+<p>The <a href="../scripts/review_energy_gain_cell.py">review code</a>, <a href="../evidence/energy_gain_cell_independent_review.json">71-check receipt</a>, original <a href="ENERGY-GAIN-CELL.html">energy-cell proof</a>, and isolated reproduction under <code>runs/energy_gain_cell_independent_review/</code> are retained. No equilibrium solve or physical-source edit occurred. The original successful receipt was unchanged.</p>
+<h2>The claim actually verified</h2>
+<p>The dimensionless relative gain increment satisfies <span class="math" data-tex="&#124;\delta&#124;\le10^{-3}"></span>; the base drive is one, so the drive interval is <span class="math" data-tex="[0.999,1.001]"></span>. All material coefficients, geometry and binary quadrature caches are fixed to the old weak-load case. Write</p>
+<div class="math display" data-tex="
+ u=u_0+S\delta+Wz,\qquad \&#124;z\&#124;_2\le\rho=10^{-6},
+"></div>
+
+<p>where S is a fixed binary displacement predictor and W is a fixed nonsingular binary metric matrix. Uniform Arb bounds give the safe rounded summaries</p>
+<div class="math display" data-tex="
+ \eta\le6.100638\times10^{-7},\qquad
+ Z\le0.155994806,\qquad
+ \eta+Z\rho\le7.660586\times10^{-7}&lt;\rho.
+"></div>
+
+<p>For every admitted gain, the map</p>
+<div class="math display" data-tex="
+ T_\delta(z)=z-W^TF(u_0+S\delta+Wz;\delta)
+"></div>
+
+<p>is a contraction and self-map of the same Euclidean z-ball. It has a unique fixed point there. W is nonsingular, so <span class="math" data-tex="W^TF=0"></span> implies <span class="math" data-tex="F=0"></span>. The exact rational review independently verifies the strict inequalities, rather than deciding from rounded decimals. The exact transformed Hessian is symmetric and stays within norm Z of the identity; it is positive definite. The interior stationary point is therefore a strict local energy minimum for this finite-quadrature potential.</p>
+<h2>Why the predictor residual is bounded uniformly</h2>
+<p>The energy depends linearly on the active coefficient. At fixed center, <span class="math" data-tex="F(u_0;\delta)=F_0+B\delta"></span>. Therefore</p>
+<div class="math display" data-tex="
+ F(u_0+S\delta;\delta)
+ =F_0+(H_0S+B)\delta
+ +\int_0^1[H(u_0+tS\delta;\delta)-H_0]S\delta\,dt.
+"></div>
+
+<p>The full gain increment remains in the Hessian on every path subinterval. Only the positional excursion shrinks with t; scaling the gain itself by t here would bound the wrong residual.</p>
+<p>Eight exact adjacent t-intervals cover <span class="math" data-tex="[0,1]"></span>. On each, a supremum Hessian-variation bound is multiplied by the exact interval length. The independent scalar audit checks the complete partition, every stored rank/majorant combination, the integral upper sum and the final residual/contraction inequalities. The coarser unpartitioned sufficient test had failed; the failed screen remains retained rather than being called nonexistence.</p>
+<h2>The energy majorant and its assumptions</h2>
+<p>For the volumetric outer product, preserve the center and change operators before taking absolute values:</p>
+<div class="math display" data-tex="
+ \&#124;A_0^TD+D^TA_0+D^TD\&#124;_2
+ \le2\&#124;A_0\&#124;_2\&#124;D\&#124;_2+\&#124;D\&#124;_2^2.
+"></div>
+
+<p>The remaining symmetric local Hessian differences admit row-diagonal Loewner majorants. Exact positive quadrature weights preserve those bounds under assembly, and congruence by W preserves semidefinite order. Spectral norms are bounded by maximum absolute row sums only for exactly symmetric target matrices. Each of these conditions was checked in the source and input data. The review independently verifies positivity of all 9,504 cached weights and nonsingularity of the triangular binary W, rather than inferring either from a successful plot or floating eigenvalue.</p>
+<p>The complete reproduction recomputed all 9,504 local contributions and all nine transformed majorants. Every serialized final bound and every plan bound matched the retained original. This is a full unchanged-source reproduction. Its mathematical interpretation additionally rests on the independent derivation above and the previously independently checked constitutive derivatives; it is not an external expert review.</p>
+<h2>Guard finding and scientific boundary</h2>
+<p>The successful producer's status was chosen from the numerical acceptance inequalities before combining the final source/input booleans. All booleans in this actual packet are true and all bytes match, so this does not invalidate the result. A future source-drifted packet must not be accepted by status alone. This review requires every numerical and metadata check to be true and rechecks the original bytes before and after reproduction. The limitation is retained rather than silently changing the frozen successful source.</p>
+<p>No claim here covers actual source record M, the new seventeen material/gain fields, variation of all material ratios, unbounded tails, a physical activation history, global energetic minimization, continuum/integration error or biological validation. A local stationary family over a gain interval is not the completed identified set. The original five-gate objective remains incomplete.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

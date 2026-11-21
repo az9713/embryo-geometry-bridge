@@ -1,0 +1,165 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QUADRATIC-MEAN-DERIVATIVES</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Exact derivatives of fixed-ROI quadratic regional means</h1>
+<p><strong>Completed scope: interval-enclosed node derivatives of the smooth conditional regional means.</strong> The implementation uses saved surface geometry only. It performs no mechanical optimization, material fit, maximum differentiation, implicit equilibrium solve or local-identifiability claim.</p>
+<p>The source <code>scripts/quadratic_mean_derivatives.py</code> is frozen at <code>681b69335a80ae0468dd98856c5562b24524827809ece465747b95454d152bff</code>. It uses the unchanged <a href="QUADRATIC-ENDPOINT-OBSERVER.html">quadratic endpoint observer</a> only for validated saved-state curve extraction; the derivative formula and polynomial assembly are implemented separately. <strong>35 synthetic checks and 49 checks on one saved 12x6 high-quadrature gain-10 state pass.</strong></p>
+<h2>What is held fixed</h2>
+<p>Let a continuous piecewise-quadratic boundary have physical coordinates</p>
+<div class="math display" data-tex="
+ R(t)=\sum_{j=0}^2N_j(t)R_j,\qquad
+ Z(t)=\sum_{j=0}^2N_j(t)Z_j,\qquad 0\le t\le1,
+"></div>
+
+<p>with the three P2 nodal functions</p>
+<div class="math display" data-tex="
+ N_0=1-3t+2t^2,\qquad N_1=4t-4t^2,\qquad N_2=-t+2t^2.
+"></div>
+
+<p>Assume the current radial derivative is strictly positive on every visible edge section, so current radius has a smooth local inverse. Fix a physical ROI <span class="math" data-tex="I=[c,d]"></span>, component references, and either <span class="math" data-tex="w(R)=1"></span> or <span class="math" data-tex="w(R)=R"></span>. Its positive normalizer is</p>
+<div class="math display" data-tex="
+ m_w=\int_c^d w(R)dR
+ =\begin{cases}d-c,&amp;w=1,\\\frac{d^2-c^2}{2},&amp;w=R.\end{cases}
+"></div>
+
+<p>The boundary mean is <span class="math" data-tex="\overline Z_w=m_w^{-1}\int_c^d w(R)Z(R)dR"></span>. The derivative holds <strong>c, d, the reference heights, the weight rule and the physical length unit fixed</strong>. It is not a derivative at fixed material radius or fixed edge parameter.</p>
+<h2>Why radial transport and moving cut endpoints matter</h2>
+<p>On a visible edge interval <span class="math" data-tex="[\tau_-,\tau_+]"></span>, the numerator is</p>
+<div class="math display" data-tex="
+ I_e=\int_{\tau_-}^{\tau_+}w(R(t))Z(t)R&#x27;(t)dt.
+"></div>
+
+<p>For a fixed physical cut <span class="math" data-tex="R(\tau)=c"></span> or d, differentiation gives</p>
+<div class="math display" data-tex="
+ \delta\tau=-\frac{\delta R(\tau)}{R&#x27;(\tau)}.
+"></div>
+
+<p>The integrand variation, followed by integration by parts, is</p>
+<div class="math display" data-tex="
+\begin{aligned}
+ \delta\{w(R)ZR&#x27;\}
+ &amp;=w&#x27;(R)\delta R\,ZR&#x27;+w(R)\delta Z\,R&#x27;+w(R)Z\,\delta R&#x27;,\\
+ \int\delta\{w(R)ZR&#x27;\}dt
+ &amp;=\left[w(R)Z\,\delta R\right]_{\tau_-}^{\tau_+}
+   +\int w(R)\left(R&#x27;\delta Z-Z&#x27;\delta R\right)dt.
+\end{aligned}
+"></div>
+
+<p>Leibniz endpoint motion contributes the negative of the displayed endpoint term at each fixed physical cut. At boundaries between full adjacent edges, the remaining endpoint terms cancel because the current trace is continuous and the shared nodal displacement has a single value. Thus the assembled variation is exactly</p>
+<div class="math display" data-tex="
+ \boxed{\quad
+ \delta\int_c^d w(R)Z(R)dR
+ =\sum_e\int_{\tau_{e,-}}^{\tau_{e,+}}
+ w(R)\left(R&#x27;\delta Z-Z&#x27;\delta R\right)dt.
+ \quad}
+"></div>
+
+<p>The <span class="math" data-tex="-Z&#x27;\delta R"></span> term is horizontal transport through a sloped surface. Dropping it incorrectly treats the measured height as following a material point. Holding the parameter cuts fixed also gives the wrong answer when they represent fixed physical ROI boundaries.</p>
+<h2>Explicit per-node derivatives</h2>
+<p>Substituting <span class="math" data-tex="\delta R=N_j\delta R_j"></span>, <span class="math" data-tex="\delta Z=N_j\delta Z_j"></span> yields</p>
+<div class="math display" data-tex="
+ \frac{\partial\overline Z_w}{\partial R_j}
+ =-\frac1{m_w}\int w(R)Z&#x27;N_jdt,
+ \qquad
+ \frac{\partial\overline Z_w}{\partial Z_j}
+ =\frac1{m_w}\int w(R)R&#x27;N_jdt.
+"></div>
+
+<p>Contributions from edges sharing a node are added. The polynomial integrands have degree at most three for line means and five for disk means. Their primitives have degrees at most four and six. Exact rational coefficients and rational brackets for inverse-cut endpoints therefore enclose each integral and each derivative. Signed coefficients and negative P2 basis values are retained; individual nodal derivatives need not be positive even though the spatial averaging weight is nonnegative.</p>
+<p>The code differentiates the physical functional analytically and then encloses those derivative integrals. It does not differentiate a finite number of bisection iterations or treat a branch of interval code as the physical derivative. The exact enclosures refer to the supplied stored piecewise-quadratic curves, not to a continuum PDE or experimental surface.</p>
+<p>For the actual conditional component observables,</p>
+<div class="math display" data-tex="
+ \overline d_a=a_0-\overline a_w,\qquad
+ \overline d_b=\overline b_w-b_0,\qquad
+ \overline s=\overline d_a+\overline d_b,
+"></div>
+
+<p>the apical node derivative has a minus sign, the basal one a plus sign, and the height-mean gradient is their sum.</p>
+<h2>Boundary-domain admissibility</h2>
+<p>The formula defines a directional derivative on continuous trace variations for which the same physical ROI remains covered. If the ROI begins at the physical axis, the axis radial displacement must remain zero in the actual admissible mechanics space. Moving that domain endpoint into the ROI can destroy coverage and need not admit an independent two-sided physical partial derivative.</p>
+<p>The full array is a representation of the derivative on <strong>admissible directions</strong>, including formal entries for constrained coordinates. Those constrained entries are not promoted to independent physical partials. The mechanics caller must select the true free displacement coordinates. The current implementation checks strict positive radial derivative on each visible segment; a folded graph or unresolved zero inverse slope is rejected.</p>
+<h2>API and units</h2>
+<pre><code class="language-python">from quadratic_mean_derivatives import mean_state_gradients, midpoint_node_gradient
+
+result = mean_state_gradients(
+    saved_state,
+    roi_um=None,                  # declared fixed default [0, patch_radius*33.5]
+    length_unit_um=&quot;33.5&quot;,
+    weighting=&quot;current_disk&quot;,   # or &quot;current_radial_line&quot;
+    root_steps=80,
+)
+gradient_intervals = result[&quot;node_gradients&quot;][&quot;height_regional_mean_shortening&quot;]
+gradient_centres = midpoint_node_gradient(result, &quot;height_regional_mean_shortening&quot;)
+</code></pre>
+<p><code>node_gradients[key][node][coordinate]</code> is an exact interval for coordinate R or Z of the <strong>physical</strong> current node. Nonboundary nodes have exactly zero entries. The three keys are:</p>
+<ul>
+<li><code>apical_regional_mean_downward</code></li>
+<li><code>basal_regional_mean_upward</code></li>
+<li><code>height_regional_mean_shortening</code></li>
+</ul>
+<p>The mean has units of length, its physical node coordinate has units of length, so these derivative entries are dimensionless. If the mechanical free variable is a dimensionless nodal displacement and <span class="math" data-tex="x_{\rm phys}=L_0(X+u)"></span>, then</p>
+<div class="math display" data-tex="
+ \frac{\partial\overline s}{\partial u_i}
+ =L_0\,\frac{\partial\overline s}{\partial x_{{\rm phys},i}}.
+"></div>
+
+<p>Multiply by the physical length unit, flatten in the mechanics node/coordinate order and select the true free coordinates. Float centres are a convenience for a later numerical implicit calculation; they do not replace the retained exact intervals.</p>
+<p>If a future parameter changes the reference, length unit, ROI, weight rule or normalization, its explicit chain-rule terms must be added. For example, this API supplies no derivative of the ROI radius with respect to activation radius or H. It also supplies no material derivative through a mechanically solved equilibrium. Those are separate operations.</p>
+<h2>Analytical example that exposes both mistakes</h2>
+<p>Take <span class="math" data-tex="R(t)=t+t^2"></span>, <span class="math" data-tex="Z(t)=t^2"></span> and the fixed physical ROI</p>
+<div class="math display" data-tex="
+ [c,d]=[5/16,21/16],\qquad[\tau_-,\tau_+]=[1/4,3/4].
+"></div>
+
+<p>The line mass is one and disk mass is 13/16. Exact derivative coefficients are:</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th style="text-align: right;">Node</th>
+<th style="text-align: right;">Derivative in R</th>
+<th style="text-align: right;">Derivative in Z</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Line</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1/48</td>
+</tr>
+<tr>
+<td>Line</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-11/24</td>
+<td style="text-align: right;">11/12</td>
+</tr>
+<tr>
+<td>Line</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-1/24</td>
+<td style="text-align: right;">1/16</td>
+</tr>
+<tr>
+<td>Disk</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">17/780</td>
+<td style="text-align: right;">-17/624</td>
+</tr>
+<tr>
+<td>Disk</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-149/312</td>
+<td style="text-align: right;">237/260</td>
+</tr>
+<tr>
+<td>Disk</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-109/1560</td>
+<td style="text-align: right;">361/3120</td>
+</tr>
+</tbody>
+</table>
+<p>For the line mean, varying the middle radial node has derivative -11/24. Omitting radial transport predicts zero. Differentiating with fixed parameter cuts instead predicts -1/12: it misses a boundary cancellation of 3/8. Independent numerical inverse/quadrature finite differences recover the correct fixed-current-ROI value.</p>
+<p>A constant-height graph supplies another check: every radial derivative is exactly zero on a fixed current ROI, despite changes in its radial parameterization. Summing all vertical-node derivatives gives one, as required by rigid vertical translation of the whole boundary. No assumption that every individual P2 coefficient is positive is made.</p>
+<h2>Verification receipts and retained scope</h2>
+<p><code>evidence/quadratic_mean_derivatives_synthetic.json</code> retains 35 checks: the twelve rational coefficients above, twelve separately evaluated finite differences, translation identities, zero radial derivatives for a constant graph, the two missing-term counterexamples and malformed-input guards. Synthetic finite differences use physical step 1e-5 and absolute comparison tolerance 2e-8. These finite differences corroborate the implementation; they are not the proof.</p>
+<p><code>evidence/quadratic_mean_derivatives_saved.json</code> retains the complete full-node gradient arrays for line and disk means on <strong>one</strong> saved 12x6 high-quadrature gain-10 field, its hash, and all 49 checks. Six independently generated admissible physical directions per measure test all three means, giving 36 numerical directional finite differences. Physical steps are 2e-5 micrometres and the absolute derivative tolerance is 2e-8. Independent float polynomial inversion and scalar quadrature are used for the perturbed means, rather than the exact derivative primitive. Mean values are also checked against the frozen observer, unused-node gradients are exactly zero, and the source state hash is unchanged.</p>
+<p>The three derivative identities, signed assembly and exact rational integral enclosures are the mathematical claims. No derivative of a spatial maximum at ties, unsampled temporal peak, full parameter family, biological mechanism or local-rank/inverse-uniqueness theorem is claimed. The calculus is standard; its role is to provide a checked bridge from the physical observation contract to a later, separately verified implicit material-inference calculation.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

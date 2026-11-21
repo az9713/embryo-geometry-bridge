@@ -1,0 +1,112 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>COHORT-ENERGY-STABILITY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>The seventeen selected states are strict local energy minima</h1>
+<p><strong>All seventeen selected root families are now independently verified strict local minima of the fixed finite-dimensional energy on the same shared parameter cell.</strong> A separate 192-bit replay passed every record after the producer calculation, with its own exact matrix construction and norm arithmetic.</p>
+<p>This strengthens the existing stationary-root theorem without changing a material parameter, root, source dose, observation, or discrepancy bound. It concerns the contraction-to-geometry model motivated by <a href="https://doi.org/10.1038/s41467-025-62483-6">Countryman et al. (2025)</a>, not a new molecular mechanism for embryonic development.</p>
+<p><img alt="Exact matrix bounds and uniform normalized energy curvature" src="../../omitted-asset.svg" /></p>
+<p>Each left-panel point is a rigorous upper bound for a matrix-certificate residual. Each right-panel bar is a rigorous lower bound for energy curvature in the fixed normalized free coordinates. They are not attained norms or measured eigenvalues. F/K are highlighted because their already verified root families use separately corrected numerical proof centers; this calculation makes no further root correction.</p>
+<h2>What is being certified</h2>
+<p>Let <span class="math" data-tex="E_i(u,\theta)"></span> be the exact reduced energy for source record <span class="math" data-tex="i"></span>, with its prescribed activation <span class="math" data-tex="gI_i"></span>. It is the scalar finite-quadrature potential defined by the frozen binary cache, restricted through the existing linear map to 611 allowed displacement coordinates. Write</p>
+<div class="math display" data-tex="
+F_i(u,\theta)=\nabla_u E_i(u,\theta),
+\qquad H_i(u,\theta)=\nabla_u^2 E_i(u,\theta).
+"></div>
+
+<p>The previously reviewed root theorem supplies <span class="math" data-tex="F_i(u_i(\theta),\theta)=0"></span> and full predictor/corrector tubes for every <span class="math" data-tex="\theta\in C"></span>. Its analytic-domain checks keep the regularized Jacobian penalty inactive and the surface terms nonsingular. Thus the exact scalar potential is <span class="math" data-tex="C^2"></span>, and the reduced Hessian <span class="math" data-tex="H_i"></span> is symmetric throughout those tubes.</p>
+<p>The new producer certificates establish</p>
+<div class="math display" data-tex="
+H_i(u,\theta)\succeq m_i I,
+\qquad m_i&gt;3.94\times10^{-4}&gt;0,
+"></div>
+
+<p>for all seventeen records, every <span class="math" data-tex="\theta\in C"></span>, and every <span class="math" data-tex="u"></span> in the corresponding declared full root tube. These numbers are normalized free-coordinate energy curvatures. They are not physical moduli or relaxation rates and depend on the coordinate basis and normalization.</p>
+<p>At fixed activation and parameters, sufficiently small allowed displacements from the selected root therefore raise the model energy. This does not identify how the embryo reaches that state.</p>
+<p>The cell is unchanged: relative half-width <span class="math" data-tex="10^{-8}"></span> for the four positive material/gain coordinates, and <span class="math" data-tex="T_a\in[0,2\times10^{-10}]"></span>. The geometry, 12×6 quadratic axisymmetric mesh, finite volumetric coefficient, binary integration policy and source observations also remain unchanged. This tiny computational cell is not a physiological prior or the full compatible material domain.</p>
+<h2>1. The numerical preconditioner is a proof witness</h2>
+<p>Each existing root certificate uses a frozen binary matrix <span class="math" data-tex="R_i"></span>, numerically constructed as an approximate inverse Hessian. It is a <strong>numerical proof witness</strong>, not a new constitutive coefficient, physical mobility, or biological dynamical law. It need not be exactly symmetric.</p>
+<p>The independent root audit already bounds, uniformly on the full tube,</p>
+<div class="math display" data-tex="
+\&#124;I-R_iH_i(u,\theta)\&#124;_\infty\le Z_i&lt;1.
+"></div>
+
+<p>This is the full-tube bound <span class="math" data-tex="Z_i"></span>, not the smaller center-only defect. A positive-stable preconditioned matrix alone would not prove a symmetric Hessian positive. The additional premise needed here is</p>
+<div class="math display" data-tex="
+P_i:=\frac{R_i+R_i^T}{2}\succ0.
+"></div>
+
+<p>Every entry of this target is formed from the <strong>exact binary rational entries</strong> of <span class="math" data-tex="R_i"></span>, followed by addition and division by two in rigorous Arb arithmetic. A separately rounded floating symmetric matrix does not define <span class="math" data-tex="P_i"></span>.</p>
+<p>Floating Cholesky and a triangular solve propose a square binary matrix <span class="math" data-tex="K_i"></span>. They are untrusted proposals: failure produces an unresolved result, not a theorem about eigenvalue signs. The actual certificate is the rigorous 160-bit bound</p>
+<div class="math display" data-tex="
+q_i:=\&#124;I-K_iP_iK_i^T\&#124;_\infty
+\le \overline q_i&lt;8\times10^{-10}&lt;1.
+"></div>
+
+<p>The exact matrix <span class="math" data-tex="K_iP_iK_i^T"></span> is symmetric. Its eigenvalues lie in <span class="math" data-tex="[1-\overline q_i,1+\overline q_i]"></span>, so it is positive definite. Consequently square <span class="math" data-tex="K_i"></span> is invertible, and congruence implies <span class="math" data-tex="P_i\succ0"></span>. No independent floating rank test or assumption that <span class="math" data-tex="R_i"></span> is symmetric is used.</p>
+<h2>2. Why these facts imply the actual energy Hessian is positive</h2>
+<p>Fix a record, parameter and point in its tube; suppress indices. Set <span class="math" data-tex="A=RH"></span>. From</p>
+<div class="math display" data-tex="
+\&#124;I-A\&#124;_\infty\le Z&lt;1
+"></div>
+
+<p>every eigenvalue of <span class="math" data-tex="A"></span> has positive real part. In particular <span class="math" data-tex="A"></span> is invertible. Since <span class="math" data-tex="\operatorname{sym}(R)\succ0"></span>, <span class="math" data-tex="R"></span> is invertible, hence so is <span class="math" data-tex="H"></span>.</p>
+<p>Because <span class="math" data-tex="H=H^T"></span>,</p>
+<div class="math display" data-tex="
+A^TH+HA
+=H(R^T+R)H
+=2H\,\operatorname{sym}(R)\,H
+=:Q\succ0.
+"></div>
+
+<p>The positive-stability Lyapunov identity then gives</p>
+<div class="math display" data-tex="
+H=\int_0^\infty e^{-A^Tt}Qe^{-At}\,dt\succ0.
+"></div>
+
+<p>Equivalently, differentiating <span class="math" data-tex="e^{-A^Tt}He^{-At}"></span> and integrating proves the identity directly. The exponential is an auxiliary algebraic proof device; it is not a postulated trajectory or evolution law for tissue.</p>
+<p>This argument is applied pointwise throughout each already reviewed full tube and throughout the same <span class="math" data-tex="C"></span>. It therefore proves a uniform positive reduced Hessian, rather than positivity only at sampled states.</p>
+<h2>3. A quantitative lower bound without a new Hessian assembly</h2>
+<p>Neumann's bound yields</p>
+<div class="math display" data-tex="
+H^{-1}=(RH)^{-1}R,\qquad
+\&#124;H^{-1}\&#124;_\infty\le
+\frac{\&#124;R\&#124;_\infty}{1-Z}.
+"></div>
+
+<p>After positivity of <span class="math" data-tex="H"></span> has been established,</p>
+<div class="math display" data-tex="
+\lambda_{\min}(H)
+=\frac{1}{\rho(H^{-1})}
+\ge\frac{1}{\&#124;H^{-1}\&#124;_\infty}
+\ge
+m:=\frac{1-\overline Z}{\&#124;R\&#124;_\infty}&gt;0.
+"></div>
+
+<p>The matrix infinity norm of <span class="math" data-tex="R"></span> is computed as exact rational absolute row sums of its binary entries. The numerator uses the independently audited outward upper endpoint <span class="math" data-tex="\overline Z"></span>. No dimension factor, sampled eigenvalue, or fresh Hessian assembly is hidden in this estimate.</p>
+<p>Across the actual producer receipts, the smallest lower bound is approximately <span class="math" data-tex="0.0003948742051692295"></span>; the conservative display <span class="math" data-tex="m_i&gt;3.94\times10^{-4}"></span> is checked by exact rational comparisons. It is a lower bound, not the actual smallest Hessian eigenvalue.</p>
+<p>For a selected root <span class="math" data-tex="u_*"></span>, Taylor's theorem gives the local energy-gap inequality</p>
+<div class="math display" data-tex="
+E_i(u,\theta)-E_i(u_*,\theta)
+\ge\frac{m_i}{2}\&#124;u-u_*\&#124;_2^2
+"></div>
+
+<p>when the segment from <span class="math" data-tex="u_*"></span> to <span class="math" data-tex="u"></span> stays in the certified tube. The predictor-centered coordinate cube is convex, so this holds for points in that cube at the fixed parameter. In particular the selected root is a strict local minimum.</p>
+<h2>Verification and receipts</h2>
+<p>The <a href="../evidence/cohort_energy_stability_theory_review.json">theory and source-applicability review</a> verifies the nonsymmetric-preconditioner lemma, the quantitative bound, the scalar <span class="math" data-tex="C^2"></span> target and applicability to the actual seventeen independently reviewed root tubes. It deliberately held the energy-minimum conclusion pending the separate positivity calculations.</p>
+<p>The <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_energy_stability_v1/protocol.json">new frozen protocol</a> binds all seventeen selected caches, root certificates, specific independent root-audit capsules, source modules and the common cell. F/K use their new corrected-center caches. M uses the immutable nested independent bounds and root-audit binding. Full corrector radii are matched; center-only defects and unrelated weak-load certificates are not substituted.</p>
+<p>The <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_energy_stability_v1/guard_tests.json">guard tests</a> include nonsymmetric matrices with positive symmetric parts, indefinite symmetric parts despite positive eigenvalues, nearly singular exact-binary matrices, rank-deficient proposals, the exact <span class="math" data-tex="q=1"></span> boundary, and tampered/contradictory cache hashes. Authoritative expected hashes cannot be overwritten by a current-file snapshot. The initial unsolved implementation and the caught binding gap are retained under the versioned prelaunch archive.</p>
+<p>The <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_energy_stability_v1/results.json">producer result</a>, SHA-256 5f590ed1bea078e2e88d17bb39f8030d144a95fb73bf96ab10b5823951883164, contains seventeen successful matrix certificates. Per-record files retain <span class="math" data-tex="K_i"></span>, rowwise residual bounds, exact <span class="math" data-tex="R_i"></span> norms, independent <span class="math" data-tex="\overline Z_i"></span>, and exact curvature lower bounds. The <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_energy_stability_v1/terminal.json">terminal receipt</a> records actual completion of the single authorized job. No equilibrium solve, parameter fitting or fresh Hessian assembly occurred.</p>
+<p>The final <a href="../evidence/cohort_energy_stability_independent_review.json">independent replay</a>, SHA-256 d4f4c4d30d16bbbf2141cabf1cee18b47fcc35ab958a2a8a203000f0a7acaf95, passed all seventeen records at 192-bit precision: eight checks per record and five summary checks. The reviewer formed the exact symmetric part independently, used a different matrix-product association, and computed the binary row norm through integer dyadic summation. It did not call the producer certifier or assemble a new Hessian. The frozen floating <span class="math" data-tex="K_i"></span> remained only a witness proposal. The exact <span class="math" data-tex="R_i"></span> norms and curvature lower bounds were independently reproduced.</p>
+<p>The review also has <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_energy_stability_review_v1/guard_tests.json">twenty separate adversarial guard checks</a>. Existing full-tube root/Hessian bounds and the independently reviewed scalar-energy applicability are explicitly reused; the new contribution of this replay is the exact-preconditioner positivity and energy-minimum composition.</p>
+<h2>What changes scientifically—and what remains open</h2>
+<p>The <a href="SHARED-CELL-COHORT.html">68-observation result</a> is unchanged:</p>
+<div class="math display" data-tex="
+5.18638714\le D(\theta)\le5.18638737\,\mu\mathrm m
+\qquad(\theta\in C).
+"></div>
+
+<p>This computation changes the mathematical qualification of the already selected roots, not their observational fit. The independently accepted result shows that the earlier stationary-tuple witness on <span class="math" data-tex="C"></span> also consists of strict local energy minima of this fixed model. A declared allowance of <span class="math" data-tex="5.2\,\mu\mathrm m"></span> still is not a measurement-noise estimate or validation of the source observation contract.</p>
+<p>The claim is restricted to allowed displacements in the 611-coordinate constrained axisymmetric discretization. It neither tests every nonaxisymmetric or continuum mode nor proves an exact integral/PDE error bound. It does not certify a global energy minimum, a shared stable loading history, actual biological dynamics, chemical realization, source temporal peaks/reference/ROI choices, the full material/geometry identified set, or successful prediction at larger activated diameters.</p>
+<p>Local energy positivity closes a specific mathematical gap in the selected model families. It is not proof of a new biological mechanism, a novel general concept or completion of the <a href="../PLAN.md">original five-gate study</a>. The methods—congruence certificates, norm bounds, Lyapunov identities and the second-derivative test—are standard; the retained model-specific evidence is what makes the conclusion assessable.</p>
+<h2>References</h2>
+<ol>
+<li>Countryman et al. (2025), <a href="https://doi.org/10.1038/s41467-025-62483-6">Endogenous OptoRhoGEFs reveal biophysical principles of epithelial tissue furrowing</a>. Experimental context for the prescribed contraction-to-geometry problem.</li>
+<li>Hank Yang, <a href="https://hankyang.seas.harvard.edu/OptimalControlEstimation/app-lti-system-theory.html">Optimal Control and Estimation, Appendix C, §C.1.3, Theorem C.3</a>. The appendix credits Shucheng Kang. The standard Hurwitz-sign Lyapunov theorem and integral apply here after replacing its system matrix by <span class="math" data-tex="-A"></span>; the self-contained argument above uses positive-stable <span class="math" data-tex="A=RH"></span>. This reference supports the mathematical identity, not a biological dynamics claim.</li>
+</ol><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

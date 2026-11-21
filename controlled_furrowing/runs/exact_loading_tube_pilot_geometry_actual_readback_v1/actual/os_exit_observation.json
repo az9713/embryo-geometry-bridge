@@ -1,0 +1,11 @@
+{
+  "status": "PASS_OBSERVED_INDEPENDENT_KL_GEOMETRY_ACTUAL_READBACK_EXIT",
+  "pid": 21576,
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "f3afd2",
+  "receipt_sha256": "595988a5a2b15b237ad13ec575290d915046dc2d9ae01c8243547923bac27ba9",
+  "terminal_sha256": "6ec02252bcbbce103cb6bbfc8e2e84e2be425911dbc160a9bae146dd870087e2",
+  "started_sha256": "5a75467b2142796536132c66f35006a08e21765c2fe5787071b730fd61de38c7",
+  "producer_os_sha256": "a3c801b5f877779ff64d6a08ce1b30ea0aeaa20c9d48b90151be091ec3bd5207",
+  "mathematical_status": "VERIFIED_UNRESOLVED_KL_WHOLE_ENVELOPE_BODY"
+}

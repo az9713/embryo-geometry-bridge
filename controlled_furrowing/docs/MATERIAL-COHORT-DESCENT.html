@@ -1,0 +1,178 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MATERIAL-COHORT-DESCENT</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>One actual multivariate calibration step from all 17 records</h1>
+<p><strong>Five material/input coordinates now enter a joint local calibration using all 68 small-region endpoint observations.</strong> The calculation has run on the full cohort, with all four observation conventions retained at the same 17 baseline fields. Four local affine minimax proposals are exactly certified. Their apparent improvements remain predictions of the affine approximation until fresh nonlinear fields verify them. This is neither a full physical identified set nor a completed larger-region prediction.</p>
+<p>The <a href="../scripts/material_cohort_descent.py">runner</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_descent_v1/protocol.json">frozen protocol</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_descent_v1/results.json">completed cohort result</a> and <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_descent_v1/exact_extraction_v2/exact_candidates.json">authoritative exact candidates</a> retain the inputs, matrices, graph observations and arithmetic receipts. No new mechanical equilibrium was solved in this tangent step.</p>
+<h2>1. The shared baseline and the inferential question</h2>
+<p>The preceding <a href="JOINT-GAIN-CALIBRATION.html">joint gain study</a> directly checked four gain candidates. The disk-weighted, spatial-maximum-component convention had the smallest existing calibration discrepancy, approximately 5.37984 µm. Its gain <span class="math" data-tex="g_0=8.0629720200\ldots"></span> and 17 corresponding fields define this step's common baseline. Selection uses small-region calibration alone, without larger-region outcomes.</p>
+<p>All four conventions are now evaluated at <strong>these same 17 fields and this same gain</strong>. Consequently the other three baseline discrepancies differ from those in the preceding study, which gave each convention its own gain. There is one cohort of 68 observations viewed four ways, not four independent cohorts.</p>
+<p>Geometry and the normalized shear coefficient stay fixed. The compression coefficient is fixed at 5000 as the declared numerical penalty; it is not inferred here as a physiological modulus. The five local coordinates are</p>
+<div class="math display" data-tex="
+ z=(\Delta\log K_a,\Delta\log K_b,\Delta T_a,
+       \Delta\log T_b,\Delta\log g).
+"></div>
+
+<p>The initial <span class="math" data-tex="T_a=0"></span> makes an additive nonnegative coordinate appropriate. The computational trust region is</p>
+<div class="math display" data-tex="
+ &#124;z_1&#124;,&#124;z_2&#124;,&#124;z_4&#124;,&#124;z_5&#124;\le0.1,\qquad 0\le z_3\le0.02.
+"></div>
+
+<p>These are bounds on one numerical step, not measured material priors, confidence limits or an exhaustive uncertainty domain. Surface coefficients and geometry use the fixed physical length <span class="math" data-tex="L_0=33.5"></span> µm described in <a href="PHYSICAL-PARAMETER-DOMAIN.html">the parameter-domain analysis</a>.</p>
+<h2>2. Mechanical sensitivity: what is proved and what is only checked</h2>
+<p>For equilibrium equations <span class="math" data-tex="R(u,\eta)=D_uE(u,\eta)=0"></span>, differentiation gives</p>
+<div class="math display" data-tex="
+ H S_j+B_j=0,\qquad
+ H=D_uR,\quad B_j=D_{\eta_j}R,\quad
+ S_j=\frac{\partial u}{\partial\eta_j}.
+"></div>
+
+<p>This derivative identity follows from the implicit-function theorem <strong>if</strong> an exact regular root and a smooth chosen branch exist. The present matrices are floating evaluations at saved force-tolerance states; no validated algebraic-root enclosure or certified invertibility constant is supplied. Their linear solutions are therefore numerical tangent diagnostics, not a completed application of a validated implicit-function theorem.</p>
+<p>The <a href="MATERIAL-TANGENT-INFERENCE.html">mechanical tangent implementation</a> computes six columns, including <span class="math" data-tex="\log\kappa"></span>. All six are retained and checked for every record; only the other five enter the step. Thus there are 102 mechanical linear systems, but <span class="math" data-tex="\kappa"></span> does not become a fitted coordinate. Each record retains its sparse Hessian, force derivatives, displacement tangents, finite-difference force checks, source hashes and linear-system residuals.</p>
+<h2>3. Observing perturbed geometry without inventing equilibria</h2>
+<p>For a tangent column <span class="math" data-tex="S_j"></span>, the code evaluates boundary graphs from coefficient vectors</p>
+<div class="math display" data-tex="
+ u^\pm=u\pm h S_j,\qquad
+ D^{(h)}_{ikj}=
+ \frac{\mathcal O_k(u^+)-\mathcal O_k(u^-)}{2h}.
+"></div>
+
+<p>The two predeclared steps are <span class="math" data-tex="h=10^{-3}"></span> and <span class="math" data-tex="5\times10^{-4}"></span>. Stale stored boundary controls are removed; fresh quadratic traces are extracted from the perturbed coordinates and passed directly to the graph observer. These perturbed coefficient vectors are <strong>not</strong> marked or promoted as newly solved equilibria. A local orientation screen and graph-admissibility checks precede endpoint evaluation. The protocol permits retaining failed graph trials and shrinking both steps; no shrink was needed in this cohort.</p>
+<p>The observer retains the current-radius vertical height, line/disk means and spatial-max/regional-mean component alternatives. It preserves signs and uses the same conditional flat component references and registered current ROI. The <a href="JOINT-OBSERVATION-CONTRACT.html">source observation ambiguities</a>, temporal peak closure and canonical source-column pairing remain unresolved.</p>
+<p>For a smooth regional mean, the separate exact trace-gradient formula also supplies</p>
+<div class="math display" data-tex="
+ D\mathcal O_k(u)[S_j]
+ =\nabla_{\text{physical nodes}}\mathcal O_k
+       \cdot(L_0 S_j).
+"></div>
+
+<p>Exact rational trace-gradient intervals are contracted with the serialized floating tangent coefficients. This checks the graph transport terms independently of the central-difference formula. It does not validate the mechanical tangent itself.</p>
+<p>There are 340 graph perturbations: 17 records × five coordinates × two steps × two signs. The largest two-step midpoint derivative difference is approximately <span class="math" data-tex="1.27\times10^{-8}"></span> µm per coordinate; the largest fine-step mean-difference distance from its exact trace-gradient contraction is approximately <span class="math" data-tex="4.23\times10^{-9}"></span>. The largest central-difference interval width is approximately <span class="math" data-tex="1.32\times10^{-19}"></span> µm per coordinate. These are retained numerical diagnostics, not bounds on truncation error or proof that a maximum is differentiable.</p>
+<p>A maximum can be nonsmooth when its maximizing location changes. For example, <span class="math" data-tex="\max(z,-z)=&#124;z&#124;"></span> has zero symmetric difference at zero but a nonzero right derivative. The synthetic tests explicitly retain this warning. Agreement between two chosen steps cannot eliminate it for arbitrary parameters.</p>
+<h2>4. The affine minimax problem and its exact certificate</h2>
+<p>For each convention separately, let <span class="math" data-tex="r_{ik}"></span> be the baseline interval-midpoint prediction minus the recorded endpoint, and let <span class="math" data-tex="J_{ikj}"></span> be the smaller-step central-difference midpoint. The declared affine problem is</p>
+<div class="math display" data-tex="
+ \min_{z\in B,t\ge0}t,\qquad
+ -t\le r_{ik}+\sum_jJ_{ikj}z_j\le t
+ \quad(i=1,\ldots,17;\ k=1,\ldots,4).
+"></div>
+
+<p>All channels have the same micrometre minimax objective. This is a discrepancy criterion, not a fitted statistical noise model. Every record enters; none is discarded for having a large residual.</p>
+<p>The serialized binary64 derivative midpoints define exact rational coefficients for this finite affine problem. The root <a href="BOUNDED-AFFINE-MINIMAX.html">bounded-affine helper</a> accepts those Fractions without re-rounding. A floating LP proposes an active basis; exact rational linear algebra then reconstructs a feasible primal vector and nonnegative dual multipliers.</p>
+<p>Writing the full endpoint, trust-box and <span class="math" data-tex="t\ge0"></span> inequalities as <span class="math" data-tex="Ax\le b"></span>, with <span class="math" data-tex="x=(z,t)"></span>, the certificate verifies</p>
+<div class="math display" data-tex="
+ Ax\le b,\qquad\lambda\ge0,\qquad
+ A^\mathsf T\lambda=-e_t,\qquad
+ t=-b^\mathsf T\lambda.
+"></div>
+
+<p>Indeed, for any feasible <span class="math" data-tex="x&#x27;"></span>,</p>
+<div class="math display" data-tex="
+ t&#x27;=e_t^\mathsf Tx&#x27;
+   =-\lambda^\mathsf TAx&#x27;
+   \ge-\lambda^\mathsf Tb=t.
+"></div>
+
+<p>This proves global optimality of the <strong>defined bounded affine LP</strong>. It does not prove the derivative approximation, its trust-region error, nonlinear improvement or physical parameter compatibility. The producer's independent weak-dual interval also contains each exact optimum.</p>
+<p>The initial extraction is preserved unchanged. After helper input-validation hardening, a separate <code>exact_extraction_v2</code> protocol reran only the exact arithmetic on the <strong>same</strong> rational coefficient tables; no tangent or equilibrium calculation was repeated. The old helper source and provenance are archived under <code>runs/bounded_affine_minimax_review/initial_revision/</code>.</p>
+<h2>5. Completed local proposals</h2>
+<table>
+<thead>
+<tr>
+<th>Observation convention</th>
+<th style="text-align: right;">Common baseline discrepancy, µm</th>
+<th style="text-align: right;">Exact affine optimum, displayed µm</th>
+<th style="text-align: right;">Predicted reduction, µm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk / spatial-max components</td>
+<td style="text-align: right;">5.37983567</td>
+<td style="text-align: right;">5.18386299</td>
+<td style="text-align: right;">0.19597269</td>
+</tr>
+<tr>
+<td>Disk / regional-mean components</td>
+<td style="text-align: right;">6.46771627</td>
+<td style="text-align: right;">6.07669043</td>
+<td style="text-align: right;">0.39102585</td>
+</tr>
+<tr>
+<td>Line / spatial-max components</td>
+<td style="text-align: right;">6.18326952</td>
+<td style="text-align: right;">5.55397817</td>
+<td style="text-align: right;">0.62929135</td>
+</tr>
+<tr>
+<td>Line / regional-mean components</td>
+<td style="text-align: right;">6.18326952</td>
+<td style="text-align: right;">6.02644077</td>
+<td style="text-align: right;">0.15682875</td>
+</tr>
+</tbody>
+</table>
+<p>The proposed steps are:</p>
+<table>
+<thead>
+<tr>
+<th>Convention</th>
+<th style="text-align: right;">Δlog Ka</th>
+<th style="text-align: right;">Δlog Kb</th>
+<th style="text-align: right;">ΔTa</th>
+<th style="text-align: right;">Δlog Tb</th>
+<th style="text-align: right;">Δlog gain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk / spatial max</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">−0.1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">−0.03153743</td>
+</tr>
+<tr>
+<td>Disk / regional mean</td>
+<td style="text-align: right;">−0.1</td>
+<td style="text-align: right;">−0.1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">0.1</td>
+</tr>
+<tr>
+<td>Line / spatial max</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">0.00791817</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">−0.1</td>
+</tr>
+<tr>
+<td>Line / regional mean</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">−0.1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">−0.02180194</td>
+</tr>
+</tbody>
+</table>
+<p>Several coordinates reach computational trust limits. This signals the limitation of this local step; it does not identify biological moduli or justify expanding the physical domain by fiat. Even the affine losses remain several micrometres.</p>
+<p><img alt="Common baseline versus four affine proposals, with trust-step diagnostics" src="../../omitted-asset.svg" /></p>
+<p>The figure has no invented error bars. The bar comparison is between directly verified baseline values and an exactly solved local approximation; the second bars are not new nonlinear results. Its hashes and generator are retained in <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_descent_v1/visual_verification.json">the visual receipt</a>.</p>
+<h2>6. Retained receipts and the next physical check</h2>
+<p>The tangent driver SHA256 is</p>
+<pre><code>8343f4908a76a47f8c83159e7befbbaa23afdc7d4a5f4689bda9ec901e3957c1
+</code></pre>
+<p>The frozen cohort protocol SHA256 is</p>
+<pre><code>dbec2723481dc9a3a66c6dbde0648721b7283b734b33d532477e2d3357d47c47
+</code></pre>
+<p>The complete cohort result SHA256 is</p>
+<pre><code>70c3b02bd4a26e57181875715af5ad3865688a76374ca26de67bc7ac10d89259
+</code></pre>
+<p>The authoritative v2 exact candidate file SHA256 is</p>
+<pre><code>a87d92a1b9216e5b94ae2ee68944e10aac46711e5c854c78d8da7e19842d7758
+</code></pre>
+<p>Ten producer synthetic checks pass. The <a href="MATERIAL-COHORT-DESCENT-REVIEW.html">independent mechanical cohort review</a> passes 598 numerical checks. The separate <a href="../evidence/bounded_affine_minimax_independent_review.json">exact-affine independent receipt</a> passes all 16 aggregate checks, including full cohort coefficient/observation reconstruction and all four exact certificates, plus 206 independent analytic/vertex/permutation checks and 15 input guards. These reviews remain conditional numerical/affine assessments, not physical derivative or nonlinear-fit certificates.</p>
+<p>The next physical test is a separately versioned <a href="../scripts/material_cohort_direct.py">direct runner</a> and <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_direct_v1/protocol.json">predeclared protocol</a> for the <strong>primary disk/spatial-max proposal only</strong>. It transforms the material to approximately <span class="math" data-tex="K_a=0.22103418,K_b=1.80967484,T_a=0,T_b=2.21034184,g=7.81265450"></span>, leaving geometry and compression coefficient fixed. It must create a new-material verified zero state and solve all 17 new inputs, with Q8/Q12 force, exact geometry and all four observation conventions. The other three variant-specific affine proposals are not silently treated as directly verified.</p>
+<p>There is a branch-history caveat: the old 17 baseline fields were selected from a union of 68 ascending target strengths, whereas the new replay visits 17 targets. Without uniqueness and stability proofs, a changed result can include continuation/branch-history effects. This test checks the proposal under its declared new path; it does not isolate a causal material-change contribution. No matched additional baseline-control job is silently added.</p>
+<p>No full material/geometry <span class="math" data-tex="\Theta_\delta"></span>, uniform nonlinear/continuum response bound, externally measured discrepancy law or source-matched larger-region prediction follows from this local calculation. None of the original incomplete research gates is marked complete.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,7 @@
+{
+  "status": "RUNNING",
+  "source_sha256": "9fe45835838d6da98569f32983a304a4569e86663a2794668e99c0f62f12ff69",
+  "protocol_sha256": "8f44cb76e48d4d14832292642372a7e8c8836dbf654f3626c3daffe7e40ac0dc",
+  "pid": 17504,
+  "prior_full_scope_geometry_readback_os_sha256": "d33e301a76decc888c803227a88058fab7aa1714c373536f49acd36750c340a0"
+}

@@ -1,0 +1,167 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QUADRATIC-ENDPOINT-OBSERVER</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Four observable endpoints from the actual quadratic tissue geometry</h1>
+<p>The new observer computes vertical tissue height at the <strong>same current physical radius</strong> on the apical and basal surfaces. It does not replace that height by a material-fibre length, a difference between differently located material nodes, or the sum of two independently maximized surface motions.</p>
+<p><code>scripts/quadratic_endpoint_observer.py</code> is independent of the mechanical solver. <strong>23 analytical/guard tests and 115 saved-state consistency checks pass.</strong> Eight existing higher-quadrature fields have been processed without any new optimization, data fit or stronger-load job. The source is frozen at</p>
+<pre><code class="language-text">075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926
+</code></pre>
+<p>The observation operator remains <strong>conditional</strong>: the published source does not uniquely settle component aggregation, component reference split, ROI transport, spatial weights or temporal ordering of the mean. The implementation retains alternatives instead of silently selecting a convenient one.</p>
+<h2>1. What the source establishes and leaves unresolved</h2>
+<p>The authoritative audit is <code>JOINT-OBSERVATION-CONTRACT.md</code> and <code>evidence/joint_observation_contract_audit.json</code>. In <a href="https://www.nature.com/articles/s41467-025-62483-6">Countryman et al. (2025)</a>, Methods Sec15 describes apical/basal boundary extraction and PIV position correction. Sec16 defines vertical height using apical and basal positions at the same tissue/image location and constructs reference growth from nonactivated tissue. This supports a vertical-height operator, not a normal thickness or material-column length. PIV registration exists; its exact ROI transport and averaging measure are not fully specified by the prose.</p>
+<p>Sec16 establishes a maximum over the available response window and ROI. It does not fully disambiguate maximum-over-time of a spatial mean from spatial mean of local temporal maxima. Actual illustrative trace windows differ, so the schematic five-minute protocol cannot supply one exact shared observation horizon.</p>
+<p>The component interpretation is also unresolved. Fig2b explicitly presents <strong>regional-average</strong> apical/basal positions, while Fig2e labels maximum component shortening. Its endpoint columns could represent maxima of regional-mean motion rather than maxima over both space and time. The Fig2e workbook headers identify apical and basal shortening without a full aggregation formula. Therefore the implementation exposes both component conventions.</p>
+<p>The source uses preactivation anchors and growth correction; height information alone does not uniquely determine an apical/basal counterfactual split. Our default flat initial component references are a declared model hypothesis, not a reconstruction of that source correction. Joining all four endpoints by specimen also retains the source-column pairing assumption identified in the audit.</p>
+<h2>2. Instantaneous quantities on a common physical ROI</h2>
+<p>Let <span class="math" data-tex="R"></span> be current physical radius, with apical height <span class="math" data-tex="a(R)"></span> and basal height <span class="math" data-tex="b(R)"></span>, positive apically. On a declared registered current-radius ROI <span class="math" data-tex="I=[R_0,R_1]"></span>, choose flat component references <span class="math" data-tex="a_0&gt;b_0"></span>. Define the signed quantities</p>
+<div class="math display" data-tex="
+ d_a(R)=a_0-a(R),\qquad d_b(R)=b(R)-b_0,
+ \qquad s(R)=(a_0-b_0)-[a(R)-b(R)]=d_a(R)+d_b(R).
+"></div>
+
+<p>The static maximum-height endpoint is</p>
+<div class="math display" data-tex="
+ M=\sup_{R\in I}s(R).
+"></div>
+
+<p>For component aggregation <code>spatial_max</code>, the other component endpoints are <span class="math" data-tex="A=\sup_I d_a"></span>, <span class="math" data-tex="B=\sup_I d_b"></span>. For <code>regional_mean</code>, they are the corresponding spatial means. No positive-part operation or clipping to zero is applied. Cells can lengthen, and a signed component or mean may be negative in a supplied state.</p>
+<p>For a common positive weight <span class="math" data-tex="w"></span>, the fourth endpoint is</p>
+<div class="math display" data-tex="
+ \overline s_w=\frac{\int_I s(R)w(R)dR}{\int_Iw(R)dR}.
+"></div>
+
+<p>Two explicitly retained measures are:</p>
+<ul>
+<li><code>current_radial_line</code>: <span class="math" data-tex="w=1"></span>, equivalent to a symmetric diameter-line average under the axisymmetric idealization.</li>
+<li><code>current_disk</code>: <span class="math" data-tex="w=R"></span>, equivalent to current annular/disk area weighting; the constant factor <span class="math" data-tex="2\pi"></span> cancels.</li>
+</ul>
+<p>Thus the four-endpoint family has <strong>four declared variants</strong>: component spatial maximum or regional mean, crossed with current line or disk weighting. The source does not justify choosing a variant using larger-region outcomes. Disk weighting itself invokes the axisymmetric area idealization; it is not automatically the averaging measure of a coverslip-adjacent image section.</p>
+<p>At one instant, <span class="math" data-tex="\overline d_a+\overline d_b=\overline s"></span> under the same ROI and weights. In contrast, <span class="math" data-tex="M"></span> generally does not equal <span class="math" data-tex="A+B"></span>. For example, <span class="math" data-tex="d_a(R)=R,d_b(R)=1-R"></span> on [0,1] gives separate maxima one and one, while <span class="math" data-tex="M=1"></span>. Negative basal motion also prevents a universal assertion <span class="math" data-tex="M\ge A"></span>.</p>
+<h2>3. Exact quadratic inversion and supremum enclosures</h2>
+<p>Each boundary edge is represented by its three actual P2 nodal positions. Its current coordinates have the form</p>
+<div class="math display" data-tex="
+ R(t)=r_0+r_1t+r_2t^2,\qquad Z(t)=z_0+z_1t+z_2t^2,
+ \quad 0\le t\le1.
+"></div>
+
+<p>The code checks exact endpoint continuity and monotone radius, then inverts <span class="math" data-tex="R(t)"></span> with rational bisection. A physical-radius interval is enlarged to an enclosing parameter interval. Its height range is bounded by endpoint values and the quadratic critical point when present. Arithmetic uses exact rationals of supplied serialized values, so these are certificates for the discrete curves.</p>
+<p>Component extrema are enclosed using all relevant segment endpoints and height critical points, including root-bracket uncertainty at ROI cuts. For <span class="math" data-tex="s=a_0-b_0-a+b"></span>, an interval cell uses the two graphs' independently enclosed height ranges. Attained point enclosures supply a lower bound on the supremum; the maximum cell upper bound supplies an upper bound. Adaptive bisection tightens the enclosure. If the two surfaces share exactly the same radial parameterization, their difference is itself quadratic and exact critical-point analysis is used directly.</p>
+<p>The default requested maximum-endpoint width is 0.001 µm. The return object states whether it was achieved. A valid but wider enclosure is not silently presented as a sharp numerical value. This reporting tolerance is not a statistical discrepancy allowance or biological accuracy threshold.</p>
+<p>The observer also certifies positive Eulerian thickness on the ROI. A radial fold, out-of-domain ROI, inconsistent reference height, mismatched saved controls/current nodes, nonconforming trace or unverified state is rejected. Failure to certify a very small positive thickness is distinguished from a proven nonpositive thickness; neither is replaced by the material-column proxy.</p>
+<h2>4. Eulerian means from polynomial antiderivatives</h2>
+<p>No approximate sampled Eulerian quadrature is needed. Because <span class="math" data-tex="dR=R&#x27;(t)dt"></span>,</p>
+<div class="math display" data-tex="
+ \int Z(R)dR=\int Z(t)R&#x27;(t)dt,\qquad
+ \int RZ(R)dR=\int R(t)Z(t)R&#x27;(t)dt.
+"></div>
+
+<p>The integrands have degrees at most three and five, respectively. Their primitives therefore have degrees at most four and six, with exact rational coefficients. Primitive values at the inverse-root endpoint brackets are enclosed by interval Horner evaluation and summed over segments. This remains valid when heights or displacement components are negative.</p>
+<p>The normalizers are <span class="math" data-tex="R_1-R_0"></span> for the line and <span class="math" data-tex="(R_1^2-R_0^2)/2"></span> for the disk. Component means and mean height use the same operator, preserving the instantaneous additive identity. When ROI endpoints coincide with exact graph knots, many mean intervals reduce to exact rational values. Otherwise the only integration uncertainty comes from the rigorously bracketed algebraic inverse endpoints; this is not uncertainty about the continuum mechanics or the experiment.</p>
+<h2>5. Why radial motion makes a material-column difference wrong in general</h2>
+<p>An analytical test uses reference material radius <span class="math" data-tex="r\in[0,1]"></span>, flat reference height ten, and</p>
+<div class="math display" data-tex="
+ R_a(r)=1.5r-0.5r^2,\quad Z_a(r)=10-r,
+ \qquad R_b(r)=r,\quad Z_b(r)=r.
+"></div>
+
+<p>Both surfaces span the same full current radial domain, but their radial motions differ. In the registered current ROI <span class="math" data-tex="0\le R\le5/8"></span>, the outer apical point comes from material <span class="math" data-tex="r=1/2"></span>, whereas the basal point comes from <span class="math" data-tex="r=5/8"></span>. The correct maximum vertical shortening is <span class="math" data-tex="9/8"></span>. Pairing material columns with reference <span class="math" data-tex="r\le5/8"></span> instead gives <span class="math" data-tex="5/4"></span>. The analytical tests certify the discrepancy.</p>
+<p>In several existing numerical fields, the height maximum happens at the axis, where both surfaces share current radius zero. Their legacy material-column maxima can consequently coincide with the Eulerian maximum. That numerical coincidence does not justify using the proxy for another field or ROI.</p>
+<h2>6. Finite supplied paths are not experimental time coverage</h2>
+<p><code>observe_graph_path</code> and <code>observe_state_path</code> retain maxima over <strong>only the explicitly supplied finite states</strong>. The saved-state version requires verified states with identical model/mesh parameters and a shared registered ROI/reference. It reports the supplied strengths, but does not infer physical times, unsampled strengths, complete quasistatic coverage or the source's experimental observation windows.</p>
+<p>The output separates</p>
+<div class="math display" data-tex="
+ \max_j\overline{s_j}\quad\hbox{from}\quad
+ \overline{\max_j s_j}.
+"></div>
+
+<p>The latter is rigorously bounded using radial-cell dominance and exact integrals when one supplied field dominates, with interval integral bounds elsewhere. A test with <span class="math" data-tex="s_1(R)=R"></span>, <span class="math" data-tex="s_2(R)=1/5"></span> on [0,1] gives line-weighted peak-of-mean <span class="math" data-tex="1/2"></span>, but mean-of-peaks <span class="math" data-tex="13/25"></span>. No commutation is assumed. The static API computes neither temporal maximum by default.</p>
+<h2>7. Existing-state diagnostics and retained evidence</h2>
+<p>The fixed-current-radius diagnostic ROI equals the initial patch radius, with flat initial apical/basal references. This is a documented candidate registration/reference convention, not a recovered PIV transport rule or arbitrary spatially varying counterfactual growth field. The following figures are diagnostic model outputs, not fitted biological measurements:</p>
+<table>
+<thead>
+<tr>
+<th>Mesh</th>
+<th style="text-align: right;"><span class="math" data-tex="\kappa/\mu"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="f/\mu"></span></th>
+<th style="text-align: right;">Maximum Eulerian shortening, approximate µm</th>
+<th style="text-align: right;">Disk mean µm</th>
+<th style="text-align: right;">Line mean µm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">[2.207782, 2.208159]</td>
+<td style="text-align: right;">1.717544</td>
+<td style="text-align: right;">1.883652</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7.181539</td>
+<td style="text-align: right;">5.700515</td>
+<td style="text-align: right;">6.216024</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10.650784</td>
+<td style="text-align: right;">8.485103</td>
+<td style="text-align: right;">9.250522</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.991137</td>
+<td style="text-align: right;">1.590343</td>
+<td style="text-align: right;">1.724562</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7.005392</td>
+<td style="text-align: right;">5.599190</td>
+<td style="text-align: right;">6.077914</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10.490261</td>
+<td style="text-align: right;">8.397368</td>
+<td style="text-align: right;">9.120621</td>
+</tr>
+<tr>
+<td>16×8</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">[10.647708, 10.647709]</td>
+<td style="text-align: right;">8.467979</td>
+<td style="text-align: right;">9.224048</td>
+</tr>
+<tr>
+<td>24×12</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">[2.330113, 2.330147]</td>
+<td style="text-align: right;">1.797690</td>
+<td style="text-align: right;">1.976288</td>
+</tr>
+</tbody>
+</table>
+<p>Displayed intervals are rounded outward. Singleton displays and mean values are rounded summaries; complete exact intervals are in the receipts. These diagnostics do not certify the pending stronger-load 24×12 targets.</p>
+<p>At the 12×6, <span class="math" data-tex="\kappa=5000,f=10"></span> state, spatial-maximum components are approximately (9.015839, 1.474422) µm, while disk-regional-mean components are approximately (7.228724, 1.168643) µm. The observation convention can therefore matter far more than the 0.001 µm observer resolution. It must be declared before inference.</p>
+<p>Receipts are <code>quadratic_endpoint_observer_synthetic.json</code>, <code>quadratic_endpoint_observer_diagnostics.json</code> and <code>quadratic_endpoint_observer_verification.json</code> under <code>evidence/</code>. The latter replays all four variants on all eight fields, binds their input hashes, checks mean/component identities and requested resolution, and records the source-contract hash. No simulation is launched.</p>
+<pre><code class="language-python">from quadratic_endpoint_observer import observe_state
+out = observe_state(saved_result,
+    weighting=&quot;current_disk&quot;,             # alternative: current_radial_line
+    component_aggregation=&quot;spatial_max&quot;,   # alternative: regional_mean
+    tolerance_um=&quot;0.001&quot;)
+endpoint_intervals = out[&quot;four_endpoints&quot;]  # exact Fraction .lo and .hi
+</code></pre>
+<pre><code class="language-powershell">python -X utf8 controlled_furrowing/scripts/quadratic_endpoint_observer.py --test --diagnostics
+</code></pre>
+<p>The observer makes the geometric alignment more faithful and the remaining measurement assumptions assessable. It does not establish a canonical source operator, experimental time coverage, a computed compatible parameter set, statistical confidence, continuum accuracy or novelty. Any joint fit must retain these conditional choices and numerical endpoint intervals.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

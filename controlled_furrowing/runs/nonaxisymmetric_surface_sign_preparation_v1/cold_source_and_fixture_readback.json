@@ -1,0 +1,18 @@
+{
+  "status": "PASS_COLD_INDEPENDENT_STRESS_AUTHORITY_AND_SYNTHETICS",
+  "verified_current_pins_sha256": {
+    "surface_stress.py": "f33aaf277eea10fd364a529f95d369551c99b73747f7856cee3af4318b60b3a3",
+    "protocol.json": "a09fb767d9990fce5816203d45579a5b400a1271248788b685a91aebda355e32",
+    "preflight.json": "7eb3c81037d1ecac47f5e5ca45122f8abd0a316f5022314c14dd6e1470220206"
+  },
+  "input_closure_files": 26,
+  "review_fixture_source_sha256": "bf1e9a5cd058ce3a671d573f79741e578921899bf85b22d9472e9d3a5d1d99a9",
+  "checks": {
+    "same_K_L_independent_posteriors_and_matched_whole_spatial_geometry": true,
+    "all_672_ordered_predeclared_nondegenerate_interior_windows": true,
+    "hand_known_negative_with_nonzero_slope_and_nonzero_axial_tangent": true,
+    "affine_reference_uses_corner_radii": true,
+    "true_sign_crossing_unresolved_and_exact_zero_or_Nonpositive_alpha_never_negative": true
+  },
+  "actual_stress_AD_global_matrix_or_PDE_jobs": 0
+}

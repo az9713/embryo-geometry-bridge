@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all18_actual_attempts_present": true,
+    "all12_accepted_force_geometry_pass": true,
+    "all6_failed_attempts_retained": true,
+    "stored_force_matches_replay": true,
+    "all_attempt_energies_gradients_bit_identical": true
+  },
+  "rows": [
+    {
+      "target_folder": "lambda_500.0_target_1.0",
+      "attempt": 0,
+      "gain": 1.0,
+      "accepted": true,
+      "force_replayed": 2.7324044177441664e-13,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_500.0_target_10.0",
+      "attempt": 0,
+      "gain": 10.0,
+      "accepted": true,
+      "force_replayed": 9.089288756326461e-11,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_500.0_target_5.0",
+      "attempt": 0,
+      "gain": 5.0,
+      "accepted": true,
+      "force_replayed": 1.7991175962347528e-10,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_1.0",
+      "attempt": 0,
+      "gain": 1.0,
+      "accepted": true,
+      "force_replayed": 3.2460701571871504e-09,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_10.0",
+      "attempt": 0,
+      "gain": 10.0,
+      "accepted": false,
+      "force_replayed": 0.07097019186006988,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_10.0",
+      "attempt": 1,
+      "gain": 7.5,
+      "accepted": false,
+      "force_replayed": 0.04446917160544768,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_10.0",
+      "attempt": 2,
+      "gain": 6.25,
+      "accepted": true,
+      "force_replayed": 1.9305794810020593e-11,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_10.0",
+      "attempt": 3,
+      "gain": 7.5,
+      "accepted": true,
+      "force_replayed": 3.1820069582716437e-12,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_10.0",
+      "attempt": 4,
+      "gain": 10.0,
+      "accepted": false,
+      "force_replayed": 0.04065809362315535,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_10.0",
+      "attempt": 5,
+      "gain": 8.75,
+      "accepted": true,
+      "force_replayed": 4.0353952818206196e-12,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_10.0",
+      "attempt": 6,
+      "gain": 10.0,
+      "accepted": true,
+      "force_replayed": 4.400088474999786e-12,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_5.0",
+      "attempt": 0,
+      "gain": 5.0,
+      "accepted": false,
+      "force_replayed": 0.06879086852117658,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_5.0",
+      "attempt": 1,
+      "gain": 3.0,
+      "accepted": false,
+      "force_replayed": 0.02329037481155502,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_5.0",
+      "attempt": 2,
+      "gain": 2.0,
+      "accepted": true,
+      "force_replayed": 2.963324897964359e-12,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_5.0",
+      "attempt": 3,
+      "gain": 3.0,
+      "accepted": true,
+      "force_replayed": 4.842271982691271e-12,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_5.0",
+      "attempt": 4,
+      "gain": 5.0,
+      "accepted": false,
+      "force_replayed": 0.03801584395025766,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_5.0",
+      "attempt": 5,
+      "gain": 4.0,
+      "accepted": true,
+      "force_replayed": 1.2100553577806122e-11,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    },
+    {
+      "target_folder": "lambda_5000.0_target_5.0",
+      "attempt": 6,
+      "gain": 5.0,
+      "accepted": true,
+      "force_replayed": 2.718676840726339e-11,
+      "stored_force_error": 0.0,
+      "geometry_certified": true,
+      "energy_gradient_bit_identical": true
+    }
+  ],
+  "controller_sha256": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+  "scope": "Actualscientificnumericalattemptsonly; excludesclearlylabeledcontrollerinjectiontests; inputhashchainverifiedseparately."
+}

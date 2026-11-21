@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_local_links_exist": true,
+    "display_math_balanced": true,
+    "inline_math_balanced": true
+  },
+  "doc_sha256": "13d538c4acf766de4d252768e136c3eef095d2ff7db007cfc67156fe586e9e74",
+  "scope": "Document links and mathematical delimiters; root performs HTML/browser checks"
+}

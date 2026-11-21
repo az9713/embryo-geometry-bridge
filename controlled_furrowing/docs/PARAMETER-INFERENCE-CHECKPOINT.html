@@ -1,0 +1,113 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PARAMETER-INFERENCE-CHECKPOINT</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Parameter inference: verified progress and the remaining five gates</h1>
+<p><strong>The project now certifies small parameter families and one conditional calibration exclusion. It has not established a satisfactory biological fit, a full compatible parameter set, a continuum prediction or a novel mechanism.</strong> The original <a href="../PLAN.md">five-gate contract</a> remains unchanged.</p>
+<p>This checkpoint distinguishes two different physical cases. The old weak-load case supports a useful numerical-method demonstration. The new-material case is attached to actual calibration record M, but its certified material box is extremely narrow. Neither result may be substituted for the other.</p>
+<h2>1. What was proved for the old weak-load case</h2>
+<p>The archived model has 611 free displacement coefficients and 9,504 positive-weight energy terms. Its mathematical target is the smooth finite-dimensional potential defined by frozen binary geometry and quadrature arrays. This is different from the ideal quadrature integral or continuum boundary-value problem.</p>
+<p>An independent interval-automatic-differentiation reconstruction first certified one nearby equilibrium. A separate exact interval-Bernstein argument now encloses the entire revolved body, including the axis. The one-root box satisfies the safe displayed bounds</p>
+<div class="math display" data-tex="
+0.997631142&lt;J&lt;1.002708290.
+"></div>
+
+<p>The proof establishes orientation preservation and global injectivity using strong monotonicity of the meridional map and preservation of the rotation axis. It does not infer Cartesian smoothness at the axis from directional limits. See the <a href="ROOT-BODY-GEOMETRY.html">whole-body proof</a> and <a href="ROOT-BODY-GEOMETRY-REVIEW.html">independent review</a>.</p>
+<h3>From a point to a genuine parameter interval</h3>
+<p>Let the old active coefficient be <span class="math" data-tex="f=1+s"></span>, with <span class="math" data-tex="&#124;s&#124;\le10^{-3}"></span>. Other material coefficients, geometry, dose normalization and discretization remain fixed. With a frozen binary affine predictor and an invertible energy-coordinate matrix W, write</p>
+<div class="math display" data-tex="
+u(s)=u_0+sS+Wz,\qquad \&#124;z\&#124;_2\le\rho=10^{-6}.
+"></div>
+
+<p>Validated Taylor bounds over eight subintervals give</p>
+<div class="math display" data-tex="
+\eta\le6.100637164\times10^{-7},\quad
+Z\le0.155994805449,\quad
+\eta+Z\rho\le7.660585219\times10^{-7}&lt;\rho.
+"></div>
+
+<p>The uniform contraction theorem therefore supplies a unique nearby root for every admitted s. The symmetric transformed Hessian stays positive definite, so these roots are strict local minima of the declared discrete energy. This is not a proof of global minimality, physical dynamical stability, or selection by a zero-to-activation history.</p>
+<p>The full metric ball maps into coordinate radii</p>
+<div class="math display" data-tex="
+\varepsilon_i=10^{-3}&#124;S_i&#124;+10^{-6}\sqrt{\sum_jW_{ij}^2}.
+"></div>
+
+<p>Exact outward square-root bounds and interval geometry then prove, throughout the family,</p>
+<div class="math display" data-tex="
+0.992464257&lt;J&lt;1.006576818.
+"></div>
+
+<p>Thus the whole-body Jacobian remains within one percent of one for this particular weak-load family. This is a finite-model result, not an incompressible or continuum limit. The <a href="ENERGY-GAIN-CELL.html">energy proof</a>, <a href="ENERGY-GAIN-CELL-REVIEW.html">71-check independent review</a>, <a href="ENERGY-GAIN-GEOMETRY.html">geometry composition</a> and <a href="ENERGY-GAIN-GEOMETRY-REVIEW.html">independent composition review</a> retain the derivations and exact bounds.</p>
+<p><img alt="Uniform energy-gain family: actual residual, contraction and geometry bounds" src="assets/energy_gain_cell_validation.png" /></p>
+<p>The horizontal Taylor-path coordinate is an integration device in the proof, not biological time. The geometry band is a common enclosure, not a measured or sampled response curve.</p>
+<h2>2. What was proved for actual calibration record M</h2>
+<p>The source-column record has canonical extracted dose 0.78208913 and reported apical response 12 micrometres. The new candidate has common gain approximately 7.8126545043. The certificate uses the exact rational product of declared gain and extracted dose; it does not silently replace it by the rounded solver input.</p>
+<p>The five coordinates are</p>
+<div class="math display" data-tex="
+\theta=(K_a,K_b,T_a,T_b,g).
+"></div>
+
+<p>The certified closed box C has relative half-width <span class="math" data-tex="10^{-8}"></span> in the four positive baseline coordinates and <span class="math" data-tex="T_a\in[0,2\times10^{-10}]"></span>. These are computational choices, not measured physiological uncertainty bounds. Compression coefficient, reference geometry, mesh, quadrature and boundary constraints are fixed.</p>
+<p>For every parameter in C, a nearby discrete stationary root exists. Its entire-body geometry is admissible. Under the <strong>single static, same-current-radius, spatial-maximum apical observer</strong>, the root family has apical response enclosed by approximately</p>
+<div class="math display" data-tex="
+A(C)\subset[6.813612639694854,\ 6.813612858035664]\;\mu\mathrm m.
+"></div>
+
+<p>The exact rational endpoints in the receipts, rather than nearest-rounded decimal displays, determine all decisions. In particular, a safe consequence is</p>
+<div class="math display" data-tex="
+&#124;A(\theta)-12&#124;&gt;5.186387141\;\mu\mathrm m
+\qquad\text{for every }\theta\in C.
+"></div>
+
+<p>Consequently this selected nearby root family is excluded whenever the declared apical discrepancy allowance is below that lower bound. The illustrative allowance 5.1 micrometres is a conditional query, not an estimated measurement error. A sufficiently larger allowance would admit this <strong>one channel</strong>; it would not certify the other 67 entries or a biological fit.</p>
+<p>No energetic stability or common physical activation trajectory is certified for this actual-M family. The weak-load energy-family proof above cannot supply those missing conclusions. The source measurements involve temporal summaries whose complete matching to this static observer is unresolved. See <a href="PARAMETRIC-ROOT-CELLS.html">uniform root cells</a> and <a href="PARAMETRIC-ACTUAL-M-REVIEW.html">actual-M independent review</a>.</p>
+<h2>3. What the inference machinery can and cannot conclude</h2>
+<p>The <a href="VALIDATED-IDENTIFIED-SET.html">validated inference layer</a> retains all 17 records and four entries per record. Uniform root and observer providers must be tied to the exact parameter cell, source dose, numerical target, observation contract and declared branch semantics. A small nonlinear solver residual is not such a provider.</p>
+<p>The actual-M application now exists. Nine exact coordinate cuts partition a broader, explicitly numerical finite seed into ten leaves. One leaf is the certified C above and is OUT for its selected root family at the illustrative allowance. The other nine leaves remain UNRESOLVED. All leaves retain all 68 constraints; the certified leaf still has 67 unprovided channels. Other equilibrium branches, zero-coefficient faces and unbounded domain tails remain unresolved or uncovered.</p>
+<p>An OUT decision here means a contradiction for the supplied branch family. It does not rule out every equilibrium in that material box or the full mechanical model. An IN decision would require all 68 compatible output bounds. Even a complete stationary-root tuple would not establish a shared stable physical time history. See the <a href="VALIDATED-IDENTIFIED-SET-REVIEW.html">independent inference review</a> and <a href="../evidence/validated_identified_set_actual_M_cover.json">actual cover receipt</a>.</p>
+<h2>4. Verification evidence and its independence</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Retained evidence</th>
+<th>What the check supports</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Whole-body one-root geometry</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/evidence/root_body_geometry_verification.json">producer</a>, <a href="../evidence/root_body_geometry_independent_review.json">independent review</a></td>
+<td>Exact interval body enclosure, conditional on the reviewed root radius</td>
+</tr>
+<tr>
+<td>Energy-gain interval</td>
+<td><a href="../evidence/energy_gain_cell.json">producer</a>, <a href="../evidence/energy_gain_cell_independent_review.json">review</a></td>
+<td>Uniform finite-energy contraction and local minima; full unchanged-source Arb replay plus independent acceptance arithmetic and mathematical review</td>
+</tr>
+<tr>
+<td>Energy-to-geometry transfer</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/evidence/energy_gain_geometry.json">composition</a>, <a href="../evidence/energy_gain_geometry_independent_review.json">review</a></td>
+<td>Coordinate radii and all-element geometry for the old one-gain family</td>
+</tr>
+<tr>
+<td>Actual-M five-coordinate cell</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/runs/parametric_root_cells_v1/actual_M/results.json">results</a>, <a href="../evidence/parametric_actual_M_independent_review.json">review</a></td>
+<td>Independently assembled uniform root bounds and reviewed static-apical composition</td>
+</tr>
+<tr>
+<td>Inference and finite cover</td>
+<td><a href="../evidence/validated_identified_set_actual_M.json">actual application</a>, <a href="../evidence/validated_identified_set_actual_M_cover.json">cover</a>, <a href="../evidence/validated_identified_set_independent_review.json">review</a></td>
+<td>All constraints retained; exact cover bookkeeping; conditional exclusion and unresolved remainder</td>
+</tr>
+</tbody>
+</table>
+<p>Internal independent AI review is different from external expert review. The energy replay is not an independent reimplementation of every majorant; the actual-M review separately reconstructs its uniform root assembly. Failed sufficient tests and earlier guard revisions remain archived. A failed contraction test is UNRESOLVED, never a nonexistence proof.</p>
+<h2>5. What remains required by the original five gates</h2>
+<ol>
+<li>Originality: scalar size-transfer novelty is rejected. Generic nonidentifiability, inverse morphogenesis and optimal experiment design are established. No source-specific transfer-ambiguity theorem or confirmed new concept has been obtained.</li>
+<li>Data: public workbook decoding is verified. Per-specimen initial surfaces, raw trajectory/ROI crosswalks, growth references and synchronized component summaries remain incomplete. The <a href="../../OMITTED.html">concrete data request</a> is unsent; no author contact is authorized by this checkpoint.</li>
+<li>Model and inference: full compatible material/geometry sets, unresolved branch handling and uniform integral/continuum errors remain incomplete. Tiny successful parameter cells do not cover that domain.</li>
+<li>Prediction: revised larger-region shape predictions propagated from the full retained uncertainty are not frozen and scored. Historical conditional proxy experiments do not fill this gap.</li>
+<li>Assessment: numerical correctness is increasingly supported, but predictive increment and novelty are unproved. No new gate is marked complete by this checkpoint.</li>
+</ol>
+<h2>6. The next substantive operation and the novelty target</h2>
+<p>The executable numerical dependency is to apply one <strong>shared</strong> five-coordinate cell to all 17 saved calibration states, then compose every one of the 68 static output intervals. Do not shrink to a different cell for each record and call the result a common identified set. At a declared discrepancy family this may give an inner stationary-tuple witness, further exclusions, or unresolved tests. At 5.1 micrometres, extending the already excluded M family cannot produce a compatible tuple.</p>
+<p>This local operation is a prerequisite component, not completion of the full-domain original contract. The source-data dependency must be resolved before claiming biological calibration or source-matched shape transfer. No tolerance may be increased and relabeled as measured noise merely to produce a fit.</p>
+<p>For an assessable original contribution, the strongest candidate remains the <a href="TRANSFER-CLAIM-AUDIT.html">audited transfer-ambiguity target</a>: two physically admissible explanations satisfying the same defensible calibration contract, substantially different larger-region shape predictions, and a feasible extra measurement with certified separation. A two-point gap d gives the standard worst-case prediction lower bound d/2. That inequality and experimental-design principle are established mathematics; the source-specific mechanical gap and attainable resolution would need to supply the contribution. Neither witness pair nor separating measurement has yet been established. The search has a legitimate negative outcome if compatibility fails or the predictions remain indistinguishable.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

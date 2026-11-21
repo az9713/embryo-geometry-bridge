@@ -1,0 +1,136 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>STATIC-MEAN-COMPATIBILITY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>A sharp limit of the single-state regional-mean interpretation</h1>
+<p><strong>Every single-state model using the same regional average for all three components must incur at least 3.47510056 µm worst-case discrepancy on the canonical small-region table.</strong> This bound does not depend on elastic coefficients, activation gain, finite-element mesh or a particular constitutive law. It follows from the observation identity <span class="math" data-tex="V=A+B"></span>.</p>
+<p>The bound is sharp over independent admissible kinematic configurations, including a volume-preserving construction below. It is <strong>not</strong> proved sharp over equilibria of the project's material law, and no common material/gain realization is constructed. This is a conditional assessment of a static observation interpretation, not a claim that the experiment or biology violates an identity. Separate temporal maxima of regional means generally do not obey that identity.</p>
+<p><img alt="Reported summaries, the conditional static consistency floor and an isochoric geometric witness" src="assets/static_mean_compatibility.png" /></p>
+<p>Retained evidence: <a href="../scripts/static_mean_compatibility.py">exact source calculation</a>, <a href="../evidence/static_mean_compatibility.json">71-check receipt and matching constructions</a>, <a href="STATIC-MEAN-REVIEW.html">independent review</a>, and <a href="../scripts/static_isochoric_construction.py">isochoric construction</a> with <a href="../evidence/static_isochoric_construction.json">204 exact checks</a>. These are standard additive constraints and bottleneck matching, not a novelty claim.</p>
+<h2>Why the identity is unavoidable under this interpretation</h2>
+<p>For one registered static tissue state, let <span class="math" data-tex="a(x)"></span> and <span class="math" data-tex="b(x)"></span> be signed apical-downward and basal-upward motions relative to coherent reference surfaces. Then height shortening is <span class="math" data-tex="s(x)=a(x)+b(x)"></span>. For one common normalized nonnegative spatial measure <span class="math" data-tex="\nu"></span>, define</p>
+<div class="math display" data-tex="
+A=\int a\,d\nu,\qquad B=\int b\,d\nu,\qquad
+V=\int s\,d\nu,\qquad M=\sup s.
+"></div>
+
+<p>Linearity gives <span class="math" data-tex="V=A+B"></span>; nonnegative normalized averaging gives <span class="math" data-tex="V\le M"></span>. These statements apply to either fixed line or disk weighting and any coherent reference split. They do not require monotonic response to input dose.</p>
+<p>Let the observed four-vector in one source-column record be <span class="math" data-tex="(m,v,a,b)"></span>. If every channel is matched within <span class="math" data-tex="\delta"></span>, then</p>
+<div class="math display" data-tex="
+&#124;a+b-v&#124;
+=&#124;(a-A)+(b-B)+(V-v)&#124;\le3\delta.
+"></div>
+
+<p>Thus every material model using this static operator needs</p>
+<div class="math display" data-tex="
+\delta\ge\delta_{\rm static}
+=\frac13\max_i&#124;a_i+b_i-v_i&#124;.
+"></div>
+
+<p>This is a lower bound for the entire mechanical parameter domain under that operator, rather than the score of one optimizer.</p>
+<h2>Exact source witness</h2>
+<p>The canonical source-column G entries are:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Recorded value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum height shortening <span class="math" data-tex="m"></span></td>
+<td style="text-align: right;">12.73324306 µm</td>
+</tr>
+<tr>
+<td>Regional mean <span class="math" data-tex="v"></span></td>
+<td style="text-align: right;">6.04118444 µm</td>
+</tr>
+<tr>
+<td>Apical entry <span class="math" data-tex="a"></span></td>
+<td style="text-align: right;">13 µm</td>
+</tr>
+<tr>
+<td>Basal entry <span class="math" data-tex="b"></span></td>
+<td style="text-align: right;">3.46648612 µm</td>
+</tr>
+</tbody>
+</table>
+<p>Their additive defect is 10.42530168 µm. Hence</p>
+<div class="math display" data-tex="
+\boxed{\delta_{\rm static}
+=\frac{43438757}{12500000}
+=3.47510056\,\mu\mathrm m.}
+"></div>
+
+<p>Exactness concerns the retained decimal records, not biological measurement precision. The cohort contains distinct samples; the cross-panel component association uses the documented canonical common-column ordering. This is not an independently verified specimen-ID crosswalk. Neither the defect nor this bound estimates measurement noise.</p>
+<h2>Matching the lower bound with all four quantities</h2>
+<p>Every source row has <span class="math" data-tex="v\le m"></span>. Define, independently for each row,</p>
+<div class="math display" data-tex="
+t=\frac{a+b-v}{3},\qquad
+A&#x27;=a-t,\quad B&#x27;=b-t,\quad V&#x27;=v+t,
+\quad M&#x27;=\max(m,V&#x27;).
+"></div>
+
+<p>Then <span class="math" data-tex="V&#x27;=A&#x27;+B&#x27;"></span> exactly and <span class="math" data-tex="M&#x27;\ge V&#x27;"></span>. The three component/mean errors equal <span class="math" data-tex="&#124;t&#124;"></span>. If <span class="math" data-tex="t\le0"></span>, <span class="math" data-tex="V&#x27;\le v\le m"></span>, so the maximum remains <span class="math" data-tex="M&#x27;=m"></span>. If <span class="math" data-tex="t&gt;0"></span>, its possible increase is <span class="math" data-tex="V&#x27;-m\le t"></span>. Thus the maximum channel also has error at most <span class="math" data-tex="&#124;t&#124;"></span>. Every row therefore attains its individual lower bound, and all 17 attain the global bound simultaneously when independent configurations are allowed.</p>
+<p>For witness G the corrected values include <span class="math" data-tex="A&#x27;=9.52489944"></span>, <span class="math" data-tex="B&#x27;=-0.00861444"></span>, <span class="math" data-tex="V&#x27;=9.516285"></span> µm, while <span class="math" data-tex="M&#x27;=12.73324306"></span> µm. A signed negative basal mean is permitted; silently clipping it to zero would change the problem.</p>
+<h2>Explicit finite-height geometric configurations</h2>
+<p>Let the current-radius observation disk have radius <span class="math" data-tex="R"></span> and let <span class="math" data-tex="u=r/R"></span>. On that disk choose</p>
+<div class="math display" data-tex="
+s(r)=M&#x27;-c u^2,\qquad a(r)=A&#x27;,\qquad b(r)=s(r)-A&#x27;,
+"></div>
+
+<p>where</p>
+<div class="math display" data-tex="
+c=3(M&#x27;-V&#x27;)\quad\text{for line weighting},\qquad
+c=2(M&#x27;-V&#x27;)\quad\text{for disk weighting}.
+"></div>
+
+<p>The normalized mean of <span class="math" data-tex="u^2"></span> is <span class="math" data-tex="1/3"></span> for a radial line and <span class="math" data-tex="1/2"></span> for a disk. Hence the two separately defined constructions have mean shortening <span class="math" data-tex="V&#x27;"></span>, apical mean <span class="math" data-tex="A&#x27;"></span>, basal mean <span class="math" data-tex="B&#x27;"></span> and maximum shortening <span class="math" data-tex="M&#x27;"></span>. A different field is used for each weighting; simultaneous attainment by one identical field is not asserted.</p>
+<p>All corrected maxima are below the chosen reference height <span class="math" data-tex="H=33.5"></span> µm. Consequently <span class="math" data-tex="h(r)=H-s(r)&gt;0"></span> and the surfaces <span class="math" data-tex="z_a=H-a"></span>, <span class="math" data-tex="z_b=b"></span> have positive thickness. A simple radial-identity interpolation through this thickness gives an orientation-preserving embedded body, although it changes local volume. The next construction also enforces exact volume preservation.</p>
+<h2>Volume-preserving sharpness with a fixed outer rim</h2>
+<p>The <a href="../scripts/static_isochoric_construction.py">exact construction script</a> uses the reported ROI radius <span class="math" data-tex="R=9.35512037"></span> µm and an outer radius <span class="math" data-tex="R_o=100.5"></span> µm. Let <span class="math" data-tex="d=R_o-R"></span>, <span class="math" data-tex="e=s(R)=M&#x27;-c"></span>, and use normalized annular radius <span class="math" data-tex="u=(r-R)/d"></span>. Continue the shortening and apical motion outside the ROI by</p>
+<div class="math display" data-tex="
+s_{\rm ann}(u)=e(1-u)-K u(1-u),\qquad
+a_{\rm ann}(u)=A&#x27;(1-u),\qquad b_{\rm ann}=s_{\rm ann}-a_{\rm ann}.
+"></div>
+
+<p>Both motions vanish at the outer rim. The exact radial integrals are</p>
+<div class="math display" data-tex="
+I_c=R^2\left(\frac{M&#x27;}2-\frac c4\right),\quad
+I_L=d\left(\frac R2+\frac d6\right),\quad
+I_B=d\left(\frac R6+\frac d{12}\right)&gt;0.
+"></div>
+
+<p>Choosing <span class="math" data-tex="K=(I_c+eI_L)/I_B"></span> gives <span class="math" data-tex="\int_0^{R_o}r s(r)\,dr=0"></span>. Exact quadratic extrema verify <span class="math" data-tex="H-s(r)&gt;0"></span> on the whole radius for all 68 constructions: 17 canonical or permuted rows, each with line or disk weighting. The minimum certified height among them is 20.76675694 µm.</p>
+<p>Define the reference radius as a function of current radius by</p>
+<div class="math display" data-tex="
+\rho(r)^2=\frac2H\int_0^r x\,h(x)\,dx,
+\qquad h=H-s.
+"></div>
+
+<p>Positive height makes this map strictly increasing. The zero total shortening integral gives <span class="math" data-tex="\rho(R_o)=R_o"></span>. Let <span class="math" data-tex="r=\mathcal R(\rho)"></span> be its inverse. On the reference cylinder use the map</p>
+<div class="math display" data-tex="
+(\rho,\theta,z)\longmapsto
+\left(\mathcal R(\rho),\theta,
+b(\mathcal R(\rho))+\frac{h(\mathcal R(\rho))}{H}z\right).
+"></div>
+
+<p>On each smooth piece, the cylindrical volume Jacobian is exactly</p>
+<div class="math display" data-tex="
+J=\frac{\mathcal R}{\rho}\mathcal R&#x27;(\rho)\frac hH=1,
+"></div>
+
+<p>because <span class="math" data-tex="\rho&#x27;(r)=rh/(H\rho)"></span>. The positive axis limit is regular. At the outer rim the radial map is the identity, <span class="math" data-tex="b=0"></span> and <span class="math" data-tex="h=H"></span>, so every rim point is fixed. Radial and vertical monotonicity give global injectivity; piecewise-smooth bounded derivatives and positive height give a finite-energy continuum configuration. The core/annulus derivatives may jump, which is allowed in this Lipschitz kinematic class. No exact P2 representation is asserted.</p>
+<p>Consequently <span class="math" data-tex="J=1"></span> almost everywhere on the full Lipschitz body; a classical gradient at the core/annulus interface is not asserted. Thus the sharp kinematic fit does not require local compression or interpenetration. It still supplies <strong>configurations, not force-balanced solutions</strong>. It does not realize the cohort through one common constitutive law, activation gain, branch or dynamics.</p>
+<h2>Sensitivity to an unknown component-pair crosswalk</h2>
+<p>If instead one allows one unknown permutation of the intact observed apical/basal pairs, retain the verified maximum/mean rows but pair their means <span class="math" data-tex="v_i"></span> with sums <span class="math" data-tex="q_j=a_j+b_j"></span>. The same correction proves the cost of assigning pair <span class="math" data-tex="j"></span> to row <span class="math" data-tex="i"></span> is <span class="math" data-tex="&#124;q_j-v_i&#124;/3"></span>, since the fixed row still has <span class="math" data-tex="v_i\le m_i"></span>.</p>
+<p>Sorting both scalar lists minimizes the largest absolute assignment difference by the standard uncrossing argument. The sharp kinematic floor under this weaker contract is</p>
+<div class="math display" data-tex="
+\delta_{\rm perm}
+=\frac13\max_k&#124;q_{(k)}-v_{(k)}&#124;
+=\frac{895512391}{300000000}
+\approx2.9850413033\,\mu\mathrm m.
+"></div>
+
+<p>The receipt also retains a matching at that exact threshold and a Hall obstruction at the preceding critical threshold. This is a conservative crosswalk sensitivity, not permission to rearrange the published data or a claim that the author-provided column order was wrong. Apical and basal observations remain paired together.</p>
+<h2>What this does and does not resolve</h2>
+<p>The inequality supplies an exact necessary discrepancy for the static regional-mean version of every mechanical parameter candidate. It helps separate an observation-closure limitation from material fitting. For the spatial-maximum component interpretation, the identity <span class="math" data-tex="V=A+B"></span> is absent; these observations instead satisfy the weaker <span class="math" data-tex="V\le M\le A+B"></span>. The static regional-mean lower bound must not be applied to that different operator.</p>
+<p>Nor does it apply to separately temporally maximized means: generally <span class="math" data-tex="\sup_t\langle a+b\rangle\ne\sup_t\langle a\rangle+\sup_t\langle b\rangle"></span>. Time-dependent counterfactual references and different ROI/aggregation rules require their own contract. The <a href="JOINT-OBSERVATION-CONTRACT.html">source audit</a> does not establish that the experiment used the static regional-mean rule tested here.</p>
+<p>The full mechanical compatible set, its larger-region predictions, exact algebraic/PDE error, empirical adequacy and novelty remain unresolved. The result is a useful conditional consistency limit, not an explanation of embryo shape or a completed five-gate study.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-11-19T09:10:18.165068+00:00",
+  "status": "Independent inputs audited; no finite exhaustive Countryman material family identified",
+  "sources": {
+    "cheikh_doi": "10.7554/eLife.85569",
+    "cheikh_object_version": "PMC10584372.1",
+    "cheikh_license": "CC0",
+    "countryman_doi": "10.1038/s41467-025-62483-6"
+  },
+  "locators": {
+    "apical_modulus": "Cheikh Results s2-8 p5; Appendix s11 p7;2D units fromspringrelation andFig7c doubleprime",
+    "discrete_spring_parameters": "Cheikh Fig7c doubleprime, retainedsourceimage; s2-8 p3-p5",
+    "stage_mismatch": "Cheikh Fig2 figure supplement1 caption:15-20um; Countryman Sec14:32-35um",
+    "uncertain_lateral_basal_split": "Cheikh s2-8 p5; Discussion s3 p10",
+    "ellipsoid_axes": "Cheikh Fig4b caption; Appendix s13 p1",
+    "countryman_initial_image": "Countryman Fig2a explicitly preactivation1min",
+    "countryman_force_and_surface_definitions": "Countryman Sec14-17"
+  },
+  "independent_input_classification": {
+    "height_um": {
+      "values": [
+        32,
+        35
+      ],
+      "type": "direct protocol-level Countryman range, not individual measurements"
+    },
+    "apical_surface_E_N_per_m": {
+      "values": [
+        1e-06,
+        1e-05
+      ],
+      "type": "Cheikh earlier-stage order-of-magnitude estimate; no statistical coverage or direct constitutive transfer"
+    },
+    "basal_to_apical_continuum_modulus_ratio": {
+      "values": null,
+      "type": "not quantitatively bounded; discrete illustrative ratio975 does not map to this ratio"
+    },
+    "prestress": {
+      "values": null,
+      "type": "not independently numerically specified for current constitutive law"
+    },
+    "cell_diameter_um": {
+      "values": null,
+      "type": "no validated numerical interval in inspected sources; illustrative image not cohort segmentation"
+    },
+    "initial_AP_DV_curvature": {
+      "values": null,
+      "type": "no individual Countryman curvature ranges; Cheikh model-derived geometric scales retained separately"
+    }
+  },
+  "finite_family_guidance": "Can freeze exploratory material/geometry sensitivity cases without larger-outcome fitting. Cannot label chosen finite grid an identified set or source-measured bound.",
+  "conditional_feasibility": true,
+  "global_impossibility_claim": false,
+  "wrong_transfer_rejected": [
+    "Wing-disc basement-membrane constants to embryonic basal actomyosin",
+    "Discrete basal/apical springratio to continuum area-modulus ratio",
+    "2D cortical modulus to3D bulk modulus without constitutive/length mapping",
+    "Basal stiffness to a basal displacement clamp",
+    "Perturbation recoil force to resting prestress",
+    "Ideal ellipsoid radii to specimen curvature confidence limits"
+  ],
+  "source_integrity": [
+    {
+      "path": "literature/material_constraints_cheikh2023.xml",
+      "source_object_name": "PMC10584372.1.xml",
+      "sha256": "86ec73cee52dcb999dcd4329ab11d704195da400486d89afcf7969147d28b403",
+      "official_md5_match": true
+    },
+    {
+      "path": "literature/material_constraints_cheikh_fig7.jpg",
+      "source_object_name": "elife-85569-fig7.jpg",
+      "sha256": "d9648e8aa70110b60d109b1f8c4e078d2de871ed4d131e91e4e058ce33f19316",
+      "official_md5_match": true
+    },
+    {
+      "path": "literature\\material_constraints_countryman_fig2.jpg",
+      "sha256": "536a1fa618d78717d937a377da16f84db7bc782e3437c000f7173db770a8eb50",
+      "official_md5_match": true
+    }
+  ],
+  "verification": {
+    "symbolic_ellipse_equatorial_curvature": "PASS exact sympy derivation, k_AP=B/A\u00b2",
+    "unit_conversion": "1nN/um=1e-3N/m; .001-.01 nN/um=1e-6..1e-5N/m",
+    "isotropic_membrane_mapping": "K_area=E2D/[2(1-nu)], mu_surface=E2D/[2(1+nu)]; requires stated continuum law",
+    "heldout_outcome_fitting": false
+  },
+  "files": {
+    "literature\\material_constraints_access.json": "043f4e2bae3210b0cf10b73be09734b4cce95c074784d71148e95f8f9d765891",
+    "literature\\material_constraints_cheikh2023.xml": "86ec73cee52dcb999dcd4329ab11d704195da400486d89afcf7969147d28b403",
+    "literature\\material_constraints_cheikh_fig7.jpg": "d9648e8aa70110b60d109b1f8c4e078d2de871ed4d131e91e4e058ce33f19316",
+    "literature\\material_constraints_cheikh_metadata.json": "5d79d71ea7fa3c33fc2e60bd998015944ea1a2703bbeb8f8d42445c41639a09a",
+    "literature\\material_constraints_countryman_fig2.jpg": "536a1fa618d78717d937a377da16f84db7bc782e3437c000f7173db770a8eb50",
+    "literature\\material_constraints_derived_numbers.json": "199aa0f2f59fecca7d6de04a442a693f79838bfb64cfa5340b574026c32bf8f5",
+    "literature\\material_constraints_s3_listing.xml": "b10a4369372c4a10ace6d99dc1984e2f1daadf1dfaf0efc0beea5e5fac90e090",
+    "docs/MATERIAL-INPUTS.md": "b05cbe09c454eabb8ce32c6928398a0230e37d378b182d50e289f603e53e5438"
+  }
+}

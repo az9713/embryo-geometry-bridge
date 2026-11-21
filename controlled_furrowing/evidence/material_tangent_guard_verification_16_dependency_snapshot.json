@@ -1,0 +1,50 @@
+{
+  "status": "PASS_GUARDED_MEAN_REUSE",
+  "checks": {
+    "all_actual_source_input_archive_hashes_match": true,
+    "every_dependency_stale_probe_rejected": true,
+    "missing_dependency_rejected": true,
+    "source_inputs_archives_unchanged_during_replay": true
+  },
+  "dependency_count": 16,
+  "expected_sha256": {
+    "scripts\\material_tangent_inference.py": "63ded9fdd73038f770ce9369e9d8a2d6d972a4863f83515b20a5961a5b522d78",
+    "scripts\\sparse_quadratic.py": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+    "scripts\\quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "scripts\\robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "scripts\\axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "scripts\\axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "scripts\\axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "scripts\\axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "scripts\\quadratic_mean_derivatives.py": "681b69335a80ae0468dd98856c5562b24524827809ece465747b95454d152bff",
+    "scripts\\quadratic_endpoint_observer.py": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926",
+    "runs\\activated_quadrature\\lambda_5000.0_strength_1.0\\reequilibrated.json": "d313cb9bee8073ae141feaca429f72a77c7eb32c5053c4a392033d3e6d869460",
+    "runs\\material_tangent_inference\\strength_1\\tangents.npz": "eaa419fd2715f9e81cf6bff5e67affd2eeaecc224b9615536a09042a34c4c3e6",
+    "runs\\activated_quadrature\\lambda_5000.0_strength_5.0\\reequilibrated.json": "662060f2dce6efd8da0195fe851baba76bfeb2e5b20b93d63bceccbf0c8b4325",
+    "runs\\material_tangent_inference\\strength_5\\tangents.npz": "64760bc0ae0f838aa80c320d721611190ae48b186e6954cd9116c6068b1ab083",
+    "runs\\activated_quadrature\\lambda_5000.0_strength_10.0\\reequilibrated.json": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50",
+    "runs\\material_tangent_inference\\strength_10\\tangents.npz": "787ecb825811fcde5f8445dbfb0d4a64ed37a591270227cdc43546bc6ebcb41c"
+  },
+  "simulated_stale_probes": {
+    "scripts\\material_tangent_inference.py": true,
+    "scripts\\sparse_quadratic.py": true,
+    "scripts\\quadratic_quadrature_study.py": true,
+    "scripts\\robust_quadratic.py": true,
+    "scripts\\axisymmetric_quadratic.py": true,
+    "scripts\\axisymmetric_mixed.py": true,
+    "scripts\\axisymmetric_prestress.py": true,
+    "scripts\\axisymmetric_mechanics.py": true,
+    "scripts\\quadratic_mean_derivatives.py": true,
+    "scripts\\quadratic_endpoint_observer.py": true,
+    "runs\\activated_quadrature\\lambda_5000.0_strength_1.0\\reequilibrated.json": true,
+    "runs\\material_tangent_inference\\strength_1\\tangents.npz": true,
+    "runs\\activated_quadrature\\lambda_5000.0_strength_5.0\\reequilibrated.json": true,
+    "runs\\material_tangent_inference\\strength_5\\tangents.npz": true,
+    "runs\\activated_quadrature\\lambda_5000.0_strength_10.0\\reequilibrated.json": true,
+    "runs\\material_tangent_inference\\strength_10\\tangents.npz": true
+  },
+  "replay_performed": true,
+  "archive": "runs/material_tangent_inference/guarded_replays/20261119T121343590154Z",
+  "guard_source_sha256": "e97862ff08c07ad7d6efdcc5fd37f0c24dc121e41a1713cd848bf0fb35a21939",
+  "scope": "Source/input/archive preconditions for the existing floating diagnostic; no extra physical, algebraic-root or parameter-identifiability certificate."
+}

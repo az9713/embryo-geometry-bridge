@@ -1,0 +1,198 @@
+{
+  "status": "PASS_DISCRETE_GEOMETRY_ONLY",
+  "checks": {
+    "all12_reported_float_maxima_match_exact_within_1e_minus10_um": true,
+    "exact_order_reversed_at_gains5and10": true
+  },
+  "rows": [
+    {
+      "mesh": "quadratic_robust",
+      "lambda": 500.0,
+      "gain": 1.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 1272951031985193857,
+        "denominator": 576460752303423488,
+        "display": 2.2082180389536195
+      },
+      "reported_float_difference_um": 1.3322676295501878e-15,
+      "input_sha256": "b52e7b9b05b0d5e4a0e40d85f37179d7b0cfb6c8cca817b49737c66364f649f5"
+    },
+    {
+      "mesh": "quadratic_robust",
+      "lambda": 500.0,
+      "gain": 5.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 2068442403538741905,
+        "denominator": 288230376151711744,
+        "display": 7.176351192249096
+      },
+      "reported_float_difference_um": 8.881784197001252e-16,
+      "input_sha256": "eb9f2cbb5200cc2ed92ad0e0f6f1c23375d30bc988f59f9bfde2f03fc66e9313"
+    },
+    {
+      "mesh": "quadratic_robust",
+      "lambda": 500.0,
+      "gain": 10.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 3064234832859961271,
+        "denominator": 288230376151711744,
+        "display": 10.631200200936085
+      },
+      "reported_float_difference_um": 0.0,
+      "input_sha256": "c9c25c8877b9b0a4763291d088c3a6eabdfebd3e842254be16b01d83706ae39d"
+    },
+    {
+      "mesh": "quadratic_robust",
+      "lambda": 5000.0,
+      "gain": 1.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 143773539572992881,
+        "denominator": 72057594037927936,
+        "display": 1.99525867457241
+      },
+      "reported_float_difference_um": 8.881784197001252e-16,
+      "input_sha256": "708c01f763982702c01eda25115e5f16f3b11bdc0e5cd649c79e423a7177f3e0"
+    },
+    {
+      "mesh": "quadratic_robust",
+      "lambda": 5000.0,
+      "gain": 5.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 3943214197952005,
+        "denominator": 562949953421312,
+        "display": 7.004555509752217
+      },
+      "reported_float_difference_um": 0.0,
+      "input_sha256": "8dff2258d65bcd8928ab323ba9487548e2f9dc1f14a1744fcc7ec5aaf3ed10d1"
+    },
+    {
+      "mesh": "quadratic_robust",
+      "lambda": 5000.0,
+      "gain": 10.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 47214560980538747,
+        "denominator": 4503599627370496,
+        "display": 10.483738539632524
+      },
+      "reported_float_difference_um": 0.0,
+      "input_sha256": "2508aae756447119cd67cf2c50dc8cbfc8ab1e7b47b27749f8a0e4a26d88044a"
+    },
+    {
+      "mesh": "activated_mesh",
+      "lambda": 500.0,
+      "gain": 1.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 591363156895018070241048468549307,
+        "denominator": 257504369991286308355536874110976,
+        "display": 2.2965169752848436
+      },
+      "reported_float_difference_um": 3.552713678800501e-15,
+      "input_sha256": "9370eef947afac66a74002edbb1ad019f48863f081ce6b5ac113200bef008d08"
+    },
+    {
+      "mesh": "activated_mesh",
+      "lambda": 500.0,
+      "gain": 5.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 3400160247678886374348295387216739,
+        "denominator": 470925695872336332642889685270528,
+        "display": 7.220162920565368
+      },
+      "reported_float_difference_um": 2.6645352591003757e-15,
+      "input_sha256": "134170c1d776a6b82b1208c36850e496680496f506ad05763cea71acb097fc52"
+    },
+    {
+      "mesh": "activated_mesh",
+      "lambda": 500.0,
+      "gain": 10.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 70563459860752647826496078521349,
+        "denominator": 6733523463134893306739096027136,
+        "display": 10.479425852910115
+      },
+      "reported_float_difference_um": 1.7763568394002505e-15,
+      "input_sha256": "498a65957398c098d823c86c5e15e83d0708837c7c78ba981746fc67ab71ba09"
+    },
+    {
+      "mesh": "activated_mesh",
+      "lambda": 5000.0,
+      "gain": 1.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 7918885914232992935128726830909043,
+        "denominator": 3631853091465499499506467468214272,
+        "display": 2.1803981919977993
+      },
+      "reported_float_difference_um": 8.881784197001252e-16,
+      "input_sha256": "b249a3ef84c638b6ffd14391a8ad611e221aed0e6de52793b363a44cfd1f1fac"
+    },
+    {
+      "mesh": "activated_mesh",
+      "lambda": 5000.0,
+      "gain": 5.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 26297121612082641497806049338845411,
+        "denominator": 3631913858713192762042933307244544,
+        "display": 7.240568646471108
+      },
+      "reported_float_difference_um": 1.7763568394002505e-15,
+      "input_sha256": "d1226b3a59276131d10d6624787bafcb76c8dd87faa3cfd5ef1e95e3ea855a82"
+    },
+    {
+      "mesh": "activated_mesh",
+      "lambda": 5000.0,
+      "gain": 10.0,
+      "exact_stored_geometry_max_shortening_um": {
+        "numerator": 122818579836052337142700078851791,
+        "denominator": 11549240809648851752619121573888,
+        "display": 10.634342279316156
+      },
+      "reported_float_difference_um": 1.7763568394002505e-15,
+      "input_sha256": "c79a50d6ed3d7434033e32d20bf561aef095ba097e320a89256c1713c10c837b"
+    }
+  ],
+  "orders": [
+    {
+      "gain": 1.0,
+      "coarse_k500_minus_k5000_um": {
+        "numerator": 122762715401250809,
+        "denominator": 576460752303423488,
+        "display": 0.21295936438120933
+      },
+      "fine_k500_minus_k5000_um": {
+        "numerator": 94192345911322428797290977112090460977587219311,
+        "denominator": 811172346496948930126131179317137553951159222272,
+        "display": 0.11611878328704431
+      },
+      "strict_order_reversed": false
+    },
+    {
+      "gain": 5.0,
+      "coarse_k500_minus_k5000_um": {
+        "numerator": 49516734187315345,
+        "denominator": 288230376151711744,
+        "display": 0.17179568249687854
+      },
+      "fine_k500_minus_k5000_um": {
+        "numerator": -1891996174467718846510775870650585936286418487,
+        "denominator": 92718886022846362915849854943309070206345674752,
+        "display": -0.02040572590573966
+      },
+      "strict_order_reversed": true
+    },
+    {
+      "gain": 10.0,
+      "coarse_k500_minus_k5000_um": {
+        "numerator": 42502930105481463,
+        "denominator": 288230376151711744,
+        "display": 0.14746166130356017
+      },
+      "fine_k500_minus_k5000_um": {
+        "numerator": -20898905420711328318177904601772955943575403,
+        "denominator": 134904386226510032958952152329161911551655936,
+        "display": -0.15491642640604142
+      },
+      "strict_order_reversed": true
+    }
+  ],
+  "scope": "Exact rational extrema of stored P2 material-column heights; positivegeometry andPDEerror addressedseparately. Confirmsnumericalorderinginstability, notphysicaleffect."
+}

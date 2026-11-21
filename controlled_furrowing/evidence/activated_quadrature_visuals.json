@@ -1,0 +1,9 @@
+{
+  "scope": "Visuals generated entirely from retained numerical receipts and fields",
+  "generator_sha256": "ffe1c31c31133d9f5d1b2f7ada277c00cb01d1d6200aba6e9219ca347d053de9",
+  "input_receipt_sha256": "5bc53b0e957c9d518c01bc7b3426f13da18c0611b867d5e5639440de698b8241",
+  "figures": {
+    "quadrature-overview.png": "66fb446571adad6248494d6aee73583d29766b22e736bd296e31d509bab10a68",
+    "quadrature-profiles.png": "cd9a9c43bdd582ea877f41c070853a94837a6c6ad1d5fa532c9dedafb092fb38"
+  }
+}

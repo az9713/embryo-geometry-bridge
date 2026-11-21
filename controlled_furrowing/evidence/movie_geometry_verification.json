@@ -1,0 +1,101 @@
+{
+  "status": "PASS audit execution/provenance/links; anatomical geometry remains INSUFFICIENT",
+  "audit_replayed_twice": true,
+  "byte_stable_receipt_sha256": "676500d5d2f43a07aa7bd9af798f74a8ea948f3df3b741fcb355838ef0701c16",
+  "source_raw_unchanged_verified_by_each_replay": true,
+  "local_document_links": [
+    {
+      "label": "audit script",
+      "target": "../runs/movie_geometry/audit_movie.py",
+      "exists": true
+    },
+    {
+      "label": "receipt",
+      "target": "../evidence/movie_geometry_audit.json",
+      "exists": true
+    },
+    {
+      "label": "independently generated schematic",
+      "target": "../runs/movie_geometry/censoring_nonidentifiability_schematic.png",
+      "exists": true
+    }
+  ],
+  "document_has_no_source_image_embeds": true,
+  "artifact_hashes": [
+    {
+      "path": "docs/MOVIE-GEOMETRY-FEASIBILITY.md",
+      "bytes": 11919,
+      "sha256": "e94fcf2737976de4e59ec8008c71d4dfba317636da18d1fddbdee7233e0bbba7",
+      "source_image_local_only": false
+    },
+    {
+      "path": "runs/movie_geometry/audit_movie.py",
+      "bytes": 12019,
+      "sha256": "d96574110875657cdefa75eb4ed18387bf074d7cb6c6d48b66200e2d94ff195e",
+      "source_image_local_only": false
+    },
+    {
+      "path": "runs/movie_geometry/make_censoring_schematic.py",
+      "bytes": 1321,
+      "sha256": "7315cd6d3e9f1414e5c4f13f4066dadde1b083e1f7bf883b17ca2253a3d82c8c",
+      "source_image_local_only": false
+    },
+    {
+      "path": "evidence/movie_geometry_audit.json",
+      "bytes": 24537,
+      "sha256": "676500d5d2f43a07aa7bd9af798f74a8ea948f3df3b741fcb355838ef0701c16",
+      "source_image_local_only": false
+    },
+    {
+      "path": "runs/movie_geometry/censoring_nonidentifiability_schematic.png",
+      "bytes": 95664,
+      "sha256": "aa681b72824c146d218a40a85d0f31327b9ed9ea9b014cbe497ef0ca6976c61b",
+      "source_image_local_only": false
+    },
+    {
+      "path": "runs/movie_geometry/middle_frame13_grid_local_only.png",
+      "bytes": 640733,
+      "sha256": "6e16cb143d4a257a044cdddc3a14cf46a3dc0233a492761f2f0f31039d5bf319",
+      "source_image_local_only": true
+    },
+    {
+      "path": "runs/movie_geometry/middle_frame5_grid_local_only.png",
+      "bytes": 643480,
+      "sha256": "68b1690b0ef8dd5690935baa3feec58551f1edeaa8749e25f9f70c7b66cbf342",
+      "source_image_local_only": true
+    },
+    {
+      "path": "runs/movie_geometry/middle_inspection_local_only.png",
+      "bytes": 1068975,
+      "sha256": "66270f46287938c1513c45248fe6501571fe79c8c1767381b3815ae903bcb8cd",
+      "source_image_local_only": true
+    },
+    {
+      "path": "runs/movie_geometry/timestamps_local_only.png",
+      "bytes": 309687,
+      "sha256": "0049c501d01db73d4fe97327617c716d8cdeabf12ee47d9faf97e97d9781caae",
+      "source_image_local_only": true
+    },
+    {
+      "path": "runs/movie_geometry/transverse_inspection_local_only.png",
+      "bytes": 577196,
+      "sha256": "aea1f45f2ef6e0861697be625cc7b850c62380c0cf9056a5d4ebb0ebff954709",
+      "source_image_local_only": true
+    },
+    {
+      "path": "runs/movie_geometry/source_fig4_unmodified.jpg",
+      "bytes": 288587,
+      "sha256": "c587150d86e7326b9774643410b1242b61053326f194cab8e0b91ce61dfe6473",
+      "source_image_local_only": true
+    },
+    {
+      "path": "runs/movie_geometry/ffmpeg_decode_local.txt",
+      "bytes": 1057,
+      "sha256": "e5f27c96da74ecd88a58a2c1673522d20e47654f41a37b08ecb06e803bad9a90",
+      "source_image_local_only": false
+    }
+  ],
+  "visual_review": "Original censoring schematic viewed; source local diagnostic transverse frames0/13 and middle5/13 viewed. No adapted source frames approved for public site.",
+  "no_model_fit_or_cohort_identity_assertion": true,
+  "qualitative_vs_certified_distinction_retained": true
+}

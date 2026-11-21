@@ -1,0 +1,162 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ALGEBRAIC-ROOT-CERTIFICATION-PATH</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>From a small residual to a certified discrete equilibrium</h1>
+<p><strong>For one archived weak-load field, a validated computation proves that a nearby exact discrete root exists and is locally unique.</strong> Its coefficient error is at most approximately <span class="math" data-tex="2.619900\times10^{-12}"></span> in the model's normalized infinity norm. This is a root of the finite-quadrature mathematical potential with explicitly frozen binary constants. It is not a continuum error bound, a stability theorem or biological validation.</p>
+<p>The <a href="../scripts/algebraic_root_feasibility.py">implementation</a> and <a href="../evidence/algebraic_root_certification_feasibility.json">certificate packet</a> retain the complete frozen cache and preconditioner, exact rational bound endpoints, failed larger-radius attempts and executable replay. The archived input is the 611-degree-of-freedom, activation-strength-one baseline field—not any newly fitted material proposal. Here “algebraic root” means a finite-dimensional discrete residual root; its energy contains logarithms and square roots, rather than only polynomials.</p>
+<p><img alt="Actual certified ball and larger balls that this bound fails to certify" src="assets/algebraic_root_certificate.svg" /></p>
+<p>The markers show evaluated radii; connecting segments only guide the eye. A value above one means this sufficient test fails; it does not establish that no equilibrium exists in that ball.</p>
+<h2>1. Specify the exact mathematical target</h2>
+<p>Let <span class="math" data-tex="u\in\mathbb R^{611}"></span> contain free nodal displacements of the quadratic finite-element model. Fixed nodes keep their declared coordinates. The reference coordinates, shape functions and gradients, quadrature radii/weights, material coefficients, activation strength and energy normalization are treated as the <strong>exact real values of their stored binary floating-point constants</strong>. Define</p>
+<div class="math display" data-tex="
+y(u)=X+P u,\qquad f(u)=\nabla_u\widehat E(y(u)),\qquad
+H(u)=Df(u).
+"></div>
+
+<p>The map <span class="math" data-tex="P"></span> inserts free coefficients into their full nodal positions. The addition in <span class="math" data-tex="X+Pu"></span> is exact real addition. It is not replaced by the separately rounded <code>current_nodes</code> array. The frozen cache stores reference coordinates, free indices, the input vector, all quadrature/shape tensors and the proposed preconditioner. The packet also contains the material parameters and exact binary activation strength, so cache replay requires no regenerated quadrature or new equilibrium solve.</p>
+<p>The target uses Duffy8 volume and order-12 surface quadrature: 9,216 volume points and 288 surface points. It is the smooth physical potential on the neighborhood where its Jacobians exceed the implementation's clamp/penalty thresholds. The projected-pressure calculation is diagnostic and does not enter this total potential.</p>
+<p>This target is deliberately precise. It is distinct from treating every rounded Torch operation as a real-valued function, from replacing the frozen nodes by ideal exact Gauss nodes, and from the continuum variational problem. Differences between those targets require separate error bounds.</p>
+<h2>2. Reduce differentiation to five bulk and three surface variables</h2>
+<p>At a volume point write the meridional deformation gradient as</p>
+<div class="math display" data-tex="
+F_m=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix},\qquad
+h=R/R_0,\qquad D=ad-bc,\qquad J=Dh.
+"></div>
+
+<p>The five variables <span class="math" data-tex="z=(a,b,c,d,h)"></span> are affine functions of the nodal coefficients. With local activation coefficient <span class="math" data-tex="A"></span>, the density is</p>
+<div class="math display" data-tex="
+W(z)=\frac\mu2\left(\lVert z\rVert^2-3\right)
+-\mu\log J+\frac\kappa2(\log J)^2
++\frac A2(b^2+d^2).
+"></div>
+
+<p>Let <span class="math" data-tex="v=\nabla_z\log J"></span> and <span class="math" data-tex="Q=\nabla_z^2\log J"></span>. When <span class="math" data-tex="D,h&gt;0"></span>,</p>
+<div class="math display" data-tex="
+v=\left(\frac dD,-\frac cD,-\frac bD,\frac aD,\frac1h\right),
+\quad
+Q_{1:4,1:4}=\frac{\nabla^2D}{D}
+-\frac{\nabla D(\nabla D)^T}{D^2},\quad
+Q_{55}=-h^{-2},\quad Q_{i5}=0.
+"></div>
+
+<p>Therefore, with <span class="math" data-tex="C=\operatorname{diag}(\mu,\mu+A,\mu,\mu+A,\mu)"></span>,</p>
+<div class="math display" data-tex="
+\nabla W=Cz+(\kappa\log J-\mu)v,
+\qquad
+\nabla^2W=C+\kappa vv^T+(\kappa\log J-\mu)Q.
+"></div>
+
+<p>At a surface point use <span class="math" data-tex="z_s=(R,t_r,t_z)"></span>, <span class="math" data-tex="\tau=(t_r^2+t_z^2)^{1/2}"></span>, and <span class="math" data-tex="s=(r_0\ell_0)^{-1}"></span>. Then</p>
+<div class="math display" data-tex="
+j=sR\tau,\qquad \Phi=\tfrac12K(j-1)^2+Tj,
+"></div>
+
+<div class="math display" data-tex="
+\nabla\Phi=[K(j-1)+T]\nabla j,
+\qquad
+\nabla^2\Phi=K\nabla j(\nabla j)^T+[K(j-1)+T]\nabla^2j.
+"></div>
+
+<p>The implementation uses explicit derivatives of <span class="math" data-tex="j"></span>, with only positive-radius and positive-tangent denominators. It checks 47 symbolic, exact-rational, domain and synthetic-contraction conditions. These formulas replace automatic differentiation inside the certificate; the original floating Hessian is used only to propose a preconditioner.</p>
+<h2>3. Enclose the full neighborhood without a 611-variable interval expansion</h2>
+<p>Each local strain map has the form <span class="math" data-tex="z_q=z_q^*+B_q\Delta u"></span>, including the correct fixed-node contribution at the center. For <span class="math" data-tex="\lVert\Delta u\rVert_\infty\leq r"></span>, each strain component lies in</p>
+<div class="math display" data-tex="
+(z_q)_a\in (z_q^*)_a+
+[-r\lVert(B_q)_{a,:}\rVert_1,
+ r\lVert(B_q)_{a,:}\rVert_1].
+"></div>
+
+<p>Arb evaluation of the five- or three-variable formulas encloses the local Hessian throughout that strain box. If <span class="math" data-tex="\Delta H^{q}_{ab}"></span> bounds its change from the center, the global Hessian row-sum variation satisfies</p>
+<div class="math display" data-tex="
+\sum_j&#124;H_{ij}(u)-H_{ij}(u_*)&#124;
+\leq \sum_q w_q\sum_a &#124;(B_q)_{ai}&#124;
+\sum_b\Delta H^q_{ab}\sum_j&#124;(B_q)_{bj}&#124;=:d_i(r).
+"></div>
+
+<p>Every normalized weight <span class="math" data-tex="w_q"></span> is checked strictly positive. Every reference radius, surface length and energy normalization is also checked positive. All summations, divisions, logarithms, square roots, matrix products and final comparisons in the certificate use outward ball enclosures. They do not use a floating eigenvalue as a lower bound.</p>
+<p>Let <span class="math" data-tex="R"></span> be a proposed approximate inverse of the archived floating Hessian, with every stored entry treated as an exact binary rational. The certificate independently computes</p>
+<div class="math display" data-tex="
+\eta\geq\lVert Rf(u_*)\rVert_\infty,
+\qquad Z_0\geq\lVert I-RH(u_*)\rVert_\infty,
+"></div>
+
+<div class="math display" data-tex="
+Z(r)=Z_0+\max_i\sum_j&#124;R_{ij}&#124;d_j(r)
+\geq\sup_{u\in B_r}\lVert I-RH(u)\rVert_\infty.
+"></div>
+
+<p>The residual is preconditioned <strong>before</strong> taking its norm. Replacing it by <span class="math" data-tex="\lVert R\rVert\lVert f\rVert"></span> would lose cancellation and can be much less useful. The roundoff of the inverse proposal does not invalidate the proof: the computed defect and nonlinear bounds must validate the actual stored <span class="math" data-tex="R"></span>.</p>
+<h2>4. Existence, local uniqueness and the error bound</h2>
+<p>Assume the positive-domain checks hold on the closed coefficient ball <span class="math" data-tex="B_r"></span>, and</p>
+<div class="math display" data-tex="
+Z(r)&lt;1,\qquad \eta+Z(r)r&lt;r.
+"></div>
+
+<p>Define <span class="math" data-tex="T(u)=u-Rf(u)"></span>. The mean-value formula gives <span class="math" data-tex="\lVert DT\rVert_\infty\leq Z(r)"></span>, so <span class="math" data-tex="T"></span> is a contraction on the ball. Also</p>
+<div class="math display" data-tex="
+\lVert T(u)-u_*\rVert_\infty
+\leq\eta+Z(r)\lVert u-u_*\rVert_\infty&lt;r.
+"></div>
+
+<p>Thus Banach's theorem supplies a unique fixed point <span class="math" data-tex="u^\dagger"></span> in the ball. The center defect below one implies that <span class="math" data-tex="RH(u_*)"></span>, and hence <span class="math" data-tex="R"></span>, is nonsingular. Consequently a fixed point satisfies <span class="math" data-tex="f(u^\dagger)=0"></span>. Finally,</p>
+<div class="math display" data-tex="
+\lVert u^\dagger-u_*\rVert_\infty
+\leq\frac\eta{1-Z(r)}.
+"></div>
+
+<p>This proves local uniqueness within the declared ball. It does not prove a global branch selection, positive second variation or energetic stability.</p>
+<h2>5. Actual numerical certificate</h2>
+<p>The packet contains exact rational endpoints; rounded display values are:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Validated value/bound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coefficient-ball radius <span class="math" data-tex="r"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Preconditioned residual <span class="math" data-tex="\eta"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="2.527709803\times10^{-12}"></span></td>
+</tr>
+<tr>
+<td>Center defect <span class="math" data-tex="Z_0"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="6.591230456\times10^{-7}"></span></td>
+</tr>
+<tr>
+<td>Neighborhood contraction bound <span class="math" data-tex="Z(r)"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="0.03518827166"></span></td>
+</tr>
+<tr>
+<td>Self-map bound <span class="math" data-tex="\eta+Z(r)r"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="2.879592520\times10^{-12}&lt;r"></span></td>
+</tr>
+<tr>
+<td>Root-distance upper bound</td>
+<td style="text-align: right;"><span class="math" data-tex="2.619899540\times10^{-12}"></span></td>
+</tr>
+<tr>
+<td>Minimum volume-point <span class="math" data-tex="J"></span> throughout the ball</td>
+<td style="text-align: right;">greater than <span class="math" data-tex="0.9977915148"></span></td>
+</tr>
+<tr>
+<td>Minimum surface radius throughout the ball</td>
+<td style="text-align: right;">greater than <span class="math" data-tex="0.0006383480"></span></td>
+</tr>
+<tr>
+<td>Minimum squared surface tangent throughout the ball</td>
+<td style="text-align: right;">greater than <span class="math" data-tex="0.0047845587"></span></td>
+</tr>
+</tbody>
+</table>
+<p>All 9,504 terms satisfy the required analytic-domain checks. In particular the volume penalty and logarithm clamp are inactive throughout the ball, not merely at its center. The surface square roots avoid zero throughout the ball.</p>
+<p>The initially tested radii <span class="math" data-tex="10^{-8},10^{-7},10^{-6}"></span> failed this conservative bound, with contraction estimates approximately 35.25, 351.91 and 3519.15. Their failure remains in the packet. Shrinking the neighborhood while retaining the actual preconditioned residual made the sufficient test succeed. A broadcast-mask indexing error in the first engineering attempt is also recorded; it produced no certificate and was corrected before complete assembly.</p>
+<h2>6. Replay, verification and limits</h2>
+<p>Run from the study root:</p>
+<pre><code class="language-powershell">python -B controlled_furrowing/scripts/algebraic_root_feasibility.py test
+python -B controlled_furrowing/scripts/algebraic_root_feasibility.py replay
+</code></pre>
+<p>The replay reads the embedded, checksummed binary cache and preconditioner; it regenerates neither quadrature nor an equilibrium. The implementation uses python-flint 0.9.0 at 160-bit midpoint precision. Arb represents real quantities by enclosing balls and rounds radii outward; see the primary <a href="https://python-flint.readthedocs.io/en/stable/arb.html">python-flint scalar documentation</a>, <a href="https://python-flint.readthedocs.io/en/latest/arb_mat.html">matrix documentation</a>, and Johansson's <a href="https://arxiv.org/abs/1611.02831">Arb implementation paper</a>. The contraction proof above states the actual mathematical acceptance conditions rather than delegating the claim to a software status label.</p>
+<p>This closes one specific gap: a precisely defined discrete root is now known to exist near one computed field. It does not certify all calibration states, the new material proposal, ideal-quadrature equivalence, continuum convergence, global embedding of every field in the ball, or the experiment's temporal observation law. Converting coefficient error into current-radius endpoint error requires additional graph-domain and monotonicity bounds; that is a separate step. Numerical unit conversion does not turn this small discrete-root error into microscopy accuracy.</p>
+<p>The method is standard validated nonlinear numerics. Its contribution here is a reproducible certificate for this particular finite model, with the target and remaining errors separated explicitly. No conceptual or biological novelty is claimed.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

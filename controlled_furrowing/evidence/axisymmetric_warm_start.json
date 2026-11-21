@@ -1,0 +1,60 @@
+{
+  "source_sha256": "acdeb27db2fcfd54c660b231368ffcdea64209ae5112752d1f447f5671980043",
+  "sequence": [
+    {
+      "gain": 0.2,
+      "seconds": 0.7102567999972962,
+      "converged": true,
+      "force": 1.5743238960738704e-14,
+      "minJ": 0.9944708282663907,
+      "shortening": 0.010851540504882129,
+      "stages": 1,
+      "raw_lbfgs_success": false
+    },
+    {
+      "gain": 0.5,
+      "seconds": 0.3158982000022661,
+      "converged": true,
+      "force": 8.900432474368003e-15,
+      "minJ": 0.9864858356169053,
+      "shortening": 0.026142496472934984,
+      "stages": 1,
+      "raw_lbfgs_success": false
+    },
+    {
+      "gain": 1.0,
+      "seconds": 0.5731411000015214,
+      "converged": true,
+      "force": 4.42130463100196e-14,
+      "minJ": 0.9739361832033523,
+      "shortening": 0.04939168307473085,
+      "stages": 1,
+      "raw_lbfgs_success": false
+    },
+    {
+      "gain": 2.0,
+      "seconds": 0.5563968999776989,
+      "converged": true,
+      "force": 4.5723366312897884e-12,
+      "minJ": 0.9512879382131416,
+      "shortening": 0.08940758239819058,
+      "stages": 1,
+      "raw_lbfgs_success": false
+    },
+    {
+      "gain": 4.0,
+      "seconds": 0.5952808999863919,
+      "converged": true,
+      "force": 1.5584755708175635e-14,
+      "minJ": 0.9135114964672169,
+      "shortening": 0.15212076318882284,
+      "stages": 1,
+      "raw_lbfgs_success": false
+    }
+  ],
+  "cold_warm_difference": 1.2759127088202149e-11,
+  "cold_warm_both_converged": true,
+  "cold_warm_seconds": 9.94222009999794,
+  "warm_start_preserved_one_stage": true,
+  "limits": "Synthetic idealized equilibrium and local branch, no physical timing/mesh certificate"
+}

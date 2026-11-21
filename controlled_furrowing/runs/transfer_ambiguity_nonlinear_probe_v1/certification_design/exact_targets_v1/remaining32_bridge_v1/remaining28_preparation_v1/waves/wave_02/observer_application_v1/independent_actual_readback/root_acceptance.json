@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ROOT_ACCEPTED_WAVE02_INDEPENDENT_EXACT_SPATIAL_OBSERVERS",
+  "receipt_sha256": "88d5950f9b0ec2cc236d57c9b70f686d11fcb4a1879870e2c36e91eecc578fc0",
+  "agent_true_os_sha256": "b9d886ba79bc2e8a9cd59b969fdf07cc959fff78331ab6bf072a93b74cfa4d56",
+  "root_directly_polled_agent_process": false,
+  "source_and_data_hashes_rechecked": 68,
+  "all64_scalar_residual_statuses_rechecked": true,
+  "primary_IN": 16,
+  "alternative_IN": 44,
+  "alternative_OUT": 4,
+  "disjoint_exact_spatial_coverage": 12,
+  "exact_small_fields": 10,
+  "exact_large_fields": 2,
+  "full_five_gate_complete": false
+}

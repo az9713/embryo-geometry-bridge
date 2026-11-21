@@ -1,0 +1,154 @@
+{
+  "status": "PASS_CURRENT17_GUARDED_REUSE_AND_RETAINED16_REPLAY",
+  "checks": {
+    "independent_17manifest_matches_production": true,
+    "all17_declared_current_hashes_match": true,
+    "current_guard_receipt_manifest_matches": true,
+    "current_wrapper_sha_matches_receipt": true,
+    "original_audited_material_source_unchanged": true,
+    "original111record_unchanged": true,
+    "annulus_helper_now_guarded": true,
+    "scripts\\material_tangent_inference.py_independent_stale_and_missing_probes": true,
+    "scripts\\sparse_quadratic.py_independent_stale_and_missing_probes": true,
+    "scripts\\quadratic_quadrature_study.py_independent_stale_and_missing_probes": true,
+    "scripts\\robust_quadratic.py_independent_stale_and_missing_probes": true,
+    "scripts\\axisymmetric_quadratic.py_independent_stale_and_missing_probes": true,
+    "scripts\\axisymmetric_mixed.py_independent_stale_and_missing_probes": true,
+    "scripts\\axisymmetric_prestress.py_independent_stale_and_missing_probes": true,
+    "scripts\\axisymmetric_mechanics.py_independent_stale_and_missing_probes": true,
+    "scripts\\quadratic_mean_derivatives.py_independent_stale_and_missing_probes": true,
+    "scripts\\quadratic_endpoint_observer.py_independent_stale_and_missing_probes": true,
+    "scripts\\annulus_observer.py_independent_stale_and_missing_probes": true,
+    "runs\\activated_quadrature\\lambda_5000.0_strength_1.0\\reequilibrated.json_independent_stale_and_missing_probes": true,
+    "runs\\material_tangent_inference\\strength_1\\tangents.npz_independent_stale_and_missing_probes": true,
+    "runs\\activated_quadrature\\lambda_5000.0_strength_5.0\\reequilibrated.json_independent_stale_and_missing_probes": true,
+    "runs\\material_tangent_inference\\strength_5\\tangents.npz_independent_stale_and_missing_probes": true,
+    "runs\\activated_quadrature\\lambda_5000.0_strength_10.0\\reequilibrated.json_independent_stale_and_missing_probes": true,
+    "runs\\material_tangent_inference\\strength_10\\tangents.npz_independent_stale_and_missing_probes": true,
+    "unexpected_dependency_rejected": true,
+    "archived_previous_new_current_byte_identical": true,
+    "same_as_original111_diagnostic_hash": true,
+    "expected_diag_sha35ff90ec": true,
+    "historical16actual_replay_pre_and_post_passed": true,
+    "current17readonly_guards_passed": true,
+    "historical16_inputs_still_match_current17_subset": true,
+    "all_current_locked_physical_sources_unchanged": true,
+    "current_origin_instructs_guarded_reuse": true
+  },
+  "dependency_count": 17,
+  "expected_sha256": {
+    "scripts/material_tangent_inference.py": "63ded9fdd73038f770ce9369e9d8a2d6d972a4863f83515b20a5961a5b522d78",
+    "scripts/sparse_quadratic.py": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+    "scripts/quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "scripts/robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "scripts/axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "scripts/axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "scripts/axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "scripts/axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "scripts/quadratic_mean_derivatives.py": "681b69335a80ae0468dd98856c5562b24524827809ece465747b95454d152bff",
+    "scripts/quadratic_endpoint_observer.py": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926",
+    "scripts/annulus_observer.py": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9",
+    "runs/activated_quadrature/lambda_5000.0_strength_1.0/reequilibrated.json": "d313cb9bee8073ae141feaca429f72a77c7eb32c5053c4a392033d3e6d869460",
+    "runs/material_tangent_inference/strength_1/tangents.npz": "eaa419fd2715f9e81cf6bff5e67affd2eeaecc224b9615536a09042a34c4c3e6",
+    "runs/activated_quadrature/lambda_5000.0_strength_5.0/reequilibrated.json": "662060f2dce6efd8da0195fe851baba76bfeb2e5b20b93d63bceccbf0c8b4325",
+    "runs/material_tangent_inference/strength_5/tangents.npz": "64760bc0ae0f838aa80c320d721611190ae48b186e6954cd9116c6068b1ab083",
+    "runs/activated_quadrature/lambda_5000.0_strength_10.0/reequilibrated.json": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50",
+    "runs/material_tangent_inference/strength_10/tangents.npz": "787ecb825811fcde5f8445dbfb0d4a64ed37a591270227cdc43546bc6ebcb41c"
+  },
+  "independent_stale_and_missing_probes": {
+    "scripts\\material_tangent_inference.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\sparse_quadratic.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\quadratic_quadrature_study.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\robust_quadratic.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\axisymmetric_quadratic.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\axisymmetric_mixed.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\axisymmetric_prestress.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\axisymmetric_mechanics.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\quadratic_mean_derivatives.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\quadratic_endpoint_observer.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "scripts\\annulus_observer.py": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "runs\\activated_quadrature\\lambda_5000.0_strength_1.0\\reequilibrated.json": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "runs\\material_tangent_inference\\strength_1\\tangents.npz": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "runs\\activated_quadrature\\lambda_5000.0_strength_5.0\\reequilibrated.json": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "runs\\material_tangent_inference\\strength_5\\tangents.npz": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "runs\\activated_quadrature\\lambda_5000.0_strength_10.0\\reequilibrated.json": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    },
+    "runs\\material_tangent_inference\\strength_10\\tangents.npz": {
+      "stale_rejected": true,
+      "missing_rejected": true
+    }
+  },
+  "archive_and_current_hashes": {
+    "runs/material_tangent_inference/guarded_replays/20261119T121343590154Z/previous_mean_diagnostic.json": "35ff90ec1614777af7c9559fbcabe63004b0ea42a22bbbc71e0b840410c57ded",
+    "runs/material_tangent_inference/guarded_replays/20261119T121343590154Z/new_mean_diagnostic.json": "35ff90ec1614777af7c9559fbcabe63004b0ea42a22bbbc71e0b840410c57ded",
+    "evidence/material_tangent_mean_diagnostic.json": "35ff90ec1614777af7c9559fbcabe63004b0ea42a22bbbc71e0b840410c57ded"
+  },
+  "reviewed_hashes": {
+    "scripts/material_tangent_guarded.py": "caf6b528d8963b96a7bcaee321a8b4baabbe1bfb82efde58f066a570037fa08c",
+    "evidence/material_tangent_guard_verification.json": "82963358d1efe2e07ef1aed444e364c70726bf150c144023dc5122a006e3e61f",
+    "evidence/material_tangent_guard_verification_16_dependency_snapshot.json": "7ddf9b7bb8c3d071ca8b08a90ca21b65059eed268dbd3f0a85d47651d3a0c098",
+    "docs/MATERIAL-TANGENT-INFERENCE.md": "375f4e6d1b8b8e2dd2fad5d7f3264752c8ee07109bca3ed29df9e0d7f595db6c",
+    "evidence/material_tangent_independent_review.json": "bff30d518993b63dc2ef8198f75ba031d4b65275ba9b117bafe757cf5b33c61f"
+  },
+  "historical_finding_and_fix": {
+    "finding": "The initial16dependency wrapper omitted annulus_observer.py used by the observer and derivative. Its current bytes were already unchanged; current scientific result was unaffected.",
+    "resolution": "NEW wrapper adds original annulus helper as17th dependency. Independently tested every17 stale and missing in-memory manifest probe. Original material module, mechanics inputs/NPZ and old111review untouched.",
+    "old_wrapper_sha256": "e97862ff08c07ad7d6efdcc5fd37f0c24dc121e41a1713cd848bf0fb35a21939",
+    "current_wrapper_sha256": "caf6b528d8963b96a7bcaee321a8b4baabbe1bfb82efde58f066a570037fa08c"
+  },
+  "initial_review_attempt_retained": {
+    "exception": "TypeError: unsupported operand type(s) for /: WindowsPath and NoneType",
+    "cause": "Independent review initially assumed latest guard receipt was a replay. Parent had just retained the actual16replay snapshot and replaced latest with17readonlycheck (archive=None).",
+    "correction": "Read actual replay archive from explicitly retained16dependency snapshot; distinguish current17check-only from historical16actualreplay. No production run, numeric threshold or physical source changed."
+  },
+  "scope": "Read-only guard/currentprovenance/archive review. Current17wrapper check/probes and historical16actualreplay are distinguished; no actual17dependency replay claimed. Lowlevel means assumes validated caller. No optimization or productionmeans/check invocation by reviewer.",
+  "method": "Manifest independently reconstructed from locked protocol+aggregated mechanics rows; checked current files, pure production manifest/mismatch functions, every stale/missing probe, original111hash and archive bytes.",
+  "old111_record_sha256": "bff30d518993b63dc2ef8198f75ba031d4b65275ba9b117bafe757cf5b33c61f"
+}

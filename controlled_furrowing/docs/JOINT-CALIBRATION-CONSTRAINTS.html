@@ -1,0 +1,96 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JOINT-CALIBRATION-CONSTRAINTS</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Joint calibration requires all four observations and a matching operator</h1>
+<p><strong>A valid height-only fit need not fit the other three reported quantities.</strong> The new exact constraint evaluator processes all 68 entries in the 17-record small-region table, requires four explicit discrepancy allowances, and distinguishes certified acceptance, certified rejection and unresolved forward intervals. It is an inference prerequisite; it does not by itself compute the physical compatible set.</p>
+<p>The <a href="../scripts/joint_calibration_contract.py">implementation</a>, <a href="../evidence/joint_calibration_contract_verification.json">30-check verification</a>, and <a href="../evidence/joint_zero_activation_baseline.json">actual all-four zero-activation baseline</a> are retained. No larger-region outcome enters this work. The evaluator does not validate the physical model, observation semantics, interval provenance or continuum accuracy supplied by its caller.</p>
+<h2>Exact interval membership predicate</h2>
+<p>For small-region record <span class="math" data-tex="i"></span>, observable <span class="math" data-tex="k"></span>, let <span class="math" data-tex="y_{ik}"></span> be the recorded value, <span class="math" data-tex="\delta_k\ge0"></span> an explicitly declared common discrepancy allowance, and suppose the chosen forward model's true output is enclosed by</p>
+<div class="math display" data-tex="
+q_{ik}(\theta)\in[\ell_{ik},u_{ik}].
+"></div>
+
+<p>The forward bound must refer to the same quantity as the data. An exact interval for a stored discrete static curve is not automatically an interval for a continuum or time-dependent experimental quantity.</p>
+<p>The least and greatest possible residual on this interval are</p>
+<div class="math display" data-tex="
+d_{ik}^{\min}=\max\{\ell_{ik}-y_{ik},\ y_{ik}-u_{ik},\ 0\},
+\qquad
+d_{ik}^{\max}=\max\{&#124;\ell_{ik}-y_{ik}&#124;,&#124;u_{ik}-y_{ik}&#124;\}.
+"></div>
+
+<p>The first formula is the distance to a closed interval. The second follows because the convex absolute-value function attains its maximum at an endpoint. Therefore:</p>
+<ul>
+<li>If some <span class="math" data-tex="d_{ik}^{\min}&gt;\delta_k"></span>, the parameter candidate is <strong>OUT</strong>: that prediction interval is disjoint from its permitted observation band.</li>
+<li>If every <span class="math" data-tex="d_{ik}^{\max}\le\delta_k"></span>, the candidate is <strong>IN</strong>, conditional on valid model-output enclosures and matching observation definitions.</li>
+<li>Otherwise the supplied intervals leave membership <strong>UNRESOLVED</strong>.</li>
+</ul>
+<p>Overlapping an allowed band is not proof that a physically realizable response lies in the overlap. Different output coordinates can be coupled by the same mechanics. In particular, choosing the best point independently in each interval does not construct one common compatible parameter.</p>
+<p>The per-observable requirements</p>
+<div class="math display" data-tex="
+L_k=\max_i d_{ik}^{\min},\qquad U_k=\max_i d_{ik}^{\max}
+"></div>
+
+<p>give necessary and sufficient thresholds for rejection/robust interval acceptance in the preceding sense. A discrepancy below <span class="math" data-tex="L_k"></span> excludes the candidate; discrepancy at least <span class="math" data-tex="U_k"></span> for every observable accepts every response enclosed by the supplied intervals. Values between them require tighter forward bounds or another argument. All calculations in this module use exact rationals for the supplied decimals.</p>
+<p>These are standard set-membership inequalities, not a new inference theorem. No missing observation is dropped or replaced by zero: the exact record IDs and all four keys are mandatory.</p>
+<h2>An optional unknown specimen-pairing contract</h2>
+<p>The <a href="JOINT-OBSERVATION-CONTRACT.html">source audit</a> verifies the dose/maximum/mean cross-panel association, and that the apical and basal values within each Fig2e column form a pair. Linking those component pairs to the other panels uses the author-provided common B:R column order, without a separate specimen identifier. Canonical ordering is a reasonable explicit assumption. It is not upgraded to an independently verified specimen crosswalk.</p>
+<p>The evaluator also implements a conservative alternative: retain fixed dose/maximum/mean associations but allow <strong>one unknown permutation of the 17 intact apical/basal pairs</strong>. The two components are never permuted independently. This is a different, weaker inference contract; it is not an assertion that the original columns were unordered or that biological samples were dependent.</p>
+<p>For a fixed mechanical candidate, make a bipartite graph from predicted dose-records to observed component-pairs. An outer edge exists when both component intervals intersect their allowed observation bands; an inner edge exists when both intervals are wholly inside those bands. Every inner edge is an outer edge. Then:</p>
+<ul>
+<li>If a fixed maximum/mean constraint is OUT, or the outer graph has no perfect matching, the candidate is OUT even allowing an unknown pairing.</li>
+<li>If every fixed maximum/mean constraint is IN and the inner graph has a perfect matching, that one pairing certifies IN under this explicitly weakened contract.</li>
+<li>Otherwise the available bounds leave the decision UNRESOLVED.</li>
+</ul>
+<p>In the second case, the same permutation works for every component value enclosed by the supplied intervals. The first case does not rely on choosing independent values in each interval: absence of even a possible pairing excludes every realizable one. The intermediate case makes no existence claim.</p>
+<p>Failure of matching is retained as a directly checkable Hall obstruction: a set <span class="math" data-tex="S"></span> of predicted records with</p>
+<div class="math display" data-tex="
+&#124;N(S)&#124;&lt;&#124;S&#124;.
+"></div>
+
+<p>No injective assignment can send all of <span class="math" data-tex="S"></span> into its smaller neighbor set. The implementation obtains the obstruction from alternating paths starting at unmatched left vertices. It also retains complete inner/outer edge lists and any matching, so the certificate can be replayed without trusting the search algorithm.</p>
+<p>All 512 possible 3×3 bipartite graphs were checked against independent brute-force assignments; every deficient case's Hall witness was checked directly. A swapped-pair example is correctly rejected by canonical pairing and accepted by the optional permutation contract. Integer vertex/graph-size and closed-interval input guards were strengthened after independent review found permissive type handling. Matching and Hall's theorem are established mathematics, not a project novelty.</p>
+<h2>A real but deliberately uninformative mechanical baseline</h2>
+<p>With common activation gain <span class="math" data-tex="g=0"></span>, the flat reference is an equilibrium of the stated fixed-rim model for every admitted positive shear/compression coefficient and nonnegative membrane coefficients. It is also a global energy minimizer under the usual admissible embedded-disk surfaces and fixed circular rim. To see this, each bulk singular-value contribution is nonnegative:</p>
+<div class="math display" data-tex="
+s^2-1-2\log s\ge0\quad(s&gt;0),
+"></div>
+
+<p>and the logarithmic-volume and area-spring terms are nonnegative. Each deformed membrane has area at least the projected disk area <span class="math" data-tex="\pi R_o^2"></span>, by the fixed boundary and the area/projection inequality. Nonnegative surface tension therefore cannot reduce its energy below the flat reference value. The reference attains all these lower bounds. This is an elementary variational baseline, not a physiological claim.</p>
+<p>Under the declared zero component reference, all four response observables vanish, independent of whether the spatial averaging convention is line or disk area. Direct evaluation against the actual cohort gives the following exact minimum discrepancy vector for accepting this zero-response subfamily:</p>
+<table>
+<thead>
+<tr>
+<th>Observable</th>
+<th style="text-align: right;">Required discrepancy for the zero-response baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum shortening</td>
+<td style="text-align: right;">12.73324306 µm</td>
+</tr>
+<tr>
+<td>Region-averaged shortening</td>
+<td style="text-align: right;">8.38319196 µm</td>
+</tr>
+<tr>
+<td>Separate apical entry</td>
+<td style="text-align: right;">13 µm</td>
+</tr>
+<tr>
+<td>Separate basal entry</td>
+<td style="text-align: right;">4.36972161 µm</td>
+</tr>
+</tbody>
+</table>
+<p>At these four allowances every one of the 68 constraints accepts the zero response. Tightening any one allowance below its displayed maximum excludes this zero-response family. <strong>These large values are not inferred error bars and are not proposed as acceptable biological discrepancies.</strong> They simply give an exact executable baseline and expose why silently generous tolerances would make compatibility uninformative.</p>
+<p>This establishes one conditional subfamily, not an exhaustive identified set or a fitted nonzero mechanical response. It cannot support a larger-region folding prediction or novelty claim.</p>
+<h2>Source inequalities and their limits</h2>
+<p>In all 17 records, the published numbers satisfy</p>
+<div class="math display" data-tex="
+\text{regional mean}\le\text{maximum shortening}
+\le\text{apical entry}+\text{basal entry}.
+"></div>
+
+<p>The first inequality follows for several plausible mean/maximum conventions. The second would follow from pointwise additive component shortening with separate suprema over a shared domain. However, other aggregation/reference conventions can also satisfy the observed inequality. Their satisfaction does <strong>not</strong> identify the source algorithm. The source component aggregation, growth-reference allocation and optical/ROI transport need their own audit rather than inference from these numerical coincidences.</p>
+<p>The exact table of 17 differences is retained in the baseline receipt. Four records have equality between maximum shortening and the component sum; the others have a strict gap. Separate maxima must not be added as an identity for the measured maximum.</p>
+<h2>What the joint fit must still supply</h2>
+<p>A real candidate must supply a common material/gain law, allowed geometry and observation nuisance variables, and bounded predictions for each included record/observable. The source meanings of the four quantities must be carried explicitly; a central material-node displacement is not automatically a maximum or a regional mean. A quasistatic path model must specify its path coverage and max/average ordering rather than treating one final field as a measured temporal maximum.</p>
+<p>The exact static observer is developed separately, and the <a href="JOINT-OBSERVATION-CONTRACT.html">source audit</a> records the remaining aggregation, reference and registration limits. The evaluator can test explicitly declared alternatives, but cannot decide which alternative generated the published data. It also cannot turn an exploratory scenario collection into the full physical compatible set. The original identified-set and uncertainty-propagation requirement remains open.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

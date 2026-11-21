@@ -1,0 +1,82 @@
+{
+  "docs\\DATA.md": {
+    "bytes": 12083,
+    "sha256": "37eea4aae6d4912b8608acf409529cb0babdcf2d879a8fe7c1b5934c5d667805"
+  },
+  "data\\audit_workbooks.py": {
+    "bytes": 10334,
+    "sha256": "75f6147e5bfe4941f0434dc50798c975ef3e502e156f2f27950b7fcd64bbe6e9"
+  },
+  "data\\derived\\all_bending_records.csv": {
+    "bytes": 7452,
+    "sha256": "620dbdef7720895f0ecff2670cbb7c3b9e9defa87067d105b3791e62420c14a0"
+  },
+  "data\\derived\\calibration_small_18um.csv": {
+    "bytes": 3637,
+    "sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518"
+  },
+  "data\\derived\\evaluation_large_50um.csv": {
+    "bytes": 1308,
+    "sha256": "7b49ea11755ce9dddd5c07d376c7f2fc5e10834bb724ae6bedbf95bb3b91a6b8"
+  },
+  "data\\derived\\evaluation_larger_bending.csv": {
+    "bytes": 4784,
+    "sha256": "733d63ff64564b2d483617e61ba403b5dd1425bac4f2160a00a063686e214147"
+  },
+  "data\\derived\\example_apical_basal_trajectories.csv": {
+    "bytes": 6814,
+    "sha256": "5c17b08254bc810476d3ab727a25393e53ac752c2502f3d5054809170bd99102"
+  },
+  "data\\derived\\all_workbook_cells.json": {
+    "bytes": 132108,
+    "sha256": "117c5050d11bd60aaaa1e5fd0a36fad6348bb167028af3d53cebaa2240e714ce"
+  },
+  "evidence\\data_additional_downloads.json": {
+    "bytes": 1613,
+    "sha256": "782e24e6cf44911b64d27e6c74bb83eb399d783693c14d4a6b13604378a49e05"
+  },
+  "evidence\\data_alternate_access.json": {
+    "bytes": 666,
+    "sha256": "70c19fe002497ed1313d4ddb5af6604e1b8b555c301f74c9aefbf17d01fece1a"
+  },
+  "evidence\\data_archive_access.json": {
+    "bytes": 255,
+    "sha256": "1e1e76fc407b09a079ad1e6f1e20384ce564cf3b633170fe55f2e961eec9013d"
+  },
+  "evidence\\data_direct_access.json": {
+    "bytes": 421,
+    "sha256": "4f5dbedd4507a9ffab69e54459c94249526e31fb13a69e716db7ae20950c667c"
+  },
+  "evidence\\data_downloads.json": {
+    "bytes": 1305,
+    "sha256": "0fc97ef578a18b480d68723f240498d7ce81799feb2ed6ca5201e967e6f67163"
+  },
+  "evidence\\data_integrity.json": {
+    "bytes": 2030,
+    "sha256": "4f4956c9aeb9f62d1cbda6b49c82db60df3fb9e4205abdab76d12a559340fb42"
+  },
+  "evidence\\data_movie3_inspection.json": {
+    "bytes": 950,
+    "sha256": "281d828354d410b76e1d569528b1f053d0a0b1b559422a35a7063a9b13f29ae7"
+  },
+  "evidence\\data_oa_access.json": {
+    "bytes": 401,
+    "sha256": "c0ffae607562781d91ddb03ce1272819074b3a5d9e50f0eb4bded3d7edb58847"
+  },
+  "evidence\\data_oa_object_inventory.json": {
+    "bytes": 3769,
+    "sha256": "ea2f0af2a086dedc8e58a90ae206445a58842ce745c4c147cd9adc4596ef946e"
+  },
+  "evidence\\data_s3_access.json": {
+    "bytes": 26148,
+    "sha256": "e1436493c5718cac518c0c8a43393ba0657da85df0b2ce5ad1f0086e1fbf6098"
+  },
+  "evidence\\data_workbook_audit.json": {
+    "bytes": 45396,
+    "sha256": "2d84e99b2e2b4f87d0aeab7d320f2ac1c909b9f3f776f04389483391f1cbf8ae"
+  },
+  "evidence\\data_access_summary.json": {
+    "bytes": 1147,
+    "sha256": "cd6da159aabc56cafdac580ed0242aa2825613dd924647af7e64352c6a58d954"
+  }
+}

@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>COHORT-BOUND-DIAGNOSTICS</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Why the F and K root bounds remain unresolved</h1>
+<p><strong>The retained center-residual bound dominates the predictor residual; widening the error cube then makes the componentwise derivative bound too large.</strong> The parameter-only derivative bounds are below 0.083. This diagnoses the failed sufficient tests, not root nonexistence or biological incompatibility.</p>
+<p>The <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_bound_diagnostics_v1/protocol.json">protocol</a> froze both cached fields, predictors, shared cell, source dependencies and historical radius receipts before calculation. The <a href="../scripts/cohort_bound_diagnostics.py">read-only diagnostic script</a> freshly assembled the cached point and the predictor-only <span class="math" data-tex="r=0"></span> remainder/variation. Its <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_bound_diagnostics_v1/results.json">terminal results</a> reproduce both original 160-bit residual upper bounds exactly. No new root, displacement center, nonlinear optimization, parameter fit or cell shrink was used.</p>
+<h2>Residual decomposition</h2>
+<p>For <span class="math" data-tex="d=\theta-\theta_0"></span>, the reviewed affine predictor gives</p>
+<div class="math display" data-tex="
+ RF(\widehat u(\theta),\theta)=
+ RF_0+R(H_0S+B_0)d+R\mathcal R(d).
+"></div>
+
+<p>The kernel bounds the three terms with exact Arb interval arithmetic. The full <span class="math" data-tex="\eta"></span> is the maximum of the <strong>rowwise sums</strong> of the combined linear enclosure and remainder bound. It is not necessarily the sum of their separate maximum norms.</p>
+<table>
+<thead>
+<tr>
+<th>Validated sufficient bound</th>
+<th style="text-align: right;">F</th>
+<th style="text-align: right;">K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math" data-tex="\&#124;RF_0\&#124;_\infty"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="8.58449\times10^{-11}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="5.00617\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Affine linear-defect bound over the cell</td>
+<td style="text-align: right;"><span class="math" data-tex="2.890\times10^{-21}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="5.336\times10^{-21}"></span></td>
+</tr>
+<tr>
+<td>Predictor Taylor-remainder bound</td>
+<td style="text-align: right;"><span class="math" data-tex="7.424\times10^{-13}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="2.499\times10^{-12}"></span></td>
+</tr>
+<tr>
+<td>Full predictor residual <span class="math" data-tex="\eta"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="8.65398\times10^{-11}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="5.22616\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Center preconditioned-Hessian defect <span class="math" data-tex="Z_0"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="7.269\times10^{-7}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="1.535\times10^{-6}"></span></td>
+</tr>
+<tr>
+<td>Full predictor-only <span class="math" data-tex="Z"></span>, error radius zero</td>
+<td style="text-align: right;">0.0376960</td>
+<td style="text-align: right;">0.0827620</td>
+</tr>
+</tbody>
+</table>
+<p>Displayed entries are safe rounded upper summaries; exact rational endpoints and the worst-row decomposition are retained. The explicit tangent defect is negligible at this cell width. Most of the residual bound remains even at the original parameter center. This is an algebraic-numerical statement: the preconditioned residual itself is not a certified distance to a root.</p>
+<h2>Why a larger error radius failed</h2>
+<p>The initial tested error cubes had radii approximately <span class="math" data-tex="1.73080\times10^{-10}"></span> and <span class="math" data-tex="1.04523\times10^{-10}"></span>. Their full <span class="math" data-tex="Z"></span> bounds were 0.69039 and 0.56533: contraction alone held, but the required self-map inequality</p>
+<div class="math display" data-tex="
+ \eta+Zr&lt;r
+"></div>
+
+<p>did not. The additional 2×, 4× and 8× radii produced <span class="math" data-tex="Z&gt;1"></span> for both records. The detailed <a href="COHORT-UNIFORM-ROOTS.html">cohort account</a> and <a href="../../OMITTED.html?path=controlled_furrowing/runs/cohort_radius_supplement_v1/results.json">radius supplement</a> retain every attempted radius.</p>
+<p>The fresh <span class="math" data-tex="r=0"></span> bounds show that the shared parameter hull alone does not produce those large <span class="math" data-tex="Z"></span> values. Adding the error cube drives the conservative bound upward. Subtracting two sufficient upper bounds would not, by itself, certify a separate operator contribution; no such difference is used as a theorem here.</p>
+<h2>Floating matrix diagnostics</h2>
+<p>The archived coefficient-Euclidean Hessians admit floating Cholesky factors. Their approximate eigenvalue extrema are <span class="math" data-tex="(0.001175,43828.5)"></span> for F and <span class="math" data-tex="(0.001167,43746.4)"></span> for K, with spectral condition diagnostics around <span class="math" data-tex="3.7\times10^7"></span>. The products of archived-H and cached-R infinity norms are around <span class="math" data-tex="9.6\times10^7"></span> and <span class="math" data-tex="9.3\times10^7"></span>.</p>
+<p>These are floating diagnostics at the archived rounded solver strengths, not interval results for the exact gain-times-dose target or unknown roots. Eigenvalue magnitudes and conditioning depend on the coefficient basis and norm; they are not mass-normalized physical modes. They do not prove positive definiteness, energetic stability or a continuum stability property.</p>
+<h2>Consequence for the next method</h2>
+<p>The evidence supports examining the center-residual treatment and the norm used for the error enclosure, while keeping the same physical parameters and shared cell. It gives no reason to silently shrink that cell or interpret these failures as rejection of the mechanical model. A changed center or a validated energy-norm tube would be a separately declared computation with its own residual, domain and self-map proof. Neither has been implemented for F or K at this checkpoint.</p>
+<p>At this diagnostic checkpoint the cohort had <strong>15 certified records and two unresolved records</strong>, with no all-seventeen stationary-root tuple certificate. The original same-center observation packets consequently cover only 60 channels. The subsequent <a href="COHORT-UNIFORM-ROOTS.html">separately declared single proof-center refinement</a> produced successful F/K root receipts without changing the model or cell; its independent audit and an explicit center-offset observer adapter remain separate gates. The original failures and this diagnostic calculation are retained unchanged.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MATERIAL-INPUTS</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent material and initial-geometry inputs</h1>
+<p><strong>Conclusion: these sources justify an apical/basal asymmetry hypothesis and several geometric scales, but do not independently determine a finite, exhaustive parameter family for the Countryman experiment.</strong> A declared exploratory family is possible. Calling it a measured interval, an identified set or a confidence region would overstate the evidence.</p>
+<p>The analyst already knows the published results. The numerical constraints in this audit come from the independent Cheikh2023 study, Countryman's experimental protocol, and explicitly pre-activation Fig2a—not from tuning parameters to larger-region shortening or bending labels. No held-out response is fitted here.</p>
+<h2>Primary sources and exact locators</h2>
+<ul>
+<li>Cheikh et al., <a href="https://doi.org/10.7554/eLife.85569">eLife12:e85569 (2023)</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10584372/">PMC10584372</a>, the actual Countryman reference56. Retained full primary XML: <code>literature/material_constraints_cheikh2023.xml</code>; publisher material is CC0. Inspect Results <code>s2-5</code> paragraphs1–2, <code>s2-8</code> paragraphs3–5, Fig4b, Fig7c″, Fig2—figure supplement1, Discussion <code>s3</code> paragraph10, and Appendix <code>s11</code> paragraph7 / <code>s13</code> paragraph1. The eLife webpage returned a client challenge and EuropePMC XML returned503; official NCBI S3 objects succeeded. Exact access paths/hashes are retained.</li>
+<li>Countryman et al., <a href="https://doi.org/10.1038/s41467-025-62483-6">Nature Communications16:7665 (2025)</a>, Methods <code>Sec14</code> (imaging/activation), <code>Sec15</code> (segmentation), <code>Sec16</code> (reference-corrected shortening), and Fig2a (explicit pre-activation image). The source article/figure license is CC BY-NC-ND; the downloaded Fig2 is a local inspection source, not an original project figure.</li>
+</ul>
+<p>No wing-disc basement-membrane constants are used as embryonic basal-actomyosin parameters.</p>
+<h2>What Cheikh actually estimates</h2>
+<p>Cheikh's cells have apical elastic sheets, elastic lateral structures and open basal surfaces with stiff basal edges. Their interiors/yolk are viscous fluid. This differs from an isotropic neo-Hookean bulk plus two area-elastic membranes. The experimental pulling examples have15–20µm lateral membrane lengths at mid-cellularization (Fig2—figure supplement1), whereas Countryman activates cells32–35µm long at gastrulation onset. Same species does not remove this developmental and constitutive mismatch.</p>
+<p>The source gives an <strong>order-of-magnitude apical2D modulus</strong> of approximately0.001–0.01nN/µm, or10⁻⁶–10⁻⁵N/m, not a3D Young modulus in pascals and not a statistical interval. Its fitted spring examples are:</p>
+<table>
+<thead>
+<tr>
+<th>Fig7c″ case</th>
+<th style="text-align: right;">Apical k (nN/µm)</th>
+<th style="text-align: right;">Lateral k</th>
+<th style="text-align: right;">Basal k</th>
+<th style="text-align: right;">Basal/apical spring ratio</th>
+<th style="text-align: right;">Predicted maximum applied force (nN)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sim1</td>
+<td style="text-align: right;">0.007</td>
+<td style="text-align: right;">0.007</td>
+<td style="text-align: right;">0.221</td>
+<td style="text-align: right;">31.57</td>
+<td style="text-align: right;">0.20</td>
+</tr>
+<tr>
+<td>Sim2</td>
+<td style="text-align: right;">0.007</td>
+<td style="text-align: right;">0.007</td>
+<td style="text-align: right;">0.442</td>
+<td style="text-align: right;">63.14</td>
+<td style="text-align: right;">1.33</td>
+</tr>
+<tr>
+<td>Sim3</td>
+<td style="text-align: right;">0.007</td>
+<td style="text-align: right;">0.042</td>
+<td style="text-align: right;">2.275</td>
+<td style="text-align: right;">325</td>
+<td style="text-align: right;">2.81</td>
+</tr>
+<tr>
+<td>Sim4</td>
+<td style="text-align: right;">0.007</td>
+<td style="text-align: right;">0.126</td>
+<td style="text-align: right;">6.825</td>
+<td style="text-align: right;">975</td>
+<td style="text-align: right;">6.93</td>
+</tr>
+</tbody>
+</table>
+<p>The experimental maximum-force range displayed in that comparison is5–11nN. These are <strong>co-varied fitted discrete spring parameters</strong>, not four measured physiological states or a measured basal/apical modulus interval. Results <code>s2-8</code> paragraph5 and Discussion paragraph10 explicitly leave lateral-versus-basal elasticity unresolved. The illustrative ratio975 is not a transferable continuum stiffness ratio, nor a validated lower or upper bound for Countryman.</p>
+<p>The source's sheet relation is</p>
+<div class="math display" data-tex="
+E_{2D}=\frac{2k}{\sqrt3},\qquad \nu=\frac13.
+"></div>
+
+<p>That relation applies to its triangulated elastic sheet. Basal edges have a different network topology; assigning the same formula to a floppy basal network and dividing by the apical result is unjustified. A large spring constant and a large homogenized tangent modulus are different statements when geometry/topology changes.</p>
+<p>Even for a conventional isotropic2D membrane, conversion to an area modulus requires constitutive assumptions:</p>
+<div class="math display" data-tex="
+K_{\rm area}=\frac{E_{2D}}{2(1-\nu)},\qquad
+\mu_{\rm surface}=\frac{E_{2D}}{2(1+\nu)}.
+"></div>
+
+<p>Atν=1/3 these are3E₂D/4 and3E₂D/8. An area-only membrane omits this independent shear response. These formulas explain a possible model mapping; they do not prove that the proposed embryo membrane has those properties.</p>
+<p>For a bulk/membrane model, the relevant ratios include</p>
+<div class="math display" data-tex="
+\alpha=\frac{K_a}{\mu h},\qquad
+\beta=\frac{K_b}{\mu h},\qquad
+\pi_{a,b}=\frac{T_{a,b}}{\mu h}.
+"></div>
+
+<p>Cheikh does not supply a Countryman-compatible elastic bulkμ, independent basal area modulus, or membrane prestress. Its cytoplasmic viscosity is not an elastic shear modulus. Consequently even an assumed transfer of the apical surface scale does not establish numerical bounds onα, β orπ.</p>
+<h2>Prestress and basal support</h2>
+<p>No numerical pre-activation cortical tension or baseline pressure sufficient for the new constitutive model was identified in these sources. Cantilever loading forces are applied perturbation forces, not a measurement of resting prestress. Similarly, an ablation recoil reduction under RNAi does not isolate a stiffness ratio without dissipation, geometry and prestress information.</p>
+<p>Zero prestress can be a declared reference-state null; it must not be called a measured physiological value. A stiff basal network also does not imply a vertically clamped basal surface: stiffness restricts deformation under force, whereas a displacement clamp prescribes position. That boundary condition needs an independent mechanical justification.</p>
+<h2>Height, activation depth and cell diameter</h2>
+<p>Countryman directly specifies cell height32–35µm, activation depth5–25µm below the apical surface,1µm activation-stack spacing, and2µm imaging-stack spacing. These are usable protocol constraints. The exact experiment diameters are retained in the data audit, separately from nominal18/50µm labels.</p>
+<p>Neither inspected primary method gives a per-specimen cell-width interval for the Countryman calibration cohort. Fig2a's pre-activation image visibly contains cellular outlines, and the18µm activation occupies a small group of cells, but the compressed illustrative image does not provide a validated cell-area distribution or a recorded segmentation uncertainty. No numerical cell-diameter prior is manufactured from an informal visual count. A biological cell diameter is also not the diameter of a cantilever tip or ferrofluid droplet.</p>
+<p>Therefore this audit cannot establish the homogenization conditionℓcell/a≪1 for the small activated patch. A finite-thickness continuum calculation remains an explicitly conditional tissue model; a cell-resolved realization would require further initial cell-geometry information.</p>
+<h2>Curvature: an independent scale calculation, not specimen bounds</h2>
+<p>Cheikh Fig4b uses full long/short model axes511/184µm. Assuming a prolate spheroid with semi-axesA=255.5µm andB=92µm, the equatorial principal radii are</p>
+<div class="math display" data-tex="
+R_{AP}=\frac{A^2}{B}=709.568\ \mu\mathrm m,
+\qquad R_{DV}=B=92\ \mu\mathrm m.
+"></div>
+
+<p>These are derived from that paper's ideal model geometry, not measured principal curvatures in Countryman's particular pre-activation specimens. A perivitelline offset, stage differences and coverslip flattening further limit direct transfer.</p>
+<p>For a circular section of radiusR and half-widtha, the sag isR−√(R²−a²). At the reported large-region half-width24.94699µm, the corresponding osculating-circle sag is approximately0.439µm alongAP and3.447µm alongDV. At small-region half-width9.35512µm, the values are0.0617µm and0.4769µm. The exact prolate-ellipseAP section gives nearly the same local scale (0.4396µm at the larger half-width).</p>
+<p>This calculation shows why a flat initial condition can be a reasonable <strong>test assumption</strong> yet remain consequential for a near-apical optical slice: the independently estimatedDV geometric scale is comparable to or larger than the2µm Movie3 slice-depth descriptor. It does not prove that the actual experiment had that sag, or that2µm is a classification threshold. The size/curvature mechanism itself is already discussed in the source research; this arithmetic is not a novelty claim.</p>
+<p>An axisymmetric patch cannot simultaneously represent unequalAP/DV principal curvatures. Flat and spherical-cap cases may be useful conditional sensitivities, but their numerical endpoints are not measured confidence limits on the actual anisotropic embryo.</p>
+<h2>How to use this audit in a finite model family</h2>
+<ol>
+<li>Use the directly specified height/depth/diameter values, retaining nominal-versus-reported distinctions.</li>
+<li>Label transferred apical stiffness scales and ideal embryo curvature as external, stage-mismatched assumptions. Retain units and constitutive conversions.</li>
+<li>Treat basal area stiffness, basal/apical ordering in the chosen continuum law, prestress and outer support as hypotheses to vary or calibrate with small-region data. Do not use the975 spring ratio as a measured continuum parameter.</li>
+<li>Include appropriate weak/strong-support or flat/curved limiting tests. Do not call a convenient finite grid exhaustive when no source supplies a finite upper bound or a justified prior distribution.</li>
+<li>If fitting the small responses leaves different larger-shape outcomes possible, report those conditional predictions. Do not choose the branch agreeing with published larger-region labels.</li>
+</ol>
+<p>The strongest justified numerical family here is an <strong>explicit exploratory sensitivity ensemble</strong>, with some protocol inputs fixed. An independently bounded material family requires further measurements or a demonstrated small-data identifiability result. This limitation does not forbid building and testing a coupled hypothesis; it limits what its result establishes about biology.</p>
+<p>Source hashes, exact locators, stage/unit caveats and the reproducible geometric arithmetic are retained in <a href="../evidence/material_input_audit.json">the material-input audit</a> and <code>literature/material_constraints_derived_numbers.json</code>. No held-out outcome fit or external contact occurred.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

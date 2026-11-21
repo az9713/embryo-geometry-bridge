@@ -1,0 +1,2188 @@
+{
+  "status": "COMPLETE_EXACT_ZERO_ACTIVATION_BASELINE",
+  "thresholds_um_exact": {
+    "maximum_shortening_um": "636662153/50000000",
+    "region_averaged_shortening_um": "209579799/25000000",
+    "apical_max_shortening_um": "13",
+    "basal_max_shortening_um": "436972161/100000000"
+  },
+  "thresholds_um_display": {
+    "maximum_shortening_um": 12.73324306,
+    "region_averaged_shortening_um": 8.38319196,
+    "apical_max_shortening_um": 13.0,
+    "basal_max_shortening_um": 4.36972161
+  },
+  "joint_check": {
+    "status": "IN",
+    "records": 17,
+    "constraints": 68,
+    "discrepancy_lower_requirements_exact": {
+      "maximum_shortening_um": "636662153/50000000",
+      "region_averaged_shortening_um": "209579799/25000000",
+      "apical_max_shortening_um": "13",
+      "basal_max_shortening_um": "436972161/100000000"
+    },
+    "discrepancy_sufficient_requirements_exact": {
+      "maximum_shortening_um": "636662153/50000000",
+      "region_averaged_shortening_um": "209579799/25000000",
+      "apical_max_shortening_um": "13",
+      "basal_max_shortening_um": "436972161/100000000"
+    },
+    "constraint_rows": [
+      {
+        "record_id": "optoGEF2_small_col_B",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "77722063/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "77722063/25000000",
+        "maximum_interval_residual_exact": "77722063/25000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_B",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "60944403/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "60944403/100000000",
+        "maximum_interval_residual_exact": "60944403/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_B",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "3",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "3",
+        "maximum_interval_residual_exact": "3",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_B",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "24355301/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "24355301/50000000",
+        "maximum_interval_residual_exact": "24355301/50000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_C",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "121538093/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "121538093/25000000",
+        "maximum_interval_residual_exact": "121538093/25000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_C",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "13129681/10000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "13129681/10000000",
+        "maximum_interval_residual_exact": "13129681/10000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_C",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "4",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "4",
+        "maximum_interval_residual_exact": "4",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_C",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "21538093/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "21538093/25000000",
+        "maximum_interval_residual_exact": "21538093/25000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_D",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "831533939/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "831533939/100000000",
+        "maximum_interval_residual_exact": "831533939/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_D",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "207297287/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "207297287/50000000",
+        "maximum_interval_residual_exact": "207297287/50000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_D",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "6",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "6",
+        "maximum_interval_residual_exact": "6",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_D",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "231533939/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "231533939/100000000",
+        "maximum_interval_residual_exact": "231533939/100000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_E",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "14418011/1562500",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "14418011/1562500",
+        "maximum_interval_residual_exact": "14418011/1562500",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_E",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "344582899/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "344582899/50000000",
+        "maximum_interval_residual_exact": "344582899/50000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_E",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "8",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "8",
+        "maximum_interval_residual_exact": "8",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_E",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "1420587/390625",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "1420587/390625",
+        "maximum_interval_residual_exact": "1420587/390625",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_F",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "382404181/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "382404181/50000000",
+        "maximum_interval_residual_exact": "382404181/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_F",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "16539897/6250000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "16539897/6250000",
+        "maximum_interval_residual_exact": "16539897/6250000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_F",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "6",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "6",
+        "maximum_interval_residual_exact": "6",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_F",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "182404181/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "182404181/50000000",
+        "maximum_interval_residual_exact": "182404181/50000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_G",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "636662153/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "636662153/50000000",
+        "maximum_interval_residual_exact": "636662153/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_G",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "151029611/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "151029611/25000000",
+        "maximum_interval_residual_exact": "151029611/25000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_G",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "13",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "13",
+        "maximum_interval_residual_exact": "13",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_G",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "86662153/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "86662153/25000000",
+        "maximum_interval_residual_exact": "86662153/25000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_H",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "1049577729/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "1049577729/100000000",
+        "maximum_interval_residual_exact": "1049577729/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_H",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "138155819/20000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "138155819/20000000",
+        "maximum_interval_residual_exact": "138155819/20000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_H",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "9",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "9",
+        "maximum_interval_residual_exact": "9",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_H",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "436972161/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "436972161/100000000",
+        "maximum_interval_residual_exact": "436972161/100000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_I",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "138419619/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "138419619/100000000",
+        "maximum_interval_residual_exact": "138419619/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_I",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "46946903/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "46946903/100000000",
+        "maximum_interval_residual_exact": "46946903/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_I",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "0",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "0",
+        "maximum_interval_residual_exact": "0",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_I",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "138419619/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "138419619/100000000",
+        "maximum_interval_residual_exact": "138419619/100000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_J",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "772032047/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "772032047/100000000",
+        "maximum_interval_residual_exact": "772032047/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_J",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "431605203/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "431605203/100000000",
+        "maximum_interval_residual_exact": "431605203/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_J",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "8",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "8",
+        "maximum_interval_residual_exact": "8",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_J",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "272032047/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "272032047/100000000",
+        "maximum_interval_residual_exact": "272032047/100000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_K",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "631048581/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "631048581/50000000",
+        "maximum_interval_residual_exact": "631048581/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_K",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "209579799/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "209579799/25000000",
+        "maximum_interval_residual_exact": "209579799/25000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_K",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "13",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "13",
+        "maximum_interval_residual_exact": "13",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_K",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "143145743/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "143145743/50000000",
+        "maximum_interval_residual_exact": "143145743/50000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_L",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "972802387/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "972802387/100000000",
+        "maximum_interval_residual_exact": "972802387/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_L",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "78522659/20000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "78522659/20000000",
+        "maximum_interval_residual_exact": "78522659/20000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_L",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "7",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "7",
+        "maximum_interval_residual_exact": "7",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_L",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "191783337/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "191783337/50000000",
+        "maximum_interval_residual_exact": "191783337/50000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_M",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "12",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "12",
+        "maximum_interval_residual_exact": "12",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_M",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "49035501/12500000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "49035501/12500000",
+        "maximum_interval_residual_exact": "49035501/12500000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_M",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "12",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "12",
+        "maximum_interval_residual_exact": "12",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_M",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "56849631/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "56849631/25000000",
+        "maximum_interval_residual_exact": "56849631/25000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_N",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "335013163/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "335013163/50000000",
+        "maximum_interval_residual_exact": "335013163/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_N",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "70862683/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "70862683/25000000",
+        "maximum_interval_residual_exact": "70862683/25000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_N",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "8",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "8",
+        "maximum_interval_residual_exact": "8",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_N",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "140052651/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "140052651/100000000",
+        "maximum_interval_residual_exact": "140052651/100000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_O",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "120752823/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "120752823/50000000",
+        "maximum_interval_residual_exact": "120752823/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_O",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "0",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "0",
+        "maximum_interval_residual_exact": "0",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_O",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "2",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "2",
+        "maximum_interval_residual_exact": "2",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_O",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "20752823/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "20752823/50000000",
+        "maximum_interval_residual_exact": "20752823/50000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_P",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "583168051/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "583168051/100000000",
+        "maximum_interval_residual_exact": "583168051/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_P",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "279789867/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "279789867/100000000",
+        "maximum_interval_residual_exact": "279789867/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_P",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "6",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "6",
+        "maximum_interval_residual_exact": "6",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_P",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "6184669/3125000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "6184669/3125000",
+        "maximum_interval_residual_exact": "6184669/3125000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_Q",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "49233871/10000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "49233871/10000000",
+        "maximum_interval_residual_exact": "49233871/10000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_Q",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "151460771/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "151460771/100000000",
+        "maximum_interval_residual_exact": "151460771/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_Q",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "4",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "4",
+        "maximum_interval_residual_exact": "4",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_Q",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "58266129/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "58266129/50000000",
+        "maximum_interval_residual_exact": "58266129/50000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_R",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "259169279/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "259169279/25000000",
+        "maximum_interval_residual_exact": "259169279/25000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_R",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "243760223/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "243760223/50000000",
+        "maximum_interval_residual_exact": "243760223/50000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_R",
+        "observable": "apical_max_shortening_um",
+        "observed_exact": "9",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "9",
+        "maximum_interval_residual_exact": "9",
+        "discrepancy_allowance_exact": "13",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_R",
+        "observable": "basal_max_shortening_um",
+        "observed_exact": "84169279/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "84169279/25000000",
+        "maximum_interval_residual_exact": "84169279/25000000",
+        "discrepancy_allowance_exact": "436972161/100000000",
+        "status": "IN"
+      }
+    ],
+    "scope": "Membership conditional on valid forward intervals and matching observation contract; no automatic physical/continuum/identified-set certificate."
+  },
+  "unknown_component_pairing_check": {
+    "status": "IN",
+    "record_order": [
+      "optoGEF2_small_col_B",
+      "optoGEF2_small_col_C",
+      "optoGEF2_small_col_D",
+      "optoGEF2_small_col_E",
+      "optoGEF2_small_col_F",
+      "optoGEF2_small_col_G",
+      "optoGEF2_small_col_H",
+      "optoGEF2_small_col_I",
+      "optoGEF2_small_col_J",
+      "optoGEF2_small_col_K",
+      "optoGEF2_small_col_L",
+      "optoGEF2_small_col_M",
+      "optoGEF2_small_col_N",
+      "optoGEF2_small_col_O",
+      "optoGEF2_small_col_P",
+      "optoGEF2_small_col_Q",
+      "optoGEF2_small_col_R"
+    ],
+    "pairing_contract": "One unknown bijection of intact observed apical/basal pairs; dose/max/mean associations fixed",
+    "fixed_maximum_mean_constraints": [
+      {
+        "record_id": "optoGEF2_small_col_B",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "77722063/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "77722063/25000000",
+        "maximum_interval_residual_exact": "77722063/25000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_B",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "60944403/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "60944403/100000000",
+        "maximum_interval_residual_exact": "60944403/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_C",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "121538093/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "121538093/25000000",
+        "maximum_interval_residual_exact": "121538093/25000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_C",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "13129681/10000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "13129681/10000000",
+        "maximum_interval_residual_exact": "13129681/10000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_D",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "831533939/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "831533939/100000000",
+        "maximum_interval_residual_exact": "831533939/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_D",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "207297287/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "207297287/50000000",
+        "maximum_interval_residual_exact": "207297287/50000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_E",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "14418011/1562500",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "14418011/1562500",
+        "maximum_interval_residual_exact": "14418011/1562500",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_E",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "344582899/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "344582899/50000000",
+        "maximum_interval_residual_exact": "344582899/50000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_F",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "382404181/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "382404181/50000000",
+        "maximum_interval_residual_exact": "382404181/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_F",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "16539897/6250000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "16539897/6250000",
+        "maximum_interval_residual_exact": "16539897/6250000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_G",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "636662153/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "636662153/50000000",
+        "maximum_interval_residual_exact": "636662153/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_G",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "151029611/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "151029611/25000000",
+        "maximum_interval_residual_exact": "151029611/25000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_H",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "1049577729/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "1049577729/100000000",
+        "maximum_interval_residual_exact": "1049577729/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_H",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "138155819/20000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "138155819/20000000",
+        "maximum_interval_residual_exact": "138155819/20000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_I",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "138419619/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "138419619/100000000",
+        "maximum_interval_residual_exact": "138419619/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_I",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "46946903/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "46946903/100000000",
+        "maximum_interval_residual_exact": "46946903/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_J",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "772032047/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "772032047/100000000",
+        "maximum_interval_residual_exact": "772032047/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_J",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "431605203/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "431605203/100000000",
+        "maximum_interval_residual_exact": "431605203/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_K",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "631048581/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "631048581/50000000",
+        "maximum_interval_residual_exact": "631048581/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_K",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "209579799/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "209579799/25000000",
+        "maximum_interval_residual_exact": "209579799/25000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_L",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "972802387/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "972802387/100000000",
+        "maximum_interval_residual_exact": "972802387/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_L",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "78522659/20000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "78522659/20000000",
+        "maximum_interval_residual_exact": "78522659/20000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_M",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "12",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "12",
+        "maximum_interval_residual_exact": "12",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_M",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "49035501/12500000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "49035501/12500000",
+        "maximum_interval_residual_exact": "49035501/12500000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_N",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "335013163/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "335013163/50000000",
+        "maximum_interval_residual_exact": "335013163/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_N",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "70862683/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "70862683/25000000",
+        "maximum_interval_residual_exact": "70862683/25000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_O",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "120752823/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "120752823/50000000",
+        "maximum_interval_residual_exact": "120752823/50000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_O",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "0",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "0",
+        "maximum_interval_residual_exact": "0",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_P",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "583168051/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "583168051/100000000",
+        "maximum_interval_residual_exact": "583168051/100000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_P",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "279789867/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "279789867/100000000",
+        "maximum_interval_residual_exact": "279789867/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_Q",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "49233871/10000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "49233871/10000000",
+        "maximum_interval_residual_exact": "49233871/10000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_Q",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "151460771/100000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "151460771/100000000",
+        "maximum_interval_residual_exact": "151460771/100000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_R",
+        "observable": "maximum_shortening_um",
+        "observed_exact": "259169279/25000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "259169279/25000000",
+        "maximum_interval_residual_exact": "259169279/25000000",
+        "discrepancy_allowance_exact": "636662153/50000000",
+        "status": "IN"
+      },
+      {
+        "record_id": "optoGEF2_small_col_R",
+        "observable": "region_averaged_shortening_um",
+        "observed_exact": "243760223/50000000",
+        "prediction_interval_exact": [
+          "0",
+          "0"
+        ],
+        "minimum_interval_residual_exact": "243760223/50000000",
+        "maximum_interval_residual_exact": "243760223/50000000",
+        "discrepancy_allowance_exact": "209579799/25000000",
+        "status": "IN"
+      }
+    ],
+    "outer_graph": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ],
+    "inner_graph": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ],
+    "outer_matching_certificate": {
+      "matched_count": 17,
+      "left_to_right": [
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "all_left_matched": true
+    },
+    "inner_matching_certificate": {
+      "matched_count": 17,
+      "left_to_right": [
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "all_left_matched": true
+    },
+    "canonical_status": "IN",
+    "scope": "Optional pairing-nuisance sensitivity only; not verified specimen linkage or a full physical identified set."
+  },
+  "source_inequality_checks": [
+    {
+      "record_id": "optoGEF2_small_col_B",
+      "maximum_minus_component_sum_exact": "-756447/2000000",
+      "mean_minus_maximum_exact": "-249943849/100000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_C",
+      "maximum_minus_component_sum_exact": "0",
+      "mean_minus_maximum_exact": "-177427781/50000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_D",
+      "maximum_minus_component_sum_exact": "0",
+      "mean_minus_maximum_exact": "-83387873/20000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_E",
+      "maximum_minus_component_sum_exact": "-3764337/1562500",
+      "mean_minus_maximum_exact": "-116793453/50000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_F",
+      "maximum_minus_component_sum_exact": "-2",
+      "mean_minus_maximum_exact": "-50017001/10000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_G",
+      "maximum_minus_component_sum_exact": "-186662153/50000000",
+      "mean_minus_maximum_exact": "-334602931/50000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_H",
+      "maximum_minus_component_sum_exact": "-2245269/781250",
+      "mean_minus_maximum_exact": "-179399317/50000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_I",
+      "maximum_minus_component_sum_exact": "0",
+      "mean_minus_maximum_exact": "-22868179/25000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_J",
+      "maximum_minus_component_sum_exact": "-3",
+      "mean_minus_maximum_exact": "-85106711/25000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_K",
+      "maximum_minus_component_sum_exact": "-81048581/25000000",
+      "mean_minus_maximum_exact": "-211888983/50000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_L",
+      "maximum_minus_component_sum_exact": "-110764287/100000000",
+      "mean_minus_maximum_exact": "-145047273/25000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_M",
+      "maximum_minus_component_sum_exact": "-56849631/25000000",
+      "mean_minus_maximum_exact": "-100964499/12500000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_N",
+      "maximum_minus_component_sum_exact": "-10801053/4000000",
+      "mean_minus_maximum_exact": "-193287797/50000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_O",
+      "maximum_minus_component_sum_exact": "0",
+      "mean_minus_maximum_exact": "-120752823/50000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_P",
+      "maximum_minus_component_sum_exact": "-214741357/100000000",
+      "mean_minus_maximum_exact": "-37922273/12500000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_Q",
+      "maximum_minus_component_sum_exact": "-6048387/25000000",
+      "mean_minus_maximum_exact": "-340877939/100000000"
+    },
+    {
+      "record_id": "optoGEF2_small_col_R",
+      "maximum_minus_component_sum_exact": "-2",
+      "mean_minus_maximum_exact": "-54915667/10000000"
+    }
+  ],
+  "source_inequalities_all_satisfied": true,
+  "source_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "script_sha256": "ed3bcf3b16ae7d369d70d76570385d59854dda7926e9f73b3b200b5fcea02512",
+  "assumptions": [
+    "flat reference and clamped rim",
+    "common gain exactly zero",
+    "zero reference component displacements",
+    "nonnegative surface tensions",
+    "positive shear and log-volume coefficients"
+  ],
+  "limitations": [
+    "not a fitted model",
+    "not a measured discrepancy law",
+    "does not resolve source component aggregation/reference ambiguities",
+    "does not enumerate the full compatible mechanical set",
+    "observed inequalities alone do not identify the source observation algorithm"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "pre_score_revision": "v1 retained in runs/pre_score_v1. Independent mathematical review required explicit labeling of nu=1 as a limiting zero-baseline-tension case; no evaluation score had been calculated. Finite-input guards were strengthened. Grid and predictions are unchanged.",
+  "scope": "Auxiliary scalar reproduction, NOT completion of the coupled geometric prediction gate",
+  "retrospective": true,
+  "known_outcomes": "The publication and exported evaluation outcomes were already inspected. This is computational withholding, not blind validation.",
+  "calibration": "data/derived/calibration_small_18um.csv",
+  "evaluation_inputs": "data/derived/large_inputs_only.json",
+  "evaluation_responses": "data/derived/evaluation_large_50um.csv",
+  "endpoint": "maximum_shortening_um in BOTH calibration and evaluation",
+  "mechanical_null": {
+    "geometry": "Independent identical volume-conserving columns; no tissue embedding or bending output",
+    "equilibrium": "(1-nu)*(x**1.5-1)+nu*(x-1)*x**1.5 = a*I; S=h*(1-1/x)",
+    "height_primary_um": 33.5,
+    "height_sensitivity_um": [32.0, 35.0],
+    "nu_grid": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "nu_endpoint": "nu=1 is a declared zero-baseline surface/lateral tension limit, not an interior positive-baseline M0 parameter; included as limiting material sensitivity",
+    "a_grid": {"minimum": 0.0, "maximum": 20.0, "step": 0.01},
+    "selection": "minimum calibration sum of squared shortening residuals over the declared finite grid; no continuum optimality claim",
+    "root_bisections": 60
+  },
+  "comparators": ["calibration-only ordinary least squares with intercept", "zero activation-induced shortening"],
+  "scores": ["RMSE_um", "MAE_um", "signed_bias_um"],
+  "uncertainty": "Height/material grid is a sensitivity analysis, NOT an identified set or confidence/prediction interval. No unknown specimen independence is assumed.",
+  "decision": "Report all declared model scores without choosing a post-score winner. Scalar success cannot pass geometric prediction or establish novelty.",
+  "normalization": "Published optical recruitment normalization supplied by source, calculated across experiments; no claim of train-only optical preprocessing.",
+  "limitations": [
+    "Maximum shortening is not center displacement, curvature or a paired time-resolved apical/basal profile.",
+    "Independent heterogeneous cells can produce size-dependent maxima through order statistics.",
+    "No absolute force calibration, complete initial geometry, cell topology, specimen IDs or measurement uncertainty model are supplied by these source tables.",
+    "Endpoint equilibrium and affine recruitment-to-tension are explicit null hypotheses, not validated cellular kinetics."
+  ]
+}

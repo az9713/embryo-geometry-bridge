@@ -1,0 +1,13 @@
+{
+  "bindings": {
+    "source_sha256": "d39ae6c3bfa3d932eaba03ddd59fc275fd5b3b1c094e7f9a544810d8c10dc8bc",
+    "protocol_sha256": "fe64074d1a169a7672039c73dc07ca35c728cc1c299cf2a28025e0a0e7a97e43",
+    "preflight_sha256": "911f6839bd9cc49dafe626e688cc30d88a283ad87b5aaf92fecc5b629a684881",
+    "plan_sha256": "c3b1870e5ad815bc5df5ec94d4731b0228e529ba2e0651f847102b8e0ecaa277",
+    "envelope_sha256": "f50c04b1802176abf4f5494898c8128018d4db8f8d0bb410af7774e5a3fff925"
+  },
+  "pilot_id": "negative_KL_exact_spatial_loading_secant_v1",
+  "pid": 18484,
+  "phase": "geometry_only",
+  "independent_geometry_prelaunch_sha256": "bfe9374e0f8600510bd197c6bc82111a49a881417f358a176b49465f0be6a90e"
+}

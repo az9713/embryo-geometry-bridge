@@ -1,0 +1,19 @@
+{
+  "scope": "SparseADHessian/numericalpolicyverification beforeany24x12run",
+  "mesh": [
+    6,
+    3
+  ],
+  "volume": "Duffy8",
+  "surface": "Gauss12",
+  "seed_chunk": 4,
+  "thresholds": {
+    "entire_H_relative": 1e-11,
+    "offpattern_absolute": 1e-10,
+    "asymmetry_absolute": 1e-10,
+    "Hv_AD_relative": 1e-11,
+    "Hv_FD_relative": 2e-05,
+    "energy_gradient_identity": "bitforbit"
+  },
+  "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9"
+}

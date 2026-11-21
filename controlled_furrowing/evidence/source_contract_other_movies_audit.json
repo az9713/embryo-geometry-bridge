@@ -1,0 +1,347 @@
+{
+  "status": "PASS_BYTE_DECODE_VISUAL_INVENTORY_NO_FULL_COHORT_WORKFLOW_CONTRACT",
+  "recorded_utc": "2026-11-19T16:28:50.780088+00:00",
+  "checks": {
+    "seven_official_assets_present": true,
+    "all_sizes_official_MD5_and_new_SHA256_match": true,
+    "all_seven_full_decodes_exit_zero": true,
+    "all_stream_decoded_counts_match_ffprobe": true,
+    "all698frames_decoded": true,
+    "all63sampled_frames_including_first_middle_last_retained": true,
+    "all_generated_artifact_hashes_replayed": true,
+    "seven_contact_sheets_visually_inspected": true,
+    "genotype_planes_clock_scale_nominal_vs_container_explicit": true,
+    "vitelline_microperforation_not_basal_ablation": true,
+    "no_source_images_promoted_to_public_original_figures": true,
+    "no_usable_fullcohort_contract_inferred": true,
+    "no_model_fitting_noise_contour_truth_or_biological_mechanism_claim": true
+  },
+  "scope": "Movies4-10 only, all encoded frames decoded, nine visual samples per movie. No public source-image adaptations, model/source fit, raw-z reconstruction, segmentation truth or measurement-noise change.",
+  "total_downloaded_bytes": 67216618,
+  "total_decoded_video_frames": 698,
+  "total_visual_samples": 63,
+  "protocol_sha256": "d182c0598530b402d82de46141d7e6a2b7877d7a07f607d56b518ca6e5be8b19",
+  "acquisition_decode_source_sha256": "ec64aa6c67d820677e5f62873300859317a0ca717c51876343340a9ad6db12d6",
+  "acquisition_decode_results_sha256": "e0ae3238e8f8118fc75a8a8a963afa8397eb3cb902d8d08c485b9b976f94e3d7",
+  "visual_inventory_sha256": "ec7de09ed5a9d7e1f1333d8f829e4b31b02d10ff8cf8e8d45a3abf42fe3c0ac9",
+  "description_pdf_extracted_text_sha256": "e5fe9a16a1c9892732f55d6b4a1fe65b4794009da8b91cbf8caf219181517137",
+  "records": [
+    {
+      "movie": 4,
+      "file": "data/raw/41467_2025_62483_MOESM8_ESM.avi",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM8_ESM.avi",
+      "expected_size": 5829836,
+      "actual_size": 5829836,
+      "official_expected_md5": "7de1e7c3ecd3695f496910a70308da4a",
+      "actual_md5": "7de1e7c3ecd3695f496910a70308da4a",
+      "actual_sha256": "00d59427d65339ce0500c07e48bb246f3a8ce05fa55bd9b488dc546cc1efdb7e",
+      "decoded_frame_counts_by_stream": {
+        "0": 48
+      },
+      "frames_extracted": [
+        0,
+        6,
+        12,
+        18,
+        24,
+        29,
+        35,
+        41,
+        47
+      ]
+    },
+    {
+      "movie": 5,
+      "file": "data/raw/41467_2025_62483_MOESM9_ESM.avi",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM9_ESM.avi",
+      "expected_size": 5793542,
+      "actual_size": 5793542,
+      "official_expected_md5": "ed51a52c19698c5c06ec33f9d97993fd",
+      "actual_md5": "ed51a52c19698c5c06ec33f9d97993fd",
+      "actual_sha256": "241d631f4f0f4038a0b925e207eeca3f0f904716a63eb5eab379c3e1714fcaf2",
+      "decoded_frame_counts_by_stream": {
+        "0": 34
+      },
+      "frames_extracted": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        21,
+        25,
+        29,
+        33
+      ]
+    },
+    {
+      "movie": 6,
+      "file": "data/raw/41467_2025_62483_MOESM10_ESM.avi",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM10_ESM.avi",
+      "expected_size": 7409432,
+      "actual_size": 7409432,
+      "official_expected_md5": "b12abbba89e22355c0f3d8790c7820ea",
+      "actual_md5": "b12abbba89e22355c0f3d8790c7820ea",
+      "actual_sha256": "4ed00672325abd8cabe0341a66ca7cb563e7118fdb46f682cabffbef5d660743",
+      "decoded_frame_counts_by_stream": {
+        "0": 66
+      },
+      "frames_extracted": [
+        0,
+        8,
+        16,
+        24,
+        32,
+        41,
+        49,
+        57,
+        65
+      ]
+    },
+    {
+      "movie": 7,
+      "file": "data/raw/41467_2025_62483_MOESM11_ESM.avi",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM11_ESM.avi",
+      "expected_size": 11426640,
+      "actual_size": 11426640,
+      "official_expected_md5": "bd11311eb24005ba898f3db548c62d53",
+      "actual_md5": "bd11311eb24005ba898f3db548c62d53",
+      "actual_sha256": "17066a13920b5c404954097d598bc4446ad3a501c27d3c3cbb9fca7294f09561",
+      "decoded_frame_counts_by_stream": {
+        "0": 64
+      },
+      "frames_extracted": [
+        0,
+        8,
+        16,
+        24,
+        32,
+        39,
+        47,
+        55,
+        63
+      ]
+    },
+    {
+      "movie": 8,
+      "file": "data/raw/41467_2025_62483_MOESM12_ESM.avi",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM12_ESM.avi",
+      "expected_size": 13034220,
+      "actual_size": 13034220,
+      "official_expected_md5": "575a1ce1637b10b8c95007d9c2234eb3",
+      "actual_md5": "575a1ce1637b10b8c95007d9c2234eb3",
+      "actual_sha256": "457311e572a3d33bb35b71054107ca9c95a2a2a29d0295092b5738eca29890c5",
+      "decoded_frame_counts_by_stream": {
+        "0": 180
+      },
+      "frames_extracted": [
+        0,
+        22,
+        45,
+        67,
+        90,
+        112,
+        134,
+        157,
+        179
+      ]
+    },
+    {
+      "movie": 9,
+      "file": "data/raw/41467_2025_62483_MOESM13_ESM.avi",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM13_ESM.avi",
+      "expected_size": 3556876,
+      "actual_size": 3556876,
+      "official_expected_md5": "97ef03becfdcf8c0dbd10a5b4236e861",
+      "actual_md5": "97ef03becfdcf8c0dbd10a5b4236e861",
+      "actual_sha256": "c48d009a4423a161e18c7a3cfd8d4747fc9a664098f0beeb4f2a1572a8aefd3b",
+      "decoded_frame_counts_by_stream": {
+        "0": 104
+      },
+      "frames_extracted": [
+        0,
+        13,
+        26,
+        39,
+        52,
+        64,
+        77,
+        90,
+        103
+      ]
+    },
+    {
+      "movie": 10,
+      "file": "data/raw/41467_2025_62483_MOESM14_ESM.avi",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM14_ESM.avi",
+      "expected_size": 20166072,
+      "actual_size": 20166072,
+      "official_expected_md5": "a7689141ee59ac7d89e05a5821e5bd43",
+      "actual_md5": "a7689141ee59ac7d89e05a5821e5bd43",
+      "actual_sha256": "b8bc34115ccc4abcb7c91cca680a350b9c49f77025b86c1037acf9300179b2a5",
+      "decoded_frame_counts_by_stream": {
+        "0": 202
+      },
+      "frames_extracted": [
+        0,
+        25,
+        50,
+        75,
+        100,
+        126,
+        151,
+        176,
+        201
+      ]
+    }
+  ],
+  "observation_contract_inventory": {
+    "status": "VISUAL_INSPECTION_COMPLETE_FOR_ALL_SEVEN_NINE_FRAME_CONTACTS",
+    "inspection_method": "Codex image tool displayed each retained local contact sheet separately, after full-frame decoding; nine samples include first, selected middle, and last frame. Movie5 last native frame additionally displayed to read its final clock. This is not a claim every frame received human-style visual inspection.",
+    "image_publication": "LOCAL_INSPECTION_ONLY. Source images and contact sheets must not be treated as original public scientific figures.",
+    "common_nominal_genotype_from_description": "OptoGEF2, two copies RhoGEF2-tgRFPt-SspB and mCh-iLID-CaaX membrane marker except Movie5 labels only specify OptoGEF2 with/without scra RNAi; do not silently infer full copy numbers for Movie5.",
+    "records": [
+      {
+        "movie": 4,
+        "caption_locator": "MOESM3 description PDF page1, Supplementary Movie4; primary Fig4 micro-perforation context",
+        "caption_specimens": "One OptoGEF2 embryo; no persistent specimen ID or workbook-column crosswalk supplied.",
+        "caption_perturbation": "900nm activation, cylindrical diameter50um and depth5-25um. Subsequent 840nm micro-perforation: 52x4um ellipse centered on VITELLINE MEMBRANE, 3-5um below coverslip. This is NOT basal cellularization-front laser ablation.",
+        "caption_view": "4um sub-apical slice, scale bar20um; cyan activation outline and red ablation outline.",
+        "visible_first_middle_last_clocks": [
+          "00:00 min",
+          "03:35 min",
+          "07:57 min"
+        ],
+        "visible_features": "One planar membrane-image panel. Cyan activation label/outline, red ablation label/outline, white bar and burned clock. Dark central region and later bright membranes remain image intensities, not a certified anatomical contour. 'curvature maintained' is an author-supplied arrow annotation, not our measured curvature.",
+        "usable_partial_information": "Illustrative event sequence, captioned physical scale/depth and activation/ablation geometry; potential independent future 2D image analysis needs its own observation contract.",
+        "missing_for_current_cohort": "No complete apical/basal surfaces or z stack; no 17-row specimen/dose/endpoint mapping, height-reference trace, processed motion/segmentation masks, or measurement-error envelope. Additional vitelline intervention changes target condition."
+      },
+      {
+        "movie": 5,
+        "caption_locator": "MOESM3 description PDF page1, Supplementary Movie5; primary Fig5h/i and Sec8",
+        "caption_specimens": "Two displayed embryos: OptoGEF2 control left and OptoGEF2 + scraps/anillin (scra) RNAi right. No persistent IDs or current17-row mapping.",
+        "caption_perturbation": "Cephalic furrow dynamics; primary text says unactivated natural furrow formation, not the small circular activation calibration cohort.",
+        "caption_view": "Upper2um sub-apical and lower32um sub-apical slices, scale50um. Same nominal panels over time; two depths do not reconstruct full surfaces.",
+        "visible_first_middle_last_clocks": [
+          "00:00 min",
+          "06:08 min",
+          "12:39 min"
+        ],
+        "visible_features": "Four panel montage with genotype and depth labels, planar cell membranes, shared burned clock and scale bar. Distinct visible shapes evolve on left/right; these images alone do not assign material stiffness or numerical shortening values.",
+        "usable_partial_information": "Two nominal observation depths and genotype comparison with display timing, not a source-row paired A/B temporal series.",
+        "missing_for_current_cohort": "No full 3D initial profiles, ROI masks, growth-reference/height reference, endpoint extraction record, uncertainty interval, or mapping to source workbook17 entries."
+      },
+      {
+        "movie": 6,
+        "caption_locator": "MOESM3 description PDF page2, Supplementary Movie6; primary Fig6a",
+        "caption_specimens": "One cellularizing primary-epithelium OptoGEF2 embryo, initially cells5um tall according to caption; no persistent ID.",
+        "caption_perturbation": "30um circular region continuously activated488nm for7min.",
+        "caption_view": "5um sub-apical slice, scale20um; cyan activation outline.",
+        "visible_first_middle_last_clocks": [
+          "00:00 min",
+          "07:21 min",
+          "14:12 min"
+        ],
+        "visible_features": "One planar panel; cyan circle and activation interval label; local membrane intensities/planar geometry change. No simultaneous apical/basal cross-section.",
+        "usable_partial_information": "Cellularization-stage planar activation example and nominal5um initial cell height. That stage/height differs from current32-35um gastrulation-stage reference.",
+        "missing_for_current_cohort": "No calibration specimen crosswalk, full heights/surface profiles, exact response ROI or growth-reference computation, processed temporal outcomes, or uncertainties."
+      },
+      {
+        "movie": 7,
+        "caption_locator": "MOESM3 description PDF page2, Supplementary Movie7; primary Fig6c",
+        "caption_specimens": "One early-dorsal-closure amnioserosa OptoGEF2 example; no persistent specimen ID.",
+        "caption_perturbation": "488nm elliptical activation spanning amnioserosa for12min; caption explicitly states ellipse was REDEFINED as tissue changed shape.",
+        "caption_view": "4um and21um apical maximum projections; burned panel labels specify1-4um and1-21um. Scale50um.",
+        "visible_first_middle_last_clocks": [
+          "00:00 min",
+          "13:58 min",
+          "25:51 min"
+        ],
+        "visible_features": "Two projection panels, cyan ellipses and activation label. Projection depth changes visible membrane structure; not individual anatomical surfaces. Caption's changing activation mask is not a stored analysis-mask timecourse.",
+        "usable_partial_information": "Shows explicitly time-dependent intervention geometry, potentially relevant to a separately modeled later-stage system.",
+        "missing_for_current_cohort": "No full z data, per-frame machine-readable activation/measurement masks or stage/dose/workbook crosswalk; no fullcohort initial geometry/reference/noise contract."
+      },
+      {
+        "movie": 8,
+        "caption_locator": "MOESM3 description PDF page2, Supplementary Movie8; primary Fig6e",
+        "caption_specimens": "One late-dorsal-closure OptoGEF2 embryo; no persistent specimen ID.",
+        "caption_perturbation": "Left/right lateral epidermis continuously activated488nm for5min.",
+        "caption_view": "6um sub-apical slice, scale50um.",
+        "visible_first_middle_last_clocks": [
+          "00:00 min",
+          "20:44 min",
+          "39:07 min"
+        ],
+        "visible_features": "One planar panel, cyan long activation outlines at upper/lower sides and activation label; membrane texture and planar shape evolve over the clocked series.",
+        "usable_partial_information": "Later-stage bilateral planar perturbation recording with displayclock/scale.",
+        "missing_for_current_cohort": "No apical/basal surface pair, fullcohort specimen mapping, response masks, reference-height/growth subtraction or observation uncertainty."
+      },
+      {
+        "movie": 9,
+        "caption_locator": "MOESM3 description PDF page2, Supplementary Movie9",
+        "caption_specimens": "One OptoGEF2 embryo during dorsal closure, single amnioserosa cell stimulated; no cell/specimen persistent ID.",
+        "caption_perturbation": "Single-cell488nm activation for3min.",
+        "caption_view": "3um apical maximum projection, scale50um.",
+        "visible_first_middle_last_clocks": [
+          "00:00 min",
+          "14:00 min",
+          "26:58 min"
+        ],
+        "visible_features": "One projected membrane panel, small cyan activation circle visible at sampled10:36min, shared clock and bar. Cell topology/brightness are display intensities, not supplied segmentation truth.",
+        "usable_partial_information": "Single-cell later-stage perturbation example, distinct from multicellular gastrulation patch model.",
+        "missing_for_current_cohort": "No full heights, paired apical/basal temporal outputs, calibration17-row mapping, exact ROI/reference computation or noise envelope."
+      },
+      {
+        "movie": 10,
+        "caption_locator": "MOESM3 description PDF page2, Supplementary Movie10",
+        "caption_specimens": "One dorsal-closure OptoGEF2 embryo with five sequential interventions, not five independent specimens.",
+        "caption_perturbation": "488nm: single-time33um posterior-amnioserosa circle; single-time33um anterior-amnioserosa circle; 5min105x35um left-posterior and88x20um right-anterior epidermal ellipses; 3min85x23um amnioserosa ellipse; 3min177x38um left-epidermis ellipse.",
+        "caption_view": "5um and13um apical maximum projections; burned labels specify1-5um and1-13um. Scale50um.",
+        "visible_first_middle_last_clocks": [
+          "00:00 min",
+          "29:48 min",
+          "59:53 min"
+        ],
+        "visible_features": "Two projections with several cyan circles/ellipses over the series and activation labels. A near-hour experimental displayclock is compressed into12.625s playback; encodedfps is not experiment cadence.",
+        "usable_partial_information": "Captioned sequential intervention schedule and qualitative planar response, potentially useful for a separate later-stage history-dependent study.",
+        "missing_for_current_cohort": "No machine-readable physical-time/intervention masks or dose-kinetics, paired full surfaces, 17-row identity map, reference/growth trace or uncertainty; earlier interventions affect later states."
+      }
+    ],
+    "shared_observation_contract_result": {
+      "full17cohort_geometry_time_ID_ROI_reference_uncertainty_contract_supplied": false,
+      "interpretation": "These seven published display movies add seven captioned examples, eight displayed specimen slots because Movie5 compares two embryos; uniqueness across movie files is not established. They do not supply a matched17-record dataset or a complete measurement-workflow crosswalk. No claim that the authors lack such data or that no data exist elsewhere.",
+      "partial_metadata_is_present": [
+        "caption-level genotype/stage/perturbation descriptions",
+        "burned display clocks and scale bars",
+        "selected slice/projection depth descriptions",
+        "drawn activation/ablation overlays"
+      ],
+      "missing_or_unidentified_in_this_package": [
+        "mapping of these displayed specimens to the17 calibration columns",
+        "full raw3D initial and time-resolved apical/basal surfaces",
+        "processed per-specimen apical/basal temporal trajectories",
+        "machine-readable response ROI and measurement masks",
+        "growth-reference/control trace crosswalk",
+        "measurement-error/segmentation/PSF envelope",
+        "source convention aligning spatial/temporal maxima to all four scalar endpoints"
+      ],
+      "not_inferred": [
+        "fluorescence contour is anatomy",
+        "dark projected area is a certified void",
+        "encodedvideo timestamps are experiment time",
+        "activation overlay equals measured responseROI",
+        "caption scale/depth is directly calibrated container metadata",
+        "same genotype means same source specimen",
+        "images establish a material parameter or noise bound"
+      ]
+    }
+  },
+  "limitations": [
+    "No fullcohort identity/dose/geometry/reference/ROI/uncertainty crosswalk found in these seven videos and their captions",
+    "Visible event clocks are not container playback timestamps",
+    "Caption scales/depths are source assertions, not machine acquisition calibration",
+    "Visual morphology or author arrow annotation is not an anatomical contour/error certificate",
+    "Finite seven-movie coverage is not an assertion of global data absence"
+  ],
+  "finalizer_source_sha256": "fbaf3353a086b3cecf434a3574f199f3d1d2ef0952b59d451e3f6ea6b9936418"
+}

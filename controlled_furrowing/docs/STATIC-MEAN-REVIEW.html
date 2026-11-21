@@ -1,0 +1,118 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>STATIC-MEAN-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review: the conditional static-mean compatibility floor</h1>
+<p><strong>Scope verdict: PASS for the source calculations, stated kinematic theorem and actual originating exposition.</strong> The optional exact-isochoric strengthening has also been independently checked, as recorded below. This is an internal AI review, not external expert validation, a new biological result or a proof that the published measurements use the disputed static convention.</p>
+<p>The review reads the 17 canonical source-column records directly from <code>data/derived/calibration_small_18um.csv</code> as exact decimal fractions. It imports none of the production data-loading, correction or matching functions. <code>evidence/static_mean_compatibility_independent_review.json</code> retains <strong>149 passing checks</strong>, all 17 independently formulated linear programs, exact constructive checks, independent matching scans and source hashes.</p>
+<h2>Lower bound and sharp correction</h2>
+<p>With common spatial ROI, references and normalized measure at one static state, the signed regional means satisfy the identity</p>
+<div class="math display" data-tex="
+ V=A+B.
+"></div>
+
+<p>If all four observed channels have a common absolute discrepancy allowance <span class="math" data-tex="\delta"></span>, any compatible triple must obey</p>
+<div class="math display" data-tex="
+ &#124;A_{\rm obs}+B_{\rm obs}-V_{\rm obs}&#124;
+ \le &#124;A_{\rm obs}-A&#124;+&#124;B_{\rm obs}-B&#124;+&#124;V_{\rm obs}-V&#124;
+ \le3\delta.
+"></div>
+
+<p>Thus the per-record lower bound is <span class="math" data-tex="&#124;A_{\rm obs}+B_{\rm obs}-V_{\rm obs}&#124;/3"></span>. More generally the necessary bound is the sum of the three individual channel allowances; no equal-noise assumption is inferred.</p>
+<p>Set <span class="math" data-tex="t=(A_{\rm obs}+B_{\rm obs}-V_{\rm obs})/3"></span> and define</p>
+<div class="math display" data-tex="
+ A&#x27;=A_{\rm obs}-t,\qquad B&#x27;=B_{\rm obs}-t,\qquad
+ V&#x27;=V_{\rm obs}+t,\qquad M&#x27;=\max(M_{\rm obs},V&#x27;).
+"></div>
+
+<p>Then <span class="math" data-tex="V&#x27;=A&#x27;+B&#x27;"></span>. If the observations satisfy <span class="math" data-tex="V_{\rm obs}\le M_{\rm obs}"></span>, the M correction is zero for nonpositive t, and otherwise is at most t. All four residuals are therefore at most <span class="math" data-tex="&#124;t&#124;"></span>, with equality in the three mean channels. This exactly solves the four-channel L-infinity feasibility problem, provided the corrected maximum also satisfies the height requirement of the kinematic witness below.</p>
+<p>Independent HiGHS linear programs use variables <span class="math" data-tex="(M,V,A,B,\delta)"></span>, constraints <span class="math" data-tex="&#124;x_k-y_k&#124;\le\delta"></span>, <span class="math" data-tex="V=A+B"></span>, <span class="math" data-tex="V\le M"></span>, signed A/B/V, nonnegative delta and <span class="math" data-tex="M\le33.5-10^{-6}"></span>. All 17 optima match the exact per-record fractions to less than 1e-9 micrometres. The exact constructive fractions, rather than the floating LP solutions, supply the sharpness claim.</p>
+<p>The cohort floor is</p>
+<div class="math display" data-tex="
+ \delta_{\rm canonical}=\frac{43438757}{12500000}
+ =3.47510056\;\mu\mathrm m.
+"></div>
+
+<p>The unique worst record is canonical column G: <span class="math" data-tex="A_{\rm obs}=13"></span>, <span class="math" data-tex="B_{\rm obs}=3.46648612"></span>, <span class="math" data-tex="V_{\rm obs}=6.04118444"></span>, <span class="math" data-tex="M_{\rm obs}=12.73324306"></span>, all in micrometres. Its corrected triple is <span class="math" data-tex="(A&#x27;,B&#x27;,V&#x27;)=(9.52489944,-0.00861444,9.516285)"></span>. Signed basal motion is essential to this particular sharp witness; imposing an additional nonnegativity restriction would define a different problem.</p>
+<h2>A genuine kinematic witness, with an explicit smooth extension</h2>
+<p>Fix a declared physical ROI radius R and height H. For either weighting separately, choose constant apical downward displacement A' and</p>
+<div class="math display" data-tex="
+ S_0(r)=M&#x27;-c(r/R)^2,
+ \qquad
+ c=\begin{cases}3(M&#x27;-V&#x27;),&amp;\text{line mean},\\2(M&#x27;-V&#x27;),&amp;\text{disk mean}.\end{cases}
+"></div>
+
+<p>The normalized second moments of r/R are 1/3 and 1/2 respectively. Hence the height mean is V', its maximum is M', and the basal upward field <span class="math" data-tex="S_0-A&#x27;"></span> has mean B'. Since <span class="math" data-tex="M&#x27;\ge V&#x27;"></span>, c is nonnegative and <span class="math" data-tex="S_0\le M&#x27;&lt;H"></span>.</p>
+<p>To extend beyond the ROI into a larger clamped disk, choose a smooth radial cutoff <span class="math" data-tex="0\le\chi\le1"></span>, equal to one through the ROI and zero in a neighborhood of the outer rim. Continue the same quadratic <span class="math" data-tex="S_0"></span> outside the ROI, and set</p>
+<div class="math display" data-tex="
+ S=\chi S_0,\qquad D_a=\chi A&#x27;,\qquad D_b=S-D_a.
+"></div>
+
+<p>Because <span class="math" data-tex="S_0\le M&#x27;"></span>, multiplication by chi gives <span class="math" data-tex="S\le\max(M&#x27;,0)&lt;H"></span> everywhere, even if <span class="math" data-tex="S_0"></span> becomes negative. The fields are smooth at the axis because chi is constant there and the core dependence is on <span class="math" data-tex="r^2"></span>. The finite-height axisymmetric map</p>
+<div class="math display" data-tex="
+ R_{\rm current}=r,\qquad
+ Z_{\rm current}=D_b(r)+\left(1-\frac{S(r)}H\right)z
+"></div>
+
+<p>has determinant <span class="math" data-tex="J=1-S/H&gt;0"></span>, is injective because radius is fixed and each vertical fibre map is strictly increasing, and equals the identity near the outer rim. This supplies the missing global positive-thickness/clamped-rim argument without a mechanical solve.</p>
+<p>For the actual canonical corrections at H=33.5 micrometres, the largest corrected M is 12.73324306 micrometres, and the smallest core J lower bound is approximately 0.619903. These original radial-identity witnesses are not nearly incompressible equilibria, force-balanced solutions, common-material fits or admissible optogenetic activation histories. The separately verified isochoric strengthening below removes the compression caveat for the wider kinematic class. Their purpose remains sharpness in the <strong>larger class of independent kinematic fields</strong>. The lower bound still constrains any smaller mechanical class sharing the static identity, but that class may require a larger discrepancy or be infeasible.</p>
+<p>The displayed line and disk witnesses are different fields. The construction proves attainment for each fixed weighting separately; it does not display one identical field simultaneously attaining both observation conventions.</p>
+<h2>Unknown intact component-pair permutation</h2>
+<p>The alternative identity contract permits one cohort-wide permutation of the paired apical/basal columns relative to the maximum/mean records. It does not permit separate shuffling of apical and basal channels. Let <span class="math" data-tex="x_i=A_i+B_i"></span> and <span class="math" data-tex="y_j=V_j"></span>. Its bottleneck objective is</p>
+<div class="math display" data-tex="
+ \min_\pi\max_i\frac{&#124;x_{\pi(i)}-y_i&#124;}{3}.
+"></div>
+
+<p>Sorting both one-dimensional lists is optimal. To check the usual uncrossing argument, suppose <span class="math" data-tex="x\le x&#x27;"></span>, <span class="math" data-tex="y\le y&#x27;"></span>, and crossing pairs have maximum distance D. Then <span class="math" data-tex="x-y\le x&#x27;-y\le D"></span>, <span class="math" data-tex="y-x\le y&#x27;-x\le D"></span>; similarly both signs of <span class="math" data-tex="x&#x27;-y&#x27;"></span> are bounded by D. Removing a crossing cannot increase the bottleneck. Repeated uncrossing yields sorted matching.</p>
+<p>The independently computed optimum is</p>
+<div class="math display" data-tex="
+ \delta_{\rm permutation}=\frac{895512391}{300000000}
+ \simeq2.98504130333\;\mu\mathrm m.
+"></div>
+
+<p>An independent compiled Hopcroft-Karp algorithm scanned <strong>206 critical exact thresholds</strong> through the first perfect matching. Every lower critical threshold was infeasible. The retained Hall witness immediately below the optimum has 16 left records but only 15 possible neighboring component pairs; its neighbor set was recomputed directly from exact costs. The preceding threshold is 74425479/25000000 micrometres. Twenty additional exact fixtures of sizes two through six independently compare sorted matching against enumeration of every permutation.</p>
+<p>Each selected pairing also passes the exact correction and positive-height primal construction. Again, this weakens the source identity contract; it neither diagnoses an error in the authors' ordering nor provides a common mechanical parameter vector.</p>
+<h2>Essential interpretation limits</h2>
+<p>The identity fails for separately maximized temporal means. At two times let the component means be (1,0) and (0,1): their separate maxima sum to two, while the maximum total mean is one. Pointwise component maxima likewise need not add to the total maximum. The source observation audit explicitly retains these unresolved alternatives.</p>
+<p>Therefore this result excludes a <strong>conditional static regional-mean interpretation below its discrepancy floor</strong>. It does not refute the measurements, establish an experimental noise level or refute every dynamic/mechanical explanation. All 17 canonical records satisfy the necessary pointwise-summary inequalities mean &lt;= maximum &lt;= apical maximum + basal maximum; this alone does not determine the correct source convention.</p>
+<p>The mathematics is established additive compatibility, convex feasibility and one-dimensional bottleneck matching. This is a useful exact audit of the current interpretation, with no confirmed novelty claim.</p>
+<h2>Independently checked exact-isochoric strengthening</h2>
+<p>The actual <code>STATIC-MEAN-COMPATIBILITY.md</code>, <code>scripts/static_isochoric_construction.py</code> and its 204-check receipt were read. The wording explicitly distinguishes static interpretation from temporal peaks, canonical pairing from crosswalk sensitivity, independent configurations from common mechanical equilibria, and different fields for line/disk weighting. The requested precision refinement has been incorporated: the originating exposition now states determinant one <strong>almost everywhere</strong>, with no classical gradient asserted at the core/annulus interface.</p>
+<p>The original 149-check review receipt is retained unchanged as a historical record. The new <code>evidence/static_isochoric_independent_review.json</code> contains <strong>751 passing independent checks</strong> across 68 configurations. It reconstructs every corrected record from the CSV, expands and integrates the polynomials directly, checks endpoint/critical-point extrema and derives the squared radial-transport polynomials independently. None of the production correction, matching or isochoric-construction functions is imported.</p>
+<p>For ROI radius R, outer radius <span class="math" data-tex="R_o"></span>, <span class="math" data-tex="d=R_o-R"></span>, core edge value e and annular coordinate <span class="math" data-tex="u=(r-R)/d"></span>, write</p>
+<div class="math display" data-tex="
+ S_{\rm ann}(u)=e(1-u)-Ku(1-u).
+"></div>
+
+<p>Direct expansion of <span class="math" data-tex="r=R+du"></span> gives</p>
+<div class="math display" data-tex="
+ \int_R^{R_o}rS_{\rm ann}(r)dr
+ =e\,d\left(\frac R2+\frac d6\right)
+ -K\,d\left(\frac R6+\frac d{12}\right).
+"></div>
+
+<p>The core integral is <span class="math" data-tex="I_c=R^2(M/2-c/4)"></span>. The specified K therefore gives exact zero total <span class="math" data-tex="\int_0^{R_o}rS\,dr"></span>. Independent quadratic extrema check positive height throughout each core and annulus; the smallest height across all 68 is exactly 20.76675694 micrometres.</p>
+<p>Put <span class="math" data-tex="h=H-S"></span> and define</p>
+<div class="math display" data-tex="
+ \rho(r)^2=\frac2H\int_0^r xh(x)dx.
+"></div>
+
+<p>For positive r, h&gt;0 gives <span class="math" data-tex="\rho&#x27;(r)=rh/(H\rho)&gt;0"></span>, so it has a strictly increasing inverse <span class="math" data-tex="r=\mathcal R(\rho)"></span>. Total zero shortening integral implies <span class="math" data-tex="\rho(R_o)^2=R_o^2"></span>. Near the axis, the core has</p>
+<div class="math display" data-tex="
+ \rho(r)^2=\frac{H-M}{H}r^2+\frac{c}{2HR^2}r^4.
+"></div>
+
+<p>Its leading coefficient is strictly positive. Thus the inverse radial scale tends to <span class="math" data-tex="\sqrt{H/(H-M)}"></span>, the radial Cartesian map is regular at the axis, and no singular volume concentration is introduced there.</p>
+<p>For current basal height B(r), use the reference-cylinder map</p>
+<div class="math display" data-tex="
+ (\rho,\theta,z)\mapsto
+ \left(\mathcal R(\rho),\theta,
+ B(\mathcal R(\rho))+\frac{h(\mathcal R(\rho))}{H}z\right).
+"></div>
+
+<p>On every smooth piece its cylindrical Jacobian is</p>
+<div class="math display" data-tex="
+ J=\frac{\mathcal R}{\rho}\mathcal R&#x27;\frac hH
+ =\frac r\rho\frac{H\rho}{rh}\frac hH=1.
+"></div>
+
+<p>The core/annulus fields are continuous, with bounded piecewise derivatives and height bounded away from zero. Their inverse radial map and full three-dimensional map are Lipschitz; determinant one holds almost everywhere. Radial injectivity and positive vertical scaling give global injectivity. At the outer rim, <span class="math" data-tex="\rho=R_o"></span>, B=0 and h=H, so every rim point is fixed. Gradient identity or traction balance at that rim is not claimed.</p>
+<p>Independent Brent inversion plus central finite differences of the actual composed map check four noninterface radii in each configuration. The largest numerical determinant error is about 1.33e-10 against a declared 2e-7 tolerance. This numerical corroboration is separate from the analytic Jacobian cancellation and exact polynomial certificates.</p>
+<p>This strengthening provides exactly volume-preserving <strong>continuum kinematic</strong> witnesses. They have finite neo-Hookean/surface energy on the bounded cylinder: the deformation gradient is bounded, J is one almost everywhere and surface slopes are bounded. They are not force-balanced configurations, exact P2 fields or realizations of the project's activation mask and material parameters. In particular, radial transport generally maps a different reference radius onto the fixed current ROI. Separate fields are still used for each record and weighting; a shared equilibrium/material/activation construction has not been supplied.</p>
+<p>The originating exposition's main scope is sound. The result excludes one conditional static-mean interpretation below its exact discrepancy floor, while its volume-preserving sharpness belongs to a broader kinematic class. It leaves mechanical compatibility, source temporal semantics, joint material inference and biological validation unresolved.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

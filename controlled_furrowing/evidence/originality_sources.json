@@ -1,0 +1,216 @@
+{
+  "created_utc": "2026-11-19T08:54:37.067711+00:00",
+  "sources": [
+    {
+      "title": "Countryman primary XML",
+      "path": "controlled_furrowing/data/raw/primary.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12361397/fullTextXML",
+      "bytes": 199537,
+      "sha256": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7",
+      "read_depth": "Complete article; exact relevant sections in originality_equations.json",
+      "parsed_root": "article"
+    },
+    {
+      "title": "Countryman final supplement",
+      "path": "controlled_furrowing/data/raw/41467_2025_62483_MOESM1_ESM.pdf",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM1_ESM.pdf",
+      "bytes": 16859162,
+      "sha256": "b3639ea26a0bcb8c822b517a00e7954b046640a7c24d5e791df40aacac62d656",
+      "read_depth": "18pages includingNote13-14, Fig8/9",
+      "pdf_pages": 18
+    },
+    {
+      "title": "OptoShroom3 fulltext",
+      "path": "controlled_furrowing/literature/optoshroom3_fulltext.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9474505/fullTextXML",
+      "bytes": 128721,
+      "sha256": "e70f6e93ae615fb17a2b0e21c9fa93b9c9597fa5e85b9a86de648abe4bb63648",
+      "read_depth": "Fulltext,Fig2modelandFig4/5",
+      "parsed_root": "article"
+    },
+    {
+      "title": "OptoShroom3 supplement",
+      "path": "controlled_furrowing/literature/optoshroom3_supplement.pdf",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9474505.1/41467_2022_33115_MOESM1_ESM.pdf",
+      "bytes": 16885972,
+      "sha256": "1d97e9f41cbab27b7f75724e7a4fe92948c1a58d3399a8e96923e8304bc6c749",
+      "read_depth": "13pages;Fig7p7read",
+      "pdf_pages": 13
+    },
+    {
+      "title": "Worthmuller final XML",
+      "path": "controlled_furrowing/literature/woerthmueller_fulltext.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13507329/fullTextXML",
+      "bytes": 204629,
+      "sha256": "a15819606a256b11df57f9275ca96af65808345209a260bd4a45fe032ec40b79",
+      "read_depth": "Final articleequations/results",
+      "parsed_root": "article"
+    },
+    {
+      "title": "Worthmuller authorarticle+support",
+      "path": "controlled_furrowing/literature/woerthmueller_author.pdf",
+      "url": "https://www.thphys.uni-heidelberg.de/~biophys/PDF/BPJ2025Woerthmueller.pdf",
+      "bytes": 19004796,
+      "sha256": "7223e5a20f0ccb4bbbc0fce8c9e478b109349b867e601a7ceba0ec07ce47e982",
+      "read_depth": "43pages main+support;inpresspaginationnotfinal",
+      "pdf_pages": 43
+    },
+    {
+      "title": "Kumar final XML",
+      "path": "controlled_furrowing/literature/inverse_final_s3.xml",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11076624.1/PMC11076624.1.xml",
+      "bytes": 249154,
+      "sha256": "4f9f9c3c38b93e2d2a628618db08f9845399dd20900e9c7dfed4352b8917298f",
+      "read_depth": "Fulltext;Sec9/Par36target-conditionedfit",
+      "parsed_root": "article"
+    },
+    {
+      "title": "Kumar supplement",
+      "path": "controlled_furrowing/literature/inverse_supplement.pdf",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11076624.1/41540_2024_375_MOESM1_ESM.pdf",
+      "bytes": 1609787,
+      "sha256": "4cf764a845863e13ce4e1e7b85ff22e6eb8e3d230727a621cb6226f94495b5fa",
+      "read_depth": "8pages;fittedparametertables and sensitivityfigures",
+      "pdf_pages": 8
+    }
+  ],
+  "access_attempts": [
+    {
+      "query": "DOI:10.1038/s41467-022-33115-0",
+      "error": "HTTPSConnectionPool(host='www.ebi.ac.uk', port=443): Read timed out. (read timeout=45)"
+    },
+    {
+      "query": "DOI:10.1038/s41540-024-00375-z",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "query": "DOI:10.1016/j.bpj.2025.10.002",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "url": "https://journals.aps.org/prxlife/pdf/10.1103/PRXLife.2.013004",
+      "date_utc": "2026-11-19T08:46:00.403359+00:00",
+      "status": 403,
+      "bytes": 5568,
+      "sha256": "a913dd441d633d818df4d939444b19deb62b278409787fcd0d822b1eacbde509",
+      "is_valid_pdf_header": false,
+      "file": "controlled_furrowing\\literature\\guerra2024_main.failed_response",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://journals.aps.org/prxlife/supplemental/10.1103/PRXLife.2.013004/Supplementary_GuerraSantillan.pdf",
+      "date_utc": "2026-11-19T08:46:00.403872+00:00",
+      "status": 403,
+      "bytes": 5761,
+      "sha256": "73cbe16aa0a6843e8d2ca7a11299d882cb157bc39fbe692b57e3680a4cc04920",
+      "is_valid_pdf_header": false,
+      "file": "controlled_furrowing\\literature\\guerra2024_supplement.failed_response",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.thphys.uni-heidelberg.de/~biophys/PDF/BPJ2025Woerthmueller.pdf",
+      "date_utc": "2026-11-19T08:46:00.404229+00:00",
+      "status": 200,
+      "bytes": 19004796,
+      "sha256": "7223e5a20f0ccb4bbbc0fce8c9e478b109349b867e601a7ceba0ec07ce47e982",
+      "is_valid_pdf_header": true,
+      "file": "controlled_furrowing\\literature\\woerthmueller_author.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9474505/fullTextXML",
+      "date_utc": "2026-11-19T08:46:38.072964+00:00",
+      "status": 200,
+      "bytes": 128721,
+      "sha256": "e70f6e93ae615fb17a2b0e21c9fa93b9c9597fa5e85b9a86de648abe4bb63648",
+      "file": "controlled_furrowing\\literature\\optoshroom3_fulltext.xml",
+      "valid_xml": false
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13507329/fullTextXML",
+      "date_utc": "2026-11-19T08:46:38.073469+00:00",
+      "status": 200,
+      "bytes": 204629,
+      "sha256": "a15819606a256b11df57f9275ca96af65808345209a260bd4a45fe032ec40b79",
+      "file": "controlled_furrowing\\literature\\woerthmueller_fulltext.xml",
+      "valid_xml": false
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11076624/fullTextXML",
+      "date_utc": "2026-11-19T08:48:48.466837+00:00",
+      "status": 200,
+      "bytes": 201037,
+      "file": "controlled_furrowing\\literature\\inverse_morphogenesis_final.xml",
+      "sha256": "4b9aac08b72159eccdbd6acebf0f776b9ef87f0a79ff38bf7a454be4b5befcb8"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3890844/fullTextXML",
+      "date_utc": "2026-11-19T08:48:48.467304+00:00",
+      "status": 500,
+      "bytes": 150,
+      "file": "controlled_furrowing\\literature\\hannezo2014_fulltext.xml",
+      "sha256": "da3ac131eb3896fbf0b5f11929b36c82e034c5cbc00e92821ac33a08934e4526"
+    },
+    {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9474505.1/",
+      "date_utc": "2026-11-19T08:48:48.467649+00:00",
+      "status": 200,
+      "bytes": 8364,
+      "file": "controlled_furrowing\\literature\\optoshroom3_s3_listing.xml",
+      "sha256": "e4a3ab5c13e5ac02df53d59af0c3996725476b76bfe00f708ccc9545798d00a9"
+    },
+    {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC11076624.1/",
+      "date_utc": "2026-11-19T08:48:48.467935+00:00",
+      "status": 200,
+      "bytes": 4108,
+      "file": "controlled_furrowing\\literature\\inverse_s3_listing.xml",
+      "sha256": "724d129eee9915bb3429255ac22985effce742006e7a163f9c10e9f3a3c2432c"
+    },
+    {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11076624.1/PMC11076624.1.xml",
+      "utc": "2026-11-19T08:49:54.002429+00:00",
+      "status": 200,
+      "file": "controlled_furrowing\\literature\\inverse_final_s3.xml",
+      "bytes": 249154,
+      "sha256": "4f9f9c3c38b93e2d2a628618db08f9845399dd20900e9c7dfed4352b8917298f",
+      "parsed_root": "article"
+    },
+    {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11076624.1/41540_2024_375_MOESM1_ESM.pdf",
+      "utc": "2026-11-19T08:49:54.002910+00:00",
+      "status": 200,
+      "file": "controlled_furrowing\\literature\\inverse_supplement.pdf",
+      "bytes": 1609787,
+      "sha256": "4cf764a845863e13ce4e1e7b85ff22e6eb8e3d230727a621cb6226f94495b5fa",
+      "pages": 8
+    },
+    {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9474505.1/41467_2022_33115_MOESM1_ESM.pdf",
+      "utc": "2026-11-19T08:49:54.003188+00:00",
+      "status": 200,
+      "file": "controlled_furrowing\\literature\\optoshroom3_supplement.pdf",
+      "bytes": 16885972,
+      "sha256": "1d97e9f41cbab27b7f75724e7a4fe92948c1a58d3399a8e96923e8304bc6c749",
+      "pages": 13
+    }
+  ],
+  "web_only_primary_reads": [
+    {
+      "source": "Guerra2024main",
+      "url": "https://journals.aps.org/prxlife/pdf/10.1103/PRXLife.2.013004",
+      "read": "Mainpp9-10Eq1-4Fig6;17pagePDFwebtextavailable;localdownload403"
+    },
+    {
+      "source": "Guerra2024supplement",
+      "url": "https://journals.aps.org/prxlife/supplemental/10.1103/PRXLife.2.013004/Supplementary_GuerraSantillan.pdf",
+      "read": "Supplement9pages,SectionIpp3-4EqS1-S7;localdownload403"
+    }
+  ],
+  "retained_web_capture": "controlled_furrowing/literature/web_primary_equation_captures.json",
+  "corrections": [
+    "The initial valid_xml booleans in direct_xml_access_receipts.json tested an XMLdeclaration prefix only. BothDOCTYPExmls were independentlyparsed asarticle; sourceaccessisPASS despite thatfalseheaderheuristic."
+  ],
+  "audit_docs_sha256": "3c7d229f3b8820ce8d0097ab1588eaf413753f615caa77856f0b27a327604bb6",
+  "validation": "All8retained primary article/supplementfiles parse and their hashes independentlyrecomputed;failedresponsesremainrecorded."
+}

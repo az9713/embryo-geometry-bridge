@@ -1,0 +1,17 @@
+# Independent observer bounds for four cached-quadrature roots
+
+The independent readback matches all 32 observer comparisons across two small L states and all four static conventions. It finds 28 IN and four OUT at the saved conditional model discrepancy allowance of approximately 5.389835674801398 µm. All four OUT rows concern regional mean total shortening with radial-line weighting. The two large-state root intervals give a strictly positive signed contrast gap of [0.15475515644140, 0.15475515688952] µm, rounded outward.
+
+## Center and physical coordinate error
+
+For each field, the earlier independently verified cached-root certificate gives the exact residual bound \(\eta\), the center derivative bound \(Z_0\), and the variation bound \(v\). The readback recomputes \(z=Z_0+v\), checks \(\eta+zr<r\) at \(r=2^{-36}\), and uses \(e=\eta/(1-z)\). It decodes the binary reference coordinates, free map and displacement, rebuilds \(X+\operatorname{inj}(u)\) in exact rational arithmetic, and checks all 650 corresponding intervals against the independently reviewed geometry box. If \(\xi\) is the maximum absolute gap between the exact sum and the serialized center field, every physical nodal coordinate error is at most \(\epsilon=33.5(e+\xi)\) µm.
+
+## Trace graph and observer bounds
+
+The readback reconstructs the two reference faces from triangle connectivity, orders their 12 quadratic trace edges by radius and verifies that their nodal controls match the saved traces. For each P2 segment with physical samples \(p,m,q\) at \(t=0,1/2,1\), its derivative is \((q-p)+2(2t-1)(p+q-2m)\). Endpoint extrema therefore give exact upper bounds for the stored axial derivative magnitude and lower bounds for the radial derivative. The largest per-edge ratio bounds the stored graph slope on each whole face. The readback verifies common ROI coverage, fixed axis and rim radial DOFs, and strict lower radial derivative greater than \(8\epsilon\). The reviewed nodal-to-graph estimate then bounds the per-face Eulerian axial error by \(E=\tfrac54(1+\mathrm{slope})\epsilon\).
+
+For the small states the maximum and the regional mean of total shortening each have error at most \(E_a+E_b\). The separate apical and basal observers have errors at most \(E_a\) and \(E_b\), respectively. This uses the sup-norm Lipschitz properties of a maximum and a mean with fixed normalized nonnegative weights on the common ROI. The code inflates each independently saved observer interval by its error, computes the exact range of absolute residual against the saved observation, and compares that range with the same frozen allowance. For each large state the fixed-axis axial coordinate contributes \(\epsilon\) and the apical graph evaluated at the prescribed shoulder radius contributes \(E_a\). Subtracting the two resulting intervals in order encloses the signed gap.
+
+The arithmetic uses exact fractions and NumPy binary-array decoding. It reuses the prior independently reviewed cached-root, body geometry, stored observer and nodal-to-graph premises. No producer application functions or additional force, AD, spatial integration, equilibrium or geometry certification jobs were used. The result covers four cached quadrature roots. The exact-spatial roots, continuum mechanics and the other 32 small endpoint states are outside this readback.
+
+[Exact receipt](receipt.json) · [Independent source](readback.py)

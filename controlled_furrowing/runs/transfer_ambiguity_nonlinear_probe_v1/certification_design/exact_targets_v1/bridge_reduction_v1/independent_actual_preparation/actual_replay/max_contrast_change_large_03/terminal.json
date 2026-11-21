@@ -1,0 +1,12 @@
+{
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 35820,
+  "pilot_id": "max_contrast_change_large_03",
+  "source_sha256": "a9e1c4b2ba6158169fc3bb159066352d3d7b8da97054dd60093016a9d57d6703",
+  "protocol_sha256": "f98e5deca1b7c5cece76a9d835b05dbb44086294afc926f98c8f14477c14678e",
+  "preflight_sha256": "d06bc463133cc08a15a12c7b94fdf16b757560a1cba68b4501e023e4553d6aab",
+  "root_admission_sha256": "c01b1e775b313e7beca28d9327dce21c93d6978d355bcb5476dd644aa1560453",
+  "receipt_sha256": "61674691643a7ed3e6ada51ddd6a5adc37db471187a5eff217d867ca9e1cd55f",
+  "classification": "PASS_INDEPENDENT_EXACT_SPATIAL_ROOT_AND_STRICT_LOCAL_MINIMUM"
+}

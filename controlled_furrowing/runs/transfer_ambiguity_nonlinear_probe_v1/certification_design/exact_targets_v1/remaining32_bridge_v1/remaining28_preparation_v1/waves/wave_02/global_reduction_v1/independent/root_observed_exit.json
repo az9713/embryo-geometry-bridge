@@ -1,0 +1,54 @@
+{
+  "status": "PASS_ROOT_OBSERVED_LATER_WAVE_INDEPENDENT_GLOBAL_EXIT",
+  "mode": "independent",
+  "wave_id": "wave_02",
+  "pid": 17168,
+  "unified_exec_session": 46668,
+  "unified_exec_final_chunk_id": "cb560c",
+  "observed_exit_code": 0,
+  "started_sha256": "9077551169949d9285009166d659dbf0bc1f2be0974a053fb373cf5ade08e9c9",
+  "terminal_sha256": "d38aa5e363088bccf7e41ca39246cbe276c6df49f7d122a0bec2ce2371e6717b",
+  "results_sha256": "1a2a785c5bceaf4d301295162747a63cfec4c4da235ba709a46c8e383d04b411",
+  "sha256": {
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/started.json": "9077551169949d9285009166d659dbf0bc1f2be0974a053fb373cf5ade08e9c9",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/terminal.json": "d38aa5e363088bccf7e41ca39246cbe276c6df49f7d122a0bec2ce2371e6717b",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/results.json": "1a2a785c5bceaf4d301295162747a63cfec4c4da235ba709a46c8e383d04b411",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/max_contrast_change_small_08/operands.json": "12b95e8caf0ada541545a0ccc4d5f3f6423f20da48fe06eb1696d180168452b6",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/max_contrast_change_small_08/results.json": "6f00be64bd6e6e8e59920c0a116703770af2f6395644da676c1b42eb23be70c3",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/max_contrast_change_small_09/operands.json": "2d67f58ba6864d1582d57d2362fd131f8a0cede2088e3797c70c570cabfeae32",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/max_contrast_change_small_09/results.json": "d8762ba6bf7dc52a00515e3ba4154ed92098d3a7047e916dde3ebe8eb65a9ade",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/max_negative_contrast_change_small_08/operands.json": "7a83b5aad024edcbeb7d76c62965f13ed7389816c1f41d3ce06152e14b7a338b",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/max_negative_contrast_change_small_08/results.json": "dfc653a65e62a15893cb77a5cb91e097f221e4fcc4e0720643684d23869ecbed",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/max_negative_contrast_change_small_09/operands.json": "c2a5fcdd3f6613622789eed23eea0ced1e73e70b53967a215f520b3b5de5abea",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/global_reduction_v1/independent/max_negative_contrast_change_small_09/results.json": "7f66c6c7772213be588e7b1093d92584412539702af09f455709e59d823c0811"
+  },
+  "root_scalar_readback": [
+    {
+      "case_id": "max_contrast_change_small_08",
+      "z_upper": 0.2958537355117202,
+      "posterior": 3.1922364828978095e-11,
+      "physical_nodal_error_um": 1.0694066312084129e-09
+    },
+    {
+      "case_id": "max_contrast_change_small_09",
+      "z_upper": 0.2979661810561092,
+      "posterior": 3.1437697931757424e-11,
+      "physical_nodal_error_um": 1.0531703046798296e-09
+    },
+    {
+      "case_id": "max_negative_contrast_change_small_08",
+      "z_upper": 0.2831238213291971,
+      "posterior": 2.959673381886117e-11,
+      "physical_nodal_error_um": 9.91497992369496e-10
+    },
+    {
+      "case_id": "max_negative_contrast_change_small_09",
+      "z_upper": 0.2851711116728593,
+      "posterior": 2.9796229232247337e-11,
+      "physical_nodal_error_um": 9.98181016076387e-10
+    }
+  ],
+  "direct_root_tool_observation": true,
+  "all672_local_hull_links_rehashed": true,
+  "full_five_gate_complete": false
+}

@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "checks": {
+    "full_root_section_visible": true,
+    "one_old_field_scope": true,
+    "independent_reconstruction_visible": true,
+    "no_biological_precision_claim": true,
+    "native_image_embedded": true,
+    "native_image_hash_bound": true,
+    "original_goal_incomplete": true
+  },
+  "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+  "upload": {
+    "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+    "reference": "library-file:fde1_bGliZmlsZV9uejBHYTNCNzBEcHpBVjZVTEQxODJR_FileDrive_d69130b799448191b036b648f75c6861",
+    "file_name": "algebraic_root_certificate-b310d29e521f43dc9bd0e52effadce33.png",
+    "mime_type": "image/png",
+    "byte_size": 114565,
+    "sha256": "3600c37e3a868fc803a9fb15958cbd74faeb382020486ddb751735b12083ad1c",
+    "file_access_confirmed": true,
+    "is_image": true,
+    "markdown": "![Validated local root — failed larger balls retained](library-file:fde1_bGliZmlsZV9uejBHYTNCNzBEcHpBVjZVTEQxODJR_FileDrive_d69130b799448191b036b648f75c6861)",
+    "inserted": false,
+    "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+  },
+  "edit": {
+    "new_sequence": 11,
+    "through_sequence": 11,
+    "operation_results": [
+      {
+        "operation_index": 0,
+        "preceding_block_id": "c354c19d-1c24-4509-8405-945ed48235cc",
+        "created_block_ids": [
+          "30d5c9c8-333d-47f8-ac81-4eddd203695a",
+          "b0ec2f4c-c386-426a-b79a-0c15d6abbc44",
+          "8d3ba482-e72a-4d06-a76d-7519290cc3e9",
+          "43ebf67a-c91e-41a2-9878-a986e4cd30a4",
+          "92269a5b-3c7f-4623-88ad-a529a2c41a95",
+          "c354c19d-1c24-4509-8405-945ed48235cc",
+          "0305896e-0d7b-4265-b094-a5784ad53dd5"
+        ],
+        "continuation_position": {
+          "block_id": "0305896e-0d7b-4265-b094-a5784ad53dd5",
+          "relative_position_base64": "APXploIMrhRB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "30d5c9c8-333d-47f8-ac81-4eddd203695a",
+            "hash": "cd5482e95bcf2712e8e99c314492b25012298f2d2712c1943024a04343fc8be7"
+          },
+          {
+            "block_id": "b0ec2f4c-c386-426a-b79a-0c15d6abbc44",
+            "hash": "de11f957642b6b9002976bf85ac3bc1993ee959c2be753d054102212ef262d29"
+          },
+          {
+            "block_id": "8d3ba482-e72a-4d06-a76d-7519290cc3e9",
+            "hash": "502daad3eab152e9d00b0689ad59389e5a094fa4aafb5db79352140e00ebb9d0"
+          },
+          {
+            "block_id": "43ebf67a-c91e-41a2-9878-a986e4cd30a4",
+            "hash": "4216da9a44b6c6949aa6bcd85aabd253c0da58c08e0f3727ffde023b6db42507"
+          },
+          {
+            "block_id": "92269a5b-3c7f-4623-88ad-a529a2c41a95",
+            "hash": "354527930cf7fc82ab329f100047492c65c2b69de963670bb0380bd23df4f18e"
+          },
+          {
+            "block_id": "c354c19d-1c24-4509-8405-945ed48235cc",
+            "hash": "ca30bf9555840911fc6ace4658c51e803922cc96230824b5d3fe07759615b277"
+          },
+          {
+            "block_id": "0305896e-0d7b-4265-b094-a5784ad53dd5",
+            "hash": "2059ce794240328f6b99da6cd8c7a2c17dc38ea87c25f37ec0be366c203270e1"
+          }
+        ]
+      }
+    ]
+  },
+  "readback_image_sha256": "3600c37e3a868fc803a9fb15958cbd74faeb382020486ddb751735b12083ad1c",
+  "scope": "Verified project Space proof summary, exact target/scope and native figure persistence; no overall completion/publication."
+}

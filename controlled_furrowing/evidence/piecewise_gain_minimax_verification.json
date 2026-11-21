@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": {
+    "analytic_two_record_linear": true,
+    "all_channels_affect_exact_optimum": true,
+    "plateau_smallest_gain_tiebreak": true,
+    "boundary_is_flagged": true,
+    "exact_certificate_replay_a": true,
+    "exact_certificate_replay_b": true,
+    "exact_certificate_replay_c": true,
+    "exact_certificate_replay_d": true,
+    "invalid_0": true,
+    "invalid_1": true,
+    "invalid_2": true,
+    "invalid_3": true
+  },
+  "source_sha256": "3d803c3b9a39095707633bf83989fdfab7ce7ca963c81e3dffca11ff7e145a2e",
+  "scope": "Exact surrogate optimization and certificate replay; not nonlinear physical inference."
+}

@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "checks": {
+    "exact_simplex_sum": true,
+    "exact_positive_mu_kappa": true,
+    "exact_scale_invariance": true,
+    "exact_ratio_inverse": true,
+    "physical_to_solver_expected": true,
+    "height_changes_geometry": true,
+    "height_does_not_change_fixed_unit_surface_material": true,
+    "height_normalized_ratio_is_not_constant_material": true,
+    "mapped_shape_scale_invariance_0.03125": true,
+    "mapped_shape_scale_invariance_17.0": true,
+    "mapped_shape_scale_invariance_1000000.0": true,
+    "physical_domain_trial_penalty_inactive": true,
+    "raw_energy_scales_0.125": true,
+    "normalized_objective_invariant_0.125": true,
+    "normalized_gradient_invariant_0.125": true,
+    "raw_energy_scales_8.0": true,
+    "normalized_objective_invariant_8.0": true,
+    "normalized_gradient_invariant_8.0": true,
+    "invalid_input_0": true,
+    "invalid_input_1": true,
+    "invalid_input_2": true,
+    "invalid_input_3": true,
+    "invalid_input_4": true,
+    "invalid_input_5": true,
+    "invalid_input_6": true,
+    "invalid_input_7": true,
+    "invalid_input_8": true,
+    "invalid_input_9": true,
+    "invalid_input_10": true
+  },
+  "exact_example_quotient": {
+    "mu": "10/50113",
+    "kappa": "50000/50113",
+    "Ka_over_L0": "2/50113",
+    "Kb_over_L0": "20/50113",
+    "Ta_over_L0": "1/50113",
+    "Tb_over_L0": "20/50113",
+    "gain": "60/50113"
+  },
+  "kernel_scaling_rows": [
+    {
+      "scale": 0.125,
+      "raw_energy_abs_error": 0.0,
+      "normalized_energy_abs_error": 0.0,
+      "gradient_linf_error": 0.0
+    },
+    {
+      "scale": 8.0,
+      "raw_energy_abs_error": 0.0,
+      "normalized_energy_abs_error": 0.0,
+      "gradient_linf_error": 0.0
+    }
+  ],
+  "source_hashes": {
+    "physical_parameter_domain.py": "8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4",
+    "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+  },
+  "scope": "Force-scale quotient and physical-unit mapping only; no biological inference, uncertainty law, identified-set propagation or novelty claim."
+}

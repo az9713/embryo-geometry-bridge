@@ -1,0 +1,269 @@
+{
+  "status": "COMPLETE_BOUNDED_CLAIM_AUDIT; candidateunproved; originalityunresolved",
+  "audit_utc": "2026-11-19T10:51:15.773177+00:00",
+  "scope": "Read-only source/literature audit; no numericalfits/protocoledits/largeroutcomeinspection/contact",
+  "executed_web_queries": [
+    "optogenetic tissue mechanics parameter identifiability optimal experimental design active epithelial inverse model",
+    "robust optimal experimental design set membership parameter uncertainty model discrimination nonlinear mechanics",
+    "epithelial mechanics inverse problem nonidentifiability optogenetic perturbations distinguish parameters",
+    "\"optogenetic\" \"identifiability\" mechanics",
+    "\"optogenetic\" \"inverse\" \"mechanical\" parameter inference tissue",
+    "\"active epithelial\" \"identifiability\"",
+    "epithelial inverse mechanics identifiability force inference multiple experiments stress scale optogenetic",
+    "inverse finite elasticity parameter non uniqueness different loading conditions experimental design tissue mechanics primary paper",
+    "\"Theory of mechanochemical patterning and optimal migration in cell monolayers\" PMC authors",
+    "\"Identifiability of Tissue Material Parameters from Uniaxial Tests using Multi-start Optimization\" authors",
+    "\"Robust Optimal Design of Experiments for Model Discrimination Using an Interactive Software Tool\" authors doi",
+    "\"Theory of mechanochemical patterning\" \"PMC\"",
+    "\"Theory of mechanochemical patterning\" pdf Boocock",
+    "\"Identifiability of soft tissue constitutive parameters\" \"36801779\" additional deformation",
+    "site:research-explorer.ista.ac.at \"Theory of mechanochemical patterning and optimal migration\"",
+    "site:pmc.ncbi.nlm.nih.gov \"Optogenetic\" \"parameter\" \"identifiability\" mechanics relaxation",
+    "\"Predictive power of non-identifiable models\" doi authors",
+    "\"Theory of mechanochemical patterning and optimal migration\" \"identifiability\" \"\u03c4\"",
+    "\"10.1016/j.mbs.2026.109710\" \"Liu\" \"Maini\"",
+    "\"finite height\" \"epithelial\" \"identifiability\" optogenetic basal apical",
+    "\"epithelial\" \"parameter\" \"model discrimination\" optogenetic bending"
+  ],
+  "access_receipts": [
+    {
+      "url": "https://www.nature.com/articles/s41567-020-01037-7",
+      "observed_access_and_scope": "search indexed primary ExtendedData5\u20136 captions available; liveopen/find500 NatureIDPcookie redirect; nofullfinaltext"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41567-020-01037-7.pdf",
+      "observed_access_and_scope": "webopen500 NatureIDPredirect; noPDF"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41567-020-01037-7.epdf?sharing_token=",
+      "observed_access_and_scope": "webopen500 NatureIDPredirect; noPDF"
+    },
+    {
+      "url": "https://research-explorer.ista.ac.at/record/8602",
+      "observed_access_and_scope": "authorinstitutionrecord success; bibliographyandpreprintlink"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2020.05.15.096479v2.full",
+      "observed_access_and_scope": "webopen inaccessible"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3563641/",
+      "observed_access_and_scope": "indexedprimarytext available; liveopenrecaptcha"
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0055723",
+      "observed_access_and_scope": "SUCCESSfullprimaryHTML; Modeldiscrimination; Robustoptimaldesigns; Eq4\u20135"
+    },
+    {
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010209",
+      "observed_access_and_scope": "SUCCESSfullprimaryHTML; Discussionlimits; MaterialsandMethods"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8518191/",
+      "observed_access_and_scope": "indexedprimaryabstract/results screened; liveopenrecaptcha; notfulltextcomparison"
+    },
+    {
+      "url": "https://europepmc.org/articles/PMC8518191",
+      "observed_access_and_scope": "webopen inaccessible"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1742706121000076",
+      "observed_access_and_scope": "webopen403Forbidden"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36801779/",
+      "observed_access_and_scope": "indexedprimaryabstractsuccess; liveopenHHSfooteronly; nofullmethodclaims"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.automatica.2020.109036",
+      "observed_access_and_scope": "webopen inaccessible"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S000510982030234X",
+      "observed_access_and_scope": "indexedprimaryabstractsuccess; liveopen403Forbidden"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10333263/",
+      "observed_access_and_scope": "indexedprimaryabstract/results success; liveopenrecaptcha"
+    },
+    {
+      "url": "https://www.ippt.pan.pl/repository/open/o8439.pdf",
+      "observed_access_and_scope": "webopenTimeoutError; find400timeout; nofullPDF"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0025556426001008",
+      "observed_access_and_scope": "indexedprimarytextsuccess incl intro genericmultiple-fit-parameters\u2192discriminatinginput; liveopen403Forbidden"
+    },
+    {
+      "url": "https://ora.ox.ac.uk/bookmarks/uuid%3A1be2267b-8857-4e2b-bf16-5305ec9737b2",
+      "observed_access_and_scope": "authorinstitutionrepositorymetadatasuccess; Liu/Maini/Baker2026"
+    },
+    {
+      "url": "https://people.maths.ox.ac.uk/maini/PKM%20publications/563.pdf",
+      "observed_access_and_scope": "webopen/find400contentlength11727966 exceedstoolcap"
+    },
+    {
+      "url": "https://people.maths.ox.ac.uk/maini/PKM%20publications/563.pdf",
+      "observed_access_and_scope": "Pythonurllibmemoryreadlimit15MB optionalfetch stopped afterprolongedwalltime;25ssockettimeoutwasnottotaldeadline; noPDFsaved/nofullreadclaimed; exactownchildPIDidentifiedandstopped"
+    }
+  ],
+  "primary_comparisons": [
+    {
+      "work": "Kumar2024",
+      "doi": "10.1038/s41540-024-00375-z",
+      "access_coverage": "FULLlocalprimaryXML+8pagesupplement",
+      "locators": "Sec8\u20139; Fig4; SupplementaryTable1p1Control1/Control2; SupplementaryFig3p6",
+      "overlap_and_difference": "Concreteequifinalfiniteheight epithelialclusters, additionalcelllengthproposal; perturbedcontoursrefitted, notthisexacttransfercertificate"
+    },
+    {
+      "work": "Countryman2025",
+      "doi": "10.1038/s41467-025-62483-6",
+      "access_coverage": "FULLlocalprimaryXMLandsmallsource",
+      "locators": "Sec7\u20138; Fig4\u20135; Sec14\u201317",
+      "overlap_and_difference": "Geometrydependentbending andmechanism-discriminatingmicroperforation/ellipseexperimentsalreadyestablished"
+    },
+    {
+      "work": "Boocock2021",
+      "doi": "10.1038/s41567-020-01037-7",
+      "access_coverage": "PARTIALindexedprimarycaptions+authorrepository",
+      "locators": "ExtendedData5\u20136; Methods",
+      "overlap_and_difference": "Optogenetic/mechanicalcalibrationandexplicitrelaxationidentifiability; inplanemigration"
+    },
+    {
+      "work": "Ogita2022",
+      "doi": "10.1371/journal.pcbi.1010209",
+      "access_coverage": "FULLprimaryPLOSHTML",
+      "locators": "Discussionlimits; Bayesianforceinference; Parameterestimation",
+      "overlap_and_difference": "Relativescale,active/passiveambiguity, forcecalibrationandperturbationsalreadyrecognized"
+    },
+    {
+      "work": "OddesSolav2023",
+      "doi": "10.1016/j.jmbbm.2023.105708",
+      "access_coverage": "PARTIALprimaryabstractonly",
+      "locators": "Abstract",
+      "overlap_and_difference": "AxisymmetrichyperelasticinverseFE:force-depthinsufficient; fullfieldsurfacedisplacementimprovesidentification"
+    },
+    {
+      "work": "StegmaierSkandaLebiedz2013",
+      "doi": "10.1371/journal.pone.0055723",
+      "access_coverage": "FULLprimaryPLOSHTML",
+      "locators": "MethodsModeldiscrimination; RobustoptimaldesignsEq4\u20135",
+      "overlap_and_difference": "Robustmaxminexperimentdesignunderrivalparameteruncertainty established"
+    },
+    {
+      "work": "KarimshoushtariNovara2020",
+      "doi": "10.1016/j.automatica.2020.109036",
+      "access_coverage": "PARTIALprimaryabstractonly",
+      "locators": "Abstract",
+      "overlap_and_difference": "Setmembershipworstcaseradiusofinformation designestablished"
+    },
+    {
+      "work": "Grabowski2023",
+      "doi": "10.1038/s41598-023-37939-8",
+      "access_coverage": "PARTIALprimaryabstract/indexedresults",
+      "locators": "Abstract; indexedpredictionpitfalls",
+      "overlap_and_difference": "Signalingcascade/mechanicalanalogue canretainpredictions despiteparameterambiguity; parameterambiguityaloneinsufficient"
+    },
+    {
+      "work": "LiuMainiBaker2026",
+      "doi": "10.1016/j.mbs.2026.109710",
+      "access_coverage": "PARTIALindexedprimarypublishertext+authorrepositorymetadata",
+      "locators": "Intro genericmultiple-fittingparameters andnewdiscriminatingcontrolinput",
+      "overlap_and_difference": "Genericproposedrecipealreadyexplicit; fullPDFnotread"
+    }
+  ],
+  "local_source_hashes": [
+    {
+      "path": "PLAN.md",
+      "bytes": 2969,
+      "sha256": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500"
+    },
+    {
+      "path": "data/raw/primary.xml",
+      "bytes": 199537,
+      "sha256": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7"
+    },
+    {
+      "path": "data/derived/calibration_small_18um.csv",
+      "bytes": 3637,
+      "sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518"
+    },
+    {
+      "path": "data/derived/example_apical_basal_trajectories.csv",
+      "bytes": 6814,
+      "sha256": "5c17b08254bc810476d3ab727a25393e53ac752c2502f3d5054809170bd99102"
+    },
+    {
+      "path": "literature/inverse_morphogenesis_final.xml",
+      "bytes": 201037,
+      "sha256": "4b9aac08b72159eccdbd6acebf0f776b9ef87f0a79ff38bf7a454be4b5befcb8"
+    },
+    {
+      "path": "literature/inverse_final_s3.xml",
+      "bytes": 249154,
+      "sha256": "4f9f9c3c38b93e2d2a628618db08f9845399dd20900e9c7dfed4352b8917298f"
+    },
+    {
+      "path": "literature/inverse_supplement.pdf",
+      "bytes": 1609787,
+      "sha256": "4cf764a845863e13ce4e1e7b85ff22e6eb8e3d230727a621cb6226f94495b5fa"
+    },
+    {
+      "path": "evidence/calibration_uncertainty_bounds.json",
+      "bytes": 128982,
+      "sha256": "c095964c5c3489a4aa172c100c2d9968fea6c62f9ff199d973fa24aae9ab12dd"
+    }
+  ],
+  "small_observations": {
+    "distinctsource_records": 17,
+    "endpoint_summaries_per_record": 4,
+    "endpoint_scalar_constraints": 68,
+    "illustrative_trace_timepoints": 63,
+    "illustrative_traces": 3,
+    "illustrative_to_fullcohort_IDcrosswalk": "unverified; noarbitraryjoin"
+  },
+  "candidate_requirements": {
+    "same_fixed_mechanics_geometry_discrepancy_observationcontract": true,
+    "all_declared_small_observables": true,
+    "certified_membership_sufficient_test": "abs(Ohat-y)+numericalerror<=delta for everyrecordobservable",
+    "two_admissiblecompatible_witnesses_constructed_here": false,
+    "disjoint_larger_response_intervals_established_here": false,
+    "extra_observation_proven_attainably_separating_here": false,
+    "proposed_extra_observations": [
+      "uncroppedregisteredapicalbasalprofiles",
+      "smallpatchbasalradialareaexpansion",
+      "independentinitialAPDVsurfacegeometry"
+    ],
+    "extra_observation_separation_test": "abs(mhatplus-mhatminus)>enumplus+enumminus+2measurementerror+modeldiscrepancyplus+modeldiscrepancyminus",
+    "two_point_consequence": "Everyshared-data pointpredictionhasconditionalworstcaseerror>=halfcertifiedgap",
+    "fullidentifiedset_fromtwo_points": false,
+    "gaugeonly_pair_sufficient": false
+  },
+  "novelty": {
+    "generic_equifinality_anddiscriminatingexperiment": "alreadyestablished",
+    "exactfiniteheightallobservablecertifiedtransferclaim": "notestablishedhere; exactprioroverlapunresolved",
+    "no_exactmatch_is_proof_ofnovelty": false,
+    "newbiologicalprinciple_established": false,
+    "Gate3or5completedbyliteratureaudit": false
+  },
+  "local_doc_links": [
+    {
+      "label": "receipt",
+      "target": "../evidence/transfer_claim_audit.json",
+      "exists": true
+    },
+    {
+      "label": "compatibility floors",
+      "target": "CALIBRATION-UNCERTAINTY.md",
+      "exists": true
+    },
+    {
+      "label": "movie audit",
+      "target": "MOVIE-GEOMETRY-FEASIBILITY.md",
+      "exists": true
+    }
+  ],
+  "display_math_delimiters_balanced": true,
+  "document_sha256": "89de3144a927e8bdd81550a13597a97f29c881451d8b112ad86947cb274f3fe9",
+  "no_original_source_or_model_file_modified": true
+}

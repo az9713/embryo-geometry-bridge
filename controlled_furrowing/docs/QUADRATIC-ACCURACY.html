@@ -1,0 +1,141 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QUADRATIC-ACCURACY</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Restoring pointwise volume control and testing a forced continuum solution</h1>
+<p>The projected-pressure experiment exposed an important failure: small resolved pressure residuals and small total volume change can coexist with large local volume changes. The separate P2 penalty model restores the original pointwise constitutive energy while retaining quadratic displacement, full finite-height coupling, true surface geometry and optional baseline tensions. Neither earlier solver is modified.</p>
+<p><code>scripts/axisymmetric_quadratic.py</code> is this separate model. It makes no claim that P2 penalty elements are locking-free or that one benchmark certifies biological predictions. Its forced manufactured experiment goes beyond interpolation: the solver is given a known body force and approximate Dirichlet data, and its computed equilibrium is compared with an explicitly known, coefficient-independent nonlinear continuum solution.</p>
+<h2>The missing volume modes</h2>
+<p>For the positive quadrature inner product used in <a href="MIXED-MECHANICS.html">the mixed formulation</a>, set <span class="math" data-tex="\ell=\log J"></span> and let <span class="math" data-tex="\Pi_h\ell"></span> be its continuous P1 projection. Orthogonality gives</p>
+<div class="math display" data-tex="
+ \frac{\lambda}{2}\&#124;\ell\&#124;_Q^2
+ =\frac{\lambda}{2}\&#124;\Pi_h\ell\&#124;_Q^2
+ +\frac{\lambda}{2}\&#124;\ell-\Pi_h\ell\&#124;_Q^2.
+"></div>
+
+<p>The projected model retained only the first term. The new module adds the nonnegative second term, thereby restoring exactly the full pointwise penalty energy at the same quadrature points:</p>
+<div class="math display" data-tex="
+ E_v=\int_{\Omega_0}\frac{\lambda}{2}(\log J)^2\,dV_0.
+"></div>
+
+<p>This is a P2 displacement penalty method, not a claim that a continuous P1 pressure constraint controls every local volume mode. The governing volumetric stress coefficient is now <span class="math" data-tex="p_{\rm vol}=\lambda\log J"></span> at quadrature points. The projected pressure coefficients remain separately labeled auxiliary diagnostics. As before, the inherited parameter name <code>bulk</code> denotes <span class="math" data-tex="\lambda"></span>, not the infinitesimal bulk modulus <span class="math" data-tex="\lambda+2\mu/3"></span>.</p>
+<p>The numerical identity between the added kernel energy and the explicitly integrated projection residual agrees to <span class="math" data-tex="1.08\times10^{-19}"></span> in the synthetic check. The full objective's AD/finite-difference derivative relative error is <span class="math" data-tex="3.87\times10^{-8}"></span>. Zero-dose and activated reference checks pass. Protocol, source/parent hashes and values are retained in <code>evidence/quadratic_protocol.json</code> and <code>quadratic_verification.json</code>.</p>
+<h2>A nonlinear manufactured equilibrium with exactly J=1</h2>
+<p>On the reference cylinder <span class="math" data-tex="0\le r\le R_o"></span>, <span class="math" data-tex="0\le z\le H"></span>, prescribe</p>
+<div class="math display" data-tex="
+ R(r,z)=r e^{\epsilon z},\qquad
+ Z(r,z)=\frac{1-e^{-2\epsilon z}}{2\epsilon},\qquad\epsilon\ne0.
+"></div>
+
+<p>Write <span class="math" data-tex="A=e^{\epsilon z}"></span>, <span class="math" data-tex="B=e^{-2\epsilon z}"></span>. Its full axisymmetric deformation gradient is</p>
+<div class="math display" data-tex="
+ F=\begin{pmatrix}A&amp;0&amp;\epsilon rA\\0&amp;A&amp;0\\0&amp;0&amp;B\end{pmatrix},\qquad J=A^2B=1.
+"></div>
+
+<p>The volumetric stress vanishes for every <span class="math" data-tex="\lambda&gt;0"></span>. With no activation and no surface energies, the exact first Piola stress is <span class="math" data-tex="P=\mu(F-F^{-T})"></span>, with nonzero cylindrical components</p>
+<div class="math display" data-tex="
+ P_{rr}=P_{\theta\theta}=\mu(A-A^{-1}),\quad
+ P_{rz}=\mu\epsilon rA,\quad
+ P_{zr}=\mu\epsilon r/B,\quad
+ P_{zz}=\mu(B-B^{-1}).
+"></div>
+
+<p>The reference cylindrical divergence has components</p>
+<div class="math display" data-tex="
+ (\operatorname{Div}P)_r=\partial_rP_{rr}+\partial_zP_{rz}
+                          +(P_{rr}-P_{\theta\theta})/r,
+ \qquad
+ (\operatorname{Div}P)_z=\partial_rP_{zr}+\partial_zP_{zz}+P_{zr}/r.
+"></div>
+
+<p>Substitution gives the independently derived body force</p>
+<div class="math display" data-tex="
+ f_r=-\mu\epsilon^2r e^{\epsilon z},\qquad
+ f_z=2\mu\epsilon e^{-2\epsilon z},\qquad
+ -\operatorname{Div}P=f.
+"></div>
+
+<p>In the vertical equation the two <span class="math" data-tex="\mu\epsilon/B"></span> terms cancel the <span class="math" data-tex="-2\mu\epsilon/B"></span> term. Omitting the cylindrical <span class="math" data-tex="P_{zr}/r"></span> contribution would give an incorrect force.</p>
+<p>The solver includes the conservative force potential <span class="math" data-tex="-\int_{\Omega_0}f\cdot y\,dV_0"></span>. Its first variation is <span class="math" data-tex="-\int f\cdot v\,dV_0"></span>, so the weak equilibrium is <span class="math" data-tex="\int P:\delta F[v]\,dV_0=\int f\cdot v\,dV_0"></span>, with Dirichlet boundary variations zero. Every boundary displacement node is prescribed by the exact map. Along an edge the numerical Dirichlet curve is its P2 interpolant, so boundary approximation error remains part of the measured discretization error.</p>
+<p>Crucially this is the same exact continuum solution and the same force for all tested volume coefficients. Changes with <span class="math" data-tex="\lambda"></span> cannot be explained by a changing manufactured continuum deformation. They expose numerical coefficient sensitivity in this benchmark. Stationarity of the exact continuum solution is proved; global uniqueness or global minimality is not asserted.</p>
+<h2>Predeclared numerical test</h2>
+<p>The retained protocol <code>evidence/quadratic_manufactured_protocol.json</code> fixes <span class="math" data-tex="\epsilon=0.2"></span>, <span class="math" data-tex="\mu=H=1"></span>, <span class="math" data-tex="R_o=3"></span>, meshes 6×3, 8×4 and 12×6, and <span class="math" data-tex="\lambda\in\{5,50,500\}"></span>. Activation, area elasticity and baseline surface tensions are all zero. The starting displacement is the analytic P2 nodal interpolant. Thus the test has no biological data, inferred constitutive parameter or post hoc fit.</p>
+<p>For numerical displacement <span class="math" data-tex="y_h"></span>, errors use the reference volume weight <span class="math" data-tex="2\pi r"></span>:</p>
+<div class="math display" data-tex="
+ e_{L^2}=\left(V_0^{-1}\int&#124;y_h-y_*&#124;^2dV_0\right)^{1/2},
+"></div>
+
+<div class="math display" data-tex="
+ e_{H^1}=\left(V_0^{-1}\int\left[&#124;F_{m,h}-F_{m,*}&#124;^2
+              +&#124;R_h/r-e^{\epsilon z}&#124;^2\right]dV_0\right)^{1/2}.
+"></div>
+
+<p>The second expression includes the hoop gradient, giving the complete axisymmetric three-dimensional displacement-gradient error. The records also report RMS <span class="math" data-tex="J-1"></span> and maximum sampled <span class="math" data-tex="&#124;J-1&#124;"></span>. Errors are evaluated by the stated degree-4 quadrature, not rigorously enclosed continuous norms.</p>
+<p>All nine solves passed the normalized nodal force threshold <span class="math" data-tex="10^{-7}"></span> and the built-in sufficient positive-orientation test. The H1 RMS errors are:</p>
+<table>
+<thead>
+<tr>
+<th>Mesh</th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda=5"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda=50"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda=500"></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6×3</td>
+<td style="text-align: right;">0.002219</td>
+<td style="text-align: right;">0.002907</td>
+<td style="text-align: right;">0.008260</td>
+</tr>
+<tr>
+<td>8×4</td>
+<td style="text-align: right;">0.0006513</td>
+<td style="text-align: right;">0.0007484</td>
+<td style="text-align: right;">0.001760</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">0.0002821</td>
+<td style="text-align: right;">0.0003134</td>
+<td style="text-align: right;">0.0008006</td>
+</tr>
+</tbody>
+</table>
+<p>The displacement L2 RMS errors are:</p>
+<table>
+<thead>
+<tr>
+<th>Mesh</th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda=5"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda=50"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="\lambda=500"></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6×3</td>
+<td style="text-align: right;">0.0001768</td>
+<td style="text-align: right;">0.0002157</td>
+<td style="text-align: right;">0.0005859</td>
+</tr>
+<tr>
+<td>8×4</td>
+<td style="text-align: right;">0.00002427</td>
+<td style="text-align: right;">0.00002882</td>
+<td style="text-align: right;">0.00008493</td>
+</tr>
+<tr>
+<td>12×6</td>
+<td style="text-align: right;">0.000006954</td>
+<td style="text-align: right;">0.000007990</td>
+<td style="text-align: right;">0.00002489</td>
+</tr>
+</tbody>
+</table>
+<p>Refinement improves every tested coefficient, but higher volume penalty still raises displacement/gradient error. This is evidence of coefficient sensitivity consistent with penalty locking; it is not a uniform-in-<span class="math" data-tex="\lambda"></span> accuracy proof. Fine-mesh <span class="math" data-tex="\lambda=500"></span> sampled J lies approximately between 0.998272 and 1.000305; its conservative Bernstein lower bound is about 0.956732. The latter is not an attained compression and must not be plotted as such.</p>
+<p>Complete initial-interpolation and solved errors, forces, bounds, runtimes, fields, protocol and source hash are in <code>evidence/quadratic_manufactured.json</code> and <code>runs/quadratic_checks/manufactured/</code>. Numerical outputs remain reproducible with:</p>
+<pre><code class="language-powershell">python -B controlled_furrowing/scripts/axisymmetric_quadratic.py
+python -B controlled_furrowing/scripts/axisymmetric_quadratic.py --manufactured
+</code></pre>
+<h2>What this establishes and what remains</h2>
+<p>The test verifies a solved nonlinear equilibrium against a known continuum solution, independently of the larger-region experiment. It distinguishes implementation error, finite-element approximation and volume-penalty sensitivity more effectively than checking conservation or replaying one optimized figure. These methods and the manufactured solution construction are standard numerical verification, not a new biological mechanism or a novelty claim.</p>
+<p>It does not establish an a posteriori continuum error bound, asymptotic convergence order, locking-free behavior, realistic material parameters or validated transient bending. Quadrature convergence and independent interval-enclosed residual/error estimates would be stronger numerical receipts. Biological prediction still requires the separate small-only calibration, geometry/constitutive uncertainty, independently defined observation/time map and withheld larger-region scoring.</p>
+<p><img alt="Forced manufactured accuracy and remaining penalty sensitivity" src="../../omitted-asset.svg" /></p>
+<p>The visual compares solved equilibria with the same exact continuum map, rather than comparing only interpolated functions. Figure/input hashes are retained in <code>evidence/quadratic_visual.json</code>.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

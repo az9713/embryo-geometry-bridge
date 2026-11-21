@@ -1,0 +1,15 @@
+# Later-wave exact-spatial observer transfer
+
+This adapter applies the original stored observer contract to one of the seven remaining waves. Preparation authenticates all 28 archived fields, exact target trials, selected columns, and archive comparison inputs. It opens no later global numerical output. The first-wave module supplies its reviewed pure geometry, graph, and residual routines. The later-wave global source and case schema supply the only spatial root authority.
+
+For each wave the externally observed independent reducer must already have finished genuinely with status `PASS_ROOT_OBSERVED_LATER_WAVE_INDEPENDENT_GLOBAL_EXIT` in `waves/<wave>/global_reduction_v1/independent/root_observed_exit.json`. Its fields are `mode: independent`, `wave_id`, literal positive `pid`, literal `observed_exit_code: 0`, and the genuine `unified_exec_session` or synchronous `unified_exec_chunk_id`. It carries `started_sha256`, `terminal_sha256`, `results_sha256`, and an exact `sha256` map with 11 study-relative files. The expected files are the three batch metadata files and each case's operands and results. Operands are rehashed as bytes. The generic source phase and separately observed producer closure are also checked.
+
+The reviewed source gate is `independent_source_review/receipt.json` with status `PASS_INDEPENDENT_LATER_WAVE_OBSERVER_APPLICATION_SOURCE`. It contains nonempty literal-true `checks`, ordered `approved_waves` from wave_02 to wave_08, and `new_spatial_integrations_authorized: false`. The bound digests are `source_sha256`, `protocol_sha256`, `preflight_sha256`, `later_waves_release_sha256`, `profiles_sha256`, `global_source_sha256`, and `global_source_review_sha256`.
+
+```text
+python -B <observer_application_v1>/apply.py run --wave <wave> --protocol-sha256 <sha> --preflight-sha256 <sha> --review-sha256 <sha> --observed-global-sha256 <sha>
+```
+
+The code rederives the exact strict self-map and the posterior \(e=\eta/(1-z)\). The coordinate radius in micrometres is \(33.5(\sigma+e+\xi)\), with the same archived shift \(\sigma\) and original binary addition gap \(\xi\). Each face uses the archived P2 graph and its fixed axis and rim coordinates. The two graph errors add for thickness. Taking maxima and fixed-current-radius averages, with normalized line or disk weights, preserves the uniform bound. All variants use the frozen ROI, reference surfaces, stored intervals, samples, and allowance. The exact residual enclosure is classified inside if its upper endpoint is at most the allowance, outside if its lower endpoint is strictly larger, and unresolved otherwise.
+
+The write-once actual output is `waves/<wave>/observer_application_v1/actual`. It retains 16 primary and 48 alternative rows. A case without a certified root, or without a strict radial graph guard, retains its archive values with an explicit blocked standing and no spatial interval. This process requires separate actual readback and makes no new calibration fit, loading, continuum, or experimental claim.

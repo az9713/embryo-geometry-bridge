@@ -1,0 +1,10 @@
+{
+ "date":"2026-11-19",
+ "queries":["Coleman More 1983 estimation sparse Jacobian matrices graph coloring problems SIAM","Gebremedhin Manne Pothen What color is your Jacobian 2005 pdf Purdue"],
+ "primary_sources":[
+  {"title":"Estimation of Sparse Jacobian Matrices and Graph Coloring Problems","authors":"Thomas F. Coleman and Jorge J. More","year":1983,"doi":"10.1137/0720013","url":"https://epubs.siam.org/doi/abs/10.1137/0720013?journalCode=sjnaam","access":"Publisher primary abstract/metadata","relevance":"Established coloring-based compression of sparse derivative evaluations."},
+  {"title":"Estimation of Sparse Hessian Matrices and Graph Coloring Problems","authors":"Thomas F. Coleman and Jorge J. More","year":1982,"url":"https://ecommons.cornell.edu/entities/publication/6c14f4fa-13f2-450b-b19d-362ef1e2e9a5","access":"Primary university technical-report record and abstract","relevance":"Matrix recovery from a small set of matrix-vector products with graph-coloring structure; not a new concept in this project."},
+  {"title":"What Color Is Your Jacobian? Graph Coloring for Computing Derivatives","authors":"Assefaw Hadish Gebremedhin, Fredrik Manne, Alex Pothen","year":2005,"doi":"10.1137/S0036144504444711","url":"https://cscapes.cs.purdue.edu/coloringpage/abstracts/sirev.pdf","access":"Primary author-hosted full PDF opened; distance-2 coloring/structural orthogonality sections inspected","relevance":"Established derivative coloring framework; our distance-2 row collision rule is conservative direct recovery, not a new derivative method."}
+ ],
+ "classification":"Standard sparse automatic differentiation and damped Newton engineering. No novel mathematical or biological concept claimed."
+}

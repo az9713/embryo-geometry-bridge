@@ -1,0 +1,78 @@
+{
+  "status": "PASS_DESIGN_AND_SYNTHETIC_KINEMATICS",
+  "scope": "Independent observation-design proof and nonlinear axisym kinematics; no biological fitting or larger-label scoring",
+  "source_sha256": "69ba0219255a72cc8a407a6eb2c7b5f6aa98c73ac8112979e5627aa245d5568a",
+  "contract_sha256": "8873a94562cd12732c42cab3b25de62c3679d4b6a283279c9e24b8d5fe318d05",
+  "checks": {
+    "P1_material_volume_vs_revolved_current_triangles": true,
+    "3D_cross_product_surface_Jacobian": true,
+    "axial_translation_objectivity": true,
+    "common_force_scale_energy": true,
+    "contractile_fibre_sign_and_quadratic_stretch": true,
+    "positive_J_test_configuration": true
+  },
+  "values": {
+    "independent_revolved_volume": 28.03871443328891,
+    "solver_integrated_volume": 28.038714433288888,
+    "maximum_surface_Jacobian_difference": 2.220446049250313e-16,
+    "axial_translation_energy_difference": 4.440892098500626e-16,
+    "common_scale_energy_difference": 0.0,
+    "contractile_test_active_energy": 0.018553844088241653,
+    "exact_expected_active_energy": 0.01855384408824165
+  },
+  "conditional_observer": {
+    "coordinate": "positivez apical/outward; body b(r)<z<a(r)",
+    "L": "max(b(0),b(Rout),infinterior a)",
+    "U": "min(a(0),a(Rout))",
+    "existence": "open sliceinterval iffU>L",
+    "unknown_plane_positive_set": [
+      0,
+      1
+    ],
+    "unknown_plane_exact_absence_set": [
+      0
+    ],
+    "continuum_error_condition": "Only genuineuniformsurfaceboundepsilon supports gaperror2epsilon; zero gapnotrobust",
+    "time_condition": "Static equilibriumdoesnotexcludeunmodeledtransientphenotype"
+  },
+  "family_design": {
+    "mu": 1,
+    "logJ_penalty_ratio": 50,
+    "apical_area_ratio": 0.2,
+    "basal_area_ratios": [
+      0.2,
+      2,
+      20
+    ],
+    "height_primary_um": 33.5,
+    "authority": "SPATIAL-PROTOCOL.json version1",
+    "scope": "Finiteconditionalmaterialscenarios, notidentifiedset",
+    "unexecuted_previous_proposal_superseded": [
+      0,
+      1,
+      10
+    ]
+  },
+  "review_findings": [
+    "Fmer,hoopR/r,J,trC andsurfaceareaJacobianmatch axisymmetric3Dkinematics",
+    "P1J nodalratioextrema proofappliesphysicalpositivedetmerstates; invertedtrialsmustflipmin/maxfornegativefactor",
+    "No globalinjectivity/contact/curvedspecimenvalidation",
+    "Controlpotentialworkledgerisgauge-dependent mechanicalparameterbookkeeping, notATPormeasuredenergy",
+    "Nonlinearfinite-strain solves do notobey exactlinear gain-material calibrationconfounding; tangentlimitonly",
+    "Material-column shorteningproxyisnotautomatically sourcecurrent-spatial/timepeakmax",
+    "Zero observergap is notrobustcontinuumabsence; negativecertifiedmargin or derivativecontrol required."
+  ],
+  "original_PLAN_changed": false,
+  "authoritative_protocol_sha256": "860c2a23e90965a962cb163931813c3487810c9bf172b2a7b1e078114b28206b",
+  "latest_readonly_code_review": {
+    "sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "api_and_extrema_corrections_observed": [
+      "finite_parameter_validation",
+      "negative_meridionaldet_Jextremasign",
+      "free_displacement_return",
+      "strain_diagnostics"
+    ],
+    "note": "Original independent kinematics results retain their originalsource hash. Reviewed changes do notalteracceptedpositive-J energy formulas."
+  },
+  "zero_gap_instability_example": "Flatapicalh basal0 hasgap0; perturbapicalby\u2212delta*sin(pi*r/Rout)^2 givesgapdelta atarbitrarily smallLinfinitydistance."
+}

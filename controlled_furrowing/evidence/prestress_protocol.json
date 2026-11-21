@@ -1,0 +1,48 @@
+{
+  "scope": "Synthetic flat-reference surface-tension extension, no outcome reads",
+  "parameters": {
+    "nr": 8,
+    "nz": 4,
+    "height": 1.0,
+    "outer_radius": 3.0,
+    "patch_radius": 0.28,
+    "activation_z_min": 0.22,
+    "activation_z_max": 0.84,
+    "mu": 1.0,
+    "bulk": 50.0,
+    "basal_area_modulus": 2.0,
+    "apical_area_modulus": 0.2,
+    "reference_curvature": 0.0,
+    "quadrature": 2,
+    "surface_quadrature": 3,
+    "radial_inner_cells": 0,
+    "basal_surface_tension": 2.0,
+    "apical_surface_tension": 0.2
+  },
+  "thresholds": {
+    "force_linf": 1e-07,
+    "zero_displacement": 1e-08,
+    "reference_force": 1e-12,
+    "AD_relative_error": 2e-05,
+    "scale_displacement": 2e-05,
+    "warm_cold_displacement": 2e-05,
+    "work_balance": 1e-10,
+    "area_energy_relative": 1e-12
+  },
+  "test_gains": [
+    0.2,
+    1.0,
+    4.0
+  ],
+  "basal_tension_scenarios": [
+    0.2,
+    2.0,
+    20.0
+  ],
+  "base_source_sha256_required": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+  "limitations": [
+    "No continuum mesh error certificate",
+    "No experimentally identified tension range",
+    "No prediction of transient peak without kinetics"
+  ]
+}

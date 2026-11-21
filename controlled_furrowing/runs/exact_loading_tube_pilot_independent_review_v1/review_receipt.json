@@ -1,0 +1,21 @@
+{
+  "status": "PASS_INDEPENDENT_COLD_LOADING_SLAB_IMPLEMENTABILITY_AND_JUNCTION_REVIEW",
+  "review_math_sha256": "f6cb3dd58ca24230eaca0d56e5dd8082e330d91b364fd493d14e6906a319edd4",
+  "source_readback_sha256": "c77b2446bb1e778617aa781947d9f21de1fd921b3ef9ef63a88d4b417ea0e993",
+  "source_readback_executable_sha256": "6aa864817912696f61eba7cbfe5cab7bbf593aba2549a982319b0882f9e839ea",
+  "source_readback_observed_exit_code": 0,
+  "source_readback_tool_chunk_id": "8b9875",
+  "same_law_crosswalk_sha256": "dbfb9871da2b384fcd57e44015a35bfeebbfccf25e23a6f45178f3aef488ff3c",
+  "negative_KL_independent_energy_sign_sha256": "84bbe79fac39fbf0ce72b45b9e0c18f76310cad981da004c5f0b5e2a7f6d1abf",
+  "check_scope": {
+    "current_existing_anchoring_and_active_energy_pack_verified": true,
+    "precise_proposed_secant_rectangle_uses_fixed_axes_and_exact_nominal_doses": true,
+    "fresh_box_body_trace_cache_analytic_derivative_premises_supported_by_explicit_lower_kernels": true,
+    "ordinary_singleton_file_authority_not_reused_for_widened_domain": true,
+    "exact_signed_quadratic_force_bounds_and_whole_u_I_contraction_rules": true,
+    "endpoint_and_shared_dose_posterior_inclusion_mandatory": true,
+    "cheaper_one_sided_same_old_cube_positive_slab_sufficient_rule": true
+  },
+  "new_geometry_AD_spatial_integrations_matrix_or_root_jobs": 0,
+  "computed_loading_slab_or_certified_path": false
+}

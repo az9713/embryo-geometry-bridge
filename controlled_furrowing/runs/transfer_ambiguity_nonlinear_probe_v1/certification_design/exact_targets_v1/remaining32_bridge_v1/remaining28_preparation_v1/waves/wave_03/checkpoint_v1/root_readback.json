@@ -1,0 +1,18 @@
+{
+  "status": "PASS_ROOT_WAVE03_REPORT_HASHES_AND_EXACT_CSVS",
+  "source_sha256": "1d2f3e83c1c73d0d17528930b31aa81fb1891e30795b2d946b1f343c094dcc06",
+  "build_receipt_sha256": "d5c0418863062609955e0735852ecb889e559d557bbf98d04164249d6d4e6370",
+  "browser_receipt_sha256": "b4d8a9c225cb3250803808762806e57ba4dc0e0a09674d7a1d931ba666149446",
+  "browser_root_observed_exit_code": 0,
+  "browser_root_observed_chunk": "8f94e7",
+  "build_root_observed_exit_code": 0,
+  "build_root_observed_chunk": "008c0f",
+  "input_hashes_rechecked": 79,
+  "outputs_rechecked": 9,
+  "root_csv_rows": 4,
+  "observer_csv_rows": 64,
+  "stress_csv_rows": 672,
+  "slab_csv_rows": 7,
+  "three_scientific_figures_visually_inspected": true,
+  "full_five_gate_complete": false
+}

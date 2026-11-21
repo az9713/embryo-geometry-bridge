@@ -1,0 +1,51 @@
+{
+  "status": "COMPLETE_INDEPENDENT_FIRST_WAVE_SIGNED_ENDPOINT_REPLAY",
+  "scope": "Independent exact endpoint scatter and outward positive/negative R split for all four spatial singleton hull targets.",
+  "source_sha256": "4682165bf59bd633092c042a7df619c9bc1ad272dc80d1755404c2999a65287f",
+  "protocol_sha256": "9ca811a3e7f9e35346dd28d040ff3f370599e014ce3df942c48d347f6bd2f24a",
+  "preflight_sha256": "90242d2cde1a81c075cf342f716cf8a229f45b5ce3f73778fdd9db6ade249d91",
+  "producer_root_terminal_admission_sha256": "4c56643bdf0c4fdedf5f15f9d51ce89964e3f346f868eddff7ae6a41d3513452",
+  "producer_reduction_input_admission_sha256": "62e6da0ba95c7470b05ffe347adf60846931b92cf13174ba84598de230575efa",
+  "pid": 20640,
+  "root_source_review_sha256": "12e14fb46070d40694c09f3b2a3d76492b1dc85659c7a61c17df6b617f6915e0",
+  "producer_observed_pid": 29204,
+  "case_results": [
+    {
+      "case_id": "max_contrast_change_small_01",
+      "native_file": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/max_contrast_change_small_01.json",
+      "native_sha256": "7ff0f27008da65ef3fa9871e9faa7d49c3cefd18c5d1e78587b490655e22772b",
+      "status": "PASS_INDEPENDENT_FIRST_WAVE_EXACT_SPATIAL_ROOT",
+      "strict_local_minimum": true,
+      "observer_state_budget_proved": true
+    },
+    {
+      "case_id": "max_contrast_change_small_13",
+      "native_file": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/max_contrast_change_small_13.json",
+      "native_sha256": "04bff96a76b22ae4e3ae66dbb73a0456d285fe315c93f418aa7c79bd9d4f2f23",
+      "status": "PASS_INDEPENDENT_FIRST_WAVE_EXACT_SPATIAL_ROOT",
+      "strict_local_minimum": true,
+      "observer_state_budget_proved": true
+    },
+    {
+      "case_id": "max_negative_contrast_change_small_01",
+      "native_file": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_01.json",
+      "native_sha256": "5c7640c38570cdbeaf024ab294fc72930461bd772d589c18a06ece9df44dead6",
+      "status": "PASS_INDEPENDENT_FIRST_WAVE_EXACT_SPATIAL_ROOT",
+      "strict_local_minimum": true,
+      "observer_state_budget_proved": true
+    },
+    {
+      "case_id": "max_negative_contrast_change_small_16",
+      "native_file": "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_16.json",
+      "native_sha256": "277e44690660400b559978c76621b73bf8f62627e2203bf366d630ff70d34fda",
+      "status": "PASS_INDEPENDENT_FIRST_WAVE_EXACT_SPATIAL_ROOT",
+      "strict_local_minimum": true,
+      "observer_state_budget_proved": true
+    }
+  ],
+  "exact_spatial_roots": 4,
+  "strict_local_minima": 4,
+  "new_spatial_integrations_H_moments_AD_or_solves": 0,
+  "archived_observers_replaced": false,
+  "full_five_gate_complete": false
+}

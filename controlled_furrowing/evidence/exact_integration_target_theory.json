@@ -1,0 +1,74 @@
+{
+  "status": "PASS_MATHEMATICAL_TARGET_AND_SMALL_DESIGN_TESTS_ONLY",
+  "recorded_utc": "2026-11-19T17:44:55.676310+00:00",
+  "checks": {
+    "all69_small_symbolic_and_source_checks_PASS": true,
+    "verification_current_theory_and_source_hashes": true,
+    "intrinsic_auxiliary_node_witness_current": true,
+    "independent_design_source_audit_PASS": true,
+    "coherent_new_target_preserves_current_binary_nodal_coefficients": true,
+    "frozen_sigma_normalization_pi_and_cache_consistency_explicit": true,
+    "axis_edge_vertex_and_surface_cases_separate": true,
+    "nonzero_binary_auxiliary_moments_retained_before_absolute_values": true,
+    "whole_parameter_predictor_dependence_not_discarded": true,
+    "derivative_specific_scalar_tails_not_promoted_to_operator_error": true,
+    "cache_map_force_Hessian_consistency_and_third_derivatives_explicit": true,
+    "old_tube_persistence_criterion_and_failure_policy_explicit": true,
+    "no_actual611D_integral_or_root_transfer_claim": true,
+    "no_new_equilibrium_optimizer_or_model_edits": true,
+    "source_and_PDE_and_fullTheta_limits_explicit": true
+  },
+  "verification_checks": 69,
+  "target": "Exact affine-corner material triangles and exact P2 basis, current coefficients=stored binary X+samefreeu, fixed\u03c7T, physical2\u03c0integrals normalizedbyfixedpositivebinary\u03c3cache, affine material surface r/L. Newcoherentexactintegrationtarget; oldcachedfunctionnotredefined.",
+  "primary_method": "NearunitJ harmonic-number derivative-series; surfaceJs\u00b2 binomial inversehalf/threehalfseries; exactradialLaurentmoments offaxis and cancelledaxisDuffy polynomialmoments. Apply integral-minus-intrinsicbinaryQ* moment defects BEFORE coefficient absolutevalues, add correlatedsame-coordinatecache-mapconsistency.",
+  "persistence_criterion": "At frozenpredictor p\u03b8, a_p>=||R(FI\u2212FQ)(p\u03b8)||\u221e and uniformb>=||R(HI\u2212HQ)||\u221e onfulloldtube. Require Z+b<1 and\u03b7+a_p+(Z+b)r<r; thenexactintegralrootexistsuniquely andsymR>0 impliesstrictminimum. Noactual a_p or b computed.",
+  "scalar_only_N16_examples": {
+    "degree": 16,
+    "rho_exact": "21/500",
+    "phi_prime_tail_upper_exact": "1204156926700396159820812917947793/17021822235107421875000000000000000000000000000000000",
+    "phi_second_tail_upper_exact": "200934836645784994104742393936199523081/154915604161712646484375000000000000000000000000000000000",
+    "phi_prime_tail_float": 7.074195171753283e-20,
+    "phi_second_tail_float": 1.2970600200870274e-18,
+    "scope": "Scalar constitutive derivative tails only, BEFORE chain rules, weights, spatial moments, coefficient wrapping, cache consistency, preconditioning or root criteria."
+  },
+  "actual_integral_error_bound_computed": false,
+  "exact_integral_root_or_minimum_certified": false,
+  "all17_integral_bridge_complete": false,
+  "whole_original_goal_complete": false,
+  "source_hash_bindings": {
+    "runs/exact_integration_bridge_v1/theory/TARGET-AND-INTEGRATION-DESIGN.md": "39eace273a7b513b236cae2f2dd55ed052593fce846f18013e3621677723b2ec",
+    "runs/exact_integration_bridge_v1/theory/verify_theory.py": "8b0536b79ab0aa88765fe0fc3a42b83a305c2d79d0eced3f2964e465aafa82c3",
+    "runs/exact_integration_bridge_v1/theory/verification.json": "a0125e4859b18290320b86964bd15e2b302fd4ec55dde46decc138c4df3b357f",
+    "runs/exact_integration_bridge_v1/theory/auxiliary_node_witness.json": "85153ff9b0d5e8dbf16fed5671de07fc985ce15ebb7efa53b877abb47c2a0e7a",
+    "runs/exact_integration_bridge_v1/theory/initial_warning_revision/verify_theory.py": "aa00034e61f9c6f09fafe6880a5e66ae0a36e3475e1beb25e3e602f9efa3c8c4",
+    "runs/exact_integration_bridge_v1/theory/initial_warning_revision/verification.json": "15505feafb8afc1cc762f9bc6771005df017e194d28f27ae319fdec0368985d0",
+    "evidence/exact_integration_design_review.json": "dd04adb629a4a40f5134e4c542ae40cf4473bad321319d290bc7de28460d94bc",
+    "runs/exact_integration_bridge_v1/independent_design/scales.json": "60e7b31a24ade9c6023a0a27d76df44e1ef26026ee9423d63e84327fa3aeb1c7",
+    "runs/exact_integration_bridge_v1/independent_design/geometry_alignment.json": "a7c7089c0a7c020dedbcf7e6cc858958114d106dddd21b7e68af4e098d700a31",
+    "scripts/algebraic_root_feasibility.py": "7321d38bf17cf354cc03be2871f3fbaa45bcebbcbfca7be90d0f867b80078acf",
+    "scripts/parametric_root_cells.py": "362a19548aa60c4234017316e22deef4a80e93b73c725f47132573a1a9103b60",
+    "scripts/quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "scripts/axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "scripts/axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "evidence/cohort_energy_stability_independent_review.json": "d4f4c4d30d16bbbf2141cabf1cee18b47fcc35ab958a2a8a203000f0a7acaf95"
+  },
+  "selected_cache_bindings_from_small_source_test": {
+    "runs/cohort_energy_stability_v1/results.json": "5f590ed1bea078e2e88d17bb39f8030d144a95fb73bf96ab10b5823951883164",
+    "runs/cohort_energy_stability_v1/records/optoGEF2_small_col_B/result.json": "43c388db2135a27967c19259d9a7df10c36380c18182bd636771cd58b84373f0",
+    "runs/cohort_uniform_roots_v1/records/00_optoGEF2_small_col_B/preparation_attempts/000/point_cache.json": "f334f4cc139a21df34f7aff3019559a39ef1313c670223885b9474498dd84fb9"
+  },
+  "official_tool_reference": {
+    "url": "https://python-flint.readthedocs.io/en/latest/acb.html",
+    "accessed_version_label": "0.9.0",
+    "locator": "acb.integral,analyticflagrequirements and sqrt counterexample",
+    "scope": "Optional scalarcrosscheck/fallback; no invocation relied upon here."
+  },
+  "retained_warning_history": "initial_warning_revision preserves earlier source/receipt with harmless Python3.13 ==1for spacingwarning. Spacing corrected and rerun; no mathematical failure or changed production source.",
+  "limitations": [
+    "No full611D integral/Hessian/force assembly",
+    "No time/runtimememory claim",
+    "No proof any chosenN passesactualoperatorbudget",
+    "No newdata/geometry/noiseprior",
+    "No mesh/PDE/nonaxisymmetric/commonphysicalpath/global\u0398/largerprediction/noveltyclaim"
+  ]
+}

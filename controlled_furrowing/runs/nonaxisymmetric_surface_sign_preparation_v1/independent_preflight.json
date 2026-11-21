@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_sha256": "9e68f99009f0e2d92680c97079b9283cb7fbcb67a7c81b6786ec11e9e5862a42",
+  "method_sha256": "aa4018961aba80e88499e89d6cf3ae1d13fd88af6352962393fa2706203199a0",
+  "checks": {
+    "cold_current_sources_and_windows": true,
+    "exact_centered_power_intact": true,
+    "strict_negative_crossing_equality_and_positive_radius": true,
+    "nonzero_posterior_trace_bound": true
+  },
+  "cold_actual_stress_windows_read_or_evaluated": 0,
+  "cold_bindings": {
+    "runs/nonaxisymmetric_adequacy_audit_v1/surface_stress.py": "f33aaf277eea10fd364a529f95d369551c99b73747f7856cee3af4318b60b3a3",
+    "runs/nonaxisymmetric_adequacy_audit_v1/protocol.json": "a09fb767d9990fce5816203d45579a5b400a1271248788b685a91aebda355e32",
+    "runs/nonaxisymmetric_adequacy_audit_v1/preflight.json": "7eb3c81037d1ecac47f5e5ca45122f8abd0a316f5022314c14dd6e1470220206",
+    "runs/nonaxisymmetric_adequacy_audit_v1/independent_prelaunch_review.json": "64464f4f1825a78ec478490b804772b87eafeb0b8671846b5becd5cbcd5fbb3b",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/independent_actual/replay.py": "932515cc6725ecc48fe29dd58e0d4b181cc9dd58fdb391a96da49e9d8c049353",
+    "runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/protocol.json": "06dd35434358ad7dcb993349281ed6bf8a84fd0a34f7ca2d4932ec0792842361",
+    "runs/nonaxisymmetric_adequacy_audit_v1/READBACK.md": "74eb585b6f53469058c654fb3e56cc297fc22389818d29ad205412455be4317c"
+  }
+}

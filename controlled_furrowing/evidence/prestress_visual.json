@@ -1,0 +1,16 @@
+{
+  "image": "controlled_furrowing\\runs\\prestress_checks\\prestress_summary.png",
+  "sha256": "ba07c9bcfd63932b830a03648bd7a9838ce8b204e4781fe507e4ea07098e8352",
+  "inputs": {
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_0.2_gain_0.2.json": "d3df613602ba9e2c17d0e9b9993609a842d22c74b29ba8b1ba10ebbe466e750a",
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_0.2_gain_1.0.json": "8c3e96304a604f8601d0250e7fb290c36716b1114c88f2459f41a18802db5f57",
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_0.2_gain_4.0.json": "294fb82075d64bb2a71b7432a9cc768cf5cfa4b2c07baab2fdc4beaf56ca5181",
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_2.0_gain_0.2.json": "05ef95cdb9f1f1a91b705955bbc3121af113a059e9b9a8ef58393d275783249c",
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_2.0_gain_1.0.json": "f3c6a7901a41c199c7d82e29d36307726d50f465cf5705fa6a32c8aa65304c9c",
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_2.0_gain_4.0.json": "66b2cad5c9dee9ed1301326c5231dcc42d8491de8a142fc49533d3302e0d19cb",
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_20.0_gain_0.2.json": "914c401be49d4951c06083a7258a35c76ec987ad3b35d1b70f916e7147e4d61e",
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_20.0_gain_1.0.json": "b92505a3abec299168c0d2d0ecff6c399ef9989bbc8b0579effd2cb58135ba5b",
+    "controlled_furrowing\\runs\\prestress_checks\\Tb_20.0_gain_4.0.json": "d54b04116fe15145e5cd4cd4bca2ccaa17921c33fe317d44f9e1d20b38a7806d"
+  },
+  "scope": "Synthetic coupled equilibria only, no measured target reads or deformation magnification; radial surface panels zoomed."
+}

@@ -1,0 +1,149 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MATERIAL-COHORT-DIRECT</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Direct nonlinear verification of one material-calibration step</h1>
+<p><strong>The primary multivariate proposal was tested with 17 newly computed nonlinear fields.</strong> In the fixed 12×6 numerical model, its disk/spatial-max discrepancy decreases from <strong>5.37983567 to 5.18638725 µm</strong>. The affine prediction was 5.18386299 µm. This is a verified numerical step under a declared continuation path, not a satisfactory biological fit, nonlinear global optimum, full parameter identified set or continuum result.</p>
+<p>The same material update was evaluated under all four retained observation conventions. The disk/regional-mean discrepancy <strong>increases</strong>, from 6.46771627 to 6.52848857 µm. Thus this is not an improvement under every source-plausible operator. The observation ambiguity remains scientifically consequential.</p>
+<p>The <a href="../scripts/material_cohort_direct.py">direct runner</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_direct_v1/protocol.json">frozen protocol</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_direct_v1/results.json">complete results</a> and <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_direct_v1/verification_and_comparison.json">producer verification/comparison</a> retain every field, input, attempt and residual.</p>
+<h2>1. What was fixed before the new computation</h2>
+<p>The preceding <a href="MATERIAL-COHORT-DESCENT.html">cohort tangent calculation</a> derived four locally optimal affine proposals from the same 17 baseline fields and all 68 endpoints. Only the <strong>primary disk/spatial-max proposal</strong> was selected for this direct test. That continuation of the primary baseline was declared before any new nonlinear outputs; neither held-out larger-region outcomes nor the new results selected the proposal.</p>
+<p>The normalized material/input values change as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Old baseline</th>
+<th style="text-align: right;">Proposed value used for all 17 new fields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apical area modulus <span class="math" data-tex="K_a"></span></td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.2210341836</td>
+</tr>
+<tr>
+<td>Basal area modulus <span class="math" data-tex="K_b"></span></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1.8096748361</td>
+</tr>
+<tr>
+<td>Apical tension <span class="math" data-tex="T_a"></span></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Basal tension <span class="math" data-tex="T_b"></span></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2.2103418362</td>
+</tr>
+<tr>
+<td>Common gain <span class="math" data-tex="g"></span></td>
+<td style="text-align: right;">8.0629720200</td>
+<td style="text-align: right;">7.8126545043</td>
+</tr>
+<tr>
+<td>Compression coefficient <span class="math" data-tex="\kappa"></span></td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">5000</td>
+</tr>
+</tbody>
+</table>
+<p>The shear scale, fixed physical length 33.5 µm, geometry, activation support, boundary conditions, constitutive law, 12×6 finite-element space and Duffy8/surface12 integration stay fixed. Compression remains the declared numerical penalty, not a fitted physiological compressibility. Absolute physical force units are not inferred; <a href="PHYSICAL-PARAMETER-DOMAIN.html">the force-scale quotient</a> still applies.</p>
+<p>The log steps are applied using recorded binary64 exponential/material multiplication values. Gain is defined by the exact old gain Fraction times the binary64 exponential of its step. Consequently its display differs by one ulp from a convenience expression that first rounds the old gain. The exact-product convention and every requested-versus-binary64 target rounding are retained; neither is a new fit.</p>
+<h2>2. A new-material reference and an independently checked continuation</h2>
+<p>The new material starts from its own verified zero-activation state. An old-material state is never relabelled as a verified new-material state. The 17 measured-dose inputs are then processed in increasing order, using</p>
+<div class="math display" data-tex="
+ f_i=g_{\rm new}I_i.
+"></div>
+
+<p>The last accepted state supplies the next warm start. A failed trial may be retained and bisected but cannot become the next verified starting vector. This particular run needed <strong>17 accepted nonzero increments and no rejected attempts</strong>.</p>
+<p>Every target must pass the unchanged Q8 force test, a Q12/surface16 cross-force test, exact stored-map positive-orientation and global-embedding tests, and the current-radius endpoint observer. All four conventions are evaluated at the same new fields. The other three convention-specific affine proposals have not been directly solved or verified.</p>
+<p>Gain changed jointly with the material ratios, and the old gain was only surrogate-selected, not proved nonlinear-optimal. There is no optimized gain-only control. The decrease therefore does <strong>not</strong> prove that varying material ratios adds benefit beyond gain reoptimization. It establishes a better tested joint candidate for the primary convention, not a discovered material effect.</p>
+<p>The earlier baseline fields were selected from a union of 68 ascending inputs; the new path visits 17 targets. Without uniqueness or stability proofs, loading-history differences can affect which stationary branch is reached. The test checks proposal predictions under the declared new path. It does not isolate a causal material-change contribution; no additional matched baseline-control job is silently claimed.</p>
+<h2>3. Actual results and what the affine predictor got right</h2>
+<table>
+<thead>
+<tr>
+<th>Observation convention</th>
+<th style="text-align: right;">Shared old baseline, µm</th>
+<th style="text-align: right;">Affine prediction at the primary step, µm</th>
+<th style="text-align: right;">New direct discrepancy, µm</th>
+<th style="text-align: right;">Old minus new, µm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk / spatial-max components</td>
+<td style="text-align: right;">5.37983567</td>
+<td style="text-align: right;">5.18386299</td>
+<td style="text-align: right;">5.18638725</td>
+<td style="text-align: right;">+0.19344842</td>
+</tr>
+<tr>
+<td>Disk / regional-mean components</td>
+<td style="text-align: right;">6.46771627</td>
+<td style="text-align: right;">6.52653959</td>
+<td style="text-align: right;">6.52848857</td>
+<td style="text-align: right;">−0.06077230</td>
+</tr>
+<tr>
+<td>Line / spatial-max components</td>
+<td style="text-align: right;">6.18326952</td>
+<td style="text-align: right;">5.97629596</td>
+<td style="text-align: right;">5.97824258</td>
+<td style="text-align: right;">+0.20502694</td>
+</tr>
+<tr>
+<td>Line / regional-mean components</td>
+<td style="text-align: right;">6.18326952</td>
+<td style="text-align: right;">6.06214476</td>
+<td style="text-align: right;">6.06426585</td>
+<td style="text-align: right;">+0.11900367</td>
+</tr>
+</tbody>
+</table>
+<p>Every affine column in this table uses the <strong>same primary step</strong>. It is not the table of four separately optimized affine proposals. Every direct column uses the <strong>same new material and gain</strong>.</p>
+<p>The largest sampled endpoint difference between the primary-step affine prediction and the new direct fields is approximately 0.00526180 µm. The primary uniform discrepancy differs from its affine prediction by approximately 0.00252427 µm. These are successful local numerical prediction checks at the tested inputs. They are not uniform bounds over the trust box, derivative remainder theorems, experimental uncertainty estimates or continuum error bars.</p>
+<p><img alt="Shared baseline, primary affine prediction and actual new fields under all four operators" src="../../omitted-asset.svg" /></p>
+<p>The figure has no invented physical error bars. The exact stored-field observer intervals and all 272 affine/direct comparison intervals are retained separately. The <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_direct_v1/visual_verification.json">visual receipt</a> binds the generator, complete result, comparison JSON and exported PNG; the PNG was opened and visually inspected after the run finished.</p>
+<h2>4. Exact meaning of the computed discrepancy</h2>
+<p>For convention <span class="math" data-tex="v"></span>, let <span class="math" data-tex="y_{ik}"></span> be the 68 recorded endpoints, <span class="math" data-tex="u_i^0"></span> the saved baseline coefficients and <span class="math" data-tex="u_i^1"></span> the new saved coefficients. The statistic is</p>
+<div class="math display" data-tex="
+ D_v(u)=\max_{i,k}&#124;\mathcal O^v_k(u_i)-y_{ik}&#124;.
+"></div>
+
+<p>If the observer encloses one prediction in <span class="math" data-tex="[a_{ik},b_{ik}]"></span>, then</p>
+<div class="math display" data-tex="
+ \max(a_{ik}-y_{ik},y_{ik}-b_{ik},0)
+ \le&#124;\mathcal O^v_k(u_i)-y_{ik}&#124;
+ \le\max(&#124;a_{ik}-y_{ik}&#124;,&#124;b_{ik}-y_{ik}&#124;).
+"></div>
+
+<p>Taking maxima gives an enclosure of <span class="math" data-tex="D_v"></span> for the supplied fields. Subtracting the new upper bound from the old lower bound and the new lower bound from the old upper bound encloses their discrepancy reduction. Exact rational values are in the comparison JSON; displayed endpoints can coincide without making the physical model exact.</p>
+<p>These bounds concern functionals of <strong>serialized finite-element coefficient vectors</strong>. Passing a force tolerance is not a validated enclosure of an exact nonlinear algebraic root, and it does not certify the continuum solution. No bound here controls the change between discretizations. Earlier inter-mesh shape differences also cannot be repurposed as common error bars on this new comparison.</p>
+<p>The source contract remains conditional: a static endpoint is used as the experimental temporal-peak proxy, with flat component references, a fixed registered current-radius ROI and canonical source-column pairing. Line/disk spatial weighting, component aggregation, growth correction and temporal ordering are not resolved by obtaining a smaller residual. The <a href="JOINT-OBSERVATION-CONTRACT.html">source observation contract</a> states those gaps precisely.</p>
+<h2>5. Verification receipts and chronology</h2>
+<p>Producer verification passes all <strong>15 aggregate checks</strong>, together with per-record hash, parameter, dose, force, geometry and continuation checks:</p>
+<ul>
+<li>17 new nonzero fields and one new-material zero field;</li>
+<li>17 accepted nonzero increments, zero rejected attempts;</li>
+<li>2,592 exact triangle certificates including the zero reference;</li>
+<li>maximum Q8 scaled force residual approximately <span class="math" data-tex="1.16194\times10^{-10}"></span>;</li>
+<li>maximum Q12 scaled force residual approximately <span class="math" data-tex="1.16075\times10^{-10}"></span>, below the declared <span class="math" data-tex="10^{-7}"></span> threshold;</li>
+<li>nonzero-field exact Jacobian enclosures jointly contained in approximately <span class="math" data-tex="[0.958291001,1.023404301]"></span>.</li>
+</ul>
+<p>The Jacobian interval is a conservative enclosure, not a claim that its endpoints are attained. It proves positive orientation of the stored maps, not exact or one-percent incompressibility. The global embedding certificate rules out self-overlap for those stored maps under its verified hypotheses. Neither geometry nor force checks prove stability, uniqueness or global energy minimization.</p>
+<p>Before launch, <a href="../../OMITTED.html?path=controlled_furrowing/evidence/material_cohort_direct_prelaunch_review.json">the concrete prelaunch review</a> passed ten aggregate checks and rejected 13 mutated binding/false/truthy guard cases. Recursive source checking verifies all 17 runtime local modules inside 21 declared source hashes. Two unsolved source/protocol revisions are preserved after transitive dependency omissions were caught; no numerical job preceded the corrected review.</p>
+<p>The review file gained archive-hash metadata during authorized launch. Its exact initial bytes were recovered and retained, with the original launch hash; only that documentary field differs, while PASS checks and source/protocol/candidate bindings are identical. Both versions and their chronology are recorded in <a href="../evidence/material_cohort_direct_prelaunch_provenance_addendum.json">the provenance addendum</a> and <a href="../../OMITTED.html?path=controlled_furrowing/runs/material_cohort_direct_v1/launch_receipt_provenance.json">the launch provenance</a>. No numerical source, parameter, policy or job was changed or restarted.</p>
+<p>Frozen driver SHA256:</p>
+<pre><code>448675cc6f59973c07a372f119aea5dd9be0f915398f57a3f9bd7d5cfe91074e
+</code></pre>
+<p>Frozen direct protocol SHA256:</p>
+<pre><code>1ed458c8f0f7b9c9bacfdf0c04b907d474d06e5607ced5956ecc2d2f1adac953
+</code></pre>
+<p>Complete direct result SHA256:</p>
+<pre><code>638a95bc97055e33a10e4f6c34f4750629b23f53688d19b3c8f9e7ca1ecce2b7
+</code></pre>
+<p>The <a href="MATERIAL-COHORT-DIRECT-REVIEW.html">independent all-field review</a> passes <strong>435 checks</strong>. It replays all 17 actual new fields and the zero reference, source/parameter bindings, Q8/Q12 forces, exact geometry, nodal boundary traces, all operator outputs, retained attempts and last-verified warm-start chains. The <a href="../evidence/material_cohort_direct_independent_review.json">independent receipt</a> has SHA256 <code>162ddbf46cf9347683dbeaf56bc29bb51b6d5c22bd255ae375516a7052ceb61f</code>. This review remains a conditional discrete numerical check, not experimental or continuum validation.</p>
+<h2>6. What this advances and what remains open</h2>
+<p>This step moves beyond a single fitted gain: a five-coordinate local material/input proposal has now been followed by new nonlinear mechanical computations for every calibration record. Its primary discrepancy decreases by approximately 0.19345 µm in this fixed numerical experiment, and the local affine prediction is close to the sampled direct response.</p>
+<p>That does not establish robust biological improvement. One retained observation convention worsens, the primary discrepancy remains above five micrometres, the continuation paths differ, source-operator assumptions remain unresolved, and numerical/continuum uncertainty is not enclosed. The test establishes no new scientific concept or confirmed novelty.</p>
+<p>The next requirements are validated nonlinear/parameter-cell forward bounds, externally justified discrepancy allowances or tolerance-indexed compatibility sets, material and geometry uncertainty propagation, and source-matched frozen larger-region predictions. A local optimization step and a successful replay cannot replace the full physical identified set. No incomplete original research gate is promoted to complete here.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

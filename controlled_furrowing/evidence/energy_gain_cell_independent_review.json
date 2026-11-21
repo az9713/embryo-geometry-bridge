@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "checks": {
+    "valid_positive_gain_interval_and_metric_radius": true,
+    "all_input_and_source_checks_true": true,
+    "all_9504_terms": true,
+    "correct_path_partition_count": true,
+    "path_piece_0_exact_domain": true,
+    "plan_0_rank_arithmetic_upper": true,
+    "plan_0_assembled_arithmetic_upper": true,
+    "plan_0_all_analytic_margins_positive": true,
+    "path_piece_1_exact_domain": true,
+    "plan_1_rank_arithmetic_upper": true,
+    "plan_1_assembled_arithmetic_upper": true,
+    "plan_1_all_analytic_margins_positive": true,
+    "path_piece_2_exact_domain": true,
+    "plan_2_rank_arithmetic_upper": true,
+    "plan_2_assembled_arithmetic_upper": true,
+    "plan_2_all_analytic_margins_positive": true,
+    "path_piece_3_exact_domain": true,
+    "plan_3_rank_arithmetic_upper": true,
+    "plan_3_assembled_arithmetic_upper": true,
+    "plan_3_all_analytic_margins_positive": true,
+    "path_piece_4_exact_domain": true,
+    "plan_4_rank_arithmetic_upper": true,
+    "plan_4_assembled_arithmetic_upper": true,
+    "plan_4_all_analytic_margins_positive": true,
+    "path_piece_5_exact_domain": true,
+    "plan_5_rank_arithmetic_upper": true,
+    "plan_5_assembled_arithmetic_upper": true,
+    "plan_5_all_analytic_margins_positive": true,
+    "path_piece_6_exact_domain": true,
+    "plan_6_rank_arithmetic_upper": true,
+    "plan_6_assembled_arithmetic_upper": true,
+    "plan_6_all_analytic_margins_positive": true,
+    "path_piece_7_exact_domain": true,
+    "plan_7_rank_arithmetic_upper": true,
+    "plan_7_assembled_arithmetic_upper": true,
+    "plan_7_all_analytic_margins_positive": true,
+    "whole_error_tube_exact_domain": true,
+    "plan_8_rank_arithmetic_upper": true,
+    "plan_8_assembled_arithmetic_upper": true,
+    "plan_8_all_analytic_margins_positive": true,
+    "path_integral_rational_upper": true,
+    "eta_rational_upper": true,
+    "Z_rational_upper": true,
+    "strict_exact_contraction": true,
+    "strict_exact_self_mapping": true,
+    "exact_radius_error_below_declared_tube": true,
+    "source_current_parametric_norm_feasibility.py": true,
+    "source_current_algebraic_root_feasibility.py": true,
+    "source_current_sparse_quadratic.py": true,
+    "source_current_quadratic_quadrature_study.py": true,
+    "source_current_robust_quadratic.py": true,
+    "source_current_axisymmetric_quadratic.py": true,
+    "source_current_axisymmetric_mixed.py": true,
+    "source_current_axisymmetric_prestress.py": true,
+    "source_current_axisymmetric_mechanics.py": true,
+    "input_current_evidence/algebraic_root_certification_feasibility.json": true,
+    "input_current_evidence/parametric_norm_feasibility.json": true,
+    "input_current_runs/material_tangent_inference/strength_1/tangents.npz": true,
+    "producer_source_current": true,
+    "binary_cache_hash_matches": true,
+    "all_9504_cached_weights_positive": true,
+    "binary_metric_hash_matches": true,
+    "exact_binary_metric_triangular_nonsingular": true,
+    "sqrt_upper_exact_square": true,
+    "sqrt_upper_outward_irrational": true,
+    "sqrt_upper_tight_irrational": true,
+    "full_9504_term_replay_pass": true,
+    "all_serialized_final_bounds_identical": true,
+    "all_plan_bounds_identical": true,
+    "original_receipt_and_source_unchanged": true,
+    "reviewer_source_unchanged": true
+  },
+  "producer_certificate_sha256": "f580043152595371e3d01489c4b2f0eb4cc9263d677aeaa5c85c5332b161de71",
+  "producer_source_sha256": "4e7e21f8e273a6d53e46955fedd55fb908d9261067626e8de2a34c1e1bdf5efb",
+  "reviewer_source_sha256": "a555b3683b760a4e52ec174db42ff187a3e6439adef01e5a9f3260290d66f5f4",
+  "protocol_sha256": "0fc4392669aa945e89bb1681650a11f7fc1a12741b66c642bacc3bf19bb283b1",
+  "replay_receipt_sha256": "38512a012a67b3867f4998c61a9fa96e00aaccad6a1a40cea7c7ab0443824bf4",
+  "independent_arithmetic": {
+    "per_plan_arithmetic": [
+      {
+        "name": "predictor_path_piece_1",
+        "independent_rank_upper_exact": "109536086918319638560338270841695684014687610676294848641474344941116272483982615971341527499751586009245103/15845632502852867518708790067200000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "128537560996830842393312377998327405747403787696615765962572434871569684450464851555749572314815062571745103/15845632502852867518708790067200000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "predictor_path_piece_2",
+        "independent_rank_upper_exact": "54790103399490636882623420847634730824067516669095668296786597191233685847448227051077173081197979813895803/3961408125713216879677197516800000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "62658393478239323074568293285091788792470574547756654251847424770344279735338217634139345017233136063895803/3961408125713216879677197516800000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "predictor_path_piece_3",
+        "independent_rank_upper_exact": "82218249776652805912830781525537998841337043866656084197013239617221138151920190849966662683104283956499807/3961408125713216879677197516800000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "93210690277167547245194252379731156373687757464570809028808570004217627987303008395872371949766881612749807/3961408125713216879677197516800000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "predictor_path_piece_4",
+        "independent_rank_upper_exact": "27417116405220575728380416506142366531732191441727048086107116735115091397756126331004217154808303912948989/990352031428304219919299379200000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "30947829943410335945296063247368819336397620818426440309160054490366126454614326154186293370552322467636489/990352031428304219919299379200000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "predictor_path_piece_5",
+        "independent_rank_upper_exact": "8571297227871422705368191025273370924415845601869149474153886791940399894758277622110249096482555269151963/247588007857076054979824844800000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "4825027064471110410485894417837641619078332337941150445088857082140729738776282337465342876478811203911919/123794003928538027489912422400000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "predictor_path_piece_6",
+        "independent_rank_upper_exact": "20579390579025529211757101850804414572160068865084918324936645498196745823215051363838196481856543802187827/495176015714152109959649689600000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "23129928195733208774282811724626211733521901439507295433117695398336959538575511264532164420279700540469077/495176015714152109959649689600000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "predictor_path_piece_7",
+        "independent_rank_upper_exact": "12009473583777799411169234163370118021585290607261970828772291021292282855344806225785761706559216198219791/247588007857076054979824844800000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "3370417514806667024929932822121578449509055876632018813656275655837060315463630794297614974908122225824479/61897001964269013744956211200000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "predictor_path_piece_8",
+        "independent_rank_upper_exact": "5492252963340492972175016228226917825871327921954729744758141432257321722212151524876349326973394797934077/99035203142830421991929937920000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "6160068126002737579021991358112684759494350983699858341485107918212567544693325925185450074081854270590327/99035203142830421991929937920000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "full_error_tube",
+        "independent_rank_upper_exact": "17597287681641400994564562052175944046618659056441221100257588944914120515397704782460484653293486346325653/247588007857076054979824844800000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "independent_total_upper_exact": "19311221542299933073218617918317249143060867345515222591836531145825999453026550535186028107791838998358139/123794003928538027489912422400000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ],
+    "eta_exact_upper": "21349796893238247683236220994671156592826131737715601439871943500848519343545622398891154434191539/34996011596528190789960035633881941845650710894291398982812329702559247987190014771576210832368861184000",
+    "Z_exact_upper": "979195263993156379413736308574144332133818278191448871099/6277101735386680763835789423207666416102355444464034512896",
+    "eta_plus_Zrho_exact_upper": "3351124114214759338536742989166196761972338961895073002014917973626587553760031958303758247411517287/4374501449566023848745004454235242730706338861786424872851541212819905998398751846447026354046107648000000",
+    "root_metric_error_exact_upper": "21349796893238247683236220994671156592826131737715601439871943500848519343545622398891154434191539/29536815576048363764902312715223524342698130936846416406564929414395066900655381504037299287268261888000"
+  },
+  "mathematical_review": [
+    "Relative gain changes only the linear active coefficient; F(u0;delta)=F0+Bdelta exactly.",
+    "Predictor-path integral uses the full parameter variation on every t piece and only reduces the positional excursion.",
+    "Rank split kappa vv^T: cross terms bounded by2||A0W||||DeltaA W|| plus||DeltaA W||^2.",
+    "Symmetric row-diagonal majorants and positive weights imply Loewner bounds before exact metric congruence.",
+    "Frozen W invertible; all spectral norm uses are for exactly symmetric targets.",
+    "Uniform selfmap and contraction apply on fixed z ball with parameter-dependent affine predictor.",
+    "Strict transformed Hessian positivity at the interior fixed point implies a local energy minimum, not global or dynamical stability."
+  ],
+  "known_guard_limitation": "Original producer status does not itself combine source/input booleans. This audit explicitly requires every acceptance and metadata check true, and verifies frozen bytes before/after. Actual run passed; a drifted future packet is not accepted.",
+  "elapsed_seconds": 191.1791886999854,
+  "scope": "One fixed-material original weak-load gain interval only. Independent exact scalar audit plus unchanged-source full Arb reproduction, not independent reimplementation of all majorants. No actualM/all17/fullTheta, continuum, physical time or biological claim."
+}

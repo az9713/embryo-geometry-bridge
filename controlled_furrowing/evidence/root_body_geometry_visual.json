@@ -1,0 +1,12 @@
+{
+  "status": "GENERATED_FROM_EXACT_ROOT_GEOMETRY",
+  "safe_J_display": [
+    "0.997631142",
+    "1.002708290"
+  ],
+  "safe_monotonicity_lower_display": "0.483409",
+  "image_sha256": "b993c9ae684562d52816202a98154138d21608a5ccf7b652f877e92f78d8a810",
+  "source_receipt_sha256": "592498e14b680ceb594e1115d91222a89222342869b8f666b61b03569bdfe05b",
+  "generator_sha256": "0e4ec26ca9ae58d98d8d07d181ce279bc99397469caecdc28cbbd21404401d73",
+  "scope": "Whole-box mathematical geometry enclosures of one root; not measured tissue, continuum accuracy, energetic stability or parameter-set inference."
+}

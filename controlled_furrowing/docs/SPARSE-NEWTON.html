@@ -1,0 +1,190 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SPARSE-NEWTON</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Sparse automatic differentiation and the 24×12 result</h1>
+<p><strong>Status: the sparse solver component and single 24×12 continuation calculation are completed and verified within their discrete scope. The matched 16×8→24×12 comparison still exposes substantial shape sensitivity; continuum accuracy is unresolved.</strong></p>
+<p>The activated mesh study exposed unresolved shape changes. Increasing resolution with a fully vectorized dense AD Hessian would multiply its seed dimension with every quadrature intermediate. This component reduces that computational burden while preserving the declared high-quadrature mechanical energy and its gradient. It changes the numerical Newton policy, and does not claim identical optimizer trajectories, new physics or a continuum accuracy certificate.</p>
+<p><code>scripts/sparse_quadratic.py</code> is a separate subclass of the fixed high-quadrature model. It has <strong>no energy or gradient override</strong>. The actual integration remains Duffy Gauss order 8 in each transformed-triangle direction, surface Gauss order 12, and twelve triangles per energy chunk. The full pointwise logarithmic-volume penalty, active potential, surface elasticity and baseline tension remain unchanged.</p>
+<h2>Established method, locally verified implementation</h2>
+<p>Graph coloring for compressed derivative evaluation is established numerical analysis. <a href="https://epubs.siam.org/doi/abs/10.1137/0720013?journalCode=sjnaam">Coleman and Moré (1983)</a> formulate sparse Jacobian estimation through coloring; their <a href="https://ecommons.cornell.edu/entities/publication/6c14f4fa-13f2-450b-b19d-362ef1e2e9a5">1982 Hessian technical report</a> treats recovery from matrix-vector products. <a href="https://cscapes.cs.purdue.edu/coloringpage/abstracts/sirev.pdf">Gebremedhin, Manne and Pothen (2005), Section 3.5.1</a>, describes greedy distance-2 coloring within a broader derivative framework. These sources support the established algorithmic context; no originality claim is made. Query/access receipts are retained in <code>evidence/sparse_quadratic_literature.json</code>.</p>
+<p>The proof below explains the exact recovery rule used here, so the reader need not trust a software label or infer correctness from a speed comparison.</p>
+<h2>Why the physical Hessian is sparse</h2>
+<p>Let <span class="math" data-tex="u"></span> contain the free displacement coordinates and denote its nodal Hessian by <span class="math" data-tex="\mathcal H"></span>, reserving <span class="math" data-tex="H"></span> for reference thickness. The high-quadrature potential is a sum of local contributions,</p>
+<div class="math display" data-tex="
+ E(u)=\sum_T E_T(u_{I_T})+\sum_e E_e(u_{I_e}),
+"></div>
+
+<p>where a P2 triangle has at most twelve displacement degrees of freedom and a quadratic boundary edge has at most six. If two free coordinates never occur together in any local term, their mixed second derivative vanishes wherever the physical potential is twice differentiable. The union of these element/edge cliques is therefore a conservative structural Hessian pattern.</p>
+<p>This locality depends on the actual energy. The projected pressure in the full-penalty model is a detached diagnostic and does not enter the total physical potential. A governing global projected-volume term would require a different sparsity analysis. The implementation checks the present pattern against every entry of a small dense AD Hessian, including all entries predicted to vanish.</p>
+<h2>Coloring and exact compressed recovery</h2>
+<p>For row <span class="math" data-tex="i"></span>, denote the structural column support by <span class="math" data-tex="S_i"></span>. Choose a color map <span class="math" data-tex="\chi"></span> such that no two columns in any <span class="math" data-tex="S_i"></span> have the same color. Greedy coloring of the resulting column-conflict graph supplies this distance-2 collision rule. It need not minimize the number of colors; row uniqueness is the necessary correctness property and is checked explicitly.</p>
+<p>For color <span class="math" data-tex="c"></span>, define the seed vector <span class="math" data-tex="v^c_j=1"></span> if <span class="math" data-tex="\chi(j)=c"></span>, and zero otherwise. Then</p>
+<div class="math display" data-tex="
+ (\mathcal H v^c)_i=\sum_{j\in S_i,\,\chi(j)=c}\mathcal H_{ij}.
+"></div>
+
+<p>The sum contains at most one structural entry. Consequently</p>
+<div class="math display" data-tex="
+ \mathcal H_{ij}=(\mathcal H v^{\chi(j)})_i\qquad(j\in S_i).
+"></div>
+
+<p>This is direct recovery in exact arithmetic, without a finite-difference Hessian or a separately coded constitutive tangent. Batched reverse-mode AD differentiates the actual energy gradient. Since the energy Hessian is symmetric on the smooth physical branch, its transposed-vector convention gives the same products. The implementation records raw asymmetry and uses the symmetric average for the linear solve.</p>
+<p>Seeds are evaluated in chunks of four colors, bounding the AD batch dimension independently of the total free-coordinate count. The recovered matrix is stored as CSR. Pattern, coloring, their SHA256 and all source hashes are retained.</p>
+<p>At 24×12 cells there are 2,375 free displacement coordinates, 52,005 structural entries and 46 colors. Four-color chunks replace a 2,375-seed dense AD batch. The raw dense matrix alone would require 45,125,000 bytes; sparse values plus 64-bit indices/pointers require approximately 851,088 bytes. Those matrix-storage figures do not include AD graphs, sparse LU fill, quadrature caches or the rest of the process. Actual process memory is measured separately.</p>
+<h2>A different, safeguarded Newton policy</h2>
+<p>At a fixed activation strength, the sparse policy solves</p>
+<div class="math display" data-tex="
+ (\mathcal H+\tau I)d=-g.
+"></div>
+
+<p>It first tries <span class="math" data-tex="\tau=0"></span>. Failed factorizations or non-descent directions trigger increasing diagonal shifts. A finite direction must have a strictly negative computed gradient inner product. Its initial step is capped by a 0.25H coordinate-displacement limit; backtracking then requires the Armijo condition and a sufficient positive-orientation check.</p>
+<p>The exact Armijo inequality is <span class="math" data-tex="E(u+\alpha d)\le E(u)+10^{-4}\alpha g^Td"></span>. The code includes the explicit <span class="math" data-tex="10^{-16}"></span> normalized-energy allowance inherited from the numerical scale of these calculations; strict exact-arithmetic descent is not asserted for changes below that floating allowance. Sparse linear residuals, shifts, directional inner products, accepted fractions and failures are recorded. The linear residual is diagnostic rather than a separate convergence gate.</p>
+<p>This policy differs from the earlier dense eigenvalue-based regularization. Matching the energy and gradient does not make the optimization path identical, prove a global minimum or exclude selection of a different local stationary branch.</p>
+<p>The direction test alone also does not certify that the unshifted Hessian is positive definite. A final field passing force/geometry checks is a stationary discrete equilibrium; local energetic stability would require an additional curvature/inertia check. It is not silently promoted to a certified local minimum.</p>
+<p>The outer <a href="QUADRATIC-SOLVE-POLICY.html">verified-state continuation controller</a> is unchanged. Accepted states still require normalized force below <span class="math" data-tex="10^{-7}"></span> and positive geometry. A failed trial is retained and discarded as a warm start; activation increments are bisected from the last verified state. A computational resource improvement cannot replace these physical/numerical checks.</p>
+<h2>Verification before any 24×12 solve</h2>
+<p>The executable protocol fixes tolerances before the checks. On a 6×3 mesh the structural pattern has 161 free coordinates, 3,045 entries and 42 colors. The entire recovered matrix was compared with a dense automatic-differentiation Hessian, rather than checking only selected entries.</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Retained outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Every structural row has unique column colors</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Symmetric structural pattern</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Full recovered H versus dense AD</td>
+<td>Relative difference 1.06×10⁻¹⁶; absolute 4.55×10⁻¹³</td>
+</tr>
+<tr>
+<td>Every dense entry outside the pattern</td>
+<td>Exactly zero in the test</td>
+</tr>
+<tr>
+<td>Raw recovery asymmetry</td>
+<td>4.55×10⁻¹³</td>
+</tr>
+<tr>
+<td>Three independent AD Hessian-vector comparisons</td>
+<td>Relative differences below 5.4×10⁻¹⁶</td>
+</tr>
+<tr>
+<td>Three gradient finite-difference H-vector checks</td>
+<td>Relative differences below 9.0×10⁻¹⁰</td>
+</tr>
+<tr>
+<td>Energy/gradient equality at gains 0, 1 and 5</td>
+<td>Bit-for-bit identical</td>
+</tr>
+<tr>
+<td>Activated sparse-policy solve</td>
+<td>Force/positive-geometry gate passed</td>
+</tr>
+</tbody>
+</table>
+<p>All fifteen checks pass in <code>evidence/sparse_quadratic_verification.json</code>. The full dense/recovered matrices, pattern, vector and colors are retained in <code>runs/sparse_quadratic/small_hessian_comparison.npz</code>.</p>
+<p>An independent AI reviewer repeated fifteen checks on a different actual-small-geometry parameter case at volume coefficient 5000 and activation 10. It independently rebuilt the cliques and verified row colors, all matrix entries, independent AD/finite-difference products and energy/gradient identity. Its full-matrix relative difference was 7.93×10⁻¹⁷; the receipt is <code>evidence/joint_refinement_sparse_review.json</code>. This is internal independent implementation review, not outside expert validation or formal verification of the continuum model.</p>
+<p>After the live calculation reached a verified 24×12 gain-0.5 field, a separate derivative-only check recovered its sparse Hessian and compared three new products with independently differentiated AD products and gradient finite differences. Relative errors were below 4.2×10⁻¹⁶ and 2.2×10⁻⁹ respectively. The input field, matrix and receipt are retained in <code>runs/sparse_quadratic/hessian24_at_verified_gain0p5.npz</code> and <code>evidence/sparse_quadratic_24_hvp_check.json</code>. This was not a second optimization job and did not change the running state.</p>
+<h2>Resource evidence is distinct from physical accuracy</h2>
+<p>Two separate Python processes benchmarked only the small-mesh Hessian operation:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Time</th>
+<th style="text-align: right;">Sampled incremental process RSS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dense vectorized AD</td>
+<td style="text-align: right;">1.276 s</td>
+<td style="text-align: right;">114,323,456 bytes</td>
+</tr>
+<tr>
+<td>Colored sparse AD, four seeds per chunk</td>
+<td style="text-align: right;">1.155 s</td>
+<td style="text-align: right;">66,830,336 bytes</td>
+</tr>
+</tbody>
+</table>
+<p>Separate processes reduce allocator-history confounding. RSS is sampled every 5 ms and includes native Torch allocations, but can miss brief peaks; it is not a strict memory bound. These small-mesh numbers are not extrapolated into a claimed 24×12 speedup. Host/software variability also limits comparisons. Benchmarks and measurement definitions are retained separately in <code>evidence/sparse_quadratic_benchmark_dense.json</code> and <code>sparse_quadratic_benchmark_sparse.json</code>.</p>
+<p><img alt="Sparse automatic differentiation, compressed products and isolated-process memory measurements" src="../../omitted-asset.svg" /></p>
+<p>The first two panels display the same small Hessian and its colored compressed products. The memory panel concerns those small-mesh operations only. Figure/input hashes are retained in <code>evidence/sparse_quadratic_visual.json</code>.</p>
+<h2>One declared 24×12 calculation</h2>
+<p>Only after both verification gates passed was the single 24×12 job launched. Its frozen source SHA256 is <code>d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9</code>. A matching verification receipt is required by the executable; an existing job record prevents duplicate launch.</p>
+<p>The calculation fixes volume coefficient 5000, basal/apical tensions 2/0, basal/apical area moduli 2/0.2, <span class="math" data-tex="H=33.5\,\mu\mathrm m"></span>, activation radius 9.35512037 µm, depth 5–25 µm below the top and outer radius <span class="math" data-tex="3H"></span>. It attempts gains 1, 5 and 10 through verified continuation. No response data, refitted gain or changed physical model enters this job.</p>
+<p><code>evidence/sparse_quadratic_24_protocol.json</code> retains inputs, integration policy, sparse policy, pattern and all source hashes. Every full accepted/rejected field remains under <code>runs/sparse_quadratic/24x12_lambda5000/</code>. <code>sparse_quadratic_24_results.json</code> records target completion, forces, actual sampled J, conservative geometric bounds, attempt counts and per-target resource measurements. A separate agent handles the 16×8 high-quadrature fixed-load state; it is not duplicated here.</p>
+<h3>Completed targets and retained failures</h3>
+<p>All three requested targets reached the unchanged force/positive-geometry gates. The single process ran approximately 40.2 minutes across all target attempts; sampled peak process RSS was 668,655,616 bytes (about 0.623 GiB). Sampling every 5 ms can miss brief peaks, so this is observed resource evidence, not a strict memory bound. Per-target increments are relative to an already allocated process and are not independent total-memory requirements.</p>
+<table>
+<thead>
+<tr>
+<th>Gain</th>
+<th style="text-align: right;">Final normalized force</th>
+<th style="text-align: right;">Maximum column shortening</th>
+<th>Actual Q8 sampled J</th>
+<th style="text-align: right;">Attempts / rejected</th>
+<th style="text-align: right;">Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align: right;">2.98×10⁻¹²</td>
+<td style="text-align: right;">2.33012 µm</td>
+<td>[0.997521, 1.001900]</td>
+<td style="text-align: right;">3 / 1</td>
+<td style="text-align: right;">637.7 s</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: right;">3.86×10⁻¹²</td>
+<td style="text-align: right;">7.39158 µm</td>
+<td>[0.974139, 1.014963]</td>
+<td style="text-align: right;">5 / 2</td>
+<td style="text-align: right;">1128.2 s</td>
+</tr>
+<tr>
+<td>10</td>
+<td style="text-align: right;">4.64×10⁻¹²</td>
+<td style="text-align: right;">10.68165 µm</td>
+<td>[0.960950, 1.024151]</td>
+<td style="text-align: right;">3 / 1</td>
+<td style="text-align: right;">646.6 s</td>
+</tr>
+</tbody>
+</table>
+<p>The accepted sequence was 0→0.5→1→2→3→5→7.5→10. Direct trials 0→1, 1→5, 1→3 and 5→10 failed the force gate and remain retained. The independent full-path replay checked all eleven fields, the seven accepted states, four rejected states, last-verified vector hash chains, energy/work accounting and frozen physical-source hashes. Energy and gradient evaluations are bit-for-bit identical to the high-quadrature parent. The receipt is <code>evidence/sparse_quadratic_24_verification.json</code> and executable replay is <code>runs/sparse_quadratic/verify24.py</code>.</p>
+<p>The retained path contains 227 accepted Newton steps and 44 nonzero diagonal-shift trials. These are numerical policy diagnostics, not a count of distinct physical transitions. The largest recorded linear-system residual is 4.01×10⁻¹². A first rejected trial used the entire 25-iteration Newton allowance; continuation reduced activation increments instead of weakening the acceptance gate.</p>
+<p>Higher quadrature was checked without reoptimizing. At gains 5 and 10, Duffy order 12 and surface order 16 give force residuals 3.80×10⁻¹² and 4.37×10⁻¹². <code>evidence/sparse_quadratic_24_crosscheck.json</code> retains these evaluation-only checks. The independent review of gain 1 is separately scoped; no duplicate optimization was launched.</p>
+<p>For the final gain-10 field, exact rational Bernstein calculations on its stored binary coordinates certify every one of the 576 triangles and give the whole-body enclosure</p>
+<div class="math display" data-tex="
+0.95840970995 &lt; J &lt; 1.02823683506.
+"></div>
+
+<p>The exact fractions, boundary test and global embedding certificate are retained in <code>evidence/sparse_quadratic_24_final_geometry.json</code>. This encloses the stored discrete map, not the unknown continuum solution. Its coefficient bounds are distinct from sampled J extrema; neither is a validated biological incompressibility tolerance. The initial orientation checks in the solve use a different, more conservative sufficient certificate.</p>
+<p>A derivative-only profiler sample on the saved gain-0.5 field recorded about 171 ms of instrumented CPU operator time for one warmed energy/gradient evaluation. Work was spread across tensor arithmetic, reductions and copies; no single determinant-kernel bottleneck was established. <code>evidence/sparse_quadratic_gradient_profile.json</code> retains this performance diagnostic. It changes no state and is not a whole-job timing prediction.</p>
+<h3>Matched high-quadrature shape comparison</h3>
+<p>The comparison uses the completed 16×8 high-quadrature field in <code>runs/joint_refinement/final.json</code> and the completed 24×12 gain-10 field. Constitutive parameters, activation, geometry and actual Q8/surface-12 policy match; only mesh dimensions differ. No gain was refitted. Their initial numerical guesses and continuation histories differ, so identical local-branch selection is not established.</p>
+<p>The shortening changes by only 0.0339406 µm, from 10.6477085 to 10.6816491 µm. Nevertheless exact rational inversion of their P2 boundary curves on the common <strong>current physical radius</strong> gives</p>
+<div class="math display" data-tex="
+\begin{aligned}
+\sup_R &#124;a_{24}(R)-a_{16}(R)&#124;&amp;\in[0.670904,\,0.680214]\;\mu\mathrm m,\\
+\sup_R &#124;b_{24}(R)-b_{16}(R)&#124;&amp;\in[0.123578,\,0.133086]\;\mu\mathrm m.
+\end{aligned}
+"></div>
+
+<p>The displayed endpoints are rounded outward from the exact receipt. These are enclosures of differences between two stored discrete graphs. They are <strong>not</strong> continuum PDE error bounds, and they do not prove mesh convergence. Agreement of a scalar summary can hide appreciable spatial deformation differences. <code>evidence/sparse_quadratic_24_comparison.json</code> retains the exact interval arithmetic, common domain, field hashes and sampled display curves; <code>runs/sparse_quadratic/compare24.py</code> replays it.</p>
+<p><img alt="Matched gain-10 high-quadrature apical and basal curves, with their Eulerian differences" src="../../omitted-asset.svg" /></p>
+<p>The plotting samples illustrate the curves; the interval algorithm, rather than the sampled maximum, supplies the reported sup enclosure. The first visual had a clipped long panel title and is retained as <code>24_vs16_highQ.initial_clipped.png</code>; only the title was shortened. The image and correction hashes are in <code>evidence/sparse_quadratic_24_comparison_visual.json</code> and <code>sparse_quadratic_24_visual_correction.json</code>.</p>
+<h3>Numerical curvature diagnostic at the final equilibria</h3>
+<p>Stationarity and positive orientation do not imply a minimum. A separate evaluation-only diagnostic therefore recovers the <strong>unshifted</strong> energy Hessian at both saved gain-10 fields. Symmetric LDL factorization has positive numerical inertia in all 1071 free coordinates at 16×8 and all 2375 at 24×12, with relative reconstruction residuals below 1.1×10⁻¹⁵. No negative direction was found, so the conditional negative-direction energy replay was not invoked.</p>
+<p>The three shift-invert eigenpairs nearest zero were checked against the recovered matrix and, for the smallest pair, an independently differentiated Hessian-vector product. Relative residuals are below 3.5×10⁻⁹. The smallest reported ordinary-coordinate eigenvalues are approximately 6.2831×10⁻⁴ and 2.6126×10⁻⁴. Numerical LDL inertia, rather than a positive near-zero eigenpair alone, supplies the diagnostic sign count. Protocol, factor-block signs, thresholds and matrices/eigenvectors are retained in <code>evidence/sparse_equilibrium_stability_diagnostic.json</code> and <code>runs/sparse_quadratic/stability_{16x8,24x12}.npz</code>.</p>
+<p>These are floating-arithmetic diagnostics of the declared finite-dimensional, quadrature-defined energy. They are not rigorous spectral enclosures or continuum stability proofs. Ordinary Euclidean-DOF eigenvalue magnitudes depend on basis and mesh normalization: the smaller 24×12 value does <strong>not</strong> establish physical softening or stability loss. Inertia signs are invariant under nonsingular basis congruence, whereas physical cross-mesh eigenfrequencies or comparable curvature magnitudes require a declared mass/metric. No global minimum, unique equilibrium or identical branch is established.</p>
+<p>Sparse recovery removed a computational obstacle and enabled a finer mechanically coupled calculation. The result strengthens the numerical audit, but leaves the scientific gate open: spatial convergence, material identification, transient observation mapping and biological prediction remain unresolved. It establishes no new biological concept.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

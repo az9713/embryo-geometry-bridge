@@ -1,0 +1,272 @@
+{
+  "status": "PASS_FLOATING_TANGENT_AUDIT",
+  "rows": [
+    {
+      "checks": {
+        "force_gate": true,
+        "trial_penalty_inactive": true,
+        "all_fixed_state_material_FD_checks": true,
+        "all_implicit_linear_systems_replayed": true,
+        "common_force_gauge_cancels": true
+      },
+      "force_linf": 3.2476886035071734e-12,
+      "columns": [
+        "log_kappa",
+        "log_apical_area",
+        "log_basal_area",
+        "apical_tension_additive",
+        "log_basal_tension",
+        "log_common_gain"
+      ],
+      "fixed_state_derivative_checks": [
+        {
+          "coordinate": "log_kappa",
+          "fixed_state_FD_relative_error": 1.6666681876679195e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_apical_area",
+          "fixed_state_FD_relative_error": 1.6666670955902946e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_basal_area",
+          "fixed_state_FD_relative_error": 1.6667935761018592e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "apical_tension_additive",
+          "fixed_state_FD_relative_error": 2.3610092922241184e-14,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "one-sided additive"
+        },
+        {
+          "coordinate": "log_basal_tension",
+          "fixed_state_FD_relative_error": 1.6666665686928865e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_common_gain",
+          "fixed_state_FD_relative_error": 1.6666668449130998e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        }
+      ],
+      "linear_solve_relative_residuals": [
+        8.341267003140202e-13,
+        2.8801050013812776e-12,
+        4.048116761327354e-12,
+        5.513152961087403e-12,
+        4.985568263386052e-12,
+        9.60299036386947e-12
+      ],
+      "gauge_rhs_linf": 8.88937361220865e-16,
+      "Hessian_pattern": {
+        "free_DOF": 611,
+        "structural_nonzeros": 12741,
+        "colors": 46,
+        "seed_chunk": 4,
+        "row_color_collision_free": true,
+        "pattern_symmetric": true,
+        "pattern_color_sha256": "8c7aa251150f492a06c203308aac4c7a4a8405201f5cac5cac6ea4fdaa710bdf",
+        "dense_matrix_bytes": 2986568,
+        "sparse_values_and_int64_indices_bytes": 208752,
+        "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+      },
+      "interpretation": "Floating linearized response at a stored state. IFT derivative requires an exact regular equilibrium; no validated root or global identified set.",
+      "strength": 1.0,
+      "input": "runs/activated_quadrature/lambda_5000.0_strength_1.0/reequilibrated.json",
+      "input_sha256": "d313cb9bee8073ae141feaca429f72a77c7eb32c5053c4a392033d3e6d869460",
+      "matrix_archive_sha256": "eaa419fd2715f9e81cf6bff5e67affd2eeaecc224b9615536a09042a34c4c3e6"
+    },
+    {
+      "checks": {
+        "force_gate": true,
+        "trial_penalty_inactive": true,
+        "all_fixed_state_material_FD_checks": true,
+        "all_implicit_linear_systems_replayed": true,
+        "common_force_gauge_cancels": true
+      },
+      "force_linf": 3.137898794969285e-12,
+      "columns": [
+        "log_kappa",
+        "log_apical_area",
+        "log_basal_area",
+        "apical_tension_additive",
+        "log_basal_tension",
+        "log_common_gain"
+      ],
+      "fixed_state_derivative_checks": [
+        {
+          "coordinate": "log_kappa",
+          "fixed_state_FD_relative_error": 1.6666647830085e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_apical_area",
+          "fixed_state_FD_relative_error": 1.6666662701215293e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_basal_area",
+          "fixed_state_FD_relative_error": 1.6665893946589152e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "apical_tension_additive",
+          "fixed_state_FD_relative_error": 1.5525404553792768e-14,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "one-sided additive"
+        },
+        {
+          "coordinate": "log_basal_tension",
+          "fixed_state_FD_relative_error": 1.6666661274748195e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_common_gain",
+          "fixed_state_FD_relative_error": 1.6666670372141801e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        }
+      ],
+      "linear_solve_relative_residuals": [
+        6.128362937478997e-13,
+        4.69828763006486e-12,
+        5.398675951680156e-12,
+        6.940710094964047e-12,
+        4.865516219374972e-12,
+        6.670824024015091e-12
+      ],
+      "gauge_rhs_linf": 5.548404617694569e-16,
+      "Hessian_pattern": {
+        "free_DOF": 611,
+        "structural_nonzeros": 12741,
+        "colors": 46,
+        "seed_chunk": 4,
+        "row_color_collision_free": true,
+        "pattern_symmetric": true,
+        "pattern_color_sha256": "8c7aa251150f492a06c203308aac4c7a4a8405201f5cac5cac6ea4fdaa710bdf",
+        "dense_matrix_bytes": 2986568,
+        "sparse_values_and_int64_indices_bytes": 208752,
+        "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+      },
+      "interpretation": "Floating linearized response at a stored state. IFT derivative requires an exact regular equilibrium; no validated root or global identified set.",
+      "strength": 5.0,
+      "input": "runs/activated_quadrature/lambda_5000.0_strength_5.0/reequilibrated.json",
+      "input_sha256": "662060f2dce6efd8da0195fe851baba76bfeb2e5b20b93d63bceccbf0c8b4325",
+      "matrix_archive_sha256": "64760bc0ae0f838aa80c320d721611190ae48b186e6954cd9116c6068b1ab083"
+    },
+    {
+      "checks": {
+        "force_gate": true,
+        "trial_penalty_inactive": true,
+        "all_fixed_state_material_FD_checks": true,
+        "all_implicit_linear_systems_replayed": true,
+        "common_force_gauge_cancels": true
+      },
+      "force_linf": 2.8146492569384313e-12,
+      "columns": [
+        "log_kappa",
+        "log_apical_area",
+        "log_basal_area",
+        "apical_tension_additive",
+        "log_basal_tension",
+        "log_common_gain"
+      ],
+      "fixed_state_derivative_checks": [
+        {
+          "coordinate": "log_kappa",
+          "fixed_state_FD_relative_error": 1.6666665308121347e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_apical_area",
+          "fixed_state_FD_relative_error": 1.6666660615402798e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_basal_area",
+          "fixed_state_FD_relative_error": 1.6666034503225686e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "apical_tension_additive",
+          "fixed_state_FD_relative_error": 2.1052518810859204e-14,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "one-sided additive"
+        },
+        {
+          "coordinate": "log_basal_tension",
+          "fixed_state_FD_relative_error": 1.666664503868862e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        },
+        {
+          "coordinate": "log_common_gain",
+          "fixed_state_FD_relative_error": 1.6666662286273506e-07,
+          "FD_pass": true,
+          "FD_step": 0.001,
+          "FD_kind": "central multiplicative"
+        }
+      ],
+      "linear_solve_relative_residuals": [
+        5.941890019793348e-13,
+        5.457054587959865e-12,
+        4.429541968901395e-12,
+        7.465218440894283e-12,
+        4.4324479590607e-12,
+        5.616915688325289e-12
+      ],
+      "gauge_rhs_linf": 1.1078648849000006e-15,
+      "Hessian_pattern": {
+        "free_DOF": 611,
+        "structural_nonzeros": 12741,
+        "colors": 46,
+        "seed_chunk": 4,
+        "row_color_collision_free": true,
+        "pattern_symmetric": true,
+        "pattern_color_sha256": "8c7aa251150f492a06c203308aac4c7a4a8405201f5cac5cac6ea4fdaa710bdf",
+        "dense_matrix_bytes": 2986568,
+        "sparse_values_and_int64_indices_bytes": 208752,
+        "scope": "Structural12DOFtriangle/6DOFsurfacecliques oflocalhighQpointwiseenergy; nohand-codedconstitutiveHessian."
+      },
+      "interpretation": "Floating linearized response at a stored state. IFT derivative requires an exact regular equilibrium; no validated root or global identified set.",
+      "strength": 10.0,
+      "input": "runs/activated_quadrature/lambda_5000.0_strength_10.0/reequilibrated.json",
+      "input_sha256": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50",
+      "matrix_archive_sha256": "787ecb825811fcde5f8445dbfb0d4a64ed37a591270227cdc43546bc6ebcb41c"
+    }
+  ],
+  "protocol_sha256": "8ada1d190378f25b8aca2f6f99f6916c05af284f90c1c8c30e4eaf5f279c9dc4",
+  "sources_unchanged": true,
+  "scope": "No-optimization material tangent audit on three saved12x6 high-Q fields"
+}

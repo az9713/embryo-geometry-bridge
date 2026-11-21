@@ -1,0 +1,25 @@
+# Later-wave signed global reduction
+
+This adapter handles one of the seven frozen later waves per invocation. Each wave has four explicit cases and all 672 independently reviewed component hulls. The underlying physical parameters, exact drive, original field, singleton geometry, binary center, binary preconditioner, and closed radius \(r=2^{-34}\) remain those of the existing target catalogue. The adapter has two process modes.
+
+## Mathematical inputs and decisions
+
+The producer uses the reviewed signed local-to-global assembly and the 640-bit Arb contraction kernel. The independent mode uses the previous 768-bit signed endpoint implementation and its own exact scatter. Both use the same externally observed hull leaves as premises and validate their full signed unions against the associated original raw slots. The local proof supplies the valid interval and the full union can enlarge it. Any disjoint point-force, Hessian, or same-deformation cache correction row holds the whole reduction.
+
+With \(\Delta F=F_I-F_Q\) at the exact verification center and \(\Delta H=H_I-H_Q\) on the full cube, first scatter all local signed enclosures. Mirror each global upper Hessian entry once. Each contraction encloses \(R\Delta F + [RF_Q]\) and adds the already-preconditioned cached anchor once. Bound \(b=\sup\lVert R\Delta H\rVert_\infty\) and let \(z=Z_Q+b\). The strict sufficient root test is \(z<1\) and \(\eta+zr<r\), where \(\eta\) bounds the infinity norm of the signed full center residual. The signed row lower norm can separately give a sufficient exclusion of that cube. A case without either proof remains unresolved.
+
+The same binary \(R\) requires its independently verified positive symmetric part from the full 32-case premise. Under the strict root test, positive definite \(\operatorname{Sym}(R)\), symmetry of the normalized energy Hessian, and \(\lVert I-RH_I\rVert_\infty\le z<1\) give a strict local minimum by the previously reviewed Lyapunov implication. The scalar curvature floor is \((1-z)/\lVert R\rVert_\infty\). An independent positive root test supplies \(e=\eta/(1-z)\) about the verification center. Transfer to the original stored field retains the exact recenter shift \(\sigma\) and addition gap \(\xi\), giving physical nodal radius \((33.5\,\mu\mathrm m)(\sigma+e+\xi)\). Observer classification requires a separate scalar application. The reducer supplies no branch, continuum, or calibration conclusion.
+
+## Gates and execution
+
+The static [protocol](protocol.json) and [preflight](preflight.json) bind the original signed kernels, the previously observed same-\(R\) premise, and all seven profiles. The [additional cold fixture receipt](cold_roundtrip_receipt.json) checks native status, mixed source and target rejection, literal PID and exit types, partial case coverage and the producer/independent phase boundary. No actual hull operands or real global matrices enter preparation.
+
+Provide an independently issued source review at `independent_source_review/receipt.json`. Its status is `PASS_INDEPENDENT_LATER_WAVE_GLOBAL_REDUCTION_SOURCE`. It binds the literal nonempty checks, `source_sha256`, `protocol_sha256`, `preflight_sha256`, `later_waves_release_sha256`, `profiles_sha256`, ordered `permitted_waves`, `approved_modes` equal to `["producer","independent"]`, and `new_spatial_integrations_authorized: false`.
+
+For each wave, the root-observed aggregate must be at `waves/<wave>/admission/global_hull_root_admission.json`, status `PASS_ROOT_OBSERVED_LATER_WAVE_HULL_REPLAY_EXITS`. Include `wave_id`, `raw_wave_admission_sha256`, `raw_root_observed_exit_sha256`, and `cases` in the fixed profile order. Each entry carries `case_id`, literal positive `pid`, literal `observed_exit_code: 0`, a genuine `unified_exec_session` or synchronous `unified_exec_chunk_id`, and `started_sha256`, `terminal_sha256`, `receipt_sha256`. The driver first authenticates all four native metadata chains and rehashes all 672 sealed local leaves. It then opens signed operands one case at a time.
+
+```text
+python -B <global_reduction_v1>/reduce.py producer --wave <wave> --protocol-sha256 <sha> --preflight-sha256 <sha> --review-sha256 <sha> --hull-admission-sha256 <sha> --raw-wave-admission-sha256 <sha> --raw-root-observed-exit-sha256 <sha>
+```
+
+Observe the producer subprocess exit. Record it in `waves/<wave>/global_reduction_v1/producer/root_observed_exit.json` with status `PASS_ROOT_OBSERVED_LATER_WAVE_GLOBAL_PRODUCER_EXIT`, `wave_id`, `hull_admission_sha256`, genuine PID and process handle, literal exit 0, `started_sha256`, `terminal_sha256`, and `results_sha256`. Then use the same command in mode `independent` with the additional `--producer-os-sha256` pin. Actual outcomes are stored under the separate write-once `producer/` and `independent/` wave folders. The independent driver checks exact equality of the signed global operands. It performs a new directed matrix enclosure and checks consistency against the producer output. Its scalar decisions come from its own enclosure.

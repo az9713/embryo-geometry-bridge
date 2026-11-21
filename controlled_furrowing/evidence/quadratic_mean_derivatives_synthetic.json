@@ -1,0 +1,189 @@
+{
+  "status": "PASS_SYNTHETIC_MEAN_DERIVATIVES",
+  "checks": {
+    "exact_R_t_plus_t2_current_radial_line_0_0": true,
+    "FD_synthetic_current_radial_line_0_0": true,
+    "exact_R_t_plus_t2_current_radial_line_0_1": true,
+    "FD_synthetic_current_radial_line_0_1": true,
+    "exact_R_t_plus_t2_current_radial_line_1_0": true,
+    "FD_synthetic_current_radial_line_1_0": true,
+    "exact_R_t_plus_t2_current_radial_line_1_1": true,
+    "FD_synthetic_current_radial_line_1_1": true,
+    "exact_R_t_plus_t2_current_radial_line_2_0": true,
+    "FD_synthetic_current_radial_line_2_0": true,
+    "exact_R_t_plus_t2_current_radial_line_2_1": true,
+    "FD_synthetic_current_radial_line_2_1": true,
+    "vertical_translation_identity_current_radial_line": true,
+    "exact_R_t_plus_t2_current_disk_0_0": true,
+    "FD_synthetic_current_disk_0_0": true,
+    "exact_R_t_plus_t2_current_disk_0_1": true,
+    "FD_synthetic_current_disk_0_1": true,
+    "exact_R_t_plus_t2_current_disk_1_0": true,
+    "FD_synthetic_current_disk_1_0": true,
+    "exact_R_t_plus_t2_current_disk_1_1": true,
+    "FD_synthetic_current_disk_1_1": true,
+    "exact_R_t_plus_t2_current_disk_2_0": true,
+    "FD_synthetic_current_disk_2_0": true,
+    "exact_R_t_plus_t2_current_disk_2_1": true,
+    "FD_synthetic_current_disk_2_1": true,
+    "vertical_translation_identity_current_disk": true,
+    "radial_transport_term_nonzero": true,
+    "fixed_t_endpoint_error_exposed": true,
+    "constant_graph_all_radial_derivatives_zero_current_radial_line": true,
+    "constant_graph_all_radial_derivatives_zero_current_disk": true,
+    "input_guard_0": true,
+    "input_guard_1": true,
+    "input_guard_2": true,
+    "input_guard_3": true,
+    "input_guard_4": true
+  },
+  "FD_rows": [
+    {
+      "weight": "current_radial_line",
+      "node": 0,
+      "coordinate": 0,
+      "FD": 1.1102230246251564e-11,
+      "analytic": {
+        "numerator": 0,
+        "denominator": 1,
+        "display": 0.0
+      },
+      "absolute_error": 1.1102230246251564e-11
+    },
+    {
+      "weight": "current_radial_line",
+      "node": 0,
+      "coordinate": 1,
+      "FD": 0.020833333333469817,
+      "analytic": {
+        "numerator": 1,
+        "denominator": 48,
+        "display": 0.020833333333333332
+      },
+      "absolute_error": 1.3648457364290323e-13
+    },
+    {
+      "weight": "current_radial_line",
+      "node": 1,
+      "coordinate": 0,
+      "FD": -0.4583333333030292,
+      "analytic": {
+        "numerator": -11,
+        "denominator": 24,
+        "display": -0.4583333333333333
+      },
+      "absolute_error": 3.030409256865596e-11
+    },
+    {
+      "weight": "current_radial_line",
+      "node": 1,
+      "coordinate": 1,
+      "FD": 0.9166666666671207,
+      "analytic": {
+        "numerator": 11,
+        "denominator": 12,
+        "display": 0.9166666666666666
+      },
+      "absolute_error": 4.54081217071689e-13
+    },
+    {
+      "weight": "current_radial_line",
+      "node": 2,
+      "coordinate": 0,
+      "FD": -0.04166666666971519,
+      "analytic": {
+        "numerator": -1,
+        "denominator": 24,
+        "display": -0.041666666666666664
+      },
+      "absolute_error": 3.048526708848698e-12
+    },
+    {
+      "weight": "current_radial_line",
+      "node": 2,
+      "coordinate": 1,
+      "FD": 0.06250000000318501,
+      "analytic": {
+        "numerator": 1,
+        "denominator": 16,
+        "display": 0.0625
+      },
+      "absolute_error": 3.185007813044649e-12
+    },
+    {
+      "weight": "current_disk",
+      "node": 0,
+      "coordinate": 0,
+      "FD": 0.02179487180453687,
+      "analytic": {
+        "numerator": 17,
+        "denominator": 780,
+        "display": 0.021794871794871794
+      },
+      "absolute_error": 9.665077765896868e-12
+    },
+    {
+      "weight": "current_disk",
+      "node": 0,
+      "coordinate": 1,
+      "FD": -0.02724358974526275,
+      "analytic": {
+        "numerator": -17,
+        "denominator": 624,
+        "display": -0.027243589743589744
+      },
+      "absolute_error": 1.6730054841485043e-12
+    },
+    {
+      "weight": "current_disk",
+      "node": 1,
+      "coordinate": 0,
+      "FD": -0.4775641025328569,
+      "analytic": {
+        "numerator": -149,
+        "denominator": 312,
+        "display": -0.4775641025641026
+      },
+      "absolute_error": 3.1245672715840556e-11
+    },
+    {
+      "weight": "current_disk",
+      "node": 1,
+      "coordinate": 1,
+      "FD": 0.9115384615399068,
+      "analytic": {
+        "numerator": 237,
+        "denominator": 260,
+        "display": 0.9115384615384615
+      },
+      "absolute_error": 1.4452883334570288e-12
+    },
+    {
+      "weight": "current_disk",
+      "node": 2,
+      "coordinate": 0,
+      "FD": -0.06987179487771833,
+      "analytic": {
+        "numerator": -109,
+        "denominator": 1560,
+        "display": -0.06987179487179487
+      },
+      "absolute_error": 5.9234561700094446e-12
+    },
+    {
+      "weight": "current_disk",
+      "node": 2,
+      "coordinate": 1,
+      "FD": 0.11570512820358035,
+      "analytic": {
+        "numerator": 361,
+        "denominator": 3120,
+        "display": 0.11570512820512821
+      },
+      "absolute_error": 1.5478590631445854e-12
+    }
+  ],
+  "FD_scope": "Independent numerical check, not a proof; analytic exact coefficients and variation derivation supply the mathematical claim.",
+  "source_sha256": "681b69335a80ae0468dd98856c5562b24524827809ece465747b95454d152bff",
+  "observer_sha256": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926"
+}

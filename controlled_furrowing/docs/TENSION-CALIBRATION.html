@@ -1,0 +1,148 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TENSION-CALIBRATION</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Small-region adequacy audit of the prestress revision</h1>
+<p><strong>The numerical checks pass. Stronger basal surface tension improves the small-region motion-partition proxy, while substantial local compression remains.</strong> This audit uses the17small-region observations only. No old or new larger-region response, prediction or score file was opened. All four declared scenarios are retained; no larger-outcome branch selection is performed.</p>
+<p>The revision adds ordinary membrane surface tension to the existing finite-height model after the small-region v1 partition failure. It changes neither the original frozen v1 files nor the experimental data. Tension values are exploratory assumptions, not independently measured embryo properties.</p>
+<h2>Inputs and reproducibility</h2>
+<p>The height is33.5µm; normalized apical/basal area moduli are0.2and2. The four basal tension scenarios are</p>
+<div class="math display" data-tex="
+\widehat T_b=T_b/(\mu h)\in\{0,0.2,2,20\},
+"></div>
+
+<p>with zero apical tension. Each scenario's single activation gain was fitted to the same17maximum-shortening measurements. The table-based gain fit and its direct-solve checks were independently replayed from small-region data.</p>
+<p>The audit verifies all68direct profile files, their source/protocol provenance hashes, recorded identities and input strengths. It retains their SHA-256 hashes as the audit snapshot. The original calibration records did not contain an independent historical checksum manifest for every direct profile; this review captures and replays those profile bytes rather than claiming such a prior manifest existed.</p>
+<p>The only larger-condition descriptor file accessed was hash-read because the calculation's source manifest references it. It contains input descriptors, not outcomes; the audit never parses that file. An explicit path guard rejects evaluation, prediction and score files. All accessed paths and the complete verification program are retained in <a href="../../OMITTED.html?path=controlled_furrowing/evidence/tension_calibration_adequacy.json">the audit receipt</a>.</p>
+<p>Replay from the embryo-project root:</p>
+<pre><code class="language-powershell">python -c &quot;import json;exec(json.load(open('controlled_furrowing/evidence/tension_calibration_adequacy.json'))['verification_code'])&quot;
+</code></pre>
+<p>The replay refuses changed source/profile snapshots. It imports neither mechanical solver nor project observer.</p>
+<h2>Numerical stationarity independently checked</h2>
+<p>A separate NumPy implementation reconstructs the bulk, area-elastic, active-fibre and surface-tension energies. The tension contribution uses the exact revolved straight-edge area, independently of the implementation's surface quadrature. On accepted positive-Jstates these energies have an analytic local extension. Complex-step differentiation checks every free coordinate:</p>
+<div class="math display" data-tex="
+\frac{\partial\mathcal E}{\partial q_j}
+\simeq\frac{\operatorname{Im}E(q+i\delta e_j)}{\delta\mu V_0},
+\qquad\delta=10^{-30},\qquad\mathcal E=E/(\mu V_0).
+"></div>
+
+<p>All <strong>10,948 free-coordinate derivatives</strong> across68profiles were checked. The largest independently recomputed scaled force norm is <strong>3.63×10⁻¹⁰</strong>, below the declared10⁻⁷criterion. The maximum difference between independently recomputed and reported force norms is <strong>1.26×10⁻¹⁵</strong>.</p>
+<p>This is strong floating-point verification of the discrete energy/gradient and stationarity. It does not certify a global minimum, unique equilibrium, global injectivity or continuum accuracy. Local-Jand exact P1revolved-volume calculations were independently reconstructed as well.</p>
+<h2>Same observation proxy as the v1 small-region audit</h2>
+<p>Within the initial activated material radius, the independently recomputed component observables are</p>
+<div class="math display" data-tex="
+A=\max(-u_{z,a})h,\qquad B=\max(u_{z,b})h,
+\qquad S=\max\{1-[z_a-z_b]\}h.
+"></div>
+
+<p>These are respectively apical-down maximum, basal-up maximum and vertical paired-material-column shortening, using dimensionless model coordinates. The experimental comparison uses the corresponding separate source maxima. <strong>A+B is not substituted for S</strong>: the individual maxima may occur at different locations or times. The source data are temporal/image-derived; these model outputs are static material-column proxies.</p>
+<p>The source is apical-dominant in16of17small records. “Direction agreement” below compares the orderingA&gt;Bwith the source ordering of its two maxima. It is a calibration adequacy diagnostic, not a validated biological classification accuracy.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Basal tension scenario</th>
+<th style="text-align: right;">Gain</th>
+<th style="text-align: right;">Height RMSE (µm)</th>
+<th style="text-align: right;">Apical RMSE (µm)</th>
+<th style="text-align: right;">Basal RMSE (µm)</th>
+<th style="text-align: right;">Predicted apical-dominant</th>
+<th style="text-align: right;">Direction agreement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8.90</td>
+<td style="text-align: right;">2.255813</td>
+<td style="text-align: right;">5.567822</td>
+<td style="text-align: right;">3.727482</td>
+<td style="text-align: right;">0/17</td>
+<td style="text-align: right;">1/17</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">10.40</td>
+<td style="text-align: right;">2.248892</td>
+<td style="text-align: right;">4.575639</td>
+<td style="text-align: right;">2.517067</td>
+<td style="text-align: right;">0/17</td>
+<td style="text-align: right;">1/17</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">14.30</td>
+<td style="text-align: right;">2.240081</td>
+<td style="text-align: right;">2.673956</td>
+<td style="text-align: right;">1.316931</td>
+<td style="text-align: right;">17/17</td>
+<td style="text-align: right;">16/17</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">15.65</td>
+<td style="text-align: right;">2.235579</td>
+<td style="text-align: right;">2.622288</td>
+<td style="text-align: right;">2.479043</td>
+<td style="text-align: right;">17/17</td>
+<td style="text-align: right;">16/17</td>
+</tr>
+</tbody>
+</table>
+<p>The independently reproduced height residual sums of squares are86.507731,85.977765,85.305407and84.962817µm². Gains are interior to the declared finite grid. The selected direct/table discrepancies are at most0.01099µm, below the declared0.05µm tolerance; that is a check at selected calibration points, not a global interpolation or continuous-parameter optimum certificate.</p>
+<p>The four height fits are numerically similar, yet their predicted motion partitions differ substantially. This demonstrates limited discrimination by the scalar target <strong>within this tested family</strong>. It is not a theorem describing the full calibration identified set. The component diagnostics may inform a later declared small-data calibration, but this audit does not introduce new weights, fit a tension, or select a winning branch.</p>
+<h2>Why a surface-tension revision is mechanically sensible</h2>
+<p>For a flat surface displaced normally by a small graphw, letq=|∇w|². Then the area ratio is</p>
+<div class="math display" data-tex="
+J_s=\sqrt{1+q}=1+\frac q2+O(q^2).
+"></div>
+
+<p>An initially unstressed area-elastic penalty contributes</p>
+<div class="math display" data-tex="
+\frac{K_s}{2}(J_s-1)^2=\frac{K_s}{8}&#124;\nabla w&#124;^4
++O(&#124;\nabla w&#124;^6),
+"></div>
+
+<p>whereas a baseline surface tension contributes</p>
+<div class="math display" data-tex="
+T_s(J_s-1)=\frac{T_s}{2}&#124;\nabla w&#124;^2+O(&#124;\nabla w&#124;^4).
+"></div>
+
+<p>Thus these two standard terms supply different leading-order normal restoring responses. Increasing an unstressed area modulus is not the same as adding tension. This local expansion motivates the revision; it does not by itself prove the full tissue response or identify the embryo's prestress. The mechanism is established membrane mechanics, not a new-concept claim.</p>
+<p>One editorial qualification is necessary: the frozen protocol inherits the phrase “flat stress-free idealization.” Nonzero surface-tension cases are <strong>flat equilibrated prestressed reference states</strong>, with rim reactions supporting the tension. They are not wholly stress-free. This note clarifies the wording without altering the frozen protocol or its hashes.</p>
+<h2>Compression remains a major physical limitation</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Basal tension scenario</th>
+<th style="text-align: right;">Minimum local J</th>
+<th style="text-align: right;">Maximum local volume reduction</th>
+<th style="text-align: right;">Largest absolute global volume change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.805932</td>
+<td style="text-align: right;">19.41%</td>
+<td style="text-align: right;">0.0769%</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.782001</td>
+<td style="text-align: right;">21.80%</td>
+<td style="text-align: right;">0.0898%</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.725455</td>
+<td style="text-align: right;">27.45%</td>
+<td style="text-align: right;">0.1163%</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0.708673</td>
+<td style="text-align: right;">29.13%</td>
+<td style="text-align: right;">0.1238%</td>
+</tr>
+</tbody>
+</table>
+<p>Global volume changes remain small while local compression increases. Surface tension has therefore <strong>not resolved the incompressibility problem</strong>. Positive localJand stationary energy do not justify calling these predictions biologically near-incompressible.</p>
+<h2>What this establishes</h2>
+<p>Within the four tested discrete assumptions, stronger basal tension changes the small-region apical/basal partition in the observed majority direction. Similar scalar shortening fits alone would obscure that distinction. This is useful model-development evidence from calibration data, with no larger-outcome fitting in this audit.</p>
+<p>It does not identify a physiological tension value, establish a full admissible parameter set, resolve the static-versus-temporal observation mismatch, demonstrate a successful larger-region prediction, or complete the original five gates. All scenarios and the failed/limited v1 remain retained. Further comparisons require the declared geometry/material/observation assumptions and their numerical limits to remain explicit.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

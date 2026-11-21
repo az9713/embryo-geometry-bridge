@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DISCRETE-GEOMETRY-CERTIFICATE</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Exact geometry verification for the saved finite-element bodies</h1>
+<p>Positive Jacobians at quadrature points alone do not exclude interpenetration. This check addresses the <strong>actual saved discrete states</strong>, independently of the optimizer. It is standard piecewise-linear topology and rational arithmetic, not a novel theorem or a continuum-error estimate.</p>
+<h2>Exact local Jacobian bounds</h2>
+<p>Each meridional triangle has a piecewise-affine map <span class="math" data-tex="(r,z)\mapsto(R,Z)"></span>. Let its positive reference/current oriented doubled areas be <span class="math" data-tex="d_0,d_1"></span>, giving constant meridional determinant <span class="math" data-tex="d_1/d_0"></span>. Revolving the triangle adds the hoop stretch <span class="math" data-tex="R/r"></span>, so</p>
+<div class="math display" data-tex="
+J=\frac{d_1}{d_0}\frac Rr.
+"></div>
+
+<p>With axis nodes mapped to the axis and all other radii positive,</p>
+<div class="math display" data-tex="
+\frac Rr=
+\frac{\sum_i\lambda_i r_i(R_i/r_i)}{\sum_i\lambda_i r_i}
+"></div>
+
+<p>is a convex combination of the non-axis vertex ratios. Thus its extrema, including axis limits, lie between those ratios. Multiplying by the positive constant determinant gives exact element Jacobian bounds. This argument is specific to the saved P1 maps; it is not valid unmodified for quadratic elements.</p>
+<h2>Global noninterpenetration of these discrete bodies</h2>
+<p>The checker verifies that the triangulation is an oriented disk: every interior edge has opposing incidences, every vertex link is a path or cycle as appropriate, and there is one boundary cycle. It checks strict positive orientation for every reference/current triangle and exact simplicity of both boundary polygons, including nonadjacent intersections and adjacent backtracking.</p>
+<p>For a point off the image edges, the topological degree equals the winding number of the simple oriented boundary: one inside and zero outside. Every triangle preimage contributes +1 because its determinant is positive. Therefore image interiors cannot overlap or leave an uncovered interior hole. Continuity and the disk's vertex/edge neighborhoods extend injectivity to the edges and vertices. The finite piecewise-linear meridional map is consequently a homeomorphism onto its image. Preserving the axis and positive radius elsewhere makes its axisymmetric revolution injective as a three-dimensional body.</p>
+<h2>Exact volume ratio</h2>
+<p>For a meridional triangle, integration of the affine radial coordinate gives</p>
+<div class="math display" data-tex="
+V_t=\frac\pi3\,d_t\sum_{i=1}^{3}r_i.
+"></div>
+
+<p>The factor <span class="math" data-tex="\pi/3"></span> cancels from the current/reference volume ratio, making that ratio rational for the stored node coordinates. The checker converts every loaded binary64 coordinate into its exact rational value, checks all geometric predicates without rounding tolerances, and independently compares rational Jacobian/volume results with the solver diagnostics.</p>
+<p>The certificate covers 51 directly calibrated and 93 larger-region states. It proves their discrete geometry is valid, even when their volume changes are too large to justify a biological incompressibility approximation. It does not prove a continuum solution is close to those states, certify optimizer stationarity, reconstruct an embryo, or identify material parameters. <a href="../scripts/certify_discrete_geometry.py">Implementation</a>; <a href="../evidence/discrete_geometry_certificate.json">exact receipt</a>.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ROOT_OBSERVED_TRANSVERSE_SURFACE_STRESS_EXIT",
+  "pid": 584,
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "7fffdc",
+  "started_sha256": "2fa25e48d2b4d34816cda80b0d5c5ecd13f789fbefad7e00a5ff46998e400011",
+  "terminal_sha256": "eda1100ebc985ca7d6245c1c89fb99da22904bfed756e9a037785f8233dbf55a",
+  "results_sha256": "331ee98456e7a8ee83c5e9e085dd88a1a764bd4b2b216901dd56f32ae060b04f",
+  "actual_arithmetic_independent_readback_still_required": true
+}

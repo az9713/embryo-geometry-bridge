@@ -1,0 +1,21 @@
+{
+  "status": "PASS_INDEPENDENT_COLD_TRANSVERSE_SURFACE_STRESS_SCREEN",
+  "source_sha256": "f33aaf277eea10fd364a529f95d369551c99b73747f7856cee3af4318b60b3a3",
+  "protocol_sha256": "a09fb767d9990fce5816203d45579a5b400a1271248788b685a91aebda355e32",
+  "preflight_sha256": "7eb3c81037d1ecac47f5e5ca45122f8abd0a316f5022314c14dd6e1470220206",
+  "independent_fixture_receipt_sha256": "47aa3c11188da3b924f48838cd5b77d68f14272f824cef7b6fc887ac591df866",
+  "independent_fixture_true_exit_code": 0,
+  "independent_fixture_tool_chunk_id": "b5779c",
+  "checks": {
+    "original_K_L_exact_root_posterior_with_matching_whole_body_and_trace_sources": true,
+    "fixed_all_672_positive_width_same_edge_off_axis_windows": true,
+    "affine_reference_radius_from_endpoints_matches_explicit_spatial_surface_law": true,
+    "exact_signed_bernstein_enclosure_of_degree_six_defect_and_threshold_logic": true,
+    "strictly_negative_tau_upper_and_positive_transverse_coefficient_lower_are_valid": true,
+    "verified_synthetic_tilted_compression_crossing_zero_and_nonpositive_alpha_cases": true,
+    "localized_high_mode_energy_descent_is_conditional_on_enlarged_model_and_positive_width_patch": true,
+    "no_actual_stress_in_cold_review_or_automatic_stability_claim": true
+  },
+  "scope": "Root-controlled scalar launch only. Matched equilibrium and whole-box geometry are already established in the restricted finite-dimensional setting. An actual negative patch would imply lower energy in the stated natural 3D extension with smooth annular perturbations. This is not a stability theorem for the continuum model or a physical wavelength, alternative shape, or loading prediction.",
+  "actual_stress_AD_or_mode_jobs_by_reviewer": 0
+}

@@ -1,0 +1,22 @@
+{
+  "status": "FROZEN_VERIFIED_CONDITIONAL_OBSERVER",
+  "files": {
+    "scripts/annulus_observer.py": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9",
+    "docs/ANNULUS-OBSERVER.md": "3583d4713c636a6e855d58472eae6b8f086c225b5c5c457c7ff25d8d12b9faad",
+    "docs/ANNULUS-OBSERVER.html": "8f986d8b665e2ecc400956d2de93c63e1181c9226d48bdd4fecc8bb041618e82",
+    "evidence/annulus_observer_visual.svg": "1fa090a641f77da56925a186b3bd36bff1fa76296a32503673e5ec4a4dbcbc5e",
+    "evidence/annulus_observer_literature.json": "83a9ccce552aea6b32614c8da77824436f82743b4505f695ddaa7651f19f35c6",
+    "evidence/annulus_observer_verification.json": "ef48f4ce1e67ba927519fd825a00daf7ff52a28714dbde07ed18462544c900b4",
+    "evidence/annulus_observer_adversarial.json": "7ac561dc8a89d817548e0b9f6a104f6b14d36cac52d157afc3a18a458c61a067",
+    "evidence/annulus_observer_visual.json": "dfcb5e08a2c7fa2b25b8df3b3b5c0674bcdf70cba8edffe5d0e3de00411c4876",
+    "evidence/annulus_observer_browser.json": "dcb5a7faa151f190249d38b92317a2688079153f5842807b4ddecd68555c8a34"
+  },
+  "verification_scope": {
+    "main_exact_assertions": 62,
+    "additional_exact_assertions": 2392,
+    "P1_height_cases": 1088,
+    "P2_general_cases": 100,
+    "browser": "ActualgeneratedHTML,headlessEdge1440/390;42of42formulae renderedbothwidths;noerrors;SVGloaded;nohorizontaloverflow;rootPLANmdlinkpreserved"
+  },
+  "scientific_status": "No certifiedMovie3anatomicalradiusintervals;NOreal-dataannulustest,biologicalpredictionPASSornewconceptclaim. Originalcohort/time/optical/material/continuumgatesremainseparate."
+}

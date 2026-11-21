@@ -1,0 +1,71 @@
+{
+  "status": "CURATED_PUBLICATION_SCOPE",
+  "local_inventory_point_in_time": {
+    "files": 22120,
+    "bytes": 5364354407
+  },
+  "direct_parent_raw_hull_proof_lower_bound": {
+    "logical_files": 7260,
+    "missing_paths": [],
+    "current_present_bytes": 1443470566
+  },
+  "not_shipped": [
+    "Full raw FE/interval integration and proof closures",
+    "Third-party archives, PDFs, movies and original workbooks",
+    "Author-contact drafts and private collaboration",
+    "Host-specific process logs and previous local Git history"
+  ],
+  "known_omitted_paths_with_reasons": {
+    "controlled_furrowing/evidence/exact_integration_final_delivery_independent_review.json": "absolute_host_path_in_frozen_receipt",
+    "controlled_furrowing/evidence/material_cohort_direct_prelaunch_review.json": "absolute_host_path_in_frozen_receipt",
+    "controlled_furrowing/evidence/quadratic_manufactured.json": "absolute_host_path_in_frozen_receipt",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/scientific_readback/receipt.json": "absolute_host_path_in_frozen_receipt",
+    "controlled_furrowing/evidence/later_data_search_1.json": "email_like_text_in_local_receipt",
+    "controlled_furrowing/evidence/later_data_search_2.json": "email_like_text_in_local_receipt",
+    "controlled_furrowing/evidence/tension_calibration_adequacy.json": "email_like_text_in_local_receipt",
+    "controlled_furrowing/evidence/space_checkpoint_update.json": "private_space_identifier",
+    "controlled_furrowing/evidence/space_creation.json": "private_space_identifier",
+    "controlled_furrowing/evidence/space_visual_readback.json": "private_space_identifier",
+    "controlled_furrowing/runs/axisymmetric/initial_failure/axisymmetric_mechanics.py": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/cohort_energy_stability_v1/publication-draft.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/cohort_energy_stability_v1/publication_revision_0/publication-draft-pending-review.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/cohort_energy_stability_v1/theory-draft.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/exact_integration_bridge_v1/documentation_draft/EXACT-INTEGRATION-BRIDGE.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/exact_integration_bridge_v1/safe_uniform_publication_v1/preparation/draft_pending_review_revision_0/EXACT-INTEGRAL-ROOT.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/github_publication_preparation_v1/inventory/inventory.py": "local publication tooling and analysis",
+    "controlled_furrowing/runs/github_publication_preparation_v1/inventory/propose.py": "local publication tooling and analysis",
+    "controlled_furrowing/runs/github_publication_preparation_v1/inventory/scan_privacy.py": "local publication tooling and analysis",
+    "controlled_furrowing/runs/source_contract_supplements_v1/public-source-audit-draft.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/source_contract_supplements_v1/publication_evidence_revision_0/public-source-audit-draft.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/source_contract_supplements_v1/publication_link_revision_0/public-source-audit-draft.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/temporal_mean_order_robust/initial_failure/temporal_mean_order_robust_witness.py": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/REPORT.md": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/build.py": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/exact_bounds.csv": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/exact_observer_comparisons.csv": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/exact_slab_geometry.csv": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/failure_receipt.json": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/selfmap.png": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/slab_guards.png": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/transverse_windows.csv": "private workflow, scratch, historic duplicate, or withheld draft",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/development_render_count_guard_v0/transverse_windows.png": "private workflow, scratch, historic duplicate, or withheld draft"
+  },
+  "static_link_redirect_counts": {
+    "omitted path or anchor": 248
+  },
+  "outside_browse_assumptions": "Retained JSON digests may identify omitted objects. No full offline raw replay claim.",
+  "authorship_contact": "A processed-data request remains unsent. No author contact.",
+  "representation": "Eligible scientific source and receipt bytes unchanged. Portable HTML/MD derivatives listed in manifest.",
+  "root_additional_privacy_omissions": [
+    {
+      "path": "controlled_furrowing/evidence/space_parameter_family_update.json",
+      "source_sha256": "01a421cb0bdd4544593500cda6fd803c4f2d8c575059026dffb034c4d9d8875b",
+      "reason": "Private workspace URL in local workflow receipt; scientific proof payload not modified."
+    },
+    {
+      "path": "controlled_furrowing/evidence/space_shared_cell_update.json",
+      "source_sha256": "78e5a18db5366e03410e13b773b9cda13f1ca78425ef63b8ec55a845dbabf680",
+      "reason": "Private workspace URL in local workflow receipt; scientific proof payload not modified."
+    }
+  ]
+}

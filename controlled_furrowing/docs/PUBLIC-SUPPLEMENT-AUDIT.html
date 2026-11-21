@@ -1,0 +1,182 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PUBLIC-SUPPLEMENT-AUDIT</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>What all sixteen linked public supplements supply for a geometry test</h1>
+<p><strong>The sixteen linked supplementary assets have now been acquired and checked. The next data prerequisite is a source-aligned observation contract.</strong> These conclusions concern the inspected public version of Countryman et al., <a href="https://doi.org/10.1038/s41467-025-62483-6"><em>Endogenous OptoRhoGEFs reveal biophysical principles of epithelial tissue furrowing</em></a>, <em>Nature Communications</em> 16, 7665 (2025). They do not establish that additional processed data are unavailable from the authors or elsewhere.</p>
+<p>This chapter explains the experimental source before separating file integrity, image interpretation, and model validation. It adds no model fit, noise allowance, anatomical segmentation, or novelty claim. The existing shared-cell mechanical results and their discrepancy bounds are unchanged.</p>
+<p><img alt="Original schematic: public files, measurement bridge, and conditional mechanics" src="../../omitted-asset.svg" /></p>
+<p>The schematic is drawn from this audit's logical structure. It contains no source microscopy pixels or adapted publication figures. Extracted source frames and contact sheets remain local inspection assets.</p>
+<h2>The biological experiment in mathematical terms</h2>
+<p>An epithelium is a layer of connected cells. Here the cells form part of a fly embryo. Their <strong>apical</strong> surfaces face outward and their <strong>basal</strong> surfaces face inward. Light-controlled molecular recruitment changes cellular contraction. A mechanical model can ask how that contraction changes tissue shape, but it needs to know exactly which shapes the experimental measurements represent.</p>
+<p>In the small-region experiments, the authors activated a nominal 18-micrometre-wide cylinder, spanning 5–25 micrometres below the apical surface. The published protocol selected embryos with cells 32–35 micrometres long, used a 40-second activation scan, and followed the response. The tissue is still developing: unactivated cells continue lengthening. Therefore a reduction relative to expected unactivated growth is different from the raw difference between two photographed heights. These details are supplied in the source; they are not missing physical ideas invented by our model. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12361397/">Primary text, Results “RhoGEF-driven cell shortening is dose-dependent,” paragraph Par18; Methods “Live imaging and photomanipulation,” Par56; “Furrow quantification,” Par59.</a></p>
+<p>If reconstructed apical and basal positions are <span class="math" data-tex="z_a(x,t)"></span> and <span class="math" data-tex="z_b(x,t)"></span>, a declared sign convention gives thickness</p>
+<div class="math display" data-tex="
+h(x,t)=z_a(x,t)-z_b(x,t).
+"></div>
+
+<p>Let <span class="math" data-tex="h_{\mathrm{ref}}(x,t)"></span> denote the counterfactual height without activation, and choose positive shortening as</p>
+<div class="math display" data-tex="
+S(x,t)=h_{\mathrm{ref}}(x,t)-h(x,t).
+"></div>
+
+<p>This notation specifies the comparison we would replay; it does not assert that the unpublished per-acquisition reference arrays or their complete allocation to the two surface-component summaries are known. The paper describes an embryo-specific reference derived from nonactivated tissue. The reference curve, the tracked region, and their connection to each reported scalar are part of the measurement, not optional numerical details.</p>
+<h2>What was actually verified</h2>
+<p>The <a href="../evidence/public_supplement_asset_manifest.json">all-assets manifest</a> contains <strong>16 files, 111,690,608 bytes: four PDFs, two XLSX workbooks, and ten AVI movies</strong>. Each file matches the official object size and MD5, and has a retained SHA256. Matching a checksum identifies a file; it does not validate an anatomical interpretation of its pixels.</p>
+<p>The <a href="../evidence/source_contract_workbook_package_audit.json">workbook package audit</a> checked both archives and XML structures. They contain <strong>40 visible worksheets</strong> and <strong>1,000 formula-cell elements</strong>. Those formulas belong to the Fig. 2f scaling-axis construction; they are not an unreported segmentation pipeline or complete timecourse reconstruction. No hidden worksheets, hidden rows/columns, external relationships, comments, or embedded scientific files were identified by that structural inspection. A <strong>922-byte Google workbook-metadata part remains semantically undecoded</strong>. We retain that limit: uninterpreted bytes are not evidence that they contain no scientific information.</p>
+<p>The <a href="../evidence/source_contract_small_movies_audit.json">small-movie audit</a>, <a href="../evidence/movie_geometry_audit.json">complete Movie 3 decode receipt</a>, and <a href="../evidence/source_contract_other_movies_audit.json">Movies 4–10 audit</a> account for <strong>903 fully decoded video frames</strong>: 159 in Movie 1, 20 in Movie 2, 26 in Movie 3, and 698 in Movies 4–10. First/middle/last frames and local contact sheets were inspected under their recorded policies. All frames were decoded; this is not a claim that every frame was manually annotated. Movie 1's small cross-decoder RGB differences were quantified and retained rather than relabeled identical. Decoder agreement, where present, remains a software consistency check, not a biological measurement-error bound.</p>
+<p>The supplied movies are prepared views, not the complete primary microscopy volumes. They show cell membranes, selected slices or projections, display clocks, scale bars and activation overlays. Some relevant boundaries are visible in Movie 2. However, complete, registered, calibrated initial and peak apical/basal profiles for the relevant source entries have <strong>not been verified</strong> from those views. We do not claim all contours are clipped or that every displayed boundary is unusable.</p>
+<h3>What each movie contributes</h3>
+<table>
+<thead>
+<tr>
+<th>Movie</th>
+<th>Published example and view</th>
+<th>What it does not establish for the current 17-entry calibration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Unactivated gastrulation, apical average projection</td>
+<td>A matched activated specimen or full apical/basal surfaces</td>
+</tr>
+<tr>
+<td>2</td>
+<td>OptoGEF2 and OptoCysts small activation; transverse and two in-plane views</td>
+<td>Full cohort identity map, registered profiles and reference arrays</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Large-region activation; transverse and selected in-plane slices</td>
+<td>Certified anatomical annulus boundaries or matched fullcohort geometry</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Large-region activation followed by <strong>vitelline-membrane micro-perforation</strong></td>
+<td>Basal/front-ablation experiment or unmodified small-dose response</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Natural cephalic furrow in control and scra-RNAi embryos; two depths</td>
+<td>Current small-activation cohort timecourses</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Early cellularization, circular activation, one subapical slice</td>
+<td>The 32–35-micrometre gastrulation-stage geometry</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Early dorsal closure, amnioserosa activation, two projections; activation ellipse redefined</td>
+<td>Stored time-dependent response masks or complete surfaces</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Late dorsal closure, bilateral epidermal activation, subapical slice</td>
+<td>Paired apical/basal trajectories for the calibration entries</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Single amnioserosa-cell activation, apical projection</td>
+<td>Multicellular patch calibration or a full height field</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Five sequential dorsal-closure interventions, two projections</td>
+<td>Five independent specimens or an unperturbed single-load history</td>
+</tr>
+</tbody>
+</table>
+<p>The source locators are the <a href="../../OMITTED.html?path=controlled_furrowing/data/raw/41467_2025_62483_MOESM3_ESM.pdf">description-of-supplementary-files PDF</a>, pages 1–2, and the individual audit receipts. The captions specify nominal biological conditions. File-container metadata specifies codec, dimensions and playback timing. These are different evidence types: the latter does not independently calibrate the former. A drawn activation outline is also not automatically the tracked region used to average the response.</p>
+<h2>The source already tells us several important protocol facts</h2>
+<p><strong>Staging is constrained.</strong> The 32–35-micrometre cell-length criterion is an experimentally used selection criterion, not permission to assign every source entry our idealized 33.5-micrometre slab. Per-specimen measured initial profiles are still needed to compare that idealization with observations.</p>
+<p><strong>A timing protocol is supplied.</strong> Fig. 2 gives the preactivation → activation scan → response sequence and a cyan 40-second activation interval. The explicit sentence identifying time zero with activation initiation belongs to the Fig. 6 caption for its experiments; it must not be transplanted into a purported Fig. 2 quotation. A model may declare activation start as its nominal zero, but the matching of each Fig. 2 acquisition's frames, clocks and stages to that convention still needs to be verified. The protocol is not wholly undefined. Contraction can already occur during illumination. A state at the end of the 40-second scan cannot be assumed undeformed, including when constructing a reference for responding specimens.</p>
+<p><strong>Sampling is not accuracy.</strong> Methods Par56 specifies 44-micrometre stacks with 2-micrometre slice spacing, taking 22 seconds per frame for the cited membrane/myosin recordings. Neither the axial step nor the frame interval is a certified error bar on reconstructed anatomy. A 2-micrometre axial sampling step does not imply a 2-micrometre contour-error bound; pixel or voxel pitch alone cannot supply such a statement.</p>
+<p><strong>A substantial analysis workflow is described.</strong> Methods Par58 specifies trained ilastik apical segmentation, object classification, manual confirmation/correction, manual basal tracing in ImageJ, and PIV registration. The corresponding project/training state, corrected masks and per-specimen registrations are needed for replay. “No custom code was generated” does not mean no image-processing workflow was used. Methods Par59 describes cellularization correction and shortening summaries; Par60 describes normalization of first-activation fluorescence into the reported dose.</p>
+<p><strong>Temporal aggregation needs an implementation-level crosswalk.</strong> The written definition of average shortening is consistent with averaging pointwise temporal peaks. It should not be dismissed as though the publication supplied no definition. Nevertheless, implementing that definition requires point tracking, the corrected field, the actual region and time window; surface-component summaries need their corresponding aggregation/reference conventions. In general,</p>
+<div class="math display" data-tex="
+\int_\Omega \max_{t\in T}S(x,t)\,d\nu(x)
+\ne
+\max_{t\in T}\int_\Omega S(x,t)\,d\nu(x).
+"></div>
+
+<p>Here <span class="math" data-tex="\nu"></span> is the declared normalized spatial measure. Two spatial locations with equal weights can each peak at one at different times while their summed shortening never exceeds one. This gives left side one and right side one-half. This elementary difference explains why a static identity or static model residual cannot automatically reject independently time-aggregated source measurements.</p>
+<p>The <a href="../evidence/source_contract_peer_review_audit.json">peer-review audit</a> read all 36 pages with two text extractors and inspected five source-figure pages. Three author responses sharpen the constraints: measured 32–35-micrometre selection restricted developmental timing (PDF p. 17, first rebuttal, Reviewer 1 minor point 11); shortening could begin before the approximately 40-second scan ended (p. 31, second rebuttal, Reviewer 1 point 2); roughly 2-micrometre basal motion was difficult to resolve with 2-micrometre axial sampling (pp. 35–36, second rebuttal, Reviewer 2 point 3d). These clarify protocol and limitations; they do not supply the matched trajectory/mask/reference data, establish a segmentation error bound, or justify our illustrative 5.2-micrometre allowance. No peer-review text is quoted.</p>
+<h2>The remaining observation bridge</h2>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Already supplied or verified</th>
+<th>Missing or not yet verified for the matched source cohort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File provenance</td>
+<td>All 16 linked assets, official checksums, local hashes</td>
+<td>No claim that these exhaust primary microscopy or all possible repositories</td>
+</tr>
+<tr>
+<td>Specimen identity</td>
+<td>Canonical published table entries; captioned representative examples</td>
+<td>Stable IDs linking each dose, scalar column, raw acquisition, processed series and representative view</td>
+</tr>
+<tr>
+<td>Initial and response geometry</td>
+<td>Stage/height selection, representative views, calibrated units in methods</td>
+<td>Per-specimen registered apical/basal profiles or surfaces before activation and throughout the response</td>
+</tr>
+<tr>
+<td>Acquisition time</td>
+<td>Nominal activation onset, 40-second scan, stated sampling</td>
+<td>Per-acquisition frame times, activation start/end and mapping of derived maxima to source frames</td>
+</tr>
+<tr>
+<td>Region and registration</td>
+<td>Activation geometry and PIV/segmentation descriptions</td>
+<td>Stored activation masks, response masks, transforms and reference coordinates, with changing ROIs tracked</td>
+</tr>
+<tr>
+<td>Developing-tissue reference</td>
+<td>Embryo-specific nonactivated cellularization correction described</td>
+<td>The chosen nonactivated region, fitted/reference trace and its use in each component summary</td>
+</tr>
+<tr>
+<td>Observation operator</td>
+<td>Written mean/maximum definitions and representative traces</td>
+<td>Executable settings or transparent intermediate tables reproducing all four scalar summaries from each processed trajectory</td>
+</tr>
+<tr>
+<td>Anatomical uncertainty</td>
+<td>Nominal imaging spacing and manual-correction description</td>
+<td>Repeated annotations or other justified contour/registration/reference error estimates; no invented bound</td>
+</tr>
+<tr>
+<td>Mechanical interpretation</td>
+<td>Qualitative perturbations and separate model calculations</td>
+<td>Independent material inputs, common loading history, continuum accuracy and larger-region validation remain separate gaps</td>
+</tr>
+</tbody>
+</table>
+<p>The matrix says what the inspected package supports. It is not an accusation of unavailable author data, a proof that the opaque metadata contains nothing useful, or a requirement for a new experiment.</p>
+<h2>A compact processed-data request that would close specific gaps</h2>
+<p>No message has been sent. A useful request can ask for existing processed outputs, not an indiscriminate transfer of huge image volumes:</p>
+<ol>
+<li>A specimen/acquisition crosswalk for the small and larger activation cohorts: genotype, stage, source-table location, dose, activation geometry and matching image-series IDs.</li>
+<li>Physical frame times, activation start/end, voxel calibration and the registration/coordinate transforms used for each acquisition.</li>
+<li>Corrected apical and basal boundary coordinates or masks at each recorded time, including pre-activation frames and any field-of-view exclusions. Profiles are sufficient when those were the original analysis objects; full volumes are not intrinsically required.</li>
+<li>Activation and measurement-region masks, tracked through time; clarify which spatial measure produced each regional mean.</li>
+<li>The nonactivated reference region, measured cellularization trajectory, fitted/reference height curve and how its correction was allocated to the two component summaries.</li>
+<li>A small intermediate table showing the trajectory-to-summary calculation, including the spatial/temporal aggregation order, selected time window, maximum locations, and any clipping, rounding, thresholding or exclusions.</li>
+<li>Existing ilastik project/training settings, manual-correction record and uncertainty/replicate-annotation information where available. If no such uncertainty estimate exists, that absence should be stated rather than replaced by a guessed pixel envelope.</li>
+</ol>
+<p>A minimal deliverable could be four compact tables—<code>specimens</code>, <code>frames</code>, <code>boundaries</code>, and <code>reference_and_summary</code>—plus masks/transforms where coordinates alone are insufficient. The purpose is to reproduce the published measurements under the authors' actual definitions before judging a mechanistic prediction.</p>
+<h2>What remains true about the mathematics</h2>
+<p>The <a href="SHARED-CELL-COHORT.html">shared-cell result</a> retains 17 independently audited nearby stationary roots and 68 conditional static output enclosures on one small shared parameter cell. The <a href="../evidence/cohort_energy_stability_final_delivery.json">separate completed energy-stability component</a>, supported by its <a href="../evidence/cohort_energy_stability_independent_review.json">independent review</a>, additionally certifies that the selected roots are strict local minima of the same frozen discrete energy throughout that cell. This is local energetic stability in the stated free-coordinate space, not a physical time-path theorem. The outward-rounded discrepancy enclosure remains</p>
+<div class="math display" data-tex="
+5.18638714\le D(\theta)\le5.18638737\;\mu\mathrm m,
+\qquad\theta\in C.
+"></div>
+
+<p>The exact rational bounds in its receipt are authoritative. These are bounds for the declared finite-dimensional energy and static observation contract. Neither more complete source-file coverage nor the stronger local-minimum proof identifies the source observation law or makes this discrepancy an experimental uncertainty estimate. Local energy minima do not supply an experimentally validated time path.</p>
+<p>Full parameter-domain coverage, branch/loading-path selection, PDE and quadrature/discretization errors, source-aligned temporal observations, and the larger-region prediction remain distinct tasks. Completing this source inventory does not complete the original five scientific gates and does not establish a new biological or mathematical concept.</p>
+<h2>Receipts and limits of this chapter</h2>
+<p>The <a href="../../OMITTED.html?path=controlled_furrowing/runs/source_contract_supplements_v1/public_source_audit_binding.json">binding receipt</a> records the exact final audit, draft and original-visual hashes. The previous availability refresh remains a historical bounded search receipt; the new download/inspection inventory supersedes its previously uninspected supplement scope without altering its archived bytes. No original source file, physical model, proof packet, measurement-noise allowance or biological result was changed by preparing this chapter.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

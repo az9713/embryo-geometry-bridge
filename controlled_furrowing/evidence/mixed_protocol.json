@@ -1,0 +1,32 @@
+{
+  "scope": "Synthetic P2/P1 projected-log-pressure mechanics; no outcome reads",
+  "parameters": {
+    "nr": 6,
+    "nz": 3,
+    "height": 1.0,
+    "outer_radius": 3.0,
+    "patch_radius": 0.28,
+    "activation_z_min": 0.22,
+    "activation_z_max": 0.84,
+    "mu": 1.0,
+    "bulk": 50.0,
+    "basal_area_modulus": 2.0,
+    "apical_area_modulus": 0.2,
+    "reference_curvature": 0.0,
+    "quadrature": 4,
+    "surface_quadrature": 8,
+    "radial_inner_cells": 0,
+    "basal_surface_tension": 2.0,
+    "apical_surface_tension": 0.2
+  },
+  "thresholds": {
+    "reference_force": 1e-12,
+    "zero_displacement": 1e-08,
+    "affine_J_energy_relative": 1e-11,
+    "AD_relative": 2e-05,
+    "pressure_constraint": 1e-11,
+    "force_linf": 1e-07,
+    "scaled_displacement": 2e-05
+  },
+  "interpretation": "Projection is a changed finite-lambda mixed approximation, not pointwise incompressibility or an automatic cure."
+}

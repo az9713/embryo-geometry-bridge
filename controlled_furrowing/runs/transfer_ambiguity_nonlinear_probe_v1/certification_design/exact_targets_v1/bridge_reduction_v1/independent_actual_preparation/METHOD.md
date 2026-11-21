@@ -1,0 +1,16 @@
+# Independent full spatial reduction
+
+The inputs are the signed point defect \(F_I(u_0)-F_Q(u_0)\), the symmetric whole-cube defect \(H_I-H_Q\), and the already preconditioned signed point enclosure \(RF_Q(u_0)\). The derivative defect is valid throughout the closed radius \(2^{-34}\) cube. The independently reviewed geometry, cache and derivative receipts all refer to the same frozen center, active routes, singleton parameters, exact gain-times-dose drive, energy normalization and binary64 matrix \(R\).
+
+The executable authenticates the external physical producer exit, both raw and companion leaf bundles, the same-point cache correction and the source and target contracts. It uses the peer-reviewed proof-admission code for the component calculus and selection/tail premises. The independent numerical computation then adds exact rational local intervals in their actual free-coordinate order. It mirrors each local off-diagonal precisely once. It checks that this separately assembled vector and symmetric matrix match the producer's serialized operands.
+
+For \(A=[L,U]\) entrywise, write \(R_+=\max(R,0)\) and \(R_-=\min(R,0)\) entrywise. Each entry of \(RA\) lies in
+\[
+[R_+L+R_-U,\ R_+U+R_-L].
+\]
+Dependence between entries of \(A\) may make this enclosure conservative. Endpoint inputs, each matrix product and each subsequent endpoint sum are enclosed at 1024-bit Arb precision, with separate lower and upper algebra. The cached force interval is added after the signed multiplication, once. Exact rational comparisons compute the norm of the resulting force interval and the row-norm bounds for the derivative defect. The final proof uses the larger of the producer and independent upper bounds for each scalar, or the smaller lower bound for the exclusion test.
+
+On the fixed-input cube the reviewed strict body and trace domains give \(C^2\) normalized energy in a neighborhood, together with the smooth model kernels and compact reference integration domains. The cached plus defect split yields \(\|I-RH_I\|_\infty\le z\). If \(z<1\), invertibility of \(RH_I\) gives invertibility of square \(R\), and \(\eta+zr<r\) makes \(u\mapsto u-RF_I(u)\) a contraction into the interior. This proves one stationary root in the closed cube with error at most \(\eta/(1-z)\) from the center. The matched positive symmetric part of \(R\) and Lyapunov identity from the separate reviewed matrix proof yield \(H_I\succ0\) and a whole-cube lower eigenvalue bound \((1-z)/\|R\|_\infty\). Interior stationarity then gives a strict local minimum. The eigenvalue bound is for the normalized finite-element energy in the frozen free-coordinate scaling.
+
+The optional separate exclusion comparison uses the lower bound on \(\|RF_I(u_0)\|_\infty\). If a root were in the cube, the line segment from the point center and \(\|RH_I\|_\infty\le1+z\) would give an upper bound \((1+z)r\) on that residual. A failed sufficient test is unresolved. These are fixed-input finite-element statements. A comparison of posterior state radius with the frozen observer design goal supplies an input to a later checked observational comparison. No continuum, experimental compatibility, loading-path, or all-outcome result follows from this reduction alone.
+

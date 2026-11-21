@@ -1,0 +1,2397 @@
+{
+  "version": 1,
+  "verification_code": "import ast,bisect,csv,datetime,hashlib,json,math\nfrom decimal import Decimal\nfrom pathlib import Path\nimport numpy as np\n\nR=Path(\"controlled_furrowing\").resolve()\nOUT=R/\"evidence/spatial_v1_independent_review.json\"\nreceipt=json.loads(OUT.read_text(encoding=\"utf-8\"))\ndef read(p):return json.loads((R/str(p).replace(chr(92),\"/\")).read_text(encoding=\"utf-8\"))\ndef digest(p):return hashlib.sha256((R/str(p).replace(chr(92),\"/\")).read_bytes()).hexdigest()\ndef rows(p):\n    with (R/p).open(encoding=\"utf-8-sig\",newline=\"\") as f:return list(csv.DictReader(f))\ndef close(a,b):\n    assert math.isclose(float(a),float(b),rel_tol=1e-11,abs_tol=1e-11),(a,b)\ndef stats(error):\n    n=len(error)\n    return dict(RMSE_um=math.sqrt(math.fsum(x*x for x in error)/n),\n                MAE_um=math.fsum(abs(x) for x in error)/n,\n                signed_bias_um=math.fsum(error)/n)\ndef independent_gap(result):\n    if not result[\"single_valued_surface_graphs\"]:return None\n    top=np.asarray(result[\"top_profile\"],dtype=float);bot=np.asarray(result[\"bottom_profile\"],dtype=float)\n    assert top.shape[1]==bot.shape[1]==2\n    if np.any(np.diff(top[:,0])<=0) or np.any(np.diff(bot[:,0])<=0):return None\n    if top[0,0]!=0 or bot[0,0]!=0 or abs(top[-1,0]-bot[-1,0])>1e-12:return None\n    merged=np.unique(np.concatenate([top[:,0],bot[:,0]]))\n    if np.any(np.interp(merged,top[:,0],top[:,1])<np.interp(merged,bot[:,0],bot[:,1])):return None\n    upper=min(float(top[0,1]),float(top[-1,1]))\n    lower=max(float(bot[0,1]),float(bot[-1,1]),min(float(z) for z in top[:,1]))\n    return upper-lower\ndef independent_J_volume(result):\n    X=np.asarray(result[\"reference_nodes\"],dtype=float)\n    Y=np.asarray(result[\"current_nodes\"],dtype=float)\n    tri=np.asarray(result[\"triangles\"],dtype=int)\n    xx=X[tri];yy=Y[tri]\n    DX=np.stack([xx[:,1]-xx[:,0],xx[:,2]-xx[:,0]],axis=2)\n    DY=np.stack([yy[:,1]-yy[:,0],yy[:,2]-yy[:,0]],axis=2)\n    detX=np.linalg.det(DX);detF=np.linalg.det(DY)/detX\n    assert np.all(detX>0) and np.all(detF>0)\n    assert np.all(Y[X[:,0]==0,0]==0)\n    outer=X[:,0]==result[\"parameters\"][\"outer_radius\"]\n    assert np.allclose(X[outer],Y[outer],rtol=0,atol=1e-12)\n    nodal=np.full(len(X),np.nan)\n    nodal[X[:,0]>0]=Y[X[:,0]>0,0]/X[X[:,0]>0,0]\n    pertri=nodal[tri]\n    jlo=float(np.min(detF*np.nanmin(pertri,axis=1)))\n    jhi=float(np.max(detF*np.nanmax(pertri,axis=1)))\n    # Exact P1 revolution volume: detF constant and current radius affine.\n    area=detX/2\n    volume=float(np.sum(2*np.pi*area*detF*np.mean(yy[:,:,0],axis=1)))\n    reference=float(np.sum(2*np.pi*area*np.mean(xx[:,:,0],axis=1)))\n    close(jlo,result[\"minimum_J\"]);close(jhi,result[\"maximum_J\"])\n    close(volume,result[\"volume\"]);close(reference,result[\"reference_volume\"])\n    relative=volume/reference-1;close(relative,result[\"relative_volume_change\"])\n    # Independently reconstruct the stated paired-material-column height proxy.\n    radial=np.asarray(result[\"radial_material_grid\"])\n    top=np.asarray(result[\"top_profile\"]);bot=np.asarray(result[\"bottom_profile\"])\n    inside=radial<=result[\"parameters\"][\"patch_radius\"]+1e-12\n    proxy=float(np.max(result[\"parameters\"][\"height\"]-(top[:,1]-bot[:,1])[inside]))\n    close(proxy,result[\"maximum_activated_column_shortening\"])\n    return dict(minimum_J=jlo,maximum_J=jhi,relative_volume_change=relative,proxy=proxy)\ndef declared_parameters(result,diameter,kb,protocol,height):\n    p=result[\"parameters\"];settings=protocol[\"material_scenarios\"];mesh=protocol[\"discretization\"]\n    for name,value in [(\"mu\",settings[\"mu\"]),(\"bulk\",settings[\"logJ_penalty_coefficient_over_mu\"]),\n                       (\"basal_area_modulus\",kb),(\"apical_area_modulus\",settings[\"apical_area_modulus_over_mu_height\"]),\n                       (\"height\",1.),(\"reference_curvature\",0.),(\"outer_radius\",protocol[\"geometry\"][\"outer_radius_over_height\"]),\n                       (\"patch_radius\",diameter/(2*height)),(\"activation_z_min\",(height-25)/height),(\"activation_z_max\",(height-5)/height)]:\n        close(p[name],value)\n    assert p[\"nr\"]==mesh[\"nr\"] and p[\"nz\"]==mesh[\"nz\"] and p[\"quadrature\"]==mesh[\"quadrature\"]\n\ndef interp(value,nodes,values):\n    assert nodes[0]<=value<=nodes[-1]\n    if value==nodes[-1]:return values[-1]\n    j=bisect.bisect_right(nodes,value)-1\n    return values[j]+(values[j+1]-values[j])*(value-nodes[j])/(nodes[j+1]-nodes[j])\n\nprotocol=read(\"SPATIAL-PROTOCOL.json\");height=float(protocol[\"units\"][\"height_um\"])\ntrain=rows(\"data/derived/calibration_small_18um.csv\")\ntest=rows(\"data/derived/evaluation_large_50um.csv\")\nlabels=rows(\"data/derived/evaluation_larger_bending.csv\")\ninputs=read(\"data/derived/spatial_inputs_only.json\")\nassert len(train)==17 and len(test)==9 and len(labels)==len(inputs)==31\nassert all(set(r)=={\"record_id\",\"reported_diameter_um\",\"activation_magnitude\"} for r in inputs)\nindex={r[\"record_id\"]:r for r in inputs};labelmap={r[\"record_id\"]:int(r[\"bends\"]) for r in labels}\nassert len(index)==31 and set(index)==set(labelmap)\nfor row in labels:\n    prepared=index[row[\"record_id\"]]\n    assert Decimal(row[\"activation_magnitude\"])==Decimal(str(prepared[\"activation_magnitude\"]))\n    assert Decimal(row[\"reported_diameter_um\"])==Decimal(str(prepared[\"reported_diameter_um\"]))\npublished=read(\"evidence/spatial_transfer_scores.json\")\nofficial={r[\"branch\"]:r for r in published[\"branches\"]}\nfor p,expected in published[\"evidence\"].items():assert digest(p)==expected\nsource_audit=read(\"evidence/data_workbook_audit.json\")\nfor e in source_audit[\"exports\"]:\n    if str(e[\"path\"]).replace(chr(92),\"/\").split(\"/\")[-1] in [\"calibration_small_18um.csv\",\"evaluation_large_50um.csv\",\"evaluation_larger_bending.csv\"]:\n        assert digest(e[\"path\"])==e[\"sha256\"]\nsnapshot={p:digest(p) for p in [\"PLAN.md\",\"SPATIAL-PROTOCOL.json\",\"scripts/spatial_transfer.py\",\"scripts/axisymmetric_mechanics.py\",\n                               \"scripts/spatial_observer.py\",\"scripts/score_spatial.py\",\"evidence/spatial_transfer_scores.json\",\n                               \"data/derived/calibration_small_18um.csv\",\"data/derived/spatial_inputs_only.json\",\n                               \"data/derived/evaluation_large_50um.csv\",\"data/derived/evaluation_larger_bending.csv\"]}\nbranches=[];prediction_hashes={};intermediate_hashes={};calibration_hash_count=0;table_hash_count=0\nfor kb in protocol[\"material_scenarios\"][\"basal_area_modulus_over_mu_height\"]:\n    branch=\"basal_\"+format(kb,\"g\");base=\"runs/spatial_transfer/\"+branch+\"/\"\n    frozen=read(base+\"frozen_predictions.json\")\n    snapshot[base+\"frozen_predictions.json\"]=digest(base+\"frozen_predictions.json\")\n    for p,sha in frozen[\"hashes\"].items():assert digest(p)==sha,(branch,p)\n    assert len(frozen[\"records\"])==31 and frozen[\"no_heldout_response_loads\"] is True\n    tab=read(base+\"table.json\");cal=read(base+\"calibration.json\")\n    for pp in [base+\"table.json\",base+\"calibration.json\"]:intermediate_hashes[pp]=digest(pp)\n    assert tab[\"hashes\"]==cal[\"hashes\"]==frozen[\"hashes\"]\n    assert cal[\"status\"]==\"CALIBRATION_CHECKED\"\n    close(cal[\"gain\"],frozen[\"gain\"])\n    nodes=[];values=[]\n    for point in tab[\"records\"]:\n        raw=read(point[\"path\"]);assert raw[\"hashes\"]==frozen[\"hashes\"]\n        intermediate_hashes[point[\"path\"]]=digest(point[\"path\"])\n        close(point[\"strength\"],raw[\"strength\"])\n        declared_parameters(raw[\"result\"],protocol[\"geometry\"][\"small_diameter_um\"],kb,protocol,height)\n        table_geometry=independent_J_volume(raw[\"result\"]);assert raw[\"result\"][\"converged\"]\n        close(point[\"shortening_um\"],height*table_geometry[\"proxy\"])\n        nodes.append(float(point[\"strength\"]));values.append(float(point[\"shortening_um\"]))\n        table_hash_count+=1\n    assert nodes==protocol[\"calibration\"][\"initial_response_strength_nodes\"]\n    I=[float(r[\"activation_magnitude\"]) for r in train]\n    obs=[float(r[\"maximum_shortening_um\"]) for r in train]\n    setting=protocol[\"calibration\"][\"gain_grid\"]\n    count=round((setting[\"maximum\"]-setting[\"minimum\"])/setting[\"step\"])+1\n    grid=np.linspace(setting[\"minimum\"],setting[\"maximum\"],count).tolist()\n    losses=[math.fsum((interp(g*x,nodes,values)-y)**2 for x,y in zip(I,obs)) for g in grid]\n    best=min(range(len(grid)),key=lambda j:losses[j])\n    close(grid[best],cal[\"gain\"]);close(losses[best],cal[\"surrogate_calibration_RSS_um2\"])\n    assert cal[\"gain_at_boundary\"]==(best in [0,count-1])\n    for x,y in zip(losses,cal[\"surrogate_gain_RSS_um2\"]):close(x,y)\n    direct=[];jcal=[];apical=[];basal=[]\n    for j,row in enumerate(train):\n        raw=read(base+f\"calibration_direct_{j:02d}.json\")\n        intermediate_hashes[base+f\"calibration_direct_{j:02d}.json\"]=digest(base+f\"calibration_direct_{j:02d}.json\")\n        assert raw[\"record_id\"]==row[\"record_id\"] and raw[\"hashes\"]==frozen[\"hashes\"]\n        close(raw[\"strength\"],cal[\"gain\"]*I[j])\n        close(raw[\"result\"][\"activation_strength\"],raw[\"strength\"])\n        result=raw[\"result\"];assert result[\"converged\"]\n        declared_parameters(result,protocol[\"geometry\"][\"small_diameter_um\"],kb,protocol,height)\n        jcheck=independent_J_volume(result);jcal.append(jcheck[\"minimum_J\"])\n        y=height*jcheck[\"proxy\"];direct.append(y)\n        close(y,cal[\"direct_predictions_um\"][j])\n        radial=np.asarray(result[\"radial_material_grid\"]);inside=radial<=result[\"parameters\"][\"patch_radius\"]+1e-12\n        uz_top=np.asarray(result[\"top_profile\"])[:,1]-np.asarray(result[\"initial_top_profile\"])[:,1]\n        uz_bot=np.asarray(result[\"bottom_profile\"])[:,1]-np.asarray(result[\"initial_bottom_profile\"])[:,1]\n        apical.append(float(np.max(-uz_top[inside])*height));basal.append(float(np.max(uz_bot[inside])*height))\n        calibration_hash_count+=1\n    direct_loss=math.fsum((x-y)**2 for x,y in zip(direct,obs))\n    surrogate_error=max(abs(y-interp(cal[\"gain\"]*x,nodes,values)) for x,y in zip(I,direct))\n    close(direct_loss,cal[\"direct_calibration_RSS_um2\"]);close(surrogate_error,cal[\"maximum_surrogate_error_um\"])\n    assert surrogate_error<=protocol[\"calibration\"][\"direct_response_surrogate_tolerance_um\"]\n    records=[];excluded={str(e):0 for e in [0.,.05,.2]};ambiguous=dict(excluded)\n    minJ=[];maxJ=[];vol=[];forces=[];gaps=[];sets=[]\n    for item in frozen[\"records\"]:\n        assert digest(item[\"path\"])==item[\"sha256\"]\n        prediction_hashes[item[\"path\"]]=item[\"sha256\"]\n        raw=read(item[\"path\"]);assert raw[\"hashes\"]==frozen[\"hashes\"]\n        assert raw[\"input\"]==index[item[\"record_id\"]]\n        close(raw[\"gain\"],cal[\"gain\"])\n        result=raw[\"result\"];assert result[\"converged\"] and result[\"physical_local_orientation\"]\n        declared_parameters(result,raw[\"input\"][\"reported_diameter_um\"],kb,protocol,height)\n        close(result[\"activation_strength\"],cal[\"gain\"]*raw[\"input\"][\"activation_magnitude\"])\n        assert result[\"scaled_free_force_linf\"]<protocol[\"verification\"][\"scaled_force_linf\"]\n        diag=independent_J_volume(result)\n        minJ.append(diag[\"minimum_J\"]);maxJ.append(diag[\"maximum_J\"]);vol.append(abs(diag[\"relative_volume_change\"]))\n        forces.append(result[\"scaled_free_force_linf\"])\n        gap=independent_gap(result);gaps.append(gap)\n        nominal=[0,1] if gap is None or gap>0 else [0]\n        assert raw[\"slice_observer\"][\"unknown_slice_label_set\"]==nominal\n        if gap is not None:close(gap,raw[\"slice_observer\"][\"signed_interval_gap\"])\n        observed=labelmap[item[\"record_id\"]];per={}\n        for e in [0.,.05,.2]:\n            possible=[0,1] if gap is None or gap+2*e/height>0 else [0]\n            excluded[str(e)]+=int(observed not in possible);ambiguous[str(e)]+=int(len(possible)==2)\n            per[str(e)]=possible\n        sets.append(dict(record_id=item[\"record_id\"],observed_label=observed,gap=gap,possible_labels_by_assumption_um=per))\n        records.append(raw)\n    pairs=[]\n    for row in test:\n        candidates=[q for q in records if Decimal(str(q[\"input\"][\"activation_magnitude\"]))==Decimal(row[\"activation_magnitude\"])\n                    and Decimal(str(q[\"input\"][\"reported_diameter_um\"]))==Decimal(row[\"reported_diameter_um\"])]\n        assert len(candidates)==1\n        q=candidates[0];yp=height*q[\"result\"][\"maximum_activated_column_shortening\"];yo=float(row[\"maximum_shortening_um\"])\n        pairs.append(dict(record_id=row[\"record_id\"],prediction_id=q[\"input\"][\"record_id\"],prediction_um=yp,observed_um=yo,error_um=yp-yo))\n    score=stats([r[\"error_um\"] for r in pairs])\n    for k,v in score.items():close(v,official[branch][\"scalar_scores\"][k])\n    assert excluded==official[branch][\"conditional_nominal_label_exclusions_by_assumed_surface_error_um\"]\n    assert ambiguous==official[branch][\"ambiguous_label_sets_by_assumed_surface_error_um\"]\n    for v,k in [(min(minJ),\"minimum_local_J\"),(max(maxJ),\"maximum_local_J\"),(max(vol),\"maximum_absolute_global_volume_change\")]:\n        close(v,official[branch][k])\n    branches.append(dict(branch=branch,gain=cal[\"gain\"],gain_replayed_training_only=True,gain_at_grid_boundary=best in [0,count-1],\n                         direct_calibration_RSS_um2=direct_loss,surrogate_max_error_um=surrogate_error,\n                         calibration_minimum_J=min(jcal),calibration_apical_dominant_predicted=sum(a>b for a,b in zip(apical,basal)),\n                         calibration_apical_dominant_observed=sum(float(r[\"apical_max_shortening_um\"])>float(r[\"basal_max_shortening_um\"]) for r in train),\n                         scalar_pairs=pairs,scalar_scores=score,label_n=len(sets),label_sets=sets,\n                         exclusions_by_assumption_um=excluded,ambiguous_by_assumption_um=ambiguous,\n                         minimum_local_J=min(minJ),maximum_local_J=max(maxJ),max_local_volume_reduction_fraction=1-min(minJ),\n                         max_absolute_global_volume_change=max(vol),maximum_scaled_free_force_residual=max(forces)))\nassert len(prediction_hashes)==93 and calibration_hash_count==51 and table_hash_count==99\nassert all(all(v==31 for v in b[\"ambiguous_by_assumption_um\"].values()) for b in branches)\nif \"snapshot_files\" in receipt:assert snapshot==receipt[\"snapshot_files\"],\"Audited inputs changed; retain old review and create a new version\"\nif \"calibration_intermediate_hashes\" in receipt:assert intermediate_hashes==receipt[\"calibration_intermediate_hashes\"]\nx=[float(r[\"activation_magnitude\"]) for r in train];y=[float(r[\"maximum_shortening_um\"]) for r in train]\nxm=math.fsum(x)/len(x);ym=math.fsum(y)/len(y)\nb=math.fsum((xx-xm)*(yy-ym) for xx,yy in zip(x,y))/math.fsum((xx-xm)**2 for xx in x);a=ym-b*xm\nlinear=stats([a+b*float(r[\"activation_magnitude\"])-float(r[\"maximum_shortening_um\"]) for r in test])\nzero=stats([-float(r[\"maximum_shortening_um\"]) for r in test])\nif (R/\"evidence/scalar_scores.json\").exists():\n    existing=read(\"evidence/scalar_scores.json\")\n    for k,v in linear.items():close(v,existing[\"scores\"][\"OLS\"][k])\n    for k,v in zero.items():close(v,existing[\"scores\"][\"zero_shortening\"][k])\nresult=dict(status=\"PASS independent frozen v1 arithmetic/dataflow audit; NOT biological or continuum validation\",\n            completed_utc=receipt.get(\"verification_results\",{}).get(\"completed_utc\",datetime.datetime.now(datetime.timezone.utc).isoformat()),\n            prediction_sha256_count=93,calibration_direct_replays=51,calibration_table_checks=99,source_hash_checks=True,\n            independent_P1_geometry_replays=243,declared_common_parameter_and_boundary_checks=True,\n            training_only_finite_grid_gain_replay=True,no_solver_or_observer_import=True,\n            all_31_label_sets_in_every_branch_ambiguous=True,\n            label_interpretation=\"Zero exclusions because every set is{0,1}; no discriminative binary prediction or accuracy is established.\",\n            dataflow_scope=\"Static source/call-path inspection plus prepared-input key/hash checks; no independent OS-level execution I/O trace or biological blinding.\",\n            source_dataflow=dict(prepare=\"Reads published responses only to strip labels into inputs-only file\",calibrate=\"Reads small17response CSV and model table only\",predict=\"Reads frozen calibration and larger diameter/dose features, no outcome fields\",score=\"Verifies all3 frozen branches and93record hashes before reading responses\"),\n            volume_scope=\"Exact P1 meridional element J-extrema/revolved-volume identities independently replayed in floating point; localJ~0.8 is not near-incompressible biological validation.\",\n            OLS_training_only=dict(intercept_um=a,slope_um=b,scores=linear),zero_baseline_scores=zero,branches=branches,\n            independent_logic=\"Stdlib bisect interpolation and math.fsum scores; explicit slice-gap algebra; independent nodal/determinant volume/J reconstruction.\",\n            original_gate_status=dict(gate1=\"Bounded originality audit executed; no novelty\",gate2=\"Actual data audited, specimen/time/geometry/label uncertainty remains\",gate3=\"Coupled conditional discrete model implemented; missing adequate calibration partition, material identified set and continuum validation\",gate4=\"Conditional93geometry predictions frozen/scored; original uncertainty/observation contract not fully satisfied\",gate5=\"Conditional stress test; no successful biological shape prediction or conceptual novelty established\"),\n            remaining=[\"Complete admissible calibration identified set\",\"Specimen preactivation geometry/material/contact/prestress\",\"Source slice height/time/resolution observation correspondence\",\"Transient peak/recovery model or validated quasistatic proxy\",\"Continuum/mesh/quadrature and parameter uncertainty bounds\",\"Non-axisymmetric curvature/ellipse response\",\"Independent biological/expert validation\"])\nreceipt[\"snapshot_files\"]=snapshot\nreceipt[\"prediction_hashes\"]=prediction_hashes\nreceipt[\"calibration_intermediate_hashes\"]=intermediate_hashes\nreceipt[\"verification_results\"]=result\nOUT.write_text(json.dumps(receipt,indent=2)+\"\\n\",encoding=\"utf-8\")\nprint(json.dumps(dict(status=result[\"status\"],n_prediction_hashes=93,\n      branches=[{k:q[k] for k in [\"branch\",\"gain\",\"scalar_scores\",\"minimum_local_J\",\"max_absolute_global_volume_change\",\"ambiguous_by_assumption_um\"]} for q in branches],\n      OLS_RMSE_um=linear[\"RMSE_um\"]),indent=2))\n",
+  "verification_code_v0": "import ast,bisect,csv,datetime,hashlib,json,math\nfrom decimal import Decimal\nfrom pathlib import Path\nimport numpy as np\n\nR=Path(\"controlled_furrowing\").resolve()\nOUT=R/\"evidence/spatial_v1_independent_review.json\"\nreceipt=json.loads(OUT.read_text(encoding=\"utf-8\"))\ndef read(p):return json.loads((R/p).read_text(encoding=\"utf-8\"))\ndef digest(p):return hashlib.sha256((R/p).read_bytes()).hexdigest()\ndef rows(p):\n    with (R/p).open(encoding=\"utf-8-sig\",newline=\"\") as f:return list(csv.DictReader(f))\ndef close(a,b):\n    assert math.isclose(float(a),float(b),rel_tol=1e-11,abs_tol=1e-11),(a,b)\ndef stats(error):\n    n=len(error)\n    return dict(RMSE_um=math.sqrt(math.fsum(x*x for x in error)/n),\n                MAE_um=math.fsum(abs(x) for x in error)/n,\n                signed_bias_um=math.fsum(error)/n)\ndef independent_gap(result):\n    if not result[\"single_valued_surface_graphs\"]:return None\n    top=np.asarray(result[\"top_profile\"],dtype=float);bot=np.asarray(result[\"bottom_profile\"],dtype=float)\n    assert top.shape[1]==bot.shape[1]==2\n    if np.any(np.diff(top[:,0])<=0) or np.any(np.diff(bot[:,0])<=0):return None\n    if top[0,0]!=0 or bot[0,0]!=0 or abs(top[-1,0]-bot[-1,0])>1e-12:return None\n    merged=np.unique(np.concatenate([top[:,0],bot[:,0]]))\n    if np.any(np.interp(merged,top[:,0],top[:,1])<np.interp(merged,bot[:,0],bot[:,1])):return None\n    upper=min(float(top[0,1]),float(top[-1,1]))\n    lower=max(float(bot[0,1]),float(bot[-1,1]),min(float(z) for z in top[:,1]))\n    return upper-lower\ndef independent_J_volume(result):\n    X=np.asarray(result[\"reference_nodes\"],dtype=float)\n    Y=np.asarray(result[\"current_nodes\"],dtype=float)\n    tri=np.asarray(result[\"triangles\"],dtype=int)\n    xx=X[tri];yy=Y[tri]\n    DX=np.stack([xx[:,1]-xx[:,0],xx[:,2]-xx[:,0]],axis=2)\n    DY=np.stack([yy[:,1]-yy[:,0],yy[:,2]-yy[:,0]],axis=2)\n    detX=np.linalg.det(DX);detF=np.linalg.det(DY)/detX\n    assert np.all(detX>0) and np.all(detF>0)\n    assert np.all(Y[X[:,0]==0,0]==0)\n    nodal=np.full(len(X),np.nan)\n    nodal[X[:,0]>0]=Y[X[:,0]>0,0]/X[X[:,0]>0,0]\n    pertri=nodal[tri]\n    jlo=float(np.min(detF*np.nanmin(pertri,axis=1)))\n    jhi=float(np.max(detF*np.nanmax(pertri,axis=1)))\n    # Exact P1 revolution volume: detF constant and current radius affine.\n    area=detX/2\n    volume=float(np.sum(2*np.pi*area*detF*np.mean(yy[:,:,0],axis=1)))\n    reference=float(np.sum(2*np.pi*area*np.mean(xx[:,:,0],axis=1)))\n    close(jlo,result[\"minimum_J\"]);close(jhi,result[\"maximum_J\"])\n    close(volume,result[\"volume\"]);close(reference,result[\"reference_volume\"])\n    relative=volume/reference-1;close(relative,result[\"relative_volume_change\"])\n    # Independently reconstruct the stated paired-material-column height proxy.\n    radial=np.asarray(result[\"radial_material_grid\"])\n    top=np.asarray(result[\"top_profile\"]);bot=np.asarray(result[\"bottom_profile\"])\n    inside=radial<=result[\"parameters\"][\"patch_radius\"]+1e-12\n    proxy=float(np.max(result[\"parameters\"][\"height\"]-(top[:,1]-bot[:,1])[inside]))\n    close(proxy,result[\"maximum_activated_column_shortening\"])\n    return dict(minimum_J=jlo,maximum_J=jhi,relative_volume_change=relative,proxy=proxy)\ndef interp(value,nodes,values):\n    assert nodes[0]<=value<=nodes[-1]\n    if value==nodes[-1]:return values[-1]\n    j=bisect.bisect_right(nodes,value)-1\n    return values[j]+(values[j+1]-values[j])*(value-nodes[j])/(nodes[j+1]-nodes[j])\n\nprotocol=read(\"SPATIAL-PROTOCOL.json\");height=float(protocol[\"units\"][\"height_um\"])\ntrain=rows(\"data/derived/calibration_small_18um.csv\")\ntest=rows(\"data/derived/evaluation_large_50um.csv\")\nlabels=rows(\"data/derived/evaluation_larger_bending.csv\")\ninputs=read(\"data/derived/spatial_inputs_only.json\")\nassert len(train)==17 and len(test)==9 and len(labels)==len(inputs)==31\nassert all(set(r)=={\"record_id\",\"reported_diameter_um\",\"activation_magnitude\"} for r in inputs)\nindex={r[\"record_id\"]:r for r in inputs};labelmap={r[\"record_id\"]:int(r[\"bends\"]) for r in labels}\nassert len(index)==31 and set(index)==set(labelmap)\nfor row in labels:\n    prepared=index[row[\"record_id\"]]\n    assert Decimal(row[\"activation_magnitude\"])==Decimal(str(prepared[\"activation_magnitude\"]))\n    assert Decimal(row[\"reported_diameter_um\"])==Decimal(str(prepared[\"reported_diameter_um\"]))\npublished=read(\"evidence/spatial_transfer_scores.json\")\nofficial={r[\"branch\"]:r for r in published[\"branches\"]}\nsnapshot={p:digest(p) for p in [\"PLAN.md\",\"SPATIAL-PROTOCOL.json\",\"scripts/spatial_transfer.py\",\"scripts/axisymmetric_mechanics.py\",\n                               \"scripts/spatial_observer.py\",\"scripts/score_spatial.py\",\"evidence/spatial_transfer_scores.json\",\n                               \"data/derived/calibration_small_18um.csv\",\"data/derived/spatial_inputs_only.json\",\n                               \"data/derived/evaluation_large_50um.csv\",\"data/derived/evaluation_larger_bending.csv\"]}\nif \"snapshot_files\" in receipt:assert snapshot==receipt[\"snapshot_files\"],\"Audited inputs changed; retain old review and create a new version\"\nbranches=[];prediction_hashes={};calibration_hash_count=0;table_hash_count=0\nfor kb in protocol[\"material_scenarios\"][\"basal_area_modulus_over_mu_height\"]:\n    branch=\"basal_\"+format(kb,\"g\");base=\"runs/spatial_transfer/\"+branch+\"/\"\n    frozen=read(base+\"frozen_predictions.json\")\n    snapshot[base+\"frozen_predictions.json\"]=digest(base+\"frozen_predictions.json\")\n    for p,sha in frozen[\"hashes\"].items():assert digest(p)==sha,(branch,p)\n    assert len(frozen[\"records\"])==31 and frozen[\"no_heldout_response_loads\"] is True\n    tab=read(base+\"table.json\");cal=read(base+\"calibration.json\")\n    assert tab[\"hashes\"]==cal[\"hashes\"]==frozen[\"hashes\"]\n    assert cal[\"status\"]==\"CALIBRATION_CHECKED\"\n    close(cal[\"gain\"],frozen[\"gain\"])\n    nodes=[];values=[]\n    for point in tab[\"records\"]:\n        raw=read(point[\"path\"]);assert raw[\"hashes\"]==frozen[\"hashes\"]\n        close(point[\"strength\"],raw[\"strength\"])\n        close(point[\"shortening_um\"],height*raw[\"result\"][\"maximum_activated_column_shortening\"])\n        nodes.append(float(point[\"strength\"]));values.append(float(point[\"shortening_um\"]))\n        table_hash_count+=1\n    I=[float(r[\"activation_magnitude\"]) for r in train]\n    obs=[float(r[\"maximum_shortening_um\"]) for r in train]\n    setting=protocol[\"calibration\"][\"gain_grid\"]\n    count=round((setting[\"maximum\"]-setting[\"minimum\"])/setting[\"step\"])+1\n    grid=np.linspace(setting[\"minimum\"],setting[\"maximum\"],count).tolist()\n    losses=[math.fsum((interp(g*x,nodes,values)-y)**2 for x,y in zip(I,obs)) for g in grid]\n    best=min(range(len(grid)),key=lambda j:losses[j])\n    close(grid[best],cal[\"gain\"]);close(losses[best],cal[\"surrogate_calibration_RSS_um2\"])\n    for x,y in zip(losses,cal[\"surrogate_gain_RSS_um2\"]):close(x,y)\n    direct=[];jcal=[];apical=[];basal=[]\n    for j,row in enumerate(train):\n        raw=read(base+f\"calibration_direct_{j:02d}.json\")\n        assert raw[\"record_id\"]==row[\"record_id\"] and raw[\"hashes\"]==frozen[\"hashes\"]\n        close(raw[\"strength\"],cal[\"gain\"]*I[j])\n        close(raw[\"result\"][\"activation_strength\"],raw[\"strength\"])\n        result=raw[\"result\"];assert result[\"converged\"]\n        jcheck=independent_J_volume(result);jcal.append(jcheck[\"minimum_J\"])\n        y=height*jcheck[\"proxy\"];direct.append(y)\n        close(y,cal[\"direct_predictions_um\"][j])\n        radial=np.asarray(result[\"radial_material_grid\"]);inside=radial<=result[\"parameters\"][\"patch_radius\"]+1e-12\n        uz_top=np.asarray(result[\"top_profile\"])[:,1]-np.asarray(result[\"initial_top_profile\"])[:,1]\n        uz_bot=np.asarray(result[\"bottom_profile\"])[:,1]-np.asarray(result[\"initial_bottom_profile\"])[:,1]\n        apical.append(float(np.max(-uz_top[inside])*height));basal.append(float(np.max(uz_bot[inside])*height))\n        calibration_hash_count+=1\n    direct_loss=math.fsum((x-y)**2 for x,y in zip(direct,obs))\n    surrogate_error=max(abs(y-interp(cal[\"gain\"]*x,nodes,values)) for x,y in zip(I,direct))\n    close(direct_loss,cal[\"direct_calibration_RSS_um2\"]);close(surrogate_error,cal[\"maximum_surrogate_error_um\"])\n    assert surrogate_error<=protocol[\"calibration\"][\"direct_response_surrogate_tolerance_um\"]\n    records=[];excluded={str(e):0 for e in [0.,.05,.2]};ambiguous=dict(excluded)\n    minJ=[];maxJ=[];vol=[];forces=[];gaps=[];sets=[]\n    for item in frozen[\"records\"]:\n        assert digest(item[\"path\"])==item[\"sha256\"]\n        prediction_hashes[item[\"path\"]]=item[\"sha256\"]\n        raw=read(item[\"path\"]);assert raw[\"hashes\"]==frozen[\"hashes\"]\n        assert raw[\"input\"]==index[item[\"record_id\"]]\n        close(raw[\"gain\"],cal[\"gain\"])\n        result=raw[\"result\"];assert result[\"converged\"] and result[\"physical_local_orientation\"]\n        close(result[\"activation_strength\"],cal[\"gain\"]*raw[\"input\"][\"activation_magnitude\"])\n        assert result[\"scaled_free_force_linf\"]<protocol[\"verification\"][\"scaled_force_linf\"]\n        diag=independent_J_volume(result)\n        minJ.append(diag[\"minimum_J\"]);maxJ.append(diag[\"maximum_J\"]);vol.append(abs(diag[\"relative_volume_change\"]))\n        forces.append(result[\"scaled_free_force_linf\"])\n        gap=independent_gap(result);gaps.append(gap)\n        nominal=[0,1] if gap is None or gap>0 else [0]\n        assert raw[\"slice_observer\"][\"unknown_slice_label_set\"]==nominal\n        if gap is not None:close(gap,raw[\"slice_observer\"][\"signed_interval_gap\"])\n        observed=labelmap[item[\"record_id\"]];per={}\n        for e in [0.,.05,.2]:\n            possible=[0,1] if gap is None or gap+2*e/height>0 else [0]\n            excluded[str(e)]+=int(observed not in possible);ambiguous[str(e)]+=int(len(possible)==2)\n            per[str(e)]=possible\n        sets.append(dict(record_id=item[\"record_id\"],observed_label=observed,gap=gap,possible_labels_by_assumption_um=per))\n        records.append(raw)\n    pairs=[]\n    for row in test:\n        candidates=[q for q in records if Decimal(str(q[\"input\"][\"activation_magnitude\"]))==Decimal(row[\"activation_magnitude\"])\n                    and Decimal(str(q[\"input\"][\"reported_diameter_um\"]))==Decimal(row[\"reported_diameter_um\"])]\n        assert len(candidates)==1\n        q=candidates[0];yp=height*q[\"result\"][\"maximum_activated_column_shortening\"];yo=float(row[\"maximum_shortening_um\"])\n        pairs.append(dict(record_id=row[\"record_id\"],prediction_id=q[\"input\"][\"record_id\"],prediction_um=yp,observed_um=yo,error_um=yp-yo))\n    score=stats([r[\"error_um\"] for r in pairs])\n    for k,v in score.items():close(v,official[branch][\"scalar_scores\"][k])\n    assert excluded==official[branch][\"conditional_nominal_label_exclusions_by_assumed_surface_error_um\"]\n    assert ambiguous==official[branch][\"ambiguous_label_sets_by_assumed_surface_error_um\"]\n    for v,k in [(min(minJ),\"minimum_local_J\"),(max(maxJ),\"maximum_local_J\"),(max(vol),\"maximum_absolute_global_volume_change\")]:\n        close(v,official[branch][k])\n    branches.append(dict(branch=branch,gain=cal[\"gain\"],gain_replayed_training_only=True,gain_at_grid_boundary=best in [0,count-1],\n                         direct_calibration_RSS_um2=direct_loss,surrogate_max_error_um=surrogate_error,\n                         calibration_minimum_J=min(jcal),calibration_apical_dominant_predicted=sum(a>b for a,b in zip(apical,basal)),\n                         calibration_apical_dominant_observed=sum(float(r[\"apical_max_shortening_um\"])>float(r[\"basal_max_shortening_um\"]) for r in train),\n                         scalar_pairs=pairs,scalar_scores=score,label_n=len(sets),label_sets=sets,\n                         exclusions_by_assumption_um=excluded,ambiguous_by_assumption_um=ambiguous,\n                         minimum_local_J=min(minJ),maximum_local_J=max(maxJ),max_local_volume_reduction_fraction=1-min(minJ),\n                         max_absolute_global_volume_change=max(vol),maximum_scaled_free_force_residual=max(forces)))\nassert len(prediction_hashes)==93 and calibration_hash_count==51 and table_hash_count==99\nx=[float(r[\"activation_magnitude\"]) for r in train];y=[float(r[\"maximum_shortening_um\"]) for r in train]\nxm=math.fsum(x)/len(x);ym=math.fsum(y)/len(y)\nb=math.fsum((xx-xm)*(yy-ym) for xx,yy in zip(x,y))/math.fsum((xx-xm)**2 for xx in x);a=ym-b*xm\nlinear=stats([a+b*float(r[\"activation_magnitude\"])-float(r[\"maximum_shortening_um\"]) for r in test])\nzero=stats([-float(r[\"maximum_shortening_um\"]) for r in test])\nif (R/\"evidence/scalar_scores.json\").exists():\n    existing=read(\"evidence/scalar_scores.json\")\n    for k,v in linear.items():close(v,existing[\"scores\"][\"OLS\"][k])\n    for k,v in zero.items():close(v,existing[\"scores\"][\"zero_shortening\"][k])\nresult=dict(status=\"PASS independent frozen v1 arithmetic/dataflow audit; NOT biological or continuum validation\",\n            completed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),\n            prediction_sha256_count=93,calibration_direct_replays=51,calibration_table_checks=99,source_hash_checks=True,\n            training_only_finite_grid_gain_replay=True,no_solver_or_observer_import=True,\n            all_31_label_sets_in_every_branch_ambiguous=True,\n            label_interpretation=\"Zero exclusions because every set is{0,1}; no discriminative binary prediction or accuracy is established.\",\n            dataflow_scope=\"Static source/call-path inspection plus prepared-input key/hash checks; no independent OS-level execution I/O trace or biological blinding.\",\n            source_dataflow=dict(prepare=\"Reads published responses only to strip labels into inputs-only file\",calibrate=\"Reads small17response CSV and model table only\",predict=\"Reads frozen calibration and larger diameter/dose features, no outcome fields\",score=\"Verifies all3 frozen branches and93record hashes before reading responses\"),\n            volume_scope=\"Exact P1 meridional element J-extrema/revolved-volume identities independently replayed in floating point; localJ~0.8 is not near-incompressible biological validation.\",\n            OLS_training_only=dict(intercept_um=a,slope_um=b,scores=linear),zero_baseline_scores=zero,branches=branches,\n            independent_logic=\"Stdlib bisect interpolation and math.fsum scores; explicit slice-gap algebra; independent nodal/determinant volume/J reconstruction.\",\n            original_gate_status=dict(gate1=\"Bounded originality audit executed; no novelty\",gate2=\"Actual data audited, specimen/time/geometry/label uncertainty remains\",gate3=\"Coupled conditional discrete model implemented; missing adequate calibration partition, material identified set and continuum validation\",gate4=\"Conditional93geometry predictions frozen/scored; original uncertainty/observation contract not fully satisfied\",gate5=\"Conditional stress test; no successful biological shape prediction or conceptual novelty established\"),\n            remaining=[\"Complete admissible calibration identified set\",\"Specimen preactivation geometry/material/contact/prestress\",\"Source slice height/time/resolution observation correspondence\",\"Transient peak/recovery model or validated quasistatic proxy\",\"Continuum/mesh/quadrature and parameter uncertainty bounds\",\"Non-axisymmetric curvature/ellipse response\",\"Independent biological/expert validation\"])\nreceipt[\"snapshot_files\"]=snapshot\nreceipt[\"prediction_hashes\"]=prediction_hashes\nreceipt[\"verification_results\"]=result\nOUT.write_text(json.dumps(receipt,indent=2)+\"\\n\",encoding=\"utf-8\")\nprint(json.dumps(dict(status=result[\"status\"],n_prediction_hashes=93,\n      branches=[{k:q[k] for k in [\"branch\",\"gain\",\"scalar_scores\",\"minimum_local_J\",\"max_absolute_global_volume_change\",\"ambiguous_by_assumption_um\"]} for q in branches],\n      OLS_RMSE_um=linear[\"RMSE_um\"]),indent=2))\n",
+  "verification_revision_note": "Replay-only fix: compare the snapshot after adding all three frozen manifest paths; retain original code. Added intermediate hashes and explicit full-label-ambiguity/canonical-source checks. No scientific input or prediction changed.",
+  "snapshot_files": {
+    "PLAN.md": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+    "SPATIAL-PROTOCOL.json": "6db7a2f44ec7945af8ba0d9420c2d40b9824f735a1671bfaa6698f2cdeab63d5",
+    "scripts/spatial_transfer.py": "d1acfe8e685de99171de1591c3eecac4e3612acdf3dcf745c1363cb00779b02a",
+    "scripts/axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "scripts/spatial_observer.py": "cc6c23a1338f1bdbf67f985dc71daf336d21af3019b8f6395aa84a8e4cdd4b6b",
+    "scripts/score_spatial.py": "ce7957d796442852c37ec4580e5519f098b3ea67be6c87aa1836de1addcb40bf",
+    "evidence/spatial_transfer_scores.json": "883e849bdf29bf6cd47ca63ee0722e5c2335594f97a14dd5eede942b6cf5c9f4",
+    "data/derived/calibration_small_18um.csv": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+    "data/derived/spatial_inputs_only.json": "799afd087541f1c6b18da34f83dce7c865ed5413ca7b34813d4987d1866b4326",
+    "data/derived/evaluation_large_50um.csv": "7b49ea11755ce9dddd5c07d376c7f2fc5e10834bb724ae6bedbf95bb3b91a6b8",
+    "data/derived/evaluation_larger_bending.csv": "733d63ff64564b2d483617e61ba403b5dd1425bac4f2160a00a063686e214147",
+    "runs/spatial_transfer/basal_0.2/frozen_predictions.json": "3f6c5c9959df1373e36fc1c3e2844f243f20c5c7221facbadafa69ced0aa2c5c",
+    "runs/spatial_transfer/basal_2/frozen_predictions.json": "94e20e105f697c4b332423766fd5341ee3033441963aa36d49c4bf7f6d36fa0f",
+    "runs/spatial_transfer/basal_20/frozen_predictions.json": "431b4b0b9e4d4d47a04c548ca645fa23fb5e9783b2b99a71db6790cbd1f3d895"
+  },
+  "prediction_hashes": {
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_AB.json": "6b81f8de3a856a486d765440b3d4cbfdfbf838f9b332d8a71d88415cd70f6795",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_AA.json": "122e675685941e9660b31f7a3b3aba3c7974185d87584d6b2d5425161cd91a75",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_AC.json": "e0c4f5abd5559d97c077a902d4d7011b1d9f5f9a8b11fcdc3738535c4a15f872",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_AF.json": "39e107d347543595ab4960326379cde43eaf1e2a84d5d7772a73314126a19b1e",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_AE.json": "04059e5834b7ef4989b575e8a4cc3fdeb9b4ec7e9e8876742e8d115906887bf4",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_AD.json": "16b09ecbb28a03daff113ccccbc6a59a1a1a5c77ecb846e08bdc8b7ba6fb6447",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_Z.json": "38b5e504b50f5e3ee2528ad104876cd83ed952a9939bff27c8f741aa54cce17e",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_Y.json": "63ff59255a29134810dc7fd5cb64b72d9aa4605df90180960e901f9d62a8edfc",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_W.json": "39d45c6a742a80c3947036daede7986ccaead3fd829a47570359d7b73919915a",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_X.json": "66edae61f91ebe6dea38448e1e74ae7ce0ca9e8ac7da1e6af2a8fe883f530fb2",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_V.json": "963728793fbeef5c5e8b208a74ec51aaf25ce7d76973388e635b9e0bc7988bf2",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_U.json": "54b40572081de5285416fc44e59962c2b3de3713a76351264362013a6349de6d",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_T.json": "bea6ca41847f2c45c682abde92b0e0399dcc2c5c0883fb9d1fe9e9c1d362a77a",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_Q.json": "79567ada0c9b38c3e2979944dcb16eeb5d71fd42822ba11eaeec43799632c1f4",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_S.json": "e641e97bea15c2c48a84eae26a13e11540136ebd05ac0738fbfbe9ef86411e1d",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_R.json": "2ae5da77da798e77fb0a1fd71ac4b22aaf9c3a9b8a6d4823d35362d089702888",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_M.json": "33255940661c76876c87281de1e2e7456fb751ecbc75f350fef6e7fdf77760fb",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_K.json": "fc3681fc65bbca69fa81605d13811325825458f17a22f99d8e1e2e813df44427",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_L.json": "74a9f6982a3a8f55521e7affbefbffdfce3d9ee7ea36a1704611eb135262cf59",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_O.json": "0e4a2058115dc2fd3bb2ae63ad1930e46af58c3b3f88a6c3ecda42b02335c607",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_N.json": "a54fd0661b9e1aa4321ff96cd31dc5ea2eacec6d64dcc483db0e134f281dd8bc",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_P.json": "12dcfc07a836c790e1e8aba4b38575de44a2f5d26b98d88f21bea96131db85c7",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_J.json": "658764e01a36b27f14b48b4cf81755b5f494032ef1833e41688695c20272017d",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_B.json": "40d33fd308a536b397a1a7f629d7e9338a54390d6d3f29ed0a44547ea14bf132",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_E.json": "13cebcb403572cb06f9ae40fc2cf59c3dc6e46d1a53af81d0a7962f1835dcbe7",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_C.json": "ff6bc04daef998375878924576b523a43eb674a1d3ae971eb20b52d898ab91fe",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_H.json": "79f93dce8955d8818a888cf5ab211b1dc399bb747574caa572b23d1fb5a666f8",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_D.json": "32322b174fa1ce95ade0de0124af277e67c1b66d5b2fe4742d2f79e622df04df",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_I.json": "969ab1f3d7fc26de061d2e7e0c7b89a64656a6059d4894869f05cb8c7001b6eb",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_F.json": "d112aef75db927de5c38a5ed4d3ea07ff965f163a0db74263b9169645407f094",
+    "runs/spatial_transfer/basal_0.2/prediction_fig4f_col_G.json": "8e212f65d1309ae3640fa9b479c2500937166f45caa1051454f915d9fa8f9056",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_AB.json": "b84bca3be4f5fd0c3cbd146a172893893a928d1815bdc6f97288109cb9c0d0e9",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_AA.json": "1509e6a909acc4f46043bd771fcc0e6897cb2eeba680fb9f752df362fe2ba833",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_AC.json": "82e8f0df3c3ad382497fe662e1f9a1b186eccd068b11a21ab93e4289e6c60464",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_AF.json": "7c70027282495e803266f881e563e851928bd0d5e77aacc8c7db8a92263a88ad",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_AE.json": "bd9b93bdfeb195abc0ec54dfbb99c2091f3acdba4a1adcd6c21d836f44675d9c",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_AD.json": "2546592a3eead45dce1a038087ace27efdd935261fcc8cc0c7ac6573860bcd58",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_Z.json": "3cff88ba252639edfe07ef39e7e75d65c36efc2631c407940d27b2fa04ca02bd",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_Y.json": "d01fef2b2b66f3b7175c94c358dc5756ea94597e2d4daaf53648ffc545e274bd",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_W.json": "7610d65e27b5b6f830028ffe8a932406cb074c1c9c443d490e25b6ac8591e9af",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_X.json": "0a5cd93b2396fc57b17cbcbaadc2b7d0c910d1f7d2d81bcfbdd06c113edce772",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_V.json": "452aa17d682ff6adb429071df4e34f2cec4f9532ec499bb69b48a36f2ead1bfa",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_U.json": "f9c97defc160da81fa71dd8be1d1c22f58601e324268cbcec5e3542a07e3b8c6",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_T.json": "f24a9f052a0dddcf6c035b3eace4a80e8bad2d34a9d1c794e4a4202ea999bbee",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_Q.json": "aa177207519aac9f3debffd0f4a74e0e8e6662406c3cc473b96c6a37b2d3399e",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_S.json": "0f961ff0f7900a0e7dd21e571cae8308c9e09338d201e4d4f4d696bd6bc48ba7",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_R.json": "9e56cc76de4c9f11dd40872561390d688f903ebf987a930e867efef74262c978",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_M.json": "631beab877a061760f642b9812921ca9cb1728ee92474476a03adc642e2f05b1",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_K.json": "fda070e74399b114c320eac305d6bf8894932eb30bdd9114ebe620cbc192e178",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_L.json": "bd422df410c562b661f6d2141e818d96658bbac847b5e7cc27099ad83de77f11",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_O.json": "fdfca374c73eb06885f2699c83005caf32dfccd2e8d310eebcf49fae68bb9346",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_N.json": "f65689d03a19b4b195a819f9be7dcd30509d01ac5b385c6ea2f78e283e1c6bf7",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_P.json": "b67ff0d30b73da41d09b870da040d5ad5417226431cae581a76faa544e711ba0",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_J.json": "285b5b63aa35584b7733a4c18484d9b3b123d85f19b8fbd6a940e7ba961adcee",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_B.json": "9a7dc8da621ee2e2be5262e4480d3f8c3b57ddeb99e0c0a6769357c1c15dde84",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_E.json": "59bfac22f4bde7dfd00b505a7ae056ab422432d69d45babe6ee4ea56a66c6ec0",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_C.json": "ce1f0fc40c17a10a4ea19dc012fb3afc13244cd5ddc7f83b3f7aa1c849be36cd",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_H.json": "c0a6e62862855d9a453a63bd13b2a729f1165bbec662231bb4847d78722a4490",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_D.json": "3240c679f242ac3f2491a682f3ff4aad97eca00b985b1a0d2865b06cdb8dd27d",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_I.json": "870b2386fa7958a4a7ed6ae14d10c425c91e34246eed8f6340c0818087a7fb3e",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_F.json": "daec2eb00a0175b99c36e54c2f32dad3bf394189e6628af12ebb987fc79d65e5",
+    "runs/spatial_transfer/basal_2/prediction_fig4f_col_G.json": "5eba29e89be54de20f1a0fbc45816226f713f3c39186d8f7cd596a58667ad4e6",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_AB.json": "ed0d89809872906bd090d42fa1e9c4a31f666fd396497d277f6a613fe379131c",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_AA.json": "deb3194d303de06df9fb409e78f62291e63902441f871fe95fd209cfa129b476",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_AC.json": "e7d946ebe2975a7ca9dc04111485d9fbd2b57ece2ed50bb939b674ea3e3e2637",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_AF.json": "6e534a38b15dbfeae3c0da23500e8e5ae0d1bbd2ff93f104ac36e278b997982c",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_AE.json": "1e7ec97500438f548e22401b617b7d6cba153ce019cd06dfc18741331457ebed",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_AD.json": "1d4c7fb565e920257eb5d08ea2e3aa79fb8754b68be2afe518c83b278c69b8c8",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_Z.json": "9ebeac7bf74f514e347913537b588e8600890979732592852d367fcef1f1d1ed",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_Y.json": "200c6f947d05723730437062e089bb739cb2fd82074b782f836005cf1175ec1c",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_W.json": "7f52534ec0e45d7765d1ef8fc2004849f1598b5440fbe2521769fd1ae9b5bbd4",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_X.json": "4b278a81710d4ddcd681ec19371d52fa2b84ab2a067114f644f80faadff65419",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_V.json": "3245c28796041eab9dfc37a786ee0ca0462f77af572a791330ba1c086fc2125b",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_U.json": "d7d94caa47df3d68a5d746362f6fc828231539976af095148a85f5c714df2451",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_T.json": "75ba7d8cc446bd375f1b74350355ff1123367911013e2279a60d70e4cdb8eb63",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_Q.json": "6c3c82c5e7b75775e8ce849e87e9b68f01937def982ab6f7eb73762e384ca9fd",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_S.json": "c3c19ed6f20edd66576a828eb68d55db6fbd7f50c4bee79b2fe6f670e5bc0a3a",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_R.json": "cfa3e7d8cd31ab3f528c1eb62990c4bba7b0aa3056824655cc91dfb489974c6b",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_M.json": "b629c87c7f25ea1d9ae3ae73d8338916a673c14876fa60e1587e01b63a8ff6b2",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_K.json": "fc8718212e3c7691ab2d40a582b3f8c4f9b23b33785154c5c136f19375959fe5",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_L.json": "13a9761e87db2dfe7317f9d67884471fd738c3ca111f1c2797daf3225e4d8b5f",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_O.json": "d5230839832fe12ba713633d146bba608f69b63496763b8471f8f587b2f9f583",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_N.json": "37a53503fb0d78bdb5d00f152b3e28c1e0d4a5d6c5aa4281c7602ec26f37f92d",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_P.json": "0b1f1a9630dda7311ea8adf464bcec72bb22ea47f3899de6a182f999423ab96e",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_J.json": "1c7209ddf750dc07e4e1a07c8d9ecba4a1efbab6efdde096b0822c043a1fc79d",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_B.json": "8dcc986fe34e7aa86b51a1737299f602d3b8ec26a8d0fa1bedbce1bbb3138e44",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_E.json": "bbefe93f7239bad2b0a75acc62f132bf29f2110c95d7b11e7fbc3955ccabf035",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_C.json": "44c16d86a94034a55e7342e9019372b9e6d8a385970983b7684efaaf3305912e",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_H.json": "7ccd613cba0db46f31f28ceef82127c69687262fee131fae0a87a9c19f979607",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_D.json": "4fc6734dbe7244bb8fafd8406cb2efa5a90ca672d3a546965a0d39f5e3136600",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_I.json": "0af6b84549c94379565d6586d0b0167dbb23391c8c29a5d97dcd006ead6fa4be",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_F.json": "b902146183eaac88a1d61ad534ce265b18eca3eb585eb21d0f27da826909e6ba",
+    "runs/spatial_transfer/basal_20/prediction_fig4f_col_G.json": "18c6923236cda32078c1aaaccf6c9d6a6139d1b870409b45478f53305fb46d3a"
+  },
+  "verification_results": {
+    "status": "PASS independent frozen v1 arithmetic/dataflow audit; NOT biological or continuum validation",
+    "completed_utc": "2026-11-19T09:26:00.927800+00:00",
+    "prediction_sha256_count": 93,
+    "calibration_direct_replays": 51,
+    "calibration_table_checks": 99,
+    "source_hash_checks": true,
+    "independent_P1_geometry_replays": 243,
+    "declared_common_parameter_and_boundary_checks": true,
+    "training_only_finite_grid_gain_replay": true,
+    "no_solver_or_observer_import": true,
+    "all_31_label_sets_in_every_branch_ambiguous": true,
+    "label_interpretation": "Zero exclusions because every set is{0,1}; no discriminative binary prediction or accuracy is established.",
+    "dataflow_scope": "Static source/call-path inspection plus prepared-input key/hash checks; no independent OS-level execution I/O trace or biological blinding.",
+    "source_dataflow": {
+      "prepare": "Reads published responses only to strip labels into inputs-only file",
+      "calibrate": "Reads small17response CSV and model table only",
+      "predict": "Reads frozen calibration and larger diameter/dose features, no outcome fields",
+      "score": "Verifies all3 frozen branches and93record hashes before reading responses"
+    },
+    "volume_scope": "Exact P1 meridional element J-extrema/revolved-volume identities independently replayed in floating point; localJ~0.8 is not near-incompressible biological validation.",
+    "OLS_training_only": {
+      "intercept_um": 2.0700276053124664,
+      "slope_um": 7.344423821215321,
+      "scores": {
+        "RMSE_um": 2.227042421890284,
+        "MAE_um": 1.93509412357874,
+        "signed_bias_um": 0.7040794046326379
+      }
+    },
+    "zero_baseline_scores": {
+      "RMSE_um": 6.892817356781067,
+      "MAE_um": 5.863709222222223,
+      "signed_bias_um": -5.863709222222223
+    },
+    "branches": [
+      {
+        "branch": "basal_0.2",
+        "gain": 8.66,
+        "gain_replayed_training_only": true,
+        "gain_at_grid_boundary": false,
+        "direct_calibration_RSS_um2": 85.85024197499814,
+        "surrogate_max_error_um": 0.011257383107698082,
+        "calibration_minimum_J": 0.8092913295097323,
+        "calibration_apical_dominant_predicted": 0,
+        "calibration_apical_dominant_observed": 16,
+        "scalar_pairs": [
+          {
+            "record_id": "optoGEF2_large_col_B",
+            "prediction_id": "fig4f_col_B",
+            "prediction_um": 5.70271357977258,
+            "observed_um": 0.071243,
+            "error_um": 5.63147057977258
+          },
+          {
+            "record_id": "optoGEF2_large_col_C",
+            "prediction_id": "fig4f_col_C",
+            "prediction_um": 6.652336280695932,
+            "observed_um": 3.080957,
+            "error_um": 3.571379280695932
+          },
+          {
+            "record_id": "optoGEF2_large_col_D",
+            "prediction_id": "fig4f_col_D",
+            "prediction_um": 8.67822274686894,
+            "observed_um": 8.72639,
+            "error_um": -0.048167253131060406
+          },
+          {
+            "record_id": "optoGEF2_large_col_E",
+            "prediction_id": "fig4f_col_E",
+            "prediction_um": 6.638711614873133,
+            "observed_um": 2.376692,
+            "error_um": 4.262019614873132
+          },
+          {
+            "record_id": "optoGEF2_large_col_F",
+            "prediction_id": "fig4f_col_F",
+            "prediction_um": 11.187393532179064,
+            "observed_um": 9.378311,
+            "error_um": 1.8090825321790636
+          },
+          {
+            "record_id": "optoGEF2_large_col_G",
+            "prediction_id": "fig4f_col_G",
+            "prediction_um": 11.99313424968347,
+            "observed_um": 8.383168,
+            "error_um": 3.6099662496834704
+          },
+          {
+            "record_id": "optoGEF2_large_col_H",
+            "prediction_id": "fig4f_col_H",
+            "prediction_um": 8.506965747674787,
+            "observed_um": 7.0,
+            "error_um": 1.506965747674787
+          },
+          {
+            "record_id": "optoGEF2_large_col_I",
+            "prediction_id": "fig4f_col_I",
+            "prediction_um": 10.596385045466958,
+            "observed_um": 11.028607,
+            "error_um": -0.43222195453304124
+          },
+          {
+            "record_id": "optoGEF2_large_col_J",
+            "prediction_id": "fig4f_col_J",
+            "prediction_um": 4.833144412334769,
+            "observed_um": 2.728015,
+            "error_um": 2.105129412334769
+          }
+        ],
+        "scalar_scores": {
+          "RMSE_um": 3.0881369697724317,
+          "MAE_um": 2.552933624986426,
+          "signed_bias_um": 2.446180467727737
+        },
+        "label_n": 31,
+        "label_sets": [
+          {
+            "record_id": "fig4f_col_AB",
+            "observed_label": 0,
+            "gap": 0.019021544070780494,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AA",
+            "observed_label": 0,
+            "gap": 0.019389505253205264,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AC",
+            "observed_label": 0,
+            "gap": 0.01950430687854743,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AF",
+            "observed_label": 1,
+            "gap": 0.019481854462018222,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AE",
+            "observed_label": 1,
+            "gap": 0.019155994733571213,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AD",
+            "observed_label": 1,
+            "gap": 0.01670265938471449,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Z",
+            "observed_label": 0,
+            "gap": 0.013609990795822258,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Y",
+            "observed_label": 0,
+            "gap": 0.017248428824707673,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_W",
+            "observed_label": 0,
+            "gap": 0.018249617205238988,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_X",
+            "observed_label": 0,
+            "gap": 0.018244396119439066,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_V",
+            "observed_label": 1,
+            "gap": 0.017478417914335798,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_U",
+            "observed_label": 0,
+            "gap": 0.009442736440818722,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_T",
+            "observed_label": 0,
+            "gap": 0.014380002511220291,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Q",
+            "observed_label": 1,
+            "gap": 0.015532423573524468,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_S",
+            "observed_label": 0,
+            "gap": 0.015452023568413242,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_R",
+            "observed_label": 1,
+            "gap": 0.01365015193182273,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_M",
+            "observed_label": 0,
+            "gap": 0.008394952334995986,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_K",
+            "observed_label": 1,
+            "gap": 0.012092852790538844,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_L",
+            "observed_label": 1,
+            "gap": 0.01195551124936367,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_O",
+            "observed_label": 1,
+            "gap": 0.011166212567395917,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_N",
+            "observed_label": 1,
+            "gap": 0.010793337551495807,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_P",
+            "observed_label": 1,
+            "gap": 0.007774616551170621,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_J",
+            "observed_label": 0,
+            "gap": 0.007515528112445935,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_B",
+            "observed_label": 0,
+            "gap": 0.008250409466607489,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_E",
+            "observed_label": 0,
+            "gap": 0.008822425233963593,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_C",
+            "observed_label": 0,
+            "gap": 0.008829040755046536,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_H",
+            "observed_label": 1,
+            "gap": 0.009232458148818568,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_D",
+            "observed_label": 1,
+            "gap": 0.009214584214780719,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_I",
+            "observed_label": 1,
+            "gap": 0.008099449700810224,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_F",
+            "observed_label": 1,
+            "gap": 0.0072464958717652905,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_G",
+            "observed_label": 1,
+            "gap": 0.005334477395692816,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          }
+        ],
+        "exclusions_by_assumption_um": {
+          "0.0": 0,
+          "0.05": 0,
+          "0.2": 0
+        },
+        "ambiguous_by_assumption_um": {
+          "0.0": 31,
+          "0.05": 31,
+          "0.2": 31
+        },
+        "minimum_local_J": 0.8124542869818121,
+        "maximum_local_J": 1.1578719108808064,
+        "max_local_volume_reduction_fraction": 0.1875457130181879,
+        "max_absolute_global_volume_change": 0.0038866166222368825,
+        "maximum_scaled_free_force_residual": 1.437647015323229e-10
+      },
+      {
+        "branch": "basal_2",
+        "gain": 8.88,
+        "gain_replayed_training_only": true,
+        "gain_at_grid_boundary": false,
+        "direct_calibration_RSS_um2": 86.50384885385384,
+        "surrogate_max_error_um": 0.011065255232839633,
+        "calibration_minimum_J": 0.8061200012701506,
+        "calibration_apical_dominant_predicted": 0,
+        "calibration_apical_dominant_observed": 16,
+        "scalar_pairs": [
+          {
+            "record_id": "optoGEF2_large_col_B",
+            "prediction_id": "fig4f_col_B",
+            "prediction_um": 5.687269127704605,
+            "observed_um": 0.071243,
+            "error_um": 5.616026127704605
+          },
+          {
+            "record_id": "optoGEF2_large_col_C",
+            "prediction_id": "fig4f_col_C",
+            "prediction_um": 6.619332249231484,
+            "observed_um": 3.080957,
+            "error_um": 3.538375249231484
+          },
+          {
+            "record_id": "optoGEF2_large_col_D",
+            "prediction_id": "fig4f_col_D",
+            "prediction_um": 8.600587385790295,
+            "observed_um": 8.72639,
+            "error_um": -0.1258026142097055
+          },
+          {
+            "record_id": "optoGEF2_large_col_E",
+            "prediction_id": "fig4f_col_E",
+            "prediction_um": 6.605979163063412,
+            "observed_um": 2.376692,
+            "error_um": 4.229287163063413
+          },
+          {
+            "record_id": "optoGEF2_large_col_F",
+            "prediction_id": "fig4f_col_F",
+            "prediction_um": 11.05648086845219,
+            "observed_um": 9.378311,
+            "error_um": 1.6781698684521906
+          },
+          {
+            "record_id": "optoGEF2_large_col_G",
+            "prediction_id": "fig4f_col_G",
+            "prediction_um": 11.852314640454257,
+            "observed_um": 8.383168,
+            "error_um": 3.469146640454257
+          },
+          {
+            "record_id": "optoGEF2_large_col_H",
+            "prediction_id": "fig4f_col_H",
+            "prediction_um": 8.433311923709823,
+            "observed_um": 7.0,
+            "error_um": 1.433311923709823
+          },
+          {
+            "record_id": "optoGEF2_large_col_I",
+            "prediction_id": "fig4f_col_I",
+            "prediction_um": 10.476023765104332,
+            "observed_um": 11.028607,
+            "error_um": -0.5525832348956676
+          },
+          {
+            "record_id": "optoGEF2_large_col_J",
+            "prediction_id": "fig4f_col_J",
+            "prediction_um": 4.830920045482365,
+            "observed_um": 2.728015,
+            "error_um": 2.1029050454823652
+          }
+        ],
+        "scalar_scores": {
+          "RMSE_um": 3.0476898086845554,
+          "MAE_um": 2.5272897630226123,
+          "signed_bias_um": 2.376537352110307
+        },
+        "label_n": 31,
+        "label_sets": [
+          {
+            "record_id": "fig4f_col_AB",
+            "observed_label": 0,
+            "gap": 0.018933641904612997,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AA",
+            "observed_label": 0,
+            "gap": 0.019218059996298886,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AC",
+            "observed_label": 0,
+            "gap": 0.019298236191519935,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AF",
+            "observed_label": 1,
+            "gap": 0.018914428717668352,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AE",
+            "observed_label": 1,
+            "gap": 0.018537922532150697,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AD",
+            "observed_label": 1,
+            "gap": 0.016006857551382758,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Z",
+            "observed_label": 0,
+            "gap": 0.01383451996986218,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Y",
+            "observed_label": 0,
+            "gap": 0.01725305011737477,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_W",
+            "observed_label": 0,
+            "gap": 0.01836990596127741,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_X",
+            "observed_label": 0,
+            "gap": 0.018368855633743242,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_V",
+            "observed_label": 1,
+            "gap": 0.017698726096180395,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_U",
+            "observed_label": 0,
+            "gap": 0.009709191822056984,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_T",
+            "observed_label": 0,
+            "gap": 0.014767864914153384,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Q",
+            "observed_label": 1,
+            "gap": 0.016478032538343457,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_S",
+            "observed_label": 0,
+            "gap": 0.016466006523555787,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_R",
+            "observed_label": 1,
+            "gap": 0.01518272402523868,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_M",
+            "observed_label": 0,
+            "gap": 0.008863631253696158,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_K",
+            "observed_label": 1,
+            "gap": 0.013072144902378069,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_L",
+            "observed_label": 1,
+            "gap": 0.013947102866712746,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_O",
+            "observed_label": 1,
+            "gap": 0.013615969418944496,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_N",
+            "observed_label": 1,
+            "gap": 0.013410444772959162,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_P",
+            "observed_label": 1,
+            "gap": 0.011541631933738583,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_J",
+            "observed_label": 0,
+            "gap": 0.005256941759936629,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_B",
+            "observed_label": 0,
+            "gap": 0.004678774138895503,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_E",
+            "observed_label": 0,
+            "gap": 0.00387709327089536,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_C",
+            "observed_label": 0,
+            "gap": 0.0038654389453685045,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_H",
+            "observed_label": 1,
+            "gap": 0.003168765037234844,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_D",
+            "observed_label": 1,
+            "gap": 0.003283636487269259,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_I",
+            "observed_label": 1,
+            "gap": 0.009902462714692861,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_F",
+            "observed_label": 1,
+            "gap": 0.011099844474421694,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_G",
+            "observed_label": 1,
+            "gap": 0.010332661078760741,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          }
+        ],
+        "exclusions_by_assumption_um": {
+          "0.0": 0,
+          "0.05": 0,
+          "0.2": 0
+        },
+        "ambiguous_by_assumption_um": {
+          "0.0": 31,
+          "0.05": 31,
+          "0.2": 31
+        },
+        "minimum_local_J": 0.8092849858101719,
+        "maximum_local_J": 1.1565577637193063,
+        "max_local_volume_reduction_fraction": 0.19071501418982806,
+        "max_absolute_global_volume_change": 0.003878870776961585,
+        "maximum_scaled_free_force_residual": 1.223877009936744e-10
+      },
+      {
+        "branch": "basal_20",
+        "gain": 9.5,
+        "gain_replayed_training_only": true,
+        "gain_at_grid_boundary": false,
+        "direct_calibration_RSS_um2": 87.55246589397082,
+        "surrogate_max_error_um": 0.007836673052414866,
+        "calibration_minimum_J": 0.7960623640462208,
+        "calibration_apical_dominant_predicted": 0,
+        "calibration_apical_dominant_observed": 16,
+        "scalar_pairs": [
+          {
+            "record_id": "optoGEF2_large_col_B",
+            "prediction_id": "fig4f_col_B",
+            "prediction_um": 5.863711441205651,
+            "observed_um": 0.071243,
+            "error_um": 5.792468441205651
+          },
+          {
+            "record_id": "optoGEF2_large_col_C",
+            "prediction_id": "fig4f_col_C",
+            "prediction_um": 6.782379425753819,
+            "observed_um": 3.080957,
+            "error_um": 3.7014224257538184
+          },
+          {
+            "record_id": "optoGEF2_large_col_D",
+            "prediction_id": "fig4f_col_D",
+            "prediction_um": 8.70730222154066,
+            "observed_um": 8.72639,
+            "error_um": -0.0190877784593404
+          },
+          {
+            "record_id": "optoGEF2_large_col_E",
+            "prediction_id": "fig4f_col_E",
+            "prediction_um": 6.769287161238547,
+            "observed_um": 2.376692,
+            "error_um": 4.392595161238548
+          },
+          {
+            "record_id": "optoGEF2_large_col_F",
+            "prediction_id": "fig4f_col_F",
+            "prediction_um": 11.075003308648663,
+            "observed_um": 9.378311,
+            "error_um": 1.6966923086486627
+          },
+          {
+            "record_id": "optoGEF2_large_col_G",
+            "prediction_id": "fig4f_col_G",
+            "prediction_um": 11.851389103443049,
+            "observed_um": 8.383168,
+            "error_um": 3.4682211034430495
+          },
+          {
+            "record_id": "optoGEF2_large_col_H",
+            "prediction_id": "fig4f_col_H",
+            "prediction_um": 8.545860658318981,
+            "observed_um": 7.0,
+            "error_um": 1.545860658318981
+          },
+          {
+            "record_id": "optoGEF2_large_col_I",
+            "prediction_id": "fig4f_col_I",
+            "prediction_um": 10.513663002264648,
+            "observed_um": 11.028607,
+            "error_um": -0.5149439977353509
+          },
+          {
+            "record_id": "optoGEF2_large_col_J",
+            "prediction_id": "fig4f_col_J",
+            "prediction_um": 5.010313709445626,
+            "observed_um": 2.728015,
+            "error_um": 2.2822987094456257
+          }
+        ],
+        "scalar_scores": {
+          "RMSE_um": 3.1503004709874545,
+          "MAE_um": 2.6015100649165586,
+          "signed_bias_um": 2.482836336873294
+        },
+        "label_n": 31,
+        "label_sets": [
+          {
+            "record_id": "fig4f_col_AB",
+            "observed_label": 0,
+            "gap": 0.018304806616546987,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AA",
+            "observed_label": 0,
+            "gap": 0.018393647427138338,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AC",
+            "observed_label": 0,
+            "gap": 0.01839412838727017,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AF",
+            "observed_label": 1,
+            "gap": 0.01794664834423554,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AE",
+            "observed_label": 1,
+            "gap": 0.017482040060657456,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_AD",
+            "observed_label": 1,
+            "gap": 0.014899323322478564,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Z",
+            "observed_label": 0,
+            "gap": 0.014117843599253499,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Y",
+            "observed_label": 0,
+            "gap": 0.017133555306029336,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_W",
+            "observed_label": 0,
+            "gap": 0.018088458054347112,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_X",
+            "observed_label": 0,
+            "gap": 0.018073346001647117,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_V",
+            "observed_label": 1,
+            "gap": 0.01713495816268662,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_U",
+            "observed_label": 0,
+            "gap": 0.010096320460426744,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_T",
+            "observed_label": 0,
+            "gap": 0.015158314946918883,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_Q",
+            "observed_label": 1,
+            "gap": 0.016780671919007895,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_S",
+            "observed_label": 0,
+            "gap": 0.016747286696987107,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_R",
+            "observed_label": 1,
+            "gap": 0.015268657668743857,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_M",
+            "observed_label": 0,
+            "gap": 0.009255814726027656,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_K",
+            "observed_label": 1,
+            "gap": 0.013829462558860084,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_L",
+            "observed_label": 1,
+            "gap": 0.014869242150940654,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_O",
+            "observed_label": 1,
+            "gap": 0.01454738528650179,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_N",
+            "observed_label": 1,
+            "gap": 0.014344122999050413,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_P",
+            "observed_label": 1,
+            "gap": 0.012593974763321913,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_J",
+            "observed_label": 0,
+            "gap": 0.007616905027994392,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_B",
+            "observed_label": 0,
+            "gap": 0.00916054920407472,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_E",
+            "observed_label": 0,
+            "gap": 0.010731610333364672,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_C",
+            "observed_label": 0,
+            "gap": 0.010745422593720355,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_H",
+            "observed_label": 1,
+            "gap": 0.012314027020040252,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_D",
+            "observed_label": 1,
+            "gap": 0.01242134177888432,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_I",
+            "observed_label": 1,
+            "gap": 0.012942884429567703,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_F",
+            "observed_label": 1,
+            "gap": 0.0127556693187999,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "record_id": "fig4f_col_G",
+            "observed_label": 1,
+            "gap": 0.012120092723131082,
+            "possible_labels_by_assumption_um": {
+              "0.0": [
+                0,
+                1
+              ],
+              "0.05": [
+                0,
+                1
+              ],
+              "0.2": [
+                0,
+                1
+              ]
+            }
+          }
+        ],
+        "exclusions_by_assumption_um": {
+          "0.0": 0,
+          "0.05": 0,
+          "0.2": 0
+        },
+        "ambiguous_by_assumption_um": {
+          "0.0": 31,
+          "0.05": 31,
+          "0.2": 31
+        },
+        "minimum_local_J": 0.7972522412307161,
+        "maximum_local_J": 1.1636733731749198,
+        "max_local_volume_reduction_fraction": 0.20274775876928386,
+        "max_absolute_global_volume_change": 0.004154958799585828,
+        "maximum_scaled_free_force_residual": 7.229029354294259e-11
+      }
+    ],
+    "independent_logic": "Stdlib bisect interpolation and math.fsum scores; explicit slice-gap algebra; independent nodal/determinant volume/J reconstruction.",
+    "original_gate_status": {
+      "gate1": "Bounded originality audit executed; no novelty",
+      "gate2": "Actual data audited, specimen/time/geometry/label uncertainty remains",
+      "gate3": "Coupled conditional discrete model implemented; missing adequate calibration partition, material identified set and continuum validation",
+      "gate4": "Conditional93geometry predictions frozen/scored; original uncertainty/observation contract not fully satisfied",
+      "gate5": "Conditional stress test; no successful biological shape prediction or conceptual novelty established"
+    },
+    "remaining": [
+      "Complete admissible calibration identified set",
+      "Specimen preactivation geometry/material/contact/prestress",
+      "Source slice height/time/resolution observation correspondence",
+      "Transient peak/recovery model or validated quasistatic proxy",
+      "Continuum/mesh/quadrature and parameter uncertainty bounds",
+      "Non-axisymmetric curvature/ellipse response",
+      "Independent biological/expert validation"
+    ]
+  },
+  "calibration_intermediate_hashes": {
+    "runs/spatial_transfer/basal_0.2/table.json": "1b7667933e49740c2a9ad7aab5092e64afc9ba950ffeb920e18164c688390dee",
+    "runs/spatial_transfer/basal_0.2/calibration.json": "51b80ad3e024c19dca5d844f2d6fb3680dbd0d1f1d874bc044ec35333c36dcba",
+    "runs/spatial_transfer/basal_0.2/table_000.json": "5ca4505dfe3e68208b52a57344604ae4aa42eb19f21ac04aa8b05219303f272c",
+    "runs/spatial_transfer/basal_0.2/table_001.json": "9d3dcd55c93075c7f61e4120fa72d734d20afa67eeaea1788b143da8740d7bc5",
+    "runs/spatial_transfer/basal_0.2/table_002.json": "8a690c99d10118147db8c68b5f0c4cc2c6ef0a7407672fe4885414df281771b3",
+    "runs/spatial_transfer/basal_0.2/table_003.json": "63e2cc9eb02aa7a1669004e426bb310a3f27a0893ee900fe79dc8408f8504147",
+    "runs/spatial_transfer/basal_0.2/table_004.json": "d6f1375b2200339278ed8012be8b3142c3992da63bf3660551dc2f96e0933254",
+    "runs/spatial_transfer/basal_0.2/table_005.json": "a7c4c96d9fbd9ebc63be362b4510d23fa0df0e18e4ce4cbbf37e2971691052fe",
+    "runs/spatial_transfer/basal_0.2/table_006.json": "9b123cdc55d26d695be54bab8b3834d9b526b21d74e5eabf3825a1f42891eb30",
+    "runs/spatial_transfer/basal_0.2/table_007.json": "06e52b37befb3eccf3157dcbfa7a1b3b3270a8bce893117a0d4ac082b12186c0",
+    "runs/spatial_transfer/basal_0.2/table_008.json": "f2e46bfb4691241939f95ea4eb5c9b1332050a3f8a025c5f475d78372792b15a",
+    "runs/spatial_transfer/basal_0.2/table_009.json": "d4dd81754284237cbdecb698c4c6b7fffbe4055c892ab7adf333d3c8e1f07ce4",
+    "runs/spatial_transfer/basal_0.2/table_010.json": "99705a0c0834d6b7596dc555fd91cd793f274774f0251c9b9b8ac7e24a511e96",
+    "runs/spatial_transfer/basal_0.2/table_011.json": "8e98d324fbf562e2ac2fbb856a167bc3cfe6ade749a5b09149330aac1d262f30",
+    "runs/spatial_transfer/basal_0.2/table_012.json": "3f631e12eeaca28c2b63bb4f894e1a2034c5f7b7a2ff3c1d3201880d9f67c690",
+    "runs/spatial_transfer/basal_0.2/table_013.json": "744038d02392c0a37f4a79c1da8749c0dc61977401c524fb846f903db6141897",
+    "runs/spatial_transfer/basal_0.2/table_014.json": "518c71803566927d2a386acaa8fa83937fca59157066877c5530a41ce24fc8df",
+    "runs/spatial_transfer/basal_0.2/table_015.json": "927ce54c988667c09b597708a034af684a8d0455dd79e349e2546f3717c5d2d0",
+    "runs/spatial_transfer/basal_0.2/table_016.json": "655889c04b9720845e29992ba2b071d759ca2af4d452431fea0ae19dd35538c3",
+    "runs/spatial_transfer/basal_0.2/table_017.json": "3a535c68e8c0669748cfd2615814afeaf6d514deebbb9a693392e9f62d3eb624",
+    "runs/spatial_transfer/basal_0.2/table_018.json": "64c98990c688db91216d6e6fe5c7ce6db7fa8bb4579f1bc017ebe1630358d585",
+    "runs/spatial_transfer/basal_0.2/table_019.json": "d4a19d1756a8f311d966967d3250d0c292e3600b804647e555519dccbdf27a6e",
+    "runs/spatial_transfer/basal_0.2/table_020.json": "59a6e314a8d20cf64dfba15b76ee6ec486dd8c5afb316d162334023094299c6a",
+    "runs/spatial_transfer/basal_0.2/table_021.json": "81bf6d2a842b366c8e88afaa8dcec10501d1cce2f2477bafb3f784ac412d321a",
+    "runs/spatial_transfer/basal_0.2/table_022.json": "4edc58155df530ef6b18349c133ef147d30db289b0e3cd3c058c4b8065421a08",
+    "runs/spatial_transfer/basal_0.2/table_023.json": "320ab8fd043ceb3b1ecd8757650432da66a7de988b25264988b88909dd78e86b",
+    "runs/spatial_transfer/basal_0.2/table_024.json": "34912a6f1f20d5e370d0a3a45d2a8158287ea8eb5bbd1ca36bc8e8293e00c6d3",
+    "runs/spatial_transfer/basal_0.2/table_025.json": "acf6ba9f9f025e115b914fa25d0dff418f86a8927fcd4f839d1e38073d7b26da",
+    "runs/spatial_transfer/basal_0.2/table_026.json": "a2a89643b75a3b1a7de45b3cb03e5b89f570103d8c54060f3bab1c86b4e6c3da",
+    "runs/spatial_transfer/basal_0.2/table_027.json": "5b900f77c331a8edd2141482db380cb3693fef2904f92fce7ca04909754114b0",
+    "runs/spatial_transfer/basal_0.2/table_028.json": "731c33a1ae36f199f2530e62d740ce2484c46c1338d67fb495ec95681b8ff75d",
+    "runs/spatial_transfer/basal_0.2/table_029.json": "cc513b965504ce32652262fc7736128184ca967727f2217aeb9877df01c6fcc5",
+    "runs/spatial_transfer/basal_0.2/table_030.json": "797d35860c895588b5596f8cd41e0b2af64a06fb38f5d3de18e670f32c52083b",
+    "runs/spatial_transfer/basal_0.2/table_031.json": "4046710eabd2471630d78df49d2a0dab0736c15362771f5215feff85c84b0195",
+    "runs/spatial_transfer/basal_0.2/table_032.json": "64a8a6ae885e1abe9246200b04bbab8226af1cada8c89512e1c41855f74928a2",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_00.json": "db50b4ea46268ef5f39076e871b69f4a8265f99014e887e40fcbb3f953eb5de4",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_01.json": "9272beb0d4546b2926ba5f241fcaf18a11d1592029c90f7cdf5009cd98bd3ac3",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_02.json": "fd9d36e3955fb5155da884b7d5a10299538fbc171cc9102fba32e06e64a830ad",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_03.json": "08bdad41b12f1dfc5da52feea10c1b34cd5bd6de2da9c18d1a507a56d41c1617",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_04.json": "5622a8f88ffc70e2f351fa905b76d83024b64879352a6e81e9fa444e26d634ed",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_05.json": "e9a7a695625b4283989e7e648946f51e11be9e06684dc6724b9db90da813cdbb",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_06.json": "a5bdbb7bfb406b29127d55a183deed7b3cf31ff9d0e0b1c1a2bf25ab4300e6fe",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_07.json": "cea482b6a168419e2a512cc1f94ea157fe52f57d9a67f76ba13f95c8bf6ab008",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_08.json": "30065a85e57ac66564c8b84500fd5d4228180546e02cf0651d5f8d4bb49007ee",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_09.json": "9aa497c8e833b20b3dab94fb5203e99ab6e8a17ca688c642036e0933046299d1",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_10.json": "72169c2029d7a444b9e1396f89c80c035f40b0133c8a1724fe2750754da8e124",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_11.json": "648439781c9776c32bac14efdfc741ed07ef017e095dc63846504972735545dd",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_12.json": "5d1f7537ad9eb1cf9921deb7809476645b3d5396d76399c271c9a1708ad690d8",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_13.json": "05922239c54b4e1bf3c5f85a15a30726a73249a7d2a9ec4f724810cf72ad051b",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_14.json": "017621c0dc5871f4d482173794543f8f22a0ec5b2088680733d9f11a47153649",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_15.json": "22ca07aae3c36dd1d6ab282cda47fa18e77b89db87e74356bbe278fe0c599d61",
+    "runs/spatial_transfer/basal_0.2/calibration_direct_16.json": "c7527833368b4872db10e981f6d805c89e7d9500ab086f473c73de2f9ad9836a",
+    "runs/spatial_transfer/basal_2/table.json": "1f09bf17680dddd4ce27f8b3581426ed94e3e4a9b195fb803b80cd2987af9dd7",
+    "runs/spatial_transfer/basal_2/calibration.json": "8c094bed3136c1b5c2d74e3b46e8b0dd3ea20fdf40838b7dc88b914dacc3c85a",
+    "runs/spatial_transfer/basal_2/table_000.json": "8ff4c3fe60b87248f2e25daf27af0571a5c3bcdf1f5c9b33564cff9503f1efe1",
+    "runs/spatial_transfer/basal_2/table_001.json": "5aa8952cd5ff8da2a92caa1444ac4e11bde40d5315f656e522c9180545534946",
+    "runs/spatial_transfer/basal_2/table_002.json": "6ec77465471ba91a08ca2af61b97c1989c08942439a7e565c76538a2d0d13844",
+    "runs/spatial_transfer/basal_2/table_003.json": "96cd702e61375a38826f3ea0f6dd0df38c6a13cc169eb8139e8963665c993d7a",
+    "runs/spatial_transfer/basal_2/table_004.json": "ed307e0f5adbfc6cdf08bcc99460c8f8d6b27d8da90d3ec8403bd450e6ba1362",
+    "runs/spatial_transfer/basal_2/table_005.json": "5f108cbc1c9a9ce6cbe93f1c5980ba3ef1e462276b94a9eaf9269a746fb696fc",
+    "runs/spatial_transfer/basal_2/table_006.json": "6325b95b100ace7870ad786e68ce9f0d1e2a3de8ba41fe26902930d5bfd99a5e",
+    "runs/spatial_transfer/basal_2/table_007.json": "e1871de5f6f48c77a17d86fdb7d0818ac24610ce49daa9844201ca682a581fcc",
+    "runs/spatial_transfer/basal_2/table_008.json": "b105a3640337e89cd1e456ec8618138e878ffa22a50027e444a9a82a15c8d028",
+    "runs/spatial_transfer/basal_2/table_009.json": "bb0b31ddeefd0c3d9cbf30c4ffc62d7371f91fae20f29253b44e2e35a55346cf",
+    "runs/spatial_transfer/basal_2/table_010.json": "6220251b0bda4455b3e577ac83e4df193e96d01252908bd003c722f448c27fbd",
+    "runs/spatial_transfer/basal_2/table_011.json": "144304c75131acb5ef31c409d8c0a0ac0f8ee5a99bab1b53a7b86b5e16bab912",
+    "runs/spatial_transfer/basal_2/table_012.json": "e3f1f4c3b916d94fb0cd3f5ed59002777b0a4c036126a32cff659cd18714bd02",
+    "runs/spatial_transfer/basal_2/table_013.json": "aa1e3a7d17130d3206089cc5f2661f063ca2d6147764a6575baf87ae520a5fd3",
+    "runs/spatial_transfer/basal_2/table_014.json": "8ca609fc309de1b645a9cbc1c186503d593b36c00b6dbcbd0cff6e8c6d8e881a",
+    "runs/spatial_transfer/basal_2/table_015.json": "afe4805d417563523f145b9c45b0e673ec4903c6d7c5164a1c65e0a796038674",
+    "runs/spatial_transfer/basal_2/table_016.json": "8276560815e8ba1f0c5cf4add7e47e844b14ded6e91ddab0d023be3790fa667a",
+    "runs/spatial_transfer/basal_2/table_017.json": "9fda173f769f6ec04bb1a97f0279f058624aab17ae96630aef7cd06deb022d4c",
+    "runs/spatial_transfer/basal_2/table_018.json": "3c38a9e049114f7aabde36f5a5d3e6e75a3f428cd2def47610963095d8d3f74c",
+    "runs/spatial_transfer/basal_2/table_019.json": "f08e350d7bbdd458e8ac9b4bcf0c847f3b6c4e8315adf4dd46c0e522d5f92e77",
+    "runs/spatial_transfer/basal_2/table_020.json": "4482ea8279ac93f9bd0423722598d9282d903867bc88e169357ee54a037550a9",
+    "runs/spatial_transfer/basal_2/table_021.json": "c41dae5b9cb425fccb80af44fd031b44ed9a7ee3ddcf23ca41895fc60de9e672",
+    "runs/spatial_transfer/basal_2/table_022.json": "d968881c78747c25c9b17a86193829fe8a520bf3c017b6e9b0bcca0f4d0e62eb",
+    "runs/spatial_transfer/basal_2/table_023.json": "f3d85913f7dfc98dfa85302d5bac2d5b8ae28a8e6ff443d6baa7885d3d63224c",
+    "runs/spatial_transfer/basal_2/table_024.json": "bfa9e0bb33de538ce2025f0c56f772ab545b2e8b9e1de219a18bdb9e00c8432e",
+    "runs/spatial_transfer/basal_2/table_025.json": "edd26f0facea8d01f3c372e9cb04bf0491e7f346d44c8b3ebd888cb5b1cbc8f5",
+    "runs/spatial_transfer/basal_2/table_026.json": "e1c9722aac5e2229960acb3241de292a786c288a550ee5c17d42c1ba2ccbaaa1",
+    "runs/spatial_transfer/basal_2/table_027.json": "597ad52452c81612f52d7d9dfcb1a5b8be8500308f80c484c1671f5f30f8fa84",
+    "runs/spatial_transfer/basal_2/table_028.json": "e92fc5159fdedb85eee7bcb6bc67a605735d0d54b1e0d8a258e5d633d7c727d3",
+    "runs/spatial_transfer/basal_2/table_029.json": "8ecbf789b1c735c29da205d265ff840a5010c59ef5be9411178f1d3babe6e4e5",
+    "runs/spatial_transfer/basal_2/table_030.json": "41609365a7f963758ffa7d42935f5c09a2afe5eb25777cc1ff134295bf66ddb4",
+    "runs/spatial_transfer/basal_2/table_031.json": "7f0a7c1c53683e9c2253a37bdea94fc068a26eadf7d2beadba2a7364bda3c33b",
+    "runs/spatial_transfer/basal_2/table_032.json": "21c818d99816d5e833acad8b64ff4d1783ed9293269e258851b9003521efe162",
+    "runs/spatial_transfer/basal_2/calibration_direct_00.json": "50d5c01b0d9fa354288444239416975cd3b197c0834f139edc17db8494db99f9",
+    "runs/spatial_transfer/basal_2/calibration_direct_01.json": "461cc9cd08d4269417b2a312a44160088e3af6f5213721a39b5af80f1eaa7a67",
+    "runs/spatial_transfer/basal_2/calibration_direct_02.json": "14d6e9ceb9d654b71cc0844b587b697aa2b9b1de0b58cafcd009c6ddc12ff85c",
+    "runs/spatial_transfer/basal_2/calibration_direct_03.json": "edba4585510ad19f0fa92f02bcc2d5fd07414d599ce03eb3fb6ff40d6a01e95b",
+    "runs/spatial_transfer/basal_2/calibration_direct_04.json": "a0a9b2fcb8434a62c553eab1b1bb2cccd2fe4e2639cb40e603e28093899f3df6",
+    "runs/spatial_transfer/basal_2/calibration_direct_05.json": "69bfda55f589587d78391406260e8e64994db04ee197fd0f7cafd7e23390dbdd",
+    "runs/spatial_transfer/basal_2/calibration_direct_06.json": "0ae953fccf15055aa1ed9a1348688e6e6068d66d7c53ab4c902d750009dd0d05",
+    "runs/spatial_transfer/basal_2/calibration_direct_07.json": "6c901719931657fea81b39104397e8c7e135ec96d7b7728acce37d05edb7bab5",
+    "runs/spatial_transfer/basal_2/calibration_direct_08.json": "9f87e519a0602d939a7591573eaf204d174dd1de34b3781decd19defd8ba1b2e",
+    "runs/spatial_transfer/basal_2/calibration_direct_09.json": "7de5b2068ef3a08fb1cc63de74b594468e87b34c08cbf45be9e576f25a4dba9d",
+    "runs/spatial_transfer/basal_2/calibration_direct_10.json": "7a6b0abd357b0b1e1021c0ef3dbb4f8dc0807813d9250ad62db1420d2ba7b3bf",
+    "runs/spatial_transfer/basal_2/calibration_direct_11.json": "5a6eae1ad21f0d318fab75c7f3e0e484459975374346b6032b1172b998ac48bf",
+    "runs/spatial_transfer/basal_2/calibration_direct_12.json": "ecda435be15e9859d5fafa29be12e399a6dbd8c82ec21a37b8bcebdd48e46d82",
+    "runs/spatial_transfer/basal_2/calibration_direct_13.json": "7ff8a2fe99b7ac6d8664086142523409ac1fceb410e689ecfb78bc91f35896d9",
+    "runs/spatial_transfer/basal_2/calibration_direct_14.json": "2c920e42dc36bf0112057bcdb66bc8b325056ed0ae2f5cb2c0b47ff384480e4d",
+    "runs/spatial_transfer/basal_2/calibration_direct_15.json": "7adde9045a343ec15540d195b0edfe3141cc449f992fedca6dd5e3d7fe9fd2f6",
+    "runs/spatial_transfer/basal_2/calibration_direct_16.json": "ba714b50970caaf8ff9aadd6ac0912f43333711eab0002238abda8c2d54345cb",
+    "runs/spatial_transfer/basal_20/table.json": "81c0f70ba18faffcf91e80ccdcd5dd780a2b52301546b9a25088bc7a63fbe1c7",
+    "runs/spatial_transfer/basal_20/calibration.json": "1cfc5ffac723c8b004d41ef2bebc8f459248ef8992f48ef3e666a020dd0af684",
+    "runs/spatial_transfer/basal_20/table_000.json": "1d4deab34d57d50e520a7a21258e9559ed490e3ea6b7bbaaa5748b6d3aa14b6c",
+    "runs/spatial_transfer/basal_20/table_001.json": "8c659dd5ab294ce25b59047bee0ec186c573215cc52a95dcd048c336ad9bd042",
+    "runs/spatial_transfer/basal_20/table_002.json": "c64d2365ad18df2670fd087d9cc70ff34d97a8a91ea12cce0b03c3d4df27e111",
+    "runs/spatial_transfer/basal_20/table_003.json": "b72d2d78817d4e96cd4938f38f8c5ee73d883d701dd2c2830483cd173d6971c0",
+    "runs/spatial_transfer/basal_20/table_004.json": "7079bf21d603348e7882418524a87040edc12cd6c11f693ac584b252d20419a2",
+    "runs/spatial_transfer/basal_20/table_005.json": "68a98cd5c400673570845d2cc21b2d62c548b5d7559d5f3d3ef5e1b4b513f8bd",
+    "runs/spatial_transfer/basal_20/table_006.json": "362669f66b9ec25a5200b89eab7279bcd12466d140bfb99294d572b1f415a472",
+    "runs/spatial_transfer/basal_20/table_007.json": "ae8d3c4f6ca442d2f570e02706aa9915e7d9508df668be3d214c5c46c0159ef8",
+    "runs/spatial_transfer/basal_20/table_008.json": "a444accc986ccb1fdbe8680e2f8ca8c9c43e1e43753187a7b128106a04e47d2e",
+    "runs/spatial_transfer/basal_20/table_009.json": "beabc16c45e2c797c7c62742a5187b8e7575c86a50b888fd6b9c27eb7b593a5c",
+    "runs/spatial_transfer/basal_20/table_010.json": "f93a0d263031db459aeea1d405782996639c429af11c51bd427b639ffd4a3cad",
+    "runs/spatial_transfer/basal_20/table_011.json": "f3d7648ac1ed01469b7086d60c321cb70d8dfd7ee3225c0c92a3fc2d2f8cc421",
+    "runs/spatial_transfer/basal_20/table_012.json": "82989c526b485dc5b2bd4324f69173ec94c28323e4784b5afcb31c15024d9272",
+    "runs/spatial_transfer/basal_20/table_013.json": "000d68a01a3638ef3c3c6de4ac6fb8c4ba1a21cdd7b8d7491d5480bdcb6bcc70",
+    "runs/spatial_transfer/basal_20/table_014.json": "b2740a3ecce23d8c022d3c013f169c4a2e00b0fb47f9a3c41689e105b40beea4",
+    "runs/spatial_transfer/basal_20/table_015.json": "60eb9844a33dc4cae2ec1161a83d5d77779914ef35b91ad20215cecb30f10362",
+    "runs/spatial_transfer/basal_20/table_016.json": "a56497eb49a011837dfd2069afe3f1045deac159db2dd16765b6f321dcf9cc2a",
+    "runs/spatial_transfer/basal_20/table_017.json": "41ea8a83f4c580dbf9470f9aae42a2111a55cdcd15e70c459cc60c9c34fe1754",
+    "runs/spatial_transfer/basal_20/table_018.json": "9ac0b0206728fe81426f1012e5369aa14bd45e64c7555970687ef43c9125f6e6",
+    "runs/spatial_transfer/basal_20/table_019.json": "eee8f8c16f900f17c95e762d04e0a6f9e8fca4816624b3c8a10f3593659e6ff9",
+    "runs/spatial_transfer/basal_20/table_020.json": "e44645c3da66133c56d88c05e71da8a47611c995aefbbbd76614e754976e6149",
+    "runs/spatial_transfer/basal_20/table_021.json": "808496eab9f1de2467e8fbc347b060c150aa6419c00acc0d40847561d3ed3a3c",
+    "runs/spatial_transfer/basal_20/table_022.json": "d956177bed2ce1248bf8ffe7a6cf761927836c7ab4524cff67ecb651f06c6914",
+    "runs/spatial_transfer/basal_20/table_023.json": "f3144bdb53b2dd60ae07bf2f3864af04ba725de76460d839d1e593a27c51784b",
+    "runs/spatial_transfer/basal_20/table_024.json": "f476fb2f2b149fa5a37e26dc750d0e89119f8fa52464e29ac0dd03c1b5716001",
+    "runs/spatial_transfer/basal_20/table_025.json": "9db09b3f1b6e682b2f1eb5f318af1c32ac0a170be9d8532a8dda545fd9b703a1",
+    "runs/spatial_transfer/basal_20/table_026.json": "4e805bd78ef954fdf465af373c970a24822aef6ac267e9c71165a1d117ad748d",
+    "runs/spatial_transfer/basal_20/table_027.json": "03fd7b8803bae2f6a3a6b0788506310d0cfee8ed110a8d81e39f5df5b22e4aa7",
+    "runs/spatial_transfer/basal_20/table_028.json": "61b0369a4fa56816b78f674dc9fc2b77981e1d01fa92a2ff34b28ffc2fdbd8cd",
+    "runs/spatial_transfer/basal_20/table_029.json": "ef647f92b2a1b828e0fefad05247c209cedd35017a1d5431b274c06a6eaa7e41",
+    "runs/spatial_transfer/basal_20/table_030.json": "4ff2e3eb1d3e4a62994e9f810a285fa63fceb46137953c3645a845e10c4b288f",
+    "runs/spatial_transfer/basal_20/table_031.json": "18cfd1f699f36964c52f70ff59d694897325f8a228f492f27656b7d352ab74b9",
+    "runs/spatial_transfer/basal_20/table_032.json": "4eafb635adcdd79013803c2356a97c3e28a3c430e1ffdadb2614ad55fb4d7ff7",
+    "runs/spatial_transfer/basal_20/calibration_direct_00.json": "65163654925e44abd0739bab8a5e86cf694f8789155e32fab424e292ed34cdc3",
+    "runs/spatial_transfer/basal_20/calibration_direct_01.json": "4c886a153c6b480f6c148fc0f017caa2e46d064a4e0f4e56e8ed39bcb27767b9",
+    "runs/spatial_transfer/basal_20/calibration_direct_02.json": "3c35b373784c9eb04268aaa875877aeaa17160fa5fa2b9a32152923f760f396f",
+    "runs/spatial_transfer/basal_20/calibration_direct_03.json": "73687918a6d6a5b72089a3f3a6baacb888a1dab42b17876c785f178d13fd9ee0",
+    "runs/spatial_transfer/basal_20/calibration_direct_04.json": "742baf49cdd423e8b48f5757894a74e41337fb63d68257ca77ab52ef54ea122d",
+    "runs/spatial_transfer/basal_20/calibration_direct_05.json": "0e77fcba928c896bd5236c6f04a78c723fbbe03149606d22db39dd5047ffa461",
+    "runs/spatial_transfer/basal_20/calibration_direct_06.json": "a5aa79e302621eb456bc0e9b18e50f7a129d3a1522bf90c6d0fd3da71c9f9723",
+    "runs/spatial_transfer/basal_20/calibration_direct_07.json": "118ac212e0f2394db55d9357269d47078dbeea77ef05390ecad00fab4dfc1bc5",
+    "runs/spatial_transfer/basal_20/calibration_direct_08.json": "630ed5254460cbe0687755488974b32d0a10563ab9d58eac1c6322c3c1546d40",
+    "runs/spatial_transfer/basal_20/calibration_direct_09.json": "90c9dea70491a08b94b3d23c3033fbbb0bbdac988c4acac6e0a662f05e5e8542",
+    "runs/spatial_transfer/basal_20/calibration_direct_10.json": "84fbbab468a75dfa6d551b32b6b4619a1b55a4a3dd89ab8d51a335c32bbd9a5e",
+    "runs/spatial_transfer/basal_20/calibration_direct_11.json": "305c55e84a3fe178735b447989152c42f42425b2ff180d0ad68f59cd0b9e0a81",
+    "runs/spatial_transfer/basal_20/calibration_direct_12.json": "f3ca0bd07bd21904604bcb69d66096ce905fdde2799f2431030bfe2f733f9447",
+    "runs/spatial_transfer/basal_20/calibration_direct_13.json": "9dee64d23bd5c91949c384eb38aefeedb89f72e8aa5dea0d7f1ed1816ac1e536",
+    "runs/spatial_transfer/basal_20/calibration_direct_14.json": "7d90d7b950bdb4032a57c3bd9205a3391dc6da7acf5da176fd3f4a47839e163e",
+    "runs/spatial_transfer/basal_20/calibration_direct_15.json": "dbaa160fb40c3b11fb4fea7704748741bfc57b11af5d20c2f0515390b3ded473",
+    "runs/spatial_transfer/basal_20/calibration_direct_16.json": "f856cb6d4bfe8439b28392781637792fcfe8d5ae706ebe124a7560781d892722"
+  },
+  "review_document_sha256": "b70aea17335b0cb525a93a6ae03567d58f3a14bc33be74bd4772c1c3fe1dfd8d",
+  "review_scope": "Independent v1 only; original sources and all frozen predictions unchanged. Prestress extension remains outside this review.",
+  "verification_harness_note": "An initial post-replay checksum harness reused variable p, which was overwritten by exec of the audit code, causing AttributeError after successful audit execution. Corrected final harness isolates exec globals; no scientific data or audit computation changed."
+}

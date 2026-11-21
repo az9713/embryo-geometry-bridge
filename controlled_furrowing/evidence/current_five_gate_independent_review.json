@@ -1,0 +1,212 @@
+{
+  "status": "PASS_SCOPE_PRESERVATION_AUDIT",
+  "goal_achieved": false,
+  "original_goal_status": "ACTIVE per parent; no pause/completion/blocking requested or set",
+  "created_utc": "2026-11-19T13:24:14.425780+00:00",
+  "checks": {
+    "original_PLAN_hash_unchanged": true,
+    "five_original_gates_retained_goal_achieved_false": true,
+    "full_identified_set_forward_bound_revised_predictions_marked_INCOMPLETE": true,
+    "actual17_candidate_improvement_and_alternative_worsening_verified": true,
+    "same68_observations_and_four_operator_variants_not_relabelled_independentdata": true,
+    "gain_only_and_branch_attribution_limits_preserved": true,
+    "435_direct_598_tangent_16_affine_checks_hash_bound": true,
+    "one_old_611DOF_root_independent256bit20checks_bound": true,
+    "root_not_mistaken_for_new17_or_uniform_parameter_domain": true,
+    "84check_conditional_transfer_actual6check_application_bound": true,
+    "application_uses_larger_author_independent_root_bounds": true,
+    "endpoint_application_only_algebraic_error_no_PDE_temporalclaim": true,
+    "audit_current_root_and_direct_status_match_receipts": true,
+    "next_action_refreshed_from_completed_proposal_to_validated_domaininference": true,
+    "conditional_negative_results_distinguished_from_unperformedwork": true,
+    "no_full_scope_redefined_to_grid_or_one_scenario": true,
+    "source_information_limits_separated_from_executable_mathematics": true,
+    "bounded_originality_not_promoted_to_confirmednovelty": true,
+    "audit_relative_references_exist": true,
+    "review_links_math_delimiters_verified": true,
+    "no_source_code_certificate_or_otherreview_modified": true
+  },
+  "review_scope": "Read-only originalcontract/evidenceaccounting; no new numericalsolve, literaturesearch, authorcontact, Space/livepublicationverification",
+  "snapshot_hashes": {
+    "PLAN.md": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+    "docs/CURRENT-FIVE-GATE-AUDIT.md": "986bfe10ffdee5fc5db9f329d61d28c5ddd26e9bca24c050056bc91792ee89a2",
+    "evidence/gates.json": "c357584c1c83570caef3cfefb6363202a8b5a74fb7192880c39c3d383f635adf"
+  },
+  "reviewed_file_sha256": {
+    "PLAN.md": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+    "docs/ACTIVATED-QUADRATURE.md": "c834e5a7ac42ceffe883045d05741a440e2d27d9455b71ce1f97c16a12c5c0d8",
+    "docs/ALGEBRAIC-ROOT-CERTIFICATION-PATH.md": "3d2fce3e451819e8e01bab6a4395e270267118adfb2478da5345c35e61b2d655",
+    "docs/ALGEBRAIC-ROOT-INDEPENDENT-REVIEW.md": "34a1d24384b8986340263347c63bacf4f2b4324b16c66ebfff4f56b7fa65da2f",
+    "docs/ALGEBRAIC-ROOT-OBSERVER-ERROR.md": "d5240307f8cd56db507449bd0f28d9c45a13dfa8bd5d1b1ec4992f9ce5d1134b",
+    "docs/AXISYMMETRIC-MODEL.md": "1258219433890cdf225abb300c690c3f0a16521250a0328b3ac172829beaa5ed",
+    "docs/BOUNDED-AFFINE-MINIMAX.md": "df1374fe4e4869db53fd4fa6fd7b3129631a97cb2c77994531ba6aeb3a7402ed",
+    "docs/CURRENT-FIVE-GATE-AUDIT.md": "986bfe10ffdee5fc5db9f329d61d28c5ddd26e9bca24c050056bc91792ee89a2",
+    "docs/DATA.md": "28f9ac8da7f6ee40632b83b3a268b7ddd695ba770cd07c4200a3596b13ef44ae",
+    "docs/DRAFT-DATA-REQUEST.md": "1316cc76d6aef377122eaba1351c5d71193eb149ef15b72328af08f1a246315c",
+    "docs/ENDPOINT-MESH-FUNCTIONALS.md": "15ead52a37a678e527173f38947ab9d87f2851577860427584ee89b4a6feb26f",
+    "docs/JOINT-GAIN-CALIBRATION.md": "7f4f630ad30a21c365dda140737fff5ad0d6e28237a4a5329c0125f3411bb392",
+    "docs/JOINT-OBSERVATION-CONTRACT.md": "d805ff0f9c757d35fdd61283ae1591be3873d73d7daadbaac521020454654d04",
+    "docs/JOINT-REFINEMENT.md": "c97181f28feddd530dce4f8e934d71ba26bd7658fb1519cf224e0d5a89943cf6",
+    "docs/MATERIAL-COHORT-DESCENT.md": "def2ba46d06f6a4603d3a7d7ae099a4e65a05cb9a5e59655f19305e99d65ff88",
+    "docs/MATERIAL-COHORT-DIRECT-REVIEW.md": "b6f87c51da6210337b4c74e25134b9d4fb3666c37ac81f7b1d61044a1fe2c6c0",
+    "docs/MATERIAL-COHORT-DIRECT.md": "51bc34a722acf2155dc81800648b1791a5f593a859b189f32e540a473da0ecaa",
+    "docs/ORIGINALITY.md": "3c7d229f3b8820ce8d0097ab1588eaf413753f615caa77856f0b27a327604bb6",
+    "docs/PHYSICAL-INFERENCE-READINESS.md": "ccc2be4e064101ba0e4649b35888e03f69e3025a227b1de590d1ccdc0616333e",
+    "docs/PHYSICAL-PARAMETER-DOMAIN.md": "8d6a397c6efc3e7a91d9716630355dfb91acbef51928e75437b4ad4b24fd728f",
+    "docs/QUADRATIC-ACCURACY.md": "0a4048de93dff571329ce45db81b5ad2803ed28e32978c664114383b79df48df",
+    "docs/QUADRATIC-ENDPOINT-OBSERVER.md": "9710023f8b8e40e0925a456dc3b337a9bdb6cf9bfffa4fe9ab8370c7b98b13af",
+    "docs/SPATIAL-V1-RESULTS.md": "1a8063dcfe44f18fab5156ac3ea152394c753d26aa307ce5e9a3deaf4fd5bf9c",
+    "docs/TEMPORAL-ORDER-ROBUST-WITNESS.md": "6cbfd128b2549914456bedfc603db4fc493f1434dd290e3b7fdabfcc23df34ae",
+    "docs/TRANSFER-CLAIM-AUDIT.md": "89de3144a927e8bdd81550a13597a97f29c881451d8b112ad86947cb274f3fe9",
+    "evidence/algebraic_root_certification_feasibility.json": "132bd7695619b1ff67b276f7b65c547d980a74ab76df9c736e221e888d186721",
+    "evidence/algebraic_root_independent_review.json": "f327f2fab76f9fdcab3a83882adbb1a4ae3f0cf1e5c269e7335fb909691085d5",
+    "evidence/algebraic_root_observer_error.json": "2a689a3eb40dd380fda66085e2d4ae09019658fdd89f758b12952206fb9cc456",
+    "evidence/bounded_affine_minimax_independent_review.json": "be2908f51e565f3476ff987fb5c897bf1278df72aa109f71116dd189ef578af4",
+    "evidence/data_workbook_audit.json": "2d84e99b2e2b4f87d0aeab7d320f2ac1c909b9f3f776f04389483391f1cbf8ae",
+    "evidence/gates.json": "c357584c1c83570caef3cfefb6363202a8b5a74fb7192880c39c3d383f635adf",
+    "evidence/joint_observation_contract_audit.json": "3fa58c360b04bdadb718586511d75bcc25a8292113455e7f6d95615c929ce2c1",
+    "evidence/material_cohort_descent_independent_review.json": "783099b1b5805afcc6237644ebc51a70f82a4abdccf698a6aef289191c5e978d",
+    "evidence/material_cohort_direct_independent_review.json": "162ddbf46cf9347683dbeaf56bc29bb51b6d5c22bd255ae375516a7052ceb61f",
+    "evidence/nodal_observer_error_independent_review.json": "335626b91c72ac5ec37b1b1dd95b4825d3dc847df02d9cf993e5ed6daff5f35a",
+    "evidence/transfer_claim_audit.json": "de94a3912fec0795b1cdec909bf4c6e1d1e57e5e343f17b32ef68e8c017838a5",
+    "runs/material_cohort_direct_v1/protocol.json": "1ed458c8f0f7b9c9bacfdf0c04b907d474d06e5607ced5956ecc2d2f1adac953",
+    "runs/material_cohort_direct_v1/results.json": "638a95bc97055e33a10e4f6c34f4750629b23f53688d19b3c8f9e7ca1ecce2b7"
+  },
+  "actual_components": {
+    "direct_records": 17,
+    "source_scalar_observations": 68,
+    "operator_variants": 4,
+    "candidate_scalar_residuals": 272,
+    "direct_independent_checks": 435,
+    "tangent_independent_checks": 598,
+    "affine_independent_aggregate_checks": 16,
+    "one_root_independent_checks": 20,
+    "one_root_precision_bits": 256,
+    "one_root_free_DOF": 611,
+    "root_terms": {
+      "bulk": 9216,
+      "surface": 288
+    },
+    "root_input": "runs/activated_quadrature/lambda_5000.0_strength_1.0/reequilibrated.json",
+    "root_independent_error_upper_display": 2.625446977931467e-12,
+    "nodal_transfer_independent_checks": 84,
+    "actual_static_application_checks": 6,
+    "endpoint_algebraic_errors_um": {
+      "maximum_shortening_um": 2.43700686613603e-10,
+      "region_averaged_shortening_um": 2.43700686613603e-10,
+      "apical_max_shortening_um": 1.311535134918811e-10,
+      "basal_max_shortening_um": 1.1254717312172188e-10
+    },
+    "direct_comparisons": {
+      "current_disk__spatial_max": {
+        "old_um": [
+          5.379835674801397,
+          5.379835674801397
+        ],
+        "new_um": [
+          5.186387251134741,
+          5.186387251134741
+        ],
+        "reduction_um": [
+          0.19344842366665646,
+          0.19344842366665646
+        ]
+      },
+      "current_disk__regional_mean": {
+        "old_um": [
+          6.467716270861168,
+          6.467716270861168
+        ],
+        "new_um": [
+          6.528488573430451,
+          6.528488573430451
+        ],
+        "reduction_um": [
+          -0.06077230256928232,
+          -0.06077230256928232
+        ]
+      },
+      "current_radial_line__spatial_max": {
+        "old_um": [
+          6.183269518221887,
+          6.183269518221887
+        ],
+        "new_um": [
+          5.97824257982931,
+          5.97824257982931
+        ],
+        "reduction_um": [
+          0.20502693839257685,
+          0.20502693839257685
+        ]
+      },
+      "current_radial_line__regional_mean": {
+        "old_um": [
+          6.183269518221887,
+          6.183269518221887
+        ],
+        "new_um": [
+          6.064265847785332,
+          6.064265847785332
+        ],
+        "reduction_um": [
+          0.1190036704365546,
+          0.1190036704365546
+        ]
+      }
+    }
+  },
+  "gate_assessment": [
+    {
+      "gate": 1,
+      "bounded_execution": "originalityauditsperformed",
+      "full_claim": "specificnewtransferconceptunproved/noveltyunconfirmed"
+    },
+    {
+      "gate": 2,
+      "bounded_execution": "publicsummaryinventoryandfeasibilityauditperformed",
+      "full_claim": "notfullspecimenrawgeometry/timeoperatoracquisition"
+    },
+    {
+      "gate": 3,
+      "bounded_execution": "model/gain/affine/directcandidate/one-root/staticobservercomponentsverified",
+      "full_claim": "INCOMPLETE materialgeometrycompatible-set anduniformforward/sourcevalidation"
+    },
+    {
+      "gate": 4,
+      "bounded_execution": "historicalconditionalv1frozenexperimentperformed",
+      "full_claim": "INCOMPLETE reviseduncertainty-propagatedlargerpredictions"
+    },
+    {
+      "gate": 5,
+      "bounded_execution": "historicalandcurrentboundedcontributionassessmentsperformed",
+      "full_claim": "finalrevisedstudyassessmentawaitsremainingoperations"
+    }
+  ],
+  "next_mathematical_operations_without_new_author_data": [
+    "extendactualvalidatedfinitequadraturerootandobserverenclosurestorelevantcalibrationstates",
+    "uniformparametercellcontraction/observerenclosureswithexplicitbranchquantifiers",
+    "inferconditionaldiscrepancy-familycompatible sets via covering+tailexclusionorunresolvedtailreport",
+    "separateidealquadrature/integralandcontinuumerrorproofs",
+    "optionalmatchedgainonly/pathcontrolforcausalattribution\u2014notsubstituteforfullset"
+  ],
+  "external_source_inputs_not_currently_established": [
+    "exactROI/PIVtransport/spatialweights/temporalordering",
+    "componentreferences/cellularizationcounterfactual/recordwindows",
+    "zero/rounding/censoringandmeasurementerrorconventions",
+    "per-recorduncroppedinitial/evolvingsurfacesandcrosswalks",
+    "load-historyinterpretationofnormalizedfluorescence"
+  ],
+  "scope_distinctions": [
+    "sourceunavailabilitydoesnotexcuseunperformedconditionalmathematicalwork",
+    "negativewell-posedtestcancompleteitsboundedcontract; missingoperationcannot",
+    "commonforcescalenonidentifiabilitycanbequotiented; absoluteforcemetrologyisnotmandatoryforratioinference",
+    "noexternalexpertorexperimentalvalidationinferredfromAIchecks",
+    "oneoldweakloadrootcannotcertifyallnewmaterialstates/domain/PDE/timepeak"
+  ],
+  "documentation_sha256": "de28117c5cfbfe65256c44bf3fc38bcf5711f333be555708a93eafc8dc4353dc",
+  "metadata_findings_resolved_before_snapshot": [
+    "rootstatusrefreshedfrompendingtoindependent256bitPASSandactualstaticapplication",
+    "next_executable_inference_steprefreshedfromcompletedproposaltoactualremainingwork"
+  ]
+}

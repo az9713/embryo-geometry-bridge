@@ -1,0 +1,117 @@
+{
+  "verification": "PASS_SYNTHETIC_COMPONENT",
+  "checks": {
+    "zero_dose_reference": true,
+    "isochoric_affine_J": true,
+    "isochoric_affine_volume": true,
+    "affine_bulk_surface_energy": true,
+    "automatic_derivative_vs_central_difference": true,
+    "activated_converged_positive_J": true,
+    "external_activation_work_balance": true,
+    "material_scale_invariance": true,
+    "all_sensitivity_solves_converged": true
+  },
+  "affine_energy_relative_error": 1.0992671190858366e-15,
+  "directional_derivative_relative_error": 8.855205755664269e-08,
+  "scale_displacement_difference": 8.79509798323852e-11,
+  "base": {
+    "converged": true,
+    "minimum_J": 0.9944885664732422,
+    "relative_volume_change": -2.5759609134978767e-05,
+    "central_apical_displacement": -0.002606786267091432,
+    "central_basal_displacement": 0.008388368264598265,
+    "maximum_activated_column_shortening": 0.010995154531689644,
+    "scaled_free_force_linf": 8.118804619480086e-12
+  },
+  "sensitivity": {
+    "mesh_12x6": {
+      "converged": true,
+      "minimum_J": 0.9931898583776457,
+      "relative_volume_change": -2.528324898598555e-05,
+      "central_apical_displacement": -0.0031184871980298734,
+      "central_basal_displacement": 0.010404076106779934,
+      "maximum_activated_column_shortening": 0.01358722443734628,
+      "single_valued_surface_graphs": true,
+      "scaled_free_force_linf": 1.3137123208805867e-11
+    },
+    "mesh_16x8": {
+      "converged": true,
+      "minimum_J": 0.9926968121671504,
+      "relative_volume_change": -2.4882965901973364e-05,
+      "central_apical_displacement": -0.005025920849061727,
+      "central_basal_displacement": 0.011515405333630609,
+      "maximum_activated_column_shortening": 0.01654132618269233,
+      "single_valued_surface_graphs": true,
+      "scaled_free_force_linf": 6.104250460138572e-12
+    },
+    "quadrature_4": {
+      "converged": true,
+      "minimum_J": 0.9945092469800498,
+      "relative_volume_change": -2.5743887301588053e-05,
+      "central_apical_displacement": -0.0025884477369441106,
+      "central_basal_displacement": 0.008323970475078553,
+      "maximum_activated_column_shortening": 0.010912418212022712,
+      "single_valued_surface_graphs": true,
+      "scaled_free_force_linf": 5.4731826574149975e-12
+    },
+    "surface_quadrature_8": {
+      "converged": true,
+      "minimum_J": 0.9944885774920574,
+      "relative_volume_change": -2.5759608886510854e-05,
+      "central_apical_displacement": -0.002606807522507748,
+      "central_basal_displacement": 0.008388366581414303,
+      "maximum_activated_column_shortening": 0.010995174103922034,
+      "single_valued_surface_graphs": true,
+      "scaled_free_force_linf": 3.4759664019183047e-12
+    },
+    "outer_radius_4": {
+      "converged": true,
+      "minimum_J": 0.9947939648671207,
+      "relative_volume_change": -1.4846850017180557e-05,
+      "central_apical_displacement": -0.0023123468043602102,
+      "central_basal_displacement": 0.007966266461045608,
+      "maximum_activated_column_shortening": 0.0102786132654058,
+      "single_valued_surface_graphs": true,
+      "scaled_free_force_linf": 1.739787932047033e-11
+    },
+    "basal_modulus_0": {
+      "converged": true,
+      "minimum_J": 0.9944924006598322,
+      "relative_volume_change": -2.4462368653388467e-05,
+      "central_apical_displacement": -0.0025306521336135868,
+      "central_basal_displacement": 0.008486962249020295,
+      "maximum_activated_column_shortening": 0.011017614382633933,
+      "single_valued_surface_graphs": true,
+      "scaled_free_force_linf": 9.453588248591743e-12
+    },
+    "curvature_positive": {
+      "converged": true,
+      "minimum_J": 0.9944311519392424,
+      "relative_volume_change": -2.8281656604178806e-05,
+      "central_apical_displacement": -0.0029655403580997053,
+      "central_basal_displacement": 0.007829809680253413,
+      "maximum_activated_column_shortening": 0.01079535003835308,
+      "single_valued_surface_graphs": true,
+      "scaled_free_force_linf": 6.443088578654874e-12
+    },
+    "curvature_negative": {
+      "converged": true,
+      "minimum_J": 0.9945483276534886,
+      "relative_volume_change": -2.2956710648669443e-05,
+      "central_apical_displacement": -0.002312953077724167,
+      "central_basal_displacement": 0.008882777066060775,
+      "maximum_activated_column_shortening": 0.011195730143784943,
+      "single_valued_surface_graphs": true,
+      "scaled_free_force_linf": 1.0441898756242962e-11
+    }
+  },
+  "seconds": 106.57876579998992,
+  "source_sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+  "limits": [
+    "Quasistatic local equilibrium only; no transient recovery/peak mapping.",
+    "Geometry and material ratios are declared idealizations.",
+    "P1 near-incompressibility and boundary sensitivity are not rigorous continuum error bounds.",
+    "Local positiveJ does not prove global injectivity or absence of self-contact.",
+    "Activation is externally controlled mechanical potential; no ATP/photon budget or novelty claim."
+  ]
+}

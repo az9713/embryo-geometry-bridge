@@ -1,0 +1,115 @@
+{
+  "status": "PASS independent exact joint-constraint review; physical inference remainsunperformed",
+  "source_sha256": "ed3bcf3b16ae7d369d70d76570385d59854dda7926e9f73b3b200b5fcea02512",
+  "root_verification_sha256": "3a9a9cca940b7f1bc61968f9ee2dc0f1109ff52195c2dad985e40acd469dc4aa",
+  "zero_baseline_receipt_sha256": "6ea981a91067652c0cdca99361c2bf91218e964f4153c13af71ed39fab962fe5",
+  "source_csv_sha256": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+  "root30checks_current_and_pass": true,
+  "independent_4x4_graphs_checked": 65536,
+  "independent_algorithm": "Hall-deficiency enumeration ofallleftsubsets, notaugmentingpaths",
+  "maximum_cardinality_histogram": {
+    "0": 1,
+    "1": 104,
+    "2": 2912,
+    "3": 24696,
+    "4": 37823
+  },
+  "Hall_deficiency_certificates_checked": 27713,
+  "rectangular_empty_graphs_checked": 131,
+  "independent_interval_predicate_cases": 560,
+  "coupled_box_overlap_is_UNRESOLVED": true,
+  "paired_permutation_cases": {
+    "exact_swap_canonicalOUT_permutationIN": true,
+    "independent_component_shuffling_rejected": true,
+    "Hall_deficit_evennonempty_edges": true,
+    "possible_but_not_guaranteed_UNRESOLVED": true,
+    "fixed_maxmeanOUT_dominates": true,
+    "fixed_maxmeanUNRESOLVED_preventsIN": true
+  },
+  "adversarial_ValueError_guards": [
+    "interval_string",
+    "interval_dict",
+    "interval_reversed",
+    "interval_nan",
+    "interval_boolean",
+    "right_boolean",
+    "right_fractional",
+    "negative_right_count",
+    "edge_boolean",
+    "edge_float_integer",
+    "edge_fractional",
+    "edge_string",
+    "edge_negative",
+    "edge_above_range",
+    "row_invalid",
+    "graph_invalid",
+    "missing_id",
+    "extra_id",
+    "missing_observable",
+    "missing_delta",
+    "negative_delta"
+  ],
+  "actual_source_records": 17,
+  "exact_source_constraints": 68,
+  "exact_zero_baseline_thresholds_um": {
+    "maximum_shortening_um": "636662153/50000000",
+    "region_averaged_shortening_um": "209579799/25000000",
+    "apical_max_shortening_um": "13",
+    "basal_max_shortening_um": "436972161/100000000"
+  },
+  "all_single_component_tightenings_OUT_under_both_pairings": true,
+  "prior_guard_findings_and_resolution": [
+    {
+      "finding": "String12 anddictkeys could be interpretedasinterval endpoints",
+      "fixed": "list/tuple length2required; currentguardtestsPASS"
+    },
+    {
+      "finding": "boolvertexsilentlyinterpretedasint; withinrangefloatingvertexpassedrange thenindexTypeError",
+      "fixed": "NonboolIntegralcount/verticesbeforegraphnormalization; currentguardtestsPASS"
+    }
+  ],
+  "scope_limits": [
+    "All INresultsconditionalonvalidforwardenclosures andsource-compatible observationdefinitions",
+    "OUTwithvalidboxesissound; UNRESOLVEDmayhideeithertrueorfalsemembership",
+    "Scalarintervaloverlapdoesnotconstructa jointlyrealizableresponse",
+    "Unknownpairingpermutesintact(A,B)pairs only; canonicaldefaultunchanged",
+    "No responsefit, chosennoiselaw, continuumerrorproof or fullidentifiedset",
+    "GenericfunctionchecksIDsagainstsuppliedobservations; source loaderandrealbaseline establish17actualrecords"
+  ],
+  "elapsed_seconds": 1.4020031999971252,
+  "review_no_root_files_modified": true,
+  "independent_replay_python": "from pathlib import Path\nfrom fractions import Fraction as F\nimport runpy,json,csv,hashlib\np=Path('controlled_furrowing');src=p/'scripts/joint_calibration_contract.py'\na=runpy.run_path(str(src),run_name='read_only_review');keys=a['OBSERVABLES']\nroot=json.loads((p/'evidence/joint_calibration_contract_verification.json').read_text())\nassert root['script_sha256']==hashlib.sha256(src.read_bytes()).hexdigest() and all(root['checks'].values())\ndef hall_rank(graph):\n defect=0;n=len(graph)\n for s in range(1<<n):\n  neighbors=set(j for i in range(n)if s&(1<<i)for j in graph[i])\n  defect=max(defect,s.bit_count()-len(neighbors))\n return n-defect\nfor mask in range(1<<16):\n graph=[[j for j in range(4)if mask&(1<<(4*i+j))]for i in range(4)]\n cert=a['matching_certificate'](graph,4);rank=hall_rank(graph)\n assert cert['matched_count']==rank\n used=[j for j in cert['left_to_right']if j>=0]\n assert len(used)==len(set(used))==rank and all(j<0 or j in graph[i]for i,j in enumerate(cert['left_to_right']))\n if rank<4:\n  h=cert['Hall_witness'];s=h['left_indices'];neighbors=sorted(set(j for i in s for j in graph[i]))\n  assert neighbors==h['neighbor_right_indices'] and h['deficit']==len(s)-len(neighbors)>0\nfor y in range(-2,3):\n for lo in range(-3,4):\n  for hi in range(lo,4):\n   for d in [F(0),F(1,2),F(1),F(2)]:\n    o={'x':{k:F(y)for k in keys}};pred={'x':{k:(str(lo),str(hi))for k in keys}};delta={k:str(d)for k in keys}\n    want='IN'if y-d<=lo and hi<=y+d else('OUT'if hi<y-d or lo>y+d else'UNRESOLVED')\n    assert a['evaluate'](o,pred,delta)['status']==want\nrows=list(csv.DictReader((p/'data/derived/calibration_small_18um.csv').open()))\nobs={r['record_id']:{k:F(r[k])for k in keys}for r in rows};pred={i:{k:('0','0')for k in keys}for i in obs}\ndelta={k:max(q[k]for q in obs.values())for k in keys};assert len(obs)==17\nfor fn in [a['evaluate'],a['evaluate_unknown_component_pairing']]:\n assert fn(obs,pred,delta)['status']=='IN'\n for target in keys:\n  d={k:x-(F(1,10**8)if k==target else 0)for k,x in delta.items()};assert fn(obs,pred,d)['status']=='OUT'\nprint('PASS: independent Hall, interval and all68 exact zero-baseline replay; no root writer called')\n",
+  "replay_instructions": "Run from embryo-geometry-bridge; load thisJSON and exec(independent_replay_python,{}) in a freshnamespace. It reads only and invokes no rootwriter.",
+  "all68_retained_root_baseline_rows_independently_checked": true,
+  "root_and_baseline_source_csv_hashes_current": true,
+  "root_document_sha256": "87d3730fe8d3759bc919139663eaf68cb9fd319d8e70bb681f9c0faec2016b78",
+  "review_document_sha256": "40909467ca93324bfe397ff3397bda40a7f1b189bc6be2644f6f0e901928062c",
+  "local_document_links": [
+    {
+      "target": "../scripts/joint_calibration_contract.py",
+      "exists": true
+    },
+    {
+      "target": "../evidence/joint_calibration_contract_verification.json",
+      "exists": true
+    },
+    {
+      "target": "../evidence/joint_zero_activation_baseline.json",
+      "exists": true
+    },
+    {
+      "target": "JOINT-CALIBRATION-CONSTRAINTS.md",
+      "exists": true
+    },
+    {
+      "target": "../evidence/joint_calibration_contract_independent_review.json",
+      "exists": true
+    },
+    {
+      "target": "JOINT-OBSERVATION-CONTRACT.md",
+      "exists": true
+    }
+  ],
+  "display_math_delimiters_balanced": true,
+  "all_reviewed_root_artifacts_unchanged_before_after": true
+}

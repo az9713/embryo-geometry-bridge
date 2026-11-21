@@ -1,0 +1,34 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"new_sequence\":2,\"through_sequence\":2,\"operation_results\":[{\"operation_index\":0,\"preceding_block_id\":\"0afe149f-be6c-40cf-8cba-80eab4f0e150\",\"created_block_ids\":[],\"continuation_position\":{\"block_id\":\"16528d6b-672b-4e4a-ba40-2cbdc3fdb9c1\",\"relative_position_base64\":\"AP6I9cANhBNB\"},\"affected_blocks\":[{\"block_id\":\"16528d6b-672b-4e4a-ba40-2cbdc3fdb9c1\",\"hash\":\"57cba5299c49bc61e9296bc5941317f2b61f2bf3e997bc3f671fa5f8ae4ce867\"}]}]}"
+    },
+    {
+      "type": "text",
+      "text": "Show this Page in your response with this standalone preview:\n::page-preview{page_id=\"page_c50551506ff881919407cc8f9f3477c2\"}\nUse ordinary links for source citations."
+    }
+  ],
+  "structuredContent": {
+    "new_sequence": 2,
+    "through_sequence": 2,
+    "operation_results": [
+      {
+        "operation_index": 0,
+        "preceding_block_id": "0afe149f-be6c-40cf-8cba-80eab4f0e150",
+        "created_block_ids": [],
+        "continuation_position": {
+          "block_id": "16528d6b-672b-4e4a-ba40-2cbdc3fdb9c1",
+          "relative_position_base64": "AP6I9cANhBNB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "16528d6b-672b-4e4a-ba40-2cbdc3fdb9c1",
+            "hash": "57cba5299c49bc61e9296bc5941317f2b61f2bf3e997bc3f671fa5f8ae4ce867"
+          }
+        ]
+      }
+    ]
+  },
+  "isError": false
+}

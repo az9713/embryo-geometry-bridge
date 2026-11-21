@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ROOT_OBSERVED_INDEPENDENT_KL_FULL_SPAN_SEGMENT_BODY_REPLAY_EXIT",
+  "pid": 19784,
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "6f45d4",
+  "receipt_sha256": "3e3cbe88a83aa3e8723b4c2ebfbf28809944ee5734850f0206c3b97269b74513",
+  "terminal_sha256": "c8bddd3d6add7ef5f4df6d07acf033300a942816f85641414669059523a520e5",
+  "started_sha256": "20c6225cfc2e39e44210f440a499e42296e60ed30a49503c376a8f7519aae402",
+  "source_sha256": "63eeda982845aafbbe5c39b3fb6ac8e76561cb783063e61e035184e43c934f4d",
+  "independent_body_files_sha256": {
+    "runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_2_0.json": "6fd6882ba4381fb418fa9871d6840375d863fdee784f8a6e70d2a1a7164dd035",
+    "runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_2_1.json": "74e71f3dce0896701ec85a7f60f519940ae749b80d33dcd7cb4b664eeb1f5777",
+    "runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_4_0.json": "c8800a973f19dbfcf1574fac868121b355b46e81df002facf596a6e15be48d25",
+    "runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_4_1.json": "9ee984f7a1554d5a5c71bf19eb7cac760b1c1d97678d2fce58093b5c41e62a4b",
+    "runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_4_2.json": "104a8ddda375bacb2b6a0a43b0cc0686e9cb9707a71b5f5d38aa803884daaf5a",
+    "runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_4_3.json": "597e5d5713ef2b991f7ea46e1dc76b58943ef4ed24706f664b65547ceb363f4c"
+  },
+  "same_original_interval_and_radius": true,
+  "root_or_loading_branch_certified": false
+}

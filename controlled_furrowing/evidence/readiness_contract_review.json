@@ -1,0 +1,635 @@
+{
+  "status": "PASS readiness truthfulness and contract preservation; ORIGINAL STUDY INCOMPLETE",
+  "snapshot_utc": "2026-11-19T10:55:54.401131+00:00",
+  "original_plan_sha256": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+  "original_plan_unchanged": true,
+  "goal_achieved": false,
+  "gate_execution_labels": [
+    {
+      "gate": 1,
+      "execution": "AUDIT EXECUTED",
+      "scientific_outcome": "Scalar-transfer novelty rejected; spatial-transfer originality unconfirmed"
+    },
+    {
+      "gate": 2,
+      "execution": "INVENTORY EXECUTED",
+      "scientific_outcome": "17 calibration, 9 scalar evaluation, 31 larger bending labels; full individual geometry/label acquisition mapping missing"
+    },
+    {
+      "gate": 3,
+      "execution": "IN PROGRESS; V1 CANDIDATE INADEQUATE",
+      "scientific_outcome": "Full pointwise P2 and high-quadrature correction implemented. Corrected 12x6-to-16x8 apical curve discrepancy remains about 0.75 micrometre at strong load; no continuum error bound. Sharp monotone discrepancy floor is 3.131943715 micrometres, not a noise estimate. Exact force-scale quotient implemented, but full nonlinear compatible material/geometry set remains uncomputed"
+    },
+    {
+      "gate": 4,
+      "execution": "CONDITIONAL V1 EXPERIMENT EXECUTED; ORIGINAL TARGET INCOMPLETE",
+      "scientific_outcome": "93 coupled fields frozen/scored; larger scalar errors worse than linear comparator. All 31 label sets allow both outcomes; source slice/time mapping and continuum accuracy not established"
+    },
+    {
+      "gate": 5,
+      "execution": "V1 ASSESSMENT EXECUTED; FULL STUDY IN PROGRESS",
+      "scientific_outcome": "V1 establishes no predictive increment or novel concept. Integration correction does not remove inter-mesh spatial sensitivity. Monotone calibration incompatibility is not eliminated by one hypothetical exception. A further bounded exact-claim audit is complete: generic nonidentifiability and experiment design are established methods, and the specific all-observable certified transfer ambiguity is still unproved with originality unresolved"
+    }
+  ],
+  "current_receipt_summaries": {
+    "activated_quadrature_verification.json": {
+      "status": "PASS_SAME_SPACE_INTEGRATION_REVIEW",
+      "passing_checks": 68
+    },
+    "joint_refinement_verification.json": {
+      "status": "PASS_INDEPENDENT_JOINT_REPLAY",
+      "passing_checks": 19
+    },
+    "sparse_quadratic_verification.json": {
+      "status": "PASS_SPARSE_COMPONENT",
+      "passing_checks": 15
+    },
+    "joint_refinement_sparse_review.json": {
+      "status": "PASS_INDEPENDENT_SPARSE_REVIEW",
+      "passing_checks": 15
+    },
+    "sparse_quadratic_24_hvp_check.json": {
+      "status": "PASS_LARGE_DERIVATIVE_SPOTCHECK",
+      "passing_checks": 3
+    },
+    "physical_parameter_domain_verification.json": {
+      "status": "PASS",
+      "passing_checks": 29
+    },
+    "physical_parameter_domain_independent_review.json": {
+      "status": "PASS_INDEPENDENT_PHYSICAL_DOMAIN_REVIEW",
+      "passing_checks": 41
+    }
+  },
+  "source_input_hash_checks": [
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "input": "evidence/activated_quadrature_evaluation.json",
+      "sha256": "e312495bdc3989860b5f33352b239529b4e5f22772101425220a425fd5363fca",
+      "matches": true
+    },
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "input": "evidence/activated_quadrature_reequilibration.json",
+      "sha256": "17fdebf03f9bbb08be5462f6f97b5d56a2df00a337c8604f32eaf943e5d796db",
+      "matches": true
+    },
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "input": "evidence/activated_quadrature_synthetic.json",
+      "sha256": "06711ce6ef2007a2f75c14416683700c0cd672b976cefce4c45a514219dfea92",
+      "matches": true
+    },
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "source": "scripts/quadratic_quadrature_study.py",
+      "sha256": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+      "matches": true
+    },
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "source": "scripts/robust_quadratic.py",
+      "sha256": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+      "matches": true
+    },
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "source": "scripts/axisymmetric_quadratic.py",
+      "sha256": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+      "matches": true
+    },
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "source": "scripts/axisymmetric_mixed.py",
+      "sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+      "matches": true
+    },
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "source": "scripts/axisymmetric_prestress.py",
+      "sha256": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+      "matches": true
+    },
+    {
+      "receipt": "activated_quadrature_verification.json",
+      "source": "scripts/axisymmetric_mechanics.py",
+      "sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "input": "evidence/joint_refinement_protocol.json",
+      "sha256": "0e87dabffde89b61ebd98df80d13a92d26a336487df0aa992d0c7b35ab5865da",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "input": "evidence/joint_refinement_solve.json",
+      "sha256": "cb2b6772aaef66807200b01eaa48f69bac9f3c84607fd3ec533497207df42f8a",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "input": "evidence/joint_refinement_comparison.json",
+      "sha256": "332815622c54f39b0312cfb08671d3d84b27c0b60a37bce64098621deeb8121b",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "input": "evidence/joint_refinement_sparse_review.json",
+      "sha256": "7aaa5d51c95fcce6c6b44b4227930b6a0ebedecc187ab352b0b718e431ff6342",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/run_joint_refinement.py",
+      "sha256": "fd90852e68de19486a43a06ce91cadf342725956138b826a8384206b0d102756",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/sparse_quadratic.py",
+      "sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/quadratic_quadrature_study.py",
+      "sha256": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/robust_quadratic.py",
+      "sha256": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/axisymmetric_quadratic.py",
+      "sha256": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/axisymmetric_mixed.py",
+      "sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/axisymmetric_prestress.py",
+      "sha256": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/axisymmetric_mechanics.py",
+      "sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/run_activated_mesh_study.py",
+      "sha256": "78295655c236d465a4c4ac9d324c9d810d23359855e7d54761496535ffe0d8a2",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/annulus_observer.py",
+      "sha256": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/mixed_geometry_certificate.py",
+      "sha256": "fb0d49d680286ff49d0dc6713baca41fbebbf724442bff9731292e1441b03fd8",
+      "matches": true
+    },
+    {
+      "receipt": "joint_refinement_verification.json",
+      "source": "scripts/mixed_geometry_certificate_v2.py",
+      "sha256": "165d3b914b1ab9bad2e6591a7df63c09e004f33a742cfa5f4430584746edfbd2",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_verification.json",
+      "source": "scripts/physical_parameter_domain.py",
+      "sha256": "8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_verification.json",
+      "source": "scripts/quadratic_quadrature_study.py",
+      "sha256": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_verification.json",
+      "source": "scripts/robust_quadratic.py",
+      "sha256": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_verification.json",
+      "source": "scripts/axisymmetric_quadratic.py",
+      "sha256": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_verification.json",
+      "source": "scripts/axisymmetric_mixed.py",
+      "sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_verification.json",
+      "source": "scripts/axisymmetric_prestress.py",
+      "sha256": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_verification.json",
+      "source": "scripts/axisymmetric_mechanics.py",
+      "sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_independent_review.json",
+      "source": "scripts/physical_parameter_domain.py",
+      "sha256": "8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_independent_review.json",
+      "source": "scripts/quadratic_quadrature_study.py",
+      "sha256": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_independent_review.json",
+      "source": "scripts/robust_quadratic.py",
+      "sha256": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_independent_review.json",
+      "source": "scripts/axisymmetric_quadratic.py",
+      "sha256": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_independent_review.json",
+      "source": "scripts/axisymmetric_mixed.py",
+      "sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_independent_review.json",
+      "source": "scripts/axisymmetric_prestress.py",
+      "sha256": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+      "matches": true
+    },
+    {
+      "receipt": "physical_parameter_domain_independent_review.json",
+      "source": "scripts/axisymmetric_mechanics.py",
+      "sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+      "matches": true
+    }
+  ],
+  "six_current_corrected_fields_verified": true,
+  "discrete_apical_difference": {
+    "exact_lower": "2297548730043261118835649379148770478470791437445192667/3064991081731777716716694054300618367237478244367204352",
+    "exact_upper": "1160679821400962349640929002416060824125754186597740919/1532495540865888858358347027150309183618739122183602176",
+    "checkpoint_outward_rounding_valid": true,
+    "continuumerror_certificate": false
+  },
+  "historical_v1_prediction_hashes_verified": 93,
+  "live_24x12_snapshot": {
+    "job_record": {
+      "status": "RUNNING",
+      "pid": 29600,
+      "source_sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9"
+    },
+    "process_observed_live": true,
+    "result_status": "RUNNING_OR_STOPPED",
+    "reached_targets": [
+      1.0
+    ],
+    "uncompleted_targets": [
+      5.0,
+      10.0
+    ],
+    "not_a_completed_target_sweep": true,
+    "later_progress_may_supersede_snapshot": true
+  },
+  "missing_project_operations": [
+    {
+      "operation": "Joint physical compatible-set inference for68 endpoint summaries",
+      "status": "UNPERFORMED",
+      "external_dependency": "Independent uncertainty/prior information would constrain it; conditional declared-family inference remains project work"
+    },
+    {
+      "operation": "Relevant-load validated forward uncertainty and branch/path adequacy",
+      "status": "UNPERFORMED",
+      "external_dependency": "Physical constitutive/boundary/transient validation separate from numerical proof"
+    },
+    {
+      "operation": "Full unresolved-set propagation or a certified compatible transfer-ambiguity pair",
+      "status": "UNPERFORMED",
+      "external_dependency": "Needs prior contract and accurate forward response; force-scale gauge doesnot supply a pair"
+    },
+    {
+      "operation": "Revised frozen source-matched spatial prediction and contribution assessment",
+      "status": "UNPERFORMED",
+      "external_dependency": "Sourceprofile mapping/calibration and adequate preceding inference needed"
+    }
+  ],
+  "external_input_limitations": [
+    "Per-record measurement/dose error law or justified deterministic bounds",
+    "Specimen-matched uncropped apical/basal profiles and initialgeometry",
+    "Opticalplane, time/referencegrowth and acquisition correspondence",
+    "Independent material/geometry ranges and empiricalvalidation ofmodelassumptions"
+  ],
+  "force_scale_quotient_is_transfer_ambiguity_pair": false,
+  "full_compatible_set_inferred": false,
+  "all68_summary_joint_inference_completed": false,
+  "generic_concepts_are_novel": false,
+  "specific_transfer_claim_proved": false,
+  "exact_originality_established": false,
+  "positive_or_novel_outcome_required_for_completion": false,
+  "executed_negative_v1_is_distinct_from_unperformed_operations": true,
+  "gate5_metadata_refresh_verified": true,
+  "local_document_links": [
+    {
+      "label": "original plan",
+      "target": "../PLAN.md",
+      "exists": true
+    },
+    {
+      "label": "readiness checkpoint",
+      "target": "READINESS-CHECKPOINT.md",
+      "exists": true
+    },
+    {
+      "label": "current gate record",
+      "target": "../evidence/gates.json",
+      "exists": true
+    },
+    {
+      "label": "review receipt",
+      "target": "../evidence/readiness_contract_review.json",
+      "exists": true
+    },
+    {
+      "label": "transfer audit",
+      "target": "TRANSFER-CLAIM-AUDIT.md",
+      "exists": true
+    }
+  ],
+  "display_math_delimiters_balanced": true,
+  "review_document_sha256": "bad1477fa32d96b0931ab13c9ec289cffcc730d9b9179137bcd30397338a83a8",
+  "scope": "Read-only requirements/receipt/hash audit. No fits or protocols rerun, no rootfilesedited, no newfull numericalproof review.",
+  "evidence_snapshot_hashes": [
+    {
+      "path": "PLAN.md",
+      "sha256": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500"
+    },
+    {
+      "path": "docs/AXISYMMETRIC-MODEL.md",
+      "sha256": "1258219433890cdf225abb300c690c3f0a16521250a0328b3ac172829beaa5ed"
+    },
+    {
+      "path": "docs/CALIBRATION-EXCEPTION-REVIEW.md",
+      "sha256": "8f1d6ccc9cb29d094a1c2611d885d34e352a5ba817549d2395e8b8392754dcb7"
+    },
+    {
+      "path": "docs/CALIBRATION-UNCERTAINTY.md",
+      "sha256": "b8618490f2714a5612206f1e35eb11dada224d3f2dc044e85d2b39bb1fb3b1b3"
+    },
+    {
+      "path": "docs/COMPLETION-AUDIT.md",
+      "sha256": "1dc82b850e56ff1b89df443dbcbe0f987c7ac5c3c47c26d80ee2ff4716bc459d"
+    },
+    {
+      "path": "docs/DATA.md",
+      "sha256": "28f9ac8da7f6ee40632b83b3a268b7ddd695ba770cd07c4200a3596b13ef44ae"
+    },
+    {
+      "path": "docs/JOINT-REFINEMENT.md",
+      "sha256": "c97181f28feddd530dce4f8e934d71ba26bd7658fb1519cf224e0d5a89943cf6"
+    },
+    {
+      "path": "docs/NUMERICAL-ACCURACY-PATH.md",
+      "sha256": "28127fc6770b526e5614bb4772ed14a45a80e06053164c299017e6da3b08ee07"
+    },
+    {
+      "path": "docs/ORIGINALITY.md",
+      "sha256": "3c7d229f3b8820ce8d0097ab1588eaf413753f615caa77856f0b27a327604bb6"
+    },
+    {
+      "path": "docs/READINESS-CHECKPOINT.md",
+      "sha256": "4a044a8cdf2f1cd8a32e204656b8d858dfb081afa73a7af6afcc5f689c41e3c1"
+    },
+    {
+      "path": "docs/SPATIAL-V1-RESULTS.md",
+      "sha256": "1a8063dcfe44f18fab5156ac3ea152394c753d26aa307ce5e9a3deaf4fd5bf9c"
+    },
+    {
+      "path": "docs/TRANSFER-CLAIM-AUDIT.md",
+      "sha256": "89de3144a927e8bdd81550a13597a97f29c881451d8b112ad86947cb274f3fe9"
+    },
+    {
+      "path": "evidence/activated_quadrature_evaluation.json",
+      "sha256": "e312495bdc3989860b5f33352b239529b4e5f22772101425220a425fd5363fca"
+    },
+    {
+      "path": "evidence/activated_quadrature_reequilibration.json",
+      "sha256": "17fdebf03f9bbb08be5462f6f97b5d56a2df00a337c8604f32eaf943e5d796db"
+    },
+    {
+      "path": "evidence/activated_quadrature_synthetic.json",
+      "sha256": "06711ce6ef2007a2f75c14416683700c0cd672b976cefce4c45a514219dfea92"
+    },
+    {
+      "path": "evidence/activated_quadrature_verification.json",
+      "sha256": "5bc53b0e957c9d518c01bc7b3426f13da18c0611b867d5e5639440de698b8241"
+    },
+    {
+      "path": "evidence/calibration_contamination.json",
+      "sha256": "d2088b54eb62452e47c5a7c5b0cbad0ad288f1fbf39a23bae81c4eb1e261f2f8"
+    },
+    {
+      "path": "evidence/calibration_contamination_review.json",
+      "sha256": "6e9f0299721c4ac86ed63450d36f5bd255c00e1a9bd5ef4fe9f7a413f2914c3e"
+    },
+    {
+      "path": "evidence/calibration_uncertainty_bounds.json",
+      "sha256": "c095964c5c3489a4aa172c100c2d9968fea6c62f9ff199d973fa24aae9ab12dd"
+    },
+    {
+      "path": "evidence/calibration_uncertainty_verification.json",
+      "sha256": "31704a98c6d31fe4076653133863c5b716355a2fe39412acda2ce0bdb9b31502"
+    },
+    {
+      "path": "evidence/data_observation_operator_review.json",
+      "sha256": "123d572b6552c54ef811faf073dc9cfe35f696a7f086e18305077a9b21fd5320"
+    },
+    {
+      "path": "evidence/data_workbook_audit.json",
+      "sha256": "2d84e99b2e2b4f87d0aeab7d320f2ac1c909b9f3f776f04389483391f1cbf8ae"
+    },
+    {
+      "path": "evidence/discrete_geometry_certificate.json",
+      "sha256": "6325270304febc2a286f529b7062dab3d3642583d650331ef1e412ab606866dc"
+    },
+    {
+      "path": "evidence/gates.json",
+      "sha256": "adebc94228be53871db63828292cca9484496c5167798831e77cf7233a46ff7c"
+    },
+    {
+      "path": "evidence/joint_refinement_comparison.json",
+      "sha256": "332815622c54f39b0312cfb08671d3d84b27c0b60a37bce64098621deeb8121b"
+    },
+    {
+      "path": "evidence/joint_refinement_protocol.json",
+      "sha256": "0e87dabffde89b61ebd98df80d13a92d26a336487df0aa992d0c7b35ab5865da"
+    },
+    {
+      "path": "evidence/joint_refinement_solve.json",
+      "sha256": "cb2b6772aaef66807200b01eaa48f69bac9f3c84607fd3ec533497207df42f8a"
+    },
+    {
+      "path": "evidence/joint_refinement_sparse_review.json",
+      "sha256": "7aaa5d51c95fcce6c6b44b4227930b6a0ebedecc187ab352b0b718e431ff6342"
+    },
+    {
+      "path": "evidence/joint_refinement_verification.json",
+      "sha256": "a8998187b4ca85923f967925178970ef30c3919e49942b86033e40c74e8a5dab"
+    },
+    {
+      "path": "evidence/movie_geometry_audit.json",
+      "sha256": "676500d5d2f43a07aa7bd9af798f74a8ea948f3df3b741fcb355838ef0701c16"
+    },
+    {
+      "path": "evidence/originality_verdict.json",
+      "sha256": "bb0e79a7b67441ff7b4e36c6d4607e4b842044f629e8bf27c7e49f2155bbdbcf"
+    },
+    {
+      "path": "evidence/physical_parameter_domain_independent_review.json",
+      "sha256": "69c27ced7c880a6f5d45cf215734f932a9bb840bbc8f440f3e7beaa326bbbb45"
+    },
+    {
+      "path": "evidence/physical_parameter_domain_verification.json",
+      "sha256": "7e529d2286c3188c89c8c45efa8ed7c7960b2fc561b2c8760b56414dca9b4f6c"
+    },
+    {
+      "path": "evidence/sparse_quadratic_24_hvp_check.json",
+      "sha256": "9f7d39351eb0c03fb939a2df030c377275e5a85836dbf187d2bb236c3d7c2cb9"
+    },
+    {
+      "path": "evidence/sparse_quadratic_24_results.json",
+      "sha256": "8b75886b4d9d1c49955460c08ee3c6db8a5f6910a11d691c1637633fa8d282ac"
+    },
+    {
+      "path": "evidence/sparse_quadratic_verification.json",
+      "sha256": "0179016bf02a4e0992c26c7749962045cc3e8545a103b8dc4a91d3bbf3641b15"
+    },
+    {
+      "path": "evidence/spatial_calibration_adequacy.json",
+      "sha256": "51900d54ceb812439e1df37722ade224976cb21b87089b8f899a720e4d6391ea"
+    },
+    {
+      "path": "evidence/spatial_transfer_scores.json",
+      "sha256": "883e849bdf29bf6cd47ca63ee0722e5c2335594f97a14dd5eede942b6cf5c9f4"
+    },
+    {
+      "path": "evidence/spatial_v1_independent_review.json",
+      "sha256": "6de94692251477d6b66d7ef060354f700afe32fb744696b131a3e6d1bba74cc1"
+    },
+    {
+      "path": "evidence/transfer_claim_audit.json",
+      "sha256": "de94a3912fec0795b1cdec909bf4c6e1d1e57e5e343f17b32ef68e8c017838a5"
+    },
+    {
+      "path": "runs/activated_quadrature/lambda_500.0_strength_1.0/reequilibrated.json",
+      "sha256": "3edfa6ca3d45121efbdcdfcae45ff4a43b591702541ae01e6cc89dc7b3b055a3"
+    },
+    {
+      "path": "runs/activated_quadrature/lambda_500.0_strength_10.0/reequilibrated.json",
+      "sha256": "131056140fb24c34b86d6814469a275d0dd73645aae71ced86f82b3058c55f80"
+    },
+    {
+      "path": "runs/activated_quadrature/lambda_500.0_strength_5.0/reequilibrated.json",
+      "sha256": "f09e26a5f4b9096ebde2e17bc2c4beaf45e81642b6aa088b24be52e6845507b6"
+    },
+    {
+      "path": "runs/activated_quadrature/lambda_5000.0_strength_1.0/reequilibrated.json",
+      "sha256": "d313cb9bee8073ae141feaca429f72a77c7eb32c5053c4a392033d3e6d869460"
+    },
+    {
+      "path": "runs/activated_quadrature/lambda_5000.0_strength_10.0/reequilibrated.json",
+      "sha256": "22943b6588590515db3cd87aa1a5bc8b03245e6e48729ff421a8028da1688a50"
+    },
+    {
+      "path": "runs/activated_quadrature/lambda_5000.0_strength_5.0/reequilibrated.json",
+      "sha256": "662060f2dce6efd8da0195fe851baba76bfeb2e5b20b93d63bceccbf0c8b4325"
+    },
+    {
+      "path": "runs/sparse_quadratic/24x12_lambda5000/job.json",
+      "sha256": "35c03be6ec92226f07ad4569232ed0743b31439a9a48d6fd7ac1fd5ad294bc04"
+    },
+    {
+      "path": "scripts/annulus_observer.py",
+      "sha256": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9"
+    },
+    {
+      "path": "scripts/axisymmetric_mechanics.py",
+      "sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0"
+    },
+    {
+      "path": "scripts/axisymmetric_mixed.py",
+      "sha256": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14"
+    },
+    {
+      "path": "scripts/axisymmetric_prestress.py",
+      "sha256": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41"
+    },
+    {
+      "path": "scripts/axisymmetric_quadratic.py",
+      "sha256": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410"
+    },
+    {
+      "path": "scripts/mixed_geometry_certificate.py",
+      "sha256": "fb0d49d680286ff49d0dc6713baca41fbebbf724442bff9731292e1441b03fd8"
+    },
+    {
+      "path": "scripts/mixed_geometry_certificate_v2.py",
+      "sha256": "165d3b914b1ab9bad2e6591a7df63c09e004f33a742cfa5f4430584746edfbd2"
+    },
+    {
+      "path": "scripts/physical_parameter_domain.py",
+      "sha256": "8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4"
+    },
+    {
+      "path": "scripts/quadratic_quadrature_study.py",
+      "sha256": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc"
+    },
+    {
+      "path": "scripts/robust_quadratic.py",
+      "sha256": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b"
+    },
+    {
+      "path": "scripts/run_activated_mesh_study.py",
+      "sha256": "78295655c236d465a4c4ac9d324c9d810d23359855e7d54761496535ffe0d8a2"
+    },
+    {
+      "path": "scripts/run_joint_refinement.py",
+      "sha256": "fd90852e68de19486a43a06ce91cadf342725956138b826a8384206b0d102756"
+    },
+    {
+      "path": "scripts/sparse_quadratic.py",
+      "sha256": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9"
+    }
+  ]
+}

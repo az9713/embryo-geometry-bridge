@@ -1,0 +1,11 @@
+{
+  "status": "FINISHED",
+  "exit_code": 0,
+  "source_sha256": "58ba50a6a7e4c3726ed996b0785369a9eb0406867e737983c45523f96ffa1bfe",
+  "protocol_sha256": "b1478e3bd7c55f52b3d6f4cce5b84354080103edf8aef20376777e894fecf1f0",
+  "pid": 22072,
+  "wave_id": "wave_03",
+  "producer_os_sha256": "dea0cebe28e89a8afdc36080bddea257782dd9d8001e6921a605c982202ea236",
+  "native_global_os_sha256": "8352f1d4fda4f0d198d802fd79ba3a2c9f3f8278497f62ed6e017b840c6df2b6",
+  "receipt_sha256": "bebafcaa9721f829a9d5f69555f48df2346b3098615e5fb39b5d632875beb74a"
+}

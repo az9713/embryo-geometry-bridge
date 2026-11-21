@@ -1,0 +1,21 @@
+{
+  "source_sha256": "df0ae901ad4c5bc9c976002c4c62e11e46a5a41b33c747779dfca4fa22871e6b",
+  "protocol_sha256": "d20799dc6c69d9f8ab4f36e4d9bd085b2f48b5abf68d821296c3a9ddca74231e",
+  "preflight_sha256": "e4978572f081a662adfbd77789171fe66da40365df47c66054f7d90dd45ff357",
+  "review_sha256": "a3e26e0bfcb02afbbbfbabfd14476cd830d081484302074ab8c832d0a38b150b",
+  "native_global_observed_exit_sha256": "8352f1d4fda4f0d198d802fd79ba3a2c9f3f8278497f62ed6e017b840c6df2b6",
+  "status": "PASS_ROOT_OBSERVED_LATER_WAVE_OBSERVER_APPLICATION_EXIT",
+  "wave_id": "wave_03",
+  "pid": 19308,
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "58b582",
+  "started_sha256": "ea39f6debfaa5062ca7bf7f784bdcf6ffea0f9375f9e0ef4433871891f0f576d",
+  "terminal_sha256": "842f18d2760ef26408b5bde33646309ea57245ded0867725ba5e6e7a2b2318da",
+  "results_sha256": "4c5a601062c307d281a49ae4a0febfd4619ac9064723b1978c2d24e87b6e340b",
+  "later_waves_release_sha256": "002b471dceed8666aa0f70e1e9673744f49d0bf3a70da65a194c3faf34b0adbe",
+  "profiles_sha256": "31c680040387762f835a235e678435400ac163081509abf9b012494d20de04f0",
+  "global_source_sha256": "3051ac6d35ee18407e29e8b82e96d789e685073dd3f067b01b50b459c0b970e5",
+  "global_source_review_sha256": "f39bb78a6ee4ee66cfdf25dc287a4856a1f7b5f94298c612fbbc8c17794d171f",
+  "direct_root_tool_observation": true,
+  "independent_actual_scalar_readback_required": true
+}

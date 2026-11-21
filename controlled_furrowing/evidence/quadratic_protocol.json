@@ -1,0 +1,9 @@
+{
+  "scope": "Synthetic P2 pointwise penalty consistency",
+  "thresholds": {
+    "projection_residual_identity": 1e-11,
+    "AD_relative": 2e-05,
+    "force": 1e-07
+  },
+  "source_parents_frozen": true
+}

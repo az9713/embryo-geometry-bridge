@@ -1,0 +1,209 @@
+{
+  "status": "PASS_BUILD_FROM_OBSERVED_WAVE03_ROOT_OBSERVER_TRANSVERSE_AND_GEOMETRY_READBACKS",
+  "source_sha256": "c4929314b04dc54c2e8d3c2fb170f898af5c110fe12757f4ed15a3960c8d36d2",
+  "input_sha256": {
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/results.json": "8ddecf0622e57e8dd8d3e5b113c3261ad1c4981d5f6ac231585cf8adc69af2b8",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/root_observed_exit.json": "8352f1d4fda4f0d198d802fd79ba3a2c9f3f8278497f62ed6e017b840c6df2b6",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/observer_application_v1/actual/results.json": "4c5a601062c307d281a49ae4a0febfd4619ac9064723b1978c2d24e87b6e340b",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/observer_application_v1/actual/os_exit_observation.json": "dea0cebe28e89a8afdc36080bddea257782dd9d8001e6921a605c982202ea236",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/build_receipt.json": "2f3704013bc9f26c10ba327c88051cc7c5bcf3566528ce8b407a7c5fc716d0d5",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/root_readback.json": "e214452153309746dfe19712a5bfdb14798f11ae8349d6f1049559981c1ea8e1",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/build.py": "d2c11b9948df0b4aef18cc5a9a6a84198cc438efb13d6c8f037cbdde9e24baff",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/observer_application_v1/independent_readback/receipt.json": "a06549f048abba4eb2b4d1c1fb398f06e8f524196c92a673bd0493c527c8f40d",
+    "controlled_furrowing/runs/nonaxisymmetric_surface_sign_preparation_v1/independent_actual_readback.json": "bf20e708826c08ed674c183e8c7364048748340501645885a12aa035f68d794e",
+    "controlled_furrowing/runs/nonaxisymmetric_surface_sign_preparation_v1/root_actual_acceptance.json": "ed65fd8cb2e4d052ab465581c5567a488f18423396f6c79e7f8ddd4b3b361f46",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/actual/results.json": "331ee98456e7a8ee83c5e9e085dd88a1a764bd4b2b216901dd56f32ae060b04f",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/actual/receipt.json": "595988a5a2b15b237ad13ec575290d915046dc2d9ae01c8243547923bac27ba9",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/actual/os_exit_observation.json": "d33e301a76decc888c803227a88058fab7aa1714c373536f49acd36750c340a0",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/actual/root_acceptance.json": "c3b02fbc1e121bbc8febe7a84eb787274aee44b29f306ba2a874454f7f92a5a4",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/segment_actual/receipt.json": "97953457778f39011d96cc071070d2d5d342eb362f7e8e904d28d7947fd6e214",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/receipt.json": "3e3cbe88a83aa3e8723b4c2ebfbf28809944ee5734850f0206c3b97269b74513",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/certification_checkpoint_v1/build_checkpoint.py": "50524d01db5003b0839e873efb37d41bb0552ad0f0c162f73bd668ad0e58d31b",
+    "controlled_furrowing/scripts/build_report.py": "90148d53d74d8ea5cc8a665e6a3660abf2db72487a1fa59586caba98f9cc38e2",
+    "docs/assets/katex/katex.min.css": "5a0ff74f11887f7260dc16b216906f51352b84ca29f21abb9a14b62a2ca6eb15",
+    "docs/assets/katex/katex.min.js": "e6bfe5deebd4c7ccd272055bab63bd3ab2c73b907b6e6a22d352740a81381fd4",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/favicon.png": "961e6e85ec16258652bf3c3f322d336fb598b90bccc49821047babfef3925530",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/observer_application_v1/independent_actual_readback/root_acceptance.json": "4b53e65d672812bbdb2ddc9545a97249ef0b7ad3c7e4e85f67588e228fc65a7c",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/observer_application_v1/independent_actual_readback/receipt.json": "bebafcaa9721f829a9d5f69555f48df2346b3098615e5fb39b5d632875beb74a",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/observer_application_v1/independent_actual_readback/os_exit_observation.json": "f870338c1b84aec5692129828afcf0d929c2bb93ff19d2cc8c1def22dbb8d106",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/started.json": "fc7c0d75472eaa0f562dab289d0fc9630e03b4de2844b8df1020c9c3df06ffe2",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/terminal.json": "bfdca495dca2c28c0a5339c14d12dfe26f37a1bf8d253400068e1cf3dbdcfc06",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_contrast_change_small_05/operands.json": "5d3271af5529e31e4ca570c66e531b6fbc1d95e9711b5e7ac01a6ebb37f5796a",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_contrast_change_small_05/results.json": "c57799b13901ffa3ed68000f2b444d452590fb5da624b1580e1a8a1dc9345c85",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_contrast_change_small_15/operands.json": "4856e2130a1daa04e50df8b98649ca804f8fda8860a1fefe38bc510fa00782f9",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_contrast_change_small_15/results.json": "c3982f22ca898372221ecdd3071b6acfdde16859c9935274a490757154862912",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_negative_contrast_change_small_05/operands.json": "8a3b28ffda8891e024caa6c86e08fadec04110d2dd07b44c219b41344cf11862",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_negative_contrast_change_small_05/results.json": "2a274a6711645681b7e6ba90b246e7531f1c65a8ff63ea3d1aa5f6a5fdd0e0b0",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_negative_contrast_change_small_15/operands.json": "48ac8c8619100804a54be8dbc93d8243006072740e32e953d3d6e7e259b83cf7",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/max_negative_contrast_change_small_15/results.json": "b2c58dfb347fd32d6ac071e194bae68d121bedf478fe655dc0b95916cf83c9c8",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/observer_application_v1/independent_actual_readback/terminal.json": "31e9e5a7e6c7c60d3cd1e9a0cb2b3a65496ccf623ea495721bc0ab3a5d0628fd",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/observer_application_v1/independent_actual_readback/started.json": "f1cce71fb6eadf979a454f73feb487f409d7f718f996ba04fafa807ee743f45a",
+    "controlled_furrowing/runs/nonaxisymmetric_surface_sign_preparation_v1/independent_preflight.json": "c5aae6fd780a1a8d77279616c66c8dc49fabe2b37956da1a642ec2fe68011025",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/surface_stress.py": "f33aaf277eea10fd364a529f95d369551c99b73747f7856cee3af4318b60b3a3",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/protocol.json": "a09fb767d9990fce5816203d45579a5b400a1271248788b685a91aebda355e32",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/preflight.json": "7eb3c81037d1ecac47f5e5ca45122f8abd0a316f5022314c14dd6e1470220206",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/independent_prelaunch_review.json": "64464f4f1825a78ec478490b804772b87eafeb0b8671846b5becd5cbcd5fbb3b",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/independent_actual/replay.py": "932515cc6725ecc48fe29dd58e0d4b181cc9dd58fdb391a96da49e9d8c049353",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/protocol.json": "06dd35434358ad7dcb993349281ed6bf8a84fd0a34f7ca2d4932ec0792842361",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/READBACK.md": "74eb585b6f53469058c654fb3e56cc297fc22389818d29ad205412455be4317c",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/actual/os_exit_observation.json": "1ec2797235d2901558baee2d22ae34d8b69a0c41a28e1ce57904f56eb03ed0c3",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/actual/started.json": "2fa25e48d2b4d34816cda80b0d5c5ecd13f789fbefad7e00a5ff46998e400011",
+    "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/actual/terminal.json": "eda1100ebc985ca7d6245c1c89fb99da22904bfed756e9a037785f8233dbf55a",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/preparation/protocol.json": "754da64bb96cd8a19707181315e6c3e3f014e8d37a898b83c1693342c82c9850",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/target_manifest.json": "cb25fbeaef753cea700c187cd8b377b7dcf4aa1fe2b0b246ed17134a07a89bc3",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/loading_affine_identity_v1/READBACK.md": "61e1a3a9362c8ce066588719c002cd6b66cba75840c8412b8fd5f9b3188f2b28",
+    "controlled_furrowing/scripts/exact_fe_target_safe.py": "889b61cfa794d432021fbd4670b781169033d4b8451554b18e7f7a569d9d3954",
+    "controlled_furrowing/scripts/exact_cohort_integrator.py": "092dc51161e708cdba3791ec47a7f8e843dd0e1afc866b6f65f286b8657d1745",
+    "controlled_furrowing/scripts/quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/os_exit_observation.json": "aa3c90101c64ccefe1403af2c296bcb22cafad3b2e35d73539aa7e3c5227f281",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/terminal.json": "561a6271c27b2e5b394bbf058fbe8f5214e1db1b2e385d1ab2a9646c5f767f92",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/receipt.json": "e73ea05a4703256235a46ce7b914298d3f8258e9fef029f4dbe952b04bb9798a",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_16.json": "277e44690660400b559978c76621b73bf8f62627e2203bf366d630ff70d34fda",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/all_four_readback.json": "859f507ad3762cfef44d53672bbe15a43592ce54d6e08ba8828bf50a925ec340",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/os_exit_observation.json": "149ed5718bb5563dd0b59358025044ec89bd8d43b0dc121a77c1b04e808f791d",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/terminal.json": "cbbe45e8dc12aac6903ec184395122ee95f239cc8e1be017c7d552010d384a40",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/bridge_reduction_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_17/receipt.json": "665fab8f7b5c822eb0846c39d1f50f67aa151090dffc0ddf4be5abcf77b06b98",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_targets_v1/preparation/max_negative_contrast_change_small_16/model_contract.json": "c8765c04148c42d9d96d022bdb26030286d36edeea201ced0387c844a5d4f879",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/preparation/enlarged_trial_boxes/max_negative_contrast_change_small_16.json": "a109fc74f1cfa36e4d905e10fa7cda94acde1038aea5ed69041a317dab34179b",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_targets_v1/preparation/max_negative_contrast_change_small_16/row.json": "e70fa9b0cc82dd624a1b3bad8259f07dd0e02623d2496639d8e761e1cfdf7d1e",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/remaining_cached_30_v1/recenter_v1/actual/max_negative_contrast_change_small_16/recentered_cache_packet.json": "c7ef4cb944fb73ec0b498f97dbebf3727d4a7e5773957a1b573a57a8b77b6549",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/model_observation_contract.json": "3188680f8eba5f9e21127e06253761beff647125140f58040956c993c4c131a4",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/coordinate_box_1.json": "ce62dae21b181aa059518440311c5b9e699ccc22f1015a2c91ec5c1da493debe",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/preparation/max_negative_contrast_change_small_17/row.json": "339b4500b699ff3e698984cfa928c3660d57c31dbcbbc57d764b7dc7c60b48d8",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/cached_pilots_v1/actual/max_negative_contrast_change_small_17/cache_packet.json": "7c94b3f989cab5fb31d979851b3ee94a155b96e2251a34092f1cab2b6a0c96a3",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/negative_KL_active_energy_v1/active_energy.py": "072ed83a30565be34bd5fe7dde559526e089a070df0ad95f0e61611db9e9e76d",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_geometry_v1/independent_actual_preparation/actual_replay/max_negative_contrast_change_small_16.json": "a991e1e3431c09886361a1be0d6617f20d551423d5e110567fc2bbcc63a6d952",
+    "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/independent_actual/replay/max_negative_contrast_change_small_17_box_1.json": "723e71ba60138282a934a76579bd50b02e11888edd7547d4a24cd2f4d8759bf9",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/os_exit_observation.json": "749b82a82dbe23180df93da9a4dbf3f09144c5425750abf642c12fcc69c4af3b",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_2_0.json": "6fd6882ba4381fb418fa9871d6840375d863fdee784f8a6e70d2a1a7164dd035",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_2_1.json": "74e71f3dce0896701ec85a7f60f519940ae749b80d33dcd7cb4b664eeb1f5777",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_4_0.json": "c8800a973f19dbfcf1574fac868121b355b46e81df002facf596a6e15be48d25",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_4_1.json": "9ee984f7a1554d5a5c71bf19eb7cac760b1c1d97678d2fce58093b5c41e62a4b",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_4_2.json": "104a8ddda375bacb2b6a0a43b0cc0686e9cb9707a71b5f5d38aa803884daaf5a",
+    "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/body_4_3.json": "597e5d5713ef2b991f7ea46e1dc76b58943ef4ed24706f664b65547ceb363f4c"
+  },
+  "file_sha256": {
+    "REPORT.md": "e3381de233b1dab4937908e82c05cf66c623155da5d0bcb300aa957667a3ac9f",
+    "REPORT.html": "0169608d940dd146adb0aa2525b84931bf41df3dfa8f47904b227cb7736a7461",
+    "exact_bounds.csv": "e7dff42fe334a8efbb3f8977e3f4cf7663953a2361523399f53af75c1a66cbfc",
+    "exact_observer_comparisons.csv": "f93e4fd225ea1c809b16cbdba24d7a951909a0c2ee9ddb27951719d8a735e61d",
+    "transverse_windows.csv": "e30dcd0734ee4402196ef71da240b1c872faed4e9dd2ee3eaefcbf0116079266",
+    "exact_slab_geometry.csv": "4971e25d906b62351c8cb971c1635c993b506dad7bf146009dcc835e8c392bdd",
+    "selfmap.png": "750e2ac4f84ffd1368ca3f6656562981221f138c86390751acb16ea38f50d9e3",
+    "transverse_windows.png": "f0a085a9241ebd80397757eac2caef64eb4713c6165e8f28c9bd8a4ca758a782",
+    "slab_guards.png": "bfd8bff50770455e264012e1fbd7000ddb33380d213f7b1dac4223aadaeeb744"
+  },
+  "local_links": {
+    "../../../../../../../report/favicon.png": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/favicon.png",
+    "../../../../../../../../../../docs/assets/katex/katex.min.css": "docs/assets/katex/katex.min.css",
+    "REPORT.md": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.md",
+    "exact_bounds.csv": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/exact_bounds.csv",
+    "exact_observer_comparisons.csv": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/exact_observer_comparisons.csv",
+    "transverse_windows.csv": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/transverse_windows.csv",
+    "exact_slab_geometry.csv": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/exact_slab_geometry.csv",
+    "../global_reduction_v1/independent/results.json": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/results.json",
+    "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/root_actual_acceptance.json": "controlled_furrowing/runs/nonaxisymmetric_surface_sign_preparation_v1/root_actual_acceptance.json",
+    "transverse_windows.png": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/transverse_windows.png",
+    "../../../../../../../../nonaxisymmetric_surface_sign_preparation_v1/independent_actual_readback.json": "controlled_furrowing/runs/nonaxisymmetric_surface_sign_preparation_v1/independent_actual_readback.json",
+    "../../../../../../../../nonaxisymmetric_adequacy_audit_v1/READBACK.md": "controlled_furrowing/runs/nonaxisymmetric_adequacy_audit_v1/READBACK.md",
+    "selfmap.png": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/selfmap.png",
+    "../global_reduction_v1/independent/root_observed_exit.json": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/global_reduction_v1/independent/root_observed_exit.json",
+    "../../wave_02/checkpoint_v1/REPORT.html": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/REPORT.html",
+    "../observer_application_v1/independent_actual_readback/root_acceptance.json": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/observer_application_v1/independent_actual_readback/root_acceptance.json",
+    "slab_guards.png": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/slab_guards.png",
+    "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/actual/receipt.json": "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/actual/receipt.json",
+    "../../../../../../../../exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/receipt.json": "controlled_furrowing/runs/exact_loading_tube_pilot_geometry_actual_readback_v1/root_segment_actual_readback/receipt.json"
+  },
+  "external_primary_source": "https://arxiv.org/html/2101.04006",
+  "rendered_math_count": 24,
+  "exact_coverage": {
+    "groups": {
+      "original_four": [
+        "max_contrast_change_large_03",
+        "max_contrast_change_small_17",
+        "max_negative_contrast_change_large_03",
+        "max_negative_contrast_change_small_17"
+      ],
+      "first_wave": [
+        "max_contrast_change_small_01",
+        "max_contrast_change_small_13",
+        "max_negative_contrast_change_small_01",
+        "max_negative_contrast_change_small_16"
+      ],
+      "wave_02": [
+        "max_contrast_change_small_08",
+        "max_contrast_change_small_09",
+        "max_negative_contrast_change_small_08",
+        "max_negative_contrast_change_small_09"
+      ],
+      "wave_03": [
+        "max_contrast_change_small_05",
+        "max_contrast_change_small_15",
+        "max_negative_contrast_change_small_05",
+        "max_negative_contrast_change_small_15"
+      ]
+    },
+    "root_count": 16,
+    "small_fields": 14,
+    "large_fields": 2,
+    "remaining_small_fields": 20,
+    "remaining_primary_inequalities": 80,
+    "observers": {
+      "current_disk__spatial_max": {
+        "IN": 56,
+        "OUT": 0
+      },
+      "current_disk__regional_mean": {
+        "IN": 51,
+        "OUT": 5
+      },
+      "current_radial_line__spatial_max": {
+        "IN": 54,
+        "OUT": 2
+      },
+      "current_radial_line__regional_mean": {
+        "IN": 50,
+        "OUT": 6
+      }
+    }
+  },
+  "csv_rows": {
+    "exact_bounds.csv": 4,
+    "exact_observer_comparisons.csv": 64,
+    "transverse_windows.csv": 672,
+    "exact_slab_geometry.csv": 7
+  },
+  "exact_plot_values": {
+    "root_terms": [
+      [
+        "322438224820576384038918508511939556920056080850791594608836199630551103001568982830192189247544368630573601844778526911307570248214302395166702177164769422516237160515650638534780194243096094675300349728262225009479701/706003489677054374237277210551156965837838477962894381170850482715673457590299624976468480248807499242724466374570999144530824216469597736906638272121736526607699022870679030143158018123175881930939339869708632591433728",
+        "1601124690679472028263187241080322076681828151513191517905256650059317763723424964178937552862298706379053618282661300281202760403567993411196366191081116531320175736511723046573451329651851574709356614159189859820493865666624939/6064523798049644277925701126806650606472211004362096137261922023539261533931159712229993784486900304494092698035668254711607734547323493716579247168129613825017402250081444943555723771998431425098683590600454956058175183022718976"
+      ],
+      [
+        "246301507061945612282925250408110577811246534614955445418536780691731819994711401351317549296359687018263075937106712465860941351628396814693888798310476032004599063703010719393216599372676651704886955390567763686848841/706003489677054374237277210551156965837838477962894381170850482715673457590299624976468480248807499242724466374570999144530824216469597736906638272121736526607699022870679030143158018123175881930939339869708632591433728",
+        "127036752533446711930861662265314006989015164405846125761903291429349954902001625169492456636837283012999251960455069735967125276208371220175446556797023065006573891521693105744250472811614198030688801606547509660260672258235299/379032737378102767370356320425415662904513187772631008578870126471203845870697482014374611530431269030880793627229265919475483409207718357286202948008100864063587640630090308972232735749901964068667724412528434753635948938919936"
+      ],
+      [
+        "157704019269526428865981605382668668969361078160436704047654873375211131825975386832812996091866737843291337121096893927862587799674128336560482878567611780824190154878740083923936674190147244026380654444536512940264839/353001744838527187118638605275578482918919238981447190585425241357836728795149812488234240124403749621362233187285499572265412108234798868453319136060868263303849511435339515071579009061587940965469669934854316295716864",
+        "1527764617054264861775406818375655653948288626893804594155998426057160451305663150405144994416573239040896884273667409624474892047994075199444057677954091525709295989310041913273828487327384459911687881406490109024750798461291783/6064523798049644277925701126806650606472211004362096137261922023539261533931159712229993784486900304494092698035668254711607734547323493716579247168129613825017402250081444943555723771998431425098683590600454956058175183022718976"
+      ],
+      [
+        "59010635286486356363319578638702816096325849382862403465895510029470809958979418398587216902477852552378955356635826326692015244278923366166870311941566037751186716409488289454996044268004238116281758729174738552657555/176500872419263593559319302637789241459459619490723595292712620678918364397574906244117120062201874810681116593642749786132706054117399434226659568030434131651924755717669757535789504530793970482734834967427158147858432",
+        "972341443689059766170738159921690272572469270587778095381271873115965861455384797242304472116463245944951897244561832846878533904102890838165784117941181980277200602167516491958166601428767948948916370563868944373020928668957627/3032261899024822138962850563403325303236105502181048068630961011769630766965579856114996892243450152247046349017834127355803867273661746858289623584064806912508701125040722471777861885999215712549341795300227478029087591511359488"
+      ]
+    ],
+    "slab_J_lower_bounds": [
+      "-319656992297379396500126330033924449332855164427/362904512468728099640448406561811997361160007424",
+      "163815572713560721636030581408778573581917913443/4354854149624737195685380878741743968333920089088",
+      "189027777805272866907619835975978914188333919223/6797821111609345866435716493645649121301728919552",
+      "2829126032933949547768083173089664681423528893839/5806472199499649594247174504988991957778560118784",
+      "360177146321968484588168154228109993260647994535821/743228441535955148063638336638590970595655695204352",
+      "252010342595768807571207373638830900319287067439/522909316277641989725824345665049932407825301504",
+      "27397587540778088192537280765721980627761720107995/57171418579688857543356795126045459276588899631104"
+    ]
+  },
+  "axisymmetric_minima_preserved": true,
+  "conditional_transverse_descent_at_K_and_L": true,
+  "continued_KL_path_or_continuum_or_physical_wavelength_established": false,
+  "full_five_gate_complete": false
+}

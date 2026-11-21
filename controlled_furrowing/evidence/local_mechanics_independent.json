@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Finite-height local cell geometry and local inference only; no tissue embedding or biological parameter identification",
+  "checks": {
+    "unactivated_stationarity": true,
+    "asymmetry_ratio": true,
+    "local_inverse": true,
+    "height_zero_tilt_derivative": true,
+    "height_width_derivative": true,
+    "independent_mesh_geometry_100_cases": true,
+    "positive_hessian_determinant_coefficients": true,
+    "positive_ratio_derivative": true
+  },
+  "hessian": "Matrix([[6*sqrt(3)*(K + 3*T), -6*sqrt(3)*K], [-6*sqrt(3)*K, 2*sqrt(3)*(3*K*q**2 + T*q**2 + 9*T)/q**2]])",
+  "determinant": "36*T*(10*K*q**2 + 9*K + 3*T*q**2 + 27*T)/q**2",
+  "effective_width_stiffness": "6*sqrt(3)*T*(10*K*q**2 + 9*K + 3*T*q**2 + 27*T)/(3*K*q**2 + T*q**2 + 9*T)",
+  "shape_to_width_response_ratio": "3*K*q**2/(3*K*q**2 + T*q**2 + 9*T)",
+  "ratio_derivative_with_respect_to_K": "3*T*q**2*(q**2 + 9)/(3*K*q**2 + T*q**2 + 9*T)**2",
+  "inverse_K_over_T": "r*(1 + 9/q**2)/(3 - 3*r)",
+  "maximum_relative_mesh_error": 8.881784197001252e-16,
+  "mesh_cases": 100,
+  "seed": 20261119,
+  "source_sha256": "6ba34db75dddedd5c29bb503fd8211c6910d38307b526eda2fece9e445a6d6da",
+  "novelty": "No claim: elementary mechanics and inverse-function calculation"
+}

@@ -1,0 +1,96 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CALIBRATION-EXCEPTION-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review: hypothetical calibration exceptions</h1>
+<p><strong>PASS for the declared finite scalar problem.</strong> All 131,072 subset costs and all 17 exception-budget optima were independently verified. The minimum uniform discrepancy falls only from 3.131943715 µm to 3.084159745 µm when one arbitrary record may hypothetically be excepted. No record is classified as a biological outlier, and the actual mechanical calibrations retain all 17 records.</p>
+<p>This reviews <a href="../scripts/calibration_contamination.py">the implementation</a>, <a href="../evidence/calibration_contamination.json">root results</a>, and <a href="OUTLIER-SENSITIVITY.html">scientific interpretation</a>. The independent <a href="../evidence/calibration_contamination_review.json">review receipt</a> records source hashes, every budget result, adversarial guard tests, and a self-contained replay program. No larger-region outcomes were read. The figures and primary observation definitions are documented separately in <a href="CALIBRATION-UNCERTAINTY.html">the calibration uncertainty analysis</a>.</p>
+<h2>Exact problem and scope</h2>
+<p>The verified inputs are the 17 frozen CSV records, sorted by strictly distinct <strong>positive</strong> measured doses, with nonnegative maximum-shortening responses. Numerical exactness concerns those recorded decimals, not biological measurement precision. Dose order is fixed. For an exception budget <span class="math" data-tex="k"></span>, retain at least <span class="math" data-tex="17-k"></span> records and minimize the largest residual to one nonnegative nondecreasing curve. A zero-response origin can be added without cost because all retained doses are positive: interpolate monotonically from <span class="math" data-tex="(0,0)"></span> to the first fitted value, between retained values, and then use a constant tail.</p>
+<p>No concavity, dose uncertainty, specimen-specific material variation or physical constitutive law is imposed. The common monotone curve is a conditional null class, not an established exact biological law. The nested-set peak theorem can motivate this class only under its separately stated common-branch and path-coverage assumptions.</p>
+<h2>Independent methods</h2>
+<p>The root implementation builds each subset's maximum violating drop from a smaller prefix subset, then independently checks interval-subsequence feasibility with a dynamic program. This review did not use either implementation to establish the reported optima.</p>
+<p>First, the review generated every subset mask independently. For each ordered source pair, it located <strong>all</strong> masks containing both observations and updated their costs with that pair's positive response drop. The resulting 131,072-entry integer array matches the retained array entry for entry. At the verified scale of <span class="math" data-tex="10^8"></span> units per micrometer, all integer costs fit safely in the recorded 64-bit representation.</p>
+<p>Second, for each candidate doubled discrepancy <span class="math" data-tex="t=2\delta"></span>, it constructed a conflict graph: records <span class="math" data-tex="i&lt;j"></span> conflict exactly when <span class="math" data-tex="y_i-y_j&gt;t"></span>. A retained set admits a monotone fit within <span class="math" data-tex="\delta"></span> precisely when it is an independent set. The necessary pair condition follows from monotonicity; sufficiency follows by taking the nonnegative prefix maximum of the lower observation-interval endpoints. The review computes the largest independent set by a separate exact include/exclude recursion:</p>
+<div class="math display" data-tex="
+\alpha(G)=\max\{\alpha(G-v),\;1+\alpha(G-v-N(v))\}.
+"></div>
+
+<p>This algorithm branches on a graph vertex, rather than propagating minimal interval tails. It agrees with every reported feasible retained count and every predecessor-threshold rejection.</p>
+<p>Finally, every reported matching construction was checked against the source record, exact dose, exact response, nonnegativity, retained order, residual bound, and retained/omitted partition. These are finite scalar constructions, not solutions of the tissue-mechanical model.</p>
+<h2>Verified results</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Hypothetical exceptions</th>
+<th style="text-align: right;">Retained records</th>
+<th style="text-align: right;">Sharp uniform discrepancy (µm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3.131943715</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">3.084159745</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1.695976145</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1.502609595</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1.387728410</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1.241829440</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0.807538065</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.634125125</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.346913030</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.064503065</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.056135720</td>
+</tr>
+<tr>
+<td style="text-align: right;">11–16</td>
+<td style="text-align: right;">6–1</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p>For every positive optimum, the preceding distinct critical threshold admits fewer than the required number of records. At zero discrepancy, the largest compatible subset contains six records. That combinatorial fact does <strong>not</strong> imply that the other 11 embryos are erroneous; ordinary biological variability or measurement noise can create order reversals.</p>
+<p>The root's one-exception matching example omits source-column I. Record M then has response 12 µm at dose 0.78208913, preceding record P with response 5.83168051 µm at dose 0.80580697. Their reversal alone forces half their 6.16831949 µm response drop, or 3.084159745 µm. Exhaustive verification establishes that no other single omission produces a smaller optimum. This is a mathematical sensitivity witness, not grounds for deleting I.</p>
+<h2>Why the predecessor check proves sharpness</h2>
+<p>Every subset's optimal doubled discrepancy is zero or one of its positive ordered response drops. Hence a global optimum lies in the finite set of all such critical values. Between consecutive critical values, the conflict graph does not change. If the exact maximum independent-set size is sufficient at a claimed threshold and insufficient at the previous critical threshold, no intermediate value can achieve the required count. When the optimum is zero, nonnegative discrepancy itself supplies the lower bound. This covers all budgets, including plateaus and the zero-error tail.</p>
+<h2>Guard checks and limitations</h2>
+<p>The implementation now explicitly rejects nonpositive source doses, duplicate measured doses, negative response inputs, and negative discrepancy arguments to its feasibility helper. Seven adversarial tests passed: three helper tests and four synthetic-input tests of the main entry point. The invalid synthetic data were supplied in memory; original data were unchanged. This review does not certify a duplicate-dose algorithm or an unrestricted negative-response formulation.</p>
+<p>The conclusion is narrowly useful: the all-data incompatibility with a common monotone curve is not eliminated by one exceptional record. It neither estimates a true contamination fraction nor establishes measurement noise, confidence coverage, biological mechanisms, novelty, or a physical parameter identified set. All actual mechanical fits must continue to use every record unless a separate, scientifically justified exclusion protocol is adopted.</p>
+<p>Reviewed implementation SHA256: <code>493bfff54c97c17e8886fbe000cd773d15176d0f2436ebe7459c83b03a4ddce0</code>. The receipt identifies the exact source, root-output and subset-array hashes, so later implementation changes require a fresh review rather than inheriting this PASS automatically.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

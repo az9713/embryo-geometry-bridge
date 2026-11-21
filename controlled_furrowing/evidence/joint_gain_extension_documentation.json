@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all3_embedded_figures_exist": true,
+    "display_math_balanced": true,
+    "inline_math_balanced": true,
+    "frozen_doc_finished": true,
+    "independent16check_PASS_recorded": true,
+    "conditional_scope_kept": true
+  },
+  "doc_sha256": "7f4f630ad30a21c365dda140737fff5ad0d6e28237a4a5329c0125f3411bb392",
+  "figures": {
+    "../runs/joint_gain_extension_v2/joint-direct-endpoints.png": "6351d1273547d41294972b28a833d3be55557951650e9f78c895ff2d55cd8053",
+    "../runs/joint_gain_extension_v2/joint-direct-residuals.png": "f6048b43e298b31187cfd4b43ec22ee4939b90f4f0ae1cc1ba7d45c978d9d85a",
+    "../runs/joint_gain_extension_v2/joint-direct-surrogate-comparison.png": "7ab7243fd79df01a6402f07609b10ebdb78ff716a426e668007a25ee55459041"
+  },
+  "independent_review_sha256": "c37960e959b55e001b87ec2b5683d087b8419bc957436931399a93152f7efc41",
+  "producer_verification_sha256": "f640692dc0ae219879ada23897b09acbec18f86ed90b629cd0c0417d33603c00",
+  "visual_receipt_sha256": "5137613ae47c1e8e87ca5155e4aba4e396f7441c814d5a5263de905f4d288cb2",
+  "visual_inspection": "All three exported PNGs opened with view_image after final result completion; axes, legends, source-column labels and scientific scope captions inspected. No claim of HTML/browser verification in this child task."
+}

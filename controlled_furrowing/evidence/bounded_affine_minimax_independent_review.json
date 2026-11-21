@@ -1,0 +1,1208 @@
+{
+  "status": "PASS",
+  "scope": "Global exact optima of four DEFINED bounded AFFINE LPs, exhaustive coefficient/dataflow reconstruction; not a physical derivative/nonlinear optimum or full compatible-set certificate",
+  "created_utc": "2026-11-19T12:42:13.497425+00:00",
+  "initial_source_sha256": "a0156acb5e9a3574f87033f2bb821b5dbd8ebe9d4940d8996ed8b15be6368d9d",
+  "initial_source_snapshot": "\"\"\"Exact primal/dual certificates for a DEFINED bounded affine minimax LP.\n\nFloating HiGHS proposes a basis. Exact rational arithmetic decides feasibility,\ndual nonnegativity, stationarity and equality of objective values. This says\nnothing about nonlinear/derivative error when the affine coefficients are\napproximate mechanical sensitivities. Failure to recover a certificate returns\nUNRESOLVED, not an accepted floating optimum.\n\"\"\"\nfrom fractions import Fraction as Q\nfrom pathlib import Path\nfrom itertools import combinations\nimport hashlib,json\nimport numpy as np\nfrom scipy.optimize import linprog\nfrom scipy.linalg import qr\n\n\ndef rational(value):\n    if isinstance(value,Q):return value\n    if isinstance(value,(float,np.floating)):\n        if not np.isfinite(value):raise ValueError('finite coefficient required')\n        return Q(str(float(value)))\n    return Q(str(value))\n\n\ndef require_vector(value,label):\n    if not isinstance(value,(list,tuple,np.ndarray)) or (isinstance(value,np.ndarray) and value.ndim!=1):\n        raise ValueError(label+' must be a one-dimensional nonstring sequence')\n\n\ndef exact_solve(A,b):\n    \"\"\"Solve a consistent full-column-rank rational rectangular system.\"\"\"\n    if not A or len(A)!=len(b):raise ValueError('nonempty matching system required')\n    n=len(A[0]);M=[[rational(x) for x in row]+[rational(y)] for row,y in zip(A,b)]\n    if any(len(row)!=n+1 for row in M):raise ValueError('rectangular matrix required')\n    pivotrow=0;pivots=[]\n    for col in range(n):\n        pivot=next((i for i in range(pivotrow,len(M)) if M[i][col]),None)\n        if pivot is None:continue\n        M[pivotrow],M[pivot]=M[pivot],M[pivotrow]\n        scale=M[pivotrow][col];M[pivotrow]=[x/scale for x in M[pivotrow]]\n        for i in range(len(M)):\n            if i!=pivotrow and M[i][col]:\n                scale=M[i][col];M[i]=[x-scale*y for x,y in zip(M[i],M[pivotrow])]\n        pivots.append(col);pivotrow+=1\n    if any(not any(row[:n]) and row[-1] for row in M):raise ValueError('inconsistent exact system')\n    if len(pivots)!=n:raise ValueError('nonunique exact system')\n    answer=[Q(0)]*n\n    for i,col in enumerate(pivots):answer[col]=M[i][-1]\n    return answer\n\n\ndef problem(residuals,jacobian,bounds):\n    require_vector(residuals,'residuals')\n    if not isinstance(jacobian,(list,tuple,np.ndarray)) or isinstance(jacobian,np.ndarray) and jacobian.ndim!=2:\n        raise ValueError('jacobian must be a nonstring matrix')\n    if not isinstance(bounds,(list,tuple,np.ndarray)) or isinstance(bounds,np.ndarray) and bounds.ndim!=2:\n        raise ValueError('bounds must be a nonstring matrix')\n    for row in jacobian:require_vector(row,'Jacobian row')\n    for pair in bounds:\n        require_vector(pair,'bound pair')\n        if len(pair)!=2:raise ValueError('two entries per bound pair required')\n    r=list(map(rational,residuals));J=[[rational(v) for v in row] for row in jacobian]\n    bound=[tuple(map(rational,pair)) for pair in bounds];d=len(bound)\n    if not r or len(r)!=len(J) or not d or any(len(row)!=d for row in J):raise ValueError('consistent nonempty dimensions required')\n    if any(len(pair)!=2 or pair[0]>pair[1] for pair in bound):raise ValueError('ordered finite step bounds required')\n    A=[];b=[];labels=[]\n    for i,(value,row) in enumerate(zip(r,J)):\n        A.extend([row+[Q(-1)],[-v for v in row]+[Q(-1)]])\n        b.extend([-value,value]);labels.extend([f'residual_{i}_positive',f'residual_{i}_negative'])\n    for j,(lo,hi) in enumerate(bound):\n        row=[Q(0)]*(d+1);row[j]=1;A.append(row);b.append(hi);labels.append(f'coordinate_{j}_upper')\n        row=[Q(0)]*(d+1);row[j]=-1;A.append(row);b.append(-lo);labels.append(f'coordinate_{j}_lower')\n    A.append([Q(0)]*d+[Q(-1)]);b.append(Q(0));labels.append('nonnegative_loss')\n    return r,J,bound,A,b,labels\n\n\ndef verify_certificate(residuals,jacobian,bounds,certificate):\n    r,J,bound,A,b,labels=problem(residuals,jacobian,bounds);n=len(bound)+1\n    if not isinstance(certificate,dict) or not {'primal_exact','dual_exact'}<=certificate.keys():raise ValueError('certificate dictionary with both exact vectors required')\n    require_vector(certificate['primal_exact'],'primal certificate')\n    require_vector(certificate['dual_exact'],'dual certificate')\n    x=list(map(rational,certificate['primal_exact']));lam=list(map(rational,certificate['dual_exact']))\n    if len(x)!=n or len(lam)!=len(A):raise ValueError('certificate dimensions mismatch')\n    dot=lambda a,z:sum((aa*zz for aa,zz in zip(a,z)),Q(0))\n    primal=all(dot(row,x)<=rhs for row,rhs in zip(A,b))\n    dual=all(v>=0 for v in lam)\n    stationary=all(sum((lam[i]*A[i][j] for i in range(len(A))),Q(0))==(-1 if j==n-1 else 0) for j in range(n))\n    lower=-dot(lam,b);equal=lower==x[-1]\n    return {'exact_primal_feasibility':primal,'exact_dual_nonnegative':dual,\n            'exact_dual_stationarity':stationary,'exact_primal_dual_objective_equality':equal}\n\n\ndef solve_minimax(residuals,jacobian,bounds):\n    r,J,bound,A,b,labels=problem(residuals,jacobian,bounds);n=len(bound)+1\n    try:\n        fa=np.array(A,dtype=float);fb=np.array(b,dtype=float);cost=np.zeros(n);cost[-1]=1\n        if not np.all(np.isfinite(fa)) or not np.all(np.isfinite(fb)):\n            return {'status':'UNRESOLVED_FLOATING_PROPOSAL','message':'Exact coefficients exceed finite floating proposal range.'}\n        proposed=linprog(cost,A_ub=fa,b_ub=fb,bounds=[(None,None)]*n,method='highs')\n    except (OverflowError,ValueError) as error:\n        return {'status':'UNRESOLVED_FLOATING_PROPOSAL','message':'Floating proposal unavailable: '+str(error)}\n    if not proposed.success:return {'status':'UNRESOLVED_FLOATING_PROPOSAL','message':proposed.message}\n    slack=fb-fa@proposed.x;duals=-np.asarray(proposed.ineqlin.marginals)\n    tol=1e-7*max(1.,float(np.max(abs(fb))),float(np.max(abs(fa@proposed.x))))\n    active=np.flatnonzero(abs(slack)<=tol).tolist()\n    support=np.flatnonzero(duals>1e-9).tolist()\n    # Any full-rank active basis can propose the same optimal vertex. Prefer\n    # nonzero-dual rows; fallback search is explicitly bounded and may decline.\n    ranked=list(dict.fromkeys(support+active));bases=[]\n    if len(ranked)>=n:\n        _,_,pivots=qr(fa[ranked].T,pivoting=True,mode='economic')\n        bases.append(tuple(ranked[k] for k in pivots[:n]))\n    if len(support)==n:bases.insert(0,tuple(support))\n    if len(active)<=18:\n        for candidate in combinations(active,n):\n            if len(bases)>=2000:break\n            bases.append(candidate)\n    seen=set();rejections=[]\n    for basis in bases:\n        if basis in seen:continue\n        seen.add(basis)\n        try:\n            x=exact_solve([A[i] for i in basis],[b[i] for i in basis])\n            if any(sum((a*v for a,v in zip(row,x)),Q(0))>rhs for row,rhs in zip(A,b)):\n                raise ValueError('exact primal inequality fails')\n            tight=[i for i,(row,rhs) in enumerate(zip(A,b)) if sum((a*v for a,v in zip(row,x)),Q(0))==rhs]\n            supports=[support,list(basis)]\n            supports.extend([[i] for i in tight])\n            for subset in supports:\n                if not subset:continue\n                try:values=exact_solve([[A[i][j] for i in subset] for j in range(n)],[-int(j==n-1) for j in range(n)])\n                except ValueError:continue\n                if any(v<0 for v in values):continue\n                lam=[Q(0)]*len(A)\n                for i,value in zip(subset,values):lam[i]=value\n                certificate={'primal_exact':list(map(str,x)),'dual_exact':list(map(str,lam))}\n                checks=verify_certificate(r,J,bound,certificate)\n                if not all(checks.values()):continue\n                return {'status':'CERTIFIED_DEFINED_AFFINE_LP','step_exact':list(map(str,x[:-1])),\n                    'step_display':list(map(float,x[:-1])),'loss_exact':str(x[-1]),'loss_display':float(x[-1]),\n                    'certificate':certificate,'checks':checks,'active_constraints':[labels[i] for i in tight],\n                    'dual_support':[{'constraint':labels[i],'multiplier_exact':str(v)} for i,v in enumerate(lam) if v],\n                    'floating_proposal':{'step':proposed.x[:-1].tolist(),'loss':float(proposed.fun)},\n                    'basis_trials':len(seen),'coefficient_convention':'Decimal str(float) for floating inputs; exact rationals otherwise.',\n                    'scope':'Global optimum of this explicitly bounded AFFINE problem only. No rigorous mechanical derivative, trust-region approximation or nonlinear inference certificate.'}\n            raise ValueError('no exact nonnegative dual recovered')\n        except ValueError as error:rejections.append(str(error))\n    return {'status':'UNRESOLVED_EXACT_CERTIFICATE','floating_proposal':proposed.x.tolist(),\n            'basis_trials':len(seen),'rejection_reasons':sorted(set(rejections)),\n            'scope':'No optimum accepted without exact certificate; numerical proposal is not promoted.'}\n\n\ndef tests():\n    cases=[('positive_bound',[3],[[1]],[(-1,1)],Q(2)),\n           ('negative_bound',[-3],[[1]],[(-1,1)],Q(2)),\n           ('opposing_residuals',[2,-2],[[1],[1]],[(-3,3)],Q(2)),\n           ('one_sided_tension',[1],[[-10]],[(0,'.02')],Q('0.8')),\n           ('exact_zero',[1],[[1]],[(-2,2)],Q(0)),\n           ('unused_coordinate',[2,-2],[[1,0],[1,0]],[(-3,3),(-4,4)],Q(2)),\n           ('two_independent_channels',[3,1],[[1,0],[0,1]],[(-1,1),(-1,1)],Q(2)),\n           ('degenerate_fixed_box',[3],[[1]],[(0,0)],Q(3))]\n    checks={};rows=[]\n    for name,r,J,bounds,known in cases:\n        result=solve_minimax(r,J,bounds);checks[name+'_exact_optimum']=result.get('status')=='CERTIFIED_DEFINED_AFFINE_LP' and Q(result['loss_exact'])==known\n        checks[name+'_independent_inequalities']=all(verify_certificate(r,J,bounds,result['certificate']).values()) if 'certificate' in result else False\n        if 'certificate' in result:\n            changed=json.loads(json.dumps(result['certificate']));changed['primal_exact'][-1]=str(known-Q(1,100))\n            checks[name+'_reject_false_lower_loss']=not all(verify_certificate(r,J,bounds,changed).values())\n        rows.append({'name':name,'result':result,'analytic_expected_exact':str(known)})\n    for name,r,J,bounds in [('nan',[np.nan],[[1]],[(-1,1)]),('bad_bounds',[1],[[1]],[(1,0)]),('dimension',[1],[[1,2]],[(-1,1)]),\n                          ('string_residual','1',[[1]],[(-1,1)]),('string_bounds',[1],[[1]],['00']),('string_jacobian',[1],['1'],[(-1,1)])]:\n        try:solve_minimax(r,J,bounds);checks[name+'_guard']=False\n        except ValueError:checks[name+'_guard']=True\n    try:\n        verify_certificate([2],[[1]],[(0,0)],{'primal_exact':'02','dual_exact':'10010'});checks['string_certificate_guard']=False\n    except ValueError:checks['string_certificate_guard']=True\n    checks['unrepresentable_float_proposal_unresolved']=solve_minimax([Q(10)**1000],[[1]],[(0,0)])['status']=='UNRESOLVED_FLOATING_PROPOSAL'\n    out={'status':'PASS' if all(checks.values()) else 'FAIL','checks':checks,'rows':rows,\n         'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),\n         'proof':'For Ax<=b and lambda>=0 with A^T lambda=-c, c^T x>=-lambda^T b. Equality plus primal feasibility proves global optimality.',\n         'scope':'Analytically solvable affine LPs plus adversarial false-loss checks; no biological or nonlinear-model claim.'}\n    path=Path(__file__).resolve().parents[1]/'evidence/bounded_affine_minimax_tests.json'\n    path.write_text(json.dumps(out,indent=2)+'\\n');print(json.dumps({'status':out['status'],'checks':len(checks)}))\n    if not all(checks.values()):raise RuntimeError('affine LP checks failed')\n\n\nif __name__=='__main__':tests()\n",
+  "initial_root_tests_sha256": "c8b9ee2b99ff4ae2a404f45cc99ac0dcb3f927d48fcadb8370fa6ef9da8e2fba",
+  "reported_findings": [
+    {
+      "name": "string_container_accepted",
+      "kind": "schema_validation",
+      "severity": "low_valid_numbers_still_checked",
+      "reproductions": [
+        "solve_minimax([2],[[1]],[\"00\"]) certified",
+        "verify_certificate([2],[[1]],[(0,0)],{\"primal_exact\":\"02\",\"dual_exact\":\"10010\"}) alltrue"
+      ]
+    },
+    {
+      "name": "finite_exact_unrepresentable_float",
+      "kind": "proposal_failure_handling",
+      "severity": "valid_input_crash_not_false_certificate",
+      "reproduction": "solve_minimax([10**1000],[[1]],[(0,0)]) raisesOverflowError"
+    }
+  ],
+  "independent_helper_replay_python": "from pathlib import Path\nfrom fractions import Fraction as F\nfrom itertools import combinations,permutations\nimport random,json,sys,hashlib,copy\np=Path(\"controlled_furrowing\");sys.path.insert(0,str((p/\"scripts\").resolve()))\nimport bounded_affine_minimax as root\nq=lambda x:x if isinstance(x,F)else F(str(float(x)))if isinstance(x,float)else F(str(x))\ndef make_constraints(r,J,bounds):\n r=list(map(q,r));J=[list(map(q,row))for row in J];bs=[tuple(map(q,b))for b in bounds];d=len(bs);A=[];b=[]\n for v,row in zip(r,J):A.extend([row+[F(-1)],[-x for x in row]+[F(-1)]]);b.extend([-v,v])\n for j,(lo,hi)in enumerate(bs):\n  u=[F(0)]*(d+1);u[j]=1;A.append(u);b.append(hi);v=[F(0)]*(d+1);v[j]=-1;A.append(v);b.append(-lo)\n A.append([F(0)]*d+[F(-1)]);b.append(F(0));return A,b\n\ndef independent_checks(r,J,bs,cert):\n A,b=make_constraints(r,J,bs);x=list(map(q,cert[\"primal_exact\"]));la=list(map(q,cert[\"dual_exact\"]));d=len(bs);assert len(x)==d+1 and len(la)==len(A)\n primal=all(sum(a*z for a,z in zip(row,x))<=v for row,v in zip(A,b));dual=all(v>=0 for v in la)\n stationary=all(sum(la[i]*A[i][j]for i in range(len(A)))==(-1 if j==d else 0)for j in range(d+1));equal=-sum(v*z for v,z in zip(la,b))==x[-1]\n return [primal,dual,stationary,equal]\n\ndef det(M):\n n=len(M);total=F(0)\n for perm in permutations(range(n)):\n  sign=(-1)**sum(perm[i]>perm[j]for i in range(n)for j in range(i+1,n));term=F(sign)\n  for i,j in enumerate(perm):term*=M[i][j]\n  total+=term\n return total\n\ndef enumerate_vertices(r,J,bs):\n A,b=make_constraints(r,J,bs);n=len(bs)+1;values=[];feasible=0\n for inds in combinations(range(len(A)),n):\n  M=[A[i]for i in inds];den=det(M)\n  if not den:continue\n  rhs=[b[i]for i in inds];x=[]\n  for j in range(n):\n   N=[row[:]for row in M]\n   for i in range(n):N[i][j]=rhs[i]\n   x.append(det(N)/den)\n  if all(sum(a*z for a,z in zip(row,x))<=v for row,v in zip(A,b)):values.append(x[-1]);feasible+=1\n assert values;return min(values),feasible\ncases=[(\"constant_two_dimensions\",[7,-4],[[0,0],[0,0]],[(-2,3),(4,5)],F(7)),(\"zero_outside_box\",[0],[[1]],[(2,3)],F(2)),(\"interior_fraction_balance\",[3,-1],[[2],[1]],[(-3,3)],F(5,3)),(\"two_d_exact_zero\",[1,1],[[1,1],[1,-1]],[(-1,1),(-1,1)],F(0)),(\"one_sided_two_d\",[3,2,-1],[[1,0],[0,1],[1,1]],[(-1,0),(0,1)],F(2)),(\"duplicate_faces\",[2,2,-2],[[1],[1],[1]],[(-3,3)],F(2)),(\"rational_bound\",[F(3,7)],[[F(5,11)]],[(F(-1,2),F(1,3))],F(31,154)),(\"fixed_two_d\",[1,-2],[[2,3],[-1,4]],[(1,1),(-1,-1)],F(7)),(\"five_coordinates\",[3,-3,2,-2,1],[[int(i==j)for j in range(5)]for i in range(5)],[(-1,1)]*5,F(2))]\nrng=random.Random(84531)\nfor i in range(20):\n d=1+i%2;r=[rng.randint(-5,5)for _ in range(3)];J=[[rng.randint(-3,3)for _ in range(d)]for _ in r];bs=[(rng.randint(-3,-1),rng.randint(0,3))for _ in range(d)];known,_=enumerate_vertices(r,J,bs);cases.append((\"vertex_\"+str(i),r,J,bs,known))\nchecks={};records=[];solve_count=0;vertex_count=0\nfor name,r,J,bs,known in cases:\n result=root.solve_minimax(r,J,bs);solve_count+=1\n checks[name+\"_exact_known_loss\"]=result.get(\"status\")==\"CERTIFIED_DEFINED_AFFINE_LP\"and q(result[\"loss_exact\"])==known\n if \"certificate\"not in result:raise AssertionError((name,result))\n checks[name+\"_independent_dual_primal\"]=all(independent_checks(r,J,bs,result[\"certificate\"]))\n if len(bs)<=2:\n  expected,count=enumerate_vertices(r,J,bs);vertex_count+=count;checks[name+\"_exhaustive_vertex_loss\"]=expected==known\n records.append({\"name\":name,\"expected_loss_exact\":str(known),\"certified_loss_exact\":result[\"loss_exact\"],\"step_exact\":result[\"step_exact\"],\"certificate\":result[\"certificate\"]})\n # Independent transformations preserve the same absolute-residual problem.\n transformed=[(\"reverse_rows\",list(reversed(r)),list(reversed(J)),bs,known),(\"sign_flip_rows\",[-q(x)if k%2 else q(x)for k,x in enumerate(r)],[[-q(x)for x in row]if k%2 else list(map(q,row))for k,row in enumerate(J)],bs,known),(\"scale\",[F(3,7)*q(x)for x in r],[[F(3,7)*q(x)for x in row]for row in J],bs,F(3,7)*known),(\"coordinate_reverse\",r,[list(reversed(row))for row in J],list(reversed(bs)),known)]\n for kind,tr,tJ,tb,target in transformed:\n  z=root.solve_minimax(tr,tJ,tb);solve_count+=1;checks[name+\"_\"+kind]=z.get(\"status\")==\"CERTIFIED_DEFINED_AFFINE_LP\"and q(z[\"loss_exact\"])==target and all(independent_checks(tr,tJ,tb,z[\"certificate\"]))\n# Isolate each of the four acceptance obligations; no certificate may omit one.\nbase={\"primal_exact\":[\"-1\",\"2\"],\"dual_exact\":[\"1\",\"0\",\"0\",\"1\",\"0\"]}\nadversaries=[(\"primal_only\",[3],[[1]],[(-1,1)],{\"primal_exact\":[\"0\",\"2\"],\"dual_exact\":base[\"dual_exact\"]},[False,True,True,True]),(\"dual_nonnegative_only\",[0],[[0]],[(0,0)],{\"primal_exact\":[\"0\",\"0\"],\"dual_exact\":[\"0\",\"0\",\"-1\",\"-1\",\"1\"]},[True,False,True,True]),(\"stationarity_only\",[0],[[0]],[(0,0)],{\"primal_exact\":[\"0\",\"0\"],\"dual_exact\":[\"0\"]*5},[True,True,False,True]),(\"equality_only\",[3],[[1]],[(-1,1)],{\"primal_exact\":[\"-1\",\"3\"],\"dual_exact\":base[\"dual_exact\"]},[True,True,True,False])]\nfor name,r,J,bs,c,want in adversaries:\n own=independent_checks(r,J,bs,c);got=list(root.verify_certificate(r,J,bs,c).values());checks[name+\"_independently_rejected\"]=own==want and got==want\nsummary={\"source_sha256\":hashlib.sha256((p/\"scripts/bounded_affine_minimax.py\").read_bytes()).hexdigest(),\"checks\":checks,\"all_checks_pass\":all(checks.values()),\"analytical_and_enumerated_cases\":len(cases),\"exact_vertex_count\":vertex_count,\"solver_calls_including_metamorphic_variants\":solve_count,\"adversarial_obligations\":4,\"records\":records}\nassert summary[\"all_checks_pass\"]\n",
+  "helper_review": {
+    "source_sha256": "a0156acb5e9a3574f87033f2bb821b5dbd8ebe9d4940d8996ed8b15be6368d9d",
+    "checks": {
+      "constant_two_dimensions_exact_known_loss": true,
+      "constant_two_dimensions_independent_dual_primal": true,
+      "constant_two_dimensions_exhaustive_vertex_loss": true,
+      "constant_two_dimensions_reverse_rows": true,
+      "constant_two_dimensions_sign_flip_rows": true,
+      "constant_two_dimensions_scale": true,
+      "constant_two_dimensions_coordinate_reverse": true,
+      "zero_outside_box_exact_known_loss": true,
+      "zero_outside_box_independent_dual_primal": true,
+      "zero_outside_box_exhaustive_vertex_loss": true,
+      "zero_outside_box_reverse_rows": true,
+      "zero_outside_box_sign_flip_rows": true,
+      "zero_outside_box_scale": true,
+      "zero_outside_box_coordinate_reverse": true,
+      "interior_fraction_balance_exact_known_loss": true,
+      "interior_fraction_balance_independent_dual_primal": true,
+      "interior_fraction_balance_exhaustive_vertex_loss": true,
+      "interior_fraction_balance_reverse_rows": true,
+      "interior_fraction_balance_sign_flip_rows": true,
+      "interior_fraction_balance_scale": true,
+      "interior_fraction_balance_coordinate_reverse": true,
+      "two_d_exact_zero_exact_known_loss": true,
+      "two_d_exact_zero_independent_dual_primal": true,
+      "two_d_exact_zero_exhaustive_vertex_loss": true,
+      "two_d_exact_zero_reverse_rows": true,
+      "two_d_exact_zero_sign_flip_rows": true,
+      "two_d_exact_zero_scale": true,
+      "two_d_exact_zero_coordinate_reverse": true,
+      "one_sided_two_d_exact_known_loss": true,
+      "one_sided_two_d_independent_dual_primal": true,
+      "one_sided_two_d_exhaustive_vertex_loss": true,
+      "one_sided_two_d_reverse_rows": true,
+      "one_sided_two_d_sign_flip_rows": true,
+      "one_sided_two_d_scale": true,
+      "one_sided_two_d_coordinate_reverse": true,
+      "duplicate_faces_exact_known_loss": true,
+      "duplicate_faces_independent_dual_primal": true,
+      "duplicate_faces_exhaustive_vertex_loss": true,
+      "duplicate_faces_reverse_rows": true,
+      "duplicate_faces_sign_flip_rows": true,
+      "duplicate_faces_scale": true,
+      "duplicate_faces_coordinate_reverse": true,
+      "rational_bound_exact_known_loss": true,
+      "rational_bound_independent_dual_primal": true,
+      "rational_bound_exhaustive_vertex_loss": true,
+      "rational_bound_reverse_rows": true,
+      "rational_bound_sign_flip_rows": true,
+      "rational_bound_scale": true,
+      "rational_bound_coordinate_reverse": true,
+      "fixed_two_d_exact_known_loss": true,
+      "fixed_two_d_independent_dual_primal": true,
+      "fixed_two_d_exhaustive_vertex_loss": true,
+      "fixed_two_d_reverse_rows": true,
+      "fixed_two_d_sign_flip_rows": true,
+      "fixed_two_d_scale": true,
+      "fixed_two_d_coordinate_reverse": true,
+      "five_coordinates_exact_known_loss": true,
+      "five_coordinates_independent_dual_primal": true,
+      "five_coordinates_reverse_rows": true,
+      "five_coordinates_sign_flip_rows": true,
+      "five_coordinates_scale": true,
+      "five_coordinates_coordinate_reverse": true,
+      "vertex_0_exact_known_loss": true,
+      "vertex_0_independent_dual_primal": true,
+      "vertex_0_exhaustive_vertex_loss": true,
+      "vertex_0_reverse_rows": true,
+      "vertex_0_sign_flip_rows": true,
+      "vertex_0_scale": true,
+      "vertex_0_coordinate_reverse": true,
+      "vertex_1_exact_known_loss": true,
+      "vertex_1_independent_dual_primal": true,
+      "vertex_1_exhaustive_vertex_loss": true,
+      "vertex_1_reverse_rows": true,
+      "vertex_1_sign_flip_rows": true,
+      "vertex_1_scale": true,
+      "vertex_1_coordinate_reverse": true,
+      "vertex_2_exact_known_loss": true,
+      "vertex_2_independent_dual_primal": true,
+      "vertex_2_exhaustive_vertex_loss": true,
+      "vertex_2_reverse_rows": true,
+      "vertex_2_sign_flip_rows": true,
+      "vertex_2_scale": true,
+      "vertex_2_coordinate_reverse": true,
+      "vertex_3_exact_known_loss": true,
+      "vertex_3_independent_dual_primal": true,
+      "vertex_3_exhaustive_vertex_loss": true,
+      "vertex_3_reverse_rows": true,
+      "vertex_3_sign_flip_rows": true,
+      "vertex_3_scale": true,
+      "vertex_3_coordinate_reverse": true,
+      "vertex_4_exact_known_loss": true,
+      "vertex_4_independent_dual_primal": true,
+      "vertex_4_exhaustive_vertex_loss": true,
+      "vertex_4_reverse_rows": true,
+      "vertex_4_sign_flip_rows": true,
+      "vertex_4_scale": true,
+      "vertex_4_coordinate_reverse": true,
+      "vertex_5_exact_known_loss": true,
+      "vertex_5_independent_dual_primal": true,
+      "vertex_5_exhaustive_vertex_loss": true,
+      "vertex_5_reverse_rows": true,
+      "vertex_5_sign_flip_rows": true,
+      "vertex_5_scale": true,
+      "vertex_5_coordinate_reverse": true,
+      "vertex_6_exact_known_loss": true,
+      "vertex_6_independent_dual_primal": true,
+      "vertex_6_exhaustive_vertex_loss": true,
+      "vertex_6_reverse_rows": true,
+      "vertex_6_sign_flip_rows": true,
+      "vertex_6_scale": true,
+      "vertex_6_coordinate_reverse": true,
+      "vertex_7_exact_known_loss": true,
+      "vertex_7_independent_dual_primal": true,
+      "vertex_7_exhaustive_vertex_loss": true,
+      "vertex_7_reverse_rows": true,
+      "vertex_7_sign_flip_rows": true,
+      "vertex_7_scale": true,
+      "vertex_7_coordinate_reverse": true,
+      "vertex_8_exact_known_loss": true,
+      "vertex_8_independent_dual_primal": true,
+      "vertex_8_exhaustive_vertex_loss": true,
+      "vertex_8_reverse_rows": true,
+      "vertex_8_sign_flip_rows": true,
+      "vertex_8_scale": true,
+      "vertex_8_coordinate_reverse": true,
+      "vertex_9_exact_known_loss": true,
+      "vertex_9_independent_dual_primal": true,
+      "vertex_9_exhaustive_vertex_loss": true,
+      "vertex_9_reverse_rows": true,
+      "vertex_9_sign_flip_rows": true,
+      "vertex_9_scale": true,
+      "vertex_9_coordinate_reverse": true,
+      "vertex_10_exact_known_loss": true,
+      "vertex_10_independent_dual_primal": true,
+      "vertex_10_exhaustive_vertex_loss": true,
+      "vertex_10_reverse_rows": true,
+      "vertex_10_sign_flip_rows": true,
+      "vertex_10_scale": true,
+      "vertex_10_coordinate_reverse": true,
+      "vertex_11_exact_known_loss": true,
+      "vertex_11_independent_dual_primal": true,
+      "vertex_11_exhaustive_vertex_loss": true,
+      "vertex_11_reverse_rows": true,
+      "vertex_11_sign_flip_rows": true,
+      "vertex_11_scale": true,
+      "vertex_11_coordinate_reverse": true,
+      "vertex_12_exact_known_loss": true,
+      "vertex_12_independent_dual_primal": true,
+      "vertex_12_exhaustive_vertex_loss": true,
+      "vertex_12_reverse_rows": true,
+      "vertex_12_sign_flip_rows": true,
+      "vertex_12_scale": true,
+      "vertex_12_coordinate_reverse": true,
+      "vertex_13_exact_known_loss": true,
+      "vertex_13_independent_dual_primal": true,
+      "vertex_13_exhaustive_vertex_loss": true,
+      "vertex_13_reverse_rows": true,
+      "vertex_13_sign_flip_rows": true,
+      "vertex_13_scale": true,
+      "vertex_13_coordinate_reverse": true,
+      "vertex_14_exact_known_loss": true,
+      "vertex_14_independent_dual_primal": true,
+      "vertex_14_exhaustive_vertex_loss": true,
+      "vertex_14_reverse_rows": true,
+      "vertex_14_sign_flip_rows": true,
+      "vertex_14_scale": true,
+      "vertex_14_coordinate_reverse": true,
+      "vertex_15_exact_known_loss": true,
+      "vertex_15_independent_dual_primal": true,
+      "vertex_15_exhaustive_vertex_loss": true,
+      "vertex_15_reverse_rows": true,
+      "vertex_15_sign_flip_rows": true,
+      "vertex_15_scale": true,
+      "vertex_15_coordinate_reverse": true,
+      "vertex_16_exact_known_loss": true,
+      "vertex_16_independent_dual_primal": true,
+      "vertex_16_exhaustive_vertex_loss": true,
+      "vertex_16_reverse_rows": true,
+      "vertex_16_sign_flip_rows": true,
+      "vertex_16_scale": true,
+      "vertex_16_coordinate_reverse": true,
+      "vertex_17_exact_known_loss": true,
+      "vertex_17_independent_dual_primal": true,
+      "vertex_17_exhaustive_vertex_loss": true,
+      "vertex_17_reverse_rows": true,
+      "vertex_17_sign_flip_rows": true,
+      "vertex_17_scale": true,
+      "vertex_17_coordinate_reverse": true,
+      "vertex_18_exact_known_loss": true,
+      "vertex_18_independent_dual_primal": true,
+      "vertex_18_exhaustive_vertex_loss": true,
+      "vertex_18_reverse_rows": true,
+      "vertex_18_sign_flip_rows": true,
+      "vertex_18_scale": true,
+      "vertex_18_coordinate_reverse": true,
+      "vertex_19_exact_known_loss": true,
+      "vertex_19_independent_dual_primal": true,
+      "vertex_19_exhaustive_vertex_loss": true,
+      "vertex_19_reverse_rows": true,
+      "vertex_19_sign_flip_rows": true,
+      "vertex_19_scale": true,
+      "vertex_19_coordinate_reverse": true,
+      "primal_only_independently_rejected": true,
+      "dual_nonnegative_only_independently_rejected": true,
+      "stationarity_only_independently_rejected": true,
+      "equality_only_independently_rejected": true
+    },
+    "all_checks_pass": true,
+    "analytical_and_enumerated_cases": 29,
+    "exact_vertex_count": 194,
+    "solver_calls_including_metamorphic_variants": 145,
+    "adversarial_obligations": 4,
+    "records": [
+      {
+        "name": "constant_two_dimensions",
+        "expected_loss_exact": "7",
+        "certified_loss_exact": "7",
+        "step_exact": [
+          "-2",
+          "4"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-2",
+            "4",
+            "7"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "zero_outside_box",
+        "expected_loss_exact": "2",
+        "certified_loss_exact": "2",
+        "step_exact": [
+          "2"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "2",
+            "2"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "interior_fraction_balance",
+        "expected_loss_exact": "5/3",
+        "certified_loss_exact": "5/3",
+        "step_exact": [
+          "-2/3"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-2/3",
+            "5/3"
+          ],
+          "dual_exact": [
+            "1/3",
+            "0",
+            "0",
+            "2/3",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "two_d_exact_zero",
+        "expected_loss_exact": "0",
+        "certified_loss_exact": "0",
+        "step_exact": [
+          "-1",
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "0",
+            "0"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        }
+      },
+      {
+        "name": "one_sided_two_d",
+        "expected_loss_exact": "2",
+        "certified_loss_exact": "2",
+        "step_exact": [
+          "-1",
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "0",
+            "2"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "duplicate_faces",
+        "expected_loss_exact": "2",
+        "certified_loss_exact": "2",
+        "step_exact": [
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "0",
+            "2"
+          ],
+          "dual_exact": [
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "rational_bound",
+        "expected_loss_exact": "31/154",
+        "certified_loss_exact": "31/154",
+        "step_exact": [
+          "-1/2"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1/2",
+            "31/154"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "0",
+            "5/11",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "fixed_two_d",
+        "expected_loss_exact": "7",
+        "certified_loss_exact": "7",
+        "step_exact": [
+          "1",
+          "-1"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "1",
+            "-1",
+            "7"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "4",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "five_coordinates",
+        "expected_loss_exact": "2",
+        "certified_loss_exact": "2",
+        "step_exact": [
+          "-1",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "1",
+            "-1",
+            "1",
+            "-1",
+            "2"
+          ],
+          "dual_exact": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_0",
+        "expected_loss_exact": "1/2",
+        "certified_loss_exact": "1/2",
+        "step_exact": [
+          "5/6"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "5/6",
+            "1/2"
+          ],
+          "dual_exact": [
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_1",
+        "expected_loss_exact": "2",
+        "certified_loss_exact": "2",
+        "step_exact": [
+          "-2",
+          "-2"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-2",
+            "-2",
+            "2"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "0",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_2",
+        "expected_loss_exact": "5",
+        "certified_loss_exact": "5",
+        "step_exact": [
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "0",
+            "5"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "3",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_3",
+        "expected_loss_exact": "1",
+        "certified_loss_exact": "1",
+        "step_exact": [
+          "-1",
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "0",
+            "1"
+          ],
+          "dual_exact": [
+            "0",
+            "2/3",
+            "0",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_4",
+        "expected_loss_exact": "1",
+        "certified_loss_exact": "1",
+        "step_exact": [
+          "1"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "1",
+            "1"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_5",
+        "expected_loss_exact": "2/3",
+        "certified_loss_exact": "2/3",
+        "step_exact": [
+          "-4/3",
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-4/3",
+            "0",
+            "2/3"
+          ],
+          "dual_exact": [
+            "0",
+            "2/3",
+            "0",
+            "0",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "1/3",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_6",
+        "expected_loss_exact": "3",
+        "certified_loss_exact": "3",
+        "step_exact": [
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "0",
+            "3"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_7",
+        "expected_loss_exact": "5",
+        "certified_loss_exact": "5",
+        "step_exact": [
+          "0",
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "0",
+            "0",
+            "5"
+          ],
+          "dual_exact": [
+            "0",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "3/4",
+            "0",
+            "0",
+            "3/4",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_8",
+        "expected_loss_exact": "5/2",
+        "certified_loss_exact": "5/2",
+        "step_exact": [
+          "-1/2"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1/2",
+            "5/2"
+          ],
+          "dual_exact": [
+            "1/2",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_9",
+        "expected_loss_exact": "11/3",
+        "certified_loss_exact": "11/3",
+        "step_exact": [
+          "-2/3",
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-2/3",
+            "0",
+            "11/3"
+          ],
+          "dual_exact": [
+            "2/3",
+            "0",
+            "0",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "0",
+            "1/3",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_10",
+        "expected_loss_exact": "4",
+        "certified_loss_exact": "4",
+        "step_exact": [
+          "-1"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "4"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_11",
+        "expected_loss_exact": "4",
+        "certified_loss_exact": "4",
+        "step_exact": [
+          "-1",
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "0",
+            "4"
+          ],
+          "dual_exact": [
+            "2/3",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "5/3",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_12",
+        "expected_loss_exact": "4",
+        "certified_loss_exact": "4",
+        "step_exact": [
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "0",
+            "4"
+          ],
+          "dual_exact": [
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_13",
+        "expected_loss_exact": "17/14",
+        "certified_loss_exact": "17/14",
+        "step_exact": [
+          "-9/14",
+          "5/7"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-9/14",
+            "5/7",
+            "17/14"
+          ],
+          "dual_exact": [
+            "3/14",
+            "0",
+            "5/14",
+            "0",
+            "0",
+            "3/7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_14",
+        "expected_loss_exact": "7/2",
+        "certified_loss_exact": "7/2",
+        "step_exact": [
+          "1/4"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "1/4",
+            "7/2"
+          ],
+          "dual_exact": [
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_15",
+        "expected_loss_exact": "5/3",
+        "certified_loss_exact": "5/3",
+        "step_exact": [
+          "2/3",
+          "-1"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "2/3",
+            "-1",
+            "5/3"
+          ],
+          "dual_exact": [
+            "0",
+            "2/3",
+            "0",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "0",
+            "0",
+            "7/3",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_16",
+        "expected_loss_exact": "6/5",
+        "certified_loss_exact": "6/5",
+        "step_exact": [
+          "-2/5"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-2/5",
+            "6/5"
+          ],
+          "dual_exact": [
+            "2/5",
+            "0",
+            "0",
+            "3/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_17",
+        "expected_loss_exact": "2",
+        "certified_loss_exact": "2",
+        "step_exact": [
+          "-1",
+          "-2"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "-1",
+            "-2",
+            "2"
+          ],
+          "dual_exact": [
+            "0",
+            "1/2",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_18",
+        "expected_loss_exact": "19/5",
+        "certified_loss_exact": "19/5",
+        "step_exact": [
+          "3/5"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "3/5",
+            "19/5"
+          ],
+          "dual_exact": [
+            "0",
+            "2/5",
+            "3/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "name": "vertex_19",
+        "expected_loss_exact": "21/5",
+        "certified_loss_exact": "21/5",
+        "step_exact": [
+          "2/5",
+          "0"
+        ],
+        "certificate": {
+          "primal_exact": [
+            "2/5",
+            "0",
+            "21/5"
+          ],
+          "dual_exact": [
+            "0",
+            "2/5",
+            "3/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "3",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ]
+  },
+  "reported_findings_source_sha256": "ac2c3bf119a706c2328554297d3bf4d07b742975e166f53a415b1a77b822bad3",
+  "historical_source_archive": {
+    "path": "runs/bounded_affine_minimax_review/initial_revision/bounded_affine_minimax.py",
+    "sha256": "ac2c3bf119a706c2328554297d3bf4d07b742975e166f53a415b1a77b822bad3"
+  },
+  "initial_source_snapshot_label": "First retained snapshot taken after concurrentrootAPIhardening; findings apply to separatelyarchivedac2c3bf version",
+  "guard_replay_python": "from pathlib import Path\nimport sys,json,hashlib,numpy as np\nsys.path.insert(0,str(Path(\"controlled_furrowing/scripts\").resolve()))\nimport bounded_affine_minimax as m\nbad=[(\"residual_string\",lambda:m.solve_minimax(\"2\",[[1]],[(0,0)])),(\"residual_matrix\",lambda:m.solve_minimax(np.array([[2]]),[[1]],[(0,0)])),(\"jacobian_string\",lambda:m.solve_minimax([2],\"1\",[(0,0)])),(\"jacobian_string_row\",lambda:m.solve_minimax([2],[\"1\"],[(0,0)])),(\"bounds_string\",lambda:m.solve_minimax([2],[[1]],\"00\")),(\"bound_pair_string\",lambda:m.solve_minimax([2],[[1]],[\"00\"])),(\"bounds_ndim\",lambda:m.solve_minimax([2],[[1]],np.array([0,0]))),(\"missing_certificate_key\",lambda:m.verify_certificate([2],[[1]],[(0,0)],{\"primal_exact\":[0,2]})),(\"string_primal\",lambda:m.verify_certificate([2],[[1]],[(0,0)],{\"primal_exact\":\"02\",\"dual_exact\":[1,0,0,1,0]})),(\"string_dual\",lambda:m.verify_certificate([2],[[1]],[(0,0)],{\"primal_exact\":[0,2],\"dual_exact\":\"10010\"})),(\"nan_J\",lambda:m.solve_minimax([2],[[np.nan]],[(0,0)])),(\"infinite_bound\",lambda:m.solve_minimax([2],[[1]],[(0,np.inf)])),(\"certificate_dimension\",lambda:m.verify_certificate([2],[[1]],[(0,0)],{\"primal_exact\":[0,2,3],\"dual_exact\":[1,0,0,1,0]}))]\ng={}\nfor name,f in bad:\n try:f();g[name]=False\n except ValueError:g[name]=True\nz=m.solve_minimax([10**1000],[[1]],[(0,0)]);g[\"finite_exact_float_overflow_UNRESOLVED\"]=z[\"status\"]==\"UNRESOLVED_FLOATING_PROPOSAL\"\nz=m.solve_minimax(np.array([2.]),np.array([[1.]]),np.array([[0.,0.]]));g[\"valid_numpy_arrays_supported\"]=z[\"status\"]==\"CERTIFIED_DEFINED_AFFINE_LP\"and z[\"loss_exact\"]==\"2\"\nassert all(g.values());guard_summary={\"checks\":g,\"all_checks_pass\":True,\"source_sha256\":hashlib.sha256(Path(m.__file__).read_bytes()).hexdigest()}\n",
+  "guard_review": {
+    "checks": {
+      "residual_string": true,
+      "residual_matrix": true,
+      "jacobian_string": true,
+      "jacobian_string_row": true,
+      "bounds_string": true,
+      "bound_pair_string": true,
+      "bounds_ndim": true,
+      "missing_certificate_key": true,
+      "string_primal": true,
+      "string_dual": true,
+      "nan_J": true,
+      "infinite_bound": true,
+      "certificate_dimension": true,
+      "finite_exact_float_overflow_UNRESOLVED": true,
+      "valid_numpy_arrays_supported": true
+    },
+    "all_checks_pass": true,
+    "source_sha256": "a0156acb5e9a3574f87033f2bb821b5dbd8ebe9d4940d8996ed8b15be6368d9d"
+  },
+  "helper_source_sha256": "a0156acb5e9a3574f87033f2bb821b5dbd8ebe9d4940d8996ed8b15be6368d9d",
+  "cohort_replay_python": "from pathlib import Path\nfrom fractions import Fraction as F\nimport csv,json,hashlib,math,sys,datetime\np=Path(\"controlled_furrowing\");d=p/\"runs/material_cohort_descent_v1\";sha=lambda x:hashlib.sha256(x.read_bytes()).hexdigest();read=lambda x:json.loads(x.read_text())\nproto=read(d/\"protocol.json\");res=read(d/\"results.json\");job=read(d/\"job.json\");v2=d/\"exact_extraction_v2\";ep=read(v2/\"protocol.json\");exact=read(v2/\"exact_candidates.json\");old=read(d/\"exact_candidates.json\");oldproto=read(d/\"exact_extraction_protocol.json\")\nassert job[\"status\"]==\"FINISHED\"and job[\"records_verified\"]==17 and job[\"result_sha256\"]==sha(d/\"results.json\")\nassert res[\"status\"]==\"COMPLETE_17_RECORD_LOCAL_AFFINE_DESCENT\"and res[\"original_five_gate_goal_achieved\"]is False and res[\"new_equilibrium_solves\"]==0\nassert res[\"protocol_sha256\"]==sha(d/\"protocol.json\")and res[\"source_hashes\"]==proto[\"sources\"]\nfor name,h in proto[\"sources\"].items():assert sha(p/\"scripts\"/name)==h,name\nassert ep[\"helper_sha256\"]==sha(p/\"scripts/bounded_affine_minimax.py\")and ep[\"generator_sha256\"]==sha(v2/\"extract.py\")and ep[\"cohort_protocol_sha256\"]==sha(d/\"protocol.json\")and ep[\"cohort_results_sha256\"]==sha(d/\"results.json\")\nassert exact[\"protocol_sha256\"]==sha(v2/\"protocol.json\")and old[\"protocol_sha256\"]==sha(d/\"exact_extraction_protocol.json\")\nassert oldproto[\"helper_sha256\"]==sha(p/\"runs/bounded_affine_minimax_review/initial_revision/bounded_affine_minimax.py\")\nassert oldproto[\"cohort_results_sha256\"]==ep[\"cohort_results_sha256\"]and oldproto[\"cohort_protocol_sha256\"]==ep[\"cohort_protocol_sha256\"]\nassert exact[\"status\"]==old[\"status\"]==\"PASS_ALL_FOUR_EXACT_AFFINE_CANDIDATES\"\nsource={a[\"record_id\"]:a for a in csv.DictReader((p/\"data/derived/calibration_small_18um.csv\").open())};keys=(\"maximum_shortening_um\",\"region_averaged_shortening_um\",\"apical_max_shortening_um\",\"basal_max_shortening_um\");assert len(source)==17\nbase=read(p/\"runs/joint_gain_extension_v2/direct_results.json\");assert sha(p/\"runs/joint_gain_extension_v2/direct_results.json\")==proto[\"baseline_direct_results_sha256\"]\nassert sha(p/\"evidence/joint_direct_independent_review.json\")==proto[\"independent_direct_review_sha256\"]\nfields={a[\"file\"]:a for a in base[\"records\"]};gain=F(proto[\"baseline_gain_exact\"]);records=[];fd_intervals=0\nsys.path.insert(0,str((p/\"scripts\").resolve()));import material_cohort_descent as frozen\nfor i,(entry,rr)in enumerate(zip(proto[\"records\"],res[\"records\"])):\n assert entry[\"record_id\"]==rr[\"record_id\"]and F(entry[\"dose_exact\"])==F(source[entry[\"record_id\"]][\"activation_magnitude\"])\n assert set(entry[\"observed_exact\"])==set(keys)\n for k in keys:assert F(entry[\"observed_exact\"][k])==F(source[entry[\"record_id\"]][k])\n assert sha(p/entry[\"field\"])==entry[\"field_sha256\"]==fields[entry[\"field\"]][\"sha256\"]\n assert {\"variant\":proto[\"baseline_variant\"],\"record_id\":entry[\"record_id\"]}in fields[entry[\"field\"]][\"uses\"]\n assert F(fields[entry[\"field\"]][\"requested_strength_exact\"])==gain*F(entry[\"dose_exact\"])\n assert sha(p/rr[\"file\"])==rr[\"sha256\"];row=read(p/rr[\"file\"]);assert row[\"index\"]==i and row[\"record_id\"]==entry[\"record_id\"]and row[\"input_field\"]==entry[\"field\"]and row[\"input_field_sha256\"]==entry[\"field_sha256\"]\n folder=(p/rr[\"file\"]).parent;assert sha(folder/\"mechanical_tangents.npz\")==row[\"mechanical_archive_sha256\"]and sha(folder/\"mechanical_verification.json\")==row[\"mechanical_verification_sha256\"]\n assert all(read(folder/\"mechanical_verification.json\")[\"checks\"].values())\n state=read(p/entry[\"field\"]);assert state[\"parameters\"]==proto[\"parameters\"]and state[\"activation_strength\"]==row[\"activation_strength\"]\n assert frozen.graphs(state)==row[\"baseline_endpoint_intervals\"]\n assert [a[\"coordinate\"]for a in row[\"coordinate_diagnostics\"]]==proto[\"active_LP_columns\"]\n for coord in row[\"coordinate_diagnostics\"]:\n  assert len(coord[\"two_steps\"])==2 and coord[\"two_steps\"][0][\"step\"]==2*coord[\"two_steps\"][1][\"step\"]and coord[\"trials\"][-1][\"accepted_graph_difference_pair\"]\n  for pair in coord[\"two_steps\"]:\n   den=2*F.from_float(pair[\"step\"])\n   for variant,values in pair[\"central_difference_intervals\"].items():\n    for k,bounds in values.items():\n     a,b=map(F,pair[\"endpoint_intervals\"][\"1\"][variant][k]);c,e=map(F,pair[\"endpoint_intervals\"][\"-1\"][variant][k]);assert list(map(F,bounds))==[(a-e)/den,(b-c)/den];fd_intervals+=1\n records.append(row)\nassert len(records)==17\n# Build and verify each affine LP independently; do not call the root LP verifier.\ndef independent_certificate(r,J,bs,cert):\n A=[];b=[];n=len(bs)+1\n for v,row in zip(r,J):A.extend([row+[F(-1)],[-a for a in row]+[F(-1)]]);b.extend([-v,v])\n for j,(lo,hi)in enumerate(bs):\n  u=[F(0)]*n;u[j]=1;A.append(u);b.append(hi);v=[F(0)]*n;v[j]=-1;A.append(v);b.append(-lo)\n A.append([F(0)]*(n-1)+[F(-1)]);b.append(F(0));x=list(map(F,cert[\"primal_exact\"]));la=list(map(F,cert[\"dual_exact\"]));assert len(x)==n and len(la)==len(A)\n assert all(sum(a*z for a,z in zip(row,x))<=v for row,v in zip(A,b));assert all(v>=0 for v in la)\n assert all(sum(la[i]*A[i][j]for i in range(len(A)))==(-1 if j==n-1 else 0)for j in range(n));assert -sum(v*z for v,z in zip(la,b))==x[-1];return x\nsummary=[];intercepts=derivatives=0\nassert len(res[\"candidates\"])==len(exact[\"candidates\"])==len(old[\"candidates\"])==4\nassert len({a[\"variant\"]for a in res[\"candidates\"]})==4\nfor candidate in res[\"candidates\"]:\n name=candidate[\"variant\"];lp=candidate[\"affine_LP\"];new=next(a for a in exact[\"candidates\"]if a[\"variant\"]==name);hist=next(a for a in old[\"candidates\"]if a[\"variant\"]==name);rvec=[];J=[];labels=[]\n for rec,row in zip(proto[\"records\"],records):\n  for k in keys:\n   lo,hi=map(F,row[\"baseline_endpoint_intervals\"][name][k]);rvec.append((lo+hi)/2-F(rec[\"observed_exact\"][k]));labels.append({\"record_id\":rec[\"record_id\"],\"observable\":k});der=[]\n   for coord in row[\"coordinate_diagnostics\"]:\n    a,b=map(F,coord[\"two_steps\"][1][\"central_difference_intervals\"][name][k]);der.append(F.from_float(float((a+b)/2)))\n   J.append(der)\n bs=[tuple(F.from_float(x)for x in b)for b in proto[\"trust_box\"]]\n assert labels==candidate[\"all68_constraint_order\"]and rvec==list(map(F,lp[\"affine_residual_intercepts_exact\"]))and J==[list(map(F,row))for row in lp[\"affine_derivative_coefficients_exact\"]]and bs==[tuple(map(F,b))for b in lp[\"trust_box_exact\"]]\n assert len(rvec)==68 and len(J)==68 and all(len(row)==5 for row in J);intercepts+=68;derivatives+=340\n step=list(map(F,lp[\"step_exact\"]));lam=list(map(F,lp[\"dual_multipliers_exact\"]));assert len(lam)==136 and all(v>=0 for v in lam)and sum(lam)<=1 and all(lo<=s<=hi for s,(lo,hi)in zip(step,bs))\n residual=[v+sum(a*s for a,s in zip(row,step))for v,row in zip(rvec,J)];upper=max(map(abs,residual));D=J+[[-a for a in row]for row in J];sr=rvec+[-a for a in rvec];c=[sum(lam[i]*D[i][j]for i in range(136))for j in range(5)];lower=sum(lam[i]*sr[i]for i in range(136))+sum(min(a*lo,a*hi)for a,(lo,hi)in zip(c,bs))\n assert residual==list(map(F,lp[\"affine_predicted_residuals_exact\"]))and[lower,upper]==list(map(F,lp[\"affine_optimum_interval_exact\"]))and upper-lower==F(lp[\"exact_gap_um\"])and upper-lower<=F(1,10**8)\n x=independent_certificate(rvec,J,bs,new[\"exact_affine_result\"][\"certificate\"]);oldx=independent_certificate(rvec,J,bs,hist[\"exact_affine_result\"][\"certificate\"]);loss=x[-1]\n assert loss==oldx[-1]==F(new[\"exact_affine_result\"][\"loss_exact\"])and lower<=loss<=upper\n assert list(map(F,new[\"exact_affine_result\"][\"step_exact\"]))==x[:-1]\n z=list(map(float,x[:-1]));bp=proto[\"parameters\"];param={\"apical_area_modulus\":bp[\"apical_area_modulus\"]*math.exp(z[0]),\"basal_area_modulus\":bp[\"basal_area_modulus\"]*math.exp(z[1]),\"apical_surface_tension\":bp[\"apical_surface_tension\"]+z[2],\"basal_surface_tension\":bp[\"basal_surface_tension\"]*math.exp(z[3]),\"common_gain\":float(gain)*math.exp(z[4]),\"bulk_fixed\":5000}\n assert param==new[\"proposed_material_parameters_display\"]and all(v>=0 for v in param.values());assert new[\"no_new_equilibrium_verification\"]and exact[\"new_equilibrium_solves\"]==0 and exact[\"original_five_gate_goal_achieved\"]is False\n summary.append({\"variant\":name,\"baseline_loss_um\":float(max(map(abs,rvec))),\"affine_exact_loss\":str(loss),\"affine_loss_um\":float(loss),\"predicted_reduction_um\":float(max(map(abs,rvec))-loss),\"exact_step\":list(map(str,x[:-1])),\"proposed_parameters_display\":param,\"weak_dual_gap_exact\":str(upper-lower),\"both_historical_and_current_certificates_verified\":True})\ncohort_summary={\"cohort_protocol_sha256\":sha(d/\"protocol.json\"),\"cohort_results_sha256\":sha(d/\"results.json\"),\"candidate_file_sha256\":sha(v2/\"exact_candidates.json\"),\"exact_extraction_protocol_sha256\":sha(v2/\"protocol.json\"),\"helper_source_sha256\":sha(p/\"scripts/bounded_affine_minimax.py\"),\"records\":17,\"variants\":4,\"observed_scalars\":68,\"candidate_scalar_predictions\":272,\"intercepts_reconstructed\":intercepts,\"selected_derivatives_reconstructed\":derivatives,\"finite_difference_interval_arithmetic_reconstructed\":fd_intervals,\"all17_baseline_graph_observers_replayed\":True,\"all17_archive_and_mechanical_verification_hashes_checked\":True,\"source_bindings\":len(proto[\"sources\"]),\"new_equilibrium_solves\":0,\"variant_results\":summary,\"scope\":\"Exact defined affineLP certificates and table dataflow; no rigorous mechanical derivative/nonlinear improvement or full identifiedset claim\"}\nassert intercepts==272 and derivatives==1360 and fd_intervals==2720\n",
+  "cohort_review": {
+    "cohort_protocol_sha256": "dbec2723481dc9a3a66c6dbde0648721b7283b734b33d532477e2d3357d47c47",
+    "cohort_results_sha256": "70c3b02bd4a26e57181875715af5ad3865688a76374ca26de67bc7ac10d89259",
+    "candidate_file_sha256": "a87d92a1b9216e5b94ae2ee68944e10aac46711e5c854c78d8da7e19842d7758",
+    "exact_extraction_protocol_sha256": "a8b466e3045058386aca36020fa9eff00418a8b6cd164971f1b5a72461e3965d",
+    "helper_source_sha256": "a0156acb5e9a3574f87033f2bb821b5dbd8ebe9d4940d8996ed8b15be6368d9d",
+    "records": 17,
+    "variants": 4,
+    "observed_scalars": 68,
+    "candidate_scalar_predictions": 272,
+    "intercepts_reconstructed": 272,
+    "selected_derivatives_reconstructed": 1360,
+    "finite_difference_interval_arithmetic_reconstructed": 2720,
+    "all17_baseline_graph_observers_replayed": true,
+    "all17_archive_and_mechanical_verification_hashes_checked": true,
+    "source_bindings": 14,
+    "new_equilibrium_solves": 0,
+    "variant_results": [
+      {
+        "variant": "current_disk__spatial_max",
+        "baseline_loss_um": 5.379835674801397,
+        "affine_exact_loss": "33981643705766749755874826294436098193649892980903036065718133213514713063447783017759919007350372069513275760879822724381530849580127597431261639640372875570743397431344710960288762933071258362632506405375188367/6555274280530715788127712066232153045254150130701393689057077518535084957438540804876536484235501017161089220984750924245166024830667943785630677926440841662903350391042517732565964523955612283053486899200000000",
+        "affine_loss_um": 5.183862985976476,
+        "predicted_reduction_um": 0.19597268882492164,
+        "exact_step": [
+          "3602879701896397/36028797018963968",
+          "-3602879701896397/36028797018963968",
+          "0",
+          "3602879701896397/36028797018963968",
+          "-1468951401395732605262482152691445382597851720885731419221804376972909553945412948939678098925351722355854035029532436981232578651047317999401447440139609024215168674633644414239100789140140627753/46578025209461172466715425359724300202331549277100419381675617945398108740836141840280053004871526078723954505170119405798104316081292664262254830919409028403090292094948081090180128597606400000000"
+        ],
+        "proposed_parameters_display": {
+          "apical_area_modulus": 0.22103418361512955,
+          "basal_area_modulus": 1.809674836071919,
+          "apical_surface_tension": 0.0,
+          "basal_surface_tension": 2.2103418361512954,
+          "common_gain": 7.812654504261062,
+          "bulk_fixed": 5000
+        },
+        "weak_dual_gap_exact": "817209002950364789788781629043111120967841853849565336502390039209868007297451518418880974221749437114033573681506353378184776367312235279910398112996727803421012012003615043886119348130022219717/2934049662054369586623091116193372741918448584645612959776027840099150090707154392558074460170189302712772038550987077137680322232170904361459761449984721237485764058088556045192380359257168643486562385920000000",
+        "both_historical_and_current_certificates_verified": true
+      },
+      {
+        "variant": "current_disk__regional_mean",
+        "baseline_loss_um": 6.467716270861168,
+        "affine_exact_loss": "1351305361306596375557233130725669248508887206537624203457080705193292131946920175883792804005423292993940417956334728712678266249134453037962462196532231691713183991107482251702670884850710259/222375218531424979014680132437310380882873428515389981216384500544271917738657247700611640855200471583943305218704690343177717464654271707442282411192288027260001707121815649861096089751388160",
+        "affine_loss_um": 6.076690425447008,
+        "predicted_reduction_um": 0.3910258454141601,
+        "exact_step": [
+          "-3602879701896397/36028797018963968",
+          "-3602879701896397/36028797018963968",
+          "0",
+          "3602879701896397/36028797018963968",
+          "3602879701896397/36028797018963968"
+        ],
+        "proposed_parameters_display": {
+          "apical_area_modulus": 0.18096748360719192,
+          "basal_area_modulus": 1.809674836071919,
+          "apical_surface_tension": 0.0,
+          "basal_surface_tension": 2.2103418361512954,
+          "common_gain": 8.910962189815443,
+          "bulk_fixed": 5000
+        },
+        "weak_dual_gap_exact": "0",
+        "both_historical_and_current_certificates_verified": true
+      },
+      {
+        "variant": "current_radial_line__spatial_max",
+        "baseline_loss_um": 6.183269518221887,
+        "affine_exact_loss": "66695017978378570538432281681512021000262901374783302967583526529458499616342637985782137776350041781451070003523727254176377925367875041393227541659/12008512807475228928849786278863832182740660362486645871799329949211486009504030652826744461857656097716103331595311896979426389672242310021120000000",
+        "affine_loss_um": 5.553978169291813,
+        "predicted_reduction_um": 0.629291348930073,
+        "exact_step": [
+          "3602879701896397/36028797018963968",
+          "3602879701896397/36028797018963968",
+          "10387696146482117424024903406940781348970967586881665012608439443411943216158871630679329968609875932028723980143658287269932022640011/1311881337179923752821263349499726443594039814920166835171604432511050201498821872456880982590103190705016009497384178076079882240000000",
+          "3602879701896397/36028797018963968",
+          "-3602879701896397/36028797018963968"
+        ],
+        "proposed_parameters_display": {
+          "apical_area_modulus": 0.22103418361512955,
+          "basal_area_modulus": 2.2103418361512954,
+          "apical_surface_tension": 0.007918167483662778,
+          "basal_surface_tension": 2.2103418361512954,
+          "common_gain": 7.295678784317019,
+          "bulk_fixed": 5000
+        },
+        "weak_dual_gap_exact": "60598330972566706218037703733665671021117212879512256935574224512897741336772621667836560741997049268516709823254557552973616167704003/204321362778072111232296897578430733912119101966360587371924210696817165163802940066594013262307858996600302935826481867940852997279143071580160000000",
+        "both_historical_and_current_certificates_verified": true
+      },
+      {
+        "variant": "current_radial_line__regional_mean",
+        "baseline_loss_um": 6.183269518221887,
+        "affine_exact_loss": "271450569845553958675664012687110551026678949121343265423903355051535826280531463161093896787658711975219836920206443977951501087681881174865792379211/45043265218851599238061207520331131120067244370201100080484664323823299588357543613318753939539780430920048409040024191713331850080855108091904000000",
+        "affine_loss_um": 6.026440768151637,
+        "predicted_reduction_um": 0.15682875007024938,
+        "exact_step": [
+          "3602879701896397/36028797018963968",
+          "-3602879701896397/36028797018963968",
+          "0",
+          "3602879701896397/36028797018963968",
+          "-5814788198246248632121798601372447003685192678296207125848277418995439738249439862010717832637482975389752911184908821486357243900837/266709707468088192890228116503284704682547382801049096678060504950636889918044069326434180427179046255759262897318868300742000640000000"
+        ],
+        "proposed_parameters_display": {
+          "apical_area_modulus": 0.22103418361512955,
+          "basal_area_modulus": 1.809674836071919,
+          "apical_surface_tension": 0.0,
+          "basal_surface_tension": 2.2103418361512954,
+          "common_gain": 7.8890860266396,
+          "bulk_fixed": 5000
+        },
+        "weak_dual_gap_exact": "4083079077184685725184927321999638521413606626500466001292039621599254256510576330027732994704146050334051810400581031752711848882189/13621424185204807415486459838562048927474606797757372491461614046454477677586862671106267550820523933106686862388432124529390199818609538105344000000",
+        "both_historical_and_current_certificates_verified": true
+      }
+    ],
+    "scope": "Exact defined affineLP certificates and table dataflow; no rigorous mechanical derivative/nonlinear improvement or full identifiedset claim"
+  },
+  "cohort_protocol_sha256": "dbec2723481dc9a3a66c6dbde0648721b7283b734b33d532477e2d3357d47c47",
+  "cohort_results_sha256": "70c3b02bd4a26e57181875715af5ad3865688a76374ca26de67bc7ac10d89259",
+  "candidate_file_sha256": "a87d92a1b9216e5b94ae2ee68944e10aac46711e5c854c78d8da7e19842d7758",
+  "exact_extraction_protocol_sha256": "a8b466e3045058386aca36020fa9eff00418a8b6cd164971f1b5a72461e3965d",
+  "checks": {
+    "weak_duality_sign_and_four_obligations_independently_verified": true,
+    "all206_analytic_vertex_permutation_checks": true,
+    "all15_guard_checks": true,
+    "root32tests_hash_bound_and_PASS": true,
+    "historical_source_bytes_retained_and_hash_match": true,
+    "all17_source_field_archive_associations": true,
+    "all17_baseline_graph_observers_replayed": true,
+    "all272_intercepts_reconstructed": true,
+    "all1360_derivative_coefficients_reconstructed": true,
+    "all2720_FD_interval_arithmetic_reconstructed": true,
+    "all4_historical_and_v2_primaldual_certificates_valid": true,
+    "all4_producer_weakdual_intervals_and_material_transforms_reconstructed": true,
+    "terminal_cohort_process_absent_job_FINISHED": true,
+    "no_new_equilibrium_or_physical_optimum_claim": true,
+    "documentation_links_and_math_delimiters_pass": true,
+    "current_helper_and_authoritative_candidate_hashes_match": true
+  },
+  "terminal_process_observation": {
+    "pid": 35644,
+    "process_absent": true,
+    "job_status": "FINISHED",
+    "author_reported_session96368_exitcode": 0
+  },
+  "documentation_sha256": "a61fecd10ccdf180944b17b44e9fd728c865ac9f19c8f641efe7fdf235f2496f",
+  "root_test_receipt_sha256": "c8b9ee2b99ff4ae2a404f45cc99ac0dcb3f927d48fcadb8370fa6ef9da8e2fba",
+  "finalized_utc": "2026-11-19T12:48:55.355469+00:00",
+  "chronology_clarification": "Findings reproduced against originalac2c3bf source beforehardening; laterinitial_source_snapshot field captured currenthardeneda0156ac revision. The originalarchivedbytes are separatelyhashverified, and bothactualLPcertificates werechecked."
+}

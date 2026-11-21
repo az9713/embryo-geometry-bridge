@@ -1,0 +1,25 @@
+{
+  "status": "PASS_OBSERVED_INDEPENDENT_ALL36_CACHED_MINIMUM_SCALAR_READBACK_EXIT",
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "c68b7a",
+  "receipt_sha256": "88cd552e7240bffd7f1c6596eb6671fa2a9faf5836a9ae086ed7e96f538a7aaf",
+  "source_sha256": "06f384bd2333dfde5f8ff439135c61f121c3c19dcc8e0650b66c66267e42024c",
+  "build_attempts": [
+    {
+      "chunk_id": "ab10ad",
+      "observed_exit_code": 1,
+      "reason": "Input closure includes source files. The first verifier attempted to parse all hashed bytes as JSON."
+    },
+    {
+      "chunk_id": "28129c",
+      "observed_exit_code": 1,
+      "reason": "The first byte digest reader expected C-order storage. Some stored NumPy preconditioner members are Fortran-order."
+    },
+    {
+      "chunk_id": "07b740",
+      "observed_exit_code": 1,
+      "reason": "The archived recenter packet path and digest live in the exact contract. The first readback assumed this separate packet was already among the 261 direct producer links."
+    }
+  ],
+  "new_mechanical_or_numeric_matrix_jobs": 0
+}

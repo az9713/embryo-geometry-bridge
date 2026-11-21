@@ -1,0 +1,12 @@
+{
+  "prediction_sha256": "59d20d02ce903c1c4e4e1d04382686d17366601ea9ad39bcdfe2b21d2037c639",
+  "hashes": {
+    "PROTOCOL.json": "2fcd3f80e4427cc9b88ee3903fefe1f360f3cc158b35fd2838373b6535cc5524",
+    "scripts/scalar_reproduction.py": "b5ae2000251c4db17d534ff4a6cdde747606f2ec631b254adf7c0bc84c101869",
+    "data/derived/calibration_small_18um.csv": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+    "data/derived/large_inputs_only.json": "eb10f4a4c31b4c86483c1d8338e21f22536fdb2e2a50ca6cea2fc90c7dde96f2"
+  },
+  "responses_loaded_by_prediction": false,
+  "scope": "Computational data-flow separation; authors already know publication outcomes",
+  "evaluation_response_path_exists": true
+}

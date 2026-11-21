@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JOINT-CONSTRAINT-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review of the joint interval-constraint evaluator</h1>
+<p><strong>PASS for exact interval logic and the declared paired-permutation sensitivity.</strong> The review independently checked all 65,536 bipartite graphs with four vertices on each side, 131 smaller rectangular/empty graphs, 560 interval cases, 21 invalid-input cases and the actual 68-entry zero-response baseline. This does not establish a fitted mechanical model, valid forward enclosures, source-operator equivalence or a physical identified set.</p>
+<p>Reviewed files are <a href="../scripts/joint_calibration_contract.py">the evaluator</a>, <a href="../evidence/joint_calibration_contract_verification.json">its 30-check receipt</a>, <a href="../evidence/joint_zero_activation_baseline.json">the baseline</a>, and <a href="JOINT-CALIBRATION-CONSTRAINTS.html">the mathematical contract</a>. The <a href="../evidence/joint_calibration_contract_independent_review.json">independent receipt</a> retains results, exact source hashes, the original guard findings and a read-only replay program. The <a href="JOINT-OBSERVATION-CONTRACT.html">source-observation audit</a> remains necessary: exact constraints cannot repair an undefined measurement operator.</p>
+<h2>Interval acceptance is conditional and conservative</h2>
+<p>For one recorded value <span class="math" data-tex="y"></span>, a supplied closed prediction interval <span class="math" data-tex="[\ell,u]"></span>, and an explicit allowance <span class="math" data-tex="\delta\ge0"></span>, the evaluator returns:</p>
+<ul>
+<li><strong>IN</strong> when the entire interval lies in <span class="math" data-tex="[y-\delta,y+\delta]"></span>.</li>
+<li><strong>OUT</strong> when the two intervals are disjoint.</li>
+<li><strong>UNRESOLVED</strong> otherwise.</li>
+</ul>
+<p>The review checked 560 combinations of signed observations, ordered integer endpoint pairs and rational allowances, including equality at boundaries. This independently reproduces both the minimum and maximum possible absolute residuals. Joint canonical membership is OUT if any included constraint is OUT, IN if every constraint is IN, and unresolved otherwise.</p>
+<p>IN is sound <strong>if</strong> a fixed candidate's actual output is enclosed by each supplied interval and the measured quantities match. It is not a test that those premises hold. For example, the coupled output vector <span class="math" data-tex="(t,1-t)"></span>, <span class="math" data-tex="0\le t\le1"></span>, has both scalar coordinate intervals overlapping zero, but no jointly zero response. The evaluator correctly leaves zero-tolerance membership unresolved rather than declaring a realizable fit.</p>
+<p>The generic function requires prediction IDs and observable keys to match the observation mapping supplied by its caller. It does not itself prove that an arbitrary caller supplied the authoritative 17-record cohort. The source loader and actual baseline test establish that the recorded application includes all 17 records and all 68 entries.</p>
+<h2>Unknown pairing preserves intact component pairs</h2>
+<p>The optional alternative keeps the dose/maximum/mean association fixed and permits one bijection of <strong>paired</strong> apical/basal source columns. A possible edge means both component intervals intersect their respective allowed bands. A guaranteed edge means both intervals are wholly inside those bands.</p>
+<p>If fixed maximum/mean constraints are IN and a guaranteed-edge perfect matching exists, one fixed permutation works for every output enclosed by the intervals: conditional IN is justified. If a fixed constraint is OUT, or even the possible-edge graph has no perfect matching, OUT is justified. A possible matching without a guaranteed one remains unresolved. Unknown measurement identities do not justify independently permuting apical and basal values.</p>
+<p>The review explicitly verified:</p>
+<ul>
+<li>A complete swap of two intact component pairs is canonical OUT but optional-permutation IN.</li>
+<li>Observed pairs <span class="math" data-tex="(0,1)"></span> and <span class="math" data-tex="(1,0)"></span> cannot be used to manufacture the pair <span class="math" data-tex="(0,0)"></span> by separate component shuffles: OUT.</li>
+<li>Two predicted records competing for one possible observed pair yield a genuine Hall deficit: OUT.</li>
+<li>Wide component intervals with only possible matches remain unresolved.</li>
+<li>Fixed maximum/mean OUT overrides a component matching; fixed maximum/mean unresolved prevents IN.</li>
+</ul>
+<p>This is a conservative identity-nuisance sensitivity, not verification of specimen identity or evidence that the author's column order was wrong. The canonical assumption remains distinct.</p>
+<h2>Independent graph verification and Hall witnesses</h2>
+<p>The root implementation uses augmenting paths. The review instead computed maximum cardinality from the largest Hall deficiency by enumerating all subsets of left vertices:</p>
+<div class="math display" data-tex="
+\nu(G)=&#124;L&#124;-\max_{S\subseteq L}(&#124;S&#124;-&#124;N(S)&#124;).
+"></div>
+
+<p>For each of the 65,536 four-by-four graphs, the resulting cardinality agrees with the root implementation. Every returned matching uses distinct right vertices on valid edges. For all 27,713 deficient graphs, the reported Hall set has exactly the stated neighborhood and positive deficit. Another 131 rectangular/empty graphs also agree. This supplies a separate finite reference calculation, rather than rerunning the implementation's own search as its oracle.</p>
+<p>The underlying matching and Hall-obstruction principles are standard. Exhaustive small-graph tests are implementation evidence; they are not experimental validation or a novelty claim.</p>
+<h2>Input guard findings were corrected</h2>
+<p>The first review found two input-domain problems: a string such as <code>'12'</code> could be interpreted as a two-endpoint interval, and booleans or in-range noninteger vertices could pass the matching range check. A Boolean could silently act as an integer vertex; a floating vertex could fail later with an indexing error.</p>
+<p>The corrected code requires an interval list/tuple of two ordered finite rational values, a non-Boolean integral right-vertex count, and non-Boolean integral vertices checked before sorting/deduplication and range validation. The review tested these corrections, negative/out-of-range vertices, malformed rows, nonfinite/Boolean values, missing/extra record IDs, missing observable keys, missing allowances and negative allowances. All 21 cases reject with ValueError. Negative <strong>predicted responses</strong> remain allowed; signed motion is meaningful and must not be rejected merely to make a source inequality hold.</p>
+<h2>Actual source fractions and the zero-response subfamily</h2>
+<p>The independent calculation reconstructs the 17 records from the frozen small CSV using exact fractions. Its zero-response thresholds agree exactly with the retained baseline:</p>
+<table>
+<thead>
+<tr>
+<th>Observable</th>
+<th style="text-align: right;">Exact decimal threshold (µm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum shortening</td>
+<td style="text-align: right;">12.73324306</td>
+</tr>
+<tr>
+<td>Region-averaged shortening</td>
+<td style="text-align: right;">8.38319196</td>
+</tr>
+<tr>
+<td>Apical entry</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>Basal entry</td>
+<td style="text-align: right;">4.36972161</td>
+</tr>
+</tbody>
+</table>
+<p>At these allowances, all 68 zero-response constraints are IN under either pairing convention. Tightening any one allowance by 10⁻⁸ µm makes the result OUT, independently checked for both conventions. These are the maximum observed values and a computational baseline—not estimated errors or recommended tolerances.</p>
+<p>The baseline's mechanical interpretation is conditional on the declared flat fixed-rim, zero-gain, zero-reference model. Its variational argument is consistent: the bulk singular-value contributions and area-spring penalties are nonnegative; fixed-rim membrane area cannot fall below the projected disk; nonnegative tensions therefore cannot lower the total below the flat reference. This does not make zero response an adequate biological model or produce a nonzero transfer prediction.</p>
+<p>The module performs no optimization, chooses no discrepancy law and validates no continuum response. It supplies a checked membership predicate that a subsequent physical inference calculation may use after its observation definitions and forward bounds are justified.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

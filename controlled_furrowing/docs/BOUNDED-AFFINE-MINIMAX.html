@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BOUNDED-AFFINE-MINIMAX</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Exact certificates for a local multivariate calibration proposal</h1>
+<p><strong>The bounded affine minimax subproblem can be certified exactly even when its coefficients originated in approximate mechanical sensitivities.</strong> These are different claims: an exact LP optimum does not certify a nonlinear mechanical optimum or the accuracy of a derivative. The <a href="../scripts/bounded_affine_minimax.py">implementation</a>, <a href="../evidence/bounded_affine_minimax_tests.json">32-check synthetic receipt</a> and <a href="BOUNDED-AFFINE-MINIMAX-REVIEW.html">independent review</a> retain that distinction.</p>
+<h2>Defined local problem</h2>
+<p>For residual vector <span class="math" data-tex="r"></span>, response matrix <span class="math" data-tex="D"></span>, and a declared numerical step box <span class="math" data-tex="\ell\le h\le u"></span>, solve</p>
+<div class="math display" data-tex="
+ \min_{h,t}t\quad\text{such that}\quad
+ -t\le r_i+D_i h\le t\quad\text{for all }i,\qquad
+ \ell\le h\le u,\quad t\ge0.
+"></div>
+
+<p>All 68 endpoint constraints can enter this problem. A step bound limits one local proposal; it does not restrict the scientific parameter domain or certify that the linear approximation holds throughout the box. The actual material inference must still evaluate the proposed material and gain through nonlinear mechanics, preserve its physical constraints, and propagate the remaining compatible set.</p>
+<p>Coefficient conversion is explicit. The helper preserves supplied exact <code>Fraction</code> values or rational strings. Floating inputs alone become the exact decimal values of <code>str(float(x))</code>. To certify an existing binary-rounded surrogate without changing its definition, callers pass <code>Fraction.from_float(x)</code> rather than silently converting its coefficients to a different convention.</p>
+<h2>Proof by primal and dual witnesses</h2>
+<p>Collect the signed-residual, box and nonnegative-loss inequalities into</p>
+<div class="math display" data-tex="
+ Ax\le b,\qquad x=(h,t),\qquad c=(0,\ldots,0,1).
+"></div>
+
+<p>For any <span class="math" data-tex="\lambda\ge0"></span> with <span class="math" data-tex="A^T\lambda=-c"></span>, multiplication of the inequalities gives</p>
+<div class="math display" data-tex="
+ -c^Tx=\lambda^TAx\le\lambda^Tb,
+ \qquad\text{hence}\quad c^Tx\ge-\lambda^Tb.
+"></div>
+
+<p>If a feasible <span class="math" data-tex="x_*"></span> also satisfies <span class="math" data-tex="c^Tx_*=-\lambda^Tb"></span>, it attains that lower bound and is globally optimal for this defined LP. This argument is elementary linear-programming duality, not a new optimization method.</p>
+<p>HiGHS supplies floating candidate active constraints and multipliers. A separate rational elimination reconstructs a proposed primal vertex and dual support. The code then checks <strong>every</strong> primal inequality, nonnegativity of <strong>every</strong> multiplier, exact stationarity and equality of the two objective values. Unsuccessful basis recovery returns UNRESOLVED rather than accepting the floating optimizer. The finite basis search is a computational recovery budget, not a mathematical coverage assertion; a complete valid certificate needs only one verified matching primal/dual pair.</p>
+<p>The independent certificate verifier takes the original coefficients and the stored exact witnesses, without trusting a floating optimal status. No tolerance appears in its final optimality predicates. Floating thresholds are used only to propose which exact systems to try.</p>
+<h2>Checks and limits</h2>
+<p>Analytically solvable cases cover interior balancing, positive and negative boundary solutions, a one-sided tension step, an exact-zero fit, an unused coordinate, independent channels and a fixed coordinate box. Adversarial tests lower each certified objective and verify rejection. Invalid dimensions, reversed bounds, malformed string vectors and nonfinite coefficients are rejected; exact coefficients outside floating proposal range return UNRESOLVED. Independent review found the malformed-string and overflow handling gaps before this hardening. The exact pre-hardening source is archived at <code>runs/bounded_affine_minimax_review/initial_revision/bounded_affine_minimax.py</code>, with a hash matching the original cohort extraction protocol. The valid earlier rational certificates remain retained; a versioned re-extraction uses the hardened helper. These checks establish the affine component's behavior; the independent review supplies a separate assessment.</p>
+<p>For an actual cohort, the mechanical equation <span class="math" data-tex="R(u,\theta)=0"></span> suggests</p>
+<div class="math display" data-tex="
+ R_u\,u_{\theta_j}=-R_{\theta_j},\qquad
+ O_{\theta_j}=O_u u_{\theta_j}+O_{\theta_j}^{\rm explicit}.
+"></div>
+
+<p>At a regular exact root these identities follow from the implicit-function theorem. The current tangent calculations use floating saved fields and inverses. Spatial maxima can be nonsmooth, and two finite-difference step sizes do not prove differentiability or a uniform approximation bound. Certifying the LP therefore does not make its coefficients exact physical derivatives, establish root existence, bound continuum error, validate a temporal observation contract or compute the full identified set. See <a href="MATERIAL-TANGENT-INFERENCE.html">material sensitivities</a>, <a href="PHYSICAL-INFERENCE-READINESS.html">physical inference prerequisites</a> and the <a href="../PLAN.md">original five-gate plan</a>.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

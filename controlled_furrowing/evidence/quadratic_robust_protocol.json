@@ -1,0 +1,40 @@
+{
+  "scope": "Target-free small-geometry robust numerical continuation, no outcomes fitted",
+  "geometry_height_um": 33.5,
+  "parameters_except_lambda": {
+    "nr": 12,
+    "nz": 6,
+    "height": 1.0,
+    "outer_radius": 3.0,
+    "patch_radius": 0.2792573244776119,
+    "activation_z_min": 0.2537313432835821,
+    "activation_z_max": 0.8507462686567164,
+    "mu": 1.0,
+    "basal_area_modulus": 2.0,
+    "apical_area_modulus": 0.2,
+    "basal_surface_tension": 2.0,
+    "apical_surface_tension": 0.0
+  },
+  "lambda": [
+    500.0,
+    5000.0
+  ],
+  "targets": [
+    1.0,
+    5.0,
+    10.0
+  ],
+  "policy": {
+    "maxiter": 1200,
+    "newton_iterations": 25,
+    "minimum_step": 0.001,
+    "maximum_attempts": 128,
+    "force_tolerance": 1e-07
+  },
+  "verification": [
+    "Energy and gradient bit-for-bit against frozen fullP2 on random states",
+    "Every accepted state replayed force<1e-7 and sufficient positiveJ",
+    "Every failed attempt retained; next attempt initial hash must be last accepted hash",
+    "Bounds are not attained compression; no continuum-error claim"
+  ]
+}

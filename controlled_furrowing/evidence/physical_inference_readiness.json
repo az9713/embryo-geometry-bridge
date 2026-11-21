@@ -1,0 +1,268 @@
+{
+  "status": "AUDIT_COMPLETE_PHYSICAL_INFERENCE_NOT_READY",
+  "scope": "Read-only inference-prerequisite audit; no mechanical model change, fit, held-out-response read or external contact",
+  "created_utc": "2026-11-19T12:36:46.125338+00:00",
+  "source_hashes": {
+    "PLAN.md": "993240af5d30c8e5b72ab31a1278a524314d38ede48486b677b021d84bcde500",
+    "docs/PHYSICAL-PARAMETER-DOMAIN.md": "8d6a397c6efc3e7a91d9716630355dfb91acbef51928e75437b4ad4b24fd728f",
+    "scripts/physical_parameter_domain.py": "8469fd4532a708247100cf8c19b2833e6af1566cc18d353d0ed99fe6d00724d4",
+    "docs/JOINT-OBSERVATION-CONTRACT.md": "d805ff0f9c757d35fdd61283ae1591be3873d73d7daadbaac521020454654d04",
+    "docs/MATERIAL-INPUTS.md": "b05cbe09c454eabb8ce32c6928398a0230e37d378b182d50e289f603e53e5438",
+    "docs/DATA.md": "28f9ac8da7f6ee40632b83b3a268b7ddd695ba770cd07c4200a3596b13ef44ae",
+    "docs/JOINT-DIRECT-REVIEW.md": "ed8857e0af53834acb8f8e56a1c964441a93dea392f5106c3c245c7339dbc50a",
+    "data/raw/primary.xml": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7",
+    "data/raw/41467_2025_62483_MOESM16_ESM.xlsx": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d",
+    "data/derived/calibration_small_18um.csv": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+    "runs/joint_gain_extension_v2/direct_results.json": "78c779112966adaa6819778637d3abf573afbc5af61ee74ea1ec28b8b5967dea",
+    "runs/joint_gain_extension_v2/direct_protocol.json": "6f51e16bd419e438c004b3081d447debd67092820b02ef9fa9a2b57b2494dddd"
+  },
+  "primary_locators": {
+    "Sec14": "height32–35um, lateral activation5–25um below apical surface, nominal acquisition/sampling protocol",
+    "Sec16": "registered vertical height, embryo-specific counterfactual cellularization curve, maximum-over-position/time, temporally maximized mean prose",
+    "Sec17": "dimensionless dose from first activation-timepoint fluorescence normalized by shared across-experiment depthwise standard; not a measured mechanical load history",
+    "Sec22": "distinct samples;17OptoGEF2embryos",
+    "notes4": "No custom code was generated"
+  },
+  "computed": {
+    "records": 17,
+    "observations": 68,
+    "separate_temporal_positive_mean_candidates": [
+      "optoGEF2_small_col_B",
+      "optoGEF2_small_col_C",
+      "optoGEF2_small_col_D",
+      "optoGEF2_small_col_E",
+      "optoGEF2_small_col_F",
+      "optoGEF2_small_col_G",
+      "optoGEF2_small_col_H",
+      "optoGEF2_small_col_I",
+      "optoGEF2_small_col_J",
+      "optoGEF2_small_col_K",
+      "optoGEF2_small_col_L",
+      "optoGEF2_small_col_M",
+      "optoGEF2_small_col_N",
+      "optoGEF2_small_col_P",
+      "optoGEF2_small_col_Q",
+      "optoGEF2_small_col_R"
+    ],
+    "zero_mean_positive_maximum_record": {
+      "record_id": "optoGEF2_small_col_O",
+      "activation_magnitude": "0.27583779",
+      "maximum_shortening_um": "2.41505646",
+      "region_averaged_shortening_um": "0",
+      "apical_max_shortening_um": "2",
+      "basal_max_shortening_um": "0.41505646",
+      "maximum_source": "Fig 2d!O4",
+      "average_source": "Fig 2c!O5"
+    },
+    "common_branch_peak_monotone_floors": {
+      "maximum_shortening_um": {
+        "exact": "626388743/200000000",
+        "display": 3.131943715,
+        "witness_records": [
+          "optoGEF2_small_col_F",
+          "optoGEF2_small_col_I"
+        ]
+      },
+      "region_averaged_shortening_um": {
+        "exact": "445705901/200000000",
+        "display": 2.228529505,
+        "witness_records": [
+          "optoGEF2_small_col_K",
+          "optoGEF2_small_col_L"
+        ]
+      },
+      "apical_max_shortening_um": {
+        "exact": "3",
+        "display": 3.0,
+        "witness_records": [
+          "optoGEF2_small_col_F",
+          "optoGEF2_small_col_I"
+        ]
+      },
+      "basal_max_shortening_um": {
+        "exact": "31034513/25000000",
+        "display": 1.24138052,
+        "witness_records": [
+          "optoGEF2_small_col_F",
+          "optoGEF2_small_col_Q"
+        ]
+      }
+    },
+    "exact_zero_response_sufficient_allowance_vector": {
+      "maximum_shortening_um": "636662153/50000000",
+      "region_averaged_shortening_um": "209579799/25000000",
+      "apical_max_shortening_um": "13",
+      "basal_max_shortening_um": "436972161/100000000"
+    },
+    "direct_stored_curve_allowance_vectors": [
+      {
+        "variant": "current_disk__spatial_max",
+        "stored_curve_required_discrepancy_lower_exact": {
+          "maximum_shortening_um": "1002787060737465425372613/225179981368524800000000",
+          "region_averaged_shortening_um": "109528393601725790158583216320520950187153350416094282800025912687856396692441915925753035675092421586966462070906092186034600226854121351345565737642937766349393644079491698813943518416811047313/20359059313790128693970959390622898640399788987615049549839889576196769812499137667902677080249066612299496937747621796555577160460290988840540992235622072808227695354170133959450935951360000000",
+          "apical_max_shortening_um": "23034196079873175/4503599627370496",
+          "basal_max_shortening_um": "353138257902460199706089/112589990684262400000000"
+        },
+        "stored_curve_sufficient_discrepancy_upper_exact": {
+          "maximum_shortening_um": "1002787060737465425372613/225179981368524800000000",
+          "region_averaged_shortening_um": "14019634381020901140298804066437830692302774652647499037573137776844333249862013726094576279674932118173097461577203350585077183568926232650451304910646283744282271778193217603703566498092326571689/2605959592165136472828282801999731025971172990414726342379505865753186535999889621491542666271880526374335608031695589959113876538917246571589247006159625319453145005333777146809719801774080000000",
+          "apical_max_shortening_um": "23034196079873175/4503599627370496",
+          "basal_max_shortening_um": "353138257902460199706089/112589990684262400000000"
+        }
+      },
+      {
+        "variant": "current_disk__regional_mean",
+        "stored_curve_required_discrepancy_lower_exact": {
+          "maximum_shortening_um": "1157741502660352377716363/225179981368524800000000",
+          "region_averaged_shortening_um": "15727717796972802412127319796657459588952441031106000355143659393104372593966336624156316629931652842094346112465248620595293969958954053090205569158042062868255401496396821181944578996282535211/2544882414223766086746369923827862330049973623451881193729986197024596226562392208487834635031133326537437117218452724569447145057536373605067624029452759101028461919271266744931366993920000000",
+          "apical_max_shortening_um": "2500054044403832067356141832572839907158513317852341457437778792569951816063429831278656208063608105571427418181568125176716207893714679326453469179997045305739086245656942337379833696161/424147069037294347791061653971310388341662270575313532288331032837432704427065368081305772505188887756239519536408787428241190842922728934177937338242126516838076986545211124155227832320",
+          "basal_max_shortening_um": "42277143279103776168813012361326885698196554625404972281517664405352656155434500539153990093478326514978759016873256454693119723991220936084290822929860222218738257999943343412704150576465516181/12724412071118830433731849619139311650249868117259405968649930985122981132811961042439173175155666632687185586092263622847235725287681868025338120147263795505142309596356333724656834969600000000"
+        },
+        "stored_curve_sufficient_discrepancy_upper_exact": {
+          "maximum_shortening_um": "1157741502660352377716363/225179981368524800000000",
+          "region_averaged_shortening_um": "16105183024100149670018521612844772055257366221158810965787187910707005724873977758181396697902172351235118828220510323290946761486959129720243231424937807187400882423204227461444807219270267759189/2605959592165136472828282801999731025971172990414726342379505865753186535999889621491542666271880526374335608031695589959113876538917246571589247006159625319453145005333777146809719801774080000000",
+          "apical_max_shortening_um": "640013835367381009243178728062854500414211066489532225607171118726848247499060927605272876641000106184049865540457435422477451469147600040045252168722859906836079780237243043352981532248281/108581649673547353034511783416655459415465541267280264265812744406382772333328734228814277761328355265597317001320649581629744855788218607149551958589984388310547708555574047783738325073920",
+          "basal_max_shortening_um": "10822948679450566699216136343624394799975329223154898816203419974584014369902797997898066183196832032662741158289861415710470143952811232130224782775552550051538761498553307653803066991878755345461/3257449490206420591035353502499663782463966238018407927974382332191483169999862026864428332839850657967919510039619487448892345673646558214486558757699531649316431256667221433512149752217600000000"
+        }
+      },
+      {
+        "variant": "current_radial_line__spatial_max",
+        "stored_curve_required_discrepancy_lower_exact": {
+          "maximum_shortening_um": "1259385492158610205/288230376151711744",
+          "region_averaged_shortening_um": "16153056483779991256270925211362962259473496764159930258078848316842664415220235265746041625248486752929952460896113655520033903541973/2835528517237563706392079709551073045560852541968074705002248052332596911004377327838926931867611622115070465153053883954626560000000",
+          "apical_max_shortening_um": "99244237624447053/18014398509481984",
+          "basal_max_shortening_um": "90018281658820992406991/28147497671065600000000"
+        },
+        "stored_curve_sufficient_discrepancy_upper_exact": {
+          "maximum_shortening_um": "1259385492158610205/288230376151711744",
+          "region_averaged_shortening_um": "344598538320639813467114853615966465555702516991902045032581440235157558372366505837048840515332776799904249393784150982669655670692299/60491275034401359069697700470422891638631520895318927040047958449762067434760049660563774546509047938454836589931816191032033280000000",
+          "apical_max_shortening_um": "99244237624447053/18014398509481984",
+          "basal_max_shortening_um": "90018281658820992406991/28147497671065600000000"
+        }
+      },
+      {
+        "variant": "current_radial_line__regional_mean",
+        "stored_curve_required_discrepancy_lower_exact": {
+          "maximum_shortening_um": "1013706948187430939435113/225179981368524800000000",
+          "region_averaged_shortening_um": "2266657231813433976849684620054289305657728177456343158990896672490369546848548798901909427408565451268291672553189119515988988610013169/362947650206408154418186202822537349831789125371913562240287750698572404608560297963382647279054287630729019539590897146192199680000000",
+          "apical_max_shortening_um": "4502595180092747960163516056857355918407875657959403146266286667710273989484947852532460425025628506998256123483770312748275911/756140937930016988371221255880286145482894011191486588000599480622025842934500620757047181831363099230685457374147702387900416",
+          "basal_max_shortening_um": "7832760054468485932382602845190931263603392042502728038857297561967200205699039032254787282552319506761810153452464250687943910775593/2362940431031303088660066424625894204634043784973395587501873376943830759170314439865772443223009685095892054294211569962188800000000"
+        },
+        "stored_curve_sufficient_discrepancy_upper_exact": {
+          "maximum_shortening_um": "1013706948187430939435113/225179981368524800000000",
+          "region_averaged_shortening_um": "141666076988339623553105951299887710683929432270396766477725769839810045973662951028921009071704957517707783714872592418076036403101409/22684228137900509651136637676408584364486820335744597640017984418660775288035018622711415454940892976920563721224431071637012480000000",
+          "apical_max_shortening_um": "72041522881483967362616618946177086361118201172368935105682947664559837029246798866508782805472483458422808467400176196757284407/12098255006880271813939540094084578327726304179063785408009591689952413486952009932112754909301809587690967317986363238206406656",
+          "basal_max_shortening_um": "2005186573943932398689946772737843817280596580406268954288206638219299057154608614602180642792098932483135515492245479197032447471442433/604912750344013590696977004704228916386315208953189270400479584497620674347600496605637745465090479384548365899318161910320332800000000"
+        }
+      }
+    ]
+  },
+  "parameter_domain": {
+    "force_quotient": "w in simplex7, w_mu>0,w_kappa>0, remaining5>=0;6 independent ratios",
+    "fixed_numerical_kappa_option": "w_kappa=r*w_mu only ifr separately declared numerical/constitutive; not measured near-incompressibility",
+    "compact_exhaustion": "W_n={w:sumw=1,w>=0,w_mu,w_kappa>=1/n}, n>=2, increasing union equals W; tail exclusion still required for finite exhaustive inference",
+    "no_measured_finite_ratio_box": true,
+    "force_scale_not_identifiable_from_shape": true
+  },
+  "geometry_domain": {
+    "height_protocol_support_um": [
+      "32",
+      "35"
+    ],
+    "height_is_not_per_specimen_metrology_or_probability_distribution": true,
+    "nominal_small_diameter_um": "18",
+    "reported_small_diameter_um": "18.71024074",
+    "diameter_two_source_conventions_are_not_measured_uncertainty_endpoints": true,
+    "activation_depth_below_apical_um": [
+      "5",
+      "25"
+    ],
+    "missing_independent_bounds": [
+      "per-record initial surface/curvature andROItransport",
+      "per-record cellgeometry/homogenization scale",
+      "outer support/boundary extent",
+      "reference-growth/component-reference trajectories",
+      "load-time waveform andforce-to-fluorescence law"
+    ],
+    "flat_axisymmetric_geometry_is_conditional_not_measured": true
+  },
+  "discrepancy_contract": {
+    "recommended_object": "conditional family Theta_delta, delta in nonnegativeR4; no selected physical errorlaw",
+    "fixed_dose_default": "exact workbook doses conditional; measured inputerror interval unavailable",
+    "numerical_error_separate_from_observation_discrepancy": true,
+    "force_tolerance_not_displacement_or_continuum_error": true
+  },
+  "exact_feasibility": {
+    "common_same_geometry_branch_full_cap_peak_zero_discrepancy": "EMPTY by ordered-dose monotonicity witness; not a rejection of heterogeneous finite-time biology",
+    "source_favored_local_peak_mean_with_zero_initial_reference_positive_weights_and_continuous_fields": "EMPTY at exact zero discrepancy by columnO(V0,M2.41505646); no positive uniform floor fromOalone without spatialregularity",
+    "sixteen_positive_mean_records": "kinematic exact witnesses possible under stated temporal/component conventions; not a shared mechanical law",
+    "heterogeneous_geometry_physical_equilibrium_zero_discrepancy": "UNRESOLVED; neither source data nor current direct calculation proves nonemptiness",
+    "large_allowance_zero_activation_flat_reference": "nonempty exact equilibrium family at component allowances>=source maxima, conditional T_a=T_b=g=0; mathematically trivial and not an evidence-based biological errorlaw",
+    "current_direct_points": "stored-discrete-static-proxy compatible only at their recorded allowance vectors; not exact algebraic-root/continuum/temporal witnesses"
+  },
+  "required_operations": [
+    "freeze cohort-wide temporal/ROI/reference/component observer and pairing quantifier",
+    "declare inputerror and explicit discrepancy family or justify measured bounds without fitting heldout outcomes",
+    "supply/source-constrain geometry or explicitly label conditional geometry family",
+    "define physicalbranch/stability selection and allbranch quantifiers",
+    "provide forwardobservable enclosures including equilibrium, integration, space andtemporalpeak error",
+    "infer fullratio/geometry compatible set via validated coverings; use compact exhaustion withtail theorem rather than finitegrid assumption",
+    "propagate complete remaining set to frozen largerregion outputs before computational scoring"
+  ],
+  "preliminary_assumption_correction": {
+    "initial_nonnegative_profile_candidate_assumed_allVpositive": false,
+    "independent_guard_found_columnO": true,
+    "no_record_removed_or_epsilon_invented": true
+  },
+  "replay_python": "from pathlib import Path\nfrom fractions import Fraction as F\nimport csv,json,hashlib\np=Path(\"controlled_furrowing\")\nrows=list(csv.DictReader((p/\"data/derived/calibration_small_18um.csv\").open()))\nkeys=(\"maximum_shortening_um\",\"region_averaged_shortening_um\",\"apical_max_shortening_um\",\"basal_max_shortening_um\")\nassert len(rows)==17 and len({r[\"record_id\"]for r in rows})==17\nordered=sorted(rows,key=lambda r:F(r[\"activation_magnitude\"]))\nfloors={}\nfor key in keys:\n best=max(((max(F(a[key])-F(b[key]),F(0))/2,a[\"record_id\"],b[\"record_id\"])for j,a in enumerate(ordered)for b in ordered[j:]),key=lambda z:z[0])\n floors[key]={\"exact\":str(best[0]),\"display\":float(best[0]),\"witness_records\":list(best[1:])}\nzero_mean=[];positive_mean=[]\nfor r in rows:\n M,V,A,B=map(lambda k:F(r[k]),keys)\n assert F(0)<=V<=M<F(32)and M<=A+B and A>=0 and B>=0\n (zero_mean if V==0 else positive_mean).append(r[\"record_id\"])\nassert zero_mean==[\"optoGEF2_small_col_O\"]and len(positive_mean)==16\nzero_row=next(r for r in rows if r[\"record_id\"]==zero_mean[0])\nmaxima={k:str(max(F(r[k])for r in rows))for k in keys}\nresult=json.loads((p/\"runs/joint_gain_extension_v2/direct_results.json\").read_text())\nassert result[\"status\"]==\"COMPLETE_ALL_FOUR_CONDITIONAL_CANDIDATE_REPLAYS\"and result[\"original_five_gate_goal_achieved\"]is False\nvectors=[]\nfor v in result[\"variants\"]:\n d=v[\"all68_residuals\"];assert d[\"constraints\"]==68 and d[\"records\"]==17\n vectors.append({\"variant\":v[\"variant\"],\"stored_curve_required_discrepancy_lower_exact\":d[\"discrepancy_lower_requirements_exact\"],\"stored_curve_sufficient_discrepancy_upper_exact\":d[\"discrepancy_sufficient_requirements_exact\"]})\ncomputed={\"records\":17,\"observations\":68,\"separate_temporal_positive_mean_candidates\":positive_mean,\"zero_mean_positive_maximum_record\":{k:zero_row[k]for k in(\"record_id\",\"activation_magnitude\",*keys,\"maximum_source\",\"average_source\")},\"common_branch_peak_monotone_floors\":floors,\"exact_zero_response_sufficient_allowance_vector\":maxima,\"direct_stored_curve_allowance_vectors\":vectors}\n",
+  "replay_executed": true,
+  "checks": {
+    "source17_records68observations": true,
+    "allMbelow_minimum_protocol_height": true,
+    "allM_le_AplusB_andV_leM": true,
+    "source_zero_mean_positive_maximum_retained": true,
+    "direct4variants_same68observations": true,
+    "no_fullphysical_set_nonemptiness_claim": true,
+    "columnO_zero_independently_confirmed_in_original_zip_xml": true,
+    "retained_readonly_replay_matches_receipt": true,
+    "all12_source_hashes_unchanged_at_final_review": true,
+    "documentation_links_and_math_delimiters": true
+  },
+  "critical_zero_record_original_ooxml_cells": [
+    {
+      "sheet": "Fig 2c",
+      "cell": "O4",
+      "raw_numeric_token": "0.27583779000000003",
+      "worksheet_zip_member": "xl/worksheets/sheet2.xml"
+    },
+    {
+      "sheet": "Fig 2c",
+      "cell": "O5",
+      "raw_numeric_token": "0",
+      "worksheet_zip_member": "xl/worksheets/sheet2.xml"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "O4",
+      "raw_numeric_token": "2.4150564600000002",
+      "worksheet_zip_member": "xl/worksheets/sheet3.xml"
+    },
+    {
+      "sheet": "Fig 2d",
+      "cell": "O5",
+      "raw_numeric_token": "0",
+      "worksheet_zip_member": "xl/worksheets/sheet3.xml"
+    }
+  ],
+  "documentation_sha256": "ccc2be4e064101ba0e4649b35888e03f69e3025a227b1de590d1ccdc0616333e",
+  "documentation_local_links": [
+    "PHYSICAL-PARAMETER-DOMAIN.md",
+    "JOINT-OBSERVATION-CONTRACT.md",
+    "MATERIAL-INPUTS.md",
+    "JOINT-DIRECT-REVIEW.md",
+    "../evidence/physical_inference_readiness.json",
+    "../PLAN.md",
+    "TEMPORAL-ORDER-ROBUST-WITNESS.md"
+  ],
+  "verified_utc": "2026-11-19T12:39:14.278466+00:00"
+}

@@ -1,0 +1,1132 @@
+{
+  "status": "PASS_CONDITIONAL_EXACT_NODAL_TO_OBSERVER_TRANSFER",
+  "checks": {
+    "basis_partition_unity": true,
+    "value_Lebesgue_max5over4_on_critical_grid": true,
+    "derivative_l1_max8_at_breakpoints": true,
+    "sharp_value_attained_at_quarter": true,
+    "sharp_radial_derivative_attained_at_endpoint": true,
+    "independent_slope7_and_bound10epsilon": true,
+    "independent_control_corner_0": true,
+    "independent_control_corner_1": true,
+    "independent_control_corner_2": true,
+    "independent_control_corner_3": true,
+    "independent_control_corner_4": true,
+    "independent_control_corner_5": true,
+    "independent_control_corner_6": true,
+    "independent_control_corner_7": true,
+    "independent_control_corner_8": true,
+    "independent_control_corner_9": true,
+    "independent_control_corner_10": true,
+    "independent_control_corner_11": true,
+    "independent_control_corner_12": true,
+    "independent_control_corner_13": true,
+    "independent_control_corner_14": true,
+    "independent_control_corner_15": true,
+    "independent_control_corner_16": true,
+    "independent_control_corner_17": true,
+    "independent_control_corner_18": true,
+    "independent_control_corner_19": true,
+    "independent_control_corner_20": true,
+    "independent_control_corner_21": true,
+    "independent_control_corner_22": true,
+    "independent_control_corner_23": true,
+    "independent_control_corner_24": true,
+    "independent_control_corner_25": true,
+    "independent_control_corner_26": true,
+    "independent_control_corner_27": true,
+    "independent_control_corner_28": true,
+    "independent_control_corner_29": true,
+    "independent_control_corner_30": true,
+    "independent_control_corner_31": true,
+    "independent_control_corner_32": true,
+    "independent_control_corner_33": true,
+    "independent_control_corner_34": true,
+    "independent_control_corner_35": true,
+    "independent_control_corner_36": true,
+    "independent_control_corner_37": true,
+    "independent_control_corner_38": true,
+    "independent_control_corner_39": true,
+    "independent_control_corner_40": true,
+    "independent_control_corner_41": true,
+    "independent_control_corner_42": true,
+    "independent_control_corner_43": true,
+    "independent_control_corner_44": true,
+    "independent_control_corner_45": true,
+    "independent_control_corner_46": true,
+    "independent_control_corner_47": true,
+    "independent_control_corner_48": true,
+    "independent_control_corner_49": true,
+    "independent_control_corner_50": true,
+    "independent_control_corner_51": true,
+    "independent_control_corner_52": true,
+    "independent_control_corner_53": true,
+    "independent_control_corner_54": true,
+    "independent_control_corner_55": true,
+    "independent_control_corner_56": true,
+    "independent_control_corner_57": true,
+    "independent_control_corner_58": true,
+    "independent_control_corner_59": true,
+    "independent_control_corner_60": true,
+    "independent_control_corner_61": true,
+    "independent_control_corner_62": true,
+    "independent_control_corner_63": true,
+    "crossedge_comparison_requires_global_base_Lip": true,
+    "different_default_surface_domains_not_composed": true,
+    "explicit_common_ROI_composes_different_full_domains": true,
+    "zero_mass_ROI_rejected_for_means": true,
+    "pointwise_curve_zero_width_still_defined": true,
+    "unverified_endpoints_do_not_guarantee_full_ROI": true,
+    "strict_monotonicity_margin_required": true,
+    "same_ROI_endpoint_triangle_bounds": true,
+    "reference_change_not_silently_included": true,
+    "current13root_synthetics_hashbound": true,
+    "own_review_math_balanced": true,
+    "own_review_utf8_valid": true,
+    "own_review_links_exist": true,
+    "current_source_still_bound": true
+  },
+  "independent_control_examples": [
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "6934940100104118495991302221/1237940039285380274899124224000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "34896063986558115332565508421/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "64352995774121314296355045417/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "307436803364903528851241503/39614081257132168796771975168",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "5390688138900609812143644737/990352031428304219919299379200",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "17054872140322345204659261611/2475880078570760549798248448000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "123754310619263621951105971459/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "9410820178674879045789550669/1237940039285380274899124224000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "335192732856582091196566581/77371252455336267181195264000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "1291685276418772735606370541/309485009821345068724781056000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "967776269907454807815592017/154742504910672534362390528000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "30297815615493544140668092779/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "943708133512711925831782117/198070406285660843983859875840",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "11203383204796196624363858451/2475880078570760549798248448000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "8085814482129388035959194379/1237940039285380274899124224000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "489935237767254625558957109/77371252455336267181195264000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "30196408680501429832559252251/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "118841372592503355269258437891/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "40776152834774659990055934143/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "79420078081202647446790504181/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "122537110105676622416911538659/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "60202441258664974941795087277/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "834203203024788333738293261/198070406285660843983859875840",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "20292888366218387633366258459/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "169196029875531000201983611/19342813113834066795298816000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "479815114522772590157082359/61897001964269013744956211200",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "78584858024220038605193747287/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "505719150441007015715757461/77371252455336267181195264000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "693106583652568451537720899/77371252455336267181195264000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "1238222445403615199139086269/154742504910672534362390528000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "160366340081859811668551702909/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        -1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "499/500",
+      "maximum_17point_error_upper": "130510403647862866611385979/19342813113834066795298816000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "2086144322471877249981893349/309485009821345068724781056000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "501087380890236798165944777/61897001964269013744956211200",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "1237642159075963147721763217/154742504910672534362390528000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "11079220176214363481578701579/1237940039285380274899124224000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "8085814482131415068074693661/1237940039285380274899124224000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "1228175624721814180824914051/154742504910672534362390528000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "2397914999958558847950765691/309485009821345068724781056000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "2705114342114567387431455461/309485009821345068724781056000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "20271537038420591561620647749/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "83311547146830892269910108541/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "60144210238504909978459533857/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "122513819470158345980346585259/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "79272558094338555309390571901/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "40748978543743540666409044723/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "118841371958693303078319311659/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        -1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "124/125",
+      "maximum_17point_error_upper": "30175057352703633760813641541/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "31392616425321233176995708691/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "505719150440944977284716099/77371252455336267181195264000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "44872478357349246327184641687/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "94508352722681213947129879869/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "30331278658985294204325105971/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "61974441429024914746929242357/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "82759760410733029453046651261/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        -1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "497/500",
+      "maximum_17point_error_upper": "21489096111038190977802714899/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "37623473674047609630741015491/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "123833538781777886288699515291/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "68053109419962364557254460999/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        -1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "107686997717895868779129822669/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "153686710417352839470026326091/19807040628566084398385987584000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        -1,
+        1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "64392609855378446465151817333/9903520314283042199192993792000",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        -1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "1114392276488697040492569489/158456325028528675187087900672",
+      "theorem_bound": "1/100"
+    },
+    {
+      "radial_signs": [
+        1,
+        1,
+        1
+      ],
+      "vertical_signs": [
+        1,
+        1,
+        1
+      ],
+      "minimum_radial_derivative": "1",
+      "maximum_17point_error_upper": "27719953359764567431548021699/4951760157141521099596496896000",
+      "theorem_bound": "1/100"
+    }
+  ],
+  "crossedge_exact_example": {
+    "base_controls": [
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "3/2",
+          "2"
+        ],
+        [
+          "2",
+          "4"
+        ]
+      ]
+    ],
+    "epsilon": "1/1000",
+    "compared_radius": "2001/2000",
+    "actual_Eulerian_error": "1/500",
+    "global_theorem_bound": "1/160",
+    "explanation": "Perturbed shared radius is1+epsilon, with affine radial edges and unchangedZ; r=1+epsilon/2 lies in perturbededge1 and baseedge2.",
+    "perturbed_controls": [
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1001/2000",
+          "0"
+        ],
+        [
+          "1001/1000",
+          "0"
+        ]
+      ],
+      [
+        [
+          "1001/1000",
+          "0"
+        ],
+        [
+          "3001/2000",
+          "2"
+        ],
+        [
+          "2",
+          "4"
+        ]
+      ]
+    ]
+  },
+  "reviewed_hashes": {
+    "scripts/nodal_observer_error_transfer.py": "001769f23ba386fe6bde4530c12e011f72f8733bb1a4a2923182796e54da35de",
+    "docs/NODAL-OBSERVER-ERROR-TRANSFER.md": "d0d5f711a6a8f2ebe46e8dcb76c70234753bda714836dbcf7d4be888ff7ba171",
+    "evidence/nodal_observer_error_transfer_tests.json": "a5ba58c669872cdfb8c4db7e6f7d73ae1624a523a0c94e91690f7ba4994ad7a1",
+    "scripts/annulus_observer.py": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9",
+    "docs/NODAL-OBSERVER-ERROR-REVIEW.md": "2a53f77f997c5497adf97a987f21e258aa6fee5941285d5be6a478cc6d098edd"
+  },
+  "independent_program": "from pathlib import Path\nfrom fractions import Fraction as Q\nfrom itertools import product\nimport sys,json,hashlib\nsys.path.insert(0,str(Path('controlled_furrowing/scripts').resolve()))\nfrom nodal_observer_error_transfer import curve_bound,endpoint_bounds\nroot=Path('controlled_furrowing');sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()\neps=Q(1,1000);checks={};examples=[]\ndef N(t):return [1-3*t+2*t*t,4*t-4*t*t,-t+2*t*t]\ndef dN(t):return [-3+4*t,4-8*t,-1+4*t]\ndef poly(nodes,t):return sum(a*b for a,b in zip(nodes,N(t)))\ndef deriv(nodes,t):return sum(a*b for a,b in zip(nodes,dN(t)))\ndef inverse_bracket(nodes,r):\n lo,hi=Q(0),Q(1)\n for _ in range(48):\n  mid=(lo+hi)/2\n  if poly(nodes,mid)==r:return mid,mid\n  if poly(nodes,mid)<r:lo=mid\n  else:hi=mid\n return lo,hi\nchecks['basis_partition_unity']=all(sum(N(Q(k,128)))==1 for k in range(129))\nchecks['value_Lebesgue_max5over4_on_critical_grid']=max(sum(map(abs,N(Q(k,128)))) for k in range(129))==Q(5,4)\nchecks['derivative_l1_max8_at_breakpoints']=max(sum(map(abs,dN(t))) for t in (Q(0),Q(1,4),Q(1,2),Q(3,4),Q(1)))==8\nchecks['sharp_value_attained_at_quarter']=sum(a*b for a,b in zip(N(Q(1,4)),(eps,eps,-eps)))==Q(5,4)*eps\nchecks['sharp_radial_derivative_attained_at_endpoint']=sum(a*b for a,b in zip(dN(0),(-eps,eps,-eps)))==8*eps\nbaseR=[Q(0),Q(1,2),Q(1)];baseZ=[Q(0),Q(2),Q(5)] # Z=3t+2t^2, globalLip7\nbase=[list(zip(baseR,baseZ))];bound=curve_bound(base,eps,roi_um=(Q(1,10),Q(9,10)));E=Q(bound['Eulerian_vertical_error_um_exact'])\nchecks['independent_slope7_and_bound10epsilon']=Q(bound['base_graph_Lipschitz_upper_exact'])==7 and E==10*eps\nfor i,(r_sign,z_sign) in enumerate(product(product((-1,1),repeat=3),repeat=2)):\n R=[a+s*eps for a,s in zip(baseR,r_sign)];Z=[a+s*eps for a,s in zip(baseZ,z_sign)]\n margin=min(deriv(R,0),deriv(R,1));allpoints=True;maximum=Q(0)\n for k in range(17):\n  r=Q(1,10)+Q(4,5)*Q(k,16);lo,hi=inverse_bracket(R,r)\n  # All Z' >= 3-8eps>0, so endpoint evaluation encloses Z at the inverse.\n  alo,ahi=poly(Z,lo),poly(Z,hi);basevalue=3*r+2*r*r;err=max(abs(alo-basevalue),abs(ahi-basevalue));maximum=max(maximum,err);allpoints &= err<=E\n checks['independent_control_corner_'+str(i)]=allpoints and margin>=1-8*eps\n examples.append({'radial_signs':r_sign,'vertical_signs':z_sign,'minimum_radial_derivative':str(margin),'maximum_17point_error_upper':str(maximum),'theorem_bound':str(E)})\n# A point crossing a shared knot: base inverse is on edge2 while perturbed\n# inverse is on edge1. A same-edge local Lip0 would be wrong.\nbase2=[[(0,0),(Q(1,2),0),(1,0)],[(1,0),(Q(3,2),2),(2,4)]]\ncross=curve_bound(base2,eps,fixed_radial_endpoints=True);radius=1+eps/2;actualerror=4*(radius-1)\nchecks['crossedge_comparison_requires_global_base_Lip']=actualerror==2*eps and actualerror>Q(5,4)*eps and actualerror<=Q(cross['Eulerian_vertical_error_um_exact'])\nflat=[[(0,0),(Q(1,2),0),(1,0)]];longer=[[(0,0),(1,0),(2,0)]]\nchecks['different_default_surface_domains_not_composed']=endpoint_bounds(flat,longer,eps,fixed_radial_endpoints=True)['status']=='UNRESOLVED_COMMON_SURFACE_ROI'\nchecks['explicit_common_ROI_composes_different_full_domains']=endpoint_bounds(flat,longer,eps,fixed_radial_endpoints=True,roi_um=(Q(1,10),Q(9,10)))['status']=='CONDITIONAL_EXACT_ERROR_TRANSFER'\ntry:endpoint_bounds(flat,flat,0,fixed_radial_endpoints=True,roi_um=(Q(1,2),Q(1,2)));checks['zero_mass_ROI_rejected_for_means']=False\nexcept ValueError:checks['zero_mass_ROI_rejected_for_means']=True\nchecks['pointwise_curve_zero_width_still_defined']=curve_bound(flat,0,fixed_radial_endpoints=True,roi_um=(Q(1,2),Q(1,2)))['status']=='CONDITIONAL_EXACT_ERROR_TRANSFER'\nchecks['unverified_endpoints_do_not_guarantee_full_ROI']=curve_bound(flat,eps)['status']=='UNRESOLVED_COMMON_RADIAL_DOMAIN'\nchecks['strict_monotonicity_margin_required']=curve_bound(flat,Q(1,8),fixed_radial_endpoints=True)['status']=='UNRESOLVED_RADIAL_MONOTONICITY'\ncombo=endpoint_bounds(base,flat,eps,fixed_radial_endpoints=True)\nchecks['same_ROI_endpoint_triangle_bounds']=Q(combo['endpoint_error_um_exact']['maximum_shortening_um'])==Q(combo['apical']['Eulerian_vertical_error_um_exact'])+Q(combo['basal']['Eulerian_vertical_error_um_exact']) and combo['apical']['ROI_um_exact']==combo['basal']['ROI_um_exact']\n# Unchanged references/weights are assumptions: same surface with eps0 cannot\n# bound a hypothetical independently shifted reference (not a module bug).\nchecks['reference_change_not_silently_included']=curve_bound(flat,0,fixed_radial_endpoints=True)['Eulerian_vertical_error_um_exact']=='0'\nroot_tests=json.loads((root/'evidence/nodal_observer_error_transfer_tests.json').read_text())\nchecks['current13root_synthetics_hashbound']=len(root_tests['checks'])==13 and all(root_tests['checks'].values()) and root_tests['script_sha256']==sha(root/'scripts/nodal_observer_error_transfer.py')\nreceipt={'status':'PASS_CONDITIONAL_EXACT_NODAL_TO_OBSERVER_TRANSFER' if all(checks.values()) else 'FAIL','checks':checks,'independent_control_examples':examples,'crossedge_exact_example':{'base_controls':[[list(map(str,p)) for p in edge] for edge in base2],'epsilon':str(eps),'compared_radius':str(radius),'actual_Eulerian_error':str(actualerror),'global_theorem_bound':cross['Eulerian_vertical_error_um_exact'],'explanation':'Perturbed shared radius is1+epsilon, with affine radial edges and unchangedZ; r=1+epsilon/2 lies in perturbededge1 and baseedge2.'},'reviewed_hashes':{p.relative_to(root).as_posix():sha(p) for p in (root/'scripts/nodal_observer_error_transfer.py',root/'docs/NODAL-OBSERVER-ERROR-TRANSFER.md',root/'evidence/nodal_observer_error_transfer_tests.json',root/'scripts/annulus_observer.py')},'independent_program':REVIEW_CODE,'method':'Own exact basis and inverse bisection;64independent radial/vertical nodal sign corners at17currentradiuspoints each; independent cross-edge and domain/mass guard checks. Formal allpoint bound reviewed separately in prose; finite testgrid is corroboration, not proof.','initial_findings_and_resolutions':['Parentretainedinitialsame-ROIcompositiongap revision; currentAPIrefuses differing defaultsurfaceROIs.','Reviewerfoundzero-widthROIacceptedforregionalmeans; parentretainedrevision and addedpositive-massguard. Pointwisecurvebound stillpermits singletonROI.'],'scope':'Requires independently verified nodal coordinate bound, corresponding conformingnodes, strict radialmargin, common covered fixedROI, fixedreferences and fixednormalizednonnegativeweights. No actualepsilon/root/PDE/temporal/experimental error certificate inferred.'}\n(root/'evidence/nodal_observer_error_independent_review.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8')\nprint(json.dumps({'status':receipt['status'],'checks':len(checks),'failed':[k for k,v in checks.items() if not v],'corners':len(examples)},indent=2))\nif not all(checks.values()):raise RuntimeError('Retained nodal-transfer review failure')\n",
+  "method": "Own exact basis and inverse bisection;64independent radial/vertical nodal sign corners at17currentradiuspoints each; independent cross-edge and domain/mass guard checks. Formal allpoint bound reviewed separately in prose; finite testgrid is corroboration, not proof.",
+  "initial_findings_and_resolutions": [
+    "Parentretainedinitialsame-ROIcompositiongap revision; currentAPIrefuses differing defaultsurfaceROIs.",
+    "Reviewerfoundzero-widthROIacceptedforregionalmeans; parentretainedrevision and addedpositive-massguard. Pointwisecurvebound stillpermits singletonROI."
+  ],
+  "scope": "Requires independently verified nodal coordinate bound, corresponding conformingnodes, strict radialmargin, common covered fixedROI, fixedreferences and fixednormalizednonnegativeweights. No actualepsilon/root/PDE/temporal/experimental error certificate inferred."
+}

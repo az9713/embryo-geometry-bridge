@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TEMPORAL-MEAN-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review: separate temporal regional-mean peaks</h1>
+<p><strong>Verdict: PASS for the stated continuous kinematic existence construction.</strong> Under the explicitly defined peak-of-regional-mean operator, all 17 canonical source vectors have exact, volume-preserving geometric paths with the recorded four summaries. This does not construct mechanical dynamics or identify the experimental observation algorithm.</p>
+<p>The independent review reconstructs all <strong>68 endpoint configurations</strong> from the CSV with exact fractions, without importing the production loading or construction functions. <code>evidence/temporal_mean_independent_review.json</code> retains 942 passing numerical/algebraic/provenance checks, the independent replay program, exact path coefficients and source hashes. The continuous-time statement follows from affine extrema and uniform geometric bounds, rather than sampling a few times.</p>
+<h2>Exact component peaks along a continuous path</h2>
+<p>For each source vector, the recorded values satisfy</p>
+<div class="math display" data-tex="
+ M,V,A,B\ge0,\qquad V\le M&lt;H,\qquad V\le A+B.
+"></div>
+
+<p>At normalized path times 0, 1 and 2, use instantaneous component means</p>
+<div class="math display" data-tex="
+ (0,0),\qquad(A,V-A),\qquad(V-B,B).
+"></div>
+
+<p>The corresponding total means are 0, V, V. The instantaneous identity is respected at every state. Interpolate these means affinely on each time segment. Then</p>
+<div class="math display" data-tex="
+ \sup_t\overline a=A,\qquad
+ \sup_t\overline b=B,\qquad
+ \sup_t\overline s=V,
+"></div>
+
+<p>because <span class="math" data-tex="V-B\le A"></span>, <span class="math" data-tex="V-A\le B"></span>, and A, B, V are nonnegative. Each mean is affine on each closed segment, so its continuous-time extrema occur at an endpoint. The two component peaks need not coincide in time. Negative values at the other component's peak are allowed; imposing nonnegative signed motion at every time would change this admissibility class.</p>
+<p>For either fixed weighting separately, put</p>
+<div class="math display" data-tex="
+ S_*(r)=M-c(r/R)^2,
+ \qquad c=3(M-V)\;\text{(line)},\qquad
+ c=2(M-V)\;\text{(disk)}.
+"></div>
+
+<p>Inside the fixed current-radius ROI, let the apical downward motion be spatially constant with the prescribed instantaneous mean, and set basal upward motion to <span class="math" data-tex="b=S-a"></span>. On the first segment, <span class="math" data-tex="S(t,r)=tS_*(r)"></span>; on the second, <span class="math" data-tex="S=S_*"></span>. Since M is nonnegative, the peak spatial height shortening is exactly M. The weighting-specific polynomial moments give mean V at both nonzero endpoints. Thus all four recorded summaries are matched with zero discrepancy under this particular operator.</p>
+<h2>Exact volume and all-time geometric admissibility</h2>
+<p>The compensated annulus is computed independently for both endpoint component partitions. Its shortening polynomial and radial transport are identical at the two nonzero states; only their vertical offset differs. Expanded polynomial integration checks zero total <span class="math" data-tex="\int rS\,dr"></span>, and exact endpoint/critical-point extrema check positive height for all 68 configurations.</p>
+<p>For every actual source construction, the <strong>global</strong> maximum shortening, including the compensation annulus, equals the ROI value M. The smallest global height is exactly 20.76675694 micrometres. On the first segment, core and annular shortening scale together, so</p>
+<div class="math display" data-tex="
+ \int rS_t\,dr=t\int rS_*\,dr=0,
+ \qquad
+ h_t=H-tS_*=(1-t)H+t h_*&gt;0
+ \quad(0\le t\le1).
+"></div>
+
+<p>The uniform lower bound is <span class="math" data-tex="\min(H,\inf h_*)"></span>, so positivity is proved at <strong>every time</strong>, not inferred from a finite temporal grid. The radial volume coordinate</p>
+<div class="math display" data-tex="
+ \rho_t(r)^2=\frac2H\int_0^r xh_t(x)dx
+"></div>
+
+<p>is strictly increasing, continuous in t, regular at the axis and equal to <span class="math" data-tex="R_o"></span> at the outer rim. Its inverse gives an embedded body map</p>
+<div class="math display" data-tex="
+ (\rho,\theta,z)\mapsto
+ \left(R_t(\rho),\theta,
+ b_t(R_t(\rho))+\frac{h_t(R_t(\rho))}{H}z\right)
+"></div>
+
+<p>with determinant one almost everywhere, as in the <a href="STATIC-MEAN-REVIEW.html">independently checked isochoric proof</a>. At t=0 the map is the undeformed reference. At t=1 the two time pieces agree. For <span class="math" data-tex="1\le t\le2"></span>, height and radial transport are fixed while the vertical offset varies continuously and affinely; that offset does not change the triangular cylindrical Jacobian. Rim displacement remains zero at every time.</p>
+<p>The spatial fields are continuous with bounded piecewise derivatives; their interface gradient jumps are permitted in this Lipschitz kinematic class. The axis limit remains regular throughout the path because <span class="math" data-tex="H-tM"></span> stays uniformly positive. No exact P2 representation, energy minimization, viscous force balance, acceleration law or physical timescale is supplied.</p>
+<h2>The order of spatial averaging and temporal maximization matters</h2>
+<p>The zero-error result uses</p>
+<div class="math display" data-tex="
+ V=\sup_t\left\langle S(t,\cdot)\right\rangle.
+"></div>
+
+<p>It does not generally reproduce <span class="math" data-tex="\langle\sup_t S(t,\cdot)\rangle"></span>. Because the path starts from zero and then scales to <span class="math" data-tex="S_*"></span>, its pointwise temporal peak is <span class="math" data-tex="\max(0,S_*)"></span>. For 29 of the 34 source-record/weighting height paths, the final profile is negative near the ROI edge. Their mean of local temporal peaks is strictly greater than V.</p>
+<p>For example, when <span class="math" data-tex="c&gt;M"></span>, direct integration of the positive part gives</p>
+<div class="math display" data-tex="
+ \left\langle\max(0,M-cu^2)\right\rangle
+ =\begin{cases}
+ \dfrac{2M}{3}\sqrt{M/c},&amp;\text{line},\\
+ \dfrac{M^2}{2c},&amp;\text{disk}.
+ \end{cases}
+"></div>
+
+<p>These exceed the corresponding <span class="math" data-tex="V=M-c/3"></span> or <span class="math" data-tex="M-c/2"></span>. The exact rational condition c&gt;M determines the count; the receipt retains the analytic expressions and numerical illustrations. This reinforces the need to resolve the source's time/mean ordering rather than selecting whichever operator fits.</p>
+<h2>Interpretation and review outcome</h2>
+<p>The actual originating exposition distinguishes peak regional means from mean local peaks, declares arbitrary normalized time, and disclaims a common constitutive law, gain, activation history or experiment-specific dynamics. Separate paths are used for each record and weighting; a single identical path is not claimed to realize both weights.</p>
+<p>The static 3.47510056 micrometre floor and this zero-error temporal witness are compatible because they constrain different observation contracts. The latter proves that the static additive exclusion cannot simply be transferred to separately timed regional-mean peaks. It does not establish that the source used this algorithm or that any chosen mechanochemical model can produce the paths. The canonical cross-panel ordering remains an explicit identity assumption.</p>
+<p>This is an exact kinematic counterexample and an observation-contract audit. It supplies neither a common fitted material system nor a new biological mechanism, physical uncertainty set or confirmed novel concept.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

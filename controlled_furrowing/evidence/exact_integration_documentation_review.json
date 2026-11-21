@@ -1,0 +1,51 @@
+{
+  "status": "PASS_POST_CORRECTION_MATHEMATICAL_DOCUMENTATION_REVIEW",
+  "reviewed_utc": "2026-11-19T19:46:41.341013+00:00",
+  "checks": {
+    "current_point_independent_receipt195checks_PASS": true,
+    "display_delta_force_lower_safe": true,
+    "display_delta_force_upper_safe": true,
+    "display_old_residual_upper_safe": true,
+    "strict_newmap_distance_display_safe": true,
+    "exact_reverse_triangle_reduction_matches": true,
+    "explicit_witness588_node313_axial_consistent": true,
+    "witness_entire_coordinate_interval_outside_oldcube": true,
+    "body_chart_axis_edge_vertex_distinction_and_surface_assumptions_correct": true,
+    "exact_current_X_plus_free_u_and_frozen_normalization_preserved": true,
+    "bulk_and_surface_constitutive_formula_and_derivative_series_correct": true,
+    "two_positive_measure_masses_and_chainrule_tails_correct": true,
+    "signed_nonzero_moment_and_cache_discrepancy_decomposition_correct": true,
+    "point_only_Hessian_error_not_promoted_to_uniform_b": true,
+    "Banach_and_symmetricR_Lyapunov_transfer_lemma_scoped_correctly": true,
+    "six_of144bulk_and_six_of24surface_reuse_disclosed": true,
+    "newmap_counterexample_not_oldTQ_failure": true,
+    "nonexistence_displacementerror_or_physical_noise_not_inferred": true,
+    "remedy_not_exclusively_center_or_domain": true,
+    "B_column_context_and_normalized_geometry_explicit": true,
+    "tinyC_candidate_and_cached_residual_context_explicit": true,
+    "no_novelty_or_fullfivegate_completion_claim": true,
+    "controls_consistent_with_point_failure_and_open_integralroot": true,
+    "no_production_edit_or_new_scientific_job_by_reviewer": true
+  },
+  "bindings": {
+    "controlled_furrowing/docs/EXACT-INTEGRATION-BRIDGE.md": "8ec51ef90645203b69b44e226b67117c3074a34e35cfaab2429c7da05d9a49d2",
+    "README.md": "61c9e5e3d42889e581617df629db72d36da96127fc0f726b016a1f03eba37bad",
+    "scripts/build_dossier.py": "e3555d4f09be57c2663a4e4c976b9cd1d5335298ff76cc02c2f5c18be6885284",
+    "controlled_furrowing/scripts/build_report.py": "bccb4bf28231edbaeca6b2db844c39942da0ec97950202b4c3c958d6efb7e54a",
+    "controlled_furrowing/evidence/gates.json": "1ab432d52a3a4ee1edaf0399a694d200b03656f52388826e7c62b3342c3b0c75"
+  },
+  "scientific_receipt_sha256": "bc22a23e7af96d0d1a99836401112378600c14be61d5cba957e6f15a12d699c5",
+  "coordinate_witness_sha256": "74cd932c47a6b6c20a65ad837505bce126e9f2b8a5bd47b0c8eeb4a970e6fba5",
+  "corrected_findings": [
+    {
+      "issue": "Auxiliary-rule identity initially conflated coherent f and cached f_cache on its left side.",
+      "resolution": "Production chapter now explicitly distinguishes I[f]\u2212Qcache[f_cache]. Corrected by root; reviewer made no production edits."
+    },
+    {
+      "issue": "Initial remedy wording excluded changing map/preconditioner.",
+      "resolution": "Production chapter/control wording now permits a newly justified map/preconditioner, numerical center or proof domain. Negative self-map test remains restricted to oldR/oldcube."
+    }
+  ],
+  "open_findings": [],
+  "scope": "Read-only review of mathematical exposition and four control claims. Exact displayed inequalities/witness checked from retained independent rational receipts. Does not repeat integrations or constitute outsideexpert review; browser/render verification belongs to separate root receipt."
+}

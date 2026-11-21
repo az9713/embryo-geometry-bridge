@@ -1,0 +1,109 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ENERGY-GAIN-CELL</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Validating a gain interval in the energy norm</h1>
+<p><strong>The producer calculation passes:</strong> for every relative gain <span class="math" data-tex="\delta\in[-0.001,0.001]"></span>, the specified finite-quadrature energy has a unique stationary point in its predictor-centered energy ball, and that point is a strict local energy minimum. The uniform self-map bound is below the radius by more than 23%. Every material coefficient remains fixed to the original weak-load case. No equilibrium optimization or new experimental fit was used. Independent review of this new certificate is a separate gate.</p>
+<p>The <a href="../scripts/energy_gain_cell.py">script</a> and <a href="../evidence/energy_gain_cell.json">receipt</a> retain the source/input hashes, all eight predictor-path boxes, the whole error tube, analytic-domain margins and acceptance tests. The <a href="PARAMETRIC-NORM-FEASIBILITY.html">norm feasibility study</a> explains why the volumetric rank structure matters and preserves the failed constant-remainder screen.</p>
+<h2>Actual acceptance values</h2>
+<p>All 9,504 local terms and the global matrix contractions were evaluated with 160-bit Arb intervals. Exact rational outward endpoints are retained; the table gives safe rounded summaries.</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Validated upper bound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Center transformed Hessian defect</td>
+<td style="text-align: right;"><span class="math" data-tex="1.313\times10^{-10}"></span></td>
+</tr>
+<tr>
+<td>Center transformed force norm</td>
+<td style="text-align: right;"><span class="math" data-tex="6.783\times10^{-13}"></span></td>
+</tr>
+<tr>
+<td>Transformed predictor linear defect</td>
+<td style="text-align: right;"><span class="math" data-tex="6.599\times10^{-14}"></span></td>
+</tr>
+<tr>
+<td>Predictor metric norm</td>
+<td style="text-align: right;">0.017365397</td>
+</tr>
+<tr>
+<td>Eight-piece Hessian-variation integral</td>
+<td style="text-align: right;">0.035130960</td>
+</tr>
+<tr>
+<td>Uniform predictor residual <span class="math" data-tex="\eta"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="6.100638\times10^{-7}"></span></td>
+</tr>
+<tr>
+<td>Uniform contraction bound <span class="math" data-tex="Z"></span></td>
+<td style="text-align: right;">0.155994806</td>
+</tr>
+<tr>
+<td><span class="math" data-tex="\eta+Z\rho"></span>, with <span class="math" data-tex="\rho=10^{-6}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="7.660586\times10^{-7}"></span></td>
+</tr>
+<tr>
+<td>Root-to-predictor metric distance <span class="math" data-tex="\eta/(1-Z)"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="7.228200\times10^{-7}"></span></td>
+</tr>
+</tbody>
+</table>
+<p>The self-map margin exceeds <span class="math" data-tex="2.3394\times10^{-7}"></span>. The full error tube retains quadrature-domain lower bounds greater than 0.94284 for the meridional determinant, 0.99236 for hoop stretch and 0.99776 for the three-dimensional Jacobian. Surface radius and tangent norm also stay strictly positive. The cached quadrature weights and energy normalization are positive, as required for the PSD-majorant argument.</p>
+<p>The eight successive predictor-path operator upper bounds are approximately 0.008112, 0.015817, 0.023530, 0.031249, 0.038976, 0.046711, 0.054452 and 0.062201. Averaging their exact upper endpoints makes the residual proof pass. Replacing the integral by the last bound had failed in the earlier feasibility study; that failure remains intact.</p>
+<h2>The family and its proposed enclosure</h2>
+<p>The existing binary cache specifies a real-valued smooth energy, with 611 free displacement coordinates, for an original-material 12×6, strength-one state. Its finite volumetric coefficient is <span class="math" data-tex="\kappa=5000"></span>; that is not a measured physiological incompressibility prior. Let <span class="math" data-tex="F(u,\delta)"></span> be its gradient when the existing illuminated drive is multiplied by <span class="math" data-tex="1+\delta"></span>. All other cached quantities remain fixed.</p>
+<p>Let <span class="math" data-tex="u_0"></span> be the archived binary free vector, <span class="math" data-tex="S"></span> its archived binary gain tangent, and <span class="math" data-tex="W"></span> the frozen binary metric from the separately validated norm study. The predictor and its proposed enclosure are</p>
+<div class="math display" data-tex="
+ \widehat u(\delta)=u_0+S\delta,\qquad
+ u=\widehat u(\delta)+Wz,\qquad
+ \&#124;z\&#124;_2\le\rho=10^{-6}.
+"></div>
+
+<p>This is a parameter-dependent tube, not a single nodal box. The tangent is not assumed exact: the center residual and the defect <span class="math" data-tex="H_0S+b_0"></span> are reconstructed with Arb and retained in the residual bound.</p>
+<h2>Exact predictor-residual identity</h2>
+<p>The force is affine in the relative gain. Write <span class="math" data-tex="H_0=F_u(u_0,0)"></span> and <span class="math" data-tex="b_0=F_\delta(u_0,0)"></span>. Integrating along the predictor at fixed <span class="math" data-tex="\delta"></span> gives</p>
+<div class="math display" data-tex="
+ F(\widehat u(\delta),\delta)
+ =F(u_0,0)+(H_0S+b_0)\delta
+ +\int_0^1[H(u_0+tS\delta,\delta)-H_0]S\delta\,dt.
+"></div>
+
+<p>Unlike the geometry displacement along this path, the parameter in its Hessian is <span class="math" data-tex="\delta"></span>, not <span class="math" data-tex="t\delta"></span>. Each path box therefore keeps the full gain interval.</p>
+<p>For <span class="math" data-tex="t\in[(i-1)/8,i/8]"></span>, the proof bounds the geometry using <span class="math" data-tex="&#124;t\delta&#124;\le ih/8"></span>, with <span class="math" data-tex="h=0.001"></span>, and obtains an operator upper bound <span class="math" data-tex="K_i"></span>. It follows that</p>
+<div class="math display" data-tex="
+ \eta=\&#124;W^TF(u_0,0)\&#124;_2+
+ h\&#124;W^T(H_0S+b_0)\&#124;_2+
+ h\&#124;W^{-1}S\&#124;_2\frac18\sum_{i=1}^8K_i
+"></div>
+
+<p>bounds the transformed predictor residual uniformly over the gain interval. If <span class="math" data-tex="\epsilon_0"></span> bounds <span class="math" data-tex="\&#124;W^TH_0W-I\&#124;_2&lt;1"></span>, then the tangent metric norm is enclosed without a floating inverse:</p>
+<div class="math display" data-tex="
+ \&#124;W^{-1}S\&#124;_2^2
+ \le\frac{S^TH_0S}{1-\epsilon_0}.
+"></div>
+
+<h2>Whole-tube derivative bounds</h2>
+<p>At every quadrature point, the linear strain map <span class="math" data-tex="B"></span> and exact binary <span class="math" data-tex="W,S"></span> give</p>
+<div class="math display" data-tex="
+ &#124;(B(u-u_0))_j&#124;
+ \le h&#124;(BS)_j&#124;+\rho\sqrt{(BWW^TB^T)_{jj}}.
+"></div>
+
+<p>Every quantity here is enclosed with Arb. The pointwise determinant, hoop stretch and surface nondegeneracy margins must stay strictly inside the analytic domain. This is only quadrature-domain positivity; it does not certify the complete three-dimensional body geometry.</p>
+<p>The proof preserves the bulk term <span class="math" data-tex="\kappa\nabla\log J\,\nabla\log J^T"></span> as an outer product, controls its variation using a PSD squared-gradient majorant, and separately bounds the <span class="math" data-tex="(\kappa\log J-\mu)\nabla^2\log J"></span> term. It retains the directional contractions <span class="math" data-tex="\nabla\log J\cdot BS"></span> before taking absolute values. The <a href="PARAMETRIC-NORM-FEASIBILITY.html">norm study</a> supplies the detailed inequalities.</p>
+<p>All resulting global majorants are transformed by the exact binary <span class="math" data-tex="W"></span>, with full Arb matrix multiplication. For these exactly symmetric enclosed matrices, a maximum absolute row sum bounds the spectral norm. No floating eigenvalue is used in acceptance.</p>
+<h2>Acceptance theorem and its limits</h2>
+<p>For each fixed gain, use</p>
+<div class="math display" data-tex="
+ T_\delta(z)=z-W^TF(\widehat u(\delta)+Wz,\delta).
+"></div>
+
+<p>If the uniform derivative bound is <span class="math" data-tex="Z&lt;1"></span>, and</p>
+<div class="math display" data-tex="
+ \eta+Z\rho&lt;\rho,
+"></div>
+
+<p>then this map is a contraction of the closed Euclidean <span class="math" data-tex="z"></span>-ball into itself. It supplies a unique stationary point in that gain's predictor-centered ball. Its metric distance from the predictor is at most <span class="math" data-tex="\eta/(1-Z)"></span>. Because the exact transformed Hessian is symmetric and within <span class="math" data-tex="Z"></span> of the identity, it is positive definite throughout that ball; the stationary point is a strict local minimum of the specified finite-quadrature energy.</p>
+<p>A passed derivative bound alone is insufficient. If the residual/self-map inequality fails, the receipt must remain unresolved. Even a successful calculation covers one gain coordinate at one fixed material and one numerical mesh. It does not identify material parameters, cover the full unbounded material domain or all seventeen revised-material states, certify a continuum solution or physical dynamics, resolve source observation semantics, or validate cross-size prediction. It supplies no new-general-concept claim.</p>
+<p>The actual final source/input checks all pass. A guard-hardening limitation is retained explicitly: this producer revision selects its status from the numerical inequalities before combining the final unchanged-input/source booleans. Future reuse must check <strong>all</strong> final booleans, rather than trusting the status string alone. No source/input mutation occurred in this run. The successful source and receipt are preserved instead of silently changing that history.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

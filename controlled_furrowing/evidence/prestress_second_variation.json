@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "true_area_normal_second_variation": true,
+    "zero_tension_exact_original_objective": true
+  },
+  "second_variation_autodiff": 8.126858310618834,
+  "second_variation_independent_edge_formula": 8.126858310618834,
+  "absolute_error": 0.0,
+  "zero_tension_objective_difference": 0.0,
+  "zero_tension_gradient_linf_difference": 0.0,
+  "source_sha256": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+  "base_source_sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+  "scope": "Synthetic mathematical verification, not experimental evidence"
+}

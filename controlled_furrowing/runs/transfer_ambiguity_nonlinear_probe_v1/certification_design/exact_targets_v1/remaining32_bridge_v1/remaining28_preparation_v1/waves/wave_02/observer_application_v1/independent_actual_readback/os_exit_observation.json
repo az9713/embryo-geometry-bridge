@@ -1,0 +1,14 @@
+{
+  "status": "PASS_OBSERVED_INDEPENDENT_LATER_WAVE_SPATIAL_OBSERVER_READBACK_EXIT",
+  "wave_id": "wave_02",
+  "pid": 22020,
+  "observed_exit_code": 0,
+  "unified_exec_chunk_id": "80af2f",
+  "receipt_sha256": "88d5950f9b0ec2cc236d57c9b70f686d11fcb4a1879870e2c36e91eecc578fc0",
+  "terminal_sha256": "db02e234330a8f520b62f263bc19c74a1e7f4a4b8f911abc9bb8a63faeb09bbe",
+  "started_sha256": "a79bbd6e3f975102971c67cd00a57960e2f8fc1a8bd66eb0642b878a2317442c",
+  "source_sha256": "58ba50a6a7e4c3726ed996b0785369a9eb0406867e737983c45523f96ffa1bfe",
+  "protocol_sha256": "b1478e3bd7c55f52b3d6f4cce5b84354080103edf8aef20376777e894fecf1f0",
+  "producer_os_sha256": "e35e7ea095d81bc3bc1fb216d749a73a89940fc1dc612b99b5b6cac8cb02e8b5",
+  "native_global_os_sha256": "b6f8b9014b397d8da5b962cd757993d1060096cadeaa8a76d7e53c29d461e082"
+}

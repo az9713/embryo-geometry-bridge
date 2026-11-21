@@ -1,0 +1,322 @@
+{
+  "status": "PASS",
+  "checks": {
+    "producer_protocol_result_source_bindings": true,
+    "actual_M_cache_input_predictor_archives_bound": true,
+    "preparation_source_and_direct_inputs_bound": true,
+    "predictor_exact_stored_binary_rule_reproduced": true,
+    "cache_binary_center_free_map_and_reference_match": true,
+    "all_five_actual_absolute_coordinate_intervals_positive_width": true,
+    "same_new_material_geometry_gain_and_source_M_dose": true,
+    "exact_gain_times_dose_is_point_target_not_rounded_solver_strength": true,
+    "all_9504_terms_and_611_free_coordinates": true,
+    "independent_center_defect_below_one": true,
+    "independent_uniform_contraction": true,
+    "independent_uniform_selfmap": true,
+    "independent_analytic_domain_J_positive": true,
+    "all_inputs_unchanged": true,
+    "independent_eta_agrees_to_25_relative_digits": true,
+    "independent_Z_agrees_to_25_absolute_digits": true,
+    "independent_outer_radius_agrees_to_25_absolute_digits": true,
+    "all_611_predictor_bounds_match_to_25_absolute_digits": true,
+    "no_producer_evaluation_or_optimization_called": true
+  },
+  "review_source_sha256": "ab96c6b868ff4b368540cc852f08afe7af2450693e4ea269cb6c0abff511d00d",
+  "reviewed_hashes": {
+    "runs/parametric_root_cells_v1/actual_M/protocol.json": "143ff3db595c38de5b4f64e455a028af4da1f85ecb767b03519de8ffafb42158",
+    "runs/parametric_root_cells_v1/actual_M/results.json": "8332fc3f67d12a491cee42c2fe1a87ba3f6b72091000a52030128e114097c202",
+    "runs/parametric_root_cells_v1/actual_M/preparation_protocol.json": "c2150564e4f804f38da3d0319419af7ad1aacd28265aa2dd1ac26ccd42eb1f8a",
+    "runs/parametric_root_cells_v1/actual_M/point_cache.json": "1a9edb8b96a922cfed7ad78c796549f5655e29b60926da9e78a90e3ceb0e9cab",
+    "runs/material_cohort_direct_v1/direct/08/final.json": "bfaa3a3d05af6ff8c5b8e55bda886ae8125b24a3543b0a4c7c5c6a5c26dd4ea0",
+    "runs/parametric_root_cells_v1/actual_M/affine_predictor.npz": "36c487b8c15fdb0817c234d21d5d02574660d8be3848539420d186eedc015eef",
+    "runs/parametric_root_cells_v1/actual_M/tangents.npz": "9684b876321f5ee06bc921ae15f393f51e02f19a13dee056ff482d52b8744b35",
+    "runs/parametric_root_cells_v1/actual_M/prepare_cache.py": "c16eb750ee54defa9a5bf97ba260431c1be31b82ba6a2951a8811f74c7e74261",
+    "scripts/parametric_root_cells.py": "362a19548aa60c4234017316e22deef4a80e93b73c725f47132573a1a9103b60",
+    "scripts/algebraic_root_feasibility.py": "7321d38bf17cf354cc03be2871f3fbaa45bcebbcbfca7be90d0f867b80078acf"
+  },
+  "cell_id": "scale_3",
+  "method": "affine",
+  "free_dofs": 611,
+  "terms": 9504,
+  "precision_bits": 160,
+  "base_strength_exact": "1555161284902574631071784759777356679064415217086258680909819949178366009440592005089217437828855002652586993817606385902133103280510169770594499749160504980408253520140067300607049756353252912251144257627905855417575697/254519210378882466853300300752736943976751075843673797122825752290146201392847714492726693580221631324063978865900473861463939526593184442929654160115581009117122936557624359105106874158787323379159722191756854296576000",
+  "solver_strength_binary_exact": "6879464788494965/1125899906842624",
+  "strength_difference_exact": "42933136197647920922577983390783663053094480974773745699997537625930882925619756040526844924918976842826056880528908794573518331133451942757558621956509273712979677970538700040012516634947193158962415697/254519210378882466853300300752736943976751075843673797122825752290146201392847714492726693580221631324063978865900473861463939526593184442929654160115581009117122936557624359105106874158787323379159722191756854296576000",
+  "independent_bounds": {
+    "point_Z0": {
+      "ball": "[8.5471550826513908286833470593906984582944446966e-7 +/- 4.11e-54]",
+      "lower_exact": "1309847705125247417648288947200943861730441357355/1532495540865888858358347027150309183618739122183602176",
+      "upper_exact": "1309847705125247417648288947200943861730441357355/1532495540865888858358347027150309183618739122183602176"
+    },
+    "eta_uniform": {
+      "ball": "[1.7442421447813451879902709866915963241095675154e-12 +/- 3.05e-60]",
+      "lower_exact": "1401444530424520698883360938913502859334924895967/803469022129495137770981046170581301261101496891396417650688",
+      "upper_exact": "1401444530424520698883360938913502859334924895967/803469022129495137770981046170581301261101496891396417650688"
+    },
+    "Z_uniform": {
+      "ball": "[0.096862310102824290159175511686131486530576389186 +/- 1.61e-49]",
+      "lower_exact": "1132515398487450875743782575874801242325248752765/11692013098647223345629478661730264157247460343808",
+      "upper_exact": "1132515398487450875743782575874801242325248752767/11692013098647223345629478661730264157247460343808"
+    },
+    "eta_plus_Zr": {
+      "ball": "[2.7128652458095880895820261035529111894153314073e-12 +/- 4.60e-59]",
+      "lower_exact": "1089851593109861099659768936554104223770431599035/401734511064747568885490523085290650630550748445698208825344",
+      "upper_exact": "1089851593109861099659768936554104223770431599041/401734511064747568885490523085290650630550748445698208825344"
+    },
+    "radius": {
+      "ball": "[1.0000000000000000000000000000000000000000000000e-11 +/- 1.25e-59]",
+      "lower_exact": "1004336277661868922213726307713226626576376871113/100433627766186892221372630771322662657637687111424552206336",
+      "upper_exact": "1004336277661868922213726307713226626576376871115/100433627766186892221372630771322662657637687111424552206336"
+    },
+    "error_from_predictor": {
+      "ball": "[1.9313136460730933981090590309612043203156501317e-12 +/- 5.41e-59]",
+      "lower_exact": "775875343317849109885276632940774015380942994189/401734511064747568885490523085290650630550748445698208825344",
+      "upper_exact": "775875343317849109885276632940774015380942994193/401734511064747568885490523085290650630550748445698208825344"
+    },
+    "outer_nodal_radius": {
+      "ball": "[1.4744069101454061465446167250734141152353483135e-9 +/- 2.53e-56]",
+      "lower_exact": "1156875271792480351871833711320366825267358324695/784637716923335095479473677900958302012794430558004314112",
+      "upper_exact": "1156875271792480351871833711320366825267358324699/784637716923335095479473677900958302012794430558004314112"
+    },
+    "quadrature_J_lower": {
+      "ball": "[0.97769097404903237487739753659185550978179026917 +/- 1.16e-48]",
+      "lower_exact": "714448479688153065281771042224780963869733691301/730750818665451459101842416358141509827966271488",
+      "upper_exact": "714448479688153065281771042224780963869733691301/730750818665451459101842416358141509827966271488"
+    }
+  },
+  "scope": "PASS for one actual-M selected stationary root family uniformly over its declared five-parameter cell, admissible whole-body nodal box and one apical static observable. At declared5.1um tolerance that selected family is excluded. Other67channels, otherbranches, fullunboundeddomain, continuum and biology remain unresolved.",
+  "observer_provider_review": "PASS",
+  "elapsed_seconds": 26.214337825775146,
+  "initial_192bit_review_preserved": {
+    "status": "FAIL",
+    "checks": {
+      "producer_protocol_result_source_bindings": true,
+      "actual_M_cache_input_predictor_archives_bound": true,
+      "preparation_source_and_direct_inputs_bound": true,
+      "predictor_exact_stored_binary_rule_reproduced": true,
+      "cache_binary_center_free_map_and_reference_match": true,
+      "all_five_actual_absolute_coordinate_intervals_positive_width": true,
+      "same_new_material_geometry_gain_and_source_M_dose": true,
+      "exact_gain_times_dose_is_point_target_not_rounded_solver_strength": true,
+      "all_9504_terms_and_611_free_coordinates": true,
+      "independent_center_defect_below_one": true,
+      "independent_uniform_contraction": true,
+      "independent_uniform_selfmap": true,
+      "independent_analytic_domain_J_positive": true,
+      "all_inputs_unchanged": true,
+      "independent_eta_agrees_to_25_relative_digits": false,
+      "independent_Z_agrees_to_25_absolute_digits": false,
+      "independent_outer_radius_agrees_to_25_absolute_digits": false,
+      "all_611_predictor_bounds_match_to_25_absolute_digits": false,
+      "no_producer_evaluation_or_optimization_called": true
+    },
+    "review_source_sha256": "dfbde84674d10de359c5c70c4d7eee2539c04ec307f38b84e1769a5020a36d2d",
+    "reviewed_hashes": {
+      "runs/parametric_root_cells_v1/actual_M/protocol.json": "143ff3db595c38de5b4f64e455a028af4da1f85ecb767b03519de8ffafb42158",
+      "runs/parametric_root_cells_v1/actual_M/results.json": "8332fc3f67d12a491cee42c2fe1a87ba3f6b72091000a52030128e114097c202",
+      "runs/parametric_root_cells_v1/actual_M/preparation_protocol.json": "c2150564e4f804f38da3d0319419af7ad1aacd28265aa2dd1ac26ccd42eb1f8a",
+      "runs/parametric_root_cells_v1/actual_M/point_cache.json": "1a9edb8b96a922cfed7ad78c796549f5655e29b60926da9e78a90e3ceb0e9cab",
+      "runs/material_cohort_direct_v1/direct/08/final.json": "bfaa3a3d05af6ff8c5b8e55bda886ae8125b24a3543b0a4c7c5c6a5c26dd4ea0",
+      "runs/parametric_root_cells_v1/actual_M/affine_predictor.npz": "36c487b8c15fdb0817c234d21d5d02574660d8be3848539420d186eedc015eef",
+      "runs/parametric_root_cells_v1/actual_M/tangents.npz": "9684b876321f5ee06bc921ae15f393f51e02f19a13dee056ff482d52b8744b35",
+      "runs/parametric_root_cells_v1/actual_M/prepare_cache.py": "c16eb750ee54defa9a5bf97ba260431c1be31b82ba6a2951a8811f74c7e74261",
+      "scripts/parametric_root_cells.py": "362a19548aa60c4234017316e22deef4a80e93b73c725f47132573a1a9103b60",
+      "scripts/algebraic_root_feasibility.py": "7321d38bf17cf354cc03be2871f3fbaa45bcebbcbfca7be90d0f867b80078acf"
+    },
+    "cell_id": "scale_3",
+    "method": "affine",
+    "free_dofs": 611,
+    "terms": 9504,
+    "precision_bits": 192,
+    "base_strength_exact": "1555161284902574631071784759777356679064415217086258680909819949178366009440592005089217437828855002652586993817606385902133103280510169770594499749160504980408253520140067300607049756353252912251144257627905855417575697/254519210378882466853300300752736943976751075843673797122825752290146201392847714492726693580221631324063978865900473861463939526593184442929654160115581009117122936557624359105106874158787323379159722191756854296576000",
+    "solver_strength_binary_exact": "6879464788494965/1125899906842624",
+    "strength_difference_exact": "42933136197647920922577983390783663053094480974773745699997537625930882925619756040526844924918976842826056880528908794573518331133451942757558621956509273712979677970538700040012516634947193158962415697/254519210378882466853300300752736943976751075843673797122825752290146201392847714492726693580221631324063978865900473861463939526593184442929654160115581009117122936557624359105106874158787323379159722191756854296576000",
+    "independent_bounds": {
+      "point_Z0": {
+        "ball": "[8.54715508265139082868334705939069409763415101231686943568e-7 +/- 1.71e-64]",
+        "lower_exact": "2812876528126794621353927129293160878134818561332957565305/3291009114642412084309938365114701009965471731267159726697218048",
+        "upper_exact": "2812876528126794621353927129293160878134818561332957565305/3291009114642412084309938365114701009965471731267159726697218048"
+      },
+      "eta_uniform": {
+        "ball": "[1.74424215182728320872992630915049983270494091365106267916e-12 +/- 2.97e-69]",
+        "lower_exact": "3009579224823015947677712422295343861365410806627974798219/1725436586697640946858688965569256363112777243042596638790631055949824",
+        "upper_exact": "3009579224823015947677712422295343861365410806627974798219/1725436586697640946858688965569256363112777243042596638790631055949824"
+      },
+      "Z_uniform": {
+        "ball": "[0.0968623102399471749905795560765792401561845809701196937074 +/- 2.52e-59]",
+        "lower_exact": "2432058302802941882208790084859538606256166733944887188667/25108406941546723055343157692830665664409421777856138051584",
+        "upper_exact": "608014575700735470552197521214884651564041683486221797167/6277101735386680763835789423207666416102355444464034512896"
+      },
+      "eta_plus_Zr": {
+        "ball": "[2.71286525422675495863572186991629223426678672335225961623e-12 +/- 1.92e-69]",
+        "lower_exact": "4680876964423640030345782447607469152168555945926602564893/1725436586697640946858688965569256363112777243042596638790631055949824",
+        "upper_exact": "4680876964423640030345782447607469152168555945926602564899/1725436586697640946858688965569256363112777243042596638790631055949824"
+      },
+      "radius": {
+        "ball": "[1.00000000000000000000000000000000000000000000000000000000e-11 +/- 3.66e-69]",
+        "lower_exact": "4313591466744102367146722413923140907781943107606491596975/431359146674410236714672241392314090778194310760649159697657763987456",
+        "upper_exact": "4313591466744102367146722413923140907781943107606491596977/431359146674410236714672241392314090778194310760649159697657763987456"
+      },
+      "error_from_predictor": {
+        "ball": "[1.93131365416794471734233324672270099313345808739000003710e-12 +/- 3.47e-69]",
+        "lower_exact": "833089809822521672525682497467293458673869450466351415243/431359146674410236714672241392314090778194310760649159697657763987456",
+        "upper_exact": "208272452455630418131420624366823364668467362616587853811/107839786668602559178668060348078522694548577690162289924414440996864"
+      },
+      "outer_nodal_radius": {
+        "ball": "[1.47440691535767142579427128252494905608387080092188670130e-9 +/- 1.85e-66]",
+        "lower_exact": "4968741475465113652963563575981661675556267246191648813945/3369993333393829974333376885877453834204643052817571560137951281152",
+        "upper_exact": "4968741475465113652963563575981661675556267246191648813949/3369993333393829974333376885877453834204643052817571560137951281152"
+      },
+      "quadrature_J_lower": {
+        "ball": "[0.977690974049032374877397536591855509781790269176115996449 +/- 4.72e-60]",
+        "lower_exact": "767133213734384423506839912828817330145965952095680099615/784637716923335095479473677900958302012794430558004314112",
+        "upper_exact": "767133213734384423506839912828817330145965952095680099615/784637716923335095479473677900958302012794430558004314112"
+      }
+    },
+    "scope": "Independent proof/replay of one selected actual-M local five-parameter root family. Body geometry, observation transfer, provider callback, source-channel exclusion and global material domain require separate actual artifacts/review.",
+    "observer_provider_review": "PENDING",
+    "elapsed_seconds": 23.159719705581665,
+    "initial_review_source_snapshot": "\"\"\"Independent read-only strongest actual-M five-parameter cell replay.\n\nReconstructs parameter force derivatives analytically and assembles fresh\ncenter/variation/Taylor bounds. No producer evaluate_cell/build_point calls,\nno equilibrium solve, and no producer output writes.\n\"\"\"\nfrom pathlib import Path\nfrom fractions import Fraction as Q\nimport base64,hashlib,io,json,time\nimport numpy as np\nfrom flint import arb,arb_mat,ctx\nimport algebraic_root_feasibility as kernel\n\nROOT=Path(__file__).resolve().parents[1]\nRUN=ROOT/'runs/parametric_root_cells_v1/actual_M'\nOUT=ROOT/'evidence/parametric_actual_M_independent_review.json'\n\n\ndef sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()\ndef read(p):return json.loads(Path(p).read_text(encoding='utf8'))\ndef A(v):return kernel.A(v)\ndef up(v):return kernel.upper(v)\ndef pack(v):return kernel.pack(v)\ndef linf(v):return max(up(v[i,0]) for i in range(v.nrows()))\ndef rowsum(M):return max(sum((up(M[i,j]) for j in range(M.ncols())),arb(0)).upper() for i in range(M.nrows()))\n\n\ndef main():\n    if OUT.exists():raise RuntimeError('retain earlier independent review; no overwrite')\n    started=time.time();ctx.prec=192\n    protocol=read(RUN/'protocol.json');result=read(RUN/'results.json');prep=read(RUN/'preparation_protocol.json')\n    cachepath=ROOT/protocol['point_certificate_file'];cache=read(cachepath);statepath=ROOT/cache['input_state'];state=read(statepath)\n    selected=next(c for c in result['cell_attempts'] if c['cell_id']=='scale_3' and c['method']=='affine')\n    checks={};hashpaths=[RUN/'protocol.json',RUN/'results.json',RUN/'preparation_protocol.json',cachepath,statepath,\n        RUN/'affine_predictor.npz',ROOT/cache['matrix_archive'],RUN/'prepare_cache.py',ROOT/'scripts/parametric_root_cells.py',Path(kernel.__file__)]\n    input_hashes={p.relative_to(ROOT).as_posix():sha(p) for p in hashpaths}\n    checks['producer_protocol_result_source_bindings']=result['protocol_sha256']==sha(RUN/'protocol.json') and all(sha(ROOT/'scripts'/k)==v for k,v in protocol['source_hashes'].items())\n    checks['actual_M_cache_input_predictor_archives_bound']=sha(cachepath)==protocol['point_certificate_sha256'] and sha(statepath)==cache['input_state_sha256']==protocol['point_input_sha256'] and sha(RUN/'affine_predictor.npz')==protocol['predictor_sha256'] and sha(ROOT/cache['matrix_archive'])==protocol['matrix_archive_sha256']==cache['matrix_archive_sha256']\n    checks['preparation_source_and_direct_inputs_bound']=sha(RUN/'prepare_cache.py')==prep['source_sha256'] and sha(RUN/'preparation_protocol.json')==protocol['source_record_preparation_sha256']==cache['preparation_protocol_sha256'] and all(sha(ROOT/'scripts'/k)==v for k,v in prep['physical_sources'].items())\n    model,u,R=kernel.restore_cache(cache);n=len(u);dose=Q(protocol['dose_exact']);base=[Q(v) for v in protocol['base_parameters_exact'].values()]\n    with np.load(RUN/'affine_predictor.npz',allow_pickle=False) as z:S=z['S'].copy()\n    with np.load(ROOT/cache['matrix_archive'],allow_pickle=False) as z:\n        archivedS=z['displacement_tangents'][:,[1,2,3,4,5]].copy();archivedfree=z['free_indices'].copy();archivedu=z['free_vector'].copy()\n    archivedS/=np.array([float(base[0]),float(base[1]),1.,float(base[3]),float(base[4])])[None,:]\n    checks['predictor_exact_stored_binary_rule_reproduced']=np.array_equal(S,archivedS)\n    checks['cache_binary_center_free_map_and_reference_match']=np.array_equal(u,archivedu) and np.array_equal(model.free,archivedfree) and np.array_equal(model.reference,np.asarray(state['reference_nodes'])) and np.array_equal(u,np.asarray(state['free_displacement']))\n    checks['all_five_actual_absolute_coordinate_intervals_positive_width']=len(selected['cell_bounds_exact'])==5 and all(Q(lo)<Q(hi) for lo,hi in selected['cell_bounds_exact'].values())\n    directp=read(ROOT/'runs/material_cohort_direct_v1/protocol.json');directr=read(ROOT/'runs/material_cohort_direct_v1/results.json')\n    rec=next(r for r in directp['records'] if r['record_id']=='optoGEF2_small_col_M')\n    checks['same_new_material_geometry_gain_and_source_M_dose']=state['parameters']==directp['new_parameters']==cache['parameters']==protocol['base_full_parameters'] and Q(directp['new_gain_exact'])==base[4]==Q(prep['base_gain_exact']) and Q(rec['dose_exact'])==dose and protocol['calibration_record_ids_covered']==['optoGEF2_small_col_M']\n    checks['exact_gain_times_dose_is_point_target_not_rounded_solver_strength']=base[4]*dose==Q(prep['requested_strength_exact'])==Q(protocol['base_strength_requested_exact']) and Q.from_float(float(state['activation_strength']))==Q(prep['solver_strength_binary_exact']) and base[4]*dose!=Q(prep['solver_strength_binary_exact'])\n    RM=arb_mat(n,n,[A(float(v)) for v in R.ravel()]);AR=arb_mat(n,n,[A(abs(float(v))) for v in R.ravel()]);SM=arb_mat(n,5,[A(float(v)) for v in S.ravel()])\n    g=arb_mat(n,1);H=arb_mat(n,n);B0=arb_mat(n,5);terms=[];surface_count=0;basal_count=len(model.surfaces[0][0])*len(model.surfaces[0][1]);bulk_count=0\n    for term in kernel.local_terms(model,u,base[4]*dose):\n        ids=term['indices'];d=len(ids);k=len(term['q']);BM=arb_mat(k,d,[v for row in term['B'] for v in row])\n        fun=kernel.bulk_local if term['kind']=='bulk' else kernel.surface_local\n        grad,h,_=fun(term['q'],*term['parameters']);HM=arb_mat(k,k,[v for row in h for v in row]);GM=arb_mat(k,1,grad)\n        localH=BM.transpose()*HM*BM;localg=BM.transpose()*GM;C=arb_mat(k,5)\n        if term['kind']=='bulk':\n            element,iq=divmod(bulk_count,len(model.shape));active=model.active.numpy();mask=A(float(active[element,0 if active.shape[1]==1 else iq]));bulk_count+=1\n            C[1,4]=mask*A(dose)*term['q'][1];C[3,4]=mask*A(dose)*term['q'][3];term['mask']=mask\n        else:\n            basal=surface_count<basal_count;surface_count+=1;term['basal']=basal\n            rr,x,z=term['q'];scale=term['parameters'][2];length=(x*x+z*z).sqrt();js=scale*rr*length\n            djs=[scale*length,scale*rr*x/length,scale*rr*z/length];ki,ti=(1,3) if basal else (0,2)\n            for a in range(k):C[a,ki]=(js-1)*djs[a];C[a,ti]=djs[a]\n        localB=BM.transpose()*C\n        for a,i in enumerate(ids):\n            g[i,0]+=term['weight']*localg[a,0]\n            for b,j in enumerate(ids):H[i,j]+=term['weight']*localH[a,b]\n            for j in range(5):B0[i,j]+=term['weight']*localB[a,j]\n        term['HC']=h;term['P']=BM*arb_mat(d,5,[A(float(S[i,j])) for i in ids for j in range(5)])\n        term['absB']=[[up(v) for v in row] for row in term['B']];term['rowsB']=[sum(row,arb(0)).upper() for row in term['absB']]\n        if not term['weight']>0:raise ValueError('positive quadrature weights required')\n        terms.append(term)\n        if len(terms)%1536==0:print(json.dumps({'phase':'independent actualM center','terms':len(terms),'elapsed':time.time()-started}),flush=True)\n    theta=[A(Q(lo)).union(A(Q(hi))) for lo,hi in selected['cell_bounds_exact'].values()]\n    delta=[theta[i]-A(base[i]) for i in range(5)];hull=[v.union(arb(0)) for v in delta];r=A(Q(selected['selected_radius_exact']))\n    remrows=[arb(0) for i in range(n)];drows=[arb(0) for i in range(n)];minJ=None\n    for term in terms:\n        k=len(term['q']);offset=[sum((term['P'][a,j]*hull[j] for j in range(5)),arb(0)) for a in range(k)]\n        for remainder,rows in ((True,remrows),(False,drows)):\n            qb=[term['q'][a]+offset[a]+(arb(0,(r*term['rowsB'][a]).upper()) if not remainder else 0) for a in range(k)]\n            if term['kind']=='bulk':_,hb,J=kernel.bulk_local(qb,term['parameters'][0],term['parameters'][1],term['mask']*A(dose)*theta[4]);minJ=J.lower() if minJ is None else min(minJ,J.lower())\n            else:\n                ki,ti=(1,3) if term['basal'] else (0,2);_,hb,_=kernel.surface_local(qb,theta[ki],theta[ti],term['parameters'][2])\n            width=[up(v) for v in offset] if remainder else term['rowsB']\n            change=[[up(hb[a][b]-term['HC'][a][b]) for b in range(k)] for a in range(k)]\n            local=[sum((change[a][b]*width[b] for b in range(k)),arb(0)) for a in range(k)]\n            for j,i in enumerate(term['indices']):rows[i]+=term['weight']*sum((term['absB'][a][j]*local[a] for a in range(k)),arb(0))\n    identity=arb_mat(n,n,[1 if i==j else 0 for i in range(n) for j in range(n)]);Z0=rowsum(identity-RM*H)\n    linear=RM*g+RM*(H*SM+B0)*arb_mat(5,1,delta);remainder=AR*arb_mat(n,1,[x.upper() for x in remrows]);eta=max(up(linear[i,0])+up(remainder[i,0]) for i in range(n))\n    variation=AR*arb_mat(n,1,[x.upper() for x in drows]);Z=Z0+linf(variation);lhs=eta+Z*r;err=eta/(1-Z)\n    pred=[up(sum((A(float(S[i,j]))*delta[j] for j in range(5)),arb(0))) for i in range(n)];outer=max(v+err for v in pred)\n    expected=next(a for a in selected['radius_attempts'] if a['strict_selfmap_contraction'])\n    checks.update(all_9504_terms_and_611_free_coordinates=len(terms)==9504 and n==611,\n        independent_center_defect_below_one=bool(Z0<1),independent_uniform_contraction=bool(Z<1),independent_uniform_selfmap=bool(lhs<r),\n        independent_analytic_domain_J_positive=bool(minJ>0),all_inputs_unchanged=all(sha(ROOT/k)==v for k,v in input_hashes.items()),\n        independent_eta_agrees_to_25_relative_digits=abs(float(eta)-float(Q(selected['eta_uniform']['upper_exact'])))<1e-25,\n        independent_Z_agrees_to_25_absolute_digits=abs(float(Z)-float(Q(expected['Z_uniform']['upper_exact'])))<1e-25,\n        independent_outer_radius_agrees_to_25_absolute_digits=abs(float(outer)-float(Q(selected['uniform_outer_nodal_radius_about_base']['upper_exact'])))<1e-25,\n        all_611_predictor_bounds_match_to_25_absolute_digits=all(abs(float(v)-float(Q(s)))<1e-25 for v,s in zip(pred,selected['full_nodal_predictor_bounds_exact'])),\n        no_producer_evaluation_or_optimization_called=True)\n    receipt={'status':'PASS_INDEPENDENT_ACTUAL_M_UNIFORM_ROOT_CELL' if all(checks.values()) else 'FAIL','checks':checks,'review_source_sha256':sha(__file__),'reviewed_hashes':input_hashes,\n        'cell_id':'scale_3','method':'affine','free_dofs':n,'terms':len(terms),'precision_bits':ctx.prec,\n        'base_strength_exact':str(base[4]*dose),'solver_strength_binary_exact':prep['solver_strength_binary_exact'],'strength_difference_exact':str(base[4]*dose-Q(prep['solver_strength_binary_exact'])),\n        'independent_bounds':{'point_Z0':pack(Z0),'eta_uniform':pack(eta),'Z_uniform':pack(Z),'eta_plus_Zr':pack(lhs),'radius':pack(r),'error_from_predictor':pack(err),'outer_nodal_radius':pack(outer),'quadrature_J_lower':pack(minJ)},\n        'scope':'Independent proof/replay of one selected actual-M local five-parameter root family. Body geometry, observation transfer, provider callback, source-channel exclusion and global material domain require separate actual artifacts/review.',\n        'observer_provider_review':'PENDING','elapsed_seconds':time.time()-started}\n    OUT.write_text(json.dumps(receipt,indent=2)+'\\n',encoding='utf8');print(json.dumps(receipt,indent=2),flush=True)\n    if not all(checks.values()):raise RuntimeError('independent actual-M review finding retained')\n\n\nif __name__=='__main__':main()\n",
+    "failure_classification": "Independent selfmap and contraction passed; four arbitrary cross-precision equality expectations failed. Preserved before same-precision diagnostic replay."
+  },
+  "same_precision_review_source_snapshot": "\"\"\"Independent read-only strongest actual-M five-parameter cell replay.\n\nReconstructs parameter force derivatives analytically and assembles fresh\ncenter/variation/Taylor bounds. No producer evaluate_cell/build_point calls,\nno equilibrium solve, and no producer output writes.\n\"\"\"\nfrom pathlib import Path\nfrom fractions import Fraction as Q\nimport base64,hashlib,io,json,time\nimport numpy as np\nfrom flint import arb,arb_mat,ctx\nimport algebraic_root_feasibility as kernel\n\nROOT=Path(__file__).resolve().parents[1]\nRUN=ROOT/'runs/parametric_root_cells_v1/actual_M'\nOUT=ROOT/'evidence/parametric_actual_M_independent_review.json'\n\n\ndef sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()\ndef read(p):return json.loads(Path(p).read_text(encoding='utf8'))\ndef A(v):return kernel.A(v)\ndef up(v):return kernel.upper(v)\ndef pack(v):return kernel.pack(v)\ndef linf(v):return max(up(v[i,0]) for i in range(v.nrows()))\ndef rowsum(M):return max(sum((up(M[i,j]) for j in range(M.ncols())),arb(0)).upper() for i in range(M.nrows()))\n\n\ndef main():\n    previous=None\n    if OUT.exists():\n        previous=read(OUT)\n        if previous['status']!='FAIL' or previous['precision_bits']!=192:raise RuntimeError('retain completed review; no overwrite')\n    started=time.time();ctx.prec=160\n    protocol=read(RUN/'protocol.json');result=read(RUN/'results.json');prep=read(RUN/'preparation_protocol.json')\n    cachepath=ROOT/protocol['point_certificate_file'];cache=read(cachepath);statepath=ROOT/cache['input_state'];state=read(statepath)\n    selected=next(c for c in result['cell_attempts'] if c['cell_id']=='scale_3' and c['method']=='affine')\n    checks={};hashpaths=[RUN/'protocol.json',RUN/'results.json',RUN/'preparation_protocol.json',cachepath,statepath,\n        RUN/'affine_predictor.npz',ROOT/cache['matrix_archive'],RUN/'prepare_cache.py',ROOT/'scripts/parametric_root_cells.py',Path(kernel.__file__)]\n    input_hashes={p.relative_to(ROOT).as_posix():sha(p) for p in hashpaths}\n    checks['producer_protocol_result_source_bindings']=result['protocol_sha256']==sha(RUN/'protocol.json') and all(sha(ROOT/'scripts'/k)==v for k,v in protocol['source_hashes'].items())\n    checks['actual_M_cache_input_predictor_archives_bound']=sha(cachepath)==protocol['point_certificate_sha256'] and sha(statepath)==cache['input_state_sha256']==protocol['point_input_sha256'] and sha(RUN/'affine_predictor.npz')==protocol['predictor_sha256'] and sha(ROOT/cache['matrix_archive'])==protocol['matrix_archive_sha256']==cache['matrix_archive_sha256']\n    checks['preparation_source_and_direct_inputs_bound']=sha(RUN/'prepare_cache.py')==prep['source_sha256'] and sha(RUN/'preparation_protocol.json')==protocol['source_record_preparation_sha256']==cache['preparation_protocol_sha256'] and all(sha(ROOT/'scripts'/k)==v for k,v in prep['physical_sources'].items())\n    model,u,R=kernel.restore_cache(cache);n=len(u);dose=Q(protocol['dose_exact']);base=[Q(v) for v in protocol['base_parameters_exact'].values()]\n    with np.load(RUN/'affine_predictor.npz',allow_pickle=False) as z:S=z['S'].copy()\n    with np.load(ROOT/cache['matrix_archive'],allow_pickle=False) as z:\n        archivedS=z['displacement_tangents'][:,[1,2,3,4,5]].copy();archivedfree=z['free_indices'].copy();archivedu=z['free_vector'].copy()\n    archivedS/=np.array([float(base[0]),float(base[1]),1.,float(base[3]),float(base[4])])[None,:]\n    checks['predictor_exact_stored_binary_rule_reproduced']=np.array_equal(S,archivedS)\n    checks['cache_binary_center_free_map_and_reference_match']=np.array_equal(u,archivedu) and np.array_equal(model.free,archivedfree) and np.array_equal(model.reference,np.asarray(state['reference_nodes'])) and np.array_equal(u,np.asarray(state['free_displacement']))\n    checks['all_five_actual_absolute_coordinate_intervals_positive_width']=len(selected['cell_bounds_exact'])==5 and all(Q(lo)<Q(hi) for lo,hi in selected['cell_bounds_exact'].values())\n    directp=read(ROOT/'runs/material_cohort_direct_v1/protocol.json');directr=read(ROOT/'runs/material_cohort_direct_v1/results.json')\n    rec=next(r for r in directp['records'] if r['record_id']=='optoGEF2_small_col_M')\n    checks['same_new_material_geometry_gain_and_source_M_dose']=state['parameters']==directp['new_parameters']==cache['parameters']==protocol['base_full_parameters'] and Q(directp['new_gain_exact'])==base[4]==Q(prep['base_gain_exact']) and Q(rec['dose_exact'])==dose and protocol['calibration_record_ids_covered']==['optoGEF2_small_col_M']\n    checks['exact_gain_times_dose_is_point_target_not_rounded_solver_strength']=base[4]*dose==Q(prep['requested_strength_exact'])==Q(protocol['base_strength_requested_exact']) and Q.from_float(float(state['activation_strength']))==Q(prep['solver_strength_binary_exact']) and base[4]*dose!=Q(prep['solver_strength_binary_exact'])\n    RM=arb_mat(n,n,[A(float(v)) for v in R.ravel()]);AR=arb_mat(n,n,[A(abs(float(v))) for v in R.ravel()]);SM=arb_mat(n,5,[A(float(v)) for v in S.ravel()])\n    g=arb_mat(n,1);H=arb_mat(n,n);B0=arb_mat(n,5);terms=[];surface_count=0;basal_count=len(model.surfaces[0][0])*len(model.surfaces[0][1]);bulk_count=0\n    for term in kernel.local_terms(model,u,base[4]*dose):\n        ids=term['indices'];d=len(ids);k=len(term['q']);BM=arb_mat(k,d,[v for row in term['B'] for v in row])\n        fun=kernel.bulk_local if term['kind']=='bulk' else kernel.surface_local\n        grad,h,_=fun(term['q'],*term['parameters']);HM=arb_mat(k,k,[v for row in h for v in row]);GM=arb_mat(k,1,grad)\n        localH=BM.transpose()*HM*BM;localg=BM.transpose()*GM;C=arb_mat(k,5)\n        if term['kind']=='bulk':\n            element,iq=divmod(bulk_count,len(model.shape));active=model.active.numpy();mask=A(float(active[element,0 if active.shape[1]==1 else iq]));bulk_count+=1\n            C[1,4]=mask*A(dose)*term['q'][1];C[3,4]=mask*A(dose)*term['q'][3];term['mask']=mask\n        else:\n            basal=surface_count<basal_count;surface_count+=1;term['basal']=basal\n            rr,x,z=term['q'];scale=term['parameters'][2];length=(x*x+z*z).sqrt();js=scale*rr*length\n            djs=[scale*length,scale*rr*x/length,scale*rr*z/length];ki,ti=(1,3) if basal else (0,2)\n            for a in range(k):C[a,ki]=(js-1)*djs[a];C[a,ti]=djs[a]\n        localB=BM.transpose()*C\n        for a,i in enumerate(ids):\n            g[i,0]+=term['weight']*localg[a,0]\n            for b,j in enumerate(ids):H[i,j]+=term['weight']*localH[a,b]\n            for j in range(5):B0[i,j]+=term['weight']*localB[a,j]\n        term['HC']=h;term['P']=BM*arb_mat(d,5,[A(float(S[i,j])) for i in ids for j in range(5)])\n        term['absB']=[[up(v) for v in row] for row in term['B']];term['rowsB']=[sum(row,arb(0)).upper() for row in term['absB']]\n        if not term['weight']>0:raise ValueError('positive quadrature weights required')\n        terms.append(term)\n        if len(terms)%1536==0:print(json.dumps({'phase':'independent actualM center','terms':len(terms),'elapsed':time.time()-started}),flush=True)\n    theta=[A(Q(lo)).union(A(Q(hi))) for lo,hi in selected['cell_bounds_exact'].values()]\n    delta=[theta[i]-A(base[i]) for i in range(5)];hull=[v.union(arb(0)) for v in delta];r=A(Q(selected['selected_radius_exact']))\n    remrows=[arb(0) for i in range(n)];drows=[arb(0) for i in range(n)];minJ=None\n    for term in terms:\n        k=len(term['q']);offset=[sum((term['P'][a,j]*hull[j] for j in range(5)),arb(0)) for a in range(k)]\n        for remainder,rows in ((True,remrows),(False,drows)):\n            qb=[term['q'][a]+offset[a]+(arb(0,(r*term['rowsB'][a]).upper()) if not remainder else 0) for a in range(k)]\n            if term['kind']=='bulk':_,hb,J=kernel.bulk_local(qb,term['parameters'][0],term['parameters'][1],term['mask']*A(dose)*theta[4]);minJ=J.lower() if minJ is None else min(minJ,J.lower())\n            else:\n                ki,ti=(1,3) if term['basal'] else (0,2);_,hb,_=kernel.surface_local(qb,theta[ki],theta[ti],term['parameters'][2])\n            width=[up(v) for v in offset] if remainder else term['rowsB']\n            change=[[up(hb[a][b]-term['HC'][a][b]) for b in range(k)] for a in range(k)]\n            local=[sum((change[a][b]*width[b] for b in range(k)),arb(0)) for a in range(k)]\n            for j,i in enumerate(term['indices']):rows[i]+=term['weight']*sum((term['absB'][a][j]*local[a] for a in range(k)),arb(0))\n    identity=arb_mat(n,n,[1 if i==j else 0 for i in range(n) for j in range(n)]);Z0=rowsum(identity-RM*H)\n    linear=RM*g+RM*(H*SM+B0)*arb_mat(5,1,delta);remainder=AR*arb_mat(n,1,[x.upper() for x in remrows]);eta=max(up(linear[i,0])+up(remainder[i,0]) for i in range(n))\n    variation=AR*arb_mat(n,1,[x.upper() for x in drows]);Z=Z0+linf(variation);lhs=eta+Z*r;err=eta/(1-Z)\n    pred=[up(sum((A(float(S[i,j]))*delta[j] for j in range(5)),arb(0))) for i in range(n)];outer=max(v+err for v in pred)\n    expected=next(a for a in selected['radius_attempts'] if a['strict_selfmap_contraction'])\n    checks.update(all_9504_terms_and_611_free_coordinates=len(terms)==9504 and n==611,\n        independent_center_defect_below_one=bool(Z0<1),independent_uniform_contraction=bool(Z<1),independent_uniform_selfmap=bool(lhs<r),\n        independent_analytic_domain_J_positive=bool(minJ>0),all_inputs_unchanged=all(sha(ROOT/k)==v for k,v in input_hashes.items()),\n        independent_eta_agrees_to_25_relative_digits=abs(float(eta)-float(Q(selected['eta_uniform']['upper_exact'])))<1e-25,\n        independent_Z_agrees_to_25_absolute_digits=abs(float(Z)-float(Q(expected['Z_uniform']['upper_exact'])))<1e-25,\n        independent_outer_radius_agrees_to_25_absolute_digits=abs(float(outer)-float(Q(selected['uniform_outer_nodal_radius_about_base']['upper_exact'])))<1e-25,\n        all_611_predictor_bounds_match_to_25_absolute_digits=all(abs(float(v)-float(Q(s)))<1e-25 for v,s in zip(pred,selected['full_nodal_predictor_bounds_exact'])),\n        no_producer_evaluation_or_optimization_called=True)\n    receipt={'status':'PASS_INDEPENDENT_ACTUAL_M_UNIFORM_ROOT_CELL' if all(checks.values()) else 'FAIL','checks':checks,'review_source_sha256':sha(__file__),'reviewed_hashes':input_hashes,\n        'cell_id':'scale_3','method':'affine','free_dofs':n,'terms':len(terms),'precision_bits':ctx.prec,\n        'base_strength_exact':str(base[4]*dose),'solver_strength_binary_exact':prep['solver_strength_binary_exact'],'strength_difference_exact':str(base[4]*dose-Q(prep['solver_strength_binary_exact'])),\n        'independent_bounds':{'point_Z0':pack(Z0),'eta_uniform':pack(eta),'Z_uniform':pack(Z),'eta_plus_Zr':pack(lhs),'radius':pack(r),'error_from_predictor':pack(err),'outer_nodal_radius':pack(outer),'quadrature_J_lower':pack(minJ)},\n        'scope':'Independent proof/replay of one selected actual-M local five-parameter root family. Body geometry, observation transfer, provider callback, source-channel exclusion and global material domain require separate actual artifacts/review.',\n        'observer_provider_review':'PENDING','elapsed_seconds':time.time()-started}\n    if previous is not None:receipt['initial_192bit_review_preserved']=previous\n    OUT.write_text(json.dumps(receipt,indent=2)+'\\n',encoding='utf8');print(json.dumps(receipt,indent=2),flush=True)\n    if not all(checks.values()):raise RuntimeError('independent actual-M review finding retained')\n\n\nif __name__=='__main__':main()\n",
+  "composition_execution_history": [
+    {
+      "status": "EXECUTION_FAILED_BEFORE_COMPOSITION_VERDICT",
+      "cause": "Reviewer used invalid encoding alias utf8-sig; corrected to utf-8-sig. No producer artifacts changed.",
+      "pre_fix_review_script_sha256": "25dd2b45e1dd76d9a21619553fe186b258b58cb06c20854ddbc8a5230d4eb3a3"
+    }
+  ],
+  "composition_checks": {
+    "root_cell_is_exact_frozen_scale3_result": true,
+    "root_observer_contract_same_canonical_cell_hash": true,
+    "uniform_root_and_observer_quantifiers_and_branch_law_match": true,
+    "actual_M_direct_provenance_hashes_bound": true,
+    "current_v2_observer_artifacts_hashes_and_sources_bound": true,
+    "old_observer_revision_retained": true,
+    "full_corrector_cube_contains_both_independent_root_bounds": true,
+    "all611_exact_predictor_hulls_and_full_corrector_reproduced": true,
+    "all650_actual_coordinate_radii_add_exact_serialization_gap": true,
+    "physical_scale_applied_to_full_box_once": true,
+    "generic_whole_body_proof_independently_reviewed": true,
+    "actual_full_nodal_box_body_certificate_replayed": true,
+    "apical_strict_monotonicity_and_Eulerian_transport_recomputed": true,
+    "basal_strict_monotonicity_and_Eulerian_transport_recomputed": true,
+    "fixed_common_radial_endpoints_actual_constraints": true,
+    "same_positive_ROI_fixed_refs_contract": true,
+    "independent_quadratic_graph_extrema_inside_published_base_interval": true,
+    "actual_uniform_apical_interval_contains_independent_extrema_and_transport": true,
+    "source_M_dose_and_apical_exact_workbook_cells": true,
+    "one_channel_contradiction_arithmetic_and_tolerance_scope": true,
+    "other67_and_otherbranches_explicitly_unresolved": true,
+    "original_root_review_inputs_unchanged": true
+  },
+  "composition_hashes": {
+    "runs/parametric_root_cells_v1/actual_M/root_certificate.json": "d1b11c4b678ea043835177589ab271c858a56fd8d32487549d3394d977745047",
+    "runs/parametric_root_cells_v1/actual_M/observer_certificate.json": "bfe5309de9a3c63342c94973363eb2e70ff9f7ce3211707f3d4f1b7c2e9da8a3",
+    "runs/parametric_root_cells_v1/actual_M/body_geometry.json": "a2077c6d0365b2ac26d6d3b3e7da603e4570a1878a214d708b094169ff2e785f",
+    "runs/parametric_root_cells_v1/actual_M/model_observation_contract.json": "4ee61ddaa9297a92722596c94ce9eac5f84fa458c5b1b3b76955b9e421421855",
+    "runs/parametric_root_cells_v1/actual_M/observer_protocol.json": "04748636c6e3e3f9eb472cda2b1b79cc886230a7bdb9a56e1d6881c29df28867",
+    "runs/parametric_root_cells_v1/actual_M/contradiction_diagnostic.json": "208c4177386c233bad60b30e552667de9e4d7e7461c237beb612f9b3a3e6f791",
+    "runs/parametric_root_cells_v1/actual_M/build_forward_artifacts_v2.py": "4f17ee50e893f5cd9f1834cb68fa466e467627b65d95bee4867468709c021b0d",
+    "runs/parametric_root_cells_v1/actual_M/observer_revision_0/manifest.json": "bb1f0a19db541072de10c42d9b44322fd49720100264530cdc0124794429824d",
+    "data/derived/calibration_small_18um.csv": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+    "data/raw/41467_2025_62483_MOESM16_ESM.xlsx": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d",
+    "evidence/root_body_geometry_independent_review.json": "f7463b263d39294d576417372469f5580c651e5070ca2ea627aaef86cdcbd6f2"
+  },
+  "root_audit": {
+    "status": "PASS",
+    "checks": {
+      "producer_protocol_result_source_bindings": true,
+      "actual_M_cache_input_predictor_archives_bound": true,
+      "preparation_source_and_direct_inputs_bound": true,
+      "predictor_exact_stored_binary_rule_reproduced": true,
+      "cache_binary_center_free_map_and_reference_match": true,
+      "all_five_actual_absolute_coordinate_intervals_positive_width": true,
+      "same_new_material_geometry_gain_and_source_M_dose": true,
+      "exact_gain_times_dose_is_point_target_not_rounded_solver_strength": true,
+      "all_9504_terms_and_611_free_coordinates": true,
+      "independent_center_defect_below_one": true,
+      "independent_uniform_contraction": true,
+      "independent_uniform_selfmap": true,
+      "independent_analytic_domain_J_positive": true,
+      "all_inputs_unchanged": true,
+      "no_producer_evaluation_or_optimization_called": true
+    },
+    "certificate_sha256": "d1b11c4b678ea043835177589ab271c858a56fd8d32487549d3394d977745047",
+    "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+    "model_observation_contract_sha256": "4ee61ddaa9297a92722596c94ce9eac5f84fa458c5b1b3b76955b9e421421855",
+    "uniform_quantifier_verified": true,
+    "branch_law_semantics": "independent_stationary_root_per_record",
+    "branch_scope": "selected_unique_root_in_declared_domain",
+    "branch_domain_id": "new_primary_M_local_branch_v1"
+  },
+  "observer_audit": {
+    "status": "PASS",
+    "checks": {
+      "root_cell_is_exact_frozen_scale3_result": true,
+      "root_observer_contract_same_canonical_cell_hash": true,
+      "uniform_root_and_observer_quantifiers_and_branch_law_match": true,
+      "actual_M_direct_provenance_hashes_bound": true,
+      "current_v2_observer_artifacts_hashes_and_sources_bound": true,
+      "old_observer_revision_retained": true,
+      "full_corrector_cube_contains_both_independent_root_bounds": true,
+      "all611_exact_predictor_hulls_and_full_corrector_reproduced": true,
+      "all650_actual_coordinate_radii_add_exact_serialization_gap": true,
+      "physical_scale_applied_to_full_box_once": true,
+      "generic_whole_body_proof_independently_reviewed": true,
+      "actual_full_nodal_box_body_certificate_replayed": true,
+      "apical_strict_monotonicity_and_Eulerian_transport_recomputed": true,
+      "basal_strict_monotonicity_and_Eulerian_transport_recomputed": true,
+      "fixed_common_radial_endpoints_actual_constraints": true,
+      "same_positive_ROI_fixed_refs_contract": true,
+      "independent_quadratic_graph_extrema_inside_published_base_interval": true,
+      "actual_uniform_apical_interval_contains_independent_extrema_and_transport": true,
+      "source_M_dose_and_apical_exact_workbook_cells": true,
+      "one_channel_contradiction_arithmetic_and_tolerance_scope": true,
+      "other67_and_otherbranches_explicitly_unresolved": true,
+      "original_root_review_inputs_unchanged": true
+    },
+    "certificate_sha256": "bfe5309de9a3c63342c94973363eb2e70ff9f7ce3211707f3d4f1b7c2e9da8a3",
+    "forward_family_admissible": true,
+    "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+    "model_observation_contract_sha256": "4ee61ddaa9297a92722596c94ce9eac5f84fa458c5b1b3b76955b9e421421855",
+    "uniform_quantifier_verified": true,
+    "branch_law_semantics": "independent_stationary_root_per_record",
+    "branch_scope": "selected_unique_root_in_declared_domain",
+    "branch_domain_id": "new_primary_M_local_branch_v1"
+  },
+  "independent_observer_reconstruction": {
+    "exact_serialization_gap_max": "1945/9223372036854775808",
+    "exact_global_coordinate_radius_max": "10875465785773018197948935187760487954213405323408668955459103126880145918290134010728035999900074222432963459047456387912874617809512924351337603919946853666603731252683574535222952570381446078481834792651900327405132863608650213663749/7336016774534194916901744234421083317443213239276981693617980789367777781048229468726342004796970895827736607127332256099282622014032420971295115047060441966427780850866683565918252587568999710662695504632991692274625078186343818854400000000000",
+    "physical_coordinate_radius_um": "10875465785773018197948935187760487954213405323408668955459103126880145918290134010728035999900074222432963459047456387912874617809512924351337603919946853666603731252683574535222952570381446078481834792651900327405132863608650213663749/218985575359229699011992365206599502013230245948566617719939725055754560628305357275413194173043907338141391257532306152217391701911415551381943732748072894520232264204975628833380674255791036139184940436805722157451494871234143846400000000000",
+    "ROI_um": [
+      "0",
+      "337053732898705073/36028797018963968"
+    ],
+    "apical_base_interval_exact": [
+      "15342891918418221/2251799813685248",
+      "15342891918418221/2251799813685248"
+    ],
+    "apical_transport_error_exact": "10843409948015836932214087364804878637682044498047336739895560251887686268834126262152304982725132013195241232796125478696692584730637143822675415727273065108907562367848343199666404487605578366629429195797360518418501018565863390437591511172506972699/99325545098772609166744223008279836098731007025898133081704624649649365416954727312130731827158236702038939466869825448248834881028246169727240540737792871787459639253604709608629797467557533773821733265168581725466385968569930208181644195235102720000000000",
+    "uniform_apical_interval_exact": [
+      "676765789529578356574175458555018036707374921116537894667490914667728496098829309192953387893672631699522926169044855738727431703431850537773006045060544467216654361609801566880868129356329341831368380050720474461979527201164469004860977036968038267493027301/99325545098772609166744223008279836098731007025898133081704624649649365416954727312130731827158236702038939466869825448248834881028246169727240540737792871787459639253604709608629797467557533773821733265168581725466385968569930208181644195235102720000000000",
+      "676765811216398252605849322983192766317132196480626890762164394458848999874201846861205912198282597149786952559527321330978389096817019999047293690411375921762784579424926302577554528689138317042525113309578866056700564038166506136587757912151060612506972699/99325545098772609166744223008279836098731007025898133081704624649649365416954727312130731827158236702038939466869825448248834881028246169727240540737792871787459639253604709608629797467557533773821733265168581725466385968569930208181644195235102720000000000"
+    ],
+    "source_value_um": "12",
+    "minimum_residual_um": "515140729968873057395081353116165266867639887830150706218291101336943385129254880884362869727616243274680321042910584048007629475521934037679592798442138539686731091618330212726003040921552088243335685872444114648896067584672656361591972430670172027493027301/99325545098772609166744223008279836098731007025898133081704624649649365416954727312130731827158236702038939466869825448248834881028246169727240540737792871787459639253604709608629797467557533773821733265168581725466385968569930208181644195235102720000000000",
+    "declared_tolerance_um": "51/10"
+  },
+  "current_review_source_sha256": "ecca7b125ea5682651319d7496a338c2a44257496aab9fa2157ff66fe89a9d31",
+  "composition_elapsed_seconds": 3.567237377166748,
+  "final_packaging_checks": {
+    "generic_body_review_binds_current_geometry_source": true,
+    "all_stage0_archive_bytes_verified": true,
+    "root_and_contract_identical_to_archived_stage0": true,
+    "all_current_root_and_composition_artifacts_match": true,
+    "review_doc_uses_rendered_math": true,
+    "calibration_source_hash_matches_contract": true
+  },
+  "review_doc_sha256": "f62151d54ebdeb9aee849ffe15d9b314f257ca40b4abbdae939607bf3598fe0a",
+  "acceptance_explanation": "Independent target/cell/predictor/domain, derivation, strict selfmap/contraction and conservative provider box establish PASS. Cross-precision equality of majorants is not required; failed overstrict check retained. Same160 replay is diagnostic."
+}

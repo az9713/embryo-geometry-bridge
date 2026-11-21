@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TEMPORAL-MEAN-WITNESS</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Why separate temporal maxima need not match one static state</h1>
+<p><strong>All 17 canonical four-summary records admit exact time-dependent kinematic witnesses under the regional-mean component interpretation.</strong> This does not supply mechanical dynamics or validate that source interpretation. It demonstrates why the <a href="STATIC-MEAN-COMPATIBILITY.html">3.47510056 µm static consistency floor</a> must not be applied to separately maximized temporal means.</p>
+<p>The <a href="../scripts/temporal_mean_witness.py">construction script</a> and <a href="../evidence/temporal_mean_witness.json">102-check receipt</a> retain the exact values and volume-preserving configurations. Each record and weighting uses a separate constructed path. No common material law, activation gain, force history, timescale or biological explanation is inferred.</p>
+<p>Here <span class="math" data-tex="V=\sup_t\langle s(\cdot,t)\rangle"></span>, the peak of a regional mean. The construction does not assert the same value for <span class="math" data-tex="\langle\sup_t s(\cdot,t)\rangle"></span>, the mean of local temporal peaks. Where the final profile is negative, including the initial zero state changes those local peaks. The source's unresolved max/mean ordering therefore remains substantive.</p>
+<p><img alt="Constructed time path and the separate extrema for canonical record G" src="assets/temporal_mean_witness.png" /></p>
+<h2>The two-peak construction</h2>
+<p>Let a record's nonnegative summaries be maximum height shortening <span class="math" data-tex="M"></span>, peak regional mean <span class="math" data-tex="V"></span>, and separate regional component peaks <span class="math" data-tex="A,B"></span>. Assume</p>
+<div class="math display" data-tex="
+0\le V\le M&lt;H,\qquad V\le A+B.
+"></div>
+
+<p>Every canonical source row satisfies these conditions at the declared <span class="math" data-tex="H=33.5"></span> µm. Consider the following instantaneous mean component values:</p>
+<div class="math display" data-tex="
+\begin{array}{c&#124;ccc}
+&amp;\langle a\rangle&amp;\langle b\rangle&amp;\langle s\rangle\\
+\text{state 0}&amp;0&amp;0&amp;0\\
+\text{state 1}&amp;A&amp;V-A&amp;V\\
+\text{state 2}&amp;V-B&amp;B&amp;V.
+\end{array}
+"></div>
+
+<p>Each row obeys the instantaneous identity <span class="math" data-tex="\langle s\rangle=\langle a\rangle+\langle b\rangle"></span>. Since <span class="math" data-tex="V-B\le A"></span> and <span class="math" data-tex="V-A\le B"></span>, separately maximizing the two component means over the three states gives exactly <span class="math" data-tex="A"></span> and <span class="math" data-tex="B"></span>, while maximizing the height mean gives <span class="math" data-tex="V"></span>. Thus</p>
+<div class="math display" data-tex="
+\sup_t\langle a+b\rangle=V,
+\qquad
+\sup_t\langle a\rangle+\sup_t\langle b\rangle=A+B,
+"></div>
+
+<p>and the latter can be strictly larger. Signed negative component means are allowed at the other component's peak. These are different times, not an inconsistent height decomposition.</p>
+<h2>Continuous paths with the same exact summaries</h2>
+<p>Use an arbitrary time parameter <span class="math" data-tex="t\in[0,2]"></span>. Between states0 and1, let the component means ramp linearly from zero to <span class="math" data-tex="(A,V-A)"></span>. Between states1 and2, interpolate linearly between <span class="math" data-tex="(A,V-A)"></span> and <span class="math" data-tex="(V-B,B)"></span>. Every component mean is affine on each segment; its maximum therefore occurs at an endpoint and remains the recorded peak.</p>
+<p>To include the spatial maximum, choose a final radial shortening profile <span class="math" data-tex="s_*(r)"></span> with mean <span class="math" data-tex="V"></span> and maximum <span class="math" data-tex="M"></span>, using the weighting-specific parabola</p>
+<div class="math display" data-tex="
+s_*(r)=M-c(r/R)^2,
+\quad c=3(M-V)\;\text{for line weighting},
+\quad c=2(M-V)\;\text{for disk weighting}.
+"></div>
+
+<p>Set <span class="math" data-tex="s(r,t)=t s_*(r)"></span> on <span class="math" data-tex="[0,1]"></span>, then keep <span class="math" data-tex="s=s_*"></span> on <span class="math" data-tex="[1,2]"></span>. Make the apical motion spatially constant inside the ROI with the chosen mean, and put <span class="math" data-tex="b=s-a"></span>. The temporal spatial maximum is exactly <span class="math" data-tex="M"></span>, and all four summaries are reproduced with zero discrepancy.</p>
+<p>During the second segment the total shortening profile is constant while the apical and basal means change oppositely. This explicitly exhibits information discarded when the two component peaks are reduced to separate numbers.</p>
+<h2>Volume preservation and fixed-rim geometry</h2>
+<p>The <a href="STATIC-MEAN-COMPATIBILITY.html">isochoric construction</a> extends the target profiles into an annulus with zero total radial shortening integral, positive tissue height and a fixed outer rim. Its monotone radial-transport map has <span class="math" data-tex="J=1"></span> almost everywhere.</p>
+<p>For the first time segment, both the core shortening and annular volume compensation scale linearly with <span class="math" data-tex="t"></span>. Height remains positive because <span class="math" data-tex="M&lt;H"></span>, and the same radial-transport construction applies at each time. In the second segment the height profile and radial map remain fixed; changing the component partition changes the vertical offset, without changing the determinant. This gives a continuous path of embedded, volume-preserving configurations. A different path is used for line and disk weighting; simultaneous realization of both by one identical path is not asserted.</p>
+<p>This is a kinematic existence construction. Neither acceleration nor viscous/elastic forces are balanced, no light/recruitment waveform is prescribed, and the parameter <span class="math" data-tex="t"></span> is not calibrated to seconds. It is not a dynamic model of the experimental tissue.</p>
+<h2>Consequence for interpreting the calibration</h2>
+<p>A positive static floor and a zero-error temporal kinematic witness are compatible statements because their observation contracts differ. Neither establishes which contract generated the published summaries. The <a href="JOINT-OBSERVATION-CONTRACT.html">source audit</a> records the unresolved component aggregation, reference and time/mean ordering.</p>
+<p>The direct finite-height gain study remains an explicit static-endpoint proxy calculation. Improving its mesh, optimizer or material coefficients cannot by itself justify treating separate experimental temporal maxima as simultaneous means. Correct observation semantics and input/reference histories are needed before interpreting physical parameter uncertainty or larger-region prediction. No full identified set, biological result or novelty is established by this construction.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

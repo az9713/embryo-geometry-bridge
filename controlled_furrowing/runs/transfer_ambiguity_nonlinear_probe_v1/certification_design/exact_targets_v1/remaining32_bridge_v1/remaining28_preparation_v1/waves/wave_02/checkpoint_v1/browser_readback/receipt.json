@@ -1,0 +1,223 @@
+{
+  "status": "PASS_EDGE_WAVE02_DESKTOP_MOBILE",
+  "browser": "Microsoft Edge headless",
+  "version": "158.0.4370.33",
+  "javascript_disabled": true,
+  "source_sha256": "c5b905fa313ad7afc0e1fa5da44f63664a5d7d82b1368b473f689723eec51840",
+  "build_receipt_sha256": "2f3704013bc9f26c10ba327c88051cc7c5bcf3566528ce8b407a7c5fc716d0d5",
+  "frozen_inputs_unchanged": true,
+  "views": [
+    {
+      "status": "PASS",
+      "width": 1440,
+      "document_width": 1440,
+      "title": "Wave 02 exact-spatial roots and observer bounds",
+      "rows": 8,
+      "fonts": true,
+      "raw_tex": [],
+      "math": [
+        16,
+        16,
+        16,
+        3,
+        0,
+        0
+      ],
+      "images": [
+        {
+          "src": "selfmap_wave02.png",
+          "loaded": true,
+          "alt": "For four wave 02 roots, the stacked center residual and derivative terms occupy between 0.648 and 0.682 of the unit self-map budget."
+        },
+        {
+          "src": "observer_failures_wave02.png",
+          "loaded": true,
+          "alt": "The four M apical regional-mean residuals exceed the frozen allowance of about 5.39 micrometres. Their positive-direction values are about 6.58 for disk and 6.12 for line weighting, and the negative-direction values are about 6.42 and 5.95."
+        }
+      ],
+      "extents": [
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        },
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        },
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        },
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        },
+        {
+          "client": 832,
+          "scroll": 832,
+          "right": 1136
+        }
+      ],
+      "includes_summary": true,
+      "request_failures": [],
+      "errors": [],
+      "local_links": {
+        "../../../../../../../report/favicon.png": 200,
+        "../../../../../../../../../../docs/assets/katex/katex.min.css": 200,
+        "REPORT.md": 200,
+        "exact_bounds.csv": 200,
+        "exact_observer_comparisons.csv": 200,
+        "../global_reduction_v1/independent/results.json": 200,
+        "../../../../first_wave_checkpoint_v1/REPORT.html": 200,
+        "../global_reduction_v1/independent/root_observed_exit.json": 200,
+        "../observer_application_v1/independent_actual_readback/receipt.json": 200,
+        "../../../../../negative_KL_active_energy_v1/independent_actual/receipt.json": 200,
+        "../../../../../../../../exact_loading_tube_design_v1/METHOD.md": 200
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:65120/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/REPORT.html",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/docs/assets/katex/katex.min.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/selfmap_wave02.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/observer_failures_wave02.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/favicon.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/docs/assets/katex/fonts/KaTeX_Math-Italic.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/docs/assets/katex/fonts/KaTeX_Main-Regular.woff2",
+          "status": 200
+        }
+      ],
+      "screenshots": {
+        "wave02_1440_top.png": "e23cc89f437b14073ccdf0bf82570b6c98a894a5a55cb2f85afbe43d28304750",
+        "wave02_1440_full.png": "283f79698cfd9e865aeec4e63f08a71d772631d3a87a872e40b7c2d7382e9d7e"
+      }
+    },
+    {
+      "status": "PASS",
+      "width": 390,
+      "document_width": 390,
+      "title": "Wave 02 exact-spatial roots and observer bounds",
+      "rows": 8,
+      "fonts": true,
+      "raw_tex": [],
+      "math": [
+        16,
+        16,
+        16,
+        3,
+        0,
+        0
+      ],
+      "images": [
+        {
+          "src": "selfmap_wave02.png",
+          "loaded": true,
+          "alt": "For four wave 02 roots, the stacked center residual and derivative terms occupy between 0.648 and 0.682 of the unit self-map budget."
+        },
+        {
+          "src": "observer_failures_wave02.png",
+          "loaded": true,
+          "alt": "The four M apical regional-mean residuals exceed the frozen allowance of about 5.39 micrometres. Their positive-direction values are about 6.58 for disk and 6.12 for line weighting, and the negative-direction values are about 6.42 and 5.95."
+        }
+      ],
+      "extents": [
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        },
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        },
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        },
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        },
+        {
+          "client": 351,
+          "scroll": 351,
+          "right": 370.5
+        }
+      ],
+      "includes_summary": true,
+      "request_failures": [],
+      "errors": [],
+      "local_links": {
+        "../../../../../../../report/favicon.png": 200,
+        "../../../../../../../../../../docs/assets/katex/katex.min.css": 200,
+        "REPORT.md": 200,
+        "exact_bounds.csv": 200,
+        "exact_observer_comparisons.csv": 200,
+        "../global_reduction_v1/independent/results.json": 200,
+        "../../../../first_wave_checkpoint_v1/REPORT.html": 200,
+        "../global_reduction_v1/independent/root_observed_exit.json": 200,
+        "../observer_application_v1/independent_actual_readback/receipt.json": 200,
+        "../../../../../negative_KL_active_energy_v1/independent_actual/receipt.json": 200,
+        "../../../../../../../../exact_loading_tube_design_v1/METHOD.md": 200
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:65120/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/REPORT.html",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/docs/assets/katex/katex.min.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/selfmap_wave02.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/observer_failures_wave02.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/docs/assets/katex/fonts/KaTeX_Math-Italic.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/docs/assets/katex/fonts/KaTeX_Main-Regular.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:65120/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/favicon.png",
+          "status": 200
+        }
+      ],
+      "screenshots": {
+        "wave02_390_top.png": "6a4c8565928183aedf10189e795204739689c2d357b7dde49bcb2c5153e600d5",
+        "wave02_390_full.png": "7cbfac36774c95dd4f16de43ffe8432d579b453de0edb2024e507e05bc02753a"
+      }
+    }
+  ]
+}

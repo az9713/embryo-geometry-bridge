@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "expected": 54,
+      "rendered": 54,
+      "mathErrors": "",
+      "rawProseTeX": [],
+      "overflow": false,
+      "images": true,
+      "width": 390,
+      "browser_errors": [],
+      "pass": true
+    },
+    {
+      "expected": 54,
+      "rendered": 54,
+      "mathErrors": "",
+      "rawProseTeX": [],
+      "overflow": false,
+      "images": true,
+      "width": 1440,
+      "browser_errors": [],
+      "pass": true
+    }
+  ],
+  "HTML_sha256": "77c7933a20f97b3bef0db315e033cbb9f9e6cdfc2fac69e2fcbab36899221533",
+  "scope": "Corrected theorem page only, headless Edge/file view; full immutable HTTP browser sweep is separate."
+}

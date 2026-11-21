@@ -1,0 +1,9 @@
+{
+  "status": "CREATED_BEFORE_V2_CALIBRATION",
+  "v1_driver_sha256": "d1acfe8e685de99171de1591c3eecac4e3612acdf3dcf745c1363cb00779b02a",
+  "v2_driver_sha256": "df228e7d43d73cd4d9fe20ebfd3f07e2b728cab088e7fa707a2b076dddc805f3",
+  "v2_protocol_sha256": "df1a5a890f101ef8262490ae784611fcd3cf430f5cf721ef35452582fd6fc9cb",
+  "original_model_sha256": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+  "prestress_model_sha256": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+  "scope": "Source and protocol revision driven by small-region failure; no v1 overwrite or target-conditioned parameter selection"
+}

@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>COHORT-INTEGRATION-L</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Extending the integral proof: the difficult L case</h1>
+<p><strong>Later result: L's existence question is now resolved within the original cube.</strong> A <a href="L-CENTERED-ROOT.html">signed full-residual proof</a> certifies a unique exactly integrated finite-element root and strict local energy minimum for every parameter in the same closed cell. The successful self-map ratio is 0.765587. This chapter retains the preceding, valid but insufficient enclosures and explains why their upper-bound tests failed. Their failure did not establish root nonexistence. The model, parameter cell and original L cube were unchanged.</p>
+<p><strong>Historical direct-enclosure checkpoint: L's original-cube root test was unresolved.</strong> All 144 volume elements and 24 surface edges were integrated with validated local enclosures on the original L nodal box and the unchanged small parameter cell. Independent exact endpoint assembly confirmed the producer's bounds. That stage extended computational coverage without establishing L root existence; the subsequent signed proof linked above resolves it.</p>
+<p><img alt="Contraction passes but the L self-map enclosure fails, including a hypothetical zero-force comparison" src="../../omitted-asset.svg" /></p>
+<h2>1. Same model, explicitly different record</h2>
+<p>The source record is <code>optoGEF2_small_col_L</code>, with measured dimensionless activation input <span class="math" data-tex="I=1.51057344"></span>. Its 611-dimensional predictor, binary preconditioner, old cached-quadrature proof and exact nodal domain are loaded from that record's selected artifacts. F and K require their own corrected centers; M has a separate reviewed root provider. A generic loader was checked against all 17 selected records before this L job. Reusing B's dose, center or force packet would be invalid.</p>
+<p>The L box has positive whole-body Jacobian bounds, approximately <span class="math" data-tex="[0.95829,1.02340]"></span>. All 144 volume domains, 24 surface domains and 288 surface-cache sites were checked before force integration. Geometry admissibility is a premise for evaluating this model, not proof that the model describes the tissue.</p>
+<p>The scalar tail budgets were derived before execution from the exact preconditioner norm, the old root radius, the old contraction bound and the actual finite-element incidence counts. Bulk expansion orders ranged from 5 to 15; surface orders ranged from 7 to 19. These orders certify the declared truncation tails. They do not by themselves control interval dependency or finite-element error relative to the continuum.</p>
+<h2>2. The sufficient theorem and its actual outcome</h2>
+<p>Let <span class="math" data-tex="F_Q"></span> denote the force for the frozen binary quadrature functional and <span class="math" data-tex="F_I"></span> the exactly spatially integrated finite-element force. On the declared domain set <span class="math" data-tex="D=F_I-F_Q"></span>. The old parameter-matched predictor <span class="math" data-tex="p(\theta)"></span>, its radius <span class="math" data-tex="r"></span>, and preconditioner <span class="math" data-tex="R"></span> satisfy the reviewed cached bounds</p>
+<div class="math display" data-tex="
+ \&#124;R F_Q(p(\theta);\theta)\&#124;_\infty\le\eta_0,
+ \qquad \&#124;I-RH_Q(u;\theta)\&#124;_\infty\le Z_0.
+"></div>
+
+<p>The new component enclosures give bounds <span class="math" data-tex="d\ge\sup\&#124;RD\&#124;_\infty"></span> and <span class="math" data-tex="b\ge\sup\&#124;R(H_I-H_Q)\&#124;_\infty"></span>. Thus</p>
+<div class="math display" data-tex="
+ \eta=\eta_0+d,\qquad z=Z_0+b.
+"></div>
+
+<p>For fixed <span class="math" data-tex="\theta"></span>, the map <span class="math" data-tex="T(u)=u-RF_I(u;\theta)"></span> is a contraction and maps the predictor cube into itself if</p>
+<div class="math display" data-tex="
+ z&lt;1,\qquad \eta+zr&lt;r.
+"></div>
+
+<p>Indeed the derivative bound gives Lipschitz constant <span class="math" data-tex="z"></span>, and the center displacement plus that constant times the radius bounds every image displacement. The closed finite-dimensional cube is complete, so Banach's theorem gives a unique fixed point there. The bound <span class="math" data-tex="\&#124;I-RH_I\&#124;_\infty&lt;1"></span> also makes <span class="math" data-tex="RH_I"></span> invertible by the Neumann series; since these matrices are square, <span class="math" data-tex="R"></span> is invertible. Thus a fixed point is exactly a force root. This is a sufficient existence test: its failure does not imply absence of a root. The verified contraction still implies at most one root per parameter-matched old cube, without establishing existence.</p>
+<table>
+<thead>
+<tr>
+<th>Independently replayed quantity</th>
+<th style="text-align: right;">Rounded display</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Derivative-defect bound <span class="math" data-tex="b"></span></td>
+<td style="text-align: right;">0.1851092833</td>
+</tr>
+<tr>
+<td>Combined contraction bound <span class="math" data-tex="z"></span></td>
+<td style="text-align: right;">0.5682570024</td>
+</tr>
+<tr>
+<td>Original radius <span class="math" data-tex="r"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="6.011722185\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Self-map left-hand side <span class="math" data-tex="\eta+zr"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="6.563471613\times10^{-7}"></span></td>
+</tr>
+<tr>
+<td>Left-hand side divided by radius</td>
+<td style="text-align: right;">10917.7893</td>
+</tr>
+</tbody>
+</table>
+<p>Here <span class="math" data-tex="r,\eta_0,d"></span> use normalized nodal-displacement coordinates, not micrometres. Therefore contraction passes and self-mapping is unresolved. Even setting the predictor-force contribution to the residual bound to zero while retaining the same derivative bound gives <span class="math" data-tex="(\eta_0+zr)/r\approx1.068257"></span>. Tightening force alone cannot finish this particular proof. For that hypothetical zero contribution, the strict test would require <span class="math" data-tex="b&lt;1-Z_0-\eta_0/r\approx0.11685228"></span>.</p>
+<p>The producer used outward Arb arithmetic. The reviewer independently scattered exact rational endpoints, contracted with the exact binary entries of <span class="math" data-tex="R"></span>, and checked signed enclosure containment. Absolute Hessian row bounds are checked by upper domination, because widening an Arb ball can also increase the lower endpoint of a subsequently computed upper bound. The resulting reduction covers all 168 packets, 611 force coordinates and 6676 symmetric upper Hessian entries. It shares the already reviewed local enclosure and geometry engines; it is not a separate physical implementation.</p>
+<h2>3. A wide enclosure is not a measured error</h2>
+<p>Every one of the 611 signed preconditioned defect intervals contains zero. Their certified norm lower bound is therefore zero. The widest interval, at free coordinate 190 (node 105, axial component), has width approximately <span class="math" data-tex="1.312548304\times10^{-6}"></span>, almost entirely from volume terms. Its midpoint is not a force evaluation at the proof center.</p>
+<p>Element 21 is the largest local contributor to that width. A separately frozen, prelaunch-reviewed force-only diagnostic evaluated that element at the exact proof center and over the whole nodal box. Their scalar tail bounds, both about <span class="math" data-tex="1.57\times10^{-19}"></span>, are much smaller than the original whole-box interval width. Reducing the scalar tail alone would leave the dominant interval width in the volumetric truncation contribution.</p>
+<h2>4. Centering recovers useful local information</h2>
+<p>For this element let <span class="math" data-tex="G(Y,g)"></span> be its local integral-minus-cache force, where <span class="math" data-tex="Y"></span> is the local nodal vector and <span class="math" data-tex="g"></span> the common activation gain. A path first from <span class="math" data-tex="Y_0"></span> to <span class="math" data-tex="Y"></span> at fixed <span class="math" data-tex="g_0"></span>, then from <span class="math" data-tex="g_0"></span> to <span class="math" data-tex="g"></span> at fixed <span class="math" data-tex="Y"></span>, gives the exact identity</p>
+<div class="math display" data-tex="
+ G(Y,g)=G(Y_0,g_0)
+ +\int_0^1 H_D(Y_0+t(Y-Y_0),g_0)(Y-Y_0)\,dt
+ +(g-g_0)\,\partial_gG(Y,g).
+"></div>
+
+<p>The last equality uses the affine gain dependence of this bulk energy. The entire nodal segment is inside the same convex box. Its positive-J guarantee and the frozen whole-box Hessian packet justify the derivative bound. The exact gain derivative uses the dose-scaled difference between integral and cache axial stiffness operators on the same geometry. The point, state-increment and gain-increment terms are enclosed separately; intersecting this bound with a direct enclosure preserves validity.</p>
+<table>
+<thead>
+<tr>
+<th>Local element-21 quantity</th>
+<th style="text-align: right;">Largest value across 12 force coordinates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct whole-box interval width</td>
+<td style="text-align: right;"><span class="math" data-tex="5.23196888\times10^{-8}"></span></td>
+</tr>
+<tr>
+<td>Centered whole-box interval width</td>
+<td style="text-align: right;"><span class="math" data-tex="9.32225561\times10^{-12}"></span></td>
+</tr>
+<tr>
+<td>Fixed-center point interval width</td>
+<td style="text-align: right;"><span class="math" data-tex="3.13136626\times10^{-19}"></span></td>
+</tr>
+<tr>
+<td>Fixed-center absolute defect upper bound</td>
+<td style="text-align: right;"><span class="math" data-tex="2.17060600\times10^{-14}"></span></td>
+</tr>
+</tbody>
+</table>
+<p>The table uses normalized local generalized-force coordinates. The maximum width improves by about 5612 times. All 12 centered intervals lie within both direct enclosures and still contain zero. At the fixed center, the much narrower point intervals certify five positive and seven negative local defects. Those local signs do not determine the assembled global force or its root. No new root test is inferred from this one-element calculation.</p>
+<h2>5. An equivalent scaled chart tightens the derivative enclosure</h2>
+<p>A second, separately reviewed pilot changed only the exact algebraic representation of element 21. Write physical material coordinates as <span class="math" data-tex="R=R_c+h x"></span>, <span class="math" data-tex="Z=Z_c+k y"></span>, with exact rational constants chosen from the element's coordinate ranges. The dimensionless radial denominator <span class="math" data-tex="\widehat R=R/R_c"></span> stays positive. Exact quadratic basis functions and their physical derivatives are constructed in <span class="math" data-tex="(x,y)"></span> before nodal intervals are inserted. The hoop strain retains its radial denominator. Strain, Jacobian and first/second derivative identities were checked exactly; they represent the same force and Hessian, not a modified constitutive law.</p>
+<p>Signed moments of <span class="math" data-tex="x^a y^b/\widehat R^d"></span> are pulled back to the reviewed physical rational/log moments. The physical radial measure is counted once. The original auxiliary quadrature sites, binary weights, cache correction, parameter cell, nodal box, order 12 and tail budgets are retained. Thus the two representations enclose the same quantities, and their interval intersection is valid.</p>
+<table>
+<thead>
+<tr>
+<th>Largest local bound</th>
+<th style="text-align: right;">Original representation</th>
+<th style="text-align: right;">Scaled representation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Force interval width</td>
+<td style="text-align: right;"><span class="math" data-tex="5.23197\times10^{-8}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="1.72151\times10^{-11}"></span></td>
+</tr>
+<tr>
+<td>Hessian entry interval width</td>
+<td style="text-align: right;"><span class="math" data-tex="3.00324\times10^{-3}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="2.95026\times10^{-8}"></span></td>
+</tr>
+<tr>
+<td>Absolute Hessian row bound</td>
+<td style="text-align: right;"><span class="math" data-tex="8.12987\times10^{-3}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="5.67727\times10^{-8}"></span></td>
+</tr>
+</tbody>
+</table>
+<p>Independent endpoint replay confirms that all 12 force intervals and 78 upper-Hessian intervals lie inside their original counterparts. The largest absolute Hessian row bound decreases by about 143200 times. This demonstrates representation-dependent enclosure looseness, not increased physical precision. The <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/scaled_chart_v1/actual_independent_review.json">actual independent review</a> retains every intersection and tail check. No whole-L reduction is implied by this local result.</p>
+<h2>6. Completed extension to all 132 off-axis elements</h2>
+<p>The same exact chart construction was subsequently applied to all 132 off-axis L elements. Before launch, 19824 exact strain/Jacobian/derivative identities and all 8448 auxiliary quadrature-site mappings were checked. Each element kept its original order, rule, nodal box, parameter cell and tail budgets. The single 132-element process finished with OS exit zero. The original 12 axis-element and 24 surface packets were retained.</p>
+<p>The new reduction intersects each scaled enclosure with its original counterpart before assembly. Independent direct rational endpoint replay checks all 132 intersections, unchanged same-Y cache witnesses, and the complete 611-force/6676-upper-Hessian assembly. The <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/scaled_offaxis_L_v1/actual_independent_review.json">actual component review</a> and <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/scaled_offaxis_L_v1/reduction_preparation/actual_independent_review.json">full reduction review</a> preserve that evidence.</p>
+<table>
+<thead>
+<tr>
+<th>Whole-L upper bound</th>
+<th style="text-align: right;">Original enclosure</th>
+<th style="text-align: right;">After 132 scaled replacements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preconditioned force defect <span class="math" data-tex="d"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="6.56282941\times10^{-7}"></span></td>
+<td style="text-align: right;"><span class="math" data-tex="1.47980779\times10^{-9}"></span></td>
+</tr>
+<tr>
+<td>Derivative defect <span class="math" data-tex="b"></span></td>
+<td style="text-align: right;">0.1851092833</td>
+<td style="text-align: right;"><span class="math" data-tex="5.18008261\times10^{-5}"></span></td>
+</tr>
+<tr>
+<td>Combined contraction <span class="math" data-tex="z"></span></td>
+<td style="text-align: right;">0.5682570024</td>
+<td style="text-align: right;">0.3831995199</td>
+</tr>
+<tr>
+<td>Self-map bound divided by original radius</td>
+<td style="text-align: right;">10917.7893</td>
+<td style="text-align: right;">25.4985717</td>
+</tr>
+</tbody>
+</table>
+<p>The improved derivative enclosure removes the earlier derivative-only obstruction: setting just the predictor-force contribution to zero would now pass the sufficient test. The actual force bound is still too large. All 611 final signed preconditioned force-defect intervals contain zero, so no positive defect-norm lower bound or root nonexistence follows. The successful derivative check still gives at most one root per parameter-matched original cube, without proving existence there.</p>
+<p>An independent <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/scaled_offaxis_L_v1/independent_actual/force_attribution.json">width attribution</a> identifies the next numerical target. At the widest coordinate, scaled off-axis terms contribute about 99.984 percent of interval width; element 17 is the largest single packet. These are enclosure-width contributions, not a decomposition of a measured physical error. The centered mean-value approach in section 4 should next be extended to the complete force assembly with explicit parameter increments. It may establish a sharper bound or reveal a genuine center shift; neither outcome is assumed.</p>
+<h2>7. Scientific significance and the next obligation</h2>
+<p>This result distinguishes a failed enclosure from a demonstrated physical discrepancy and identifies a concrete numerical remedy. It is an application of standard interval and mean-value methods, not an established new biological concept. The next mathematical obligation is to tighten both force and derivative enclosures without changing the model, parameter cell or data contract. The next scientific obligation remains source-compatible calibration and a frozen, uncertainty-aware larger-region prediction. More numerical digits do not supply missing timing, references, ROI registration or measurement uncertainty.</p>
+<h2>Retained receipts and replay sources</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explicit record loader</td>
+<td><a href="../evidence/exact_cohort_context_independent_review.json">Independent context review</a></td>
+</tr>
+<tr>
+<td>Local volume/surface integration</td>
+<td><a href="../evidence/exact_cohort_integrator_independent_review.json">Independent integrator review</a></td>
+</tr>
+<tr>
+<td>Fresh L domain and expansion selection</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/records/optoGEF2_small_col_L/original_cube_v1/integration_prelaunch_independent_review.json">Domain/integration prelaunch review</a></td>
+</tr>
+<tr>
+<td>True terminal integrations</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/records/optoGEF2_small_col_L/original_cube_v1/bulk_terminal.json">144-volume terminal</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/records/optoGEF2_small_col_L/original_cube_v1/surface_terminal.json">24-edge terminal</a></td>
+</tr>
+<tr>
+<td>Independent exact endpoint reduction</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/reduction_preparation/optoGEF2_small_col_L_reduction_review.json">Actual result</a>, <a href="../evidence/exact_cohort_reducer_prelaunch_independent_review.json">reducer prelaunch</a></td>
+</tr>
+<tr>
+<td>Signed defect diagnosis</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/reduction_preparation/optoGEF2_small_col_L_signed_endpoint_diagnostics.json">Exact endpoints</a></td>
+</tr>
+<tr>
+<td>Centered element-21 diagnostic</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/protocol.json">Frozen protocol</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/prelaunch_independent_review.json">independent prelaunch</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/actual_independent_review.json">actual independent review</a></td>
+</tr>
+<tr>
+<td>Exact scaled material chart</td>
+<td><a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/scaled_chart_v1/protocol.json">Frozen protocol</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/scaled_chart_v1/prelaunch_independent_review.json">independent prelaunch</a>, <a href="../../OMITTED.html?path=controlled_furrowing/runs/exact_integration_cohort_v1/L_defect_diagnostic/scaled_chart_v1/actual_independent_review.json">actual independent review</a></td>
+</tr>
+<tr>
+<td>Chapter numerical composition and figure</td>
+<td><a href="../evidence/exact_cohort_L_checkpoint.json">223-binding receipt</a>, <a href="../scripts/cohort_L_checkpoint.py">composition source</a></td>
+</tr>
+</tbody>
+</table>
+<p>At the historical enclosure checkpoint, B was the one completed exact-integral root result. The later <a href="L-CENTERED-ROOT.html">signed L proof</a> adds L. The five-gate project remains incomplete; neither result establishes continuum accuracy, a source-compatible witness pair, larger-region success or confirmed novelty.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

@@ -1,0 +1,2391 @@
+{
+  "status": "PASS_EXACT_VOLUME_AND_HEIGHT_CONSTRUCTIONS",
+  "checks": {
+    "canonical_optoGEF2_small_col_B_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_B_line_height_positive": true,
+    "canonical_optoGEF2_small_col_B_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_B_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_B_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_B_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_C_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_C_line_height_positive": true,
+    "canonical_optoGEF2_small_col_C_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_C_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_C_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_C_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_D_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_D_line_height_positive": true,
+    "canonical_optoGEF2_small_col_D_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_D_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_D_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_D_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_E_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_E_line_height_positive": true,
+    "canonical_optoGEF2_small_col_E_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_E_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_E_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_E_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_F_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_F_line_height_positive": true,
+    "canonical_optoGEF2_small_col_F_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_F_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_F_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_F_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_G_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_G_line_height_positive": true,
+    "canonical_optoGEF2_small_col_G_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_G_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_G_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_G_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_H_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_H_line_height_positive": true,
+    "canonical_optoGEF2_small_col_H_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_H_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_H_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_H_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_I_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_I_line_height_positive": true,
+    "canonical_optoGEF2_small_col_I_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_I_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_I_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_I_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_J_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_J_line_height_positive": true,
+    "canonical_optoGEF2_small_col_J_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_J_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_J_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_J_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_K_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_K_line_height_positive": true,
+    "canonical_optoGEF2_small_col_K_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_K_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_K_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_K_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_L_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_L_line_height_positive": true,
+    "canonical_optoGEF2_small_col_L_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_L_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_L_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_L_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_M_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_M_line_height_positive": true,
+    "canonical_optoGEF2_small_col_M_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_M_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_M_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_M_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_N_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_N_line_height_positive": true,
+    "canonical_optoGEF2_small_col_N_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_N_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_N_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_N_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_O_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_O_line_height_positive": true,
+    "canonical_optoGEF2_small_col_O_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_O_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_O_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_O_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_P_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_P_line_height_positive": true,
+    "canonical_optoGEF2_small_col_P_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_P_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_P_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_P_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_Q_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_Q_line_height_positive": true,
+    "canonical_optoGEF2_small_col_Q_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_Q_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_Q_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_Q_disk_rim_identity": true,
+    "canonical_optoGEF2_small_col_R_line_volume_exact": true,
+    "canonical_optoGEF2_small_col_R_line_height_positive": true,
+    "canonical_optoGEF2_small_col_R_line_rim_identity": true,
+    "canonical_optoGEF2_small_col_R_disk_volume_exact": true,
+    "canonical_optoGEF2_small_col_R_disk_height_positive": true,
+    "canonical_optoGEF2_small_col_R_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_O_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_O_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_O_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_O_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_O_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_O_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_I_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_I_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_I_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_I_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_I_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_I_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_B_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_B_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_B_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_B_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_B_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_B_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_C_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_C_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_C_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_C_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_C_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_C_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_Q_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_Q_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_Q_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_Q_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_Q_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_Q_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_F_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_F_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_F_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_F_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_F_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_F_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_P_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_P_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_P_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_P_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_P_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_P_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_N_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_N_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_N_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_N_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_N_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_N_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_M_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_M_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_M_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_M_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_M_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_M_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_L_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_L_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_L_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_L_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_L_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_L_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_D_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_D_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_D_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_D_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_D_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_D_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_J_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_J_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_J_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_J_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_J_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_J_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_R_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_R_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_R_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_R_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_R_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_R_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_G_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_G_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_G_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_G_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_G_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_G_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_E_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_E_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_E_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_E_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_E_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_E_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_H_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_H_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_H_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_H_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_H_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_H_disk_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_K_line_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_K_line_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_K_line_rim_identity": true,
+    "unknown_pairing_optoGEF2_small_col_K_disk_volume_exact": true,
+    "unknown_pairing_optoGEF2_small_col_K_disk_height_positive": true,
+    "unknown_pairing_optoGEF2_small_col_K_disk_rim_identity": true
+  },
+  "constructions": [
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "77722063/25000000",
+        "0",
+        "-115516337/25000000"
+      ],
+      "core_apical_downward_constant": "612233801/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-18897137/12500000",
+        "11892407317612331542481309047/2503182930715702765775000000",
+        "-8108168055388640085190982153/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "612233801/300000000",
+        "-612233801/300000000"
+      ],
+      "core_integral_rS_dr_exact": "34944113031772039256775141/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "77722063/25000000",
+      "global_minimum_height_exact": "759777937/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "77722063/25000000",
+        "0",
+        "-115516337/37500000"
+      ],
+      "core_apical_downward_constant": "612233801/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "426703/15000000",
+        "-1295043881828061350103830153/7509548792147108297325000000",
+        "270355187152756211662733047/1877387198036777074331250000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "612233801/300000000",
+        "-612233801/300000000"
+      ],
+      "core_integral_rS_dr_exact": "25741280881213155305805847/375000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "77722063/25000000",
+      "global_minimum_height_exact": "759777937/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "121538093/25000000",
+        "0",
+        "-177427781/25000000"
+      ],
+      "core_apical_downward_constant": "422572219/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-6986211/3125000",
+        "3513800236472684564969289261/500636586143140553155000000",
+        "-11972916662178373053650373177/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "422572219/150000000",
+        "-422572219/150000000"
+      ],
+      "core_integral_rS_dr_exact": "11490870604808839782261289/200000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "121538093/25000000",
+      "global_minimum_height_exact": "715961907/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "121538093/25000000",
+        "0",
+        "-177427781/37500000"
+      ],
+      "core_apical_downward_constant": "422572219/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "9758717/75000000",
+        "-4080696409035710142122340707/7509548792147108297325000000",
+        "77589556405807602805743007/187738719803677707433125000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "422572219/150000000",
+        "-422572219/150000000"
+      ],
+      "core_integral_rS_dr_exact": "81911199041519313313269881/750000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "121538093/25000000",
+      "global_minimum_height_exact": "715961907/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "831533939/100000000",
+        "0",
+        "-83387873/10000000"
+      ],
+      "core_apical_downward_constant": "276612127/60000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-2344791/100000000",
+        "-1432756551994786263621237231/10012731722862811063100000000",
+        "104220886517913649985988147/625795732678925691443750000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "276612127/60000000",
+        "-276612127/60000000"
+      ],
+      "core_integral_rS_dr_exact": "181423014134533934257841903/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "831533939/100000000",
+      "global_minimum_height_exact": "2518466061/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "831533939/100000000",
+        "0",
+        "-83387873/15000000"
+      ],
+      "core_apical_downward_constant": "276612127/60000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "826844357/300000000",
+        "-271190268485837203362419268953/30038195168588433189300000000",
+        "94200280626898585617802604843/15019097584294216594650000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "276612127/60000000",
+        "-276612127/60000000"
+      ],
+      "core_integral_rS_dr_exact": "1453436233761939337908162103/6000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "831533939/100000000",
+      "global_minimum_height_exact": "2518466061/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_E",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "14418011/1562500",
+        "0",
+        "-56564061/25000000"
+      ],
+      "core_apical_downward_constant": "320915921/50000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "34824823/5000000",
+        "-28168004253614927854807567981/1251591465357851382887500000",
+        "38901428007470733281870169397/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "320915921/50000000",
+        "-320915921/50000000"
+      ],
+      "core_integral_rS_dr_exact": "354284742722783748463434379/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "14418011/1562500",
+      "global_minimum_height_exact": "37925739/1562500",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_E",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "14418011/1562500",
+        "0",
+        "-18854687/12500000"
+      ],
+      "core_apical_downward_constant": "320915921/50000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "96489401/12500000",
+        "-2227523467694640062936174677/89399390382703670206250000",
+        "3074871954942522062079931921/178798780765407340412500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "320915921/50000000",
+        "-320915921/50000000"
+      ],
+      "core_integral_rS_dr_exact": "185393019972396641557278441/500000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "14418011/1562500",
+      "global_minimum_height_exact": "37925739/1562500",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "382404181/50000000",
+        "0",
+        "-40017001/5000000"
+      ],
+      "core_apical_downward_constant": "109982999/30000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-17765829/50000000",
+        "4682127035285640861701700831/5006365861431405531550000000",
+        "-725820559793269985909568183/1251591465357851382887500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "109982999/30000000",
+        "-109982999/30000000"
+      ],
+      "core_integral_rS_dr_exact": "19945325215739907414904993/125000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "382404181/50000000",
+      "global_minimum_height_exact": "1292595819/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "382404181/50000000",
+        "0",
+        "-40017001/7500000"
+      ],
+      "core_apical_downward_constant": "109982999/30000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "346872523/150000000",
+        "-114032403012622992486871650127/15019097584294216594650000000",
+        "39650493932153695961786779057/7509548792147108297325000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "109982999/30000000",
+        "-109982999/30000000"
+      ],
+      "core_integral_rS_dr_exact": "653798754363616119213531677/3000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "382404181/50000000",
+      "global_minimum_height_exact": "1292595819/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "636662153/50000000",
+        "0",
+        "-482543709/50000000"
+      ],
+      "core_apical_downward_constant": "119061243/12500000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "38529611/12500000",
+        "-50998879204584294481055210699/5006365861431405531550000000",
+        "7113482574282747563189126507/1001273172286281106310000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "119061243/12500000",
+        "-119061243/12500000"
+      ],
+      "core_integral_rS_dr_exact": "692077554429577184235773293/2000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "636662153/50000000",
+      "global_minimum_height_exact": "1038337847/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "636662153/50000000",
+        "0",
+        "-160847903/25000000"
+      ],
+      "core_apical_downward_constant": "119061243/12500000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "314966347/50000000",
+        "-20496001609683087973170384857/1001273172286281106310000000",
+        "4433954544125267502430874333/312897866339462845721875000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "119061243/12500000",
+        "-119061243/12500000"
+      ],
+      "core_integral_rS_dr_exact": "1665697735892948044774833/4000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "636662153/50000000",
+      "global_minimum_height_exact": "1038337847/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "1049577729/100000000",
+        "0",
+        "-107550709/25000000"
+      ],
+      "core_apical_downward_constant": "1026903467/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "619374893/100000000",
+        "-200993419079982436216898363969/10012731722862811063100000000",
+        "69488536342561921829015288243/5006365861431405531550000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1026903467/150000000",
+        "-1026903467/150000000"
+      ],
+      "core_integral_rS_dr_exact": "730319290505170649743237759/2000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "1049577729/100000000",
+      "global_minimum_height_exact": "2300422271/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "1049577729/100000000",
+        "0",
+        "-107550709/37500000"
+      ],
+      "core_apical_downward_constant": "1026903467/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "457665503/60000000",
+        "-740671375470425948149450990939/30038195168588433189300000000",
+        "255773640226511348445034839487/15019097584294216594650000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1026903467/150000000",
+        "-1026903467/150000000"
+      ],
+      "core_integral_rS_dr_exact": "2379210926646775157840738519/6000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "1049577729/100000000",
+      "global_minimum_height_exact": "2300422271/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "138419619/100000000",
+        "0",
+        "-22868179/12500000"
+      ],
+      "core_apical_downward_constant": "-22868179/75000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-44525813/100000000",
+        "13887545560229756627797044773/10012731722862811063100000000",
+        "-942929535711618312729782677/1001273172286281106310000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "-22868179/75000000",
+        "22868179/75000000"
+      ],
+      "core_integral_rS_dr_exact": "41087120674867267133174207/2000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "138419619/100000000",
+      "global_minimum_height_exact": "3211580381/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "138419619/100000000",
+        "0",
+        "-22868179/18750000"
+      ],
+      "core_apical_downward_constant": "-22868179/75000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "49367993/300000000",
+        "-3378209553210774245694608173/6007639033717686637860000000",
+        "5973981535001089631619303641/15019097584294216594650000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "-22868179/75000000",
+        "22868179/75000000"
+      ],
+      "core_integral_rS_dr_exact": "8132668284735822721339153/240000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "138419619/100000000",
+      "global_minimum_height_exact": "3211580381/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "772032047/100000000",
+        "0",
+        "-47606711/12500000"
+      ],
+      "core_apical_downward_constant": "439893289/75000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "391178359/100000000",
+        "-127227915408989948907529894087/10012731722862811063100000000",
+        "44030137882211388384812429779/5006365861431405531550000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "439893289/75000000",
+        "-439893289/75000000"
+      ],
+      "core_integral_rS_dr_exact": "509010853405850304950786907/2000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "772032047/100000000",
+      "global_minimum_height_exact": "2577967953/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "772032047/100000000",
+        "0",
+        "-47606711/18750000"
+      ],
+      "core_apical_downward_constant": "439893289/75000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "310877753/60000000",
+        "-503580130431470590316766396517/30038195168588433189300000000",
+        "173971676730850059394381467901/15019097584294216594650000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "439893289/75000000",
+        "-439893289/75000000"
+      ],
+      "core_integral_rS_dr_exact": "1693690853293073357708182157/6000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "772032047/100000000",
+      "global_minimum_height_exact": "2577967953/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "631048581/50000000",
+        "0",
+        "-65420201/12500000"
+      ],
+      "core_apical_downward_constant": "315202771/30000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "369367777/50000000",
+        "-119877041427251444750654380741/5006365861431405531550000000",
+        "41446618422769639383585921727/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "315202771/30000000",
+        "-315202771/30000000"
+      ],
+      "core_integral_rS_dr_exact": "437773580360106113056949051/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "631048581/50000000",
+      "global_minimum_height_exact": "1043951419/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "631048581/50000000",
+        "0",
+        "-65420201/18750000"
+      ],
+      "core_apical_downward_constant": "315202771/30000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "273956827/30000000",
+        "-443384924831341384600605196871/15019097584294216594650000000",
+        "153116057105727215421618278843/7509548792147108297325000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "315202771/30000000",
+        "-315202771/30000000"
+      ],
+      "core_integral_rS_dr_exact": "1427830006710090435710333491/3000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "631048581/50000000",
+      "global_minimum_height_exact": "1043951419/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "972802387/100000000",
+        "0",
+        "-1049613897/100000000"
+      ],
+      "core_apical_downward_constant": "469682207/100000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-7681151/10000000",
+        "22030223381700765070438954211/10012731722862811063100000000",
+        "-14339292953120824664424791401/10012731722862811063100000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "469682207/100000000",
+        "-469682207/100000000"
+      ],
+      "core_integral_rS_dr_exact": "784155778856789648877286613/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "972802387/100000000",
+      "global_minimum_height_exact": "2377197613/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "972802387/100000000",
+        "0",
+        "-349871299/50000000"
+      ],
+      "core_apical_downward_constant": "469682207/100000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "273059789/100000000",
+        "-89949908697345182904628405127/10012731722862811063100000000",
+        "15652291145439981564064722067/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "469682207/100000000",
+        "-469682207/100000000"
+      ],
+      "core_integral_rS_dr_exact": "34073659748096643577925217/125000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "972802387/100000000",
+      "global_minimum_height_exact": "2377197613/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "12",
+        "0",
+        "-69401673/5000000"
+      ],
+      "core_apical_downward_constant": "213740457/25000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-9401673/5000000",
+        "1425787635625958596600485663/250318293071570276577500000",
+        "-1910210976301089458440485663/500636586143140553155000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "213740457/25000000",
+        "-213740457/25000000"
+      ],
+      "core_integral_rS_dr_exact": "44282784050641096900485663/200000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "12",
+      "global_minimum_height_exact": "43/2",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "12",
+        "0",
+        "-23133891/2500000"
+      ],
+      "core_apical_downward_constant": "213740457/25000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "6866109/2500000",
+        "-162595689766672368758786397/17879878076540734041250000",
+        "226979226109153519223786397/35759756153081468082500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "213740457/25000000",
+        "-213740457/25000000"
+      ],
+      "core_integral_rS_dr_exact": "32264583444318153013495221/100000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "12",
+      "global_minimum_height_exact": "43/2",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "335013163/50000000",
+        "0",
+        "-503124863/100000000"
+      ],
+      "core_apical_downward_constant": "1743398081/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "166901463/100000000",
+        "-13794455839024333242087022797/2503182930715702765775000000",
+        "7693285524874839164221667607/2002546344572562212620000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1743398081/300000000",
+        "-1743398081/300000000"
+      ],
+      "core_integral_rS_dr_exact": "732464781815167866349775141/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "335013163/50000000",
+      "global_minimum_height_exact": "1339986837/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "335013163/50000000",
+        "0",
+        "-503124863/150000000"
+      ],
+      "core_apical_downward_constant": "1743398081/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "250957313/75000000",
+        "-32656407981542618079648571067/3003819516858843318930000000",
+        "113026674928522855757797866329/15019097584294216594650000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1743398081/300000000",
+        "-1743398081/300000000"
+      ],
+      "core_integral_rS_dr_exact": "263772055739194575987860687/1200000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "335013163/50000000",
+      "global_minimum_height_exact": "1339986837/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "120752823/50000000",
+        "0",
+        "-120752823/25000000"
+      ],
+      "core_apical_downward_constant": "59749059/50000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-120752823/50000000",
+        "841105242108230451/109855120370000000",
+        "-719748654993230451/137318900462500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "59749059/50000000",
+        "-59749059/50000000"
+      ],
+      "core_integral_rS_dr_exact": "0",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "120752823/50000000",
+      "global_minimum_height_exact": "1554247177/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "120752823/50000000",
+        "0",
+        "-40250941/12500000"
+      ],
+      "core_apical_downward_constant": "59749059/50000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-40250941/50000000",
+        "12565711094117873533148391481/5006365861431405531550000000",
+        "-853549235586007994119853771/500636586143140553155000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "59749059/50000000",
+        "-59749059/50000000"
+      ],
+      "core_integral_rS_dr_exact": "35226930094706408050146229/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "120752823/50000000",
+      "global_minimum_height_exact": "1554247177/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "583168051/100000000",
+        "0",
+        "-392015011/100000000"
+      ],
+      "core_apical_downward_constant": "1281880459/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "2389413/1250000",
+        "-62711754959908210559665985937/10012731722862811063100000000",
+        "43572113884611572183094017697/10012731722862811063100000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1281880459/300000000",
+        "-1281880459/300000000"
+      ],
+      "core_integral_rS_dr_exact": "677672478353084942935381579/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "583168051/100000000",
+      "global_minimum_height_exact": "2766831949/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "583168051/100000000",
+        "0",
+        "-392015011/150000000"
+      ],
+      "core_apical_downward_constant": "1281880459/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "965474131/300000000",
+        "-313603952463465675167539321693/30038195168588433189300000000",
+        "27116702234099327716737841879/3754774396073554148662500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1281880459/300000000",
+        "-1281880459/300000000"
+      ],
+      "core_integral_rS_dr_exact": "594025554701404131221365699/3000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "583168051/100000000",
+      "global_minimum_height_exact": "2766831949/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "49233871/10000000",
+        "0",
+        "-65756233/10000000"
+      ],
+      "core_apical_downward_constant": "834928513/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-8261181/5000000",
+        "5158896581050517551184008647/1001273172286281106310000000",
+        "-140182271988411485758503129/40050926891451244252400000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "834928513/300000000",
+        "-834928513/300000000"
+      ],
+      "core_integral_rS_dr_exact": "28628549102376501441047821/400000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "49233871/10000000",
+      "global_minimum_height_exact": "285766129/10000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "49233871/10000000",
+        "0",
+        "-65756233/15000000"
+      ],
+      "core_apical_downward_constant": "834928513/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "16189147/30000000",
+        "-1113862221493115210910320021/600763903371768663786000000",
+        "987083812533920740803519587/750954879214710829732500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "834928513/300000000",
+        "-834928513/300000000"
+      ],
+      "core_integral_rS_dr_exact": "3585859238476129783033261/30000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "49233871/10000000",
+      "global_minimum_height_exact": "285766129/10000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "259169279/25000000",
+        "0",
+        "-44915667/5000000"
+      ],
+      "core_apical_downward_constant": "65028111/10000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "1080967/781250",
+        "-11751671045272621422019936181/2503182930715702765775000000",
+        "8288172622146911250357210517/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "65028111/10000000",
+        "-65028111/10000000"
+      ],
+      "core_integral_rS_dr_exact": "257093886083964236968769287/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "259169279/25000000",
+      "global_minimum_height_exact": "578330721/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "canonical",
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "259169279/25000000",
+        "0",
+        "-14971889/2500000"
+      ],
+      "core_apical_downward_constant": "65028111/10000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "109450389/25000000",
+        "-35711254361834051614990455771/2503182930715702765775000000",
+        "3094035067704287871261558789/312897866339462845721875000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "65028111/10000000",
+        "-65028111/10000000"
+      ],
+      "core_integral_rS_dr_exact": "80652395655606440933377373/250000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "259169279/25000000",
+      "global_minimum_height_exact": "578330721/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "120752823/50000000",
+        "0",
+        "-586097319/100000000"
+      ],
+      "core_apical_downward_constant": "-46139873/100000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-344591673/100000000",
+        "27414061337182664434882029801/2503182930715702765775000000",
+        "-75153205591915973602362743541/10012731722862811063100000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "-46139873/100000000",
+        "46139873/100000000"
+      ],
+      "core_integral_rS_dr_exact": "-90219114799577414533746963/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "120752823/50000000",
+      "global_minimum_height_exact": "1554247177/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_O",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "120752823/50000000",
+        "0",
+        "-195365773/50000000"
+      ],
+      "core_apical_downward_constant": "-46139873/100000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-1492259/1000000",
+        "23563647527655868816759226839/5006365861431405531550000000",
+        "-16092853013642101029653955389/5006365861431405531550000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "-46139873/100000000",
+        "46139873/100000000"
+      ],
+      "core_integral_rS_dr_exact": "40380821922887011255710137/2000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "120752823/50000000",
+      "global_minimum_height_exact": "1554247177/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "138419619/100000000",
+        "0",
+        "-15971881/20000000"
+      ],
+      "core_apical_downward_constant": "405441257/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "29280107/50000000",
+        "-19106263740384229223035461301/10012731722862811063100000000",
+        "13242786616229880138068426267/10012731722862811063100000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "405441257/300000000",
+        "-405441257/300000000"
+      ],
+      "core_integral_rS_dr_exact": "172393356149311948800095377/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "138419619/100000000",
+      "global_minimum_height_exact": "3211580381/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_I",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "138419619/100000000",
+        "0",
+        "-15971881/30000000"
+      ],
+      "core_apical_downward_constant": "405441257/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "255540047/300000000",
+        "-82878666367281842930138053013/30038195168588433189300000000",
+        "14323031754173576448492778339/7509548792147108297325000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "405441257/300000000",
+        "-405441257/300000000"
+      ],
+      "core_integral_rS_dr_exact": "73383955479493245641806447/1500000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "138419619/100000000",
+      "global_minimum_height_exact": "3211580381/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "77722063/25000000",
+        "0",
+        "-115516337/25000000"
+      ],
+      "core_apical_downward_constant": "612233801/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-18897137/12500000",
+        "11892407317612331542481309047/2503182930715702765775000000",
+        "-8108168055388640085190982153/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "612233801/300000000",
+        "-612233801/300000000"
+      ],
+      "core_integral_rS_dr_exact": "34944113031772039256775141/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "77722063/25000000",
+      "global_minimum_height_exact": "759777937/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_B",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "77722063/25000000",
+        "0",
+        "-115516337/37500000"
+      ],
+      "core_apical_downward_constant": "612233801/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "426703/15000000",
+        "-1295043881828061350103830153/7509548792147108297325000000",
+        "270355187152756211662733047/1877387198036777074331250000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "612233801/300000000",
+        "-612233801/300000000"
+      ],
+      "core_integral_rS_dr_exact": "25741280881213155305805847/375000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "77722063/25000000",
+      "global_minimum_height_exact": "759777937/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "121538093/25000000",
+        "0",
+        "-177427781/25000000"
+      ],
+      "core_apical_downward_constant": "422572219/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-6986211/3125000",
+        "3513800236472684564969289261/500636586143140553155000000",
+        "-11972916662178373053650373177/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "422572219/150000000",
+        "-422572219/150000000"
+      ],
+      "core_integral_rS_dr_exact": "11490870604808839782261289/200000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "121538093/25000000",
+      "global_minimum_height_exact": "715961907/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_C",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "121538093/25000000",
+        "0",
+        "-177427781/37500000"
+      ],
+      "core_apical_downward_constant": "422572219/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "9758717/75000000",
+        "-4080696409035710142122340707/7509548792147108297325000000",
+        "77589556405807602805743007/187738719803677707433125000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "422572219/150000000",
+        "-422572219/150000000"
+      ],
+      "core_integral_rS_dr_exact": "81911199041519313313269881/750000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "121538093/25000000",
+      "global_minimum_height_exact": "715961907/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "49233871/10000000",
+        "0",
+        "-65756233/10000000"
+      ],
+      "core_apical_downward_constant": "834928513/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-8261181/5000000",
+        "5158896581050517551184008647/1001273172286281106310000000",
+        "-140182271988411485758503129/40050926891451244252400000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "834928513/300000000",
+        "-834928513/300000000"
+      ],
+      "core_integral_rS_dr_exact": "28628549102376501441047821/400000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "49233871/10000000",
+      "global_minimum_height_exact": "285766129/10000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_Q",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "49233871/10000000",
+        "0",
+        "-65756233/15000000"
+      ],
+      "core_apical_downward_constant": "834928513/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "16189147/30000000",
+        "-1113862221493115210910320021/600763903371768663786000000",
+        "987083812533920740803519587/750954879214710829732500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "834928513/300000000",
+        "-834928513/300000000"
+      ],
+      "core_integral_rS_dr_exact": "3585859238476129783033261/30000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "49233871/10000000",
+      "global_minimum_height_exact": "285766129/10000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "382404181/50000000",
+        "0",
+        "-483619487/50000000"
+      ],
+      "core_apical_downward_constant": "79170559/18750000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-50607653/25000000",
+        "6278208790316185965182376161/1001273172286281106310000000",
+        "-21256626899326263648193362719/5006365861431405531550000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "79170559/18750000",
+        "-79170559/18750000"
+      ],
+      "core_integral_rS_dr_exact": "1968733271211550226348559/16000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "382404181/50000000",
+      "global_minimum_height_exact": "1292595819/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_F",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "382404181/50000000",
+        "0",
+        "-483619487/75000000"
+      ],
+      "core_apical_downward_constant": "79170559/18750000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "179973569/150000000",
+        "-8659224168576059222635898597/2145585369184888084950000000",
+        "304244989600007317960452701/107279268459244404247500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "79170559/18750000",
+        "-79170559/18750000"
+      ],
+      "core_integral_rS_dr_exact": "18148912806663168089644427/93750000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "382404181/50000000",
+      "global_minimum_height_exact": "1292595819/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "583168051/100000000",
+        "0",
+        "-4479881/1250000"
+      ],
+      "core_apical_downward_constant": "156031991/37500000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "224777571/100000000",
+        "-73473653501565881451132964059/10012731722862811063100000000",
+        "25483639172084201540588753379/5006365861431405531550000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "156031991/37500000",
+        "-156031991/37500000"
+      ],
+      "core_integral_rS_dr_exact": "353550044289872474775946259/2000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "583168051/100000000",
+      "global_minimum_height_exact": "2766831949/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_P",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "583168051/100000000",
+        "0",
+        "-4479881/1875000"
+      ],
+      "core_apical_downward_constant": "156031991/37500000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "1032723193/300000000",
+        "-335127749546781016950473277937/30038195168588433189300000000",
+        "115861973395954141765034856577/15019097584294216594650000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "156031991/37500000",
+        "-156031991/37500000"
+      ],
+      "core_integral_rS_dr_exact": "1217478719629468269059242337/6000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "583168051/100000000",
+      "global_minimum_height_exact": "2766831949/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "335013163/50000000",
+        "0",
+        "-503124863/100000000"
+      ],
+      "core_apical_downward_constant": "1743398081/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "166901463/100000000",
+        "-13794455839024333242087022797/2503182930715702765775000000",
+        "7693285524874839164221667607/2002546344572562212620000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1743398081/300000000",
+        "-1743398081/300000000"
+      ],
+      "core_integral_rS_dr_exact": "732464781815167866349775141/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "335013163/50000000",
+      "global_minimum_height_exact": "1339986837/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_N",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "335013163/50000000",
+        "0",
+        "-503124863/150000000"
+      ],
+      "core_apical_downward_constant": "1743398081/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "250957313/75000000",
+        "-32656407981542618079648571067/3003819516858843318930000000",
+        "113026674928522855757797866329/15019097584294216594650000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1743398081/300000000",
+        "-1743398081/300000000"
+      ],
+      "core_integral_rS_dr_exact": "263772055739194575987860687/1200000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "335013163/50000000",
+      "global_minimum_height_exact": "1339986837/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "12",
+        "0",
+        "-925311811/50000000"
+      ],
+      "core_apical_downward_constant": "613737823/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-325311811/50000000",
+        "51272135304681689803128962741/2503182930715702765775000000",
+        "-69971671711146867891378962741/5006365861431405531550000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "613737823/150000000",
+        "-613737823/150000000"
+      ],
+      "core_integral_rS_dr_exact": "240402370512145336278962741/2000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "12",
+      "global_minimum_height_exact": "43/2",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_M",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "12",
+        "0",
+        "-925311811/75000000"
+      ],
+      "core_apical_downward_constant": "613737823/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-25311811/75000000",
+        "2869164097420906397778962741/3754774396073554148662500000",
+        "-3203924465213734269978962741/7509548792147108297325000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "613737823/150000000",
+        "-613737823/150000000"
+      ],
+      "core_integral_rS_dr_exact": "765512033335278957678962741/3000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "12",
+      "global_minimum_height_exact": "43/2",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "972802387/100000000",
+        "0",
+        "-265287131/25000000"
+      ],
+      "core_apical_downward_constant": "13442041/2343750",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-88346137/100000000",
+        "5144401357002049505205118697/2002546344572562212620000000",
+        "-8438072549843704071084055519/5006365861431405531550000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "13442041/2343750",
+        "-13442041/2343750"
+      ],
+      "core_integral_rS_dr_exact": "123849739525150180275297/640000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "972802387/100000000",
+      "global_minimum_height_exact": "2377197613/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_L",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "972802387/100000000",
+        "0",
+        "-265287131/37500000"
+      ],
+      "core_apical_downward_constant": "13442041/2343750",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "796110113/300000000",
+        "-262466159285416583802711936833/30038195168588433189300000000",
+        "18275378945214661181329002553/3003819516858843318930000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "13442041/2343750",
+        "-13442041/2343750"
+      ],
+      "core_integral_rS_dr_exact": "1625440761084037869583730053/6000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "972802387/100000000",
+      "global_minimum_height_exact": "2377197613/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "831533939/100000000",
+        "0",
+        "-116369199/20000000"
+      ],
+      "core_apical_downward_constant": "4770093/1000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "31210993/12500000",
+        "-11728369599923069903364035543/1430390246123258723300000000",
+        "8156857603201365491355616591/1430390246123258723300000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "4770093/1000000",
+        "-4770093/1000000"
+      ],
+      "core_integral_rS_dr_exact": "946266764031872716817861827/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "831533939/100000000",
+      "global_minimum_height_exact": "2518466061/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_D",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "831533939/100000000",
+        "0",
+        "-38789733/10000000"
+      ],
+      "core_apical_downward_constant": "4770093/1000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "443636609/100000000",
+        "-144173976593590203160757764031/10012731722862811063100000000",
+        "12469229138751793804793009219/1251591465357851382887500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "4770093/1000000",
+        "-4770093/1000000"
+      ],
+      "core_integral_rS_dr_exact": "279001823542612719615776053/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "831533939/100000000",
+      "global_minimum_height_exact": "2518466061/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "772032047/100000000",
+        "0",
+        "-289215463/100000000"
+      ],
+      "core_apical_downward_constant": "1667934931/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "60352073/12500000",
+        "-156557730596229215326686834037/10012731722862811063100000000",
+        "108214601326818643945453329533/10012731722862811063100000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1667934931/300000000",
+        "-1667934931/300000000"
+      ],
+      "core_integral_rS_dr_exact": "1098221902530801366573103839/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "772032047/100000000",
+      "global_minimum_height_exact": "2577967953/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_J",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "772032047/100000000",
+        "0",
+        "-289215463/150000000"
+      ],
+      "core_apical_downward_constant": "1667934931/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "347533043/60000000",
+        "-562239760805949123155080276417/30038195168588433189300000000",
+        "48531500573311481642552484469/3754774396073554148662500000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1667934931/300000000",
+        "-1667934931/300000000"
+      ],
+      "core_integral_rS_dr_exact": "886945524506087057189856091/3000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "772032047/100000000",
+      "global_minimum_height_exact": "2577967953/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "259169279/25000000",
+        "0",
+        "-44915667/5000000"
+      ],
+      "core_apical_downward_constant": "65028111/10000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "1080967/781250",
+        "-11751671045272621422019936181/2503182930715702765775000000",
+        "8288172622146911250357210517/2503182930715702765775000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "65028111/10000000",
+        "-65028111/10000000"
+      ],
+      "core_integral_rS_dr_exact": "257093886083964236968769287/1000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "259169279/25000000",
+      "global_minimum_height_exact": "578330721/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_R",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "259169279/25000000",
+        "0",
+        "-14971889/2500000"
+      ],
+      "core_apical_downward_constant": "65028111/10000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "109450389/25000000",
+        "-35711254361834051614990455771/2503182930715702765775000000",
+        "3094035067704287871261558789/312897866339462845721875000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "65028111/10000000",
+        "-65028111/10000000"
+      ],
+      "core_integral_rS_dr_exact": "80652395655606440933377373/250000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "259169279/25000000",
+      "global_minimum_height_exact": "578330721/25000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "636662153/50000000",
+        "0",
+        "-1274763869/100000000"
+      ],
+      "core_apical_downward_constant": "1967146283/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "-1439563/100000000",
+        "-720606654387065838830880059/2503182930715702765775000000",
+        "3026566198719858924147814489/10012731722862811063100000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1967146283/300000000",
+        "-1967146283/300000000"
+      ],
+      "core_integral_rS_dr_exact": "1113131614244363267514997167/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "636662153/50000000",
+      "global_minimum_height_exact": "1038337847/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_G",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "636662153/50000000",
+        "0",
+        "-1274763869/150000000"
+      ],
+      "core_apical_downward_constant": "1967146283/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "63522259/15000000",
+        "-208324692353625993990768871693/15019097584294216594650000000",
+        "144721558573905223408938517403/15019097584294216594650000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1967146283/300000000",
+        "-1967146283/300000000"
+      ],
+      "core_integral_rS_dr_exact": "2227523109224630966205700081/6000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "636662153/50000000",
+      "global_minimum_height_exact": "1038337847/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_E",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "70143253/7500000",
+        "0",
+        "0"
+      ],
+      "core_apical_downward_constant": "1430883637/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "70143253/7500000",
+        "-22634279035617390449197777357/750954879214710829732500000",
+        "7805511645519235021147777357/375477439607355414866250000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1430883637/150000000",
+        "-1430883637/150000000"
+      ],
+      "core_integral_rS_dr_exact": "61388166553579593097777357/150000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "70143253/7500000",
+      "global_minimum_height_exact": "181106747/7500000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_E",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "70143253/7500000",
+        "0",
+        "0"
+      ],
+      "core_apical_downward_constant": "1430883637/150000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "70143253/7500000",
+        "-22634279035617390449197777357/750954879214710829732500000",
+        "7805511645519235021147777357/375477439607355414866250000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "1430883637/150000000",
+        "-1430883637/150000000"
+      ],
+      "core_integral_rS_dr_exact": "61388166553579593097777357/150000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "70143253/7500000",
+      "global_minimum_height_exact": "181106747/7500000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "1049577729/100000000",
+        "0",
+        "-180883511/100000000"
+      ],
+      "core_apical_downward_constant": "3004487609/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "434347109/50000000",
+        "-280790793209143520656490852119/10012731722862811063100000000",
+        "193810771668782496879076820561/10012731722862811063100000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "3004487609/300000000",
+        "-3004487609/300000000"
+      ],
+      "core_integral_rS_dr_exact": "1678838558820410080940231443/4000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "1049577729/100000000",
+      "global_minimum_height_exact": "2300422271/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_H",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "1049577729/100000000",
+        "0",
+        "-180883511/150000000"
+      ],
+      "core_apical_downward_constant": "3004487609/300000000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "557393233/60000000",
+        "-900266123728748117028635967239/30038195168588433189300000000",
+        "155303669605085000833040541781/7509548792147108297325000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "3004487609/300000000",
+        "-3004487609/300000000"
+      ],
+      "core_integral_rS_dr_exact": "649352726114210984823623611/1500000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "1049577729/100000000",
+      "global_minimum_height_exact": "2300422271/100000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "line",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "631048581/50000000",
+        "0",
+        "-231502241/50000000"
+      ],
+      "core_apical_downward_constant": "386458823/37500000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "19977317/2500000",
+        "-129536020258481065334251587247/5006365861431405531550000000",
+        "89530517125763760510520446707/5006365861431405531550000000"
+      ],
+      "annular_apical_downward_coefficients": [
+        "386458823/37500000",
+        "-386458823/37500000"
+      ],
+      "core_integral_rS_dr_exact": "901958919122573385865294849/2000000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "631048581/50000000",
+      "global_minimum_height_exact": "1043951419/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    },
+    {
+      "pairing": "unknown_pairing",
+      "record_id": "optoGEF2_small_col_K",
+      "weighting": "disk",
+      "height_um": "67/2",
+      "ROI_radius_um": "935512037/100000000",
+      "outer_radius_um": "201/2",
+      "core_S_coefficients_normalized_radius": [
+        "631048581/50000000",
+        "0",
+        "-231502241/75000000"
+      ],
+      "core_apical_downward_constant": "386458823/37500000",
+      "annular_S_coefficients_normalized_annulus_radius": [
+        "1430141261/150000000",
+        "-462702882493800625767799609883/15019097584294216594650000000",
+        "9984583586621981072810430131/469346799509194268582812500"
+      ],
+      "annular_apical_downward_coefficients": [
+        "386458823/37500000",
+        "-386458823/37500000"
+      ],
+      "core_integral_rS_dr_exact": "727120882556225797730865119/1500000000000000000000000",
+      "total_integral_rS_dr_exact": "0",
+      "global_maximum_S_exact": "631048581/50000000",
+      "global_minimum_height_exact": "1043951419/50000000",
+      "outer_S_exact": "0",
+      "total_target_volume_over_pi_exact": "2706867/8",
+      "J_identity": "rho(r)^2=(2/H)*integral_0^r s*(H-S(s))ds; R=rho_inverse; J=(R/rho)*R_prime*(H-S)/H=1",
+      "map": "R=R(rho), Z=(S(R)-A_down(R))+(1-S(R)/H)*z",
+      "scope": "Piecewise smooth globally embedded isochoric continuum configuration, NOT an equilibrium, P2 representation or common material/gain realization."
+    }
+  ],
+  "count": 68,
+  "source_compatibility_receipt_sha256": "ab9be36dc4b45c8882e67f6a7669a77f015249c252b20d5c00d308683cef9df9",
+  "script_sha256": "88d39e43db04a3b41d1e5f4423a1fa37756c2423d76fc866f7fee6188eefd2c9",
+  "scope": "Exact-volume and positive-height certificates plus analytic radial-transport J=1 proof. Separate fields for each row/weighting, no mechanical equilibrium or common inferred parameters."
+}

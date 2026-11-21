@@ -1,0 +1,104 @@
+{
+  "status": "PASS_VISIBLE_WITHDRAWAL_READBACK",
+  "checks": {
+    "same_page": true,
+    "expected122": true,
+    "status_exact": true,
+    "erratum_units_exact": true,
+    "prior_integration_claims_marked_withdrawn": true
+  },
+  "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+  "sequence": 17,
+  "blocks": 122,
+  "edit_receipt": {
+    "new_sequence": 17,
+    "through_sequence": 17,
+    "operation_results": [
+      {
+        "operation_index": 0,
+        "preceding_block_id": "0826f80e-5a30-48f7-9864-09563b1c8a23",
+        "created_block_ids": [],
+        "continuation_position": {
+          "block_id": "b6c89f9c-c1f1-4ae9-9472-a9cb38c5ecd6",
+          "relative_position_base64": "AP6I9cANzwNB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "b6c89f9c-c1f1-4ae9-9472-a9cb38c5ecd6",
+            "hash": "244187e0cfa22060ddb02269d3743c1a345abb613fb2f4f1811c1893b4a31056"
+          }
+        ]
+      },
+      {
+        "operation_index": 1,
+        "preceding_block_id": "8aef9539-af72-4179-8b5a-c590e77d84b0",
+        "created_block_ids": [
+          "f29ccece-814b-4963-b632-1cb904212629",
+          "40550445-f2fd-4480-a0f4-979a318854c5",
+          "8aef9539-af72-4179-8b5a-c590e77d84b0",
+          "0361e74d-404a-4d02-af7d-464ac166a335"
+        ],
+        "continuation_position": {
+          "block_id": "0361e74d-404a-4d02-af7d-464ac166a335",
+          "relative_position_base64": "AMyNgEjGD0E="
+        },
+        "affected_blocks": [
+          {
+            "block_id": "f29ccece-814b-4963-b632-1cb904212629",
+            "hash": "09409e0ac3147629e166593b58099928c891c2b7f3afb435571a03798637e6a5"
+          },
+          {
+            "block_id": "40550445-f2fd-4480-a0f4-979a318854c5",
+            "hash": "42e05bf773be1ced6373c5f4a4019be0a3b98ab08a5afa9bf9f65aa9fede6846"
+          },
+          {
+            "block_id": "8aef9539-af72-4179-8b5a-c590e77d84b0",
+            "hash": "6a6a1b0466417509a6cb476f6a929d73922c0be02ba73d272b67aeba69a88fb1"
+          },
+          {
+            "block_id": "0361e74d-404a-4d02-af7d-464ac166a335",
+            "hash": "fe906941e8881dbf544b48f1edeb0b863a27724b1d5c2c77d679747f4479b90e"
+          }
+        ]
+      }
+    ]
+  },
+  "updated_blocks": [
+    {
+      "id": "b6c89f9c-c1f1-4ae9-9472-a9cb38c5ecd6",
+      "kind": "markdown",
+      "markdown": "**CORRECTION — integration certificates withdrawn pending safe replay.** An adversarial test found that sparse interval-polynomial cleanup can discard a nonzero-width Arb coefficient containing zero. The point integration and center-escape certificates previously summarized here are unverified until replayed with corrected arithmetic; existing PASS receipts and agreement between implementations do not repair their shared defect. Actual uniform-field arithmetic was observed dropping uncertain coefficients. Exact-rational moment formulas, the older dense-matrix quadrature-root/minimum proofs, and root-independent exact geometry certificates are unaffected by this defect. No exact-integral root or novelty is established. The original five-gate objective remains incomplete.",
+      "hash": "244187e0cfa22060ddb02269d3743c1a345abb613fb2f4f1811c1893b4a31056",
+      "metadata": {}
+    },
+    {
+      "id": "f29ccece-814b-4963-b632-1cb904212629",
+      "kind": "markdown",
+      "markdown": "## Erratum — sparse interval-polynomial cleanup",
+      "hash": "09409e0ac3147629e166593b58099928c891c2b7f3afb435571a03798637e6a5",
+      "metadata": {}
+    },
+    {
+      "id": "40550445-f2fd-4480-a0f4-979a318854c5",
+      "kind": "markdown",
+      "markdown": "Confirmed reproduction: for a nonzero-width Arb ball containing zero, both `v == 0` and `v != 0` can be false. The frozen helper used `if v != 0`, which can discard an uncertain coefficient. The new uniform element-0 construction discarded ten uncertain coefficients. Two tested point-series stages showed no observed drops, but that limited check does not validate the complete older point runs.",
+      "hash": "42e05bf773be1ced6373c5f4a4019be0a3b98ab08a5afa9bf9f65aa9fede6846",
+      "metadata": {}
+    },
+    {
+      "id": "8aef9539-af72-4179-8b5a-c590e77d84b0",
+      "kind": "markdown",
+      "markdown": "The earlier integration figures and numerical center-escape conclusion are retained as historical, provisional material and are WITHDRAWN pending a complete corrected replay. The old quadrature model certificates and exact geometry results use different arithmetic and remain valid within their original scopes. A numerical center selected from an unverified correction remains a proposal; geometry of its explicitly supplied boxes can still be proved independently of any root or correction accuracy.",
+      "hash": "6a6a1b0466417509a6cb476f6a929d73922c0be02ba73d272b67aeba69a88fb1",
+      "metadata": {}
+    },
+    {
+      "id": "0361e74d-404a-4d02-af7d-464ac166a335",
+      "kind": "markdown",
+      "markdown": "Audit: evidence/interval_polynomial_cleanup_audit.json, SHA256 fe0f5414ecf16b6ff3e804d53a6ad68d44ef6a6766824786acd4ef2645fff084. A versioned safe polynomial kernel, adversarial zero-crossing guards, corrected producer and independent replays, and fresh documentation verification are required before restoring the integration claims.",
+      "hash": "fe906941e8881dbf544b48f1edeb0b863a27724b1d5c2c77d679747f4479b90e",
+      "metadata": {}
+    }
+  ],
+  "scope": "Withdrawal status, not scientific validation."
+}

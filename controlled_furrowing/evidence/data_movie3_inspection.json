@@ -1,0 +1,36 @@
+{
+  "file": "data\\raw\\41467_2025_62483_MOESM7_ESM.avi",
+  "sha256": "260555e647c56a74b157ef624fe263568cc47fbda553d3e8aa7fe0ad05e14be7",
+  "frame_count": 26,
+  "playback_fps": 4.0,
+  "decoded": [
+    {
+      "index0": 0,
+      "shape": [
+        826,
+        1908,
+        3
+      ],
+      "sha256_decoded_BRG": "2560028ee3198ad56e53792d343693b672208fd91a8115faad71aa14b78854b0"
+    },
+    {
+      "index0": 13,
+      "shape": [
+        826,
+        1908,
+        3
+      ],
+      "sha256_decoded_BRG": "69d0d8027a3c9e0ba62efdf140a98fc0c6402b37e336822013241880ea573c10"
+    },
+    {
+      "index0": 25,
+      "shape": [
+        826,
+        1908,
+        3
+      ],
+      "sha256_decoded_BRG": "0ade5ee22f1f6639b3aa751829ccb20089c484cd16514c1d8a02457a4bfb414d"
+    }
+  ],
+  "warning": "Playback fps is not biological acquisition time. Published multi-panel example, not raw volumetric microscopy or full cohort."
+}

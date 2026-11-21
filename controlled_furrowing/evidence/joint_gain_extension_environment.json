@@ -1,0 +1,13 @@
+{
+  "python": "3.13.5",
+  "numpy": "2.2.6",
+  "scipy": "1.16.0",
+  "torch": "2.11.0+cu128",
+  "system": "Windows",
+  "architecture": "AMD64",
+  "job_torch_threads_from_frozen_CLI": 1,
+  "floating_point": "CPU float64 tensors",
+  "protocol_sha256": "3b72bcf4583c0b136d01c420028a20a9324dc9c0b3b4ef212b14ec76a62e2031",
+  "direct_protocol_sha256": "6f51e16bd419e438c004b3081d447debd67092820b02ef9fa9a2b57b2494dddd",
+  "scope": "Companion environment record using sameinstalledPythoncommand; packageversionsdo not replace numerical/exactcertificate replay."
+}

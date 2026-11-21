@@ -1,0 +1,41 @@
+{
+  "status": "PASS_DIRECT_UNIFORM_FORCE_ROOT_CROSSCHECK",
+  "utc": "2026-11-20T01:17:00.037577+00:00",
+  "checks": {
+    "source_current": true,
+    "protocol_current": true,
+    "all_inputs_current": true,
+    "all_actual_checks_true": true,
+    "all_synthetic_checks_true": true,
+    "strict_selfmap_exact": true,
+    "strict_contraction_exact": true,
+    "error_exact": true,
+    "common_radius_exact": true,
+    "new_root_outside_old_cube_exact": true,
+    "Q_integral_roots_separation_positive": true,
+    "no_whole_goal_completion_claim": true
+  },
+  "source_sha256": "33d815cd2e2bebf55aea8b64ebb8e3d10892d039f2211c5a54038f07460794ed",
+  "protocol_sha256": "947327f953acce22a2a84db630be1750916a92f80bfdf97c419e94c0b9928f12",
+  "results_sha256": "7558ddca896aa399f6fd2a564f97a423d2be4c396b4e0065843608c8764d3d9d",
+  "proof_sha256": "87761f4ea1c3f056eab0548c7a5eb826b8dc0de2e96bd48b19decd4ab29ef418",
+  "location_consequences_sha256": "474779bfb4a57ecc893a3a503660a6962d5ef5c9abf7574878a5c87e3902003f",
+  "terminal_sha256": "b9b0bb85c20e8d4942d553397b01ba73a09777954c0cfa5e8d7c4a0832629baf",
+  "finalizer_sha256": "eeb7dfe32f9675fc5c52b3265b3e024727df5dc92b9fb3668362ac74db02fa5a",
+  "actual_status": "CERTIFIED_DIRECT_UNIFORM_RESIDUAL_ROUTE",
+  "strict_selfmap_pass": true,
+  "parameter_cell_sha256": "64f93fefa034f4c004b93451d98b2fd04e0072855be8c5e3bba9babb8f394dbf",
+  "common_geometry_domain_id": "B_exact_integral_retube_common_geometry_v1",
+  "display": {
+    "eta_Q": 5.28745504374037e-13,
+    "m_direct": 1.2846150057026019e-14,
+    "z": 0.1050417211892544,
+    "eta_direct": 2.2996669951964983e-12,
+    "selfmap_lhs": 3.3500842070890423e-12,
+    "radius": 1e-11,
+    "root_error": 2.5695801129996616e-12
+  },
+  "whole_physical_kernel_independently_reimplemented": false,
+  "integration_and_local_proof_kernels_reused": true,
+  "scope": "Separate scalar sufficient test on same B/C/common domain. Failure is inconclusive; success certifies one finite-P2 stationary-root family only. Generic physical kernels and their proof reviews are shared, not wholly independent physics. No PDE, other records, global domains, temporal dynamics, source-aligned biology or novelty claim."
+}

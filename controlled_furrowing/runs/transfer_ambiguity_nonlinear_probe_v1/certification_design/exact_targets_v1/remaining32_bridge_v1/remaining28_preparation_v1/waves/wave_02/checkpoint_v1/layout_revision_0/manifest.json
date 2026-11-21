@@ -1,0 +1,15 @@
+{
+  "status": "RETAINED_RENDER_BEFORE_FIGURE_LABEL_FIX",
+  "source_evidence_changed": false,
+  "reason": "The frozen-allowance annotation was clipped at the top of the residual figure. Move it into the reserved figure margin.",
+  "sha256": {
+    "build.py": "fa974023289fffa896fdbb8168458ea07de94729b255a8857f643c1a0b273a37",
+    "REPORT.md": "934461b5a4d3104cb9d1bb7c3341ba75a1b2d9af6fff595731dbc4f86073d340",
+    "REPORT.html": "c7717a20a8c0cd60ded650642548375b19b6b18f0a307855377ee41505d82a09",
+    "build_receipt.json": "ffbb7cdbd54e27368cc927f59e692ba594972a7ac8cb969010760b32853904f2",
+    "exact_bounds.csv": "86cfb74538b475823d5c9d75b75aa3ef704339b198dcc34dd3e291c32aadf9fc",
+    "exact_observer_comparisons.csv": "0991ece6c7645b43e0ecfe6234df0d47ea1138580c87a4aeeacf789133976224",
+    "selfmap_wave02.png": "abf0d6ca7c8b39cd547714d6321c1156768746a273c991d0c61f35dc29590740",
+    "observer_failures_wave02.png": "a56965174102a344b14d1e6f673da12dfcb919ce2efcbb77d5600f69dab38e1e"
+  }
+}

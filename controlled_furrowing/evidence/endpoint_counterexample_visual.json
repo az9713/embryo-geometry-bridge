@@ -1,0 +1,13 @@
+{
+  "status": "GENERATED_ANALYTIC_VISUAL",
+  "source_sha256": "ca731e9ab0417f2c1f270c259bfd5e273f1d7e5be25fd9e20f88821c78a12184",
+  "image_sha256": "ab4427d3d6d41a2340cf67bfcbc930ff48780e9a29daab30938b8d9c9f92cb32",
+  "analytic_values_exact": [
+    "1",
+    "43/40",
+    "13/12",
+    "9/8",
+    "2"
+  ],
+  "scope": "Original synthetic analytic geometry only; plot sampling does not supply the exact proof."
+}

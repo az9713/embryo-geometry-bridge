@@ -1,0 +1,75 @@
+{
+  "uploaded": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"byte_size\": 105106,\n  \"file_access_confirmed\": true,\n  \"file_name\": \"slice_observer-bc8a9703e0544016b4ce2d506435362f.png\",\n  \"inserted\": false,\n  \"is_image\": true,\n  \"markdown\": \"![Slice-height ambiguity \\u2014 original schematic](library-file:fde1_bGliZmlsZV9pdFpWSkdIdEp6SVhNR0o4aEFPVlNn_FileDrive_d69130b799448191b036b648f75c6861)\",\n  \"mime_type\": \"image/png\",\n  \"next_step\": \"Read the Page and use edit_page with its fresh guards to insert markdown.\",\n  \"page_id\": \"page_c50551506ff881919407cc8f9f3477c2\",\n  \"reference\": \"library-file:fde1_bGliZmlsZV9pdFpWSkdIdEp6SVhNR0o4aEFPVlNn_FileDrive_d69130b799448191b036b648f75c6861\",\n  \"sha256\": \"f0f3becd0b80101259d307797b4ee361194c3fbcdb17b1b5e442cb0d88b52927\"\n}"
+      }
+    ],
+    "structuredContent": {
+      "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+      "reference": "library-file:fde1_bGliZmlsZV9pdFpWSkdIdEp6SVhNR0o4aEFPVlNn_FileDrive_d69130b799448191b036b648f75c6861",
+      "file_name": "slice_observer-bc8a9703e0544016b4ce2d506435362f.png",
+      "mime_type": "image/png",
+      "byte_size": 105106,
+      "sha256": "f0f3becd0b80101259d307797b4ee361194c3fbcdb17b1b5e442cb0d88b52927",
+      "file_access_confirmed": true,
+      "is_image": true,
+      "markdown": "![Slice-height ambiguity — original schematic](library-file:fde1_bGliZmlsZV9pdFpWSkdIdEp6SVhNR0o4aEFPVlNn_FileDrive_d69130b799448191b036b648f75c6861)",
+      "inserted": false,
+      "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+    },
+    "isError": false
+  },
+  "updated": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"new_sequence\":1,\"through_sequence\":1,\"operation_results\":[{\"operation_index\":0,\"preceding_block_id\":\"75b8c499-ba7a-41ee-8aae-2a6dfca14b2c\",\"created_block_ids\":[\"bb899ea1-1652-43cb-9e36-10ed3cc10a0d\",\"59268056-aebd-4424-99ab-990e329fd41d\",\"75b8c499-ba7a-41ee-8aae-2a6dfca14b2c\",\"1e6918fb-a450-4321-a3a4-3d9debb64801\"],\"continuation_position\":{\"block_id\":\"1e6918fb-a450-4321-a3a4-3d9debb64801\",\"relative_position_base64\":\"AMi05GzzA0E=\"},\"affected_blocks\":[{\"block_id\":\"bb899ea1-1652-43cb-9e36-10ed3cc10a0d\",\"hash\":\"fe8c8ba8fc6dd34a7bd664d3f8555688f664b5a82732ec15593f7f911f3a3fac\"},{\"block_id\":\"59268056-aebd-4424-99ab-990e329fd41d\",\"hash\":\"467ae248f1224fba54333d28e4146e357e24b34f00a26d4c607245709873d50a\"},{\"block_id\":\"75b8c499-ba7a-41ee-8aae-2a6dfca14b2c\",\"hash\":\"62faacdde2abc36db09c65162bfd970404220c32338ef513e14534794168e5e1\"},{\"block_id\":\"1e6918fb-a450-4321-a3a4-3d9debb64801\",\"hash\":\"db85a56cea3362a464da0e95dc22f94335f33c88c0592715cd331cb222c6ef25\"}]}]}"
+      },
+      {
+        "type": "text",
+        "text": "Show this Page in your response with this standalone preview:\n::page-preview{page_id=\"page_c50551506ff881919407cc8f9f3477c2\"}\nUse ordinary links for source citations."
+      }
+    ],
+    "structuredContent": {
+      "new_sequence": 1,
+      "through_sequence": 1,
+      "operation_results": [
+        {
+          "operation_index": 0,
+          "preceding_block_id": "75b8c499-ba7a-41ee-8aae-2a6dfca14b2c",
+          "created_block_ids": [
+            "bb899ea1-1652-43cb-9e36-10ed3cc10a0d",
+            "59268056-aebd-4424-99ab-990e329fd41d",
+            "75b8c499-ba7a-41ee-8aae-2a6dfca14b2c",
+            "1e6918fb-a450-4321-a3a4-3d9debb64801"
+          ],
+          "continuation_position": {
+            "block_id": "1e6918fb-a450-4321-a3a4-3d9debb64801",
+            "relative_position_base64": "AMi05GzzA0E="
+          },
+          "affected_blocks": [
+            {
+              "block_id": "bb899ea1-1652-43cb-9e36-10ed3cc10a0d",
+              "hash": "fe8c8ba8fc6dd34a7bd664d3f8555688f664b5a82732ec15593f7f911f3a3fac"
+            },
+            {
+              "block_id": "59268056-aebd-4424-99ab-990e329fd41d",
+              "hash": "467ae248f1224fba54333d28e4146e357e24b34f00a26d4c607245709873d50a"
+            },
+            {
+              "block_id": "75b8c499-ba7a-41ee-8aae-2a6dfca14b2c",
+              "hash": "62faacdde2abc36db09c65162bfd970404220c32338ef513e14534794168e5e1"
+            },
+            {
+              "block_id": "1e6918fb-a450-4321-a3a4-3d9debb64801",
+              "hash": "db85a56cea3362a464da0e95dc22f94335f33c88c0592715cd331cb222c6ef25"
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "INITIAL_REPORT_SERIALIZATION_FAILURE",
+  "exception": "TypeError: Object of type bool is not JSON serializable",
+  "cause": "Independent numeric comparison returned numpy.bool_, unsupported by standard json encoder. Numerical model/observer and stored fields unaffected.",
+  "initial_script": "runs\\endpoint_mesh_functionals\\independent_check.initial_numpy_bool_failure.py",
+  "initial_source_sha256": "c402649ef803cda7e378299ea7e50d70f6ef71a7e41995ee35245835bd125f80",
+  "correction": "Explicit bool cast of independent comparison result; no tolerance or numeric method change."
+}

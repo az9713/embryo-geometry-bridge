@@ -1,0 +1,201 @@
+{
+  "status": "PASS_ALL16_LINKED_SUPPLEMENT_ASSETS",
+  "checks": {
+    "exact16_unique_primary_XML_links": true,
+    "all16_official_sizes_and_MD5s_match": true,
+    "all16_file_signatures_match": true,
+    "fourPDF_twoXLSX_tenAVI": true,
+    "no_scientific_usability_inferred_from_download": true
+  },
+  "assets": [
+    {
+      "source_id": "MOESM1",
+      "filename": "41467_2025_62483_MOESM1_ESM.pdf",
+      "description": "Supplementary Information",
+      "file": "data/raw/41467_2025_62483_MOESM1_ESM.pdf",
+      "bytes": 16859162,
+      "sha256": "b3639ea26a0bcb8c822b517a00e7954b046640a7c24d5e791df40aacac62d656",
+      "official_MD5": "f061ad04a057acd275a927d87e1567b0",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM1_ESM.pdf",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM2",
+      "filename": "41467_2025_62483_MOESM2_ESM.pdf",
+      "description": "Peer Review file",
+      "file": "data/raw/41467_2025_62483_MOESM2_ESM.pdf",
+      "bytes": 9250570,
+      "sha256": "52f5ab55a34e68dc68f2ba8768f2c0aeef3f6318f08cfab1be5144a13bb98268",
+      "official_MD5": "38c3b40de6bedfb8a6ddd2fe8ba81ca7",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM2_ESM.pdf",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM3",
+      "filename": "41467_2025_62483_MOESM3_ESM.pdf",
+      "description": "Description of Additional Supplementary Files",
+      "file": "data/raw/41467_2025_62483_MOESM3_ESM.pdf",
+      "bytes": 145053,
+      "sha256": "455fb6555c4e9a42c6670f2cd1e3af27e8fcdf9d04c865c7bcfe92ee63ce9020",
+      "official_MD5": "cbc9ad89c0a56283e78498f9713cefed",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM3_ESM.pdf",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM4",
+      "filename": "41467_2025_62483_MOESM4_ESM.xlsx",
+      "description": "Supplementary Data 1",
+      "file": "data/raw/41467_2025_62483_MOESM4_ESM.xlsx",
+      "bytes": 11438,
+      "sha256": "6c97e2046808a9e02d0958eff947f983d51437caaae361a31b83bfa8fdf3ddd7",
+      "official_MD5": "99a3ec83bcca5c3e00a2a50aa41398fc",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM4_ESM.xlsx",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM5",
+      "filename": "41467_2025_62483_MOESM5_ESM.avi",
+      "description": "Supplementary Movie 1",
+      "file": "data/raw/41467_2025_62483_MOESM5_ESM.avi",
+      "bytes": 7587078,
+      "sha256": "2b7277b3a897e005d2920c34f7e262d7094eac63ddedd7b4b63e6860c32957da",
+      "official_MD5": "9fa988129edbc41b0748a7e0b7b029ea",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM5_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM6",
+      "filename": "41467_2025_62483_MOESM6_ESM.avi",
+      "description": "Supplementary Movie 2",
+      "file": "data/raw/41467_2025_62483_MOESM6_ESM.avi",
+      "bytes": 5717420,
+      "sha256": "daa1e790945477658fc55261b82feec6aa1767b8f9ac3e8a7f296f64bc3a13b9",
+      "official_MD5": "6451e50744adb8bdd8092c6f55420ed2",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM6_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM7",
+      "filename": "41467_2025_62483_MOESM7_ESM.avi",
+      "description": "Supplementary Movie 3",
+      "file": "data/raw/41467_2025_62483_MOESM7_ESM.avi",
+      "bytes": 4547582,
+      "sha256": "260555e647c56a74b157ef624fe263568cc47fbda553d3e8aa7fe0ad05e14be7",
+      "official_MD5": "5fd7caaf133c37705ef40dd8319f054c",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM7_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM8",
+      "filename": "41467_2025_62483_MOESM8_ESM.avi",
+      "description": "Supplementary Movie 4",
+      "file": "data/raw/41467_2025_62483_MOESM8_ESM.avi",
+      "bytes": 5829836,
+      "sha256": "00d59427d65339ce0500c07e48bb246f3a8ce05fa55bd9b488dc546cc1efdb7e",
+      "official_MD5": "7de1e7c3ecd3695f496910a70308da4a",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM8_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM9",
+      "filename": "41467_2025_62483_MOESM9_ESM.avi",
+      "description": "Supplementary Movie 5",
+      "file": "data/raw/41467_2025_62483_MOESM9_ESM.avi",
+      "bytes": 5793542,
+      "sha256": "241d631f4f0f4038a0b925e207eeca3f0f904716a63eb5eab379c3e1714fcaf2",
+      "official_MD5": "ed51a52c19698c5c06ec33f9d97993fd",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM9_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM10",
+      "filename": "41467_2025_62483_MOESM10_ESM.avi",
+      "description": "Supplementary Movie 6",
+      "file": "data/raw/41467_2025_62483_MOESM10_ESM.avi",
+      "bytes": 7409432,
+      "sha256": "4ed00672325abd8cabe0341a66ca7cb563e7118fdb46f682cabffbef5d660743",
+      "official_MD5": "b12abbba89e22355c0f3d8790c7820ea",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM10_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM11",
+      "filename": "41467_2025_62483_MOESM11_ESM.avi",
+      "description": "Supplementary Movie 7",
+      "file": "data/raw/41467_2025_62483_MOESM11_ESM.avi",
+      "bytes": 11426640,
+      "sha256": "17066a13920b5c404954097d598bc4446ad3a501c27d3c3cbb9fca7294f09561",
+      "official_MD5": "bd11311eb24005ba898f3db548c62d53",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM11_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM12",
+      "filename": "41467_2025_62483_MOESM12_ESM.avi",
+      "description": "Supplementary Movie 8",
+      "file": "data/raw/41467_2025_62483_MOESM12_ESM.avi",
+      "bytes": 13034220,
+      "sha256": "457311e572a3d33bb35b71054107ca9c95a2a2a29d0295092b5738eca29890c5",
+      "official_MD5": "575a1ce1637b10b8c95007d9c2234eb3",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM12_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM13",
+      "filename": "41467_2025_62483_MOESM13_ESM.avi",
+      "description": "Supplementary Movie 9",
+      "file": "data/raw/41467_2025_62483_MOESM13_ESM.avi",
+      "bytes": 3556876,
+      "sha256": "c48d009a4423a161e18c7a3cfd8d4747fc9a664098f0beeb4f2a1572a8aefd3b",
+      "official_MD5": "97ef03becfdcf8c0dbd10a5b4236e861",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM13_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM14",
+      "filename": "41467_2025_62483_MOESM14_ESM.avi",
+      "description": "Supplementary Movie 10",
+      "file": "data/raw/41467_2025_62483_MOESM14_ESM.avi",
+      "bytes": 20166072,
+      "sha256": "b8bc34115ccc4abcb7c91cca680a350b9c49f77025b86c1037acf9300179b2a5",
+      "official_MD5": "a7689141ee59ac7d89e05a5821e5bd43",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM14_ESM.avi",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM15",
+      "filename": "41467_2025_62483_MOESM15_ESM.pdf",
+      "description": "Reporting Summary",
+      "file": "data/raw/41467_2025_62483_MOESM15_ESM.pdf",
+      "bytes": 99028,
+      "sha256": "c763858c27d4383f02547dd4bf2ca2d8730575a95143144c47fd2340f3d5ab0d",
+      "official_MD5": "30d1f3d62c0f196a74ac9bc3c8195d1e",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM15_ESM.pdf",
+      "content_signature_verified": true
+    },
+    {
+      "source_id": "MOESM16",
+      "filename": "41467_2025_62483_MOESM16_ESM.xlsx",
+      "description": "Source Data",
+      "file": "data/raw/41467_2025_62483_MOESM16_ESM.xlsx",
+      "bytes": 256659,
+      "sha256": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d",
+      "official_MD5": "58a3e0065682eb50a2e5bcc00dee5562",
+      "official_download_URL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM16_ESM.xlsx",
+      "content_signature_verified": true
+    }
+  ],
+  "total_bytes": 111690608,
+  "formats": {
+    ".pdf": 4,
+    ".xlsx": 2,
+    ".avi": 10
+  },
+  "input_hashes": {
+    "data/raw/primary.xml": "12fee74dfd8791cde0ed041ff58eba5e76e41a0c3b2d25cff49b07c2e24f78b7",
+    "data/raw/PMC12361397.1.json": "aa97b3d107feadaae032c7414c474c713e2b81d6e3ce484e633968977ea6b4f0",
+    "data/raw/oa_object_listing.xml": "922e95c2b1e72f823d8d64d444d4ca356d289607f5e2bb9a3aca0e2bc0143a60"
+  },
+  "source_sha256": "d4e0584fecd08f775b2d4b204c5dce3573c8699f70b2c32424feac2f6b77bcfd",
+  "scope": "Complete bytes/checksum coverage for the16 supplementary assets linked in the inspected article version. This does not imply complete primary microscopy, a global repository search, specimen-level geometry, accurate segmentation, or a usable cohort observation contract. Scientific inspection is recorded separately."
+}

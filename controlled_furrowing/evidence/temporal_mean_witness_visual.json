@@ -1,0 +1,7 @@
+{
+  "status": "GENERATED_TEMPORAL_KINEMATIC_VISUAL",
+  "script_sha256": "3571c8aa2568b7200806118dea92cbe26d1e35744e5a4cf868db09f36f3660fc",
+  "image_sha256": "593167420201873f8055c88a2537bae7fd90312ad05f7b82de21803db42bd6cc",
+  "source_receipt_sha256": "0cb01bc914ab26ab0ba1f37c6779a4206fd65f317452b59f640cae2f366d93ad",
+  "scope": "Original synthetic path using source summary numbers; not measured time traces, force-balanced dynamics or local-peak-then-mean matching."
+}

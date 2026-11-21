@@ -1,0 +1,14 @@
+{
+  "status": "PASS_PRE_LAUNCH_GUARDS",
+  "checks": {
+    "linear_interpolation_exact": true,
+    "exact_right_endpoint": true,
+    "relative_output_resolves_to_intended_directory": true,
+    "parent_v1_direct_not_started": true,
+    "pre_launch_revision_archived": true,
+    "no_surrogate_extrapolation": true
+  },
+  "source_sha256": "b54b46251fc4df0c057765c55dcc64305e359645b97fbda34fd54ecaaff99e37",
+  "protocol_sha256": "3b72bcf4583c0b136d01c420028a20a9324dc9c0b3b4ef212b14ec76a62e2031",
+  "pre_launch_revision": "No mechanical solves preceded revision0 archive; direct-audit binding/terminal verification counting were hardened before finalfreeze."
+}

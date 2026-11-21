@@ -1,0 +1,115 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ENERGY-GAIN-GEOMETRY-REVIEW</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Independent review: energy-norm gain tube to whole-body geometry</h1>
+<p><strong>The audited one-parameter energy-norm root family now has a verified whole-body geometric enclosure.</strong> For the old weak-load material and relative linear gain increment <span class="math" data-tex="s\in[-10^{-3},10^{-3}]"></span>, every root supplied by that theorem lies in a nodal box with</p>
+<div class="math display" data-tex="
+ 0.992464257&lt;J&lt;1.006576818.
+"></div>
+
+<p>The body is axis-preserving and globally injective throughout that box. This is not the five-parameter actual-column-M family, a statement about all 17 calibration inputs, or a continuum-accuracy result.</p>
+<p>The <a href="../scripts/compose_energy_geometry.py">composition implementation</a>, <a href="../../OMITTED.html?path=controlled_furrowing/evidence/energy_gain_geometry.json">producer geometry receipt</a> and <a href="../evidence/energy_gain_geometry_independent_review.json">independent review</a> retain all coefficients, bounds and hashes. The independent composition review passes <strong>1,858 checks</strong>, including exact coordinate-radius tests for all 611 free coefficients and a fresh 144-element geometry replay. No root was optimized and no producer receipt was overwritten.</p>
+<h2>1. The prerequisite theorem and its coordinates</h2>
+<p>The <a href="ENERGY-GAIN-CELL-REVIEW.html">audited energy-gain theorem</a> concerns a fixed old weak-load model, centered at normalized active coefficient <span class="math" data-tex="f_0=1"></span>. Its parameter is a <strong>relative linear increment</strong>,</p>
+<div class="math display" data-tex="
+ f=f_0(1+s),\qquad &#124;s&#124;\le h=10^{-3}.
+"></div>
+
+<p>It is not a finite log-gain interval. All other material parameters and geometry remain fixed. The archive's log-gain tangent equals the relative-gain derivative at the center, but the proof does not assume that its floating coefficients are an exact derivative: the frozen binary predictor's residual defect is explicitly bounded.</p>
+<p>For each s, the theorem supplies a root of the form</p>
+<div class="math display" data-tex="
+ u(s)=u_0+sS+Wz,\qquad
+ \&#124;z\&#124;_2\le\rho=10^{-6}.
+"></div>
+
+<p>Here <span class="math" data-tex="u_0"></span>, <span class="math" data-tex="S"></span> and the invertible 611×611 matrix W are the <strong>frozen binary</strong> arrays bound by that theorem. The radius is an auxiliary metric-coordinate radius, not a physical displacement or an energy in joules.</p>
+<p>The composition uses the full declared <span class="math" data-tex="\rho"></span>, rather than replacing it by a smaller approximate root-distance display. Its correctness therefore depends on no unreviewed tightening of the metric tube.</p>
+<p>The 71-check energy review verifies uniform self-mapping/contraction and strict transformed-Hessian positivity for its finite binary-cache problem. Its local-energy-minimum conclusion is inherited from that theorem; the geometry composition adds no global minimum, dynamical stability or biological path-selection claim.</p>
+<h2>2. Exact coordinate radii</h2>
+<p>For free coordinate i,</p>
+<div class="math display" data-tex="
+ &#124;u_i(s)-u_{0,i}&#124;
+ \le h&#124;S_i&#124;+&#124;(Wz)_i&#124;
+ \le h&#124;S_i&#124;+\rho
+       \sqrt{\sum_jW_{ij}^2}
+ =:\varepsilon_i.
+"></div>
+
+<p>The second inequality is Cauchy–Schwarz. It uses the Euclidean norm of the <strong>row</strong> of W, not its column, its diagonal alone, an infinity norm or an assumed orthogonality.</p>
+<p>Every squared row norm is evaluated as an exact rational sum of squares of serialized binary64 values. The square root is rounded outward to a rational value. The review independently constructs 100-decimal integer-square-root brackets and checks</p>
+<div class="math display" data-tex="
+ c_i\ge0,\qquad c_i^2\ge\sum_jW_{ij}^2
+"></div>
+
+<p>for each producer upper root <span class="math" data-tex="c_i"></span>. Thus each <span class="math" data-tex="\varepsilon_i"></span> is a proved upper bound, not a nearest-rounded display.</p>
+<p>Fixed coordinates have exactly zero radius. Free radii are mapped through the archived free-index array; axis radial coordinates therefore remain exactly fixed. Centers are exact reference coordinates plus the archived binary displacement vector, rather than separately rounded stored current nodes.</p>
+<p>The largest coordinate deviation bound is less than</p>
+<div class="math display" data-tex="
+ 5.918405\times10^{-5}
+"></div>
+
+<p>in normalized units, or 0.001983 µm after multiplication by the fixed length 33.5 µm. This combines <strong>parameter-induced predictor motion and algebraic correction</strong> over the family. It is not a solver-error estimate or experimental resolution.</p>
+<h2>3. Composition with the whole-body proof</h2>
+<p>The coordinate boxes contain the entire metric root tube:</p>
+<div class="math display" data-tex="
+ \{u_0+sS+Wz:&#124;s&#124;\le h,\ \&#124;z\&#124;_2\le\rho\}
+ \subseteq
+ \prod_i[u_{0,i}-\varepsilon_i,u_{0,i}+\varepsilon_i].
+"></div>
+
+<p>The independently reviewed <a href="ROOT-BODY-GEOMETRY-REVIEW.html">P2 geometry primitive</a> is then applied to this new, larger box. It bounds the correlated degree-four Jacobian coefficients on every whole element, preserves the axis exactly, and certifies positive symmetric meridional gradient.</p>
+<p>The resulting strong-monotonicity argument proves meridional injectivity. Axis preservation and positive interior radius then imply injectivity after revolution. The implementation verifies these properties for <strong>every nodal choice in the box</strong>; it need not pretend that every such choice is itself a root.</p>
+<p>The actual J enclosure is approximately</p>
+<div class="math display" data-tex="
+ [0.992464257604187,\ 1.0065768174032732].
+"></div>
+
+<p>It lies inside <span class="math" data-tex="[0.99,1.01]"></span> for this family. This is neither exact incompressibility nor a result at larger loads or different materials. Interval endpoints need not be attained. The proof concerns off-axis Jacobians and their bounded limiting values; classical Cartesian <span class="math" data-tex="C^1"></span> regularity on the piecewise-polynomial axis is not inferred.</p>
+<h2>4. The certificates must not be mixed across families</h2>
+<table>
+<thead>
+<tr>
+<th>Certificate</th>
+<th>Parameters/center</th>
+<th>Corrector coordinates</th>
+<th>What it covers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Old weak point root</td>
+<td>Old fixed material, <span class="math" data-tex="f=1"></span></td>
+<td>Nodal infinity ball</td>
+<td>One local algebraic root</td>
+</tr>
+<tr>
+<td>Energy-gain family composed here</td>
+<td>Same old material, <span class="math" data-tex="f=1+s"></span>, <span class="math" data-tex="\lvert s\rvert\le0.001"></span></td>
+<td>Fixed-W Euclidean metric ball</td>
+<td>One nearby root family and its body geometry</td>
+</tr>
+<tr>
+<td>Actual column-M cell</td>
+<td>New primary material, actual measured <span class="math" data-tex="I_M"></span>, five material/gain intervals</td>
+<td>Its separately audited predictor/corrector tube</td>
+<td>One source-matched local parameter cell</td>
+</tr>
+</tbody>
+</table>
+<p>The third row is established through <a href="PARAMETRIC-ROOT-CELLS.html">a different uniform-cell proof</a>. Its source dose, material center, gain parameterization and branch domain cannot be replaced by the old weak field's representative input one. Nor can these separate certificates be combined into a full five-parameter or 17-record identified set.</p>
+<h2>5. Independent verification and provenance</h2>
+<p>The review checks:</p>
+<ul>
+<li>the exact energy producer and 71-check independent-review bindings;</li>
+<li>every frozen energy input and source hash, W-cache and model-cache checksums;</li>
+<li>the archived predictor column, actual free-index map and old weak input state;</li>
+<li>all 611 rational Cauchy–Schwarz radius inequalities and independent square-root brackets;</li>
+<li>zero radii on all 39 fixed coordinates and exact radial-axis preservation;</li>
+<li>equality of a fresh 144-element geometry replay with the retained composition;</li>
+<li>the audited geometry packet, its dependencies and all bound inputs again at the end.</li>
+</ul>
+<p>The first composition-review version had the same numerical result; three additional explicit dependency/end-of-run guards were added before finalization. That review is preserved under <code>runs/energy_gain_geometry_independent_review/revision_0/</code>. No underlying geometry, energy input or producer receipt changed.</p>
+<p>Producer composition SHA256:</p>
+<pre><code>f1b747fc05d6fe55e7fc1365c09e0b44c8d05e56b36e75174e48a610723224f7
+</code></pre>
+<p>Independent final PASS receipt SHA256:</p>
+<pre><code>0f1fe93804504a0e7964102c520d89a72b183763343619890a61a7ab94b23fe7
+</code></pre>
+<p>The receipt retains the full replay program and exact per-coordinate bounds. The validated finite-sum theorem and geometric composition establish no quadrature-integration/PDE error, physical force calibration, experimental temporal law, all-branch exhaustiveness or confirmed novelty.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

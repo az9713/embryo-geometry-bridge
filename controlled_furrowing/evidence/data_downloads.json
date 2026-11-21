@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM16_ESM.xlsx",
+    "path": "controlled_furrowing\\data\\raw\\41467_2025_62483_MOESM16_ESM.xlsx",
+    "bytes": 256659,
+    "sha256": "11659c641ace017f2848e2418bd30a5b762b65ffb509b96cda08243ebc0f210d",
+    "md5": "58a3e0065682eb50a2e5bcc00dee5562",
+    "source_etag": "\"58a3e0065682eb50a2e5bcc00dee5562\"",
+    "size_match": true
+  },
+  {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM4_ESM.xlsx",
+    "path": "controlled_furrowing\\data\\raw\\41467_2025_62483_MOESM4_ESM.xlsx",
+    "bytes": 11438,
+    "sha256": "6c97e2046808a9e02d0958eff947f983d51437caaae361a31b83bfa8fdf3ddd7",
+    "md5": "99a3ec83bcca5c3e00a2a50aa41398fc",
+    "source_etag": "\"99a3ec83bcca5c3e00a2a50aa41398fc\"",
+    "size_match": true
+  },
+  {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12361397.1/41467_2025_62483_MOESM1_ESM.pdf",
+    "path": "controlled_furrowing\\data\\raw\\41467_2025_62483_MOESM1_ESM.pdf",
+    "bytes": 16859162,
+    "sha256": "b3639ea26a0bcb8c822b517a00e7954b046640a7c24d5e791df40aacac62d656",
+    "md5": "f061ad04a057acd275a927d87e1567b0",
+    "source_etag": "\"97b9c7641c67925fa5a0a2ab64ea6db6-3\"",
+    "size_match": true
+  }
+]

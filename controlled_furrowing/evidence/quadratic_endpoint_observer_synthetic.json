@@ -1,0 +1,2064 @@
+{
+  "status": "PASS_EXACT_OBSERVER_SYNTHETICS",
+  "checks": {
+    "constant_four_exact": true,
+    "tilted_component_maxima": true,
+    "tilted_line_mean_exact": true,
+    "tilted_disk_mean_exact": true,
+    "quadratic_line_mean_exact": true,
+    "quadratic_disk_mean_exact": true,
+    "sum_of_component_maxima_not_height_max": true,
+    "Eulerian_height_excludes_material_column_proxy": true,
+    "signed_values_not_clipped": true,
+    "component_mean_variant_explicit": true,
+    "finite_path_peak_of_mean": true,
+    "finite_path_mean_of_peaks_differs": true,
+    "guard_0": true,
+    "guard_1": true,
+    "guard_2": true,
+    "guard_3": true,
+    "saved_flat_P2_state_parser_identity": true,
+    "input_guard_0": true,
+    "input_guard_1": true,
+    "input_guard_2": true,
+    "input_guard_3": true,
+    "input_guard_4": true,
+    "input_guard_5": true
+  },
+  "source_sha256": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926",
+  "examples": {
+    "constant": {
+      "status": "CERTIFIED_STATIC_INTERVALS",
+      "four_endpoints": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 2,
+            "denominator": 1,
+            "display": 2.0
+          },
+          "upper": {
+            "numerator": 2,
+            "denominator": 1,
+            "display": 2.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "maximum_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 3,
+            "denominator": 1,
+            "display": 3.0
+          },
+          "upper": {
+            "numerator": 3,
+            "denominator": 1,
+            "display": 3.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "regional_mean_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 3,
+            "denominator": 1,
+            "display": 3.0
+          },
+          "upper": {
+            "numerator": 3,
+            "denominator": 1,
+            "display": 3.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "spatial_max_components": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 2,
+            "denominator": 1,
+            "display": 2.0
+          },
+          "upper": {
+            "numerator": 2,
+            "denominator": 1,
+            "display": 2.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "mean_alternatives": {
+        "current_radial_line": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            },
+            "upper": {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 3,
+              "denominator": 1,
+              "display": 3.0
+            },
+            "upper": {
+              "numerator": 3,
+              "denominator": 1,
+              "display": 3.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        },
+        "current_disk": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            },
+            "upper": {
+              "numerator": 2,
+              "denominator": 1,
+              "display": 2.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 3,
+              "denominator": 1,
+              "display": 3.0
+            },
+            "upper": {
+              "numerator": 3,
+              "denominator": 1,
+              "display": 3.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        }
+      },
+      "maximum_shortening_certificate": {
+        "interval": {
+          "lower": {
+            "numerator": 3,
+            "denominator": 1,
+            "display": 3.0
+          },
+          "upper": {
+            "numerator": 3,
+            "denominator": 1,
+            "display": 3.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "requested_width_um": {
+          "numerator": 1,
+          "denominator": 10000,
+          "display": 0.0001
+        },
+        "requested_width_achieved": true,
+        "active_cells": 1,
+        "method": "Exact shared-radial-parameter quadratic extrema; no independent-radius subtraction."
+      },
+      "positive_thickness_lower_um": {
+        "numerator": 7,
+        "denominator": 1,
+        "display": 7.0
+      },
+      "contract": {
+        "current_radius_ROI_um": [
+          {
+            "numerator": 0,
+            "denominator": 1,
+            "display": 0.0
+          },
+          {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          }
+        ],
+        "reference_apical_um": {
+          "numerator": 10,
+          "denominator": 1,
+          "display": 10.0
+        },
+        "reference_basal_um": {
+          "numerator": 0,
+          "denominator": 1,
+          "display": 0.0
+        },
+        "weighting": "current_disk",
+        "component_aggregation": "spatial_max",
+        "root_bracketing_steps": 80,
+        "state_scope": "One supplied static state only; no time/path extremum implied.",
+        "source_alignment": "Conditional references and registered current-radius ROI; source does not uniquely fix component reference split, component aggregation, ROI transport or line/disk weighting.",
+        "signed": "No positive-part clipping. Negative local/component/mean shortening is permitted.",
+        "not_proved": "Continuum mechanics/biological validity, experimental temporal coverage, statistical error or canonical source observation operator."
+      }
+    },
+    "tilted": {
+      "status": "CERTIFIED_STATIC_INTERVALS",
+      "four_endpoints": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "maximum_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 3,
+            "denominator": 2,
+            "display": 1.5
+          },
+          "upper": {
+            "numerator": 3,
+            "denominator": 2,
+            "display": 1.5
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "regional_mean_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "spatial_max_components": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "mean_alternatives": {
+        "current_radial_line": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 2,
+              "display": 0.5
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 2,
+              "display": 0.5
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 4,
+              "display": 0.25
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 4,
+              "display": 0.25
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 3,
+              "denominator": 4,
+              "display": 0.75
+            },
+            "upper": {
+              "numerator": 3,
+              "denominator": 4,
+              "display": 0.75
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        },
+        "current_disk": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 2,
+              "denominator": 3,
+              "display": 0.6666666666666666
+            },
+            "upper": {
+              "numerator": 2,
+              "denominator": 3,
+              "display": 0.6666666666666666
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 3,
+              "display": 0.3333333333333333
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 3,
+              "display": 0.3333333333333333
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        }
+      },
+      "maximum_shortening_certificate": {
+        "interval": {
+          "lower": {
+            "numerator": 3,
+            "denominator": 2,
+            "display": 1.5
+          },
+          "upper": {
+            "numerator": 3,
+            "denominator": 2,
+            "display": 1.5
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "requested_width_um": {
+          "numerator": 1,
+          "denominator": 10000,
+          "display": 0.0001
+        },
+        "requested_width_achieved": true,
+        "active_cells": 1,
+        "method": "Exact shared-radial-parameter quadratic extrema; no independent-radius subtraction."
+      },
+      "positive_thickness_lower_um": {
+        "numerator": 17,
+        "denominator": 2,
+        "display": 8.5
+      },
+      "contract": {
+        "current_radius_ROI_um": [
+          {
+            "numerator": 0,
+            "denominator": 1,
+            "display": 0.0
+          },
+          {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          }
+        ],
+        "reference_apical_um": {
+          "numerator": 10,
+          "denominator": 1,
+          "display": 10.0
+        },
+        "reference_basal_um": {
+          "numerator": 0,
+          "denominator": 1,
+          "display": 0.0
+        },
+        "weighting": "current_disk",
+        "component_aggregation": "spatial_max",
+        "root_bracketing_steps": 80,
+        "state_scope": "One supplied static state only; no time/path extremum implied.",
+        "source_alignment": "Conditional references and registered current-radius ROI; source does not uniquely fix component reference split, component aggregation, ROI transport or line/disk weighting.",
+        "signed": "No positive-part clipping. Negative local/component/mean shortening is permitted.",
+        "not_proved": "Continuum mechanics/biological validity, experimental temporal coverage, statistical error or canonical source observation operator."
+      }
+    },
+    "quadratic": {
+      "status": "CERTIFIED_STATIC_INTERVALS",
+      "four_endpoints": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 5,
+            "display": 0.2
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 5,
+            "display": 0.2
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "maximum_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 6,
+            "denominator": 5,
+            "display": 1.2
+          },
+          "upper": {
+            "numerator": 6,
+            "denominator": 5,
+            "display": 1.2
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "regional_mean_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 3,
+            "denominator": 5,
+            "display": 0.6
+          },
+          "upper": {
+            "numerator": 3,
+            "denominator": 5,
+            "display": 0.6
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "spatial_max_components": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 5,
+            "display": 0.2
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 5,
+            "display": 0.2
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "mean_alternatives": {
+        "current_radial_line": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 3,
+              "display": 0.3333333333333333
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 3,
+              "display": 0.3333333333333333
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 15,
+              "display": 0.06666666666666667
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 15,
+              "display": 0.06666666666666667
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 2,
+              "denominator": 5,
+              "display": 0.4
+            },
+            "upper": {
+              "numerator": 2,
+              "denominator": 5,
+              "display": 0.4
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        },
+        "current_disk": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 2,
+              "display": 0.5
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 2,
+              "display": 0.5
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 10,
+              "display": 0.1
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 10,
+              "display": 0.1
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 3,
+              "denominator": 5,
+              "display": 0.6
+            },
+            "upper": {
+              "numerator": 3,
+              "denominator": 5,
+              "display": 0.6
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        }
+      },
+      "maximum_shortening_certificate": {
+        "interval": {
+          "lower": {
+            "numerator": 6,
+            "denominator": 5,
+            "display": 1.2
+          },
+          "upper": {
+            "numerator": 6,
+            "denominator": 5,
+            "display": 1.2
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "requested_width_um": {
+          "numerator": 1,
+          "denominator": 10000,
+          "display": 0.0001
+        },
+        "requested_width_achieved": true,
+        "active_cells": 1,
+        "method": "Exact shared-radial-parameter quadratic extrema; no independent-radius subtraction."
+      },
+      "positive_thickness_lower_um": {
+        "numerator": 44,
+        "denominator": 5,
+        "display": 8.8
+      },
+      "contract": {
+        "current_radius_ROI_um": [
+          {
+            "numerator": 0,
+            "denominator": 1,
+            "display": 0.0
+          },
+          {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          }
+        ],
+        "reference_apical_um": {
+          "numerator": 10,
+          "denominator": 1,
+          "display": 10.0
+        },
+        "reference_basal_um": {
+          "numerator": 0,
+          "denominator": 1,
+          "display": 0.0
+        },
+        "weighting": "current_disk",
+        "component_aggregation": "spatial_max",
+        "root_bracketing_steps": 80,
+        "state_scope": "One supplied static state only; no time/path extremum implied.",
+        "source_alignment": "Conditional references and registered current-radius ROI; source does not uniquely fix component reference split, component aggregation, ROI transport or line/disk weighting.",
+        "signed": "No positive-part clipping. Negative local/component/mean shortening is permitted.",
+        "not_proved": "Continuum mechanics/biological validity, experimental temporal coverage, statistical error or canonical source observation operator."
+      }
+    },
+    "separate_component_peaks": {
+      "status": "CERTIFIED_STATIC_INTERVALS",
+      "four_endpoints": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "maximum_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "regional_mean_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "spatial_max_components": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "mean_alternatives": {
+        "current_radial_line": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 2,
+              "display": 0.5
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 2,
+              "display": 0.5
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 2,
+              "display": 0.5
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 2,
+              "display": 0.5
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        },
+        "current_disk": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 2,
+              "denominator": 3,
+              "display": 0.6666666666666666
+            },
+            "upper": {
+              "numerator": 2,
+              "denominator": 3,
+              "display": 0.6666666666666666
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 3,
+              "display": 0.3333333333333333
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 3,
+              "display": 0.3333333333333333
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 1,
+              "display": 1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        }
+      },
+      "maximum_shortening_certificate": {
+        "interval": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "requested_width_um": {
+          "numerator": 1,
+          "denominator": 10000,
+          "display": 0.0001
+        },
+        "requested_width_achieved": true,
+        "active_cells": 1,
+        "method": "Exact shared-radial-parameter quadratic extrema; no independent-radius subtraction."
+      },
+      "positive_thickness_lower_um": {
+        "numerator": 8,
+        "denominator": 1,
+        "display": 8.0
+      },
+      "contract": {
+        "current_radius_ROI_um": [
+          {
+            "numerator": 0,
+            "denominator": 1,
+            "display": 0.0
+          },
+          {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          }
+        ],
+        "reference_apical_um": {
+          "numerator": 10,
+          "denominator": 1,
+          "display": 10.0
+        },
+        "reference_basal_um": {
+          "numerator": 0,
+          "denominator": 1,
+          "display": 0.0
+        },
+        "weighting": "current_disk",
+        "component_aggregation": "spatial_max",
+        "root_bracketing_steps": 80,
+        "state_scope": "One supplied static state only; no time/path extremum implied.",
+        "source_alignment": "Conditional references and registered current-radius ROI; source does not uniquely fix component reference split, component aggregation, ROI transport or line/disk weighting.",
+        "signed": "No positive-part clipping. Negative local/component/mean shortening is permitted.",
+        "not_proved": "Continuum mechanics/biological validity, experimental temporal coverage, statistical error or canonical source observation operator."
+      }
+    },
+    "radial_motion": {
+      "status": "CERTIFIED_STATIC_INTERVALS",
+      "four_endpoints": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 5,
+            "denominator": 8,
+            "display": 0.625
+          },
+          "upper": {
+            "numerator": 5,
+            "denominator": 8,
+            "display": 0.625
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "maximum_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 9,
+            "denominator": 8,
+            "display": 1.125
+          },
+          "upper": {
+            "numerator": 9,
+            "denominator": 8,
+            "display": 1.125
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "regional_mean_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 1099,
+            "denominator": 1500,
+            "display": 0.7326666666666667
+          },
+          "upper": {
+            "numerator": 1099,
+            "denominator": 1500,
+            "display": 0.7326666666666667
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "spatial_max_components": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 5,
+            "denominator": 8,
+            "display": 0.625
+          },
+          "upper": {
+            "numerator": 5,
+            "denominator": 8,
+            "display": 0.625
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "mean_alternatives": {
+        "current_radial_line": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 7,
+              "denominator": 30,
+              "display": 0.23333333333333334
+            },
+            "upper": {
+              "numerator": 7,
+              "denominator": 30,
+              "display": 0.23333333333333334
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 5,
+              "denominator": 16,
+              "display": 0.3125
+            },
+            "upper": {
+              "numerator": 5,
+              "denominator": 16,
+              "display": 0.3125
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 131,
+              "denominator": 240,
+              "display": 0.5458333333333333
+            },
+            "upper": {
+              "numerator": 131,
+              "denominator": 240,
+              "display": 0.5458333333333333
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        },
+        "current_disk": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": 79,
+              "denominator": 250,
+              "display": 0.316
+            },
+            "upper": {
+              "numerator": 79,
+              "denominator": 250,
+              "display": 0.316
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": 5,
+              "denominator": 12,
+              "display": 0.4166666666666667
+            },
+            "upper": {
+              "numerator": 5,
+              "denominator": 12,
+              "display": 0.4166666666666667
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": 1099,
+              "denominator": 1500,
+              "display": 0.7326666666666667
+            },
+            "upper": {
+              "numerator": 1099,
+              "denominator": 1500,
+              "display": 0.7326666666666667
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        }
+      },
+      "maximum_shortening_certificate": {
+        "interval": {
+          "lower": {
+            "numerator": 9,
+            "denominator": 8,
+            "display": 1.125
+          },
+          "upper": {
+            "numerator": 9,
+            "denominator": 8,
+            "display": 1.125
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "requested_width_um": {
+          "numerator": 1,
+          "denominator": 10000,
+          "display": 0.0001
+        },
+        "requested_width_achieved": true,
+        "active_cells": 1,
+        "maximum_cells": 8192,
+        "method": "Exact rational adaptive signed supremum, not a sampled-point estimate."
+      },
+      "positive_thickness_lower_um": {
+        "numerator": 71,
+        "denominator": 8,
+        "display": 8.875
+      },
+      "contract": {
+        "current_radius_ROI_um": [
+          {
+            "numerator": 0,
+            "denominator": 1,
+            "display": 0.0
+          },
+          {
+            "numerator": 5,
+            "denominator": 8,
+            "display": 0.625
+          }
+        ],
+        "reference_apical_um": {
+          "numerator": 10,
+          "denominator": 1,
+          "display": 10.0
+        },
+        "reference_basal_um": {
+          "numerator": 0,
+          "denominator": 1,
+          "display": 0.0
+        },
+        "weighting": "current_disk",
+        "component_aggregation": "spatial_max",
+        "root_bracketing_steps": 80,
+        "state_scope": "One supplied static state only; no time/path extremum implied.",
+        "source_alignment": "Conditional references and registered current-radius ROI; source does not uniquely fix component reference split, component aggregation, ROI transport or line/disk weighting.",
+        "signed": "No positive-part clipping. Negative local/component/mean shortening is permitted.",
+        "not_proved": "Continuum mechanics/biological validity, experimental temporal coverage, statistical error or canonical source observation operator."
+      }
+    },
+    "negative_signed": {
+      "status": "CERTIFIED_STATIC_INTERVALS",
+      "four_endpoints": {
+        "apical_downward": {
+          "lower": {
+            "numerator": -1,
+            "denominator": 1,
+            "display": -1.0
+          },
+          "upper": {
+            "numerator": -1,
+            "denominator": 1,
+            "display": -1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": -1,
+            "denominator": 1,
+            "display": -1.0
+          },
+          "upper": {
+            "numerator": -1,
+            "denominator": 1,
+            "display": -1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "maximum_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": -2,
+            "denominator": 1,
+            "display": -2.0
+          },
+          "upper": {
+            "numerator": -2,
+            "denominator": 1,
+            "display": -2.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "regional_mean_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": -2,
+            "denominator": 1,
+            "display": -2.0
+          },
+          "upper": {
+            "numerator": -2,
+            "denominator": 1,
+            "display": -2.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "spatial_max_components": {
+        "apical_downward": {
+          "lower": {
+            "numerator": -1,
+            "denominator": 1,
+            "display": -1.0
+          },
+          "upper": {
+            "numerator": -1,
+            "denominator": 1,
+            "display": -1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": -1,
+            "denominator": 1,
+            "display": -1.0
+          },
+          "upper": {
+            "numerator": -1,
+            "denominator": 1,
+            "display": -1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "mean_alternatives": {
+        "current_radial_line": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            "upper": {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            "upper": {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": -2,
+              "denominator": 1,
+              "display": -2.0
+            },
+            "upper": {
+              "numerator": -2,
+              "denominator": 1,
+              "display": -2.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        },
+        "current_disk": {
+          "apical_regional_mean_downward": {
+            "lower": {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            "upper": {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "basal_regional_mean_upward": {
+            "lower": {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            "upper": {
+              "numerator": -1,
+              "denominator": 1,
+              "display": -1.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "height_regional_mean_shortening": {
+            "lower": {
+              "numerator": -2,
+              "denominator": 1,
+              "display": -2.0
+            },
+            "upper": {
+              "numerator": -2,
+              "denominator": 1,
+              "display": -2.0
+            },
+            "lower_closed": true,
+            "upper_closed": true
+          },
+          "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+        }
+      },
+      "maximum_shortening_certificate": {
+        "interval": {
+          "lower": {
+            "numerator": -2,
+            "denominator": 1,
+            "display": -2.0
+          },
+          "upper": {
+            "numerator": -2,
+            "denominator": 1,
+            "display": -2.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "requested_width_um": {
+          "numerator": 1,
+          "denominator": 10000,
+          "display": 0.0001
+        },
+        "requested_width_achieved": true,
+        "active_cells": 1,
+        "method": "Exact shared-radial-parameter quadratic extrema; no independent-radius subtraction."
+      },
+      "positive_thickness_lower_um": {
+        "numerator": 12,
+        "denominator": 1,
+        "display": 12.0
+      },
+      "contract": {
+        "current_radius_ROI_um": [
+          {
+            "numerator": 0,
+            "denominator": 1,
+            "display": 0.0
+          },
+          {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          }
+        ],
+        "reference_apical_um": {
+          "numerator": 10,
+          "denominator": 1,
+          "display": 10.0
+        },
+        "reference_basal_um": {
+          "numerator": 0,
+          "denominator": 1,
+          "display": 0.0
+        },
+        "weighting": "current_disk",
+        "component_aggregation": "spatial_max",
+        "root_bracketing_steps": 80,
+        "state_scope": "One supplied static state only; no time/path extremum implied.",
+        "source_alignment": "Conditional references and registered current-radius ROI; source does not uniquely fix component reference split, component aggregation, ROI transport or line/disk weighting.",
+        "signed": "No positive-part clipping. Negative local/component/mean shortening is permitted.",
+        "not_proved": "Continuum mechanics/biological validity, experimental temporal coverage, statistical error or canonical source observation operator."
+      }
+    },
+    "finite_path_ordering": {
+      "sampled_state_peak_endpoints": {
+        "apical_downward": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "basal_upward": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1,
+            "display": 0.0
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1,
+            "display": 0.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "maximum_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 1,
+            "display": 1.0
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "regional_mean_Eulerian_height_shortening": {
+          "lower": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "upper": {
+            "numerator": 1,
+            "denominator": 2,
+            "display": 0.5
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        }
+      },
+      "mean_of_pointwise_sampled_state_peaks": {
+        "interval": {
+          "lower": {
+            "numerator": 1363147,
+            "denominator": 2621440,
+            "display": 0.5199993133544922
+          },
+          "upper": {
+            "numerator": 1363153,
+            "denominator": 2621440,
+            "display": 0.5200016021728515
+          },
+          "lower_closed": true,
+          "upper_closed": true
+        },
+        "requested_width_um": {
+          "numerator": 1,
+          "denominator": 100000,
+          "display": 1e-05
+        },
+        "requested_width_achieved": true,
+        "active_cells": 10,
+        "scope": "Mean of pointwise maxima over ONLY the supplied finite state collection, not an unsampled time/path supremum."
+      },
+      "static_states": [
+        {
+          "status": "CERTIFIED_STATIC_INTERVALS",
+          "four_endpoints": {
+            "apical_downward": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "basal_upward": {
+              "lower": {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              "upper": {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "maximum_Eulerian_height_shortening": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "regional_mean_Eulerian_height_shortening": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 2,
+                "display": 0.5
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 2,
+                "display": 0.5
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            }
+          },
+          "spatial_max_components": {
+            "apical_downward": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "basal_upward": {
+              "lower": {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              "upper": {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            }
+          },
+          "mean_alternatives": {
+            "current_radial_line": {
+              "apical_regional_mean_downward": {
+                "lower": {
+                  "numerator": 1,
+                  "denominator": 2,
+                  "display": 0.5
+                },
+                "upper": {
+                  "numerator": 1,
+                  "denominator": 2,
+                  "display": 0.5
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "basal_regional_mean_upward": {
+                "lower": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "display": 0.0
+                },
+                "upper": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "display": 0.0
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "height_regional_mean_shortening": {
+                "lower": {
+                  "numerator": 1,
+                  "denominator": 2,
+                  "display": 0.5
+                },
+                "upper": {
+                  "numerator": 1,
+                  "denominator": 2,
+                  "display": 0.5
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+            },
+            "current_disk": {
+              "apical_regional_mean_downward": {
+                "lower": {
+                  "numerator": 2,
+                  "denominator": 3,
+                  "display": 0.6666666666666666
+                },
+                "upper": {
+                  "numerator": 2,
+                  "denominator": 3,
+                  "display": 0.6666666666666666
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "basal_regional_mean_upward": {
+                "lower": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "display": 0.0
+                },
+                "upper": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "display": 0.0
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "height_regional_mean_shortening": {
+                "lower": {
+                  "numerator": 2,
+                  "denominator": 3,
+                  "display": 0.6666666666666666
+                },
+                "upper": {
+                  "numerator": 2,
+                  "denominator": 3,
+                  "display": 0.6666666666666666
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+            }
+          },
+          "maximum_shortening_certificate": {
+            "interval": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "requested_width_um": {
+              "numerator": 1,
+              "denominator": 100000,
+              "display": 1e-05
+            },
+            "requested_width_achieved": true,
+            "active_cells": 1,
+            "method": "Exact shared-radial-parameter quadratic extrema; no independent-radius subtraction."
+          },
+          "positive_thickness_lower_um": {
+            "numerator": 2,
+            "denominator": 1,
+            "display": 2.0
+          },
+          "contract": {
+            "current_radius_ROI_um": [
+              {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              }
+            ],
+            "reference_apical_um": {
+              "numerator": 3,
+              "denominator": 1,
+              "display": 3.0
+            },
+            "reference_basal_um": {
+              "numerator": 0,
+              "denominator": 1,
+              "display": 0.0
+            },
+            "weighting": "current_radial_line",
+            "component_aggregation": "spatial_max",
+            "root_bracketing_steps": 80,
+            "state_scope": "One supplied static state only; no time/path extremum implied.",
+            "source_alignment": "Conditional references and registered current-radius ROI; source does not uniquely fix component reference split, component aggregation, ROI transport or line/disk weighting.",
+            "signed": "No positive-part clipping. Negative local/component/mean shortening is permitted.",
+            "not_proved": "Continuum mechanics/biological validity, experimental temporal coverage, statistical error or canonical source observation operator."
+          }
+        },
+        {
+          "status": "CERTIFIED_STATIC_INTERVALS",
+          "four_endpoints": {
+            "apical_downward": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "basal_upward": {
+              "lower": {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              "upper": {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "maximum_Eulerian_height_shortening": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "regional_mean_Eulerian_height_shortening": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            }
+          },
+          "spatial_max_components": {
+            "apical_downward": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "basal_upward": {
+              "lower": {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              "upper": {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            }
+          },
+          "mean_alternatives": {
+            "current_radial_line": {
+              "apical_regional_mean_downward": {
+                "lower": {
+                  "numerator": 1,
+                  "denominator": 5,
+                  "display": 0.2
+                },
+                "upper": {
+                  "numerator": 1,
+                  "denominator": 5,
+                  "display": 0.2
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "basal_regional_mean_upward": {
+                "lower": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "display": 0.0
+                },
+                "upper": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "display": 0.0
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "height_regional_mean_shortening": {
+                "lower": {
+                  "numerator": 1,
+                  "denominator": 5,
+                  "display": 0.2
+                },
+                "upper": {
+                  "numerator": 1,
+                  "denominator": 5,
+                  "display": 0.2
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+            },
+            "current_disk": {
+              "apical_regional_mean_downward": {
+                "lower": {
+                  "numerator": 1,
+                  "denominator": 5,
+                  "display": 0.2
+                },
+                "upper": {
+                  "numerator": 1,
+                  "denominator": 5,
+                  "display": 0.2
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "basal_regional_mean_upward": {
+                "lower": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "display": 0.0
+                },
+                "upper": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "display": 0.0
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "height_regional_mean_shortening": {
+                "lower": {
+                  "numerator": 1,
+                  "denominator": 5,
+                  "display": 0.2
+                },
+                "upper": {
+                  "numerator": 1,
+                  "denominator": 5,
+                  "display": 0.2
+                },
+                "lower_closed": true,
+                "upper_closed": true
+              },
+              "method": "Polynomial change-of-variable antiderivative with exact rational quadratic-inverse endpoint brackets."
+            }
+          },
+          "maximum_shortening_certificate": {
+            "interval": {
+              "lower": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "upper": {
+                "numerator": 1,
+                "denominator": 5,
+                "display": 0.2
+              },
+              "lower_closed": true,
+              "upper_closed": true
+            },
+            "requested_width_um": {
+              "numerator": 1,
+              "denominator": 100000,
+              "display": 1e-05
+            },
+            "requested_width_achieved": true,
+            "active_cells": 1,
+            "method": "Exact shared-radial-parameter quadratic extrema; no independent-radius subtraction."
+          },
+          "positive_thickness_lower_um": {
+            "numerator": 14,
+            "denominator": 5,
+            "display": 2.8
+          },
+          "contract": {
+            "current_radius_ROI_um": [
+              {
+                "numerator": 0,
+                "denominator": 1,
+                "display": 0.0
+              },
+              {
+                "numerator": 1,
+                "denominator": 1,
+                "display": 1.0
+              }
+            ],
+            "reference_apical_um": {
+              "numerator": 3,
+              "denominator": 1,
+              "display": 3.0
+            },
+            "reference_basal_um": {
+              "numerator": 0,
+              "denominator": 1,
+              "display": 0.0
+            },
+            "weighting": "current_radial_line",
+            "component_aggregation": "spatial_max",
+            "root_bracketing_steps": 80,
+            "state_scope": "One supplied static state only; no time/path extremum implied.",
+            "source_alignment": "Conditional references and registered current-radius ROI; source does not uniquely fix component reference split, component aggregation, ROI transport or line/disk weighting.",
+            "signed": "No positive-part clipping. Negative local/component/mean shortening is permitted.",
+            "not_proved": "Continuum mechanics/biological validity, experimental temporal coverage, statistical error or canonical source observation operator."
+          }
+        }
+      ],
+      "scope": "Only the provided finite states. No invented temporal coverage or continuous quasistatic-path maximum; peak-of-mean and mean-of-peaks remain distinct."
+    }
+  },
+  "scope": "Analytical graph tests, not biological validity or continuum solver accuracy."
+}

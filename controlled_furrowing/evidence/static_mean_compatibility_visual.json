@@ -1,0 +1,10 @@
+{
+  "status": "GENERATED_SOURCE_AND_KINEMATIC_VISUAL",
+  "image_sha256": "0aafd02eb32191871ff61be30feea411863312c77361e77bff4331098ae5b2e7",
+  "source_script_sha256": "20fe616d932b724391993a61e75a66ca9e2ee9f939058ede7ba23465777c648e",
+  "input_hashes": {
+    "static_mean_compatibility.json": "ab9be36dc4b45c8882e67f6a7669a77f015249c252b20d5c00d308683cef9df9",
+    "static_isochoric_construction.json": "1d0fe4ad7875b6e7cd66b324729be42e6f2711d16710ac0e6090616dd19ff802"
+  },
+  "scope": "Published numeric summaries and an original synthetic volume-preserving witness; no source-image pixels or force-balanced biological shape."
+}

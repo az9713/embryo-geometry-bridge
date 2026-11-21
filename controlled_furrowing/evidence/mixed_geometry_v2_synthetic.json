@@ -1,0 +1,470 @@
+{
+  "status": "PASS_EXACT_V2_SYNTHETICS",
+  "checks": {
+    "analytic_correlated_positive_0": true,
+    "analytic_correlated_positive_1": true,
+    "analytic_correlated_positive_2": true,
+    "analytic_correlated_positive_3": true,
+    "analytic_correlated_positive_4": true,
+    "analytic_correlated_positive_5": true,
+    "analytic_correlated_positive_6": true,
+    "analytic_correlated_positive_7": true,
+    "analytic_correlated_positive_8": true,
+    "analytic_correlated_positive_9": true,
+    "analytic_correlated_positive_10": true,
+    "analytic_correlated_positive_11": true,
+    "analytic_correlated_positive_12": true,
+    "analytic_correlated_positive_13": true,
+    "analytic_correlated_positive_14": true,
+    "analytic_correlated_positive_15": true,
+    "analytic_correlated_positive_16": true,
+    "analytic_correlated_positive_17": true,
+    "analytic_correlated_positive_18": true,
+    "analytic_correlated_positive_19": true,
+    "analytic_correlated_positive_20": true,
+    "analytic_correlated_positive_21": true,
+    "analytic_correlated_positive_22": true,
+    "analytic_correlated_positive_23": true,
+    "analytic_correlated_positive_24": true,
+    "analytic_correlated_positive_25": true,
+    "analytic_correlated_positive_26": true,
+    "analytic_correlated_positive_27": true,
+    "analytic_correlated_positive_28": true,
+    "analytic_correlated_positive_29": true,
+    "analytic_correlated_positive_30": true,
+    "analytic_correlated_positive_31": true,
+    "analytic_correlated_positive_32": true,
+    "analytic_correlated_positive_33": true,
+    "analytic_correlated_positive_34": true,
+    "analytic_correlated_positive_35": true,
+    "analytic_correlated_positive_36": true,
+    "analytic_correlated_positive_37": true,
+    "analytic_correlated_positive_38": true,
+    "analytic_correlated_positive_39": true,
+    "independent_exact_analytic_product_identity_and_bounds": true,
+    "constant_isochoric_affine_exact_bounds": true,
+    "identity_strong_monotonicity": true,
+    "inverted_map_not_strongly_monotone": true,
+    "nonconforming_map_not_certified": true
+  },
+  "source_sha256": "165d3b914b1ab9bad2e6591a7df63c09e004f33a742cfa5f4430584746edfbd2",
+  "v1_source_sha256": "fb0d49d680286ff49d0dc6713baca41fbebbf724442bff9731292e1441b03fd8",
+  "example": {
+    "status": "CERTIFIED_DISCRETE_J_INTERVAL",
+    "axis_zero_coefficients_exact": true,
+    "coefficients": [
+      {
+        "index": [
+          0,
+          0,
+          4
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      },
+      {
+        "index": [
+          0,
+          1,
+          3
+        ],
+        "numerator": "124227419/500000000",
+        "reference_radius": "1/4",
+        "ratio": "124227419/125000000"
+      },
+      {
+        "index": [
+          0,
+          2,
+          2
+        ],
+        "numerator": "125233419/250000000",
+        "reference_radius": "1/2",
+        "ratio": "125233419/125000000"
+      },
+      {
+        "index": [
+          0,
+          3,
+          1
+        ],
+        "numerator": "37874391/50000000",
+        "reference_radius": "3/4",
+        "ratio": "12624797/12500000"
+      },
+      {
+        "index": [
+          0,
+          4,
+          0
+        ],
+        "numerator": "3977221/3906250",
+        "reference_radius": "1",
+        "ratio": "3977221/3906250"
+      },
+      {
+        "index": [
+          1,
+          0,
+          3
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      },
+      {
+        "index": [
+          1,
+          1,
+          2
+        ],
+        "numerator": "49797/200000",
+        "reference_radius": "1/4",
+        "ratio": "49797/50000"
+      },
+      {
+        "index": [
+          1,
+          2,
+          1
+        ],
+        "numerator": "250991/500000",
+        "reference_radius": "1/2",
+        "ratio": "250991/250000"
+      },
+      {
+        "index": [
+          1,
+          3,
+          0
+        ],
+        "numerator": "379521/500000",
+        "reference_radius": "3/4",
+        "ratio": "126507/125000"
+      },
+      {
+        "index": [
+          2,
+          0,
+          2
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      },
+      {
+        "index": [
+          2,
+          1,
+          1
+        ],
+        "numerator": "499/2000",
+        "reference_radius": "1/4",
+        "ratio": "499/500"
+      },
+      {
+        "index": [
+          2,
+          2,
+          0
+        ],
+        "numerator": "503/1000",
+        "reference_radius": "1/2",
+        "ratio": "503/500"
+      },
+      {
+        "index": [
+          3,
+          0,
+          1
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      },
+      {
+        "index": [
+          3,
+          1,
+          0
+        ],
+        "numerator": "1/4",
+        "reference_radius": "1/4",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          4,
+          0,
+          0
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      }
+    ],
+    "J_bound": {
+      "lower": {
+        "exact": "124227419/125000000",
+        "float": 0.993819352
+      },
+      "upper": {
+        "exact": "3977221/3906250",
+        "float": 1.018168576
+      }
+    },
+    "positive_J_certified": true,
+    "legacy_product_J_bound": {
+      "lower": {
+        "exact": "246973/250000",
+        "float": 0.987892
+      },
+      "upper": {
+        "exact": "3977221/3906250",
+        "float": 1.018168576
+      }
+    },
+    "scope": "Exact degree4 rational Bernstein enclosure of the stored P2 map; not necessarily attained extrema or a continuum error bound."
+  },
+  "affine": {
+    "status": "CERTIFIED_DISCRETE_J_INTERVAL",
+    "axis_zero_coefficients_exact": true,
+    "coefficients": [
+      {
+        "index": [
+          0,
+          0,
+          4
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      },
+      {
+        "index": [
+          0,
+          1,
+          3
+        ],
+        "numerator": "1/4",
+        "reference_radius": "1/4",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          0,
+          2,
+          2
+        ],
+        "numerator": "1/2",
+        "reference_radius": "1/2",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          0,
+          3,
+          1
+        ],
+        "numerator": "3/4",
+        "reference_radius": "3/4",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          0,
+          4,
+          0
+        ],
+        "numerator": "1",
+        "reference_radius": "1",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          1,
+          0,
+          3
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      },
+      {
+        "index": [
+          1,
+          1,
+          2
+        ],
+        "numerator": "1/4",
+        "reference_radius": "1/4",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          1,
+          2,
+          1
+        ],
+        "numerator": "1/2",
+        "reference_radius": "1/2",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          1,
+          3,
+          0
+        ],
+        "numerator": "3/4",
+        "reference_radius": "3/4",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          2,
+          0,
+          2
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      },
+      {
+        "index": [
+          2,
+          1,
+          1
+        ],
+        "numerator": "1/4",
+        "reference_radius": "1/4",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          2,
+          2,
+          0
+        ],
+        "numerator": "1/2",
+        "reference_radius": "1/2",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          3,
+          0,
+          1
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      },
+      {
+        "index": [
+          3,
+          1,
+          0
+        ],
+        "numerator": "1/4",
+        "reference_radius": "1/4",
+        "ratio": "1"
+      },
+      {
+        "index": [
+          4,
+          0,
+          0
+        ],
+        "numerator": "0",
+        "reference_radius": "0",
+        "ratio": null
+      }
+    ],
+    "J_bound": {
+      "lower": {
+        "exact": "1",
+        "float": 1.0
+      },
+      "upper": {
+        "exact": "1",
+        "float": 1.0
+      }
+    },
+    "positive_J_certified": true,
+    "legacy_product_J_bound": {
+      "lower": {
+        "exact": "1",
+        "float": 1.0
+      },
+      "upper": {
+        "exact": "1",
+        "float": 1.0
+      }
+    },
+    "scope": "Exact degree4 rational Bernstein enclosure of the stored P2 map; not necessarily attained extrema or a continuum error bound."
+  },
+  "identity_strong_monotonicity": {
+    "status": "CERTIFIED_STRONGLY_MONOTONE_DISCRETE_MAP",
+    "global_injectivity_certified": true,
+    "convex_reference_rectangle": true,
+    "conforming_P2_traces": true,
+    "strong_monotonicity_constant_lower": {
+      "exact": "1/2",
+      "float": 0.5
+    },
+    "axis_preserved": true,
+    "vertex_symmetric_gradient_certificates": [
+      {
+        "symmetric_F": [
+          "1",
+          "0",
+          "1"
+        ],
+        "lambda_min_lower": "1/2"
+      },
+      {
+        "symmetric_F": [
+          "1",
+          "0",
+          "1"
+        ],
+        "lambda_min_lower": "1/2"
+      },
+      {
+        "symmetric_F": [
+          "1",
+          "0",
+          "1"
+        ],
+        "lambda_min_lower": "1/2"
+      },
+      {
+        "symmetric_F": [
+          "1",
+          "0",
+          "1"
+        ],
+        "lambda_min_lower": "1/2"
+      },
+      {
+        "symmetric_F": [
+          "1",
+          "0",
+          "1"
+        ],
+        "lambda_min_lower": "1/2"
+      },
+      {
+        "symmetric_F": [
+          "1",
+          "0",
+          "1"
+        ],
+        "lambda_min_lower": "1/2"
+      }
+    ],
+    "scope": "Exact sufficient discrete meridional injectivity on convex reference; positive axisymmetric J is checked separately."
+  }
+}

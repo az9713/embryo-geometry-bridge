@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "checks": {
+    "completed17_step_visible": true,
+    "same_baseline_and_scope": true,
+    "native_figure_embedded": true,
+    "native_hash_matches": true,
+    "full_goal_incomplete": true
+  },
+  "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+  "upload": {
+    "page_id": "page_c50551506ff881919407cc8f9f3477c2",
+    "reference": "library-file:fde1_bGliZmlsZV9nQVBpdmtpbWtKSktUTDc3TVg0VC1B_FileDrive_d69130b799448191b036b648f75c6861",
+    "file_name": "material-cohort-affine-descent-7f7ec634f5124e7d8be41302dda69f7e.png",
+    "mime_type": "image/png",
+    "byte_size": 213578,
+    "sha256": "efaada35a5dbe9aca67d616810cf5984859ebf64243a9e2af05c778c3e417c13",
+    "file_access_confirmed": true,
+    "is_image": true,
+    "markdown": "![Multivariate local calibration proposal — not nonlinear verification](library-file:fde1_bGliZmlsZV9nQVBpdmtpbWtKSktUTDc3TVg0VC1B_FileDrive_d69130b799448191b036b648f75c6861)",
+    "inserted": false,
+    "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+  },
+  "edit": {
+    "new_sequence": 9,
+    "through_sequence": 9,
+    "operation_results": [
+      {
+        "operation_index": 0,
+        "preceding_block_id": "80cac63e-1949-4259-ad71-d546c829abb8",
+        "created_block_ids": [
+          "80cac63e-1949-4259-ad71-d546c829abb8",
+          "3ff5a197-d2ba-4c08-8a69-dba870bf4828"
+        ],
+        "continuation_position": {
+          "block_id": "3ff5a197-d2ba-4c08-8a69-dba870bf4828",
+          "relative_position_base64": "AJnPltMM/RNB"
+        },
+        "affected_blocks": [
+          {
+            "block_id": "1216825e-4aab-4676-9652-9188e05d2a5d",
+            "hash": "a75210fbe5eb1650c9c8941f22aa31a5777d2a9d2d0cfa0e777cfa3904ec0987"
+          },
+          {
+            "block_id": "80cac63e-1949-4259-ad71-d546c829abb8",
+            "hash": "930836b65ffadeb67b6fb5d574faf2d5d0081987294768cee8add37dc0d23a55"
+          },
+          {
+            "block_id": "3ff5a197-d2ba-4c08-8a69-dba870bf4828",
+            "hash": "c5518bc83b48a273d1e99feaaadf74551b20b3c3cb70650357360a72d1c0a39d"
+          }
+        ]
+      }
+    ]
+  },
+  "readback_hash": "efaada35a5dbe9aca67d616810cf5984859ebf64243a9e2af05c778c3e417c13",
+  "scope": "Verified Space local-affine results and native original visual, not a nonlinear improvement or completion."
+}

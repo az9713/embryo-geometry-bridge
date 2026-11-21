@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": {
+    "evaluation_responses_physically_absent_from_prediction_replay": true,
+    "prediction_bytes_identical": true,
+    "all_metrics_independently_match": true,
+    "no_geometric_output_claim": true
+  },
+  "metric_checks": {
+    "primary_mechanical": true,
+    "OLS": true,
+    "zero_shortening": true
+  },
+  "prediction_sha256": "59d20d02ce903c1c4e4e1d04382686d17366601ea9ad39bcdfe2b21d2037c639",
+  "replay_input_files": {
+    "PROTOCOL.json": "2fcd3f80e4427cc9b88ee3903fefe1f360f3cc158b35fd2838373b6535cc5524",
+    "scripts/scalar_reproduction.py": "b5ae2000251c4db17d534ff4a6cdde747606f2ec631b254adf7c0bc84c101869",
+    "data/derived/calibration_small_18um.csv": "1aa53b6e6ce0973faf0b038ae8d4059059b05c02bb87ed9698e24d1dea7b1518",
+    "data/derived/large_inputs_only.json": "eb10f4a4c31b4c86483c1d8338e21f22536fdb2e2a50ca6cea2fc90c7dde96f2"
+  },
+  "limitations": "Same software environment, isolated data inputs; not analyst blinding, external expert review or biological validation",
+  "source_sha256": "d8f6c4e1cd86e3ee706c0c0e45b23cb4ee43099a38ef2992a2f7e73b2beda3bf"
+}

@@ -1,0 +1,1208 @@
+{
+  "status": "PASS",
+  "scope": "Final receipt-link and exact-arithmetic bookkeeping on all68 direct states. No new optimization; independent physics/observer replay supplied separately by data_audit. Stored discrete certificates and force cross-checks do not certify continuum error or physical observation assumptions.",
+  "checks": {
+    "terminal_job_68": true,
+    "complete_result_status": true,
+    "complete_progress": true,
+    "four_unique_variants": true,
+    "all_frozen_sources_unchanged": true,
+    "source_sets_match": true,
+    "protocol_hashes_match": true,
+    "direct_protocol_bound": true,
+    "candidate_table_bound": true,
+    "independent_surrogate_review_passes": true,
+    "parent_artifacts_preserved": true,
+    "seed_fields_preserved": true,
+    "data_hash_unchanged": true,
+    "all68_records_present": true,
+    "every_record_receipt_passes": true,
+    "68_unique_ascending_strengths": true,
+    "current_disk__spatial_max_all68_coverage": true,
+    "current_disk__spatial_max_summary_residuals": true,
+    "current_disk__spatial_max_surrogate_gain_unchanged": true,
+    "current_disk__spatial_max_all_error_intervals_consistent": true,
+    "current_disk__regional_mean_all68_coverage": true,
+    "current_disk__regional_mean_summary_residuals": true,
+    "current_disk__regional_mean_surrogate_gain_unchanged": true,
+    "current_disk__regional_mean_all_error_intervals_consistent": true,
+    "current_radial_line__spatial_max_all68_coverage": true,
+    "current_radial_line__spatial_max_summary_residuals": true,
+    "current_radial_line__spatial_max_surrogate_gain_unchanged": true,
+    "current_radial_line__spatial_max_all_error_intervals_consistent": true,
+    "current_radial_line__regional_mean_all68_coverage": true,
+    "current_radial_line__regional_mean_summary_residuals": true,
+    "current_radial_line__regional_mean_surrogate_gain_unchanged": true,
+    "current_radial_line__regional_mean_all_error_intervals_consistent": true,
+    "no_original_goal_overclaim": true,
+    "evidence_copy_byte_identical": true
+  },
+  "check_count": 34,
+  "per_record_checks": [
+    {
+      "index": 0,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 1,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 2,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 3,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 4,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 5,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 6,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 7,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 8,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 9,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 10,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 11,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 12,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 13,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 14,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 15,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 16,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 17,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 18,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 19,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 20,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 21,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 22,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 23,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 24,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 25,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 26,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 27,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 28,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 29,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 30,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 31,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 32,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 33,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 34,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 35,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 36,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 37,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 38,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 39,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 40,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 41,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 42,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 43,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 44,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 45,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 46,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 47,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 48,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 49,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 50,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 51,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 52,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 53,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 54,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 55,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 56,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 57,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 58,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 59,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 60,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 61,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 62,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 63,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 64,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 65,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 66,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    },
+    {
+      "index": 67,
+      "checks": {
+        "field_and_verification_hash": true,
+        "immutable_parameters": true,
+        "target_binding": true,
+        "binary64_target_rounding": true,
+        "convergence_force_gates": true,
+        "stored_force_agreement": true,
+        "exact_J_global_embedding": true,
+        "last_verified_only_chain": true,
+        "dose_common_gain_binding": true,
+        "attempt_count_binding": true
+      }
+    }
+  ],
+  "counts": {
+    "direct_targets": 68,
+    "retained_variants": 4,
+    "residuals_per_variant": 68,
+    "total_residual_entries": 272,
+    "triangle_certificates": 9792,
+    "accepted_attempts": 68,
+    "rejected_attempts": 0
+  },
+  "max_Q8_force_linf": 1.8640755204604037e-10,
+  "max_Q12_force_linf": 1.8641612534761424e-10,
+  "all_stored_geometry_J_enclosure_exact": [
+    "110514195204101390237187586878932220165998237128/115675813349407096944873062487762352724565484503",
+    "356099390120997557850051063287147662958501711872/347027440048221290834619187463287058173696453509"
+  ],
+  "all_stored_geometry_J_enclosure_display": [
+    0.9553785878322318,
+    1.0261418810901977
+  ],
+  "variants": [
+    {
+      "variant": "current_disk__spatial_max",
+      "gain": 8.062972020048665,
+      "surrogate_loss_um": 5.246851170489912,
+      "direct_discrepancy_interval_um": [
+        5.379835674801397,
+        5.379835674801397
+      ],
+      "max_observer_interval_width_um": 6.592037896171849e-23,
+      "maximum_sampled_surrogate_direct_error_um": 0.43354056226188764,
+      "channel_discrepancy_intervals_um": {
+        "maximum_shortening_um": [
+          4.453269134507678,
+          4.453269134507678
+        ],
+        "region_averaged_shortening_um": [
+          5.379835674801397,
+          5.379835674801397
+        ],
+        "apical_max_shortening_um": [
+          5.114618968321144,
+          5.114618968321144
+        ],
+        "basal_max_shortening_um": [
+          3.1364977983946236,
+          3.1364977983946236
+        ]
+      }
+    },
+    {
+      "variant": "current_disk__regional_mean",
+      "gain": 9.50995730994219,
+      "surrogate_loss_um": 6.024626245533676,
+      "direct_discrepancy_interval_um": [
+        6.180135360701934,
+        6.180135360701934
+      ],
+      "max_observer_interval_width_um": 1.5497889472319202e-06,
+      "maximum_sampled_surrogate_direct_error_um": 0.4329526470385955,
+      "channel_discrepancy_intervals_um": {
+        "maximum_shortening_um": [
+          5.141405091270601,
+          5.141405091270601
+        ],
+        "region_averaged_shortening_um": [
+          6.180135360701934,
+          6.180135360701934
+        ],
+        "apical_max_shortening_um": [
+          5.894309372638875,
+          5.894309372638875
+        ],
+        "basal_max_shortening_um": [
+          3.3225223328834272,
+          3.3225223328834272
+        ]
+      }
+    },
+    {
+      "variant": "current_radial_line__spatial_max",
+      "gain": 7.327159325615468,
+      "surrogate_loss_um": 5.599341560103282,
+      "direct_discrepancy_interval_um": [
+        5.696665149224691,
+        5.696665149224691
+      ],
+      "max_observer_interval_width_um": 3.303074085156631e-23,
+      "maximum_sampled_surrogate_direct_error_um": 0.4174994418628007,
+      "channel_discrepancy_intervals_um": {
+        "maximum_shortening_um": [
+          4.369371157104292,
+          4.369371157104292
+        ],
+        "region_averaged_shortening_um": [
+          5.696665149224691,
+          5.696665149224691
+        ],
+        "apical_max_shortening_um": [
+          5.5091618836015686,
+          5.5091618836015686
+        ],
+        "basal_max_shortening_um": [
+          3.1980918059140957,
+          3.1980918059140957
+        ]
+      }
+    },
+    {
+      "variant": "current_radial_line__regional_mean",
+      "gain": 8.160245982916612,
+      "surrogate_loss_um": 6.076291390461119,
+      "direct_discrepancy_interval_um": [
+        6.245135436265773,
+        6.245135436265773
+      ],
+      "max_observer_interval_width_um": 3.2951437939884805e-23,
+      "maximum_sampled_surrogate_direct_error_um": 0.43462117345421014,
+      "channel_discrepancy_intervals_um": {
+        "maximum_shortening_um": [
+          4.501763176400746,
+          4.501763176400746
+        ],
+        "region_averaged_shortening_um": [
+          6.245135436265773,
+          6.245135436265773
+        ],
+        "apical_max_shortening_um": [
+          5.954703619696724,
+          5.954703619696724
+        ],
+        "basal_max_shortening_um": [
+          3.3148360202419007,
+          3.3148360202419007
+        ]
+      }
+    }
+  ],
+  "hashes": {
+    "final_verify.py": "ec67f4015b96d5c232233630d0000481e6ebf8ec64b94a603094c795e1cfb557",
+    "direct_results.json": "78c779112966adaa6819778637d3abf573afbc5af61ee74ea1ec28b8b5967dea",
+    "protocol.json": "3b72bcf4583c0b136d01c420028a20a9324dc9c0b3b4ef212b14ec76a62e2031",
+    "direct_protocol.json": "6f51e16bd419e438c004b3081d447debd67092820b02ef9fa9a2b57b2494dddd",
+    "response_table.json": "e38462ec9b8b8b04cb69bf4f1c46824e58f3be16e1a9c831d1cf0cde7719f666",
+    "surrogate_candidates.json": "c9da0d77ee25f5bcb6da88ea2890ff3209a72a9a2eedc387fa9b7f3db71abefd"
+  }
+}

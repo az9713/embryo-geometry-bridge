@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "width": 390,
+      "pass": true,
+      "browser_errors": [],
+      "mathError": "",
+      "images": true,
+      "overflow": false,
+      "energyLink": true,
+      "energyText": true,
+      "scope": true
+    },
+    {
+      "width": 1440,
+      "pass": true,
+      "browser_errors": [],
+      "mathError": "",
+      "images": true,
+      "overflow": false,
+      "energyLink": true,
+      "energyText": true,
+      "scope": true
+    }
+  ],
+  "page_sha256": "0453f3341ef97194d7dee721153ff4ba9828c3a06654d78d7b6bc1f2b6380258",
+  "builder_sha256": "c5c88e7d265f043508c5a8a763bdc6c426572a0512b3dc0f477e36c51d5b1365",
+  "verifier_sha256": "d90048381f09fb524c53b8512953353b8793aad00ff9f14188851fa97c73fab6",
+  "scope": "Parent landing only, headless Edge at two widths. No parent science-page or public deployment claim."
+}

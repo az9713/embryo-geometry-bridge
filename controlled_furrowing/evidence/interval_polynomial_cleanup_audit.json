@@ -1,0 +1,63 @@
+{
+  "status": "CONFIRMED_CRITICAL_INTERVAL_CLEANUP_BUG_WITH_SCOPED_WITHDRAWAL",
+  "utc": "2026-11-19T21:08:27.189617+00:00",
+  "checks": {
+    "bounded_counterexamples_all_pass": true,
+    "actual_uniform_drops_observed": true,
+    "point_corruption_not_falsely_claimed": true,
+    "old_receipts_preserved": true,
+    "independent_AD_shared_failure_included": true,
+    "dense_old_roots_and_geometry_not_withdrawn_without_dependency": true,
+    "no_spatial_integration_or_new_solve": true,
+    "uniform_pilot_launch_not_approved": true
+  },
+  "reproducer_checks": {
+    "zero_crossing_ball_is_not_exact_zero": true,
+    "zero_crossing_ball_neither_equal_nor_unequal_zero": true,
+    "bug_drops_uncertain_constant": true,
+    "bug_drops_uncertain_addition": true,
+    "bug_drops_uncertain_product": true,
+    "counterexample_actual_value_half_omitted": true,
+    "safe_exact_zero_predicate_retains_uncertainty": true,
+    "point_drop_observation_not_assumed": true,
+    "real_uniform_fields_encounter_dropped_uncertainty": true,
+    "independent_bulk_cache_AD_has_same_failure": true,
+    "current_surface_cache_jclean_retains_uncertainty": true,
+    "current_surface_cache_jclean_removes_exact_zero": true
+  },
+  "reproducer_sha256": "e3cadd9dd9e7d43fae0daddae510ac3e3e56a2915542bc1991aa707db7436615",
+  "reproducer_result_sha256": "f9374b58b7148343a024a475f0c915d60e7a4c0db9c3587d8115b71552f53aff",
+  "predicate_inventory_sha256": "22db301e22fa964fa94c60c41cb538ae1f89272a10a7f13edddb972cc263f387",
+  "impact_inventory_sha256": "83772bbfade0db091d5a6f2a96bac6632c32dcfab1962e8e94feb9ad6f8e7705",
+  "finalizer_sha256": "e73122834f73c632c55d1deaa5af87c0577c3b140ab85460f1ca8a1849670d60",
+  "source_snapshots": {
+    "scripts/exact_fe_target.py": "4fd89ddf23c59050a92f18f7b4b6e69ef8e5d08e57ba0c1949cf0b61b2c869a4",
+    "scripts/exact_bulk_bridge_pilot.py": "91a4f9a41b69c7b9e9ae5d5e0021087a7dfa4cf9e80625273bb4945d0ac3d0b3",
+    "scripts/exact_uniform_bulk_defect_B.py": "522b26cacf9001f043a27189a4beef2b6001a883f3fe84cf1428ae2bc8b4e2a6",
+    "runs/exact_integration_bridge_v1/bridge_design_probe/polynomial_jet.py": "a788f21c28401575fc0dd11c2951a1c49100491d74846c1b3065bf38a177d22d",
+    "runs/exact_integration_bridge_v1/cache_consistency_independent/review.py": "92dd183873ae320fabcd47cfe8fdc80758f673bbc96003c9194ad8ffa1f0e62f",
+    "scripts/exact_surface_cache_consistency.py": "02c39fa9dfa459a1cc174211a4731dc54966e6aeb12a0133fd9129b100644d2e",
+    "scripts/exact_fe_moments.py": "52bd1e4b54f4ae03ca66592bf4ab295fef30713e5fe171e6fc3e955acf2b9925",
+    "scripts/root_body_geometry.py": "18013c6c50c5f679eb6c4abc04e3cf9ce447ee18d0bf1efbf6dcfbd6806f49c2",
+    "scripts/algebraic_root_feasibility.py": "7321d38bf17cf354cc03be2871f3fbaa45bcebbcbfca7be90d0f867b80078acf"
+  },
+  "actual_uniform_coefficients_dropped": 10,
+  "actual_point_degree16_stages_traced": [
+    0,
+    6
+  ],
+  "actual_point_stages_with_observed_drops": [],
+  "old_point_negative_certificate_currently_valid": false,
+  "old_all17_binary_quadrature_root_stability_certificates_withdrawn": false,
+  "fresh_common_geometry_certificate_withdrawn": false,
+  "uniform_pilot_launch_approved": false,
+  "minimal_replay_plan": [
+    "Freeze a new interval-safe polynomial kernel; remove only coefficients certified exactly zero, reject nonfinite coefficients; preserve old module and receipts.",
+    "Add mandatory containment tests for zero-crossing, exact-zero, nonzero, cancellation, multiplication, differentiation, composition and high-order jets; use a genuinely separate safe independent arithmetic layer.",
+    "Replay all144 bulk and24 surface point local integrations and signed611/6676 reductions; replay independent selected local integrals using corrected separate arithmetic. Only then reassess point defect/map-center statement; do not assume sign or conclusion survives.",
+    "Repair and rerun the independent bulk-cache genericAD review; producer dense analytic formula and rational-map tests may be retained with explicit scope.",
+    "Reprepare the uniform seven-element pilot with the new kernel and independently audited geometry/coefficients/tails. Require fresh prelaunch review before integrals.",
+    "Retain old candidate-vector arithmetic and arbitrary-center geometry as such; decide any next proof center from newly validated point defect. No existing exact-integral root or uniformH transfer is certified."
+  ],
+  "scope": "A bounded failure audit, not a full source safety proof. Complete original five-gate goal remains incomplete."
+}

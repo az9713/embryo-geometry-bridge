@@ -1,0 +1,171 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ACTIVATED-QUADRATURE</title><link rel="stylesheet" href="../../docs/assets/katex/katex.min.css"><style>*{box-sizing:border-box}body{margin:0;background:#0b111b;color:#e7eef7;font:17px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:1120px;margin:auto;padding:36px 24px 80px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{margin-top:2em;color:#aedbe8}a{color:#8ad4ef}nav{display:flex;gap:12px 24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid #354357}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto;font-size:.9em}th,td{padding:12px;border:1px solid #33435a;vertical-align:top}pre,.math.display{overflow:auto;padding:15px;background:#111e30}code{overflow-wrap:anywhere}.status{border:1px solid #9d8044;border-left:5px solid #e3ba66;padding:18px;margin:24px 0;background:#172030}#math-errors{color:#ff9999}li{margin:.4em 0}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}}</style></head><body><main><nav><a href="index.html">Controlled furrowing</a><a href="ORIGINALITY.html">Originality</a><a href="DATA.html">Data</a><a href="MODEL-CANDIDATES.html">Mechanics</a><a href="SLICE-OBSERVER.html">Slice observation</a><a href="../../docs/index.html">Parent dossier</a></nav><h1>Numerical integration of the actual activated P2 model</h1>
+<p><strong>Completed:</strong> all six cases were re-equilibrated at higher quadrature and pass a still higher-rule force check. Eight synthetic checks and 68 independent replay checks pass. The largest shortening correction is 0.019584 µm; the largest rigorously bounded apical-curve change is approximately 0.025714 µm.</p>
+<p>This is a target-free integration-accuracy study on the <strong>same 12×6 finite-dimensional P2 space</strong>, not a new constitutive model. The frozen P1, prestress, mixed, full-pointwise P2 and robust-controller sources are preserved. The separate implementation is <code>scripts/quadratic_quadrature_study.py</code>; source hashes, original-state hashes and actual integration policies are recorded in <code>evidence/activated_quadrature_*.json</code>.</p>
+<h2>1. Why a solved field must be tested under higher quadrature</h2>
+<p>The default six-point degree-four triangle rule integrates some polynomial terms exactly, but the hyperelastic potential contains <span class="math" data-tex="\log J"></span>, <span class="math" data-tex="(\log J)^2"></span>, and the surface terms contain curved-edge lengths. These are not generally degree-four polynomials of the reference coordinates. Stationarity of one quadrature approximation does not imply stationarity of a more accurately integrated potential on the same displacement space.</p>
+<p>For a fixed finite-element coefficient vector <span class="math" data-tex="u_h"></span>, define the actual rule-dependent potential and residual</p>
+<div class="math display" data-tex="
+ E_Q(u_h)=\sum_{T,q}w_{Tq}W(F_h(x_{Tq})) + E_{s,Q}(u_h)+E_{a,Q}(u_h),
+ \qquad R_Q=\nabla_{u_h}\frac{E_Q}{\mu V_0}.
+"></div>
+
+<p>The original check was <span class="math" data-tex="\&#124;R_{Q_0}\&#124;_\infty&lt;10^{-7}"></span>. Here we first hold <span class="math" data-tex="u_h"></span> fixed and evaluate <span class="math" data-tex="R_{Q_8}"></span> and <span class="math" data-tex="R_{Q_{12}}"></span>. A larger residual is integration sensitivity, even if the total energies differ by only a small relative amount. A constant prestress reference energy dominates the absolute total in these runs; agreement of total energy alone is especially weak evidence of force accuracy.</p>
+<h2>2. Declared higher-order rules</h2>
+<p>On the unit triangle let</p>
+<div class="math display" data-tex="
+ (\lambda_0,\lambda_1,\lambda_2)=(1-u,u(1-v),uv),\quad 0&lt;u,v&lt;1.
+"></div>
+
+<p>The Jacobian of <span class="math" data-tex="(u,v)\mapsto(\xi,\eta)=(u(1-v),uv)"></span> is <span class="math" data-tex="u"></span>. We use tensor Gauss–Legendre integration with 8×8 and 12×12 interior points and the physical axisymmetric weight <span class="math" data-tex="2\pi r\det D_m\,u\,du\,dv"></span>. Surface rules use 12 and 16 Gauss points on each exact quadratic edge, respectively.</p>
+<p>Every cache is rebuilt explicitly: P2 basis values and gradients, reference radii, volume weights, reference volume, pressure mass matrix and diagnostic projection basis, and quadratic-edge basis/derivative/surface weights. No global quadrature function is monkeypatched. The inherited parameter fields still describe the frozen nominal construction; every new saved result separately records its <strong>actual</strong> integration policy.</p>
+<p>The constitutive potential remains</p>
+<div class="math display" data-tex="
+ W(F)=\frac\mu2(I_1-3-2\log J)+\frac\lambda2(\log J)^2,
+ \quad E_a=\int\frac f2\chi_A&#124;F e_z&#124;^2dV_0,
+ \quad E_s=\int\left[\frac{K_s}{2}(J_s-1)^2+T_sJ_s\right]dA_0.
+"></div>
+
+<p>Continuous P1 projected pressure is auxiliary diagnostic output only. It does not enter the physical potential, so no hidden projected-volume cancellation changes the derivatives. Element chunks of size 12 bound vectorized-Hessian memory without changing the summed potential; chunk sizes one and twelve are separately compared in verification.</p>
+<h2>3. Existing equilibria fail the higher-rule force check</h2>
+<p>The actual geometry and material settings match the robust small-region runs: height scale 33.5 µm, measured diameter 18.71024074 µm, activation 5–25 µm below the apical surface, <span class="math" data-tex="K_b=2"></span>, <span class="math" data-tex="K_a=0.2"></span>, <span class="math" data-tex="T_b=2"></span>, <span class="math" data-tex="T_a=0"></span> in the declared normalized units. No gain or material fit is performed.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><span class="math" data-tex="\lambda/\mu"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="f/\mu"></span></th>
+<th style="text-align: right;">Higher-rule force residual, Duffy8/surface12</th>
+<th style="text-align: right;">Duffy12/surface16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3.30997e−5</td>
+<td style="text-align: right;">3.30997e−5</td>
+</tr>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.30289e−4</td>
+<td style="text-align: right;">1.30289e−4</td>
+</tr>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1.98022e−4</td>
+<td style="text-align: right;">1.98022e−4</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.73241e−4</td>
+<td style="text-align: right;">1.73241e−4</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6.73553e−4</td>
+<td style="text-align: right;">6.73553e−4</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">9.94272e−4</td>
+<td style="text-align: right;">9.94272e−4</td>
+</tr>
+</tbody>
+</table>
+<p>All six default equilibria fail the original <span class="math" data-tex="10^{-7}"></span> force threshold under both higher rules. This does not invalidate the earlier statement that they solve the original quadrature equations. It shows that the default quadrature equations are insufficiently stationary approximations to the higher-rule equations at this strict force tolerance.</p>
+<p>The two higher rules agree closely on the fixed fields, while their bulk energies differ from the default rule. Surface terms agree essentially to rounding in this particular study. Full component and residual receipts are in <code>evidence/activated_quadrature_evaluation.json</code>.</p>
+<h2>4. Re-equilibration and verification</h2>
+<p>Higher-rule fixed-load relaxations are retained separately under <code>runs/activated_quadrature</code>. An original-rule field is only an <strong>initial guess</strong> under the new integration policy. It is never passed off as a verified previous equilibrium for that new policy. The procedure is same-strength numerical relaxation, not a physical activation trajectory.</p>
+<p>Before re-equilibration, eight synthetic checks pass: zero-reference force, exact affine isochoric energy, positive integration weights, reference volume, positive pressure mass matrix, automatic derivative versus directional finite difference, and chunk-size invariance of both potential and gradient. The directional derivative relative discrepancy is approximately 2.33e−10. These are component checks, not continuum error estimates.</p>
+<p>All six new Duffy8/surface12 equilibria pass the Duffy12/surface16 force check. The same new field is evaluated under that second rule; an independently optimized second field is unnecessary for this declared residual gate and has not been claimed.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><span class="math" data-tex="\lambda/\mu"></span></th>
+<th style="text-align: right;"><span class="math" data-tex="f/\mu"></span></th>
+<th style="text-align: right;">New-rule force residual</th>
+<th style="text-align: right;">Duffy12 cross residual</th>
+<th style="text-align: right;">Change in maximum shortening (µm)</th>
+<th style="text-align: right;">Apical curve change bound (µm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3.01e−13</td>
+<td style="text-align: right;">7.68e−12</td>
+<td style="text-align: right;">−0.000435</td>
+<td style="text-align: right;">0.001739</td>
+</tr>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4.75e−13</td>
+<td style="text-align: right;">3.61e−11</td>
+<td style="text-align: right;">+0.005188</td>
+<td style="text-align: right;">0.007102</td>
+</tr>
+<tr>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2.79e−13</td>
+<td style="text-align: right;">3.21e−11</td>
+<td style="text-align: right;">+0.019584</td>
+<td style="text-align: right;">0.025714</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3.25e−12</td>
+<td style="text-align: right;">2.50e−11</td>
+<td style="text-align: right;">−0.004122</td>
+<td style="text-align: right;">0.005230</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3.14e−12</td>
+<td style="text-align: right;">6.65e−11</td>
+<td style="text-align: right;">+0.000837</td>
+<td style="text-align: right;">0.011921</td>
+</tr>
+<tr>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2.81e−12</td>
+<td style="text-align: right;">5.16e−11</td>
+<td style="text-align: right;">+0.006522</td>
+<td style="text-align: right;">0.014481</td>
+</tr>
+</tbody>
+</table>
+<p>Curve-bound displays are rounded upward here. The exact bounds are stored as rational squared lengths; they compare the old and new <strong>discrete curves</strong>, not either curve to a continuum solution. The maximum basal-curve bound over all cases is less than 0.003130 µm.</p>
+<p><img alt="Quadrature residuals, shortening corrections and exact curve-difference bounds" src="../../omitted-asset.svg" /></p>
+<h2>5. Independent isolation and exact geometry receipts</h2>
+<p>The post-run reviewer independently evaluates four policies on each original field: volume/surface orders (8,8), (8,12), (12,12), (12,16). Isolating surface order 8→12 changes the force vector by at most 9.97e−14; isolating volume order 8→12 changes it by at most 6.85e−11. These are tiny compared with the original default-to-higher residuals. Thus the observed failure is attributable to the default volume integration in this tested setting, rather than the surface rule.</p>
+<p>All 864 new quadratic triangles pass exact rational positive-J certificates. All six bodies pass exact global embedding checks. All source and input-state hashes match. The independent post-run receipt is <code>evidence/activated_quadrature_verification.json</code>; full exact geometry coefficients are in <code>evidence/activated_quadrature_reequilibration.json</code>.</p>
+<p>For boundary differences, let <span class="math" data-tex="d_0,d_m,d_1"></span> be exact rational differences of old and new quadratic nodal positions on the same material edge. The Bézier difference controls are</p>
+<div class="math display" data-tex="
+ c_0=d_0,\quad c_1=2d_m-(d_0+d_1)/2,\quad c_2=d_1.
+"></div>
+
+<p>Nonnegative Bernstein weights sum to one, so
+<span class="math" data-tex="\sup_t&#124;y_{new}(t)-y_{old}(t)&#124;\le\max_i&#124;c_i&#124;"></span>.
+The maximum squared norm is rational and retained exactly. Pairing corresponding material parameters also bounds the Hausdorff distance between the two curve images. This is a rigorous <strong>same-space discrete shape-difference bound</strong>. It is not a bound on the vertical Eulerian graph difference, equilibrium error, quadrature remainder, or continuum uncertainty.</p>
+<p><img alt="Higher-rule and original actual profiles, with their small difference resolved separately" src="../../omitted-asset.svg" /></p>
+<p>The plots derive exclusively from retained fields and receipts. <code>runs/activated_quadrature/make_visual.py</code> reproduces them; <code>evidence/activated_quadrature_visuals.json</code> binds the figure and generator hashes.</p>
+<h2>6. Interpretation and remaining accuracy requirements</h2>
+<p>The default rule's fields were excellent solutions of their own algebraic equations, yet failed a higher-rule force test. After re-equilibration the same P2 space passes both higher rules, with a small but resolved geometric correction. This illustrates why force, geometry and integration checks must be reported together. A small total-energy change alone can conceal a meaningful force discrepancy.</p>
+<p>Agreement of Duffy8 and Duffy12 is empirical integration evidence, not a rigorous quadrature-remainder certificate. Neither it nor the exact discrete geometry certificates establish continuum accuracy, uniform penalty robustness, a global energy minimum or biological validity. The separate mesh study intentionally holds the default rule fixed, so its mesh effect must be kept distinct from this same-space integration effect. A final combined higher-rule/finer-mesh check remains appropriate before a physical prediction freeze.</p>
+<p>Reproduce with:</p>
+<pre><code class="language-powershell">python -X utf8 controlled_furrowing/scripts/quadratic_quadrature_study.py --self-test
+python -X utf8 controlled_furrowing/scripts/quadratic_quadrature_study.py --evaluate
+python -X utf8 controlled_furrowing/scripts/quadratic_quadrature_study.py --solve
+python -X utf8 controlled_furrowing/runs/activated_quadrature/make_visual.py
+</code></pre>
+<p>The <code>--solve</code> command re-runs synthetic verification and original-field evaluation before the six fixed-load solves. Original robust fields are preserved. No biological labels, response outcomes or fitted gains are read.</p><p id="math-errors"></p></main><script src="../../docs/assets/katex/katex.min.js"></script><script>document.querySelectorAll(".math").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:e.classList.contains("display"),throwOnError:true})}catch(x){document.getElementById("math-errors").textContent+=String(x)}});</script></body></html>

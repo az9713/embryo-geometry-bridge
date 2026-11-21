@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_transitive_static_local_imports_guarded": true,
+    "all_declared_source_hashes_current": true,
+    "entry_point_hash_bound": true
+  },
+  "protocol_sha256": "1ed458c8f0f7b9c9bacfdf0c04b907d474d06e5607ced5956ecc2d2f1adac953",
+  "verifier_sha256": "cab1ef86534c6475048878e68e528be93d2f654930513c8ee18d8683345287f3",
+  "local_import_graph": {
+    "material_cohort_direct.py": [
+      "joint_calibration_contract.py",
+      "joint_gain_extension.py",
+      "sparse_quadratic.py"
+    ],
+    "sparse_quadratic.py": [
+      "quadratic_quadrature_study.py",
+      "robust_quadratic.py"
+    ],
+    "robust_quadratic.py": [
+      "axisymmetric_quadratic.py"
+    ],
+    "axisymmetric_quadratic.py": [
+      "axisymmetric_mixed.py"
+    ],
+    "axisymmetric_mixed.py": [
+      "axisymmetric_mechanics.py",
+      "axisymmetric_prestress.py"
+    ],
+    "axisymmetric_prestress.py": [
+      "axisymmetric_mechanics.py"
+    ],
+    "axisymmetric_mechanics.py": [],
+    "quadratic_quadrature_study.py": [
+      "axisymmetric_mixed.py",
+      "axisymmetric_quadratic.py",
+      "mixed_geometry_certificate.py",
+      "mixed_geometry_certificate_v2.py",
+      "robust_quadratic.py"
+    ],
+    "mixed_geometry_certificate_v2.py": [
+      "certify_discrete_geometry.py",
+      "mixed_geometry_certificate.py"
+    ],
+    "mixed_geometry_certificate.py": [
+      "certify_discrete_geometry.py"
+    ],
+    "certify_discrete_geometry.py": [],
+    "joint_gain_extension.py": [
+      "joint_calibration_contract.py",
+      "joint_gain_calibration.py",
+      "piecewise_gain_minimax.py",
+      "quadratic_quadrature_study.py",
+      "sparse_quadratic.py"
+    ],
+    "piecewise_gain_minimax.py": [],
+    "joint_gain_calibration.py": [
+      "joint_calibration_contract.py",
+      "piecewise_gain_minimax.py",
+      "quadratic_endpoint_observer.py",
+      "sparse_quadratic.py"
+    ],
+    "quadratic_endpoint_observer.py": [
+      "annulus_observer.py"
+    ],
+    "annulus_observer.py": [],
+    "joint_calibration_contract.py": []
+  },
+  "uncovered_local_modules": [],
+  "changed_locked_sources": [],
+  "all_locked_source_hashes": {
+    "joint_gain_extension.py": "b54b46251fc4df0c057765c55dcc64305e359645b97fbda34fd54ecaaff99e37",
+    "joint_gain_calibration.py": "9d29bb899915076afb8b83fb8aa1be4211e1101f178470556a5be84a179e3d6f",
+    "joint_calibration_contract.py": "ed3bcf3b16ae7d369d70d76570385d59854dda7926e9f73b3b200b5fcea02512",
+    "piecewise_gain_minimax.py": "3d803c3b9a39095707633bf83989fdfab7ce7ca963c81e3dffca11ff7e145a2e",
+    "quadratic_endpoint_observer.py": "075dac2148ed26a3bfe83fadf1b97602e4b08536f2be38cb95c2054776c0b926",
+    "sparse_quadratic.py": "d4833318151c7b94b4c56d40a96158d55a06258619ef080548d489e2be0394f9",
+    "quadratic_quadrature_study.py": "0eac4bdcfd2bb0b725940d15874fc762c16065d2a29f2a10d0da70c5725ac5dc",
+    "robust_quadratic.py": "be6f17e620ddf04533d456fff9d48cd48517f4a0709d921ab510616926b4176b",
+    "axisymmetric_quadratic.py": "5bb64d6b441f6db8ada9da0f1bcb44716c86ed5d816e44f75bd4e9e021fdf410",
+    "axisymmetric_mixed.py": "daf9b4f52181b18b1a75cc69909444bf2a85725c3896b32b125b2f20f10b1f14",
+    "axisymmetric_prestress.py": "141b4b2ea92f4e04f4076b18edc9bafd6218f75a7c4c9633e66c5d2a9fc03c41",
+    "axisymmetric_mechanics.py": "ca431e30a2574a02f4a21c98935c50217aa79bc5512cf7279143f22ce1a580e0",
+    "mixed_geometry_certificate.py": "fb0d49d680286ff49d0dc6713baca41fbebbf724442bff9731292e1441b03fd8",
+    "mixed_geometry_certificate_v2.py": "165d3b914b1ab9bad2e6591a7df63c09e004f33a742cfa5f4430584746edfbd2",
+    "material_cohort_direct.py": "448675cc6f59973c07a372f119aea5dd9be0f915398f57a3f9bd7d5cfe91074e",
+    "material_cohort_descent.py": "8343f4908a76a47f8c83159e7befbbaa23afdc7d4a5f4689bda9ec901e3957c1",
+    "material_tangent_inference.py": "63ded9fdd73038f770ce9369e9d8a2d6d972a4863f83515b20a5961a5b522d78",
+    "quadratic_mean_derivatives.py": "681b69335a80ae0468dd98856c5562b24524827809ece465747b95454d152bff",
+    "bounded_affine_minimax.py": "a0156acb5e9a3574f87033f2bb821b5dbd8ebe9d4940d8996ed8b15be6368d9d",
+    "annulus_observer.py": "77bcd1bc10e557de4a4be9c304041f9f0dfe0fcbac47871cabfbb11ffb7346b9",
+    "certify_discrete_geometry.py": "ecf329847b8d00f8e33e4ea6ac4f83f3af0c2569528f387a82f93f17b8e5d5ff"
+  },
+  "scope": "Static local-import dependency coverage and actual source hashes before direct replay; no numerical, dynamic-import, environment or five-gate completion claim."
+}
