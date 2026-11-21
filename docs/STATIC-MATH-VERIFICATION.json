@@ -1,0 +1,23 @@
+{
+  "status": "PASS_STRICT_STATIC_MATH_COMPILATION",
+  "newly_compiled_expressions": 2913,
+  "pages_compiled": 105,
+  "math_source_retained_except_logged_unit_typography": true,
+  "unit_typography_normalizations": [
+    {
+      "expression": "controlled_furrowing/docs/PARAMETRIC-ACTUAL-M-REVIEW.html:27",
+      "before": "\n \\inf_{\\theta\\text{ in this cell}}\n |A_{\\rm model}(\\theta)-12|\n \\ge12-6.813612858035664>5.1863871\\ {\\rm \u00b5m}.\n",
+      "after": "\n \\inf_{\\theta\\text{ in this cell}}\n |A_{\\rm model}(\\theta)-12|\n \\ge12-6.813612858035664>5.1863871\\ {\\rm \\mu m}.\n",
+      "reason": "Legacy unit typography normalized to standard TeX; numerical values unchanged."
+    },
+    {
+      "expression": "controlled_furrowing/docs/ROOT-OBSERVER-APPLICATION-REVIEW.html:13",
+      "before": "\n I=\\left[0,\\frac{337053732898705073}{36028797018963968}\\right]\\ {\nm \u00b5m}.\n",
+      "after": "\n I=\\left[0,\\frac{337053732898705073}{36028797018963968}\\right]\\ \\mathrm{\\mu m}.\n",
+      "reason": "Legacy unit typography normalized to standard TeX; numerical values unchanged."
+    }
+  ],
+  "throw_on_error": true,
+  "strict": "error",
+  "scientific_numerical_files_changed": false
+}

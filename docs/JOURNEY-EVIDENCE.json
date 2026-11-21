@@ -1,0 +1,43 @@
+{
+  "status": "DOCUMENTARY_JOURNEY_PROVENANCE",
+  "earlier_phases_reconstructed": true,
+  "private_conversation_transcript_published": false,
+  "sources": [
+    {
+      "record": "initial_embryo_charter",
+      "source_sha256": "4fd490ce889572e15f7868dc16be469e791867c942c7e84e876267f6618508a5",
+      "public_copy": "CHARTER.md",
+      "public_copy_present": true,
+      "scope": "Historical source record, not a new replay of the older experiment."
+    },
+    {
+      "record": "earlier_avian_findings",
+      "source_sha256": "39554eae8f7689e85fca4f8c7b16b759519ed9fbf1a27e48f447abb8dd3fc28b",
+      "public_copy": "docs/ARCHIVED-AVIAN-FINDINGS.md",
+      "public_copy_present": true,
+      "scope": "Historical source record, not a new replay of the older experiment."
+    },
+    {
+      "record": "earlier_baseline_audit",
+      "source_sha256": "b778684666108d8634142a540b3d6a793e5923e40a6515b44369e7c39844f2fc",
+      "public_copy": null,
+      "public_copy_present": false,
+      "scope": "Historical source record, not a new replay of the older experiment."
+    },
+    {
+      "record": "supplied_caption_record",
+      "source_sha256": "b766230960e3a84c42637dacd2949e66a43f0a862fae5f52a9db202fe7d2ed19",
+      "public_copy": null,
+      "public_copy_present": false,
+      "scope": "Historical source record, not a new replay of the older experiment."
+    }
+  ],
+  "earlier_branch_summary": {
+    "system": "early quail gastrulation",
+    "strict_serialized_reference_gate": "NOT_PASS",
+    "endpoint_prediction_uses_measured_endpoint_deformation": true,
+    "detached_planar_affine_vs_persistence_forecast": "FAIL",
+    "complete_older_avian_computation_shipped": false
+  },
+  "current_release": "16 selected exact-spatial finite-element axisymmetric roots/minima; 14 small fields, 56 primary comparisons; source and continuum gates unresolved."
+}

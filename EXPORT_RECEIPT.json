@@ -1,14 +1,14 @@
 {
-  "status": "PASS_CURATED_PORTABLE_PUBLICATION_EXPORT",
-  "scope": "Curated snapshot creation and validation before Git initialization or remote publication. No full historical raw integration closure is claimed.",
+  "status": "PASS_PUBLIC_SITE_PREDEPLOYMENT_CHECKS",
+  "scope": "Public development journey, static web presentation, original-data guard, selected mathematical summaries and privacy check; source research remains incomplete.",
   "scoped_verifier_exit_code": 0,
   "scoped_verifier_tool_chunk": "db1bfc",
   "verification": {
     "status": "PASS_PUBLICATION_SNAPSHOT_SCOPE",
     "scope": "Manifest hashes, static local links, and selected scalar summaries. No raw integrations or historical process reproduction.",
-    "included_hashes": 1651,
-    "html_pages": 120,
-    "local_links_and_assets": 1647,
+    "included_hashes": 1672,
+    "html_pages": 123,
+    "local_links_and_assets": 1819,
     "selected_scalar_replay": {
       "Wave03_selfmaps": 4,
       "Wave03_observer_rows": 64,
@@ -33,7 +33,16 @@
   "no_author_contact": true,
   "source_research_complete": false,
   "actual_git_or_network_mutations_at_export": false,
-  "manifest_sha256": "06b48b69fdcab2df6716e8e71ee044b61f94994973428d39ff2198b2071dbee7",
-  "included_data_files": 1651,
-  "included_data_bytes": 163575879
+  "manifest_sha256": "06e6851a3d38845d168257ad4a66f4f9929b8b082e523f1e7ea98bc0edf6bb81",
+  "included_data_files": 1672,
+  "included_data_bytes": 170695740,
+  "live_repository": "https://github.com/az9713/embryo-geometry-bridge",
+  "pages_url": "https://az9713.github.io/embryo-geometry-bridge/",
+  "site_html_files": 123,
+  "math_expressions_per_viewport": 3011,
+  "browser_views_passed": 492,
+  "privacy_receipt": "verification/privacy.json",
+  "current_static_browser_receipt": "verification/site/static/receipt.json",
+  "current_javascript_browser_receipt": "verification/site/javascript/receipt.json",
+  "earlier_portable_browser_receipt_is_historical": true
 }

@@ -1,0 +1,497 @@
+{
+  "site": "https://az9713.github.io/embryo-geometry-bridge/",
+  "html_pages": [
+    {
+      "path": "controlled_furrowing/docs/ACTIVATED-MESH-STUDY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ACTIVATED-MESH-STUDY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ACTIVATED-QUADRATURE.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ACTIVATED-QUADRATURE.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ACTUAL-M-CELL-EXCLUSION.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ACTUAL-M-CELL-EXCLUSION.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-CERTIFICATION-PATH.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ALGEBRAIC-ROOT-CERTIFICATION-PATH.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-INDEPENDENT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ALGEBRAIC-ROOT-INDEPENDENT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ALGEBRAIC-ROOT-OBSERVER-ERROR.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ALGEBRAIC-ROOT-OBSERVER-ERROR.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ANNULUS-OBSERVER.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ANNULUS-OBSERVER.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/AXISYMMETRIC-MODEL.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/AXISYMMETRIC-MODEL.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/BASELINE-TENSION.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/BASELINE-TENSION.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/BOUNDED-AFFINE-MINIMAX-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/BOUNDED-AFFINE-MINIMAX-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/BOUNDED-AFFINE-MINIMAX.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/BOUNDED-AFFINE-MINIMAX.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/CALIBRATION-EXCEPTION-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/CALIBRATION-EXCEPTION-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/CALIBRATION-UNCERTAINTY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/CALIBRATION-UNCERTAINTY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-BOUND-DIAGNOSTICS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-BOUND-DIAGNOSTICS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-ENERGY-STABILITY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-ENERGY-STABILITY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-INFERENCE-CHECKPOINT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-INFERENCE-CHECKPOINT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-INTEGRATION-L.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-INTEGRATION-L.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-RECENTERED-ROOTS-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-RECENTERED-ROOTS-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-STATIC-APPLICATION-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-STATIC-APPLICATION-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-STATIC-OBSERVERS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-STATIC-OBSERVERS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-UNIFORM-ROOTS-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-UNIFORM-ROOTS-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COHORT-UNIFORM-ROOTS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COHORT-UNIFORM-ROOTS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/COMPLETION-AUDIT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/COMPLETION-AUDIT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/CURRENT-FIVE-GATE-AUDIT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/CURRENT-FIVE-GATE-AUDIT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/CURRENT-FIVE-GATE-AUDIT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/CURRENT-FIVE-GATE-AUDIT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/DATA.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/DATA.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/DISCRETE-GEOMETRY-CERTIFICATE.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/DISCRETE-GEOMETRY-CERTIFICATE.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ENDPOINT-MESH-FUNCTIONALS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ENDPOINT-MESH-FUNCTIONALS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ENDPOINT-OBSERVER-INDEPENDENT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ENDPOINT-OBSERVER-INDEPENDENT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-CELL-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ENERGY-GAIN-CELL-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-CELL.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ENERGY-GAIN-CELL.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-GEOMETRY-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ENERGY-GAIN-GEOMETRY-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ENERGY-GAIN-GEOMETRY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ENERGY-GAIN-GEOMETRY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/EXACT-INTEGRAL-ROOT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/EXACT-INTEGRAL-ROOT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/EXACT-INTEGRATION-BRIDGE.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/EXACT-INTEGRATION-BRIDGE.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/GAIN-SURROGATE-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/GAIN-SURROGATE-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/GAIN-SURROGATE-V2-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/GAIN-SURROGATE-V2-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/index.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/index.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-CALIBRATION-CONSTRAINTS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/JOINT-CALIBRATION-CONSTRAINTS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-CONSTRAINT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/JOINT-CONSTRAINT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-DIRECT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/JOINT-DIRECT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-GAIN-CALIBRATION.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/JOINT-GAIN-CALIBRATION.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-INFERENCE-PROGRESS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/JOINT-INFERENCE-PROGRESS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-OBSERVATION-CONTRACT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/JOINT-OBSERVATION-CONTRACT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/JOINT-REFINEMENT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/JOINT-REFINEMENT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/L-CENTERED-ROOT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/L-CENTERED-ROOT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/LOCAL-INFERENCE.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/LOCAL-INFERENCE.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DESCENT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MATERIAL-COHORT-DESCENT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DESCENT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MATERIAL-COHORT-DESCENT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DIRECT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MATERIAL-COHORT-DIRECT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-COHORT-DIRECT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MATERIAL-COHORT-DIRECT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-INPUTS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MATERIAL-INPUTS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-TANGENT-INFERENCE.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MATERIAL-TANGENT-INFERENCE.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MATERIAL-TANGENT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MATERIAL-TANGENT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MIXED-GEOMETRY-PROOF.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MIXED-GEOMETRY-PROOF.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MIXED-MECHANICS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MIXED-MECHANICS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MODEL-CANDIDATES.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MODEL-CANDIDATES.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/MOVIE-GEOMETRY-FEASIBILITY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/MOVIE-GEOMETRY-FEASIBILITY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/NODAL-OBSERVER-ERROR-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/NODAL-OBSERVER-ERROR-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/NODAL-OBSERVER-ERROR-TRANSFER.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/NODAL-OBSERVER-ERROR-TRANSFER.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/NUMERICAL-ACCURACY-PATH.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/NUMERICAL-ACCURACY-PATH.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ORIGINALITY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ORIGINALITY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/OUTLIER-SENSITIVITY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/OUTLIER-SENSITIVITY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETER-INFERENCE-CHECKPOINT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PARAMETER-INFERENCE-CHECKPOINT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETER-INFERENCE-CHECKPOINT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PARAMETER-INFERENCE-CHECKPOINT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-ACTUAL-M-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PARAMETRIC-ACTUAL-M-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-NORM-FEASIBILITY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PARAMETRIC-NORM-FEASIBILITY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PARAMETRIC-ROOT-CELLS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PARAMETRIC-ROOT-CELLS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-DOMAIN-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PHYSICAL-DOMAIN-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-INFERENCE-READINESS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PHYSICAL-INFERENCE-READINESS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PHYSICAL-PARAMETER-DOMAIN.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PHYSICAL-PARAMETER-DOMAIN.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PROTOCOL-ERRATA.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PROTOCOL-ERRATA.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/PUBLIC-SUPPLEMENT-AUDIT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/PUBLIC-SUPPLEMENT-AUDIT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-ACCURACY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/QUADRATIC-ACCURACY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-ENDPOINT-OBSERVER.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/QUADRATIC-ENDPOINT-OBSERVER.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-FITTED-LOAD-READINESS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/QUADRATIC-FITTED-LOAD-READINESS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-INDEPENDENT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/QUADRATIC-INDEPENDENT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-MEAN-DERIVATIVES.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/QUADRATIC-MEAN-DERIVATIVES.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/QUADRATIC-SOLVE-POLICY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/QUADRATIC-SOLVE-POLICY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/RAW-DATA-REQUIREMENTS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/RAW-DATA-REQUIREMENTS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/READINESS-CHECKPOINT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/READINESS-CHECKPOINT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/READINESS-CONTRACT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/READINESS-CONTRACT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/RECENTERED-OBSERVERS-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/RECENTERED-OBSERVERS-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-BODY-GEOMETRY-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ROOT-BODY-GEOMETRY-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-BODY-GEOMETRY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ROOT-BODY-GEOMETRY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/ROOT-OBSERVER-APPLICATION-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/ROOT-OBSERVER-APPLICATION-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SAFE-INTEGRATION-REPLAY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SAFE-INTEGRATION-REPLAY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SCALAR-MATH.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SCALAR-MATH.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SCIENCE-OVERVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SCIENCE-OVERVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SHARED-CELL-COHORT-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SHARED-CELL-COHORT-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SHARED-CELL-COHORT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SHARED-CELL-COHORT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SLICE-OBSERVER.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SLICE-OBSERVER.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SPARSE-NEWTON.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SPARSE-NEWTON.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SPARSE24-GAIN1-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SPARSE24-GAIN1-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-CALIBRATION.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SPATIAL-CALIBRATION.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-V1-RESULTS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SPATIAL-V1-RESULTS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-V1-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SPATIAL-V1-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/SPATIAL-VALIDATION-CONTRACT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/SPATIAL-VALIDATION-CONTRACT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/STATIC-MEAN-COMPATIBILITY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/STATIC-MEAN-COMPATIBILITY.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/STATIC-MEAN-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/STATIC-MEAN-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-MEAN-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/TEMPORAL-MEAN-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-MEAN-WITNESS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/TEMPORAL-MEAN-WITNESS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-ORDER-ROBUST-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/TEMPORAL-ORDER-ROBUST-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/TEMPORAL-ORDER-ROBUST-WITNESS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/TEMPORAL-ORDER-ROBUST-WITNESS.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/TENSION-CALIBRATION.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/TENSION-CALIBRATION.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/TRANSFER-CLAIM-AUDIT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/TRANSFER-CLAIM-AUDIT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/TRANSFER-PAIR-PILOT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/TRANSFER-PAIR-PILOT.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET-REVIEW.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET-REVIEW.html"
+    },
+    {
+      "path": "controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/docs/VALIDATED-IDENTIFIED-SET.html"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/all36_cached_minimum_application_v1/checkpoint_v1/MINIMA.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/all36_cached_minimum_application_v1/checkpoint_v1/MINIMA.html"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/four_spatial_checkpoint_v1/SPATIAL.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/four_spatial_checkpoint_v1/SPATIAL.html"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_checkpoint_v1/REPORT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/first_wave_checkpoint_v1/REPORT.html"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/layout_revision_0/REPORT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/layout_revision_0/REPORT.html"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/REPORT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_02/checkpoint_v1/REPORT.html"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/exact_targets_v1/remaining32_bridge_v1/remaining28_preparation_v1/waves/wave_03/checkpoint_v1/REPORT.html"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/observer_checkpoint_v1/OBSERVERS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/certification_design/full_outcome_coverage_v1/observer_checkpoint_v1/OBSERVERS.html"
+    },
+    {
+      "path": "controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/REPORT.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/controlled_furrowing/runs/transfer_ambiguity_nonlinear_probe_v1/report/REPORT.html"
+    },
+    {
+      "path": "docs/ALL-PAGES.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/docs/ALL-PAGES.html"
+    },
+    {
+      "path": "docs/ARCHIVED-AVIAN-FINDINGS.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/docs/ARCHIVED-AVIAN-FINDINGS.html"
+    },
+    {
+      "path": "docs/DEVELOPMENT-JOURNEY.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/docs/DEVELOPMENT-JOURNEY.html"
+    },
+    {
+      "path": "docs/index.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/docs/index.html"
+    },
+    {
+      "path": "index.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/index.html"
+    },
+    {
+      "path": "OMITTED.html",
+      "url": "https://az9713.github.io/embryo-geometry-bridge/OMITTED.html"
+    }
+  ]
+}
